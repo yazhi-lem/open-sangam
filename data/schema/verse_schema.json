@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Open Sangam Verse",
+  "description": "Canonical schema for a single verse in the Open Sangam corpus. Structure: Verse → Line → Word.",
+  "type": "object",
+  "required": ["id", "poem", "number", "sangamTamil", "lines"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique verse identifier, e.g. 'maduraikanchi_0001'",
+      "pattern": "^[a-z_]+_\\d{4}$"
+    },
+    "poem": {
+      "type": "string",
+      "description": "Poem identifier, e.g. 'maduraikanchi'"
+    },
+    "number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "tinai": {
+      "type": "string",
+      "description": "Tiṇai (poetic landscape) classification",
+      "enum": ["kurinji", "mullai", "marutam", "neytal", "palai", "unknown"]
+    },
+    "sangamTamil": {
+      "type": "string",
+      "description": "Original verse text in Sangam Tamil script"
+    },
+    "urai": {
+      "type": ["string", "null"],
+      "description": "Modern Tamil prose rendering (Urai). Null until AI-generated and verified."
+    },
+    "english": {
+      "type": ["string", "null"],
+      "description": "Contemporary English translation. Null until AI-generated and verified."
+    },
+    "lines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["lineNumber", "text", "words"],
+        "properties": {
+          "lineNumber": { "type": "integer", "minimum": 1 },
+          "text": { "type": "string" },
+          "words": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["form"],
+              "properties": {
+                "form": {
+                  "type": "string",
+                  "description": "Word as it appears in the verse"
+                },
+                "root": {
+                  "type": ["string", "null"],
+                  "description": "Root word (வேர்ச்சொல்)"
+                },
+                "urichol": {
+                  "type": ["string", "null"],
+                  "description": "Grammatical / semantic class (உரிச்சொல்)"
+                },
+                "etymology": {
+                  "type": ["string", "null"]
+                },
+                "gloss": {
+                  "type": ["string", "null"],
+                  "description": "Brief English gloss"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "culturalNotes": {
+      "type": "array",
+      "description": "Cultural context annotations linked to spans in the verse",
+      "items": {
+        "type": "object",
+        "required": ["title", "description"],
+        "properties": {
+          "title": { "type": "string" },
+          "category": { "type": "string" },
+          "description": { "type": "string" },
+          "sourceVerse": { "type": ["string", "null"] },
+          "references": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "audioUrl": {
+      "type": ["string", "null"],
+      "description": "URL to an audio recording of the verse recitation"
+    },
+    "source": {
+      "type": "string",
+      "description": "Source of the original text"
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "True once a scholar has reviewed the AI translations",
+      "default": false
+    }
+  }
+}
