@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-tamil: 'Noto Sans Tamil', 'Latha', 'Nirmala UI', sans-serif;
+  --font-tamil-serif: 'Noto Serif Tamil', 'Latha', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Brand palette — earthy Sangam tones */
+  --color-bg: #0f0e0b;
+  --color-surface: #1a1814;
+  --color-border: #2e2b24;
+  --color-text: #f0ede4;
+  --color-muted: #9c9488;
+  --color-accent: #c8972a;   /* warm gold */
+  --color-accent-2: #6d9e6a; /* Mullai green */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tamil {
+  font-family: var(--font-tamil);
+}
+
+.tamil-verse {
+  font-family: var(--font-tamil-serif);
+  line-height: 2;
+}
