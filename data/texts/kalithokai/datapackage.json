@@ -1,0 +1,88 @@
+{
+  "name": "open-sangam-kalithokai",
+  "title": "கலித்தொகை — Kalithokai",
+  "description": "Kalithokai (கலித்தொகை), 8thokai — 149 individual poems.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence"
+    }
+  ],
+  "sources": [
+    {
+      "title": "sangathamizh.com",
+      "path": "http://www.sangathamizh.com/8thokai/8thokai-kalithokai-கலித்தொகை.html"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Open Sangam Project",
+      "role": "wrangler"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Sangam",
+    "classical literature",
+    "Kalithokai",
+    "8thokai"
+  ],
+  "resources": [
+    {
+      "name": "kalithokai",
+      "path": "kalithokai.json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "poem",
+            "type": "string"
+          },
+          {
+            "name": "tinai",
+            "type": "string"
+          },
+          {
+            "name": "sangamTamil",
+            "type": "string"
+          },
+          {
+            "name": "urai",
+            "type": "string",
+            "description": "Modern Tamil prose (scraped)"
+          },
+          {
+            "name": "english",
+            "type": "string",
+            "description": "English translation; null until generated"
+          },
+          {
+            "name": "verified",
+            "type": "boolean"
+          },
+          {
+            "name": "number",
+            "type": "integer",
+            "description": "Poem number"
+          },
+          {
+            "name": "poet",
+            "type": "string",
+            "description": "Poet name in Tamil"
+          }
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "records": 149,
+    "withUrai": 0,
+    "withEnglish": 0
+  }
+}

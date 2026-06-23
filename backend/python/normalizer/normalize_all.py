@@ -31,9 +31,13 @@ def normalize_record(raw: dict, poem: dict) -> dict:
     sangam = raw.get("sangamTamil", "")
     lines_text = [ln for ln in sangam.splitlines() if ln.strip()]
 
+    poem_id = raw.get("poem", poem["id"])
+    num = raw.get("sectionNumber") or raw.get("number", 0)
+    generated_id = raw.get("id") or f"{poem_id}_{num:0{poem['num_digits']}d}"
+
     base = {
-        "id": raw["id"],
-        "poem": raw["poem"],
+        "id": generated_id,
+        "poem": poem_id,
         "tinai": raw.get("tinai", "unknown"),
         "sangamTamil": sangam,
         "urai": raw.get("urai"),

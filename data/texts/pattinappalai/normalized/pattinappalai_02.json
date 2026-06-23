@@ -1,0 +1,419 @@
+{
+  "id": "pattinappalai_02",
+  "poem": "pattinappalai",
+  "tinai": "unknown",
+  "sangamTamil": "விளைவு அறா வியன் கழனி\nகார்க் கரும்பின் கமழ் ஆலைத்\nதீத் தெறுவின் கவின் வாடி,\nநீர்ச் செறுவின் நீள் நெய்தல்\nபூச்சாம்பும் புலத்து ஆங்கண்,\nகாய்ச் செந்நெல் கதிர் அருந்து\nமோட்டு எருமை முழுக் குழவி\nகூட்டு நிழல் துயில் வதியும்,\nகோள் தெங்கின், குலை வாழை,\nகாய்க் கமுகின், கமழ் மஞ்சள்,\nஇன மாவின், இணர்ப் பெண்ணை,\nமுதல் சேம்பின், முளை இஞ்சி,",
+  "urai": "கழனியில் கரும்பும் வயலில் ஆம்பலும் பூக்கும். காவிரியாற்றுக் கழனிகளில் என்றும் விளைச்சல் இருந்துகொண்டேயிருக்கும். கழனிகளில் விளைந்த கரும்பை ஆலையில் சாறு பிழிந்து வெல்லமாக்குவதற்காகக் காய்ச்சிய புகையின் சூடு பட்டு நீர் வயல்களிலிருந்த நெய்தல் பூக்கள் சாம்பிவிடுமாம். சாம்புதல் = சூடுபட்டு வாடுதல் விளையாடிய எருமைக் கன்றுக்குட்டி கதிர் முற்றிய நெல் வயலில் இறங்கிக் காலால் கதிர்களைத் துவட்டி விட்டு நெல்லைப் பாதுகாத்து வைத்திருக்கும் நெற்கூட்டின் நிழலில் படுத்திருக்கும். ஊரைச் சூழ்ந்துள்ள வயல் முற்றங்களில் தென்னை, வாழை பாக்குமரம் மஞ்சள், மா, பனை, சேம்பு, இஞ்சி முதலான பணப்பயிர்கள் விளைந்திருக்கும்.",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "விளைவு அறா வியன் கழனி",
+      "words": [
+        {
+          "form": "விளைவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கார்க் கரும்பின் கமழ் ஆலைத்",
+      "words": [
+        {
+          "form": "கார்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கரும்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆலைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தீத் தெறுவின் கவின் வாடி,",
+      "words": [
+        {
+          "form": "தீத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெறுவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாடி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நீர்ச் செறுவின் நீள் நெய்தல்",
+      "words": [
+        {
+          "form": "நீர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செறுவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெய்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "பூச்சாம்பும் புலத்து ஆங்கண்,",
+      "words": [
+        {
+          "form": "பூச்சாம்பும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆங்கண்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "காய்ச் செந்நெல் கதிர் அருந்து",
+      "words": [
+        {
+          "form": "காய்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செந்நெல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "மோட்டு எருமை முழுக் குழவி",
+      "words": [
+        {
+          "form": "மோட்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எருமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முழுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "கூட்டு நிழல் துயில் வதியும்,",
+      "words": [
+        {
+          "form": "கூட்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிழல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துயில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வதியும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "கோள் தெங்கின், குலை வாழை,",
+      "words": [
+        {
+          "form": "கோள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெங்கின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "காய்க் கமுகின், கமழ் மஞ்சள்,",
+      "words": [
+        {
+          "form": "காய்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமுகின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மஞ்சள்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "இன மாவின், இணர்ப் பெண்ணை,",
+      "words": [
+        {
+          "form": "இன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாவின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இணர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெண்ணை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "முதல் சேம்பின், முளை இஞ்சி,",
+      "words": [
+        {
+          "form": "முதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேம்பின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இஞ்சி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/10paddu/paddinappalai/paddinappalai-பட்டினப்பாலை02.html",
+  "verified": false,
+  "sectionNumber": 2,
+  "title": "சோழ நாட்டின் சிறப்பு",
+  "lineStart": 8,
+  "lineEnd": 19
+}

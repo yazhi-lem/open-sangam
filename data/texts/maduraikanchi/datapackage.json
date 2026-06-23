@@ -1,7 +1,7 @@
 {
   "name": "open-sangam-maduraikanchi",
   "title": "மதுரைக்காஞ்சி — Maduraikanchi",
-  "description": "Maduraikanchi (மதுரைக்காஞ்சி) is one of the Ten Idylls (Pattuppāttu) of Classical Tamil Sangam literature, composed by Mankudi Maruthanar (c. 200 CE). 782 lines praising the Pandyan king Nedunj Cheliyan and the city of Madurai.",
+  "description": "Maduraikanchi (மதுரைக்காஞ்சி), 10paddu — 63 sections, 782 lines.",
   "version": "0.1.0",
   "licenses": [
     {
@@ -26,7 +26,7 @@
     "Sangam",
     "classical literature",
     "Maduraikanchi",
-    "Pattuppattu"
+    "10paddu"
   ],
   "resources": [
     {
@@ -34,17 +34,37 @@
       "path": "maduraikanchi.json",
       "mediatype": "application/json",
       "encoding": "utf-8",
-      "description": "All sections in canonical Open Sangam schema (Verse → Line → Word)",
       "schema": {
         "fields": [
           {
             "name": "id",
-            "type": "string",
-            "description": "Unique section ID, e.g. maduraikanchi_001"
+            "type": "string"
           },
           {
             "name": "poem",
             "type": "string"
+          },
+          {
+            "name": "tinai",
+            "type": "string"
+          },
+          {
+            "name": "sangamTamil",
+            "type": "string"
+          },
+          {
+            "name": "urai",
+            "type": "string",
+            "description": "Modern Tamil prose (scraped)"
+          },
+          {
+            "name": "english",
+            "type": "string",
+            "description": "English translation; null until generated"
+          },
+          {
+            "name": "verified",
+            "type": "boolean"
           },
           {
             "name": "sectionNumber",
@@ -57,47 +77,19 @@
           },
           {
             "name": "lineStart",
-            "type": "integer",
-            "description": "First line number in the original poem"
+            "type": "integer"
           },
           {
             "name": "lineEnd",
-            "type": "integer",
-            "description": "Last line number in the original poem"
-          },
-          {
-            "name": "tinai",
-            "type": "string",
-            "description": "Poetic landscape classification"
-          },
-          {
-            "name": "sangamTamil",
-            "type": "string",
-            "description": "Original Sangam Tamil text"
-          },
-          {
-            "name": "urai",
-            "type": "string",
-            "description": "Modern Tamil prose rendering (பொருளுரை); scraped from sangathamizh.com"
-          },
-          {
-            "name": "english",
-            "type": "string",
-            "description": "English translation; null until generated"
-          },
-          {
-            "name": "verified",
-            "type": "boolean",
-            "description": "True once scholar-reviewed"
+            "type": "integer"
           }
         ]
       }
     }
   ],
   "stats": {
-    "sections": 63,
-    "totalLines": 782,
-    "sectionsWithUrai": 60,
-    "sectionsWithEnglish": 0
+    "records": 63,
+    "withUrai": 60,
+    "withEnglish": 0
   }
 }

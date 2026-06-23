@@ -1,0 +1,664 @@
+{
+  "id": "maduraikanchi_03",
+  "poem": "maduraikanchi",
+  "tinai": "unknown",
+  "sangamTamil": "பிணக் கோட்ட களிற்றுக் குழும்பின்\nநிணம் வாய்ப்பெய்த பேய் மகளிர் இணை\nயொலியிமிழ் துணங்கைச் சீர்ப்\nபிணை யூபம் எழுந் தாட\nஅஞ்சு வந்த போர்க்களத் தான்\nஆண் டலை அணங் கடுப்பின்\nவய வேந்தர் ஒண் குருதி\nசினத் தீயிற் பெயர்பு பொங்கத்\nதெற லருங் கடுந் துப்பின்\nவிறல் விளங்கிய விழுச் சூர்ப்பின்\nதொடித் தோட்கை துடுப் பாக\nஆ டுற்ற ஊன் சோறு\nநெறி யறிந்த கடிவா லுவன்\nஅடி யொதுங்கிப் பிற் பெயராப்\nபடை யோர்க்கு முரு கயர\nஅமர் கடக்கும் வியன் றானைத்\nதென்னவற் பெயரிய துன்னருந் துப்பின\nதொல்முது கடவுட் பின்னர் மேய\nவரைத்தாழ் அருவிப் பொருப்பிற் பொருந",
+  "urai": "(பாண்டியன் நெடுஞ்செழியன் குற்றால மலைப் போரில் வென்று அதனைத் தனதாக்கிக் கொண்டான். அங்கு நடைபெற்ற போர் இப்பகுதியில் பேசப்படுகிறது) வரைதாழ் அருவி என்பது குற்றாலம். அங்கு இக்காலத்தில் உள்ள இரத்தின சபையில் தென்திசை நோக்கிக் கூத்தாடுபவர் தென்திசைக் கடவுள் (தட்சிணாமூர்த்தி). தென்திசைக் கடவுளைத் ‘தென்னவன்’ என்றனர். தென்னவனைத் ‘தொன்முது கடவுள்’ எனவும் வழங்கினர். (குற்றாலம் பொதியமலையின் ஒரு பகுதி. இப்பகுதியை வள்ளல் ஆய் ஆண்டு வந்தான் என்பதைச் சங்கப் பாடல்கள் தெரிவிக்கின்றன) பிற்காலத்துப் பரணி நூல்கள் போர்க்களக் காட்சியைப் பாடும்போது பிணத்தைப் பேய்க்கூட்டம் சோறாக்கித் தின்றதாகப் பாடுகின்றன. அவற்றிற்கு முன்னோடி போல அமைந்துள்ளது இந்தப் பாடல் பகுதி. பிணமாகிய களிறுகளைக் குவித்துப் கொழுப்பை எடுத்துப் பேய்க்கூட்டம் வாயில் அதவியது. பின்னர் தோளில் கை கோத்துக்கொண்டு ஒன்றன்மேல் ஒன்று விழுந்து தூண் போல் நின்று போர்க்களத்தில் துணங்கைக் கூத்து ஆடியது. ஆண்களின் தலைகளைக் கல்லாக வைத்து அடுப்புக் கூட்டியது. அரசர்களின் குருதியை உலைநீராக ஊற்றியது. அரசர்களின் சினத்தைத் தீயாக மூட்டியது. வலிமை மிக்க அவர்களின் கைகளை முறித்துத் துடுப்பாக்கிக்கொண்டு சோற்றைத் துளாவியது. பிணக் கறி போட்டுச் சோறு சமைத்தது.. சமையல் தொழிலில் வல்ல வாலுவன் விலகிச் சென்றுவிட்டான். இது படையினரை ஆட்டுவிக்கும் ‘முருகு’ ஆட்ட விழா. இப்படிப் போரிட்டு, தென்னவன் பெயர் கொண்ட கடவுளின் அருவி பாயும் நாட்டை இந்தச் செழியன் தனதாக்கிக்கொண்டான்.",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பிணக் கோட்ட களிற்றுக் குழும்பின்",
+      "words": [
+        {
+          "form": "பிணக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களிற்றுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழும்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நிணம் வாய்ப்பெய்த பேய் மகளிர் இணை",
+      "words": [
+        {
+          "form": "நிணம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்ப்பெய்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகளிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "யொலியிமிழ் துணங்கைச் சீர்ப்",
+      "words": [
+        {
+          "form": "யொலியிமிழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணங்கைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சீர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பிணை யூபம் எழுந் தாட",
+      "words": [
+        {
+          "form": "பிணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யூபம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "அஞ்சு வந்த போர்க்களத் தான்",
+      "words": [
+        {
+          "form": "அஞ்சு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போர்க்களத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "ஆண் டலை அணங் கடுப்பின்",
+      "words": [
+        {
+          "form": "ஆண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அணங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடுப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "வய வேந்தர் ஒண் குருதி",
+      "words": [
+        {
+          "form": "வய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேந்தர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குருதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "சினத் தீயிற் பெயர்பு பொங்கத்",
+      "words": [
+        {
+          "form": "சினத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீயிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொங்கத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "தெற லருங் கடுந் துப்பின்",
+      "words": [
+        {
+          "form": "தெற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "விறல் விளங்கிய விழுச் சூர்ப்பின்",
+      "words": [
+        {
+          "form": "விறல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளங்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விழுச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூர்ப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "தொடித் தோட்கை துடுப் பாக",
+      "words": [
+        {
+          "form": "தொடித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோட்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துடுப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "ஆ டுற்ற ஊன் சோறு",
+      "words": [
+        {
+          "form": "ஆ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டுற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "நெறி யறிந்த கடிவா லுவன்",
+      "words": [
+        {
+          "form": "நெறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யறிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடிவா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லுவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "அடி யொதுங்கிப் பிற் பெயராப்",
+      "words": [
+        {
+          "form": "அடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொதுங்கிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயராப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "படை யோர்க்கு முரு கயர",
+      "words": [
+        {
+          "form": "படை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யோர்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கயர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "அமர் கடக்கும் வியன் றானைத்",
+      "words": [
+        {
+          "form": "அமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றானைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "தென்னவற் பெயரிய துன்னருந் துப்பின",
+      "words": [
+        {
+          "form": "தென்னவற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயரிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துன்னருந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துப்பின",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "தொல்முது கடவுட் பின்னர் மேய",
+      "words": [
+        {
+          "form": "தொல்முது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடவுட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பின்னர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "வரைத்தாழ் அருவிப் பொருப்பிற் பொருந",
+      "words": [
+        {
+          "form": "வரைத்தாழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருவிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருப்பிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருந",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி03.html",
+  "verified": false,
+  "sectionNumber": 3,
+  "title": "அகத்தியரின் வழிவந்த சான்றோன்",
+  "lineStart": 24,
+  "lineEnd": 42
+}

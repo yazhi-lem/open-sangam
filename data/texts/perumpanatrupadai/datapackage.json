@@ -1,0 +1,95 @@
+{
+  "name": "open-sangam-perumpanatrupadai",
+  "title": "பெரும்பாணாற்றுப்படை — Perumpanatrupadai",
+  "description": "Perumpanatrupadai (பெரும்பாணாற்றுப்படை), 10paddu — 41 sections, 500 lines.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence"
+    }
+  ],
+  "sources": [
+    {
+      "title": "sangathamizh.com",
+      "path": "http://www.sangathamizh.com/10paddu/10paddu-perumpanatruppadai-பெரும்பாணாற்றுப்படை.html"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Open Sangam Project",
+      "role": "wrangler"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Sangam",
+    "classical literature",
+    "Perumpanatrupadai",
+    "10paddu"
+  ],
+  "resources": [
+    {
+      "name": "perumpanatrupadai",
+      "path": "perumpanatrupadai.json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "poem",
+            "type": "string"
+          },
+          {
+            "name": "tinai",
+            "type": "string"
+          },
+          {
+            "name": "sangamTamil",
+            "type": "string"
+          },
+          {
+            "name": "urai",
+            "type": "string",
+            "description": "Modern Tamil prose (scraped)"
+          },
+          {
+            "name": "english",
+            "type": "string",
+            "description": "English translation; null until generated"
+          },
+          {
+            "name": "verified",
+            "type": "boolean"
+          },
+          {
+            "name": "sectionNumber",
+            "type": "integer"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Section title in Tamil"
+          },
+          {
+            "name": "lineStart",
+            "type": "integer"
+          },
+          {
+            "name": "lineEnd",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "records": 41,
+    "withUrai": 38,
+    "withEnglish": 0
+  }
+}
