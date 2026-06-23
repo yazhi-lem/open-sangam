@@ -1,0 +1,103 @@
+{
+  "name": "open-sangam-maduraikanchi",
+  "title": "மதுரைக்காஞ்சி — Maduraikanchi",
+  "description": "Maduraikanchi (மதுரைக்காஞ்சி) is one of the Ten Idylls (Pattuppāttu) of Classical Tamil Sangam literature, composed by Mankudi Maruthanar (c. 200 CE). 782 lines praising the Pandyan king Nedunj Cheliyan and the city of Madurai.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence"
+    }
+  ],
+  "sources": [
+    {
+      "title": "sangathamizh.com",
+      "path": "http://www.sangathamizh.com/10paddu/10paddu-mathuraikaanchi-மதுரைக்காஞ்சி.html"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Open Sangam Project",
+      "role": "wrangler"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Sangam",
+    "classical literature",
+    "Maduraikanchi",
+    "Pattuppattu"
+  ],
+  "resources": [
+    {
+      "name": "maduraikanchi",
+      "path": "maduraikanchi.json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "description": "All sections in canonical Open Sangam schema (Verse → Line → Word)",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "Unique section ID, e.g. maduraikanchi_001"
+          },
+          {
+            "name": "poem",
+            "type": "string"
+          },
+          {
+            "name": "sectionNumber",
+            "type": "integer"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Section title in Tamil"
+          },
+          {
+            "name": "lineStart",
+            "type": "integer",
+            "description": "First line number in the original poem"
+          },
+          {
+            "name": "lineEnd",
+            "type": "integer",
+            "description": "Last line number in the original poem"
+          },
+          {
+            "name": "tinai",
+            "type": "string",
+            "description": "Poetic landscape classification"
+          },
+          {
+            "name": "sangamTamil",
+            "type": "string",
+            "description": "Original Sangam Tamil text"
+          },
+          {
+            "name": "urai",
+            "type": "string",
+            "description": "Modern Tamil prose rendering (பொருளுரை); scraped from sangathamizh.com"
+          },
+          {
+            "name": "english",
+            "type": "string",
+            "description": "English translation; null until generated"
+          },
+          {
+            "name": "verified",
+            "type": "boolean",
+            "description": "True once scholar-reviewed"
+          }
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "sections": 63,
+    "totalLines": 782,
+    "sectionsWithUrai": 60,
+    "sectionsWithEnglish": 0
+  }
+}

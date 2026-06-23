@@ -8,10 +8,10 @@ Pandyan king Nedunj Cheliyan and the city of Madurai.
 
 | Step | Status |
 |------|--------|
-| Scraping | ⬜ Pending |
-| Normalization | ⬜ Pending |
-| AI Translation (Urai) | ⬜ Pending |
-| AI Translation (English) | ⬜ Pending |
+| Scraping | ✅ Done — 63 sections, 782 lines from sangathamizh.com |
+| Normalization (OKF) | ✅ Done — `maduraikanchi.json` + `datapackage.json` |
+| Tamil Prose Urai | ✅ Done — 60/63 sections have prose translation (scraped) |
+| AI Translation (English) | ⬜ Pending — run `translate_with_gemini --lang english` |
 | Scholar Verification | ⬜ Pending |
 
 ## Running the pipeline

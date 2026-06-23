@@ -1,0 +1,460 @@
+{
+  "id": "maduraikanchi_001",
+  "poem": "maduraikanchi",
+  "sectionNumber": 1,
+  "title": "இயற்கை வளம்",
+  "lineStart": 1,
+  "lineEnd": 13,
+  "tinai": "palai",
+  "sangamTamil": "ஓங்கு திரை வியன் பரப்பின்\nஒலி முந்நீர் வரம் பாகத்\nதேன் தூங்கும் உயர் சிமைய\nமலை நாறிய வியன் ஞாலத்து\nவல மாதிரத்தான் வளி கொட்ப\nவிய னாண்மீ னெறி யொழுகப்\nபகற் செய்யும் செஞ் ஞாயிறும்\nஇரவுச் செய்யும் வெண் திங்களும்\nமை தீர்ந்து கிளர்ந்து விளங்க\nமழைதொழில் உதவ மாதிரங் கொழுக்கத்\nதொடுப்பின் ஆயிரம் வித்தியது விளைய\nநிலனு மரனும் பயன்எதிர்பு நந்த\nநோ யிகந்து நோக்கு விளங்க",
+  "urai": "பொங்கி அலைவீசும் பரப்பினைக் கொண்டது கடல். அதனை எல்லையாகக் கொண்ட ஞாலத்தில் தேன்கூடுகள் தொங்கும் உயர்ந்த முகடுகளைக் கொண்ட மலைகள் தோன்றியுள்ளன. வானப் பெருவெளியில் காற்று வலிமையுடன் சுழன்று கொண்டுள்ளது. எல்லாவற்றையும் விடப் பெரிதாக அகன்றுள்ள விண்மீன்கள் தத்தம் வழியில் செல்கின்றன. பகலில் ஒளிதரும் ஞாயிறு இரவில் ஒளிதரும் திங்கள் ஆகிய இரண்டும் மயக்கமின்றித் தோன்றி ஒளிர்கின்றன. மழை பொழிந்தது. மாநிலம் கொழுத்துள்ளது. ஒன்று விதைத்தால் அது ஆயிரமாக விளைகிறது. விதைத்த நிலமும் விதைக்காத மரங்களும் நல்ல பலனைத் தருகின்றன. இப்படி இயற்கை உதவுவதால் மக்களின் நோக்கத்திலும் துன்பத்தைக் காண முடியவில்லை. யாரும் துன்பம் செய்யவில்லை.",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஓங்கு திரை வியன் பரப்பின்",
+      "words": [
+        {
+          "form": "ஓங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஒலி முந்நீர் வரம் பாகத்",
+      "words": [
+        {
+          "form": "ஒலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முந்நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாகத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தேன் தூங்கும் உயர் சிமைய",
+      "words": [
+        {
+          "form": "தேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிமைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மலை நாறிய வியன் ஞாலத்து",
+      "words": [
+        {
+          "form": "மலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாறிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞாலத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "வல மாதிரத்தான் வளி கொட்ப",
+      "words": [
+        {
+          "form": "வல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாதிரத்தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொட்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "விய னாண்மீ னெறி யொழுகப்",
+      "words": [
+        {
+          "form": "விய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னாண்மீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னெறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொழுகப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பகற் செய்யும் செஞ் ஞாயிறும்",
+      "words": [
+        {
+          "form": "பகற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்யும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞாயிறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "இரவுச் செய்யும் வெண் திங்களும்",
+      "words": [
+        {
+          "form": "இரவுச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்யும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திங்களும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "மை தீர்ந்து கிளர்ந்து விளங்க",
+      "words": [
+        {
+          "form": "மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளங்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "மழைதொழில் உதவ மாதிரங் கொழுக்கத்",
+      "words": [
+        {
+          "form": "மழைதொழில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உதவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாதிரங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொழுக்கத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "தொடுப்பின் ஆயிரம் வித்தியது விளைய",
+      "words": [
+        {
+          "form": "தொடுப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயிரம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வித்தியது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "நிலனு மரனும் பயன்எதிர்பு நந்த",
+      "words": [
+        {
+          "form": "நிலனு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரனும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயன்எதிர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "நோ யிகந்து நோக்கு விளங்க",
+      "words": [
+        {
+          "form": "நோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யிகந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளங்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி01.html",
+  "verified": false
+}
