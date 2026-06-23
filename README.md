@@ -52,16 +52,16 @@ npm run dev
 
 ```bash
 cd backend/python
-pip install -r requirements.txt
+python -m venv .venv && .venv/bin/pip install -r requirements.txt
 
-# 1. Scrape source text
-python -m scraper.scrape_maduraikanchi
+# Scrape all 17 Sangam poems (resumes from where it left off)
+.venv/bin/python -m scraper.scrape_poem --poem all
 
-# 2. Normalize to JSON schema
-python -m normalizer.normalize_to_json
+# Normalize to OKF datapackage (JSON schema + datapackage.json)
+.venv/bin/python -m normalizer.normalize_all --poem all
 
-# 3. Generate AI translations
-python -m ai.translate_with_gemini
+# Generate English translations via Gemini (requires GEMINI_API_KEY in .env)
+.venv/bin/python -m ai.translate_with_gemini --poem maduraikanchi --lang english
 ```
 
 ### Firebase Functions
@@ -74,34 +74,65 @@ firebase emulators:start
 
 ## Phases
 
-| Phase | Status | Description |
-|-------|--------|-------------|
-| 1 | 🔄 In progress | Data scraping & normalization — 17 of 17 Sangam poems |
-| 2 | ⬜ Pending | AI English translation (Gemini) + human verification |
-| 3 | ⬜ Pending | MVP reader launch |
-| 4 | ⬜ Pending | Community contribution layer |
+| # | Phase | Status |
+|---|-------|--------|
+| 1 | Data scraping & normalization | 🔄 In progress |
+| 2 | AI English translation + human verification | ⬜ Pending |
+| 3 | Library of Sangam — MVP reader live | 🔄 In progress |
+| 4 | Community contribution layer | ⬜ Pending |
 
-### Poem Corpus (Phase 1)
+---
 
-| Collection | Poem | Status |
-|------------|------|--------|
-| எட்டுத்தொகை | நற்றிணை Natrinai (400) | ⬜ |
-| எட்டுத்தொகை | குறுந்தொகை Kurunthokai (400) | ⬜ |
-| எட்டுத்தொகை | ஐங்குறுநூறு Ainkurunooru (500) | ⬜ |
-| எட்டுத்தொகை | கலித்தொகை Kalithokai | ⬜ |
-| எட்டுத்தொகை | அகநானூறு Akananooru (400) | ⬜ |
-| எட்டுத்தொகை | பதிற்றுப்பத்து Pathitrupathu | ⬜ |
-| எட்டுத்தொகை | புறநானூறு Purananuru (400) | 🔄 |
-| எட்டுத்தொகை | பரிபாடல் Paripadal | ⬜ |
-| பத்துப்பாட்டு | திருமுருகாற்றுப்படை Tirumurugaatrupadai | ⬜ |
-| பத்துப்பாட்டு | சிறுபாணாற்றுப்படை Sirupanatrupadai | ⬜ |
-| பத்துப்பாட்டு | பெரும்பாணாற்றுப்படை Perumpanatrupadai | ⬜ |
-| பத்துப்பாட்டு | மலைபடுகடாம் Malaipadukadam | ⬜ |
-| பத்துப்பாட்டு | மதுரைக்காஞ்சி Maduraikanchi (782 lines, 63 sections) | ✅ |
-| பத்துப்பாட்டு | குறிஞ்சிப்பாட்டு Kurinjipattu | ⬜ |
-| பத்துப்பாட்டு | பட்டினப்பாலை Pattinappalai | ⬜ |
-| பத்துப்பாட்டு | முல்லைப்பாட்டு Mullaippattu | ⬜ |
-| பத்துப்பாட்டு | நெடுநல்வாடை Nedunalvadai | ⬜ |
+## Corpus Status
+
+> Pipeline: **Scrape** → **Normalize** → **Library** → **English** → **Verified**
+>
+> `█` done · `▒` partial · `░` pending
+
+### எட்டுத்தொகை — Eight Anthologies
+
+```
+Poem                          Verses  Scrape    Normalize  Library   English   Verified
+─────────────────────────────────────────────────────────────────────────────────────────
+நற்றிணை      Natrinai           400   ██████░░  ██████░░   ██████░░  ░░░░░░░░  ░░░░░░░░
+குறுந்தொகை   Kurunthokai        400   ██████░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+ஐங்குறுநூறு  Ainkurunooru       500   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+கலித்தொகை   Kalithokai         150   ████░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+அகநானூறு    Akananooru         400   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+பதிற்றுப்பத்து Pathitrupathu     80   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+புறநானூறு    Purananuru         400   ██████░░  ██████░░   ██████░░  ░░░░░░░░  ░░░░░░░░
+பரிபாடல்     Paripadal           22   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+```
+
+### பத்துப்பாட்டு — Ten Idylls
+
+```
+Poem                              Lines   Scrape    Normalize  Library   English   Verified
+─────────────────────────────────────────────────────────────────────────────────────────────
+திருமுருகாற்றுப்படை Tirumurugam    317   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+சிறுபாணாற்றுப்படை  Sirupanam       269   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+பெரும்பாணாற்றுப்படை Perumapanam   500   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+மலைபடுகடாம்        Malaipadukadam  583   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+மதுரைக்காஞ்சி      Maduraikanchi   782   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
+குறிஞ்சிப்பாட்டு   Kurinjipattu    261   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+பட்டினப்பாலை       Pattinappalai   301   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+முல்லைப்பாட்டு     Mullaippattu    103   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+நெடுநல்வாடை        Nedunalvadai    188   ░░░░░░░░  ░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░░░
+```
+
+### Overall Progress
+
+```
+Total poems          17  ████░░░░░░░░░░░░  3 in Library, 2 scraping
+Total verses/lines 5,880  ██░░░░░░░░░░░░░░  1,182 normalized (20%)
+Tamil prose (Urai)       ██░░░░░░░░░░░░░░  scraped where available
+English translation      ░░░░░░░░░░░░░░░░  Phase 2 — Gemini pending
+```
+
+> **Readable now in [சங்க நூலகம் — Library of Sangam](/frontend):**
+> நற்றிணை · புறநானூறு · மதுரைக்காஞ்சி
+
+---
 
 ## License
 
