@@ -13,6 +13,7 @@ export default function Navbar() {
         </Link>
         <div className="flex items-center gap-6">
           <NavLink to="/" end className={linkClass}>Home</NavLink>
+          <NavLink to="/book" className={linkClass}>Book</NavLink>
           <NavLink to="/reader" className={linkClass}>Reader</NavLink>
           <NavLink to="/world" className={linkClass}>Sangam World</NavLink>
         </div>

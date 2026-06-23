@@ -3,6 +3,7 @@ import Navbar from './components/navigation/Navbar'
 import Home from './pages/Home'
 import Reader from './pages/Reader'
 import SangamWorldPage from './pages/SangamWorldPage'
+import Book from './pages/Book'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
             <Route path="/reader/:poemId?" element={<Reader />} />
             <Route path="/world" element={<SangamWorldPage />} />
             <Route path="*" element={<NotFound />} />

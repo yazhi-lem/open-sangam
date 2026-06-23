@@ -74,12 +74,34 @@ firebase emulators:start
 
 ## Phases
 
-| Phase | Description |
-|-------|-------------|
-| 1 | Data scraping & normalization |
-| 2 | AI translation generation + human verification |
-| 3 | MVP reader launch |
-| 4 | Community contribution layer |
+| Phase | Status | Description |
+|-------|--------|-------------|
+| 1 | 🔄 In progress | Data scraping & normalization — 17 of 17 Sangam poems |
+| 2 | ⬜ Pending | AI English translation (Gemini) + human verification |
+| 3 | ⬜ Pending | MVP reader launch |
+| 4 | ⬜ Pending | Community contribution layer |
+
+### Poem Corpus (Phase 1)
+
+| Collection | Poem | Status |
+|------------|------|--------|
+| எட்டுத்தொகை | நற்றிணை Natrinai (400) | ⬜ |
+| எட்டுத்தொகை | குறுந்தொகை Kurunthokai (400) | ⬜ |
+| எட்டுத்தொகை | ஐங்குறுநூறு Ainkurunooru (500) | ⬜ |
+| எட்டுத்தொகை | கலித்தொகை Kalithokai | ⬜ |
+| எட்டுத்தொகை | அகநானூறு Akananooru (400) | ⬜ |
+| எட்டுத்தொகை | பதிற்றுப்பத்து Pathitrupathu | ⬜ |
+| எட்டுத்தொகை | புறநானூறு Purananuru (400) | 🔄 |
+| எட்டுத்தொகை | பரிபாடல் Paripadal | ⬜ |
+| பத்துப்பாட்டு | திருமுருகாற்றுப்படை Tirumurugaatrupadai | ⬜ |
+| பத்துப்பாட்டு | சிறுபாணாற்றுப்படை Sirupanatrupadai | ⬜ |
+| பத்துப்பாட்டு | பெரும்பாணாற்றுப்படை Perumpanatrupadai | ⬜ |
+| பத்துப்பாட்டு | மலைபடுகடாம் Malaipadukadam | ⬜ |
+| பத்துப்பாட்டு | மதுரைக்காஞ்சி Maduraikanchi (782 lines, 63 sections) | ✅ |
+| பத்துப்பாட்டு | குறிஞ்சிப்பாட்டு Kurinjipattu | ⬜ |
+| பத்துப்பாட்டு | பட்டினப்பாலை Pattinappalai | ⬜ |
+| பத்துப்பாட்டு | முல்லைப்பாட்டு Mullaippattu | ⬜ |
+| பத்துப்பாட்டு | நெடுநல்வாடை Nedunalvadai | ⬜ |
 
 ## License
 
