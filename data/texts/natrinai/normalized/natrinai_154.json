@@ -1,0 +1,535 @@
+{
+  "id": "natrinai_154",
+  "poem": "natrinai",
+  "tinai": "kurinji",
+  "sangamTamil": "கானமும் கம்மென்றன்றே; வானமும்\nவரை கிழிப்பன்ன மை இருள் பரப்பி,\nபல் குரல் எழிலி பாடு ஓவாதே;\nமஞ்சு தவழ் இறும்பில் களிறு வலம் படுத்த\nவெஞ் சின உழுவைப் பேழ் வாய் ஏற்றை\nஅஞ்சுதக உரறும்; ஓசை கேளாது\nதுஞ்சுதியோ- இல, தூவிலாட்டி!-\nபேர் அஞர் பொருத புகர் படு நெஞ்சம்\nநீர் அடு நெருப்பின் தணிய, இன்று அவர்\nவாரார் ஆயினோ நன்றே; சாரல்\nவிலங்கு மலை ஆர் ஆறு உள்ளுதொறும்,\nநிலம் பரந்து ஒழுகும், என் நிறை இல் நெஞ்சே?\n- நல்லாவூர் கிழார்.",
+  "urai": "ஏடீ! வலியிலாதாய்!; காடு கம்மென்று ஒலியடங்குவதாயிற்று; ஆகாயமும் மலைமுழைபோன்ற கரிய இருளைப் பரப்பிப் பலவாய இடிமுழக்கத்தையுடைய மேகம் முழங்குவதும் நீங்குகின்றிலது; மேகம் தவழும் குறுங்காட்டினிடத்திலே களிற்றை வலத்தே விழக் கொன்ற வெய்ய சினத்தையும் அகன்ற வாயையுமுடைய புலியேறு; யாவரும் அஞ்சுமாறு முழங்காநிற்கும்; இவ்வோசையனைத்தையும் செவியில் ஏறட்டுக்கொள்ளாது நீ தூங்குகின்றனையோ? பேர் அஞர்பொருத புகர்படு நெஞ்சம் நீர் அடு நெருப்பில் தணிய பெரிய துன்பம் வந்து மோதுதலானே குற்றப்பட்ட நெஞ்சத்தின் கொதிப்பானது நீர் பெய்த நெருப்புப் போலத் தணியும்படி; இன்று அவர் வாராது விட்டாலோ நல்லதாகும்; சாரலிலே குறுக்கிட்ட மலையின்கண்ணே செல்லுநெறியை நினையுந்தோறும்; நிலையில்லாத என் நெஞ்சமானது அந்த நிலத்தின்கண் பரந்து செல்லாநிற்கும்; யான் யாது செய்யமாட்டுவேன்?",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கானமும் கம்மென்றன்றே; வானமும்",
+      "words": [
+        {
+          "form": "கானமும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கம்மென்றன்றே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வானமும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வரை கிழிப்பன்ன மை இருள் பரப்பி,",
+      "words": [
+        {
+          "form": "வரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிழிப்பன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரப்பி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பல் குரல் எழிலி பாடு ஓவாதே;",
+      "words": [
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழிலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓவாதே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மஞ்சு தவழ் இறும்பில் களிறு வலம் படுத்த",
+      "words": [
+        {
+          "form": "மஞ்சு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இறும்பில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "வெஞ் சின உழுவைப் பேழ் வாய் ஏற்றை",
+      "words": [
+        {
+          "form": "வெஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சின",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உழுவைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏற்றை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "அஞ்சுதக உரறும்; ஓசை கேளாது",
+      "words": [
+        {
+          "form": "அஞ்சுதக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உரறும்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓசை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேளாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "துஞ்சுதியோ- இல, தூவிலாட்டி!-",
+      "words": [
+        {
+          "form": "துஞ்சுதியோ-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூவிலாட்டி!-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "பேர் அஞர் பொருத புகர் படு நெஞ்சம்",
+      "words": [
+        {
+          "form": "பேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஞர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "நீர் அடு நெருப்பின் தணிய, இன்று அவர்",
+      "words": [
+        {
+          "form": "நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெருப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தணிய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "வாரார் ஆயினோ நன்றே; சாரல்",
+      "words": [
+        {
+          "form": "வாரார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயினோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்றே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "விலங்கு மலை ஆர் ஆறு உள்ளுதொறும்,",
+      "words": [
+        {
+          "form": "விலங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளுதொறும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "நிலம் பரந்து ஒழுகும், என் நிறை இல் நெஞ்சே?",
+      "words": [
+        {
+          "form": "நிலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒழுகும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சே?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- நல்லாவூர் கிழார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்லாவூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிழார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை154.html",
+  "verified": false,
+  "number": 154,
+  "poet": "நல்லாவூர் கிழார்."
+}

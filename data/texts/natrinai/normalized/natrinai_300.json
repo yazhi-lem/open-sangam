@@ -1,0 +1,542 @@
+{
+  "id": "natrinai_300",
+  "poem": "natrinai",
+  "tinai": "marutam",
+  "sangamTamil": "சுடர்த் தொடிக் கோமகள் சினந்தென, அதன் எதிர்\nமடத் தகை ஆயம் கைதொழுதாஅங்கு,\nஉறு கால் ஒற்ற ஒல்கி, ஆம்பல்\nதாமரைக்கு இறைஞ்சும் தண் துறை ஊரன்\nசிறு வளை விலை எனப் பெருந் தேர் பண்ணி, எம்\nமுன் கடை நிறீஇச் சென்றிசினோனே!\nநீயும், தேரொடு வந்து பேர்தல் செல்லாது,\nநெய் வார்ந்தன்ன துய் அடங்கு நரம்பின்\nஇரும் பாண் ஒக்கல் தலைவன்! பெரும் புண்\nஏஎர் தழும்பன் ஊணூர் ஆங்கண்,\nபிச்சை சூழ் பெருங் களிறு போல, எம்\nஅட்டில் ஓலை தொட்டனை நின்மே.\n- பரணர்.",
+  "urai": "நெய்வடிந்தாலொத்த பிசிர் அடங்கிய நரம்பு பூட்டிய யாழையுடைய பெரிய சுற்றத்தையுடைய பாணர் தலைவனே! விளங்குகின்ற தொடியணிந்த அரசகுமாரி சினங்கொண்டவுடன் அவ்விடத்தில்; மடப்பத்தையுடைய தோழியர் குழாம் கைதொழுது இறைஞ்சினாற்போல; மிக்க காற்று மோதுதலானே ஆம்பல் குவிந்து தாமரை மலரிடத்தில் வந்து சாய்ந்து வணங்காநிற்கும்; தண்ணிய துறையையுடைய ஊரன் ஏனையொருத்திக்குப் பரியமளிக்க வேண்டிச் செல்லுவான் இடையே எம்மைக் காண்டலானே சிறிய வளையினையுடைய இவட்குரிய விலை இதுவென்று; தன் பெரிய தேரை அலங்கரித்து எமது முன்றிலின்கண்ணே நிறுத்தியிட்டு வேறொரு பரத்தையின் மனையகம் நாடிச் சென்றொழிந்தனன் கண்டாய்; அவனது தேருடனே வந்த நீயும் அவன் பின்னே செல்லாது போரிலே பெரிய புண்ணால் அழகுபெற்ற 'தழும்பன்' என்பவனது ஊணூரிடத்துள்ள; பிச்சைக்கு வந்த பெருங்களிறு நிற்றல்போல; எம்முடைய அட்டிற்சாலைக் கூரையின் பனையோலையைத் தொட்டு நிற்கின்றனை.",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "சுடர்த் தொடிக் கோமகள் சினந்தென, அதன் எதிர்",
+      "words": [
+        {
+          "form": "சுடர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோமகள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சினந்தென,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அதன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மடத் தகை ஆயம் கைதொழுதாஅங்கு,",
+      "words": [
+        {
+          "form": "மடத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கைதொழுதாஅங்கு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உறு கால் ஒற்ற ஒல்கி, ஆம்பல்",
+      "words": [
+        {
+          "form": "உறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒல்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆம்பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தாமரைக்கு இறைஞ்சும் தண் துறை ஊரன்",
+      "words": [
+        {
+          "form": "தாமரைக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இறைஞ்சும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊரன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "சிறு வளை விலை எனப் பெருந் தேர் பண்ணி, எம்",
+      "words": [
+        {
+          "form": "சிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எனப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பண்ணி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "முன் கடை நிறீஇச் சென்றிசினோனே!",
+      "words": [
+        {
+          "form": "முன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிறீஇச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்றிசினோனே!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "நீயும், தேரொடு வந்து பேர்தல் செல்லாது,",
+      "words": [
+        {
+          "form": "நீயும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேரொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேர்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்லாது,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நெய் வார்ந்தன்ன துய் அடங்கு நரம்பின்",
+      "words": [
+        {
+          "form": "நெய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வார்ந்தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நரம்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "இரும் பாண் ஒக்கல் தலைவன்! பெரும் புண்",
+      "words": [
+        {
+          "form": "இரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒக்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைவன்!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "ஏஎர் தழும்பன் ஊணூர் ஆங்கண்,",
+      "words": [
+        {
+          "form": "ஏஎர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தழும்பன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊணூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆங்கண்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "பிச்சை சூழ் பெருங் களிறு போல, எம்",
+      "words": [
+        {
+          "form": "பிச்சை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போல,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "அட்டில் ஓலை தொட்டனை நின்மே.",
+      "words": [
+        {
+          "form": "அட்டில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொட்டனை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்மே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- பரணர்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரணர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை300.html",
+  "verified": false,
+  "number": 300,
+  "poet": "பரணர்."
+}

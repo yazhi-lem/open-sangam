@@ -1,0 +1,494 @@
+{
+  "id": "natrinai_140",
+  "poem": "natrinai",
+  "tinai": "kurinji",
+  "sangamTamil": "கொண்டல் மா மழை குடக்கு ஏர்பு குழைத்த\nசிறு கோல் இணர பெருந் தண் சாந்தம்\nவகை சேர் ஐம்பால் தகை பெற வாரி,\nபுலர்விடத்து உதிர்த்த துகள் படு கூழைப்\nபெருங் கண் ஆயம் உவப்ப, தந்தை\nநெடுந் தேர் வழங்கும் நிலவு மணல் முற்றத்து,\nபந்தொடு பெயரும் பரிவிலாட்டி\nஅருளினும், அருளாள் ஆயினும், பெரிது அழிந்து\nபின்னிலை முனியல்மா நெஞ்சே!- என்னதூஉம்\nஅருந் துயர் அவலம் தீர்க்கும்\nமருந்து பிறிது இல்லை, யான் உற்ற நோய்க்கே.\n- பூதங்கண்ணனார்.",
+  "urai": "எனது பெருமையுற்ற நெஞ்சமே! நீரை முகந்து கொள்ளுதலையுடைய கரிய மேகம் மேல்பாலுள்ள மலையிலே எழுந்து மழை பெய்து தழையச் செய்த; சிறிய கிளைகளிலே பூங்கொத்துக்களையுடைய பெரிய குளிர்ச்சி பொருந்திய சந்தனமரத்தின் குறையோடு; பலவாய பொருள்களையும் சேர்த்து அமைக்கப்பெற்ற சாந்தம்பூசிய கூந்தலை அழகு பெற வாரி; அச்சாந்தம் காய்ந்தவழி உதிர்க்கப்பட்ட துகள் பொருந்திய ஐவகையாக வகுக்கப்பட்ட கூந்தலையும பெரிய கண்ணையுமுடைய தோழியர் மகிழுமாறு; தன் தந்தையின் நெடிய தேர் இயங்குகின்ற நிலவு போன்ற வெளிய மணல் பரவிய முன்றிலின்கண்; விளையாடும் வண்ணம் பந்தோடு செல்லுகின்ற நம்பால் அன்பில்லாத இளமகள்; நம்மை அருள் செய்தாலும் அங்ஙனம் அருள்செய்யாளாய் அகன்று போனாலும்; நீ பெரிதும் மனமழிந்து இரந்து வழிபட்டு நிற்றலை வெறாதே கொள்; யான் அடைந்துடைய காமநோயொடு கலந்த துன்பமாகிய அவலத்தை ஒழிக்குமருந்தாவாள் அந்த அன்பில்லாத இளமகள் ஒருத்தியேயன்றி வேறொன்று சிறிதளவேனும மருந்தாகும் தன்மையதில்லைகாண்!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கொண்டல் மா மழை குடக்கு ஏர்பு குழைத்த",
+      "words": [
+        {
+          "form": "கொண்டல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழைத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சிறு கோல் இணர பெருந் தண் சாந்தம்",
+      "words": [
+        {
+          "form": "சிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இணர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாந்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வகை சேர் ஐம்பால் தகை பெற வாரி,",
+      "words": [
+        {
+          "form": "வகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஐம்பால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாரி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "புலர்விடத்து உதிர்த்த துகள் படு கூழைப்",
+      "words": [
+        {
+          "form": "புலர்விடத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உதிர்த்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துகள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூழைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "பெருங் கண் ஆயம் உவப்ப, தந்தை",
+      "words": [
+        {
+          "form": "பெருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உவப்ப,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தந்தை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "நெடுந் தேர் வழங்கும் நிலவு மணல் முற்றத்து,",
+      "words": [
+        {
+          "form": "நெடுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மணல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முற்றத்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பந்தொடு பெயரும் பரிவிலாட்டி",
+      "words": [
+        {
+          "form": "பந்தொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிவிலாட்டி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "அருளினும், அருளாள் ஆயினும், பெரிது அழிந்து",
+      "words": [
+        {
+          "form": "அருளினும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருளாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயினும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரிது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "பின்னிலை முனியல்மா நெஞ்சே!- என்னதூஉம்",
+      "words": [
+        {
+          "form": "பின்னிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முனியல்மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சே!-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்னதூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "அருந் துயர் அவலம் தீர்க்கும்",
+      "words": [
+        {
+          "form": "அருந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீர்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "மருந்து பிறிது இல்லை, யான் உற்ற நோய்க்கே.",
+      "words": [
+        {
+          "form": "மருந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறிது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோய்க்கே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "- பூதங்கண்ணனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூதங்கண்ணனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை140.html",
+  "verified": false,
+  "number": 140,
+  "poet": "பூதங்கண்ணனார்."
+}

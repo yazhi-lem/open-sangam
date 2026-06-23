@@ -1,0 +1,686 @@
+{
+  "id": "purananooru_230",
+  "poem": "purananooru",
+  "tinai": "unknown",
+  "sangamTamil": "கன்று அமர் ஆயம் கானத்து அல்கவும்,\nவெங்கால் வம்பலர் வேண்டு புலத்து உறையவும்,\nகளம் மலி குப்பை காப்பு இல வைகவும்,\nவிலங்கு பகை கடிந்த கலங்காச் செங்கோல்,\nவையகம் புகழ்ந்த வயங்கு வினை ஒள் வாள்,\nபொய்யா எழினி பொருது களம் சேர,\nஈன்றோள் நீத்த குழவி போலத்\nதன் அமர் சுற்றம் தலைத்தலை இனையக்\nகடும் பசி கலக்கிய இடும்பை கூர் நெஞ்சமொடு\nநோய் உழந்து வைகிய உலகிலும், மிக நனி\nநீ இழந்தனையே அறன் இல் கூற்றம்!\nவாழ்தலின் வரூஉம் வயல் வளன் அறியான்,\nவீழ் குடி உழவன் வித்து உண்டாஅங்கு\nஒருவன் ஆருயிர் உண்ணாய் ஆயின்,\nநேரார் பல் உயிர் பருகி\nஆர்குவை மன்னோ, அவன் அமர் அடு களத்தே.",
+  "urai": "கன்றுகளுடைய ஆனிரையின் (பசுக்களின்) கூட்டம் காட்டில் தங்கி இருக்கவும், வறண்ட நிலத்தில் நடந்ததால் வெம்மையுற்ற காலினையுடைய வழிப்போக்கர்கள் தாங்கள் விரும்பிய இடங்களில் தங்கவும், களங்களில் பெரிய நெற்குவியல்கள் காவல் இன்றியே கிடக்கவும், எதிர்த்து வந்த பகையை அழித்து நிலம் கலங்காத செங்கோல் ஆட்சி புரிந்த, உலகத்தார் புகழும் போரைப் புரியும் ஒளி பொருந்திய வாளையுடைய, பொய் கூறாத (வாய்மையுடைய) எழினி இறந்து விட்டான். பெற்ற தாயினால் கைவிடப்பட்ட குழந்தைபோலத் தன்னை விரும்பிய சுற்றம் இடந்தொறும் இடந்தொறும் வருந்த, பசியினால் கலக்கம் மிகுந்த நெஞ்சத்துடன், அவனை இழந்து வருந்தி இருக்கும் இந்த உலகைவிட நீ மிக அதிகமாக இழந்துவிட்டாய் அறம் இல்லாத கூற்றுவனே! தன் வாழ்க்கைக்கு உதவும் வயலின் வளமையை அறியாத குடியில் உள்ள உழவன் ஒருவன் விதைக்க வேண்டிய விதையை விதைக்காமல் உண்டாற்போல, அவனுடைய பெறுவதற்கு அரிய உயிரை நீ உண்ணாது இருந்திருப்பாயாயின், பகைவர்களின் பல உயிர்களை நீ உண்டு நிறைவடைந்திருப்பாய், அவனுடைய பகைவரைக் கொல்லும் போர்க்களத்தில்!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கன்று அமர் ஆயம் கானத்து அல்கவும்,",
+      "words": [
+        {
+          "form": "கன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கானத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அல்கவும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வெங்கால் வம்பலர் வேண்டு புலத்து உறையவும்,",
+      "words": [
+        {
+          "form": "வெங்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வம்பலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உறையவும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "களம் மலி குப்பை காப்பு இல வைகவும்,",
+      "words": [
+        {
+          "form": "களம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குப்பை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காப்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வைகவும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "விலங்கு பகை கடிந்த கலங்காச் செங்கோல்,",
+      "words": [
+        {
+          "form": "விலங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலங்காச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செங்கோல்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "வையகம் புகழ்ந்த வயங்கு வினை ஒள் வாள்,",
+      "words": [
+        {
+          "form": "வையகம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகழ்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாள்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "பொய்யா எழினி பொருது களம் சேர,",
+      "words": [
+        {
+          "form": "பொய்யா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழினி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "ஈன்றோள் நீத்த குழவி போலத்",
+      "words": [
+        {
+          "form": "ஈன்றோள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "தன் அமர் சுற்றம் தலைத்தலை இனையக்",
+      "words": [
+        {
+          "form": "தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைத்தலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இனையக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "கடும் பசி கலக்கிய இடும்பை கூர் நெஞ்சமொடு",
+      "words": [
+        {
+          "form": "கடும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பசி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலக்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இடும்பை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சமொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "நோய் உழந்து வைகிய உலகிலும், மிக நனி",
+      "words": [
+        {
+          "form": "நோய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உழந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வைகிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உலகிலும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "நீ இழந்தனையே அறன் இல் கூற்றம்!",
+      "words": [
+        {
+          "form": "நீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இழந்தனையே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூற்றம்!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "வாழ்தலின் வரூஉம் வயல் வளன் அறியான்,",
+      "words": [
+        {
+          "form": "வாழ்தலின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறியான்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "வீழ் குடி உழவன் வித்து உண்டாஅங்கு",
+      "words": [
+        {
+          "form": "வீழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உழவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வித்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உண்டாஅங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "ஒருவன் ஆருயிர் உண்ணாய் ஆயின்,",
+      "words": [
+        {
+          "form": "ஒருவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆருயிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உண்ணாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "நேரார் பல் உயிர் பருகி",
+      "words": [
+        {
+          "form": "நேரார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உயிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பருகி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "ஆர்குவை மன்னோ, அவன் அமர் அடு களத்தே.",
+      "words": [
+        {
+          "form": "ஆர்குவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மன்னோ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களத்தே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/purananooru/purananooru-புறநானூறு230.html",
+  "verified": false,
+  "number": 230,
+  "poet": null
+}

@@ -1,0 +1,488 @@
+{
+  "id": "natrinai_212",
+  "poem": "natrinai",
+  "tinai": "palai",
+  "sangamTamil": "பார்வை வேட்டுவன் படு வலை வெரீஇ,\nநெடுங் கால் கணந்துள்அம் புலம்பு கொள் தௌ விளி\nசுரம் செல் கோடியர் கதுமென இசைக்கும்\nநரம்பொடு கொள்ளும் அத்தத்து ஆங்கண்\nகடுங் குரற் பம்பைக் கத நாய் வடுகர்\nநெடும் பெருங் குன்றம் நீந்தி, நம் வயின்\nவந்தனர்; வாழி - தோழி! - கையதை\nசெம் பொன் கழல்தொடி நோக்கி, மா மகன்\nகவவுக் கொள் இன் குரல் கேட்டொறும்,\nஅவவுக் கொள் மனத்தேம் ஆகிய நமக்கே.\n- குடவாயிற் கீரத்தனார்.",
+  "urai": "தோழீ! பார்வை ஒன்றனை வைத்து வேட்டுவன் அமைத்த வலையைக் கண்டு வெருவி நெடிய காலையுடைய \"கணந்துள்\" என்னும் பறவை தான் தனிமையினிருந்து கத்தாநின்ற தெளிந்த ஓசை; அச்சுரத்தின் கண்ணே செல்லுகின்ற கூத்தாடிகள் தம் வழிவருத்தம் நீங்குமாறு தங்கி விரைவில் ஒலியெழுப்பி இசைபாடுகின்ற யாழோசையோடு சேர்ந்து ஒத்து ஒலியாநிற்கும் அரிய நெறியிலே; கடிய ஒலியையுடைய பம்பையையும் சினங்கொண்ட நாயையுமுடைய வடுகர் இருக்கின்ற நெடிய பெரிய குன்றங் கடந்து; நம்முடைய கையிலுள்ளதாகிய செம்பொன்னாற் செய்து பூட்டப்பட்டு இப்பொழுது கழன்று விழுகின்ற தொடியை நோக்கி; நம் (அரிய) சிறந்த புதல்வன் நம்மை அணைத்துக்கொண்டு அழுகின்ற இனிய குரலைக் கேட்குந் தோறும்; ஆசைகொள்ளுகின்ற மனத்தை யுடையேமாகிய நமக்கு மனமகிழச்சி உண்டாகும்படி; நம்மிடத்து வந்தெய்தினர் கண்டாய்! ஆதலின், இனி நீங்கள் இருவீரும் மனையறஞ் செய்துகொண்டு நெடுங்காலம் வாழ்வீராக!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பார்வை வேட்டுவன் படு வலை வெரீஇ,",
+      "words": [
+        {
+          "form": "பார்வை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேட்டுவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெரீஇ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நெடுங் கால் கணந்துள்அம் புலம்பு கொள் தௌ விளி",
+      "words": [
+        {
+          "form": "நெடுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கணந்துள்அம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலம்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தௌ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "சுரம் செல் கோடியர் கதுமென இசைக்கும்",
+      "words": [
+        {
+          "form": "சுரம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோடியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதுமென",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இசைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நரம்பொடு கொள்ளும் அத்தத்து ஆங்கண்",
+      "words": [
+        {
+          "form": "நரம்பொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்ளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அத்தத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆங்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "கடுங் குரற் பம்பைக் கத நாய் வடுகர்",
+      "words": [
+        {
+          "form": "கடுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குரற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பம்பைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வடுகர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "நெடும் பெருங் குன்றம் நீந்தி, நம் வயின்",
+      "words": [
+        {
+          "form": "நெடும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குன்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீந்தி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "வந்தனர்; வாழி - தோழி! - கையதை",
+      "words": [
+        {
+          "form": "வந்தனர்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோழி!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கையதை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "செம் பொன் கழல்தொடி நோக்கி, மா மகன்",
+      "words": [
+        {
+          "form": "செம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழல்தொடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "கவவுக் கொள் இன் குரல் கேட்டொறும்,",
+      "words": [
+        {
+          "form": "கவவுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேட்டொறும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "அவவுக் கொள் மனத்தேம் ஆகிய நமக்கே.",
+      "words": [
+        {
+          "form": "அவவுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மனத்தேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆகிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நமக்கே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "- குடவாயிற் கீரத்தனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடவாயிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீரத்தனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை212.html",
+  "verified": false,
+  "number": 212,
+  "poet": "குடவாயிற் கீரத்தனார்."
+}

@@ -1,0 +1,514 @@
+{
+  "id": "natrinai_098",
+  "poem": "natrinai",
+  "tinai": "kurinji",
+  "sangamTamil": "எய்ம் முள் அன்ன பரூஉ மயிர்எருத்தின்\n>செய்ய்ம்ம் மேவல் சிறு கட் பன்றி\nஓங்கு மலை வியன் புனம் படீஇயர், வீங்கு பொறி\nநூழை நுழையும் பொழுதில், தாழாது\nபாங்கர்ப் பக்கத்துப் பல்லி பட்டென,\nமெல்லமெல்லப் பிறக்கே பெயர்ந்து, தன்\nகல் அளைப் பள்ளி வதியும் நாடன்!\nஎந்தை ஓம்பும் கடியுடை வியல் நகர்த்\nதுஞ்சாக் காவலர் இகழ் பதம் நோக்கி,\nஇரவின் வரூஉம் அதனினும் கொடிதே-\nவைகலும் பொருந்தல் ஒல்லாக்\nகண்ணொடு, வாரா என் நார் இல் நெஞ்சே!\n- உக்கிரப் பெருவழுதி.",
+  "urai": "முள்ளம் பன்றியின் முட்போன்ற பருத்த மயிரையுடைய பிடரும் சிறிய கண்ணும் வயலிற் சென்றுண்ணும் விருப்பமுமுடைய பன்றி; உயர்ந்த மலையிடத்துள்ள இடமகன்ற தினைக் கொல்லையிலே சென்று மேயும் பொருட்டுப் பெரிய இயந்திரமமைந்த புழைவழியிலே சென்று புகும்பொழுது; தாழாது விரைந்து நல்ல பக்கத்திலிருந்து பல்லியடித்தலும் அதனை அறிந்து ஆங்குச் சென்றால் ஊறு நிகழும் என்று அஞ்சி; மெல்ல மெல்லப் பின்னே மீண்டுவந்து தன் கல்முழையிலுள்ள பள்ளியிடத்தே தங்காநிற்கும்; மலைநாடனே ! எந்தையாலே பாதுகாக்கப்படுகின்ற காவலையுடைய அகன்ற மாளிகையிடத்துத் துஞ்சாமற் காக்குங் காவலர்தாம் சிறிது அயர்ந்திருக்கும் பருவமறிந்து; நீ இரவின்கண் வந்து முயங்கிச் செல்லும் அதனினும் காட்டில் நாள்தோறும் நீ வரும் நெறியின் ஏதத்தைக் கருதுவதனாலே துயிலப் பெறாது என்கண்ணும் கொடிதாயிராநின்றது; அன்றியும் நின்பாற் சென்று வாராத என்பால் அன்பற்ற என்னெஞ்சமும் கொடிதாயிராநின்றது காண்!;",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "எய்ம் முள் அன்ன பரூஉ மயிர்எருத்தின்",
+      "words": [
+        {
+          "form": "எய்ம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரூஉ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மயிர்எருத்தின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": ">செய்ய்ம்ம் மேவல் சிறு கட் பன்றி",
+      "words": [
+        {
+          "form": ">செய்ய்ம்ம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேவல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பன்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "ஓங்கு மலை வியன் புனம் படீஇயர், வீங்கு பொறி",
+      "words": [
+        {
+          "form": "ஓங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புனம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படீஇயர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வீங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நூழை நுழையும் பொழுதில், தாழாது",
+      "words": [
+        {
+          "form": "நூழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுழையும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொழுதில்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாழாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "பாங்கர்ப் பக்கத்துப் பல்லி பட்டென,",
+      "words": [
+        {
+          "form": "பாங்கர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பக்கத்துப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்லி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்டென,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "மெல்லமெல்லப் பிறக்கே பெயர்ந்து, தன்",
+      "words": [
+        {
+          "form": "மெல்லமெல்லப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறக்கே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயர்ந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "கல் அளைப் பள்ளி வதியும் நாடன்!",
+      "words": [
+        {
+          "form": "கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அளைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பள்ளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வதியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடன்!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "எந்தை ஓம்பும் கடியுடை வியல் நகர்த்",
+      "words": [
+        {
+          "form": "எந்தை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓம்பும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடியுடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நகர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "துஞ்சாக் காவலர் இகழ் பதம் நோக்கி,",
+      "words": [
+        {
+          "form": "துஞ்சாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காவலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இகழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பதம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "இரவின் வரூஉம் அதனினும் கொடிதே-",
+      "words": [
+        {
+          "form": "இரவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அதனினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொடிதே-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "வைகலும் பொருந்தல் ஒல்லாக்",
+      "words": [
+        {
+          "form": "வைகலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருந்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒல்லாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "கண்ணொடு, வாரா என் நார் இல் நெஞ்சே!",
+      "words": [
+        {
+          "form": "கண்ணொடு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாரா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சே!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- உக்கிரப் பெருவழுதி.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உக்கிரப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருவழுதி.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை098.html",
+  "verified": false,
+  "number": 98,
+  "poet": "உக்கிரப் பெருவழுதி."
+}

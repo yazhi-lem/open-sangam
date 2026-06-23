@@ -1,0 +1,549 @@
+{
+  "id": "natrinai_331",
+  "poem": "natrinai",
+  "tinai": "neytal",
+  "sangamTamil": "உவர் விளை உப்பின் உழாஅ உழவர்\nஒழுகை உமணர் வரு பதம் நோக்கி,\nகானல் இட்ட காவற் குப்பை,\nபுலவு மீன் உணங்கல் படு புள் ஓப்பி,\nமட நோக்கு ஆயமொடு உடன் ஊர்பு ஏறி\n'எந்தை திமில், இது, நுந்தை திமில்' என\nவளை நீர் வேட்டம் போகிய கிளைஞர்\nதிண் திமில் எண்ணும் தண் கடற் சேர்ப்ப!\nஇனிதேதெய்ய, எம் முனிவு இல் நல் ஊர்;\nஇனி, வரின் தவறும் இல்லை: எனையதூஉம்\nபிறர் பிறர் அறிதல் யாவது\nதமர் தமர் அறியாச் சேரியும் உடைத்தே.\n- உலோச்சனார்.",
+  "urai": "ஆங்குப் புலவு நாற்றத்தையுடைய மீனை உப்புப் படுத்துப் புலர்த்தும்பொழுது அவற்றைக் கொண்டுபோகவந்து விழுங் காக்கை முதலாய புள்ளினங்களை யோப்பி; மடப்பம் பொருந்திய நோக்கத்தையுடைய தோழியர் உடனே; உழாது விளைவிக்கும் நெய்தனில மாக்களாகிய பரதவர் உவர் நிலத்து விளைகின்ற உப்பினை; செறிவுடைய உப்பு வாணிகர் வருகின்ற காலம் நோக்கிக் கழிக்கரைச் சோலையருகிலே குவடாகக் குவித்த காவலையுடைய குவியலாகிய; அவ்வுப்புக் குவட்டில் பரதவர் மகளிர் ஏறி நின்று; இங்கு வருகின்றது எந்தையின் மீன் படகாகும் அங்கு வருகின்றது நின் தந்தையினது மீன் படகாகும் என்று; வளைந்த கடனீரில் வேட்டைமேற் சென்ற சுற்றத்தாருடைய வலிய மீன் படகுகளை எண்ணுகின்ற தண்ணிய கடற் சேர்ப்பனே! வெறுத்தலைக் கருதாத எம்முடைய நல்லவூர் மிக இனிமையுடையதாய் இரா நின்றது; இப்பொழுது முதலாக என்று வந்தாலும் யாதோர் ஊறுபாடும் இல்லை; சுற்றத்தார் ஒருவரையொருவர் அறியாத சேரியை உடையதாதலால்; எவ்வளவேனும் அயலார் ஒருவரையொருவர் அறிவது எவ்வண்ணமியலும்? ஆதலின் நீ அச்சமின்றி வருவாயாக!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உவர் விளை உப்பின் உழாஅ உழவர்",
+      "words": [
+        {
+          "form": "உவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உழாஅ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உழவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஒழுகை உமணர் வரு பதம் நோக்கி,",
+      "words": [
+        {
+          "form": "ஒழுகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உமணர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பதம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கானல் இட்ட காவற் குப்பை,",
+      "words": [
+        {
+          "form": "கானல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காவற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குப்பை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "புலவு மீன் உணங்கல் படு புள் ஓப்பி,",
+      "words": [
+        {
+          "form": "புலவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மீன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உணங்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓப்பி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "மட நோக்கு ஆயமொடு உடன் ஊர்பு ஏறி",
+      "words": [
+        {
+          "form": "மட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயமொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "'எந்தை திமில், இது, நுந்தை திமில்' என",
+      "words": [
+        {
+          "form": "'எந்தை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திமில்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இது,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுந்தை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திமில்'",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "வளை நீர் வேட்டம் போகிய கிளைஞர்",
+      "words": [
+        {
+          "form": "வளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேட்டம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போகிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளைஞர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "திண் திமில் எண்ணும் தண் கடற் சேர்ப்ப!",
+      "words": [
+        {
+          "form": "திண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திமில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எண்ணும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்ப்ப!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "இனிதேதெய்ய, எம் முனிவு இல் நல் ஊர்;",
+      "words": [
+        {
+          "form": "இனிதேதெய்ய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முனிவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊர்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "இனி, வரின் தவறும் இல்லை: எனையதூஉம்",
+      "words": [
+        {
+          "form": "இனி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லை:",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எனையதூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "பிறர் பிறர் அறிதல் யாவது",
+      "words": [
+        {
+          "form": "பிறர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறிதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாவது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "தமர் தமர் அறியாச் சேரியும் உடைத்தே.",
+      "words": [
+        {
+          "form": "தமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறியாச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேரியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடைத்தே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- உலோச்சனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உலோச்சனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை331.html",
+  "verified": false,
+  "number": 331,
+  "poet": "உலோச்சனார்."
+}

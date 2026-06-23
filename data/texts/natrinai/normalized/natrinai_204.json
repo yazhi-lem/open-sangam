@@ -1,0 +1,584 @@
+{
+  "id": "natrinai_204",
+  "poem": "natrinai",
+  "tinai": "kurinji",
+  "sangamTamil": "'தளிர் சேர் தண் தழை தைஇ, நுந்தை\nகுளிர் வாய் வியன் புனத்து எல் பட வருகோ?\nகுறுஞ் சுனைக் குவளை அடைச்சி, நாம் புணரிய\nநறுந் தண் சாரல் ஆடுகம் வருகோ?\nஇன் சொல் மேவலைப்பட்ட என் நெஞ்சு உணக்\nகூறு இனி; மடந்தை! நின் கூர் எயிறு உண்கு' என,\nயான் தன் மொழிதலின், மொழி எதிர் வந்து,\nதான் செய் குறி நிலை இனிய கூறி,\nஏறு பிரி மடப் பிணை கடுப்ப வேறுபட்டு,\nஉறு கழை நிவப்பின் சிறுகுடிப் பெயரும்\nகொடிச்சி செல்புறம் நோக்கி,\nவிடுத்த நெஞ்சம்! விடல் ஒல்லாதே?\n- மள்ளனார்.",
+  "urai": "மடந்தாய்! தளிர் சேர்ந்த மெல்லிய தழையை யுடுத்து நுந்தந்தையினுடைய கிளி கடி கருவியாலே பாதுகாக்கப்படுகின்ற அகன்ற தினைப்புனத்தின் கண்ணே பொழுது போதலும் வருவேனோ?; பறித்த சுனைக்குவளை மலரைச் சூடி நாம் பண்டு புணர்ந்த நறிய தண்ணிய மலைப்பக்கத்தில் விளையாடுவோமாதலால் அதற்கு அங்கு வருவேனோ?; இவற்றுக்கு விடையாக நின் இனிய மொழியை விரும்புதலால் அம்மொழி பெறாமல் வருந்துகின்ற என்னுள்ளங்கொண்டு மகிழும்படி இப்பொழுது ஒருமொழி கூறிக்காண்!; நின்னுடைய கூரிய எயிற்றைச் சுவைத்து மகிழ்வேன் என; யான் நெருங்கி அவள்பால் இனிய வார்த்தை பலவற்றைக் கூறலின்; என் சொல்லுக்கு எதிராக வந்து தான் முன்பு செய்த குறியிடத்து அழைத்துக் கொண்டுபோய் \"நீ பின்னர் என்னை முயங்குதி\" என இனிய மொழிகளைக் கூறி; கலைமானைப் பிரிந்து அகல்கின்ற பெண்மானைப்போல் நின்னை வேறாகக் கொண்டு மிக்க மூங்கில் உயர்ந்து தோன்றுதலையுடைய தன் சிறுகுடியின் கண்ணே பெயர்ந்து செல்லும் கொடிச்சி; செல்லுகின்ற பின்புறம் நோக்கி அவளைக் கைவிட்டு ஏமார்ந்திருந்த நெஞ்சமே!; ஒருத்தி நின் கையிலகப்பட்டால் அவளது நலனை நுகர்ந்து மகிழாது கைவிடலாமா, விடலாகாதே!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "'தளிர் சேர் தண் தழை தைஇ, நுந்தை",
+      "words": [
+        {
+          "form": "'தளிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தைஇ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுந்தை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "குளிர் வாய் வியன் புனத்து எல் பட வருகோ?",
+      "words": [
+        {
+          "form": "குளிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புனத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வருகோ?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "குறுஞ் சுனைக் குவளை அடைச்சி, நாம் புணரிய",
+      "words": [
+        {
+          "form": "குறுஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுனைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குவளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடைச்சி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புணரிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நறுந் தண் சாரல் ஆடுகம் வருகோ?",
+      "words": [
+        {
+          "form": "நறுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆடுகம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வருகோ?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "இன் சொல் மேவலைப்பட்ட என் நெஞ்சு உணக்",
+      "words": [
+        {
+          "form": "இன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேவலைப்பட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உணக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "கூறு இனி; மடந்தை! நின் கூர் எயிறு உண்கு' என,",
+      "words": [
+        {
+          "form": "கூறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இனி;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடந்தை!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எயிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உண்கு'",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "யான் தன் மொழிதலின், மொழி எதிர் வந்து,",
+      "words": [
+        {
+          "form": "யான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொழிதலின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "தான் செய் குறி நிலை இனிய கூறி,",
+      "words": [
+        {
+          "form": "தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இனிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூறி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "ஏறு பிரி மடப் பிணை கடுப்ப வேறுபட்டு,",
+      "words": [
+        {
+          "form": "ஏறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடுப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேறுபட்டு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "உறு கழை நிவப்பின் சிறுகுடிப் பெயரும்",
+      "words": [
+        {
+          "form": "உறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிவப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகுடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "கொடிச்சி செல்புறம் நோக்கி,",
+      "words": [
+        {
+          "form": "கொடிச்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்புறம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "விடுத்த நெஞ்சம்! விடல் ஒல்லாதே?",
+      "words": [
+        {
+          "form": "விடுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சம்!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒல்லாதே?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- மள்ளனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மள்ளனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை204.html",
+  "verified": false,
+  "number": 204,
+  "poet": "மள்ளனார்."
+}

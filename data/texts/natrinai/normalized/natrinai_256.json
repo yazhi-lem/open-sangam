@@ -1,0 +1,536 @@
+{
+  "id": "natrinai_256",
+  "poem": "natrinai",
+  "tinai": "palai",
+  "sangamTamil": "நீயே, பாடல் சான்ற பழி தபு சீறடி,\nஅல்கு பெரு நலத்து, அமர்த்த கண்ணை;\nகாடே, நிழல் கவின் இழந்த அழல் கவர் மரத்த,\nபுலம்பு வீற்றிருந்து நலம் சிதைந்தனவே;\nஇந் நிலை தவிர்ந்தனம் செலவே: வைந் நுதிக்\nகளவுடன் கமழ, பிடவுத் தளை அவிழ,\nகார் பெயல் செய்த காமர் காலை,\nமடப் பிணை தழீஇய மா எருத்து இரலை\nகாழ் கொள் வேலத்து ஆழ் சினை பயந்த\nகண் கவர் வரி நிழல் வதியும்\nதண் படு கானமும் தவிர்ந்தனம் செலவே.\n- பாலை பாடிய பெருங்கடுங்கோ.",
+  "urai": "நீதான் புலவராலே பாடுதற்கமைந்த குற்றமற்ற அழகிய சிறிய அடிகளுடனே பல்கிய பெரிய அழகு அமைந்த அமர்த்த கண்ணையுடையையாயிரா நின்றனை; காடுகளோ தீப்பற்றிய மரங்களையுடையனவாதலின் நிழலும் அழகும் நீங்கி ஒழிந்தன; அவ் வண்ணம் ஒழிதலும் தனிமை நிலைபெற்றிருத்தலினால் நன்மைகளெல்லாம் ஒருங்கே சிதைவுற்றன; இத் தன்மையாகிய நிலைமையினால் நின்னை உடன்கொண்டு சேறல் இயையாமையின் நின்னுடன் செல்லுதலைத் தவிர்ந்தனம்; அன்றிக் கூரிய நுனியையுடைய களாவின்மலர் ஒருங்கே மலர்ந்து மணங்கமழாநிற்பப் பிடாமலர் முறுக்குவாய் நெகிழ்ந்து மலர மேகந் தான் செய்ய வேண்டிய மழை பெய்தலைச் செய்யத் தொடங்கிய அழகிய கார்ப்பருவத்தில்; இளையபிணைமானைப் புணர்ந்த கரிய பிடரினை யுடைய கலைமான்; உள்ளே வயிர முற்றிய வேல மரத்தின் தாழ்ந்த கிளையினாற் பல்கிய காண்போர் கண்ணைக் கவர்ந்து கொள்ளும் வரி பொருந்திய நிழலிலே தங்கியிருக்கும்; குளிர்ச்சியுற்ற காட்டின் கண்ணே செல்லுவதனையும் தவிர்ந்தனம், ஆக இருவகைக் காலத்தும் நின்னைப் பிரியாதிருக்க நீ வருந்துவதென்னை? வருந்தாதே கொள்!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நீயே, பாடல் சான்ற பழி தபு சீறடி,",
+      "words": [
+        {
+          "form": "நீயே,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சான்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தபு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சீறடி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அல்கு பெரு நலத்து, அமர்த்த கண்ணை;",
+      "words": [
+        {
+          "form": "அல்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நலத்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அமர்த்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணை;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "காடே, நிழல் கவின் இழந்த அழல் கவர் மரத்த,",
+      "words": [
+        {
+          "form": "காடே,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிழல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இழந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரத்த,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "புலம்பு வீற்றிருந்து நலம் சிதைந்தனவே;",
+      "words": [
+        {
+          "form": "புலம்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வீற்றிருந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிதைந்தனவே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "இந் நிலை தவிர்ந்தனம் செலவே: வைந் நுதிக்",
+      "words": [
+        {
+          "form": "இந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவிர்ந்தனம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செலவே:",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வைந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுதிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "களவுடன் கமழ, பிடவுத் தளை அவிழ,",
+      "words": [
+        {
+          "form": "களவுடன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமழ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிடவுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவிழ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "கார் பெயல் செய்த காமர் காலை,",
+      "words": [
+        {
+          "form": "கார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காலை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "மடப் பிணை தழீஇய மா எருத்து இரலை",
+      "words": [
+        {
+          "form": "மடப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தழீஇய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எருத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இரலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "காழ் கொள் வேலத்து ஆழ் சினை பயந்த",
+      "words": [
+        {
+          "form": "காழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேலத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "கண் கவர் வரி நிழல் வதியும்",
+      "words": [
+        {
+          "form": "கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிழல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வதியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "தண் படு கானமும் தவிர்ந்தனம் செலவே.",
+      "words": [
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கானமும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவிர்ந்தனம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செலவே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "- பாலை பாடிய பெருங்கடுங்கோ.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாடிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்கடுங்கோ.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை256.html",
+  "verified": false,
+  "number": 256,
+  "poet": "பாலை பாடிய பெருங்கடுங்கோ."
+}

@@ -1,0 +1,764 @@
+{
+  "id": "purananooru_135",
+  "poem": "purananooru",
+  "tinai": "unknown",
+  "sangamTamil": "கொடுவரி வழங்கும் கோடுயர் நெடுவரை,\nஅருளிடர்ச் சிறுநெறி ஏறலின், வருந்தித்,\nதடவரல் கொண்ட தகைமெல் ஒதுக்கின்,\nவளைக்கை விறலியென் பின்னள் ஆகப்,\nபொன்வார்ந் தன்ன புரிஅடங்கு நரம்பின்\nவரிநவில் பனுவல் புலம்பெயர்ந்து இசைப்பப்,\nபடுமலை நின்ற பயங்கெழு சீறியாழ்\nஒல்கல் உள்ளமொடு ஒருபுடைத் தழீஇப்,\nபுகழ்சால் சிறப்பின்நின் நல்லிசை உள்ளி\nவந்தெனன் எந்தை! யானே; யென்றும்\nமன்றுபடு பரிசிலர்க் காணின், கன்றொடு\nகறையடி யானை இரியல் போக்கும்\nமலைகெழு நாடன்! மாவேள் ஆஅய்!\nகளிறும் அன்றே; மாவும் அன்றே;\nஒளிறுபடைப் புரவிய தேரும் அன்றே;\nபாணர், படுநர், பரிசிலர், ஆங்கவர்,\nதமதெனத் தொடுக்குவர் ஆயின், எமதெனப்\nபற்றல் தேற்றாப் பயங்கெழு தாயமொடு,\nஅன்ன வாக, நின் ஊழி; நின்னைக்\nகாண்டல் வேண்டிய அளவை; வேண்டார்\nஉறுமுரண் கடந்த ஆற்றல்\nபொதுமீக் கூற்றத்து நாடுகிழ வோயே!",
+  "urai": "பொதியில் நாட்டைப் ‘பொதுமீக்கூற்றம்’ என்றும் வழங்கினர். அது பொதியமலையைச் சூழ்ந்த நாடு. அதன் அரசன் ஆய். அவன் பெருங்கொடையாளி (மா வேள்). வரிப்புலி விளையாடும் உயர்ந்த மலையின் சிறு வழியில் ஏறுவதால் வருத்தமுற்று, தடவிக்கொண்டு நடக்கும் விறலி என் பின்னே வர, படுமலைப் பண்ணில் வரிப்பாடல் பாடிய, பொன் போன்ற நரம்பினை உடைய யாழைத் தளர்ந்த உள்ளத்தொடு ஒருபக்கம் தழுவிக்கொண்டு, பலரும் புகழும் உன்னை நாடி வந்துள்ளேன். பரிசில் வேண்டுவோரை மன்றத்தில் கண்டால் யானைகளை அதன் கன்றுகளோடு வழங்குவாய் என்கின்றனர். குதிரை, தேர் ஆகியவற்றையும் நீ வழங்குவாய். பாணர், பாடுநர் ஆகியோருக்கும் வழங்குவாய். உன் மூதாதையர் விட்டுச்சென்ற தாயத்தையும் வழங்குவாய். உன் விருப்பம்.",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கொடுவரி வழங்கும் கோடுயர் நெடுவரை,",
+      "words": [
+        {
+          "form": "கொடுவரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோடுயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுவரை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அருளிடர்ச் சிறுநெறி ஏறலின், வருந்தித்,",
+      "words": [
+        {
+          "form": "அருளிடர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுநெறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏறலின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வருந்தித்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தடவரல் கொண்ட தகைமெல் ஒதுக்கின்,",
+      "words": [
+        {
+          "form": "தடவரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகைமெல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒதுக்கின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "வளைக்கை விறலியென் பின்னள் ஆகப்,",
+      "words": [
+        {
+          "form": "வளைக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விறலியென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பின்னள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆகப்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "பொன்வார்ந் தன்ன புரிஅடங்கு நரம்பின்",
+      "words": [
+        {
+          "form": "பொன்வார்ந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புரிஅடங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நரம்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "வரிநவில் பனுவல் புலம்பெயர்ந்து இசைப்பப்,",
+      "words": [
+        {
+          "form": "வரிநவில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பனுவல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலம்பெயர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இசைப்பப்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "படுமலை நின்ற பயங்கெழு சீறியாழ்",
+      "words": [
+        {
+          "form": "படுமலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயங்கெழு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சீறியாழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "ஒல்கல் உள்ளமொடு ஒருபுடைத் தழீஇப்,",
+      "words": [
+        {
+          "form": "ஒல்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளமொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒருபுடைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தழீஇப்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "புகழ்சால் சிறப்பின்நின் நல்லிசை உள்ளி",
+      "words": [
+        {
+          "form": "புகழ்சால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறப்பின்நின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்லிசை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "வந்தெனன் எந்தை! யானே; யென்றும்",
+      "words": [
+        {
+          "form": "வந்தெனன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எந்தை!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யென்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "மன்றுபடு பரிசிலர்க் காணின், கன்றொடு",
+      "words": [
+        {
+          "form": "மன்றுபடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிசிலர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காணின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கன்றொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "கறையடி யானை இரியல் போக்கும்",
+      "words": [
+        {
+          "form": "கறையடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இரியல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "மலைகெழு நாடன்! மாவேள் ஆஅய்!",
+      "words": [
+        {
+          "form": "மலைகெழு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடன்!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாவேள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆஅய்!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "களிறும் அன்றே; மாவும் அன்றே;",
+      "words": [
+        {
+          "form": "களிறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்றே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்றே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "ஒளிறுபடைப் புரவிய தேரும் அன்றே;",
+      "words": [
+        {
+          "form": "ஒளிறுபடைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புரவிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்றே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "பாணர், படுநர், பரிசிலர், ஆங்கவர்,",
+      "words": [
+        {
+          "form": "பாணர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படுநர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிசிலர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆங்கவர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "தமதெனத் தொடுக்குவர் ஆயின், எமதெனப்",
+      "words": [
+        {
+          "form": "தமதெனத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடுக்குவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எமதெனப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "பற்றல் தேற்றாப் பயங்கெழு தாயமொடு,",
+      "words": [
+        {
+          "form": "பற்றல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேற்றாப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயங்கெழு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாயமொடு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "அன்ன வாக, நின் ஊழி; நின்னைக்",
+      "words": [
+        {
+          "form": "அன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாக,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊழி;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்னைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 20,
+      "text": "காண்டல் வேண்டிய அளவை; வேண்டார்",
+      "words": [
+        {
+          "form": "காண்டல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அளவை;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 21,
+      "text": "உறுமுரண் கடந்த ஆற்றல்",
+      "words": [
+        {
+          "form": "உறுமுரண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆற்றல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 22,
+      "text": "பொதுமீக் கூற்றத்து நாடுகிழ வோயே!",
+      "words": [
+        {
+          "form": "பொதுமீக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூற்றத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடுகிழ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வோயே!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/purananooru/purananooru-புறநானூறு135.html",
+  "verified": false,
+  "number": 135,
+  "poet": null
+}

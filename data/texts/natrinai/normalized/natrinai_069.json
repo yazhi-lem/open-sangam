@@ -1,0 +1,542 @@
+{
+  "id": "natrinai_069",
+  "poem": "natrinai",
+  "tinai": "mullai",
+  "sangamTamil": "பல் கதிர் மண்டிலம் பகல் செய்து ஆற்றி,\nசேய் உயர் பெரு வரைச் சென்று, அவண் மறைய,\nபறவை பார்ப்புவயின் அடைய, புறவில்\nமா எருத்து இரலை மடப் பிணை தழுவ,\nமுல்லை முகை வாய் திறப்ப, பல் வயின்\nதோன்றி தோன்றுபு புதல் விளக்கு உறாஅ,\nமதர்வை நல் ஆன் மாசு இல் தெண் மணி,\nகொடுங் கோல் கோவலர் குழலோடு ஒன்றி,\nஐது வந்து இசைக்கும் அருள் இல் மாலை,\nஆள்வினைக்கு அகன்றோர் சென்ற நாட்டும்\nஇனையவாகித் தோன்றின்,\nவினை வலித்து அமைதல் ஆற்றலர்மன்னே!\n- சேகம்பூதனார்.",
+  "urai": "பல கதிர்களையுடைய ஆதித்த மண்டிலம் பகற்பொழுதைச் செய்து முடித்து மிகவுயர்ந்த பெரிய அத்தமயமலையிற்சென்று அங்கே மறையவும்; பறவைகள் தம் பிள்ளைகளிருக்கும் கூட்டிற் சென்று தங்கியிருப்பவும்; காட்டின் கண்ணே கரிய பிடரியையுடைய கலைமான் இளைமையையுடைய தன் பெண்மானைத் தழுவியிருப்பவும்; முல்லையரும்புகள் மலரவும்; பலவிடங்களிலுள்ள புதர் தோறும் காந்தள் தழைத்துத் தன் மலராகிய விளக்கேந்தி நிற்பவும்; செம்மாப்பையுடைய நல்ல பசுவின் குற்றமற்ற மணியின் தெளிந்த ஓசை வளைந்த கோலையுடைய ஆயர்தங் குழலோசையோடு சேர்ந்து மெல்லிதாக வந்து ஒலியாநிற்கும் அருள் இல்லாத இம்மாலைப் பொழுதானது; பொருளீட்டு முயற்சியால் நம்மைக் கைவிட்டு அகன்ற தலைவர் சென்ற நாட்டிலும் இத்தன்மையாகத் தோன்றுமாயின்; அவர் தாம் ஏறட்டுக் கொண்ட செயலின் கண்ணே உறுதிகொண்டு தங்கியிருப்பாரல்லர்; அப்படி இல்லாமற் கழிகின்றது;",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பல் கதிர் மண்டிலம் பகல் செய்து ஆற்றி,",
+      "words": [
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மண்டிலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆற்றி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சேய் உயர் பெரு வரைச் சென்று, அவண் மறைய,",
+      "words": [
+        {
+          "form": "சேய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்று,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறைய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பறவை பார்ப்புவயின் அடைய, புறவில்",
+      "words": [
+        {
+          "form": "பறவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பார்ப்புவயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடைய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புறவில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மா எருத்து இரலை மடப் பிணை தழுவ,",
+      "words": [
+        {
+          "form": "மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எருத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இரலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தழுவ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "முல்லை முகை வாய் திறப்ப, பல் வயின்",
+      "words": [
+        {
+          "form": "முல்லை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திறப்ப,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "தோன்றி தோன்றுபு புதல் விளக்கு உறாஅ,",
+      "words": [
+        {
+          "form": "தோன்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோன்றுபு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உறாஅ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "மதர்வை நல் ஆன் மாசு இல் தெண் மணி,",
+      "words": [
+        {
+          "form": "மதர்வை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாசு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மணி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "கொடுங் கோல் கோவலர் குழலோடு ஒன்றி,",
+      "words": [
+        {
+          "form": "கொடுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோவலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழலோடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒன்றி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "ஐது வந்து இசைக்கும் அருள் இல் மாலை,",
+      "words": [
+        {
+          "form": "ஐது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இசைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாலை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "ஆள்வினைக்கு அகன்றோர் சென்ற நாட்டும்",
+      "words": [
+        {
+          "form": "ஆள்வினைக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அகன்றோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "இனையவாகித் தோன்றின்,",
+      "words": [
+        {
+          "form": "இனையவாகித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோன்றின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "வினை வலித்து அமைதல் ஆற்றலர்மன்னே!",
+      "words": [
+        {
+          "form": "வினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வலித்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அமைதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆற்றலர்மன்னே!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- சேகம்பூதனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேகம்பூதனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை069.html",
+  "verified": false,
+  "number": 69,
+  "poet": "சேகம்பூதனார்."
+}

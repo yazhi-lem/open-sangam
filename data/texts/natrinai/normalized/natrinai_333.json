@@ -1,0 +1,591 @@
+{
+  "id": "natrinai_333",
+  "poem": "natrinai",
+  "tinai": "palai",
+  "sangamTamil": "மழை தொழில் உலந்து, மா விசும்பு உகந்தென,\nகழை கவின் அழிந்த கல் அதர்ச் சிறு நெறிப்\nபரல் அவல் ஊறல் சிறு நீர் மருங்கின்,\nபூ நுதல் யானையொடு புலி பொருது உண்ணும்\nசுரன் இறந்து, அரிய என்னார், உரன் அழிந்து\nஉள் மலி நெஞ்சமொடு வண்மை வேண்டி,\nஅரும் பொருட்கு அகன்ற காதலர் முயக்கு எதிர்ந்து,\nதிருந்திழைப் பணைத் தோள் பெறுநர் போலும்;\nநீங்குகமாதோ நின் அவலம் - ஓங்குமிசை,\nஉயர் புகழ் நல் இல் ஒண் சுவர்ப் பொருந்தி\nநயவரு குரல பல்லி,\nநள்ளென் யாமத்து, உள்ளுதொறும் படுமே.\n- கள்ளிக் குடிப் பூதம் புல்லனார்.",
+  "urai": "தோழீ! உயர்ந்த இடத்தில் உயர்ந்த புகழையுடைய நல்லவீட்டின் கண்ணே; செறிந்த இரவு நடு யாமத்தில் நாம் நம் காதலரை நினைக்குந்தோறும்; இனிமையான குரலையுடைய பல்லி; ஒள்ளிய சுவரிலே பொருந்தி நின்றுநன்மையான சொற்களைக் குறிப்பாற் கூறாநின்றது; ஆதலின் மேகம் தான் செய்ய வேண்டிய பெய்தற் றொழிலை இன்மையாக்கிக் கரிய ஆகாயத்திலே சென்றொழிந்ததனால்; வெப்பமிக்கு மூங்கில் எல்லாம் வாடி அழகழிந்த மலை வழியின் சிறிய நெறியிலே; பருக்கைக் கற்கள் நிரம்பிய பள்ளத்தில் ஊறுகின்ற மிகக் குறைவுபட்ட சிறிய நீரிடத்தில்; பொலிவு பெற்ற நெற்றியையுடைய யானையொடு புலி போர் செய்து அந் நீரையுண்ணுகின்ற சுரநெறியிலே சென்று; ஈட்டப்படும் பொருள் நமக்கு அரியவாம் என்று நினையாமல் நல்லறிவிழந்து, உள்ளே மகிழ்ச்சியுற்ற வன்மைமிக்க நெஞ்சுடனே தாம் வண்மைமிக்குடையராயிருத்தலை விரும்பி; அரிய பொருள் காரணமாக அகன்ற நங் காதலர்; நின்னை முயங்குவதை எதிர் நோக்கித் திருத்தமாகிய கலன்களை அணிந்த நின் பருத்த தோளை இன்றுவந்து கூடுவார் போலத் தோன்றாநின்றது காண்! இனி நின் அவலம் நீங்குவாயாக!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மழை தொழில் உலந்து, மா விசும்பு உகந்தென,",
+      "words": [
+        {
+          "form": "மழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உலந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விசும்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உகந்தென,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கழை கவின் அழிந்த கல் அதர்ச் சிறு நெறிப்",
+      "words": [
+        {
+          "form": "கழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அதர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெறிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பரல் அவல் ஊறல் சிறு நீர் மருங்கின்,",
+      "words": [
+        {
+          "form": "பரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊறல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மருங்கின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பூ நுதல் யானையொடு புலி பொருது உண்ணும்",
+      "words": [
+        {
+          "form": "பூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானையொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உண்ணும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "சுரன் இறந்து, அரிய என்னார், உரன் அழிந்து",
+      "words": [
+        {
+          "form": "சுரன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இறந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அரிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்னார்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உரன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "உள் மலி நெஞ்சமொடு வண்மை வேண்டி,",
+      "words": [
+        {
+          "form": "உள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சமொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "அரும் பொருட்கு அகன்ற காதலர் முயக்கு எதிர்ந்து,",
+      "words": [
+        {
+          "form": "அரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருட்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அகன்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காதலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முயக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எதிர்ந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "திருந்திழைப் பணைத் தோள் பெறுநர் போலும்;",
+      "words": [
+        {
+          "form": "திருந்திழைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பணைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறுநர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலும்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "நீங்குகமாதோ நின் அவலம் - ஓங்குமிசை,",
+      "words": [
+        {
+          "form": "நீங்குகமாதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓங்குமிசை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "உயர் புகழ் நல் இல் ஒண் சுவர்ப் பொருந்தி",
+      "words": [
+        {
+          "form": "உயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுவர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருந்தி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "நயவரு குரல பல்லி,",
+      "words": [
+        {
+          "form": "நயவரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குரல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்லி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "நள்ளென் யாமத்து, உள்ளுதொறும் படுமே.",
+      "words": [
+        {
+          "form": "நள்ளென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாமத்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளுதொறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படுமே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- கள்ளிக் குடிப் பூதம் புல்லனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கள்ளிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூதம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புல்லனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை333.html",
+  "verified": false,
+  "number": 333,
+  "poet": "கள்ளிக் குடிப் பூதம் புல்லனார்."
+}

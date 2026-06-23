@@ -1,0 +1,405 @@
+{
+  "id": "natrinai_253",
+  "poem": "natrinai",
+  "tinai": "kurinji",
+  "sangamTamil": "புள்ளுப் பதி சேரினும், புணர்ந்தோர்க் காணினும்,\nபள்ளி யானையின் வெய்ய உயிரினை,\nகழிபட வருந்திய எவ்வமொடு பெரிது அழிந்து\nஎனவ கேளாய், நினையினை, நீ நனி:\nஉள்ளினும் பனிக்கும் - ஒள் இழைக் குறுமகள்,\nபேர் இசை உருமொடு மாரி முற்றிய,\nபல் குடைக் கள்ளின் வண் மகிழ்ப் பாரி,\nபலவு உறு குன்றம் போல,\nபெருங் கவின் எய்திய அருங் காப்பினளே.\n- கபிலர்.",
+  "urai": "ஒள்ளிய இழையை யணிந்த இளமகளாகிய தலைவி பெரிய முழக்கமுற்ற இடியுடனே மழை மாறாது சூழ்ந்து பெய்தலையுடைய பலவாகிய பனங்குடையிலிட்டுண்ணும் கள்ளினாலாகிய பேருணவையுடைய பாரியினது; பலாமரமிக்க பறம்புமலை போல; பெரிய அழகு அமைதலாலே இல்வயிற் செறிக்கப் பெற்று அரிய காவலுட்பட்டவளாயினாள்; அங்ஙனம் காவலுட்படுதலானே இக் களவொழுக்கத்தைக் கருதினாலும் நடுங்குந் தன்மையளாயிராநின்றாள்; நீதானும் புள்ளினம் தம்தம் கூட்டின்கண்ணே சென்று கூடியின்புற்றாலும் தலைவனுந் தலைவியுமாகக் கூடிப் புணர்ந்தாரைக் கண்ணாலே கண்டாலும்; படுக்கையிலே கிடந்த யானைபோல வெய்ய பெருமூச்சினையுடையையாய்; மிகுதிப்பட வருத்தமுற்ற துன்பத்துடனே பெரிதும் அழிந்து யான் கூறுவனவற்றையுங் கேளாது; மிகக் கருதுந் தன்மையுடையையாயினை; இங்ஙனம் வருந்தியாவதென்னோ? இன்னே சென்று வரைவொடு வந்து புகுதுவாய்; வரைந்து கொள்வாய்; யான் கூறுவன இவைகளேயாகும்;",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "புள்ளுப் பதி சேரினும், புணர்ந்தோர்க் காணினும்,",
+      "words": [
+        {
+          "form": "புள்ளுப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேரினும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புணர்ந்தோர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காணினும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பள்ளி யானையின் வெய்ய உயிரினை,",
+      "words": [
+        {
+          "form": "பள்ளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானையின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெய்ய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உயிரினை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கழிபட வருந்திய எவ்வமொடு பெரிது அழிந்து",
+      "words": [
+        {
+          "form": "கழிபட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வருந்திய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எவ்வமொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரிது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "எனவ கேளாய், நினையினை, நீ நனி:",
+      "words": [
+        {
+          "form": "எனவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேளாய்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நினையினை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நனி:",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "உள்ளினும் பனிக்கும் - ஒள் இழைக் குறுமகள்,",
+      "words": [
+        {
+          "form": "உள்ளினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பனிக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இழைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறுமகள்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "பேர் இசை உருமொடு மாரி முற்றிய,",
+      "words": [
+        {
+          "form": "பேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இசை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உருமொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முற்றிய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பல் குடைக் கள்ளின் வண் மகிழ்ப் பாரி,",
+      "words": [
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கள்ளின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகிழ்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாரி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "பலவு உறு குன்றம் போல,",
+      "words": [
+        {
+          "form": "பலவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குன்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போல,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "பெருங் கவின் எய்திய அருங் காப்பினளே.",
+      "words": [
+        {
+          "form": "பெருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எய்திய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காப்பினளே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "- கபிலர்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கபிலர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை253.html",
+  "verified": false,
+  "number": 253,
+  "poet": "கபிலர்."
+}

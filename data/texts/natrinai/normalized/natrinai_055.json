@@ -1,0 +1,514 @@
+{
+  "id": "natrinai_055",
+  "poem": "natrinai",
+  "tinai": "kurinji",
+  "sangamTamil": "ஓங்கு மலை நாட! ஒழிக, நின் வாய்மை\nகாம்பு தலைமணந்த கல் அதர்ச் சிறு நெறி,\nஉறு பகை பேணாது, இரவின் வந்து, இவள்\nபொறி கிளர் ஆகம் புல்ல, தோள் சேர்பு\nஅறுகாற் பறவை அளவு இல மொய்த்தலின்,\nகண் கோள் ஆக நோக்கி, 'பண்டும்\nஇனையையோ?' என வினவினள், யாயே;\nஅதன் எதிர் சொல்லாளாகி, அல்லாந்து,\nஎன் முகம் நோக்கியோளே: 'அன்னாய்!-\nயாங்கு உணர்ந்து உய்குவள்கொல்? என, மடுத்த\nசாந்த ஞெகிழி காட்டி-\nஈங்கு ஆயினவால்' என்றிசின் யானே.\n- பெருவழுதி.",
+  "urai": "ஓங்கிய மலைநாடனே! நீ கூறும்வாய்மைகள் எல்லாம் இப்படியே பொய்த்தொழிவனவாகுக!; மூங்கில்கள் நெருங்கிய கற்பாறை நெறியாகிய சிறிய வழியில் இரைதேடியுழலுகின்ற வேங்கை முதலாயமிக்க பகையைப் பொருட்படுத்தாது; இரவிடைவந்து இவளது திருவிளங்கிய மார்பை முயங்கி மகிழ, அதனால் உண்டாகிய புதுமணத்தைக் கருதி இவளுடைய தோளைச்சார்ந்து வண்டுகள் அளவில்லாதன மொய்த்தலினாலே; எம் அன்னை தன் கண்களாலே கொல்லுபவள் போல் நோக்கி \"நீ இதன் முன்னும் இப்படி வண்டுகளால் மொய்க்கப்பெற்ற தோளினையுடையையோ?\" என்று வினவினள்; அங்ஙனம் வினவலும், இவள் அதற்கு எதிர்மொழி சொல்ல அறியாளாய் வருத்தமுற்று என் முகத்தை நோக்கி நின்றாள்; அதனை அறிந்த யான் இவள் எப்படி ஆராய்ந்து மறைத்துக் கூறி யுய்குவள் என்றெண்ணி அன்னையை நோக்கி; அடுப்பிலிட்ட சந்தன விறகின் கொள்ளியை எடுத்துக் காட்டி; அன்னாய்! இவ்விறகினை அடுப்பிலிடுதலும் இதிலுள்ள சுரும்புகள் இவளுடைய தோளில் மொய்க்கின்றன காண்! என மறைத்துக் கூறினேன்; இங்ஙனம் எத்துணை நாள் நீ வரைந்து கொள்ளுதல் காரணமாகப் பொய்கூறி யுய்விப்பது?",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஓங்கு மலை நாட! ஒழிக, நின் வாய்மை",
+      "words": [
+        {
+          "form": "ஓங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒழிக,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "காம்பு தலைமணந்த கல் அதர்ச் சிறு நெறி,",
+      "words": [
+        {
+          "form": "காம்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைமணந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அதர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெறி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உறு பகை பேணாது, இரவின் வந்து, இவள்",
+      "words": [
+        {
+          "form": "உறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேணாது,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இரவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இவள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பொறி கிளர் ஆகம் புல்ல, தோள் சேர்பு",
+      "words": [
+        {
+          "form": "பொறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆகம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புல்ல,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "அறுகாற் பறவை அளவு இல மொய்த்தலின்,",
+      "words": [
+        {
+          "form": "அறுகாற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பறவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அளவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொய்த்தலின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "கண் கோள் ஆக நோக்கி, 'பண்டும்",
+      "words": [
+        {
+          "form": "கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "'பண்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "இனையையோ?' என வினவினள், யாயே;",
+      "words": [
+        {
+          "form": "இனையையோ?'",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினவினள்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாயே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "அதன் எதிர் சொல்லாளாகி, அல்லாந்து,",
+      "words": [
+        {
+          "form": "அதன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லாளாகி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அல்லாந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "என் முகம் நோக்கியோளே: 'அன்னாய்!-",
+      "words": [
+        {
+          "form": "என்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முகம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கியோளே:",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "'அன்னாய்!-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "யாங்கு உணர்ந்து உய்குவள்கொல்? என, மடுத்த",
+      "words": [
+        {
+          "form": "யாங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உணர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உய்குவள்கொல்?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "சாந்த ஞெகிழி காட்டி-",
+      "words": [
+        {
+          "form": "சாந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞெகிழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்டி-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "ஈங்கு ஆயினவால்' என்றிசின் யானே.",
+      "words": [
+        {
+          "form": "ஈங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயினவால்'",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றிசின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- பெருவழுதி.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருவழுதி.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை055.html",
+  "verified": false,
+  "number": 55,
+  "poet": "பெருவழுதி."
+}

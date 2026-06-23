@@ -1,0 +1,536 @@
+{
+  "id": "natrinai_203",
+  "poem": "natrinai",
+  "tinai": "neytal",
+  "sangamTamil": "முழங்கு திரை கொழீஇய மூரி எக்கர்,\nதடந் தாட் தாழை முள்ளுடை நெடுந் தோட்டு\nஅக மடல் பொதுளிய முகை முதிர் வான் பூங்\nகோடு வார்ந்தன்ன, வெண் பூத் தாழை\nஎறி திரை உதைத்தலின், பொங்கித் தாது சோர்பு,\nசிறுகுடிப் பாக்கத்து மறுகு புலா மறுக்கும்\nமணம் கமழ் கானல், இயைந்த நம் கேண்மை\nஒரு நாள் பிரியினும் உய்வு அரிது என்னாது,\nகதழ் பரி நெடுந் தேர் வரவு ஆண்டு அழுங்கச்\nசெய்த தன் தப்பல் அன்றியும்,\nஉயவுப் புணர்ந்தன்று, இவ் அழுங்கல் ஊரே.\n- உலோச்சனார்.",
+  "urai": "ஒலிக்கின்ற அலைகொழித்த பெரிய மணலானாகிய திடரின்கணுள்ள வளைந்த அடியையுடைய தாழையின்; முள்ளையுடைய நெடிய தொகுதியாகிய இலையின் உள்மடலிலே தோன்றிய; அரும்புமுதிர்ந்த வெளிய பொலிவு பெற்ற சங்கினை நீட்டித்து வைத்தாலொத்த வெளிய பூவையுடைய தாழை; எறிகின்ற அலை மோதுதலாலே பொங்கித் தாது உதிர்ந்து; சிறிய குடியையுடைய பாக்கத்துத் தெருவிலெழுகின்ற புலவுநாற்றத்தைப் போக்காநிற்கும் மணங் கமழ்கின்ற கடலருகிலுள்ள சோலையின் கண்ணே; காதலருடனே தொடர்ந்து ஒன்றிய நம்முடைய நட்பானது ஒருநாள் இடையீடுபட்டுப் பிரிந்தாலும் உயிருய்தல் அரிதாகுமென்று கருதாமல்; விரைந்த செலவினையுடைய குதிரைப்பூட்டிய அவரது நெடிய தேரின் வருகையை இனி அக் கானலிடத்து வாராது அலரால் மறிக்கப்பட்டு வருந்தச் செய்த தன்னுடைய தவறுகளை வெளிக்காட்டா திருப்பதன்றியும்; இப் பழிமொழியாகிய பேரிரைச்சலையுடைய ஊரானது இங்ஙனம் ஒருதேர் வருவதன்காரணந்தான் யாதோவென்று ஆராய்ந்து அதனால் வருத்தமும் அடைகின்றது; இஃதென்ன கொடுமையுடையது காண்? இங்ஙனமாயின் இனி எவ்வாறு அவருடன் களவொழுக்கம் நிகழாநிற்குமன்!;",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "முழங்கு திரை கொழீஇய மூரி எக்கர்,",
+      "words": [
+        {
+          "form": "முழங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொழீஇய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எக்கர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தடந் தாட் தாழை முள்ளுடை நெடுந் தோட்டு",
+      "words": [
+        {
+          "form": "தடந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முள்ளுடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோட்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "அக மடல் பொதுளிய முகை முதிர் வான் பூங்",
+      "words": [
+        {
+          "form": "அக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொதுளிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கோடு வார்ந்தன்ன, வெண் பூத் தாழை",
+      "words": [
+        {
+          "form": "கோடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வார்ந்தன்ன,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "எறி திரை உதைத்தலின், பொங்கித் தாது சோர்பு,",
+      "words": [
+        {
+          "form": "எறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உதைத்தலின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொங்கித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோர்பு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "சிறுகுடிப் பாக்கத்து மறுகு புலா மறுக்கும்",
+      "words": [
+        {
+          "form": "சிறுகுடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாக்கத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறுகு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறுக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "மணம் கமழ் கானல், இயைந்த நம் கேண்மை",
+      "words": [
+        {
+          "form": "மணம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கானல்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இயைந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "ஒரு நாள் பிரியினும் உய்வு அரிது என்னாது,",
+      "words": [
+        {
+          "form": "ஒரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிரியினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உய்வு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அரிது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்னாது,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "கதழ் பரி நெடுந் தேர் வரவு ஆண்டு அழுங்கச்",
+      "words": [
+        {
+          "form": "கதழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழுங்கச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "செய்த தன் தப்பல் அன்றியும்,",
+      "words": [
+        {
+          "form": "செய்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தப்பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்றியும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "உயவுப் புணர்ந்தன்று, இவ் அழுங்கல் ஊரே.",
+      "words": [
+        {
+          "form": "உயவுப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புணர்ந்தன்று,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இவ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழுங்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊரே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "- உலோச்சனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உலோச்சனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை203.html",
+  "verified": false,
+  "number": 203,
+  "poet": "உலோச்சனார்."
+}

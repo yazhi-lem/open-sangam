@@ -1,0 +1,488 @@
+{
+  "id": "natrinai_186",
+  "poem": "natrinai",
+  "tinai": "palai",
+  "sangamTamil": "கல் ஊற்று ஈண்டல கயன் அற, வாங்கி,\nஇரும் பிணர்த் தடக் கை நீட்டி, நீர் நொண்டு,\nபெருங் கை யானை பிடி எதிர் ஓடும்\nகானம் வெம்பிய வறம் கூர் கடத்திடை,\nவேனில் ஓதி நிறம் பெயர் முது போத்து,\nபாண் யாழ் கடைய, வாங்கி, பாங்கர்\nநெடு நிலை யாஅம் ஏறும் தொழில-\nபிறர்க்கு என முயலும் பேர் அருள் நெஞ்சமொடு\nகாமர் பொருட் பிணி போகிய\nநாம் வெங் காதலர் சென்ற ஆறே.\n- ஆசிரியர் அறியப்படவில்லை.",
+  "urai": "கல்லின்கண்ணே ஊறுகின்ற ஊற்றிற் சேர்தலையுடைய நீரைப் பெரிய சருச்சரையுடைய நீண்ட துதிக்கையை நீட்டி; அவ் வூற்றுக் குழியில் அற வாங்கி முகந்து கொண்டு; பெரிய கையையுடைய களிற்றியானை தன் பிடியானையினெதிரே ஓடாநிற்கும்; காடு முற்றும் வெப்பமடைந்த வறன் மிக்க கற்சுரத்திலே; தன் வாழ்நாளும் பொருளும் இன்னோரன்ன எல்லாம் பிறர் பொருட்டேயென்று முயன்று முடிக்கும் பெரிய அருள் மிக்க நெஞ்சுடனே; அழகிய பொருளாசை பிணித்தலால்; எம் காதலர் சென்ற அச்சமுடைய நெறி; வேனிலின்கண் மாறி மாறித் தன்னிறம் வேறுபடுகின்ற முதிய ஓந்திப்போத்துத்தான்; ஏற இயலாது வருந்தியவிடத்து ஆண்டுச் செல்லும் பாணர் தம் அசைவு தீரச் சிறிது பொழுது யாழ் வாசிப்ப அதனைக் கேட்டலும் தன் வருத்தந்தீர்ந்து; பக்கத்தில் நீண்டு நிற்றலையுடைய யாமரத்தின் மீது ஏறுந்தொழிலையுடையனவென்பர்; அத்தகைய கொடிய காட்டில் அவர் செல்லுவதனை நினைத்தலான் இனி எவ்வண்ணம் யான் ஆற்றியுளேனாவேன்?",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கல் ஊற்று ஈண்டல கயன் அற, வாங்கி,",
+      "words": [
+        {
+          "form": "கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊற்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈண்டல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கயன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அற,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாங்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "இரும் பிணர்த் தடக் கை நீட்டி, நீர் நொண்டு,",
+      "words": [
+        {
+          "form": "இரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிணர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தடக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீட்டி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நொண்டு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பெருங் கை யானை பிடி எதிர் ஓடும்",
+      "words": [
+        {
+          "form": "பெருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓடும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கானம் வெம்பிய வறம் கூர் கடத்திடை,",
+      "words": [
+        {
+          "form": "கானம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெம்பிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வறம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடத்திடை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "வேனில் ஓதி நிறம் பெயர் முது போத்து,",
+      "words": [
+        {
+          "form": "வேனில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிறம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போத்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "பாண் யாழ் கடைய, வாங்கி, பாங்கர்",
+      "words": [
+        {
+          "form": "பாண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடைய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாங்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாங்கர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "நெடு நிலை யாஅம் ஏறும் தொழில-",
+      "words": [
+        {
+          "form": "நெடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாஅம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழில-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "பிறர்க்கு என முயலும் பேர் அருள் நெஞ்சமொடு",
+      "words": [
+        {
+          "form": "பிறர்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முயலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சமொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "காமர் பொருட் பிணி போகிய",
+      "words": [
+        {
+          "form": "காமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போகிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "நாம் வெங் காதலர் சென்ற ஆறே.",
+      "words": [
+        {
+          "form": "நாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காதலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆறே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "- ஆசிரியர் அறியப்படவில்லை.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆசிரியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறியப்படவில்லை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை186.html",
+  "verified": false,
+  "number": 186,
+  "poet": "ஆசிரியர் அறியப்படவில்லை."
+}

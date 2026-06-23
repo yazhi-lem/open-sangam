@@ -1,0 +1,716 @@
+{
+  "id": "purananooru_239",
+  "poem": "purananooru",
+  "tinai": "unknown",
+  "sangamTamil": "தொடி யுடைய தோள் மணந்தணன்;\nகடி காவிற் பூச் சூடினன்;\nதண் கமழுஞ் சாந்து நீவினன்;\nசெற் றோரை வழி தபுத்தனன்;\nநட் டோரை உயர்பு கூறினன்;\nவலியரென, வழி மொழியலன்;\nமெலியரென, மீக் கூறலன்;\nபிறரைத் தான் இரப் பறியலன்;\nஇரந் தோர்க்கு மறுப் பறியலன்;\nவேந்துடை அவையத்து ஓங்குபுகழ் தோற்றினன்;\nவருபடை எதிர் தாங்கினன்;\nபெயர் படை புறங் கண்டனன்;\nகடும் பரிய மாக் கடவினன்;\nநெடுந் தெருவில் தேர் வழங்கினன்;\nஓங்கு இயற் களிறு ஊர்ந்தனன்;\nதீஞ் செறி தசும்பு தொலைச்சினன்;\nபாண் உவப்பப் பசி தீர்த்தனன்;\nமயக்குடைய மொழி விடுத்தனன்; ஆங்குச்\nசெய்ப எல்லாம் செய்தனன் ஆகலின்\nஇடுக ஒன்றோ! சுடுக ஒன்றோ!\nபடுவழிப் படுக, இப் புகழ்வெய்யோன் தலையே!",
+  "urai": "கைப்புயத் தோளில் வளையல் அணிந்த இளைய மகளிரைத் தழுவினான். பூங்காவில் பறித்த மலர்களை அணிந்துகொண்டான். குளுமையும் மணமும் மிக்க சந்தனத்தைப் பூசிக்கொண்டான். அவனோடு பகைமை கொண்டவர்களின் கால்வழியே இல்லாமல் செய்தான். அவனது நண்பர்கள் உயர்வு எய்தும்படிச் செய்தான். ‘இவர் வலிமை மிக்கவர்’ என்று அவன்களுக்குக் கீழ்ப்படியமாட்டான். ‘இவர்கள் மெலியவர்கள்’ என்று எண்ணித் தன்னை மேம்படுத்திக்கொள்ளமாட்டான். பிறரிடம் தனக்கு அது வேண்டும் என்று கையேந்தமாட்டான். தன்னிடம் இரப்பவர் எதைக் கேட்டாலும் மறுக்காமல் வழங்குவான். வேந்தர் அவையில் தன் புகழை நிலைநாட்டிக் கொண்டவன். எதிர்த்து வரும் படையை முன்னே நின்று தாங்கிக்கொள்வான். இவனை எதிர்த்து நிற்க மாட்டாமல் திரும்பிச் செல்லும் படைகள் பலவற்றைக் கண்டவன். விரைந்து செல்லும் குதிரைமீது செல்வான். தெருவில் தேரில் செல்வான். உயர்ந்த களிற்றின் மீதும் செல்வான். இனிக்கும் தேறலை உடைய மொந்தைகளைப் பலருக்கும் வழங்கினான். பாணர்களின் பசியைப் போக்கினான். மயக்கிப் பேசி ஏமாற்றும் பழக்கம் இல்லாதவன்.",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தொடி யுடைய தோள் மணந்தணன்;",
+      "words": [
+        {
+          "form": "தொடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுடைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மணந்தணன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கடி காவிற் பூச் சூடினன்;",
+      "words": [
+        {
+          "form": "கடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காவிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூடினன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தண் கமழுஞ் சாந்து நீவினன்;",
+      "words": [
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமழுஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீவினன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "செற் றோரை வழி தபுத்தனன்;",
+      "words": [
+        {
+          "form": "செற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றோரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தபுத்தனன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "நட் டோரை உயர்பு கூறினன்;",
+      "words": [
+        {
+          "form": "நட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டோரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உயர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூறினன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "வலியரென, வழி மொழியலன்;",
+      "words": [
+        {
+          "form": "வலியரென,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொழியலன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "மெலியரென, மீக் கூறலன்;",
+      "words": [
+        {
+          "form": "மெலியரென,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மீக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூறலன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "பிறரைத் தான் இரப் பறியலன்;",
+      "words": [
+        {
+          "form": "பிறரைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இரப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பறியலன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "இரந் தோர்க்கு மறுப் பறியலன்;",
+      "words": [
+        {
+          "form": "இரந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோர்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறுப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பறியலன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "வேந்துடை அவையத்து ஓங்குபுகழ் தோற்றினன்;",
+      "words": [
+        {
+          "form": "வேந்துடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவையத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓங்குபுகழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோற்றினன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "வருபடை எதிர் தாங்கினன்;",
+      "words": [
+        {
+          "form": "வருபடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாங்கினன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "பெயர் படை புறங் கண்டனன்;",
+      "words": [
+        {
+          "form": "பெயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புறங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்டனன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "கடும் பரிய மாக் கடவினன்;",
+      "words": [
+        {
+          "form": "கடும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடவினன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "நெடுந் தெருவில் தேர் வழங்கினன்;",
+      "words": [
+        {
+          "form": "நெடுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெருவில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழங்கினன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "ஓங்கு இயற் களிறு ஊர்ந்தனன்;",
+      "words": [
+        {
+          "form": "ஓங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இயற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊர்ந்தனன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "தீஞ் செறி தசும்பு தொலைச்சினன்;",
+      "words": [
+        {
+          "form": "தீஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தசும்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொலைச்சினன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "பாண் உவப்பப் பசி தீர்த்தனன்;",
+      "words": [
+        {
+          "form": "பாண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உவப்பப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பசி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீர்த்தனன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "மயக்குடைய மொழி விடுத்தனன்; ஆங்குச்",
+      "words": [
+        {
+          "form": "மயக்குடைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடுத்தனன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆங்குச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "செய்ப எல்லாம் செய்தனன் ஆகலின்",
+      "words": [
+        {
+          "form": "செய்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எல்லாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்தனன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆகலின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 20,
+      "text": "இடுக ஒன்றோ! சுடுக ஒன்றோ!",
+      "words": [
+        {
+          "form": "இடுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒன்றோ!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுடுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒன்றோ!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 21,
+      "text": "படுவழிப் படுக, இப் புகழ்வெய்யோன் தலையே!",
+      "words": [
+        {
+          "form": "படுவழிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படுக,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகழ்வெய்யோன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலையே!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/purananooru/purananooru-புறநானூறு239.html",
+  "verified": false,
+  "number": 239,
+  "poet": null
+}

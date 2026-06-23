@@ -1,0 +1,412 @@
+{
+  "id": "natrinai_005",
+  "poem": "natrinai",
+  "tinai": "kurinji",
+  "sangamTamil": "நிலம் நீர் ஆர, குன்றம் குழைப்ப,\nஅகல் வாய்ப் பைஞ் சுனைப் பயிர் கால்யாப்ப,\nகுறவர் கொன்ற குறைக் கொடி நறைப் பவர்\nநறுங் காழ் ஆரம் சுற்றுவன அகைப்ப,\nபெரும் பெயல் பொழிந்த தொழில எழிலி\nதெற்கு ஏர்பு இரங்கும் அற்சிரக் காலையும்,\nஅரிதே, காதலர்ப் பிரிதல்- இன்று செல்\nஇளையர்த் தரூஉம் வாடையொடு\nமயங்கு இதழ் மழைக் கண் பயந்த, தூதே.\n- பெருங்குன்றூர்கிழார்.",
+  "urai": "தோழீ! இன்று பிரிந்து செல்லுகின்ற தோழியரை மீட்டும் நின்னை ஆற்றுவிக்குமாறு கூட்டுகின்ற வாடைக் காற்றினால் வருந்திய இமைகளையுடைய மழைபோல நீர்வடிக்கின்ற நின்கண்கள்தாம்; அவர் செல்லாதவாறு ஒரு குறிப்பாகிய தூதைத் தோற்றுவித்து விடுத்தன, அங்ஙனம் விடுத்த தூதின் காரணமாக; இனி மிக்க மழை பெய்தலாலே நிலம் நீரால் நிரம்பப் பெற்று நிறையவும், மலைமேலுள்ள மர முதலாயின தழைப்பவும், அகன்ற வாயையுடைய குளிர்ந்த சுனையில் நீர் நிறைதலால் அங்கு முளைத்தெழுந்த குளநெல் முதலிய பயிர்கள் நெருங்கி வளரவும்; கொல்லையின் கண்ணே குறவர் வெட்டியழித்தலானே குறைபட்ட மிக்க நறைக்கொடி மீண்டுந் தளிர்த்துக் கொடியாகி நறுமணங் கமழ்கின்ற வயிரமுற்றிய சந்தன மரத்தின் மீது படர்ந்து சுற்றியேறவும்; பெருமழையைப் பொழிந்த தொழிலையுடைய மேகமானது; தென்றிசையின் கண்ணே யெழுந்து செல்லுதலாலே பிரிந்தோர் இரங்குகின்ற முன்பனிக்காலத்தும்; நீ நின் காதலரைப் பிரிந்து உறைதல் அரியதாகும்;",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நிலம் நீர் ஆர, குன்றம் குழைப்ப,",
+      "words": [
+        {
+          "form": "நிலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆர,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குன்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழைப்ப,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அகல் வாய்ப் பைஞ் சுனைப் பயிர் கால்யாப்ப,",
+      "words": [
+        {
+          "form": "அகல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பைஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுனைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கால்யாப்ப,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "குறவர் கொன்ற குறைக் கொடி நறைப் பவர்",
+      "words": [
+        {
+          "form": "குறவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொன்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நறைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நறுங் காழ் ஆரம் சுற்றுவன அகைப்ப,",
+      "words": [
+        {
+          "form": "நறுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆரம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுற்றுவன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அகைப்ப,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "பெரும் பெயல் பொழிந்த தொழில எழிலி",
+      "words": [
+        {
+          "form": "பெரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொழிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழில",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழிலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "தெற்கு ஏர்பு இரங்கும் அற்சிரக் காலையும்,",
+      "words": [
+        {
+          "form": "தெற்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இரங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அற்சிரக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காலையும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "அரிதே, காதலர்ப் பிரிதல்- இன்று செல்",
+      "words": [
+        {
+          "form": "அரிதே,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காதலர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிரிதல்-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "இளையர்த் தரூஉம் வாடையொடு",
+      "words": [
+        {
+          "form": "இளையர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தரூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாடையொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "மயங்கு இதழ் மழைக் கண் பயந்த, தூதே.",
+      "words": [
+        {
+          "form": "மயங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இதழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மழைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயந்த,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூதே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "- பெருங்குன்றூர்கிழார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்குன்றூர்கிழார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை005.html",
+  "verified": false,
+  "number": 5,
+  "poet": "பெருங்குன்றூர்கிழார்."
+}

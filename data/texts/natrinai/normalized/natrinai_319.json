@@ -1,0 +1,508 @@
+{
+  "id": "natrinai_319",
+  "poem": "natrinai",
+  "tinai": "neytal",
+  "sangamTamil": "ஓதமும் ஒலி ஓவின்றே; ஊதையும்\nதாது உளர் கானல் தவ்வென்றன்றே;\nமணல் மலி மூதூர் அகல் நெடுந் தெருவில்,\nகூகைச் சேவல் குராலோடு ஏறி,\nஆர் இருஞ் சதுக்கத்து அஞ்சுவரக் குழறும்\nஅணங்கு கால் கிளரும், மயங்கு இருள் நடு நாள்;\nபாவை அன்ன பலர் ஆய் வனப்பின்,\nதட மென் பணைத் தோள், மடம் மிகு குறுமகள்\nசுணங்கு அணி வன முலை முயங்கல் உள்ளி,\nமீன் கண் துஞ்சும் பொழுதும்\nயான் கண் துஞ்சேன்; யாதுகொல் நிலையே?\n- வினைத்தொழில் சோகீரனார்.",
+  "urai": "கடலும் ஒலியடங்கி விட்டதே! ஊதை தாது உளர் கானலும் 'தௌ' என்றன்று ஊதைக்காற்று மகரந்தத்தைக் கிண்டுகின்ற கழிக்கரைச் சோலையும் பொலிவு அழிந்ததே! மணல் மிக்க இம் மூதூரின்கண் உள்ள அகன்ற நெடிய தெருவிலே கூகையின் சேவல் அதன் பெண் பறவையொடு சென்று மக்கள் இயங்காத பெரிய நாற்சந்தி கூடுமிடத்தில் யாவர்க்கும் அச்சமுண்டாகும்படி குழறா நிற்கும்; பேய்களும் வெளிப்பட்டு உலவாநிற்கும்; ஒருவரையொருவர் அறிதற்கியலாது மயங்கிய அத்தகைய இரவு நடுயாமத்தில்; கொல்லிப் பாவைபோன்ற பலரும் ஆராயும் அழகையும் அகன்ற மெல்லிய பருத்த தோளையுமுடைய மடப்பமிக்க இளமடந்தையினது; தேமல் படர்ந்த அழகிய கொங்கையை முயங்குதல் கருதி; மீன்கள் உறங்கும் இராப்பொழுதெல்லாம் யான் கண் உறங்கிலன்; ஆதலின் இனி என் நிலை எத்தன்மையதாய் முடியுமோ? அறிந்திலேன்.",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஓதமும் ஒலி ஓவின்றே; ஊதையும்",
+      "words": [
+        {
+          "form": "ஓதமும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓவின்றே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊதையும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தாது உளர் கானல் தவ்வென்றன்றே;",
+      "words": [
+        {
+          "form": "தாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உளர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கானல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவ்வென்றன்றே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மணல் மலி மூதூர் அகல் நெடுந் தெருவில்,",
+      "words": [
+        {
+          "form": "மணல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூதூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அகல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெருவில்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கூகைச் சேவல் குராலோடு ஏறி,",
+      "words": [
+        {
+          "form": "கூகைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேவல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குராலோடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏறி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "ஆர் இருஞ் சதுக்கத்து அஞ்சுவரக் குழறும்",
+      "words": [
+        {
+          "form": "ஆர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இருஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சதுக்கத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஞ்சுவரக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "அணங்கு கால் கிளரும், மயங்கு இருள் நடு நாள்;",
+      "words": [
+        {
+          "form": "அணங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளரும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மயங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாள்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பாவை அன்ன பலர் ஆய் வனப்பின்,",
+      "words": [
+        {
+          "form": "பாவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வனப்பின்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "தட மென் பணைத் தோள், மடம் மிகு குறுமகள்",
+      "words": [
+        {
+          "form": "தட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பணைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோள்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிகு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறுமகள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "சுணங்கு அணி வன முலை முயங்கல் உள்ளி,",
+      "words": [
+        {
+          "form": "சுணங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முயங்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "மீன் கண் துஞ்சும் பொழுதும்",
+      "words": [
+        {
+          "form": "மீன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துஞ்சும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொழுதும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "யான் கண் துஞ்சேன்; யாதுகொல் நிலையே?",
+      "words": [
+        {
+          "form": "யான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துஞ்சேன்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாதுகொல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலையே?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "- வினைத்தொழில் சோகீரனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினைத்தொழில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோகீரனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை319.html",
+  "verified": false,
+  "number": 319,
+  "poet": "வினைத்தொழில் சோகீரனார்."
+}

@@ -1,0 +1,570 @@
+{
+  "id": "natrinai_367",
+  "poem": "natrinai",
+  "tinai": "mullai",
+  "sangamTamil": "கொடுங் கண் காக்கைக் கூர் வாய்ப் பேடை\nநடுங்கு சிறைப் பிள்ளை தழீஇ, கிளை பயிர்ந்து,\nகருங் கண் கருனைச் செந்நெல் வெண் சோறு\nசூருடைப் பலியொடு கவரிய, குறுங் கால்\nகூழுடை நல் மனைக் குழுவின இருக்கும்\nமூதில் அருமன் பேர் இசைச் சிறுகுடி\nமெல் இயல் அரிவை! நின் பல் இருங் கதுப்பின்\nகுவளையொடு தொடுத்த நறு வீ முல்லைத்\nதளை அவிழ் அலரித் தண் நறுங் கோதை\nஇளையரும் சூடி வந்தனர்: நமரும்\nவிரி உளை நன் மாக் கடைஇ,\nபரியாது வருவர், இப் பனி படு நாளே.\n- நக்கீரர்.",
+  "urai": "வட்டமாகிய கண்களையும் கூரிய வாயையும் உடைய காக்கைப் பேடை; நடுங்குகின்ற சிறகையுடைய தன் பிள்ளையைத் தழுவிக் கொண்டு; சுற்றத்தையும் விளித்து; கரிய கண்ணையுடைய கருனைக் கிழங்கின் பொரிக் கறியோடு கூடிய செந்நெல் அரிசியாலாக்கிய வெளிய சோற்றுத் திரளையைத் தெய்வத்துக்கிடும் பலியுடனே கவர்ந்து கொள்ளுமாறு; குறிய கால் நாட்டிக் கட்டிய மிக்க உணவையுடைய நல்ல மனையின்கண்ணே கூடினவாயிருக்கும்; பழைமையான வீடுகளையுடைய அருமன் என்பவனது பெரிய புகழ் பொருந்திய சிறுகுடி என்னும் ஊரிலிராநின்ற; மெத்தென்ற சாயலையுடைய அரிவையே! நினது பலவாகிய கரிய கூந்தலிற் சூடிய மாலை போலக் குவளை மலரொடு இடையிட்டுத் தொடுத்த நறிய பூவையுடைய முல்லையின் மூட்டுவாய் அவிழ்ந்த மலராகிய; தண்ணிய நன்மணமுடைய பூமாலையை; உடன் சென்றிருந்த வீரரெல்லாருஞ் சூடி வந்தனர்; அதனால் இப் பனி மிக்க பருவத்திலேதானே நங்காதலரும் ஆண்டுத் தங்கி வருந்தாது; விரிந்த பிடரிமயிரையுடைய நல்ல குதிரையைச் செலுத்திக் கொண்டு இன்னே வருகுவர்; ஆதலின் வருந்தாதே கொள்!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கொடுங் கண் காக்கைக் கூர் வாய்ப் பேடை",
+      "words": [
+        {
+          "form": "கொடுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காக்கைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நடுங்கு சிறைப் பிள்ளை தழீஇ, கிளை பயிர்ந்து,",
+      "words": [
+        {
+          "form": "நடுங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிள்ளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தழீஇ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயிர்ந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கருங் கண் கருனைச் செந்நெல் வெண் சோறு",
+      "words": [
+        {
+          "form": "கருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கருனைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செந்நெல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சூருடைப் பலியொடு கவரிய, குறுங் கால்",
+      "words": [
+        {
+          "form": "சூருடைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலியொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவரிய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "கூழுடை நல் மனைக் குழுவின இருக்கும்",
+      "words": [
+        {
+          "form": "கூழுடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மனைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழுவின",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இருக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "மூதில் அருமன் பேர் இசைச் சிறுகுடி",
+      "words": [
+        {
+          "form": "மூதில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருமன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இசைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகுடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "மெல் இயல் அரிவை! நின் பல் இருங் கதுப்பின்",
+      "words": [
+        {
+          "form": "மெல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அரிவை!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதுப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "குவளையொடு தொடுத்த நறு வீ முல்லைத்",
+      "words": [
+        {
+          "form": "குவளையொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முல்லைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "தளை அவிழ் அலரித் தண் நறுங் கோதை",
+      "words": [
+        {
+          "form": "தளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவிழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அலரித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நறுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோதை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "இளையரும் சூடி வந்தனர்: நமரும்",
+      "words": [
+        {
+          "form": "இளையரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வந்தனர்:",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நமரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "விரி உளை நன் மாக் கடைஇ,",
+      "words": [
+        {
+          "form": "விரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடைஇ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "பரியாது வருவர், இப் பனி படு நாளே.",
+      "words": [
+        {
+          "form": "பரியாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வருவர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாளே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "- நக்கீரர்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நக்கீரர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை367.html",
+  "verified": false,
+  "number": 367,
+  "poet": "நக்கீரர்."
+}

@@ -1,171 +1,278 @@
 import { useState, useEffect, useRef } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
+import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 
-const POEMS = {
-  maduraikanchi: {
-    title: 'மதுரைக்காஞ்சி',
-    subtitle: 'Maduraikanchi',
-    author: 'மாங்குடி மருதனார்',
-    collection: 'பத்துப்பாட்டு',
-    loader: () => import('@data/texts/maduraikanchi/maduraikanchi.json'),
-  },
+// ── Library (Gallery) ─────────────────────────────────────────────────────
+
+function PoemCard({ poem }) {
+  const available = poem.available
+  const nav = useNavigate()
+  return (
+    <div
+      onClick={() => available && nav(`/book/${poem.id}`)}
+      className={`group relative rounded-xl border p-5 transition-all duration-150
+        ${available
+          ? 'border-stone-200 bg-white hover:border-stone-400 hover:shadow-md cursor-pointer'
+          : 'border-stone-100 bg-stone-50/60 cursor-default'
+        }`}
+    >
+      {/* Collection badge */}
+      <span className={`inline-block text-[10px] font-medium uppercase tracking-widest px-2 py-0.5 rounded mb-3
+        ${poem.collection === '8thokai' ? 'bg-amber-50 text-amber-700' : 'bg-indigo-50 text-indigo-600'}`}>
+        {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
+      </span>
+
+      {/* Tamil name */}
+      <h3 className={`tamil text-xl font-semibold leading-tight mb-0.5
+        ${available ? 'text-stone-900 group-hover:text-amber-700' : 'text-stone-400'}`}>
+        {poem.ta}
+      </h3>
+
+      {/* English name */}
+      <p className={`text-sm mb-3 ${available ? 'text-stone-500' : 'text-stone-300'}`}>
+        {poem.en}
+      </p>
+
+      {/* Count */}
+      <p className={`text-xs font-mono ${available ? 'text-stone-400' : 'text-stone-300'}`}>
+        {poem.count.toLocaleString()} {poem.unit}
+      </p>
+
+      {/* Status dot */}
+      <div className="absolute top-4 right-4">
+        {available
+          ? <span className="w-2 h-2 rounded-full bg-emerald-400 block" title="Available" />
+          : <span className="w-2 h-2 rounded-full bg-stone-200 block" title="Coming soon" />
+        }
+      </div>
+    </div>
+  )
 }
 
-export default function Book() {
-  const { poemId = 'maduraikanchi', sectionId } = useParams()
-  const navigate = useNavigate()
-  const poem = POEMS[poemId]
+function Library() {
+  const byCollection = Object.entries(COLLECTIONS).map(([key, meta]) => ({
+    key, meta,
+    poems: POEMS.filter(p => p.collection === key),
+  }))
 
-  const [sections, setSections] = useState([])
-  const [active, setActive] = useState(0)
-  const [layer, setLayer] = useState('sangam')
+  return (
+    <div className="min-h-screen bg-[#faf9f7]">
+
+      {/* Hero */}
+      <div className="max-w-4xl mx-auto px-8 pt-16 pb-10">
+        <p className="text-xs uppercase tracking-[0.2em] text-stone-400 font-medium mb-3">
+          Open Sangam
+        </p>
+        <h1 className="tamil text-5xl font-bold text-stone-900 leading-tight mb-2">
+          சங்க நூலகம்
+        </h1>
+        <p className="text-xl text-stone-500 font-light tracking-wide mb-1">
+          Library of Sangam
+        </p>
+        <p className="text-sm text-stone-400 mt-3 max-w-xl leading-relaxed">
+          Classical Tamil literature from the Sangam period (c.&thinsp;300&thinsp;BCE – 300&thinsp;CE).
+          Original verse, modern prose rendering, and English translation.
+        </p>
+      </div>
+
+      {/* Collections */}
+      <div className="max-w-4xl mx-auto px-8 pb-24 space-y-14">
+        {byCollection.map(({ key, meta, poems }) => (
+          <section key={key}>
+            <div className="flex items-baseline gap-3 mb-6 pb-3 border-b border-stone-200">
+              <h2 className="tamil text-2xl font-semibold text-stone-800">{meta.ta}</h2>
+              <span className="text-stone-400 text-sm">{meta.en}</span>
+            </div>
+            <p className="text-sm text-stone-400 mb-6 max-w-xl">{meta.desc}</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+              {poems.map(poem => <PoemCard key={poem.id} poem={poem} />)}
+            </div>
+          </section>
+        ))}
+      </div>
+
+      {/* Footer note */}
+      <div className="border-t border-stone-100 py-6 text-center text-xs text-stone-300">
+        <span className="tamil">தமிழ் தமிழரின் உயிர்</span>
+        {' · '}
+        Source: sangathamizh.com · License: CC0
+      </div>
+    </div>
+  )
+}
+
+// ── Reader ────────────────────────────────────────────────────────────────
+
+function Reader({ poem }) {
+  const [sections, setSections]   = useState([])
+  const [active, setActive]       = useState(0)
+  const [layer, setLayer]         = useState('both')
+  const [sidebarOpen, setSidebar] = useState(true)
   const contentRef = useRef(null)
 
   useEffect(() => {
-    if (!poem) return
     poem.loader().then(mod => {
       setSections(mod.default)
-      const idx = sectionId ? parseInt(sectionId, 10) - 1 : 0
-      setActive(Math.max(0, idx))
+      setActive(0)
     })
-  }, [poemId])
+  }, [poem.id])
 
   useEffect(() => {
     contentRef.current?.scrollTo({ top: 0 })
   }, [active])
 
-  if (!poem) return <div className="p-8 text-stone-500">Poem not found.</div>
-  if (!sections.length) return <div className="p-8 text-stone-400 text-sm">Loading…</div>
+  if (!sections.length) {
+    return (
+      <div className="flex items-center justify-center h-full text-stone-400 text-sm">
+        Loading…
+      </div>
+    )
+  }
 
   const sec = sections[active]
   const isSection = 'sectionNumber' in sec
+  const num = isSection ? sec.sectionNumber : sec.number
+  const label = isSection ? sec.title : null
 
   return (
-    <div className="flex h-[calc(100vh-56px)] overflow-hidden bg-white text-stone-900">
+    <div className="flex h-[calc(100vh-56px)] bg-[#faf9f7] overflow-hidden">
 
-      {/* ── Sidebar ───────────────────────────────────────────── */}
-      <aside className="w-56 shrink-0 border-r border-stone-200 flex flex-col overflow-hidden">
-        {/* Poem header */}
-        <div className="px-4 py-4 border-b border-stone-200">
-          <p className="text-[11px] uppercase tracking-widest text-stone-400 font-medium">{poem.collection}</p>
-          <h1 className="tamil text-lg font-semibold text-stone-800 leading-tight mt-0.5">{poem.title}</h1>
-          <p className="text-xs text-stone-400 mt-0.5">{poem.subtitle}</p>
+      {/* ── Sidebar ──────────────────────────────────────────────── */}
+      <aside className={`shrink-0 border-r border-stone-200 flex flex-col overflow-hidden transition-all duration-200
+        ${sidebarOpen ? 'w-60' : 'w-0'}`}>
+
+        {/* Poem meta */}
+        <div className="px-4 py-4 border-b border-stone-200 bg-white">
+          <Link to="/book" className="flex items-center gap-1.5 text-[11px] text-stone-400 hover:text-stone-600 mb-3 transition-colors">
+            ← Library
+          </Link>
+          <span className={`text-[10px] font-medium uppercase tracking-widest px-1.5 py-0.5 rounded
+            ${poem.collection === '8thokai' ? 'bg-amber-50 text-amber-700' : 'bg-indigo-50 text-indigo-600'}`}>
+            {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
+          </span>
+          <h2 className="tamil text-lg font-semibold text-stone-900 mt-2 leading-tight">{poem.ta}</h2>
+          <p className="text-xs text-stone-400">{poem.en}</p>
+          <p className="text-xs text-stone-300 mt-1 font-mono">{sections.length} {isSection ? 'sections' : 'poems'}</p>
         </div>
 
         {/* Section list */}
-        <nav className="flex-1 overflow-y-auto py-2">
+        <nav className="flex-1 overflow-y-auto bg-white py-1">
           {sections.map((s, i) => {
-            const num = isSection ? s.sectionNumber : s.number
-            const label = isSection ? s.title : `${num}`
+            const n = isSection ? s.sectionNumber : s.number
+            const t = isSection ? s.title : null
             const isActive = i === active
             return (
               <button
                 key={s.id}
                 onClick={() => setActive(i)}
-                className={`w-full text-left px-4 py-1.5 flex items-start gap-2 transition-colors
+                className={`w-full text-left px-3 py-2 flex items-start gap-2 transition-colors border-l-2
                   ${isActive
-                    ? 'bg-amber-50 border-l-2 border-amber-500 text-stone-900'
-                    : 'border-l-2 border-transparent text-stone-500 hover:text-stone-800 hover:bg-stone-50'
+                    ? 'border-amber-500 bg-amber-50/70 text-stone-900'
+                    : 'border-transparent text-stone-400 hover:text-stone-700 hover:bg-stone-50'
                   }`}
               >
-                <span className="text-[10px] font-mono text-stone-400 pt-px w-6 shrink-0">{String(num).padStart(2, '0')}</span>
-                <span className="text-xs leading-snug line-clamp-2 tamil">{label || `§ ${num}`}</span>
+                <span className="text-[10px] font-mono text-stone-300 pt-0.5 w-5 shrink-0 text-right">{n}</span>
+                <span className="text-xs leading-snug line-clamp-2 tamil">
+                  {t || (sec.poet ? sec.poet : `—`)}
+                </span>
               </button>
             )
           })}
         </nav>
       </aside>
 
-      {/* ── Main content ──────────────────────────────────────── */}
+      {/* ── Content ──────────────────────────────────────────────── */}
       <main ref={contentRef} className="flex-1 overflow-y-auto">
         <div className="max-w-2xl mx-auto px-10 py-10">
 
-          {/* Section header */}
-          <div className="mb-6 pb-4 border-b border-stone-100">
-            {isSection ? (
-              <>
-                <p className="text-[11px] uppercase tracking-widest text-stone-400 font-medium mb-1">
-                  {poem.subtitle} · §{sec.sectionNumber}
-                  {sec.lineStart ? ` · lines ${sec.lineStart}–${sec.lineEnd}` : ''}
-                </p>
-                <h2 className="tamil text-2xl font-semibold text-stone-800">{sec.title}</h2>
-              </>
-            ) : (
-              <p className="text-[11px] uppercase tracking-widest text-stone-400 font-medium">
-                {poem.subtitle} · poem {sec.number}
-                {sec.tinai && sec.tinai !== 'unknown' ? ` · ${sec.tinai}` : ''}
-                {sec.poet ? ` · ${sec.poet}` : ''}
-              </p>
-            )}
+          {/* Topbar: sidebar toggle + layer toggle */}
+          <div className="flex items-center justify-between mb-8">
+            <button
+              onClick={() => setSidebar(o => !o)}
+              className="text-stone-300 hover:text-stone-600 text-sm transition-colors"
+              title="Toggle sidebar"
+            >
+              {sidebarOpen ? '← Hide' : '☰ Sections'}
+            </button>
+
+            <div className="flex gap-1">
+              {[
+                { id: 'sangam', label: 'Tamil' },
+                { id: 'urai',   label: 'உரை' },
+                { id: 'both',   label: 'Both' },
+              ].map(l => (
+                <button
+                  key={l.id}
+                  onClick={() => setLayer(l.id)}
+                  className={`px-3 py-1 text-xs rounded-full font-medium transition-colors
+                    ${layer === l.id
+                      ? 'bg-stone-900 text-white'
+                      : 'text-stone-400 hover:text-stone-700 hover:bg-stone-100'
+                    }`}
+                >
+                  {l.label}
+                </button>
+              ))}
+            </div>
           </div>
 
-          {/* Layer toggle */}
-          <div className="flex gap-1 mb-6">
-            {[
-              { id: 'sangam', label: 'சங்கம் தமிழ்' },
-              { id: 'urai',   label: 'உரை' },
-              { id: 'both',   label: 'Both' },
-            ].map(l => (
-              <button
-                key={l.id}
-                onClick={() => setLayer(l.id)}
-                className={`px-3 py-1 text-xs rounded font-medium transition-colors
-                  ${layer === l.id
-                    ? 'bg-stone-900 text-white'
-                    : 'text-stone-500 hover:text-stone-800 hover:bg-stone-100'
-                  }`}
-              >
-                {l.label}
-              </button>
-            ))}
-          </div>
+          {/* Section header */}
+          <header className="mb-8">
+            <p className="text-[11px] uppercase tracking-widest text-stone-400 font-medium mb-2">
+              {poem.en}
+              {isSection && sec.lineStart ? ` · lines ${sec.lineStart}–${sec.lineEnd}` : ` · ${sec.tinai || ''}`}
+              {!isSection && sec.poet ? ` · ${sec.poet}` : ''}
+            </p>
+            <h2 className={`leading-tight font-semibold text-stone-900 ${isSection ? 'tamil text-3xl' : 'text-stone-400 text-lg font-mono'}`}>
+              {label || `#${num}`}
+            </h2>
+          </header>
 
           {/* Original Tamil */}
           {(layer === 'sangam' || layer === 'both') && (
             <div className="mb-6">
               {layer === 'both' && (
-                <p className="text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-medium">Original</p>
+                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-300 mb-3 font-medium">Original</p>
               )}
-              <p className="tamil text-xl leading-[2] text-stone-900 whitespace-pre-line">
+              <p className="tamil text-[1.35rem] leading-[2.1] text-stone-900 whitespace-pre-line">
                 {sec.sangamTamil}
               </p>
             </div>
           )}
 
-          {/* Separator */}
           {layer === 'both' && sec.urai && (
-            <hr className="border-stone-100 my-6" />
+            <div className="border-t border-stone-100 my-8" />
           )}
 
           {/* Urai */}
           {(layer === 'urai' || layer === 'both') && (
-            <div className="mb-8">
+            <div className="mb-10">
               {layer === 'both' && (
-                <p className="text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-medium">உரை</p>
+                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-300 mb-3 font-medium">உரை</p>
               )}
               {sec.urai
-                ? <p className="tamil text-base leading-relaxed text-stone-700">{sec.urai}</p>
-                : <p className="text-sm text-stone-400 italic">உரை இல்லை</p>
+                ? <p className="tamil text-base leading-[1.9] text-stone-600">{sec.urai}</p>
+                : <p className="text-sm text-stone-300 italic">உரை இல்லை</p>
               }
             </div>
           )}
 
           {/* Prev / Next */}
-          <div className="flex justify-between pt-6 border-t border-stone-100 mt-8">
+          <div className="flex items-center justify-between pt-8 border-t border-stone-100 mt-4">
             <button
               onClick={() => setActive(a => Math.max(0, a - 1))}
               disabled={active === 0}
-              className="text-xs text-stone-400 hover:text-stone-700 disabled:opacity-30 transition-colors"
+              className="text-xs text-stone-400 hover:text-stone-700 disabled:opacity-20 transition-colors flex items-center gap-1"
             >
               ← Previous
             </button>
-            <span className="text-xs text-stone-300 font-mono">
+            <span className="text-xs text-stone-300 font-mono tabular-nums">
               {active + 1} / {sections.length}
             </span>
             <button
               onClick={() => setActive(a => Math.min(sections.length - 1, a + 1))}
               disabled={active === sections.length - 1}
-              className="text-xs text-stone-400 hover:text-stone-700 disabled:opacity-30 transition-colors"
+              className="text-xs text-stone-400 hover:text-stone-700 disabled:opacity-20 transition-colors flex items-center gap-1"
             >
               Next →
             </button>
@@ -175,4 +282,24 @@ export default function Book() {
       </main>
     </div>
   )
+}
+
+// ── Route entry ───────────────────────────────────────────────────────────
+
+export default function Book() {
+  const { poemId } = useParams()
+
+  if (!poemId) return <Library />
+
+  const poem = POEM_BY_ID[poemId]
+  if (!poem || !poem.available) return (
+    <div className="flex flex-col items-center justify-center h-[60vh] gap-4">
+      <p className="text-stone-400 text-sm">
+        {poem ? `${poem.en} — coming soon` : 'Poem not found'}
+      </p>
+      <Link to="/book" className="text-xs text-amber-600 hover:underline">← Back to Library</Link>
+    </div>
+  )
+
+  return <Reader poem={poem} />
 }

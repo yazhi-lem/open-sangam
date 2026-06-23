@@ -1,0 +1,529 @@
+{
+  "id": "natrinai_328",
+  "poem": "natrinai",
+  "tinai": "kurinji",
+  "sangamTamil": "கிழங்கு கீழ் வீழ்ந்து, தேன் மேல் தூங்கி,\nசிற்சில வித்திப் பற்பல விளைந்து,\nதினை கிளி கடியும் பெருங் கல் நாடன்\nபிறப்பு ஓரன்மை அறிந்தனம்: அதனால்,\nஅது இனி வாழி - தோழி! - ஒரு நாள்\nசிறு பல் கருவித்து ஆகி, வலன் ஏர்பு,\nபெரும் பெயல் தலைக, புனனே! - இனியே,\nஎண் பிழி நெய்யொடு வெண் கிழி வேண்டாது\nசாந்து தலைக்கொண்ட ஓங்கு பெருஞ் சாரல்,\nவிலங்கு மலை அடுக்கத்தானும்\nகலம் பெறு விறலி ஆடும் இவ் ஊரே.\n- தொல் கபிலர்.",
+  "urai": "தோழீ! கிழங்குகள் கீழிறங்கித் தேனடைகள் மிகுதியாக மேலே வைக்கப்பட்டு; மிகச் சிலவாய தினைகளை விதைத்து அவை மிகப் பலவாக விளைதலும்; அவற்றைக் கிளி கொய்து போகாதபடி ஓப்பிப் பாதுகாக்கும் பெரிய மலை நாடனுடைய; பிறப்பு மிக உயர்வுடையதேயன்றி நம்மோடு ஒத்த ஒரு தன்மையதன்றென்பதை அறிந்தனம்; அதனால் அப் பிறப்பு இனி என்றும் வாழ்வதாக! அத்தகைய உயர்பிறப்பினனாதலின் அவன் கூறியது பிறழான்காண்; முதன் மழை பெய்தவுடன் வருவேன் என்றனன் ஆதலின், இனி எள்ளைப் பிழிந்தெடுக்கும் நெய்யையும் வெளிய கிழியையும் விரும்பிப் பெறாது; சந்தனமரம் மிகுதியாகவுடைய உயர்ந்த பெரிய மலைச்சாரலிலே குறுக்கிட்ட மலையின் புறத்திருக்கும் பக்கமலையிடத்து; நன்கலம் பெற்ற விறலி கூத்தயரா நிற்கும் இவ் வூரிலுள்ள நம்முடைய தினைப் புனத்தில்; அந்த மேகம் சிறிய பலவாய மின்னல் முதலாய தொகுதிகளையுடையதாகி வலமாக எழுந்து பெரும் பெயலை ஒருநாள் பொழிந்து விடுவதாக; பெய்த அன்றே வருகுவனாதலின் நீ வருந்தாதே கொள்!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கிழங்கு கீழ் வீழ்ந்து, தேன் மேல் தூங்கி,",
+      "words": [
+        {
+          "form": "கிழங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வீழ்ந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூங்கி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சிற்சில வித்திப் பற்பல விளைந்து,",
+      "words": [
+        {
+          "form": "சிற்சில",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வித்திப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பற்பல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளைந்து,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தினை கிளி கடியும் பெருங் கல் நாடன்",
+      "words": [
+        {
+          "form": "தினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பிறப்பு ஓரன்மை அறிந்தனம்: அதனால்,",
+      "words": [
+        {
+          "form": "பிறப்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓரன்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறிந்தனம்:",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அதனால்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "அது இனி வாழி - தோழி! - ஒரு நாள்",
+      "words": [
+        {
+          "form": "அது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோழி!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "சிறு பல் கருவித்து ஆகி, வலன் ஏர்பு,",
+      "words": [
+        {
+          "form": "சிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கருவித்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆகி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வலன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏர்பு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பெரும் பெயல் தலைக, புனனே! - இனியே,",
+      "words": [
+        {
+          "form": "பெரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைக,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புனனே!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இனியே,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "எண் பிழி நெய்யொடு வெண் கிழி வேண்டாது",
+      "words": [
+        {
+          "form": "எண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெய்யொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "சாந்து தலைக்கொண்ட ஓங்கு பெருஞ் சாரல்,",
+      "words": [
+        {
+          "form": "சாந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைக்கொண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாரல்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "விலங்கு மலை அடுக்கத்தானும்",
+      "words": [
+        {
+          "form": "விலங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடுக்கத்தானும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "கலம் பெறு விறலி ஆடும் இவ் ஊரே.",
+      "words": [
+        {
+          "form": "கலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விறலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆடும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இவ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊரே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "- தொல் கபிலர்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கபிலர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை328.html",
+  "verified": false,
+  "number": 328,
+  "poet": "தொல் கபிலர்."
+}

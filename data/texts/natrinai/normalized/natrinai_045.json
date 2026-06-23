@@ -1,0 +1,487 @@
+{
+  "id": "natrinai_045",
+  "poem": "natrinai",
+  "tinai": "neytal",
+  "sangamTamil": "இவளே, கானல் நண்ணிய காமர் சிறுகுடி,\nநீல் நிறப் பெருங் கடல் கலங்க உள்புக்கு\nமீன் எறி பரதவர் மகளே; நீயே,\nநெடுங் கொடி நுடங்கும் நியம மூதூர்க்\nகடுந் தேர்ச் செல்வன் காதல் மகனே:\nநிணச் சுறா அறுத்த உணக்கல் வேண்டி,\nஇனப் புள் ஓப்பும் எமக்கு நலன் எவனோ?\nபுலவு நாறுதும்; செல நின்றீமோ!\nபெரு நீர் விளையுள் எம் சிறு நல் வாழ்க்கை\nநும்மொடு புரைவதோ அன்றே;\nஎம்மனோரில் செம்மலும் உடைத்தே!\n- ஆசிரியர் அறியப்படவில்லை.",
+  "urai": "நின்னாற் காதலிக்கப்படும் இவள்தான், கடற்கரைச் சோலையிற் பொருந்திய அழகிய சிறுகுடியின்கண்ணே இருக்கின்ற, நீலநிறத்தையுடைய பெரிய கடலுங் கலங்குமாறு அதன்மேற்சென்று வலைவீசி மீனைப் பிடிக்கின்ற பரதவர் புதல்விகண்டாய்; நீதானும் நெடிய கொடிகள் காற்றாலசைந்து நுடங்குங் கடைத் தெருக்களையுடைய பழைய ஊரின்கணுள்ள கடிய செலவினையுடைய தேரையுடைய செல்வ மன்னன் காதலிற் பெற்றுவளர்த்த புதல்வனாயிராநின்றனை, ஆதலிற் குலத்திற்கே பொருத்தமில்லை; அங்ஙனம் மணப்பதாயினும், நிணத்தையுடைய சுறாமீனை அறுத்திட்ட தசைகளைக் காயவைத்தல் வேண்டி வெயிலிற் போகட்டு அத்தசைகளைக் கூட்டமாகிய காக்கைகள் கவராதவாறு அவற்றை ஓட்டிப் பாதுகாக்கின்ற எமக்கு நின் சிறந்த நலந்தான் யாது வேண்டிக் கிடந்தது? ஒன்றும் வேண்டா!; சுறா நிணத்தைத் தடிந்து பரப்புதலானே யாம் புலவு நாற்றம் நாறுகின்றேம்; இந்நாற்றம் நீ பொறாயாகலின், எம்மருகில் வராதேகொள்! அகன்றுபோய் நிற்பாய்மன்; கடனீரை விளைவயலாகக் கொள்ளுகின்ற எமது சிறிய வாழ்க்கையானது நும்மோடு ஒக்க வுயர் வுடைத்தன்று; எம்போன்ற பரதவரில் நின் போன்ற செல்வமாக்களையும் எங்கள் மரபுடைத்தாயிராநின்றது;",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இவளே, கானல் நண்ணிய காமர் சிறுகுடி,",
+      "words": [
+        {
+          "form": "இவளே,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கானல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நண்ணிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகுடி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நீல் நிறப் பெருங் கடல் கலங்க உள்புக்கு",
+      "words": [
+        {
+          "form": "நீல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிறப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலங்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்புக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மீன் எறி பரதவர் மகளே; நீயே,",
+      "words": [
+        {
+          "form": "மீன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரதவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகளே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீயே,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நெடுங் கொடி நுடங்கும் நியம மூதூர்க்",
+      "words": [
+        {
+          "form": "நெடுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுடங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நியம",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூதூர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "கடுந் தேர்ச் செல்வன் காதல் மகனே:",
+      "words": [
+        {
+          "form": "கடுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்வன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகனே:",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "நிணச் சுறா அறுத்த உணக்கல் வேண்டி,",
+      "words": [
+        {
+          "form": "நிணச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுறா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உணக்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "இனப் புள் ஓப்பும் எமக்கு நலன் எவனோ?",
+      "words": [
+        {
+          "form": "இனப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓப்பும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எமக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நலன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எவனோ?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "புலவு நாறுதும்; செல நின்றீமோ!",
+      "words": [
+        {
+          "form": "புலவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாறுதும்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்றீமோ!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "பெரு நீர் விளையுள் எம் சிறு நல் வாழ்க்கை",
+      "words": [
+        {
+          "form": "பெரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளையுள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்க்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "நும்மொடு புரைவதோ அன்றே;",
+      "words": [
+        {
+          "form": "நும்மொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புரைவதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்றே;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "எம்மனோரில் செம்மலும் உடைத்தே!",
+      "words": [
+        {
+          "form": "எம்மனோரில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செம்மலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடைத்தே!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "- ஆசிரியர் அறியப்படவில்லை.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆசிரியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறியப்படவில்லை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை045.html",
+  "verified": false,
+  "number": 45,
+  "poet": "ஆசிரியர் அறியப்படவில்லை."
+}
