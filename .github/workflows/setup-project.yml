@@ -1,0 +1,339 @@
+name: Setup Project — Milestones & Issues
+
+on:
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create milestones and issues
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+
+            // ──────────────────────────────────────────────────────────────
+            // Helper: create or find a milestone by title
+            // ──────────────────────────────────────────────────────────────
+            async function getOrCreateMilestone({ title, description, due_on }) {
+              const { data: list } = await github.rest.issues.listMilestones({
+                owner, repo, state: 'open', per_page: 100
+              });
+              const existing = list.find(m => m.title === title);
+              if (existing) {
+                console.log(`Milestone already exists: ${title}`);
+                return existing.number;
+              }
+              const { data: ms } = await github.rest.issues.createMilestone({
+                owner, repo, title, description, due_on
+              });
+              console.log(`Created milestone: ${title} (#${ms.number})`);
+              return ms.number;
+            }
+
+            // ──────────────────────────────────────────────────────────────
+            // Helper: create issue if title not already open
+            // ──────────────────────────────────────────────────────────────
+            async function createIssue({ title, body, labels, milestone }) {
+              const { data: existing } = await github.rest.issues.listForRepo({
+                owner, repo, state: 'open', per_page: 100
+              });
+              if (existing.find(i => i.title === title)) {
+                console.log(`Issue already exists: ${title}`);
+                return;
+              }
+              const params = { owner, repo, title, body, labels };
+              if (milestone) params.milestone = milestone;
+              const { data: issue } = await github.rest.issues.create(params);
+              console.log(`Created issue #${issue.number}: ${title}`);
+            }
+
+            // ──────────────────────────────────────────────────────────────
+            // Ensure labels exist
+            // ──────────────────────────────────────────────────────────────
+            const labelDefs = [
+              { name: 'data-pipeline',   color: 'e4e669', description: 'Scraping, normalisation, Firestore upload' },
+              { name: 'ai-translation',  color: 'b60205', description: 'Gemini translation & verification workflow' },
+              { name: 'frontend',        color: '0075ca', description: 'React / Tailwind UI work' },
+              { name: 'backend',         color: 'd93f0b', description: 'Firebase Functions & Firestore' },
+              { name: 'community',       color: '0e8a16', description: 'Contribution layer & scholar workflow' },
+              { name: 'performance',     color: 'f9d0c4', description: 'Speed, SEO, accessibility' },
+              { name: 'launch',          color: '1d76db', description: 'Production deployment & outreach' },
+              { name: 'this-week',       color: 'fbca04', description: 'Planned for current week' },
+              { name: 'bug',             color: 'd73a4a', description: 'Something is not working' },
+              { name: 'enhancement',     color: 'a2eeef', description: 'New feature or improvement' },
+            ];
+
+            for (const lbl of labelDefs) {
+              try {
+                await github.rest.issues.createLabel({ owner, repo, ...lbl });
+                console.log(`Created label: ${lbl.name}`);
+              } catch (e) {
+                if (e.status === 422) console.log(`Label exists: ${lbl.name}`);
+                else throw e;
+              }
+            }
+
+            // ──────────────────────────────────────────────────────────────
+            // Six-month milestones (July – December 2026)
+            // ──────────────────────────────────────────────────────────────
+            const milestones = [
+              {
+                title: 'v0.1 — Data Pipeline Complete',
+                description: 'All 17 Sangam poems scraped, normalised, and uploaded to Firestore.',
+                due_on: '2026-07-31T23:59:59Z',
+              },
+              {
+                title: 'v0.2 — AI Translations Live',
+                description: 'Gemini-generated English translations for all poems; English layer visible in the reader with AI-generated badge.',
+                due_on: '2026-08-31T23:59:59Z',
+              },
+              {
+                title: 'v0.3 — Full MVP Reader',
+                description: 'WordGlossary, Audio Recitation, Cultural Context Cards, and TinaiMap all functional in the Library of Sangam.',
+                due_on: '2026-09-30T23:59:59Z',
+              },
+              {
+                title: 'v0.4 — Community Contributions',
+                description: 'Authenticated scholar translation submissions, review workflow, versioned history.',
+                due_on: '2026-10-31T23:59:59Z',
+              },
+              {
+                title: 'v0.5 — Polish & Performance',
+                description: 'Mobile-first optimisation, WCAG AA accessibility, SEO/meta, performance budgets met.',
+                due_on: '2026-11-30T23:59:59Z',
+              },
+              {
+                title: 'v1.0 — Public Launch',
+                description: 'Production deployment, CI/CD, analytics, documentation complete, community outreach.',
+                due_on: '2026-12-31T23:59:59Z',
+              },
+            ];
+
+            const msNumbers = {};
+            for (const ms of milestones) {
+              msNumbers[ms.title] = await getOrCreateMilestone(ms);
+            }
+
+            // ──────────────────────────────────────────────────────────────
+            // This-week issues  (week of 30 Jun – 7 Jul 2026)
+            // ──────────────────────────────────────────────────────────────
+            const weekIssues = [
+              {
+                title: 'Fix Ainkurunooru source URL mapping in scraper',
+                body: `## Problem
+            The source site \`sangathamizh.com\` returns no sub-page links for **ஐங்குறுநூறு (Ainkurunooru)** (500 verses).
+            The scraper falls back silently and produces an empty dataset for this poem.
+
+            ## Acceptance criteria
+            - [ ] Manually identify the correct URL pattern for Ainkurunooru sub-pages on the source site.
+            - [ ] Add a hardcoded URL map in \`backend/python/scraper/\` (or equivalent) for all 500 verses.
+            - [ ] Re-run the scraper for Ainkurunooru and verify all verses are captured.
+            - [ ] Update \`README.md\` corpus status table accordingly.
+
+            ## References
+            > ⚠ **ஐங்குறுநூறு Ainkurunooru** — source site returns no sub-page links; needs manual URL mapping.
+            — README.md`,
+                labels: ['data-pipeline', 'this-week', 'bug'],
+                milestone: msNumbers['v0.1 — Data Pipeline Complete'],
+              },
+              {
+                title: 'Complete Natrinai scraping (remaining ~25%)',
+                body: `## Context
+            Natrinai (400 verses) is currently ~75% scraped (shown as \`██████░░\` in README).
+
+            ## Acceptance criteria
+            - [ ] Run scraper for remaining Natrinai verses.
+            - [ ] Verify verse count reaches 400.
+            - [ ] Commit any raw JSON output to \`data/texts/\`.
+            - [ ] Update corpus status table in README.`,
+                labels: ['data-pipeline', 'this-week'],
+                milestone: msNumbers['v0.1 — Data Pipeline Complete'],
+              },
+              {
+                title: 'Normalise Kurunthokai scraped data',
+                body: `## Context
+            Kurunthokai (400 verses) is fully scraped but not yet normalised (shown as \`██████░░  ░░░░░░░░\` in README).
+
+            ## Acceptance criteria
+            - [ ] Run \`python -m normalizer.normalize_all --poem kurunthokai\`.
+            - [ ] Confirm output conforms to the Verse → Line → Word JSON schema (\`data/schema/\`).
+            - [ ] Commit normalised output to \`data/texts/\`.
+            - [ ] Update corpus status table in README.`,
+                labels: ['data-pipeline', 'this-week'],
+                milestone: msNumbers['v0.1 — Data Pipeline Complete'],
+              },
+              {
+                title: 'Upload all normalised poem data to Firestore',
+                body: `## Context
+            Several poems are normalised but have not yet been uploaded to Firestore, so they are not visible in the live reader.
+
+            ## Acceptance criteria
+            - [ ] Write or update a bulk-upload script in \`backend/python/\`.
+            - [ ] Upload all poems with status *Normalize ██████████* to Firestore \`/poems/{poemId}/verses\`.
+            - [ ] Verify documents appear correctly in the Firebase console.
+            - [ ] Document the upload command in the project README.`,
+                labels: ['data-pipeline', 'backend', 'this-week'],
+                milestone: msNumbers['v0.1 — Data Pipeline Complete'],
+              },
+              {
+                title: 'Run Gemini translation pipeline for Kalithokai (proof-of-concept batch)',
+                body: `## Context
+            Phase 2 calls for Gemini 2.5 Flash English translations of all poems. Kalithokai (149 verses, fully normalised) is the best candidate for a first batch run.
+
+            ## Acceptance criteria
+            - [ ] Configure \`.env\` with \`GEMINI_API_KEY\`.
+            - [ ] Run \`python -m ai.translate_with_gemini --poem kalithokai --lang english\`.
+            - [ ] Review a sample of 10 translations for quality.
+            - [ ] Commit output; set \`"verified": false\` on all generated records (per data governance policy).
+            - [ ] Note cost/time metrics for planning full-corpus run.`,
+                labels: ['ai-translation', 'this-week'],
+                milestone: msNumbers['v0.2 — AI Translations Live'],
+              },
+              {
+                title: 'Verify all 16 poems load correctly in the Library reader',
+                body: `## Context
+            16 poems are currently listed as available in the Library of Sangam. A smoke-test pass is needed to confirm each poem opens, navigates, and renders Tamil text correctly.
+
+            ## Acceptance criteria
+            - [ ] Open each of the 16 poems in the local dev server (\`npm run dev\`).
+            - [ ] Confirm Tamil text renders with Noto Serif Tamil font.
+            - [ ] Confirm prev/next navigation works within each poem.
+            - [ ] Log any rendering or routing bugs as separate issues.`,
+                labels: ['frontend', 'this-week'],
+                milestone: msNumbers['v0.3 — Full MVP Reader'],
+              },
+              {
+                title: 'Add AI-generated translation indicator to LayeredView',
+                body: `## Context
+            The data governance policy requires a visible UI indicator when a translation is AI-generated and unverified.
+
+            > Every AI-generated translation must be labeled with \`"verified": false\` until reviewed by a human scholar. The UI must display a visible indicator when a translation is AI-generated and unverified.
+
+            ## Acceptance criteria
+            - [ ] Read \`verified\` field from verse data in \`LayeredView\` component.
+            - [ ] Display a small badge/banner (e.g. "AI-generated · unverified") when \`verified === false\`.
+            - [ ] Badge is hidden when \`verified === true\` or when showing the original Tamil / Urai layer.
+            - [ ] Style matches existing Tailwind design system.
+            - [ ] Add a unit test for the conditional rendering.`,
+                labels: ['frontend', 'ai-translation', 'this-week'],
+                milestone: msNumbers['v0.2 — AI Translations Live'],
+              },
+            ];
+
+            for (const issue of weekIssues) {
+              await createIssue(issue);
+            }
+
+            // ──────────────────────────────────────────────────────────────
+            // Backlog issues for future milestones
+            // ──────────────────────────────────────────────────────────────
+            const backlogIssues = [
+              // v0.2 — AI Translations
+              {
+                title: 'Run full-corpus Gemini English translation for all 17 poems',
+                body: 'Generate English translations for the entire corpus using the AI pipeline validated in the Kalithokai proof-of-concept. Batch all 17 poems and upload results to Firestore.',
+                labels: ['ai-translation'],
+                milestone: msNumbers['v0.2 — AI Translations Live'],
+              },
+              {
+                title: 'Build scholar verification UI for AI translations',
+                body: 'Create a review interface where designated scholars can view AI-generated translations, approve or edit them, and set `verified: true`. Integrate with the Contribution data model.',
+                labels: ['frontend', 'ai-translation'],
+                milestone: msNumbers['v0.2 — AI Translations Live'],
+              },
+              // v0.3 — Full MVP Reader
+              {
+                title: 'Implement WordGlossary click-to-define via /analyze-word Cloud Function',
+                body: 'Wire up the `WordGlossary` component to call the `POST /analyze-word` Firebase Cloud Function on word click. Display root meaning, Urichol (grammatical class), and etymology in a pop-up.',
+                labels: ['frontend', 'backend'],
+                milestone: msNumbers['v0.3 — Full MVP Reader'],
+              },
+              {
+                title: 'Populate Cultural Context Cards for all poems',
+                body: 'Author or source historical context cards for cultural references (places, deities, flora/fauna, poetic conventions) in each poem. Store in Firestore and display via `CulturalContextCard` component.',
+                labels: ['frontend', 'data-pipeline'],
+                milestone: msNumbers['v0.3 — Full MVP Reader'],
+              },
+              {
+                title: 'Add audio recitation for Ten Idylls (Pathittrupattu)',
+                body: 'Source or synthesize audio recitations for the ten idylls. Integrate with `AudioPlayer` component and link verse IDs to audio assets in Firestore.',
+                labels: ['frontend'],
+                milestone: msNumbers['v0.3 — Full MVP Reader'],
+              },
+              {
+                title: 'Make TinaiMap interactive — filter verses by Tiṇai landscape',
+                body: 'Enable the `TinaiMap` component to filter the verse list by Tiṇai (Kurinji, Mullai, Marutam, Neytal, Palai). Each landscape cell should navigate to a filtered poem list.',
+                labels: ['frontend'],
+                milestone: msNumbers['v0.3 — Full MVP Reader'],
+              },
+              // v0.4 — Community Contributions
+              {
+                title: 'Set up Firebase Authentication (Google sign-in)',
+                body: 'Enable Google sign-in via Firebase Auth. Gate translation submission behind authentication. Store minimal profile in `/users/{userId}` per data minimization policy.',
+                labels: ['backend', 'community'],
+                milestone: msNumbers['v0.4 — Community Contributions'],
+              },
+              {
+                title: 'Build scholar translation submission form',
+                body: 'Allow authenticated users to submit revised translations for any verse. Store submissions in `/contributions/{contributionId}` with `verified: false` and the author UID.',
+                labels: ['frontend', 'community'],
+                milestone: msNumbers['v0.4 — Community Contributions'],
+              },
+              {
+                title: 'Implement contribution review and approval workflow',
+                body: 'Admin/scholar role can approve or reject submitted translations. Approval sets `verified: true`, records reviewer name, and versions the old translation (no history deleted per governance policy).',
+                labels: ['backend', 'community'],
+                milestone: msNumbers['v0.4 — Community Contributions'],
+              },
+              // v0.5 — Polish & Performance
+              {
+                title: 'Achieve WCAG AA accessibility compliance',
+                body: 'Audit the reader and all interactive components against WCAG 2.1 AA. Fix colour contrast, keyboard navigation, focus management, and ARIA labels. Run axe-core in CI.',
+                labels: ['frontend', 'performance'],
+                milestone: msNumbers['v0.5 — Polish & Performance'],
+              },
+              {
+                title: 'Add Open Graph / SEO meta tags for every poem page',
+                body: 'Add `<meta>` Open Graph and Twitter card tags for each poem and verse page to enable rich social sharing previews. Include poem name, Tiṇai, and a verse excerpt.',
+                labels: ['frontend', 'performance'],
+                milestone: msNumbers['v0.5 — Polish & Performance'],
+              },
+              {
+                title: 'Optimise mobile layout for Library reader',
+                body: 'Ensure the LayeredView, VerseCard, and TinaiMap are fully usable on small screens (320 px+). Eliminate horizontal overflow, improve touch targets, and test on iOS Safari and Android Chrome.',
+                labels: ['frontend', 'performance'],
+                milestone: msNumbers['v0.5 — Polish & Performance'],
+              },
+              // v1.0 — Public Launch
+              {
+                title: 'Set up CI/CD pipeline with GitHub Actions',
+                body: 'Add a GitHub Actions workflow that: (1) runs lint + unit tests on every PR, (2) deploys to Firebase Hosting on merge to `main`.',
+                labels: ['launch'],
+                milestone: msNumbers['v1.0 — Public Launch'],
+              },
+              {
+                title: 'Integrate Google Analytics / privacy-friendly analytics',
+                body: 'Add analytics to track poem views, word look-ups, and translation layer usage. Prefer a privacy-respecting solution (e.g., Plausible or GA4 with anonymised IPs).',
+                labels: ['launch'],
+                milestone: msNumbers['v1.0 — Public Launch'],
+              },
+              {
+                title: 'Write contributor onboarding documentation',
+                body: 'Add a `CONTRIBUTING.md` covering: running the dev environment, adding new poem data, submitting a translation, the review process, and code style conventions.',
+                labels: ['launch'],
+                milestone: msNumbers['v1.0 — Public Launch'],
+              },
+            ];
+
+            for (const issue of backlogIssues) {
+              await createIssue(issue);
+            }
+
+            console.log('✅ Project setup complete — milestones, labels, and issues created.');
