@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
+import WordGlossary from '../components/reader/WordGlossary'
+import AudioPlayer from '../components/reader/AudioPlayer'
+import { analyzeWord, translateVerse } from '../services/geminiApi'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
@@ -110,6 +113,15 @@ function Reader({ poem }) {
   const [sidebarOpen, setSidebar] = useState(true)
   const contentRef = useRef(null)
 
+  // WordGlossary state
+  const [glossaryWord, setGlossaryWord]     = useState(null)
+  const [glossaryLoading, setGlossaryLoading] = useState(false)
+
+  // AI translation state
+  const [aiTranslation, setAiTranslation]   = useState(null)
+  const [aiLoading, setAiLoading]           = useState(false)
+  const [aiError, setAiError]               = useState(null)
+
   useEffect(() => {
     poem.loader().then(mod => {
       setSections(mod.default)
@@ -117,9 +129,44 @@ function Reader({ poem }) {
     })
   }, [poem.id])
 
+  // Reset AI translation when section changes
+  useEffect(() => {
+    setAiTranslation(null)
+    setAiError(null)
+  }, [active])
+
   useEffect(() => {
     contentRef.current?.scrollTo({ top: 0 })
   }, [active])
+
+  async function handleWordClick(wordText) {
+    // Strip punctuation for lookup
+    const clean = wordText.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
+    if (!clean) return
+    setGlossaryWord({ form: wordText })
+    setGlossaryLoading(true)
+    try {
+      const result = await analyzeWord(clean)
+      setGlossaryWord({ form: wordText, ...result })
+    } catch {
+      // Keep showing the word form even if analysis fails
+    } finally {
+      setGlossaryLoading(false)
+    }
+  }
+
+  async function handleAiTranslate(sangamText) {
+    setAiLoading(true)
+    setAiError(null)
+    try {
+      const result = await translateVerse(sangamText, 'english')
+      setAiTranslation(result.text)
+    } catch (err) {
+      setAiError(err.message || 'Translation failed')
+    } finally {
+      setAiLoading(false)
+    }
+  }
 
   if (!sections.length) {
     return (
@@ -133,6 +180,26 @@ function Reader({ poem }) {
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
   const label = isSection ? sec.title : null
+
+  // Split sangamTamil into clickable words
+  function ClickableVerse({ text }) {
+    const words = text.split(/(\s+)/)
+    return (
+      <p className="tamil text-[1.35rem] leading-[2.1] text-stone-900 whitespace-pre-wrap">
+        {words.map((part, i) =>
+          /^\s+$/.test(part) ? part : (
+            <button
+              key={i}
+              onClick={() => handleWordClick(part)}
+              className="hover:text-amber-700 hover:underline decoration-dotted underline-offset-4 cursor-pointer transition-colors"
+            >
+              {part}
+            </button>
+          )
+        )}
+      </p>
+    )
+  }
 
   return (
     <div className="flex h-[calc(100vh-56px)] bg-[#faf9f7] overflow-hidden">
@@ -197,9 +264,10 @@ function Reader({ poem }) {
 
             <div className="flex gap-1">
               {[
-                { id: 'sangam', label: 'Tamil' },
-                { id: 'urai',   label: 'உரை' },
-                { id: 'both',   label: 'Both' },
+                { id: 'sangam',  label: 'Tamil' },
+                { id: 'urai',    label: 'உரை' },
+                { id: 'english', label: 'English' },
+                { id: 'both',    label: 'Both' },
               ].map(l => (
                 <button
                   key={l.id}
@@ -228,15 +296,21 @@ function Reader({ poem }) {
             </h2>
           </header>
 
-          {/* Original Tamil */}
+          {/* Original Tamil — words are clickable for glossary */}
           {(layer === 'sangam' || layer === 'both') && (
             <div className="mb-6">
               {layer === 'both' && (
-                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-300 mb-3 font-medium">Original</p>
+                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-300 mb-3 font-medium">
+                  Original
+                  <span className="normal-case ml-2 text-stone-400 font-normal">(click any word to define)</span>
+                </p>
               )}
-              <p className="tamil text-[1.35rem] leading-[2.1] text-stone-900 whitespace-pre-line">
-                {sec.sangamTamil}
-              </p>
+              {layer === 'sangam' && (
+                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-300 mb-3 font-medium">
+                  Click any word to define
+                </p>
+              )}
+              <ClickableVerse text={sec.sangamTamil} />
             </div>
           )}
 
@@ -254,6 +328,43 @@ function Reader({ poem }) {
                 ? <p className="tamil text-base leading-[1.9] text-stone-600">{sec.urai}</p>
                 : <p className="text-sm text-stone-300 italic">உரை இல்லை</p>
               }
+            </div>
+          )}
+
+          {/* English translation */}
+          {layer === 'english' && (
+            <div className="mb-10">
+              {sec.english
+                ? <p className="text-base leading-relaxed text-stone-700">{sec.english}</p>
+                : aiTranslation
+                  ? (
+                    <div className="space-y-3">
+                      <p className="text-base leading-relaxed text-stone-700">{aiTranslation}</p>
+                      <p className="text-[10px] text-stone-400 italic">AI translation · Gemini 2.5 Flash · not scholar-verified</p>
+                    </div>
+                  )
+                  : (
+                    <div className="space-y-4">
+                      <p className="text-sm text-stone-400 italic">No English translation available yet.</p>
+                      {aiError && <p className="text-sm text-red-400">{aiError}</p>}
+                      <button
+                        onClick={() => handleAiTranslate(sec.sangamTamil)}
+                        disabled={aiLoading}
+                        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-stone-900 text-white text-sm font-medium hover:bg-stone-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      >
+                        <span>{aiLoading ? '…' : '🤖'}</span>
+                        <span>{aiLoading ? 'Translating…' : 'Translate with AI →'}</span>
+                      </button>
+                    </div>
+                  )
+              }
+            </div>
+          )}
+
+          {/* Audio playback */}
+          {sec.audioUrl && (
+            <div className="mb-6">
+              <AudioPlayer audioUrl={sec.audioUrl} label="Listen to verse" />
             </div>
           )}
 
@@ -280,6 +391,15 @@ function Reader({ poem }) {
 
         </div>
       </main>
+
+      {/* WordGlossary overlay */}
+      {glossaryWord && (
+        <WordGlossary
+          word={glossaryWord}
+          loading={glossaryLoading}
+          onClose={() => setGlossaryWord(null)}
+        />
+      )}
     </div>
   )
 }

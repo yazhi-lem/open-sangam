@@ -2,7 +2,7 @@
  * WordGlossary — "Click-to-Define" pop-up for a single word.
  * Shows root meaning, grammatical class (Urichol), and etymology.
  */
-export default function WordGlossary({ word, onClose }) {
+export default function WordGlossary({ word, loading = false, onClose }) {
   if (!word) return null
 
   return (
@@ -14,8 +14,12 @@ export default function WordGlossary({ word, onClose }) {
           <button onClick={onClose} className="text-stone-500 hover:text-white text-xl leading-none">×</button>
         </div>
 
+        {loading && (
+          <p className="text-stone-500 text-sm animate-pulse">Analyzing…</p>
+        )}
+
         {/* Root */}
-        {word.root && (
+        {!loading && word.root && (
           <div>
             <p className="text-xs text-stone-500 uppercase tracking-widest mb-1">Root (வேர்ச்சொல்)</p>
             <p className="tamil text-lg text-stone-200">{word.root}</p>
@@ -23,7 +27,7 @@ export default function WordGlossary({ word, onClose }) {
         )}
 
         {/* Grammatical class */}
-        {word.urichol && (
+        {!loading && word.urichol && (
           <div>
             <p className="text-xs text-stone-500 uppercase tracking-widest mb-1">Class (உரிச்சொல்)</p>
             <p className="text-stone-300">{word.urichol}</p>
@@ -31,7 +35,7 @@ export default function WordGlossary({ word, onClose }) {
         )}
 
         {/* Etymology */}
-        {word.etymology && (
+        {!loading && word.etymology && (
           <div>
             <p className="text-xs text-stone-500 uppercase tracking-widest mb-1">Etymology</p>
             <p className="text-stone-400 text-sm leading-relaxed">{word.etymology}</p>
@@ -39,7 +43,7 @@ export default function WordGlossary({ word, onClose }) {
         )}
 
         {/* English gloss */}
-        {word.gloss && (
+        {!loading && word.gloss && (
           <div className="pt-2 border-t border-stone-800">
             <p className="text-stone-300 italic">"{word.gloss}"</p>
           </div>
