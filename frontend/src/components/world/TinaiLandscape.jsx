@@ -212,7 +212,7 @@ export default function TinaiLandscape({ tinaiId }) {
       {scene.particles.map((group) =>
         group.positions.map((left, i) => {
           const top = group.topRange[0] + Math.floor(
-            ((i * 37 + group.topRange[0]) % (group.topRange[1] - group.topRange[0]))
+            (i * 37) % (group.topRange[1] - group.topRange[0])
           )
           return (
             <span
