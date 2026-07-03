@@ -4,6 +4,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import TinaiMap from './TinaiMap'
+import TinaiWorldDetail from './TinaiWorldDetail'
 import CulturalContextCard from './CulturalContextCard'
 import { POEMS, TINAI_COLORS } from '../../data/poems'
 
@@ -13,7 +14,7 @@ export default function SangamWorld() {
   const [sampleVerse, setSampleVerse]     = useState(null)
 
   function handleTinaiSelect(t) {
-    setSelectedTinai(t)
+    setSelectedTinai(prev => prev === t ? null : t)
     setSampleVerse(null)
   }
 
@@ -51,34 +52,42 @@ export default function SangamWorld() {
       <TinaiMap selected={selectedTinai} onSelect={handleTinaiSelect} />
 
       {selectedTinai && (
-        <div className="space-y-8">
-          {/* Sample verse */}
-          {sampleVerse ? (
-            <div className="rounded-xl border border-stone-800 bg-stone-900/50 p-6 space-y-4">
-              <p className="text-[10px] uppercase tracking-[0.15em] text-stone-500 font-medium">
-                Sample verse · {sampleVerse.poemEn}
-                {sampleVerse.poet ? ` · ${sampleVerse.poet}` : ''}
-              </p>
-              <p className="tamil text-xl text-stone-100 leading-[2] whitespace-pre-line">
-                {sampleVerse.sangamTamil}
-              </p>
-              {sampleVerse.urai && (
-                <p className="tamil text-sm text-stone-400 leading-relaxed border-t border-stone-800 pt-3">
-                  {sampleVerse.urai}
+        <div className="space-y-10">
+          {/* Open-world detail view */}
+          <TinaiWorldDetail tinaiId={selectedTinai} />
+
+          {/* Sample verse from the corpus */}
+          <div className="space-y-3">
+            <h2 className="text-xs font-medium text-stone-500 uppercase tracking-widest">
+              From the Corpus
+            </h2>
+            {sampleVerse ? (
+              <div className="rounded-xl border border-stone-800 bg-stone-900/50 p-6 space-y-4">
+                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-500 font-medium">
+                  Sample verse · {sampleVerse.poemEn}
+                  {sampleVerse.poet ? ` · ${sampleVerse.poet}` : ''}
                 </p>
-              )}
-              <Link
-                to={`/book/${sampleVerse.poemId}`}
-                className="inline-flex items-center gap-1.5 text-xs text-amber-500 hover:text-amber-400 transition-colors"
-              >
-                Read {sampleVerse.poemTa} →
-              </Link>
-            </div>
-          ) : (
-            <div className="rounded-xl border border-stone-800 bg-stone-900/30 p-4 text-sm text-stone-500 italic">
-              Loading sample verse…
-            </div>
-          )}
+                <p className="tamil text-xl text-stone-100 leading-[2] whitespace-pre-line">
+                  {sampleVerse.sangamTamil}
+                </p>
+                {sampleVerse.urai && (
+                  <p className="tamil text-sm text-stone-400 leading-relaxed border-t border-stone-800 pt-3">
+                    {sampleVerse.urai}
+                  </p>
+                )}
+                <Link
+                  to={`/book/${sampleVerse.poemId}`}
+                  className="inline-flex items-center gap-1.5 text-xs text-amber-500 hover:text-amber-400 transition-colors"
+                >
+                  Read {sampleVerse.poemTa} →
+                </Link>
+              </div>
+            ) : (
+              <div className="rounded-xl border border-stone-800 bg-stone-900/30 p-4 text-sm text-stone-500 italic">
+                Loading sample verse…
+              </div>
+            )}
+          </div>
 
           {/* Poems featuring this tinai */}
           <div className="space-y-3">
