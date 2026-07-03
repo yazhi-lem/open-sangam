@@ -2,7 +2,7 @@
   "id": "paripadal_22",
   "poem": "paripadal",
   "tinai": "unknown",
-  "sangamTamil": "ஒளிறு வாட் பொருப்பன் உடல் சமத்து இறுத்த\nகளிறு நிரைத் தவைபோல் கொண்மூ நெரிதர,\nஅரசு படக் கடந்த ஆனாச் சீற்றத்தவன்\nமுரசு அதிர்பவைபோல் முழங்கு இடி பயிற்றி,\nஒடுங்கார் உடன்றவன் தானை வில் விசை\nவிடும் கணை ஒப்பின் கதழ் உறை சிதறூஉ,\nகண் ஒளிர் எ·கின் கடிய மின்னி, அவன்\nவண்மைபோல் வானம் பொழிந்த நீர்-மண்மிசை\nஆனாது வந்து தொகுபு ஈண்டி, மற்று - அவன்\nதானையின் ஊழி....தாவூக் கத்தின்,\nபோன நிலம் எல்லாம் போர் ஆர் வயல் புகுத -\n... .... ..... ...... நீக்கிப் பு ... .... ..... ......\nகான மலைத்தரை கொன்று மணல பினறி\nவான மலைத்த ... .... ..... ...... வ ... .... ..... ......\n... .... ..... ...... லைத்தவ மண முரசு எறிதா,\nதானைத் தலைத்தலை வந்து மைந்து உற்று,",
+  "sangamTamil": "ஒளிறு வாட் பொருப்பன் உடல் சமத்து இறுத்த\nகளிறு நிரைத் தவைபோல் கொண்மூ நெரிதர,\nஅரசு படக் கடந்த ஆனாச் சீற்றத்தவன்\nமுரசு அதிர்பவைபோல் முழங்கு இடி பயிற்றி,\nஒடுங்கார் உடன்றவன் தானை வில் விசை\nவிடும் கணை ஒப்பின் கதழ் உறை சிதறூஉ,\nகண் ஒளிர் எ·கின் கடிய மின்னி, அவன்\nவண்மைபோல் வானம் பொழிந்த நீர்-மண்மிசை\nஆனாது வந்து தொகுபு ஈண்டி, மற்று - அவன்\nதானையின் ஊழிதாவூக் கத்தின்,\nபோன நிலம் எல்லாம் போர் ஆர் வயல் புகுத -\nகான மலைத்தரை கொன்று மணல பினறி\nலைத்தவ மண முரசு எறிதா,\nதானைத் தலைத்தலை வந்து மைந்து உற்று,",
   "urai": null,
   "english": null,
   "lines": [
@@ -405,7 +405,7 @@
     },
     {
       "lineNumber": 10,
-      "text": "தானையின் ஊழி....தாவூக் கத்தின்,",
+      "text": "தானையின் ஊழிதாவூக் கத்தின்,",
       "words": [
         {
           "form": "தானையின்",
@@ -415,7 +415,7 @@
           "gloss": null
         },
         {
-          "form": "ஊழி....தாவூக்",
+          "form": "ஊழிதாவூக்",
           "root": null,
           "urichol": null,
           "etymology": null,
@@ -494,82 +494,6 @@
     },
     {
       "lineNumber": 12,
-      "text": "... .... ..... ...... நீக்கிப் பு ... .... ..... ......",
-      "words": [
-        {
-          "form": "...",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "......",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "நீக்கிப்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "பு",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "...",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "......",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 13,
       "text": "கான மலைத்தரை கொன்று மணல பினறி",
       "words": [
         {
@@ -610,120 +534,9 @@
       ]
     },
     {
-      "lineNumber": 14,
-      "text": "வான மலைத்த ... .... ..... ...... வ ... .... ..... ......",
+      "lineNumber": 13,
+      "text": "லைத்தவ மண முரசு எறிதா,",
       "words": [
-        {
-          "form": "வான",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "மலைத்த",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "...",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "......",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "வ",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "...",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "......",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 15,
-      "text": "... .... ..... ...... லைத்தவ மண முரசு எறிதா,",
-      "words": [
-        {
-          "form": "...",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".....",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "......",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
         {
           "form": "லைத்தவ",
           "root": null,
@@ -755,7 +568,7 @@
       ]
     },
     {
-      "lineNumber": 16,
+      "lineNumber": 14,
       "text": "தானைத் தலைத்தலை வந்து மைந்து உற்று,",
       "words": [
         {

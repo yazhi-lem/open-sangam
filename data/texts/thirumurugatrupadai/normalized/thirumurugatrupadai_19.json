@@ -2,7 +2,7 @@
   "id": "thirumurugatrupadai_19",
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "மீன்பூத் தன்ன தோன்றலர் மீன்சேர்பு\nவளிகிளர்ந் தன்ன செலவினர் வளியிடைத் . . . .(170)\nதீயெழுந் தன்ன திறலினர் தீப்பட\nஉரும்இடித் தன்ன குரலினர் விழுமிய\nஉறுகுறை மருங்கிந்தம் பெறுமுறை கொண்மார்\nஅந்தரக் கொட்பினர் வந்துடன் காணத் . . . .(169 - 174)",
+  "sangamTamil": "மீன்பூத் தன்ன தோன்றலர் மீன்சேர்பு\nவளிகிளர்ந் தன்ன செலவினர் வளியிடைத்\nதீயெழுந் தன்ன திறலினர் தீப்பட\nஉரும்இடித் தன்ன குரலினர் விழுமிய\nஉறுகுறை மருங்கிந்தம் பெறுமுறை கொண்மார்\nஅந்தரக் கொட்பினர் வந்துடன் காணத்",
   "urai": null,
   "english": null,
   "lines": [
@@ -42,7 +42,7 @@
     },
     {
       "lineNumber": 2,
-      "text": "வளிகிளர்ந் தன்ன செலவினர் வளியிடைத் . . . .(170)",
+      "text": "வளிகிளர்ந் தன்ன செலவினர் வளியிடைத்",
       "words": [
         {
           "form": "வளிகிளர்ந்",
@@ -67,34 +67,6 @@
         },
         {
           "form": "வளியிடைத்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".(170)",
           "root": null,
           "urichol": null,
           "etymology": null,
@@ -206,7 +178,7 @@
     },
     {
       "lineNumber": 6,
-      "text": "அந்தரக் கொட்பினர் வந்துடன் காணத் . . . .(169 - 174)",
+      "text": "அந்தரக் கொட்பினர் வந்துடன் காணத்",
       "words": [
         {
           "form": "அந்தரக்",
@@ -231,48 +203,6 @@
         },
         {
           "form": "காணத்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".(169",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "-",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "174)",
           "root": null,
           "urichol": null,
           "etymology": null,

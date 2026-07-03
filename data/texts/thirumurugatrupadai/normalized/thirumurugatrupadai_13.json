@@ -2,7 +2,7 @@
   "id": "thirumurugatrupadai_13",
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "அந்தரப் பல்லியம் கறங்கத் திண்காழ்\nவயிர்எழுந் திசைப்ப, வால்வளை ஞரல\t. . . .(120)\nஉரந்தலைக் கொண்ட உருமிடி முரசமொடு\nபல்பொறி மஞ்ஞை வெல்கொடி அகவ,\nவிசும்பஆ றாக விரைசெலல் முன்னி,\nஉலகம் புகழ்ந்த ஓங்குயர் விழுச்சீர்\nஅலைவாய்ச் சேறலும் நிலைஇய பண்பேஅதான்று\t. . . .(119 - 125)",
+  "sangamTamil": "அந்தரப் பல்லியம் கறங்கத் திண்காழ்\nவயிர்எழுந் திசைப்ப, வால்வளை ஞரல\nஉரந்தலைக் கொண்ட உருமிடி முரசமொடு\nபல்பொறி மஞ்ஞை வெல்கொடி அகவ,\nவிசும்பஆ றாக விரைசெலல் முன்னி,\nஉலகம் புகழ்ந்த ஓங்குயர் விழுச்சீர்\nஅலைவாய்ச் சேறலும் நிலைஇய பண்பேஅதான்று",
   "urai": "இப்படிப் பன்னிரண்டு கைகளும் பல்வேறு செயல்களைச் செய்து கொண்டிருக்கும்போது அவனைச் சுற்றிப் பல முழக்கங்கள் எழுகின்றன. கொம்பு சங்கு முரசம் முதலான பல்வேறு இசைக் கருவிகள் முழங்குகின்றன. அவனது கொடியிலிருக்கும் மயில் அகவுகிறது. இவற்றிற்கு இடையே திருச்சீரலைவாய் என்னும் திருச்செந்தூரிலிருந்து விசும்பு வழியாக விரைந்து செல்ல அவன் திட்டம் தீட்டுகிறான். அவன் செல்வதற்கு முன் நீ அவனிடம் சென்றால் அவனது அருளைப் பெற்று விடலாம். அதுவன்றி…",
   "english": null,
   "lines": [
@@ -42,7 +42,7 @@
     },
     {
       "lineNumber": 2,
-      "text": "வயிர்எழுந் திசைப்ப, வால்வளை ஞரல\t. . . .(120)",
+      "text": "வயிர்எழுந் திசைப்ப, வால்வளை ஞரல",
       "words": [
         {
           "form": "வயிர்எழுந்",
@@ -67,34 +67,6 @@
         },
         {
           "form": "ஞரல",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".(120)",
           "root": null,
           "urichol": null,
           "etymology": null,
@@ -240,7 +212,7 @@
     },
     {
       "lineNumber": 7,
-      "text": "அலைவாய்ச் சேறலும் நிலைஇய பண்பேஅதான்று\t. . . .(119 - 125)",
+      "text": "அலைவாய்ச் சேறலும் நிலைஇய பண்பேஅதான்று",
       "words": [
         {
           "form": "அலைவாய்ச்",
@@ -265,48 +237,6 @@
         },
         {
           "form": "பண்பேஅதான்று",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": ".(119",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "-",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "125)",
           "root": null,
           "urichol": null,
           "etymology": null,
