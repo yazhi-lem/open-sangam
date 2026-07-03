@@ -12,6 +12,11 @@ export default function SangamWorld() {
   const [activeContext, setActiveContext] = useState(null)
   const [sampleVerse, setSampleVerse]     = useState(null)
 
+  function handleTinaiSelect(t) {
+    setSelectedTinai(t)
+    setSampleVerse(null)
+  }
+
   // When a tinai is selected, load one sample verse from the first matching anthology poem
   useEffect(() => {
     if (!selectedTinai) { setSampleVerse(null); return }
@@ -22,9 +27,14 @@ export default function SangamWorld() {
     poem.loader().then(mod => {
       const verses = mod.default
       const matches = verses.filter(v => v.tinai === selectedTinai)
-      const pick = matches.length ? matches[Math.floor(Math.random() * Math.min(matches.length, 10))] : verses[0]
+      // Select a random verse from the first 10 matches to ensure variety without loading the full corpus
+      const pool = matches.length ? matches.slice(0, 10) : verses.slice(0, 1)
+      const pick = pool[Math.floor(Math.random() * pool.length)]
       setSampleVerse({ ...pick, poemId: poem.id, poemTa: poem.ta, poemEn: poem.en })
-    }).catch(() => setSampleVerse(null))
+    }).catch((err) => {
+      console.error('Failed to load sample verse:', err)
+      setSampleVerse(null)
+    })
   }, [selectedTinai])
 
   const matchingPoems = selectedTinai
@@ -38,7 +48,7 @@ export default function SangamWorld() {
         <p className="text-stone-400 text-lg">Explore the five poetic landscapes of the Sangam era</p>
       </div>
 
-      <TinaiMap selected={selectedTinai} onSelect={t => { setSelectedTinai(t); setSampleVerse(null) }} />
+      <TinaiMap selected={selectedTinai} onSelect={handleTinaiSelect} />
 
       {selectedTinai && (
         <div className="space-y-8">

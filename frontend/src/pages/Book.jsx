@@ -140,7 +140,7 @@ function Reader({ poem }) {
   }, [active])
 
   async function handleWordClick(wordText) {
-    // Strip punctuation for lookup
+    // Strip punctuation, keep only Tamil (\u0B80-\u0BFF) and Latin characters
     const clean = wordText.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
     if (!clean) return
     setGlossaryWord({ form: wordText })
@@ -148,7 +148,8 @@ function Reader({ poem }) {
     try {
       const result = await analyzeWord(clean)
       setGlossaryWord({ form: wordText, ...result })
-    } catch {
+    } catch (err) {
+      console.error('Word analysis failed:', err)
       // Keep showing the word form even if analysis fails
     } finally {
       setGlossaryLoading(false)
