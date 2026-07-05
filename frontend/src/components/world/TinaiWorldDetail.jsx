@@ -4,7 +4,7 @@
  */
 import { useState } from 'react'
 import { TINAI_WORLD } from '../../data/tinaiWorld'
-import TinaiLandscape from './TinaiLandscape'
+import WorldStage from './WorldStage'
 
 const TABS = [
   { id: 'world',   label: 'World',          icon: '🗺' },
@@ -55,7 +55,7 @@ function SectionHead({ title }) {
 
 // ── World tab ────────────────────────────────────────────────────────────────
 function WorldTab({ data }) {
-  const { atmosphere, deity, emotion, landscape, colors } = data
+  const { atmosphere, deity, emotion, colors } = data
   return (
     <div className="space-y-6">
       {/* Deity panel */}
@@ -285,8 +285,8 @@ export default function TinaiWorldDetail({ tinaiId }) {
 
   return (
     <div className="space-y-5">
-      {/* Landscape hero */}
-      <TinaiLandscape tinaiId={tinaiId} />
+      {/* Landscape hero — 3D when the device can handle it, 2D otherwise */}
+      <WorldStage tinaiId={tinaiId} />
 
       {/* Zone title bar */}
       <div className="flex items-center gap-4">
