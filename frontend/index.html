@@ -4,7 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <meta name="theme-color" content="#faf9f7" id="theme-color-meta" />
+    <title>Open Sangam</title>
+    <script>
+      // Set the theme class before React hydrates, so there's no flash of the
+      // wrong theme on load. Respects an explicit user choice in localStorage;
+      // otherwise falls back to the OS-level preference (first visit only).
+      // Kept in sync with manual toggles afterward by useAppStore.js.
+      (function () {
+        try {
+          var stored = localStorage.getItem('sangam:theme');
+          var isDark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.classList.toggle('dark', isDark);
+          var meta = document.getElementById('theme-color-meta');
+          if (meta) meta.setAttribute('content', isDark ? '#0c0a09' : '#faf9f7');
+        } catch (e) {
+          // localStorage unavailable (private mode, etc.) — default to light.
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

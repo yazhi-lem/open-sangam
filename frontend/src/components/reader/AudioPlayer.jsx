@@ -23,7 +23,7 @@ export default function AudioPlayer({ audioUrl, label = 'Listen to verse' }) {
     <div className="flex items-center gap-3">
       <button
         onClick={toggle}
-        className="flex items-center gap-2 px-4 py-2 rounded-full bg-stone-800 border border-stone-700 text-stone-300 hover:text-white hover:border-stone-500 transition-colors text-sm"
+        className="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-alt border border-line-strong text-muted hover:text-primary hover:border-line-strong transition-colors text-sm"
       >
         <span>{playing ? '⏸' : '▶'}</span>
         <span>{label}</span>

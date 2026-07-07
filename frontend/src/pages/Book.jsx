@@ -15,8 +15,8 @@ function PoemCard({ poem }) {
       onClick={() => available && nav(`/book/${poem.id}`)}
       className={`group relative rounded-xl border p-5 transition-all duration-150
         ${available
-          ? 'border-stone-200 bg-white hover:border-stone-400 hover:shadow-md cursor-pointer'
-          : 'border-stone-100 bg-stone-50/60 cursor-default'
+          ? 'border-line-strong bg-surface hover:border-accent/50 hover:shadow-md cursor-pointer'
+          : 'border-line bg-surface-alt/60 cursor-default'
         }`}
     >
       {/* Collection badge */}
@@ -27,17 +27,17 @@ function PoemCard({ poem }) {
 
       {/* Tamil name */}
       <h3 className={`tamil text-xl font-semibold leading-tight mb-0.5
-        ${available ? 'text-stone-900 group-hover:text-amber-700' : 'text-stone-400'}`}>
+        ${available ? 'text-primary group-hover:text-accent' : 'text-muted'}`}>
         {poem.ta}
       </h3>
 
       {/* English name */}
-      <p className={`text-sm mb-3 ${available ? 'text-stone-500' : 'text-stone-300'}`}>
+      <p className={`text-sm mb-3 ${available ? 'text-muted' : 'text-faint'}`}>
         {poem.en}
       </p>
 
       {/* Count */}
-      <p className={`text-xs font-mono ${available ? 'text-stone-400' : 'text-stone-300'}`}>
+      <p className={`text-xs font-mono ${available ? 'text-muted' : 'text-faint'}`}>
         {poem.count.toLocaleString()} {poem.unit}
       </p>
 
@@ -45,7 +45,7 @@ function PoemCard({ poem }) {
       <div className="absolute top-4 right-4">
         {available
           ? <span className="w-2 h-2 rounded-full bg-emerald-400 block" title="Available" />
-          : <span className="w-2 h-2 rounded-full bg-stone-200 block" title="Coming soon" />
+          : <span className="w-2 h-2 rounded-full bg-line-strong block" title="Coming soon" />
         }
       </div>
     </div>
@@ -59,20 +59,20 @@ function Library() {
   }))
 
   return (
-    <div className="min-h-screen bg-[#faf9f7]">
+    <div className="min-h-screen bg-page">
 
       {/* Hero */}
       <div className="max-w-4xl mx-auto px-8 pt-16 pb-10">
-        <p className="text-xs uppercase tracking-[0.2em] text-stone-400 font-medium mb-3">
+        <p className="text-xs uppercase tracking-[0.2em] text-muted font-medium mb-3">
           Open Sangam
         </p>
-        <h1 className="tamil text-5xl font-bold text-stone-900 leading-tight mb-2">
+        <h1 className="tamil text-5xl font-bold text-primary leading-tight mb-2">
           சங்க நூலகம்
         </h1>
-        <p className="text-xl text-stone-500 font-light tracking-wide mb-1">
+        <p className="text-xl text-muted font-light tracking-wide mb-1">
           Library of Sangam
         </p>
-        <p className="text-sm text-stone-400 mt-3 max-w-xl leading-relaxed">
+        <p className="text-sm text-muted mt-3 max-w-xl leading-relaxed">
           Classical Tamil literature from the Sangam period (c.&thinsp;300&thinsp;BCE – 300&thinsp;CE).
           Original verse, modern prose rendering, and English translation.
         </p>
@@ -82,11 +82,11 @@ function Library() {
       <div className="max-w-4xl mx-auto px-8 pb-24 space-y-14">
         {byCollection.map(({ key, meta, poems }) => (
           <section key={key}>
-            <div className="flex items-baseline gap-3 mb-6 pb-3 border-b border-stone-200">
-              <h2 className="tamil text-2xl font-semibold text-stone-800">{meta.ta}</h2>
-              <span className="text-stone-400 text-sm">{meta.en}</span>
+            <div className="flex items-baseline gap-3 mb-6 pb-3 border-b border-line-strong">
+              <h2 className="tamil text-2xl font-semibold text-primary">{meta.ta}</h2>
+              <span className="text-muted text-sm">{meta.en}</span>
             </div>
-            <p className="text-sm text-stone-400 mb-6 max-w-xl">{meta.desc}</p>
+            <p className="text-sm text-muted mb-6 max-w-xl">{meta.desc}</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {poems.map(poem => <PoemCard key={poem.id} poem={poem} />)}
             </div>
@@ -95,7 +95,7 @@ function Library() {
       </div>
 
       {/* Footer note */}
-      <div className="border-t border-stone-100 py-6 text-center text-xs text-stone-300">
+      <div className="border-t border-line py-6 text-center text-xs text-faint">
         <span className="tamil">தமிழ் தமிழரின் உயிர்</span>
         {' · '}
         Source: sangathamizh.com · License: CC0
@@ -171,7 +171,7 @@ function Reader({ poem }) {
 
   if (!sections.length) {
     return (
-      <div className="flex items-center justify-center h-full text-stone-400 text-sm">
+      <div className="flex items-center justify-center h-full text-muted text-sm">
         Loading…
       </div>
     )
@@ -186,13 +186,13 @@ function Reader({ poem }) {
   function ClickableVerse({ text }) {
     const words = text.split(/(\s+)/)
     return (
-      <p className="tamil text-[1.35rem] leading-[2.1] text-stone-900 whitespace-pre-wrap">
+      <p className="tamil text-[1.35rem] leading-[2.1] text-primary whitespace-pre-wrap">
         {words.map((part, i) =>
           /^\s+$/.test(part) ? part : (
             <button
               key={i}
               onClick={() => handleWordClick(part)}
-              className="hover:text-amber-700 hover:underline decoration-dotted underline-offset-4 cursor-pointer transition-colors"
+              className="hover:text-accent hover:underline decoration-dotted underline-offset-4 cursor-pointer transition-colors"
             >
               {part}
             </button>
@@ -203,28 +203,28 @@ function Reader({ poem }) {
   }
 
   return (
-    <div className="flex h-[calc(100vh-56px)] bg-[#faf9f7] overflow-hidden">
+    <div className="flex h-[calc(100vh-56px)] bg-page overflow-hidden">
 
       {/* ── Sidebar ──────────────────────────────────────────────── */}
-      <aside className={`shrink-0 border-r border-stone-200 flex flex-col overflow-hidden transition-all duration-200
+      <aside className={`shrink-0 border-r border-line-strong flex flex-col overflow-hidden transition-all duration-200
         ${sidebarOpen ? 'w-60' : 'w-0'}`}>
 
         {/* Poem meta */}
-        <div className="px-4 py-4 border-b border-stone-200 bg-white">
-          <Link to="/book" className="flex items-center gap-1.5 text-[11px] text-stone-400 hover:text-stone-600 mb-3 transition-colors">
+        <div className="px-4 py-4 border-b border-line-strong bg-surface">
+          <Link to="/book" className="flex items-center gap-1.5 text-[11px] text-muted hover:text-muted mb-3 transition-colors">
             ← Library
           </Link>
           <span className={`text-[10px] font-medium uppercase tracking-widest px-1.5 py-0.5 rounded
             ${poem.collection === '8thokai' ? 'bg-amber-50 text-amber-700' : 'bg-indigo-50 text-indigo-600'}`}>
             {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
           </span>
-          <h2 className="tamil text-lg font-semibold text-stone-900 mt-2 leading-tight">{poem.ta}</h2>
-          <p className="text-xs text-stone-400">{poem.en}</p>
-          <p className="text-xs text-stone-300 mt-1 font-mono">{sections.length} {isSection ? 'sections' : 'poems'}</p>
+          <h2 className="tamil text-lg font-semibold text-primary mt-2 leading-tight">{poem.ta}</h2>
+          <p className="text-xs text-muted">{poem.en}</p>
+          <p className="text-xs text-faint mt-1 font-mono">{sections.length} {isSection ? 'sections' : 'poems'}</p>
         </div>
 
         {/* Section list */}
-        <nav className="flex-1 overflow-y-auto bg-white py-1">
+        <nav className="flex-1 overflow-y-auto bg-surface py-1">
           {sections.map((s, i) => {
             const n = isSection ? s.sectionNumber : s.number
             const t = isSection ? s.title : null
@@ -235,11 +235,11 @@ function Reader({ poem }) {
                 onClick={() => setActive(i)}
                 className={`w-full text-left px-3 py-2 flex items-start gap-2 transition-colors border-l-2
                   ${isActive
-                    ? 'border-amber-500 bg-amber-50/70 text-stone-900'
-                    : 'border-transparent text-stone-400 hover:text-stone-700 hover:bg-stone-50'
+                    ? 'border-accent bg-accent/10 text-primary'
+                    : 'border-transparent text-muted hover:text-primary hover:bg-surface-alt'
                   }`}
               >
-                <span className="text-[10px] font-mono text-stone-300 pt-0.5 w-5 shrink-0 text-right">{n}</span>
+                <span className="text-[10px] font-mono text-faint pt-0.5 w-5 shrink-0 text-right">{n}</span>
                 <span className="text-xs leading-snug line-clamp-2 tamil">
                   {t || (sec.poet ? sec.poet : `—`)}
                 </span>
@@ -257,7 +257,7 @@ function Reader({ poem }) {
           <div className="flex items-center justify-between mb-8">
             <button
               onClick={() => setSidebar(o => !o)}
-              className="text-stone-300 hover:text-stone-600 text-sm transition-colors"
+              className="text-faint hover:text-muted text-sm transition-colors"
               title="Toggle sidebar"
             >
               {sidebarOpen ? '← Hide' : '☰ Sections'}
@@ -275,8 +275,8 @@ function Reader({ poem }) {
                   onClick={() => setLayer(l.id)}
                   className={`px-3 py-1 text-xs rounded-full font-medium transition-colors
                     ${layer === l.id
-                      ? 'bg-stone-900 text-white'
-                      : 'text-stone-400 hover:text-stone-700 hover:bg-stone-100'
+                      ? 'bg-primary text-page'
+                      : 'text-muted hover:text-primary hover:bg-surface-alt'
                     }`}
                 >
                   {l.label}
@@ -287,12 +287,12 @@ function Reader({ poem }) {
 
           {/* Section header */}
           <header className="mb-8">
-            <p className="text-[11px] uppercase tracking-widest text-stone-400 font-medium mb-2">
+            <p className="text-[11px] uppercase tracking-widest text-muted font-medium mb-2">
               {poem.en}
               {isSection && sec.lineStart ? ` · lines ${sec.lineStart}–${sec.lineEnd}` : ` · ${sec.tinai || ''}`}
               {!isSection && sec.poet ? ` · ${sec.poet}` : ''}
             </p>
-            <h2 className={`leading-tight font-semibold text-stone-900 ${isSection ? 'tamil text-3xl' : 'text-stone-400 text-lg font-mono'}`}>
+            <h2 className={`leading-tight font-semibold text-primary ${isSection ? 'tamil text-3xl' : 'text-muted text-lg font-mono'}`}>
               {label || `#${num}`}
             </h2>
           </header>
@@ -301,13 +301,13 @@ function Reader({ poem }) {
           {(layer === 'sangam' || layer === 'both') && (
             <div className="mb-6">
               {layer === 'both' && (
-                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-300 mb-3 font-medium">
+                <p className="text-[10px] uppercase tracking-[0.15em] text-faint mb-3 font-medium">
                   Original
-                  <span className="normal-case ml-2 text-stone-400 font-normal">(click any word to define)</span>
+                  <span className="normal-case ml-2 text-muted font-normal">(click any word to define)</span>
                 </p>
               )}
               {layer === 'sangam' && (
-                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-300 mb-3 font-medium">
+                <p className="text-[10px] uppercase tracking-[0.15em] text-faint mb-3 font-medium">
                   Click any word to define
                 </p>
               )}
@@ -316,18 +316,18 @@ function Reader({ poem }) {
           )}
 
           {layer === 'both' && sec.urai && (
-            <div className="border-t border-stone-100 my-8" />
+            <div className="border-t border-line my-8" />
           )}
 
           {/* Urai */}
           {(layer === 'urai' || layer === 'both') && (
             <div className="mb-10">
               {layer === 'both' && (
-                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-300 mb-3 font-medium">உரை</p>
+                <p className="text-[10px] uppercase tracking-[0.15em] text-faint mb-3 font-medium">உரை</p>
               )}
               {sec.urai
-                ? <p className="tamil text-base leading-[1.9] text-stone-600">{sec.urai}</p>
-                : <p className="text-sm text-stone-300 italic">உரை இல்லை</p>
+                ? <p className="tamil text-base leading-[1.9] text-muted">{sec.urai}</p>
+                : <p className="text-sm text-faint italic">உரை இல்லை</p>
               }
             </div>
           )}
@@ -336,22 +336,22 @@ function Reader({ poem }) {
           {layer === 'english' && (
             <div className="mb-10">
               {sec.english
-                ? <p className="text-base leading-relaxed text-stone-700">{sec.english}</p>
+                ? <p className="text-base leading-relaxed text-muted">{sec.english}</p>
                 : aiTranslation
                   ? (
                     <div className="space-y-3">
-                      <p className="text-base leading-relaxed text-stone-700">{aiTranslation}</p>
-                      <p className="text-[10px] text-stone-400 italic">AI translation · Gemini 2.5 Flash · not scholar-verified</p>
+                      <p className="text-base leading-relaxed text-muted">{aiTranslation}</p>
+                      <p className="text-[10px] text-muted italic">AI translation · Gemini 2.5 Flash · not scholar-verified</p>
                     </div>
                   )
                   : (
                     <div className="space-y-4">
-                      <p className="text-sm text-stone-400 italic">No English translation available yet.</p>
+                      <p className="text-sm text-muted italic">No English translation available yet.</p>
                       {aiError && <p className="text-sm text-red-400">{aiError}</p>}
                       <button
                         onClick={() => handleAiTranslate(sec.sangamTamil)}
                         disabled={aiLoading}
-                        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-stone-900 text-white text-sm font-medium hover:bg-stone-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-page text-sm font-medium hover:bg-primary/85 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                       >
                         <span>{aiLoading ? '…' : '🤖'}</span>
                         <span>{aiLoading ? 'Translating…' : 'Translate with AI →'}</span>
@@ -370,21 +370,21 @@ function Reader({ poem }) {
           )}
 
           {/* Prev / Next */}
-          <div className="flex items-center justify-between pt-8 border-t border-stone-100 mt-4">
+          <div className="flex items-center justify-between pt-8 border-t border-line mt-4">
             <button
               onClick={() => setActive(a => Math.max(0, a - 1))}
               disabled={active === 0}
-              className="text-xs text-stone-400 hover:text-stone-700 disabled:opacity-20 transition-colors flex items-center gap-1"
+              className="text-xs text-muted hover:text-primary disabled:opacity-20 transition-colors flex items-center gap-1"
             >
               ← Previous
             </button>
-            <span className="text-xs text-stone-300 font-mono tabular-nums">
+            <span className="text-xs text-faint font-mono tabular-nums">
               {active + 1} / {sections.length}
             </span>
             <button
               onClick={() => setActive(a => Math.min(sections.length - 1, a + 1))}
               disabled={active === sections.length - 1}
-              className="text-xs text-stone-400 hover:text-stone-700 disabled:opacity-20 transition-colors flex items-center gap-1"
+              className="text-xs text-muted hover:text-primary disabled:opacity-20 transition-colors flex items-center gap-1"
             >
               Next →
             </button>
@@ -415,10 +415,10 @@ export default function Book() {
   const poem = POEM_BY_ID[poemId]
   if (!poem || !poem.available) return (
     <div className="flex flex-col items-center justify-center h-[60vh] gap-4">
-      <p className="text-stone-400 text-sm">
+      <p className="text-muted text-sm">
         {poem ? `${poem.en} — coming soon` : 'Poem not found'}
       </p>
-      <Link to="/book" className="text-xs text-amber-600 hover:underline">← Back to Library</Link>
+      <Link to="/book" className="text-xs text-accent hover:underline">← Back to Library</Link>
     </div>
   )
 

@@ -13,10 +13,10 @@ export default function Modal({ title, children, onClose }) {
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="w-full max-w-lg rounded-2xl border border-stone-700 bg-stone-900 shadow-2xl">
-        <div className="flex items-center justify-between px-6 py-4 border-b border-stone-800">
-          <h2 className="text-lg font-semibold text-white">{title}</h2>
-          <button onClick={onClose} className="text-stone-500 hover:text-white text-2xl leading-none">×</button>
+      <div className="w-full max-w-lg rounded-2xl border border-line-strong bg-surface shadow-2xl">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-line">
+          <h2 className="text-lg font-semibold text-primary">{title}</h2>
+          <button onClick={onClose} className="text-faint hover:text-primary text-2xl leading-none">×</button>
         </div>
         <div className="px-6 py-5">{children}</div>
       </div>
