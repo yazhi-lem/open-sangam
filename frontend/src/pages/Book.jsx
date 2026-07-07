@@ -104,6 +104,27 @@ function Library() {
   )
 }
 
+// ── ClickableVerse ────────────────────────────────────────────────────────
+
+function ClickableVerse({ text, onWordClick }) {
+  const words = text.split(/(\s+)/)
+  return (
+    <p className="tamil text-[1.35rem] leading-[2.1] text-primary whitespace-pre-wrap">
+      {words.map((part, i) =>
+        /^\s+$/.test(part) ? part : (
+          <button
+            key={i}
+            onClick={() => onWordClick(part)}
+            className="hover:text-accent hover:underline decoration-dotted underline-offset-4 cursor-pointer transition-colors"
+          >
+            {part}
+          </button>
+        )
+      )}
+    </p>
+  )
+}
+
 // ── Reader ────────────────────────────────────────────────────────────────
 
 function Reader({ poem }) {
@@ -127,12 +148,14 @@ function Reader({ poem }) {
       setSections(mod.default)
       setActive(0)
     })
-  }, [poem.id])
+  }, [poem])
 
   // Reset AI translation when section changes
   useEffect(() => {
-    setAiTranslation(null)
-    setAiError(null)
+    return () => {
+      setAiTranslation(null)
+      setAiError(null)
+    }
   }, [active])
 
   useEffect(() => {
@@ -181,26 +204,6 @@ function Reader({ poem }) {
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
   const label = isSection ? sec.title : null
-
-  // Split sangamTamil into clickable words
-  function ClickableVerse({ text }) {
-    const words = text.split(/(\s+)/)
-    return (
-      <p className="tamil text-[1.35rem] leading-[2.1] text-primary whitespace-pre-wrap">
-        {words.map((part, i) =>
-          /^\s+$/.test(part) ? part : (
-            <button
-              key={i}
-              onClick={() => handleWordClick(part)}
-              className="hover:text-accent hover:underline decoration-dotted underline-offset-4 cursor-pointer transition-colors"
-            >
-              {part}
-            </button>
-          )
-        )}
-      </p>
-    )
-  }
 
   return (
     <div className="flex h-[calc(100vh-56px)] bg-page overflow-hidden">
@@ -311,7 +314,7 @@ function Reader({ poem }) {
                   Click any word to define
                 </p>
               )}
-              <ClickableVerse text={sec.sangamTamil} />
+              <ClickableVerse text={sec.sangamTamil} onWordClick={handleWordClick} />
             </div>
           )}
 
