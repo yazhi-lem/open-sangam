@@ -1,4 +1,4 @@
-name: Deploy to Hostinger (sangam.yazhi.dev)
+name: Deploy to Cloudflare Pages (sangam.yazhi.dev)
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     paths:
       - 'frontend/**'
       - 'data/**'
-      - '.github/workflows/deploy-hostinger.yml'
+      - '.github/workflows/deploy-cloudflare-pages.yml'
   workflow_dispatch:
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
 
@@ -41,12 +41,11 @@ jobs:
           VITE_FUNCTIONS_URL: ${{ secrets.VITE_FUNCTIONS_URL }}
         run: npm run build
 
-      - name: Deploy via FTP to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: frontend/dist/
-          server-dir: /public_html/
-          dangerous-clean-slate: false
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ secrets.CLOUDFLARE_PAGES_PROJECT_NAME }}
+          directory: frontend/dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
