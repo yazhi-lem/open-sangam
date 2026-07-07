@@ -41,11 +41,31 @@ jobs:
           VITE_FUNCTIONS_URL: ${{ secrets.VITE_FUNCTIONS_URL }}
         run: npm run build
 
+      - name: Resolve Cloudflare secrets
+        id: cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+        run: |
+          set -eu
+          api_token="${CLOUDFLARE_API_TOKEN:-${CLOUDFLARE_TOKEN:-}}"
+          account_id="7560700989397b58add447b7d5c6bb1b"
+          project_name="open-sangam"
+
+          if [ -z "$api_token" ]; then
+            echo "Missing Cloudflare API token. Set one of: CLOUDFLARE_API_TOKEN, CLOUDFLARE_TOKEN" >&2
+            exit 1
+          fi
+
+          echo "apiToken=$api_token" >> "$GITHUB_OUTPUT"
+          echo "accountId=$account_id" >> "$GITHUB_OUTPUT"
+          echo "projectName=$project_name" >> "$GITHUB_OUTPUT"
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ secrets.CLOUDFLARE_PAGES_PROJECT_NAME }}
+          apiToken: ${{ steps.cloudflare.outputs.apiToken }}
+          accountId: ${{ steps.cloudflare.outputs.accountId }}
+          projectName: ${{ steps.cloudflare.outputs.projectName }}
           directory: frontend/dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
