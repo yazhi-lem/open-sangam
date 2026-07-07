@@ -12,7 +12,7 @@ export default function Reader() {
   if (error) return (
     <div className="max-w-xl mx-auto px-4 py-32 text-center space-y-4">
       <p className="text-4xl">⚠️</p>
-      <p className="text-stone-400">{error}</p>
+      <p className="text-muted">{error}</p>
     </div>
   )
 
@@ -21,7 +21,7 @@ export default function Reader() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-8">
       {/* Poem selector / breadcrumb */}
-      <div className="text-sm text-stone-500">
+      <div className="text-sm text-faint">
         <span>Maduraikanchi</span>
         <span className="mx-2">·</span>
         <span>{currentIndex + 1} / {verses.length}</span>
