@@ -15,16 +15,15 @@ export default function SangamWorld() {
 
   function handleTinaiSelect(t) {
     setSelectedTinai(prev => prev === t ? null : t)
-    setSampleVerse(null)
   }
 
   // When a tinai is selected, load one sample verse from the first matching anthology poem
   useEffect(() => {
-    if (!selectedTinai) { setSampleVerse(null); return }
+    if (!selectedTinai) return () => setSampleVerse(null)
     const poem = POEMS.find(
       p => p.available && p.loader && Array.isArray(p.tinai) && p.tinai.includes(selectedTinai)
     )
-    if (!poem) { setSampleVerse(null); return }
+    if (!poem) return () => setSampleVerse(null)
     poem.loader().then(mod => {
       const verses = mod.default
       const matches = verses.filter(v => v.tinai === selectedTinai)
@@ -34,8 +33,8 @@ export default function SangamWorld() {
       setSampleVerse({ ...pick, poemId: poem.id, poemTa: poem.ta, poemEn: poem.en })
     }).catch((err) => {
       console.error('Failed to load sample verse:', err)
-      setSampleVerse(null)
     })
+    return () => setSampleVerse(null)
   }, [selectedTinai])
 
   const matchingPoems = selectedTinai

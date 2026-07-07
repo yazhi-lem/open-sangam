@@ -12,14 +12,19 @@ export function useVerse(poemId) {
 
   useEffect(() => {
     if (!poemId) return
-    setLoading(true)
-    setError(null)
-    setCurrentIndex(0)
 
     getVerses(poemId)
-      .then(setVerses)
+      .then(verses => {
+        setVerses(verses)
+        setCurrentIndex(0)
+      })
       .catch((err) => setError(err.message || 'Failed to load verses'))
       .finally(() => setLoading(false))
+
+    return () => {
+      setLoading(true)
+      setError(null)
+    }
   }, [poemId])
 
   return { verses, currentIndex, setCurrentIndex, loading, error }
