@@ -15,16 +15,15 @@ export default function SangamWorld() {
 
   function handleTinaiSelect(t) {
     setSelectedTinai(prev => prev === t ? null : t)
-    setSampleVerse(null)
   }
 
   // When a tinai is selected, load one sample verse from the first matching anthology poem
   useEffect(() => {
-    if (!selectedTinai) { setSampleVerse(null); return }
+    if (!selectedTinai) return () => setSampleVerse(null)
     const poem = POEMS.find(
       p => p.available && p.loader && Array.isArray(p.tinai) && p.tinai.includes(selectedTinai)
     )
-    if (!poem) { setSampleVerse(null); return }
+    if (!poem) return () => setSampleVerse(null)
     poem.loader().then(mod => {
       const verses = mod.default
       const matches = verses.filter(v => v.tinai === selectedTinai)
@@ -34,8 +33,8 @@ export default function SangamWorld() {
       setSampleVerse({ ...pick, poemId: poem.id, poemTa: poem.ta, poemEn: poem.en })
     }).catch((err) => {
       console.error('Failed to load sample verse:', err)
-      setSampleVerse(null)
     })
+    return () => setSampleVerse(null)
   }, [selectedTinai])
 
   const matchingPoems = selectedTinai
@@ -45,8 +44,8 @@ export default function SangamWorld() {
   return (
     <section className="space-y-8">
       <div className="text-center space-y-2">
-        <h1 className="tamil text-4xl font-bold text-yellow-400">சங்க உலகம்</h1>
-        <p className="text-stone-400 text-lg">Explore the five poetic landscapes of the Sangam era</p>
+        <h1 className="tamil text-4xl font-bold text-accent">சங்க உலகம்</h1>
+        <p className="text-muted text-lg">Explore the five poetic landscapes of the Sangam era</p>
       </div>
 
       <TinaiMap selected={selectedTinai} onSelect={handleTinaiSelect} />
@@ -58,32 +57,32 @@ export default function SangamWorld() {
 
           {/* Sample verse from the corpus */}
           <div className="space-y-3">
-            <h2 className="text-xs font-medium text-stone-500 uppercase tracking-widest">
+            <h2 className="text-xs font-medium text-faint uppercase tracking-widest">
               From the Corpus
             </h2>
             {sampleVerse ? (
-              <div className="rounded-xl border border-stone-800 bg-stone-900/50 p-6 space-y-4">
-                <p className="text-[10px] uppercase tracking-[0.15em] text-stone-500 font-medium">
+              <div className="rounded-xl border border-line bg-surface-alt/50 p-6 space-y-4">
+                <p className="text-[10px] uppercase tracking-[0.15em] text-faint font-medium">
                   Sample verse · {sampleVerse.poemEn}
                   {sampleVerse.poet ? ` · ${sampleVerse.poet}` : ''}
                 </p>
-                <p className="tamil text-xl text-stone-100 leading-[2] whitespace-pre-line">
+                <p className="tamil text-xl text-primary leading-[2] whitespace-pre-line">
                   {sampleVerse.sangamTamil}
                 </p>
                 {sampleVerse.urai && (
-                  <p className="tamil text-sm text-stone-400 leading-relaxed border-t border-stone-800 pt-3">
+                  <p className="tamil text-sm text-muted leading-relaxed border-t border-line pt-3">
                     {sampleVerse.urai}
                   </p>
                 )}
                 <Link
                   to={`/book/${sampleVerse.poemId}`}
-                  className="inline-flex items-center gap-1.5 text-xs text-amber-500 hover:text-amber-400 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs text-accent hover:text-accent-strong transition-colors"
                 >
                   Read {sampleVerse.poemTa} →
                 </Link>
               </div>
             ) : (
-              <div className="rounded-xl border border-stone-800 bg-stone-900/30 p-4 text-sm text-stone-500 italic">
+              <div className="rounded-xl border border-line bg-surface-alt/30 p-4 text-sm text-faint italic">
                 Loading sample verse…
               </div>
             )}
@@ -91,28 +90,28 @@ export default function SangamWorld() {
 
           {/* Poems featuring this tinai */}
           <div className="space-y-3">
-            <h2 className="text-sm font-medium text-stone-400 uppercase tracking-widest">
+            <h2 className="text-sm font-medium text-muted uppercase tracking-widest">
               Poems in this landscape — {matchingPoems.length} works
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {matchingPoems.map(poem => {
-                const colorCls = TINAI_COLORS[selectedTinai] || 'text-stone-500 bg-stone-800'
+                const colorCls = TINAI_COLORS[selectedTinai] || 'text-faint bg-surface-alt'
                 return (
                   <div key={poem.id} className={`rounded-xl border p-4 space-y-2 transition-colors
                     ${poem.available
-                      ? 'border-stone-700 bg-stone-900/50 hover:border-stone-500'
-                      : 'border-stone-800 bg-stone-900/20 opacity-50'
+                      ? 'border-line-strong bg-surface-alt/50 hover:border-line-strong'
+                      : 'border-line bg-surface-alt/20 opacity-50'
                     }`}
                   >
                     <span className={`inline-block text-[9px] font-medium uppercase tracking-widest px-1.5 py-0.5 rounded ${colorCls}`}>
                       {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
                     </span>
-                    <p className="tamil text-base font-semibold text-stone-100 leading-tight">{poem.ta}</p>
-                    <p className="text-xs text-stone-500">{poem.en}</p>
-                    <p className="text-xs font-mono text-stone-600">{poem.count.toLocaleString()} {poem.unit}</p>
+                    <p className="tamil text-base font-semibold text-primary leading-tight">{poem.ta}</p>
+                    <p className="text-xs text-faint">{poem.en}</p>
+                    <p className="text-xs font-mono text-faint">{poem.count.toLocaleString()} {poem.unit}</p>
                     {poem.available
-                      ? <Link to={`/book/${poem.id}`} className="block text-xs text-amber-500 hover:text-amber-400 transition-colors">Read →</Link>
-                      : <span className="text-xs text-stone-600">Coming soon</span>
+                      ? <Link to={`/book/${poem.id}`} className="block text-xs text-accent hover:text-accent-strong transition-colors">Read →</Link>
+                      : <span className="text-xs text-faint">Coming soon</span>
                     }
                   </div>
                 )

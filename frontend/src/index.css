@@ -1,19 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+/* Enable manual (class-based) dark mode instead of Tailwind v4's default
+   media-query strategy, so the toggle + localStorage can drive it. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Semantic color tokens.
+ *
+ * Each --color-* var declared inside @theme is turned into real Tailwind
+ * utilities by Tailwind v4 (bg-page, text-page, border-page, etc.) — but the
+ * *value* of each var is itself just a reference to a plain custom property
+ * (--bg, --surface, ...) defined below in :root / .dark. That indirection is
+ * what lets a single class like `bg-surface` resolve to a light value or a
+ * dark value purely based on whether `.dark` is present on <html>, with zero
+ * per-component `dark:` variants required.
+ */
+@theme {
+  --color-page: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-primary: var(--text);
+  --color-muted: var(--text-muted);
+  --color-faint: var(--text-faint);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-on-accent: var(--on-accent);
+  --color-danger: var(--danger);
+}
+
+/* Light theme (default) */
 :root {
   --font-tamil: 'Noto Sans Tamil', 'Latha', 'Nirmala UI', sans-serif;
   --font-tamil-serif: 'Noto Serif Tamil', 'Latha', serif;
   --font-body: 'Inter', system-ui, sans-serif;
 
-  /* Brand palette — earthy Sangam tones */
-  --color-bg: #0f0e0b;
-  --color-surface: #1a1814;
-  --color-border: #2e2b24;
-  --color-text: #f0ede4;
-  --color-muted: #9c9488;
-  --color-accent: #c8972a;   /* warm gold */
-  --color-accent-2: #6d9e6a; /* Mullai green */
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --surface-alt: #f5f4f1;
+  --border: #e7e5e0;       /* stone-200 equivalent */
+  --border-strong: #d6d3ce; /* stone-300 equivalent */
+  --text: #1c1917;          /* stone-900 */
+  --text-muted: #78716c;    /* stone-500 */
+  --text-faint: #a8a29e;    /* stone-400 */
+  --accent: #b45309;        /* amber-700 */
+  --accent-strong: #92400e; /* amber-800 */
+  --on-accent: #fffbeb;
+  --danger: #dc2626;
+}
+
+/* Dark theme — matches the app's original hand-tuned dark palette */
+.dark {
+  --bg: #0c0a09;            /* stone-950 */
+  --surface: #1c1917;       /* stone-900 */
+  --surface-alt: #292524;   /* stone-800 */
+  --border: #292524;        /* stone-800 */
+  --border-strong: #44403c; /* stone-700 */
+  --text: #ffffff;
+  --text-muted: #a8a29e;    /* stone-400 */
+  --text-faint: #78716c;    /* stone-500 */
+  --accent: #facc15;        /* yellow-400 */
+  --accent-strong: #eab308; /* yellow-500 */
+  --on-accent: #1c1917;     /* stone-900 — dark text reads better on gold */
+  --danger: #f87171;
 }
 
 *, *::before, *::after {
@@ -23,8 +74,8 @@
 body {
   margin: 0;
   font-family: var(--font-body);
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: var(--bg);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -36,4 +87,20 @@ body {
 .tamil-verse {
   font-family: var(--font-tamil-serif);
   line-height: 2;
+}
+
+/* Smooth theme transition animation. Scoped to color-related properties only
+   so it never fights with existing transform/width transitions elsewhere
+   (e.g. the Book reader's collapsible sidebar). */
+body, header, aside, nav, main, section, article, div, button, a, input, textarea,
+p, h1, h2, h3, h4, span, blockquote, li {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+  }
 }

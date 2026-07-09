@@ -39,7 +39,7 @@ export default function WorldStage({ tinaiId }) {
         {supportsWebGL && (
           <button
             onClick={() => setFullscreen(true)}
-            className="text-[10px] px-2 py-1 rounded-md border border-stone-800 text-stone-500 hover:text-stone-300 transition-colors uppercase tracking-widest"
+            className="text-[10px] px-2 py-1 rounded-md border border-line text-faint hover:text-muted transition-colors uppercase tracking-widest"
             title="Open immersive fullscreen landscape"
           >
             ⛶ Fullscreen
@@ -54,8 +54,8 @@ export default function WorldStage({ tinaiId }) {
                 onClick={() => setWorldRenderMode(mode)}
                 className={`text-[10px] px-2 py-1 rounded-md border transition-colors uppercase tracking-widest
                   ${worldRenderMode === mode
-                    ? 'border-amber-500/60 text-amber-400 bg-amber-500/10'
-                    : 'border-stone-800 text-stone-500 hover:text-stone-300'
+                    ? 'border-accent/60 text-accent bg-accent/10'
+                    : 'border-line text-faint hover:text-muted'
                   }`}
                 title={mode === 'auto' ? 'Choose automatically for this device' : `Force ${mode.toUpperCase()} view`}
               >
