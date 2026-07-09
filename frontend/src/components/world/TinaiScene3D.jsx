@@ -141,7 +141,7 @@ function Sun({ color }) {
   )
 }
 
-function SceneContents({ tinaiId, detail }) {
+function SceneContents({ tinaiId, detail, meshOnly }) {
   const visual = getVisualTheme(tinaiId)
   const world = TINAI_WORLD[tinaiId]
   const preset = DETAIL_PRESETS[detail] || DETAIL_PRESETS.high
@@ -155,11 +155,12 @@ function SceneContents({ tinaiId, detail }) {
       <directionalLight color={visual.keyLight} intensity={1.1} position={[3, 4, 2]} />
 
       <Terrain visual={visual} segments={preset.segments} />
-      {visual.water && <WaterPlane visual={visual} />}
-      {visual.stars && <StarField />}
-      {visual.sun && <Sun color={visual.sun} />}
 
-      {world && (
+      {!meshOnly && visual.water && <WaterPlane visual={visual} />}
+      {!meshOnly && visual.stars && <StarField />}
+      {!meshOnly && visual.sun && <Sun color={visual.sun} />}
+
+      {!meshOnly && world && (
         <>
           <GlyphField
             tinaiId={tinaiId}
@@ -183,7 +184,7 @@ function SceneContents({ tinaiId, detail }) {
       <OrbitControls
         target={[0, 0.4, 0]}
         minDistance={3.2}
-        maxDistance={8}
+        maxDistance={9}
         maxPolarAngle={Math.PI / 2.05}
         enableDamping
         dampingFactor={0.08}
@@ -194,18 +195,23 @@ function SceneContents({ tinaiId, detail }) {
   )
 }
 
-export default function TinaiScene3D({ tinaiId, detail = 'high' }) {
+export default function TinaiScene3D({ tinaiId, detail = 'high', meshOnly = false, fullscreen = false }) {
   const preset = DETAIL_PRESETS[detail] || DETAIL_PRESETS.high
 
   return (
-    <div className="relative w-full overflow-hidden rounded-2xl" style={{ height: '320px' }} role="img" aria-label={`${tinaiId} 3D landscape`}>
+    <div
+      className={fullscreen ? 'relative w-full h-full' : 'relative w-full overflow-hidden rounded-2xl'}
+      style={fullscreen ? undefined : { height: '320px' }}
+      role="img"
+      aria-label={`${tinaiId} 3D landscape`}
+    >
       <Canvas
         dpr={preset.dpr}
         gl={{ antialias: preset.antialias, powerPreference: detail === 'low' ? 'low-power' : 'default' }}
         camera={{ position: [0, 2.4, 5.2], fov: 45 }}
       >
         <Suspense fallback={null}>
-          <SceneContents tinaiId={tinaiId} detail={detail} />
+          <SceneContents tinaiId={tinaiId} detail={detail} meshOnly={meshOnly} />
         </Suspense>
       </Canvas>
     </div>
