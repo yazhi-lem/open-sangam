@@ -100,6 +100,12 @@ export default function Knowledge() {
           >
             Enter Sangam World
           </Link>
+          <Link
+            to="/graph"
+            className="px-6 py-3 rounded-xl border border-line-strong text-muted hover:text-primary transition-colors"
+          >
+            See the Connections Graph
+          </Link>
         </div>
       </section>
     </div>

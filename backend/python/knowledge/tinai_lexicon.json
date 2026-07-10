@@ -1,0 +1,451 @@
+{
+ "kurinji": {
+  "deity": [
+   "முருகன்",
+   "செவ்வேல் செய்யோன்"
+  ],
+  "flora": [
+   {
+    "ta": "குறிஞ்சி",
+    "en": "Kurinji (Strobilanthes)"
+   },
+   {
+    "ta": "வேங்கை",
+    "en": "Venkai (Indian Kino)"
+   },
+   {
+    "ta": "காந்தள்",
+    "en": "Kantal (Gloriosa Lily)"
+   },
+   {
+    "ta": "மஞ்சாடி",
+    "en": "Manjadi (Coral Bead)"
+   },
+   {
+    "ta": "தேக்கு",
+    "en": "Teak"
+   },
+   {
+    "ta": "மூங்கில்",
+    "en": "Bamboo"
+   },
+   {
+    "ta": "நெடல்",
+    "en": "Wild Mango"
+   }
+  ],
+  "fauna": [
+   {
+    "ta": "மயில்",
+    "en": "Peacock"
+   },
+   {
+    "ta": "யானை",
+    "en": "Elephant"
+   },
+   {
+    "ta": "கரடி",
+    "en": "Bear"
+   },
+   {
+    "ta": "குரங்கு",
+    "en": "Monkey"
+   },
+   {
+    "ta": "மான்",
+    "en": "Spotted Deer"
+   },
+   {
+    "ta": "காட்டுக்கோழி",
+    "en": "Jungle Fowl"
+   },
+   {
+    "ta": "மரகத பறவை",
+    "en": "Hill Myna"
+   }
+  ],
+  "landscape": [
+   {
+    "ta": "அருவி",
+    "en": "Waterfall"
+   },
+   {
+    "ta": "மலைக்குகை",
+    "en": "Mountain Cave"
+   },
+   {
+    "ta": "தேன்கூடு",
+    "en": "Honeycomb Cliff"
+   },
+   {
+    "ta": "சிலம்பு",
+    "en": "Hill Stream"
+   },
+   {
+    "ta": "கவாது",
+    "en": "Mountain Pass"
+   },
+   {
+    "ta": "மூங்கில் காடு",
+    "en": "Bamboo Grove"
+   }
+  ],
+  "people": [
+   {
+    "ta": "குறவர்",
+    "en": "Kuravar"
+   },
+   {
+    "ta": "வேடுவர்",
+    "en": "Vedavar"
+   },
+   {
+    "ta": "மலையப் பெண்கள்",
+    "en": "Hill Women"
+   },
+   {
+    "ta": "வேலன்",
+    "en": "Velan"
+   }
+  ]
+ },
+ "mullai": {
+  "deity": [
+   "மாயோன்",
+   "திருமால்"
+  ],
+  "flora": [
+   {
+    "ta": "முல்லை",
+    "en": "Mullai (Jasmine)"
+   },
+   {
+    "ta": "கடம்பு",
+    "en": "Kadamba"
+   },
+   {
+    "ta": "கொன்றை",
+    "en": "Konrai (Indian Laburnum)"
+   },
+   {
+    "ta": "பிடவம்",
+    "en": "Pidavam (Forest Creeper)"
+   },
+   {
+    "ta": "காய்க்குருவி",
+    "en": "Caper Bush"
+   }
+  ],
+  "fauna": [
+   {
+    "ta": "குயில்",
+    "en": "Koel (Asian Cuckoo)"
+   },
+   {
+    "ta": "பசு",
+    "en": "Cow"
+   },
+   {
+    "ta": "எருது",
+    "en": "Bull"
+   },
+   {
+    "ta": "ஓநாய்",
+    "en": "Indian Wolf"
+   },
+   {
+    "ta": "முயல்",
+    "en": "Hare"
+   }
+  ],
+  "landscape": [
+   {
+    "ta": "கடம்பு காடு",
+    "en": "Kadamba Forest"
+   },
+   {
+    "ta": "மேய்ச்சல் வெளி",
+    "en": "Grazing Meadow"
+   },
+   {
+    "ta": "கால்வாய்",
+    "en": "Forest Stream"
+   },
+   {
+    "ta": "ஆய்ச்சி குடில்",
+    "en": "Cowherd Settlement"
+   },
+   {
+    "ta": "முல்லை பந்தல்",
+    "en": "Jasmine Bower"
+   }
+  ],
+  "people": [
+   {
+    "ta": "ஆயர்",
+    "en": "Ayar"
+   },
+   {
+    "ta": "ஆய்ச்சியர்",
+    "en": "Ayachchiyar"
+   },
+   {
+    "ta": "இடையர்",
+    "en": "Idaiyar"
+   }
+  ]
+ },
+ "marutam": {
+  "deity": [
+   "இந்திரன்"
+  ],
+  "flora": [
+   {
+    "ta": "மருதம்",
+    "en": "Marutam (Arjuna Tree)"
+   },
+   {
+    "ta": "ஆம்பல்",
+    "en": "White Water Lily"
+   },
+   {
+    "ta": "செங்கழுநீர்",
+    "en": "Red Lotus"
+   },
+   {
+    "ta": "கைதை",
+    "en": "Screw Pine (Kaithai)"
+   },
+   {
+    "ta": "வாழை",
+    "en": "Banana"
+   }
+  ],
+  "fauna": [
+   {
+    "ta": "நாரை",
+    "en": "Painted Stork"
+   },
+   {
+    "ta": "கொக்கு",
+    "en": "Grey Heron"
+   },
+   {
+    "ta": "மீன்கொத்தி",
+    "en": "Common Kingfisher"
+   },
+   {
+    "ta": "எருமை",
+    "en": "Water Buffalo"
+   },
+   {
+    "ta": "தவளை",
+    "en": "Frog"
+   }
+  ],
+  "landscape": [
+   {
+    "ta": "வயல்",
+    "en": "Paddy Field"
+   },
+   {
+    "ta": "ஆறு",
+    "en": "River"
+   },
+   {
+    "ta": "அஞ்சனவனம்",
+    "en": "Kajal-Tree Grove (Marutam grove)"
+   },
+   {
+    "ta": "நகரம்",
+    "en": "Market Town"
+   },
+   {
+    "ta": "குளம்",
+    "en": "Tank / Pond"
+   }
+  ],
+  "people": [
+   {
+    "ta": "உழவர்",
+    "en": "Uzhavar"
+   },
+   {
+    "ta": "வணிகர்",
+    "en": "Vanigar"
+   },
+   {
+    "ta": "வேளான் மகளிர்",
+    "en": "Velan Women"
+   },
+   {
+    "ta": "கணிகையர்",
+    "en": "Kanigaiyar"
+   }
+  ]
+ },
+ "neytal": {
+  "deity": [
+   "வருணன்",
+   "கடலோன்"
+  ],
+  "flora": [
+   {
+    "ta": "நெய்தல்",
+    "en": "Neytal (Blue Water Lily)"
+   },
+   {
+    "ta": "புன்னை",
+    "en": "Punnai (Alexandrian Laurel)"
+   },
+   {
+    "ta": "தாழை",
+    "en": "Thadavalam / Thaazhai (Screw Pine)"
+   },
+   {
+    "ta": "கண்டல்",
+    "en": "Kandal (Mangrove)"
+   },
+   {
+    "ta": "சுரம்",
+    "en": "Coastal Scrub"
+   }
+  ],
+  "fauna": [
+   {
+    "ta": "கடல்காகம்",
+    "en": "Seagull"
+   },
+   {
+    "ta": "நாரை",
+    "en": "Egret / Sea Heron"
+   },
+   {
+    "ta": "சுறா",
+    "en": "Shark"
+   },
+   {
+    "ta": "நண்டு",
+    "en": "Crab"
+   },
+   {
+    "ta": "திமிங்கிலம்",
+    "en": "Sea Creature / Dolphin"
+   }
+  ],
+  "landscape": [
+   {
+    "ta": "கடற்கரை",
+    "en": "Beach"
+   },
+   {
+    "ta": "கழிமுகம்",
+    "en": "Estuary / Backwater"
+   },
+   {
+    "ta": "மீன்படகு துறை",
+    "en": "Fishing Harbour"
+   },
+   {
+    "ta": "உப்புப் படுகை",
+    "en": "Salt Pan"
+   },
+   {
+    "ta": "பவளப் படுகை",
+    "en": "Coral Shoal"
+   }
+  ],
+  "people": [
+   {
+    "ta": "பரதவர்",
+    "en": "Paravar"
+   },
+   {
+    "ta": "மீனவர்",
+    "en": "Meenavr"
+   },
+   {
+    "ta": "உப்பு வணிகர்",
+    "en": "Salt Merchants"
+   }
+  ]
+ },
+ "palai": {
+  "deity": [
+   "கொற்றவை",
+   "துர்க்கை"
+  ],
+  "flora": [
+   {
+    "ta": "பாலை மரம்",
+    "en": "Palai Tree (Wrightia)"
+   },
+   {
+    "ta": "எருக்கு",
+    "en": "Erukku (Calotropis)"
+   },
+   {
+    "ta": "இலுப்பை",
+    "en": "Mahua Tree"
+   },
+   {
+    "ta": "முள்ளம்",
+    "en": "Acacia / Thorn Scrub"
+   }
+  ],
+  "fauna": [
+   {
+    "ta": "புலி",
+    "en": "Tiger"
+   },
+   {
+    "ta": "கழுகு",
+    "en": "Vulture"
+   },
+   {
+    "ta": "நரி",
+    "en": "Jackal / Fox"
+   },
+   {
+    "ta": "பாம்பு",
+    "en": "Serpent"
+   },
+   {
+    "ta": "காக்கை",
+    "en": "Crow"
+   }
+  ],
+  "landscape": [
+   {
+    "ta": "பாலைவனம்",
+    "en": "Wasteland"
+   },
+   {
+    "ta": "சுரம்",
+    "en": "Desolate Road / Wild Path"
+   },
+   {
+    "ta": "காட்டு வழி",
+    "en": "Jungle Track"
+   },
+   {
+    "ta": "கல்லூர்",
+    "en": "Rocky Upland"
+   }
+  ],
+  "people": [
+   {
+    "ta": "மறவர்",
+    "en": "Maravar"
+   },
+   {
+    "ta": "எயினர்",
+    "en": "Eyinar"
+   },
+   {
+    "ta": "வழிப்போக்கர்",
+    "en": "Travellers"
+   }
+  ]
+ }
+}

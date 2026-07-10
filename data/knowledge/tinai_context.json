@@ -1,0 +1,1471 @@
+{
+ "kurinji": {
+  "verseCount": 370,
+  "topPoets": [
+   {
+    "poet": "கபிலர்",
+    "count": 52
+   },
+   {
+    "poet": "பரணர்",
+    "count": 22
+   },
+   {
+    "poet": "அள்ளூர் நன்முல்லையார்",
+    "count": 3
+   },
+   {
+    "poet": "நக்கீரனார்",
+    "count": 3
+   },
+   {
+    "poet": "அவ்வையார்",
+    "count": 3
+   },
+   {
+    "poet": "மதுரை மருதன் இளநாகனார்",
+    "count": 3
+   },
+   {
+    "poet": "பெருங்குன்றூர் கிழார்",
+    "count": 2
+   },
+   {
+    "poet": "வெறிபாடிய காமக்கண்ணியார்",
+    "count": 2
+   }
+  ],
+  "poemBreakdown": [
+   {
+    "poem": "kurunthokai",
+    "count": 144
+   },
+   {
+    "poem": "natrinai",
+    "count": 132
+   },
+   {
+    "poem": "akananooru",
+    "count": 40
+   },
+   {
+    "poem": "kalithokai",
+    "count": 29
+   },
+   {
+    "poem": "kurinjipattu",
+    "count": 25
+   }
+  ],
+  "attested": {
+   "flora": [
+    {
+     "cat": "flora",
+     "ta": "வேங்கை",
+     "en": "Venkai (Indian Kino)",
+     "count": 55,
+     "samples": [
+      {
+       "id": "akananooru_002",
+       "poem": "akananooru",
+       "number": 2
+      },
+      {
+       "id": "akananooru_012",
+       "poem": "akananooru",
+       "number": 12
+      },
+      {
+       "id": "akananooru_038",
+       "poem": "akananooru",
+       "number": 38
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "காந்தள்",
+     "en": "Kantal (Gloriosa Lily)",
+     "count": 34,
+     "samples": [
+      {
+       "id": "akananooru_018",
+       "poem": "akananooru",
+       "number": 18
+      },
+      {
+       "id": "akananooru_078",
+       "poem": "akananooru",
+       "number": 78
+      },
+      {
+       "id": "akananooru_092",
+       "poem": "akananooru",
+       "number": 92
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "குறிஞ்சி",
+     "en": "Kurinji (Strobilanthes)",
+     "count": 7,
+     "samples": [
+      {
+       "id": "akananooru_102",
+       "poem": "akananooru",
+       "number": 102
+      },
+      {
+       "id": "kurinjipattu_10",
+       "poem": "kurinjipattu",
+       "number": null
+      },
+      {
+       "id": "kurunthokai_003",
+       "poem": "kurunthokai",
+       "number": 3
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "மூங்கில்",
+     "en": "Bamboo",
+     "count": 3,
+     "samples": [
+      {
+       "id": "kalithokai_050",
+       "poem": "kalithokai",
+       "number": 50
+      },
+      {
+       "id": "kurunthokai_179",
+       "poem": "kurunthokai",
+       "number": 179
+      },
+      {
+       "id": "kurunthokai_201",
+       "poem": "kurunthokai",
+       "number": 201
+      }
+     ]
+    }
+   ],
+   "fauna": [
+    {
+     "cat": "fauna",
+     "ta": "யானை",
+     "en": "Elephant",
+     "count": 53,
+     "samples": [
+      {
+       "id": "akananooru_018",
+       "poem": "akananooru",
+       "number": 18
+      },
+      {
+       "id": "akananooru_068",
+       "poem": "akananooru",
+       "number": 68
+      },
+      {
+       "id": "akananooru_078",
+       "poem": "akananooru",
+       "number": 78
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "மான்",
+     "en": "Spotted Deer",
+     "count": 29,
+     "samples": [
+      {
+       "id": "akananooru_008",
+       "poem": "akananooru",
+       "number": 8
+      },
+      {
+       "id": "akananooru_032",
+       "poem": "akananooru",
+       "number": 32
+      },
+      {
+       "id": "akananooru_102",
+       "poem": "akananooru",
+       "number": 102
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "மயில்",
+     "en": "Peacock",
+     "count": 13,
+     "samples": [
+      {
+       "id": "akananooru_082",
+       "poem": "akananooru",
+       "number": 82
+      },
+      {
+       "id": "akananooru_152",
+       "poem": "akananooru",
+       "number": 152
+      },
+      {
+       "id": "akananooru_198",
+       "poem": "akananooru",
+       "number": 198
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "குரங்கு",
+     "en": "Monkey",
+     "count": 1,
+     "samples": [
+      {
+       "id": "kurunthokai_288",
+       "poem": "kurunthokai",
+       "number": 288
+      }
+     ]
+    }
+   ],
+   "landscape": [
+    {
+     "cat": "landscape",
+     "ta": "அருவி",
+     "en": "Waterfall",
+     "count": 65,
+     "samples": [
+      {
+       "id": "akananooru_022",
+       "poem": "akananooru",
+       "number": 22
+      },
+      {
+       "id": "akananooru_028",
+       "poem": "akananooru",
+       "number": 28
+      },
+      {
+       "id": "akananooru_038",
+       "poem": "akananooru",
+       "number": 38
+      }
+     ]
+    },
+    {
+     "cat": "landscape",
+     "ta": "சிலம்பு",
+     "en": "Hill Stream",
+     "count": 9,
+     "samples": [
+      {
+       "id": "akananooru_198",
+       "poem": "akananooru",
+       "number": 198
+      },
+      {
+       "id": "kalithokai_046",
+       "poem": "kalithokai",
+       "number": 46
+      },
+      {
+       "id": "kalithokai_057",
+       "poem": "kalithokai",
+       "number": 57
+      }
+     ]
+    }
+   ],
+   "people": [
+    {
+     "cat": "people",
+     "ta": "குறவர்",
+     "en": "Kuravar",
+     "count": 14,
+     "samples": [
+      {
+       "id": "akananooru_012",
+       "poem": "akananooru",
+       "number": 12
+      },
+      {
+       "id": "akananooru_078",
+       "poem": "akananooru",
+       "number": 78
+      },
+      {
+       "id": "kalithokai_039",
+       "poem": "kalithokai",
+       "number": 39
+      }
+     ]
+    },
+    {
+     "cat": "people",
+     "ta": "வேலன்",
+     "en": "Velan",
+     "count": 9,
+     "samples": [
+      {
+       "id": "akananooru_098",
+       "poem": "akananooru",
+       "number": 98
+      },
+      {
+       "id": "akananooru_182",
+       "poem": "akananooru",
+       "number": 182
+      },
+      {
+       "id": "kurunthokai_111",
+       "poem": "kurunthokai",
+       "number": 111
+      }
+     ]
+    }
+   ],
+   "deity": [
+    {
+     "cat": "deity",
+     "ta": "முருகன்",
+     "en": null,
+     "count": 2,
+     "samples": [
+      {
+       "id": "akananooru_098",
+       "poem": "akananooru",
+       "number": 98
+      },
+      {
+       "id": "akananooru_158",
+       "poem": "akananooru",
+       "number": 158
+      }
+     ]
+    }
+   ]
+  },
+  "sampleVerses": [
+   {
+    "id": "akananooru_002",
+    "poem": "akananooru",
+    "number": 2,
+    "poet": "கபிலர்",
+    "snippet": "கோழிலை வாழைக் கோள் முதிர் பெருங் குலை ஊழுறு தீம் கனி, உண்ணுநர்த் தடுத்த சாரற் பலவின் சுளையொடு, ஊழ் படு பாறை நெடுஞ் சுனை,"
+   },
+   {
+    "id": "akananooru_008",
+    "poem": "akananooru",
+    "number": 8,
+    "poet": "பெருங்குன்றூர் கிழார்",
+    "snippet": "ஈயல் புற்றத்து ஈர்ம் புறத்து இறுத்த குரும்பி வல்சிப் பெருங் கை ஏற்றை தூங்கு தோல் துதிய வள் உகிர் கதுவலின், பாம்பு மதன் அ"
+   },
+   {
+    "id": "akananooru_012",
+    "poem": "akananooru",
+    "number": 12,
+    "poet": "கபிலர்",
+    "snippet": "யாயே, கண்ணினும் கடுங் காதலளே; எந்தையும், நிலன் உறப் பொறாஅன்; 'சீறடி சிவப்ப, எவன், இல! குறுமகள்! இயங்குதி?' என்னும்; யாமே"
+   },
+   {
+    "id": "akananooru_018",
+    "poem": "akananooru",
+    "number": 18,
+    "poet": "கபிலர்",
+    "snippet": "நீர் நிறம் கரப்ப, ஊழுறுபு உதிர்ந்து, பூமலர் கஞலிய கடு வரற் கான் யாற்று, கராஅம் துஞ்சும் கல் உயர் மறி சுழி, மராஅ யானை மதம"
+   },
+   {
+    "id": "akananooru_022",
+    "poem": "akananooru",
+    "number": 22,
+    "poet": "வெறிபாடிய காமக்கண்ணியார்",
+    "snippet": "'அணங்குடை நெடு வரை உச்சியின் இழிதரும் கணம் கொள் அருவிக் கான் கெழு நாடன் மணம் கமழ் வியல் மார்பு அணங்கிய செல்லல் இது என அற"
+   },
+   {
+    "id": "akananooru_028",
+    "poem": "akananooru",
+    "number": 28,
+    "poet": "பாண்டியன் அறிவுடைநம்பி",
+    "snippet": "மெய்யின் தீரா மேவரு காமமொடு எய்யாய் ஆயினும், உரைப்பல் தோழி! கொய்யா முன்னும், குரல் வார்பு, தினையே அருவி ஆன்ற பைங் கால் த"
+   }
+  ]
+ },
+ "mullai": {
+  "verseCount": 131,
+  "topPoets": [
+   {
+    "poet": "அவ்வையார்",
+    "count": 6
+   },
+   {
+    "poet": "இடைக்காடனார்",
+    "count": 5
+   },
+   {
+    "poet": "ஒக்கூர் மாசாத்தியார்",
+    "count": 4
+   },
+   {
+    "poet": "மதுரை மருதன் இளநாகனார்",
+    "count": 3
+   },
+   {
+    "poet": "குறுங்குடி மருதனார்",
+    "count": 2
+   },
+   {
+    "poet": "மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+    "count": 2
+   },
+   {
+    "poet": "கோவர்த்தனார்",
+    "count": 2
+   },
+   {
+    "poet": "பேயனார்",
+    "count": 2
+   }
+  ],
+  "poemBreakdown": [
+   {
+    "poem": "kurunthokai",
+    "count": 45
+   },
+   {
+    "poem": "natrinai",
+    "count": 30
+   },
+   {
+    "poem": "akananooru",
+    "count": 20
+   },
+   {
+    "poem": "mullaippattu",
+    "count": 18
+   },
+   {
+    "poem": "kalithokai",
+    "count": 17
+   },
+   {
+    "poem": "purananooru",
+    "count": 1
+   }
+  ],
+  "attested": {
+   "flora": [
+    {
+     "cat": "flora",
+     "ta": "முல்லை",
+     "en": "Mullai (Jasmine)",
+     "count": 45,
+     "samples": [
+      {
+       "id": "akananooru_004",
+       "poem": "akananooru",
+       "number": 4
+      },
+      {
+       "id": "akananooru_014",
+       "poem": "akananooru",
+       "number": 14
+      },
+      {
+       "id": "akananooru_074",
+       "poem": "akananooru",
+       "number": 74
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "கொன்றை",
+     "en": "Konrai (Indian Laburnum)",
+     "count": 16,
+     "samples": [
+      {
+       "id": "akananooru_004",
+       "poem": "akananooru",
+       "number": 4
+      },
+      {
+       "id": "akananooru_054",
+       "poem": "akananooru",
+       "number": 54
+      },
+      {
+       "id": "kalithokai_102",
+       "poem": "kalithokai",
+       "number": 102
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "பிடவம்",
+     "en": "Pidavam (Forest Creeper)",
+     "count": 2,
+     "samples": [
+      {
+       "id": "natrinai_238",
+       "poem": "natrinai",
+       "number": 238
+      },
+      {
+       "id": "natrinai_242",
+       "poem": "natrinai",
+       "number": 242
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "கடம்பு",
+     "en": "Kadamba",
+     "count": 1,
+     "samples": [
+      {
+       "id": "kalithokai_106",
+       "poem": "kalithokai",
+       "number": 106
+      }
+     ]
+    }
+   ],
+   "fauna": [
+    {
+     "cat": "fauna",
+     "ta": "பசு",
+     "en": "Cow",
+     "count": 8,
+     "samples": [
+      {
+       "id": "akananooru_044",
+       "poem": "akananooru",
+       "number": 44
+      },
+      {
+       "id": "kalithokai_101",
+       "poem": "kalithokai",
+       "number": 101
+      },
+      {
+       "id": "kurunthokai_183",
+       "poem": "kurunthokai",
+       "number": 183
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "முயல்",
+     "en": "Hare",
+     "count": 1,
+     "samples": [
+      {
+       "id": "natrinai_059",
+       "poem": "natrinai",
+       "number": 59
+      }
+     ]
+    }
+   ],
+   "landscape": [],
+   "people": [
+    {
+     "cat": "people",
+     "ta": "ஆயர்",
+     "en": "Ayar",
+     "count": 13,
+     "samples": [
+      {
+       "id": "kalithokai_101",
+       "poem": "kalithokai",
+       "number": 101
+      },
+      {
+       "id": "kalithokai_102",
+       "poem": "kalithokai",
+       "number": 102
+      },
+      {
+       "id": "kalithokai_103",
+       "poem": "kalithokai",
+       "number": 103
+      }
+     ]
+    },
+    {
+     "cat": "people",
+     "ta": "ஆய்ச்சியர்",
+     "en": "Ayachchiyar",
+     "count": 1,
+     "samples": [
+      {
+       "id": "kalithokai_106",
+       "poem": "kalithokai",
+       "number": 106
+      }
+     ]
+    }
+   ],
+   "deity": [
+    {
+     "cat": "deity",
+     "ta": "மாயோன்",
+     "en": null,
+     "count": 1,
+     "samples": [
+      {
+       "id": "kalithokai_103",
+       "poem": "kalithokai",
+       "number": 103
+      }
+     ]
+    }
+   ]
+  },
+  "sampleVerses": [
+   {
+    "id": "akananooru_004",
+    "poem": "akananooru",
+    "number": 4,
+    "poet": "குறுங்குடி மருதனார்",
+    "snippet": "முல்லை வைந் நுனை தோன்ற, இல்லமொடு பைங் காற் கொன்றை மென் பிணி அவிழ, இரும்பு திரித்தன்ன மா இரு மருப்பின், பரல் அவல் அடைய, இ"
+   },
+   {
+    "id": "akananooru_014",
+    "poem": "akananooru",
+    "number": 14,
+    "poet": "ஒக்கூர் மாசாத்தனார்",
+    "snippet": "'அரக்கத்து அன்ன செந் நிலப் பெரு வழி, காயாஞ் செம்மல் தாஅய், பல உடன் ஈயல் மூதாய் வரிப்ப, பவளமொடு மணி மிடைந்தன்ன குன்றம் கவ"
+   },
+   {
+    "id": "akananooru_024",
+    "poem": "akananooru",
+    "number": 24,
+    "poet": "ஆவூர் மூலங் கிழார்",
+    "snippet": "வேளாப் பார்ப்பான் வாளரந் துமித்த வளை களைந்து ஒழிந்த கொழுந்தின் அன்ன, தலை பிணி அவிழா, சுரி முகப் பகன்றை, சிதரல் அம் துவலை"
+   },
+   {
+    "id": "akananooru_034",
+    "poem": "akananooru",
+    "number": 34,
+    "poet": "மதுரை மருதன் இளநாகனார்",
+    "snippet": "சிறு கரும் பிடவின் வெண் தலைக் குறும் புதல் கண்ணியின் மலரும் தண் நறும் புறவில், தொடுதோற் கானவன் கவை பொறுத்தன்ன இரு திரி ம"
+   },
+   {
+    "id": "akananooru_044",
+    "poem": "akananooru",
+    "number": 44,
+    "poet": "குடவாயிற் கீரத்தனார்",
+    "snippet": "வந்து வினை முடித்தனன் வேந்தனும்; பகைவரும் தம் திறை கொடுத்துத் தமர் ஆயினரே; முரண் செறிந்திருந்த தானை இரண்டும் ஒன்று என அற"
+   },
+   {
+    "id": "akananooru_054",
+    "poem": "akananooru",
+    "number": 54,
+    "poet": "மாற்றூர் கிழார் மகனார் கொற்றங் கொற்றனார்",
+    "snippet": "விருந்தின் மன்னர் அருங்கலம் தெறுப்ப, வேந்தனும் வெம்பகை தணிந்தனன்; தீம் பெயற் காரும் ஆர்கலி தலையின்று. தேரும் ஓவத்தன்ன கோ"
+   }
+  ]
+ },
+ "marutam": {
+  "verseCount": 102,
+  "topPoets": [
+   {
+    "poet": "பரணர்",
+    "count": 16
+   },
+   {
+    "poet": "ஆலங்குடி வங்கனார்",
+    "count": 6
+   },
+   {
+    "poet": "அள்ளூர் நன்முல்லையார்",
+    "count": 4
+   },
+   {
+    "poet": "மருதம் பாடிய இளங்கடுங்கோ",
+    "count": 3
+   },
+   {
+    "poet": "அவ்வையார்",
+    "count": 3
+   },
+   {
+    "poet": "ஓரம்போகியார்",
+    "count": 3
+   },
+   {
+    "poet": "நக்கீரர்",
+    "count": 2
+   },
+   {
+    "poet": "படுமரத்து மோசிகீரனார்",
+    "count": 2
+   }
+  ],
+  "poemBreakdown": [
+   {
+    "poem": "kurunthokai",
+    "count": 50
+   },
+   {
+    "poem": "natrinai",
+    "count": 32
+   },
+   {
+    "poem": "akananooru",
+    "count": 20
+   }
+  ],
+  "attested": {
+   "flora": [
+    {
+     "cat": "flora",
+     "ta": "ஆம்பல்",
+     "en": "White Water Lily",
+     "count": 17,
+     "samples": [
+      {
+       "id": "akananooru_006",
+       "poem": "akananooru",
+       "number": 6
+      },
+      {
+       "id": "akananooru_036",
+       "poem": "akananooru",
+       "number": 36
+      },
+      {
+       "id": "akananooru_056",
+       "poem": "akananooru",
+       "number": 56
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "மருதம்",
+     "en": "Marutam (Arjuna Tree)",
+     "count": 3,
+     "samples": [
+      {
+       "id": "akananooru_096",
+       "poem": "akananooru",
+       "number": 96
+      },
+      {
+       "id": "akananooru_176",
+       "poem": "akananooru",
+       "number": 176
+      },
+      {
+       "id": "natrinai_050",
+       "poem": "natrinai",
+       "number": 50
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "வாழை",
+     "en": "Banana",
+     "count": 1,
+     "samples": [
+      {
+       "id": "natrinai_400",
+       "poem": "natrinai",
+       "number": 400
+      }
+     ]
+    }
+   ],
+   "fauna": [
+    {
+     "cat": "fauna",
+     "ta": "எருமை",
+     "en": "Water Buffalo",
+     "count": 9,
+     "samples": [
+      {
+       "id": "akananooru_036",
+       "poem": "akananooru",
+       "number": 36
+      },
+      {
+       "id": "akananooru_056",
+       "poem": "akananooru",
+       "number": 56
+      },
+      {
+       "id": "akananooru_146",
+       "poem": "akananooru",
+       "number": 146
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "நாரை",
+     "en": "Painted Stork",
+     "count": 2,
+     "samples": [
+      {
+       "id": "natrinai_180",
+       "poem": "natrinai",
+       "number": 180
+      },
+      {
+       "id": "natrinai_330",
+       "poem": "natrinai",
+       "number": 330
+      }
+     ]
+    }
+   ],
+   "landscape": [
+    {
+     "cat": "landscape",
+     "ta": "வயல்",
+     "en": "Paddy Field",
+     "count": 4,
+     "samples": [
+      {
+       "id": "akananooru_026",
+       "poem": "akananooru",
+       "number": 26
+      },
+      {
+       "id": "natrinai_210",
+       "poem": "natrinai",
+       "number": 210
+      },
+      {
+       "id": "natrinai_290",
+       "poem": "natrinai",
+       "number": 290
+      }
+     ]
+    }
+   ],
+   "people": [
+    {
+     "cat": "people",
+     "ta": "உழவர்",
+     "en": "Uzhavar",
+     "count": 1,
+     "samples": [
+      {
+       "id": "natrinai_340",
+       "poem": "natrinai",
+       "number": 340
+      }
+     ]
+    }
+   ],
+   "deity": []
+  },
+  "sampleVerses": [
+   {
+    "id": "akananooru_006",
+    "poem": "akananooru",
+    "number": 6,
+    "poet": "பரணர்",
+    "snippet": "அரி பெய் சிலம்பின் ஆம்பல் அம் தொடலை, அரம் போழ் அவ் வளைப் பொலிந்த முன்கை, இழை அணி பணைத் தோள், ஐயை தந்தை, மழை வளம் தரூஉம் "
+   },
+   {
+    "id": "akananooru_016",
+    "poem": "akananooru",
+    "number": 16,
+    "poet": "சாகலாசனார்",
+    "snippet": "நாயுடை முது நீர்க் கலித்த தாமரைத் தாதின் அல்லி அவிர் இதழ் புரையும், மாசு இல் அங்கை, மணி மருள் அவ் வாய், நாவொடு நவிலா நகை"
+   },
+   {
+    "id": "akananooru_026",
+    "poem": "akananooru",
+    "number": 26,
+    "poet": "பாண்டியன் கானப்பேரெயில் தந்த உக்கிரப்பெருவழுதி",
+    "snippet": "கூன் முள் முள்ளிக் குவிகுலைக் கழன்ற, மீன் முள் அன்ன, வெண் கால் மா மலர் பொய்தல் மகளிர் விழவு அணிக் கூட்டும் அவ் வயல் நண்ண"
+   },
+   {
+    "id": "akananooru_036",
+    "poem": "akananooru",
+    "number": 36,
+    "poet": "மதுரை நக்கீரர்",
+    "snippet": "பகுவாய் வராஅற் பல் வரி இரும் போத்துக் கொடு வாய் இரும்பின் கோள் இரை துற்றி, ஆம்பல் மெல் அடை கிழிய, குவளைக் கூம்பு விடு பல"
+   },
+   {
+    "id": "akananooru_046",
+    "poem": "akananooru",
+    "number": 46,
+    "poet": "அள்ளூர் நன்முல்லையார்",
+    "snippet": "சேற்று நிலை முனைஇய செங் கட் காரான் ஊர் மடி கங்குலில், நோன் தளை பரிந்து, கூர் முள் வேலி கோட்டின் நீக்கி, நீர் முதிர் பழனத"
+   },
+   {
+    "id": "akananooru_056",
+    "poem": "akananooru",
+    "number": 56,
+    "poet": "மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+    "snippet": "நகை ஆகின்றே தோழி! நெருநல் மணி கண்டன்ன துணி கயம் துளங்க, இரும்பு இயன்றன்ன கருங் கோட்டு எருமை, ஆம்பல் மெல் அடை கிழிய, குவள"
+   }
+  ]
+ },
+ "neytal": {
+  "verseCount": 211,
+  "topPoets": [
+   {
+    "poet": "உலோச்சனார்",
+    "count": 30
+   },
+   {
+    "poet": "அம்மூவனார்",
+    "count": 23
+   },
+   {
+    "poet": "குன்றியனார்",
+    "count": 5
+   },
+   {
+    "poet": "மதுரை மருதன் இளநாகனார்",
+    "count": 4
+   },
+   {
+    "poet": "நக்கீரர்",
+    "count": 4
+   },
+   {
+    "poet": "நக்கீரனார்",
+    "count": 3
+   },
+   {
+    "poet": "அவ்வையார்",
+    "count": 3
+   },
+   {
+    "poet": "நம்பி குட்டுவனார்",
+    "count": 3
+   }
+  ],
+  "poemBreakdown": [
+   {
+    "poem": "natrinai",
+    "count": 102
+   },
+   {
+    "poem": "kurunthokai",
+    "count": 69
+   },
+   {
+    "poem": "akananooru",
+    "count": 39
+   },
+   {
+    "poem": "purananooru",
+    "count": 1
+   }
+  ],
+  "attested": {
+   "flora": [
+    {
+     "cat": "flora",
+     "ta": "புன்னை",
+     "en": "Punnai (Alexandrian Laurel)",
+     "count": 62,
+     "samples": [
+      {
+       "id": "akananooru_010",
+       "poem": "akananooru",
+       "number": 10
+      },
+      {
+       "id": "akananooru_020",
+       "poem": "akananooru",
+       "number": 20
+      },
+      {
+       "id": "akananooru_030",
+       "poem": "akananooru",
+       "number": 30
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "நெய்தல்",
+     "en": "Neytal (Blue Water Lily)",
+     "count": 32,
+     "samples": [
+      {
+       "id": "akananooru_010",
+       "poem": "akananooru",
+       "number": 10
+      },
+      {
+       "id": "akananooru_070",
+       "poem": "akananooru",
+       "number": 70
+      },
+      {
+       "id": "akananooru_100",
+       "poem": "akananooru",
+       "number": 100
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "தாழை",
+     "en": "Thadavalam / Thaazhai (Screw Pine)",
+     "count": 25,
+     "samples": [
+      {
+       "id": "akananooru_020",
+       "poem": "akananooru",
+       "number": 20
+      },
+      {
+       "id": "akananooru_040",
+       "poem": "akananooru",
+       "number": 40
+      },
+      {
+       "id": "akananooru_090",
+       "poem": "akananooru",
+       "number": 90
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "கண்டல்",
+     "en": "Kandal (Mangrove)",
+     "count": 10,
+     "samples": [
+      {
+       "id": "kurunthokai_117",
+       "poem": "kurunthokai",
+       "number": 117
+      },
+      {
+       "id": "kurunthokai_340",
+       "poem": "kurunthokai",
+       "number": 340
+      },
+      {
+       "id": "natrinai_054",
+       "poem": "natrinai",
+       "number": 54
+      }
+     ]
+    },
+    {
+     "cat": "flora",
+     "ta": "சுரம்",
+     "en": "Coastal Scrub",
+     "count": 6,
+     "samples": [
+      {
+       "id": "akananooru_080",
+       "poem": "akananooru",
+       "number": 80
+      },
+      {
+       "id": "akananooru_240",
+       "poem": "akananooru",
+       "number": 240
+      },
+      {
+       "id": "akananooru_400",
+       "poem": "akananooru",
+       "number": 400
+      }
+     ]
+    }
+   ],
+   "fauna": [
+    {
+     "cat": "fauna",
+     "ta": "நாரை",
+     "en": "Egret / Sea Heron",
+     "count": 18,
+     "samples": [
+      {
+       "id": "akananooru_040",
+       "poem": "akananooru",
+       "number": 40
+      },
+      {
+       "id": "akananooru_100",
+       "poem": "akananooru",
+       "number": 100
+      },
+      {
+       "id": "akananooru_190",
+       "poem": "akananooru",
+       "number": 190
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "சுறா",
+     "en": "Shark",
+     "count": 16,
+     "samples": [
+      {
+       "id": "akananooru_120",
+       "poem": "akananooru",
+       "number": 120
+      },
+      {
+       "id": "akananooru_150",
+       "poem": "akananooru",
+       "number": 150
+      },
+      {
+       "id": "akananooru_190",
+       "poem": "akananooru",
+       "number": 190
+      }
+     ]
+    }
+   ],
+   "landscape": [],
+   "people": [
+    {
+     "cat": "people",
+     "ta": "பரதவர்",
+     "en": "Paravar",
+     "count": 28,
+     "samples": [
+      {
+       "id": "akananooru_010",
+       "poem": "akananooru",
+       "number": 10
+      },
+      {
+       "id": "akananooru_070",
+       "poem": "akananooru",
+       "number": 70
+      },
+      {
+       "id": "akananooru_140",
+       "poem": "akananooru",
+       "number": 140
+      }
+     ]
+    }
+   ],
+   "deity": []
+  },
+  "sampleVerses": [
+   {
+    "id": "akananooru_010",
+    "poem": "akananooru",
+    "number": 10,
+    "poet": "அம்மூவனார்",
+    "snippet": "வான் கடற் பரப்பில் தூவற்கு எதிரிய, மீன் கண்டன்ன மெல் அரும்பு ஊழ்த்த, முடவு முதிர் புன்னைத் தடவு நிலை மாச் சினை, புள் இறை"
+   },
+   {
+    "id": "akananooru_020",
+    "poem": "akananooru",
+    "number": 20,
+    "poet": "உலோச்சனார்",
+    "snippet": "பெருநீர் அழுவத்து எந்தை தந்த கொழு மீன் உணங்கற் படு புள் ஓப்பி, எக்கர்ப் புன்னை இன் நிழல் அசைஇ, செக்கர் ஞெண்டின் குண்டு அ"
+   },
+   {
+    "id": "akananooru_030",
+    "poem": "akananooru",
+    "number": 30,
+    "poet": "முடங்கிக் கிடந்த நெடுஞ்சேரலாதன்",
+    "snippet": "நெடுங் கயிறு வலந்த குறுங் கண் அவ் வலை, கடல் பாடு அழிய, இன மீன் முகந்து, துணை புணர் உவகையர் பரத மாக்கள் இளையரும் முதியரும"
+   },
+   {
+    "id": "akananooru_040",
+    "poem": "akananooru",
+    "number": 40,
+    "poet": "குன்றியனார்",
+    "snippet": "கானல், மாலைக் கழிப் பூக் கூம்ப, நீல் நிறப் பெருங் கடல் பாடு எழுந்து ஒலிப்ப, மீன் ஆர் குருகின் மென் பறைத் தொழுதி குவை இரு"
+   },
+   {
+    "id": "akananooru_050",
+    "poem": "akananooru",
+    "number": 50,
+    "poet": "கருவூர்ப் பூதஞ்சாத்தனார்",
+    "snippet": "கடல்பாடு அவிந்து, தோணி நீங்கி, நெடு நீர் இருங் கழிக் கடுமீன் கலிப்பினும்; வெவ் வாய்ப் பெண்டிர் கௌவை தூற்றினும்; மாண் இழை"
+   },
+   {
+    "id": "akananooru_060",
+    "poem": "akananooru",
+    "number": 60,
+    "poet": "குடவாயிற் கீரத்தனார்",
+    "snippet": "பெருங் கடற் பரப்பில் சேயிறா நடுங்க, கொடுந் தொழில் முகந்த செங் கோல் அவ் வலை நெடுந் திமில் தொழிலொடு வைகிய தந்தைக்கு, உப்பு"
+   }
+  ]
+ },
+ "palai": {
+  "verseCount": 332,
+  "topPoets": [
+   {
+    "poet": "மாமூலனார்",
+    "count": 15
+   },
+   {
+    "poet": "பாலை பாடிய பெருங்கடுங்கோ",
+    "count": 15
+   },
+   {
+    "poet": "கயமனார்",
+    "count": 12
+   },
+   {
+    "poet": "மதுரை மருதன் இளநாகனார்",
+    "count": 8
+   },
+   {
+    "poet": "குடவாயிற் கீரத்தனார்",
+    "count": 7
+   },
+   {
+    "poet": "கல்லாடனார்",
+    "count": 6
+   },
+   {
+    "poet": "ஔவையார்",
+    "count": 6
+   },
+   {
+    "poet": "ஆலம்பேரி சாத்தனார்",
+    "count": 4
+   }
+  ],
+  "poemBreakdown": [
+   {
+    "poem": "natrinai",
+    "count": 104
+   },
+   {
+    "poem": "akananooru",
+    "count": 101
+   },
+   {
+    "poem": "kurunthokai",
+    "count": 92
+   },
+   {
+    "poem": "kalithokai",
+    "count": 35
+   }
+  ],
+  "attested": {
+   "flora": [],
+   "fauna": [
+    {
+     "cat": "fauna",
+     "ta": "புலி",
+     "en": "Tiger",
+     "count": 26,
+     "samples": [
+      {
+       "id": "akananooru_003",
+       "poem": "akananooru",
+       "number": 3
+      },
+      {
+       "id": "akananooru_007",
+       "poem": "akananooru",
+       "number": 7
+      },
+      {
+       "id": "akananooru_027",
+       "poem": "akananooru",
+       "number": 27
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "நரி",
+     "en": "Jackal / Fox",
+     "count": 4,
+     "samples": [
+      {
+       "id": "akananooru_057",
+       "poem": "akananooru",
+       "number": 57
+      },
+      {
+       "id": "akananooru_193",
+       "poem": "akananooru",
+       "number": 193
+      },
+      {
+       "id": "natrinai_164",
+       "poem": "natrinai",
+       "number": 164
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "பாம்பு",
+     "en": "Serpent",
+     "count": 2,
+     "samples": [
+      {
+       "id": "kalithokai_015",
+       "poem": "kalithokai",
+       "number": 15
+      },
+      {
+       "id": "natrinai_264",
+       "poem": "natrinai",
+       "number": 264
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "காக்கை",
+     "en": "Crow",
+     "count": 2,
+     "samples": [
+      {
+       "id": "natrinai_281",
+       "poem": "natrinai",
+       "number": 281
+      },
+      {
+       "id": "natrinai_343",
+       "poem": "natrinai",
+       "number": 343
+      }
+     ]
+    }
+   ],
+   "landscape": [
+    {
+     "cat": "landscape",
+     "ta": "சுரம்",
+     "en": "Desolate Road / Wild Path",
+     "count": 56,
+     "samples": [
+      {
+       "id": "akananooru_001",
+       "poem": "akananooru",
+       "number": 1
+      },
+      {
+       "id": "akananooru_007",
+       "poem": "akananooru",
+       "number": 7
+      },
+      {
+       "id": "akananooru_021",
+       "poem": "akananooru",
+       "number": 21
+      }
+     ]
+    }
+   ],
+   "people": [
+    {
+     "cat": "people",
+     "ta": "மறவர்",
+     "en": "Maravar",
+     "count": 19,
+     "samples": [
+      {
+       "id": "akananooru_035",
+       "poem": "akananooru",
+       "number": 35
+      },
+      {
+       "id": "akananooru_053",
+       "poem": "akananooru",
+       "number": 53
+      },
+      {
+       "id": "akananooru_063",
+       "poem": "akananooru",
+       "number": 63
+      }
+     ]
+    },
+    {
+     "cat": "people",
+     "ta": "எயினர்",
+     "en": "Eyinar",
+     "count": 2,
+     "samples": [
+      {
+       "id": "akananooru_079",
+       "poem": "akananooru",
+       "number": 79
+      },
+      {
+       "id": "kurunthokai_012",
+       "poem": "kurunthokai",
+       "number": 12
+      }
+     ]
+    }
+   ],
+   "deity": []
+  },
+  "sampleVerses": [
+   {
+    "id": "akananooru_001",
+    "poem": "akananooru",
+    "number": 1,
+    "poet": "மாமூலனார்",
+    "snippet": "'வண்டு படத் ததைந்த கண்ணி, ஒண் கழல், உருவக் குதிரை மழவர் ஓட்டிய முருகன் நற் போர் நெடு வேள் ஆவி, அறுகோட்டு யானைப் பொதினி ஆ"
+   },
+   {
+    "id": "akananooru_003",
+    "poem": "akananooru",
+    "number": 3,
+    "poet": "எயினந்தை மகனார் இளங்கீரனார்",
+    "snippet": "இருங் கழி முதலை மேஎந்தோல் அன்ன கருங் கால் ஓமைக் காண்பு இன் பெருஞ் சினைக் கடியுடை நனந்தலை, ஈன்று இளைப்பட்ட, கொடு வாய்ப் ப"
+   },
+   {
+    "id": "akananooru_005",
+    "poem": "akananooru",
+    "number": 5,
+    "poet": "பாலை பாடிய பெருங்கடுங்கோ",
+    "snippet": "அளி நிலை பொறாஅது அமரிய முகத்தள், விளி நிலை கொள்ளாள், தமியள், மென்மெல, நலம் மிகு சேவடி நிலம் வடுக் கொளாஅ, குறுக வந்து, தன"
+   },
+   {
+    "id": "akananooru_007",
+    "poem": "akananooru",
+    "number": 7,
+    "poet": "கயமனார்",
+    "snippet": "'முலை முகம்செய்தன; முள் எயிறு இலங்கின; தலை முடிசான்ற; தண் தழை உடையை; அலமரல் ஆயமொடு யாங்கணும் படாஅல்; மூப்புடை முது பதி த"
+   },
+   {
+    "id": "akananooru_009",
+    "poem": "akananooru",
+    "number": 9,
+    "poet": "கல்லாடனார்",
+    "snippet": "கொல் வினைப் பொலிந்த, கூர்ங் குறும் புழுகின், வில்லோர் தூணி வீங்கப் பெய்த அப்பு நுனை ஏய்ப்ப அரும்பிய இருப்பை, செப்பு அடர்"
+   },
+   {
+    "id": "akananooru_011",
+    "poem": "akananooru",
+    "number": 11,
+    "poet": "ஔவையார்",
+    "snippet": "வானம் ஊர்ந்த வயங்கு ஒளி மண்டிலம் நெருப்பு எனச் சிவந்த உருப்பு அவிர் அம் காட்டு, இலை இல மலர்ந்த முகை இல் இலவம் கலி கொள் ஆ"
+   }
+  ]
+ }
+}

@@ -10,6 +10,7 @@ Open Sangam transforms static, archaic web archives of Sangam-era poetry into a 
 - **Click-to-Define Glossary** — Click any word for root meaning, grammatical class (*Urichol*), and etymology
 - **Sangam World** — Immersive Tiṇai landscape navigator (Kuṟiñci · Mullai · Marutam · Neytal · Pālai)
 - **Knowledge Encyclopedia** — Illustrated guide to the Sangam age: anthologies, akam/puṟam, the tiṇai framework, poets, patron-kings, music, and daily life
+- **Connections Graph** — The whole corpus interlinked as one navigable knowledge graph (tiṇai · poem · poet · karu-poruḷ), mined directly from the verses
 - **Cultural Context Cards** — Pop-up explanations for historical references
 - **Audio Recitation** — Recorded / synthesized verses for pronunciation and meter
 - **AI Translation** — Gemini 2.5 Flash-powered contemporary prose and English equivalents

@@ -125,10 +125,43 @@ All collection follows `docs/data-governance.md`:
 
 ## 6. Phasing
 
-| Phase | Deliverable |
-|-------|-------------|
-| **A** (now) | `/knowledge` page + hand-authored `knowledge.js` seed |
-| **B** | Colophon parser → auto-seed `poets.json` / `patrons.json` with verseRefs |
-| **C** | Close corpus gaps (Ainkurunooru, Poruṉarāṟṟuppaṭai) |
-| **D** | Karu-poruḷ glossary + verse cross-links in the reader |
-| **E** | AI urai/English drafts → scholar verification loop |
+| Phase | Deliverable | Status |
+|-------|-------------|--------|
+| **A** | `/knowledge` page + hand-authored `knowledge.js` seed | ✅ done |
+| **B** | Corpus interlink graph — `build_graph.py` → `graph.json` + `tinai_context.json`, `/graph` explorer, tiṇai "In the Corpus" tab | ✅ done |
+| **C** | Colophon parser → structured `author`/`patron`/`turai`/`speaker` fields, auto-seed `poets.json` / `patrons.json` | ⬜ next |
+| **D** | Close corpus gaps (Ainkurunooru, Poruṉarāṟṟuppaṭai) | ⬜ |
+| **E** | Karu-poruḷ glossary + inline verse cross-links in the reader | ⬜ |
+| **F** | AI urai/English drafts → scholar verification loop | ⬜ |
+
+---
+
+## 7. The interlink graph (delivered)
+
+The corpus is compiled into a single **knowledge graph** — the base "world
+model" that the reader, Sangam World, and downstream projects share.
+
+```
+backend/python/knowledge/
+├── build_graph.py        # miner: reads data/texts/*/*.json
+└── tinai_lexicon.json    # karu-poruḷ search terms, exported from tinaiWorld.js
+
+data/knowledge/
+├── graph.json            # nodes (tiṇai·poem·poet·karu) + typed weighted edges
+└── tinai_context.json    # per-tiṇai attestations, top poets, sample verses
+```
+
+**Node types** — `tinai`, `poem`, `poet`, `karu` (native flora/fauna/deity/people).
+**Edge types** — `HAS_TINAI` (poem→tiṇai), `WROTE_IN` (poet→tiṇai),
+`COMPOSED` (poet→poem), `ATTESTS` (tiṇai→karu, weighted by corpus occurrence,
+carrying sample verse refs). Every edge weight and verse reference is derived
+from the poems themselves — nothing is hand-asserted.
+
+Regenerate after any corpus change:
+
+```bash
+# refresh the search lexicon from the curated tiṇai data (optional)
+node -e "import('./frontend/src/data/tinaiWorld.js').then(m=>{ /* … */ })"
+# rebuild the graph + per-tiṇai context
+python backend/python/knowledge/build_graph.py
+```

@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import SangamWorldPage from './pages/SangamWorldPage'
 import Book from './pages/Book'
 import Knowledge from './pages/Knowledge'
+import GraphExplorer from './pages/GraphExplorer'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="/reader/:poemId?" element={<Navigate to="/book" replace />} />
             <Route path="/world" element={<SangamWorldPage />} />
             <Route path="/knowledge" element={<Knowledge />} />
+            <Route path="/graph" element={<GraphExplorer />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

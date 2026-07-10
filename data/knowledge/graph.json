@@ -1,0 +1,2452 @@
+{
+ "meta": {
+  "records": 1968,
+  "nodes": 106,
+  "edges": 283,
+  "relTypes": [
+   "HAS_TINAI",
+   "WROTE_IN",
+   "COMPOSED",
+   "ATTESTS"
+  ],
+  "nodeTypes": [
+   "tinai",
+   "poem",
+   "poet",
+   "karu"
+  ],
+  "generatedFrom": "data/texts/*/*.json"
+ },
+ "nodes": [
+  {
+   "id": "tinai:kurinji",
+   "label": "Kuṟiñci · Mountains",
+   "type": "tinai",
+   "tinai": "kurinji",
+   "weight": 370
+  },
+  {
+   "id": "tinai:mullai",
+   "label": "Mullai · Forest",
+   "type": "tinai",
+   "tinai": "mullai",
+   "weight": 131
+  },
+  {
+   "id": "tinai:marutam",
+   "label": "Marutam · Cropland",
+   "type": "tinai",
+   "tinai": "marutam",
+   "weight": 102
+  },
+  {
+   "id": "tinai:neytal",
+   "label": "Neytal · Seashore",
+   "type": "tinai",
+   "tinai": "neytal",
+   "weight": 211
+  },
+  {
+   "id": "tinai:palai",
+   "label": "Pālai · Wasteland",
+   "type": "tinai",
+   "tinai": "palai",
+   "weight": 332
+  },
+  {
+   "id": "tinai:unknown",
+   "label": "Unclassified",
+   "type": "tinai",
+   "tinai": "unknown",
+   "weight": 822
+  },
+  {
+   "id": "poem:akananooru",
+   "label": "akananooru",
+   "type": "poem",
+   "weight": 220
+  },
+  {
+   "id": "poem:kalithokai",
+   "label": "kalithokai",
+   "type": "poem",
+   "weight": 149
+  },
+  {
+   "id": "poem:kurinjipattu",
+   "label": "kurinjipattu",
+   "type": "poem",
+   "weight": 25
+  },
+  {
+   "id": "poem:kurunthokai",
+   "label": "kurunthokai",
+   "type": "poem",
+   "weight": 400
+  },
+  {
+   "id": "poem:maduraikanchi",
+   "label": "maduraikanchi",
+   "type": "poem",
+   "weight": 63
+  },
+  {
+   "id": "poem:malaipadukadam",
+   "label": "malaipadukadam",
+   "type": "poem",
+   "weight": 45
+  },
+  {
+   "id": "poem:mullaippattu",
+   "label": "mullaippattu",
+   "type": "poem",
+   "weight": 18
+  },
+  {
+   "id": "poem:natrinai",
+   "label": "natrinai",
+   "type": "poem",
+   "weight": 400
+  },
+  {
+   "id": "poem:nedunalvadai",
+   "label": "nedunalvadai",
+   "type": "poem",
+   "weight": 17
+  },
+  {
+   "id": "poem:paripadal",
+   "label": "paripadal",
+   "type": "poem",
+   "weight": 23
+  },
+  {
+   "id": "poem:pathitrupathu",
+   "label": "pathitrupathu",
+   "type": "poem",
+   "weight": 80
+  },
+  {
+   "id": "poem:pattinappalai",
+   "label": "pattinappalai",
+   "type": "poem",
+   "weight": 30
+  },
+  {
+   "id": "poem:perumpanatrupadai",
+   "label": "perumpanatrupadai",
+   "type": "poem",
+   "weight": 41
+  },
+  {
+   "id": "poem:purananooru",
+   "label": "purananooru",
+   "type": "poem",
+   "weight": 400
+  },
+  {
+   "id": "poem:sirupanatrupadai",
+   "label": "sirupanatrupadai",
+   "type": "poem",
+   "weight": 25
+  },
+  {
+   "id": "poem:thirumurugatrupadai",
+   "label": "thirumurugatrupadai",
+   "type": "poem",
+   "weight": 32
+  },
+  {
+   "id": "poet:கபிலர்",
+   "label": "கபிலர்",
+   "type": "poet",
+   "weight": 57
+  },
+  {
+   "id": "poet:பரணர்",
+   "label": "பரணர்",
+   "type": "poet",
+   "weight": 45
+  },
+  {
+   "id": "poet:உலோச்சனார்",
+   "label": "உலோச்சனார்",
+   "type": "poet",
+   "weight": 31
+  },
+  {
+   "id": "poet:அம்மூவனார்",
+   "label": "அம்மூவனார்",
+   "type": "poet",
+   "weight": 27
+  },
+  {
+   "id": "poet:மதுரை மருதன் இளநாகனார்",
+   "label": "மதுரை மருதன் இளநாகனார்",
+   "type": "poet",
+   "weight": 20
+  },
+  {
+   "id": "poet:மாமூலனார்",
+   "label": "மாமூலனார்",
+   "type": "poet",
+   "weight": 16
+  },
+  {
+   "id": "poet:அவ்வையார்",
+   "label": "அவ்வையார்",
+   "type": "poet",
+   "weight": 16
+  },
+  {
+   "id": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "label": "பாலை பாடிய பெருங்கடுங்கோ",
+   "type": "poet",
+   "weight": 15
+  },
+  {
+   "id": "poet:கயமனார்",
+   "label": "கயமனார்",
+   "type": "poet",
+   "weight": 14
+  },
+  {
+   "id": "poet:நக்கீரர்",
+   "label": "நக்கீரர்",
+   "type": "poet",
+   "weight": 12
+  },
+  {
+   "id": "poet:குடவாயிற் கீரத்தனார்",
+   "label": "குடவாயிற் கீரத்தனார்",
+   "type": "poet",
+   "weight": 11
+  },
+  {
+   "id": "poet:குன்றியனார்",
+   "label": "குன்றியனார்",
+   "type": "poet",
+   "weight": 10
+  },
+  {
+   "id": "poet:அள்ளூர் நன்முல்லையார்",
+   "label": "அள்ளூர் நன்முல்லையார்",
+   "type": "poet",
+   "weight": 10
+  },
+  {
+   "id": "poet:ஔவையார்",
+   "label": "ஔவையார்",
+   "type": "poet",
+   "weight": 9
+  },
+  {
+   "id": "poet:கல்லாடனார்",
+   "label": "கல்லாடனார்",
+   "type": "poet",
+   "weight": 7
+  },
+  {
+   "id": "poet:வெள்ளிவீதியார்",
+   "label": "வெள்ளிவீதியார்",
+   "type": "poet",
+   "weight": 7
+  },
+  {
+   "id": "poet:நக்கீரனார்",
+   "label": "நக்கீரனார்",
+   "type": "poet",
+   "weight": 7
+  },
+  {
+   "id": "poet:ஆலம்பேரி சாத்தனார்",
+   "label": "ஆலம்பேரி சாத்தனார்",
+   "type": "poet",
+   "weight": 6
+  },
+  {
+   "id": "poet:ஆலங்குடி வங்கனார்",
+   "label": "ஆலங்குடி வங்கனார்",
+   "type": "poet",
+   "weight": 6
+  },
+  {
+   "id": "poet:இடைக்காடனார்",
+   "label": "இடைக்காடனார்",
+   "type": "poet",
+   "weight": 6
+  },
+  {
+   "id": "poet:கச்சிப்பேட்டு நன்னாகையார்",
+   "label": "கச்சிப்பேட்டு நன்னாகையார்",
+   "type": "poet",
+   "weight": 6
+  },
+  {
+   "id": "poet:பேரி சாத்தனார்",
+   "label": "பேரி சாத்தனார்",
+   "type": "poet",
+   "weight": 6
+  },
+  {
+   "id": "poet:ஓரம்போகியார்",
+   "label": "ஓரம்போகியார்",
+   "type": "poet",
+   "weight": 5
+  },
+  {
+   "id": "poet:சிறைக்குடி ஆந்தையார்",
+   "label": "சிறைக்குடி ஆந்தையார்",
+   "type": "poet",
+   "weight": 5
+  },
+  {
+   "id": "poet:ஒக்கூர் மாசாத்தியார்",
+   "label": "ஒக்கூர் மாசாத்தியார்",
+   "type": "poet",
+   "weight": 5
+  },
+  {
+   "id": "poet:வெள்ளி வீதியார்",
+   "label": "வெள்ளி வீதியார்",
+   "type": "poet",
+   "weight": 5
+  },
+  {
+   "id": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+   "label": "மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+   "type": "poet",
+   "weight": 4
+  },
+  {
+   "id": "poet:சீத்தலைச் சாத்தனார்",
+   "label": "சீத்தலைச் சாத்தனார்",
+   "type": "poet",
+   "weight": 4
+  },
+  {
+   "id": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "label": "மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "type": "poet",
+   "weight": 4
+  },
+  {
+   "id": "poet:இளங்கீரனார்",
+   "label": "இளங்கீரனார்",
+   "type": "poet",
+   "weight": 4
+  },
+  {
+   "id": "poet:ஒரோடோ கத்துக் கந்தரத்தனார்",
+   "label": "ஒரோடோ கத்துக் கந்தரத்தனார்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:நல்வெள்ளியார்",
+   "label": "நல்வெள்ளியார்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:விற்றூற்று மூதெயினனார்",
+   "label": "விற்றூற்று மூதெயினனார்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:வடம வண்ணக்கன் பேரிசாத்தனார்",
+   "label": "வடம வண்ணக்கன் பேரிசாத்தனார்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:மருதன் இளநாகனார்",
+   "label": "மருதன் இளநாகனார்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:மருதம் பாடிய இளங்கடுங்கோ",
+   "label": "மருதம் பாடிய இளங்கடுங்கோ",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:தாயங்கண்ணனார்",
+   "label": "தாயங்கண்ணனார்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:கழார்க் கீரன் எயிற்றியார்",
+   "label": "கழார்க் கீரன் எயிற்றியார்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:ஓதலாந்தையார்",
+   "label": "ஓதலாந்தையார்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "poet:கோப்பெருஞ்சோழன்",
+   "label": "கோப்பெருஞ்சோழன்",
+   "type": "poet",
+   "weight": 3
+  },
+  {
+   "id": "karu:kurinji:வேங்கை",
+   "label": "வேங்கை · Venkai (Indian Kino)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 55
+  },
+  {
+   "id": "karu:kurinji:மான்",
+   "label": "மான் · Spotted Deer",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 29
+  },
+  {
+   "id": "karu:kurinji:குறவர்",
+   "label": "குறவர் · Kuravar",
+   "type": "karu",
+   "cat": "people",
+   "weight": 14
+  },
+  {
+   "id": "karu:kurinji:காந்தள்",
+   "label": "காந்தள் · Kantal (Gloriosa Lily)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 34
+  },
+  {
+   "id": "karu:kurinji:யானை",
+   "label": "யானை · Elephant",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 53
+  },
+  {
+   "id": "karu:kurinji:அருவி",
+   "label": "அருவி · Waterfall",
+   "type": "karu",
+   "cat": "landscape",
+   "weight": 65
+  },
+  {
+   "id": "karu:kurinji:மயில்",
+   "label": "மயில் · Peacock",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 13
+  },
+  {
+   "id": "karu:kurinji:வேலன்",
+   "label": "வேலன் · Velan",
+   "type": "karu",
+   "cat": "people",
+   "weight": 9
+  },
+  {
+   "id": "karu:kurinji:முருகன்",
+   "label": "முருகன்",
+   "type": "karu",
+   "cat": "deity",
+   "weight": 2
+  },
+  {
+   "id": "karu:kurinji:குறிஞ்சி",
+   "label": "குறிஞ்சி · Kurinji (Strobilanthes)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 7
+  },
+  {
+   "id": "karu:kurinji:சிலம்பு",
+   "label": "சிலம்பு · Hill Stream",
+   "type": "karu",
+   "cat": "landscape",
+   "weight": 9
+  },
+  {
+   "id": "karu:kurinji:மூங்கில்",
+   "label": "மூங்கில் · Bamboo",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 3
+  },
+  {
+   "id": "karu:kurinji:குரங்கு",
+   "label": "குரங்கு · Monkey",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 1
+  },
+  {
+   "id": "karu:mullai:முல்லை",
+   "label": "முல்லை · Mullai (Jasmine)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 45
+  },
+  {
+   "id": "karu:mullai:கொன்றை",
+   "label": "கொன்றை · Konrai (Indian Laburnum)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 16
+  },
+  {
+   "id": "karu:mullai:பசு",
+   "label": "பசு · Cow",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 8
+  },
+  {
+   "id": "karu:mullai:ஆயர்",
+   "label": "ஆயர் · Ayar",
+   "type": "karu",
+   "cat": "people",
+   "weight": 13
+  },
+  {
+   "id": "karu:mullai:மாயோன்",
+   "label": "மாயோன்",
+   "type": "karu",
+   "cat": "deity",
+   "weight": 1
+  },
+  {
+   "id": "karu:mullai:கடம்பு",
+   "label": "கடம்பு · Kadamba",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 1
+  },
+  {
+   "id": "karu:mullai:ஆய்ச்சியர்",
+   "label": "ஆய்ச்சியர் · Ayachchiyar",
+   "type": "karu",
+   "cat": "people",
+   "weight": 1
+  },
+  {
+   "id": "karu:mullai:முயல்",
+   "label": "முயல் · Hare",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 1
+  },
+  {
+   "id": "karu:mullai:பிடவம்",
+   "label": "பிடவம் · Pidavam (Forest Creeper)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 2
+  },
+  {
+   "id": "karu:marutam:ஆம்பல்",
+   "label": "ஆம்பல் · White Water Lily",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 17
+  },
+  {
+   "id": "karu:marutam:வயல்",
+   "label": "வயல் · Paddy Field",
+   "type": "karu",
+   "cat": "landscape",
+   "weight": 4
+  },
+  {
+   "id": "karu:marutam:எருமை",
+   "label": "எருமை · Water Buffalo",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 9
+  },
+  {
+   "id": "karu:marutam:மருதம்",
+   "label": "மருதம் · Marutam (Arjuna Tree)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 3
+  },
+  {
+   "id": "karu:marutam:நாரை",
+   "label": "நாரை · Painted Stork",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 2
+  },
+  {
+   "id": "karu:marutam:உழவர்",
+   "label": "உழவர் · Uzhavar",
+   "type": "karu",
+   "cat": "people",
+   "weight": 1
+  },
+  {
+   "id": "karu:marutam:வாழை",
+   "label": "வாழை · Banana",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 1
+  },
+  {
+   "id": "karu:neytal:நெய்தல்",
+   "label": "நெய்தல் · Neytal (Blue Water Lily)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 32
+  },
+  {
+   "id": "karu:neytal:புன்னை",
+   "label": "புன்னை · Punnai (Alexandrian Laurel)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 62
+  },
+  {
+   "id": "karu:neytal:பரதவர்",
+   "label": "பரதவர் · Paravar",
+   "type": "karu",
+   "cat": "people",
+   "weight": 28
+  },
+  {
+   "id": "karu:neytal:தாழை",
+   "label": "தாழை · Thadavalam / Thaazhai (Screw Pine)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 25
+  },
+  {
+   "id": "karu:neytal:நாரை",
+   "label": "நாரை · Egret / Sea Heron",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 18
+  },
+  {
+   "id": "karu:neytal:சுரம்",
+   "label": "சுரம் · Coastal Scrub",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 6
+  },
+  {
+   "id": "karu:neytal:சுறா",
+   "label": "சுறா · Shark",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 16
+  },
+  {
+   "id": "karu:neytal:கண்டல்",
+   "label": "கண்டல் · Kandal (Mangrove)",
+   "type": "karu",
+   "cat": "flora",
+   "weight": 10
+  },
+  {
+   "id": "karu:palai:சுரம்",
+   "label": "சுரம் · Desolate Road / Wild Path",
+   "type": "karu",
+   "cat": "landscape",
+   "weight": 56
+  },
+  {
+   "id": "karu:palai:புலி",
+   "label": "புலி · Tiger",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 26
+  },
+  {
+   "id": "karu:palai:மறவர்",
+   "label": "மறவர் · Maravar",
+   "type": "karu",
+   "cat": "people",
+   "weight": 19
+  },
+  {
+   "id": "karu:palai:நரி",
+   "label": "நரி · Jackal / Fox",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 4
+  },
+  {
+   "id": "karu:palai:எயினர்",
+   "label": "எயினர் · Eyinar",
+   "type": "karu",
+   "cat": "people",
+   "weight": 2
+  },
+  {
+   "id": "karu:palai:பாம்பு",
+   "label": "பாம்பு · Serpent",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 2
+  },
+  {
+   "id": "karu:palai:காக்கை",
+   "label": "காக்கை · Crow",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 2
+  }
+ ],
+ "edges": [
+  {
+   "source": "poem:akananooru",
+   "target": "tinai:palai",
+   "rel": "HAS_TINAI",
+   "weight": 101
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "tinai:kurinji",
+   "rel": "HAS_TINAI",
+   "weight": 40
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "tinai:mullai",
+   "rel": "HAS_TINAI",
+   "weight": 20
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "tinai:marutam",
+   "rel": "HAS_TINAI",
+   "weight": 20
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "tinai:neytal",
+   "rel": "HAS_TINAI",
+   "weight": 39
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "tinai:palai",
+   "rel": "HAS_TINAI",
+   "weight": 35
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "tinai:kurinji",
+   "rel": "HAS_TINAI",
+   "weight": 29
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 68
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "tinai:mullai",
+   "rel": "HAS_TINAI",
+   "weight": 17
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "tinai:kurinji",
+   "rel": "HAS_TINAI",
+   "weight": 25
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "tinai:kurinji",
+   "rel": "HAS_TINAI",
+   "weight": 144
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "tinai:neytal",
+   "rel": "HAS_TINAI",
+   "weight": 69
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "tinai:palai",
+   "rel": "HAS_TINAI",
+   "weight": 92
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "tinai:marutam",
+   "rel": "HAS_TINAI",
+   "weight": 50
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "tinai:mullai",
+   "rel": "HAS_TINAI",
+   "weight": 45
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 63
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 45
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "tinai:mullai",
+   "rel": "HAS_TINAI",
+   "weight": 18
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "tinai:kurinji",
+   "rel": "HAS_TINAI",
+   "weight": 132
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "tinai:palai",
+   "rel": "HAS_TINAI",
+   "weight": 104
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "tinai:neytal",
+   "rel": "HAS_TINAI",
+   "weight": 102
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "tinai:marutam",
+   "rel": "HAS_TINAI",
+   "weight": 32
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "tinai:mullai",
+   "rel": "HAS_TINAI",
+   "weight": 30
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 17
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 23
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 80
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 30
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 41
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 398
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "tinai:mullai",
+   "rel": "HAS_TINAI",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "tinai:neytal",
+   "rel": "HAS_TINAI",
+   "weight": 1
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 25
+  },
+  {
+   "source": "poem:thirumurugatrupadai",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 32
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 52
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 28
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 20
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 9
+  },
+  {
+   "source": "poet:பரணர்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 22
+  },
+  {
+   "source": "poet:பரணர்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 16
+  },
+  {
+   "source": "poet:பரணர்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:பரணர்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:பரணர்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:பரணர்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 17
+  },
+  {
+   "source": "poet:பரணர்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 16
+  },
+  {
+   "source": "poet:பரணர்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 12
+  },
+  {
+   "source": "poet:உலோச்சனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 30
+  },
+  {
+   "source": "poet:உலோச்சனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:உலோச்சனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 19
+  },
+  {
+   "source": "poet:உலோச்சனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 8
+  },
+  {
+   "source": "poet:உலோச்சனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 4
+  },
+  {
+   "source": "poet:அம்மூவனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 23
+  },
+  {
+   "source": "poet:அம்மூவனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:அம்மூவனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:அம்மூவனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 11
+  },
+  {
+   "source": "poet:அம்மூவனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 11
+  },
+  {
+   "source": "poet:அம்மூவனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 8
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 4
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 10
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 9
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:மாமூலனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 15
+  },
+  {
+   "source": "poet:மாமூலனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மாமூலனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 13
+  },
+  {
+   "source": "poet:மாமூலனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:மாமூலனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 6
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 8
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 8
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 15
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 8
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 12
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 6
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 4
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 4
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 6
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 7
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:குன்றியனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 5
+  },
+  {
+   "source": "poet:குன்றியனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:குன்றியனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:குன்றியனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:குன்றியனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 6
+  },
+  {
+   "source": "poet:குன்றியனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:குன்றியனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:அள்ளூர் நன்முல்லையார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 4
+  },
+  {
+   "source": "poet:அள்ளூர் நன்முல்லையார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:அள்ளூர் நன்முல்லையார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:அள்ளூர் நன்முல்லையார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 9
+  },
+  {
+   "source": "poet:அள்ளூர் நன்முல்லையார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஔவையார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 6
+  },
+  {
+   "source": "poet:ஔவையார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:ஔவையார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஔவையார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 7
+  },
+  {
+   "source": "poet:ஔவையார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:கல்லாடனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 6
+  },
+  {
+   "source": "poet:கல்லாடனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கல்லாடனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:கல்லாடனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:வெள்ளிவீதியார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:வெள்ளிவீதியார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:வெள்ளிவீதியார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:வெள்ளிவீதியார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:வெள்ளிவீதியார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:வெள்ளிவீதியார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:வெள்ளிவீதியார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 4
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஆலம்பேரி சாத்தனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 4
+  },
+  {
+   "source": "poet:ஆலம்பேரி சாத்தனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஆலம்பேரி சாத்தனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஆலம்பேரி சாத்தனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 4
+  },
+  {
+   "source": "poet:ஆலம்பேரி சாத்தனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:ஆலங்குடி வங்கனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 6
+  },
+  {
+   "source": "poet:ஆலங்குடி வங்கனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:ஆலங்குடி வங்கனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:ஆலங்குடி வங்கனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:இடைக்காடனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 5
+  },
+  {
+   "source": "poet:இடைக்காடனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:இடைக்காடனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:இடைக்காடனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:இடைக்காடனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:கச்சிப்பேட்டு நன்னாகையார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:கச்சிப்பேட்டு நன்னாகையார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:கச்சிப்பேட்டு நன்னாகையார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கச்சிப்பேட்டு நன்னாகையார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 6
+  },
+  {
+   "source": "poet:பேரி சாத்தனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:பேரி சாத்தனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:பேரி சாத்தனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:பேரி சாத்தனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:பேரி சாத்தனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஓரம்போகியார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:ஓரம்போகியார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஓரம்போகியார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஓரம்போகியார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:ஓரம்போகியார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:சிறைக்குடி ஆந்தையார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:சிறைக்குடி ஆந்தையார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:சிறைக்குடி ஆந்தையார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:சிறைக்குடி ஆந்தையார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 4
+  },
+  {
+   "source": "poet:சிறைக்குடி ஆந்தையார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஒக்கூர் மாசாத்தியார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 4
+  },
+  {
+   "source": "poet:ஒக்கூர் மாசாத்தியார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஒக்கூர் மாசாத்தியார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 5
+  },
+  {
+   "source": "poet:வெள்ளி வீதியார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:வெள்ளி வீதியார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:வெள்ளி வீதியார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:வெள்ளி வீதியார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:வெள்ளி வீதியார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:வெள்ளி வீதியார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:சீத்தலைச் சாத்தனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:சீத்தலைச் சாத்தனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:சீத்தலைச் சாத்தனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:சீத்தலைச் சாத்தனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:சீத்தலைச் சாத்தனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:சீத்தலைச் சாத்தனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:இளங்கீரனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:இளங்கீரனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:இளங்கீரனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:இளங்கீரனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஒரோடோ கத்துக் கந்தரத்தனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:ஒரோடோ கத்துக் கந்தரத்தனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:நல்வெள்ளியார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:நல்வெள்ளியார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:நல்வெள்ளியார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:நல்வெள்ளியார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:விற்றூற்று மூதெயினனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:விற்றூற்று மூதெயினனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:விற்றூற்று மூதெயினனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:விற்றூற்று மூதெயினனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:விற்றூற்று மூதெயினனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:வடம வண்ணக்கன் பேரிசாத்தனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:வடம வண்ணக்கன் பேரிசாத்தனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:வடம வண்ணக்கன் பேரிசாத்தனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:வடம வண்ணக்கன் பேரிசாத்தனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:மருதம் பாடிய இளங்கடுங்கோ",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:மருதம் பாடிய இளங்கடுங்கோ",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:மருதம் பாடிய இளங்கடுங்கோ",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:தாயங்கண்ணனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:தாயங்கண்ணனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:தாயங்கண்ணனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:தாயங்கண்ணனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:தாயங்கண்ணனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:கழார்க் கீரன் எயிற்றியார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:கழார்க் கீரன் எயிற்றியார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:கழார்க் கீரன் எயிற்றியார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஓதலாந்தையார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:ஓதலாந்தையார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:ஓதலாந்தையார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:கோப்பெருஞ்சோழன்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கோப்பெருஞ்சோழன்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கோப்பெருஞ்சோழன்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கோப்பெருஞ்சோழன்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:வேங்கை",
+   "rel": "ATTESTS",
+   "weight": 55,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:மான்",
+   "rel": "ATTESTS",
+   "weight": 29,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:குறவர்",
+   "rel": "ATTESTS",
+   "weight": 14,
+   "cat": "people"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:காந்தள்",
+   "rel": "ATTESTS",
+   "weight": 34,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:யானை",
+   "rel": "ATTESTS",
+   "weight": 53,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:அருவி",
+   "rel": "ATTESTS",
+   "weight": 65,
+   "cat": "landscape"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:மயில்",
+   "rel": "ATTESTS",
+   "weight": 13,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:வேலன்",
+   "rel": "ATTESTS",
+   "weight": 9,
+   "cat": "people"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:முருகன்",
+   "rel": "ATTESTS",
+   "weight": 2,
+   "cat": "deity"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:குறிஞ்சி",
+   "rel": "ATTESTS",
+   "weight": 7,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:சிலம்பு",
+   "rel": "ATTESTS",
+   "weight": 9,
+   "cat": "landscape"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:மூங்கில்",
+   "rel": "ATTESTS",
+   "weight": 3,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:kurinji",
+   "target": "karu:kurinji:குரங்கு",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:முல்லை",
+   "rel": "ATTESTS",
+   "weight": 45,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:கொன்றை",
+   "rel": "ATTESTS",
+   "weight": 16,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:பசு",
+   "rel": "ATTESTS",
+   "weight": 8,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:ஆயர்",
+   "rel": "ATTESTS",
+   "weight": 13,
+   "cat": "people"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:மாயோன்",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "deity"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:கடம்பு",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:ஆய்ச்சியர்",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "people"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:முயல்",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:mullai",
+   "target": "karu:mullai:பிடவம்",
+   "rel": "ATTESTS",
+   "weight": 2,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:ஆம்பல்",
+   "rel": "ATTESTS",
+   "weight": 17,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:வயல்",
+   "rel": "ATTESTS",
+   "weight": 4,
+   "cat": "landscape"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:எருமை",
+   "rel": "ATTESTS",
+   "weight": 9,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:மருதம்",
+   "rel": "ATTESTS",
+   "weight": 3,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:நாரை",
+   "rel": "ATTESTS",
+   "weight": 2,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:உழவர்",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "people"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:வாழை",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:neytal",
+   "target": "karu:neytal:நெய்தல்",
+   "rel": "ATTESTS",
+   "weight": 32,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:neytal",
+   "target": "karu:neytal:புன்னை",
+   "rel": "ATTESTS",
+   "weight": 62,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:neytal",
+   "target": "karu:neytal:பரதவர்",
+   "rel": "ATTESTS",
+   "weight": 28,
+   "cat": "people"
+  },
+  {
+   "source": "tinai:neytal",
+   "target": "karu:neytal:தாழை",
+   "rel": "ATTESTS",
+   "weight": 25,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:neytal",
+   "target": "karu:neytal:நாரை",
+   "rel": "ATTESTS",
+   "weight": 18,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:neytal",
+   "target": "karu:neytal:சுரம்",
+   "rel": "ATTESTS",
+   "weight": 6,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:neytal",
+   "target": "karu:neytal:சுறா",
+   "rel": "ATTESTS",
+   "weight": 16,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:neytal",
+   "target": "karu:neytal:கண்டல்",
+   "rel": "ATTESTS",
+   "weight": 10,
+   "cat": "flora"
+  },
+  {
+   "source": "tinai:palai",
+   "target": "karu:palai:சுரம்",
+   "rel": "ATTESTS",
+   "weight": 56,
+   "cat": "landscape"
+  },
+  {
+   "source": "tinai:palai",
+   "target": "karu:palai:புலி",
+   "rel": "ATTESTS",
+   "weight": 26,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:palai",
+   "target": "karu:palai:மறவர்",
+   "rel": "ATTESTS",
+   "weight": 19,
+   "cat": "people"
+  },
+  {
+   "source": "tinai:palai",
+   "target": "karu:palai:நரி",
+   "rel": "ATTESTS",
+   "weight": 4,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:palai",
+   "target": "karu:palai:எயினர்",
+   "rel": "ATTESTS",
+   "weight": 2,
+   "cat": "people"
+  },
+  {
+   "source": "tinai:palai",
+   "target": "karu:palai:பாம்பு",
+   "rel": "ATTESTS",
+   "weight": 2,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:palai",
+   "target": "karu:palai:காக்கை",
+   "rel": "ATTESTS",
+   "weight": 2,
+   "cat": "fauna"
+  }
+ ]
+}
