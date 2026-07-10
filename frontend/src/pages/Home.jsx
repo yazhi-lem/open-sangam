@@ -35,6 +35,12 @@ export default function Home() {
           >
             Enter Sangam World
           </Link>
+          <Link
+            to="/knowledge"
+            className="px-6 py-3 rounded-xl border border-line-strong text-muted hover:text-primary hover:border-line-strong transition-colors"
+          >
+            Learn the Basics
+          </Link>
         </div>
       </section>
 

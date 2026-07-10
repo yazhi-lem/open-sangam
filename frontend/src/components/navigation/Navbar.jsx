@@ -16,6 +16,7 @@ export default function Navbar() {
           <NavLink to="/" end className={linkClass}>Home</NavLink>
           <NavLink to="/book" className={linkClass}>Library</NavLink>
           <NavLink to="/world" className={linkClass}>Sangam World</NavLink>
+          <NavLink to="/knowledge" className={linkClass}>Knowledge</NavLink>
           <ThemeToggle />
         </div>
       </nav>

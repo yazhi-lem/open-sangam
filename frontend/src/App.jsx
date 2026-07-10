@@ -3,6 +3,7 @@ import Navbar from './components/navigation/Navbar'
 import Home from './pages/Home'
 import SangamWorldPage from './pages/SangamWorldPage'
 import Book from './pages/Book'
+import Knowledge from './pages/Knowledge'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
             <Route path="/reader/:poemId?" element={<Navigate to="/book" replace />} />
             <Route path="/world" element={<SangamWorldPage />} />
+            <Route path="/knowledge" element={<Knowledge />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
