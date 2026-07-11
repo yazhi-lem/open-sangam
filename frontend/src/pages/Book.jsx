@@ -4,52 +4,87 @@ import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
 import { analyzeWord, translateVerse } from '../services/geminiApi'
+import Reveal, { RevealGroup } from '../components/motion/Reveal'
+import ScrollTilt from '../components/motion/ScrollTilt'
+import AnimatedCard from '../components/motion/AnimatedCard'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
 function PoemCard({ poem }) {
   const available = poem.available
   const nav = useNavigate()
-  return (
-    <div
-      onClick={() => available && nav(`/book/${poem.id}`)}
-      className={`group relative rounded-xl border p-5 transition-all duration-150
-        ${available
-          ? 'border-line-strong bg-surface hover:border-accent/50 hover:shadow-md cursor-pointer'
-          : 'border-line bg-surface-alt/60 cursor-default'
-        }`}
-    >
+
+  // `h-full` + `min-w-0` are what make this work inside a CSS grid:
+  // grid cells stretch to a uniform row height by default, but a card
+  // only *fills* that height if it opts in with h-full, and a child only
+  // *wraps* instead of forcing the column wider if it opts out of the
+  // default min-width:auto with min-w-0. `overflow-hidden` is a last-line
+  // guard so nothing (long unbroken Tamil strings included) can ever
+  // visually escape the card's rounded border.
+  const cardClassName = `group relative flex h-full min-w-0 flex-col overflow-hidden rounded-xl border p-5
+    ${available
+      ? 'border-line-strong bg-surface hover:border-accent/50 cursor-pointer'
+      : 'border-line bg-surface-alt/60 cursor-default'
+    }`
+
+  const content = (
+    <>
       {/* Collection badge */}
-      <span className={`inline-block text-[10px] font-medium uppercase tracking-widest px-2 py-0.5 rounded mb-3
+      <span className={`inline-block shrink-0 w-fit text-[10px] font-medium uppercase tracking-widest px-2 py-0.5 rounded mb-3
         ${poem.collection === '8thokai' ? 'bg-amber-50 text-amber-700' : 'bg-indigo-50 text-indigo-600'}`}>
         {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
       </span>
 
-      {/* Tamil name */}
-      <h3 className={`tamil text-xl font-semibold leading-tight mb-0.5
-        ${available ? 'text-primary group-hover:text-accent' : 'text-muted'}`}>
+      {/* Tamil name — clamped to 2 lines with a reserved min-height so
+          every card's title block is the same size whether the name is
+          short (மலைபடுகடாம்) or long (திருமுருகாற்றுப்படை). break-words +
+          overflow-wrap:anywhere let a single long Tamil word (which has
+          no spaces to break on) wrap mid-syllable instead of overflowing. */}
+      <h3
+        className={`tamil text-lg sm:text-xl font-semibold leading-[1.3] mb-1 shrink-0
+          line-clamp-2 break-words [overflow-wrap:anywhere] min-h-[2.6em]
+          ${available ? 'text-primary group-hover:text-accent' : 'text-muted'}`}
+      >
         {poem.ta}
       </h3>
 
-      {/* English name */}
-      <p className={`text-sm mb-3 ${available ? 'text-muted' : 'text-faint'}`}>
+      {/* English name — same clamp treatment, smaller reserved height */}
+      <p
+        className={`text-sm mb-3 shrink-0 leading-snug break-words [overflow-wrap:anywhere]
+          line-clamp-2 min-h-[2.2em] ${available ? 'text-muted' : 'text-faint'}`}
+      >
         {poem.en}
       </p>
 
-      {/* Count */}
-      <p className={`text-xs font-mono ${available ? 'text-muted' : 'text-faint'}`}>
+      {/* Count — pinned to the bottom of the card so metadata always
+          lines up across a row regardless of how many title lines
+          preceded it */}
+      <p className={`text-xs font-mono mt-auto pt-1 truncate ${available ? 'text-muted' : 'text-faint'}`}>
         {poem.count.toLocaleString()} {poem.unit}
       </p>
 
       {/* Status dot */}
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-4 right-4 shrink-0">
         {available
           ? <span className="w-2 h-2 rounded-full bg-emerald-400 block" title="Available" />
           : <span className="w-2 h-2 rounded-full bg-line-strong block" title="Coming soon" />
         }
       </div>
-    </div>
+    </>
   )
+
+  // Only available poems get the hover-lift treatment — a "coming soon"
+  // card lifting on hover would be a false affordance since it's not
+  // actually clickable.
+  if (available) {
+    return (
+      <AnimatedCard onClick={() => nav(`/book/${poem.id}`)} className={cardClassName}>
+        {content}
+      </AnimatedCard>
+    )
+  }
+
+  return <div className={cardClassName}>{content}</div>
 }
 
 function Library() {
@@ -62,7 +97,7 @@ function Library() {
     <div className="min-h-screen bg-page">
 
       {/* Hero */}
-      <div className="max-w-4xl mx-auto px-8 pt-16 pb-10">
+      <Reveal as="div" className="max-w-4xl mx-auto px-8 pt-16 pb-10" duration={0.7}>
         <p className="text-xs uppercase tracking-[0.2em] text-muted font-medium mb-3">
           Open Sangam
         </p>
@@ -76,21 +111,21 @@ function Library() {
           Classical Tamil literature from the Sangam period (c.&thinsp;300&thinsp;BCE – 300&thinsp;CE).
           Original verse, modern prose rendering, and English translation.
         </p>
-      </div>
+      </Reveal>
 
       {/* Collections */}
       <div className="max-w-4xl mx-auto px-8 pb-24 space-y-14">
         {byCollection.map(({ key, meta, poems }) => (
-          <section key={key}>
+          <ScrollTilt key={key} intensity={10}>
             <div className="flex items-baseline gap-3 mb-6 pb-3 border-b border-line-strong">
               <h2 className="tamil text-2xl font-semibold text-primary">{meta.ta}</h2>
               <span className="text-muted text-sm">{meta.en}</span>
             </div>
             <p className="text-sm text-muted mb-6 max-w-xl">{meta.desc}</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3" amount={0.1}>
               {poems.map(poem => <PoemCard key={poem.id} poem={poem} />)}
-            </div>
-          </section>
+            </RevealGroup>
+          </ScrollTilt>
         ))}
       </div>
 
