@@ -244,7 +244,7 @@ function Reader({ poem }) {
               >
                 <span className="text-[10px] font-mono text-faint pt-0.5 w-5 shrink-0 text-right">{n}</span>
                 <span className="text-xs leading-snug line-clamp-2 tamil">
-                  {t || (sec.poet ? sec.poet : `—`)}
+                  {t || (s.poet ? s.poet : `—`)}
                 </span>
               </button>
             )
