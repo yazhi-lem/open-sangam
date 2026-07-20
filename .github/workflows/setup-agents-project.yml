@@ -42,7 +42,8 @@ jobs:
             }
 
             // ──────────────────────────────────────────────────────────────
-            // Helper: create issue if title not already open; returns number
+            // Helper: create issue if title not already open; returns number.
+            // If it exists, backfill missing labels/milestone (bodies are kept).
             // ──────────────────────────────────────────────────────────────
             async function createIssue({ title, body, labels, milestone }) {
               const { data: existing } = await github.rest.issues.listForRepo({
@@ -50,7 +51,17 @@ jobs:
               });
               const found = existing.find(i => i.title === title);
               if (found) {
-                console.log(`Issue already exists: ${title} (#${found.number})`);
+                const patch = {};
+                if (milestone && !found.milestone) patch.milestone = milestone;
+                const have = found.labels.map(l => (typeof l === 'string' ? l : l.name));
+                const merged = [...new Set([...have, ...(labels || [])])];
+                if (merged.length !== have.length) patch.labels = merged;
+                if (Object.keys(patch).length) {
+                  await github.rest.issues.update({ owner, repo, issue_number: found.number, ...patch });
+                  console.log(`Backfilled labels/milestone on #${found.number}: ${title}`);
+                } else {
+                  console.log(`Issue already exists: ${title} (#${found.number})`);
+                }
                 return found.number;
               }
               const params = { owner, repo, title, body, labels };
