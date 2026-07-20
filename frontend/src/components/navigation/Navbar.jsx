@@ -17,6 +17,7 @@ export default function Navbar() {
           <NavLink to="/world" className={linkClass} title="Sangam World">சங்க உலகம்</NavLink>
           <NavLink to="/knowledge" className={linkClass} title="Knowledge">அறிவு</NavLink>
           <NavLink to="/graph" className={linkClass} title="Graph">வரைபடம்</NavLink>
+          <NavLink to="/articles" className={linkClass} title="Articles">கட்டுரைகள்</NavLink>
           <ThemeToggle />
         </div>
       </nav>

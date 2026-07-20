@@ -97,6 +97,107 @@ body {
   font-family: var(--font-tamil);
 }
 
+/*
+ * Article prose. The Articles section renders markdown → HTML (see
+ * scripts/build-articles.mjs) into a .prose-sangam container. There's no
+ * Tailwind typography plugin in the project, so these element styles are
+ * defined by hand against the semantic color tokens above — which means they
+ * are theme-aware (light/dark) for free.
+ */
+.prose-sangam {
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+.prose-sangam > :first-child { margin-top: 0; }
+.prose-sangam h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 5rem;
+}
+.prose-sangam h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.75rem;
+  scroll-margin-top: 5rem;
+}
+.prose-sangam h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+}
+.prose-sangam p { margin: 0 0 1.1rem; }
+.prose-sangam a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-sangam a:hover { color: var(--accent-strong); }
+.prose-sangam strong { color: var(--text); font-weight: 700; }
+.prose-sangam ul,
+.prose-sangam ol { margin: 0 0 1.1rem; padding-left: 1.5rem; }
+.prose-sangam li { margin: 0.35rem 0; }
+.prose-sangam blockquote {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface-alt);
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: var(--text-muted);
+}
+.prose-sangam blockquote p:last-child { margin-bottom: 0; }
+.prose-sangam code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--surface-alt);
+  padding: 0.15em 0.4em;
+  border-radius: 0.3rem;
+}
+.prose-sangam pre {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+.prose-sangam pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.875rem;
+}
+.prose-sangam hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+/* Wide tables scroll inside their own box; the page never scrolls sideways. */
+.prose-sangam table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+}
+.prose-sangam th,
+.prose-sangam td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.prose-sangam th {
+  background: var(--surface-alt);
+  font-weight: 600;
+}
+
 .tamil-verse {
   font-family: var(--font-tamil-serif);
   line-height: 2;

@@ -1,0 +1,152 @@
+{
+  "generatedAt": "2026-07-20T19:48:49.419Z",
+  "count": 9,
+  "articles": [
+    {
+      "slug": "bridging-centuries-ai-accessibility",
+      "title": "Bridging Centuries: AI-Powered Accessibility for Ancient Indic Texts and the Future of Digital Humanities",
+      "date": "2026-07-18",
+      "author": "Open Sangam Project",
+      "category": "Digital Humanities",
+      "tags": [
+        "Accessibility",
+        "AI",
+        "Indic Texts",
+        "Preservation"
+      ],
+      "description": "AI — translation, glossaries, explanation, graphs, Q&A — as the final gateway to democratising access to ancient texts.",
+      "status": "essay",
+      "readingMinutes": 15
+    },
+    {
+      "slug": "sangam-effect-computational-linguistics",
+      "title": "The Sangam Effect: How Classical Tamil Literature Informs Modern Computational Linguistics",
+      "date": "2026-07-15",
+      "author": "Open Sangam Project",
+      "category": "AI & Language",
+      "tags": [
+        "Computational Linguistics",
+        "Typology",
+        "Tamil",
+        "NLP"
+      ],
+      "description": "How classical Tamil exposes the English-centric assumptions baked into mainstream NLP.",
+      "status": "essay",
+      "readingMinutes": 12
+    },
+    {
+      "slug": "tamil-renaissance-digital-humanities",
+      "title": "Tamil Renaissance Through Digital Humanities: The Role of Open Sangam in Language Preservation and Revitalization",
+      "date": "2026-07-11",
+      "author": "Open Sangam Project",
+      "category": "Digital Humanities",
+      "tags": [
+        "Language Preservation",
+        "Tamil",
+        "Diaspora",
+        "Education"
+      ],
+      "description": "Digital humanities as a language-revitalisation strategy: keeping Tamil digitally complete and culturally prestigious.",
+      "status": "essay",
+      "readingMinutes": 13
+    },
+    {
+      "slug": "neural-networks-ancient-poetry",
+      "title": "Neural Networks and Ancient Poetry: How AI Learns from the Sangam Corpus",
+      "date": "2026-07-07",
+      "author": "Open Sangam Project",
+      "category": "AI & Language",
+      "tags": [
+        "Neural Networks",
+        "Transformers",
+        "Poetry",
+        "Training Data"
+      ],
+      "description": "What a language model does and does not learn when it is trained on the Sangam corpus.",
+      "status": "essay",
+      "readingMinutes": 12
+    },
+    {
+      "slug": "knowledge-graphs-heritage",
+      "title": "Preserving Literary Heritage Through Technology: The Role of Knowledge Graphs in Digital Humanities",
+      "date": "2026-06-30",
+      "author": "Open Sangam Project",
+      "category": "Digital Humanities",
+      "tags": [
+        "Knowledge Graphs",
+        "Digital Humanities",
+        "Preservation",
+        "RDF"
+      ],
+      "description": "Knowledge graphs as a bridge between humanities scholarship and computation — with Open Sangam as the worked example.",
+      "status": "essay",
+      "readingMinutes": 13
+    },
+    {
+      "slug": "sangam-tinai-framework",
+      "title": "The Sangam Tiṇai Framework: A Linguistic Blueprint for Language Understanding in AI",
+      "date": "2026-06-23",
+      "author": "Open Sangam Project",
+      "category": "AI & Language",
+      "tags": [
+        "Tiṇai",
+        "Semantics",
+        "Knowledge Graph",
+        "NLP"
+      ],
+      "description": "The five-fold tiṇai landscape system read as an early blueprint for semantic contextualisation in AI.",
+      "status": "essay",
+      "readingMinutes": 13
+    },
+    {
+      "slug": "low-resource-indic-languages",
+      "title": "Building AI Models for Low-Resource Indic Languages: Lessons from Open Sangam",
+      "date": "2026-06-16",
+      "author": "Open Sangam Project",
+      "category": "AI & Language",
+      "tags": [
+        "Low-Resource NLP",
+        "Indic Languages",
+        "Sanskrit",
+        "Telugu",
+        "Kannada"
+      ],
+      "description": "Why classical corpora are an asset for building AI in low-resource Indic languages, and how the Open Sangam method generalises.",
+      "status": "essay",
+      "readingMinutes": 14
+    },
+    {
+      "slug": "ancient-sangam-effect-on-ai",
+      "title": "The Ancient Sangam Era and Its Profound Effect on Modern AI and Language Models",
+      "date": "2026-06-09",
+      "author": "Open Sangam Project",
+      "category": "AI & Language",
+      "tags": [
+        "AI",
+        "Tamil",
+        "Tiṇai",
+        "Training Data",
+        "NLP"
+      ],
+      "description": "How 2,000-year-old Tamil frameworks — tiṇai, karu-poruḷ, the Tolkāppiyam — anticipate ideas in modern language modelling.",
+      "status": "essay",
+      "readingMinutes": 14
+    },
+    {
+      "slug": "introduction-to-open-sangam",
+      "title": "Introduction to Open Sangam: Democratizing Classical Tamil Literature Through Technology",
+      "date": "2026-06-02",
+      "author": "Open Sangam Project",
+      "category": "Platform",
+      "tags": [
+        "Open Sangam",
+        "Tamil",
+        "Accessibility",
+        "Digital Humanities"
+      ],
+      "description": "How Open Sangam turns static archives of Sangam-era Tamil poetry into a layered, interactive learning platform.",
+      "status": "essay",
+      "readingMinutes": 10
+    }
+  ]
+}
