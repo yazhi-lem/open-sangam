@@ -1,0 +1,365 @@
+name: Setup Agents Project — Poet-Swarm Milestones & Issues
+
+# Creates the `agents` label, three "Agents M1–M3" milestones, and the issue
+# breakdown for the சங்க அவை poet-swarm agent system described in
+# docs/agent-implementation-plan.md. Idempotent — safe to re-run.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create label, milestones and issues
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+
+            // ──────────────────────────────────────────────────────────────
+            // Helper: create or find a milestone by title
+            // ──────────────────────────────────────────────────────────────
+            async function getOrCreateMilestone({ title, description, due_on }) {
+              const { data: list } = await github.rest.issues.listMilestones({
+                owner, repo, state: 'open', per_page: 100
+              });
+              const existing = list.find(m => m.title === title);
+              if (existing) {
+                console.log(`Milestone already exists: ${title}`);
+                return existing.number;
+              }
+              const { data: ms } = await github.rest.issues.createMilestone({
+                owner, repo, title, description, due_on
+              });
+              console.log(`Created milestone: ${title} (#${ms.number})`);
+              return ms.number;
+            }
+
+            // ──────────────────────────────────────────────────────────────
+            // Helper: create issue if title not already open; returns number
+            // ──────────────────────────────────────────────────────────────
+            async function createIssue({ title, body, labels, milestone }) {
+              const { data: existing } = await github.rest.issues.listForRepo({
+                owner, repo, state: 'open', per_page: 100
+              });
+              const found = existing.find(i => i.title === title);
+              if (found) {
+                console.log(`Issue already exists: ${title} (#${found.number})`);
+                return found.number;
+              }
+              const params = { owner, repo, title, body, labels };
+              if (milestone) params.milestone = milestone;
+              const { data: issue } = await github.rest.issues.create(params);
+              console.log(`Created issue #${issue.number}: ${title}`);
+              return issue.number;
+            }
+
+            // ──────────────────────────────────────────────────────────────
+            // Label
+            // ──────────────────────────────────────────────────────────────
+            try {
+              await github.rest.issues.createLabel({
+                owner, repo, name: 'agents', color: '7057ff',
+                description: 'ADK/A2A/A2UI poet-swarm agent system',
+              });
+              console.log('Created label: agents');
+            } catch (e) {
+              if (e.status === 422) console.log('Label exists: agents');
+              else throw e;
+            }
+
+            // ──────────────────────────────────────────────────────────────
+            // Milestones
+            // ──────────────────────────────────────────────────────────────
+            const m1 = await getOrCreateMilestone({
+              title: 'Agents M1 — Foundations & ஔவையார் Q&A',
+              description: 'backend/agents ADK scaffold with Gemma, corpus/graph/tinai tools, and the Avvaiyar Q&A agent with verse citations.',
+              due_on: '2026-08-31T23:59:59Z',
+            });
+            const m2 = await getOrCreateMilestone({
+              title: 'Agents M2 — The Poet Swarm',
+              description: 'Tholkappiyar (scenario extraction), Kapilar (poem recreation), Paranar (imagery), and the Nakkirar convener with peer-mesh handoffs.',
+              due_on: '2026-09-30T23:59:59Z',
+            });
+            const m3 = await getOrCreateMilestone({
+              title: 'Agents M3 — A2A/A2UI Assembly & Deploy',
+              description: 'A2A exposure of all five poets, the /avai frontend chat with A2UI rendering, Cloud Run deployment, docs and hardening.',
+              due_on: '2026-10-31T23:59:59Z',
+            });
+
+            const plan = 'docs/agent-implementation-plan.md';
+            const nums = {};
+
+            // ──────────────────────────────────────────────────────────────
+            // M1 — Foundations & Q&A
+            // ──────────────────────────────────────────────────────────────
+            nums.scaffold = await createIssue({
+              title: 'Agents: scaffold backend/agents ADK package with Gemma model config',
+              body: `## Context
+            First building block of the சங்க அவை poet-swarm (see \`${plan}\`). New Python package \`backend/agents/\` (package \`sangam_avai\`) on Google ADK, with Gemma as the reasoning model via the hosted Gemini API — reusing the existing \`GEMINI_API_KEY\` pattern. Self-hosted Gemma (Ollama/vLLM via LiteLLM) is a documented alternative.
+
+            ## Acceptance criteria
+            - [ ] \`backend/agents/\` layout per the plan: \`sangam_avai/\` (\`agent.py\`, \`config.py\`, \`prompts.py\`, \`poets/\`, \`tools/\`), \`tests/\`, \`evals/\`, \`requirements.txt\` (pin \`google-adk[a2a]\`), \`.env.example\`.
+            - [ ] \`config.py\` selects \`Gemini(model=SANGAM_AGENT_MODEL)\` (default \`gemma-3-27b-it\`) or LiteLLM via \`SANGAM_AGENT_BACKEND=litellm\` + \`SANGAM_AGENT_API_BASE\`.
+            - [ ] A hello-world agent answers a prompt under \`adk web\` / \`adk run sangam_avai\` using Gemma.
+            - [ ] README documents setup, env vars, and the Ollama/vLLM alternative.
+            - [ ] \`backend/python/\` is untouched (stays the offline pipeline).
+
+            Dependencies: none — this unblocks everything else.`,
+              labels: ['agents', 'backend', 'enhancement'],
+              milestone: m1,
+            });
+
+            nums.corpus = await createIssue({
+              title: 'Agents: corpus tools — verse lookup and search over data/texts',
+              body: `## Context
+            Shared grounding tools for all poets (see \`${plan}\`). Local JSON first — the 2,032 normalized verses under \`data/texts/**/normalized/*.json\` are loaded and indexed in memory at startup. Firestore-backed variants are a possible future issue.
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/tools/corpus.py\`: \`get_verse(verse_id)\`, \`search_verses(query, tinai=None, poem=None, limit=10)\`, \`list_poems()\` as plain functions (ADK FunctionTool-ready, docstring-driven).
+            - [ ] Search matches Tamil substrings and normalized tokens over \`sangamTamil\`/\`urai\`/\`culturalNotes\`; results return trimmed fields to keep model context small.
+            - [ ] \`pytest backend/agents/tests\` covers Tamil-text queries, tiṇai filter, unknown-id handling — no LLM required.
+
+            Dependencies: #${nums.scaffold}`,
+              labels: ['agents', 'backend', 'data-pipeline'],
+              milestone: m1,
+            });
+
+            nums.graph = await createIssue({
+              title: 'Agents: knowledge-graph and tiṇai context tools',
+              body: `## Context
+            Tools over \`data/knowledge/graph.json\` (106 nodes / 283 edges: tinai/poem/poet/karu; HAS_TINAI/WROTE_IN/COMPOSED/ATTESTS) and \`data/knowledge/tinai_context.json\` (see \`${plan}\`).
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/tools/graph.py\`: \`query_knowledge_graph(node_id=None, node_type=None, edge_type=None)\`.
+            - [ ] \`sangam_avai/tools/tinai.py\`: \`get_tinai_context(tinai)\` with the five tiṇai enum values validated.
+            - [ ] pytest coverage for both, no LLM required.
+
+            Dependencies: #${nums.scaffold}`,
+              labels: ['agents', 'backend', 'data-pipeline'],
+              milestone: m1,
+            });
+
+            nums.avvaiyar = await createIssue({
+              title: 'Agents: ஔவையார் Avvaiyar — Q&A agent with verse citations',
+              body: `## Context
+            The assembly's question-answerer, named for the wise itinerant counselor-poet (see \`${plan}\`). Grounded strictly in the corpus and knowledge-graph tools; every claim cites verse ids (e.g. \`purananooru_001\`) so it can be checked.
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/poets/avvaiyar.py\` LlmAgent wired to the corpus + graph/tiṇai tools (≤3 tools — Gemma routes small toolsets more reliably).
+            - [ ] Instruction requires verse-id citations and hedging labeled "contested interpretation" where scholarship disagrees (per \`docs/data-governance.md\`).
+            - [ ] \`evals/qa.evalset.json\` with ~10 cases runs green via \`adk eval\` — e.g. "What flora characterize kurinji?" answered with graph/verse citations.
+            - [ ] Tamil display name ஔவையார் in the agent description.
+
+            Dependencies: #${nums.corpus}, #${nums.graph}`,
+              labels: ['agents', 'ai-translation', 'enhancement'],
+              milestone: m1,
+            });
+
+            // ──────────────────────────────────────────────────────────────
+            // M2 — The Poet Swarm
+            // ──────────────────────────────────────────────────────────────
+            nums.tholkappiyar = await createIssue({
+              title: 'Agents: தொல்காப்பியர் Tholkappiyar — scenario extraction agent (structured output)',
+              body: `## Context
+            Named for the grammarian whose Tholkāppiyam codified the tiṇai/poruḷ taxonomy — this agent extracts structured scenarios from verses (see \`${plan}\`).
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/schemas.py\` Pydantic \`Scenario\`: speaker, addressee, tinai, uripporul, karu {flora, fauna, landscape}, dramaticSituation, evidenceLines.
+            - [ ] \`sangam_avai/poets/tholkappiyar.py\` LlmAgent with \`output_schema=Scenario\`, using corpus + tiṇai tools.
+            - [ ] Eval on 5 verses with known scenarios validates schema-conformant, plausible output.
+            - [ ] Output metadata carries \`{aiGenerated: true, verified: false}\`.
+
+            Dependencies: #${nums.avvaiyar}`,
+              labels: ['agents', 'ai-translation'],
+              milestone: m2,
+            });
+
+            nums.kapilar = await createIssue({
+              title: 'Agents: கபிலர் Kapilar — poem recreation agent with governance labeling',
+              body: `## Context
+            Named for the most prolific Sangam poet, master of kuṟiñci akam. Recreates, reimagines, or poetically translates poems while honoring tiṇai conventions (see \`${plan}\`).
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/poets/kapilar.py\` with three modes: Sangam-style recreation, modern reimagining, English poetic translation.
+            - [ ] Tiṇai conventions enforced via \`get_tinai_context\` before composing.
+            - [ ] Every output carries the AI-generated disclaimer line + \`{aiGenerated: true, verified: false}\` metadata (test asserts the disclaimer string).
+            - [ ] Generated poems are never written into \`data/texts/\`.
+
+            Dependencies: #${nums.avvaiyar}`,
+              labels: ['agents', 'ai-translation'],
+              milestone: m2,
+            });
+
+            nums.paranar = await createIssue({
+              title: 'Agents: பரணர் Paranar — imagery agent + pluggable image backend',
+              body: `## Context
+            Named for the poet renowned for vivid landscape imagery. Gemma cannot generate pixels: Paranar extracts the tiṇai landscape, karu elements, mood, and time-of-day from a verse, composes a detailed prompt, and calls a pluggable \`generate_image\` tool (see \`${plan}\`).
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/tools/image_gen.py\` \`ImageBackend\` protocol selected by \`SANGAM_IMAGE_BACKEND\`: \`gemini\` (google-genai SDK, default), \`none\` (dev — returns the prompt only); self-hosted OpenAI-compatible endpoint documented.
+            - [ ] \`sangam_avai/poets/paranar.py\`: scene extraction → prompt crafting → \`generate_image\` call; image returned as an A2A FilePart (data-URI in v1).
+            - [ ] Every image labeled "AI-recreated imagery — not a historical depiction."
+
+            Dependencies: #${nums.avvaiyar}`,
+              labels: ['agents', 'backend', 'enhancement'],
+              milestone: m2,
+            });
+
+            nums.nakkirar = await createIssue({
+              title: 'Agents: நக்கீரர் Nakkirar — convener + swarm handoff mesh + routing evals',
+              body: `## Context
+            Named for the legendary president of the Madurai Sangam who stood by his critique even before Shiva. Nakkirar is the assembly's default entry point and critic — but the swarm is a peer mesh, not a hierarchy: each poet lists the other four for ADK agent transfer (see \`${plan}\`).
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/poets/nakkirar.py\` convener/critic + \`sangam_avai/swarm.py\` wiring the full peer mesh (any poet can hand off to any other mid-conversation).
+            - [ ] \`evals/routing.evalset.json\` covers routing and misroute cases across all four specialist skills.
+            - [ ] If Gemma's free transfer proves flaky, a config flag constrains the mesh to hub-and-spoke through Nakkirar — decision documented from eval results.
+
+            Dependencies: #${nums.tholkappiyar}, #${nums.kapilar}, #${nums.paranar}`,
+              labels: ['agents', 'enhancement'],
+              milestone: m2,
+            });
+
+            nums.persist = await createIssue({
+              title: 'Agents: scenario persistence to data/scenarios/ (verified:false)',
+              body: `## Context
+            Stretch goal (may slip to M3): Tholkappiyar's extractions can seed a reviewable dataset, entering the existing human-in-the-loop protocol (see \`${plan}\` and \`docs/data-governance.md\`).
+
+            ## Acceptance criteria
+            - [ ] \`data/schema/scenario_schema.json\` (JSON Schema mirroring the Pydantic model).
+            - [ ] Opt-in batch script \`backend/agents/scripts/extract_scenarios.py\` writing \`data/scenarios/<verse_id>.json\` with \`"verified": false\`.
+            - [ ] \`docs/data-governance.md\` updated to cover scenario review.
+
+            Dependencies: #${nums.tholkappiyar}`,
+              labels: ['agents', 'data-pipeline', 'community'],
+              milestone: m2,
+            });
+
+            // ──────────────────────────────────────────────────────────────
+            // M3 — A2A/A2UI Assembly & Deploy
+            // ──────────────────────────────────────────────────────────────
+            nums.a2a = await createIssue({
+              title: 'Agents: expose all five poets via A2A (mounted apps + AgentCards)',
+              body: `## Context
+            Every poet is A2A-addressable: five \`to_a2a()\` ASGI apps mounted in one uvicorn process under \`/a2a/<poet>/\`, five AgentCards, single deploy (see \`${plan}\`). External A2A clients can address any poet; the frontend enters via Nakkirar.
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/swarm.py\` exports \`app\` mounting all five A2A apps + Starlette \`CORSMiddleware\` (ALLOWED_ORIGINS env).
+            - [ ] \`curl /a2a/<poet>/.well-known/agent-card.json\` validates for all five; JSON-RPC \`message/send\` to Nakkirar returns an answer.
+            - [ ] \`a2a-sdk\` Python client smoke test in \`tests/\`.
+            - [ ] Later split-out path (\`RemoteA2aAgent\`) noted in README.
+
+            Dependencies: #${nums.nakkirar}`,
+              labels: ['agents', 'backend'],
+              milestone: m3,
+            });
+
+            nums.frontend = await createIssue({
+              title: 'Agents: frontend /avai assembly chat with markdown fallback',
+              body: `## Context
+            The assembly surface — new route \`/avai\` ("Ask the Sangam"), messages attributed to the responding poet with their Tamil name. Ships fully functional on plain markdown **before** A2UI lands (see \`${plan}\`).
+
+            ## Acceptance criteria
+            - [ ] Route in \`frontend/src/App.jsx\` + \`AskSangam\` page; nav entry.
+            - [ ] \`frontend/src/services/a2aClient.js\` — thin A2A JSON-RPC client (\`message/send\`, \`message/stream\` SSE), base URL from \`VITE_AGENT_URL\`, mirroring the \`geminiApi.js\` no-keys-in-browser pattern.
+            - [ ] Per-poet attribution (Tamil name) + AI-generated badges reusing the \`verified:false\` indicator pattern.
+            - [ ] End-to-end: question → cited answer against local uvicorn, documented in README.
+
+            Dependencies: #${nums.a2a}`,
+              labels: ['agents', 'frontend'],
+              milestone: m3,
+            });
+
+            nums.a2ui = await createIssue({
+              title: 'Agents: A2UI rich responses — server templates + Lit renderer embed',
+              body: `## Context
+            Deterministic A2UI: server-side templates convert structured tool outputs into A2UI component JSON (verse cards, scenario tables, image galleries) — the LLM never writes A2UI. Delivered as the A2A A2UI extension with markdown fallback always present (see \`${plan}\`).
+
+            ⚠ A2UI is v0.9.x / v1.0-RC — pin \`@a2ui/lit\` and \`@a2ui/web_core\` versions. If the Lit renderer proves unstable, fall back to custom React components driven by the same structured JSON.
+
+            ## Acceptance criteria
+            - [ ] \`sangam_avai/a2ui_templates.py\`: verse card, scenario table, image gallery formatters; extension declared in AgentCards.
+            - [ ] \`<A2uiSurface>\` React wrapper embedding the Lit web component + MessageProcessor.
+            - [ ] Graceful degradation to markdown when the extension is absent or rendering fails.
+
+            Dependencies: #${nums.frontend}`,
+              labels: ['agents', 'frontend', 'enhancement'],
+              milestone: m3,
+            });
+
+            nums.deploy = await createIssue({
+              title: 'Agents: Cloud Run deployment, secrets, and CI workflow',
+              body: `## Context
+            One Cloud Run service \`sangam-avai\` hosting the whole swarm (see \`${plan}\`).
+
+            ## Acceptance criteria
+            - [ ] \`backend/agents/Dockerfile\` (python:3.12-slim, copies \`data/texts\` + \`data/knowledge\`).
+            - [ ] \`GEMINI_API_KEY\` via Secret Manager; \`min-instances=0\` cold start documented.
+            - [ ] \`.github/workflows/deploy-agent.yml\` (\`workflow_dispatch\` build + \`gcloud run deploy\`).
+            - [ ] Prod CORS restricted to the Cloudflare Pages origin; \`VITE_AGENT_URL\` added to the Pages deploy config.
+            - [ ] Smoke test against the prod URL.
+
+            Dependencies: #${nums.a2a}`,
+              labels: ['agents', 'backend', 'launch'],
+              milestone: m3,
+            });
+
+            nums.docs = await createIssue({
+              title: 'Agents: docs, governance, and hardening',
+              body: `## Context
+            Close out the swarm: documentation, governance codification, and abuse controls (see \`${plan}\`).
+
+            ## Acceptance criteria
+            - [ ] \`docs/architecture.md\`: poet-swarm section incl. the RemoteA2aAgent split-out path.
+            - [ ] \`docs/api-contracts.md\`: A2A endpoints + AgentCard URLs.
+            - [ ] \`docs/data-governance.md\`: new § Agent-generated content (poems/images/scenarios labeling, never writing to \`data/texts/\`, citation requirement).
+            - [ ] Rate limiting on the Cloud Run endpoint; optional Firebase App Check token header evaluated.
+
+            Dependencies: #${nums.a2ui}, #${nums.deploy}`,
+              labels: ['agents', 'launch', 'community'],
+              milestone: m3,
+            });
+
+            // ──────────────────────────────────────────────────────────────
+            // Umbrella tracking issue
+            // ──────────────────────────────────────────────────────────────
+            await createIssue({
+              title: 'Agents: சங்க அவை poet-swarm — tracking issue',
+              body: `## சங்க அவை — the Sangam assembly
+
+            Umbrella for the Gemma + ADK + A2A + A2UI poet-swarm agent system. Full design: \`${plan}\`.
+
+            Five peer agents named for Sangam-era figures: நக்கீரர் Nakkirar (convener/critic), ஔவையார் Avvaiyar (Q&A), கபிலர் Kapilar (poem recreation), தொல்காப்பியர் Tholkappiyar (scenario extraction), பரணர் Paranar (imagery).
+
+            ### Agents M1 — Foundations & ஔவையார் Q&A
+            - [ ] #${nums.scaffold}
+            - [ ] #${nums.corpus}
+            - [ ] #${nums.graph}
+            - [ ] #${nums.avvaiyar}
+
+            ### Agents M2 — The Poet Swarm
+            - [ ] #${nums.tholkappiyar}
+            - [ ] #${nums.kapilar}
+            - [ ] #${nums.paranar}
+            - [ ] #${nums.nakkirar}
+            - [ ] #${nums.persist} *(stretch)*
+
+            ### Agents M3 — A2A/A2UI Assembly & Deploy
+            - [ ] #${nums.a2a}
+            - [ ] #${nums.frontend}
+            - [ ] #${nums.a2ui}
+            - [ ] #${nums.deploy}
+            - [ ] #${nums.docs}
+
+            Dependency spine: #${nums.scaffold} → (#${nums.corpus}, #${nums.graph}) → #${nums.avvaiyar} → (#${nums.tholkappiyar}, #${nums.kapilar}, #${nums.paranar}) → #${nums.nakkirar} → #${nums.a2a} → #${nums.frontend} → #${nums.a2ui}; #${nums.deploy} after #${nums.a2a}; #${nums.persist}, #${nums.docs} trailing.`,
+              labels: ['agents'],
+            });
+
+            console.log('✅ Poet-swarm setup complete — label, milestones, and issues created.');
