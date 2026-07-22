@@ -5,8 +5,8 @@ import SangamWorldPage from './pages/SangamWorldPage'
 import Book from './pages/Book'
 import Knowledge from './pages/Knowledge'
 import GraphExplorer from './pages/GraphExplorer'
-import Articles from './pages/Articles'
-import Article from './pages/Article'
+import ArticlesList from './pages/ArticlesList'
+import ArticleReader from './pages/ArticleReader'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -22,8 +22,8 @@ export default function App() {
             <Route path="/world" element={<SangamWorldPage />} />
             <Route path="/knowledge" element={<Knowledge />} />
             <Route path="/graph" element={<GraphExplorer />} />
-            <Route path="/articles" element={<Articles />} />
-            <Route path="/articles/:slug" element={<Article />} />
+            <Route path="/articles" element={<ArticlesList />} />
+            <Route path="/articles/:slug" element={<ArticleReader />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

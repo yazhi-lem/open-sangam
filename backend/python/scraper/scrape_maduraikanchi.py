@@ -40,7 +40,7 @@ def fetch(url: str) -> BeautifulSoup:
     resp = requests.get(url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     resp.encoding = "utf-8"
-    return BeautifulSoup(resp.text, "lxml")
+    return BeautifulSoup(resp.text, "html.parser")
 
 
 def get_section_urls(index_soup: BeautifulSoup) -> list[tuple[int, str]]:
