@@ -11,11 +11,12 @@ export default function Navbar() {
   const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
 
   const links = [
-    { to: '/', end: true, labelTa: 'முகப்பு', labelEn: 'Home' },
-    { to: '/book', labelTa: 'நூலகம்', labelEn: 'Library' },
-    { to: '/world', labelTa: 'சங்க உலகம்', labelEn: 'Sangam World' },
-    { to: '/knowledge', labelTa: 'அறிவு', labelEn: 'Knowledge' },
-    { to: '/graph', labelTa: 'வரைபடம்', labelEn: 'Graph' },
+    { to: '/', end: true, label: 'முகப்பு', title: 'Home' },
+    { to: '/book', label: 'நூலகம்', title: 'Library' },
+    { to: '/world', label: 'சங்க உலகம்', title: 'Sangam World' },
+    { to: '/knowledge', label: 'அறிவு', title: 'Knowledge' },
+    { to: '/graph', label: 'வரைபடம்', title: 'Graph' },
+    { to: '/articles', label: 'கட்டுரைகள்', title: 'Articles' },
   ]
 
   const linkClass = ({ isActive }) =>

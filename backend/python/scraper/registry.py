@@ -40,6 +40,8 @@ POEMS = [
         "subfolder": "ainkurunooru",
         "num_digits": 3,
         "tinai_source": "link",
+        "grouped_page": True,
+        "poems_per_page": 10,
     },
     {
         "id": "kalithokai",

@@ -41,7 +41,7 @@ def fetch(url: str) -> BeautifulSoup:
     resp = requests.get(url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     resp.encoding = "utf-8"
-    return BeautifulSoup(resp.text, "lxml")
+    return BeautifulSoup(resp.text, "html.parser")
 
 
 # ── Link discovery ───────────────────────────────────────────────────────────
@@ -63,7 +63,7 @@ def get_sub_page_links(index_soup: BeautifulSoup, poem: dict) -> list[tuple[int,
         href = a["href"]
         if not pattern.search(href):
             continue
-        m = re.search(r"(\d{" + str(n) + r",})", href)
+        m = re.search(r"(\d+)(?=\.html$)", href)
         if not m:
             continue
         num = int(m.group(1))
@@ -188,6 +188,21 @@ def scrape_10paddu_page(num: int, url: str, label: str, poem: dict) -> dict:
 
 # ── Poem-level orchestration ─────────────────────────────────────────────────
 
+def get_ainkurunooru_metadata(poem_num: int) -> tuple[str, str]:
+    """Return (tinai, poet) for a given Ainkurunooru poem number."""
+    if 1 <= poem_num <= 100:
+        return "marutam", "ஓரம்போகியார்"
+    elif 101 <= poem_num <= 200:
+        return "neytal", "அம்மூவனார்"
+    elif 201 <= poem_num <= 300:
+        return "kurinji", "கபிலர்"
+    elif 301 <= poem_num <= 400:
+        return "palai", "ஓதலாந்தையார்"
+    elif 401 <= poem_num <= 500:
+        return "mullai", "பேயனார்"
+    return "unknown", ""
+
+
 def scrape_poem(poem: dict, resume: bool = True) -> None:
     poem_id = poem["id"]
     out_dir = DATA_BASE / poem_id / "raw"
@@ -208,16 +223,77 @@ def scrape_poem(poem: dict, resume: bool = True) -> None:
     scrape_fn = scrape_8thokai_page if poem["collection"] == "8thokai" else scrape_10paddu_page
 
     for num, url, label in links:
-        out_file = out_dir / f"{'verse' if poem['collection'] == '8thokai' else 'section'}_{num:0{poem['num_digits']}d}.json"
-        if resume and out_file.exists():
-            continue
-        try:
-            data = scrape_fn(num, url, label, poem)
-            out_file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"  [{num:0{poem['num_digits']}d}] ✓")
-        except Exception as exc:
-            print(f"  [{num:0{poem['num_digits']}d}] ✗ {exc}")
-        time.sleep(0.7)
+        if poem.get("grouped_page"):
+            poems_per_page = poem.get("poems_per_page", 10)
+            start_num = (num - 1) * poems_per_page + 1
+            end_num = num * poems_per_page
+            
+            page_files = [
+                out_dir / f"verse_{p_num:0{poem['num_digits']}d}.json"
+                for p_num in range(start_num, end_num + 1)
+            ]
+            
+            if resume and all(f.exists() for f in page_files):
+                continue
+                
+            try:
+                soup = fetch(url)
+                centers = soup.find_all("div", id="centerContent")
+                scraped_count = 0
+                for center in centers:
+                    sub_header = center.find("div", id="sub-header")
+                    if not sub_header:
+                        continue
+                    sub_header_text = sub_header.get_text(strip=True)
+                    if "பாடல் :" not in sub_header_text:
+                        continue
+                    
+                    poem_num = (num - 1) * poems_per_page + scraped_count + 1
+                    
+                    p1 = center.find("div", id="p1")
+                    if not p1:
+                        continue
+                    
+                    sangam = clean_verse_text(p1)
+                    urai = extract_urai(center)
+                    
+                    if poem_id == "ainkurunooru":
+                        tinai, poet = get_ainkurunooru_metadata(poem_num)
+                    else:
+                        tinai = resolve_tinai(poem, label)
+                        poet = extract_poet(center)
+                    
+                    data = {
+                        "id": f"{poem_id}_{poem_num:0{poem['num_digits']}d}",
+                        "poem": poem_id,
+                        "number": poem_num,
+                        "tinai": tinai,
+                        "sangamTamil": sangam,
+                        "urai": urai or None,
+                        "english": None,
+                        "poet": poet or None,
+                        "source": url,
+                        "verified": False,
+                    }
+                    
+                    out_file = out_dir / f"verse_{poem_num:0{poem['num_digits']}d}.json"
+                    out_file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+                    scraped_count += 1
+                print(f"  [{num:02d}] ✓ (scraped {scraped_count} poems)")
+            except Exception as exc:
+                print(f"  [{num:02d}] ✗ {exc}")
+            time.sleep(0.7)
+        else:
+            out_file = out_dir / f"{'verse' if poem['collection'] == '8thokai' else 'section'}_{num:0{poem['num_digits']}d}.json"
+            if resume and out_file.exists():
+                continue
+            try:
+                data = scrape_fn(num, url, label, poem)
+                out_file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+                print(f"  [{num:0{poem['num_digits']}d}] ✓")
+            except Exception as exc:
+                print(f"  [{num:0{poem['num_digits']}d}] ✗ {exc}")
+            time.sleep(0.7)
 
     print(f"  Done → {out_dir}")
 

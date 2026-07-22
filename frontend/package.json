@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "articles": "node scripts/build-articles.mjs",
+    "predev": "node scripts/build-articles.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/build-articles.mjs",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -29,6 +32,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.7.0",
+    "marked": "^18.0.7",
     "tailwindcss": "^4.3.2",
     "vite": "^8.1.3"
   }
