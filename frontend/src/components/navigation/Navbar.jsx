@@ -13,6 +13,7 @@ export default function Navbar() {
     { to: '/world', label: 'சங்க உலகம்', title: 'Sangam World' },
     { to: '/knowledge', label: 'அறிவு', title: 'Knowledge' },
     { to: '/graph', label: 'வரைபடம்', title: 'Graph' },
+    { to: '/articles', label: 'கட்டுரைகள்', title: 'Articles' },
   ]
 
   return (
