@@ -32,7 +32,8 @@ export const POEMS = [
     collection: '8thokai',
     count: 500, unit: 'poems',
     tinai: ['kurinji', 'mullai', 'marutam', 'neytal', 'palai'],
-    available: false,
+    available: true,
+    loader: () => import('@data/texts/ainkurunooru/ainkurunooru.json'),
   },
   {
     id: 'kalithokai',
