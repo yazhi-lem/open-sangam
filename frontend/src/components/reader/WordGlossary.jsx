@@ -11,11 +11,11 @@ export default function WordGlossary({ word, loading = false, onClose }) {
         {/* Word */}
         <div className="flex items-start justify-between">
           <h2 className="tamil-verse text-3xl text-accent">{word.form}</h2>
-          <button onClick={onClose} className="text-faint hover:text-primary text-xl leading-none">×</button>
+          <button onClick={onClose} aria-label="Close glossary modal" className="text-faint hover:text-primary text-xl leading-none focus-ring rounded p-1">×</button>
         </div>
 
         {loading && (
-          <p className="text-faint text-sm animate-pulse">Analyzing…</p>
+          <p className="text-faint text-sm animate-pulse">Analyzing word etymology...</p>
         )}
 
         {/* Root */}

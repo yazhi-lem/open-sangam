@@ -56,6 +56,11 @@ const useAppStore = create((set) => ({
     set({ worldRenderMode: mode })
   },
 
+  // Command Palette state
+  commandPaletteOpen: false,
+  setCommandPaletteOpen: (open) => set({ commandPaletteOpen: open }),
+  toggleCommandPalette: () => set((state) => ({ commandPaletteOpen: !state.commandPaletteOpen })),
+
   // Light/Dark theme. Initialized from the class index.html already applied
   // pre-hydration (localStorage choice, or system preference on first visit)
   // so there's never a mismatch between DOM and store on load.
@@ -74,3 +79,4 @@ const useAppStore = create((set) => ({
 }))
 
 export default useAppStore
+

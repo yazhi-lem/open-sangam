@@ -1,21 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-/* Enable manual (class-based) dark mode instead of Tailwind v4's default
-   media-query strategy, so the toggle + localStorage can drive it. */
+/* Enable manual (class-based) dark mode instead of Tailwind v4's default media-query strategy */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/*
- * Semantic color tokens.
- *
- * Each --color-* var declared inside @theme is turned into real Tailwind
- * utilities by Tailwind v4 (bg-page, text-page, border-page, etc.) — but the
- * *value* of each var is itself just a reference to a plain custom property
- * (--bg, --surface, ...) defined below in :root / .dark. That indirection is
- * what lets a single class like `bg-surface` resolve to a light value or a
- * dark value purely based on whether `.dark` is present on <html>, with zero
- * per-component `dark:` variants required.
- */
 @theme {
   --color-page: var(--bg);
   --color-surface: var(--surface);
@@ -29,50 +17,56 @@
   --color-accent-strong: var(--accent-strong);
   --color-on-accent: var(--on-accent);
   --color-danger: var(--danger);
+  --color-glass-bg: var(--glass-bg);
+  --color-glass-border: var(--glass-border);
 }
 
-/* Light theme (default) */
+/* Light theme (default) - High Contrast & Warm Editorial Aesthetic */
 :root {
   --font-tamil: 'Noto Sans Tamil', 'Latha', 'Nirmala UI', sans-serif;
   --font-tamil-serif: 'Noto Serif Tamil', 'Latha', serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 
-  --bg: #faf9f7;
+  --bg: #faf9f6;
   --surface: #ffffff;
-  --surface-alt: #f5f4f1;
-  --border: #e7e5e0;       /* stone-200 equivalent */
-  --border-strong: #d6d3ce; /* stone-300 equivalent */
-  --text: #1c1917;          /* stone-900 */
-  --text-muted: #78716c;    /* stone-500 */
-  --text-faint: #a8a29e;    /* stone-400 */
-  --accent: #b45309;        /* amber-700 */
-  --accent-strong: #92400e; /* amber-800 */
-  --on-accent: #fffbeb;
+  --surface-alt: #f3f1ec;
+  --border: #e2dfd7;          /* stone-250 */
+  --border-strong: #cdcaf22;   /* stone-350 */
+  --text: #1c1917;             /* stone-900 */
+  --text-muted: #57534e;       /* stone-600 - Meets WCAG AA 4.5:1 ratio */
+  --text-faint: #78716c;       /* stone-500 - Meets WCAG AA 4.5:1 ratio */
+  --accent: #b45309;           /* amber-700 */
+  --accent-strong: #92400e;    /* amber-800 */
+  --on-accent: #ffffff;
   --danger: #dc2626;
 
-  /* Glassmorphism tokens — defined per-theme so .glass panels never need
-     a dark: variant of their own; they just read these two vars. */
-  --glass-bg: rgba(255, 255, 255, 0.55);
-  --glass-border: rgba(255, 255, 255, 0.45);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(226, 223, 215, 0.6);
+  --shadow-sm: 0 1px 2px 0 rgba(28, 25, 23, 0.05);
+  --shadow-md: 0 4px 12px -2px rgba(28, 25, 23, 0.08);
+  --shadow-lg: 0 12px 24px -4px rgba(28, 25, 23, 0.12);
 }
 
-/* Dark theme — matches the app's original hand-tuned dark palette */
+/* Dark theme — Warm Obsidian & Amber Gold Accent */
 .dark {
-  --bg: #0c0a09;            /* stone-950 */
-  --surface: #1c1917;       /* stone-900 */
-  --surface-alt: #292524;   /* stone-800 */
-  --border: #292524;        /* stone-800 */
-  --border-strong: #44403c; /* stone-700 */
-  --text: #ffffff;
-  --text-muted: #a8a29e;    /* stone-400 */
-  --text-faint: #78716c;    /* stone-500 */
-  --accent: #facc15;        /* yellow-400 */
-  --accent-strong: #eab308; /* yellow-500 */
-  --on-accent: #1c1917;     /* stone-900 — dark text reads better on gold */
-  --danger: #f87171;
+  --bg: #0c0a09;               /* stone-950 */
+  --surface: #181513;          /* stone-900 elevated */
+  --surface-alt: #26221f;      /* stone-800 elevated */
+  --border: #2c2724;           /* stone-800 */
+  --border-strong: #443e39;    /* stone-700 */
+  --text: #f5f5f4;             /* stone-100 */
+  --text-muted: #d6d3d1;       /* stone-300 - High legibility */
+  --text-faint: #a8a29e;       /* stone-400 - Meets WCAG AA 4.5:1 ratio */
+  --accent: #f59e0b;           /* amber-500 */
+  --accent-strong: #d97706;    /* amber-600 */
+  --on-accent: #0c0a09;
+  --danger: #ef4444;
 
-  --glass-bg: rgba(28, 25, 23, 0.55);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(24, 21, 19, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 14px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 28px -4px rgba(0, 0, 0, 0.5);
 }
 
 *, *::before, *::after {
@@ -81,6 +75,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -200,15 +195,65 @@ body {
 
 .tamil-verse {
   font-family: var(--font-tamil-serif);
-  line-height: 2;
+  line-height: 2.1;
 }
 
-/* Smooth theme transition animation. Scoped to color-related properties only
-   so it never fights with existing transform/width transitions elsewhere
-   (e.g. the Book reader's collapsible sidebar). */
+/* Accessible focus ring utilities */
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Custom Skeleton Shimmer Animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.skeleton-shimmer {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--surface-alt);
+}
+.skeleton-shimmer::after {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.15) 20%,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 1.8s infinite;
+  content: '';
+}
+.dark .skeleton-shimmer::after {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.03) 20%,
+    rgba(255, 255, 255, 0.08) 60%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* Theme color transitions */
 body, header, aside, nav, main, section, article, div, button, a, input, textarea,
 p, h1, h2, h3, h4, span, blockquote, li {
-  transition-property: background-color, border-color, color, fill, stroke;
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow;
   transition-duration: 200ms;
   transition-timing-function: ease;
 }
@@ -216,15 +261,11 @@ p, h1, h2, h3, h4, span, blockquote, li {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     transition: none !important;
+    animation: none !important;
   }
 }
 
-/* Theme swap: circular reveal expanding from wherever the toggle was
-   clicked, via the View Transitions API. ThemeToggle sets
-   --theme-toggle-x/y to the click coordinates before triggering the
-   transition. Browsers without support (Firefox, older Safari) just keep
-   the plain color-fade above — this is a progressive enhancement, not a
-   requirement. */
+/* Theme swap circular transition */
 @supports (view-transition-name: root) {
   ::view-transition-old(root) {
     animation: none;
