@@ -58,3 +58,4 @@ Thumbs.db
 # Testing
 coverage/
 .nyc_output/
+.pytest_cache/
