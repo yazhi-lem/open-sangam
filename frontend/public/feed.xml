@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Generated output - DO NOT EDIT DIRECTLY -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Sangam Articles</title>
+    <link>http://localhost:5173/articles</link>
+    <description>Long-form essays about Open Sangam, Sangam literature, Tamil language technology, and AI.</description>
+    <language>en-us</language>
+    <pubDate>Wed, 22 Jul 2026 09:47:50 GMT</pubDate>
+    <lastBuildDate>Wed, 22 Jul 2026 09:47:50 GMT</lastBuildDate>
+    <atom:link href="http://localhost:5173/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[AI for Tamil: Neural Machine Translation and LLMs]]></title>
+      <link>http://localhost:5173/articles/ai-for-tamil-nmt-llms</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/ai-for-tamil-nmt-llms</guid>
+      <description><![CDATA[Exploring the challenges and breakthroughs in building large language models and neural translators specifically optimized for Tamil's rich morphology.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[Dr. K. Arulmozhi]]></author>
+    </item>
+    <item>
+      <title><![CDATA[Bridging the Digital Divide: AI Initiatives for Indic Languages]]></title>
+      <link>http://localhost:5173/articles/ai-indic-languages-digital-divide</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/ai-indic-languages-digital-divide</guid>
+      <description><![CDATA[An overview of multi-lingual model training, tokenization issues, and open-source consortia like AI4Bharat pushing the boundaries of Indic AI.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[P. R. Krishnan]]></author>
+    </item>
+    <item>
+      <title><![CDATA[Computational Linguistics and Morphological Analysis of Tamil]]></title>
+      <link>http://localhost:5173/articles/computational-linguistics-tamil</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/computational-linguistics-tamil</guid>
+      <description><![CDATA[Understanding how computational morphology, POS tagging, and syntactic parsing are applied to agglutinative languages like Tamil.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[Dr. T. Vasudevan]]></author>
+    </item>
+    <item>
+      <title><![CDATA[Preserving the Palm Leaves: Digital Archives of Classical Tamil]]></title>
+      <link>http://localhost:5173/articles/digital-preservation-palm-leaves</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/digital-preservation-palm-leaves</guid>
+      <description><![CDATA[Analyzing the curation, digitisation, OCR processing, and preservation of ancient Tamil manuscripts and palm-leaf records.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[S. Meenakshi]]></author>
+    </item>
+    <item>
+      <title><![CDATA[A History and Evolution of Tamil Language Technology]]></title>
+      <link>http://localhost:5173/articles/evolution-tamil-language-technology</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/evolution-tamil-language-technology</guid>
+      <description><![CDATA[From early character encodings like TSCII and TAB to Unicode compliance and modern natural language processing toolkits for Tamil.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[M. Anbarasan]]></author>
+    </item>
+    <item>
+      <title><![CDATA[Beyond Translation: The Future of Tamil AI and Cultural Tech]]></title>
+      <link>http://localhost:5173/articles/future-of-tamil-ai</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/future-of-tamil-ai</guid>
+      <description><![CDATA[Speculating on the next decade of Tamil AI, from voice interfaces and interactive agents to multimodal models interpreting ancient heritage.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[Open Sangam Research Group]]></author>
+    </item>
+    <item>
+      <title><![CDATA[Open Sangam: Demystifying Classical Tamil Literature for the Digital Age]]></title>
+      <link>http://localhost:5173/articles/open-sangam-digital-age</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/open-sangam-digital-age</guid>
+      <description><![CDATA[An introduction to the Open Sangam initiative, its architecture, open datasets, and the vision of bringing classical Tamil poetry to the modern web.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[Open Sangam Team]]></author>
+    </item>
+    <item>
+      <title><![CDATA[The Power of Open Datasets in Classical Literature]]></title>
+      <link>http://localhost:5173/articles/power-open-datasets-classical-literature</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/power-open-datasets-classical-literature</guid>
+      <description><![CDATA[How structured, open-source corpora of Sangam poetry enable semantic search, network graphs, and cultural analytics.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[K. R. Chitra]]></author>
+    </item>
+    <item>
+      <title><![CDATA[The Landscapes of Love and War: Understanding Sangam Poetics]]></title>
+      <link>http://localhost:5173/articles/understanding-sangam-poetics</link>
+      <guid isPermaLink="true">http://localhost:5173/articles/understanding-sangam-poetics</guid>
+      <description><![CDATA[A deep dive into the akam and puram classification, the five tinais (landscapes), and the poetic structure of early Tamil anthologies.]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <author><![CDATA[Dr. S. K. Sundaram]]></author>
+    </item>
+  </channel>
+</rss>

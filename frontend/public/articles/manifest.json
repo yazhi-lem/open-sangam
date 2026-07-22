@@ -1,0 +1,124 @@
+[
+  {
+    "title": "AI for Tamil: Neural Machine Translation and LLMs",
+    "slug": "ai-for-tamil-nmt-llms",
+    "summary": "Exploring the challenges and breakthroughs in building large language models and neural translators specifically optimized for Tamil's rich morphology.",
+    "author": "Dr. K. Arulmozhi",
+    "date": "2026-07-22",
+    "tags": [
+      "ai",
+      "tamil-nlp",
+      "llm",
+      "machine-translation"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "Bridging the Digital Divide: AI Initiatives for Indic Languages",
+    "slug": "ai-indic-languages-digital-divide",
+    "summary": "An overview of multi-lingual model training, tokenization issues, and open-source consortia like AI4Bharat pushing the boundaries of Indic AI.",
+    "author": "P. R. Krishnan",
+    "date": "2026-07-22",
+    "tags": [
+      "indic-languages",
+      "multilingual-ai",
+      "nlp",
+      "ai4bharat"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "Computational Linguistics and Morphological Analysis of Tamil",
+    "slug": "computational-linguistics-tamil",
+    "summary": "Understanding how computational morphology, POS tagging, and syntactic parsing are applied to agglutinative languages like Tamil.",
+    "author": "Dr. T. Vasudevan",
+    "date": "2026-07-22",
+    "tags": [
+      "linguistics",
+      "tamil-nlp",
+      "morphology"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "Preserving the Palm Leaves: Digital Archives of Classical Tamil",
+    "slug": "digital-preservation-palm-leaves",
+    "summary": "Analyzing the curation, digitisation, OCR processing, and preservation of ancient Tamil manuscripts and palm-leaf records.",
+    "author": "S. Meenakshi",
+    "date": "2026-07-22",
+    "tags": [
+      "digital-preservation",
+      "manuscripts",
+      "history",
+      "tamil-heritage"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "A History and Evolution of Tamil Language Technology",
+    "slug": "evolution-tamil-language-technology",
+    "summary": "From early character encodings like TSCII and TAB to Unicode compliance and modern natural language processing toolkits for Tamil.",
+    "author": "M. Anbarasan",
+    "date": "2026-07-22",
+    "tags": [
+      "tamil-tech",
+      "unicode",
+      "history"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "Beyond Translation: The Future of Tamil AI and Cultural Tech",
+    "slug": "future-of-tamil-ai",
+    "summary": "Speculating on the next decade of Tamil AI, from voice interfaces and interactive agents to multimodal models interpreting ancient heritage.",
+    "author": "Open Sangam Research Group",
+    "date": "2026-07-22",
+    "tags": [
+      "future-ai",
+      "tamil-nlp",
+      "cultural-tech",
+      "multimodal-ai"
+    ],
+    "readingTime": 3
+  },
+  {
+    "title": "Open Sangam: Demystifying Classical Tamil Literature for the Digital Age",
+    "slug": "open-sangam-digital-age",
+    "summary": "An introduction to the Open Sangam initiative, its architecture, open datasets, and the vision of bringing classical Tamil poetry to the modern web.",
+    "author": "Open Sangam Team",
+    "date": "2026-07-22",
+    "tags": [
+      "open-sangam",
+      "digital-humanities",
+      "open-data"
+    ],
+    "readingTime": 3
+  },
+  {
+    "title": "The Power of Open Datasets in Classical Literature",
+    "slug": "power-open-datasets-classical-literature",
+    "summary": "How structured, open-source corpora of Sangam poetry enable semantic search, network graphs, and cultural analytics.",
+    "author": "K. R. Chitra",
+    "date": "2026-07-22",
+    "tags": [
+      "open-datasets",
+      "open-science",
+      "digital-humanities",
+      "data-science"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "The Landscapes of Love and War: Understanding Sangam Poetics",
+    "slug": "understanding-sangam-poetics",
+    "summary": "A deep dive into the akam and puram classification, the five tinais (landscapes), and the poetic structure of early Tamil anthologies.",
+    "author": "Dr. S. K. Sundaram",
+    "date": "2026-07-22",
+    "tags": [
+      "sangam-literature",
+      "poetics",
+      "culture"
+    ],
+    "readingTime": 3
+  }
+]
