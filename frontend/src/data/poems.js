@@ -2,7 +2,7 @@
 // available: true means the normalized JSON exists and can be loaded
 
 export const COLLECTIONS = {
-  '8thokai': { ta: 'எட்டுத்தொகை', en: 'Eight Anthologies', desc: 'Eight classical Tamil poetic anthologies spanning the akam (interior) and puram (exterior) traditions.' },
+  '8thokai': { ta: 'எட்டுத்தொகை', en: 'Eight Anthologies', desc: 'Eight classical Tamil poetic anthologies spanning the Akam (interior) and Puram (exterior) traditions.' },
   '10paddu': { ta: 'பத்துப்பாட்டு', en: 'Ten Idylls', desc: 'Ten long poems celebrating kings, cities, and the Tamil landscape in elaborate verse.' },
 }
 
