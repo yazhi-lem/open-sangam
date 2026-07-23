@@ -138,7 +138,7 @@ export default function CommandPalette() {
 
   // Flatten for keyboard index tracking
   const flatItems = query.trim() ? items : Object.values(grouped || {}).flat()
-  const currentSelected = flatItems[selectedIndex]
+
 
   return (
     <div
