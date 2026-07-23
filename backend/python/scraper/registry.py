@@ -105,7 +105,16 @@ POEMS = [
         "num_digits": 2,
         "tinai_source": "kanci",   # whole poem is one tinai
     },
-    # Porunaratrupadai is 404 on the site — skipped
+    {
+        "id": "porunaratrupadai",
+        "title_ta": "பொருநராற்றுப்படை",
+        "title_en": "Porunaratrupadai",
+        "collection": "10paddu",
+        "index_url": "http://www.sangathamizh.com/10paddu/10paddu-porunaratrupadai-%E0%AE%AA%E0%AF%86%E0%AE%BE%E0%AE%B0%E0%AF%81%E0%AE%A8%E0%AE%B0%E0%AE%BE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AF%88.html",
+        "subfolder": "porunaratrupadai",
+        "num_digits": 2,
+        "tinai_source": "kanci",
+    },
     {
         "id": "sirupanatrupadai",
         "title_ta": "சிறுபாணாற்றுப்படை",

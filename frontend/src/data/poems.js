@@ -91,6 +91,14 @@ export const POEMS = [
     loader: () => import('@data/texts/thirumurugatrupadai/thirumurugatrupadai.json'),
   },
   {
+    id: 'porunaratrupadai',
+    ta: 'பொருநராற்றுப்படை', en: 'Porunaraatrupadai',
+    collection: '10paddu',
+    count: 248, unit: 'lines',
+    available: true,
+    loader: () => import('@data/texts/porunaratrupadai/porunaratrupadai.json'),
+  },
+  {
     id: 'sirupanatrupadai',
     ta: 'சிறுபாணாற்றுப்படை', en: 'Sirupanatrupadai',
     collection: '10paddu',

@@ -1,0 +1,95 @@
+{
+  "name": "open-sangam-porunaratrupadai",
+  "title": "பொருநராற்றுப்படை — Porunaratrupadai",
+  "description": "Porunaratrupadai (பொருநராற்றுப்படை), 10paddu — 21 sections, 248 lines.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence"
+    }
+  ],
+  "sources": [
+    {
+      "title": "sangathamizh.com",
+      "path": "http://www.sangathamizh.com/10paddu/10paddu-porunaratrupadai-%E0%AE%AA%E0%AF%86%E0%AE%BE%E0%AE%B0%E0%AF%81%E0%AE%A8%E0%AE%B0%E0%AE%BE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AF%88.html"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Open Sangam Project",
+      "role": "wrangler"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Sangam",
+    "classical literature",
+    "Porunaratrupadai",
+    "10paddu"
+  ],
+  "resources": [
+    {
+      "name": "porunaratrupadai",
+      "path": "porunaratrupadai.json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "poem",
+            "type": "string"
+          },
+          {
+            "name": "tinai",
+            "type": "string"
+          },
+          {
+            "name": "sangamTamil",
+            "type": "string"
+          },
+          {
+            "name": "urai",
+            "type": "string",
+            "description": "Modern Tamil prose (scraped)"
+          },
+          {
+            "name": "english",
+            "type": "string",
+            "description": "English translation; null until generated"
+          },
+          {
+            "name": "verified",
+            "type": "boolean"
+          },
+          {
+            "name": "sectionNumber",
+            "type": "integer"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Section title in Tamil"
+          },
+          {
+            "name": "lineStart",
+            "type": "integer"
+          },
+          {
+            "name": "lineEnd",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "records": 21,
+    "withUrai": 17,
+    "withEnglish": 0
+  }
+}
