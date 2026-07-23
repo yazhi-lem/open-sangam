@@ -4,13 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#faf9f7" id="theme-color-meta" />
-    <title>Open Sangam</title>
+    <meta name="theme-color" content="#faf9f6" id="theme-color-meta" />
+
+    <!-- SEO & Social -->
+    <title>Open Sangam — Classical Tamil Digital Anthology</title>
+    <meta name="description" content="An interactive digital reader for 2,000-year-old Sangam classical Tamil poetry. Explore 2,381 poems across 18 works with interlinear translations, click-to-define etymology, and immersive 3D landscape navigation." />
+    <meta name="keywords" content="Sangam poetry, classical Tamil, Tamil literature, Kurunthokai, Purananuru, Akananuru, interlinear translation, ancient Tamil" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Open Sangam — Classical Tamil Digital Anthology" />
+    <meta property="og:description" content="Explore 2,381 classical Tamil poems across 18 Sangam works with layered interlinear translations and click-to-define etymology." />
+    <meta property="og:site_name" content="Open Sangam" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Open Sangam" />
+    <meta name="twitter:description" content="2,000 years of classical Tamil poetry — digitized, translated, and made interactive." />
+
+    <!-- Google Fonts — preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Inline theme script: set class before React hydrates to prevent FOUC -->
     <script>
-      // Set the theme class before React hydrates, so there's no flash of the
-      // wrong theme on load. Respects an explicit user choice in localStorage;
-      // otherwise falls back to the OS-level preference (first visit only).
-      // Kept in sync with manual toggles afterward by useAppStore.js.
       (function () {
         try {
           var stored = localStorage.getItem('sangam:theme');
@@ -19,7 +36,7 @@
             : window.matchMedia('(prefers-color-scheme: dark)').matches;
           document.documentElement.classList.toggle('dark', isDark);
           var meta = document.getElementById('theme-color-meta');
-          if (meta) meta.setAttribute('content', isDark ? '#0c0a09' : '#faf9f7');
+          if (meta) meta.setAttribute('content', isDark ? '#0c0a09' : '#faf9f6');
         } catch (e) {
           // localStorage unavailable (private mode, etc.) — default to light.
         }

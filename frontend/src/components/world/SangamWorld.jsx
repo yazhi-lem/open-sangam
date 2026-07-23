@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import TinaiMap from './TinaiMap'
 import TinaiWorldDetail from './TinaiWorldDetail'
-import CulturalContextCard from './CulturalContextCard'
 import { POEMS } from '../../data/poems'
 import Badge from '../ui/Badge'
 import Card from '../ui/Card'
@@ -17,7 +16,6 @@ export default function SangamWorld() {
 
   const [localTinai, setLocalTinai] = useState(null)
   const selectedTinai = tinaiParam || localTinai
-  const [activeContext, setActiveContext] = useState(null)
   const [sampleVerse, setSampleVerse] = useState(null)
 
   function handleTinaiSelect(t) {
@@ -156,10 +154,6 @@ export default function SangamWorld() {
           <p className="text-base font-semibold text-primary">Select a Landscape above to explore</p>
           <p className="text-xs text-faint">Choose from Kurinji (Mountains), Mullai (Forests), Marutam (Cropland), Neytal (Seashore), or Palai (Wasteland)</p>
         </Card>
-      )}
-
-      {activeContext && (
-        <CulturalContextCard context={activeContext} onClose={() => setActiveContext(null)} />
       )}
     </section>
   )

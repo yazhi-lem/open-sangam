@@ -127,17 +127,33 @@ export default function CommandPalette() {
 
   if (!isOpen) return null
 
+  // Group items by category when showing all (no query)
+  const grouped = query.trim()
+    ? null
+    : items.reduce((acc, item) => {
+        if (!acc[item.category]) acc[item.category] = []
+        acc[item.category].push(item)
+        return acc
+      }, {})
+
+  // Flatten for keyboard index tracking
+  const flatItems = query.trim() ? items : Object.values(grouped || {}).flat()
+  const currentSelected = flatItems[selectedIndex]
+
   return (
     <div
-      className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/65 backdrop-blur-md animate-in fade-in duration-150"
+      className="fixed inset-0 z-50 flex items-start justify-center pt-12 sm:pt-20 px-4 bg-black/60 backdrop-blur-sm animate-fade-in"
       onClick={(e) => {
         if (e.target === e.currentTarget) setOpen(false)
       }}
     >
-      <div className="w-full max-w-xl rounded-2xl border border-line-strong bg-surface shadow-2xl overflow-hidden flex flex-col max-h-[80vh] animate-in zoom-in-95 duration-150">
+      <div className="w-full max-w-xl rounded-2xl border border-line-strong bg-surface shadow-xl overflow-hidden flex flex-col max-h-[78vh] animate-scale-in">
+
         {/* Search header */}
-        <div className="flex items-center px-4 border-b border-line bg-surface-alt/50 gap-3">
-          <span className="text-muted text-lg">🔍</span>
+        <div className="flex items-center px-4 border-b border-line gap-3">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-faint shrink-0" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
           <input
             ref={inputRef}
             type="text"
@@ -147,66 +163,135 @@ export default function CommandPalette() {
               setSelectedIndex(0)
             }}
             onKeyDown={handleInputKeyDown}
-            placeholder="Search poems, verses, landscapes, or topics..."
-            className="w-full h-14 bg-transparent text-primary placeholder:text-faint focus:outline-none text-base font-medium"
+            placeholder="Search poems, verses, landscapes, or topics…"
+            className="w-full h-13 py-3.5 bg-transparent text-primary placeholder:text-faint focus:outline-none text-sm font-medium"
           />
-          <kbd className="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-medium text-faint bg-surface border border-line rounded shadow-xs">
+          {query && (
+            <button
+              onClick={() => { setQuery(''); setSelectedIndex(0) }}
+              className="shrink-0 p-1 text-faint hover:text-primary rounded-md transition-colors"
+              aria-label="Clear search"
+            >
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            </button>
+          )}
+          <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] font-mono font-medium text-faint bg-surface-alt border border-line rounded shrink-0">
             ESC
           </kbd>
         </div>
 
         {/* Results list */}
-        <div className="flex-1 overflow-y-auto p-2 space-y-1">
-          {items.length === 0 ? (
-            <div className="py-12 text-center text-muted space-y-2">
-              <p className="text-2xl">🔍</p>
-              <p className="text-sm font-medium">No results found for "{query}"</p>
-              <p className="text-xs text-faint">Try searching for "Kurunthokai", "Kurinji", or "Akam"</p>
+        <div className="flex-1 overflow-y-auto overscroll-contain">
+          {flatItems.length === 0 ? (
+            <div className="py-12 text-center space-y-3">
+              <div className="text-4xl" aria-hidden="true">🔍</div>
+              <p className="text-sm font-medium text-muted">No results for "{query}"</p>
+              <p className="text-xs text-faint">
+                Try: "Kurunthokai", "Kurinji", "Akam", "poet"
+              </p>
+            </div>
+          ) : grouped ? (
+            // Grouped view (no query)
+            <div className="py-1">
+              {Object.entries(grouped).map(([category, catItems]) => (
+                <div key={category}>
+                  <div className="px-4 py-2 sticky top-0 bg-surface/95 backdrop-blur-sm z-10">
+                    <p className="text-[9px] font-bold uppercase tracking-widest text-faint">
+                      {category}
+                    </p>
+                  </div>
+                  {catItems.map((item) => {
+                    const index = flatItems.indexOf(item)
+                    const isSelected = index === selectedIndex
+                    return (
+                      <CommandItem
+                        key={item.id}
+                        item={item}
+                        isSelected={isSelected}
+                        onMouseEnter={() => setSelectedIndex(index)}
+                        onClick={() => { item.action(); setOpen(false) }}
+                      />
+                    )
+                  })}
+                </div>
+              ))}
             </div>
           ) : (
-            items.map((item, index) => {
-              const isSelected = index === selectedIndex
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => {
-                    item.action()
-                    setOpen(false)
-                  }}
-                  onMouseEnter={() => setSelectedIndex(index)}
-                  className={`w-full text-left px-3 py-2.5 rounded-xl flex items-center justify-between gap-3 transition-colors ${
-                    isSelected
-                      ? 'bg-accent/15 border border-accent/30 text-primary'
-                      : 'text-muted hover:text-primary hover:bg-surface-alt/60 border border-transparent'
-                  }`}
-                >
-                  <div className="flex items-center gap-3 min-w-0">
-                    <span className="text-xl shrink-0" aria-hidden="true">{item.icon}</span>
-                    <div className="min-w-0">
-                      <p className={`text-sm font-medium truncate ${isSelected ? 'text-accent' : 'text-primary'}`}>
-                        {item.title}
-                      </p>
-                      <p className="text-xs text-faint truncate">{item.subtitle}</p>
-                    </div>
-                  </div>
-                  <span className="text-[10px] font-medium uppercase tracking-wider text-faint px-2 py-0.5 rounded bg-surface border border-line shrink-0">
-                    {item.category}
-                  </span>
-                </button>
-              )
-            })
+            // Flat filtered view
+            <div className="p-1.5 space-y-0.5">
+              {flatItems.map((item, index) => {
+                const isSelected = index === selectedIndex
+                return (
+                  <CommandItem
+                    key={item.id}
+                    item={item}
+                    isSelected={isSelected}
+                    showCategory
+                    onMouseEnter={() => setSelectedIndex(index)}
+                    onClick={() => { item.action(); setOpen(false) }}
+                  />
+                )
+              })}
+            </div>
           )}
         </div>
 
-        {/* Footer shortcuts hint */}
-        <div className="px-4 py-2.5 border-t border-line bg-surface-alt/40 flex items-center justify-between text-xs text-faint">
+        {/* Footer */}
+        <div className="px-4 py-2.5 border-t border-line bg-surface-alt/50 flex items-center justify-between text-[10px] text-faint">
           <div className="flex items-center gap-3">
-            <span><kbd className="px-1 py-0.5 text-[10px] bg-surface border border-line rounded">↑↓</kbd> navigate</span>
-            <span><kbd className="px-1 py-0.5 text-[10px] bg-surface border border-line rounded">↵</kbd> select</span>
+            <span className="flex items-center gap-1">
+              <kbd className="px-1 py-0.5 bg-surface border border-line rounded">↑↓</kbd>
+              navigate
+            </span>
+            <span className="flex items-center gap-1">
+              <kbd className="px-1 py-0.5 bg-surface border border-line rounded">↵</kbd>
+              select
+            </span>
+            <span className="flex items-center gap-1">
+              <kbd className="px-1 py-0.5 bg-surface border border-line rounded">ESC</kbd>
+              close
+            </span>
           </div>
-          <span>Open Sangam Command Center</span>
+          <span className="font-medium text-faint">Open Sangam</span>
         </div>
       </div>
     </div>
+  )
+}
+
+function CommandItem({ item, isSelected, showCategory = false, onMouseEnter, onClick }) {
+  return (
+    <button
+      onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      className={[
+        'w-full text-left px-3 py-2.5 rounded-xl flex items-center gap-3 transition-colors',
+        isSelected
+          ? 'bg-accent/12 text-primary'
+          : 'text-muted hover:text-primary hover:bg-surface-alt/60',
+      ].join(' ')}
+    >
+      <span className="text-lg shrink-0 leading-none" aria-hidden="true">{item.icon}</span>
+      <div className="min-w-0 flex-1">
+        <p className={`text-xs font-semibold truncate ${isSelected ? 'text-accent' : 'text-primary'}`}>
+          {item.title}
+        </p>
+        <p className="text-[10px] text-faint truncate leading-tight mt-0.5">{item.subtitle}</p>
+      </div>
+      <div className="flex items-center gap-1.5 shrink-0">
+        {showCategory && (
+          <span className="text-[9px] font-medium uppercase tracking-wider text-faint px-1.5 py-0.5 rounded bg-surface-alt border border-line hidden sm:inline">
+            {item.category}
+          </span>
+        )}
+        {isSelected && (
+          <kbd className="text-[9px] font-mono text-faint px-1 py-0.5 bg-surface border border-line rounded">
+            ↵
+          </kbd>
+        )}
+      </div>
+    </button>
   )
 }

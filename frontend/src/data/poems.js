@@ -154,6 +154,8 @@ export const POEMS = [
     available: true,
     loader: () => import('@data/texts/nedunalvadai/nedunalvadai.json'),
   },
+  // TODO: Add 10th idyll — வேட்டுவ வரி (Vettuvavari) entry here once correct
+  // count, unit, available flag, and loader path are confirmed by the contributor.
 ]
 
 export const POEM_BY_ID = Object.fromEntries(POEMS.map(p => [p.id, p]))
