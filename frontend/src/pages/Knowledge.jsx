@@ -95,7 +95,7 @@ export default function Knowledge() {
 
       {/* Sections */}
       <div className="space-y-16">
-        {KNOWLEDGE_SECTIONS.map((section, sectionIdx) => (
+        {KNOWLEDGE_SECTIONS.map((section) => (
           <section key={section.id} id={section.id} className="space-y-6">
             <Reveal y={12} delay={0.05}>
               <div className="flex items-start gap-4">
