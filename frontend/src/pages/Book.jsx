@@ -13,7 +13,6 @@ import Input from '../components/ui/Input'
 import Card from '../components/ui/Card'
 import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
-import Skeleton from '../components/ui/Skeleton'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
