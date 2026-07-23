@@ -76,6 +76,9 @@ firebase emulators:start
 
 ## Phases
 
+📊 **[Project Tracker](./docs/PROJECT_TRACKER.md)** — live status across every
+workstream · 🗺️ **[Roadmap](./docs/ROADMAP.md)** — where the project is going.
+
 See [docs/data-collection-plan.md](./docs/data-collection-plan.md) for the full
 corpus + knowledge-entity roadmap.
 
