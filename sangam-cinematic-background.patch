@@ -1,0 +1,741 @@
+diff --git a/frontend/src/App.jsx b/frontend/src/App.jsx
+index 87358db..67620d8 100644
+--- a/frontend/src/App.jsx
++++ b/frontend/src/App.jsx
+@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+ import Navbar from './components/navigation/Navbar'
+ import Footer from './components/navigation/Footer'
+ import CommandPalette from './components/search/CommandPalette'
++import BackgroundScene from './components/background/BackgroundScene'
+ import Home from './pages/Home'
+ import SangamWorldPage from './pages/SangamWorldPage'
+ import Book from './pages/Book'
+@@ -14,23 +15,33 @@ import NotFound from './pages/NotFound'
+ export default function App() {
+   return (
+     <BrowserRouter>
+-      <div className="min-h-screen flex flex-col bg-page text-primary selection:bg-accent/20 selection:text-accent">
+-        <Navbar />
+-        <CommandPalette />
+-        <main className="flex-1">
+-          <Routes>
+-            <Route path="/" element={<Home />} />
+-            <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
+-            <Route path="/reader/:poemId?" element={<Navigate to="/book" replace />} />
+-            <Route path="/world" element={<SangamWorldPage />} />
+-            <Route path="/knowledge" element={<Knowledge />} />
+-            <Route path="/graph" element={<GraphExplorer />} />
+-            <Route path="/articles" element={<ArticlesList />} />
+-            <Route path="/articles/:slug" element={<ArticleReader />} />
+-            <Route path="*" element={<NotFound />} />
+-          </Routes>
+-        </main>
+-        <Footer />
++      {/*
++        `isolate` gives this div its own stacking context, so BackgroundScene
++        (fixed, z-0) reliably sits behind the content wrapper (relative,
++        z-10) below regardless of DOM order. `bg-page` stays here as the
++        fallback paint for light mode / low-tier devices where
++        BackgroundScene renders nothing.
++      */}
++      <div className="relative isolate min-h-screen flex flex-col bg-page text-primary selection:bg-accent/20 selection:text-accent">
++        <BackgroundScene />
++        <div className="relative z-10 min-h-screen flex flex-col">
++          <Navbar />
++          <CommandPalette />
++          <main className="flex-1">
++            <Routes>
++              <Route path="/" element={<Home />} />
++              <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
++              <Route path="/reader/:poemId?" element={<Navigate to="/book" replace />} />
++              <Route path="/world" element={<SangamWorldPage />} />
++              <Route path="/knowledge" element={<Knowledge />} />
++              <Route path="/graph" element={<GraphExplorer />} />
++              <Route path="/articles" element={<ArticlesList />} />
++              <Route path="/articles/:slug" element={<ArticleReader />} />
++              <Route path="*" element={<NotFound />} />
++            </Routes>
++          </main>
++          <Footer />
++        </div>
+       </div>
+     </BrowserRouter>
+   )
+diff --git a/frontend/src/components/background/BackgroundScene.jsx b/frontend/src/components/background/BackgroundScene.jsx
+new file mode 100644
+index 0000000..f9f57a3
+--- /dev/null
++++ b/frontend/src/components/background/BackgroundScene.jsx
+@@ -0,0 +1,107 @@
++import { useEffect, useMemo, useRef, useState } from 'react'
++import './background.css'
++import { useTheme } from '../../hooks/useTheme'
++import { useDeviceCapability } from '../../hooks/useDeviceCapability'
++import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion'
++import { useParallax } from '../../hooks/useParallax'
++import { DETAIL_PRESETS } from './constants'
++import FogLayer from './FogLayer'
++import DustParticles from './DustParticles'
++import FloatingLetters from './FloatingLetters'
++
++/**
++ * BackgroundScene — the ambient Sangam temple background.
++ *
++ * Mounted once in App.jsx, fixed behind all routed content. Only renders its
++ * full cinematic form in dark mode: the light theme is a distinct "warm
++ * editorial" aesthetic (see index.css) that this effect would fight rather
++ * than complement, so light mode keeps its plain page background untouched
++ * and this component renders nothing.
++ */
++export default function BackgroundScene() {
++  const { isDark } = useTheme()
++  // Only borrowing `isLowTier` (CPU/memory heuristic) for particle-count
++  // scaling here — NOT `canRender3D`, which is WebGL-gated and meant for the
++  // actual 3D world scene. This background is plain CSS/DOM, so it should
++  // run fine even on devices without WebGL support.
++  const { isLowTier } = useDeviceCapability()
++  const prefersReducedMotion = usePrefersReducedMotion()
++  const [revealed, setRevealed] = useState(false)
++  const [tier, setTier] = useState(() => getSizeTier())
++
++  // Track viewport width tier (desktop/tablet/mobile) for particle counts.
++  // A resize listener rather than a one-time read, since rotating a tablet
++  // or resizing a browser window shouldn't require a reload to adjust.
++  useEffect(() => {
++    let frame = null
++    const onResize = () => {
++      if (frame) return
++      frame = requestAnimationFrame(() => {
++        setTier(getSizeTier())
++        frame = null
++      })
++    }
++    window.addEventListener('resize', onResize, { passive: true })
++    return () => {
++      window.removeEventListener('resize', onResize)
++      if (frame) cancelAnimationFrame(frame)
++    }
++  }, [])
++
++  // Fade the whole scene in shortly after mount (page-load requirement).
++  // The individual layers stagger their own entrance via CSS transition-delay
++  // isn't needed here — background.css's single opacity transition on
++  // .sangam-bg already reads as fog/letters "arriving" together softly,
++  // which looks calmer than a mechanical layer-by-layer sequence.
++  useEffect(() => {
++    const raf = requestAnimationFrame(() => setRevealed(true))
++    return () => cancelAnimationFrame(raf)
++  }, [])
++
++  const effectiveTier = isLowTier ? 'low' : tier
++  const preset = DETAIL_PRESETS[effectiveTier] || DETAIL_PRESETS.high
++  const animationsEnabled = !prefersReducedMotion
++
++  const farRef = useRef(null)
++  const nearRef = useRef(null)
++  const dustRef = useRef(null)
++  const fogRef = useRef(null)
++
++  const parallaxLayers = useMemo(
++    () => [
++      { ref: fogRef, depth: 3 },
++      { ref: dustRef, depth: 5 },
++      { ref: farRef, depth: 6 },
++      { ref: nearRef, depth: 14 },
++    ],
++    []
++  )
++
++  useParallax(parallaxLayers, { enabled: animationsEnabled && !isLowTier })
++
++  // Only active in dark mode — the light theme keeps its untouched look.
++  if (!isDark) return null
++
++  return (
++    <div className={`sangam-bg${revealed ? ' sangam-bg--revealed' : ''}`} aria-hidden="true">
++      <div className="sangam-bg__gradient" style={{ animationPlayState: animationsEnabled ? 'running' : 'paused' }} />
++      <div className="sangam-bg__grain" />
++      <FogLayer ref={fogRef} count={preset.fogBlobs} />
++      <DustParticles ref={dustRef} count={preset.dust} />
++      <FloatingLetters
++        ref={nearRef}
++        farRef={farRef}
++        count={preset.letters}
++        glowEnabled={preset.glowLetters && animationsEnabled}
++      />
++    </div>
++  )
++}
++
++function getSizeTier() {
++  if (typeof window === 'undefined') return 'high'
++  const width = window.innerWidth
++  if (width < 640) return 'low'
++  if (width < 1024) return 'mid'
++  return 'high'
++}
+diff --git a/frontend/src/components/background/DustParticles.jsx b/frontend/src/components/background/DustParticles.jsx
+new file mode 100644
+index 0000000..acb9ab4
+--- /dev/null
++++ b/frontend/src/components/background/DustParticles.jsx
+@@ -0,0 +1,30 @@
++import { forwardRef, useMemo } from 'react'
++import { generateDust } from './constants'
++
++/** DustParticles — Layer 3 of the depth system: tiny drifting temple dust. */
++const DustParticles = forwardRef(function DustParticles({ count }, ref) {
++  const motes = useMemo(() => generateDust(count), [count])
++
++  return (
++    <div ref={ref} className="sangam-bg__dust-layer">
++      {motes.map((mote) => (
++        <div
++          key={mote.id}
++          className="sangam-bg__mote"
++          style={{
++            top: `${mote.top}%`,
++            left: `${mote.left}%`,
++            width: `${mote.size}px`,
++            height: `${mote.size}px`,
++            '--o': mote.opacity,
++            animationName: 'sangam-dust-drift',
++            animationDuration: `${mote.duration}s`,
++            animationDelay: `${mote.delay}s`,
++          }}
++        />
++      ))}
++    </div>
++  )
++})
++
++export default DustParticles
+diff --git a/frontend/src/components/background/FloatingLetters.jsx b/frontend/src/components/background/FloatingLetters.jsx
+new file mode 100644
+index 0000000..4152553
+--- /dev/null
++++ b/frontend/src/components/background/FloatingLetters.jsx
+@@ -0,0 +1,41 @@
++import { forwardRef, useMemo } from 'react'
++import StoneLetter from './StoneLetter'
++import { generateLetters } from './constants'
++
++/**
++ * FloatingLetters — Layers 4 (far) & 5 (near) of the depth system.
++ *
++ * Renders two absolutely-positioned layers so ParallaxController (via
++ * useParallax in BackgroundScene) can move them at different rates —
++ * near letters drift further under mouse parallax than far ones, which is
++ * what actually sells the depth rather than just the blur/size difference.
++ *
++ * forwardRef exposes the *near* layer's node (the one with the mouse
++ * parallax + glow) since that's the layer callers need a ref to.
++ */
++const FloatingLetters = forwardRef(function FloatingLetters(
++  { count, glowEnabled, farRef },
++  nearRef
++) {
++  const letters = useMemo(() => generateLetters(count, glowEnabled), [count, glowEnabled])
++
++  const far = useMemo(() => letters.filter((l) => l.depthBand === 'far'), [letters])
++  const near = useMemo(() => letters.filter((l) => l.depthBand === 'near'), [letters])
++
++  return (
++    <>
++      <div ref={farRef} className="sangam-bg__letters-far">
++        {far.map((letter) => (
++          <StoneLetter key={letter.id} letter={letter} />
++        ))}
++      </div>
++      <div ref={nearRef} className="sangam-bg__letters-near">
++        {near.map((letter) => (
++          <StoneLetter key={letter.id} letter={letter} />
++        ))}
++      </div>
++    </>
++  )
++})
++
++export default FloatingLetters
+diff --git a/frontend/src/components/background/FogLayer.jsx b/frontend/src/components/background/FogLayer.jsx
+new file mode 100644
+index 0000000..b05f658
+--- /dev/null
++++ b/frontend/src/components/background/FogLayer.jsx
+@@ -0,0 +1,28 @@
++import { forwardRef, useMemo } from 'react'
++import { generateFog } from './constants'
++
++/** FogLayer — Layer 2 of the depth system: slow, semi-transparent fog blobs. */
++const FogLayer = forwardRef(function FogLayer({ count }, ref) {
++  const blobs = useMemo(() => generateFog(count), [count])
++
++  return (
++    <div ref={ref} className="sangam-bg__fog-layer">
++      {blobs.map((blob) => (
++        <div
++          key={blob.id}
++          className="sangam-bg__fog-blob"
++          style={{
++            top: `${blob.top}%`,
++            left: `${blob.left}%`,
++            width: `${blob.width}vw`,
++            opacity: blob.opacity,
++            animationDuration: `${blob.duration}s`,
++            animationDelay: `${blob.delay}s`,
++          }}
++        />
++      ))}
++    </div>
++  )
++})
++
++export default FogLayer
+diff --git a/frontend/src/components/background/StoneLetter.jsx b/frontend/src/components/background/StoneLetter.jsx
+new file mode 100644
+index 0000000..efd7b33
+--- /dev/null
++++ b/frontend/src/components/background/StoneLetter.jsx
+@@ -0,0 +1,37 @@
++import { memo } from 'react'
++
++/**
++ * StoneLetter — one carved-stone Tamil glyph.
++ *
++ * All per-instance randomness (position, size, rotation, timing) is passed
++ * in as CSS custom properties rather than baked into unique per-element
++ * @keyframes rules — with up to ~36 of these on screen, generating a fresh
++ * keyframe block per letter would bloat the stylesheet and cost more to
++ * parse than reusing the four shared drift paths in background.css.
++ */
++function StoneLetter({ letter }) {
++  const style = {
++    top: `${letter.top}%`,
++    left: `${letter.left}%`,
++    fontSize: `${letter.size}rem`,
++    opacity: letter.opacity,
++    '--r': `${letter.rotation}deg`,
++    '--o': letter.opacity,
++    '--float-anim': `sangam-${letter.floatVariant}`,
++    '--float-duration': `${letter.duration}s`,
++    '--float-delay': `${letter.delay}s`,
++    '--glow-delay': `${letter.glowDelay}s`,
++  }
++
++  return (
++    <span
++      className={`sangam-bg__letter${letter.glow ? ' sangam-bg__letter--glow' : ''}`}
++      style={style}
++      aria-hidden="true"
++    >
++      {letter.glyph}
++    </span>
++  )
++}
++
++export default memo(StoneLetter)
+diff --git a/frontend/src/components/background/background.css b/frontend/src/components/background/background.css
+new file mode 100644
+index 0000000..6699afb
+--- /dev/null
++++ b/frontend/src/components/background/background.css
+@@ -0,0 +1,183 @@
++/**
++ * background.css — colocated with components/background/*.
++ *
++ * Kept as its own stylesheet rather than folded into the app-wide index.css:
++ * this is a self-contained visual feature (keyframes + a handful of utility
++ * classes it alone uses), so keeping it next to the components that consume
++ * it is easier to reason about and to remove later without hunting through
++ * the global stylesheet.
++ *
++ * Only ever active in dark mode — see BackgroundScene.jsx.
++ */
++
++.sangam-bg {
++  position: fixed;
++  inset: 0;
++  z-index: 0;
++  overflow: hidden;
++  pointer-events: none;
++  contain: strict;
++  opacity: 0;
++  transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1);
++}
++.sangam-bg--revealed {
++  opacity: 1;
++}
++
++/* ---------- Layer 1: base gradient + moonlight ---------- */
++.sangam-bg__gradient {
++  position: absolute;
++  inset: 0;
++  background:
++    radial-gradient(ellipse 70% 50% at 50% -10%, rgba(245, 158, 11, 0.08), transparent 60%),
++    radial-gradient(ellipse 60% 45% at 85% 15%, rgba(148, 163, 184, 0.10), transparent 65%),
++    linear-gradient(180deg, #0c0a09 0%, #120d0a 45%, #0c0a09 100%);
++  animation: sangam-moonlight-breathe 10s ease-in-out infinite;
++}
++
++/* Fine stone-grain texture over the whole canvas, generated as an inline SVG
++   turbulence filter so no image asset is needed. Static (no animation cost). */
++.sangam-bg__grain {
++  position: absolute;
++  inset: 0;
++  opacity: 0.05;
++  mix-blend-mode: overlay;
++  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
++}
++
++@keyframes sangam-moonlight-breathe {
++  0%, 100% { filter: brightness(1); }
++  50% { filter: brightness(1.06); }
++}
++
++/* ---------- Layer 2: fog ---------- */
++.sangam-bg__fog-layer {
++  position: absolute;
++  inset: -10% -10%;
++}
++
++.sangam-bg__fog-blob {
++  position: absolute;
++  aspect-ratio: 1 / 0.6;
++  border-radius: 50%;
++  background: radial-gradient(ellipse closest-side, rgba(214, 211, 209, 0.5), transparent 72%);
++  filter: blur(6px);
++  animation-name: sangam-fog-drift;
++  animation-timing-function: ease-in-out;
++  animation-iteration-count: infinite;
++  will-change: transform;
++}
++
++@keyframes sangam-fog-drift {
++  0%   { transform: translate3d(-4%, 0, 0) scale(1); }
++  50%  { transform: translate3d(4%, -3%, 0) scale(1.08); }
++  100% { transform: translate3d(-4%, 0, 0) scale(1); }
++}
++
++/* ---------- Layer 3: dust ---------- */
++.sangam-bg__dust-layer {
++  position: absolute;
++  inset: 0;
++}
++
++.sangam-bg__mote {
++  position: absolute;
++  border-radius: 50%;
++  background: radial-gradient(circle, rgba(245, 230, 200, 0.9), rgba(245, 230, 200, 0) 70%);
++  animation-timing-function: ease-in-out;
++  animation-iteration-count: infinite;
++  will-change: transform, opacity;
++}
++
++/* ---------- Layers 4 & 5: floating stone-carved letters ---------- */
++.sangam-bg__letters-far,
++.sangam-bg__letters-near {
++  position: absolute;
++  inset: 0;
++}
++.sangam-bg__letters-far {
++  filter: blur(0.5px);
++}
++
++.sangam-bg__letter {
++  position: absolute;
++  font-family: var(--font-tamil-serif);
++  line-height: 1;
++  color: #57534e;
++  user-select: none;
++  animation-timing-function: ease-in-out;
++  animation-iteration-count: infinite;
++  will-change: transform, opacity;
++  /* Carved-stone bevel: a dark inset shadow + a faint highlight edge. */
++  text-shadow:
++    -1px -1px 1.5px rgba(0, 0, 0, 0.55),
++    1px 1px 1px rgba(255, 255, 255, 0.06);
++}
++
++.sangam-bg__letter--glow {
++  animation-name: var(--float-anim, sangam-float-a), sangam-glow-pulse;
++  animation-duration: var(--float-duration, 28s), 5s;
++  animation-delay: var(--float-delay, 0s), var(--glow-delay, 0s);
++}
++
++.sangam-bg__letter:not(.sangam-bg__letter--glow) {
++  animation-name: var(--float-anim, sangam-float-a);
++  animation-duration: var(--float-duration, 28s);
++  animation-delay: var(--float-delay, 0s);
++}
++
++@keyframes sangam-glow-pulse {
++  0%, 100% {
++    text-shadow:
++      -1px -1px 1.5px rgba(0, 0, 0, 0.55),
++      1px 1px 1px rgba(255, 255, 255, 0.06),
++      0 0 6px rgba(245, 158, 11, 0.18);
++  }
++  50% {
++    text-shadow:
++      -1px -1px 1.5px rgba(0, 0, 0, 0.55),
++      1px 1px 1px rgba(255, 255, 255, 0.06),
++      0 0 16px rgba(245, 158, 11, 0.5);
++  }
++}
++
++/* Four gentle drift paths so 30-40 letters don't all move in lockstep;
++   each combines translate + rotate + a very subtle scale breathing. */
++@keyframes sangam-float-a {
++  0%, 100% { transform: translate3d(0, 0, 0) rotate(var(--r, 0deg)) scale(1); opacity: var(--o, 0.2); }
++  25%      { transform: translate3d(1.2vw, -1.6vh, 0) rotate(calc(var(--r, 0deg) + 3deg)) scale(1.03); }
++  50%      { transform: translate3d(-0.6vw, -2.6vh, 0) rotate(calc(var(--r, 0deg) - 2deg)) scale(0.98); opacity: calc(var(--o, 0.2) * 0.75); }
++  75%      { transform: translate3d(-1.4vw, -1vh, 0) rotate(calc(var(--r, 0deg) + 2deg)) scale(1.02); }
++}
++@keyframes sangam-float-b {
++  0%, 100% { transform: translate3d(0, 0, 0) rotate(var(--r, 0deg)) scale(1); opacity: var(--o, 0.2); }
++  30%      { transform: translate3d(-1.6vw, -1vh, 0) rotate(calc(var(--r, 0deg) - 4deg)) scale(0.97); }
++  60%      { transform: translate3d(0.8vw, -2.2vh, 0) rotate(calc(var(--r, 0deg) + 3deg)) scale(1.04); opacity: calc(var(--o, 0.2) * 0.7); }
++  100%     { transform: translate3d(0, 0, 0) rotate(var(--r, 0deg)) scale(1); }
++}
++@keyframes sangam-float-c {
++  0%, 100% { transform: translate3d(0, 0, 0) rotate(var(--r, 0deg)) scale(1); opacity: var(--o, 0.2); }
++  40%      { transform: translate3d(1vw, -0.8vh, 0) rotate(calc(var(--r, 0deg) + 5deg)) scale(1.02); }
++  70%      { transform: translate3d(-1.2vw, -2vh, 0) rotate(calc(var(--r, 0deg) - 3deg)) scale(0.98); opacity: calc(var(--o, 0.2) * 0.8); }
++}
++@keyframes sangam-float-d {
++  0%, 100% { transform: translate3d(0, 0, 0) rotate(var(--r, 0deg)) scale(1); opacity: var(--o, 0.2); }
++  50%      { transform: translate3d(-0.8vw, -2.4vh, 0) rotate(calc(var(--r, 0deg) - 5deg)) scale(1.03); opacity: calc(var(--o, 0.2) * 0.7); }
++}
++
++@keyframes sangam-dust-drift {
++  0%   { transform: translate3d(0, 0, 0); opacity: 0; }
++  10%  { opacity: var(--o, 0.3); }
++  90%  { opacity: var(--o, 0.3); }
++  100% { transform: translate3d(1.5vw, -14vh, 0); opacity: 0; }
++}
++
++/* Reduced motion: everything holds still, only the entrance fade remains. */
++@media (prefers-reduced-motion: reduce) {
++  .sangam-bg__gradient,
++  .sangam-bg__fog-blob,
++  .sangam-bg__mote,
++  .sangam-bg__letter {
++    animation: none !important;
++  }
++}
+diff --git a/frontend/src/components/background/constants.js b/frontend/src/components/background/constants.js
+new file mode 100644
+index 0000000..a064ee9
+--- /dev/null
++++ b/frontend/src/components/background/constants.js
+@@ -0,0 +1,105 @@
++/**
++ * constants.js — data + deterministic generation for the Sangam ambient
++ * background. Reuses the seeded PRNG from components/world/worldGen.js so
++ * generation stays consistent with the rest of the codebase (same Mulberry32
++ * generator the 3D world scenes use for flora/fauna scatter).
++ */
++import { seededRandom, hashString } from '../world/worldGen'
++
++// A curated set of visually distinct Tamil letters — vowels and a few
++// consonants with strong, recognizable strokes for the carved-stone look.
++export const TAMIL_GLYPHS = [
++  'ழ', 'ற', 'அ', 'ஆ', 'இ', 'ஈ', 'உ', 'ஐ', 'ஔ', 'ஞ',
++  'ண', 'க', 'ச', 'த', 'ந', 'ம', 'ய', 'ர', 'ல', 'வ', 'ள', 'ஃ',
++]
++
++// Per-tier tuning. "high" = desktop, "mid" = tablet, "low" = phone / low-tier
++// device (from useDeviceCapability). Keeps the same visual language at every
++// tier, just fewer instances and lighter effects.
++export const DETAIL_PRESETS = {
++  high: { letters: 36, dust: 46, fogBlobs: 4, glowLetters: true },
++  mid: { letters: 24, dust: 26, fogBlobs: 3, glowLetters: true },
++  low: { letters: 14, dust: 12, fogBlobs: 2, glowLetters: false },
++}
++
++const FLOAT_VARIANTS = ['float-a', 'float-b', 'float-c', 'float-d']
++
++/**
++ * Deterministically generate the floating-letter field. Split into "far"
++ * (smaller, dimmer, slower, no glow animation) and "near" (larger, brighter,
++ * eligible for the pulsing golden glow) depth bands — this is Layers 4 & 5
++ * from the brief.
++ */
++export function generateLetters(count, glowEnabled) {
++  const rand = seededRandom(hashString('sangam-bg-letters') + count)
++  const letters = []
++
++  for (let i = 0; i < count; i++) {
++    const isNear = i % 3 === 0 // ~1/3 near, 2/3 far — far outnumbers near in real depth fields
++    const glyph = TAMIL_GLYPHS[Math.floor(rand() * TAMIL_GLYPHS.length)]
++
++    letters.push({
++      id: `letter-${i}`,
++      glyph,
++      depthBand: isNear ? 'near' : 'far',
++      // Position as viewport percentages; a small margin keeps letters off
++      // the very edges where they'd clip awkwardly.
++      top: 4 + rand() * 92,
++      left: 2 + rand() * 96,
++      // Near letters render bigger and closer to full opacity; far letters
++      // are small, faint, and slightly blurred to read as background.
++      size: isNear ? 2.6 + rand() * 2.4 : 1.1 + rand() * 1.4, // rem
++      opacity: isNear ? 0.22 + rand() * 0.2 : 0.08 + rand() * 0.12,
++      rotation: (rand() - 0.5) * 50, // degrees
++      parallaxDepth: isNear ? 10 + rand() * 10 : 2 + rand() * 4, // px at full tilt
++      duration: 20 + rand() * 20, // seconds, per the 20-40s spec
++      delay: -rand() * 30, // negative delay so the field never looks "just started"
++      floatVariant: FLOAT_VARIANTS[Math.floor(rand() * FLOAT_VARIANTS.length)],
++      glow: isNear && glowEnabled,
++      glowDelay: -rand() * 6,
++    })
++  }
++
++  return letters
++}
++
++/** Layer 3 — tiny drifting dust motes. */
++export function generateDust(count) {
++  const rand = seededRandom(hashString('sangam-bg-dust') + count)
++  const motes = []
++
++  for (let i = 0; i < count; i++) {
++    motes.push({
++      id: `dust-${i}`,
++      top: rand() * 100,
++      left: rand() * 100,
++      size: 1 + rand() * 2.5, // px
++      opacity: 0.15 + rand() * 0.35,
++      duration: 14 + rand() * 22,
++      delay: -rand() * 30,
++      variant: FLOAT_VARIANTS[Math.floor(rand() * FLOAT_VARIANTS.length)],
++    })
++  }
++
++  return motes
++}
++
++/** Layer 2 — slow-drifting volumetric fog blobs. */
++export function generateFog(count) {
++  const rand = seededRandom(hashString('sangam-bg-fog') + count)
++  const blobs = []
++
++  for (let i = 0; i < count; i++) {
++    blobs.push({
++      id: `fog-${i}`,
++      top: -10 + rand() * 90,
++      left: -20 + rand() * 110,
++      width: 55 + rand() * 45, // vw
++      duration: 55 + rand() * 40,
++      delay: -rand() * 60,
++      opacity: 0.12 + rand() * 0.14,
++    })
++  }
++
++  return blobs
++}
+diff --git a/frontend/src/hooks/useParallax.js b/frontend/src/hooks/useParallax.js
+new file mode 100644
+index 0000000..1bc8ea5
+--- /dev/null
++++ b/frontend/src/hooks/useParallax.js
+@@ -0,0 +1,68 @@
++import { useEffect, useRef } from 'react'
++
++/**
++ * useParallax — smooth cursor-driven parallax for a set of layered elements.
++ *
++ * Deliberately bypasses React state for the per-frame work: mousemove can
++ * fire dozens of times a second, and routing that through setState would
++ * re-render the whole background tree every time. Instead we track a target
++ * offset from the pointer, ease a "current" offset toward it every
++ * animation frame, and write the resulting transform straight to each
++ * layer's DOM node. Near layers (higher `depth`) move further than far ones,
++ * matching how real depth-of-field parallax reads.
++ *
++ * @param {Array<{ ref: React.RefObject<HTMLElement>, depth: number }>} layers
++ * @param {{ enabled?: boolean }} options - disable entirely (e.g. reduced motion)
++ */
++export function useParallax(layers, { enabled = true } = {}) {
++  const target = useRef({ x: 0, y: 0 })
++  const current = useRef({ x: 0, y: 0 })
++  const raf = useRef(null)
++
++  useEffect(() => {
++    if (!enabled || typeof window === 'undefined') return
++
++    const handlePointerMove = (e) => {
++      const nx = (e.clientX / window.innerWidth - 0.5) * 2 // -1..1
++      const ny = (e.clientY / window.innerHeight - 0.5) * 2
++      target.current.x = nx
++      target.current.y = ny
++    }
++
++    // Pointer leaving the viewport eases back to center rather than
++    // snapping, so the scene settles gently instead of jumping.
++    const handlePointerLeave = () => {
++      target.current.x = 0
++      target.current.y = 0
++    }
++
++    const tick = () => {
++      const ease = 0.06
++      current.current.x += (target.current.x - current.current.x) * ease
++      current.current.y += (target.current.y - current.current.y) * ease
++
++      for (const { ref, depth } of layers) {
++        const node = ref.current
++        if (!node) continue
++        const dx = current.current.x * depth
++        const dy = current.current.y * depth
++        node.style.transform = `translate3d(${dx.toFixed(2)}px, ${dy.toFixed(2)}px, 0)`
++      }
++
++      raf.current = requestAnimationFrame(tick)
++    }
++
++    window.addEventListener('mousemove', handlePointerMove, { passive: true })
++    window.addEventListener('mouseleave', handlePointerLeave)
++    raf.current = requestAnimationFrame(tick)
++
++    return () => {
++      window.removeEventListener('mousemove', handlePointerMove)
++      window.removeEventListener('mouseleave', handlePointerLeave)
++      if (raf.current) cancelAnimationFrame(raf.current)
++    }
++    // `layers` is an array of refs built fresh each render; only its length
++    // (the set of layers) and `enabled` should ever actually change.
++    // eslint-disable-next-line react-hooks/exhaustive-deps
++  }, [enabled, layers.length])
++}
+diff --git a/frontend/src/hooks/usePrefersReducedMotion.js b/frontend/src/hooks/usePrefersReducedMotion.js
+new file mode 100644
+index 0000000..2630695
+--- /dev/null
++++ b/frontend/src/hooks/usePrefersReducedMotion.js
+@@ -0,0 +1,25 @@
++import { useEffect, useState } from 'react'
++
++/**
++ * usePrefersReducedMotion — reactive version of the `prefers-reduced-motion`
++ * check used in components/motion/Reveal.jsx. That component reads the media
++ * query once per render (cheap, since it only matters at mount); this hook
++ * also subscribes to changes, since the ambient background lives for the
++ * whole session and should react if the user flips the OS setting live.
++ */
++export function usePrefersReducedMotion() {
++  const [reduced, setReduced] = useState(() => {
++    if (typeof window === 'undefined' || !window.matchMedia) return false
++    return window.matchMedia('(prefers-reduced-motion: reduce)').matches
++  })
++
++  useEffect(() => {
++    if (typeof window === 'undefined' || !window.matchMedia) return
++    const mql = window.matchMedia('(prefers-reduced-motion: reduce)')
++    const handler = (e) => setReduced(e.matches)
++    mql.addEventListener('change', handler)
++    return () => mql.removeEventListener('change', handler)
++  }, [])
++
++  return reduced
++}
