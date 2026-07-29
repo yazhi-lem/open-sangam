@@ -1,0 +1,129 @@
+diff --git a/frontend/package-lock.json b/frontend/package-lock.json
+index 5442ca8..3a08bf6 100644
+--- a/frontend/package-lock.json
++++ b/frontend/package-lock.json
+@@ -11,6 +11,7 @@
+         "@react-three/drei": "^10.7.7",
+         "@react-three/fiber": "^9.6.1",
+         "firebase": "^12.15.0",
++        "lucide-react": "^1.27.0",
+         "react": "^19.2.6",
+         "react-dom": "^19.2.6",
+         "react-router-dom": "^7.18.1",
+@@ -3438,6 +3439,15 @@
+         "yallist": "^3.0.2"
+       }
+     },
++    "node_modules/lucide-react": {
++      "version": "1.27.0",
++      "resolved": "https://registry.npmjs.org/lucide-react/-/lucide-react-1.27.0.tgz",
++      "integrity": "sha512-rJicGl/3Fly/E0rOH1YmPZ6e49JCnKknh1ox1vpHnkfjujAkKA6sqUZvH3MTAaXXjgexyUwgNwTJzTtYuAFYJw==",
++      "license": "ISC",
++      "peerDependencies": {
++        "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0"
++      }
++    },
+     "node_modules/maath": {
+       "version": "0.10.8",
+       "resolved": "https://registry.npmjs.org/maath/-/maath-0.10.8.tgz",
+diff --git a/frontend/package.json b/frontend/package.json
+index fccf522..5594c25 100644
+--- a/frontend/package.json
++++ b/frontend/package.json
+@@ -16,6 +16,7 @@
+     "@react-three/drei": "^10.7.7",
+     "@react-three/fiber": "^9.6.1",
+     "firebase": "^12.15.0",
++    "lucide-react": "^1.27.0",
+     "react": "^19.2.6",
+     "react-dom": "^19.2.6",
+     "react-router-dom": "^7.18.1",
+diff --git a/frontend/src/components/navigation/Navbar.jsx b/frontend/src/components/navigation/Navbar.jsx
+index 74721e3..bf4e904 100644
+--- a/frontend/src/components/navigation/Navbar.jsx
++++ b/frontend/src/components/navigation/Navbar.jsx
+@@ -3,6 +3,7 @@
+  */
+ import { useState } from 'react'
+ import { Link, NavLink } from 'react-router-dom'
++import { House, BookOpen, Globe, Brain, Map, FileText } from 'lucide-react'
+ import ThemeToggle from '../ui/ThemeToggle'
+ import useAppStore from '../../store/useAppStore'
+ 
+@@ -11,12 +12,12 @@ export default function Navbar() {
+   const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
+ 
+   const links = [
+-    { to: '/', end: true, label: 'முகப்பு', title: 'Home' },
+-    { to: '/book', label: 'நூலகம்', title: 'Library' },
+-    { to: '/world', label: 'சங்க உலகம்', title: 'Sangam World' },
+-    { to: '/knowledge', label: 'அறிவு', title: 'Knowledge' },
+-    { to: '/graph', label: 'வரைபடம்', title: 'Graph' },
+-    { to: '/articles', label: 'கட்டுரைகள்', title: 'Articles' },
++    { to: '/', end: true, label: 'முகப்பு', title: 'Home', icon: House },
++    { to: '/book', label: 'நூலகம்', title: 'Library', icon: BookOpen },
++    { to: '/world', label: 'சங்க உலகம்', title: 'Sangam World', icon: Globe },
++    { to: '/knowledge', label: 'அறிவு', title: 'Knowledge', icon: Brain },
++    { to: '/graph', label: 'வரைபடம்', title: 'Graph', icon: Map },
++    { to: '/articles', label: 'கட்டுரைகள்', title: 'Articles', icon: FileText },
+   ]
+ 
+   const linkClass = ({ isActive }) =>
+@@ -42,6 +43,7 @@ export default function Navbar() {
+         <div className="hidden md:flex items-center gap-1">
+           {links.map((l) => (
+             <NavLink key={l.to} to={l.to} end={l.end} className={linkClass}>
++              <l.icon size={14} strokeWidth={1.75} className="shrink-0" aria-hidden="true" />
+               <span className="tamil text-sm">{l.labelTa}</span>
+               <span className="text-[11px] text-faint font-normal">• {l.labelEn}</span>
+             </NavLink>
+@@ -99,6 +101,7 @@ export default function Navbar() {
+               className={linkClass}
+               onClick={() => setMobileOpen(false)}
+             >
++              <l.icon size={14} strokeWidth={1.75} className="shrink-0" aria-hidden="true" />
+               <span className="tamil text-base font-semibold">{l.labelTa}</span>
+               <span className="text-xs text-faint ml-2">({l.labelEn})</span>
+             </NavLink>
+diff --git a/frontend/src/components/search/CommandPalette.jsx b/frontend/src/components/search/CommandPalette.jsx
+index f3d7537..423af66 100644
+--- a/frontend/src/components/search/CommandPalette.jsx
++++ b/frontend/src/components/search/CommandPalette.jsx
+@@ -4,6 +4,7 @@
+  */
+ import { useState, useEffect, useMemo, useRef } from 'react'
+ import { useNavigate } from 'react-router-dom'
++import { House, BookOpen, Globe, Brain, Map } from 'lucide-react'
+ import useAppStore from '../../store/useAppStore'
+ import { POEMS } from '../../data/poems'
+ import { KNOWLEDGE_SECTIONS } from '../../data/knowledge'
+@@ -55,11 +56,11 @@ export default function CommandPalette() {
+ 
+     // Quick navigation actions
+     results.push(
+-      { id: 'nav-home', category: 'Navigation', title: 'Home · முகப்பு', subtitle: 'Return to landing page', icon: '🏠', action: () => navigate('/') },
+-      { id: 'nav-book', category: 'Navigation', title: 'Library · சங்க நூலகம்', subtitle: 'Browse 18 classical Tamil collections', icon: '📖', action: () => navigate('/book') },
+-      { id: 'nav-world', category: 'Navigation', title: 'Sangam World · சங்க உலகம்', subtitle: 'Explore 5 poetic landscapes', icon: '🗺️', action: () => navigate('/world') },
+-      { id: 'nav-knowledge', category: 'Navigation', title: 'Knowledge Base · அறிவு', subtitle: 'Learn history, metrics, and academy lore', icon: '💡', action: () => navigate('/knowledge') },
+-      { id: 'nav-graph', category: 'Navigation', title: 'Connections Graph · வரைபடம்', subtitle: 'Interactive ego-network of corpus', icon: '🕸️', action: () => navigate('/graph') },
++      { id: 'nav-home', category: 'Navigation', title: 'Home · முகப்பு', subtitle: 'Return to landing page', icon: House, action: () => navigate('/') },
++      { id: 'nav-book', category: 'Navigation', title: 'Library · சங்க நூலகம்', subtitle: 'Browse 18 classical Tamil collections', icon: BookOpen, action: () => navigate('/book') },
++      { id: 'nav-world', category: 'Navigation', title: 'Sangam World · சங்க உலகம்', subtitle: 'Explore 5 poetic landscapes', icon: Globe, action: () => navigate('/world') },
++      { id: 'nav-knowledge', category: 'Navigation', title: 'Knowledge Base · அறிவு', subtitle: 'Learn history, metrics, and academy lore', icon: Brain, action: () => navigate('/knowledge') },
++      { id: 'nav-graph', category: 'Navigation', title: 'Connections Graph · வரைபடம்', subtitle: 'Interactive ego-network of corpus', icon: Map, action: () => navigate('/graph') },
+       { id: 'act-theme', category: 'Actions', title: `Switch Theme to ${isDark ? 'Light Mode' : 'Dark Mode'}`, subtitle: 'Toggle app color palette', icon: isDark ? '☀️' : '🌙', action: () => toggleTheme() }
+     )
+ 
+@@ -181,7 +182,11 @@ export default function CommandPalette() {
+                   }`}
+                 >
+                   <div className="flex items-center gap-3 min-w-0">
+-                    <span className="text-xl shrink-0" aria-hidden="true">{item.icon}</span>
++                    {typeof item.icon === 'string' ? (
++                      <span className="text-xl shrink-0" aria-hidden="true">{item.icon}</span>
++                    ) : (
++                      <item.icon size={14} strokeWidth={1.75} className="shrink-0" aria-hidden="true" />
++                    )}
+                     <div className="min-w-0">
+                       <p className={`text-sm font-medium truncate ${isSelected ? 'text-accent' : 'text-primary'}`}>
+                         {item.title}
