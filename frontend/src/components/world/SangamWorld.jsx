@@ -1,7 +1,7 @@
 /**
  * SangamWorld — immersive landscape explorer for the five Tiṇai zones.
  */
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import TinaiMap from './TinaiMap'
 import TinaiWorldDetail from './TinaiWorldDetail'
@@ -11,23 +11,71 @@ import Badge from '../ui/Badge'
 import Card from '../ui/Card'
 import Reveal from '../motion/Reveal'
 
+import useAppStore from '../../store/useAppStore'
+import audioManager from '../../services/AudioManager'
+import VideoManager from './VideoManager'
+
 export default function SangamWorld() {
   const [searchParams, setSearchParams] = useSearchParams()
   const tinaiParam = searchParams.get('tinai')
 
-  const [localTinai, setLocalTinai] = useState(null)
-  const selectedTinai = tinaiParam || localTinai
+  const activeTinai = useAppStore((s) => s.activeTinai)
+  const setActiveTinai = useAppStore((s) => s.setActiveTinai)
+
+  const selectedTinai = tinaiParam || activeTinai
   const [activeContext, setActiveContext] = useState(null)
   const [sampleVerse, setSampleVerse] = useState(null)
+  const [introFinished, setIntroFinished] = useState(false)
+  
+  const detailsRef = useRef(null)
+
+  // Sync parameters with global store state
+  useEffect(() => {
+    if (tinaiParam && tinaiParam !== activeTinai) {
+      setActiveTinai(tinaiParam)
+    }
+  }, [tinaiParam, activeTinai, setActiveTinai])
+
+  // Reset introPlayed state when activeTinai changes
+  useEffect(() => {
+    if (selectedTinai) {
+      setIntroFinished(false)
+    }
+  }, [selectedTinai])
+
+  // Coordinate ambient nature audio playback
+  useEffect(() => {
+    if (selectedTinai) {
+      audioManager.play(selectedTinai)
+    } else {
+      audioManager.stopAll()
+    }
+  }, [selectedTinai])
+
+  // Reset active state & stop audio when unmounting
+  useEffect(() => {
+    return () => {
+      setActiveTinai(null)
+      audioManager.stopAll()
+    }
+  }, [setActiveTinai])
 
   function handleTinaiSelect(t) {
     const next = selectedTinai === t ? null : t
-    setLocalTinai(next)
+    setActiveTinai(next)
     if (next) {
       setSearchParams({ tinai: next })
     } else {
       setSearchParams({})
     }
+  }
+
+  const scrollToDetails = () => {
+    setTimeout(() => {
+      if (detailsRef.current) {
+        detailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }, 150)
   }
 
   // Load sample verse when tinai is selected
@@ -58,6 +106,20 @@ export default function SangamWorld() {
 
   return (
     <section className="space-y-10">
+      {selectedTinai && !introFinished && (
+        <VideoManager
+          tinaiId={selectedTinai}
+          onComplete={() => {
+            setIntroFinished(true)
+            scrollToDetails()
+          }}
+          onSkip={() => {
+            setIntroFinished(true)
+            scrollToDetails()
+          }}
+        />
+      )}
+
       <Reveal y={-16}>
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <Badge variant="accent" size="sm">சங்க உலகம்</Badge>
@@ -72,7 +134,7 @@ export default function SangamWorld() {
       <TinaiMap selected={selectedTinai} onSelect={handleTinaiSelect} />
 
       {selectedTinai ? (
-        <div className="space-y-12">
+        <div ref={detailsRef} className="space-y-12">
           {/* Open-world detail view */}
           <TinaiWorldDetail tinaiId={selectedTinai} />
 

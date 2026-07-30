@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import Button from '../components/ui/Button'
 import Badge from '../components/ui/Badge'
 import Card from '../components/ui/Card'
@@ -21,10 +22,28 @@ const STATS = [
 ]
 
 export default function Home() {
+  const navigate = useNavigate()
   const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
+  const setActiveTinai = useAppStore((s) => s.setActiveTinai)
+  const [transitioningTinai, setTransitioningTinai] = useState(null)
+
+  const handleCardClick = (e, tinaiId) => {
+    e.preventDefault()
+    setTransitioningTinai(tinaiId)
+    setActiveTinai(tinaiId) // Update background state immediately
+
+    // Navigate to world explorer page after transition animation completes
+    setTimeout(() => {
+      navigate(`/world?tinai=${tinaiId}`)
+    }, 850)
+  }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-24">
+    <>
+      <div
+        className={`max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-24 transition-all duration-[800ms] ease-out
+          ${transitioningTinai ? 'blur-md scale-95 opacity-20 pointer-events-none' : ''}`}
+      >
       {/* Hero Section */}
       <section className="text-center space-y-8 max-w-4xl mx-auto pt-4">
         <Reveal y={-16} duration={0.5}>
@@ -132,7 +151,12 @@ export default function Home() {
 
         <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {TINAI_HIGHLIGHTS.map((t) => (
-            <Link key={t.id} to={`/world?tinai=${t.id}`} className="group">
+            <Link
+              key={t.id}
+              to={`/world?tinai=${t.id}`}
+              onClick={(e) => handleCardClick(e, t.id)}
+              className="group"
+            >
               <Card variant="interactive" className="p-5 text-center space-y-3 h-full flex flex-col justify-between">
                 <div className="text-4xl transform group-hover:scale-110 transition-transform duration-200" aria-hidden="true">
                   {t.icon}
@@ -216,6 +240,13 @@ export default function Home() {
           </div>
         </Card>
       </Reveal>
-    </div>
+      </div>
+
+      {transitioningTinai && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black pointer-events-none animate-[fadeIn_0.5s_ease-out]">
+          <div className="absolute w-[200vw] h-[200vh] rounded-full bg-black scale-0 animate-[expandCircle_0.9s_cubic-bezier(0.22,1,0.36,1)_forwards]" />
+        </div>
+      )}
+    </>
   )
 }
