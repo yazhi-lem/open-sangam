@@ -25,10 +25,17 @@
 
 ## 5. Human-in-the-Loop Protocol
 
-1. Gemini generates a draft translation.
+1. Gemini generates a draft translation — either the nightly batch pipeline
+   (`backend/python/ai/translate_with_gemini.py`) or an on-demand Cloud Function
+   call. Batch drafts are written with `verified: false` and an `englishMeta`
+   provenance block recording the provider, model id, prompt version, timestamp,
+   and pipeline run id, so any draft can be traced to the run that produced it.
 2. A designated scholar reviews the draft in the Contribution UI.
 3. On approval, `verified` is set to `true` and the reviewer's name is recorded.
 4. Revisions are versioned; no history is deleted.
+
+Run-level provenance — which phase, which model, how many verses, and which
+verses failed — is kept in `data/pipeline/translation-state.json` (last 30 runs).
 
 ## 6. Prohibited Uses
 

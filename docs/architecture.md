@@ -57,10 +57,36 @@ The Gemini API key is stored as a Firebase Secret (`GEMINI_API_KEY`) and never e
 ```
 sangathamizh.com  →  scraper  →  raw JSON  →  normalizer  →  normalized JSON
                                                                      ↓
-                                                        AI translation (Gemini)
+                                              ai/translate_with_gemini.py
+                                       (OpenRouter → Gemini 2.5 Flash, phased)
                                                                      ↓
-                                                         Firestore upload
+                                          normalized JSON + englishMeta provenance
+                                          data/pipeline/translation-state.json
+                                                                     ↓
+                                     bundled into the frontend build (and,
+                                     when used, Firestore upload)
 ```
+
+**Components**
+
+| Piece | Path | Role |
+|---|---|---|
+| Scraper | `backend/python/scraper/` | source HTML/PDF → `data/texts/*/raw/` |
+| Normalizer | `backend/python/normalizer/` | raw → `normalized/*.json` + `datapackage.json` |
+| Translator | `backend/python/ai/translate_with_gemini.py` | fills `english` via OpenRouter; phased, resumable, bounded per run |
+| Run metadata | `data/pipeline/translation-state.json` | phase, per-poem coverage, last 30 run records |
+| Scheduler | `.github/workflows/translate-english.yml` | nightly 02:00 UTC batch + auto-commit |
+| Graph builder | `backend/python/knowledge/build_graph.py` | corpus → `data/knowledge/graph.json` |
+
+The translator reaches Gemini through **OpenRouter**, the same gateway the
+`agents/avai` assembly uses, so one `OPENROUTER_API_KEY` covers both. The
+Cloud Functions path (`/translate`, `/analyze-word`) still calls the Gemini API
+directly with its own Firebase Secret — it serves on-demand browser requests
+for verses the batch pipeline has not reached yet.
+
+Progress is tracked by **derivation, not bookkeeping**: coverage is recounted
+from `data/texts/*/normalized/*.json` at the start of every run, so the state
+file is an audit record rather than a source of truth that can drift.
 
 ## Security
 
