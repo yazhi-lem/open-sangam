@@ -75,4 +75,28 @@ pytest avai/tests
 ```
 
 Tool tests run against the real `data/texts` and `data/knowledge` corpus,
-no LLM or API key required.
+no LLM or API key required. `tests/test_api.py` covers the REST API the same
+way — the agent Runner is monkeypatched, so it also needs no API key.
+
+## REST API — `POST /avai/ask`
+
+A FastAPI wrapper around the ஔவையார் (Avvaiyar) Q&A agent, built for the
+chat.yazhi.dev integration. Full contract: `docs/api/avai-ask-prd.md` and
+`docs/api-contracts.md`; integration guide: `docs/integration/chat-yazhi-integration.md`.
+
+Run from `agents/` (same cwd convention as `adk run avai`):
+
+```bash
+cd agents
+uvicorn avai.api.app:app --reload --port 8080
+```
+
+```bash
+curl -X POST http://localhost:8080/avai/ask \
+  -H "Content-Type: application/json" \
+  -d '{"message": "What tiṇai is kurunthokai_100?"}'
+```
+
+M1 scope: only `"workflow": "qa"` (the default) is wired to a real agent;
+`search`, `reimagine`, `scenario`, and `imagery` validate but return `501`
+until their poets land in M2.
