@@ -59,3 +59,5 @@ Thumbs.db
 coverage/
 .nyc_output/
 .pytest_cache/
+
+venv2/
