@@ -3,20 +3,23 @@
  */
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { House, BookOpen, Globe, Brain, Map, FileText } from 'lucide-react'
 import ThemeToggle from '../ui/ThemeToggle'
 import useAppStore from '../../store/useAppStore'
+
+const NAV_ICON_PROPS = { size: 14, strokeWidth: 1.75, 'aria-hidden': true }
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
 
   const links = [
-    { to: '/', end: true, label: 'முகப்பு', title: 'Home' },
-    { to: '/book', label: 'நூலகம்', title: 'Library' },
-    { to: '/world', label: 'சங்க உலகம்', title: 'Sangam World' },
-    { to: '/knowledge', label: 'அறிவு', title: 'Knowledge' },
-    { to: '/graph', label: 'வரைபடம்', title: 'Graph' },
-    { to: '/articles', label: 'கட்டுரைகள்', title: 'Articles' },
+    { to: '/', end: true, label: 'முகப்பு', title: 'Home', Icon: House },
+    { to: '/book', label: 'நூலகம்', title: 'Library', Icon: BookOpen },
+    { to: '/world', label: 'சங்க உலகம்', title: 'Sangam World', Icon: Globe },
+    { to: '/knowledge', label: 'அறிவு', title: 'Knowledge', Icon: Brain },
+    { to: '/graph', label: 'வரைபடம்', title: 'Graph', Icon: Map },
+    { to: '/articles', label: 'கட்டுரைகள்', title: 'Articles', Icon: FileText },
   ]
 
   const linkClass = ({ isActive }) =>
@@ -42,6 +45,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-1">
           {links.map((l) => (
             <NavLink key={l.to} to={l.to} end={l.end} className={linkClass}>
+              <l.Icon {...NAV_ICON_PROPS} className="shrink-0" />
               <span className="tamil text-sm">{l.labelTa}</span>
               <span className="text-[11px] text-faint font-normal">• {l.labelEn}</span>
             </NavLink>
@@ -99,6 +103,7 @@ export default function Navbar() {
               className={linkClass}
               onClick={() => setMobileOpen(false)}
             >
+              <l.Icon {...NAV_ICON_PROPS} className="shrink-0" />
               <span className="tamil text-base font-semibold">{l.labelTa}</span>
               <span className="text-xs text-faint ml-2">({l.labelEn})</span>
             </NavLink>

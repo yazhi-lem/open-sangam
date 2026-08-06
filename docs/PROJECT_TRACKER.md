@@ -3,7 +3,7 @@
 > Single consolidated view of where the project stands across every workstream.
 > Companion to the forward-looking [ROADMAP.md](./ROADMAP.md).
 >
-> **Last updated:** 2026-07-23 · **Branch snapshot:** `main` + open work
+> **Last updated:** 2026-08-04 · **Branch snapshot:** `main` + open work
 > **Legend:** ✅ done · 🔄 in progress · ⬜ not started · `█` done `▒` partial `░` pending
 
 ---
@@ -12,16 +12,15 @@
 
 | Workstream | Status | Where it stands | Next step |
 |---|---|---|---|
-| **A · Corpus & data pipeline** | 🔄 | All **18 poems** scraped, normalized & in the Library; **2,552** verse records; Urai ~86% | English translation (Phase 2), colophon metadata (Phase C) |
+| **A · Corpus & data pipeline** | 🔄 | All **18 poems** scraped, normalized & in the Library; **2,552** verse records; Urai 99%. English pipeline live (OpenRouter/Gemini Flash, phased, nightly) | Drive Phase 1 English to 100% and review; colophon metadata (Phase C) |
 | **B · Reader web app** | 🔄 | Reader, Knowledge, Graph, Sangam World (3D), Articles, Command Palette all shipped | Audio wiring, a11y & layout polish, 3D→real-data |
 | **C · Knowledge graph & entities** | 🔄 | Graph (106 nodes / 283 edges) + `/graph` explorer live (Phases A–B) | Colophon → poets/patrons (Phase C), glossary cross-links (Phase E) |
 | **D · Sangam Avai agent swarm** | 🔄 | M1 scaffold live: 1 of 5 poets, corpus/graph/tiṇai tools, 12 tests pass | Finish M1 evalset; build M2 poet swarm |
-| **E · Backend, infra & CI/CD** | 🔄 | Cloud Functions (`/translate`, `/analyze-word`), Cloudflare Pages deploy, frontend CI | Agent deploy path; test coverage; resolve storage split |
+| **E · Backend, infra & CI/CD** | 🔄 | Cloud Functions (`/translate`, `/analyze-word`), Cloudflare Pages deploy, frontend CI, nightly translation job | Agent deploy path; frontend/functions test coverage; resolve storage split |
 
-> ⚠ **The README corpus table is stale.** It reports 17 poems, Ainkurunooru
-> pending, and ~2,066 records. The live data is **18 poems, all readable, 2,552
-> records** — see §2. This tracker reflects the repository as it actually is on
-> disk today; the README should be reconciled to match (tracked in §8).
+> ✅ **README reconciled (2026-08-04).** The README corpus tables now match the
+> live data — 18 poems, all readable, 2,552 records — and the stale
+> "Ainkurunooru pending source fix" warning is gone.
 
 ---
 
@@ -35,10 +34,37 @@ Pipeline: **Scrape → Normalize → Library → English → Verified**
 ```
 Poems in corpus        18   ████████████████  all scraped, normalized & readable
 Verse records       2,552   ████████████████  normalized (Verse → Line → Word)
-Modern Tamil (Urai) 2,206   █████████████▒░░  86% carry source prose
-English                 0   ░░░░░░░░░░░░░░░░  Phase 2 — not started
+Modern Tamil (Urai) 2,529   ███████████████░  99% carry source prose
+English                 0   ░░░░░░░░░░░░░░░░  Phase 2 — pipeline live, drafting nightly
 Scholar-verified        0   ░░░░░░░░░░░░░░░░  Phase 4 — not started
 ```
+
+> Regenerate these figures with
+> `cd backend/python && python -m ai.translate_with_gemini --status`.
+
+### English translation (Phase 2) — 🔄 pipeline live
+
+`backend/python/ai/translate_with_gemini.py` drafts the `english` field with
+**Gemini 2.5 Flash via OpenRouter** — the same gateway `agents/avai` uses, so a
+single `OPENROUTER_API_KEY` serves both. It is phased, resumable, and bounded:
+
+| Phase | Poems | Verses | Status |
+|---|---|---:|:---:|
+| **1** | Ten Idylls (பத்துப்பாட்டு) | 380 | ⬜ |
+| **2** | Paripadal · Pathitrupathu · Kalithokai · Akananooru | 472 | ⬜ |
+| **3** | Purananooru · Natrinai · Kurunthokai · Ainkurunooru | 1,700 | ⬜ |
+
+- Runs nightly at 02:00 UTC via `.github/workflows/translate-english.yml`
+  (200 verses/run) and commits results with `[skip ci]`.
+- **Requires the repo secret `OPENROUTER_API_KEY`** — the job skips cleanly
+  without it, so an unconfigured repo never goes red.
+- Each draft carries `verified: false` plus an `englishMeta` provenance block
+  (provider, model, prompt version, timestamp, run id).
+- Run history and per-poem coverage live in
+  `data/pipeline/translation-state.json`; counters are re-derived from disk on
+  every run, never carried forward.
+- Phase 1 completion is the checkpoint for a human quality read before ~2,100
+  further verses get drafted.
 
 ### எட்டுத்தொகை — Eight Anthologies
 
@@ -74,10 +100,11 @@ Scholar-verified        0   ░░░░░░░░░░░░░░░░  Ph
 ### Verse schema & metadata gaps
 
 Each record (`data/schema/verse_schema.json`) carries: `id`, `poem`, `tinai`,
-`sangamTamil`, `urai`, `english`, `lines`, `culturalNotes`, `audioUrl`,
-`source`, `verified`, `number`, `poet`. Present but **largely unpopulated**:
+`sangamTamil`, `urai`, `english`, `englishMeta`, `lines`, `culturalNotes`,
+`audioUrl`, `source`, `verified`, `number`, `poet`. Present but **largely
+unpopulated**:
 
-- `english` — 0 records (Phase 2).
+- `english` / `englishMeta` — 0 records (Phase 2 pipeline now running).
 - `verified` — 0 records `true` (Phase 4).
 - `poet` / `patron` / `turai` / `speaker` — colophon fields not yet parsed (Phase C).
 - `tinai` — many records still `"unknown"`; needs colophon/label backfill.
@@ -135,6 +162,12 @@ built** — they depend on Phase C.
 (default `google/gemini-2.5-flash`). Full spec:
 [agent-implementation-plan.md](./agent-implementation-plan.md).
 
+**To run them:** `agents/avai/README.md` is the canonical runbook — setup,
+`cd agents && adk run avai` (ADK resolves agents from the *parent* directory,
+which is the usual stumbling block), `adk web`, `pytest avai/tests`, the
+env-var table, and troubleshooting. The root `README.md` carries a short
+quick-start that links there.
+
 ### Agents M1 — Foundations & ஔவையார் Q&A (due 2026-08-31) — 🔄 mostly done
 
 - [x] #31 Scaffold `agents/avai` ADK package + OpenRouter/Gemini model switch
@@ -172,6 +205,7 @@ built** — they depend on Phase C.
 | Cloud Functions (`backend/functions/`) | ✅ | `POST /translate`, `POST /analyze-word` → Gemini 2.5 Flash; key as Firebase Secret |
 | Firestore rules / indexes | 🔄 | Rules present (public read / admin write); **not populated** — see §8 |
 | Frontend CI (`.github/workflows/ci.yml`) | ✅ | `npm ci` → lint → build on `frontend/**`; **no test step** |
+| Translation job (`translate-english.yml`) | ✅ | Nightly 02:00 UTC + `workflow_dispatch`; 200 verses/run → auto-commit. Needs secret `OPENROUTER_API_KEY` |
 | Deploy (`deploy-cloudflare-pages.yml`) | ✅ | Builds `frontend/dist` → **Cloudflare Pages** (`sangam.yazhi.dev`) |
 | Project automation | ✅ | `setup-project.yml` / `setup-agents-project.yml` create milestones + issues |
 | Agent deploy (Cloud Run) | ⬜ | Dockerfile + `deploy-agent.yml` not yet written (M3 / #42) |
@@ -212,22 +246,28 @@ built** — they depend on Phase C.
 
 ## 8. Risks, tech debt & doc drift
 
-1. **English translation is 0%.** No verse carries stored English; the "English"
-   layer depends entirely on **live Gemini calls**, which is in tension with the
-   static-hosting deploy model. Biggest content gap (Phase 2).
+1. **English translation is 0% — but no longer blocked.** A phased, scheduled
+   pipeline now drafts into the `english` field nightly (§2). Until it has run,
+   the "English" layer still depends on **live Gemini calls**, which is in
+   tension with the static-hosting deploy model; stored drafts resolve that as
+   coverage grows. Remaining risk is **cost and quality drift**, not absence:
+   watch the Phase 1 output before letting phases 2–3 run unattended.
 2. **Scholar verification is 0%** — no `verified: true` records; the
-   contribution/review layer (Phase 4) is unbuilt.
-3. **Testing is thin.** Only `agents/avai/tests` (12 passing) exist. **Frontend,
-   Cloud Functions, and the Python pipeline have zero automated tests**; CI runs
-   no test step.
+   contribution/review layer (Phase 4) is unbuilt. The volume of AI drafts about
+   to land makes this the next real bottleneck.
+3. **Testing is still thin.** `agents/avai/tests` (12) and
+   `backend/python/tests` (31, translation pipeline) pass. **Frontend and Cloud
+   Functions have zero automated tests**, and CI runs no test step for either
+   Python suite.
 4. **Dead Firestore reader path.** `pages/Reader.jsx` → `hooks/useVerse.js` →
    `services/verseService.js` → `services/firebase.js` is unreachable (`/reader`
    redirects to `/book`), and nothing populates Firestore. The live reader ships
    **bundled static JSON**. The README/architecture "Firebase Hosting + Firestore"
    design is aspirational vs. the shipped **static-JSON-on-Cloudflare-Pages** reality.
-5. **Doc drift.** README corpus table (17 poems / 2,066 records / Ainkurunooru
-   pending) trails the real corpus (18 / 2,552 / all readable); architecture docs
-   name Firebase Hosting while prod is Cloudflare Pages.
+5. **Doc drift — partly resolved.** The README corpus tables were reconciled to
+   the live corpus on 2026-08-04 (18 poems / 2,552 records / 2,529 urai, all
+   readable). **Still outstanding:** architecture docs name Firebase Hosting
+   while prod is Cloudflare Pages.
 6. **Colophon metadata unparsed** — `poet`/`patron`/`turai`/`speaker` empty and
    many `tinai: unknown`; blocks the knowledge-entity tracks (Phase C).
 7. **Audio unwired** — `AudioPlayer.jsx` exists but no assets or `audioUrl` data.

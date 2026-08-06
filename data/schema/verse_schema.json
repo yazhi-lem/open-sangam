@@ -35,6 +35,32 @@
       "type": ["string", "null"],
       "description": "Contemporary English translation. Null until AI-generated and verified."
     },
+    "englishMeta": {
+      "type": ["object", "null"],
+      "description": "Provenance for an AI-drafted english field, written by backend/python/ai/translate_with_gemini.py. Absent for verses translated by hand.",
+      "properties": {
+        "provider": {
+          "type": "string",
+          "description": "Model gateway used, e.g. 'openrouter'"
+        },
+        "model": {
+          "type": "string",
+          "description": "Model id, e.g. 'google/gemini-2.5-flash'"
+        },
+        "promptVersion": {
+          "type": "string",
+          "description": "Prompt revision that produced the draft, e.g. 'english-v1'"
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "runId": {
+          "type": "string",
+          "description": "Pipeline run id; cross-references data/pipeline/translation-state.json"
+        }
+      }
+    },
     "lines": {
       "type": "array",
       "minItems": 1,

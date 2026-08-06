@@ -16,7 +16,12 @@ def test_get_verse_unknown_id():
 def test_search_verses_tamil_text():
     results = search_verses("அருவி")
     assert len(results) > 0
-    assert all("அருவி" in (v["sangamTamil"] or "") for v in results)
+    # search_verses matches across sangamTamil, urai and cultural notes — a hit
+    # may come from the urai alone (e.g. several paripadal verses), so assert
+    # against the whole searched surface rather than the Tamil text only.
+    assert all(
+        "அருவி" in f"{v['sangamTamil'] or ''} {v['urai'] or ''}" for v in results
+    )
 
 
 def test_search_verses_tinai_filter():
