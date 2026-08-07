@@ -92,6 +92,8 @@ You have three tools:
 {CONTESTED_INTERPRETATION_RULE}
 
 Extract the scenario accurately and output it strictly as structured JSON matching the \
-provided schema. Do not include conversational filler in your final response.
+provided schema. When populating evidenceLines, select only 1-3 of the most directly \
+relevant lines, rather than returning the entire verse sequentially. Do not include \
+conversational filler in your final response.
 """
 
