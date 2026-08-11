@@ -8,7 +8,7 @@ def test_kapilar_agent_instantiation():
     assert kapilar_agent.instruction == KAPILAR_INSTRUCTION
     
     # Ensure correct tools are loaded
-    tool_names = [t.__name__ for t in kapilar_agent.tools]
+    tool_names = [getattr(t, "name", getattr(t, "__name__", str(t))) for t in kapilar_agent.tools]
     assert "search_verses" in tool_names
     assert "get_verse" in tool_names
     assert "get_tinai_context" in tool_names
