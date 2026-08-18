@@ -7,12 +7,13 @@ from .poets.nakkirar import nakkirar_agent
 from .poets.avvaiyar import avvaiyar_agent
 from .poets.kapilar import kapilar_agent
 from .poets.tholkappiyar import tholkappiyar_agent
+from .poets.english_scholar import english_scholar_agent
+from .poets.paranar import paranar_agent
 from google.adk.tools.agent_tool import AgentTool
 
 
-
-# Note: Paranar will be added in M2 later.
-poets = [nakkirar_agent, avvaiyar_agent, kapilar_agent, tholkappiyar_agent]
+# All six poet agents in the Sangam Avai swarm.
+poets = [nakkirar_agent, avvaiyar_agent, kapilar_agent, tholkappiyar_agent, english_scholar_agent, paranar_agent]
 
 def wire_mesh():
     """Connects all agents together to allow mid-conversation handoffs."""

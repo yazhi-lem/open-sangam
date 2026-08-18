@@ -3,11 +3,12 @@ agent swarm, built for the chat.yazhi.dev integration. See
 docs/api/avai-ask-prd.md for the full PRD and
 docs/integration/chat-yazhi-integration.md for the integration guide.
 
-M1 scope: only the "qa" workflow is wired, routed to the ஔவையார் (Avvaiyar)
-Q&A agent. Other workflow values validate and are accepted by the request
-schema (so callers can code against the full contract now) but return 501
-until their agents land in M2 — see poets/avvaiyar.py and
-docs/agent-implementation-plan.md §9 for the M2 roadmap.
+The `agent` field selects which poet agent to route to (defaults to nakkirar).
+The `workflow` field selects the workflow type. Currently wired:
+- "qa" → any agent (Q&A mode)
+- "imagery" → paranar (image prompt generation)
+
+Other workflow values return 501 until M2 lands.
 
 Run from `agents/` (same cwd convention as `adk run avai`):
     uvicorn avai.api.app:app --reload --port 8080
@@ -28,16 +29,36 @@ from google.genai import types
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from ..poets.avvaiyar import avvaiyar_agent
+from ..poets.english_scholar import english_scholar_agent
+from ..poets.kapilar import kapilar_agent
+from ..poets.nakkirar import nakkirar_agent
+from ..poets.paranar import paranar_agent
+from ..poets.tholkappiyar import tholkappiyar_agent
 from ..tools.corpus import get_verse
+from ..tools.image_gen import get_image_backend
 from . import sessions
 from .schemas import AskMetadata, AskRequest, AskResponse, Citation
 
-app = FastAPI(title="Avai Ask API", version="0.1.0")
+app = FastAPI(title="Avai Ask API", version="0.3.0")
 
 _session_service = InMemorySessionService()
-_runner = Runner(
-    app_name=sessions.APP_NAME, agent=avvaiyar_agent, session_service=_session_service
-)
+
+# Per-agent runners — one Runner per poet agent, all sharing the same session service.
+_AGENTS = {
+    "nakkirar": nakkirar_agent,
+    "avvaiyar": avvaiyar_agent,
+    "kapilar": kapilar_agent,
+    "tholkappiyar": tholkappiyar_agent,
+    "english_scholar": english_scholar_agent,
+    "paranar": paranar_agent,
+}
+
+_RUNNERS = {
+    name: Runner(
+        app_name=sessions.APP_NAME, agent=agent, session_service=_session_service
+    )
+    for name, agent in _AGENTS.items()
+}
 
 # verse ids are always <poem>_<number>, e.g. purananooru_001 (see tools/corpus.py).
 _VERSE_ID_PATTERN = re.compile(r"\b[a-z]+_\d{2,4}\b")
@@ -51,8 +72,10 @@ _UNIMPLEMENTED_WORKFLOWS = {
     "search": "Poem search & discovery lands with the poet swarm (M2).",
     "reimagine": "Poem reimagining is Kapilar's workflow (M2), not yet wired.",
     "scenario": "Scenario extraction is Tholkappiyar's workflow (M2), not yet wired.",
-    "imagery": "Image-prompt generation is Paranar's workflow (M2), not yet wired.",
 }
+
+# Workflows that are wired to specific agents.
+_WIRED_WORKFLOWS = {"qa", "imagery"}
 
 
 # Normalize error shapes to {"message": "..."} to match the existing Cloud
@@ -125,11 +148,23 @@ async def health() -> dict:
 
 @app.post("/avai/ask", response_model=AskResponse)
 async def ask(request: AskRequest) -> AskResponse:
-    if request.workflow != "qa":
+    if request.workflow not in _WIRED_WORKFLOWS:
         reason = _UNIMPLEMENTED_WORKFLOWS.get(
             request.workflow, f"Unknown workflow {request.workflow!r}."
         )
         raise HTTPException(status_code=501, detail=reason)
+
+    # For imagery workflow, default to paranar agent.
+    agent_key = request.agent
+    if request.workflow == "imagery" and agent_key not in ("paranar",):
+        agent_key = "paranar"
+
+    runner = _RUNNERS.get(agent_key)
+    if runner is None:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unknown agent {agent_key!r}.",
+        )
 
     sessions.prune_expired()
 
@@ -148,7 +183,7 @@ async def ask(request: AskRequest) -> AskResponse:
     start = time.monotonic()
     final_text = ""
     try:
-        async for event in _runner.run_async(
+        async for event in runner.run_async(
             user_id=user_id, session_id=session_id, new_message=content
         ):
             if event.content and event.content.parts:
@@ -160,10 +195,20 @@ async def ask(request: AskRequest) -> AskResponse:
 
     elapsed_ms = int((time.monotonic() - start) * 1000)
 
+    # For imagery workflow, try to generate an image from the crafted prompt.
+    image_url = None
+    image_prompt = None
+    if request.workflow == "imagery":
+        backend = get_image_backend()
+        # Extract the prompt from the response (Paranar returns it as text).
+        image_prompt = final_text.strip()
+        result = backend.generate(image_prompt)
+        image_url = result.get("image_url")
+
     return AskResponse(
         session_id=session_id,
-        workflow="qa",
-        poet="avvaiyar",
+        workflow=request.workflow,
+        poet=agent_key,
         response_text=final_text.strip(),
         citations=_extract_citations(final_text),
         metadata=AskMetadata(
@@ -171,4 +216,6 @@ async def ask(request: AskRequest) -> AskResponse:
             elapsed_ms=elapsed_ms,
             timestamp=datetime.now(timezone.utc).isoformat(),
         ),
+        image_url=image_url,
+        image_prompt=image_prompt,
     )

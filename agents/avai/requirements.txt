@@ -7,3 +7,6 @@ pytest==8.4.2
 fastapi==0.141.1
 uvicorn[standard]==0.52.1
 httpx==0.28.1  # fastapi.testclient (tests/test_api.py), not used at runtime
+
+# TUI (terminal user interface) — see tui/app.py
+rich>=13.0.0

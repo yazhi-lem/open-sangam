@@ -10,6 +10,7 @@ import Knowledge from './pages/Knowledge'
 import GraphExplorer from './pages/GraphExplorer'
 import ArticlesList from './pages/ArticlesList'
 import ArticleReader from './pages/ArticleReader'
+import PromptMaker from './pages/PromptMaker'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
               <Route path="/graph" element={<GraphExplorer />} />
               <Route path="/articles" element={<ArticlesList />} />
               <Route path="/articles/:slug" element={<ArticleReader />} />
+              <Route path="/prompt-maker" element={<PromptMaker />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

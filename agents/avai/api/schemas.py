@@ -15,6 +15,11 @@ from pydantic import BaseModel, Field
 # until then. See docs/api/avai-ask-prd.md §Workflows.
 Workflow = Literal["qa", "search", "reimagine", "scenario", "imagery"]
 
+# Agent name selector — maps to a specific poet agent in the swarm.
+AgentName = Literal[
+    "nakkirar", "avvaiyar", "kapilar", "tholkappiyar", "english_scholar", "paranar"
+]
+
 
 class AskContext(BaseModel):
     """Optional filters forwarded to the agent as a hint, not enforced server-side."""
@@ -30,6 +35,10 @@ class AskContext(BaseModel):
 
 class AskRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=2000)
+    agent: AgentName = Field(
+        default="nakkirar",
+        description="Which poet agent to route to. Defaults to nakkirar (convener).",
+    )
     workflow: Workflow = "qa"
     session_id: Optional[str] = Field(
         default=None,
@@ -61,6 +70,14 @@ class AskResponse(BaseModel):
     response_text: str
     citations: list[Citation]
     metadata: AskMetadata
+    image_url: Optional[str] = Field(
+        default=None,
+        description="Generated image data-URI (when workflow=imagery and backend supports it).",
+    )
+    image_prompt: Optional[str] = Field(
+        default=None,
+        description="The crafted image generation prompt (when workflow=imagery).",
+    )
 
 
 class ErrorResponse(BaseModel):

@@ -1,0 +1,15 @@
+# OpenSangam Flutter app
+open-sangam/mobile/
+!open-sangam/mobile/lib/
+!open-sangam/mobile/assets/
+!open-sangam/mobile/scripts/
+!open-sangam/mobile/pubspec.yaml
+!open-sangam/mobile/analysis_options.yaml
+!open-sangam/mobile/android/app/
+!open-sangam/mobile/android/build.gradle.kts
+!open-sangam/mobile/android/settings.gradle.kts
+!open-sangam/mobile/android/gradle.properties
+!open-sangam/mobile/android/gradle/wrapper/
+!open-sangam/mobile/ios/Podfile
+!open-sangam/mobile/ios/Runner/
+!open-sangam/mobile/ios/RunnerTests/

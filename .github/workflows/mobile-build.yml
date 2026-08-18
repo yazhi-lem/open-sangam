@@ -1,0 +1,227 @@
+# CI/CD: Build Android APK + AAB and iOS archive for Sangam Chat.
+#
+# Triggers:
+#   - Push to main affecting mobile/**, agents/**, or this workflow file
+#   - Pull request to main affecting the same
+#   - Manual dispatch with optional build targets
+#
+# Artifacts:
+#   - Android APK (debug + release)
+#   - Android AAB (release, for Play Store)
+#   - iOS archive (release, for App Store / TestFlight)
+
+name: Mobile Build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'mobile/**'
+      - 'agents/**'
+      - '.github/workflows/mobile-build.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'mobile/**'
+      - 'agents/**'
+  workflow_dispatch:
+    inputs:
+      build_android:
+        description: 'Build Android (APK + AAB)'
+        required: false
+        default: true
+        type: boolean
+      build_ios:
+        description: 'Build iOS'
+        required: false
+        default: true
+        type: boolean
+
+env:
+  FLUTTER_VERSION: '3.32.7'
+  JAVA_VERSION: '17'
+
+jobs:
+  # ── Sync verse data ──────────────────────────────────────────────────────
+  sync-data:
+    name: Sync Verse Data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Generate poems_registry.json
+        run: node -e "
+          const mod = require('./frontend/src/data/poems.js');
+          const collections = Object.entries(mod.COLLECTIONS).map(([id, c]) => ({
+            id, ta: c.ta, en: c.en, desc: c.desc,
+          }));
+          const poems = mod.POEMS.map(p => ({
+            id: p.id, ta: p.ta, en: p.en, collection: p.collection,
+            count: p.count, unit: p.unit, tinai: p.tinai || [], available: p.available,
+          }));
+          require('fs').writeFileSync(
+            'mobile/assets/data/poems_registry.json',
+            JSON.stringify({ collections, poems }, null, 2)
+          );
+          console.log('Generated poems_registry.json with', poems.length, 'poems');
+        shell: bash
+
+      - name: Upload assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: verse-assets
+          path: mobile/assets/data/
+
+  # ── Android Build ────────────────────────────────────────────────────────
+  android:
+    name: Android (${{ matrix.variant }})
+    runs-on: ubuntu-latest
+    needs: sync-data
+    if: >-
+      github.event_name != 'workflow_dispatch' ||
+      github.event.inputs.build_android == 'true'
+    strategy:
+      matrix:
+        variant: [debug, release]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download verse assets
+        uses: actions/download-artifact@v4
+        with:
+          name: verse-assets
+          path: mobile/assets/data/
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+
+      - name: Flutter pub get
+        working-directory: mobile
+        run: flutter pub get
+
+      - name: Flutter analyze
+        working-directory: mobile
+        run: flutter analyze --fatal-infos
+
+      - name: Flutter test
+        working-directory: mobile
+        run: flutter test
+
+      - name: Build Android ${{ matrix.variant }}
+        working-directory: mobile
+        run: |
+          if [ "${{ matrix.variant }}" = "debug" ]; then
+            flutter build apk --debug
+          else
+            flutter build apk --release
+            flutter build appbundle --release
+          fi
+
+      - name: Upload Android APK
+        if: matrix.variant == 'release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: sangam-chat-android-apk
+          path: mobile/build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Upload Android AAB
+        if: matrix.variant == 'release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: sangam-chat-android-aab
+          path: mobile/build/app/outputs/bundle/release/app-release.aab
+
+  # ── iOS Build ────────────────────────────────────────────────────────────
+  ios:
+    name: iOS (release)
+    runs-on: macos-latest
+    needs: sync-data
+    if: >-
+      github.event_name != 'workflow_dispatch' ||
+      github.event.inputs.build_ios == 'true'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download verse assets
+        uses: actions/download-artifact@v4
+        with:
+          name: verse-assets
+          path: mobile/assets/data/
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+
+      - name: Flutter pub get
+        working-directory: mobile
+        run: flutter pub get
+
+      - name: Flutter analyze
+        working-directory: mobile
+        run: flutter analyze --fatal-infos
+
+      - name: Flutter test
+        working-directory: mobile
+        run: flutter test
+
+      - name: Setup Ruby (for CocoaPods)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install CocoaPods
+        working-directory: mobile/ios
+        run: pod install --repo-update
+
+      - name: Build iOS (no codesign)
+        working-directory: mobile
+        run: flutter build ios --release --no-codesign
+
+      - name: Create iOS archive
+        working-directory: mobile/build/ios/iphoneos
+        run: |
+          xcodebuild -workspace Runner.xcworkspace \
+            -scheme Runner \
+            -sdk iphoneos \
+            -archivePath $PWD/build/Runner.xcarchive \
+            archive || echo "Archive requires signing — skipping"
+
+      - name: Upload iOS build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sangam-chat-ios
+          path: |
+            mobile/build/ios/iphoneos/Runner.app
+            mobile/build/ios/**/*.xcarchive
+
+  # ── Summary ──────────────────────────────────────────────────────────────
+  summary:
+    name: Build Summary
+    runs-on: ubuntu-latest
+    needs: [android, ios]
+    if: always()
+    steps:
+      - name: Summary
+        run: |
+          echo "## Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Target | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Android (APK + AAB) | ${{ needs.android.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| iOS | ${{ needs.ios.result }} |" >> $GITHUB_STEP_SUMMARY
