@@ -5,6 +5,7 @@ import { useDeviceCapability } from '../../hooks/useDeviceCapability'
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion'
 import { useParallax } from '../../hooks/useParallax'
 import { DETAIL_PRESETS } from './constants'
+import useAppStore from '../../store/useAppStore'
 import FogLayer from './FogLayer'
 import DustParticles from './DustParticles'
 import FloatingLetters from './FloatingLetters'
@@ -20,6 +21,7 @@ import FloatingLetters from './FloatingLetters'
  */
 export default function BackgroundScene() {
   const { isDark } = useTheme()
+  const activeTinai = useAppStore((s) => s.activeTinai)
   // Only borrowing `isLowTier` (CPU/memory heuristic) for particle-count
   // scaling here — NOT `canRender3D`, which is WebGL-gated and meant for the
   // actual 3D world scene. This background is plain CSS/DOM, so it should
@@ -79,11 +81,14 @@ export default function BackgroundScene() {
 
   useParallax(parallaxLayers, { enabled: animationsEnabled && !isLowTier })
 
-  // Only active in dark mode — the light theme keeps its untouched look.
-  if (!isDark) return null
+  // Only active in dark mode, or when an active Tinai landscape is selected (forcing the cinematic biome backdrop)
+  if (!isDark && !activeTinai) return null
 
   return (
-    <div className={`sangam-bg${revealed ? ' sangam-bg--revealed' : ''}`} aria-hidden="true">
+    <div
+      className={`sangam-bg${revealed ? ' sangam-bg--revealed' : ''} sangam-bg--${activeTinai || 'default'}`}
+      aria-hidden="true"
+    >
       <div className="sangam-bg__gradient" style={{ animationPlayState: animationsEnabled ? 'running' : 'paused' }} />
       <div className="sangam-bg__grain" />
       <FogLayer ref={fogRef} count={preset.fogBlobs} />

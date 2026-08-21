@@ -11,6 +11,7 @@ import GraphExplorer from './pages/GraphExplorer'
 import ArticlesList from './pages/ArticlesList'
 import ArticleReader from './pages/ArticleReader'
 import NotFound from './pages/NotFound'
+import useAppStore from './store/useAppStore'
 
 export default function App() {
   return (

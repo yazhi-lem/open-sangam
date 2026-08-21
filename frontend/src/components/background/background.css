@@ -29,9 +29,14 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 50% at 50% -10%, rgba(245, 158, 11, 0.08), transparent 60%),
-    radial-gradient(ellipse 60% 45% at 85% 15%, rgba(148, 163, 184, 0.10), transparent 65%),
-    linear-gradient(180deg, #0c0a09 0%, #120d0a 45%, #0c0a09 100%);
+    radial-gradient(ellipse 90% 78% at 8% 82%, rgba(217, 119, 6, 0.42), transparent 60%),
+    radial-gradient(ellipse 65% 55% at 30% 58%, rgba(13, 13, 13, 0.26), transparent 62%),
+    radial-gradient(ellipse 85% 78% at 88% 24%, rgba(88, 28, 135, 0.48), transparent 64%),
+    radial-gradient(ellipse 65% 60% at 102% 62%, rgba(131, 24, 67, 0.32), transparent 60%),
+    radial-gradient(ellipse 120% 55% at 50% -15%, rgba(10, 10, 10, 0.7), transparent 56%),
+    radial-gradient(ellipse 55% 50% at 96% 98%, rgba(6, 6, 7, 0.5), transparent 55%),
+    radial-gradient(ellipse 100% 50% at 50% 100%, rgba(60, 32, 16, 0.32), transparent 58%),
+    #09090b;
   animation: sangam-moonlight-breathe 10s ease-in-out infinite;
 }
 
@@ -137,7 +142,7 @@
     text-shadow:
       -1px -1px 1.5px rgba(0, 0, 0, 0.55),
       1px 1px 1px rgba(255, 255, 255, 0.06),
-      0 0 16px rgba(245, 158, 11, 0.5);
+      0 0 16px rgba(224, 148, 17, 0.5);
   }
 }
 
