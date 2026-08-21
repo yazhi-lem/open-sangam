@@ -28,7 +28,7 @@ DEFAULT_OPENROUTER_MODEL = "google/gemini-2.5-flash"
 DEFAULT_OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
 
 
-def get_model():
+def get_model(**kwargs):
     """Return the ADK-compatible model object selected by env vars.
 
     SANGAM_AGENT_BACKEND=openrouter (default) → LiteLlm against OpenRouter.
@@ -40,7 +40,7 @@ def get_model():
         from google.adk.models import Gemini
 
         model_name = os.getenv("SANGAM_AGENT_MODEL", "gemini-2.5-flash")
-        return Gemini(model=model_name)
+        return Gemini(model=model_name, **kwargs)
 
     if backend == "openrouter":
         # Read via getenv (not environ[...]) so importing this module — and
@@ -56,6 +56,7 @@ def get_model():
             model=f"openrouter/{model_name}",
             api_base=api_base,
             api_key=api_key,
+            **kwargs
         )
 
     raise ValueError(

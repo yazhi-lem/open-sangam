@@ -14,3 +14,12 @@ class Scenario(BaseModel):
     karu: KaruElements = Field(description="The regional elements that form the backdrop of the poem")
     dramaticSituation: str = Field(description="A concise summary of the dramatic context")
     evidenceLines: List[int] = Field(description="The specific line numbers that provide the strongest evidence for this extraction")
+
+class ImageResult(BaseModel):
+    prompt: str = Field(description="The prompt used to generate the image")
+    aspect_ratio: str = Field(description="The aspect ratio used")
+    image_data_uri: Optional[str] = Field(default=None, description="The generated image as a data URI")
+    disclaimer: str = Field(
+        default="AI-recreated imagery — not a historical depiction.",
+        description="Mandatory disclaimer for all generated images."
+    )
