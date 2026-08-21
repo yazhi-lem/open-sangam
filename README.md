@@ -2,6 +2,8 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
+See [NEXT_ACTION.md](./NEXT_ACTION.md) for the roadmap, **October 2026 Pilot**, and **December 2026 Launch** deliverables.
+
 Open Sangam transforms static, archaic web archives of Sangam-era poetry into a multi-layered learning experience — providing linguistic, cultural, and historical context. Think "Duolingo for Ancient Literature."
 
 ## Features
