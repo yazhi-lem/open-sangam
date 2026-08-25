@@ -27,6 +27,7 @@ from google.adk.events.event import Event
 class _DeterministicPainter(BaseAgent):
     name: str = "_paranar_painter"
     description: str = "Deterministic painter agent that directly calls the image generation tool."
+    tools: list = [generate_image]
 
     async def _run_async_impl(
         self, ctx: InvocationContext

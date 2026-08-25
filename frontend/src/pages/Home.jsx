@@ -58,8 +58,13 @@ export default function Home() {
                   Open Reader & Library →
                 </Button>
               </Link>
+              <Link to="/avai">
+                <Button size="lg" variant="secondary" icon="🏛️">
+                  Sangam Avai Swarm
+                </Button>
+              </Link>
               <Link to="/world">
-                <Button size="lg" variant="secondary" icon="🗺️">
+                <Button size="lg" variant="outline" icon="🗺️">
                   Enter Sangam World
                 </Button>
               </Link>
@@ -69,7 +74,7 @@ export default function Home() {
                 icon="🔍"
                 onClick={() => setCommandPaletteOpen(true)}
               >
-                Search Corpus (⌘K)
+                Search (⌘K)
               </Button>
             </div>
 
@@ -210,8 +215,11 @@ export default function Home() {
             <Link to="/book">
               <Button size="lg">Explore Library →</Button>
             </Link>
+            <Link to="/avai">
+              <Button size="lg" variant="secondary">Chat with Sangam Avai 🏛️</Button>
+            </Link>
             <Link to="/graph">
-              <Button size="lg" variant="secondary">View Connections Graph</Button>
+              <Button size="lg" variant="outline">View Connections Graph</Button>
             </Link>
           </div>
         </Card>

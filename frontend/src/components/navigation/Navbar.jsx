@@ -3,7 +3,7 @@
  */
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { House, BookOpen, Globe, Brain, Map, FileText } from 'lucide-react'
+import { House, BookOpen, Globe, Brain, Map, FileText, Users } from 'lucide-react'
 import ThemeToggle from '../ui/ThemeToggle'
 import useAppStore from '../../store/useAppStore'
 
@@ -14,12 +14,13 @@ export default function Navbar() {
   const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
 
   const links = [
-    { to: '/', end: true, label: 'முகப்பு', title: 'Home', Icon: House },
-    { to: '/book', label: 'நூலகம்', title: 'Library', Icon: BookOpen },
-    { to: '/world', label: 'சங்க உலகம்', title: 'Sangam World', Icon: Globe },
-    { to: '/knowledge', label: 'அறிவு', title: 'Knowledge', Icon: Brain },
-    { to: '/graph', label: 'வரைபடம்', title: 'Graph', Icon: Map },
-    { to: '/articles', label: 'கட்டுரைகள்', title: 'Articles', Icon: FileText },
+    { to: '/', end: true, labelTa: 'முகப்பு', labelEn: 'Home', Icon: House },
+    { to: '/book', labelTa: 'நூலகம்', labelEn: 'Library', Icon: BookOpen },
+    { to: '/avai', labelTa: 'சங்க அவை', labelEn: 'Avai', Icon: Users },
+    { to: '/world', labelTa: 'சங்க உலகம்', labelEn: 'Sangam World', Icon: Globe },
+    { to: '/knowledge', labelTa: 'அறிவு', labelEn: 'Knowledge', Icon: Brain },
+    { to: '/graph', labelTa: 'வரைபடம்', labelEn: 'Graph', Icon: Map },
+    { to: '/articles', labelTa: 'கட்டுரைகள்', labelEn: 'Articles', Icon: FileText },
   ]
 
   const linkClass = ({ isActive }) =>
@@ -31,13 +32,12 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-page/80 backdrop-blur-md transition-colors">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <nav className="w-full px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         {/* Brand logo */}
         <Link to="/" className="flex items-center gap-2 text-primary font-bold tracking-tight text-lg focus-ring rounded-lg px-1">
           <span className="text-2xl" aria-hidden="true">🏛️</span>
           <div className="flex flex-col leading-none">
-            <span className="text-primary font-semibold">Open Sangam</span>
-            <span className="tamil text-[10px] text-accent font-medium tracking-wider">திறந்த சங்கம்</span>
+            <span className="text-primary font-semibold tamil">தமிழ் சங்கம் (open-sangam/ta)</span>
           </div>
         </Link>
 
@@ -47,7 +47,6 @@ export default function Navbar() {
             <NavLink key={l.to} to={l.to} end={l.end} className={linkClass}>
               <l.Icon {...NAV_ICON_PROPS} className="shrink-0" />
               <span className="tamil text-sm">{l.labelTa}</span>
-              <span className="text-[11px] text-faint font-normal">• {l.labelEn}</span>
             </NavLink>
           ))}
         </div>
@@ -59,13 +58,13 @@ export default function Navbar() {
             type="button"
             onClick={() => setCommandPaletteOpen(true)}
             className="flex items-center gap-2 px-3 py-1.5 rounded-xl border border-line bg-surface-alt/60 text-muted hover:text-primary hover:border-line-strong transition-all focus-ring text-xs"
-            aria-label="Open command palette search"
+            aria-label="தேடல் பலகையைத் திறக்க"
           >
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <circle cx="11" cy="11" r="8" />
               <path d="M21 21l-4.35-4.35" />
             </svg>
-            <span className="hidden sm:inline font-medium">Search corpus...</span>
+            <span className="hidden sm:inline font-medium">சங்க இலக்கியத் தேடல்...</span>
             <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[10px] font-mono text-faint bg-surface border border-line rounded">
               ⌘K
             </kbd>
@@ -78,7 +77,7 @@ export default function Navbar() {
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden p-2 rounded-xl text-muted hover:text-primary hover:bg-surface-alt focus-ring transition-colors"
-            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-label={mobileOpen ? 'பட்டியலை மூடுக' : 'பட்டியலைத் திறக்க'}
             aria-expanded={mobileOpen}
           >
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2">
@@ -105,7 +104,6 @@ export default function Navbar() {
             >
               <l.Icon {...NAV_ICON_PROPS} className="shrink-0" />
               <span className="tamil text-base font-semibold">{l.labelTa}</span>
-              <span className="text-xs text-faint ml-2">({l.labelEn})</span>
             </NavLink>
           ))}
         </div>

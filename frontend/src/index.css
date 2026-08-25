@@ -74,6 +74,7 @@
 }
 
 html {
+  font-size: 1.25rem; /* 25% increase from default 16px */
   overflow-x: hidden;
   scroll-behavior: smooth;
 }

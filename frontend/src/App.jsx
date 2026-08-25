@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/navigation/Navbar'
 import Footer from './components/navigation/Footer'
+import ScrollToTop from './components/navigation/ScrollToTop'
 import CommandPalette from './components/search/CommandPalette'
 import BackgroundScene from './components/background/BackgroundScene'
 import Home from './pages/Home'
@@ -10,6 +11,7 @@ import Knowledge from './pages/Knowledge'
 import GraphExplorer from './pages/GraphExplorer'
 import ArticlesList from './pages/ArticlesList'
 import ArticleReader from './pages/ArticleReader'
+import Avai from './pages/Avai'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -23,6 +25,7 @@ export default function App() {
         BackgroundScene renders nothing.
       */}
       <div className="relative isolate min-h-screen flex flex-col bg-page text-primary selection:bg-accent/20 selection:text-accent">
+        <ScrollToTop />
         <BackgroundScene />
         <div className="relative z-10 min-h-screen flex flex-col">
           <Navbar />
@@ -32,6 +35,8 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
               <Route path="/reader/:poemId?" element={<Navigate to="/book" replace />} />
+              <Route path="/avai" element={<Avai />} />
+              <Route path="/avai/:agentId" element={<Avai />} />
               <Route path="/world" element={<SangamWorldPage />} />
               <Route path="/knowledge" element={<Knowledge />} />
               <Route path="/graph" element={<GraphExplorer />} />

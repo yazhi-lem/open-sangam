@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 # are accepted now so callers (e.g. chat.yazhi.dev) can code against the full
 # contract ahead of the M2 poet swarm landing; requesting one returns 501
 # until then. See docs/api/avai-ask-prd.md §Workflows.
-Workflow = Literal["qa", "search", "reimagine", "scenario", "imagery"]
+Workflow = Literal["qa", "search", "reimagine", "scenario", "imagery", "general"]
 
 
 class AskContext(BaseModel):
@@ -30,7 +30,11 @@ class AskContext(BaseModel):
 
 class AskRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=2000)
-    workflow: Workflow = "qa"
+    workflow: Optional[Workflow] = "qa"
+    poet: Optional[str] = Field(
+        default=None,
+        description="Direct target poet: nakkirar, avvaiyar, kapilar, tholkappiyar, paranar, or swarm",
+    )
     session_id: Optional[str] = Field(
         default=None,
         description="Reuse a prior response's session_id to continue that conversation.",
