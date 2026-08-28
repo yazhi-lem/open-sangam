@@ -169,7 +169,12 @@ function Library() {
                   No poems matching "{searchQuery}" in this collection.
                 </div>
               ) : (
-                <RevealGroup className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" amount={0.08}>
+                <RevealGroup
+                  className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${
+                    key === '10paddu' ? 'lg:grid-cols-3' : 'lg:grid-cols-4'
+                  }`}
+                  amount={0.08}
+                >
                   {poems.map((poem) => (
                     <PoemCard key={poem.id} poem={poem} />
                   ))}
