@@ -64,7 +64,7 @@ _POET_AGENTS = {
 }
 
 _RUNNERS = {
-    name: Runner(app_name="poets", agent=agent, session_service=_session_service)
+    name: Runner(app_name=sessions.APP_NAME, agent=agent, session_service=_session_service)
     for name, agent in _POET_AGENTS.items()
 }
 _runner = _RUNNERS["avvaiyar"]
