@@ -69,7 +69,7 @@ export default function Home() {
         <Reveal delay={0.3} duration={0.6}>
           <div className="space-y-4 pt-2">
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Link to="/avai" className="glitter-rim rounded-xl">
+              <Link to="/avai">
                 <Button size="lg" variant="primary" icon="🏛️">
                   Try Sangam Avai AI
                 </Button>
