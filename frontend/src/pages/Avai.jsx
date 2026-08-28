@@ -568,7 +568,7 @@ export default function Avai() {
                 <Database size={13} className="text-accent" />
                 <span>சான்றாதாரத் தரவுத்தளம்</span>
               </span>
-              <span className="text-[10px] font-mono text-faint">2,032 பாக்கள்</span>
+              <span className="text-[10px] font-mono text-faint">2,489 பாக்கள்</span>
             </div>
 
             <div className="space-y-1.5 text-[11px] text-muted leading-snug">
@@ -582,7 +582,7 @@ export default function Avai() {
               <div className="flex items-start gap-1.5">
                 <Network size={12} className="text-accent shrink-0 mt-0.5" />
                 <p>
-                  <strong className="text-primary font-semibold">அறிவு வரைபடம் (Knowledge Graph):</strong> 106 முப்பொருள் கணுக்கள், 283 திணை-கருப்பொருள் தொடர்புகள்.
+                  <strong className="text-primary font-semibold">அறிவு வரைபடம் (Knowledge Graph):</strong> 109 முப்பொருள் கணுக்கள், 292 திணை-கருப்பொருள் தொடர்புகள்.
                 </p>
               </div>
 
