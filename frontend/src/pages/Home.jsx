@@ -3,7 +3,6 @@ import Button from '../components/ui/Button'
 import Badge from '../components/ui/Badge'
 import Card from '../components/ui/Card'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
-import useAppStore from '../store/useAppStore'
 
 const TINAI_HIGHLIGHTS = [
   { id: 'kurinji', tamil: 'குறிஞ்சி', english: 'Mountains', mood: 'Union & Passion', icon: '🏔️', variant: 'kurinji' },
@@ -34,8 +33,6 @@ const STATS = [
 ]
 
 export default function Home() {
-  const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
-
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-24">
       {/* Hero Section */}
@@ -62,33 +59,21 @@ export default function Home() {
           </p>
         </Reveal>
 
+        <Reveal delay={0.25} duration={0.6}>
+          <p className="tamil text-lg sm:text-xl text-accent font-semibold max-w-2xl mx-auto leading-relaxed">
+            எங்கள் புலவர்களுடன் உரையாடுங்கள் — சங்க அவை உங்களை அழைக்கிறது! ஒன்றாக தமிழை மேலும் வளர்ப்போம்.
+          </p>
+        </Reveal>
+
         {/* Hero CTAs & Quick Search Input */}
         <Reveal delay={0.3} duration={0.6}>
           <div className="space-y-4 pt-2">
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Link to="/book">
-                <Button size="lg" icon="📖">
-                  Open Reader & Library →
-                </Button>
-              </Link>
               <Link to="/avai" className="glitter-rim rounded-xl">
                 <Button size="lg" variant="primary" icon="🏛️">
                   Try Sangam Avai AI
                 </Button>
               </Link>
-              <Link to="/world">
-                <Button size="lg" variant="outline" icon="🗺️">
-                  Enter Sangam World
-                </Button>
-              </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                icon="🔍"
-                onClick={() => setCommandPaletteOpen(true)}
-              >
-                Search (⌘K)
-              </Button>
             </div>
 
             <p className="text-xs text-faint">
