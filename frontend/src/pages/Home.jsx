@@ -70,8 +70,8 @@ export default function Home() {
           <div className="space-y-4 pt-2">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link to="/avai">
-                <Button size="lg" variant="primary" icon="🏛️" className="glow-breathe !text-white">
-                  Try Sangam Avai AI
+                <Button size="lg" variant="primary" icon="🏛️" className="glow-breathe tamil font-bold">
+                  புலவர்களுடன் பேசுங்கள்
                 </Button>
               </Link>
             </div>
