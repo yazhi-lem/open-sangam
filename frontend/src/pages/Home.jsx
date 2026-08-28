@@ -27,8 +27,8 @@ const PATTUPPATTU_IDYLLS = [
 
 const STATS = [
   { value: '18', label: 'Classical Collections', sub: '8 Anthologies & 10 Idylls' },
-  { value: '2,381', label: 'Classical Poems', sub: 'Preserved in digital JSON' },
-  { value: '473', label: 'Sangam Poets', sub: 'Men & women of antiquity' },
+  { value: '2,489', label: 'Classical Poems', sub: 'Preserved in digital JSON' },
+  { value: '519', label: 'Sangam Poets', sub: 'Men & women of antiquity' },
   { value: '2,500+', label: 'Years of Tradition', sub: 'c. 500 BCE – 300 CE' },
 ]
 

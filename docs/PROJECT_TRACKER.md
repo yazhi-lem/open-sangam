@@ -12,9 +12,9 @@
 
 | Workstream | Status | Where it stands | Next step |
 |---|---|---|---|
-| **A · Corpus & data pipeline** | 🔄 | All **18 poems** scraped, normalized & in the Library; **2,552** verse records; Urai 99%. English pipeline live (OpenRouter/Gemini Flash, phased, nightly) | Drive Phase 1 English to 100% and review; colophon metadata (Phase C) |
+| **A · Corpus & data pipeline** | 🔄 | All **18 poems** scraped, normalized & in the Library; **2,489** verse records; Urai 99%. English pipeline live (OpenRouter/Gemini Flash, phased, nightly) | Drive Phase 1 English to 100% and review; colophon metadata (Phase C) |
 | **B · Reader web app** | 🔄 | Reader, Knowledge, Graph, Sangam World (3D), Articles, Command Palette all shipped | Audio wiring, a11y & layout polish, 3D→real-data |
-| **C · Knowledge graph & entities** | 🔄 | Graph (106 nodes / 283 edges) + `/graph` explorer live (Phases A–B) | Colophon → poets/patrons (Phase C), glossary cross-links (Phase E) |
+| **C · Knowledge graph & entities** | 🔄 | Graph (109 nodes / 292 edges) + `/graph` explorer live (Phases A–B) | Colophon → poets/patrons (Phase C), glossary cross-links (Phase E) |
 | **D · Sangam Avai agent swarm** | 🔄 | M1 scaffold live: 1 of 5 poets, corpus/graph/tiṇai tools, 12 tests pass | Finish M1 evalset; build M2 poet swarm |
 | **E · Backend, infra & CI/CD** | 🔄 | Cloud Functions (`/translate`, `/analyze-word`), Cloudflare Pages deploy, frontend CI, nightly translation job | Agent deploy path; frontend/functions test coverage; resolve storage split |
 
@@ -33,8 +33,8 @@ Pipeline: **Scrape → Normalize → Library → English → Verified**
 
 ```
 Poems in corpus        18   ████████████████  all scraped, normalized & readable
-Verse records       2,552   ████████████████  normalized (Verse → Line → Word)
-Modern Tamil (Urai) 2,529   ███████████████░  99% carry source prose
+Verse records       2,489   ████████████████  normalized (Verse → Line → Word)
+Modern Tamil (Urai) 2,469   ███████████████░  99% carry source prose
 English                 0   ░░░░░░░░░░░░░░░░  Phase 2 — pipeline live, drafting nightly
 Scholar-verified        0   ░░░░░░░░░░░░░░░░  Phase 4 — not started
 ```
@@ -88,7 +88,7 @@ single `OPENROUTER_API_KEY` serves both. It is phased, resumable, and bounded:
 | சிறுபாணாற்றுப்படை | Sirupanatrupadai | 25 | ✅ | ✅ | ✅ |
 | பெரும்பாணாற்றுப்படை | Perumpanatrupadai | 41 | ✅ | ✅ | ✅ |
 | மலைபடுகடாம் | Malaipadukadam | 45 | ✅ | ✅ | ✅ |
-| மதுரைக்காஞ்சி | Maduraikanchi | 126 | ✅ | ✅ | ✅ |
+| மதுரைக்காஞ்சி | Maduraikanchi | 63 | ✅ | ✅ | ✅ |
 | குறிஞ்சிப்பாட்டு | Kurinjipattu | 25 | ✅ | ✅ | ✅ |
 | பட்டினப்பாலை | Pattinappalai | 30 | ✅ | ✅ | ✅ |
 | முல்லைப்பாட்டு | Mullaippattu | 18 | ✅ | ✅ | ✅ |

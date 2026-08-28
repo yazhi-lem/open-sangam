@@ -1250,7 +1250,7 @@
   ]
  },
  "palai": {
-  "verseCount": 432,
+  "verseCount": 495,
   "topPoets": [
    {
     "poet": "ஓதலாந்தையார்",
@@ -1303,6 +1303,10 @@
     "count": 92
    },
    {
+    "poem": "maduraikanchi",
+    "count": 63
+   },
+   {
     "poem": "kalithokai",
     "count": 35
    }
@@ -1314,7 +1318,7 @@
      "cat": "fauna",
      "ta": "புலி",
      "en": "Tiger",
-     "count": 30,
+     "count": 32,
      "samples": [
       {
        "id": "ainkurunooru_316",
@@ -1416,7 +1420,7 @@
      "cat": "landscape",
      "ta": "சுரம்",
      "en": "Desolate Road / Wild Path",
-     "count": 76,
+     "count": 77,
      "samples": [
       {
        "id": "ainkurunooru_301",
@@ -1441,7 +1445,7 @@
      "cat": "people",
      "ta": "மறவர்",
      "en": "Maravar",
-     "count": 20,
+     "count": 23,
      "samples": [
       {
        "id": "ainkurunooru_352",

@@ -51,14 +51,14 @@
    "label": "Pālai · Wasteland",
    "type": "tinai",
    "tinai": "palai",
-   "weight": 432
+   "weight": 495
   },
   {
    "id": "tinai:unknown",
    "label": "Unclassified",
    "type": "tinai",
    "tinai": "unknown",
-   "weight": 843
+   "weight": 780
   },
   {
    "id": "poem:ainkurunooru",
@@ -672,7 +672,7 @@
    "label": "சுரம் · Desolate Road / Wild Path",
    "type": "karu",
    "cat": "landscape",
-   "weight": 76
+   "weight": 77
   },
   {
    "id": "karu:palai:கழுகு",
@@ -693,14 +693,14 @@
    "label": "புலி · Tiger",
    "type": "karu",
    "cat": "fauna",
-   "weight": 30
+   "weight": 32
   },
   {
    "id": "karu:palai:மறவர்",
    "label": "மறவர் · Maravar",
    "type": "karu",
    "cat": "people",
-   "weight": 20
+   "weight": 23
   },
   {
    "id": "karu:palai:எயினர்",
@@ -847,7 +847,7 @@
   },
   {
    "source": "poem:maduraikanchi",
-   "target": "tinai:unknown",
+   "target": "tinai:palai",
    "rel": "HAS_TINAI",
    "weight": 63
   },
@@ -2470,7 +2470,7 @@
    "source": "tinai:palai",
    "target": "karu:palai:சுரம்",
    "rel": "ATTESTS",
-   "weight": 76,
+   "weight": 77,
    "cat": "landscape"
   },
   {
@@ -2491,14 +2491,14 @@
    "source": "tinai:palai",
    "target": "karu:palai:புலி",
    "rel": "ATTESTS",
-   "weight": 30,
+   "weight": 32,
    "cat": "fauna"
   },
   {
    "source": "tinai:palai",
    "target": "karu:palai:மறவர்",
    "rel": "ATTESTS",
-   "weight": 20,
+   "weight": 23,
    "cat": "people"
   },
   {

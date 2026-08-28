@@ -169,7 +169,7 @@ corpus + knowledge-entity roadmap.
 
 | # | Phase | Status |
 |---|-------|--------|
-| 1 | Data scraping & normalization | ✅ Complete — 18 poems, 2,552 verses |
+| 1 | Data scraping & normalization | ✅ Complete — 18 poems, 2,489 verses |
 | 2 | AI English translation + human verification | 🔄 In progress — pipeline live, drafting nightly |
 | 3 | Library of Sangam — MVP reader live | 🔄 In progress |
 | 4 | Community contribution layer | ⬜ Pending |
@@ -207,7 +207,7 @@ Poem                              Sections  Scrape    Normalize  Library   Engli
 சிறுபாணாற்றுப்படை  Sirupanam         25    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 பெரும்பாணாற்றுப்படை Perumapanam      41    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 மலைபடுகடாம்        Malaipadukadam    45    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-மதுரைக்காஞ்சி      Maduraikanchi    126    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
+மதுரைக்காஞ்சி      Maduraikanchi     63    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 குறிஞ்சிப்பாட்டு   Kurinjipattu      25    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 பட்டினப்பாலை       Pattinappalai     30    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 முல்லைப்பாட்டு     Mullaippattu      18    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
@@ -218,8 +218,8 @@ Poem                              Sections  Scrape    Normalize  Library   Engli
 
 ```
 Total poems          18  ████████████████  all scraped, normalized & in the Library
-Total records     2,552  ████████████████  fully normalized (Verse → Line → Word)
-Tamil prose (Urai) 2,529 ███████████████░  99% carry source prose
+Total records     2,489  ████████████████  fully normalized (Verse → Line → Word)
+Tamil prose (Urai) 2,469 ███████████████░  99% carry source prose
 English translation     0 ░░░░░░░░░░░░░░░░  Phase 2 — pipeline live, drafting nightly
 Scholar-verified        0 ░░░░░░░░░░░░░░░░  Phase 4 — not started
 ```
