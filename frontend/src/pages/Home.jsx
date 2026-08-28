@@ -13,6 +13,19 @@ const TINAI_HIGHLIGHTS = [
   { id: 'palai', tamil: 'பாலை', english: 'Wasteland', mood: 'Separation & Journey', icon: '🏜️', variant: 'palai' },
 ]
 
+const PATTUPPATTU_IDYLLS = [
+  { id: 'thirumurugatrupadai', tamil: 'திருமுருகாற்றுப்படை', english: 'Thirumurugatrupadai', desc: 'Hymn to Murugan', icon: '🙏' },
+  { id: 'porunaratrupadai', tamil: 'பொருநராற்றுப்படை', english: 'Porunaratruppadai', desc: 'Guide to a Bard', icon: '🎶' },
+  { id: 'sirupanatrupadai', tamil: 'சிறுபாணாற்றுப்படை', english: 'Sirupanarruppadai', desc: 'Guide to a Lesser Bard', icon: '🎻' },
+  { id: 'perumpanatrupadai', tamil: 'பெரும்பாணாற்றுப்படை', english: 'Perumpanarruppadai', desc: 'Guide to a Greater Bard', icon: '🎺' },
+  { id: 'mullaippattu', tamil: 'முல்லைப்பாட்டு', english: 'Mullaippattu', desc: 'Forest Song (Love)', icon: '🌲' },
+  { id: 'maduraikkanchi', tamil: 'மதுரைக்காஞ்சி', english: 'Maduraikkanchi', desc: 'Praise of Madurai', icon: '🏛️' },
+  { id: 'nedunalvadai', tamil: 'நெடுநல்வாடை', english: 'Nedunalvadai', desc: 'Long Good Winter (Love)', icon: '❄️' },
+  { id: 'kurinchippattu', tamil: 'குறிஞ்சிப்பாட்டு', english: 'Kurinchippattu', desc: 'Mountain Song (Love)', icon: '🌸' },
+  { id: 'pattinappalai', tamil: 'பட்டினப்பாலை', english: 'Pattinappalai', desc: 'Praise of Kaveripumpattinam', icon: '🚢' },
+  { id: 'malaipadukadam', tamil: 'மலைபடுகடாம்', english: 'Malaipatukatam', desc: 'Echo of the Mountain (Nature)', icon: '⛰️' },
+]
+
 const STATS = [
   { value: '18', label: 'Classical Collections', sub: '8 Anthologies & 10 Idylls' },
   { value: '2,381', label: 'Classical Poems', sub: 'Preserved in digital JSON' },
@@ -123,6 +136,38 @@ export default function Home() {
             </Card>
           </Reveal>
         ))}
+      </section>
+
+      {/* Pattuppattu - Ten Idylls Quick-Nav */}
+      <section className="space-y-8">
+        <div className="text-center space-y-2">
+          <Badge variant="outline" size="sm">Ten Idylls Collection</Badge>
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary">பத்துப்பாட்டு · Ten Idylls</h2>
+          <p className="text-muted text-sm max-w-xl mx-auto">
+            A collection of ten long poems, offering rich insights into Sangam life, nature, and kingship.
+          </p>
+        </div>
+        <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {PATTUPPATTU_IDYLLS.map((idyll) => (
+            <Link key={idyll.id} to={`/book/${idyll.id}`} className="group">
+              <Card variant="interactive" className="p-5 text-center space-y-3 h-full flex flex-col justify-between">
+                <div className="text-4xl transform group-hover:scale-110 transition-transform duration-200" aria-hidden="true">
+                  {idyll.icon}
+                </div>
+                <div>
+                  <Badge variant="default" size="sm" className="mb-2">
+                    {idyll.tamil}
+                  </Badge>
+                  <p className="text-sm font-semibold text-primary">{idyll.english}</p>
+                  <p className="text-xs text-faint mt-1">{idyll.desc}</p>
+                </div>
+                <span className="text-xs font-semibold text-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                  Read Idyll →
+                </span>
+              </Card>
+            </Link>
+          ))}
+        </RevealGroup>
       </section>
 
       {/* Tiṇai Landscapes Quick-Nav */}
