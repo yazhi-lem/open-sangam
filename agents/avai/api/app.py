@@ -8,7 +8,7 @@ import time
 import uuid
 from datetime import datetime, timezone
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -22,6 +22,7 @@ from ..poets.kapilar import kapilar_agent
 from ..poets.nakkirar import nakkirar_agent
 from ..poets.paranar import paranar_agent
 from ..poets.tholkappiyar import tholkappiyar_agent
+from ..store import artifacts, interaction_graph
 from ..swarm import root_agent
 from ..tools.corpus import get_verse
 from . import sessions
@@ -129,8 +130,51 @@ async def health() -> dict:
     return {"status": "ok"}
 
 
+@app.get("/avai/dataset/stats")
+async def dataset_stats() -> dict:
+    """Observability for the continuous enrichment loop: how big the agent
+    artifact dataset has grown, and how big the usage-driven interaction
+    graph layer is (see store/artifacts.py, store/interaction_graph.py)."""
+    growth = interaction_graph.snapshot()
+    return {
+        "artifact_count": artifacts.count_artifacts(),
+        "interaction_graph": {
+            "nodes": len(growth["nodes"]),
+            "edges": len(growth["edges"]),
+        },
+    }
+
+
+def _capture_artifact(
+    *,
+    session_id: str,
+    user_id: str,
+    workflow: str,
+    pulavar: str,
+    message: str,
+    response_text: str,
+    citations: list[Citation],
+    elapsed_ms: int,
+) -> None:
+    """Runs after the response is sent (see BackgroundTasks below) so dataset
+    persistence and graph growth never add latency to /avai/ask."""
+    citation_dicts = [c.model_dump() for c in citations]
+    artifacts.record_artifact(
+        session_id=session_id,
+        user_id=user_id,
+        workflow=workflow,
+        pulavar=pulavar,
+        message=message,
+        response_text=response_text,
+        citations=citation_dicts,
+        model=_MODEL_LABEL,
+        elapsed_ms=elapsed_ms,
+    )
+    interaction_graph.record_interaction(pulavar, citation_dicts)
+
+
 @app.post("/avai/ask", response_model=AskResponse)
-async def ask(request: AskRequest) -> AskResponse:
+async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResponse:
     target_pulavar = request.pulavar or request.poet
     if not target_pulavar:
         target_pulavar = _WORKFLOW_TO_PULAVAR.get(request.workflow or "qa", "avvaiyar")
@@ -166,14 +210,28 @@ async def ask(request: AskRequest) -> AskResponse:
 
     elapsed_ms = int((time.monotonic() - start) * 1000)
     effective_workflow = request.workflow or "qa"
+    response_text = final_text.strip()
+    citations = _extract_citations(final_text)
+
+    background_tasks.add_task(
+        _capture_artifact,
+        session_id=session_id,
+        user_id=user_id,
+        workflow=effective_workflow,
+        pulavar=target_pulavar,
+        message=request.message,
+        response_text=response_text,
+        citations=citations,
+        elapsed_ms=elapsed_ms,
+    )
 
     return AskResponse(
         session_id=session_id,
         workflow=effective_workflow,
         pulavar=target_pulavar,
         poet=target_pulavar,
-        response_text=final_text.strip(),
-        citations=_extract_citations(final_text),
+        response_text=response_text,
+        citations=citations,
         metadata=AskMetadata(
             model=_MODEL_LABEL,
             elapsed_ms=elapsed_ms,

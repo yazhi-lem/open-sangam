@@ -19,13 +19,23 @@ function AppContent() {
   const isAvaiPage = location.pathname.startsWith('/avai')
 
   return (
-    <div className="relative isolate h-screen overflow-hidden flex flex-col bg-page text-primary selection:bg-accent/20 selection:text-accent">
+    <div
+      className={`relative isolate flex flex-col bg-page text-primary selection:bg-accent/20 selection:text-accent ${
+        isAvaiPage ? 'h-screen overflow-hidden' : 'min-h-screen'
+      }`}
+    >
       <ScrollToTop />
       <BackgroundScene />
-      <div className="relative z-10 h-full flex flex-col flex-1 overflow-hidden">
+      <div
+        className={`relative z-10 flex flex-col flex-1 ${
+          isAvaiPage ? 'h-full overflow-hidden' : 'min-h-screen'
+        }`}
+      >
         <Navbar />
         <CommandPalette />
-        <main className="flex-1 min-h-0 h-0 overflow-hidden flex flex-col">
+        <main
+          className={`flex-1 flex flex-col ${isAvaiPage ? 'min-h-0 h-0 overflow-hidden' : ''}`}
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
