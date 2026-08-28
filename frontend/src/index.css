@@ -232,8 +232,14 @@ body {
   animation: shimmer 1.8s infinite;
   content: '';
 }
-/* Static gradient rim + soft glow, for the one hero CTA we want the eye
-   drawn to first (Try Avai). Wrap a single element; match its border-radius. */
+@keyframes glitter-breathe {
+  0%, 100% { opacity: 0.4; filter: blur(10px); }
+  50% { opacity: 0.75; filter: blur(16px); }
+}
+
+/* Static gradient rim + a slow breathing glow, for the one hero CTA we want
+   the eye drawn to first (Try Avai). Wrap a single element; match its
+   border-radius. */
 .glitter-rim {
   position: relative;
   isolation: isolate;
@@ -256,8 +262,14 @@ body {
 .glitter-rim::after {
   inset: -8px;
   z-index: -2;
-  filter: blur(12px);
-  opacity: 0.6;
+  animation: glitter-breathe 3.2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .glitter-rim::after {
+    animation: none;
+    opacity: 0.6;
+    filter: blur(12px);
+  }
 }
 
 .dark .skeleton-shimmer::after {
