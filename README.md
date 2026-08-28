@@ -110,6 +110,17 @@ cd backend/python
 | `--concurrency N` | parallel requests (default 4) |
 | `--write-state` | rebuild the state metadata from disk without translating |
 
+`--lang` also accepts `urai` to draft the Modern Tamil prose field the same
+way (currently 99% covered — a handful of stragglers). To run both languages
+in one command, use the wrapper instead of remembering both invocations:
+
+```bash
+# Both languages, same flags forwarded to each pass (urai first, then english)
+.venv/bin/python -m ai.translate_all --status
+.venv/bin/python -m ai.translate_all --limit 200
+.venv/bin/python -m ai.translate_all --only urai --limit 50   # just one language
+```
+
 **Phases** run smallest-first, so quality problems surface early. A run only
 draws from the current phase, and the phase advances by itself once every poem
 in it is fully drafted:
