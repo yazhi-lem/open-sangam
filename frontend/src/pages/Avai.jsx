@@ -59,7 +59,7 @@ export default function Avai() {
     return initial
   })
 
-  const { messages, title: chatTitle } = allChats[effectiveAgentId] || { messages: [], title: '' }
+  const { messages = [], title: chatTitle = '' } = allChats[effectiveAgentId] || {}
 
   const [inputMessage, setInputMessage] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -310,7 +310,7 @@ export default function Avai() {
             </button>
           </div>
 
-          <div className="space-y-2">
+          <div className="grid grid-cols-3 gap-2">
             {PULAVAR_AGENTS.map((agent) => {
               const isActive = agent.id === effectiveAgentId
               return (
@@ -318,16 +318,18 @@ export default function Avai() {
                   key={agent.id}
                   type="button"
                   onClick={() => handleSelectAgent(agent.id)}
-                  className={`w-full text-left p-2 rounded-xl border transition-all duration-200 flex items-center gap-2 focus-ring ${
+                  className={`relative w-full aspect-square text-left p-2 rounded-xl border transition-all duration-200 flex flex-col items-center justify-center focus-ring group ${
                     isActive
-                      ? 'bg-surface border-accent/60 shadow-md ring-1 ring-accent/30'
-                      : 'bg-surface/50 border-line hover:bg-surface hover:border-line-strong'
+                      ? 'bg-accent/10 border-accent font-semibold text-primary'
+                      : 'bg-surface-alt/40 border-line text-muted hover:bg-surface hover:border-line-strong'
                   }`}
                 >
-                  <div className="shrink-0 w-8 h-8 rounded-lg bg-surface-alt/70 flex items-center justify-center border border-line text-lg tamil font-bold">
-                    {agent.nameTa[0]}
-                  </div>
-                  <p className="tamil text-sm font-bold text-primary truncate">{agent.nameTa}</p>
+                  <span className="text-4xl leading-none transition-transform duration-220 group-hover:scale-110">
+                    {agent.avatarEmoji}
+                  </span>
+                  <p className="tamil text-sm font-bold text-primary mt-2 absolute bottom-2 group-hover:text-accent">
+                    {agent.nameTa}
+                  </p>
                 </button>
               )
             })}
@@ -358,20 +360,24 @@ export default function Avai() {
                 முடிந்தது
               </button>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
+            <div className="grid grid-cols-2 gap-2 pt-2">
               {PULAVAR_AGENTS.map((agent) => (
                 <button
                   key={agent.id}
                   type="button"
                   onClick={() => handleSelectAgent(agent.id)}
-                  className={`p-2.5 rounded-xl border text-left flex items-center gap-2.5 transition-all ${
+                  className={`relative w-full aspect-square text-left p-2 rounded-xl border flex flex-col items-center justify-center transition-all ${
                     agent.id === effectiveAgentId
                       ? 'bg-accent/10 border-accent font-semibold text-primary'
                       : 'bg-surface-alt/40 border-line text-muted'
                   }`}
                 >
-                  <span className="shrink-0 w-8 h-8 rounded-full bg-surface-alt/70 flex items-center justify-center border border-line text-lg tamil font-bold">{agent.nameTa[0]}</span>
-                  <p className="tamil text-xs font-bold text-primary truncate">{agent.nameTa}</p>
+                  <span className="text-4xl leading-none">
+                    {agent.avatarEmoji}
+                  </span>
+                  <p className="tamil text-sm font-bold text-primary mt-2 absolute bottom-2">
+                    {agent.nameTa}
+                  </p>
                 </button>
               ))}
             </div>
