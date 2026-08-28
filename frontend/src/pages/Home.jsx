@@ -30,7 +30,7 @@ const STATS = [
   { value: '18', label: 'Classical Collections', sub: '8 Anthologies & 10 Idylls' },
   { value: '2,381', label: 'Classical Poems', sub: 'Preserved in digital JSON' },
   { value: '473', label: 'Sangam Poets', sub: 'Men & women of antiquity' },
-  { value: '2,000+', label: 'Years of Tradition', sub: 'c. 300 BCE – 300 CE' },
+  { value: '2,500+', label: 'Years of Tradition', sub: 'c. 500 BCE – 300 CE' },
 ]
 
 export default function Home() {
@@ -48,7 +48,7 @@ export default function Home() {
 
         <Reveal delay={0.1} duration={0.6}>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-primary leading-[1.1]">
-            Explore 2,000 Years of<br />
+            Explore 2,500 Years of<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 dark:from-amber-400 dark:via-amber-300 dark:to-amber-500">
               Classical Tamil Poetry
             </span>
@@ -71,9 +71,9 @@ export default function Home() {
                   Open Reader & Library →
                 </Button>
               </Link>
-              <Link to="/avai">
-                <Button size="lg" variant="secondary" icon="🏛️">
-                  Sangam Avai Swarm
+              <Link to="/avai" className="glitter-rim rounded-xl">
+                <Button size="lg" variant="primary" icon="🏛️">
+                  Try Sangam Avai AI
                 </Button>
               </Link>
               <Link to="/world">
@@ -221,7 +221,7 @@ export default function Home() {
             {
               icon: '🔍',
               title: 'Click-to-Define Etymology',
-              desc: 'Tap any word in a verse to unveil its root verb, grammatical class (Urichol), and 2,000-year-old etymology.',
+              desc: 'Tap any word in a verse to unveil its root verb, grammatical class (Urichol), and 2,500-year-old etymology.',
               badge: 'Grammar AI',
             },
             {

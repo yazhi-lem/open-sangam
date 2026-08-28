@@ -79,6 +79,48 @@ function PoemCard({ poem }) {
   return <div className={cardClassName}>{content}</div>
 }
 
+// ── Coming Soon (post-Sangam works not yet in the corpus) ──────────────────
+
+const COMING_SOON_WORKS = [
+  {
+    ta: 'திருக்குறள்',
+    en: 'Thirukkural',
+    desc: "Tiruvalluvar's 1,330-couplet ethical masterwork on virtue, wealth, and love.",
+    count: 1330,
+    unit: 'couplets',
+  },
+  {
+    ta: 'பதினெண்கீழ்க்கணக்கு',
+    en: 'Pathinenkeezhkanakku',
+    desc: 'The Eighteen Minor Works — post-Sangam didactic and gnomic poetry collections.',
+    count: 18,
+    unit: 'works',
+  },
+]
+
+function ComingSoonCard({ work }) {
+  return (
+    <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-dashed border-line bg-surface-alt/40 p-5 opacity-85">
+      <div className="flex items-center justify-between gap-2 mb-3">
+        <Badge variant="outline" size="sm">Roadmap</Badge>
+        <span className="w-2 h-2 rounded-full bg-line-strong" title="Coming soon" />
+      </div>
+      <h3 className="tamil text-lg sm:text-xl font-bold leading-snug mb-1 shrink-0 line-clamp-2 break-words [overflow-wrap:anywhere] min-h-[2.6em] text-muted">
+        {work.ta}
+      </h3>
+      <p className="text-sm mb-4 shrink-0 leading-relaxed break-words [overflow-wrap:anywhere] line-clamp-2 min-h-[2.2em] text-faint">
+        {work.en} — {work.desc}
+      </p>
+      <div className="mt-auto pt-3 border-t border-line/60 flex items-center justify-between text-xs font-mono">
+        <span className="text-faint">
+          {work.count.toLocaleString()} {work.unit}
+        </span>
+        <span className="text-faint font-semibold">Coming soon</span>
+      </div>
+    </div>
+  )
+}
+
 function Library() {
   const [searchQuery, setSearchQuery] = useState('')
   const [collectionFilter, setCollectionFilter] = useState('all') // 'all' | '8thokai' | '10paddu'
@@ -113,7 +155,7 @@ function Library() {
             Library of Sangam Classical Works
           </p>
           <p className="text-sm text-muted max-w-2xl leading-relaxed pt-1">
-            Classical Tamil literature from the Sangam period (c. 300 BCE – 300 CE). Original verses, modern commentary (Urai), and English translations.
+            Classical Tamil literature from the Sangam period (c. 500 BCE – 300 CE). Original verses, modern commentary (Urai), and English translations.
           </p>
         </div>
 
@@ -183,6 +225,26 @@ function Library() {
             </div>
           </ScrollTilt>
         ))}
+
+        {collectionFilter === 'all' && !searchQuery.trim() && (
+          <ScrollTilt intensity={6}>
+            <div className="space-y-6">
+              <div className="flex items-baseline gap-3 pb-3 border-b border-line-strong">
+                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary">பதினெண்கீழ்க்கணக்கு</h2>
+                <span className="text-muted text-sm sm:text-base font-medium">Coming Soon</span>
+                <span className="ml-auto text-xs font-mono text-faint">{COMING_SOON_WORKS.length} planned</span>
+              </div>
+              <p className="text-sm text-muted max-w-2xl leading-relaxed">
+                Post-Sangam didactic works next on the roadmap — outside the Ettuthokai / Pattuppattu corpus this library currently reads from.
+              </p>
+              <RevealGroup className="grid grid-cols-1 sm:grid-cols-2 gap-4" amount={0.08}>
+                {COMING_SOON_WORKS.map((work) => (
+                  <ComingSoonCard key={work.en} work={work} />
+                ))}
+              </RevealGroup>
+            </div>
+          </ScrollTilt>
+        )}
       </div>
     </div>
   )

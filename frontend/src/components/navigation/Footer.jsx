@@ -24,7 +24,7 @@ export default function Footer() {
             </Link>
             <p className="tamil text-accent font-medium text-base">தமிழ் தமிழரின் உயிர்</p>
             <p className="text-muted text-xs leading-relaxed max-w-md">
-              An open digital architecture for 2,000-year-old classical Tamil poetry. Explore layered interlinear translations, click-to-define root etymologies, and 3D Tiṇai landscapes.
+              An open digital architecture for 2,500-year-old classical Tamil poetry. Explore layered interlinear translations, click-to-define root etymologies, and 3D Tiṇai landscapes.
             </p>
           </div>
 
