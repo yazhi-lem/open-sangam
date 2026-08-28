@@ -242,27 +242,6 @@ body {
 .glow-breathe {
   animation: glow-breathe 3.2s ease-in-out infinite;
 }
-@keyframes fire-rage {
-  0%, 100% { background-position: 0% 50%; box-shadow: 0 0 22px 4px rgba(255, 69, 0, 0.65), 0 0 46px 12px rgba(255, 140, 0, 0.4); }
-  50% { background-position: 100% 50%; box-shadow: 0 0 32px 8px rgba(255, 30, 0, 0.8), 0 0 60px 18px rgba(255, 170, 0, 0.5); }
-}
-
-/* Fiery hover state — an animated flame-color gradient + a hot glow.
-   !important because it needs to win over Tailwind's own bg/shadow
-   utilities (equal-specificity :hover rules, unpredictable source order). */
-.fire-hover:hover {
-  background: linear-gradient(90deg, #7a0c00, #ff2d00, #ff8c00, #ffd000, #ff2d00, #7a0c00) !important;
-  background-size: 300% 300% !important;
-  animation: fire-rage 0.9s ease-in-out infinite !important;
-}
-@media (prefers-reduced-motion: reduce) {
-  .fire-hover:hover {
-    animation: none !important;
-    background: linear-gradient(90deg, #ff2d00, #ff8c00) !important;
-    box-shadow: 0 0 24px 6px rgba(255, 69, 0, 0.6);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .glow-breathe {
     animation: none;
