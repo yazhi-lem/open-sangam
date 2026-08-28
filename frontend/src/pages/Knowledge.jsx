@@ -29,7 +29,14 @@ function KnowledgeCard({ item }) {
         ) : (
           <span />
         )}
-        {item.to && <span className="text-xs text-accent font-semibold hover:underline">Explore →</span>}
+        <div className="flex items-center gap-2">
+          {item.graphFocus && (
+            <Link to={`/graph?focus=${item.graphFocus}`} className="text-xs text-faint font-semibold hover:underline">
+              View in Graph →
+            </Link>
+          )}
+          {item.to && <span className="text-xs text-accent font-semibold hover:underline">Explore →</span>}
+        </div>
       </div>
     </div>
   )
