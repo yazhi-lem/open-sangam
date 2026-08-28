@@ -61,7 +61,7 @@ export default function Home() {
 
         <Reveal delay={0.25} duration={0.6}>
           <p className="tamil text-lg sm:text-xl text-accent font-semibold max-w-2xl mx-auto leading-relaxed">
-            எங்கள் புலவர்களுடன் உரையாடுங்கள் — சங்க அவை உங்களை அழைக்கிறது! ஒன்றாக தமிழை மேலும் வளர்ப்போம்.
+            🙏 வணக்கம்! எங்கள் புலவர்களுடன் உரையாடுங்கள் — சங்க அவை உங்களை அழைக்கிறது! ஒன்றாக தமிழை மேலும் வளர்ப்போம்.
           </p>
         </Reveal>
 
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="space-y-4 pt-2">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link to="/avai">
-                <Button size="lg" variant="primary" icon="🏛️">
+                <Button size="lg" variant="primary" icon="🏛️" className="glow-breathe">
                   Try Sangam Avai AI
                 </Button>
               </Link>

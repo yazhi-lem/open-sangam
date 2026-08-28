@@ -232,6 +232,23 @@ body {
   animation: shimmer 1.8s infinite;
   content: '';
 }
+@keyframes glow-breathe {
+  0%, 100% { box-shadow: 0 0 10px 1px color-mix(in srgb, var(--accent) 35%, transparent); }
+  50% { box-shadow: 0 0 26px 6px color-mix(in srgb, var(--accent) 55%, transparent); }
+}
+
+/* Slow pulsing glow — no border/rim, just a breathing shadow. Apply directly
+   to the element (button, card, ...) whose own box-shadow this replaces. */
+.glow-breathe {
+  animation: glow-breathe 3.2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .glow-breathe {
+    animation: none;
+    box-shadow: 0 0 16px 3px color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+}
+
 .dark .skeleton-shimmer::after {
   background-image: linear-gradient(
     90deg,
