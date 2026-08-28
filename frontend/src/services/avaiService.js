@@ -181,15 +181,26 @@ function generateClientFallbackResponse({ poet, message, context, sessionId }) {
 export function getSavedChat(poetId) {
   try {
     const raw = localStorage.getItem(`${STORAGE_KEY_PREFIX}${poetId}`)
-    return raw ? JSON.parse(raw) : null
+    if (!raw) return { messages: [], title: '' }
+
+    const parsed = JSON.parse(raw)
+    if (Array.isArray(parsed)) {
+      // Legacy data: only messages were saved
+      return { messages: parsed, title: '' }
+    } else if (typeof parsed === 'object' && parsed !== null) {
+      // New format: { messages, title }
+      return { messages: parsed.messages || [], title: parsed.title || '' }
+    }
+    // Fallback for malformed data
+    return { messages: [], title: '' }
   } catch {
-    return null
+    return { messages: [], title: '' }
   }
 }
 
-export function saveChat(poetId, messages) {
+export function saveChat(poetId, messages, title = '') {
   try {
-    localStorage.setItem(`${STORAGE_KEY_PREFIX}${poetId}`, JSON.stringify(messages))
+    localStorage.setItem(`${STORAGE_KEY_PREFIX}${poetId}`, JSON.stringify({ messages, title }))
   } catch (err) {
     console.error('[AvaiService] Failed to persist chat history:', err)
   }

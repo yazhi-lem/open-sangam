@@ -42,7 +42,11 @@ app = FastAPI(title="Avai Ask API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",  # Frontend default for Vite
+        "http://127.0.0.1:5173",
+        # Add other frontend origins if necessary, e.g., for deployment
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -60,7 +64,7 @@ _POET_AGENTS = {
 }
 
 _RUNNERS = {
-    name: Runner(app_name=sessions.APP_NAME, agent=agent, session_service=_session_service)
+    name: Runner(app_name="poets", agent=agent, session_service=_session_service)
     for name, agent in _POET_AGENTS.items()
 }
 _runner = _RUNNERS["avvaiyar"]

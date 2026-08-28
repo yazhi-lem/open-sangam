@@ -24,7 +24,8 @@ import {
   Info,
   RefreshCw,
 } from 'lucide-react'
-// import { marked } from 'marked' // Reverted
+import { marked } from 'marked' // Uncommented
+import DOMPurify from 'dompurify' // Added for XSS prevention
 import { PULAVAR_AGENTS, TINAI_FILTER_OPTIONS } from '../data/pulavars'
 import { askAvaiAgent, getSavedChat, saveChat, clearSavedChat } from '../services/avaiService'
 import Badge from '../components/ui/Badge'
@@ -174,9 +175,9 @@ export default function Avai() {
       const finalMessages = [...updatedMessages, agentMsg]
       setAllChats((prev) => ({
         ...prev,
-        [effectiveAgentId]: finalMessages,
+        [effectiveAgentId]: { messages: finalMessages, title: chatTitle },
       }))
-      saveChat(effectiveAgentId, finalMessages)
+      saveChat(effectiveAgentId, finalMessages, chatTitle)
     } catch (err) {
       console.error('[Avai] Failed to get response:', err)
       const errorMsg = {
@@ -470,7 +471,7 @@ export default function Avai() {
           </header>
 
           {/* Messages Stream */}
-          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
+          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6 min-h-0">
             {/* Empty State / Welcome */}
             {messages.length === 0 && (
               <Reveal className="space-y-6 my-auto py-6">
@@ -565,9 +566,10 @@ export default function Avai() {
                     )}
 
                     {/* Text content with whitespace preserve & markdown stanzas */}
-                    <div className="font-sans text-xs leading-normal space-y-1">
-                      {msg.text}
-                    </div>
+                    <div
+                      className="font-sans text-xs leading-normal space-y-1 prose prose-sangam"
+                      dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(marked.parse(msg.text)) }}
+                    />
 
                     {/* Generated Visual image if provided (Paranar workflow) */}
                     {msg.imageUrl && (
