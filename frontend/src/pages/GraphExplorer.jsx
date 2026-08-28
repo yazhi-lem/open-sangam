@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useMemo, useState, useEffect } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import GRAPH from '@data/knowledge/graph.json'
 import { POEM_BY_ID } from '../data/poems'
 import Badge from '../components/ui/Badge'
@@ -49,9 +49,19 @@ export default function GraphExplorer() {
     return { nodeById, adjacency }
   }, [])
 
-  const [focusId, setFocusId] = useState('tinai:kurinji')
+  const [searchParams] = useSearchParams()
+  const initialFocusId = searchParams.get('focus') || 'tinai:kurinji'
+  const [focusId, setFocusId] = useState(initialFocusId)
   const [typeFilter, setTypeFilter] = useState(null)
   const [hover, setHover] = useState(null)
+
+  // Sync URL param with internal state for deep linking
+  useEffect(() => {
+    const urlFocus = searchParams.get('focus')
+    if (urlFocus && urlFocus !== focusId) {
+      setFocusId(urlFocus)
+    }
+  }, [searchParams, focusId])
 
   const focus = nodeById[focusId]
 
@@ -86,8 +96,11 @@ export default function GraphExplorer() {
   const focusMeta = TYPE_META[focus?.type] || TYPE_META.tinai
 
   function deepLink(node) {
+    if (!node) return null
     if (node.type === 'poem') return `/book/${node.id.replace('poem:', '')}`
-    if (node.type === 'tinai') return `/world?tinai=${node.tinai}`
+    if (node.type === 'tinai') return `/world?tinai=${node.id.replace('tinai:', '')}`
+    if (node.type === 'poet') return `/knowledge#poets` // Link to poets section in knowledge base
+    if (node.type === 'karu') return `/knowledge#tinai-porul` // Link to tinai-porul section in knowledge base
     return null
   }
 
@@ -200,7 +213,7 @@ export default function GraphExplorer() {
             {focus && deepLink(focus) && (
               <Link to={deepLink(focus)}>
                 <Button size="sm" variant="outline" className="w-full mt-1">
-                  Open in {focus.type === 'poem' ? 'Library' : 'Sangam World'} →
+                  Open in {focus.type === 'poem' ? 'Library' : focus.type === 'tinai' ? 'Sangam World' : 'Knowledge'} →
                 </Button>
               </Link>
             )}
