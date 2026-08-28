@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Navbar from './components/navigation/Navbar'
 import Footer from './components/navigation/Footer'
 import ScrollToTop from './components/navigation/ScrollToTop'
@@ -14,40 +14,42 @@ import ArticleReader from './pages/ArticleReader'
 import Avai from './pages/Avai'
 import NotFound from './pages/NotFound'
 
+function AppContent() {
+  const location = useLocation()
+  const isAvaiPage = location.pathname.startsWith('/avai')
+
+  return (
+    <div className="relative isolate h-screen overflow-hidden flex flex-col bg-page text-primary selection:bg-accent/20 selection:text-accent">
+      <ScrollToTop />
+      <BackgroundScene />
+      <div className="relative z-10 h-full flex flex-col flex-1 overflow-hidden">
+        <Navbar />
+        <CommandPalette />
+        <main className="flex-1 min-h-0 h-0 overflow-hidden flex flex-col">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
+            <Route path="/reader/:poemId?" element={<Navigate to="/book" replace />} />
+            <Route path="/avai" element={<Avai />} />
+            <Route path="/avai/:agentId" element={<Avai />} />
+            <Route path="/world" element={<SangamWorldPage />} />
+            <Route path="/knowledge" element={<Knowledge />} />
+            <Route path="/graph" element={<GraphExplorer />} />
+            <Route path="/articles" element={<ArticlesList />} />
+            <Route path="/articles/:slug" element={<ArticleReader />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        {!isAvaiPage && <Footer />}
+      </div>
+    </div>
+  )
+}
+
 export default function App() {
   return (
     <BrowserRouter>
-      {/*
-        `isolate` gives this div its own stacking context, so BackgroundScene
-        (fixed, z-0) reliably sits behind the content wrapper (relative,
-        z-10) below regardless of DOM order. `bg-page` stays here as the
-        fallback paint for light mode / low-tier devices where
-        BackgroundScene renders nothing.
-      */}
-      <div className="relative isolate min-h-screen flex flex-col bg-page text-primary selection:bg-accent/20 selection:text-accent">
-        <ScrollToTop />
-        <BackgroundScene />
-        <div className="relative z-10 min-h-screen flex flex-col">
-          <Navbar />
-          <CommandPalette />
-          <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
-              <Route path="/reader/:poemId?" element={<Navigate to="/book" replace />} />
-              <Route path="/avai" element={<Avai />} />
-              <Route path="/avai/:agentId" element={<Avai />} />
-              <Route path="/world" element={<SangamWorldPage />} />
-              <Route path="/knowledge" element={<Knowledge />} />
-              <Route path="/graph" element={<GraphExplorer />} />
-              <Route path="/articles" element={<ArticlesList />} />
-              <Route path="/articles/:slug" element={<ArticleReader />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </div>
+      <AppContent />
     </BrowserRouter>
   )
 }

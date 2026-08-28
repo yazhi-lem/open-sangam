@@ -1,28 +1,20 @@
 """Pydantic request/response schemas for the POST /avai/ask REST endpoint.
-
-Kept separate from the top-level `schemas.py` reserved (per
-docs/agent-implementation-plan.md §3) for M2's domain models (Scenario,
-ImagePromptSpec) — these are API transport shapes, not agent output schemas.
 """
 
-from typing import Literal, Optional
+from typing import Literal
 
 from pydantic import BaseModel, Field
 
-# "qa" is the only workflow wired to a real agent in M1 (Avvaiyar). The rest
-# are accepted now so callers (e.g. chat.yazhi.dev) can code against the full
-# contract ahead of the M2 poet swarm landing; requesting one returns 501
-# until then. See docs/api/avai-ask-prd.md §Workflows.
 Workflow = Literal["qa", "search", "reimagine", "scenario", "imagery", "general"]
 
 
 class AskContext(BaseModel):
     """Optional filters forwarded to the agent as a hint, not enforced server-side."""
 
-    tinai: Optional[str] = Field(
+    tinai: str | None = Field(
         default=None, description="Filter by tiṇai, e.g. 'kurinji'."
     )
-    poem: Optional[str] = Field(
+    poem: str | None = Field(
         default=None, description="Scope the query to one poem, e.g. 'kurunthokai'."
     )
     limit: int = Field(default=10, ge=1, le=50)
@@ -30,16 +22,20 @@ class AskContext(BaseModel):
 
 class AskRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=2000)
-    workflow: Optional[Workflow] = "qa"
-    poet: Optional[str] = Field(
+    workflow: Workflow | None = "qa"
+    pulavar: str | None = Field(
         default=None,
-        description="Direct target poet: nakkirar, avvaiyar, kapilar, tholkappiyar, paranar, or swarm",
+        description="Direct target pulavar: nakkirar, avvaiyar, kapilar, tholkappiyar, paranar, or swarm",
     )
-    session_id: Optional[str] = Field(
+    poet: str | None = Field(
+        default=None,
+        description="Alias for pulavar (backwards compatibility).",
+    )
+    session_id: str | None = Field(
         default=None,
         description="Reuse a prior response's session_id to continue that conversation.",
     )
-    user_id: Optional[str] = Field(
+    user_id: str | None = Field(
         default=None, description="Caller-supplied id used to scope sessions; defaults to anonymous."
     )
     context: AskContext = Field(default_factory=AskContext)
@@ -47,9 +43,10 @@ class AskRequest(BaseModel):
 
 class Citation(BaseModel):
     verse_id: str
-    poem: Optional[str] = None
-    tinai: Optional[str] = None
-    poet: Optional[str] = None
+    poem: str | None = None
+    tinai: str | None = None
+    poet: str | None = None
+    pulavar: str | None = None
 
 
 class AskMetadata(BaseModel):
@@ -61,7 +58,8 @@ class AskMetadata(BaseModel):
 class AskResponse(BaseModel):
     session_id: str
     workflow: Workflow
-    poet: str
+    pulavar: str
+    poet: str | None = None
     response_text: str
     citations: list[Citation]
     metadata: AskMetadata

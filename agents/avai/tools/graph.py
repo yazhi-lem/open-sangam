@@ -2,7 +2,6 @@
 
 import json
 from pathlib import Path
-from typing import Optional
 
 GRAPH_FILE = Path(__file__).resolve().parents[3] / "data" / "knowledge" / "graph.json"
 
@@ -10,16 +9,11 @@ _GRAPH = json.loads(GRAPH_FILE.read_text(encoding="utf-8"))
 
 
 def query_knowledge_graph(
-    node_id: Optional[str] = None,
-    node_type: Optional[str] = None,
-    edge_type: Optional[str] = None,
+    node_id: str | None = None,
+    node_type: str | None = None,
+    edge_type: str | None = None,
 ) -> dict:
-    """Query the Sangam knowledge graph (poets, poems, tinai, karu — 106 nodes / 283 edges).
-
-    - node_id: return that node plus every edge touching it.
-    - node_type: filter nodes by type ('tinai' | 'poem' | 'poet' | 'karu').
-    - edge_type: filter edges by relation ('HAS_TINAI' | 'WROTE_IN' | 'COMPOSED' | 'ATTESTS').
-    With no arguments, returns the graph's summary metadata.
+    """சங்க இலக்கிய அறிவுக் வரைபடத்திலிருந்து புலவர்கள், நூல்கள், திணைகள் மற்றும் கருப்பொருள்களுக்கிடையேயான தொடர்புகளை ஆராயும் கருவி.
     """
     if node_id:
         node = next((n for n in _GRAPH["nodes"] if n["id"] == node_id), None)
