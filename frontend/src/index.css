@@ -232,11 +232,7 @@ body {
   animation: shimmer 1.8s infinite;
   content: '';
 }
-@keyframes glitter-spin {
-  to { transform: rotate(1turn); }
-}
-
-/* Rotating gradient rim + soft glow, for the one hero CTA we want the eye
+/* Static gradient rim + soft glow, for the one hero CTA we want the eye
    drawn to first (Try Avai). Wrap a single element; match its border-radius. */
 .glitter-rim {
   position: relative;
@@ -248,8 +244,7 @@ body {
   position: absolute;
   inset: -3px;
   border-radius: inherit;
-  background: conic-gradient(from 0deg, var(--accent), #fbbf24, var(--accent), transparent 60%, var(--accent));
-  animation: glitter-spin 2.6s linear infinite;
+  background: linear-gradient(135deg, var(--accent), #fbbf24, var(--accent));
 }
 .glitter-rim::before {
   z-index: -1;
@@ -263,12 +258,6 @@ body {
   z-index: -2;
   filter: blur(12px);
   opacity: 0.6;
-}
-@media (prefers-reduced-motion: reduce) {
-  .glitter-rim::before,
-  .glitter-rim::after {
-    animation: none;
-  }
 }
 
 .dark .skeleton-shimmer::after {
