@@ -98,7 +98,13 @@ PHASES: list[dict] = [
     },
 ]
 
-FIELD_FOR_LANG = {"english": "english", "urai": "urai"}
+FIELD_FOR_LANG = {"english": "english", "urai": "urai", "yazhi_urai": "yazhi_urai"}
+
+# Fields that only ever come from this pipeline (never from raw/) get a
+# provenance block recording provider/model/run — same reasoning as
+# englishMeta in docs/data-governance.md §5. `urai` is excluded: it's often
+# scraped, not drafted, so it doesn't get one by this pipeline's convention.
+FIELDS_WITH_PROVENANCE = {"english", "yazhi_urai"}
 
 
 # --------------------------------------------------------------------------- #
@@ -250,22 +256,44 @@ STYLE_RULES_URAI = (
     "- Break long Sangam lines into natural prose sentences.\n"
 )
 
+STYLE_RULES_YAZHI_URAI = (
+    "- Use plain, everyday spoken Tamil (பேச்சு வழக்கு) — how you'd casually explain\n"
+    "  the verse to a friend, not textbook or literary prose.\n"
+    "- Short, simple sentences; avoid classical/literary vocabulary and archaic constructions.\n"
+    "- Keep proper nouns (kings, places, deities) in their original Tamil.\n"
+    "- Loose paraphrase for clarity is fine, as long as the meaning is preserved.\n"
+)
+
 
 def build_prompt(verse: dict, target_lang: str) -> str:
     """Build the user prompt for one verse.
 
     The verse's existing modern-Tamil `urai` is supplied as supporting context
-    when present (2,529 of 2,553 records carry one) — it disambiguates archaic
-    vocabulary and measurably improves the English draft.
+    to english/yazhi_urai when present (2,529 of 2,553 records carry one) — it
+    disambiguates archaic vocabulary and measurably improves both drafts.
     """
+    urai = (verse.get("urai") or "").strip()
+
     if target_lang == "urai":
         target = "contemporary Tamil prose (உரை — a clear modern retelling)"
         rules = STYLE_RULES_URAI
         context = ""
+    elif target_lang == "yazhi_urai":
+        target = (
+            "plain, colloquial modern Tamil (எளிய பேச்சு வழக்குத் தமிழ்) — an "
+            "easy-to-read paraphrase for a general reader, distinct from the more "
+            "formal `urai` prose"
+        )
+        rules = STYLE_RULES_YAZHI_URAI
+        context = (
+            f"\nExisting scholarly Tamil prose (urai) for this verse, as supporting "
+            f"context — simplify its register, don't just copy it:\n{urai}\n"
+            if urai
+            else ""
+        )
     else:
         target = "contemporary literary English"
         rules = STYLE_RULES_ENGLISH
-        urai = (verse.get("urai") or "").strip()
         context = (
             f"\nModern Tamil prose (urai) for this verse, as supporting context:\n{urai}\n"
             if urai
@@ -435,8 +463,8 @@ def apply_translation(
     """
     verse[field] = text
     verse["verified"] = False
-    if field == "english":
-        verse["englishMeta"] = {
+    if field in FIELDS_WITH_PROVENANCE:
+        verse[f"{field}Meta"] = {
             "provider": backend.provider,
             "model": backend.model,
             "promptVersion": PROMPT_VERSION,
@@ -479,6 +507,7 @@ def refresh_poem_artifacts(poem_id: str) -> None:
         stats["records"] = len(records)
         stats["withUrai"] = sum(1 for r in records if r.get("urai"))
         stats["withEnglish"] = sum(1 for r in records if r.get("english"))
+        stats["withYazhiUrai"] = sum(1 for r in records if r.get("yazhi_urai"))
         write_json(datapackage, package)
 
 
@@ -714,7 +743,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Phased batch translation of the Sangam corpus via OpenRouter (Gemini 2.5 Flash)"
     )
-    parser.add_argument("--lang", choices=["english", "urai"], default="english")
+    parser.add_argument("--lang", choices=["english", "urai", "yazhi_urai"], default="english")
     parser.add_argument("--poem", help="restrict to a single poem id (ignores phases)")
     parser.add_argument("--phase", type=int, help="force a phase instead of auto-advancing")
     parser.add_argument(

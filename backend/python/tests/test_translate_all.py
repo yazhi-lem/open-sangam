@@ -23,8 +23,8 @@ def _args(**overrides):
     return argparse.Namespace(**base)
 
 
-def test_lang_order_runs_urai_before_english():
-    assert LANG_ORDER == ["urai", "english"]
+def test_lang_order_runs_urai_then_yazhi_urai_then_english():
+    assert LANG_ORDER == ["urai", "yazhi_urai", "english"]
 
 
 def test_build_command_status_ignores_other_flags():

@@ -3,8 +3,8 @@
   "pipeline": "etymology-extraction",
   "provider": "openrouter",
   "model": "google/gemini-2.5-flash",
-  "promptVersion": "etymology-v1",
-  "updatedAt": "2026-08-30T16:31:09+00:00",
+  "promptVersion": "etymology-v3",
+  "updatedAt": "2026-08-30T16:56:20+00:00",
   "totals": {
     "verses": 2489,
     "annotated": 32,
@@ -58,7 +58,7 @@
       "annotated": 32,
       "remaining": 0,
       "status": "complete",
-      "lastRunAt": "2026-08-30T16:31:09+00:00"
+      "lastRunAt": "2026-08-30T16:56:20+00:00"
     },
     "perumpanatrupadai": {
       "verses": 41,
@@ -147,6 +147,38 @@
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",
       "promptVersion": "etymology-v1",
+      "attempted": 32,
+      "annotated": 32,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "14607cf9c0e8",
+      "startedAt": "2026-08-30T16:43:27+00:00",
+      "finishedAt": "2026-08-30T16:46:47+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v2",
+      "attempted": 32,
+      "annotated": 32,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "a85c40908320",
+      "startedAt": "2026-08-30T16:51:41+00:00",
+      "finishedAt": "2026-08-30T16:56:20+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
       "attempted": 32,
       "annotated": 32,
       "failed": 0,

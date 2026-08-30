@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "ஐவேறு",
-          "root": "ஐ",
+          "root": null,
           "urichol": null,
-          "etymology": "Compound of 'five' and 'different'.",
-          "gloss": "five different"
+          "etymology": "ஐவேறு என்பது ஐந்தாக வேறுபட்ட என்ற பொருளைத் தருகிறது. 'ஐ' என்பது ஐந்து என்ற எண்ணைக் குறிக்கும். 'வேறு' என்பது வேறுபட்ட, தனித்த என்ற பொருளைத் தரும். இவ்விரு சொற்களும் இணைந்து, ஐந்து விதமான அல்லது ஐந்து முகங்களைக் கொண்ட என்ற கருத்தை உணர்த்துகின்றன. சங்க இலக்கியத்தில் எண்ணுப்பெயர்கள் பிற சொற்களுடன் இணைந்து வருவது இயல்பு.",
+          "gloss": "Referring to five distinct forms or facets, indicating that the object described possesses five different aspects or divisions."
         },
         {
           "form": "உருவின்",
           "root": "உரு",
           "urichol": null,
-          "etymology": "From 'uru' meaning form, with instrumental/locative suffix.",
-          "gloss": "of form/shape"
+          "etymology": "உருவின் என்பது உருவம் என்ற சொல்லின் ஐந்தாம் வேற்றுமை உருபுடன் கூடிய வடிவம். 'உரு' என்பது வடிவம், தோற்றம், நிறம் ஆகியவற்றைக் குறிக்கும். சங்க இலக்கியத்தில் 'உரு' என்ற சொல் பல இடங்களில் அழகு, நிறம், வடிவம் என்ற பொருள்களில் பயன்படுத்தப்பட்டுள்ளது. இங்கு, ஐந்து வேறுபட்ட வடிவங்களைக் கொண்ட என்ற பொருளில் வருகிறது.",
+          "gloss": "In the form or shape of, indicating that the preceding 'ஐவேறு' describes the specific configuration or appearance of the object."
         },
         {
           "form": "செய்வினை",
-          "root": "செய்வினை",
+          "root": null,
           "urichol": null,
-          "etymology": "Compound of 'sey' (to do) and 'vinai' (action/work), referring to crafted work.",
-          "gloss": "crafted work"
+          "etymology": "செய்வினை என்பது 'செய்' (செய்தல்) மற்றும் 'வினை' (செயல், தொழில்) ஆகிய இரு சொற்களின் புணர்ச்சி. இது கைவினைப் பொருள் அல்லது நுட்பமாகச் செய்யப்பட்ட வேலைப்பாட்டைக் குறிக்கிறது. சங்க காலத்தில், கைவினைஞர்களின் திறமையால் உருவாக்கப்பட்ட பொருட்களைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது. இது ஒரு கூட்டுச் சொல் (compound word) ஆகும்.",
+          "gloss": "Referring to an artifact crafted with skill and artistry, implying a product of meticulous workmanship rather than a natural formation."
         },
         {
           "form": "முற்றிய",
           "root": "முற்று",
           "urichol": null,
-          "etymology": "Past participial adjective from 'mutru' (to complete).",
-          "gloss": "completed, finished"
+          "etymology": "முற்றிய என்பது 'முற்று' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்சம். 'முற்று' என்றால் நிறைவடைதல், முழுமையடைதல், முடித்தல் என்று பொருள். இங்கு, செய்வினை முழுமையாகச் செய்யப்பட்டு, அதன் வேலைப்பாடு நிறைவுற்றது என்பதைக் குறிக்கிறது. சங்க இலக்கியத்தில், ஒரு செயல் அல்லது பொருள் முழுமை அடைந்த நிலையைக் குறிக்க இச்சொல் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "Having been completed or perfected, indicating that the skilled craftsmanship (செய்வினை) has reached its ultimate and flawless state."
         }
       ]
     },
@@ -48,29 +48,29 @@
           "form": "முடியொடு",
           "root": "முடி",
           "urichol": null,
-          "etymology": "From 'mudi' (crown/head), with instrumental suffix 'odu'.",
-          "gloss": "with crown"
+          "etymology": "முடியொடு என்பது 'முடி' (தலைமுடி, கிரீடம்) என்ற சொல்லுடன் 'ஒடு' என்ற மூன்றாம் வேற்றுமை உருபு இணைந்து வந்த வடிவம். 'முடி' என்பது அரசர்கள் அணியும் கிரீடம் அல்லது தலைமுடி இரண்டையும் குறிக்கும். இங்கு, கிரீடம் என்ற பொருளில் வந்து, அதனுடன் சேர்ந்து என்ற கருத்தை உணர்த்துகிறது. சங்க இலக்கியத்தில், அரசர்களின் பெருமையையும், அணிமணிகளையும் குறிக்க 'முடி' என்ற சொல் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "Along with the crown or diadem, signifying that the described object is affixed to or associated with the headwear of the deity."
         },
         {
           "form": "விளங்கிய",
           "root": "விளங்கு",
           "urichol": null,
-          "etymology": "Past participial adjective from 'vilangu' (to shine, be clear).",
-          "gloss": "shone, appeared"
+          "etymology": "விளங்கிய என்பது 'விளங்கு' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்சம். 'விளங்கு' என்றால் ஒளிவிடுதல், பிரகாசித்தல், பெருமையுடன் திகழ்தல் என்று பொருள். இங்கு, திருமணி ஒளிவிட்டுப் பிரகாசித்தது என்பதையும், அதன் மூலம் பெருமையுடன் காட்சி அளித்தது என்பதையும் குறிக்கிறது. சங்க இலக்கியத்தில், ஒளி, புகழ், சிறப்பு ஆகியவற்றைக் குறிக்க இச்சொல் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "Shining brightly or resplendently, indicating that the jewel (திருமணி) was luminous and prominent, drawing attention to its brilliance."
         },
         {
           "form": "முரண்மிகு",
-          "root": "முரண்",
+          "root": null,
           "urichol": null,
-          "etymology": "Compound of 'muraṇ' (contrast/opposition) and 'migu' (abundant/intense).",
-          "gloss": "intensely contrasting"
+          "etymology": "முரண்மிகு என்பது 'முரண்' (மாறுபாடு, வேறுபாடு) மற்றும் 'மிகு' (அதிகமான) ஆகிய இரு சொற்களின் புணர்ச்சி. இது மிகுந்த மாறுபாட்டைக் கொண்ட அல்லது வேறுபட்ட தன்மையைக் கொண்ட என்ற பொருளைத் தருகிறது. இங்கு, திருமணியின் நிறம் அல்லது ஒளி, கிரீடத்தின் நிறத்துடன் மாறுபட்டு, அதனால் ஒரு சிறப்புத் தன்மையை அளித்தது என்பதைக் குறிக்கிறது. சங்க இலக்கியத்தில், முரண்பட்ட தன்மைகளைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "Possessing intense contrast or striking dissimilarity, suggesting that the jewel's color or radiance stood out sharply against its setting, creating a captivating effect."
         },
         {
           "form": "திருமணி",
-          "root": "திருமணி",
+          "root": null,
           "urichol": null,
-          "etymology": "Compound of 'tiru' (sacred/auspicious) and 'maṇi' (gem/jewel).",
-          "gloss": "sacred jewel"
+          "etymology": "திருமணி என்பது 'திரு' (புனிதமான, அழகான, சிறப்புமிக்க) மற்றும் 'மணி' (ரத்தினம், கல்) ஆகிய இரு சொற்களின் புணர்ச்சி. இது புனிதமான அல்லது மிகவும் அழகான ரத்தினத்தைக் குறிக்கிறது. 'திரு' என்பது அடைமொழியாக வந்து, மணியின் சிறப்பையும் தெய்வீகத் தன்மையையும் உணர்த்துகிறது. சங்க இலக்கியத்தில், 'திரு' என்ற அடைமொழி தெய்வீகத்தன்மை, அழகு, செல்வம் ஆகியவற்றைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "A sacred or auspicious gem, referring to a precious stone that is not only beautiful but also endowed with divine or revered qualities."
         }
       ]
     },
@@ -80,59 +80,59 @@
       "words": [
         {
           "form": "மின்உறழ்",
-          "root": "மின்",
+          "root": null,
           "urichol": null,
-          "etymology": "Compound of 'min' (lightning) and 'uṟaḻ' (to resemble/compete).",
-          "gloss": "lightning-like"
+          "etymology": "மின்உறழ் என்பது 'மின்' (மின்னல்) மற்றும் 'உறழ்' (ஒத்திருத்தல், ஒப்பிடுதல்) ஆகிய இரு சொற்களின் புணர்ச்சி. இது மின்னலைப் போன்று ஒளிரும் அல்லது மின்னலுக்கு நிகரான என்ற பொருளைத் தருகிறது. 'உறழ்' என்பது ஒப்பிடும் பொருளில் வரும் ஒரு வினைச்சொல். இங்கு, திருமணியின் ஒளி மின்னலின் ஒளியைப் போலப் பிரகாசமாக இருந்தது என்பதைக் குறிக்கிறது. சங்க இலக்கியத்தில், உவம உருபாக 'உறழ்' பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "Resembling or competing with lightning in its brilliance, indicating that the jewel's radiance was as intense and dazzling as a flash of lightning."
         },
         {
           "form": "இமைப்பின்",
           "root": "இமை",
           "urichol": null,
-          "etymology": "From 'imai' (to blink/shine), with conditional/locative suffix.",
-          "gloss": "if it shines"
+          "etymology": "இமைப்பின் என்பது 'இமை' (ஒளிவிடுதல், பிரகாசித்தல்) என்ற வினைச்சொல்லின் வினையாலணையும் பெயர். 'இமை' என்பது கண் இமைத்தல், ஒளிவிடுதல் ஆகிய பொருள்களைக் குறிக்கும். இங்கு, ஒளியின் பிரகாசத்தைக் குறிக்கிறது. 'இன்' என்பது ஏழாம் வேற்றுமை உருபாகவோ அல்லது ஒரு செயலின் தன்மையைக் குறிக்கும் சொல்லுருபாகவோ வரலாம். இங்கு, ஒளியின் பிரகாசத்தால் என்ற பொருளைத் தருகிறது.",
+          "gloss": "Due to its dazzling brilliance or flashing, referring to the intense emission of light from the jewel that creates a striking visual effect."
         },
         {
           "form": "சென்னிப்",
           "root": "சென்னி",
           "urichol": null,
-          "etymology": "From 'senni' (head/forehead), in a genitive/locative sense.",
-          "gloss": "on the head"
+          "etymology": "சென்னிப் என்பது 'சென்னி' (தலை) என்ற சொல்லுடன் 'ப்' என்ற சந்தி உருபு இணைந்து வந்த வடிவம். 'சென்னி' என்பது தலை, உச்சந்தலை, கிரீடம் ஆகிய பொருள்களைக் குறிக்கும். இங்கு, முருகப்பெருமானின் தலையைக் குறிக்கிறது. சங்க இலக்கியத்தில், தலை, தலைமை ஆகிய பொருள்களில் 'சென்னி' என்ற சொல் பயன்படுத்தப்பட்டுள்ளது. இது ஒரு பெயர்ச்சொல்.",
+          "gloss": "Upon the head or crown, indicating the location where the described jewel and its radiance are prominently displayed."
         },
         {
           "form": "பொற்ப",
-          "root": "பொற்பு",
+          "root": "பொலி",
           "urichol": null,
-          "etymology": "From 'poṟpu' (beauty/splendour), often used as an adverbial participle.",
-          "gloss": "beautifully, splendidly"
+          "etymology": "பொற்ப என்பது 'பொலி' (அழகு பெறுதல், பிரகாசித்தல்) என்ற வினைச்சொல்லின் வியங்கோள் வினைமுற்று அல்லது வினையெச்சம். இங்கு, அழகு பெறும்படி, பிரகாசிக்கும்படி என்ற பொருளைத் தருகிறது. 'பொலி' என்பது அழகு, பொலிவு, சிறப்பு ஆகியவற்றைக் குறிக்கும். சங்க இலக்கியத்தில், ஒரு பொருளின் அழகு அல்லது சிறப்பைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது. இது ஒரு வினையெச்சமாகச் செயல்படுகிறது.",
+          "gloss": "So as to adorn or enhance the beauty, implying that the jewel's presence and brilliance contribute significantly to the aesthetic appeal of the head."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark indicating the end of a phrase or sentence, not a word with semantic content in this context."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark indicating the end of a phrase or sentence, not a word with semantic content in this context."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark indicating the end of a phrase or sentence, not a word with semantic content in this context."
         },
         {
           "form": ".(85)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "verse number"
+          "gloss": "This is a numerical annotation indicating the verse number in the text, not a word with semantic content within the poetic line itself."
         }
       ]
     }
@@ -155,9 +155,17 @@
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
-    "promptVersion": "etymology-v1",
-    "generatedAt": "2026-08-30T16:29:53+00:00",
-    "runId": "fedbff63838a",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:52:45+00:00",
+    "runId": "a85c40908320",
     "wordsAnnotated": 16
+  },
+  "yazhi_urai": "முருகன் தலையில ஒரு கிரீடம் இருந்துச்சு. அந்தக் கிரீடத்துல அஞ்சு பக்கம் பட்டை தீட்டின ஒரு பெரிய நீலக்கல் பதிச்சிருந்தாங்க. அந்தக் கல்லு மின்னல் மாதிரி மின்னிச்சு. அது அவனோட தலைக்கு ரொம்ப அழகா இருந்துச்சு.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:09+00:00",
+    "runId": "6cd23ddba45b"
   }
 }

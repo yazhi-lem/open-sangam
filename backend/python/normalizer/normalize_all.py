@@ -48,6 +48,7 @@ def normalize_record(raw: dict, poem: dict) -> dict:
         "tinai": raw.get("tinai", "unknown"),
         "sangamTamil": sangam,
         "urai": raw.get("urai"),
+        "yazhi_urai": raw.get("yazhi_urai"),
         "english": raw.get("english"),
         "lines": [
             {"lineNumber": i + 1, "text": ln, "words": tokenize_line(ln)}
@@ -93,11 +94,13 @@ def merge_generated_fields(record: dict, existing: dict | None) -> dict:
     if existing is None:
         return record
 
-    # english: never present in raw/, so always the existing draft (if any).
-    if not record.get("english") and existing.get("english"):
-        record["english"] = existing["english"]
-        if existing.get("englishMeta"):
-            record["englishMeta"] = existing["englishMeta"]
+    # english, yazhi_urai: never present in raw/, so always the existing draft.
+    for field in ("english", "yazhi_urai"):
+        if not record.get(field) and existing.get(field):
+            record[field] = existing[field]
+            meta_key = f"{field}Meta"
+            if existing.get(meta_key):
+                record[meta_key] = existing[meta_key]
 
     # urai: prefer a fresh non-empty scrape (a genuine source correction);
     # otherwise keep what's there, which may be an AI draft raw/ never had.
@@ -178,6 +181,7 @@ def build_datapackage(poem: dict, records: list[dict]) -> dict:
             "records": total_items,
             "withUrai": has_urai,
             "withEnglish": sum(1 for r in records if r.get("english")),
+            "withYazhiUrai": sum(1 for r in records if r.get("yazhi_urai")),
         },
     }
 

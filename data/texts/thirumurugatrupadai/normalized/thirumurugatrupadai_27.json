@@ -12,59 +12,59 @@
       "words": [
         {
           "form": "ஆடுகளம்",
-          "root": "ஆடு",
+          "root": null,
           "urichol": null,
-          "etymology": "Compound of ஆடு (to dance) and களம் (place).",
-          "gloss": "dancing ground"
+          "etymology": "இச்சொல் 'ஆடு' (நடனம் ஆடுதல்) மற்றும் 'களம்' (இடம், அரங்கு) ஆகிய இரு சொற்களின் புணர்ச்சியால் உருவானது. சங்க இலக்கியத்தில், ஆடுகளம் என்பது ஆடல் நிகழும் இடத்தைக் குறிக்கும். இச்சொல் இன்றும் அதே பொருளில் பயன்படுத்தப்படுகிறது, ஆனால் பெரும்பாலும் நாடக மேடை அல்லது விளையாட்டு மைதானம் போன்ற குறிப்பிட்ட இடங்களைக் குறிக்கிறது.",
+          "gloss": "This compound noun refers to the dancing ground or performance arena where rituals and dances are performed, specifically in the context of the Murugan worship described in the verse."
         },
         {
           "form": "சிலம்பப்",
           "root": "சிலம்பு",
           "urichol": null,
-          "etymology": "From சிலம்பு (anklet), here used as a verb meaning 'to make sound'.",
-          "gloss": "to resound"
+          "etymology": "இச்சொல் 'சிலம்பு' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'சிலம்பு' என்பது ஒலித்தல், சத்தம் போடுதல், எதிரொலித்தல் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் மலைகள் எதிரொலிப்பதையும், சிலம்புகள் ஒலிப்பதையும் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழில் 'சிலம்பு' என்பது பெரும்பாலும் காலில் அணியும் ஆபரணத்தையே குறிக்கும், ஆனால் அதன் ஒலிக்கும் தன்மை இன்றும் அதன் வேர்ச்சொல்லில் உள்ளது.",
+          "gloss": "This is the adverbial participle of the verb 'சிலம்பு', meaning 'to resound' or 'to echo loudly', indicating that the dancing ground is filled with reverberating sounds during the rituals."
         },
         {
           "form": "பாடிப்",
           "root": "பாடு",
           "urichol": null,
-          "etymology": "Past participial form of பாடு (to sing).",
-          "gloss": "having sung"
+          "etymology": "இச்சொல் 'பாடு' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'பாடு' என்பது குரலால் ஒலி எழுப்புதல், இசைத்தல், புகழ்ந்துரைத்தல் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் தெய்வங்களைப் பாடி வழிபடுதல், வீரர்களைப் பாடிப் புகழ்தல் போன்ற சூழல்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இச்சொல் அதே பொருளில் பரவலாகப் பயன்பாட்டில் உள்ளது.",
+          "gloss": "This is the adverbial participle of the verb 'பாடு', meaning 'having sung' or 'singing', indicating the act of singing praises or hymns as part of the worship."
         },
         {
           "form": "பலவுடன்",
           "root": "பல",
           "urichol": null,
-          "etymology": "From பல (many) with உடன் (with).",
-          "gloss": "with many"
+          "etymology": "இச்சொல் 'பல' (பல எண்ணிக்கையிலான) என்னும் பன்மைச் சொல்லுடன் 'உடன்' (கூட, சேர்த்து) என்னும் உருபு சேர்ந்து உருவானது. 'பல' என்பது எண்ணிக்கையில் அதிகமானவற்றைக் குறிக்கும். சங்க இலக்கியத்தில் இது பல்வேறு பொருள்கள், மக்கள், செயல்கள் ஆகியவற்றைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'பல' என்பது அதே பொருளில் பயன்பாட்டில் உள்ளது, 'உடன்' என்பது இணைப்பைக் குறிக்கிறது.",
+          "gloss": "This word means 'along with many' or 'together with various things/people', suggesting that the singing and dancing are accompanied by numerous other elements or participants in the ritual."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".(245)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "verse number"
+          "gloss": "This notation indicates the line number 245 in the original text of Thirumurugatrupadai."
         }
       ]
     },
@@ -74,31 +74,31 @@
       "words": [
         {
           "form": "கோடுவாய்",
-          "root": "கோடு",
+          "root": null,
           "urichol": null,
-          "etymology": "Compound of கோடு (horn) and வாய் (mouth/opening).",
-          "gloss": "horn-mouth"
+          "etymology": "இச்சொல் 'கோடு' (கொம்பு, ஊதுகொம்பு) மற்றும் 'வாய்' (வாய்ப்பகுதி) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. 'கோடு' என்பது விலங்குகளின் கொம்புகளையும், அவற்றால் செய்யப்பட்ட இசைக்கருவிகளையும் குறிக்கும். சங்க இலக்கியத்தில் 'கோடு' என்பது ஊதுகொம்பைக் குறிக்கப் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழில் 'கோடு' என்பது பெரும்பாலும் கோடு போடுதல், எல்லை போன்ற பொருள்களைக் குறிக்கும், ஆனால் 'ஊதுகொம்பு' என்ற பொருள் மறைந்துவிட்டது.",
+          "gloss": "This compound noun refers to the mouth-piece of a horn or a wind instrument, specifically the part through which air is blown to produce sound during the ritual."
         },
         {
           "form": "வைத்துக்",
           "root": "வை",
           "urichol": null,
-          "etymology": "Past participial form of வை (to place, to keep).",
-          "gloss": "having placed"
+          "etymology": "இச்சொல் 'வை' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'வை' என்பது வைத்தல், நிறுவுதல், இருத்தல் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் ஒரு பொருளை ஓரிடத்தில் வைத்தல், ஒரு செயலைச் செய்தல் போன்ற சூழல்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இச்சொல் அதே பொருளில் பரவலாகப் பயன்பாட்டில் உள்ளது.",
+          "gloss": "This is the adverbial participle of the verb 'வை', meaning 'having placed' or 'keeping', indicating the action of holding or positioning the horn to play it."
         },
         {
           "form": "கொடுமணி",
-          "root": "கொடு",
+          "root": null,
           "urichol": null,
-          "etymology": "Compound of கொடு (curved, bent) and மணி (bell).",
-          "gloss": "curved bell"
+          "etymology": "இச்சொல் 'கொடு' (வளைந்த, வளைவுடைய) மற்றும் 'மணி' (சத்தம் எழுப்பும் கருவி, மணி) ஆகிய இரு சொற்களின் புணர்ச்சியால் உருவானது. 'கொடு' என்பது வளைந்த தன்மையைக் குறிக்கும். 'மணி' என்பது ஒலி எழுப்பும் உலோகக் கருவியைக் குறிக்கும். சங்க இலக்கியத்தில் 'கொடுமணி' என்பது வளைந்த வடிவம் கொண்ட மணியைக் குறிக்கலாம் அல்லது ஒலி எழுப்பும் மணியைக் குறிக்கலாம். நவீன தமிழில் 'கொடு' என்பது பெரும்பாலும் 'கொடுத்தல்' என்ற பொருளில் பயன்படுத்தப்படுகிறது, ஆனால் 'கொடுங்கால்' போன்ற சொற்களில் வளைந்த என்ற பொருள் உள்ளது. 'மணி' என்பது இன்றும் அதே பொருளில் உள்ளது.",
+          "gloss": "This compound noun refers to a bell, possibly one with a curved shape or one that is struck to produce sound, used as a musical instrument in the ritual."
         },
         {
           "form": "இயக்கி",
           "root": "இயக்கு",
           "urichol": null,
-          "etymology": "Past participial form of இயக்கு (to operate, to cause to move).",
-          "gloss": "having operated"
+          "etymology": "இச்சொல் 'இயக்கு' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'இயக்கு' என்பது செயல்படுத்துதல், ஓட்டுதல், இசைத்தல் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் ஒரு கருவியை இயக்குதல், ஒரு செயலைச் செயல்படுத்துதல் போன்ற சூழல்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இச்சொல் அதே பொருளில் பரவலாகப் பயன்பாட்டில் உள்ளது.",
+          "gloss": "This is the adverbial participle of the verb 'இயக்கு', meaning 'having operated' or 'playing', indicating the action of sounding or playing the bell."
         }
       ]
     },
@@ -110,29 +110,29 @@
           "form": "ஓடாப்",
           "root": "ஓடு",
           "urichol": null,
-          "etymology": "Negative participial adjective from ஓடு (to run, to flee).",
-          "gloss": "not fleeing"
+          "etymology": "இச்சொல் 'ஓடு' (ஓடுதல், புறமுதுகு காட்டுதல்) என்னும் வினைச்சொல்லின் எதிர்மறைப் பெயரெச்ச வடிவம். 'ஓடா' என்பது 'ஓடாத' என்பதன் சுருக்கம். 'ஓடு' என்பது போர்க்களத்தில் இருந்து புறமுதுகு காட்டி ஓடுதல் என்ற பொருளில் சங்க இலக்கியத்தில் பயன்படுத்தப்பட்டுள்ளது. 'ஓடாப் பூட்கை' என்பது புறமுதுகு காட்டாத வீரம் என்ற பொருளைத் தரும். நவீன தமிழிலும் 'ஓடு' என்பது ஓடுதல் என்ற பொருளில் உள்ளது, ஆனால் 'ஓடாப்' போன்ற எதிர்மறைப் பெயரெச்சப் பயன்பாடு இலக்கிய வழக்காக உள்ளது.",
+          "gloss": "This is the negative adjectival participle of the verb 'ஓடு', meaning 'that does not flee' or 'unfleeing', describing the characteristic of not retreating from battle."
         },
         {
           "form": "பூட்கைப்",
           "root": "பூட்கை",
           "urichol": null,
-          "etymology": "From பூட்கை (resolve, determination).",
-          "gloss": "of resolve"
+          "etymology": "இச்சொல் 'பூட்கை' என்னும் பெயர்ச்சொல்லின் ஐகாரச்சாரியைப் பெற்ற வடிவம். 'பூட்கை' என்பது உறுதி, வீரம், கொள்கை, நோக்கம் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் இது வீரர்களின் உறுதிப்பாட்டையும், கொள்கையையும் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. 'ஓடாப் பூட்கை' என்பது போர்க்களத்தில் புறமுதுகு காட்டாத உறுதி என்ற பொருளைத் தரும். நவீன தமிழில் 'பூட்கை' என்ற சொல் அரிதாகவே பயன்படுத்தப்படுகிறது, பெரும்பாலும் இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This noun refers to 'resolve', 'courage', or 'steadfastness', specifically the unwavering determination or heroic principle of not retreating in battle."
         },
         {
           "form": "பிணிமுகம்",
-          "root": "பிணிமுகம்",
+          "root": null,
           "urichol": null,
-          "etymology": "Refers to a specific type of war elephant, possibly with a decorated face.",
-          "gloss": "war elephant"
+          "etymology": "இச்சொல் 'பிணி' (கட்டுதல், பிணித்தல்) மற்றும் 'முகம்' (முன் பகுதி, தோற்றம்) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. 'பிணிமுகம்' என்பது போர்க்களத்தில் பயன்படுத்தப்படும் யானையைக் குறிக்கும் ஒரு சிறப்புப் பெயர். யானையின் முகத்தில் கவசம் அணிவிக்கப்பட்டிருப்பதாலோ அல்லது யானைகள் பிணிக்கப்பட்டிருப்பதாலோ இப்பெயர் வந்திருக்கலாம். சங்க இலக்கியத்தில் இது போர்க்கள யானையைக் குறிக்கப் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழில் இச்சொல் வழக்கில் இல்லை.",
+          "gloss": "This compound noun refers to a war elephant, specifically one that is adorned or prepared for battle, often with its face covered or decorated."
         },
         {
           "form": "வாழ்த்தி",
           "root": "வாழ்த்து",
           "urichol": null,
-          "etymology": "Past participial form of வாழ்த்து (to bless, to praise).",
-          "gloss": "having praised"
+          "etymology": "இச்சொல் 'வாழ்த்து' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'வாழ்த்து' என்பது புகழ்ந்துரைத்தல், ஆசீர்வதித்தல், நல்வாழ்த்து தெரிவித்தல் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் தெய்வங்களையும், வீரர்களையும் வாழ்த்திப் பாடுதல் போன்ற சூழல்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இச்சொல் அதே பொருளில் பரவலாகப் பயன்பாட்டில் உள்ளது.",
+          "gloss": "This is the adverbial participle of the verb 'வாழ்த்து', meaning 'having praised' or 'blessing', indicating the act of offering praise or benediction to the war elephant."
         }
       ]
     },
@@ -144,29 +144,29 @@
           "form": "வேண்டுநர்",
           "root": "வேண்டு",
           "urichol": null,
-          "etymology": "Agent noun from வேண்டு (to desire, to wish).",
-          "gloss": "those who desire"
+          "etymology": "இச்சொல் 'வேண்டு' (விரும்புதல், கோருதல்) என்னும் வினைச்சொல்லின் வினையாலணையும் பெயர். 'வேண்டுநர்' என்பது விரும்புபவர்கள், கோருபவர்கள், பக்தர்கள் என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது ஒரு பொருளை விரும்புபவர்களையும், தெய்வத்திடம் வேண்டுபவர்களையும் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'வேண்டு' என்ற வினைச்சொல் உள்ளது, ஆனால் 'வேண்டுநர்' போன்ற வினையாலணையும் பெயர்கள் இலக்கிய வழக்காகவே உள்ளன.",
+          "gloss": "This noun, derived from the verb 'வேண்டு' (to desire), refers to 'those who desire' or 'devotees who make requests', indicating the worshippers who come with their specific wishes."
         },
         {
           "form": "வேண்டியாங்கு",
           "root": "வேண்டு",
           "urichol": null,
-          "etymology": "Compound of வேண்டி (having desired) and ஆங்கு (as, like that).",
-          "gloss": "as desired"
+          "etymology": "இச்சொல் 'வேண்டு' (விரும்புதல்) என்னும் வினைச்சொல்லின் இறந்தகால வினையெச்ச வடிவம் 'வேண்டி' உடன் 'ஆங்கு' (அவ்வாறு, அங்கே) என்னும் இடைச்சொல் சேர்ந்து உருவானது. 'வேண்டியாங்கு' என்பது 'விரும்பியவாறே', 'விரும்பியபடி' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது ஒரு செயல் விரும்பியபடி நடப்பதைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழில் 'வேண்டி' என்பது 'வேண்டி விரும்பி' போன்ற தொடர்களில் உள்ளது, ஆனால் 'வேண்டியாங்கு' என்பது இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This adverbial phrase means 'as they desired' or 'according to their wishes', indicating that the worshippers' desires are fulfilled exactly as they wished."
         },
         {
           "form": "எய்தனர்",
           "root": "எய்து",
           "urichol": null,
-          "etymology": "Past tense plural verb from எய்து (to obtain, to reach).",
-          "gloss": "they obtained"
+          "etymology": "இச்சொல் 'எய்து' (அடைதல், பெறுதல்) என்னும் வினைச்சொல்லின் இறந்தகாலப் பன்மை வினைமுற்று. 'எய்தனர்' என்பது 'அடைந்தார்கள்', 'பெற்றார்கள்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் ஒரு இலக்கை அடைதல், ஒரு பொருளைப் பெறுதல் போன்ற சூழல்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'எய்து' என்ற வினைச்சொல் உள்ளது, ஆனால் 'எய்தனர்' போன்ற வினைமுற்று வடிவங்கள் இலக்கிய வழக்காகவே உள்ளன.",
+          "gloss": "This is the past tense plural verb, meaning 'they attained' or 'they received', referring to the worshippers who achieved their desired outcomes."
         },
         {
           "form": "வழிபட",
           "root": "வழிபடு",
           "urichol": null,
-          "etymology": "Infinitive form of வழிபடு (to worship).",
-          "gloss": "to worship"
+          "etymology": "இச்சொல் 'வழிபடு' (வணங்குதல், பூசித்தல்) என்னும் வினைச்சொல்லின் வியங்கோள் வினைமுற்று அல்லது செயவென் எச்ச வடிவம். 'வழிபட' என்பது 'வணங்குவதற்காக', 'வணங்கும்படி' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் தெய்வங்களை வழிபடுதல், பெரியோரை வணங்குதல் போன்ற சூழல்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இச்சொல் அதே பொருளில் பரவலாகப் பயன்பாட்டில் உள்ளது.",
+          "gloss": "This is the infinitive form of the verb 'வழிபடு', meaning 'to worship' or 'in order to worship', indicating the purpose for which the devotees gather."
         }
       ]
     },
@@ -178,71 +178,71 @@
           "form": "ஆண்டாண்டு",
           "root": "ஆண்டு",
           "urichol": null,
-          "etymology": "Repetition of ஆண்டு (there, that place) for emphasis.",
-          "gloss": "there and there"
+          "etymology": "இச்சொல் 'ஆண்டு' (அந்த இடம், அங்கே) என்னும் சுட்டுப் பெயரின் அடுக்குத் தொடர். 'ஆண்டாண்டு' என்பது 'அங்கங்கே', 'அந்தந்த இடங்களில்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது பல இடங்களைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'அங்கங்கே' என்ற சொல் பயன்பாட்டில் உள்ளது, ஆனால் 'ஆண்டாண்டு' என்பது இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This reduplicated adverb means 'here and there' or 'in various places', indicating that the presence of Murugan is felt and worshipped in multiple locations."
         },
         {
           "form": "உறைதலும்",
           "root": "உறை",
           "urichol": null,
-          "etymology": "Verbal noun from உறை (to reside) with the emphatic particle உம்.",
-          "gloss": "residing also"
+          "etymology": "இச்சொல் 'உறை' (தங்குதல், வசித்தல்) என்னும் வினைச்சொல்லின் தொழிற்பெயர் 'உறைதல்' உடன் 'உம்' என்னும் உயர்வு சிறப்பு அல்லது எண்ணும்மை உருபு சேர்ந்து உருவானது. 'உறைதலும்' என்பது 'தங்குதலும்', 'வசிப்பதும்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் ஒரு இடத்தில் வசித்தல், நிலைபெற்றிருத்தல் போன்ற சூழல்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'உறை' என்ற வினைச்சொல் உள்ளது, ஆனால் 'உறைதலும்' போன்ற தொழிற்பெயர் வடிவங்கள் இலக்கிய வழக்காகவே உள்ளன.",
+          "gloss": "This noun, formed from the verb 'உறை' (to reside) with the suffix '-உம்', means 'the act of residing' or 'dwelling', implying Murugan's presence and habitation in those places."
         },
         {
           "form": "அறிந்த",
           "root": "அறி",
           "urichol": null,
-          "etymology": "Past participial adjective from அறி (to know).",
-          "gloss": "known"
+          "etymology": "இச்சொல் 'அறி' (தெரிந்துகொள்ளுதல், உணர்தல்) என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'அறிந்த' என்பது 'தெரிந்துகொண்ட', 'உணர்ந்த' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் ஒரு செய்தியை அறிதல், ஒரு உண்மையை உணர்தல் போன்ற சூழல்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இச்சொல் அதே பொருளில் பரவலாகப் பயன்பாட்டில் உள்ளது.",
+          "gloss": "This is the past adjectival participle of the verb 'அறி', meaning 'known' or 'understood', describing the state of being aware of something."
         },
         {
           "form": "வாறே",
           "root": "ஆறு",
           "urichol": null,
-          "etymology": "From ஆறு (way, manner) with emphatic particle ஏ.",
-          "gloss": "the way indeed"
+          "etymology": "இச்சொல் 'ஆறு' (வழி, முறை) என்னும் பெயர்ச்சொல்லுடன் 'ஏ' என்னும் தேற்ற ஏகாரம் சேர்ந்து உருவானது. 'வாறு' என்பது 'ஆறு' என்பதன் விகார வடிவம். 'வாறே' என்பது 'அம்முறையே', 'அவ்வாறே' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் ஒரு வழிமுறை, ஒரு தன்மை ஆகியவற்றைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'அவ்வாறு' என்ற சொல் பயன்பாட்டில் உள்ளது, ஆனால் 'வாறே' என்பது இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This word, derived from 'ஆறு' (way, manner) with the emphatic particle 'ஏ', means 'that very way' or 'such a manner', emphasizing that the residing of Murugan is a well-known and accepted truth."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "punctuation"
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".(245",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "verse number"
+          "gloss": "This notation indicates the starting line number 245 for a range of lines in the original text of Thirumurugatrupadai."
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "range indicator"
+          "gloss": "This hyphen indicates a range or continuation between line numbers in the original text."
         },
         {
           "form": "249)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "verse number"
+          "gloss": "This notation indicates the ending line number 249 for a range of lines in the original text of Thirumurugatrupadai."
         }
       ]
     }
@@ -265,9 +265,17 @@
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
-    "promptVersion": "etymology-v1",
-    "generatedAt": "2026-08-30T16:30:44+00:00",
-    "runId": "fedbff63838a",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:55:01+00:00",
+    "runId": "a85c40908320",
     "wordsAnnotated": 30
+  },
+  "yazhi_urai": "ஆடுகளம் அதிர, பாட்டுப் பாடி, நிறையப் பேர் கூடி... கொம்பு ஊதி, மணியை அடிச்சு, போரில் தோற்காத யானையைப் புகழ்ந்து, அவங்கவங்க என்ன வேணுமோ அதைப் பெற வேண்டி கும்பிட, முருகன் அங்கங்கே இருக்கறது எல்லாருக்கும் தெரிஞ்ச விஷயம்தான்.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:17+00:00",
+    "runId": "6cd23ddba45b"
   }
 }

@@ -75,7 +75,7 @@ DEFAULT_LIMIT = 50  # lower than translate's 200 — each verse now returns a
 # heavier response to generate and validate per unit of work.
 DEFAULT_CONCURRENCY = 4
 
-PROMPT_VERSION = "etymology-v1"
+PROMPT_VERSION = "etymology-v3"
 STATE_SCHEMA_VERSION = 1
 MAX_RUN_HISTORY = 30
 
@@ -174,8 +174,11 @@ def build_prompt(verse: dict) -> str:
         f"For EVERY word below, from {poem} verse {number} (tiṇai: {tinai}), give:\n"
         "  - root: the root word (வேர்ச்சொல்) in Tamil script, or null if the form IS the root\n"
         "  - urichol: its grammatical/semantic class (உரிச்சொல்) if it is one, else null\n"
-        "  - etymology: one short sentence on derivation, cognates, or semantic shift — null if nothing notable\n"
-        "  - gloss: a brief English gloss (1-4 words)\n\n"
+        "  - etymology: a detailed explanation WRITTEN IN TAMIL (தமிழில் விரிவாக எழுதவும்) — "
+        "derivation, cognate forms, sandhi/morphology, and semantic shift from Old Tamil to "
+        "modern usage; 2-4 Tamil sentences, not a single line. null only if truly nothing notable\n"
+        "  - gloss: a detailed English gloss — not just 1-4 words, but a full sentence "
+        "explaining the word's meaning and how it functions in THIS verse\n\n"
         f"Verse:\n{verse.get('sangamTamil', '').strip()}\n"
         f"{context}\n"
         f"Words, in order (annotate ALL {len(words)}, do not merge or split any):\n{numbered}\n\n"

@@ -48,6 +48,17 @@ def test_merge_preserves_english_that_raw_never_carries():
     assert merged["englishMeta"] == {"provider": "openrouter", "runId": "r1"}
 
 
+def test_merge_preserves_yazhi_urai_that_raw_never_carries():
+    record = pipeline.normalize_record(raw_record(), POEM)
+    existing = dict(record)
+    existing["yazhi_urai"] = "எளிய தமிழ்."
+    existing["yazhi_uraiMeta"] = {"provider": "openrouter", "runId": "r1"}
+
+    merged = pipeline.merge_generated_fields(dict(record), existing)
+    assert merged["yazhi_urai"] == "எளிய தமிழ்."
+    assert merged["yazhi_uraiMeta"] == {"provider": "openrouter", "runId": "r1"}
+
+
 def test_merge_prefers_a_fresh_non_empty_urai_from_raw():
     raw = raw_record()
     raw["urai"] = "புதிய உரை"

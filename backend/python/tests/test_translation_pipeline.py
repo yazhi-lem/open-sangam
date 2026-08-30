@@ -12,7 +12,6 @@ import pytest
 
 from ai import translate_with_gemini as pipeline
 
-
 # --------------------------------------------------------------------------- #
 # Fixtures: a throwaway corpus laid out like data/texts/
 # --------------------------------------------------------------------------- #
@@ -195,6 +194,14 @@ def test_urai_prompt_does_not_feed_urai_back_to_itself():
     assert "விளக்கம்" not in prompt
 
 
+def test_yazhi_urai_prompt_includes_urai_context_and_colloquial_rules():
+    verse = {"poem": "kurunthokai", "number": 3, "sangamTamil": "தமிழ்", "urai": "விளக்கம்"}
+    prompt = pipeline.build_prompt(verse, "yazhi_urai")
+    assert "விளக்கம்" in prompt
+    assert "பேச்சு வழக்கு" in prompt
+    assert "ISO 15919" not in prompt  # not the English-specific style rules
+
+
 # --------------------------------------------------------------------------- #
 # Applying translations
 # --------------------------------------------------------------------------- #
@@ -219,6 +226,15 @@ def test_applied_translation_stays_unverified_and_records_provenance():
 def test_urai_translation_does_not_write_english_provenance():
     verse = {"id": "x_01"}
     result = pipeline.apply_translation(verse, "urai", "உரை", FakeBackend(), "run123")
+    assert "englishMeta" not in result
+    assert "yazhi_uraiMeta" not in result
+
+
+def test_yazhi_urai_translation_records_its_own_provenance():
+    verse = {"id": "x_01"}
+    result = pipeline.apply_translation(verse, "yazhi_urai", "எளிய தமிழ்", FakeBackend(), "run123")
+    assert result["yazhi_urai"] == "எளிய தமிழ்"
+    assert result["yazhi_uraiMeta"]["runId"] == "run123"
     assert "englishMeta" not in result
 
 
@@ -356,7 +372,7 @@ def test_refresh_updates_datapackage_stats(corpus):
     pipeline.refresh_poem_artifacts("mullaippattu")
 
     stats = json.loads((poem_dir / "datapackage.json").read_text(encoding="utf-8"))["stats"]
-    assert stats == {"records": 3, "withUrai": 3, "withEnglish": 1}
+    assert stats == {"records": 3, "withUrai": 3, "withEnglish": 1, "withYazhiUrai": 0}
     combined = json.loads((poem_dir / "mullaippattu.json").read_text(encoding="utf-8"))
     assert [v["number"] for v in combined] == [1, 2, 3]
 

@@ -4,7 +4,7 @@
   "provider": "openrouter",
   "model": "google/gemini-2.5-flash",
   "promptVersion": "english-v1",
-  "updatedAt": "2026-08-30T16:29:29+00:00",
+  "updatedAt": "2026-08-30T16:51:21+00:00",
   "currentPhase": 1,
   "phases": [
     {
@@ -104,7 +104,7 @@
       "translated": 32,
       "remaining": 0,
       "status": "complete",
-      "lastRunAt": "2026-08-30T16:29:28+00:00"
+      "lastRunAt": "2026-08-30T16:51:21+00:00"
     },
     "perumpanatrupadai": {
       "phase": 1,
@@ -221,6 +221,24 @@
       "phase": 1,
       "trigger": "manual",
       "field": "english",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "english-v1",
+      "attempted": 32,
+      "translated": 32,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "6cd23ddba45b",
+      "startedAt": "2026-08-30T16:51:04+00:00",
+      "finishedAt": "2026-08-30T16:51:21+00:00",
+      "phase": 1,
+      "trigger": "manual",
+      "field": "yazhi_urai",
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",
       "promptVersion": "english-v1",

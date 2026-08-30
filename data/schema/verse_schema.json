@@ -31,6 +31,21 @@
       "type": ["string", "null"],
       "description": "Modern Tamil prose rendering (Urai). Null until AI-generated and verified."
     },
+    "yazhi_urai": {
+      "type": ["string", "null"],
+      "description": "Plain, colloquial modern Tamil paraphrase (Yazhi Urai) — an easier-to-read retelling than the more formal `urai` prose. Null until AI-generated."
+    },
+    "yazhi_uraiMeta": {
+      "type": ["object", "null"],
+      "description": "Provenance for an AI-drafted yazhi_urai field, written by backend/python/ai/translate_with_gemini.py. Same shape as englishMeta.",
+      "properties": {
+        "provider": { "type": "string" },
+        "model": { "type": "string" },
+        "promptVersion": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "runId": { "type": "string" }
+      }
+    },
     "english": {
       "type": ["string", "null"],
       "description": "Contemporary English translation. Null until AI-generated and verified."
@@ -119,11 +134,12 @@
                   "description": "Grammatical / semantic class (உரிச்சொல்)"
                 },
                 "etymology": {
-                  "type": ["string", "null"]
+                  "type": ["string", "null"],
+                  "description": "Detailed explanation IN TAMIL — derivation, cognates, morphology, and semantic shift to modern usage"
                 },
                 "gloss": {
                   "type": ["string", "null"],
-                  "description": "Brief English gloss"
+                  "description": "Detailed English gloss — the word's meaning and how it functions in this verse, not just a 1-4 word tag"
                 }
               }
             }

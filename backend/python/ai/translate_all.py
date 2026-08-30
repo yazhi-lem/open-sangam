@@ -1,22 +1,23 @@
 """
 translate_all.py
 -----------------
-Convenience wrapper around translate_with_gemini.py that runs BOTH corpus
-translation passes — Modern Tamil prose (urai) and English — in one command,
-instead of remembering to invoke `--lang urai` and `--lang english`
-separately.
+Convenience wrapper around translate_with_gemini.py that runs ALL THREE
+corpus translation passes — Modern Tamil prose (urai), Yazhi Urai (a
+colloquial paraphrase), and English — in one command, instead of remembering
+to invoke `--lang urai` / `--lang yazhi_urai` / `--lang english` separately.
 
-translate_with_gemini.py already does the actual drafting for both fields
-(FIELD_FOR_LANG = {"english": "english", "urai": "urai"}); this script just
-sequences two clean subprocess invocations of it — urai first (it's at 99%
-coverage, so this mops up the last stragglers cheaply), then english (the
-larger, ongoing Phase 2 effort) — and forwards the shared flags to both.
+translate_with_gemini.py already does the actual drafting for all three
+fields (FIELD_FOR_LANG); this script just sequences three clean subprocess
+invocations of it — urai first (it's at 99% coverage, so this mops up the
+last stragglers cheaply, and both other passes use it as context), then
+yazhi_urai (the easy-to-read paraphrase of that urai), then english (the
+larger, ongoing Phase 2 effort) — and forwards the shared flags to each.
 
 Each sub-run still writes its own data/pipeline/translation-state.json
 (translate_with_gemini.py tracks one field's coverage per file — running
-both langs here means the file reflects whichever ran most recently, i.e.
-english, after this script finishes; that's a pre-existing property of the
-underlying pipeline, not something this wrapper changes).
+all three langs here means the file reflects whichever ran most recently,
+i.e. english, after this script finishes; that's a pre-existing property of
+the underlying pipeline, not something this wrapper changes).
 
 Usage:
     python -m ai.translate_all --status
@@ -38,9 +39,16 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 
-# urai first: it's nearly done (mop up stragglers cheaply), english second:
-# the larger ongoing phase-by-phase effort, so it's what the run "ends on".
-LANG_ORDER = ["urai", "english"]
+# urai first (nearly done — mop up stragglers, and both passes below use it
+# as context), then yazhi_urai (a paraphrase of that urai), then english (the
+# larger ongoing phase-by-phase effort, so it's what the run "ends on").
+LANG_ORDER = ["urai", "yazhi_urai", "english"]
+
+LANG_LABELS = {
+    "urai": "Modern Tamil (urai)",
+    "yazhi_urai": "Yazhi Urai (colloquial)",
+    "english": "English",
+}
 
 
 def build_command(lang: str, args: argparse.Namespace) -> list[str]:
@@ -62,12 +70,12 @@ def build_command(lang: str, args: argparse.Namespace) -> list[str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Run the Modern Tamil (urai) and English translation passes together."
+        description="Run the urai, yazhi_urai, and English translation passes together."
     )
     parser.add_argument(
         "--only",
-        choices=["urai", "english"],
-        help="run a single language pass instead of both",
+        choices=["urai", "yazhi_urai", "english"],
+        help="run a single language pass instead of all three",
     )
     parser.add_argument("--poem", help="restrict to a single poem id (ignores phases)")
     parser.add_argument("--phase", type=int, help="force a phase instead of auto-advancing")
@@ -84,8 +92,7 @@ def main() -> None:
     for i, lang in enumerate(langs):
         if i > 0:
             print()
-        label = "Modern Tamil (urai)" if lang == "urai" else "English"
-        print(f"=== {label} ===")
+        print(f"=== {LANG_LABELS[lang]} ===")
         result = subprocess.run(build_command(lang, args), cwd=HERE.parent, check=False)
         if result.returncode != 0:
             exit_code = result.returncode
