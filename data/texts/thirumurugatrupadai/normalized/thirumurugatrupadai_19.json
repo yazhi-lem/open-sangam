@@ -3,8 +3,8 @@
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
   "sangamTamil": "மீன்பூத் தன்ன தோன்றலர் மீன்சேர்பு\nவளிகிளர்ந் தன்ன செலவினர் வளியிடைத் . . . .(170)\nதீயெழுந் தன்ன திறலினர் தீப்பட\nஉரும்இடித் தன்ன குரலினர் விழுமிய\nஉறுகுறை மருங்கிந்தம் பெறுமுறை கொண்மார்\nஅந்தரக் கொட்பினர் வந்துடன் காணத் . . . .(169 - 174)",
-  "urai": null,
-  "english": null,
+  "urai": "மீன்கள் பூத்ததைப் போன்ற தோற்றமுடைய நட்சத்திரக் கூட்டங்கள் போலத் தோற்றமளிப்பவர்கள். காற்று வீசுவது போல விரைந்த நடையுடையவர்கள். காற்றிலிருந்து தீ எழுவது போல வலிமையானவர்கள். தீப்பற்றி எரியும்போது இடி இடிப்பது போன்ற குரலையுடையவர்கள். சிறந்த குறைகளைத் தீர்க்கும் பொருட்டு, தங்களுக்கு உரிய பங்கை எடுத்துக்கொள்ளும் பொருட்டு, ஆகாயத்தில் சுழன்று வருபவர்கள். வந்து ஒன்றாகக் காணவும்.",
+  "english": "Like stars that blossom as fish, they appear;\nTheir stride, a swift wind’s surge;\nTheir might, a fire born of the wind;\nTheir voice, a thunderclap when fire ignites.\nTo resolve grave flaws, to claim their rightful share,\nThey circle the sky, to come and witness all.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "மீன்பூத்",
-          "root": null,
+          "root": "மீன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of மீன் (fish/star) and பூ (flower/blossom), here referring to stars appearing like blossoms.",
+          "gloss": "star-blossomed"
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தன் (self) + அ (adjectival suffix), meaning 'like' or 'similar to'.",
+          "gloss": "like, similar to"
         },
         {
           "form": "தோன்றலர்",
-          "root": null,
+          "root": "தோன்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தோன்று (to appear) + அர் (plural suffix), referring to those who appear.",
+          "gloss": "those who appear"
         },
         {
           "form": "மீன்சேர்பு",
-          "root": null,
+          "root": "மீன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of மீன் (star) and சேர் (to join/gather), referring to a constellation.",
+          "gloss": "star-cluster"
         }
       ]
     },
@@ -46,59 +46,59 @@
       "words": [
         {
           "form": "வளிகிளர்ந்",
-          "root": null,
+          "root": "வளி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of வளி (wind) and கிளர் (to rise/stir), referring to rising wind.",
+          "gloss": "wind-stirred"
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தன் (self) + அ (adjectival suffix), meaning 'like' or 'similar to'.",
+          "gloss": "like, similar to"
         },
         {
           "form": "செலவினர்",
-          "root": null,
+          "root": "செலவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From செலவு (movement/gait) + அர் (plural suffix), referring to those with a certain gait.",
+          "gloss": "those with gait"
         },
         {
           "form": "வளியிடைத்",
-          "root": null,
+          "root": "வளி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of வளி (wind) and இடை (in between/amidst), referring to 'amidst the wind'.",
+          "gloss": "amidst the wind"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(170)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -108,31 +108,31 @@
       "words": [
         {
           "form": "தீயெழுந்",
-          "root": null,
+          "root": "தீ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of தீ (fire) and எழு (to rise), referring to rising fire.",
+          "gloss": "fire-rising"
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தன் (self) + அ (adjectival suffix), meaning 'like' or 'similar to'.",
+          "gloss": "like, similar to"
         },
         {
           "form": "திறலினர்",
-          "root": null,
+          "root": "திறல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From திறல் (strength/power) + அர் (plural suffix), referring to those who are powerful.",
+          "gloss": "those with strength"
         },
         {
           "form": "தீப்பட",
-          "root": null,
+          "root": "தீ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of தீ (fire) and படு (to happen/fall), meaning 'as fire ignites'.",
+          "gloss": "as fire ignites"
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "உரும்இடித்",
-          "root": null,
+          "root": "உரும்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of உரும் (thunder) and இடி (to thunder/strike), referring to thunder striking.",
+          "gloss": "thunder-striking"
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தன் (self) + அ (adjectival suffix), meaning 'like' or 'similar to'.",
+          "gloss": "like, similar to"
         },
         {
           "form": "குரலினர்",
-          "root": null,
+          "root": "குரல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From குரல் (voice/sound) + அர் (plural suffix), referring to those with a certain voice.",
+          "gloss": "those with voice"
         },
         {
           "form": "விழுமிய",
-          "root": null,
+          "root": "விழும்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From விழுமம் (excellence/preciousness) + இய (adjectival suffix), meaning 'excellent' or 'precious'.",
+          "gloss": "excellent, precious"
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "உறுகுறை",
-          "root": null,
+          "root": "உறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of உறு (to happen/befall) and குறை (defect/shortcoming), referring to 'befalling shortcomings'.",
+          "gloss": "befalling shortcomings"
         },
         {
           "form": "மருங்கிந்தம்",
-          "root": null,
+          "root": "மருங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of மருங்கு (side/vicinity) and இம் (this) + தம் (their), referring to 'in their vicinity'.",
+          "gloss": "in their vicinity"
         },
         {
           "form": "பெறுமுறை",
-          "root": null,
+          "root": "பெறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of பெறு (to obtain) and முறை (order/share), referring to 'their due share'.",
+          "gloss": "due share"
         },
         {
           "form": "கொண்மார்",
-          "root": null,
+          "root": "கொள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From கொள் (to take/receive) + மார் (purpose/future suffix), meaning 'in order to take'.",
+          "gloss": "in order to take"
         }
       ]
     },
@@ -210,73 +210,73 @@
       "words": [
         {
           "form": "அந்தரக்",
-          "root": null,
+          "root": "அந்தரம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From அந்தரம் (sky/space) + க் (connective), referring to 'of the sky'.",
+          "gloss": "of the sky"
         },
         {
           "form": "கொட்பினர்",
-          "root": null,
+          "root": "கொட்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From கொட்பு (circling/roaming) + அர் (plural suffix), referring to those who roam.",
+          "gloss": "those who roam"
         },
         {
           "form": "வந்துடன்",
-          "root": null,
+          "root": "வந்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of வந்து (having come) and உடன் (together/at once), meaning 'having come together'.",
+          "gloss": "having come together"
         },
         {
           "form": "காணத்",
-          "root": null,
+          "root": "காண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From காண் (to see) + அ (infinitive suffix), meaning 'to see'.",
+          "gloss": "to see"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(169",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "174)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -288,5 +288,20 @@
   "sectionNumber": 19,
   "title": "தேவர்கள் வருகின்ற காட்சி",
   "lineStart": 169,
-  "lineEnd": 174
+  "lineEnd": 174,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:21+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:13+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 34
+  }
 }

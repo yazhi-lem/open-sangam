@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "பார்முதிர் பனிக்கடல் கலங்கவுள் புக்குச். . . .(45)\nசூர்முதல் தடிந்த சுடரிலை நெடுவேல். . . .(45 - 46)",
   "urai": "கடலின் உள்ளே சென்று சுடர்வீசும் இலைபோன்ற தன்வேலை வீசிச் சூரபனமனின் குல முதலையே கொன்றழித்த கொற்றவன் என்று போற்றினர்.",
-  "english": null,
+  "english": "He, who plunged into the ancient, chilling ocean,\nand with his long, fiery, leaf-shaped spear,\nstruck down the very root of Cūr.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,52 +12,52 @@
       "words": [
         {
           "form": "பார்முதிர்",
-          "root": null,
+          "root": "பார்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பார்' (earth) and 'முதிர்' (mature/ancient).",
+          "gloss": "ancient earth"
         },
         {
           "form": "பனிக்கடல்",
-          "root": null,
+          "root": "பனி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பனி' (cold/dew) and 'கடல்' (sea).",
+          "gloss": "cold sea"
         },
         {
           "form": "கலங்கவுள்",
-          "root": null,
+          "root": "கலங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'கலங்கு' (to be agitated/disturbed) with 'உள்' (inside).",
+          "gloss": "to be agitated within"
         },
         {
           "form": "புக்குச்.",
-          "root": null,
+          "root": "புகு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'புகு' (to enter).",
+          "gloss": "having entered"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(45)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -67,66 +67,66 @@
       "words": [
         {
           "form": "சூர்முதல்",
-          "root": null,
+          "root": "சூர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'சூர்' (demon/evil spirit) and 'முதல்' (origin/root).",
+          "gloss": "demon's root"
         },
         {
           "form": "தடிந்த",
-          "root": null,
+          "root": "தடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'தடி' (to cut/destroy).",
+          "gloss": "that which cut"
         },
         {
           "form": "சுடரிலை",
-          "root": null,
+          "root": "சுடர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'சுடர்' (radiance/flame) and 'இலை' (leaf/blade).",
+          "gloss": "radiant blade"
         },
         {
           "form": "நெடுவேல்.",
-          "root": null,
+          "root": "நெடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நெடு' (long/tall) and 'வேல்' (spear).",
+          "gloss": "long spear"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(45",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "hyphen"
         },
         {
           "form": "46)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -138,5 +138,20 @@
   "sectionNumber": 5,
   "title": "முருகன் சூரனைத் தடிந்த வகை",
   "lineStart": 45,
-  "lineEnd": 46
+  "lineEnd": 46,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:16+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:42+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 16
+  }
 }

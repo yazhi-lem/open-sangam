@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "மந்தியும் அறியா மரன்பயில் அடுக்கத்துச்\nசுரும்பும் மூசாச் சுடர்ப்பூங் காந்தட்\nபெருந்தண் கண்ணி மிலைந்த சென்னியன். . . .(42 - 44)",
   "urai": "முருகன் காந்தள் மலர் மாலையைத் தலையில் அணிந்திருப்பான். அந்தப் பூக்கள் மந்தியும் அறியாத மரமடர்ந்த மலையடுக்குப் பகுதியில் வண்டுகளும் மொய்க்க முடியாமல் மிகுதியாகப் பூத்துக் கிடப்பவை. (முருகனைக் காந்தளங் கண்ணிச் சென்னியன் என்று சொல்லிப் பாராட்டினர்)",
-  "english": null,
+  "english": "Upon his head, a garland of large, cool kānṭal blooms,\nflowers that blossom in such profusion,\neven the monkeys know not the tree-dense mountain slopes where they grow,\nand the bees cannot reach to hum among their radiant petals.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "மந்தியும்",
-          "root": null,
+          "root": "மந்தி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *manti 'monkey'.",
+          "gloss": "monkey (even)"
         },
         {
           "form": "அறியா",
-          "root": null,
+          "root": "அறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective from 'அறி' (to know).",
+          "gloss": "unknowing, unfamiliar"
         },
         {
           "form": "மரன்பயில்",
-          "root": null,
+          "root": "மரம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'மரம்' (tree) and 'பயில்' (to be dense/abundant).",
+          "gloss": "tree-dense"
         },
         {
           "form": "அடுக்கத்துச்",
-          "root": null,
+          "root": "அடுக்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'அடுக்கு' (to pile up, layer), referring to mountain ranges.",
+          "gloss": "mountain range's"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "சுரும்பும்",
-          "root": null,
+          "root": "சுரும்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *curumpu 'bee'.",
+          "gloss": "bee (even)"
         },
         {
           "form": "மூசாச்",
-          "root": null,
+          "root": "மூசு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective from 'மூசு' (to hum, to swarm).",
+          "gloss": "not swarming"
         },
         {
           "form": "சுடர்ப்பூங்",
-          "root": null,
+          "root": "சுடர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'சுடர்' (radiance, flame) and 'பூ' (flower).",
+          "gloss": "radiant-flowered"
         },
         {
           "form": "காந்தட்",
-          "root": null,
+          "root": "காந்தள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *kāntal 'Gloriosa superba'.",
+          "gloss": "Gloriosa lily"
         }
       ]
     },
@@ -80,66 +80,66 @@
       "words": [
         {
           "form": "பெருந்தண்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "பெரு",
+          "urichol": "உரிச்சொல்",
+          "etymology": "Compound of 'பெரு' (great) and 'தண்' (cool, refreshing).",
+          "gloss": "greatly cool"
         },
         {
           "form": "கண்ணி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'கண்' (eye), extended to 'garland' worn on the head.",
+          "gloss": "garland"
         },
         {
           "form": "மிலைந்த",
-          "root": null,
+          "root": "மிலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'மிலை' (to wear, to adorn).",
+          "gloss": "adorned with"
         },
         {
           "form": "சென்னியன்.",
-          "root": null,
+          "root": "சென்னி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'சென்னி' (head), with an agentive suffix.",
+          "gloss": "he of the head"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(42",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "44)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -151,5 +151,20 @@
   "sectionNumber": 4,
   "title": "காந்தளின் கண்ணி சூடிய சென்னியன்",
   "lineStart": 42,
-  "lineEnd": 44
+  "lineEnd": 44,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:16+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:41+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 17
+  }
 }

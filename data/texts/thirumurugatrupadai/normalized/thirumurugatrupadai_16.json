@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "நோயின்று இயன்ற யாக்கையர் மாவின்\nஅவிர்தளிர் புரையும் மேனியர் அவிர்தொறும்\nபொன்னுரை கடுக்கும் திதலையர் இன்னகைப் . . . .(145)\nபருமம் தாங்கிய பணிந்தேந்து அல்குல்\nமாசில் மகளிரொடு மறுவின்றி விளங்க . . . .(143 - 147)",
   "urai": "நோயில்லாத உடலிலேயே இந்த நிலை. மேனி மாந்தளிர் போல் இருந்தது. அதில் பொன்னை உரைத்த கல்லைப் போலத் திதலைநிறம் பூத்திருந்தது. வாயிலே இனிய புன்சிரிப்பு. பணிந்து உயர்ந்த பெண்ணுறுப்பைப் பருமம் என்னும் ஆடை மூடியிருந்தது. இத்தகைய மாசு மறுவற்ற மகளிர் முருகனைச் சூழ்ந்து வந்தனர்.",
-  "english": null,
+  "english": "Their bodies, free from illness,\ntheir skin like the tender mango leaf,\nadorned with golden freckles that gleam with every movement,\na sweet smile gracing their lips . . .\nWith their hips, gracefully curved and bearing the weight of their ornaments,\nthese faultless women shone without blemish.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "நோயின்று",
-          "root": null,
+          "root": "நோய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'நோய்' (disease) and 'இன்று' (without).",
+          "gloss": "without disease"
         },
         {
           "form": "இயன்ற",
-          "root": null,
+          "root": "இயல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'இயல்' (to be possible, to be fitting).",
+          "gloss": "formed, fitting"
         },
         {
           "form": "யாக்கையர்",
-          "root": null,
+          "root": "யாக்கை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Plural form of 'யாக்கை' (body), indicating possession or association.",
+          "gloss": "those with bodies"
         },
         {
           "form": "மாவின்",
-          "root": null,
+          "root": "மா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive case of 'மா' (mango tree), indicating 'of the mango'.",
+          "gloss": "of mango"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "அவிர்தளிர்",
-          "root": null,
+          "root": "அவிர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'அவிர்' (shining) and 'தளிர்' (sprout/tender leaf).",
+          "gloss": "shining sprout"
         },
         {
           "form": "புரையும்",
-          "root": null,
+          "root": "புரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verbal participle from 'புரை' (to resemble, to be like).",
+          "gloss": "resembling, like"
         },
         {
           "form": "மேனியர்",
-          "root": null,
+          "root": "மேனி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Plural form of 'மேனி' (body, complexion), indicating possession or association.",
+          "gloss": "those with complexions"
         },
         {
           "form": "அவிர்தொறும்",
-          "root": null,
+          "root": "அவிர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'அவிர்' (to shine) and 'தொறும்' (each time, whenever).",
+          "gloss": "whenever it shines"
         }
       ]
     },
@@ -80,59 +80,59 @@
       "words": [
         {
           "form": "பொன்னுரை",
-          "root": null,
+          "root": "பொன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பொன்' (gold) and 'உரை' (touchstone, test).",
+          "gloss": "gold touchstone"
         },
         {
           "form": "கடுக்கும்",
-          "root": null,
+          "root": "கடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verbal participle from 'கடு' (to resemble, to be sharp).",
+          "gloss": "resembling, like"
         },
         {
           "form": "திதலையர்",
-          "root": null,
+          "root": "திதலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Plural form of 'திதலை' (freckles, beauty spots), indicating possession or association.",
+          "gloss": "those with freckles"
         },
         {
           "form": "இன்னகைப்",
-          "root": null,
+          "root": "இன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'இன்' (sweet, pleasant) and 'நகை' (smile, laughter).",
+          "gloss": "sweet smile"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(145)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -144,29 +144,29 @@
           "form": "பருமம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Sanskrit 'bharman' (support, burden), referring to a type of ornament or garment.",
+          "gloss": "girdle, ornament"
         },
         {
           "form": "தாங்கிய",
-          "root": null,
+          "root": "தாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'தாங்கு' (to bear, to support).",
+          "gloss": "bearing, supporting"
         },
         {
           "form": "பணிந்தேந்து",
-          "root": null,
+          "root": "பணி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பணிந்து' (bowed, humble) and 'ஏந்து' (raised, lifted).",
+          "gloss": "bowed and raised"
         },
         {
           "form": "அல்குல்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to the hips or pudendum, often used euphemistically.",
+          "gloss": "hips, pudendum"
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "மாசில்",
-          "root": null,
+          "root": "மாசு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'மாசு' (blemish, impurity) and 'இல்' (without).",
+          "gloss": "without blemish"
         },
         {
           "form": "மகளிரொடு",
-          "root": null,
+          "root": "மகளிர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'மகளிர்' (women) and 'ஒடு' (with).",
+          "gloss": "with women"
         },
         {
           "form": "மறுவின்றி",
-          "root": null,
+          "root": "மறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'மறு' (blemish, defect) and 'இன்றி' (without).",
+          "gloss": "without defect"
         },
         {
           "form": "விளங்க",
-          "root": null,
+          "root": "விளங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive form of 'விளங்கு' (to shine, to be clear).",
+          "gloss": "to shine, to appear"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(143",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "147)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -254,5 +254,20 @@
   "sectionNumber": 16,
   "title": "பாடும் மகளிர் இயல்பு",
   "lineStart": 143,
-  "lineEnd": 147
+  "lineEnd": 147,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:20+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:13+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 30
+  }
 }

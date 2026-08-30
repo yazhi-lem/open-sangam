@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "பைங்கொடி நறைக்காய் இடையிடுபு வேலன் . . . .(190)\nஅம்பொதிப் புட்டில் விரைஇக் குளவியொடு\nவெண்கூ தாளம் தொடுத்த கண்ணியன்\nநறுஞ்சாந்து அணிந்த கேழ்கிளர் மார்பின்\nகொடுந்தொழில் வல்விற் கொலைஇய கானவர்\nநீடமை விளைந்த தேக்கள் தேறல் . . . .(195)\nகுன்றகச் சிறுகுடிக் கிளையுடன் மகிழ்ந்து\nதொண்டகச் சிறுபறைக் குரவை அயர . . . .(190 - 197)",
   "urai": "வேலன் (அடி 190) என்பவன் சாமியாடி அவன் பூக்கண்ணியைத் தலையில் அணிந்திருந்தான். பூக்கூடையில் கொண்டுவந்த குளவி வெண்கூதாளம் ஆகிய பூக்களுக்கிடையே நறைக்காயை இடையிலே வைத்துத் தொடுத்த கண்ணி அது. மார்பில் சந்தனம் அணிந்திருந்தான். இனிப்புக் கள்ளாகிய தேறலைத் தன் குன்றகச் சிறுகுடியிலுள்ள சுற்றத்தாருடன் சேர்ந்து உண்ட களிப்போடு தொண்டகச் சிறுபறை முழக்கத்துடன் குரவை ஆடினான். தேறல் கானவரின் மூங்கில் குழாயில் விளைந்தது. விலங்குகளை வேட்டையாடும்போது செய்யும் கொடுந்தொழிலை மறக்கக் கானவர் குடிக்கப் பயன்படுத்தும் தேறல் அது",
-  "english": null,
+  "english": "The Vēlaṉ, his garland woven with fragrant nuts interspersed among the blossoms of the wild jasmine and the white kūtāḷam, his chest resplendent with fragrant sandalwood, joins the Kāṉavar. These hunters, skilled in their cruel craft of the strong bow, revel with their kin in their small mountain hamlet, drinking the clear, sweet honey-mead matured in tall bamboo. With the rhythmic beat of the small toṇṭakam drum, they dance the kuravai.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,59 +12,59 @@
       "words": [
         {
           "form": "பைங்கொடி",
-          "root": null,
+          "root": "பைங்கொடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of பைம் (green) + கொடி (creeper).",
+          "gloss": "green creeper"
         },
         {
           "form": "நறைக்காய்",
-          "root": null,
+          "root": "நறைக்காய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of நறை (fragrant) + காய் (fruit).",
+          "gloss": "fragrant fruit"
         },
         {
           "form": "இடையிடுபு",
-          "root": null,
+          "root": "இடையிடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From இடை (middle) + இடு (to place).",
+          "gloss": "having placed between"
         },
         {
           "form": "வேலன்",
-          "root": null,
+          "root": "வேலன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From வேல் (spear), referring to Murugan's spear.",
+          "gloss": "priest of Murugan"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(190)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -74,31 +74,31 @@
       "words": [
         {
           "form": "அம்பொதிப்",
-          "root": null,
+          "root": "அம்பொதி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of அம்பு (arrow) + பொதி (quiver/bundle).",
+          "gloss": "arrow-quiver"
         },
         {
           "form": "புட்டில்",
-          "root": null,
+          "root": "புட்டில்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a container or quiver.",
+          "gloss": "quiver"
         },
         {
           "form": "விரைஇக்",
-          "root": null,
+          "root": "விரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From விரை (to mix, to hasten).",
+          "gloss": "having mixed"
         },
         {
           "form": "குளவியொடு",
-          "root": null,
+          "root": "குளவி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a type of wild jasmine.",
+          "gloss": "with wild jasmine"
         }
       ]
     },
@@ -108,31 +108,31 @@
       "words": [
         {
           "form": "வெண்கூ",
-          "root": null,
+          "root": "வெண்கூ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Part of வெண்கூதாளம், referring to white.",
+          "gloss": "white"
         },
         {
           "form": "தாளம்",
-          "root": null,
+          "root": "தாளம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Part of வெண்கூதாளம், a type of flower.",
+          "gloss": "Thalam flower"
         },
         {
           "form": "தொடுத்த",
-          "root": null,
+          "root": "தொடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தொடு (to string, to make).",
+          "gloss": "strung, made"
         },
         {
           "form": "கண்ணியன்",
-          "root": null,
+          "root": "கண்ணி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From கண்ணி (garland for the head).",
+          "gloss": "one with garland"
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "நறுஞ்சாந்து",
-          "root": null,
+          "root": "நறுஞ்சாந்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of நறும் (fragrant) + சாந்து (sandal paste).",
+          "gloss": "fragrant sandal paste"
         },
         {
           "form": "அணிந்த",
-          "root": null,
+          "root": "அணி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From அணி (to wear, to adorn).",
+          "gloss": "adorned, worn"
         },
         {
           "form": "கேழ்கிளர்",
-          "root": null,
+          "root": "கேழ்கிளர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of கேழ் (luster) + கிளர் (to rise, to shine).",
+          "gloss": "lustrous, shining"
         },
         {
           "form": "மார்பின்",
-          "root": null,
+          "root": "மார்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From மார்பு (chest).",
+          "gloss": "on the chest"
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "கொடுந்தொழில்",
-          "root": null,
+          "root": "கொடுந்தொழில்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of கொடு (cruel) + தொழில் (deed, act).",
+          "gloss": "cruel deed"
         },
         {
           "form": "வல்விற்",
-          "root": null,
+          "root": "வல்வில்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of வல் (strong) + வில் (bow).",
+          "gloss": "strong bow"
         },
         {
           "form": "கொலைஇய",
-          "root": null,
+          "root": "கொலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From கொலை (to kill, to hunt).",
+          "gloss": "having hunted"
         },
         {
           "form": "கானவர்",
-          "root": null,
+          "root": "கானவர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From கான் (forest) + அவர் (they).",
+          "gloss": "forest dwellers"
         }
       ]
     },
@@ -210,59 +210,59 @@
       "words": [
         {
           "form": "நீடமை",
-          "root": null,
+          "root": "நீடமை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of நீள் (long) + அமை (bamboo).",
+          "gloss": "long bamboo"
         },
         {
           "form": "விளைந்த",
-          "root": null,
+          "root": "விளை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From விளை (to ripen, to produce).",
+          "gloss": "ripened, produced"
         },
         {
           "form": "தேக்கள்",
-          "root": null,
+          "root": "தேக்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தேக்கு (honey).",
+          "gloss": "honey"
         },
         {
           "form": "தேறல்",
-          "root": null,
+          "root": "தேறல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to clear liquor or toddy.",
+          "gloss": "clear liquor"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(195)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -272,31 +272,31 @@
       "words": [
         {
           "form": "குன்றகச்",
-          "root": null,
+          "root": "குன்றகம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of குன்று (hill) + அகம் (inside).",
+          "gloss": "hill-dwelling"
         },
         {
           "form": "சிறுகுடிக்",
-          "root": null,
+          "root": "சிறுகுடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of சிறு (small) + குடி (settlement).",
+          "gloss": "small settlement"
         },
         {
           "form": "கிளையுடன்",
-          "root": null,
+          "root": "கிளை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From கிளை (kin, relatives).",
+          "gloss": "with kin"
         },
         {
           "form": "மகிழ்ந்து",
-          "root": null,
+          "root": "மகிழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From மகிழ் (to rejoice, to be happy).",
+          "gloss": "having rejoiced"
         }
       ]
     },
@@ -306,73 +306,73 @@
       "words": [
         {
           "form": "தொண்டகச்",
-          "root": null,
+          "root": "தொண்டகம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a type of drum.",
+          "gloss": "Tondakam drum"
         },
         {
           "form": "சிறுபறைக்",
-          "root": null,
+          "root": "சிறுபறை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of சிறு (small) + பறை (drum).",
+          "gloss": "small drum"
         },
         {
           "form": "குரவை",
-          "root": null,
+          "root": "குரவை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a type of folk dance.",
+          "gloss": "Kuravai dance"
         },
         {
           "form": "அயர",
-          "root": null,
+          "root": "அயர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From அயர் (to perform, to do).",
+          "gloss": "to perform"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(190",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "hyphen"
         },
         {
           "form": "197)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -384,5 +384,20 @@
   "sectionNumber": 23,
   "title": "குரவைக் கூத்து",
   "lineStart": 190,
-  "lineEnd": 197
+  "lineEnd": 197,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:23+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:24+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 46
+  }
 }

@@ -3,8 +3,8 @@
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
   "sangamTamil": "வேறுபல் உருவின் குறும்பல் கூளியர்\nசாறுஅயர் களத்து வீறுபெறத் தோன்றி,\n'அளியன் றானே முதுவாய் இரவலன் வந்தோன்\nபெரும!நின் வண்புகழ் நயந்'தென . . . .(285)\nஇனியவும் நல்லவும் நனிபல ஏத்தித் . . . .(282 - 286)",
-  "urai": null,
-  "english": null,
+  "urai": "பலவிதமான உருவங்களை உடைய சிறிய பூதங்கள், விழா நடக்கும் களத்தில் கம்பீரமாகத் தோன்றி, \"பெரியவனே! இந்த முதுமையான இரவலன் உன்னுடைய வள்ளல் தன்மையைப் புகழ்ந்து வந்திருக்கிறான், இவன் இரங்கத்தக்கவன்\" என்று பல இனிய, நல்ல சொற்களால் போற்றிப் புகழ்ந்தன.",
+  "english": "The small goblins, of varied forms, appeared with grandeur in the festive ground, proclaiming, \"O Great One! This aged bard, a pitiable soul, has come, drawn by your generous fame!\" Thus, with many sweet and good words, they praised him.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "வேறுபல்",
-          "root": null,
+          "root": "வேறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'வேறு' (different) and 'பல' (many).",
+          "gloss": "various, many"
         },
         {
           "form": "உருவின்",
-          "root": null,
+          "root": "உரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive case of 'உரு' (form).",
+          "gloss": "of form"
         },
         {
           "form": "குறும்பல்",
-          "root": null,
+          "root": "குறும்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'குறும்' (short/small) and 'பல' (many).",
+          "gloss": "small, many"
         },
         {
           "form": "கூளியர்",
-          "root": null,
+          "root": "கூளி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Plural of 'கூளி' (demon/goblin).",
+          "gloss": "goblins, spirits"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "சாறுஅயர்",
-          "root": null,
+          "root": "சாறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'சாறு' (festival) and 'அயர்' (to perform/celebrate).",
+          "gloss": "festival-celebrating"
         },
         {
           "form": "களத்து",
-          "root": null,
+          "root": "களம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of 'களம்' (place/field).",
+          "gloss": "in the place"
         },
         {
           "form": "வீறுபெறத்",
-          "root": null,
+          "root": "வீறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'வீறு' (majesty/dignity) and 'பெற' (to obtain/so as to get).",
+          "gloss": "majestically"
         },
         {
           "form": "தோன்றி,",
-          "root": null,
+          "root": "தோன்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adverb of 'தோன்று' (to appear).",
+          "gloss": "having appeared"
         }
       ]
     },
@@ -80,38 +80,38 @@
       "words": [
         {
           "form": "'அளியன்",
-          "root": null,
+          "root": "அளி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Derived from 'அளி' (pity/compassion), meaning 'pitiable one'.",
+          "gloss": "pitiable one"
         },
         {
           "form": "றானே",
-          "root": null,
+          "root": "தான்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Emphatic particle 'ஏ' appended to 'தான்' (self/indeed).",
+          "gloss": "indeed, himself"
         },
         {
           "form": "முதுவாய்",
-          "root": null,
+          "root": "முது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'முது' (old) and 'வாய்' (mouth/speech), implying experienced or wise speech.",
+          "gloss": "old-mouthed, experienced"
         },
         {
           "form": "இரவலன்",
-          "root": null,
+          "root": "இரவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Agent noun from 'இரவு' (begging), meaning 'one who begs'.",
+          "gloss": "beggar"
         },
         {
           "form": "வந்தோன்",
-          "root": null,
+          "root": "வா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial noun from 'வா' (to come), meaning 'one who came'.",
+          "gloss": "one who came"
         }
       ]
     },
@@ -121,52 +121,52 @@
       "words": [
         {
           "form": "பெரும!நின்",
-          "root": null,
+          "root": "பெரும",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Vocative form of 'பெருமான்' (great one) combined with 'நின்' (your).",
+          "gloss": "O great one! your"
         },
         {
           "form": "வண்புகழ்",
-          "root": null,
+          "root": "வண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'வண்' (generous) and 'புகழ்' (fame).",
+          "gloss": "generous fame"
         },
         {
           "form": "நயந்'தென",
-          "root": null,
+          "root": "நய",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adverb of 'நய' (to desire/praise) followed by 'என' (thus/saying).",
+          "gloss": "having desired/praised, thus"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(285)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "இனியவும்",
-          "root": null,
+          "root": "இனி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Plural of 'இனிய' (sweet/pleasant) with emphatic 'உம்'.",
+          "gloss": "sweet ones, also"
         },
         {
           "form": "நல்லவும்",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Plural of 'நல்ல' (good) with emphatic 'உம்'.",
+          "gloss": "good ones, also"
         },
         {
           "form": "நனிபல",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "நனி",
+          "urichol": "உரிச்சொல்",
+          "etymology": "Combination of 'நனி' (very/much) and 'பல' (many).",
+          "gloss": "very many"
         },
         {
           "form": "ஏத்தித்",
-          "root": null,
+          "root": "ஏத்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adverb of 'ஏத்து' (to praise).",
+          "gloss": "having praised"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(282",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "286)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -254,5 +254,20 @@
   "sectionNumber": 30,
   "title": "சேவிப்போர் கூற்று",
   "lineStart": 282,
-  "lineEnd": 286
+  "lineEnd": 286,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:27+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:31:03+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 30
+  }
 }

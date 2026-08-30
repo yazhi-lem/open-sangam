@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "ஆரம் தாழ்ந்த அம்பகட்டு மார்பின்\nசெம்பொறி வாங்கிய மொய்ம்பின் சுடர்விடுபு\t. . . .(105)\nவண்புகழ் நிறைந்து வசிந்துவாங்கு நிமிர்தோள்",
   "urai": "சந்தனப் பூச்சோடு முத்தாரம் தொங்கும் அவன் மேனியில் செம்புள்ளிகள் காணப்பட்டன. அவை அவன் வாங்கிக் கொண்ட தழும்புகள். வளம் மிக்க அவனது இரண்டு தோள்களில் பன்னிரண்டு கைகள்.",
-  "english": null,
+  "english": "On his broad chest, adorned with garlands and pearls,\nred marks were etched, scars of battles won,\nhis shoulders, rich in fame, twelve arms ascending.",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "ஆரம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Sanskrit 'hāra' (necklace).",
+          "gloss": "necklace"
         },
         {
           "form": "தாழ்ந்த",
-          "root": null,
+          "root": "தாழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'தாழ்' (to hang down).",
+          "gloss": "hung down"
         },
         {
           "form": "அம்பகட்டு",
-          "root": null,
+          "root": "அம்பகம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'அம்' (beautiful) and 'பகம்' (chest, breast).",
+          "gloss": "broad chest"
         },
         {
           "form": "மார்பின்",
-          "root": null,
+          "root": "மார்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of 'மார்பு' (chest).",
+          "gloss": "on the chest"
         }
       ]
     },
@@ -46,59 +46,59 @@
       "words": [
         {
           "form": "செம்பொறி",
-          "root": null,
+          "root": "செம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'செம்' (red) and 'பொறி' (mark, spot).",
+          "gloss": "red mark"
         },
         {
           "form": "வாங்கிய",
-          "root": null,
+          "root": "வாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'வாங்கு' (to acquire, receive).",
+          "gloss": "acquired, received"
         },
         {
           "form": "மொய்ம்பின்",
-          "root": null,
+          "root": "மொய்ம்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of 'மொய்ம்பு' (strength, might).",
+          "gloss": "in strength"
         },
         {
           "form": "சுடர்விடுபு",
-          "root": null,
+          "root": "சுடர்விடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verbal participle from 'சுடர்விடு' (to shine, emit light).",
+          "gloss": "shining forth"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(105)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -108,31 +108,31 @@
       "words": [
         {
           "form": "வண்புகழ்",
-          "root": null,
+          "root": "வண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'வண்' (generous, rich) and 'புகழ்' (fame).",
+          "gloss": "rich fame"
         },
         {
           "form": "நிறைந்து",
-          "root": null,
+          "root": "நிறை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verbal participle from 'நிறை' (to be full, complete).",
+          "gloss": "filled, complete"
         },
         {
           "form": "வசிந்துவாங்கு",
-          "root": null,
+          "root": "வசிந்துவாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'வசிந்து' (bent, curved) and 'வாங்கு' (to draw, pull).",
+          "gloss": "bent and drawn"
         },
         {
           "form": "நிமிர்தோள்",
-          "root": null,
+          "root": "நிமிர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நிமிர்' (to be erect, straight) and 'தோள்' (shoulder).",
+          "gloss": "erect shoulders"
         }
       ]
     }
@@ -144,5 +144,20 @@
   "sectionNumber": 12,
   "title": "பன்னிரு கைகளின் தொழில்கள்",
   "lineStart": 104,
-  "lineEnd": 118
+  "lineEnd": 118,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:18+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:53+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 16
+  }
 }

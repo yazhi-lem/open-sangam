@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "'நின்னளந் தறிதல் மன்னுயிர்க் கருமையின்\nநின்னடி உள்ளி வந்தனென்; நின்னொடு\nபுரையுநர் இல்லாப் புலமை யோய்!'எனக் . . . .(280)\nகுறித்தது மொழியா அளவையிற் குறித்துடன் . . . .(278 - 281)",
   "urai": "முருகனுக்கு விழாவெடுக்கும் வெறிக்களத்தில் கூளியர் தமது தலைவனுக்கு விழா என்னும் பெருமிதத்தோடு தோன்றினர். அவர்கள் முருகனிடம் பரிந்துரை செய்தனர். முருகா ! உன்னிடம் வேண்டும் இவன் இரங்கத் தக்கவன். மழைபோல் அருள் பொழியத் தக்கவன். முதிர்ச்சி பெற்ற வாயால் ஏதோ சொல்லி இரக்கிறான். இரந்தாலும் இரக்காவிட்டாலும் உன் புகழைக் கேட்டு நயந்து உன்னை நாடி வந்திருப்பவன். என்றெல்லாம் இனியனவும் நல்லனவுமான சொற்களால் எடுத்துச் சொல்லி முருகனைப் புகழ்ந்தனர்.",
-  "english": null,
+  "english": "“To fathom Your measure is beyond mortal ken;\nHence have I come, contemplating Your feet,\nO Lord of wisdom, without peer!” Thus,\nBefore he could voice his plea, they spoke on his behalf.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "'நின்னளந்",
-          "root": null,
+          "root": "நீ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'நீ' (you) + 'அள' (measure).",
+          "gloss": "having measured you"
         },
         {
           "form": "தறிதல்",
-          "root": null,
+          "root": "அறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'அறி' (know) + 'தல்' (nominalizer).",
+          "gloss": "to know"
         },
         {
           "form": "மன்னுயிர்க்",
-          "root": null,
+          "root": "மன்உயிர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'மன்' (enduring) + 'உயிர்' (life).",
+          "gloss": "for enduring lives"
         },
         {
           "form": "கருமையின்",
-          "root": null,
+          "root": "அருமை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'அருமை' (difficulty) + 'இன்' (causal suffix).",
+          "gloss": "because of difficulty"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "நின்னடி",
-          "root": null,
+          "root": "நீஅடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'நீ' (you) + 'அடி' (foot/feet).",
+          "gloss": "your feet"
         },
         {
           "form": "உள்ளி",
-          "root": null,
+          "root": "உள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உள்' (to think/remember).",
+          "gloss": "having thought"
         },
         {
           "form": "வந்தனென்;",
-          "root": null,
+          "root": "வா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'வா' (come) + past tense + 1st person singular.",
+          "gloss": "I came"
         },
         {
           "form": "நின்னொடு",
-          "root": null,
+          "root": "நீ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'நீ' (you) + 'ஒடு' (with).",
+          "gloss": "with you"
         }
       ]
     },
@@ -80,59 +80,59 @@
       "words": [
         {
           "form": "புரையுநர்",
-          "root": null,
+          "root": "புரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'புரை' (to be equal/similar) + 'உநர்' (agentive suffix).",
+          "gloss": "equals"
         },
         {
           "form": "இல்லாப்",
-          "root": null,
+          "root": "இல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'இல்' (not exist) + 'ஆ' (negative participle).",
+          "gloss": "non-existent"
         },
         {
           "form": "புலமை",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "wisdom, knowledge"
         },
         {
           "form": "யோய்!'எனக்",
-          "root": null,
+          "root": "ஓய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'ஓய்' (vocative particle) + 'என' (thus).",
+          "gloss": "O! thus"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(280)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -142,73 +142,73 @@
       "words": [
         {
           "form": "குறித்தது",
-          "root": null,
+          "root": "குறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'குறி' (to intend/mark) + past tense + neuter singular.",
+          "gloss": "that which was intended"
         },
         {
           "form": "மொழியா",
-          "root": null,
+          "root": "மொழி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'மொழி' (to speak) + 'ஆ' (negative participle).",
+          "gloss": "without speaking"
         },
         {
           "form": "அளவையிற்",
-          "root": null,
+          "root": "அளவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'அளவு' (measure/limit) + 'இல்' (locative/ablative).",
+          "gloss": "in the measure"
         },
         {
           "form": "குறித்துடன்",
-          "root": null,
+          "root": "குறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'குறி' (intention) + 'உடன்' (with).",
+          "gloss": "with intention"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(278",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "range indicator"
         },
         {
           "form": "281)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -220,5 +220,20 @@
   "sectionNumber": 29,
   "title": "கருதி வந்ததை மொழிதல்",
   "lineStart": 278,
-  "lineEnd": 281
+  "lineEnd": 281,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:27+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:31:03+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 26
+  }
 }

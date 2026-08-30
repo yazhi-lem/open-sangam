@@ -1,195 +1,138 @@
 {
   "schemaVersion": 1,
-  "pipeline": "english-translation",
+  "pipeline": "etymology-extraction",
   "provider": "openrouter",
   "model": "google/gemini-2.5-flash",
-  "promptVersion": "english-v1",
-  "updatedAt": "2026-08-30T16:29:29+00:00",
-  "currentPhase": 1,
-  "phases": [
-    {
-      "phase": 1,
-      "name": "Ten Idylls (பத்துப்பாட்டு)",
-      "poems": [
-        "mullaippattu",
-        "nedunalvadai",
-        "porunaratrupadai",
-        "kurinjipattu",
-        "sirupanatrupadai",
-        "pattinappalai",
-        "thirumurugatrupadai",
-        "perumpanatrupadai",
-        "malaipadukadam",
-        "maduraikanchi"
-      ]
-    },
-    {
-      "phase": 2,
-      "name": "Shorter anthologies (எட்டுத்தொகை)",
-      "poems": [
-        "paripadal",
-        "pathitrupathu",
-        "kalithokai",
-        "akananooru"
-      ]
-    },
-    {
-      "phase": 3,
-      "name": "Large anthologies (எட்டுத்தொகை)",
-      "poems": [
-        "purananooru",
-        "natrinai",
-        "kurunthokai",
-        "ainkurunooru"
-      ]
-    }
-  ],
+  "promptVersion": "etymology-v1",
+  "updatedAt": "2026-08-30T16:31:09+00:00",
   "totals": {
     "verses": 2489,
-    "translated": 32,
+    "annotated": 32,
     "remaining": 2457
   },
   "poems": {
     "mullaippattu": {
-      "phase": 1,
       "verses": 18,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 18,
       "status": "pending",
       "lastRunAt": null
     },
     "nedunalvadai": {
-      "phase": 1,
       "verses": 17,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 17,
       "status": "pending",
       "lastRunAt": null
     },
     "porunaratrupadai": {
-      "phase": 1,
       "verses": 21,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 21,
       "status": "pending",
       "lastRunAt": null
     },
     "kurinjipattu": {
-      "phase": 1,
       "verses": 25,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 25,
       "status": "pending",
       "lastRunAt": null
     },
     "sirupanatrupadai": {
-      "phase": 1,
       "verses": 25,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 25,
       "status": "pending",
       "lastRunAt": null
     },
     "pattinappalai": {
-      "phase": 1,
       "verses": 30,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 30,
       "status": "pending",
       "lastRunAt": null
     },
     "thirumurugatrupadai": {
-      "phase": 1,
       "verses": 32,
-      "translated": 32,
+      "annotated": 32,
       "remaining": 0,
       "status": "complete",
-      "lastRunAt": "2026-08-30T16:29:28+00:00"
+      "lastRunAt": "2026-08-30T16:31:09+00:00"
     },
     "perumpanatrupadai": {
-      "phase": 1,
       "verses": 41,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 41,
       "status": "pending",
       "lastRunAt": null
     },
     "malaipadukadam": {
-      "phase": 1,
       "verses": 45,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 45,
       "status": "pending",
       "lastRunAt": null
     },
     "maduraikanchi": {
-      "phase": 1,
       "verses": 63,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 63,
       "status": "pending",
       "lastRunAt": null
     },
     "paripadal": {
-      "phase": 2,
       "verses": 23,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 23,
       "status": "pending",
       "lastRunAt": null
     },
     "pathitrupathu": {
-      "phase": 2,
       "verses": 80,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 80,
       "status": "pending",
       "lastRunAt": null
     },
     "kalithokai": {
-      "phase": 2,
       "verses": 149,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 149,
       "status": "pending",
       "lastRunAt": null
     },
     "akananooru": {
-      "phase": 2,
       "verses": 220,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 220,
       "status": "pending",
       "lastRunAt": null
     },
     "purananooru": {
-      "phase": 3,
       "verses": 400,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 400,
       "status": "pending",
       "lastRunAt": null
     },
     "natrinai": {
-      "phase": 3,
       "verses": 400,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 400,
       "status": "pending",
       "lastRunAt": null
     },
     "kurunthokai": {
-      "phase": 3,
       "verses": 400,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 400,
       "status": "pending",
       "lastRunAt": null
     },
     "ainkurunooru": {
-      "phase": 3,
       "verses": 500,
-      "translated": 0,
+      "annotated": 0,
       "remaining": 500,
       "status": "pending",
       "lastRunAt": null
@@ -197,35 +140,15 @@
   },
   "runs": [
     {
-      "runId": "bfb99a231e12",
-      "startedAt": "2026-08-30T16:29:11+00:00",
-      "finishedAt": "2026-08-30T16:29:13+00:00",
-      "phase": 1,
+      "runId": "fedbff63838a",
+      "startedAt": "2026-08-30T16:29:33+00:00",
+      "finishedAt": "2026-08-30T16:31:09+00:00",
       "trigger": "manual",
-      "field": "urai",
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",
-      "promptVersion": "english-v1",
-      "attempted": 3,
-      "translated": 3,
-      "failed": 0,
-      "poems": [
-        "thirumurugatrupadai"
-      ],
-      "failures": []
-    },
-    {
-      "runId": "453e69cb16bb",
-      "startedAt": "2026-08-30T16:29:14+00:00",
-      "finishedAt": "2026-08-30T16:29:28+00:00",
-      "phase": 1,
-      "trigger": "manual",
-      "field": "english",
-      "provider": "openrouter",
-      "model": "google/gemini-2.5-flash",
-      "promptVersion": "english-v1",
+      "promptVersion": "etymology-v1",
       "attempted": 32,
-      "translated": 32,
+      "annotated": 32,
       "failed": 0,
       "poems": [
         "thirumurugatrupadai"

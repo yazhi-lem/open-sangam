@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "ஐவேறு உருவின் செய்வினை முற்றிய\nமுடியொடு விளங்கிய முரண்மிகு திருமணி\nமின்உறழ் இமைப்பின் சென்னிப் பொற்ப\t. . . .(85)",
   "urai": "முருகன் தன் தலையில் முடி சூடிக்கொண்டிருந்தான். அந்த முடியில் ஐந்து முகப் பட்டை தீட்டிய திருமணி பதிக்கப்பட்டிருந்தது. பொன்முடியில் நீலநிற மணியின் ஒளி முரணியிருந்தது. (பொன்னிறத்தில் நீலநிறம் முரண்) இது அவன் தலைக்குப் பொலிவைத் தந்தது. (அஞ்சுமுகம் தோன்றின் ஆறுமுகம் தோன்றும். என்று இப்பாடலின் இறுதியில் வரும் வெண்பாவுக்குப் பொருள் கொள்ளும்போது அஞ்சுமுகம் என்பதற்கு இந்த ஐந்து பட்டை மணியையும் கொள்ளலாம்.)",
-  "english": null,
+  "english": "Upon his head, adorned with a crown\nwhere a resplendent gem,\ncut with five facets,\nshines with a fierce brilliance.\nIts gleam, like lightning,\ngraces his brow.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "ஐவேறு",
-          "root": null,
+          "root": "ஐ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'five' and 'different'.",
+          "gloss": "five different"
         },
         {
           "form": "உருவின்",
-          "root": null,
+          "root": "உரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'uru' meaning form, with instrumental/locative suffix.",
+          "gloss": "of form/shape"
         },
         {
           "form": "செய்வினை",
-          "root": null,
+          "root": "செய்வினை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'sey' (to do) and 'vinai' (action/work), referring to crafted work.",
+          "gloss": "crafted work"
         },
         {
           "form": "முற்றிய",
-          "root": null,
+          "root": "முற்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'mutru' (to complete).",
+          "gloss": "completed, finished"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "முடியொடு",
-          "root": null,
+          "root": "முடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'mudi' (crown/head), with instrumental suffix 'odu'.",
+          "gloss": "with crown"
         },
         {
           "form": "விளங்கிய",
-          "root": null,
+          "root": "விளங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'vilangu' (to shine, be clear).",
+          "gloss": "shone, appeared"
         },
         {
           "form": "முரண்மிகு",
-          "root": null,
+          "root": "முரண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'muraṇ' (contrast/opposition) and 'migu' (abundant/intense).",
+          "gloss": "intensely contrasting"
         },
         {
           "form": "திருமணி",
-          "root": null,
+          "root": "திருமணி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'tiru' (sacred/auspicious) and 'maṇi' (gem/jewel).",
+          "gloss": "sacred jewel"
         }
       ]
     },
@@ -80,59 +80,59 @@
       "words": [
         {
           "form": "மின்உறழ்",
-          "root": null,
+          "root": "மின்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'min' (lightning) and 'uṟaḻ' (to resemble/compete).",
+          "gloss": "lightning-like"
         },
         {
           "form": "இமைப்பின்",
-          "root": null,
+          "root": "இமை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'imai' (to blink/shine), with conditional/locative suffix.",
+          "gloss": "if it shines"
         },
         {
           "form": "சென்னிப்",
-          "root": null,
+          "root": "சென்னி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'senni' (head/forehead), in a genitive/locative sense.",
+          "gloss": "on the head"
         },
         {
           "form": "பொற்ப",
-          "root": null,
+          "root": "பொற்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'poṟpu' (beauty/splendour), often used as an adverbial participle.",
+          "gloss": "beautifully, splendidly"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(85)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -144,5 +144,20 @@
   "sectionNumber": 11,
   "title": "ஆறு முகங்களின் இயல்புகள்",
   "lineStart": 83,
-  "lineEnd": 103
+  "lineEnd": 103,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:18+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:53+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 16
+  }
 }

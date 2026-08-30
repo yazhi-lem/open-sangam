@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "வைந்நுதி பொருத வடுவாழ் வரிநுதல்\nவாடா மாலை ஓடையொடு துயல்வரப்\nபடுமணி இரட்டும் மருங்கின் கடுநடைக்......\nகூற்றத்து அன்ன மாற்றரு மொய்ம்பின்\nகால்கிளர்ந் தன்ன வேழ மேல்கொண்டு",
   "urai": "கூற்றம் போல் முருகனின் யானை விரைந்து நடக்கும். அப்போது இருமருங்கிலும் தொங்கும் மணி ஒலித்துக் கொண்டிருக்கும். அந்த வேழம் வலிமையில் புயல் காற்று கிளர்ந்து வீசுவது போன்றது. அம்பின் நுனி குத்தி ஆறிய வடுக்களைப் புள்ளிகளாகக் கொண்ட நெற்றியை உடையது. நெற்றியில் வாடா மாலையும், ஓடை என்னும் அணிகலனும் அதற்கு உண்டு. இத்தகைய யானைமேல் முருகன் காட்சி தந்தான்.",
-  "english": null,
+  "english": "Upon the elephant, whose forehead bore the scars of sharp-tipped arrows, like stripes, and where an unfading garland swayed with the ornamental frontal plate, bells chimed on its flanks as it strode with swift gait, like Yama, with unyielding might, like a storm-stirred wind, Murukan appeared.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "வைந்நுதி",
-          "root": null,
+          "root": "வை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'vai' (sharp) and 'nuti' (tip).",
+          "gloss": "sharp tip"
         },
         {
           "form": "பொருத",
-          "root": null,
+          "root": "பொருது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'porutu' (to fight, to strike).",
+          "gloss": "struck, fought"
         },
         {
           "form": "வடுவாழ்",
-          "root": null,
+          "root": "வடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'vatu' (scar) and 'vazh' (to live, to remain).",
+          "gloss": "scar-bearing"
         },
         {
           "form": "வரிநுதல்",
-          "root": null,
+          "root": "வரி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'vari' (line, stripe) and 'nutal' (forehead).",
+          "gloss": "striped forehead"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "வாடா",
-          "root": null,
+          "root": "வாடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective of 'vaadu' (to wither).",
+          "gloss": "unfading"
         },
         {
           "form": "மாலை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *mālai (garland).",
+          "gloss": "garland"
         },
         {
           "form": "ஓடையொடு",
-          "root": null,
+          "root": "ஓடை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Instrumental case of 'odai' (ornament for elephant's forehead).",
+          "gloss": "with forehead-plate"
         },
         {
           "form": "துயல்வரப்",
-          "root": null,
+          "root": "துயல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Adverbial participle of 'tuyal' (to swing, to sway).",
+          "gloss": "swinging, swaying"
         }
       ]
     },
@@ -80,31 +80,31 @@
       "words": [
         {
           "form": "படுமணி",
-          "root": null,
+          "root": "படு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'padu' (to fall, to be produced) and 'mani' (bell).",
+          "gloss": "hanging bell"
         },
         {
           "form": "இரட்டும்",
-          "root": null,
+          "root": "இரட்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Present tense verb of 'irattu' (to sound, to ring).",
+          "gloss": "ringing, sounding"
         },
         {
           "form": "மருங்கின்",
-          "root": null,
+          "root": "மருங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of 'marungu' (side).",
+          "gloss": "on the side"
         },
         {
           "form": "கடுநடைக்......",
-          "root": null,
+          "root": "கடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'kadu' (fierce, swift) and 'nadai' (gait).",
+          "gloss": "swift-gaited"
         }
       ]
     },
@@ -114,31 +114,31 @@
       "words": [
         {
           "form": "கூற்றத்து",
-          "root": null,
+          "root": "கூற்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive case of 'kootru' (Yama, god of death).",
+          "gloss": "of Yama"
         },
         {
           "form": "அன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Comparative particle, from 'an' (that).",
+          "gloss": "like, similar to"
         },
         {
           "form": "மாற்றரு",
-          "root": null,
+          "root": "மாற்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'maatru' (to change, to overcome) and 'aru' (difficult).",
+          "gloss": "irresistible, unchangeable"
         },
         {
           "form": "மொய்ம்பின்",
-          "root": null,
+          "root": "மொய்ம்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of 'moimpu' (strength, might).",
+          "gloss": "in strength"
         }
       ]
     },
@@ -148,31 +148,31 @@
       "words": [
         {
           "form": "கால்கிளர்ந்",
-          "root": null,
+          "root": "கால்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'kaal' (wind) and 'kilar' (to rise, to stir).",
+          "gloss": "wind-stirred"
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Comparative particle, shortened form of 'thannai' (like itself).",
+          "gloss": "like, similar to"
         },
         {
           "form": "வேழ",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *vēẓam (elephant).",
+          "gloss": "elephant"
         },
         {
           "form": "மேல்கொண்டு",
-          "root": null,
+          "root": "மேல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'mel' (above, upon) and 'kondu' (having taken).",
+          "gloss": "mounted upon"
         }
       ]
     }
@@ -184,5 +184,20 @@
   "sectionNumber": 10,
   "title": "ஆறுமுகன் யானையின்மேல் ஏறி வருதல்",
   "lineStart": 78,
-  "lineEnd": 82
+  "lineEnd": 82,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:18+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:51+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 20
+  }
 }

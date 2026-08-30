@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "சேவடி படரும் செம்மல் உள்ளமொடு\nநலம்புரி கொள்கைப் புலம்புரிந் துறையும்\nசெலவுநீ நயந்தனை யாயின், பலவுடன்\nநன்னர் நெஞ்சத்து இன்னசை வாய்ப்ப\t. . . .(65)\nஇன்னே பெறுதிநீ முன்னிய வினையே\t. . . .(62 - 66)",
   "urai": "அவனது திருவடிகளாகிய கொழுகொம்புகளைப் பற்றிக்கொண்டு படரும் உள்ளம் இருந்தால் அது நல்லதை விரும்பும் கொள்கையாகும். அதற்கு நீ உனது புல அறிவைப் பிரிந்து அவன் நினைவாகவே வாழ வேண்டியிருக்கும். அவன் குடிகொண்டுள்ள இடங்களுக்கு நீ செல்ல விரும்பினால் உன்னுடைய நெஞ்சத்தில் அந்த ஆசை நன்றாக வலுக்கட்டும். நினைத்ததை உடனே செயல் படுத்துவாயாக.",
-  "english": null,
+  "english": "If your heart, a tendril, seeks to entwine\nHis sacred feet, a steadfast pole,\nAnd if you desire to journey to his abodes,\nThen let this goodly longing in your heart\nTake root and flourish.\nSwiftly, you shall achieve your cherished aim.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "சேவடி",
-          "root": null,
+          "root": "சே",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'சே' (red/sacred) and 'அடி' (foot).",
+          "gloss": "sacred feet"
         },
         {
           "form": "படரும்",
-          "root": null,
+          "root": "படர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'படர்' meaning to spread or climb.",
+          "gloss": "will spread/climb"
         },
         {
           "form": "செம்மல்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'செம்மை' (redness, excellence) + 'அல்' (suffix).",
+          "gloss": "excellence, nobility"
         },
         {
           "form": "உள்ளமொடு",
-          "root": null,
+          "root": "உள்ளம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உள்' (inside) + 'அம்' (noun suffix), with 'ஓடு' (with).",
+          "gloss": "with heart/mind"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "நலம்புரி",
-          "root": null,
+          "root": "நலம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நலம்' (goodness) and 'புரி' (to desire/do).",
+          "gloss": "desiring good"
         },
         {
           "form": "கொள்கைப்",
-          "root": null,
+          "root": "கொள்கை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'கொள்' (to take/hold) + 'கை' (suffix).",
+          "gloss": "principle, doctrine"
         },
         {
           "form": "புலம்புரிந்",
-          "root": null,
+          "root": "புலம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'புலம்' (knowledge/sense) and 'புரி' (to understand/separate).",
+          "gloss": "understanding knowledge"
         },
         {
           "form": "துறையும்",
-          "root": null,
+          "root": "துறை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'துறை' (place, abode) with verbal ending.",
+          "gloss": "will reside/dwell"
         }
       ]
     },
@@ -80,31 +80,31 @@
       "words": [
         {
           "form": "செலவுநீ",
-          "root": null,
+          "root": "செலவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'செல்' (to go) + 'அவு' (noun suffix), with 'நீ' (you).",
+          "gloss": "your journey/going"
         },
         {
           "form": "நயந்தனை",
-          "root": null,
+          "root": "நய",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'நய' (to desire/love) with past tense and second person singular ending.",
+          "gloss": "you desired"
         },
         {
           "form": "யாயின்,",
-          "root": null,
+          "root": "ஆ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'ஆ' (to become) + 'இன்' (if).",
+          "gloss": "if it is so"
         },
         {
           "form": "பலவுடன்",
-          "root": null,
+          "root": "பல",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'பல' (many) + 'உடன்' (with).",
+          "gloss": "with many"
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "நன்னர்",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Reduplication of 'நல்' (good).",
+          "gloss": "very good, excellent"
         },
         {
           "form": "நெஞ்சத்து",
-          "root": null,
+          "root": "நெஞ்சம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'நெஞ்சு' (heart/mind) with locative suffix.",
+          "gloss": "in the heart/mind"
         },
         {
           "form": "இன்னசை",
-          "root": null,
+          "root": "இன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'இன்' (sweet/pleasant) and 'அசை' (desire/movement).",
+          "gloss": "sweet desire"
         },
         {
           "form": "வாய்ப்ப",
-          "root": null,
+          "root": "வாய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'வாய்' (to happen/occur) with infinitive ending.",
+          "gloss": "to happen/occur"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(65)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "இன்னே",
-          "root": null,
+          "root": "இன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'இன்' (now, immediately) with emphatic suffix.",
+          "gloss": "immediately, now"
         },
         {
           "form": "பெறுதிநீ",
-          "root": null,
+          "root": "பெறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'பெறு' (to obtain) with second person singular ending and 'நீ' (you).",
+          "gloss": "you will obtain"
         },
         {
           "form": "முன்னிய",
-          "root": null,
+          "root": "முன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'முன்' (before, to think) with past participial adjective ending.",
+          "gloss": "thought of, intended"
         },
         {
           "form": "வினையே",
-          "root": null,
+          "root": "வினை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'வினை' (deed, action) with emphatic suffix.",
+          "gloss": "the deed/action"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(62",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "66)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -254,5 +254,20 @@
   "sectionNumber": 8,
   "title": "ஆற்றுப்படுத்தல்",
   "lineStart": 62,
-  "lineEnd": 66
+  "lineEnd": 66,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:17+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:49+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 30
+  }
 }

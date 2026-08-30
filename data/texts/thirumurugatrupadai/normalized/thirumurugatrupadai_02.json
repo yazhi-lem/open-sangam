@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "கார்கோள் முகந்த கமஞ்சூல் மாமழை\nவாள்போழ் விசும்பில் வள்ளுறை சிதறித்\nதலைப்பெயல் தலைஇய தண்ணறுங் கானத்து\nஇருள்படப் பொதுளிய பராரை மராஅத்து . . . .(10)\nஉருள்பூந் தண்டார் புரளும் மார்பினன் . . . .(7 - 11)",
   "urai": "சூலுற்ற மழைமேகங்கள் வானத்தில் வாள்போல் மின்னி வளம்தரும் மழைத்துளிகளைப் பொழியும். கோடைக்குப் பிறகு பெய்யும் அந்த முதன்மழையால் கானம் இருண்டு பசுமையாகும். வெண்கடம்பு மரங்கள் தழைத்துப் பூத்துக் குலுங்கும். அப்பூக்களே முருகன் மார்பில் புரளும் தார்மாலைகள்.",
-  "english": null,
+  "english": "The pregnant clouds, having drunk from the sea,\nFlash like swords across the sky, scattering rich drops.\nIn the cool, fragrant forest, darkened by the first rains,\nThe ancient Maram trees, their trunks gnarled, flourish.\nUpon the chest of Murukan, garlands of rolling, blooming flowers rest.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "கார்கோள்",
-          "root": null,
+          "root": "கார்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of கார் (rain/cloud) and கொள் (take/hold).",
+          "gloss": "rain-bearing cloud"
         },
         {
           "form": "முகந்த",
-          "root": null,
+          "root": "முக",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from the verb முகு (to draw up, to take).",
+          "gloss": "having drawn up"
         },
         {
           "form": "கமஞ்சூல்",
-          "root": null,
+          "root": "கமம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of கமம் (fullness, abundance) and சூல் (pregnancy, embryo).",
+          "gloss": "fully pregnant"
         },
         {
           "form": "மாமழை",
-          "root": null,
+          "root": "மழை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of மா (great, large) and மழை (rain).",
+          "gloss": "great rain"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "வாள்போழ்",
-          "root": null,
+          "root": "வாள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of வாள் (sword) and போழ் (to split, to cleave). Refers to lightning.",
+          "gloss": "sword-splitting (lightning)"
         },
         {
           "form": "விசும்பில்",
-          "root": null,
+          "root": "விசும்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of விசும்பு (sky, heaven).",
+          "gloss": "in the sky"
         },
         {
           "form": "வள்ளுறை",
-          "root": null,
+          "root": "வள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of வள் (fertility, abundance) and உறை (drop, rain).",
+          "gloss": "fertile drops"
         },
         {
           "form": "சிதறித்",
-          "root": null,
+          "root": "சிதறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Adverbial participle from the verb சிதறு (to scatter, to sprinkle).",
+          "gloss": "having scattered"
         }
       ]
     },
@@ -80,31 +80,31 @@
       "words": [
         {
           "form": "தலைப்பெயல்",
-          "root": null,
+          "root": "தலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of தலை (first, chief) and பெயல் (rain, downpour).",
+          "gloss": "first rain"
         },
         {
           "form": "தலைஇய",
-          "root": null,
+          "root": "தலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from the verb தலை (to happen, to occur).",
+          "gloss": "having occurred"
         },
         {
           "form": "தண்ணறுங்",
-          "root": null,
+          "root": "தண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of தண் (cool) and நறும் (fragrant).",
+          "gloss": "cool, fragrant"
         },
         {
           "form": "கானத்து",
-          "root": null,
+          "root": "கானம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of கானம் (forest, wilderness).",
+          "gloss": "in the forest"
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "இருள்படப்",
-          "root": null,
+          "root": "இருள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of இருள் (darkness) and பட (to happen, to become).",
+          "gloss": "so as to darken"
         },
         {
           "form": "பொதுளிய",
-          "root": null,
+          "root": "பொதுள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from the verb பொதுள் (to spread, to grow luxuriantly).",
+          "gloss": "having spread"
         },
         {
           "form": "பராரை",
-          "root": null,
+          "root": "பரம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of பரம் (broad, wide) and அரை (trunk of a tree).",
+          "gloss": "broad-trunked"
         },
         {
           "form": "மராஅத்து",
-          "root": null,
+          "root": "மராஅம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of மராஅம் (Kadamba tree).",
+          "gloss": "on the Kadamba tree"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(10)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "உருள்பூந்",
-          "root": null,
+          "root": "உருள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of உருள் (rolling) and பூ (flower).",
+          "gloss": "rolling flowers"
         },
         {
           "form": "தண்டார்",
-          "root": null,
+          "root": "தார்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of தண் (cool) and தார் (garland).",
+          "gloss": "cool garland"
         },
         {
           "form": "புரளும்",
-          "root": null,
+          "root": "புரள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Present participial adjective from the verb புரள் (to roll, to move).",
+          "gloss": "rolling, moving"
         },
         {
           "form": "மார்பினன்",
-          "root": null,
+          "root": "மார்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Noun of agency from மார்பு (chest), indicating 'one who has a chest'.",
+          "gloss": "he of the chest"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(7",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "11)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -254,5 +254,20 @@
   "sectionNumber": 2,
   "title": "கடப்பமாலை புரளும் மார்பினன்",
   "lineStart": 7,
-  "lineEnd": 11
+  "lineEnd": 11,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:16+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:41+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 30
+  }
 }

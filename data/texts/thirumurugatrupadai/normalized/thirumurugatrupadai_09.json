@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "செருப்புகன்று எடுத்த சேணுயர் நெடுங்கொடி\nவரிப்புனை பந்தொடு பாவை தூங்கப்\nபொருநர்த் தேய்த்த போரரு வாயில்\nதிருவீற் றிருந்த தீதுதீர் நியமத்து\t. . . .(70)\nமாடமலி மறுகின் கூடற் குடவயின்",
   "urai": "போரை விரும்பி ஆடவர் உயர்த்திய கொடிகள் மதுரையில் எப்போதும் பறந்துகொண்டேயிருக்கும். மகளிர் பந்தும் பாவையும் விளையாடிக் கொண்டிருப்பர். போரிட்டோரைத் தேய்த்துத் தேய்த்துப் போரிடுவர் இல்லாமல் போனதால் செல்வத் திருமகள் அரியணை ஏறி ஆண்டுகொண்டிருப்பாள். இப்படிப்பட்ட கடைத்தெருக்களும் மாடமறுகுகளும் கூடியிருப்பதுதான் கூடல் எனப்படும் மதுரை",
-  "english": null,
+  "english": "The high, towering banners, raised by men who delighted in war,\nFluttered ceaselessly. Women played with striped balls and dolls.\nAt the gates of battle, where foes were ground down until none remained,\nProsperity’s goddess, Tiru, sat enthroned, ruling without blemish,\nIn the markets free from fault, where mansions lined the streets of Kūṭal, to the west.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "செருப்புகன்று",
-          "root": null,
+          "root": "செருப்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'செரு' (battle) and 'புகன்று' (desiring).",
+          "gloss": "desiring battle"
         },
         {
           "form": "எடுத்த",
-          "root": null,
+          "root": "எடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'எடு' (to raise).",
+          "gloss": "raised, hoisted"
         },
         {
           "form": "சேணுயர்",
-          "root": null,
+          "root": "சேண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'சேண்' (height) and 'உயர்' (to be high).",
+          "gloss": "sky-high"
         },
         {
           "form": "நெடுங்கொடி",
-          "root": null,
+          "root": "நெடுங்கொடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நெடு' (long) and 'கொடி' (flag).",
+          "gloss": "tall flag"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "வரிப்புனை",
-          "root": null,
+          "root": "வரிப்புனை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'வரி' (line, stripe) and 'புனை' (to adorn, to make).",
+          "gloss": "decorated, striped"
         },
         {
           "form": "பந்தொடு",
-          "root": null,
+          "root": "பந்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'பந்து' (ball) with instrumental suffix 'ஓடு'.",
+          "gloss": "with ball"
         },
         {
           "form": "பாவை",
-          "root": null,
+          "root": "பாவை",
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "doll"
         },
         {
           "form": "தூங்கப்",
-          "root": null,
+          "root": "தூங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive form of 'தூங்கு' (to hang, to swing).",
+          "gloss": "to hang, to swing"
         }
       ]
     },
@@ -80,31 +80,31 @@
       "words": [
         {
           "form": "பொருநர்த்",
-          "root": null,
+          "root": "பொருநர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'பொருநர்' (warriors, opponents) with accusative suffix 'அத்து'.",
+          "gloss": "opponents, warriors"
         },
         {
           "form": "தேய்த்த",
-          "root": null,
+          "root": "தேய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'தேய்' (to wear down, to defeat).",
+          "gloss": "defeated, worn down"
         },
         {
           "form": "போரரு",
-          "root": null,
+          "root": "போர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'போர்' (battle) and 'அரு' (rare, difficult).",
+          "gloss": "battle-less"
         },
         {
           "form": "வாயில்",
-          "root": null,
+          "root": "வாயில்",
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "entrance, gate"
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "திருவீற்",
-          "root": null,
+          "root": "திரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'திரு' (prosperity, goddess Lakshmi) and 'வீற்று' (to be seated).",
+          "gloss": "Lakshmi seated"
         },
         {
           "form": "றிருந்த",
-          "root": null,
+          "root": "இரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'இரு' (to be, to sit).",
+          "gloss": "was, sat"
         },
         {
           "form": "தீதுதீர்",
-          "root": null,
+          "root": "தீது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'தீது' (evil, harm) and 'தீர்' (to remove).",
+          "gloss": "evil-removing, flawless"
         },
         {
           "form": "நியமத்து",
-          "root": null,
+          "root": "நியமம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Sanskrit 'niyama' (rule, regulation, market).",
+          "gloss": "market, street"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(70)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "மாடமலி",
-          "root": null,
+          "root": "மாடம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'மாடம்' (mansion, storied building) and 'மலி' (to abound).",
+          "gloss": "abounding in mansions"
         },
         {
           "form": "மறுகின்",
-          "root": null,
+          "root": "மறுகு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of 'மறுகு' (street).",
+          "gloss": "in the street"
         },
         {
           "form": "கூடற்",
-          "root": null,
+          "root": "கூடல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive case of 'கூடல்' (Madurai, lit. 'confluence').",
+          "gloss": "of Madurai"
         },
         {
           "form": "குடவயின்",
-          "root": null,
+          "root": "குடவயின்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'குட' (west) and 'வயின்' (place, direction).",
+          "gloss": "western side"
         }
       ]
     }
@@ -212,5 +212,20 @@
   "sectionNumber": 9,
   "title": "திருப்பரங்குன்றில் முருகன் வீற்றிருத்தல்",
   "lineStart": 67,
-  "lineEnd": 77
+  "lineEnd": 77,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:18+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:49+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 24
+  }
 }

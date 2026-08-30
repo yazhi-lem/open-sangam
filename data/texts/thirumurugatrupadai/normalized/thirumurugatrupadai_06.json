@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "உலறிய கதுப்பின் பிறழ்பற் பேழ்வாய்ச்\nசுழல்விழிப் பசுங்கண் சூர்த்த நோக்கின்\nகழல்கட் கூகையொடு கடும்பாம்பு தூங்கப்\nபெருமுலை அலைக்கும் காதின் பிணர்மோட்டு. . . .(50)\nஉருகெழு செலவின் அஞ்சுவரு பேய்மகள்",
   "urai": "அஞ்சுவரு பேய்மகளின் அலங்கோலம் பரட்டையாய்க் கிடக்கும் தலைமயிர்.வரிசை மாறிப் பிறழ்ந்திருக்கும் பல்.பிளந்த வாய்.சுழலும் விழிகள்.பசுமை நிறக் கண்ணில் சுட்டெரிக்கும் பார்வை.கோட்டானும் பாம்பும் தொங்கும் முலை முகடுகள்.நீண்ட காதுகளும் முலை முகடுகளில் தொங்கின. அச்சம் தரும் நடையும் தோற்றமும் கொண்டவள்.",
-  "english": null,
+  "english": "With tangled, dry hair, teeth askew in a gaping mouth,\nEyes that roll, green and piercing in their gaze,\nWhere owls with dangling legs and fierce snakes hang\nFrom her vast, pendulous breasts, and ears that brush them,\nThis terrifying ogress, with her fearsome gait.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "உலறிய",
-          "root": null,
+          "root": "உலர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'உலரு' (to dry).",
+          "gloss": "dried, withered"
         },
         {
           "form": "கதுப்பின்",
-          "root": null,
+          "root": "கதுப்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *katuppu 'hair'.",
+          "gloss": "of hair"
         },
         {
           "form": "பிறழ்பற்",
-          "root": null,
+          "root": "பிறழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பிறழ்' (to deviate) and 'பல்' (tooth).",
+          "gloss": "misaligned teeth"
         },
         {
           "form": "பேழ்வாய்ச்",
-          "root": null,
+          "root": "பேழ்வாய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பேழ்' (large, wide) and 'வாய்' (mouth).",
+          "gloss": "wide-mouthed"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "சுழல்விழிப்",
-          "root": null,
+          "root": "சுழல்விழி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'சுழல்' (to whirl) and 'விழி' (eye).",
+          "gloss": "whirling-eyed"
         },
         {
           "form": "பசுங்கண்",
-          "root": null,
+          "root": "பசுங்கண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பசும்' (greenish) and 'கண்' (eye).",
+          "gloss": "greenish eye"
         },
         {
           "form": "சூர்த்த",
-          "root": null,
+          "root": "சூர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'சூர்' (to be sharp, to pierce), here meaning intense.",
+          "gloss": "intense, piercing"
         },
         {
           "form": "நோக்கின்",
-          "root": null,
+          "root": "நோக்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'நோக்கு' (to look, gaze).",
+          "gloss": "of gaze"
         }
       ]
     },
@@ -80,31 +80,31 @@
       "words": [
         {
           "form": "கழல்கட்",
-          "root": null,
+          "root": "கழல்கண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'கழல்' (to loosen, hang) and 'கண்' (eye), referring to the owl's prominent eyes.",
+          "gloss": "protruding-eyed"
         },
         {
           "form": "கூகையொடு",
-          "root": null,
+          "root": "கூகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *kūkai 'owl'.",
+          "gloss": "with owl"
         },
         {
           "form": "கடும்பாம்பு",
-          "root": null,
+          "root": "கடும்பாம்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'கடும்' (fierce, venomous) and 'பாம்பு' (snake).",
+          "gloss": "fierce snake"
         },
         {
           "form": "தூங்கப்",
-          "root": null,
+          "root": "தூங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive of 'தூங்கு' (to hang, to sleep).",
+          "gloss": "to hang"
         }
       ]
     },
@@ -114,52 +114,52 @@
       "words": [
         {
           "form": "பெருமுலை",
-          "root": null,
+          "root": "பெருமுலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பெரு' (large) and 'முலை' (breast).",
+          "gloss": "large breast"
         },
         {
           "form": "அலைக்கும்",
-          "root": null,
+          "root": "அலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Present participle of 'அலை' (to swing, to move).",
+          "gloss": "swinging, moving"
         },
         {
           "form": "காதின்",
-          "root": null,
+          "root": "காது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *kātu 'ear'.",
+          "gloss": "of ear"
         },
         {
           "form": "பிணர்மோட்டு.",
-          "root": null,
+          "root": "பிணர்மேடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பிணர்' (rough, uneven) and 'மேடு' (mound, protuberance).",
+          "gloss": "rough protuberance"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(50)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -169,31 +169,31 @@
       "words": [
         {
           "form": "உருகெழு",
-          "root": null,
+          "root": "உருகெழு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'உரு' (form, beauty, terror) and 'கெழு' (to possess, to be associated with).",
+          "gloss": "terrifying, dreadful"
         },
         {
           "form": "செலவின்",
-          "root": null,
+          "root": "செலவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'செல்' (to go, to move).",
+          "gloss": "of movement, gait"
         },
         {
           "form": "அஞ்சுவரு",
-          "root": null,
+          "root": "அஞ்சுவரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'அஞ்சு' (to fear) and 'வரு' (to come, to cause).",
+          "gloss": "fear-inducing"
         },
         {
           "form": "பேய்மகள்",
-          "root": null,
+          "root": "பேய்மகள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பேய்' (demon, ghost) and 'மகள்' (daughter, woman).",
+          "gloss": "demoness"
         }
       ]
     }
@@ -205,5 +205,20 @@
   "sectionNumber": 6,
   "title": "பேய்மகளின் துணங்கைக் கூத்து",
   "lineStart": 47,
-  "lineEnd": 56
+  "lineEnd": 56,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:17+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:45+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 23
+  }
 }

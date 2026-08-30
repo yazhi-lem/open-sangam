@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "உலகம் உவப்ப வலன்ஏர்பு திரிதரு\nபலர்புகழ் ஞாயிறு கடற்கண் டாஅங்கு\nஓவற இமைக்கும் சேண்விளங்கு அவிரொளி\nஉறுநர்த் தாங்கிய மதனுடை நோன்றாள்\nசெறுநர்த் தேய்த்த செல்லுறழ் தடக்கை . . . .(5)\nமறுவில் கற்பின் வாணுதற் கணவன் . . . .(1 - 6)",
   "urai": "உலகம் விரும்பி மகிழ்ந்து வாழ்த்துமாறு வெயிலும் வெளிச்சமும் தரும் பொழுது உலகை வலம்வருகிறது. காலைக் கதிரவன் கடலை உழுவது கண்கொள்ளாக் காட்சி. அதன் கவின் பேர் அழகைப் பலரும் புகழ்கின்றனர். அதைப்போலத்தான் முருகன் இமைக்கிறான். மனன் ஏர்பு திரிதருகிறான். அருட்பார்வை வழங்குகிறான். அவனது அருள்ஒளி கட்டவிழ்ந்து பாய்கிறது. தடை இல்லாமல் நம் கண்ணுக்கும் அறிவுக்கும் எட்டாத தொலைவிடத்திலும் காலவெள்ளத்திலும் பாய்கிறது.துன்புறுவோரைத் தாங்குவதே முருகனது மதக்கொள்கை. அவனது திருவடிகளின் நோன்பும் அதுதான். துன்பத்தைப் போக்கும் அவன் செயலை எதிர்த்தவர்களை அத்திருவடிகள் மிதித்துத் தேய்க்கும். மழைபோன்று உதவுவது அவனது கைகள். களங்கமில்லாத கற்புநெறியினளாகிய தெய்வானைக்கு அவன் கணவன்.",
-  "english": null,
+  "english": "As the world rejoices, rising to the right, the much-praised sun circles,\nplowing the sea, its boundless, far-shining, radiant light\nsustains those who seek refuge, its mighty, enduring feet;\nits great hands, like a storm, crush foes into dust. . . .\nHe is the husband of the pure-browed one, whose chastity is flawless.",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "உலகம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *ulakam, meaning 'world, earth'.",
+          "gloss": "world"
         },
         {
           "form": "உவப்ப",
-          "root": null,
+          "root": "உவ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From the verb 'உவ' meaning 'to be pleased, to rejoice'.",
+          "gloss": "to rejoice"
         },
         {
           "form": "வலன்ஏர்பு",
-          "root": null,
+          "root": "வலன்ஏர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'வலம்' (right/clockwise) and 'ஏர்' (to rise/ascend).",
+          "gloss": "rising clockwise"
         },
         {
           "form": "திரிதரு",
-          "root": null,
+          "root": "திரி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From the verb 'திரி' meaning 'to wander, to revolve'.",
+          "gloss": "revolves"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "பலர்புகழ்",
-          "root": null,
+          "root": "பலர்புகழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பலர்' (many people) and 'புகழ்' (to praise).",
+          "gloss": "many praise"
         },
         {
           "form": "ஞாயிறு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *ñāyiṟu, meaning 'sun'.",
+          "gloss": "sun"
         },
         {
           "form": "கடற்கண்",
-          "root": null,
+          "root": "கடல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'கடல்' (sea) and 'கண்' (eye/place).",
+          "gloss": "at the sea"
         },
         {
           "form": "டாஅங்கு",
-          "root": null,
+          "root": "தாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "A lengthened form of 'தாங்கு' (to bear, to support), used for emphasis or poetic meter.",
+          "gloss": "as if supporting"
         }
       ]
     },
@@ -80,31 +80,31 @@
       "words": [
         {
           "form": "ஓவற",
-          "root": null,
+          "root": "ஓவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'ஓவு' (to cease, to stop) + 'அற' (without).",
+          "gloss": "without ceasing"
         },
         {
           "form": "இமைக்கும்",
-          "root": null,
+          "root": "இமை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From the verb 'இமை' meaning 'to blink, to shine'.",
+          "gloss": "shines"
         },
         {
           "form": "சேண்விளங்கு",
-          "root": null,
+          "root": "சேண்விளங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'சேண்' (distance) and 'விளங்கு' (to shine).",
+          "gloss": "shining afar"
         },
         {
           "form": "அவிரொளி",
-          "root": null,
+          "root": "அவிர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'அவிர்' (to shine) and 'ஒளி' (light).",
+          "gloss": "shining light"
         }
       ]
     },
@@ -114,31 +114,31 @@
       "words": [
         {
           "form": "உறுநர்த்",
-          "root": null,
+          "root": "உறுநர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உறுநர்' (those who suffer/approach), accusative case.",
+          "gloss": "those who suffer"
         },
         {
           "form": "தாங்கிய",
-          "root": null,
+          "root": "தாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'தாங்கு' (to support, to bear).",
+          "gloss": "supported"
         },
         {
           "form": "மதனுடை",
-          "root": null,
+          "root": "மதன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'மதன்' (strength, power) and 'உடை' (having).",
+          "gloss": "possessing strength"
         },
         {
           "form": "நோன்றாள்",
-          "root": null,
+          "root": "நோன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நோன்' (to endure, to perform penance) and 'தாள்' (foot).",
+          "gloss": "enduring feet"
         }
       ]
     },
@@ -148,59 +148,59 @@
       "words": [
         {
           "form": "செறுநர்த்",
-          "root": null,
+          "root": "செறுநர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'செறுநர்' (enemies), accusative case.",
+          "gloss": "enemies"
         },
         {
           "form": "தேய்த்த",
-          "root": null,
+          "root": "தேய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'தேய்' (to rub, to wear down).",
+          "gloss": "worn down"
         },
         {
           "form": "செல்லுறழ்",
-          "root": null,
+          "root": "செல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'செல்' (thunderbolt) and 'உறழ்' (to resemble, to be like).",
+          "gloss": "thunderbolt-like"
         },
         {
           "form": "தடக்கை",
-          "root": null,
+          "root": "தடம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'தடம்' (large, broad) and 'கை' (hand).",
+          "gloss": "large hands"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(5)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -210,73 +210,73 @@
       "words": [
         {
           "form": "மறுவில்",
-          "root": null,
+          "root": "மறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'மறு' (blemish, fault) + 'இல்' (without).",
+          "gloss": "flawless"
         },
         {
           "form": "கற்பின்",
-          "root": null,
+          "root": "கற்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive case of 'கற்பு' (chastity, virtue).",
+          "gloss": "of chastity"
         },
         {
           "form": "வாணுதற்",
-          "root": null,
+          "root": "வாள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'வாள்' (brightness, sword-like) and 'நுதல்' (forehead).",
+          "gloss": "bright-browed"
         },
         {
           "form": "கணவன்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Proto-Dravidian *kaṇavan, meaning 'husband'.",
+          "gloss": "husband"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(1",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse range start"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "range separator"
         },
         {
           "form": "6)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse range end"
         }
       ]
     }
@@ -288,5 +288,20 @@
   "sectionNumber": 1,
   "title": "தெய்வயானையின் கணவன்",
   "lineStart": 1,
-  "lineEnd": 6
+  "lineEnd": 6,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:16+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:40+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 34
+  }
 }

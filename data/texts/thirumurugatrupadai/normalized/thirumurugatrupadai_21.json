@@ -3,8 +3,8 @@
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
   "sangamTamil": "இருமூன்று எய்திய இயல்பினின் வழாஅது\nஇருவர்ச் சுட்டிய பல்வேறு தொல்குடி\nஅறுநான்கு இரட்டி இளமை நல்லியாண்டு\nஆறினிற் கழிப்பிய அறன்நவில் கொள்கை . . . .(180)\nமூன்றுவகைக் குறித்த முத்தீச் செல்வத்து\nஇருபிறப் பாளர் பொழுதறிந்து நுவல, . . . .(177 - 182)",
-  "urai": null,
-  "english": null,
+  "urai": "வேதங்களில் சொல்லப்பட்ட ஆறு அங்கங்களின் இயல்பிலிருந்து வழுவாமல், இருவகையாகச் சுட்டப்படும் பல்வேறு தொன்மையான குடிகளில் பிறந்தவர்களாய், இருபத்துநான்கு ஆண்டுகள் இளமைப் பருவத்தை அறநெறியில் கழித்தவர்களாய், மூன்று வகையான முத்தீச் செல்வத்தை உடையவர்களாய், இருபிறப்பாளர்களான அந்தணர்கள், உரிய காலத்தை அறிந்து முருகப்பெருமானின் புகழைப் போற்றினர்.",
+  "english": "Unswerving from the nature of the six-fold Vedas,\nborn into ancient lineages, diverse and twofold,\nwho spent twenty-four youthful years in righteous conduct,\npossessing the wealth of the threefold sacred fires,\nthe twice-born, knowing the auspicious hour, praised Murukaṉ.",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "இருமூன்று",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'இரு' (two) and 'மூன்று' (three).",
+          "gloss": "two-three, six"
         },
         {
           "form": "எய்திய",
-          "root": null,
+          "root": "எய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'எய்து' (to attain).",
+          "gloss": "attained, reached"
         },
         {
           "form": "இயல்பினின்",
-          "root": null,
+          "root": "இயல்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Ablative case of 'இயல்பு' (nature, quality).",
+          "gloss": "from nature, by quality"
         },
         {
           "form": "வழாஅது",
-          "root": null,
+          "root": "வழா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective, meaning 'without deviating'.",
+          "gloss": "without deviating"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "இருவர்ச்",
-          "root": null,
+          "root": "இருவர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Accusative case of 'இருவர்' (two persons/kinds).",
+          "gloss": "two kinds/persons"
         },
         {
           "form": "சுட்டிய",
-          "root": null,
+          "root": "சுட்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'சுட்டு' (to point out, refer).",
+          "gloss": "referred to, indicated"
         },
         {
           "form": "பல்வேறு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பல்' (many) and 'வேறு' (different).",
+          "gloss": "various, diverse"
         },
         {
           "form": "தொல்குடி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'தொல்' (ancient) and 'குடி' (clan, family).",
+          "gloss": "ancient clan"
         }
       ]
     },
@@ -82,29 +82,29 @@
           "form": "அறுநான்கு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'அறு' (six) and 'நான்கு' (four), meaning twenty-four.",
+          "gloss": "twenty-four"
         },
         {
           "form": "இரட்டி",
-          "root": null,
+          "root": "இரட்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verbal participle from 'இரட்டு' (to double, multiply).",
+          "gloss": "doubled, multiplied"
         },
         {
           "form": "இளமை",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "youth, young age"
         },
         {
           "form": "நல்லியாண்டு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நல்' (good) and 'யாண்டு' (year).",
+          "gloss": "good years"
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "ஆறினிற்",
-          "root": null,
+          "root": "ஆறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Ablative case of 'ஆறு' (way, path, six). Here, 'six' as in six angas of Vedas.",
+          "gloss": "in the six, by the way"
         },
         {
           "form": "கழிப்பிய",
-          "root": null,
+          "root": "கழி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'கழிப்பி' (to spend, pass).",
+          "gloss": "spent, passed"
         },
         {
           "form": "அறன்நவில்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'அறன்' (dharma, virtue) and 'நவில்' (to practice, learn).",
+          "gloss": "practicing virtue"
         },
         {
           "form": "கொள்கை",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "principle, conduct"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(180)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "மூன்றுவகைக்",
-          "root": null,
+          "root": "மூன்றுவகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive/adjectival form of 'மூன்றுவகை' (three kinds).",
+          "gloss": "of three kinds"
         },
         {
           "form": "குறித்த",
-          "root": null,
+          "root": "குறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from 'குறி' (to specify, indicate).",
+          "gloss": "specified, indicated"
         },
         {
           "form": "முத்தீச்",
-          "root": null,
+          "root": "முத்தீ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive/adjectival form of 'முத்தீ' (three fires).",
+          "gloss": "of three fires"
         },
         {
           "form": "செல்வத்து",
-          "root": null,
+          "root": "செல்வம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative case of 'செல்வம்' (wealth, prosperity).",
+          "gloss": "in wealth, with wealth"
         }
       ]
     },
@@ -210,73 +210,73 @@
       "words": [
         {
           "form": "இருபிறப்",
-          "root": null,
+          "root": "இருபிறப்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'இரு' (two) and 'பிறப்பு' (birth).",
+          "gloss": "twice-born"
         },
         {
           "form": "பாளர்",
-          "root": null,
+          "root": "ஆள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Suffix indicating 'person' or 'one who possesses'.",
+          "gloss": "persons, possessors"
         },
         {
           "form": "பொழுதறிந்து",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பொழுது' (time) and 'அறிந்து' (knowing).",
+          "gloss": "knowing the time"
         },
         {
           "form": "நுவல,",
-          "root": null,
+          "root": "நுவல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive form of 'நுவல்' (to speak, praise).",
+          "gloss": "to speak, to praise"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(177",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "range indicator"
         },
         {
           "form": "182)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -288,5 +288,20 @@
   "sectionNumber": 21,
   "title": "இரு பிறப்பாளரின் இயல்பு",
   "lineStart": 177,
-  "lineEnd": 182
+  "lineEnd": 182,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:22+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:13+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 34
+  }
 }

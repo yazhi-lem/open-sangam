@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "ஆடுகளம் சிலம்பப் பாடிப் பலவுடன் . . . .(245)\nகோடுவாய் வைத்துக் கொடுமணி இயக்கி\nஓடாப் பூட்கைப் பிணிமுகம் வாழ்த்தி\nவேண்டுநர் வேண்டியாங்கு எய்தனர் வழிபட\nஆண்டாண்டு உறைதலும் அறிந்த வாறே . . . .(245 - 249)",
   "urai": "எதிரொலி கேட்கும் மலைப்பகுதியில் அமைக்கப்பட்ட அந்த முருகன் வீட்டை(குன்றுதோறாடல் என்னும் படைவீட்டை)வாழ்த்திப் பாடுவார்கள். மணப்புகை காட்டிக் குறிஞ்சிப்பண் பாடுவார்கள். அங்கே அருவி ஒலியுடன் இசைக்கருவி முழக்கமும் கேட்கும். அச்சம் தரும் பூக்களைத் தூவுவார்கள். செந்தினையில் குருதி கலந்து நடுக்கம் தரும் வகையில் பரப்புவார்கள். குறமகளின்மேல் முருகன் ஏறியிருப்பதாகக் கூறுவார்கள். இது மாறுபட்ட எண்ணத்தால் தோன்றிய அச்சம். இதனை ஆற்றுப்படுத்துவார்கள்.இது ஒருவகை முருகாற்றுப் படை. அச்சம் தரும்படி அமைக்கப்பட்ட களவீட்டில் இது நிகழும். இந்த வெறிக்களத்தில் சிலம்பை ஆட்டிக்கொண்டு பாடுவர். கொம்பு ஊதுவர். மணி அடிப்பர். போரில் புறமுதுகிடாத யானையை வாழ்த்திப் பாடுவர். அவரவர் விருப்பம் நிறைவேற வழிபாடு செய்வர். இத்தகைய வழிபாடு எங்கெல்லாம் நடக்கிறதோ அங்கங் கெல்லாம் முருகன் வாழ்வது எல்லாரும் அறிந்த நெறியாகும்.",
-  "english": null,
+  "english": "Singing, as the dancing ground echoes, with many together,\nplacing the horn to the mouth, ringing the resonant bell,\npraising the elephant that knows no retreat in battle,\nas devotees worship, attaining their desires,\nthat Muruka abides in those places, is a truth well-known.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,59 +12,59 @@
       "words": [
         {
           "form": "ஆடுகளம்",
-          "root": null,
+          "root": "ஆடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of ஆடு (to dance) and களம் (place).",
+          "gloss": "dancing ground"
         },
         {
           "form": "சிலம்பப்",
-          "root": null,
+          "root": "சிலம்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From சிலம்பு (anklet), here used as a verb meaning 'to make sound'.",
+          "gloss": "to resound"
         },
         {
           "form": "பாடிப்",
-          "root": null,
+          "root": "பாடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial form of பாடு (to sing).",
+          "gloss": "having sung"
         },
         {
           "form": "பலவுடன்",
-          "root": null,
+          "root": "பல",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From பல (many) with உடன் (with).",
+          "gloss": "with many"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(245)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -74,31 +74,31 @@
       "words": [
         {
           "form": "கோடுவாய்",
-          "root": null,
+          "root": "கோடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of கோடு (horn) and வாய் (mouth/opening).",
+          "gloss": "horn-mouth"
         },
         {
           "form": "வைத்துக்",
-          "root": null,
+          "root": "வை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial form of வை (to place, to keep).",
+          "gloss": "having placed"
         },
         {
           "form": "கொடுமணி",
-          "root": null,
+          "root": "கொடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of கொடு (curved, bent) and மணி (bell).",
+          "gloss": "curved bell"
         },
         {
           "form": "இயக்கி",
-          "root": null,
+          "root": "இயக்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial form of இயக்கு (to operate, to cause to move).",
+          "gloss": "having operated"
         }
       ]
     },
@@ -108,31 +108,31 @@
       "words": [
         {
           "form": "ஓடாப்",
-          "root": null,
+          "root": "ஓடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective from ஓடு (to run, to flee).",
+          "gloss": "not fleeing"
         },
         {
           "form": "பூட்கைப்",
-          "root": null,
+          "root": "பூட்கை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From பூட்கை (resolve, determination).",
+          "gloss": "of resolve"
         },
         {
           "form": "பிணிமுகம்",
-          "root": null,
+          "root": "பிணிமுகம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a specific type of war elephant, possibly with a decorated face.",
+          "gloss": "war elephant"
         },
         {
           "form": "வாழ்த்தி",
-          "root": null,
+          "root": "வாழ்த்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial form of வாழ்த்து (to bless, to praise).",
+          "gloss": "having praised"
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "வேண்டுநர்",
-          "root": null,
+          "root": "வேண்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Agent noun from வேண்டு (to desire, to wish).",
+          "gloss": "those who desire"
         },
         {
           "form": "வேண்டியாங்கு",
-          "root": null,
+          "root": "வேண்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of வேண்டி (having desired) and ஆங்கு (as, like that).",
+          "gloss": "as desired"
         },
         {
           "form": "எய்தனர்",
-          "root": null,
+          "root": "எய்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past tense plural verb from எய்து (to obtain, to reach).",
+          "gloss": "they obtained"
         },
         {
           "form": "வழிபட",
-          "root": null,
+          "root": "வழிபடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive form of வழிபடு (to worship).",
+          "gloss": "to worship"
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "ஆண்டாண்டு",
-          "root": null,
+          "root": "ஆண்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Repetition of ஆண்டு (there, that place) for emphasis.",
+          "gloss": "there and there"
         },
         {
           "form": "உறைதலும்",
-          "root": null,
+          "root": "உறை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verbal noun from உறை (to reside) with the emphatic particle உம்.",
+          "gloss": "residing also"
         },
         {
           "form": "அறிந்த",
-          "root": null,
+          "root": "அறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from அறி (to know).",
+          "gloss": "known"
         },
         {
           "form": "வாறே",
-          "root": null,
+          "root": "ஆறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From ஆறு (way, manner) with emphatic particle ஏ.",
+          "gloss": "the way indeed"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(245",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "range indicator"
         },
         {
           "form": "249)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -254,5 +254,20 @@
   "sectionNumber": 27,
   "title": "முருகனை வழிபடுதல்",
   "lineStart": 245,
-  "lineEnd": 249
+  "lineEnd": 249,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:25+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:44+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 30
+  }
 }

@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "சீரை தைஇய உடுக்கையர் சீரொடு\nவலம்புரி புரையும் வால்நரை முடியினர்\nமாசுஅற இமைக்கும் உருவினர் மானின்\nஉரிவை தைஇய ஊன்கெடு மார்பின்\nஎன்புஎழுந்து இயங்கும் யாக்கையர் நன்பகல்.\t. . . .(130)\nபலவுடன் கழிந்த உண்டியர் இகலொடு\nசெற்றம் நீக்கிய மனத்தினர் யாவதும்\nகற்றோர் அறியா அறிவினர் கற்றோர்க்குத்\nதாம்வரம்பு ஆகிய தலைமையர் காமமொடு\nகடுஞ்சினம் கடிந்த காட்சியர் இடும்பை\t. . . .(135)\nயாவதும் அறியா இயல்பினர் மேவரத்\nதுனியில் காட்சி முனிவர் முற்புக\t. . . .(126 - 137)",
   "urai": "முனிவர்கள் காவியில் தோய்த்த மரநிற ஆடையை உடுத்திருந்தனர். அவர்களின் தலைமுடி வலம்புரி நிறம்போல சீராக வெளுத்திருந்தது. யாரையும் குற்றம் காணாத பார்வையும் யாரும் குற்றம் காண முடியாத உருவமும் கொண்டிருந்தனர். தைத்த மான்தோலை அணிந்திருந்த அவர்கள் ஊன் வற்றி எலும்பு தெரியும் மார்புடன் காணப்பட்டனர். நண்பகல் உணவும் பலநாள் இல்லாமல் சிலநாட்களில் மட்டுமே உண்டனர். அவர்கள் பிறரோடு மாறுபாடு இல்லாத பிறர்மீது சினம் கொள்ளாத மனத்தினர். கற்றோரும் இவர்களைப்பற்றி எதனையும் அறிய முடியாத பேரறிவினர். கற்றவர்களுக்கு எல்லை கட்டிய தலைவர்கள். காமத்தையும் கடுஞ்சினத்தையும் விலக்கிக் கட்டிவைத்த பண்புடன் காட்சி தருபவர். துன்பம் எதையுமே அறியாது இன்பமாகக் காணும் இயல்புடையவர். இவர்கள் எல்லாரையும் விரும்புவதால் பிணக்கின்றிக் காட்சி தருபவர். இவர்கள் முருகன் உலாவரும்போது முன்னே சென்றனர்.",
-  "english": null,
+  "english": "Clad in robes dyed the hue of trees, their hair, a pristine white, resembled the auspicious right-coiled conch. Their forms, immaculate, shone without blemish. Upon their chests, where the flesh had wasted, revealing bone, they wore stitched deer-hide. Many days passed without their midday meal. Their minds, free from strife and anger, possessed a wisdom unfathomable even to the learned. They were leaders, setting the very bounds for scholars, their vision devoid of desire and fierce wrath. Their nature, untouched by suffering, knew only joy. These faultless sages, beloved by all, walked ahead as Muruka journeyed forth.",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "சீரை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'சீர்' meaning 'order' or 'excellence', referring to a garment of specific quality or type.",
+          "gloss": "garment"
         },
         {
           "form": "தைஇய",
-          "root": null,
+          "root": "தை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'தைத்தல்' (to sew).",
+          "gloss": "sewn, stitched"
         },
         {
           "form": "உடுக்கையர்",
-          "root": null,
+          "root": "உடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உடுத்தல்' (to wear) + '-கையர்' (suffix for people).",
+          "gloss": "wearers"
         },
         {
           "form": "சீரொடு",
-          "root": null,
+          "root": "சீர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'சீர்' (order, excellence) + 'ஓடு' (with).",
+          "gloss": "with order"
         }
       ]
     },
@@ -48,29 +48,29 @@
           "form": "வலம்புரி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to the auspicious right-whorled conch shell, known for its white color.",
+          "gloss": "right-whorled conch"
         },
         {
           "form": "புரையும்",
-          "root": null,
+          "root": "புரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'புரைதல்' (to resemble, to be like).",
+          "gloss": "resembling"
         },
         {
           "form": "வால்நரை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'வால்' (white) + 'நரை' (grey hair).",
+          "gloss": "white grey hair"
         },
         {
           "form": "முடியினர்",
-          "root": null,
+          "root": "முடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'முடி' (hair, head) + '-இனர்' (suffix for people).",
+          "gloss": "those with hair"
         }
       ]
     },
@@ -80,31 +80,31 @@
       "words": [
         {
           "form": "மாசுஅற",
-          "root": null,
+          "root": "மாசு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'மாசு' (blemish, impurity) + 'அற' (to be free from).",
+          "gloss": "flawlessly"
         },
         {
           "form": "இமைக்கும்",
-          "root": null,
+          "root": "இமை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'இமைத்தல்' (to shine, to blink).",
+          "gloss": "shining"
         },
         {
           "form": "உருவினர்",
-          "root": null,
+          "root": "உரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உரு' (form, body) + '-இனர்' (suffix for people).",
+          "gloss": "those with form"
         },
         {
           "form": "மானின்",
-          "root": null,
+          "root": "மான்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive case of 'மான்' (deer).",
+          "gloss": "of deer"
         }
       ]
     },
@@ -114,31 +114,31 @@
       "words": [
         {
           "form": "உரிவை",
-          "root": null,
+          "root": "உரி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உரித்தல்' (to peel, to skin), referring to animal skin.",
+          "gloss": "skin, hide"
         },
         {
           "form": "தைஇய",
-          "root": null,
+          "root": "தை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'தைத்தல்' (to sew).",
+          "gloss": "sewn, stitched"
         },
         {
           "form": "ஊன்கெடு",
-          "root": null,
+          "root": "ஊன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'ஊன்' (flesh) + 'கெடு' (to diminish, to waste away).",
+          "gloss": "flesh-wasted"
         },
         {
           "form": "மார்பின்",
-          "root": null,
+          "root": "மார்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative/genitive case of 'மார்பு' (chest).",
+          "gloss": "on the chest"
         }
       ]
     },
@@ -148,59 +148,59 @@
       "words": [
         {
           "form": "என்புஎழுந்து",
-          "root": null,
+          "root": "என்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'என்பு' (bone) + 'எழுந்து' (having risen, prominent).",
+          "gloss": "bones protruding"
         },
         {
           "form": "இயங்கும்",
-          "root": null,
+          "root": "இயங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'இயங்குதல்' (to move, to function).",
+          "gloss": "moving"
         },
         {
           "form": "யாக்கையர்",
-          "root": null,
+          "root": "யாக்கை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'யாக்கை' (body) + '-அர்' (suffix for people).",
+          "gloss": "those with bodies"
         },
         {
           "form": "நன்பகல்.",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'நல்' (good) + 'பகல்' (day, noon).",
+          "gloss": "midday"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(130)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -210,31 +210,31 @@
       "words": [
         {
           "form": "பலவுடன்",
-          "root": null,
+          "root": "பல",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'பல' (many) + 'உடன்' (with).",
+          "gloss": "with many"
         },
         {
           "form": "கழிந்த",
-          "root": null,
+          "root": "கழி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'கழிதல்' (to pass, to elapse).",
+          "gloss": "passed, elapsed"
         },
         {
           "form": "உண்டியர்",
-          "root": null,
+          "root": "உண்டி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உண்டி' (food) + '-யர்' (suffix for people).",
+          "gloss": "eaters"
         },
         {
           "form": "இகலொடு",
-          "root": null,
+          "root": "இகல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'இகல்' (enmity, conflict) + 'ஓடு' (with).",
+          "gloss": "with enmity"
         }
       ]
     },
@@ -246,29 +246,29 @@
           "form": "செற்றம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'செறுதல்' (to be angry), meaning anger or wrath.",
+          "gloss": "anger"
         },
         {
           "form": "நீக்கிய",
-          "root": null,
+          "root": "நீக்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'நீக்குதல்' (to remove, to discard).",
+          "gloss": "removed, discarded"
         },
         {
           "form": "மனத்தினர்",
-          "root": null,
+          "root": "மனம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'மனம்' (mind) + '-இனர்' (suffix for people).",
+          "gloss": "those with minds"
         },
         {
           "form": "யாவதும்",
-          "root": null,
+          "root": "யாது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'யாது' (what, any) + '-உம்' (emphatic particle).",
+          "gloss": "anything at all"
         }
       ]
     },
@@ -278,31 +278,31 @@
       "words": [
         {
           "form": "கற்றோர்",
-          "root": null,
+          "root": "கல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'கற்றல்' (to learn), meaning learned people.",
+          "gloss": "learned ones"
         },
         {
           "form": "அறியா",
-          "root": null,
+          "root": "அறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective of 'அறிதல்' (to know).",
+          "gloss": "unknowing"
         },
         {
           "form": "அறிவினர்",
-          "root": null,
+          "root": "அறிவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'அறிவு' (knowledge) + '-இனர்' (suffix for people).",
+          "gloss": "those with knowledge"
         },
         {
           "form": "கற்றோர்க்குத்",
-          "root": null,
+          "root": "கல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Dative case of 'கற்றோர்' (learned ones).",
+          "gloss": "to the learned"
         }
       ]
     },
@@ -312,31 +312,31 @@
       "words": [
         {
           "form": "தாம்வரம்பு",
-          "root": null,
+          "root": "தாம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'தாம்' (they, self) + 'வரம்பு' (limit, boundary).",
+          "gloss": "their own limit"
         },
         {
           "form": "ஆகிய",
-          "root": null,
+          "root": "ஆகு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'ஆகுதல்' (to become).",
+          "gloss": "having become"
         },
         {
           "form": "தலைமையர்",
-          "root": null,
+          "root": "தலைமை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'தலைமை' (leadership, eminence) + '-யர்' (suffix for people).",
+          "gloss": "leaders"
         },
         {
           "form": "காமமொடு",
-          "root": null,
+          "root": "காமம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'காமம்' (desire, lust) + 'ஓடு' (with).",
+          "gloss": "with desire"
         }
       ]
     },
@@ -346,59 +346,59 @@
       "words": [
         {
           "form": "கடுஞ்சினம்",
-          "root": null,
+          "root": "கடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'கடு' (fierce, severe) + 'சினம்' (anger).",
+          "gloss": "fierce anger"
         },
         {
           "form": "கடிந்த",
-          "root": null,
+          "root": "கடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'கடித்தல்' (to restrain, to curb).",
+          "gloss": "restrained, curbed"
         },
         {
           "form": "காட்சியர்",
-          "root": null,
+          "root": "காட்சி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'காட்சி' (sight, appearance) + '-யர்' (suffix for people).",
+          "gloss": "those with appearance"
         },
         {
           "form": "இடும்பை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to suffering, distress.",
+          "gloss": "suffering"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(135)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -408,31 +408,31 @@
       "words": [
         {
           "form": "யாவதும்",
-          "root": null,
+          "root": "யாது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'யாது' (what, any) + '-உம்' (emphatic particle).",
+          "gloss": "anything at all"
         },
         {
           "form": "அறியா",
-          "root": null,
+          "root": "அறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective of 'அறிதல்' (to know).",
+          "gloss": "unknowing"
         },
         {
           "form": "இயல்பினர்",
-          "root": null,
+          "root": "இயல்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'இயல்பு' (nature, character) + '-இனர்' (suffix for people).",
+          "gloss": "those with nature"
         },
         {
           "form": "மேவரத்",
-          "root": null,
+          "root": "மேவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'மேவுதல்' (to desire, to be pleased with) + '-அத்' (adverbial suffix).",
+          "gloss": "pleasingly"
         }
       ]
     },
@@ -442,73 +442,73 @@
       "words": [
         {
           "form": "துனியில்",
-          "root": null,
+          "root": "துனி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'துனி' (displeasure, conflict) + '-இல்' (negative suffix).",
+          "gloss": "without conflict"
         },
         {
           "form": "காட்சி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to sight, appearance, or perception.",
+          "gloss": "appearance, perception"
         },
         {
           "form": "முனிவர்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to sages, ascetics.",
+          "gloss": "sages"
         },
         {
           "form": "முற்புக",
-          "root": null,
+          "root": "முன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'முன்' (front, before) + 'புகுதல்' (to enter).",
+          "gloss": "to enter first"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(126",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "137)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -520,5 +520,20 @@
   "sectionNumber": 14,
   "title": "முன் செல்லும் முனிவரது இயல்புகள்",
   "lineStart": 126,
-  "lineEnd": 137
+  "lineEnd": 137,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:20+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:04+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 62
+  }
 }

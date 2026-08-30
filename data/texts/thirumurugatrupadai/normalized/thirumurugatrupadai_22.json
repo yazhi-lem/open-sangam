@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "ஒன்பது கொண்ட மூன்றுபுரி நுண்ஞாண்\nபுலராக் காழகம் புலர உடீஇ,\nஉச்சிக் கூப்பிய கையினர் தற்புகழ்ந்து . . . .(185)\nஆறெழுத்து அடக்கிய அருமறைக் கேள்வி\nநாஇயல் மருங்கில் நவிலப் பாடி\nவிரையுறு நறுமலர் ஏந்திப் பெரிந்துஉவந்து\nஏரகத்து உறைதலும் உரியன்: அதான்று, . . . .(183 - 189)",
   "urai": "இருபிறப்பாளர் வழிபாடு இங்குச் சிறப்பு மிக்கது. இவர்கள் அறுவகைப்பட்ட சமய நெறிகளிலிருந்து வழுவாதவர்கள். சிவன் பெருமாள் என்று இருவரை வழிபடும் பல்வேறு தொல்குடியைச் சேர்ந்தவர்கள். 48 ஆண்டு இளமையை இல்லறத்தில் கழித்த பின்னர் அவர்கள் அறம் சொல்லி முத்தீ வளர்க்கும் கொள்கையில் மூன்று வகைக் குறிக்கோள் உண்டு. இறந்தோருக்கும் இறைவனுக்கும் உணவு சமைப்பதே முத்தீ. பூணூலுக்குமுன் பூணூலுக்குப்பின் என்று அவர்களுக்கு இரண்டு பிறப்புக்கள் உண்டு. முப்புரிநூல் ஒன்பது கொண்டது அவர்களின் பூணூல். இவர்கள் நல்லநேரம் பார்ப்பவர்கள். ஈர ஆடையை உடுத்திக்கொண்டு புலரவிடுபவர்கள். உச்சியில் கைகளைக் கூப்பித் தாம் வழிவழியாகச் சொல்லக் கேட்ட ஆறெழுத்து மந்திரத்தைத் தாமும் சொல்லி முருகனைப் புகழ்ந்து வாய்விட்டுப் பாடுவர். மணம் மிக்க மலர்களைத் தூவிப் பூசை செய்வர். இதனை விரும்பி முருகன் ஏரகத்தில் வாழ்தலும் உண்டு. அதுவன்றி…",
-  "english": null,
+  "english": "With a sacred thread of nine strands, thrice-spun and fine,\nthey don the wet garment, allowing it to dry upon them.\nWith hands clasped above their heads, praising themselves,\nthey chant the six-syllabled mantra, a rare Vedic lore,\nheard and learned, now sung aloud from their tongues.\nHolding fragrant, fresh flowers, with great joy,\nHe is also wont to dwell in Ērakam; beyond that,",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "ஒன்பது",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'ஒன்' (one) + 'பது' (ten), meaning 'one less than ten'.",
+          "gloss": "nine"
         },
         {
           "form": "கொண்ட",
-          "root": null,
+          "root": "கொள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'கொள்' (to have, to hold).",
+          "gloss": "having, possessing"
         },
         {
           "form": "மூன்றுபுரி",
-          "root": null,
+          "root": "மூன்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'மூன்று' (three) and 'புரி' (strand).",
+          "gloss": "three-stranded"
         },
         {
           "form": "நுண்ஞாண்",
-          "root": null,
+          "root": "நுண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நுண்' (fine) and 'ஞாண்' (thread, sacred thread).",
+          "gloss": "fine sacred thread"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "புலராக்",
-          "root": null,
+          "root": "புலரா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective of 'புலரு' (to dry), meaning 'not drying'.",
+          "gloss": "undried, wet"
         },
         {
           "form": "காழகம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a type of garment, often associated with wet clothes for ritual purity.",
+          "gloss": "garment, cloth"
         },
         {
           "form": "புலர",
-          "root": null,
+          "root": "புலரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive form of 'புலரு' (to dry).",
+          "gloss": "to dry"
         },
         {
           "form": "உடீஇ,",
-          "root": null,
+          "root": "உடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial form of 'உடு' (to wear).",
+          "gloss": "having worn"
         }
       ]
     },
@@ -80,59 +80,59 @@
       "words": [
         {
           "form": "உச்சிக்",
-          "root": null,
+          "root": "உச்சி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative form of 'உச்சி' (top, crown of the head).",
+          "gloss": "on the head"
         },
         {
           "form": "கூப்பிய",
-          "root": null,
+          "root": "கூப்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'கூப்பு' (to fold, to bring together).",
+          "gloss": "folded, joined"
         },
         {
           "form": "கையினர்",
-          "root": null,
+          "root": "கை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'கை' (hand) and the plural suffix 'இனர்'.",
+          "gloss": "those with hands"
         },
         {
           "form": "தற்புகழ்ந்து",
-          "root": null,
+          "root": "தற்புகழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'தற்' (self) and 'புகழ்ந்து' (having praised).",
+          "gloss": "praising themselves"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(185)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "ஆறெழுத்து",
-          "root": null,
+          "root": "ஆறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'ஆறு' (six) and 'எழுத்து' (letter). Refers to the six-letter mantra.",
+          "gloss": "six letters"
         },
         {
           "form": "அடக்கிய",
-          "root": null,
+          "root": "அடக்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective of 'அடக்கு' (to contain, to control).",
+          "gloss": "containing, encompassing"
         },
         {
           "form": "அருமறைக்",
-          "root": null,
+          "root": "அரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'அரு' (rare, precious) and 'மறை' (Veda, secret).",
+          "gloss": "rare Veda"
         },
         {
           "form": "கேள்வி",
-          "root": null,
+          "root": "கேள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'கேள்' (to hear), meaning 'that which is heard', tradition.",
+          "gloss": "heard tradition"
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "நாஇயல்",
-          "root": null,
+          "root": "நா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நா' (tongue) and 'இயல்' (nature, manner).",
+          "gloss": "tongue's nature"
         },
         {
           "form": "மருங்கில்",
-          "root": null,
+          "root": "மருங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative form of 'மருங்கு' (side, vicinity, manner).",
+          "gloss": "in the manner"
         },
         {
           "form": "நவிலப்",
-          "root": null,
+          "root": "நவில்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive form of 'நவில்' (to utter, to recite).",
+          "gloss": "to recite"
         },
         {
           "form": "பாடி",
-          "root": null,
+          "root": "பாடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial form of 'பாடு' (to sing).",
+          "gloss": "having sung"
         }
       ]
     },
@@ -210,31 +210,31 @@
       "words": [
         {
           "form": "விரையுறு",
-          "root": null,
+          "root": "விரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'விரை' (fragrance) and 'உறு' (to possess).",
+          "gloss": "fragrant"
         },
         {
           "form": "நறுமலர்",
-          "root": null,
+          "root": "நறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நறு' (fragrant) and 'மலர்' (flower).",
+          "gloss": "fragrant flower"
         },
         {
           "form": "ஏந்திப்",
-          "root": null,
+          "root": "ஏந்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial form of 'ஏந்து' (to hold up, to offer).",
+          "gloss": "having offered"
         },
         {
           "form": "பெரிந்துஉவந்து",
-          "root": null,
+          "root": "பெரிது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'பெரிது' (greatly) and 'உவந்து' (having rejoiced).",
+          "gloss": "greatly rejoicing"
         }
       ]
     },
@@ -244,73 +244,73 @@
       "words": [
         {
           "form": "ஏரகத்து",
-          "root": null,
+          "root": "ஏரகம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative form of 'ஏரகம்', a sacred place.",
+          "gloss": "in Yeragam"
         },
         {
           "form": "உறைதலும்",
-          "root": null,
+          "root": "உறை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Nominalized verb 'உறை' (to reside) with the emphatic particle 'உம்'.",
+          "gloss": "residing also"
         },
         {
           "form": "உரியன்:",
-          "root": null,
+          "root": "உரி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உரி' (to be fitting, to be proper), meaning 'he who is entitled'.",
+          "gloss": "he is entitled"
         },
         {
           "form": "அதான்று,",
-          "root": null,
+          "root": "அது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'அது' (that) and 'அன்று' (not).",
+          "gloss": "that is not"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(183",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "189)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -322,5 +322,20 @@
   "sectionNumber": 22,
   "title": "அந்தணர் வழிபடும் முறை",
   "lineStart": 183,
-  "lineEnd": 189
+  "lineEnd": 189,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:22+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:21+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 38
+  }
 }

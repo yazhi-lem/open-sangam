@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "இருபே ருருவின் ஒருபே ரியாக்கை\nஅறுவேறு வகையின் அஞ்சுவர மண்டி\nஅவுணர் நல்வலம் அடங்கக் கவிழிணர்\nமாமுதல் தடிந்த மறுவில் கொற்றத்து\t. . . .(60)\nஎய்யா நல்லிசைச் செவ்வேற் சேஎய்\t. . . .(57 - 61)",
   "urai": "முருகன் தன் ஒரே ஒரு பேருடம்பில் இருபேர் உருவங்களில் காட்சி தருபவன். ஒன்று ஆண்டிக் கோலம். மற்றொன்று ஆறுமுகக் கோலம். கவிழ்ந்த இலைகளையுடைய மாமரமாகி நின்ற அவுணர் கொட்டம் அடங்க அம்மாமரத்தை முருகன் வேரோடு வெட்டிச் சாய்த்தான். செவ்வேலை வீசிப் பெற்ற இக்கொற்றம் குறையாத புகழைக் கொண்டது. அவன் சேய்.",
-  "english": null,
+  "english": "In a single, vast form, he appears in two guises,\nHis awesome might, in six distinct ways,\nSubduing the proud strength of the Asuras,\nHe felled the mango tree with drooping blossoms,\nA flawless victory,\nThe Red Spear of Cēy, whose good fame never wanes.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "இருபே",
-          "root": null,
+          "root": "இரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From இரு (two) + பேர் (great/large).",
+          "gloss": "two great"
         },
         {
           "form": "ருருவின்",
-          "root": null,
+          "root": "உரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From உரு (form/body) with euphonic 'ர்' and locative suffix 'இன்'.",
+          "gloss": "in form"
         },
         {
           "form": "ஒருபே",
-          "root": null,
+          "root": "ஒரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From ஒரு (one) + பேர் (great/large).",
+          "gloss": "one great"
         },
         {
           "form": "ரியாக்கை",
-          "root": null,
+          "root": "யாக்கை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From யாக்கை (body) with euphonic 'ர்'.",
+          "gloss": "body"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "அறுவேறு",
-          "root": null,
+          "root": "அறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From அறு (six) + வேறு (different/kinds).",
+          "gloss": "six different"
         },
         {
           "form": "வகையின்",
-          "root": null,
+          "root": "வகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From வகை (kind/type) with locative suffix 'இன்'.",
+          "gloss": "in kinds"
         },
         {
           "form": "அஞ்சுவர",
-          "root": null,
+          "root": "அஞ்சு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From அஞ்சு (to fear) + வர (to come/so as to).",
+          "gloss": "so as to fear"
         },
         {
           "form": "மண்டி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From மண்டு (to spread/to fill).",
+          "gloss": "spread, filled"
         }
       ]
     },
@@ -82,29 +82,29 @@
           "form": "அவுணர்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Cognate with Sanskrit 'asura'.",
+          "gloss": "Asuras, demons"
         },
         {
           "form": "நல்வலம்",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From நல் (good) + வலம் (strength/power).",
+          "gloss": "good strength"
         },
         {
           "form": "அடங்கக்",
-          "root": null,
+          "root": "அடங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From அடங்கு (to subside/to be suppressed) + 'அக்' (marker).",
+          "gloss": "to subside"
         },
         {
           "form": "கவிழிணர்",
-          "root": null,
+          "root": "கவிழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From கவிழ் (to droop/to hang down) + இணர் (cluster/bunch). Refers to the drooping leaves of the mango tree.",
+          "gloss": "drooping clusters"
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "மாமுதல்",
-          "root": null,
+          "root": "மா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From மா (mango tree) + முதல் (root/origin). Refers to the root of the mango tree.",
+          "gloss": "mango tree root"
         },
         {
           "form": "தடிந்த",
-          "root": null,
+          "root": "தடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தடி (to cut/to fell).",
+          "gloss": "felled, cut down"
         },
         {
           "form": "மறுவில்",
-          "root": null,
+          "root": "மறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From மறு (blemish/defect) + இல் (without).",
+          "gloss": "flawless, blemishless"
         },
         {
           "form": "கொற்றத்து",
-          "root": null,
+          "root": "கொற்றம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From கொற்றம் (victory/triumph) with locative suffix 'அத்து'.",
+          "gloss": "in victory"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(60)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "எய்யா",
-          "root": null,
+          "root": "எய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From எய் (to shoot/to throw) + ஆ (negative suffix). Implies 'unfailing' or 'unquestionable'.",
+          "gloss": "unfailing, unquestionable"
         },
         {
           "form": "நல்லிசைச்",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From நல் (good) + இசை (fame/sound) + 'ச்' (sandhi).",
+          "gloss": "good fame"
         },
         {
           "form": "செவ்வேற்",
-          "root": null,
+          "root": "செவ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From செவ் (red/beautiful) + வேல் (spear) + 'ற்' (sandhi).",
+          "gloss": "red spear"
         },
         {
           "form": "சேஎய்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From சேய் (child/Murugan). The 'எ' is an alliteration.",
+          "gloss": "Murugan, child"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(57",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "range indicator"
         },
         {
           "form": "61)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -254,5 +254,20 @@
   "sectionNumber": 7,
   "title": "மாமரத்தை வெட்டிய வெற்றி",
   "lineStart": 57,
-  "lineEnd": 61
+  "lineEnd": 61,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:17+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:49+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 30
+  }
 }

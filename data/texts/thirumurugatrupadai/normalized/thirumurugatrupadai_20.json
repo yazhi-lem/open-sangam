@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "தாவில் கொள்கை மடந்தையொடு சின்னாள் . . . .(175)\nஆவினன்குடி அசைதலும் உரியன், அதான்று, . . . .(175 - 176)",
   "urai": "அவனைக் காண வருவோர் பாகுபாடோ வேறுபாடோ இல்லாமல் ஒன்றாகக் கூடிக் கண்டு களித்தனர். முருகனும் பாகுபாடோ வேறுபாடோ இல்லாமல் காட்சி தந்து கொண்டிருந்தான். மக்களிடம் நால்வேறு இயற்கைப் பாங்குகள் உண்டு. (மனம், மொழி, செயல், இயல்பு - என்பன அவை.) 11 வகைத் தேவர் (மருத்துவர்), 18 வகைத் தேவர் என்னும் பாகுபாடுகளும் உண்டு. எல்லாருமே உயர்நிலை உலகம் பெறுவதற்காக வானத்தில் மீன் பூத்திருப்பது போல் தோன்றி மருகனை வழிபட்டனர். இவர்கள் காற்றைப்போல் விரைந்து செல்லக் கூடியவர்கள். தீயைப்போல் அழிக்கும் திறம் பெற்றவர்கள். முருகன் பெயரை மின்னலில் தோன்றும் இடியைப்போல் முழங்கினர். வரிசை முறையில் காத்திருந்து தம் குறையைச் சொல்லி வரம் பெற வேண்டி அந்தரத்திலும் சுழன்று வந்து கொண்டிருந்தனர். இவர்களுக்கெல்லாம் தன் மனைவியோடு காட்சி தந்தவண்ணம் மருகன் ஆவினன்குடியில் சிலநாள் அசைந்தாடும் உரிமையும் உடையவன். அதுவன்றி…",
-  "english": null,
+  "english": "With his flawless consort, for a few days,\nhe is wont to sojourn in Āviṉaṉkuṭi; and not only that,",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,59 +12,59 @@
       "words": [
         {
           "form": "தாவில்",
-          "root": null,
+          "root": "தா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'தா' (to fail/decay) + 'இல்' (negative suffix).",
+          "gloss": "undecaying, unfailing"
         },
         {
           "form": "கொள்கை",
-          "root": null,
+          "root": "கொள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'கொள்' (to hold/possess) + '-கை' (noun forming suffix).",
+          "gloss": "principle, nature"
         },
         {
           "form": "மடந்தையொடு",
-          "root": null,
+          "root": "மடந்தை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'மடம்' (innocence/youth) + '-தந்தை' (suffix for female).",
+          "gloss": "with the young woman"
         },
         {
           "form": "சின்னாள்",
-          "root": null,
+          "root": "சின்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'சின்' (small/few) + 'நாள்' (day).",
+          "gloss": "a few days"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(175)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -76,71 +76,71 @@
           "form": "ஆவினன்குடி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "A place name, likely referring to Palani.",
+          "gloss": "Avinankudi (place)"
         },
         {
           "form": "அசைதலும்",
-          "root": null,
+          "root": "அசை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'அசை' (to move/rest) + '-தல்' (verbal noun suffix) + '-உம்' (and/also).",
+          "gloss": "resting also"
         },
         {
           "form": "உரியன்,",
-          "root": null,
+          "root": "உரி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'உரி' (to be proper/belong) + '-அன்' (masculine singular suffix).",
+          "gloss": "he is entitled"
         },
         {
           "form": "அதான்று,",
-          "root": null,
+          "root": "அது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'அது' (that) + 'அன்று' (is not).",
+          "gloss": "that is not so"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(175",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "range indicator"
         },
         {
           "form": "176)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -152,5 +152,20 @@
   "sectionNumber": 20,
   "title": "முருகன் மடந்தையோடு வீற்றிருத்தல்",
   "lineStart": 175,
-  "lineEnd": 176
+  "lineEnd": 176,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:21+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:13+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 18
+  }
 }

@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "மால்வரை நிவந்த சேணுயர் வெற்பிற்\nகிண்கிணி கவைஇய ஒண்செஞ் சீறடி,\nகணைக்கால் வாங்கிய நுசுப்பின், பணைத்தோள்,\nகோபத் தன்ன தோயாப் பூந்துகில், . . . .(15)\nபல்காசு நிரைத்த சில்காழ் அல்குல்,",
   "urai": "பசுமையால் ஆசைமூட்டி மலையுச்சி இருண்டு கிடக்கும். அங்கே சூரர மகளிர் ஆடுவர். அவர்களுக்குக் கிண்கிணி (கொலுசு) கௌவிக் கிடக்கும் சிறிய அடிகள். கணையமரம்போல் உறுதியான கால்கள். வளைந்த இடுப்பு. பெருமை கொண்ட தோள். தொய்வு இல்லாமல் ஆடுவதற்கு வசதியாக அவர்கள் இடையில் உடுத்தியிருந்த வெல்வெட்டுப் பூந்துணி கோபம் என்னும் தம்பலப் பூச்சிபோல் சிவந்திருக்கும். அதன்மேல் காசுவரிசை தொங்கும் சில்காழ் என்னும் சிறிய நடன-இடுப்பணி இருக்கும். இது அவர்களது அல்குலை மறைத்துத் தொங்கிக்கொண்டு ஆடும்.",
-  "english": null,
+  "english": "Upon the lofty peaks, where the great mountains ascend,\nsmall, bright red feet, adorned with tinkling anklets,\nlegs like arrows, a waist that bends, shoulders like bamboo,\na silken garment, unblemished, red as the *kōpam* insect,\nand a girdle of many strung coins, a few strands, upon the hips.",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "மால்வரை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of மால் (great) and வரை (mountain).",
+          "gloss": "great mountain"
         },
         {
           "form": "நிவந்த",
-          "root": null,
+          "root": "நிவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from the verb நிவு (to rise, to be high).",
+          "gloss": "risen, high"
         },
         {
           "form": "சேணுயர்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of சேண் (height, distance) and உயர் (to be high).",
+          "gloss": "high-reaching"
         },
         {
           "form": "வெற்பிற்",
-          "root": null,
+          "root": "வெற்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative form of வெற்பு (mountain).",
+          "gloss": "on the mountain"
         }
       ]
     },
@@ -48,29 +48,29 @@
           "form": "கிண்கிணி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Onomatopoeic origin, referring to the sound of small bells.",
+          "gloss": "anklet, tiny bells"
         },
         {
           "form": "கவைஇய",
-          "root": null,
+          "root": "கவை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from கவை (to embrace, to be joined).",
+          "gloss": "joined, embracing"
         },
         {
           "form": "ஒண்செஞ்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of ஒள் (bright) and செம் (red).",
+          "gloss": "bright red"
         },
         {
           "form": "சீறடி,",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of சீறு (small) and அடி (foot).",
+          "gloss": "small foot"
         }
       ]
     },
@@ -82,29 +82,29 @@
           "form": "கணைக்கால்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of கணை (arrow, shaft) and கால் (leg), implying straightness/firmness.",
+          "gloss": "shaft-like leg"
         },
         {
           "form": "வாங்கிய",
-          "root": null,
+          "root": "வாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from வாங்கு (to bend, to draw in).",
+          "gloss": "bent, drawn in"
         },
         {
           "form": "நுசுப்பின்,",
-          "root": null,
+          "root": "நுசுப்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative form of நுசுப்பு (waist).",
+          "gloss": "at the waist"
         },
         {
           "form": "பணைத்தோள்,",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of பணை (bamboo-like, plump) and தோள் (shoulder).",
+          "gloss": "bamboo-like shoulders"
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "கோபத்",
-          "root": null,
+          "root": "கோபம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Shortened form of கோபம் (a kind of red insect, velvet mite).",
+          "gloss": "velvet mite-like"
         },
         {
           "form": "தன்ன",
-          "root": null,
+          "root": "தன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Comparative particle, meaning 'like' or 'similar to'.",
+          "gloss": "like, similar to"
         },
         {
           "form": "தோயாப்",
-          "root": null,
+          "root": "தோய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Negative participial adjective from தோய் (to be soaked, to be dyed).",
+          "gloss": "undyed, unsoaked"
         },
         {
           "form": "பூந்துகில்,",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of பூ (flower, beautiful) and துகில் (cloth).",
+          "gloss": "flower-patterned cloth"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(15)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -178,29 +178,29 @@
           "form": "பல்காசு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of பல் (many) and காசு (coin, bead).",
+          "gloss": "many coins/beads"
         },
         {
           "form": "நிரைத்த",
-          "root": null,
+          "root": "நிரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participial adjective from நிரை (to arrange in a row, to string).",
+          "gloss": "arranged, strung"
         },
         {
           "form": "சில்காழ்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of சில் (few, small) and காழ் (string, thread, ornament).",
+          "gloss": "few-threaded ornament"
         },
         {
           "form": "அல்குல்,",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to the lower abdomen, hip region.",
+          "gloss": "hip, lower abdomen"
         }
       ]
     }
@@ -212,5 +212,20 @@
   "sectionNumber": 3,
   "title": "சூரர மகளிரின் இயல்பு",
   "lineStart": 12,
-  "lineEnd": 41
+  "lineEnd": 41,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:16+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:41+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 24
+  }
 }

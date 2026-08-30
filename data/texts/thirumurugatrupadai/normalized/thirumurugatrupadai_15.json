@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "புகைமுகந் தன்ன மாசில் தூவுடை\nமுகைவாய் அவிழ்ந்த தகைசூழ் ஆகத்துச்\nசெவிநேர்பு வைத்த செய்வுறு திவவின் . . . .(140)\nநல்லியாழ் நவின்ற நயனுடை நெஞ்சின்\nமென்மொழி மேவலர் இன்னரம்பு உளர . . . .(138 - 142)",
   "urai": "வெண்புகையை முகந்து வைத்தது போல் தூய ஆடையை மகளிர் உடுத்தியிருந்தனர். அவர்களின் நெஞ்சு முகடுகள் மொட்டுகள் போல் இல்லை. வாய் விரிந்த மொட்டைப் போல அவிழ்ந்து கிடந்தன. யாழின் திவவு காதைப்போல் வளைந்திருக்கும். அந்த யாழ்த்திவவு போல் அவர்களின் நெஞ்சு கூனியிருந்தது. அவர்கள் மென்சொல் நவில விரும்பினர். முடியவில்லை. யாழின் நரம்பு போல் ஒலிதான் வந்தது.",
-  "english": null,
+  "english": "Like smoke, pure white, their garments clung,\nUpon their breasts, like buds unfurled,\nThe lute’s carved peg, curved to the ear,\nA gentle heart, with music filled,\nSoft words they sought, but from the strings,\nA sweet lament, alone was heard.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "புகைமுகந்",
-          "root": null,
+          "root": "புகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From புகை (smoke) + முக (to gather).",
+          "gloss": "smoke-gathered"
         },
         {
           "form": "தன்ன",
-          "root": null,
+          "root": "தன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தன் (self) + அ (adjectival suffix), indicating similarity.",
+          "gloss": "like, similar to"
         },
         {
           "form": "மாசில்",
-          "root": null,
+          "root": "மாசு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From மாசு (blemish, impurity) + இல் (negative suffix).",
+          "gloss": "spotless, pure"
         },
         {
           "form": "தூவுடை",
-          "root": null,
+          "root": "தூ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தூ (pure, white) + உடை (garment).",
+          "gloss": "white garment"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "முகைவாய்",
-          "root": null,
+          "root": "முகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From முகை (bud) + வாய் (mouth, opening).",
+          "gloss": "bud-mouthed, opening bud"
         },
         {
           "form": "அவிழ்ந்த",
-          "root": null,
+          "root": "அவிழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of அவிழ் (to open, to blossom).",
+          "gloss": "blossomed, opened"
         },
         {
           "form": "தகைசூழ்",
-          "root": null,
+          "root": "தகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From தகை (beauty, dignity) + சூழ் (to surround).",
+          "gloss": "beauty-surrounded"
         },
         {
           "form": "ஆகத்துச்",
-          "root": null,
+          "root": "ஆகத்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative form of ஆகம் (body, chest).",
+          "gloss": "on the chest"
         }
       ]
     },
@@ -80,59 +80,59 @@
       "words": [
         {
           "form": "செவிநேர்பு",
-          "root": null,
+          "root": "செவி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From செவி (ear) + நேர் (straight, direct) + பு (participle suffix).",
+          "gloss": "ear-aligned, ear-shaped"
         },
         {
           "form": "வைத்த",
-          "root": null,
+          "root": "வை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of வை (to place, to keep).",
+          "gloss": "placed, kept"
         },
         {
           "form": "செய்வுறு",
-          "root": null,
+          "root": "செய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From செய் (to do, to make) + உறு (to be, to happen).",
+          "gloss": "well-made, crafted"
         },
         {
           "form": "திவவின்",
-          "root": null,
+          "root": "திவவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Instrumental/ablative form of திவவு (tuning peg of a lute).",
+          "gloss": "by the tuning peg"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(140)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "நல்லியாழ்",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From நல் (good) + யாழ் (lute).",
+          "gloss": "good lute"
         },
         {
           "form": "நவின்ற",
-          "root": null,
+          "root": "நவில்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of நவில் (to speak, to practice).",
+          "gloss": "practiced, played"
         },
         {
           "form": "நயனுடை",
-          "root": null,
+          "root": "நயன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From நயன் (beauty, grace) + உடை (having).",
+          "gloss": "graceful, beautiful"
         },
         {
           "form": "நெஞ்சின்",
-          "root": null,
+          "root": "நெஞ்சு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Locative/genitive form of நெஞ்சு (heart, mind).",
+          "gloss": "in the heart"
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "மென்மொழி",
-          "root": null,
+          "root": "மென்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From மென் (soft) + மொழி (word, speech).",
+          "gloss": "soft words"
         },
         {
           "form": "மேவலர்",
-          "root": null,
+          "root": "மேவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Agent noun from மேவு (to desire, to obtain).",
+          "gloss": "those who desire"
         },
         {
           "form": "இன்னரம்பு",
-          "root": null,
+          "root": "இன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From இன் (sweet, pleasant) + நரம்பு (string).",
+          "gloss": "sweet string"
         },
         {
           "form": "உளர",
-          "root": null,
+          "root": "உளர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive of உளர் (to pluck, to stir).",
+          "gloss": "to pluck, to stir"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(138",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "142)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -254,5 +254,20 @@
   "sectionNumber": 15,
   "title": "மேவலர் இயல்பு",
   "lineStart": 138,
-  "lineEnd": 142
+  "lineEnd": 142,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:20+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:04+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 30
+  }
 }

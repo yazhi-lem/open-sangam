@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "அந்தரப் பல்லியம் கறங்கத் திண்காழ்\nவயிர்எழுந் திசைப்ப, வால்வளை ஞரல\t. . . .(120)\nஉரந்தலைக் கொண்ட உருமிடி முரசமொடு\nபல்பொறி மஞ்ஞை வெல்கொடி அகவ,\nவிசும்பஆ றாக விரைசெலல் முன்னி,\nஉலகம் புகழ்ந்த ஓங்குயர் விழுச்சீர்\nஅலைவாய்ச் சேறலும் நிலைஇய பண்பேஅதான்று\t. . . .(119 - 125)",
   "urai": "இப்படிப் பன்னிரண்டு கைகளும் பல்வேறு செயல்களைச் செய்து கொண்டிருக்கும்போது அவனைச் சுற்றிப் பல முழக்கங்கள் எழுகின்றன. கொம்பு சங்கு முரசம் முதலான பல்வேறு இசைக் கருவிகள் முழங்குகின்றன. அவனது கொடியிலிருக்கும் மயில் அகவுகிறது. இவற்றிற்கு இடையே திருச்சீரலைவாய் என்னும் திருச்செந்தூரிலிருந்து விசும்பு வழியாக விரைந்து செல்ல அவன் திட்டம் தீட்டுகிறான். அவன் செல்வதற்கு முன் நீ அவனிடம் சென்றால் அவனது அருளைப் பெற்று விடலாம். அதுவன்றி…",
-  "english": null,
+  "english": "As celestial instruments resound, and the firm-cored conch-horn’s call arises, and white bangles clang, with the thunderous drum, its mighty voice resounding, and the many-plumed peacock on the victory banner cries out, he plans a swift journey through the sky as his path. To reach Alai-vāy, famed by the world for its lofty, excellent glory, is his enduring nature. Beyond that…",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "அந்தரப்",
-          "root": null,
+          "root": "அந்தரம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From Sanskrit 'antara' (space, interval).",
+          "gloss": "celestial, aerial"
         },
         {
           "form": "பல்லியம்",
-          "root": null,
+          "root": "பல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'pal' (many) and 'iyam' (musical instrument).",
+          "gloss": "many instruments"
         },
         {
           "form": "கறங்கத்",
-          "root": null,
+          "root": "கறங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verb 'kaṟaṅku' meaning to sound, to roar.",
+          "gloss": "to resound"
         },
         {
           "form": "திண்காழ்",
-          "root": null,
+          "root": "திண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'tiṇ' (strong) and 'kāḻ' (core, strength).",
+          "gloss": "strong-cored"
         }
       ]
     },
@@ -46,59 +46,59 @@
       "words": [
         {
           "form": "வயிர்எழுந்",
-          "root": null,
+          "root": "வயிர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'vayiṟ' (horn, wind instrument) and 'eḻu' (rise, sound).",
+          "gloss": "horn sounding"
         },
         {
           "form": "திசைப்ப,",
-          "root": null,
+          "root": "இசை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'icai' (sound, music), here as a verb meaning to cause to sound.",
+          "gloss": "to make sound"
         },
         {
           "form": "வால்வளை",
-          "root": null,
+          "root": "வால்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'vāl' (white, pure) and 'vaḷai' (conch).",
+          "gloss": "white conch"
         },
         {
           "form": "ஞரல",
-          "root": null,
+          "root": "ஞரல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verb 'ñaral' meaning to roar, to sound loudly.",
+          "gloss": "to roar"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(120)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -108,31 +108,31 @@
       "words": [
         {
           "form": "உரந்தலைக்",
-          "root": null,
+          "root": "உரம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'uram' (strength) and 'talai' (head, chief).",
+          "gloss": "strong-headed"
         },
         {
           "form": "கொண்ட",
-          "root": null,
+          "root": "கொள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'koḷ' (to take, to have).",
+          "gloss": "having, possessed"
         },
         {
           "form": "உருமிடி",
-          "root": null,
+          "root": "உரும்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'urum' (thunder) and 'iṭi' (thunderclap).",
+          "gloss": "thunderous crash"
         },
         {
           "form": "முரசமொடு",
-          "root": null,
+          "root": "முரசம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'muracam' (drum) with instrumental suffix '-oṭu'.",
+          "gloss": "with drum"
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "பல்பொறி",
-          "root": null,
+          "root": "பல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'pal' (many) and 'poṟi' (spots, markings).",
+          "gloss": "many-spotted"
         },
         {
           "form": "மஞ்ஞை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'maññai' (peacock).",
+          "gloss": "peacock"
         },
         {
           "form": "வெல்கொடி",
-          "root": null,
+          "root": "வெல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'vel' (victory) and 'koṭi' (flag).",
+          "gloss": "victory flag"
         },
         {
           "form": "அகவ,",
-          "root": null,
+          "root": "அகவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Verb 'akavu' meaning to call, to cry out (of a peacock).",
+          "gloss": "to cry out"
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "விசும்பஆ",
-          "root": null,
+          "root": "விசும்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'vicumpu' (sky, heaven).",
+          "gloss": "sky, heaven"
         },
         {
           "form": "றாக",
-          "root": null,
+          "root": "ஆகு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'āku' (to become), here meaning 'as'.",
+          "gloss": "as, becoming"
         },
         {
           "form": "விரைசெலல்",
-          "root": null,
+          "root": "விரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'virai' (speed) and 'celal' (going).",
+          "gloss": "swift movement"
         },
         {
           "form": "முன்னி,",
-          "root": null,
+          "root": "முன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'mun' (before, front), here meaning to intend, to plan.",
+          "gloss": "intending, planning"
         }
       ]
     },
@@ -212,29 +212,29 @@
           "form": "உலகம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'ulakam' (world).",
+          "gloss": "world"
         },
         {
           "form": "புகழ்ந்த",
-          "root": null,
+          "root": "புகழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'pukaḻ' (to praise).",
+          "gloss": "praised"
         },
         {
           "form": "ஓங்குயர்",
-          "root": null,
+          "root": "ஓங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'ōṅku' (to rise, to be high) and 'uyar' (high).",
+          "gloss": "exalted, very high"
         },
         {
           "form": "விழுச்சீர்",
-          "root": null,
+          "root": "விழு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'viḻu' (excellent, great) and 'cīr' (glory, excellence).",
+          "gloss": "great glory"
         }
       ]
     },
@@ -244,73 +244,73 @@
       "words": [
         {
           "form": "அலைவாய்ச்",
-          "root": null,
+          "root": "அலைவாய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'alaivāy' (Thiruchendur, lit. 'wave-mouth').",
+          "gloss": "Thiruchendur"
         },
         {
           "form": "சேறலும்",
-          "root": null,
+          "root": "சேறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'cēṟu' (to go, to reach) with emphatic suffix '-um'.",
+          "gloss": "even going"
         },
         {
           "form": "நிலைஇய",
-          "root": null,
+          "root": "நிலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'nilai' (state, permanence), here meaning established, firm.",
+          "gloss": "established, firm"
         },
         {
           "form": "பண்பேஅதான்று",
-          "root": null,
+          "root": "பண்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Combination of 'paṇpu' (nature, quality) with emphatic '-ē' and 'atāṉṟu' (that is not).",
+          "gloss": "that is not the nature"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(119",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": "125)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -322,5 +322,20 @@
   "sectionNumber": 13,
   "title": "அலைவாயில் ஆறுமுகன் வந்தருளியிருக்கும் காட்சி",
   "lineStart": 119,
-  "lineEnd": 125
+  "lineEnd": 125,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:19+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:29:58+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 38
+  }
 }

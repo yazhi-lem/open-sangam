@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "விரலுளர்ப்பு அவிழ்ந்த வேறுபடு நறுங்கால்\nகுண்டுசுனை பூத்த வண்டுபடு கண்ணி\nஇணைத்த கோதை அணைத்த கூந்தல் . . . .(200)\nமுடித்த குல்லை இலையுடை நறும்பூச்\nசெங்கால் மராஅத்த வாலிணர் இடையிடுபு\nசுரும்புணத் தொடுத்த பெருந்தண் மாத்தழை\nதிருந்துகாழ் அல்குல் திளைப்ப உடீஇ\nமயில்கண் டன்ன மடநடை மகளிரொடு . . . .(205)",
   "urai": "வேலனுடன் சேர்ந்து மகளிரும் குரவை ஆடினர். அவர்கள் தம் கூந்தலை விரல்களால் கோதி உலர்த்திக் கொண்டனர். காட்டிலும் சுனையிலும் பூத்த பூமாலைக் கண்ணியைத் தலையில் சூடிக் கொண்டிருந்தனர். அணைத்துப் பின்னிய அவர்களின் கூந்தலானது பூங்கோதை இணைத்துப் பின்னப்பட்டிருந்தது. குல்லாத்தழை பூத்திருக்கும் வெண்கடம்பு, மரத்தளிர், மாந்தழை ஆகியவற்றைச் சேர்த்துக் கட்டிய தழையாடையை அவர்கள் தம் அல்குல் மறைய உடுத்தியிருந்தனர். வண்டு மொய்க்கும் நிலையில் அந்தத் தழையாடை புத்தம் புதிதாக இருந்தது. மயில் போன்ற அவர்களின் மடநடையோடு சேர்ந்து வேலன் குரவை ஆடினான்.",
-  "english": null,
+  "english": "Their fingers, having combed and dried their hair,\nadorned it with garlands of diverse, fragrant blooms\ngathered from the deep springs where bees alight.\nIntertwined with these floral wreaths, their tresses\nwere bound. They wore garlands of fragrant *kullai* leaves\nand fresh blossoms, interspersed with white clusters\nfrom the red-stemmed *marāam* tree.\nThese large, cool leaf-garments, woven for bees to feed upon,\nthey donned, covering their well-formed hips.\nWith these women, whose graceful gait resembled that of peacocks,\nhe danced the *kuravai*.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "விரலுளர்ப்பு",
-          "root": null,
+          "root": "விரல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'விரல்' (finger) and 'உளர்ப்பு' (drying/combing).",
+          "gloss": "finger-combing"
         },
         {
           "form": "அவிழ்ந்த",
-          "root": null,
+          "root": "அவிழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'அவிழ்' (to loosen, to bloom).",
+          "gloss": "loosened, bloomed"
         },
         {
           "form": "வேறுபடு",
-          "root": null,
+          "root": "வேறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'வேறு' (different) and 'படு' (to become).",
+          "gloss": "distinct, varied"
         },
         {
           "form": "நறுங்கால்",
-          "root": null,
+          "root": "நறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நறு' (fragrant) and 'கால்' (stem/stalk).",
+          "gloss": "fragrant stalk"
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "குண்டுசுனை",
-          "root": null,
+          "root": "குண்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'குண்டு' (deep) and 'சுனை' (spring/pool).",
+          "gloss": "deep spring"
         },
         {
           "form": "பூத்த",
-          "root": null,
+          "root": "பூ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'பூ' (to bloom).",
+          "gloss": "bloomed"
         },
         {
           "form": "வண்டுபடு",
-          "root": null,
+          "root": "வண்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'வண்டு' (bee) and 'படு' (to fall upon, to be affected by).",
+          "gloss": "bee-infested"
         },
         {
           "form": "கண்ணி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a garland worn on the head.",
+          "gloss": "garland"
         }
       ]
     },
@@ -80,59 +80,59 @@
       "words": [
         {
           "form": "இணைத்த",
-          "root": null,
+          "root": "இணை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'இணை' (to join, to connect).",
+          "gloss": "joined, intertwined"
         },
         {
           "form": "கோதை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a garland or braid.",
+          "gloss": "garland, braid"
         },
         {
           "form": "அணைத்த",
-          "root": null,
+          "root": "அணை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'அணை' (to embrace, to join closely).",
+          "gloss": "embraced, clasped"
         },
         {
           "form": "கூந்தல்",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "hair"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(200)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "முடித்த",
-          "root": null,
+          "root": "முடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'முடி' (to tie, to complete).",
+          "gloss": "tied, completed"
         },
         {
           "form": "குல்லை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Refers to a type of fragrant plant or garland made from it.",
+          "gloss": "fragrant garland"
         },
         {
           "form": "இலையுடை",
-          "root": null,
+          "root": "இலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'இலை' (leaf) and 'உடை' (garment).",
+          "gloss": "leaf-garment"
         },
         {
           "form": "நறும்பூச்",
-          "root": null,
+          "root": "நறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'நறு' (fragrant) and 'பூ' (flower).",
+          "gloss": "fragrant flower"
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "செங்கால்",
-          "root": null,
+          "root": "செம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'செம்' (red) and 'கால்' (stem/stalk).",
+          "gloss": "red-stemmed"
         },
         {
           "form": "மராஅத்த",
-          "root": null,
+          "root": "மராஅம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Genitive form of 'மராஅம்' (a type of tree, 'Maram').",
+          "gloss": "of the Maram tree"
         },
         {
           "form": "வாலிணர்",
-          "root": null,
+          "root": "வால்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'வால்' (white, pure) and 'இணர்' (cluster of flowers).",
+          "gloss": "white flower-cluster"
         },
         {
           "form": "இடையிடுபு",
-          "root": null,
+          "root": "இடை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "From 'இடை' (middle, in between) and 'இடு' (to place).",
+          "gloss": "interspersed"
         }
       ]
     },
@@ -210,31 +210,31 @@
       "words": [
         {
           "form": "சுரும்புணத்",
-          "root": null,
+          "root": "சுரும்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'சுரும்பு' (bee) and 'உண' (to eat, to feed on).",
+          "gloss": "for bees to feed"
         },
         {
           "form": "தொடுத்த",
-          "root": null,
+          "root": "தொடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'தொடு' (to string, to make a garland).",
+          "gloss": "strung, made"
         },
         {
           "form": "பெருந்தண்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "பெரு",
+          "urichol": "உரிச்சொல்",
+          "etymology": "Compound of 'பெரு' (great) and 'தண்' (cool).",
+          "gloss": "very cool"
         },
         {
           "form": "மாத்தழை",
-          "root": null,
+          "root": "மா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'மா' (mango tree) and 'தழை' (foliage, leaf-garment).",
+          "gloss": "mango foliage"
         }
       ]
     },
@@ -244,31 +244,31 @@
       "words": [
         {
           "form": "திருந்துகாழ்",
-          "root": null,
+          "root": "திருந்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'திருந்து' (to be refined, to be correct) and 'காழ்' (core, strength).",
+          "gloss": "well-formed core"
         },
         {
           "form": "அல்குல்",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "hips, pudendum"
         },
         {
           "form": "திளைப்ப",
-          "root": null,
+          "root": "திளை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Infinitive of 'திளை' (to revel, to be immersed).",
+          "gloss": "to revel, to touch"
         },
         {
           "form": "உடீஇ",
-          "root": null,
+          "root": "உடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Past participle of 'உடு' (to wear), with lengthening for emphasis.",
+          "gloss": "having worn"
         }
       ]
     },
@@ -278,59 +278,59 @@
       "words": [
         {
           "form": "மயில்கண்",
-          "root": null,
+          "root": "மயில்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'மயில்' (peacock) and 'கண்' (eye, appearance).",
+          "gloss": "peacock-like"
         },
         {
           "form": "டன்ன",
-          "root": null,
+          "root": "அன்ன",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Ablative form of 'அன்' (that), used as a comparative particle.",
+          "gloss": "like, similar to"
         },
         {
           "form": "மடநடை",
-          "root": null,
+          "root": "மடம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Compound of 'மடம்' (innocence, grace) and 'நடை' (gait, walk).",
+          "gloss": "graceful gait"
         },
         {
           "form": "மகளிரொடு",
-          "root": null,
+          "root": "மகளிர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "Plural of 'மகள்' (daughter, woman) with the instrumental suffix 'ஒடு' (with).",
+          "gloss": "with women"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "punctuation"
         },
         {
           "form": ".(205)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "verse number"
         }
       ]
     }
@@ -342,5 +342,20 @@
   "sectionNumber": 24,
   "title": "குன்றுதோறும் ஆடல்புரியும் தன்மை",
   "lineStart": 198,
-  "lineEnd": 217
+  "lineEnd": 217,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:23+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v1",
+    "generatedAt": "2026-08-30T16:30:24+00:00",
+    "runId": "fedbff63838a",
+    "wordsAnnotated": 40
+  }
 }
