@@ -450,8 +450,11 @@ def refresh_poem_artifacts(poem_id: str) -> None:
     """Rebuild the combined poem JSON and datapackage stats from normalized files.
 
     Deliberately does not call normalizer.normalize_all — that re-derives from
-    data/texts/*/raw/, which is gitignored and absent in CI, and would discard
-    the translations this script just wrote.
+    data/texts/*/raw/, which is gitignored and absent in CI. (normalize_all now
+    merges AI-generated fields forward when raw/ is present, so it would no
+    longer discard the translations this script just wrote — but it's still
+    the wrong tool here: a nightly translation run shouldn't depend on raw/
+    existing at all.)
     """
     records = []
     for path in verse_files(poem_id):

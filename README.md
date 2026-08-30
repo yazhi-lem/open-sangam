@@ -213,7 +213,10 @@ firebase emulators:start
 workstream · 🗺️ **[Roadmap](./docs/ROADMAP.md)** — where the project is going.
 
 See [docs/data-collection-plan.md](./docs/data-collection-plan.md) for the full
-corpus + knowledge-entity roadmap.
+corpus + knowledge-entity roadmap, and
+[docs/pipeline-scripts.md](./docs/pipeline-scripts.md) for how every
+scrape/normalize/translate/etymology/graph script fits together and why
+re-running one never destroys another's output.
 
 | # | Phase | Status |
 |---|-------|--------|
