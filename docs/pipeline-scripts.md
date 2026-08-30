@@ -19,13 +19,17 @@ Everything below is run from `backend/python/` with the virtualenv active
 ```
 scrape_poem  →  normalize_all  →  translate_with_gemini / translate_all  →  extract_etymology  →  build_graph
    (raw/)        (normalized/)         (english, urai)                        (word glossary)      (knowledge graph)
+                                                                                      ↓
+                                                                                  vectorize
+                                                                              (embeddings + search)
 ```
 
-Each stage reads the previous stage's output and writes further into the same
-`data/texts/{poem_id}/normalized/*.json` records — nothing downstream ever
-touches `raw/`. `build_graph.py` is a read-only fan-in at the end: it derives
-the knowledge graph from whatever the corpus currently holds and never writes
-back into `data/texts/`.
+Each stage through `extract_etymology` reads the previous stage's output and
+writes further into the same `data/texts/{poem_id}/normalized/*.json`
+records — nothing downstream ever touches `raw/`. `build_graph.py` and
+`vectorize.py` are read-only fan-outs at the end: each derives its own
+artifact from whatever the corpus currently holds and never writes back into
+`data/texts/`.
 
 ## 2. Scripts
 
@@ -107,6 +111,39 @@ themselves.
 block, not once its words are non-null — see `verse_is_annotated()`. `--force`
 re-annotates an already-glossed verse; same opt-in override as translation.
 
+### `ai/vectorize.py` — Verse embeddings + semantic search
+
+```bash
+python -m ai.vectorize --status
+python -m ai.vectorize --poem thirumurugatrupadai
+python -m ai.vectorize --search "the young god of the mountains riding a peacock" --k 5
+```
+
+Embeds each verse's Tamil + urai + English (concatenated, each field
+labeled) via `google/gemini-embedding-001` — the only embedding model
+reachable through this project's OpenRouter account; its
+allowed-providers setting is restricted to `google-ai-studio` /
+`google-vertex` / `anthropic` / etc., which rules out the OpenAI/Cohere/BGE
+embedding models one might otherwise reach for. Requires **`chromadb`**,
+which lives only in `backend/python/requirements.txt` — install it into
+`backend/python/.venv` (a dedicated venv; see §3), never into
+`agents/.venv`, which `google-adk` pins to specific `opentelemetry-*`
+versions that a stray `pip install chromadb` there will silently bump.
+
+Two outputs, two lifecycles:
+
+| Path | What | Committed? |
+|---|---|---|
+| `data/generated/vectors/` | The Chroma persistent DB (`sangam_verses` collection) | No — gitignored, like the rest of `data/generated/`: a rebuildable local/deployment index, not source data. |
+| `data/knowledge/vectors/{poem_id}.jsonl` | One JSON line per verse — id, metadata, the embedded text, and the vector | Yes — the downloadable artifact, committed like `graph.json`. |
+
+**Preservation:** a verse already present in the Chroma collection is
+skipped by default (`--force` to re-embed, same opt-in override as the other
+scripts). The `.jsonl` export is always **rewritten from Chroma**, never
+appended to — so it can't drift from what's actually indexed, the same way
+`refresh_poem_artifacts()` rebuilds a poem's combined JSON from its
+normalized files rather than patching it incrementally.
+
 ### `knowledge/build_graph.py` — Knowledge graph
 
 ```bash
@@ -119,7 +156,24 @@ here** — the graph is entirely derived (nodes/edges/weights mined from
 whatever the corpus currently holds), so a full rebuild is always correct;
 there is no upstream AI content in `data/knowledge/` to lose.
 
-## 3. Governance
+## 3. Environment — use a dedicated `backend/python/.venv`
+
+```bash
+cd backend/python
+python -m venv .venv
+.venv/bin/pip install -r requirements.txt
+```
+
+Never reuse `agents/.venv` for backend/python work — it's a separate
+project's virtualenv (Google ADK + LiteLLM), pinned to specific
+`opentelemetry-*` versions. Installing an unrelated dependency there (e.g.
+`chromadb`, pulled in by `ai/vectorize.py`) silently drags those pins to a
+newer, incompatible version and can break the `agents/avai` service — this
+happened once already while building `vectorize.py` and was caught before it
+reached a commit, but there was no venv boundary stopping it in the first
+place. Keep the two environments physically separate.
+
+## 4. Governance
 
 Every AI-drafted field lands `verified: false` until a scholar reviews it —
 see [docs/data-governance.md](./data-governance.md) §2 and §5. The

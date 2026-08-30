@@ -178,6 +178,30 @@ quality, so poems are simply processed in the corpus's natural order.
 
 Every draft also lands `verified: false`, same governance as translations.
 
+#### Verse embeddings + semantic search
+
+`ai/vectorize.py` embeds each verse (Tamil + urai + English combined) via
+OpenRouter (`google/gemini-embedding-001`) into a local Chroma vector store,
+and exports a downloadable `.jsonl` per poem. Needs its own venv — see
+[docs/pipeline-scripts.md](./docs/pipeline-scripts.md) §3, since `chromadb`
+must never land in `agents/.venv`.
+
+```bash
+cd backend/python
+python -m venv .venv && .venv/bin/pip install -r requirements.txt   # separate from agents/.venv
+
+.venv/bin/python -m ai.vectorize --status
+.venv/bin/python -m ai.vectorize --poem thirumurugatrupadai
+.venv/bin/python -m ai.vectorize --search "the young god of the mountains riding a peacock" --k 5
+```
+
+- **Vector DB:** `data/generated/vectors/` (gitignored — a rebuildable local
+  index, not source data).
+- **Downloadable export:** `data/knowledge/vectors/{poem_id}.jsonl`,
+  committed like `graph.json` — one JSON line per verse (id, metadata,
+  embedded text, 3072-dim vector), always rewritten fresh from the vector DB
+  so it can't drift.
+
 ### Sangam Avai agents (சங்க அவை)
 
 An agent assembly on Google ADK that answers questions about the corpus with
