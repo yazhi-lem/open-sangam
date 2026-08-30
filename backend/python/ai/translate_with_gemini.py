@@ -319,13 +319,13 @@ class OpenRouterBackend:
             }
         )
 
-    def complete(self, prompt: str) -> str:
+    def complete(self, prompt: str, system: str | None = None) -> str:
         response = self.session.post(
             f"{self.api_base}/chat/completions",
             json={
                 "model": self.model,
                 "messages": [
-                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "system", "content": system or SYSTEM_PROMPT},
                     {"role": "user", "content": prompt},
                 ],
                 "temperature": 0.3,
@@ -354,8 +354,8 @@ class GeminiBackend:
         self.model = model
         self._model = genai.GenerativeModel(model)
 
-    def complete(self, prompt: str) -> str:
-        response = self._model.generate_content(f"{SYSTEM_PROMPT}\n\n{prompt}")
+    def complete(self, prompt: str, system: str | None = None) -> str:
+        response = self._model.generate_content(f"{system or SYSTEM_PROMPT}\n\n{prompt}")
         return (response.text or "").strip()
 
 

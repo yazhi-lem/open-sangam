@@ -141,6 +141,43 @@ Every draft lands `verified: false` per
 [docs/data-governance.md](./docs/data-governance.md) — AI output is not
 authoritative until a scholar reviews it.
 
+#### Word etymology (Click-to-Define Glossary)
+
+`ai/extract_etymology.py` batch-fills the same feature the reader's
+click-to-define glossary (`WordGlossary.jsx` / `geminiApi.js`) otherwise
+fetches live, one word at a time: for every word in a verse it drafts a
+`root` (வேர்ச்சொல்), `urichol` (உரிச்சொல்), one-line `etymology`, and a short
+English `gloss`. Pre-filling the corpus means most clicks resolve instantly
+from disk; the live call still covers whatever hasn't been annotated yet.
+
+```bash
+cd backend/python
+
+# Coverage per poem. No API calls, no key needed.
+.venv/bin/python -m ai.extract_etymology --status
+
+# See exactly which verses the next run would take. Still no API calls.
+.venv/bin/python -m ai.extract_etymology --limit 5 --dry-run
+
+# Annotate a batch (default 50 verses — each one returns a full JSON
+# array of per-word annotations, so it's heavier than a translation call)
+.venv/bin/python -m ai.extract_etymology --limit 50
+
+# Or target one poem
+.venv/bin/python -m ai.extract_etymology --poem mullaippattu
+```
+
+Unlike English/urai translation, a word's four fields can legitimately all
+come back null (a bare grammatical particle has no root) — so completeness is
+tracked per *verse*, via an `etymologyMeta` provenance block (mirrors
+`englishMeta`), not by checking whether the word fields are non-null. State
+lives in `data/pipeline/etymology-state.json`, independent of the translation
+pipeline's own state file. There's no phase ladder here: unlike English
+translation, one verse's word annotation doesn't depend on another poem's
+quality, so poems are simply processed in the corpus's natural order.
+
+Every draft also lands `verified: false`, same governance as translations.
+
 ### Sangam Avai agents (சங்க அவை)
 
 An agent assembly on Google ADK that answers questions about the corpus with

@@ -61,6 +61,36 @@
         }
       }
     },
+    "etymologyMeta": {
+      "type": ["object", "null"],
+      "description": "Provenance for AI-drafted word-level glossary fields (root/urichol/etymology/gloss), written by backend/python/ai/extract_etymology.py. Absent until a run has annotated this verse's words.",
+      "properties": {
+        "provider": {
+          "type": "string",
+          "description": "Model gateway used, e.g. 'openrouter'"
+        },
+        "model": {
+          "type": "string",
+          "description": "Model id, e.g. 'google/gemini-2.5-flash'"
+        },
+        "promptVersion": {
+          "type": "string",
+          "description": "Prompt revision that produced the draft, e.g. 'etymology-v1'"
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "runId": {
+          "type": "string",
+          "description": "Pipeline run id; cross-references data/pipeline/etymology-state.json"
+        },
+        "wordsAnnotated": {
+          "type": "integer",
+          "description": "Word count covered by this run, for a quick sanity check against lines[].words"
+        }
+      }
+    },
     "lines": {
       "type": "array",
       "minItems": 1,
