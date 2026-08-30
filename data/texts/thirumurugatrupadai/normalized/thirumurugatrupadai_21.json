@@ -3,8 +3,8 @@
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
   "sangamTamil": "இருமூன்று எய்திய இயல்பினின் வழாஅது\nஇருவர்ச் சுட்டிய பல்வேறு தொல்குடி\nஅறுநான்கு இரட்டி இளமை நல்லியாண்டு\nஆறினிற் கழிப்பிய அறன்நவில் கொள்கை . . . .(180)\nமூன்றுவகைக் குறித்த முத்தீச் செல்வத்து\nஇருபிறப் பாளர் பொழுதறிந்து நுவல, . . . .(177 - 182)",
-  "urai": null,
-  "english": null,
+  "urai": "வேதங்களில் சொல்லப்பட்ட ஆறு அங்கங்களின் இயல்பிலிருந்து வழுவாமல், இருவகையாகச் சுட்டப்படும் பல்வேறு தொன்மையான குடிகளில் பிறந்தவர்களாய், இருபத்துநான்கு ஆண்டுகள் இளமைப் பருவத்தை அறநெறியில் கழித்தவர்களாய், மூன்று வகையான முத்தீச் செல்வத்தை உடையவர்களாய், இருபிறப்பாளர்களான அந்தணர்கள், உரிய காலத்தை அறிந்து முருகப்பெருமானின் புகழைப் போற்றினர்.",
+  "english": "Unswerving from the nature of the six-fold Vedas,\nborn into ancient lineages, diverse and twofold,\nwho spent twenty-four youthful years in righteous conduct,\npossessing the wealth of the threefold sacred fires,\nthe twice-born, knowing the auspicious hour, praised Murukaṉ.",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "இருமூன்று",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'இரு' (இரண்டு) மற்றும் 'மூன்று' (மூன்று) ஆகிய இரண்டு எண்களின் கூட்டுச் சொல்லாகும். சங்க இலக்கியத்தில் எண்களைக் குறிக்க இத்தகைய கூட்டுச் சொற்கள் பயன்படுத்தப்படுவது வழக்கம். இது 'இரண்டு முறை மூன்று' அல்லது 'இரண்டும் மூன்றும்' என்ற பொருளைத் தருகிறது.",
+          "gloss": "This compound numeral refers to 'two times three', or 'six', specifically denoting the six Vedangas (ancillary disciplines of the Vedas) that are essential for understanding the Vedas."
         },
         {
           "form": "எய்திய",
-          "root": null,
+          "root": "எய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'எய்' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'எய்தல்' என்பது அடைதல், பெறுதல், பொருந்துதல் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் ஒரு நிலையை அடைவதையோ, ஒரு தன்மையைப் பெறுவதையோ குறிக்கப் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இதே பொருள் தொடர்கிறது.",
+          "gloss": "This past participial adjective means 'having attained' or 'having reached', indicating that the six Vedangas have been fully mastered or are inherent in their nature."
         },
         {
           "form": "இயல்பினின்",
-          "root": null,
+          "root": "இயல்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'இயல்பு' என்ற பெயர்ச்சொல்லுடன் 'இன்' என்ற ஐந்தாம் வேற்றுமை உருபு சேர்ந்து வந்த சொல். 'இயல்பு' என்பது தன்மை, குணம், இயற்கை போன்ற பொருள்களைக் குறிக்கும். 'இன்' உருபு நீங்கல் பொருளில் வந்து, 'இயல்பிலிருந்து' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் வேற்றுமை உருபுகள் சொற்களுடன் இணைந்து வருவது பொதுவான இலக்கண அமைப்பாகும்.",
+          "gloss": "This ablative form means 'from the nature' or 'from the characteristic quality', implying adherence to the inherent and prescribed nature of the six Vedangas."
         },
         {
           "form": "வழாஅது",
-          "root": null,
+          "root": "வழா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'வழாவுதல்' என்ற வினைச்சொல்லின் எதிர்மறை வினையெச்ச வடிவம். 'வழாவுதல்' என்பது தவறுதல், விலகுதல், பிசகுதல் போன்ற பொருள்களைக் குறிக்கும். 'வழாஅது' என்பது 'தவறாமல்', 'விலகாமல்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'ஆது' விகுதி எதிர்மறை வினையெச்சமாகப் பயன்படுவது ஒரு சிறப்பம்சமாகும்.",
+          "gloss": "This negative adverbial participle means 'without deviating' or 'without failing', emphasizing strict adherence to the established principles and practices."
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "இருவர்ச்",
-          "root": null,
+          "root": "இருவர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'இருவர்' என்ற பெயர்ச்சொல்லுடன் 'ச்' என்ற சாரியை சேர்ந்து வந்த சொல். 'இருவர்' என்பது 'இரண்டு பேர்' அல்லது 'இரண்டு வகை' என்ற பொருளைக் குறிக்கும். இங்கு 'இரண்டு வகை' என்ற பொருளில், அதாவது 'இருவகையாக' என்ற பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் சாரியைகள் சொற்களுக்கு இடையே ஒலிப்பு வசதிக்காக வருவதுண்டு.",
+          "gloss": "This word, with the euphonic 'ch' sound, means 'of two kinds' or 'of two types', referring to the two main divisions or classifications of ancient lineages."
         },
         {
           "form": "சுட்டிய",
-          "root": null,
+          "root": "சுட்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'சுட்டு' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'சுட்டுதல்' என்பது குறிப்பிடுதல், சுட்டிக்காட்டுதல், எடுத்துரைத்தல் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் ஒரு குறிப்பிட்ட விஷயத்தைக் குறிக்கும் பொருளில் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இதே பொருள் தொடர்கிறது.",
+          "gloss": "This past participial adjective means 'having been pointed out' or 'having been specified', indicating that these two types of lineages are well-known and clearly defined."
         },
         {
           "form": "பல்வேறு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'பல்' (பல) மற்றும் 'வேறு' (வேறுபட்ட) ஆகிய இரண்டு சொற்களின் கூட்டுச் சொல்லாகும். 'பல்' என்பது எண்ணிக்கையில் அதிகமானவற்றையும், 'வேறு' என்பது தனித்தன்மை கொண்டவற்றையும் குறிக்கும். 'பல்வேறு' என்பது 'பல வகையான', 'பலதரப்பட்ட' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் இத்தகைய கூட்டுச் சொற்கள் ஒரு பண்பின் மிகுதியைக் குறிக்கப் பயன்பட்டன.",
+          "gloss": "This compound adjective means 'various' or 'diverse', describing the multitude of ancient and distinguished families."
         },
         {
           "form": "தொல்குடி",
-          "root": null,
+          "root": "தொல் + குடி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'தொல்' (பழமையான) மற்றும் 'குடி' (வம்சம், குடும்பம்) ஆகிய இரண்டு சொற்களின் புணர்ச்சியால் உருவான சொல். 'தொல்' என்பது தொன்மை, பழமை ஆகியவற்றைக் குறிக்கும் உரிச்சொல். 'குடி' என்பது ஒரு சமூக அலகைக் குறிக்கும். 'தொல்குடி' என்பது 'பழமையான குடி', 'பாரம்பரியமான வம்சம்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் உயர்குடியினரைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This compound noun refers to 'ancient lineages' or 'traditional families', denoting those of long-standing noble or priestly heritage."
         }
       ]
     },
@@ -82,29 +82,29 @@
           "form": "அறுநான்கு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'அறு' (ஆறு) மற்றும் 'நான்கு' (நான்கு) ஆகிய இரண்டு எண்களின் கூட்டுச் சொல்லாகும். சங்க இலக்கியத்தில் எண்களைக் குறிக்க இத்தகைய கூட்டுச் சொற்கள் பயன்படுத்தப்படுவது வழக்கம். இது 'ஆறு முறை நான்கு' அல்லது 'ஆறும் நான்கும்' என்ற பொருளைத் தருகிறது. இங்கு 'ஆறு முறை நான்கு' என்ற பொருளில் 'இருபத்து நான்கு' என்பதைக் குறிக்கிறது.",
+          "gloss": "This compound numeral means 'six times four', or 'twenty-four', specifically referring to the number of years spent in a particular stage of life."
         },
         {
           "form": "இரட்டி",
-          "root": null,
+          "root": "இரட்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'இரட்டுதல்' என்ற வினைச்சொல்லின் அடியாகப் பிறந்த சொல். 'இரட்டுதல்' என்பது இரட்டிப்பாக்குதல், இருமடங்காக்குதல், சேர்த்தல் போன்ற பொருள்களைக் குறிக்கும். இங்கு 'இரட்டி' என்பது 'இரட்டிப்பான' அல்லது 'சேர்ந்த' என்ற பொருளில், ஒரு குறிப்பிட்ட எண்ணிக்கையுடன் இணைந்து வந்துள்ளது. நவீன தமிழில் 'இரட்டிப்பு' என்ற சொல் வழக்கில் உள்ளது.",
+          "gloss": "This word, derived from 'to double', here functions as an adjective meaning 'doubled' or 'combined', indicating that the number 'twenty-four' is a specific quantity."
         },
         {
           "form": "இளமை",
-          "root": null,
+          "root": "இளம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'இளம்' என்ற உரிச்சொல்லின் அடியாகப் பிறந்த பெயர்ச்சொல். 'இளம்' என்பது இளமை, புதுமை, மென்மை போன்ற பொருள்களைக் குறிக்கும். 'இளமை' என்பது ஒரு பருவத்தைக் குறிக்கும். சங்க இலக்கியத்தில் வாழ்க்கையின் ஒரு முக்கிய கட்டமாகக் கருதப்படும் இளமைப் பருவத்தைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இதே பொருள் தொடர்கிறது.",
+          "gloss": "This noun refers to 'youth' or 'the period of youthfulness', specifically the formative years of a person's life."
         },
         {
           "form": "நல்லியாண்டு",
-          "root": null,
+          "root": "நல் + யாண்டு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'நல்' (நல்ல) மற்றும் 'யாண்டு' (ஆண்டு) ஆகிய இரண்டு சொற்களின் புணர்ச்சியால் உருவான சொல். 'நல்' என்பது நல்ல, சிறந்த, உகந்த போன்ற பொருள்களைக் குறிக்கும் உரிச்சொல். 'யாண்டு' என்பது வருடத்தைக் குறிக்கும். 'நல்லியாண்டு' என்பது 'நல்ல ஆண்டு', 'சிறந்த ஆண்டு' அல்லது 'உகந்த ஆண்டு' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் காலத்தைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This compound noun means 'good years' or 'auspicious years', referring to the period of youth that is spent productively and virtuously."
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "ஆறினிற்",
-          "root": null,
+          "root": "ஆறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'ஆறு' என்ற பெயர்ச்சொல்லுடன் 'இன்' என்ற ஐந்தாம் வேற்றுமை உருபும், 'அல்' என்ற சாரியையும் சேர்ந்து வந்த சொல். 'ஆறு' என்பது வழி, நெறி, ஒழுக்கம் போன்ற பொருள்களைக் குறிக்கும். 'இன்' உருபு நீங்கல் பொருளில் வந்து, 'ஆற்றிலிருந்து' அல்லது 'ஆற்றின் வழியில்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் அறநெறியைக் குறிக்க 'ஆறு' என்ற சொல் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This ablative form means 'in the path' or 'according to the way', specifically referring to the righteous path or moral conduct."
         },
         {
           "form": "கழிப்பிய",
-          "root": null,
+          "root": "கழி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'கழி' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'கழித்தல்' என்பது கடத்துதல், செலவழித்தல், நீக்குதல் போன்ற பொருள்களைக் குறிக்கும். இங்கு 'கடத்திய', 'செலவழித்த' என்ற பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் காலத்தைக் கடத்துவதைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'காலம் கழித்தல்' என்ற பயன்பாடு உள்ளது.",
+          "gloss": "This past participial adjective means 'having spent' or 'having passed', referring to the act of spending one's youth in a particular manner."
         },
         {
           "form": "அறன்நவில்",
-          "root": null,
+          "root": "அறன் + நவில்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'அறன்' (அறம்) மற்றும் 'நவில்' (பயிலும்) ஆகிய இரண்டு சொற்களின் புணர்ச்சியால் உருவான சொல். 'அறன்' என்பது அறம், நீதி, தர்மம் போன்ற பொருள்களைக் குறிக்கும். 'நவில்' என்பது பயிலுதல், பழகுதல், ஓதுதல் போன்ற பொருள்களைக் குறிக்கும் வினைச்சொல்லின் அடியாகப் பிறந்த பெயரெச்சம். 'அறன்நவில்' என்பது 'அறத்தைப் பயிலும்', 'அறத்தை ஓதும்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் அறத்தைப் பின்பற்றுவதைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This compound adjective means 'practicing righteousness' or 'learning virtue', describing a conduct characterized by moral and ethical principles."
         },
         {
           "form": "கொள்கை",
-          "root": null,
+          "root": "கொள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'கொள்' என்ற வினைச்சொல்லின் அடியாகப் பிறந்த பெயர்ச்சொல். 'கொள்ளுதல்' என்பது ஏற்றுக்கொள்வது, பின்பற்றுவது, கடைப்பிடிப்பது போன்ற பொருள்களைக் குறிக்கும். 'கொள்கை' என்பது ஒரு கோட்பாடு, ஒரு கொள்கை, ஒரு நிலைப்பாடு போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் ஒருவரின் வாழ்க்கை நெறியைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இதே பொருள் தொடர்கிறது.",
+          "gloss": "This noun refers to 'principle', 'doctrine', or 'way of life', indicating a steadfast adherence to virtuous conduct."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text, though not always explicitly rendered in modern editions."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text, though not always explicitly rendered in modern editions."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text, though not always explicitly rendered in modern editions."
         },
         {
           "form": ".(180)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a numerical annotation, indicating the line number 180 in the original text of Thirumurugatrupadai."
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "மூன்றுவகைக்",
-          "root": null,
+          "root": "மூன்று + வகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'மூன்று' (மூன்று) என்ற எண்ணும், 'வகை' (வகை) என்ற பெயர்ச்சொல்லும் இணைந்து, 'க்' என்ற சாரியையுடன் வந்த சொல். 'மூன்றுவகை' என்பது 'மூன்று வகையான' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் ஒரு பொருளின் வகைகளைக் குறிக்க இத்தகைய கூட்டுச் சொற்கள் பயன்படுத்தப்பட்டுள்ளன.",
+          "gloss": "This compound adjective means 'of three kinds' or 'of three types', specifically referring to the three sacred fires maintained by Brahmins."
         },
         {
           "form": "குறித்த",
-          "root": null,
+          "root": "குறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'குறி' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'குறித்தல்' என்பது குறிப்பிடுதல், சுட்டிக்காட்டுதல், எண்ணுதல் போன்ற பொருள்களைக் குறிக்கும். இங்கு 'குறிப்பிடப்பட்ட', 'உடைய' என்ற பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் ஒரு பொருளின் தன்மையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இதே பொருள் தொடர்கிறது.",
+          "gloss": "This past participial adjective means 'having been specified' or 'possessed of', indicating that the three types of sacred fires are well-defined and maintained."
         },
         {
           "form": "முத்தீச்",
-          "root": null,
+          "root": "மூ + தீ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'மூ' (மூன்று) மற்றும் 'தீ' (நெருப்பு) ஆகிய இரண்டு சொற்களின் புணர்ச்சியால் உருவான சொல். 'மூ' என்பது 'மூன்று' என்பதன் சுருக்கம். 'தீ' என்பது நெருப்பைக் குறிக்கும். 'முத்தீ' என்பது 'மூன்று வகையான தீ' அல்லது 'மூன்று புனிதத் தீ' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் அந்தணர்கள் வளர்க்கும் மூன்று வகையான யாகத் தீயைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது. 'ச்' சாரியை புணர்ச்சியில் வந்தது.",
+          "gloss": "This compound noun refers to the 'three sacred fires' (Ahavaniya, Garhapatya, and Dakshinagni) maintained by Brahmins for Vedic rituals. The 'ch' is a euphonic glide."
         },
         {
           "form": "செல்வத்து",
-          "root": null,
+          "root": "செல்வம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'செல்வம்' என்ற பெயர்ச்சொல்லுடன் 'அத்து' என்ற சாரியையும், ஏழாம் வேற்றுமை உருபும் சேர்ந்து வந்த சொல். 'செல்வம்' என்பது செல்வம், சிறப்பு, உடைமை போன்ற பொருள்களைக் குறிக்கும். இங்கு 'செல்வத்தை உடைய' அல்லது 'செல்வமாகிய' என்ற பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் ஒரு பொருளின் உடைமையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'செல்வம்' என்ற சொல் பரவலாகப் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This locative form means 'in the wealth' or 'possessing the wealth of', indicating that the three sacred fires are considered a valuable possession or a form of spiritual wealth."
         }
       ]
     },
@@ -210,73 +210,73 @@
       "words": [
         {
           "form": "இருபிறப்",
-          "root": null,
+          "root": "இரு + பிறப்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'இரு' (இரண்டு) மற்றும் 'பிறப்பு' (பிறப்பு) ஆகிய இரண்டு சொற்களின் புணர்ச்சியால் உருவான சொல். 'இருபிறப்பு' என்பது 'இரண்டு பிறப்பு' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் அந்தணர்களைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது. இது அவர்கள் தாயின் வயிற்றில் ஒரு முறையும், உபநயனம் மூலம் வேதக் கல்வியைத் தொடங்கும் போது ஒரு முறையும் பிறப்பதாகக் கருதப்படும் கருத்தைக் குறிக்கிறது. 'ப்' சாரியை புணர்ச்சியில் வந்தது.",
+          "gloss": "This compound noun means 'twice-born', a term specifically used to refer to Brahmins, signifying their physical birth and their spiritual rebirth through the Upanayana ceremony and Vedic initiation."
         },
         {
           "form": "பாளர்",
-          "root": null,
+          "root": "ஆள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'ஆள்' என்ற வினைச்சொல்லின் அடியாகப் பிறந்த பெயர்ச்சொல். 'ஆளுதல்' என்பது ஆளுமை செய்தல், உடையவராயிருத்தல் போன்ற பொருள்களைக் குறிக்கும். 'பாளர்' என்பது 'ஆள்பவர்', 'உடையவர்' என்ற பொருளைத் தருகிறது. இங்கு 'இருபிறப்பாளர்' என்பது 'இருபிறப்பை உடையவர்' என்ற பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் ஒரு குறிப்பிட்ட தன்மையை உடையவரைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This suffix, derived from 'to rule' or 'to possess', here means 'those who possess' or 'those who are', completing the term 'twice-born' to refer to the Brahmins."
         },
         {
           "form": "பொழுதறிந்து",
-          "root": null,
+          "root": "பொழுது + அறிந்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'பொழுது' (காலம்) மற்றும் 'அறிந்து' (அறிந்து) ஆகிய இரண்டு சொற்களின் புணர்ச்சியால் உருவான சொல். 'பொழுது' என்பது காலம், நேரம் போன்ற பொருள்களைக் குறிக்கும். 'அறிந்து' என்பது 'அறிதல்' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம். 'பொழுதறிந்து' என்பது 'காலத்தை அறிந்து', 'சரியான நேரத்தை அறிந்து' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் ஒரு செயலைச் செய்வதற்கு உகந்த காலத்தை அறிவதைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This compound adverbial participle means 'having known the time' or 'understanding the opportune moment', indicating that the Brahmins perform their praises at the appropriate time."
         },
         {
           "form": "நுவல,",
-          "root": null,
+          "root": "நுவல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது 'நுவல்' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம். 'நுவல்' என்பது சொல்லுதல், கூறுதல், போற்றுதல் போன்ற பொருள்களைக் குறிக்கும். இங்கு 'சொல்ல', 'போற்ற' என்ற பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் ஒரு விஷயத்தை எடுத்துரைப்பதையோ, புகழ்ந்து பாடுவதையோ குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'நுவலுதல்' என்ற சொல் இலக்கிய வழக்கில் உள்ளது.",
+          "gloss": "This adverbial participle means 'to utter' or 'to praise', indicating the action of the twice-born Brahmins in extolling the virtues of Murugan."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text, though not always explicitly rendered in modern editions."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text, though not always explicitly rendered in modern editions."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text, though not always explicitly rendered in modern editions."
         },
         {
           "form": ".(177",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a numerical annotation, indicating the starting line number 177 for a section of the original text of Thirumurugatrupadai."
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, typically used to indicate a range or a break in the original text's line numbering."
         },
         {
           "form": "182)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a numerical annotation, indicating the ending line number 182 for a section of the original text of Thirumurugatrupadai."
         }
       ]
     }
@@ -288,5 +288,28 @@
   "sectionNumber": 21,
   "title": "இரு பிறப்பாளரின் இயல்பு",
   "lineStart": 177,
-  "lineEnd": 182
+  "lineEnd": 182,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:22+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:53:51+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 34
+  },
+  "yazhi_urai": "வேதத்துல சொல்ற ஆறு அங்கங்கள்ல இருந்து மாறாம, ரெண்டு வகை குடிகள்ள பிறந்தவங்க, இருபத்தி நாலு வருஷம் இளமையில நல்ல வழியில வாழ்ந்தவங்க, மூணு வகையான முத்தீ வளத்தோட இருக்கிற அந்தணர்கள், நேரம் பார்த்து முருகனோட புகழைச் சொன்னாங்க.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:13+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }

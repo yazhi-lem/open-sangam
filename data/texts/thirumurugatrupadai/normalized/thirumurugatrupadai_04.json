@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "மந்தியும் அறியா மரன்பயில் அடுக்கத்துச்\nசுரும்பும் மூசாச் சுடர்ப்பூங் காந்தட்\nபெருந்தண் கண்ணி மிலைந்த சென்னியன். . . .(42 - 44)",
   "urai": "முருகன் காந்தள் மலர் மாலையைத் தலையில் அணிந்திருப்பான். அந்தப் பூக்கள் மந்தியும் அறியாத மரமடர்ந்த மலையடுக்குப் பகுதியில் வண்டுகளும் மொய்க்க முடியாமல் மிகுதியாகப் பூத்துக் கிடப்பவை. (முருகனைக் காந்தளங் கண்ணிச் சென்னியன் என்று சொல்லிப் பாராட்டினர்)",
-  "english": null,
+  "english": "Upon his head, a garland of large, cool kānṭal blooms,\nflowers that blossom in such profusion,\neven the monkeys know not the tree-dense mountain slopes where they grow,\nand the bees cannot reach to hum among their radiant petals.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "மந்தியும்",
-          "root": null,
+          "root": "மந்தி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மந்தி என்பது குரங்கைக் குறிக்கும் ஒரு பொதுவான சொல். சங்க இலக்கியத்தில் இது பெண் குரங்கைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. இச்சொல் இன்றும் அதே பொருளில் வழக்கில் உள்ளது, ஆனால் பொதுவாகக் குரங்கு என்ற சொல்லே அதிகம் பயன்படுத்தப்படுகிறது. 'உம்' என்பது உயர்வு சிறப்புப் பொருளில் வரும் ஒரு இடைச்சொல்.",
+          "gloss": "The word 'மந்தியும்' refers to monkeys, specifically highlighting that even monkeys, known for their agility in trees, are unaware of the location, with 'உம்' emphasizing this exclusivity."
         },
         {
           "form": "அறியா",
-          "root": null,
+          "root": "அறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "அறி என்பது 'தெரிந்துகொள்' அல்லது 'உணர்ந்துகொள்' என்ற பொருளுடைய வினைச்சொல். 'அறியா' என்பது எதிர்மறைப் பெயரெச்ச வடிவம். இது 'அறிதல்' என்ற மூலத்திலிருந்து வந்து, 'அறியாத' என்ற பொருளைத் தருகிறது. இச்சொல் சங்க காலம் தொட்டு இன்று வரை அதே பொருளில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "The word 'அறியா' is a negative relative participle meaning 'not knowing' or 'unaware of', indicating that even the monkeys do not know this particular location."
         },
         {
           "form": "மரன்பயில்",
-          "root": null,
+          "root": "மரம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மரம் என்பது மரத்தைக் குறிக்கும் பொதுவான சொல். 'பயில்' என்பது 'நெருங்கியிருத்தல்' அல்லது 'செறிந்திருத்தல்' என்ற பொருளைத் தரும். 'மரன்பயில்' என்பது 'மரம் பயில்' என்பதன் புணர்ச்சி வடிவம், 'மரம் செறிந்த' அல்லது 'மரங்கள் நெருங்கிய' என்ற பொருளைத் தருகிறது. இச்சொல் சங்க இலக்கியத்தில் இயற்கையின் அடர்த்தியைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "The compound word 'மரன்பயில்' describes a place where trees are densely grown or closely packed, signifying a thick forest or wooded area."
         },
         {
           "form": "அடுக்கத்துச்",
-          "root": null,
+          "root": "அடுக்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "அடுக்கு என்பது 'மலைத்தொடர்' அல்லது 'மலைப்பகுதி' என்ற பொருளைத் தரும். 'அடுக்கத்து' என்பது ஏழாம் வேற்றுமை உருபு பெற்று, 'அடுக்குள்ள இடத்தில்' அல்லது 'மலைப்பகுதியில்' என்ற பொருளைத் தருகிறது. 'அத்து' என்பது சாரியை. 'ச்' என்பது வல்லொற்று மிகல். இச்சொல் சங்க இலக்கியத்தில் மலைப்பகுதிகளின் அமைப்பைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "The word 'அடுக்கத்துச்' refers to a mountainous region or a series of mountain ranges, indicating the location where the dense trees and flowers are found."
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "சுரும்பும்",
-          "root": null,
+          "root": "சுரும்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "சுரும்பு என்பது வண்டைக் குறிக்கும் சங்க இலக்கியச் சொல். இது இன்றும் சில வட்டார வழக்குகளில் பயன்படுத்தப்பட்டாலும், 'வண்டு' என்ற சொல்லே பரவலாக உள்ளது. 'உம்' என்பது உயர்வு சிறப்புப் பொருளில் வரும் ஒரு இடைச்சொல். வண்டுகள் பொதுவாக மலர்களில் தேன் உண்ணும் என்பதால், அவை மொய்க்காத மலர்கள் சிறப்புடையன எனக் குறிக்கப்படுகிறது.",
+          "gloss": "The word 'சுரும்பும்' refers to bees or large black bees, with 'உம்' emphasizing that even these insects, which typically frequent flowers, do not approach these specific blossoms."
         },
         {
           "form": "மூசாச்",
-          "root": null,
+          "root": "மூசு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மூசு என்பது 'மொய்த்தல்' அல்லது 'நெருங்குதல்' என்ற பொருளுடைய வினைச்சொல். 'மூசா' என்பது எதிர்மறைப் பெயரெச்ச வடிவம், 'மொய்க்காத' என்ற பொருளைத் தருகிறது. 'ச்' என்பது வல்லொற்று மிகல். இச்சொல் சங்க இலக்கியத்தில் வண்டுகள் மலர்களை மொய்க்கும் செயலைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "The word 'மூசாச்' is a negative relative participle meaning 'not buzzing around' or 'not swarming', indicating that the bees do not approach or settle on these particular flowers."
         },
         {
           "form": "சுடர்ப்பூங்",
-          "root": null,
+          "root": "சுடர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "சுடர் என்பது 'ஒளி' அல்லது 'பிரகாசம்' என்ற பொருளைத் தரும். 'பூ' என்பது மலரைக் குறிக்கும். 'சுடர்ப்பூ' என்பது 'ஒளி வீசும் பூ' அல்லது 'பிரகாசமான பூ' என்ற பொருளைத் தருகிறது. 'ங்' என்பது மெல்லொற்று மிகல். இது காந்தள் மலரின் பிரகாசமான நிறத்தையும் அழகையும் குறிக்கிறது. இச்சொல் சங்க இலக்கியத்தில் மலர்களின் அழகை வருணிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "The compound word 'சுடர்ப்பூங்' describes flowers that are radiant or shining brightly, emphasizing the vibrant and luminous quality of the Kanthal blossoms."
         },
         {
           "form": "காந்தட்",
-          "root": null,
+          "root": "காந்தள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "காந்தள் என்பது ஒரு குறிப்பிட்ட மலரின் பெயர் (Gloriosa superba). இது 'கார்த்திகைப்பூ' என்றும் அழைக்கப்படும். இதன் இதழ்கள் சுடர்விட்டு எரிவது போலக் காணப்படும். 'ட்' என்பது வல்லொற்று மிகல். இச்சொல் சங்க இலக்கியத்தில் பரவலாகக் குறிப்பிடப்படும் ஒரு மலர். இன்றும் அதே பெயரில் அறியப்படுகிறது.",
+          "gloss": "The word 'காந்தட்' refers to the Kanthal flower (Gloriosa superba), known for its striking, flame-like petals, which is a significant floral element in the description."
         }
       ]
     },
@@ -80,66 +80,66 @@
       "words": [
         {
           "form": "பெருந்தண்",
-          "root": null,
+          "root": "பெருமை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பெருமை என்பது 'பெரிய' அல்லது 'மிகுந்த' என்ற பொருளைத் தரும். 'தண்' என்பது 'குளிர்ச்சி' அல்லது 'அழகு' என்ற பொருளைத் தரும். 'பெருந்தண்' என்பது 'மிகவும் குளிர்ந்த' அல்லது 'மிகவும் அழகிய' என்ற பொருளைத் தருகிறது. இது காந்தள் மலரின் மாலையின் குளிர்ச்சியையும், அதன் அழகையும் குறிக்கிறது. இது சங்க இலக்கியத்தில் ஒரு பண்புத்தொகையாகப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "The compound word 'பெருந்தண்' signifies 'greatly cool' or 'very beautiful', describing the refreshing and aesthetically pleasing quality of the garland made from the Kanthal flowers."
         },
         {
           "form": "கண்ணி",
-          "root": null,
+          "root": "கண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கண்ணி என்பது 'மாலை' அல்லது 'தலையில் அணியும் மாலை' என்ற பொருளைத் தரும். இது 'கட்டுதல்' என்ற பொருளுடைய 'கண்' என்ற வேர்ச்சொல்லிலிருந்து வந்திருக்கலாம். சங்க இலக்கியத்தில் இது பொதுவாகப் பூக்களால் தொடுக்கப்பட்ட மாலையைக் குறிக்கும். இச்சொல் இன்றும் அதே பொருளில் வழக்கில் உள்ளது, ஆனால் 'மாலை' என்ற சொல்லே அதிகம் பயன்படுத்தப்படுகிறது.",
+          "gloss": "The word 'கண்ணி' refers to a garland or a wreath, specifically one worn on the head, indicating the floral adornment made of Kanthal flowers."
         },
         {
           "form": "மிலைந்த",
-          "root": null,
+          "root": "மிலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மிலை என்பது 'அணிதல்' அல்லது 'சூடுதல்' என்ற பொருளுடைய வினைச்சொல். 'மிலைந்த' என்பது இறந்தகாலப் பெயரெச்ச வடிவம், 'அணிந்த' அல்லது 'சூடிய' என்ற பொருளைத் தருகிறது. இச்சொல் சங்க இலக்கியத்தில் தலைவன் அல்லது கடவுள் மாலை அணிவதைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. இச்சொல் நவீன தமிழில் குறைவாகவே பயன்படுத்தப்படுகிறது.",
+          "gloss": "The word 'மிலைந்த' is a past relative participle meaning 'having worn' or 'adorned with', describing the act of wearing the Kanthal garland on the head."
         },
         {
           "form": "சென்னியன்.",
-          "root": null,
+          "root": "சென்னி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "சென்னி என்பது 'தலை' என்ற பொருளைத் தரும். 'சென்னியன்' என்பது 'தலையுடையவன்' அல்லது 'தலைவன்' என்ற பொருளைத் தரும். இங்கு முருகனைச் சுட்டுகிறது. 'அன்' என்பது ஆண்பால் விகுதி. இச்சொல் சங்க இலக்கியத்தில் தலை அல்லது உச்சியைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. இன்றும் 'சென்னி' என்ற சொல் இலக்கிய வழக்கில் உள்ளது.",
+          "gloss": "The word 'சென்னியன்' refers to 'one who has a head' or 'the one with the head', specifically indicating Lord Murugan, who is adorned with the Kanthal garland on his head."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, a period, indicating the end of a sentence or phrase."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, a period, indicating the end of a sentence or phrase."
         },
         {
           "form": ".(42",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This sequence combines a period, indicating the end of a sentence, with the opening parenthesis and the number '42', likely marking the beginning of a verse number or a specific section reference."
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a hyphen or a dash, typically used to connect numbers in a range or to separate parts of a compound."
         },
         {
           "form": "44)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This sequence consists of the number '44' followed by a closing parenthesis, indicating the end of a verse number range or a specific section reference."
         }
       ]
     }
@@ -151,5 +151,28 @@
   "sectionNumber": 4,
   "title": "காந்தளின் கண்ணி சூடிய சென்னியன்",
   "lineStart": 42,
-  "lineEnd": 44
+  "lineEnd": 44,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:16+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:52:15+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 17
+  },
+  "yazhi_urai": "குரங்குகூடப் போக முடியாத மரங்கள் அடர்ந்த மலைப்பகுதியில, வண்டுகள்கூட மொய்க்காத பிரகாசமான காந்தள் பூக்கள் நிறையப் பூத்திருக்கும். அந்தக் காந்தள் பூக்களால செஞ்ச பெரிய, குளிர்ச்சியான மாலையை முருகன் தலையில போட்டுருப்பான்.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:06+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }

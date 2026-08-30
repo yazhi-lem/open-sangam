@@ -1,11 +1,19 @@
 """
 normalize_to_json.py
 --------------------
+DEPRECATED — maduraikanchi is now in the generic registry (scraper/registry.py)
+and covered by `normalize_all.py`, which also merges AI-generated fields
+forward on a re-run (see docs/pipeline-scripts.md). Do not run this script
+again: an earlier run of it, alongside a later normalize_all run, produced two
+differently-padded copies of every maduraikanchi record (maduraikanchi_01 vs
+maduraikanchi_001) with a lost tiṇai classification — a data-quality bug fixed
+by hand once already. Kept only for historical reference.
+
 Reads raw scraped section files and normalizes them to the canonical
 Open Sangam JSON schema (Verse → Line → Word), then emits a
 Frictionless Data Package (datapackage.json) for OKF compatibility.
 
-Usage:
+Usage (do not use — see deprecation notice above):
     python -m normalizer.normalize_to_json [--poem maduraikanchi]
 """
 

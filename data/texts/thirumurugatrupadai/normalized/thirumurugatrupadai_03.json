@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "மால்வரை நிவந்த சேணுயர் வெற்பிற்\nகிண்கிணி கவைஇய ஒண்செஞ் சீறடி,\nகணைக்கால் வாங்கிய நுசுப்பின், பணைத்தோள்,\nகோபத் தன்ன தோயாப் பூந்துகில், . . . .(15)\nபல்காசு நிரைத்த சில்காழ் அல்குல்,",
   "urai": "பசுமையால் ஆசைமூட்டி மலையுச்சி இருண்டு கிடக்கும். அங்கே சூரர மகளிர் ஆடுவர். அவர்களுக்குக் கிண்கிணி (கொலுசு) கௌவிக் கிடக்கும் சிறிய அடிகள். கணையமரம்போல் உறுதியான கால்கள். வளைந்த இடுப்பு. பெருமை கொண்ட தோள். தொய்வு இல்லாமல் ஆடுவதற்கு வசதியாக அவர்கள் இடையில் உடுத்தியிருந்த வெல்வெட்டுப் பூந்துணி கோபம் என்னும் தம்பலப் பூச்சிபோல் சிவந்திருக்கும். அதன்மேல் காசுவரிசை தொங்கும் சில்காழ் என்னும் சிறிய நடன-இடுப்பணி இருக்கும். இது அவர்களது அல்குலை மறைத்துத் தொங்கிக்கொண்டு ஆடும்.",
-  "english": null,
+  "english": "Upon the lofty peaks, where the great mountains ascend,\nsmall, bright red feet, adorned with tinkling anklets,\nlegs like arrows, a waist that bends, shoulders like bamboo,\na silken garment, unblemished, red as the *kōpam* insect,\nand a girdle of many strung coins, a few strands, upon the hips.",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "மால்வரை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மால் + வரை எனப் பிரிந்து, 'மால்' என்பது பெரிய, உயர்ந்த என்ற பொருளிலும், 'வரை' என்பது மலை என்ற பொருளிலும் சங்க இலக்கியத்தில் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. இது தொல்காப்பிய மரபைப் பின்பற்றி, மலைகளின் பெருமையையும் உயரத்தையும் குறிக்கப் பயன்படுத்தப்படும் ஒரு கூட்டுச் சொல்லாகும். தற்காலத்திலும் 'மால்' என்ற சொல் பெருமை, மயக்கம் போன்ற பொருள்களில் வழக்கில் உள்ளது, ஆனால் 'மால்வரை' என்ற கூட்டுச்சொல் அரிதாகவே பயன்படுத்தப்படுகிறது.",
+          "gloss": "This compound word refers to a great and lofty mountain, emphasizing its immense size and towering height."
         },
         {
           "form": "நிவந்த",
-          "root": null,
+          "root": "நிவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நிவு என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'நிவு' என்றால் உயர்தல், மேலெழுதல் என்று பொருள். 'நிவந்த' என்பது இறந்தகாலப் பெயரெச்சமாக வந்து, உயர்ந்த, மேலெழுந்த என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் பல இடங்களில் உயரத்தைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் 'நிவுதல்' என்ற வினைச்சொல் வழக்கில் இல்லை, ஆனால் 'உயர்ந்த' என்ற பொருள் நிலைத்துள்ளது.",
+          "gloss": "This past participial adjective, derived from the root 'நிவு' (to rise), describes something that has risen high or is elevated."
         },
         {
           "form": "சேணுயர்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "சேண் + உயர் எனப் பிரிந்து, 'சேண்' என்பது தொலைவு, உயரம், ஆகாயம் என்ற பொருளிலும், 'உயர்' என்பது உயர்தல் என்ற பொருளிலும் சங்க இலக்கியத்தில் பயன்படுத்தப்பட்டுள்ளது. 'சேணுயர்' என்பது மிக உயர்ந்த, வானளாவிய என்ற பொருளைத் தரும் ஒரு கூட்டுச் சொல்லாகும். இது மலைகளின் உச்சியைக் குறிக்கப் பயன்படுத்தப்படும் ஒரு சிறப்புச் சொல்லாகும். தற்காலத் தமிழில் 'சேண்' என்ற சொல் தனித்து வழக்கில் இல்லை, ஆனால் 'உயர்' என்ற சொல் நிலைத்துள்ளது.",
+          "gloss": "This compound word, meaning 'sky-high' or 'very lofty,' describes something that reaches an extreme height, often referring to mountains that seem to touch the sky."
         },
         {
           "form": "வெற்பிற்",
-          "root": null,
+          "root": "வெற்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வெற்பு என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'வெற்பு' என்றால் மலை, மலைப்பகுதி என்று பொருள். 'வெற்பிற்' என்பது ஏழாம் வேற்றுமை உருபுடன் (இன்) வந்து, மலையில், மலைப்பகுதியில் என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் மலைகளைக் குறிக்கப் பரவலாகப் பயன்படுத்தப்படும் ஒரு சொல். தற்காலத் தமிழில் 'வெற்பு' என்ற சொல் இலக்கிய வழக்கில் மட்டுமே உள்ளது, பேச்சு வழக்கில் இல்லை.",
+          "gloss": "This word, in the locative case, refers to 'on the mountain' or 'in the mountainous region,' indicating the location of the described events."
         }
       ]
     },
@@ -48,29 +48,29 @@
           "form": "கிண்கிணி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இது ஒரு ஒலிக்குறிப்புச் சொல்லாகக் கருதப்படுகிறது, 'கிண் கிண்' என்ற ஒலியில் இருந்து உருவானது. சிறுமியர் மற்றும் நடனப் பெண்கள் கால்களில் அணியும் சிறு மணிகள் கோத்த ஆபரணத்தைக் குறிக்கும். சங்க இலக்கியத்தில் பல இடங்களில் இந்த ஆபரணம் குறிப்பிடப்பட்டுள்ளது. தற்காலத் தமிழில் 'கிண்கிணி' என்ற சொல் இலக்கிய வழக்கில் மட்டுமே உள்ளது, பேச்சு வழக்கில் 'கொலுசு' என்ற சொல் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This refers to an anklet adorned with small bells, typically worn by young girls and dancers, which produces a tinkling sound as they move."
         },
         {
           "form": "கவைஇய",
-          "root": null,
+          "root": "கவை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கவை என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'கவை' என்றால் பிளவுபடுதல், பிரிதல், இணைதல், தழுவுதல் என்று பல பொருள்கள் உண்டு. இங்கு 'கவைஇய' என்பது 'கௌவிய' என்ற பொருளில், அதாவது தழுவிய, பொருந்திய என்ற பொருளில் வந்துள்ளது. இது ஒரு செய்யுளிசை அளபெடையாகக் கருதப்படுகிறது. சங்க இலக்கியத்தில் இந்தச் சொல் பல பொருள்களில் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் 'கவை' என்ற சொல் கிளை, பிளவு போன்ற பொருள்களில் வழக்கில் உள்ளது, ஆனால் 'கவைஇய' என்ற வடிவம் இல்லை.",
+          "gloss": "This word, a participial form, means 'embraced' or 'clung to,' indicating that the anklets are closely fitted or attached to the feet."
         },
         {
           "form": "ஒண்செஞ்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "ஒண் + செஞ் எனப் பிரிந்து, 'ஒண்' என்பது ஒளி, அழகு, தெளிவு என்ற பொருளிலும், 'செஞ்' என்பது செம்மை, சிவப்பு என்ற பொருளிலும் சங்க இலக்கியத்தில் பயன்படுத்தப்பட்டுள்ளது. 'ஒண்செஞ்' என்பது ஒளி பொருந்திய சிவந்த, அழகிய சிவந்த என்ற பொருளைத் தரும் ஒரு கூட்டுச் சொல்லாகும். இது நிறத்தின் அழகையும் பிரகாசத்தையும் ஒருங்கே குறிக்கிறது. தற்காலத் தமிழில் 'ஒண்' என்ற சொல் அரிதாகவே பயன்படுத்தப்படுகிறது, ஆனால் 'செம்மை' என்ற சொல் நிலைத்துள்ளது.",
+          "gloss": "This compound adjective describes something as brightly red or beautifully crimson, emphasizing both its vibrant color and its radiant quality."
         },
         {
           "form": "சீறடி,",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "சிறு + அடி எனப் பிரிந்து, 'சிறு' என்பது சிறிய என்ற பொருளிலும், 'அடி' என்பது பாதம் என்ற பொருளிலும் சங்க இலக்கியத்தில் பயன்படுத்தப்பட்டுள்ளது. 'சீறடி' என்பது சிறிய பாதம், மெல்லிய பாதம் என்ற பொருளைத் தரும் ஒரு கூட்டுச் சொல்லாகும். இது பெண்களின் பாதங்களின் மென்மையையும் அழகையும் குறிக்கப் பயன்படுத்தப்படும் ஒரு மரபுச் சொல்லாகும். தற்காலத் தமிழில் 'சிறு அடி' என்ற கூட்டுச்சொல் அரிதாகவே பயன்படுத்தப்படுகிறது, ஆனால் 'சிறு' மற்றும் 'அடி' ஆகிய சொற்கள் வழக்கில் உள்ளன.",
+          "gloss": "This compound word refers to small, delicate feet, often used to describe the graceful and beautiful feet of women."
         }
       ]
     },
@@ -82,29 +82,29 @@
           "form": "கணைக்கால்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கணை + கால் எனப் பிரிந்து, 'கணை' என்பது அம்பு, அம்புத்தூண் போன்ற உறுதியான பொருள்களைக் குறிக்கும். 'கால்' என்பது பாதம், கால் பகுதி. 'கணைக்கால்' என்பது அம்புத்தூண் போன்ற உறுதியான, திரண்ட கால் என்ற பொருளைத் தரும் ஒரு கூட்டுச் சொல்லாகும். இது பெண்களின் கால்களின் அழகையும், உறுதியையும், திரட்சியையும் குறிக்கப் பயன்படுத்தப்படும் ஒரு உவமைச் சொல்லாகும். தற்காலத் தமிழில் 'கணைக்கால்' என்ற சொல் இலக்கிய வழக்கில் மட்டுமே உள்ளது.",
+          "gloss": "This compound word describes legs that are firm and shapely like an arrow shaft, implying strength and beauty in their form."
         },
         {
           "form": "வாங்கிய",
-          "root": null,
+          "root": "வாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வாங்கு என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'வாங்கு' என்றால் வளைதல், குனிதல், சுருங்குதல் என்று பொருள். 'வாங்கிய' என்பது இறந்தகாலப் பெயரெச்சமாக வந்து, வளைந்த, சுருங்கிய என்ற பொருளைத் தருகிறது. இங்கு இடுப்பின் மெல்லிய தன்மையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. சங்க இலக்கியத்தில் இந்தச் சொல் பல பொருள்களில் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் 'வாங்குதல்' என்ற வினைச்சொல் பெறுதல், வாங்குதல் போன்ற பொருள்களில் வழக்கில் உள்ளது, ஆனால் வளைதல் என்ற பொருள் அரிதாகவே பயன்படுத்தப்படுகிறது.",
+          "gloss": "This past participial adjective, meaning 'bent' or 'curved,' describes the slender and graceful curve of the waist."
         },
         {
           "form": "நுசுப்பின்,",
-          "root": null,
+          "root": "நுசுப்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நுசுப்பு என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'நுசுப்பு' என்றால் இடுப்பு, இடை என்று பொருள். 'நுசுப்பின்' என்பது ஏழாம் வேற்றுமை உருபுடன் (இன்) வந்து, இடுப்பில், இடையில் என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் பெண்களின் மெல்லிய இடுப்பைக் குறிக்கப் பரவலாகப் பயன்படுத்தப்படும் ஒரு சொல். தற்காலத் தமிழில் 'நுசுப்பு' என்ற சொல் இலக்கிய வழக்கில் மட்டுமே உள்ளது, பேச்சு வழக்கில் 'இடுப்பு' என்ற சொல் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word, in the locative case, refers to 'at the waist' or 'on the waist,' indicating the location of the described feature."
         },
         {
           "form": "பணைத்தோள்,",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பணை + தோள் எனப் பிரிந்து, 'பணை' என்பது மூங்கில், திரண்ட, பருத்த என்ற பொருளிலும், 'தோள்' என்பது புயம், தோள்பட்டை என்ற பொருளிலும் சங்க இலக்கியத்தில் பயன்படுத்தப்பட்டுள்ளது. 'பணைத்தோள்' என்பது மூங்கில் போன்ற திரண்ட தோள், பருத்த தோள் என்ற பொருளைத் தரும் ஒரு கூட்டுச் சொல்லாகும். இது பெண்களின் தோள்களின் அழகையும், திரட்சியையும் குறிக்கப் பயன்படுத்தப்படும் ஒரு உவமைச் சொல்லாகும். தற்காலத் தமிழில் 'பணை' என்ற சொல் அரிதாகவே பயன்படுத்தப்படுகிறது, ஆனால் 'தோள்' என்ற சொல் நிலைத்துள்ளது.",
+          "gloss": "This compound word describes shoulders that are rounded and shapely like a bamboo stalk, signifying their beauty and fullness."
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "கோபத்",
-          "root": null,
+          "root": "கோபம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கோபம் என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'கோபம்' என்றால் சினம், கோபம் என்ற பொருள்களுடன், 'கோபப் பூச்சி' என்ற ஒரு வகைச் சிவந்த பூச்சியையும் குறிக்கும். இங்கு 'கோபத்' என்பது 'கோபப் பூச்சி' என்ற பொருளில் வந்துள்ளது. இது ஒரு உவமை உருபாகப் பயன்படுத்தப்பட்டுள்ளது. சங்க இலக்கியத்தில் இந்தச் சொல் பல பொருள்களில் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் 'கோபம்' என்ற சொல் சினம் என்ற பொருளில் மட்டுமே வழக்கில் உள்ளது, பூச்சி என்ற பொருள் இல்லை.",
+          "gloss": "This word refers to the 'kōpam' insect, a small, red velvet mite, used here as a simile to describe the vibrant red color of the garment."
         },
         {
           "form": "தன்ன",
-          "root": null,
+          "root": "தன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தன் என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'தன்' என்பது தன்னை, தனது என்ற பொருள்களுடன், 'போன்ற' என்ற உவமைப் பொருளையும் குறிக்கும். 'தன்ன' என்பது உவம உருபாக வந்து, 'போன்ற' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் உவம உருபாகப் பரவலாகப் பயன்படுத்தப்படும் ஒரு சொல். தற்காலத் தமிழில் 'தன்ன' என்ற வடிவம் அரிதாகவே பயன்படுத்தப்படுகிறது, ஆனால் 'போன்ற' என்ற சொல் நிலைத்துள்ளது.",
+          "gloss": "This word functions as a comparative particle, meaning 'like' or 'similar to,' indicating that the preceding noun is being used as a comparison."
         },
         {
           "form": "தோயாப்",
-          "root": null,
+          "root": "தோய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தோய் என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'தோய்' என்றால் தோய்தல், அமுங்குதல், அழுந்துதல் என்று பொருள். 'தோயாப்' என்பது எதிர்மறைப் பெயரெச்சமாக வந்து, தோயாத, அமுங்காத, அழுந்தாத என்ற பொருளைத் தருகிறது. இங்கு ஆடையின் மென்மையையும், உடலுடன் ஒட்டாத தன்மையையும் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. சங்க இலக்கியத்தில் இந்தச் சொல் பல பொருள்களில் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் 'தோய்தல்' என்ற வினைச்சொல் நனைதல், மூழ்குதல் போன்ற பொருள்களில் வழக்கில் உள்ளது.",
+          "gloss": "This negative participial adjective means 'not clinging' or 'not adhering,' describing a garment that is soft and does not stick to the body."
         },
         {
           "form": "பூந்துகில்,",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பூ + துகில் எனப் பிரிந்து, 'பூ' என்பது மலர், அழகு என்ற பொருளிலும், 'துகில்' என்பது ஆடை, மெல்லிய ஆடை என்ற பொருளிலும் சங்க இலக்கியத்தில் பயன்படுத்தப்பட்டுள்ளது. 'பூந்துகில்' என்பது பூ வேலைப்பாடுகள் கொண்ட ஆடை, மெல்லிய அழகிய ஆடை என்ற பொருளைத் தரும் ஒரு கூட்டுச் சொல்லாகும். இது பெண்களின் ஆடைகளின் அழகையும், மென்மையையும் குறிக்கப் பயன்படுத்தப்படும் ஒரு மரபுச் சொல்லாகும். தற்காலத் தமிழில் 'பூந்துகில்' என்ற சொல் இலக்கிய வழக்கில் மட்டுமே உள்ளது, பேச்சு வழக்கில் 'பூ வேலைப்பாடு செய்த ஆடை' என்ற சொல் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This compound word refers to a finely woven, soft garment, often adorned with floral patterns, emphasizing its beauty and delicate texture."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence."
         },
         {
           "form": ".(15)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This indicates the verse number, marking the fifteenth verse in the text."
         }
       ]
     },
@@ -178,29 +178,29 @@
           "form": "பல்காசு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பல + காசு எனப் பிரிந்து, 'பல' என்பது பல, நிறைய என்ற பொருளிலும், 'காசு' என்பது நாணயம், ஆபரணத்தில் பதிக்கப்படும் சிறு பொன் துண்டு என்ற பொருளிலும் சங்க இலக்கியத்தில் பயன்படுத்தப்பட்டுள்ளது. 'பல்காசு' என்பது பல காசுகள், நிறைய காசுகள் கோத்த ஆபரணம் என்ற பொருளைத் தரும் ஒரு கூட்டுச் சொல்லாகும். இது பெண்களின் இடுப்பணியின் செல்வச் செழிப்பையும், அழகையும் குறிக்கப் பயன்படுத்தப்படும் ஒரு சொல். தற்காலத் தமிழில் 'பல்காசு' என்ற கூட்டுச்சொல் அரிதாகவே பயன்படுத்தப்படுகிறது, ஆனால் 'பல' மற்றும் 'காசு' ஆகிய சொற்கள் வழக்கில் உள்ளன.",
+          "gloss": "This compound word refers to 'many coins' or 'numerous gold pieces,' specifically indicating an ornament made of many such pieces."
         },
         {
           "form": "நிரைத்த",
-          "root": null,
+          "root": "நிரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நிரை என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'நிரை' என்றால் வரிசையாக அமைத்தல், கோத்தல், அடுக்கி வைத்தல் என்று பொருள். 'நிரைத்த' என்பது இறந்தகாலப் பெயரெச்சமாக வந்து, வரிசையாக அமைக்கப்பட்ட, கோக்கப்பட்ட என்ற பொருளைத் தருகிறது. இங்கு காசுகள் வரிசையாகக் கோக்கப்பட்டிருந்ததைக் குறிக்கிறது. சங்க இலக்கியத்தில் இந்தச் சொல் பல இடங்களில் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் 'நிரைத்தல்' என்ற வினைச்சொல் வரிசையாக அமைத்தல் என்ற பொருளில் வழக்கில் உள்ளது.",
+          "gloss": "This past participial adjective means 'arranged in a row' or 'strung together,' describing the coins that are neatly aligned on the ornament."
         },
         {
           "form": "சில்காழ்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "சில் + காழ் எனப் பிரிந்து, 'சில்' என்பது மெல்லிய, நுண்ணிய என்ற பொருளிலும், 'காழ்' என்பது கயிறு, நூல், ஆபரணம் என்ற பொருளிலும் சங்க இலக்கியத்தில் பயன்படுத்தப்பட்டுள்ளது. 'சில்காழ்' என்பது மெல்லிய கயிறுகளால் கோக்கப்பட்ட ஆபரணம், மெல்லிய இடுப்பணி என்ற பொருளைத் தரும் ஒரு கூட்டுச் சொல்லாகும். இது பெண்களின் இடுப்பணியின் மென்மையையும், அழகையும் குறிக்கப் பயன்படுத்தப்படும் ஒரு சொல். தற்காலத் தமிழில் 'சில்' என்ற சொல் அரிதாகவே பயன்படுத்தப்படுகிறது, ஆனால் 'காழ்' என்ற சொல் இலக்கிய வழக்கில் உள்ளது.",
+          "gloss": "This compound word refers to a delicate waist ornament, typically made of thin strands or cords, emphasizing its fine and intricate nature."
         },
         {
           "form": "அல்குல்,",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "அல்குல் என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'அல்குல்' என்றால் பெண்களின் இடுப்புக்குக் கீழ் உள்ள பகுதி, நிதம்பம் என்று பொருள். சங்க இலக்கியத்தில் பெண்களின் அழகிய இடுப்புப் பகுதியைக் குறிக்கப் பரவலாகப் பயன்படுத்தப்படும் ஒரு சொல். தற்காலத் தமிழில் 'அல்குல்' என்ற சொல் இலக்கிய வழக்கில் மட்டுமே உள்ளது, பேச்சு வழக்கில் இல்லை.",
+          "gloss": "This word refers to the hips or the lower part of a woman's abdomen, often associated with beauty and grace in classical Tamil literature."
         }
       ]
     }
@@ -212,5 +212,28 @@
   "sectionNumber": 3,
   "title": "சூரர மகளிரின் இயல்பு",
   "lineStart": 12,
-  "lineEnd": 41
+  "lineEnd": 41,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:16+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:52:15+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 24
+  },
+  "yazhi_urai": "மலை மேல இருக்கிற உயரமான சிகரத்துல, சூரர மகளிர் ஆடுவாங்க. அவங்க கால்ல கொலுசு இருக்கும். அவங்க கால்கள் உறுதியா இருக்கும். இடுப்பு மெலிஞ்சு, தோள்கள் பெருசா இருக்கும். அவங்க உடுத்தியிருக்கிற பட்டுத் துணி, ஒரு பூச்சி மாதிரி சிவப்பா இருக்கும். அந்தத் துணி மேல, நிறைய காசுகள் கோர்த்த ஒரு இடுப்பணி தொங்கும். அது அவங்க இடுப்பை மறைச்சு ஆடும்போது அசையும்.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:06+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }

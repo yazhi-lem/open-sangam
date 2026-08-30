@@ -39,6 +39,11 @@ env/
 # Data — raw scraped files (not committed)
 data/texts/*/raw/
 
+# Data — runtime-generated: live agent artifact dataset + usage-driven
+# interaction graph (see agents/avai/store/). Accumulates user input, so it
+# stays local/deployment-scoped rather than checked-in like data/knowledge/.
+data/generated/
+
 # Logs
 *.log
 npm-debug.log*

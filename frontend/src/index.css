@@ -21,48 +21,48 @@
   --color-glass-border: var(--glass-border);
 }
 
-/* Light theme (default) - High Contrast & Warm Editorial Aesthetic */
+/* Light theme (default) - Olai Chuvadi & Classical Parchment Aesthetic */
 :root {
   --font-tamil: 'Noto Sans Tamil', 'Latha', 'Nirmala UI', sans-serif;
   --font-tamil-serif: 'Noto Serif Tamil', 'Latha', serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 
-  --bg: #faf9f6;
+  --bg: #f7f4ee;               /* Soft aged parchment */
   --surface: #ffffff;
-  --surface-alt: #f3f1ec;
-  --border: #e2dfd7;          /* stone-250 */
-  --border-strong: #cdcaf22;   /* stone-350 */
-  --text: #1c1917;             /* stone-900 */
-  --text-muted: #57534e;       /* stone-600 - Meets WCAG AA 4.5:1 ratio */
-  --text-faint: #78716c;       /* stone-500 - Meets WCAG AA 4.5:1 ratio */
-  --accent: #b45309;           /* amber-700 */
-  --accent-strong: #92400e;    /* amber-800 */
+  --surface-alt: #ede6d8;      /* Weathered olai chuvadi tone */
+  --border: #dfd7c8;          /* Warm stone border */
+  --border-strong: #c8bdad;
+  --text: #1c1815;             /* Deep soot ink */
+  --text-muted: #5c5249;       /* Earthy brown-stone */
+  --text-faint: #7f7468;
+  --accent: #8c5a2b;           /* Rustic terracotta / olai chuvadi dye */
+  --accent-strong: #6e4018;    /* Deep bark brown */
   --on-accent: #ffffff;
   --danger: #dc2626;
 
-  --glass-bg: rgba(255, 255, 255, 0.75);
-  --glass-border: rgba(226, 223, 215, 0.6);
-  --shadow-sm: 0 1px 2px 0 rgba(28, 25, 23, 0.05);
-  --shadow-md: 0 4px 12px -2px rgba(28, 25, 23, 0.08);
-  --shadow-lg: 0 12px 24px -4px rgba(28, 25, 23, 0.12);
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(223, 215, 200, 0.6);
+  --shadow-sm: 0 1px 2px 0 rgba(28, 24, 21, 0.05);
+  --shadow-md: 0 4px 12px -2px rgba(28, 24, 21, 0.08);
+  --shadow-lg: 0 12px 24px -4px rgba(28, 24, 21, 0.12);
 }
 
-/* Dark theme — Warm Obsidian & Amber Gold Accent */
+/* Dark theme — Warm Obsidian & Muted Olai Chuvadi Gold */
 .dark {
-  --bg: #0c0a09;               /* stone-950 */
-  --surface: #181513;          /* stone-900 elevated */
-  --surface-alt: #26221f;      /* stone-800 elevated */
-  --border: #2c2724;           /* stone-800 */
-  --border-strong: #443e39;    /* stone-700 */
-  --text: #f5f5f4;             /* stone-100 */
-  --text-muted: #d6d3d1;       /* stone-300 - High legibility */
-  --text-faint: #a8a29e;       /* stone-400 - Meets WCAG AA 4.5:1 ratio */
-  --accent: #f59e0b;           /* amber-500 */
-  --accent-strong: #d97706;    /* amber-600 */
-  --on-accent: #0c0a09;
+  --bg: #0d0b09;               /* Deep obsidian */
+  --surface: #181512;          /* Elevated dark stone */
+  --surface-alt: #28231c;      /* Dark dried palm leaf */
+  --border: #332d26;          
+  --border-strong: #4a4239;    
+  --text: #f5f2eb;             
+  --text-muted: #d8cfc4;       
+  --text-faint: #a69c8f;       
+  --accent: #c4955a;           /* Muted rustic palm leaf gold */
+  --accent-strong: #a87b42;    
+  --on-accent: #0d0b09;
   --danger: #ef4444;
 
-  --glass-bg: rgba(24, 21, 19, 0.75);
+  --glass-bg: rgba(24, 21, 18, 0.82);
   --glass-border: rgba(255, 255, 255, 0.1);
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 14px -2px rgba(0, 0, 0, 0.4);
@@ -74,8 +74,10 @@
 }
 
 html {
+  font-size: 1.25rem;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -86,19 +88,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .tamil {
   font-family: var(--font-tamil);
 }
 
-/*
- * Article prose. The Articles section renders markdown → HTML (see
- * scripts/build-articles.mjs) into a .prose-sangam container. There's no
- * Tailwind typography plugin in the project, so these element styles are
- * defined by hand against the semantic color tokens above — which means they
- * are theme-aware (light/dark) for free.
- */
 .prose-sangam {
   color: var(--text);
   font-size: 1.05rem;
@@ -172,7 +168,6 @@ body {
   border-top: 1px solid var(--border);
   margin: 2rem 0;
 }
-/* Wide tables scroll inside their own box; the page never scrolls sideways. */
 .prose-sangam table {
   display: block;
   overflow-x: auto;
@@ -198,7 +193,6 @@ body {
   line-height: 2.1;
 }
 
-/* Accessible focus ring utilities */
 .focus-ring {
   outline: none;
 }
@@ -207,7 +201,6 @@ body {
   outline-offset: 2px;
 }
 
-/* Glassmorphism utility */
 .glass-panel {
   background-color: var(--glass-bg);
   backdrop-filter: blur(12px);
@@ -215,7 +208,6 @@ body {
   border: 1px solid var(--glass-border);
 }
 
-/* Custom Skeleton Shimmer Animation */
 @keyframes shimmer {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(100%); }
@@ -240,6 +232,23 @@ body {
   animation: shimmer 1.8s infinite;
   content: '';
 }
+@keyframes glow-breathe {
+  0%, 100% { box-shadow: 0 0 10px 1px color-mix(in srgb, var(--accent) 35%, transparent); }
+  50% { box-shadow: 0 0 26px 6px color-mix(in srgb, var(--accent) 55%, transparent); }
+}
+
+/* Slow pulsing glow — no border/rim, just a breathing shadow. Apply directly
+   to the element (button, card, ...) whose own box-shadow this replaces. */
+.glow-breathe {
+  animation: glow-breathe 3.2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .glow-breathe {
+    animation: none;
+    box-shadow: 0 0 16px 3px color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+}
+
 .dark .skeleton-shimmer::after {
   background-image: linear-gradient(
     90deg,
@@ -250,7 +259,6 @@ body {
   );
 }
 
-/* Theme color transitions */
 body, header, aside, nav, main, section, article, div, button, a, input, textarea,
 p, h1, h2, h3, h4, span, blockquote, li {
   transition-property: background-color, border-color, color, fill, stroke, box-shadow;
@@ -264,165 +272,3 @@ p, h1, h2, h3, h4, span, blockquote, li {
     animation: none !important;
   }
 }
-
-/* Theme swap circular transition */
-@supports (view-transition-name: root) {
-  ::view-transition-old(root) {
-    animation: none;
-  }
-  ::view-transition-new(root) {
-    animation: theme-reveal 0.6s ease;
-  }
-  @keyframes theme-reveal {
-    from {
-      clip-path: circle(0% at var(--theme-toggle-x, 50%) var(--theme-toggle-y, 50%));
-    }
-    to {
-      clip-path: circle(150% at var(--theme-toggle-x, 50%) var(--theme-toggle-y, 50%));
-    }
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-old(root),
-  ::view-transition-new(root) {
-    animation: none !important;
-  }
-}
-
-/* Reusable Sangam Articles Prose Styling */
-.prose-sangam {
-  line-height: 1.8;
-  color: var(--text);
-  font-size: 1.05rem;
-}
-
-.prose-sangam h1,
-.prose-sangam h2,
-.prose-sangam h3,
-.prose-sangam h4 {
-  color: var(--text);
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  line-height: 1.3;
-}
-
-.prose-sangam h1 {
-  font-size: 2.25rem;
-}
-
-.prose-sangam h2 {
-  font-size: 1.75rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.4rem;
-}
-
-.prose-sangam h3 {
-  font-size: 1.35rem;
-}
-
-.prose-sangam h4 {
-  font-size: 1.15rem;
-}
-
-.prose-sangam p {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
-.prose-sangam a {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  font-weight: 500;
-}
-
-.prose-sangam a:hover {
-  color: var(--accent-strong);
-}
-
-.prose-sangam ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.prose-sangam ol {
-  list-style-type: decimal;
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.prose-sangam li {
-  margin-bottom: 0.5rem;
-}
-
-.prose-sangam blockquote {
-  border-left: 4px solid var(--accent);
-  padding-left: 1.25rem;
-  color: var(--text-muted);
-  font-style: italic;
-  margin: 2rem 0;
-  background-color: var(--surface-alt)/30;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 0 0.375rem 0.375rem 0;
-}
-
-.prose-sangam pre {
-  background-color: var(--surface-alt);
-  border: 1px solid var(--border);
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  overflow-x: auto;
-  margin-bottom: 1.5rem;
-}
-
-.prose-sangam code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.9em;
-}
-
-.prose-sangam :not(pre) > code {
-  background-color: var(--surface-alt);
-  border: 1px solid var(--border);
-  border-radius: 0.25rem;
-  padding: 0.2rem 0.4rem;
-  color: var(--accent);
-}
-
-.prose-sangam table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1.5rem;
-  text-align: left;
-  font-size: 0.95rem;
-}
-
-.prose-sangam th,
-.prose-sangam td {
-  border-bottom: 1px solid var(--border);
-  padding: 0.75rem 1rem;
-}
-
-.prose-sangam th {
-  font-weight: 600;
-  background-color: var(--surface-alt);
-  color: var(--text);
-}
-
-.prose-sangam img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  margin: 2rem 0;
-  border: 1px solid var(--border);
-}
-
-.prose-sangam hr {
-  border: 0;
-  border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
-}
-

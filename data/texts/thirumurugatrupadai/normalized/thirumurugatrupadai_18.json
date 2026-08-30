@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "நாற்பெருந் தெய்வத்து நன்னகர் நிலைஇய . . . .(160)\nஉலகம் காக்கும் ஒன்றுபுரி கொள்கைப்\nபலர்புகழ் மூவரும் தலைவ ராக",
   "urai": "திருமால், சிவன், இந்திரன், பிரமன் என்போர் நான்கு பெருந்தெய்வங்கள். திருவாவினன்குடியில் இவர்களுக்குக் கோயில்கள் இருந்தன. பலராலும் புகழப்படும் மேலே சொன்ன நால்வரும் ஒத்த கருத்துடையராய் உலகினைக் காப்பாற்றி வருகின்றனர். இவர்கள் தலைவர்கள்.",
-  "english": null,
+  "english": "In the good city where the four great deities reside,\nThe three praised by many, united in purpose,\nProtect the world as its leaders.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,59 +12,59 @@
       "words": [
         {
           "form": "நாற்பெருந்",
-          "root": null,
+          "root": "நால்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நால் என்பது நான்கு என்ற எண்ணின் சுருங்கிய வடிவம். பெருந் என்பது பெருமை என்னும் பண்புப் பெயரின் திரிபு. இது தொகைநிலைத் தொடரில் வரும்போது, 'நான்கு பெரிய' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் இத்தகைய எண்ணுப்பெயர்ப் புணர்ச்சிகள் இயல்பானவை.",
+          "gloss": "This word, a compound of 'நால்' (four) and 'பெருந்' (great), functions as an adjective meaning 'four great' or 'the four great ones', referring to the four prominent deities mentioned in the context."
         },
         {
           "form": "தெய்வத்து",
-          "root": null,
+          "root": "தெய்வம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தெய்வம் என்பது தெய்வம் என்ற சொல்லின் ஏழாம் வேற்றுமை உருபு (இன்) மறைந்து வந்த வடிவமாகும். 'தெய்வத்து' என்பது 'தெய்வத்தின்கண்' அல்லது 'தெய்வங்களின் இடத்தில்' என்ற பொருளைத் தரும். இது சங்க இலக்கியத்தில் இடப்பொருளைக் குறிக்கப் பயன்படும் ஒரு மரபு.",
+          "gloss": "This word, the locative form of 'தெய்வம்' (deity), signifies 'among the deities' or 'in the realm of deities', indicating the presence or location of these divine beings."
         },
         {
           "form": "நன்னகர்",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நன்னகர் என்பது 'நல்' (நல்ல) மற்றும் 'நகர்' (நகரம்) ஆகிய இரு சொற்களின் புணர்ச்சி. 'நல்' என்பது பண்புப் பெயர், 'நகர்' என்பது பெயர்ச்சொல். 'நல்ல நகர்' என்பது புணர்ச்சியில் 'நன்னகர்' எனத் திரிந்தது. இது ஒரு பண்புத்தொகை.",
+          "gloss": "This compound word, formed from 'நல்' (good) and 'நகர்' (city), means 'a good city' or 'a beautiful city', referring to a well-established and prosperous divine abode."
         },
         {
           "form": "நிலைஇய",
-          "root": null,
+          "root": "நிலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நிலைஇய என்பது 'நிலை' என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'நிலைத்தல்' என்பது நிலைபெறுதல், இருத்தல் என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் 'இய்' விகுதி இறந்தகாலப் பெயரெச்சமாகப் பயன்படுவதுண்டு. இது 'நிலைபெற்ற' அல்லது 'அமைந்த' என்ற பொருளைத் தருகிறது.",
+          "gloss": "This word, a past participial adjective derived from 'நிலை' (to stand, to be established), means 'that which is established' or 'that which is situated', describing the city as a permanent dwelling place."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating a pause or the end of a phrase in the original text, and does not carry lexical meaning."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating a pause or the end of a phrase in the original text, and does not carry lexical meaning."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating a pause or the end of a phrase in the original text, and does not carry lexical meaning."
         },
         {
           "form": ".(160)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This indicates the verse number 160 in the text, serving as a structural marker rather than a word with semantic content."
         }
       ]
     },
@@ -76,29 +76,29 @@
           "form": "உலகம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "உலகம் என்பது 'உலகு' என்னும் சொல்லின் விரிந்த வடிவம். 'உலகு' என்பது சுழலுதல், இருத்தல் என்ற பொருள்களைக் கொண்ட 'உல்' என்னும் வேரிலிருந்து வந்திருக்கலாம். சங்க இலக்கியத்தில் இது 'உலகம்' என்றே பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத்திலும் அதே பொருளில் வழங்கப்படுகிறது.",
+          "gloss": "This noun refers to 'the world' or 'the universe', signifying the entire realm of existence that is being protected."
         },
         {
           "form": "காக்கும்",
-          "root": null,
+          "root": "கா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "காக்கும் என்பது 'கா' என்னும் வினைச்சொல்லின் நிகழ்காலப் பெயரெச்ச வடிவம். 'காத்தல்' என்பது பாதுகாத்தல், காப்பாற்றுதல் என்ற பொருளைத் தரும். 'கா' என்பது சங்க இலக்கியத்தில் பரவலாகப் பயன்படும் ஒரு வேர்ச்சொல். 'காக்கும்' என்பது 'காப்பாற்றுகின்ற' என்ற பொருளைத் தருகிறது.",
+          "gloss": "This present participial adjective, derived from 'கா' (to protect), means 'that which protects' or 'protecting', describing the action of safeguarding the world."
         },
         {
           "form": "ஒன்றுபுரி",
-          "root": null,
+          "root": "ஒன்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "ஒன்றுபுரி என்பது 'ஒன்று' (ஒரே) மற்றும் 'புரி' (புரிதல், விரும்புதல், மேற்கொள்ளுதல்) ஆகிய சொற்களின் புணர்ச்சி. 'ஒன்று' என்பது எண்ணுப்பெயர், இங்கு 'ஒரே' என்ற பொருளில் வந்துள்ளது. 'புரி' என்பது வினைச்சொல். 'ஒரே கருத்தை மேற்கொண்டு' அல்லது 'ஒரே நோக்கத்தை விரும்பி' என்ற பொருளைத் தருகிறது.",
+          "gloss": "This compound word, formed from 'ஒன்று' (one, unified) and 'புரி' (to understand, to undertake), means 'having a unified purpose' or 'acting with a single intention', describing the deities' concerted effort."
         },
         {
           "form": "கொள்கைப்",
-          "root": null,
+          "root": "கொள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கொள்கைப் என்பது 'கொள்கை' என்னும் சொல்லின் திரிபு. 'கொள்' என்னும் வினைச்சொல்லிலிருந்து பிறந்த பெயர்ச்சொல் 'கொள்கை'. 'கொள்ளுதல்' என்பது ஏற்றுக்கொள்ளுதல், பின்பற்றுதல் என்ற பொருளைத் தரும். 'கொள்கை' என்பது கோட்பாடு, கொள்கை, நோக்கம் என்ற பொருள்களைக் குறிக்கும். இங்கு 'கொள்கைப்' என்பது 'கொள்கையை உடைய' என்ற பொருளில் வந்துள்ளது.",
+          "gloss": "This word, derived from 'கொள்கை' (principle, doctrine), here functions as an adjective or part of a compound meaning 'having a principle' or 'of a certain disposition', referring to the deities' shared guiding principle."
         }
       ]
     },
@@ -108,31 +108,31 @@
       "words": [
         {
           "form": "பலர்புகழ்",
-          "root": null,
+          "root": "பலர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பலர்புகழ் என்பது 'பலர்' (பலபேர்) மற்றும் 'புகழ்' (புகழுதல்) ஆகிய சொற்களின் புணர்ச்சி. 'பலர்' என்பது பன்மைப் பெயர்ச்சொல். 'புகழ்' என்பது வினைச்சொல். 'பலரால் புகழப்படும்' என்ற பொருளைத் தருகிறது. இது ஒரு வினையாலணையும் பெயர் போலச் செயல்படுகிறது.",
+          "gloss": "This compound word, formed from 'பலர்' (many people) and 'புகழ்' (to praise), means 'praised by many' or 'renowned by many people', indicating the widespread admiration for these deities."
         },
         {
           "form": "மூவரும்",
-          "root": null,
+          "root": "மூவர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மூவரும் என்பது 'மூவர்' (மூன்று பேர்) என்னும் சொல்லுடன் 'உம்' என்னும் உயர்வு சிறப்பு அல்லது எண்ணும்மை விகுதி சேர்ந்து வந்த வடிவம். 'மூவர்' என்பது மூன்று நபர்களைக் குறிக்கும். 'உம்' விகுதி இங்கு 'கூட' அல்லது 'அனைவரும்' என்ற பொருளைத் தருகிறது. இது 'மூன்று பேரும்' என்ற பொருளைக் குறிக்கிறது.",
+          "gloss": "This word, consisting of 'மூவர்' (the three persons) and the enclitic 'உம்' (also, even), means 'the three of them as well' or 'all three of them', referring to the three principal deities among the four."
         },
         {
           "form": "தலைவ",
-          "root": null,
+          "root": "தலைவன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தலைவ என்பது 'தலைவன்' என்னும் சொல்லின் விளி வேற்றுமை வடிவம். 'தலைவன்' என்பது தலைமை தாங்குபவன், தலைவன் என்ற பொருளைத் தரும். இங்கு 'தலைவ' என்பது 'தலைவர்களாக' என்ற பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் விளி உருபுகள் பல இடங்களில் மறைந்து வருவதுண்டு.",
+          "gloss": "This word, a vocative or nominative form of 'தலைவன்' (leader, chief), functions here as 'leaders' or 'those who are leaders', identifying the deities as the supreme authorities."
         },
         {
           "form": "ராக",
-          "root": null,
+          "root": "ஆகு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "ராக என்பது 'ஆகு' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'ஆகுதல்' என்பது ஆதல், இருத்தல், நிகழ்தல் என்ற பொருள்களைத் தரும். 'ஆக' என்பது 'ஆகி' என்ற பொருளில் வந்துள்ளது. இது 'தலைவர்களாக ஆகி' அல்லது 'தலைவர்களாக இருந்து' என்ற பொருளைத் தருகிறது.",
+          "gloss": "This word, the infinitive/adverbial participle of 'ஆகு' (to become, to be), means 'being' or 'having become', indicating that the deities function in the capacity of leaders."
         }
       ]
     }
@@ -144,5 +144,28 @@
   "sectionNumber": 18,
   "title": "பிரமனுக்காகத் திரண்டு வந்த தேவர்கள்",
   "lineStart": 160,
-  "lineEnd": 168
+  "lineEnd": 168,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:21+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:53:25+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 16
+  },
+  "yazhi_urai": "நாலு பெரிய தெய்வங்களான திருமால், சிவன், இந்திரன், பிரம்மா இவங்க எல்லாரும் ஒண்ணா சேர்ந்து, உலகத்தைப் பாதுகாக்கிறாங்க. இவங்கதான் தலைவர்கள்.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:12+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }

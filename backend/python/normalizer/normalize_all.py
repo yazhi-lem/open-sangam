@@ -6,6 +6,13 @@ Normalizes raw scraped files for every poem in the registry to:
   2. Combined                            data/texts/{poem_id}/{poem_id}.json
   3. Frictionless Data Package (OKF)     data/texts/{poem_id}/datapackage.json
 
+Every record is rebuilt from data/texts/{poem_id}/raw/ — which holds ONLY the
+scraped source, never AI output. A re-run therefore merges each new record
+against whatever normalized file already exists for that id (see
+merge_generated_fields()), so english/urai drafts from translate_with_gemini.py
+and word glossaries from extract_etymology.py survive a re-normalize instead
+of silently reverting to null. See docs/pipeline-scripts.md.
+
 Usage:
     python -m normalizer.normalize_all [--poem natrinai|all]
 """
@@ -14,7 +21,7 @@ import argparse
 import json
 from pathlib import Path
 
-from scraper.registry import POEMS, POEM_BY_ID
+from scraper.registry import POEM_BY_ID, POEMS
 
 DATA_BASE = Path(__file__).parents[3] / "data" / "texts"
 
@@ -41,6 +48,7 @@ def normalize_record(raw: dict, poem: dict) -> dict:
         "tinai": raw.get("tinai", "unknown"),
         "sangamTamil": sangam,
         "urai": raw.get("urai"),
+        "yazhi_urai": raw.get("yazhi_urai"),
         "english": raw.get("english"),
         "lines": [
             {"lineNumber": i + 1, "text": ln, "words": tokenize_line(ln)}
@@ -62,6 +70,61 @@ def normalize_record(raw: dict, poem: dict) -> dict:
         base["lineEnd"] = raw.get("lineEnd", 0)
 
     return base
+
+
+def load_existing(norm_dir: Path, record_id: str) -> dict | None:
+    path = norm_dir / f"{record_id}.json"
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+
+
+def merge_generated_fields(record: dict, existing: dict | None) -> dict:
+    """Carry forward AI-generated content that raw/ never contains.
+
+    `record` was just rebuilt from raw/ and so has english=None, all-null word
+    fields, and verified=False regardless of any prior AI run — raw/ only ever
+    holds the scraped source. Without this merge, re-running the normalizer
+    after translate_with_gemini.py or extract_etymology.py would silently
+    discard every AI-generated field.
+    """
+    if existing is None:
+        return record
+
+    # english, yazhi_urai: never present in raw/, so always the existing draft.
+    for field in ("english", "yazhi_urai"):
+        if not record.get(field) and existing.get(field):
+            record[field] = existing[field]
+            meta_key = f"{field}Meta"
+            if existing.get(meta_key):
+                record[meta_key] = existing[meta_key]
+
+    # urai: prefer a fresh non-empty scrape (a genuine source correction);
+    # otherwise keep what's there, which may be an AI draft raw/ never had.
+    if not record.get("urai") and existing.get("urai"):
+        record["urai"] = existing["urai"]
+
+    # verified is a scholar's call, never a scrape's — it must survive.
+    if existing.get("verified"):
+        record["verified"] = True
+
+    # Word-level etymology only merges positionally when the word count still
+    # matches what extract_etymology.py last annotated. A source-text
+    # correction that changes the word count invalidates that mapping, so
+    # etymology is left null for that verse rather than mis-applied.
+    if existing.get("etymologyMeta"):
+        new_words = [w for line in record.get("lines", []) for w in line.get("words", [])]
+        old_words = [w for line in existing.get("lines", []) for w in line.get("words", [])]
+        if len(new_words) == len(old_words):
+            for new_word, old_word in zip(new_words, old_words):
+                for field in ("root", "urichol", "etymology", "gloss"):
+                    new_word[field] = old_word.get(field)
+            record["etymologyMeta"] = existing["etymologyMeta"]
+
+    return record
 
 
 def build_datapackage(poem: dict, records: list[dict]) -> dict:
@@ -118,6 +181,7 @@ def build_datapackage(poem: dict, records: list[dict]) -> dict:
             "records": total_items,
             "withUrai": has_urai,
             "withEnglish": sum(1 for r in records if r.get("english")),
+            "withYazhiUrai": sum(1 for r in records if r.get("yazhi_urai")),
         },
     }
 
@@ -135,14 +199,20 @@ def normalize_poem(poem: dict) -> None:
         print(f"  ⚠ {poem_id}: no raw files found")
         return
 
-    records = []
-    for f in raw_files:
-        raw = json.loads(f.read_text(encoding="utf-8"))
-        records.append(normalize_record(raw, poem))
-
     poem_dir = DATA_BASE / poem_id
     norm_dir = poem_dir / "normalized"
     norm_dir.mkdir(parents=True, exist_ok=True)
+
+    records = []
+    preserved = 0
+    for f in raw_files:
+        raw = json.loads(f.read_text(encoding="utf-8"))
+        record = normalize_record(raw, poem)
+        existing = load_existing(norm_dir, record["id"])
+        merged = merge_generated_fields(record, existing)
+        if merged.get("english") or merged.get("etymologyMeta"):
+            preserved += 1
+        records.append(merged)
 
     for rec in records:
         out = norm_dir / f"{rec['id']}.json"
@@ -155,7 +225,8 @@ def normalize_poem(poem: dict) -> None:
     dp_path = poem_dir / "datapackage.json"
     dp_path.write_text(json.dumps(dp, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"  ✓ {poem_id}: {len(records)} records → {combined.name} + datapackage.json")
+    suffix = f", {preserved} record(s) kept AI-generated content" if preserved else ""
+    print(f"  ✓ {poem_id}: {len(records)} records → {combined.name} + datapackage.json{suffix}")
 
 
 def main() -> None:

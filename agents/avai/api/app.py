@@ -1,16 +1,5 @@
 """FastAPI app exposing POST /avai/ask — the REST entry point for the Avai
-agent swarm, built for the chat.yazhi.dev integration. See
-docs/api/avai-ask-prd.md for the full PRD and
-docs/integration/chat-yazhi-integration.md for the integration guide.
-
-M1 scope: only the "qa" workflow is wired, routed to the ஔவையார் (Avvaiyar)
-Q&A agent. Other workflow values validate and are accepted by the request
-schema (so callers can code against the full contract now) but return 501
-until their agents land in M2 — see poets/avvaiyar.py and
-docs/agent-implementation-plan.md §9 for the M2 roadmap.
-
-Run from `agents/` (same cwd convention as `adk run avai`):
-    uvicorn avai.api.app:app --reload --port 8080
+agent swarm, built for the chat.yazhi.dev integration.
 """
 
 import os
@@ -19,8 +8,9 @@ import time
 import uuid
 from datetime import datetime, timezone
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
@@ -28,18 +18,51 @@ from google.genai import types
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from ..poets.avvaiyar import avvaiyar_agent
+from ..poets.kapilar import kapilar_agent
+from ..poets.nakkirar import nakkirar_agent
+from ..poets.paranar import paranar_agent
+from ..poets.tholkappiyar import tholkappiyar_agent
+from ..store import artifacts, interaction_graph
+from ..swarm import root_agent
 from ..tools.corpus import get_verse
 from . import sessions
 from .schemas import AskMetadata, AskRequest, AskResponse, Citation
 
 app = FastAPI(title="Avai Ask API", version="0.1.0")
 
-_session_service = InMemorySessionService()
-_runner = Runner(
-    app_name=sessions.APP_NAME, agent=avvaiyar_agent, session_service=_session_service
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-# verse ids are always <poem>_<number>, e.g. purananooru_001 (see tools/corpus.py).
+_session_service = InMemorySessionService()
+
+_PULAVAR_AGENTS = {
+    "avvaiyar": avvaiyar_agent,
+    "kapilar": kapilar_agent,
+    "nakkirar": nakkirar_agent,
+    "tholkappiyar": tholkappiyar_agent,
+    "paranar": paranar_agent,
+    "swarm": root_agent,
+}
+
+_RUNNERS = {
+    name: Runner(app_name=sessions.APP_NAME, agent=agent, session_service=_session_service)
+    for name, agent in _PULAVAR_AGENTS.items()
+}
+
+_WORKFLOW_TO_PULAVAR = {
+    "qa": "avvaiyar",
+    "search": "kapilar",
+    "reimagine": "kapilar",
+    "scenario": "tholkappiyar",
+    "imagery": "paranar",
+    "general": "nakkirar",
+}
+
 _VERSE_ID_PATTERN = re.compile(r"\b[a-z]+_\d{2,4}\b")
 
 _MODEL_LABEL = "{}:{}".format(
@@ -47,17 +70,7 @@ _MODEL_LABEL = "{}:{}".format(
     os.getenv("SANGAM_AGENT_MODEL", "google/gemini-2.5-flash"),
 )
 
-_UNIMPLEMENTED_WORKFLOWS = {
-    "search": "Poem search & discovery lands with the poet swarm (M2).",
-    "reimagine": "Poem reimagining is Kapilar's workflow (M2), not yet wired.",
-    "scenario": "Scenario extraction is Tholkappiyar's workflow (M2), not yet wired.",
-    "imagery": "Image-prompt generation is Paranar's workflow (M2), not yet wired.",
-}
 
-
-# Normalize error shapes to {"message": "..."} to match the existing Cloud
-# Functions contract (docs/api-contracts.md), rather than FastAPI's default
-# {"detail": ...} shape — one error contract for callers across both APIs.
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(
     request: Request, exc: RequestValidationError
@@ -91,13 +104,6 @@ def _augment_with_context(message: str, context) -> str:
 
 
 def _extract_citations(text: str) -> list[Citation]:
-    """Pull verse-id-shaped tokens out of the response and keep only real ones.
-
-    The LLM is instructed to cite verse ids inline (see prompts.py's
-    CITATION_RULE); this re-derives structured citations from that text by
-    checking each candidate against the corpus rather than trusting the LLM's
-    formatting, so a hallucinated id is silently dropped instead of returned.
-    """
     citations = []
     seen = set()
     for match in _VERSE_ID_PATTERN.findall(text.lower()):
@@ -113,6 +119,7 @@ def _extract_citations(text: str) -> list[Citation]:
                 poem=verse.get("poem"),
                 tinai=verse.get("tinai"),
                 poet=verse.get("poet"),
+                pulavar=verse.get("poet"),
             )
         )
     return citations
@@ -123,13 +130,56 @@ async def health() -> dict:
     return {"status": "ok"}
 
 
+@app.get("/avai/dataset/stats")
+async def dataset_stats() -> dict:
+    """Observability for the continuous enrichment loop: how big the agent
+    artifact dataset has grown, and how big the usage-driven interaction
+    graph layer is (see store/artifacts.py, store/interaction_graph.py)."""
+    growth = interaction_graph.snapshot()
+    return {
+        "artifact_count": artifacts.count_artifacts(),
+        "interaction_graph": {
+            "nodes": len(growth["nodes"]),
+            "edges": len(growth["edges"]),
+        },
+    }
+
+
+def _capture_artifact(
+    *,
+    session_id: str,
+    user_id: str,
+    workflow: str,
+    pulavar: str,
+    message: str,
+    response_text: str,
+    citations: list[Citation],
+    elapsed_ms: int,
+) -> None:
+    """Runs after the response is sent (see BackgroundTasks below) so dataset
+    persistence and graph growth never add latency to /avai/ask."""
+    citation_dicts = [c.model_dump() for c in citations]
+    artifacts.record_artifact(
+        session_id=session_id,
+        user_id=user_id,
+        workflow=workflow,
+        pulavar=pulavar,
+        message=message,
+        response_text=response_text,
+        citations=citation_dicts,
+        model=_MODEL_LABEL,
+        elapsed_ms=elapsed_ms,
+    )
+    interaction_graph.record_interaction(pulavar, citation_dicts)
+
+
 @app.post("/avai/ask", response_model=AskResponse)
-async def ask(request: AskRequest) -> AskResponse:
-    if request.workflow != "qa":
-        reason = _UNIMPLEMENTED_WORKFLOWS.get(
-            request.workflow, f"Unknown workflow {request.workflow!r}."
-        )
-        raise HTTPException(status_code=501, detail=reason)
+async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResponse:
+    target_pulavar = request.pulavar or request.poet
+    if not target_pulavar:
+        target_pulavar = _WORKFLOW_TO_PULAVAR.get(request.workflow or "qa", "avvaiyar")
+
+    runner = _RUNNERS.get(target_pulavar, _RUNNERS["avvaiyar"])
 
     sessions.prune_expired()
 
@@ -148,24 +198,40 @@ async def ask(request: AskRequest) -> AskResponse:
     start = time.monotonic()
     final_text = ""
     try:
-        async for event in _runner.run_async(
+        async for event in runner.run_async(
             user_id=user_id, session_id=session_id, new_message=content
         ):
             if event.content and event.content.parts:
                 for part in event.content.parts:
                     if part.text:
                         final_text += part.text
-    except Exception as exc:  # noqa: BLE001 — don't leak internals to callers
-        raise HTTPException(status_code=502, detail="Agent execution failed") from exc
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Agent execution failed: {exc}") from exc
 
     elapsed_ms = int((time.monotonic() - start) * 1000)
+    effective_workflow = request.workflow or "qa"
+    response_text = final_text.strip()
+    citations = _extract_citations(final_text)
+
+    background_tasks.add_task(
+        _capture_artifact,
+        session_id=session_id,
+        user_id=user_id,
+        workflow=effective_workflow,
+        pulavar=target_pulavar,
+        message=request.message,
+        response_text=response_text,
+        citations=citations,
+        elapsed_ms=elapsed_ms,
+    )
 
     return AskResponse(
         session_id=session_id,
-        workflow="qa",
-        poet="avvaiyar",
-        response_text=final_text.strip(),
-        citations=_extract_citations(final_text),
+        workflow=effective_workflow,
+        pulavar=target_pulavar,
+        poet=target_pulavar,
+        response_text=response_text,
+        citations=citations,
         metadata=AskMetadata(
             model=_MODEL_LABEL,
             elapsed_ms=elapsed_ms,

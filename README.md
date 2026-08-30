@@ -2,6 +2,8 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
+See [NEXT_ACTION.md](./NEXT_ACTION.md) for the roadmap, **October 2026 Pilot**, and **December 2026 Launch** deliverables.
+
 Open Sangam transforms static, archaic web archives of Sangam-era poetry into a multi-layered learning experience — providing linguistic, cultural, and historical context. Think "Duolingo for Ancient Literature."
 
 ## Features
@@ -108,6 +110,17 @@ cd backend/python
 | `--concurrency N` | parallel requests (default 4) |
 | `--write-state` | rebuild the state metadata from disk without translating |
 
+`--lang` also accepts `urai` to draft the Modern Tamil prose field the same
+way (currently 99% covered — a handful of stragglers). To run both languages
+in one command, use the wrapper instead of remembering both invocations:
+
+```bash
+# Both languages, same flags forwarded to each pass (urai first, then english)
+.venv/bin/python -m ai.translate_all --status
+.venv/bin/python -m ai.translate_all --limit 200
+.venv/bin/python -m ai.translate_all --only urai --limit 50   # just one language
+```
+
 **Phases** run smallest-first, so quality problems surface early. A run only
 draws from the current phase, and the phase advances by itself once every poem
 in it is fully drafted:
@@ -127,6 +140,68 @@ it the job logs a skip and exits cleanly. `workflow_dispatch` takes `limit`,
 Every draft lands `verified: false` per
 [docs/data-governance.md](./docs/data-governance.md) — AI output is not
 authoritative until a scholar reviews it.
+
+#### Word etymology (Click-to-Define Glossary)
+
+`ai/extract_etymology.py` batch-fills the same feature the reader's
+click-to-define glossary (`WordGlossary.jsx` / `geminiApi.js`) otherwise
+fetches live, one word at a time: for every word in a verse it drafts a
+`root` (வேர்ச்சொல்), `urichol` (உரிச்சொல்), a detailed Tamil `etymology`
+(2-4 sentences — derivation, cognates, sandhi/morphology, semantic shift),
+and a short English `gloss`. Pre-filling the corpus means most clicks resolve instantly
+from disk; the live call still covers whatever hasn't been annotated yet.
+
+```bash
+cd backend/python
+
+# Coverage per poem. No API calls, no key needed.
+.venv/bin/python -m ai.extract_etymology --status
+
+# See exactly which verses the next run would take. Still no API calls.
+.venv/bin/python -m ai.extract_etymology --limit 5 --dry-run
+
+# Annotate a batch (default 50 verses — each one returns a full JSON
+# array of per-word annotations, so it's heavier than a translation call)
+.venv/bin/python -m ai.extract_etymology --limit 50
+
+# Or target one poem
+.venv/bin/python -m ai.extract_etymology --poem mullaippattu
+```
+
+Unlike English/urai translation, a word's four fields can legitimately all
+come back null (a bare grammatical particle has no root) — so completeness is
+tracked per *verse*, via an `etymologyMeta` provenance block (mirrors
+`englishMeta`), not by checking whether the word fields are non-null. State
+lives in `data/pipeline/etymology-state.json`, independent of the translation
+pipeline's own state file. There's no phase ladder here: unlike English
+translation, one verse's word annotation doesn't depend on another poem's
+quality, so poems are simply processed in the corpus's natural order.
+
+Every draft also lands `verified: false`, same governance as translations.
+
+#### Verse embeddings + semantic search
+
+`ai/vectorize.py` embeds each verse (Tamil + urai + English combined) via
+OpenRouter (`google/gemini-embedding-001`) into a local Chroma vector store,
+and exports a downloadable `.jsonl` per poem. Needs its own venv — see
+[docs/pipeline-scripts.md](./docs/pipeline-scripts.md) §3, since `chromadb`
+must never land in `agents/.venv`.
+
+```bash
+cd backend/python
+python -m venv .venv && .venv/bin/pip install -r requirements.txt   # separate from agents/.venv
+
+.venv/bin/python -m ai.vectorize --status
+.venv/bin/python -m ai.vectorize --poem thirumurugatrupadai
+.venv/bin/python -m ai.vectorize --search "the young god of the mountains riding a peacock" --k 5
+```
+
+- **Vector DB:** `data/generated/vectors/` (gitignored — a rebuildable local
+  index, not source data).
+- **Downloadable export:** `data/knowledge/vectors/{poem_id}.jsonl`,
+  committed like `graph.json` — one JSON line per verse (id, metadata,
+  embedded text, 3072-dim vector), always rewritten fresh from the vector DB
+  so it can't drift.
 
 ### Sangam Avai agents (சங்க அவை)
 
@@ -163,11 +238,14 @@ firebase emulators:start
 workstream · 🗺️ **[Roadmap](./docs/ROADMAP.md)** — where the project is going.
 
 See [docs/data-collection-plan.md](./docs/data-collection-plan.md) for the full
-corpus + knowledge-entity roadmap.
+corpus + knowledge-entity roadmap, and
+[docs/pipeline-scripts.md](./docs/pipeline-scripts.md) for how every
+scrape/normalize/translate/etymology/graph script fits together and why
+re-running one never destroys another's output.
 
 | # | Phase | Status |
 |---|-------|--------|
-| 1 | Data scraping & normalization | ✅ Complete — 18 poems, 2,552 verses |
+| 1 | Data scraping & normalization | ✅ Complete — 18 poems, 2,489 verses |
 | 2 | AI English translation + human verification | 🔄 In progress — pipeline live, drafting nightly |
 | 3 | Library of Sangam — MVP reader live | 🔄 In progress |
 | 4 | Community contribution layer | ⬜ Pending |
@@ -205,7 +283,7 @@ Poem                              Sections  Scrape    Normalize  Library   Engli
 சிறுபாணாற்றுப்படை  Sirupanam         25    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 பெரும்பாணாற்றுப்படை Perumapanam      41    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 மலைபடுகடாம்        Malaipadukadam    45    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-மதுரைக்காஞ்சி      Maduraikanchi    126    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
+மதுரைக்காஞ்சி      Maduraikanchi     63    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 குறிஞ்சிப்பாட்டு   Kurinjipattu      25    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 பட்டினப்பாலை       Pattinappalai     30    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 முல்லைப்பாட்டு     Mullaippattu      18    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
@@ -216,8 +294,8 @@ Poem                              Sections  Scrape    Normalize  Library   Engli
 
 ```
 Total poems          18  ████████████████  all scraped, normalized & in the Library
-Total records     2,552  ████████████████  fully normalized (Verse → Line → Word)
-Tamil prose (Urai) 2,529 ███████████████░  99% carry source prose
+Total records     2,489  ████████████████  fully normalized (Verse → Line → Word)
+Tamil prose (Urai) 2,469 ███████████████░  99% carry source prose
 English translation     0 ░░░░░░░░░░░░░░░░  Phase 2 — pipeline live, drafting nightly
 Scholar-verified        0 ░░░░░░░░░░░░░░░░  Phase 4 — not started
 ```

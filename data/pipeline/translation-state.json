@@ -4,7 +4,7 @@
   "provider": "openrouter",
   "model": "google/gemini-2.5-flash",
   "promptVersion": "english-v1",
-  "updatedAt": "2026-08-04T07:26:03+00:00",
+  "updatedAt": "2026-08-30T16:51:21+00:00",
   "currentPhase": 1,
   "phases": [
     {
@@ -45,9 +45,9 @@
     }
   ],
   "totals": {
-    "verses": 2552,
-    "translated": 0,
-    "remaining": 2552
+    "verses": 2489,
+    "translated": 32,
+    "remaining": 2457
   },
   "poems": {
     "mullaippattu": {
@@ -101,10 +101,10 @@
     "thirumurugatrupadai": {
       "phase": 1,
       "verses": 32,
-      "translated": 0,
-      "remaining": 32,
-      "status": "pending",
-      "lastRunAt": null
+      "translated": 32,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-08-30T16:51:21+00:00"
     },
     "perumpanatrupadai": {
       "phase": 1,
@@ -124,9 +124,9 @@
     },
     "maduraikanchi": {
       "phase": 1,
-      "verses": 126,
+      "verses": 63,
       "translated": 0,
-      "remaining": 126,
+      "remaining": 63,
       "status": "pending",
       "lastRunAt": null
     },
@@ -195,5 +195,60 @@
       "lastRunAt": null
     }
   },
-  "runs": []
+  "runs": [
+    {
+      "runId": "bfb99a231e12",
+      "startedAt": "2026-08-30T16:29:11+00:00",
+      "finishedAt": "2026-08-30T16:29:13+00:00",
+      "phase": 1,
+      "trigger": "manual",
+      "field": "urai",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "english-v1",
+      "attempted": 3,
+      "translated": 3,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "453e69cb16bb",
+      "startedAt": "2026-08-30T16:29:14+00:00",
+      "finishedAt": "2026-08-30T16:29:28+00:00",
+      "phase": 1,
+      "trigger": "manual",
+      "field": "english",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "english-v1",
+      "attempted": 32,
+      "translated": 32,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "6cd23ddba45b",
+      "startedAt": "2026-08-30T16:51:04+00:00",
+      "finishedAt": "2026-08-30T16:51:21+00:00",
+      "phase": 1,
+      "trigger": "manual",
+      "field": "yazhi_urai",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "english-v1",
+      "attempted": 32,
+      "translated": 32,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    }
+  ]
 }

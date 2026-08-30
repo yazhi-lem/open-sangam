@@ -37,6 +37,10 @@
 Run-level provenance — which phase, which model, how many verses, and which
 verses failed — is kept in `data/pipeline/translation-state.json` (last 30 runs).
 
+See [docs/pipeline-scripts.md](./pipeline-scripts.md) for every generation
+script (translation, etymology, normalization) and the rule that a re-run of
+any one of them must never destroy what an earlier run already produced.
+
 ## 6. Prohibited Uses
 
 - Do not use AI translations as authoritative academic citations without scholar verification.

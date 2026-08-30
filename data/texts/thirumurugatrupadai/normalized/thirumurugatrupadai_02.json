@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "கார்கோள் முகந்த கமஞ்சூல் மாமழை\nவாள்போழ் விசும்பில் வள்ளுறை சிதறித்\nதலைப்பெயல் தலைஇய தண்ணறுங் கானத்து\nஇருள்படப் பொதுளிய பராரை மராஅத்து . . . .(10)\nஉருள்பூந் தண்டார் புரளும் மார்பினன் . . . .(7 - 11)",
   "urai": "சூலுற்ற மழைமேகங்கள் வானத்தில் வாள்போல் மின்னி வளம்தரும் மழைத்துளிகளைப் பொழியும். கோடைக்குப் பிறகு பெய்யும் அந்த முதன்மழையால் கானம் இருண்டு பசுமையாகும். வெண்கடம்பு மரங்கள் தழைத்துப் பூத்துக் குலுங்கும். அப்பூக்களே முருகன் மார்பில் புரளும் தார்மாலைகள்.",
-  "english": null,
+  "english": "The pregnant clouds, having drunk from the sea,\nFlash like swords across the sky, scattering rich drops.\nIn the cool, fragrant forest, darkened by the first rains,\nThe ancient Maram trees, their trunks gnarled, flourish.\nUpon the chest of Murukan, garlands of rolling, blooming flowers rest.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "கார்கோள்",
-          "root": null,
+          "root": "கார்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'கார்' (மழைக்காலம்/மேகம்) மற்றும் 'கோள்' (கொள்ளுதல்/பிடித்தல்) ஆகிய இரு சொற்களின் புணர்ச்சியால் உருவானது. சங்க இலக்கியத்தில் 'கார்' என்பது மழைக்காலத்தையும், மேகத்தையும் குறிக்கும். 'கோள்' என்பது இங்கு 'கொண்ட' அல்லது 'பிடித்த' என்ற பொருளில் வந்து, மேகங்கள் நீரைத் தாங்கியிருப்பதைக் குறிக்கிறது. நவீன தமிழில் 'கார்' என்பது பெரும்பாலும் வாகனத்தைக் குறிக்கப் பயன்படுத்தப்பட்டாலும், 'கார்மேகம்' போன்ற சொற்களில் அதன் பழைய பொருள் நிலைத்துள்ளது.",
+          "gloss": "This compound word refers to the rain-laden clouds, specifically those that have gathered and hold water, indicating their readiness to precipitate."
         },
         {
           "form": "முகந்த",
-          "root": null,
+          "root": "முக",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'முக' என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'முக' என்பது 'உள்ளே வாங்குதல்', 'ஏந்துதல்', 'நிரப்புதல்' போன்ற பொருள்களைக் குறிக்கும். இங்கு மேகங்கள் நீரை உள்ளே வாங்கியதைக் குறிக்கிறது. நவீன தமிழிலும் 'முகத்தல்' என்பது அளந்து எடுத்தல், அள்ளுதல் போன்ற பொருள்களில் பயன்படுத்தப்படுகிறது, ஆனால் சங்க இலக்கியத்தில் இதன் பொருள் இன்னும் பரந்ததாக இருந்தது.",
+          "gloss": "This past participial adjective describes the clouds as having absorbed or taken in water, indicating their fullness and readiness to release rain."
         },
         {
           "form": "கமஞ்சூல்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "கம்",
+          "urichol": "உரிச்சொல்",
+          "etymology": "இச்சொல் 'கம்' (நிறைவு/அழகு) மற்றும் 'சூல்' (கருவுற்ற நிலை) ஆகிய இரு சொற்களின் புணர்ச்சியால் உருவானது. 'கம்' என்பது நிறைவு, அழகு, பெருமை போன்ற பொருள்களைக் குறிக்கும் ஓர் உரிச்சொல். 'சூல்' என்பது கருவுற்ற நிலையைக் குறிக்கும். இங்கு மேகங்கள் நீரை நிறைவாகக் கொண்டு, கருவுற்றவை போலக் கனத்திருப்பதைக் குறிக்கிறது. நவீன தமிழில் 'கமஞ்சூல்' என்ற சொல் நேரடியாகப் பயன்பாட்டில் இல்லை, ஆனால் 'சூல்' என்ற சொல் கருவுற்ற நிலையைக் குறிக்க இன்றும் உள்ளது.",
+          "gloss": "This compound word, formed from an urichol and a noun, describes the clouds as being heavily pregnant with water, signifying their abundant and impending rainfall."
         },
         {
           "form": "மாமழை",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "மா",
+          "urichol": "உரிச்சொல்",
+          "etymology": "இச்சொல் 'மா' (பெரிய/சிறந்த) என்னும் உரிச்சொல்லும் 'மழை' என்னும் பெயரும் இணைந்து உருவானது. 'மா' என்பது உரிச்சொல்லாகப் பெரிய, சிறந்த, மிகுதியான போன்ற பொருள்களைக் குறிக்கும். இங்கு மிகுதியான மழையைக் குறிக்கிறது. நவீன தமிழிலும் 'மா' என்பது 'மாமரம்' போன்ற சில சொற்களில் பெரிய என்ற பொருளில் வந்தாலும், அதன் உரிச்சொல் பயன்பாடு குறைந்துள்ளது. 'மழை' என்ற சொல் இன்றும் அதே பொருளில் உள்ளது.",
+          "gloss": "This compound noun, formed with an urichol, refers to a great or abundant rain, emphasizing its significant volume and impact."
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "வாள்போழ்",
-          "root": null,
+          "root": "வாள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'வாள்' (கத்தி/ஒளி) மற்றும் 'போழ்' (பிளத்தல்/வெட்டுதல்) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. இங்கு 'வாள்' என்பது மின்னலை வாளுக்கு ஒப்பிட்டு, அதன் கூர்மையையும், பிளக்கும் தன்மையையும் குறிக்கிறது. 'போழ்' என்பது பிளத்தல், வெட்டுதல் என்ற பொருளில் வரும். மின்னல் வானைப் பிளப்பது போலத் தோன்றுவதைக் குறிக்கிறது. நவீன தமிழில் 'வாள்' என்பது கத்தி என்ற பொருளிலும், 'போழ்' என்பது பிளத்தல் என்ற பொருளிலும் உள்ளன.",
+          "gloss": "This compound describes the lightning as cleaving or splitting the sky like a sword, highlighting its sharp, sudden, and powerful appearance."
         },
         {
           "form": "விசும்பில்",
-          "root": null,
+          "root": "விசும்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'விசும்பு' என்னும் பெயர்ச்சொல்லின் ஏழாம் வேற்றுமை உருபு 'இல்' பெற்று வந்தது. 'விசும்பு' என்பது வானம், ஆகாயம், மேகம் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் இது பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'விசும்பு' என்ற சொல் இலக்கியப் பயன்பாட்டில் உள்ளது, ஆனால் பேச்சுவழக்கில் 'வானம்' என்பதே அதிகம்.",
+          "gloss": "This locative noun refers to the sky or the heavens, indicating the place where the lightning occurs and the rain falls."
         },
         {
           "form": "வள்ளுறை",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "வள்",
+          "urichol": "உரிச்சொல்",
+          "etymology": "இச்சொல் 'வள்' (வளம்/செழிப்பு) என்னும் உரிச்சொல்லும் 'துறை' (துளி/நீர்) என்னும் பெயரும் இணைந்து உருவானது. 'வள்' என்பது வளம், செழிப்பு, மிகுதி போன்ற பொருள்களைக் குறிக்கும் ஓர் உரிச்சொல். 'துறை' என்பது இங்கு மழைத்துளியைக் குறிக்கிறது. வளமான, செழிப்பான மழைத்துளிகள் என்ற பொருளில் வருகிறது. நவீன தமிழில் 'வள்' உரிச்சொல்லாகப் பயன்பாட்டில் இல்லை, 'துறை' என்பது நீர்நிலையின் பகுதி அல்லது ஒரு துறைசார்ந்த அறிவு என்ற பொருளில் உள்ளது.",
+          "gloss": "This compound noun, formed with an urichol, refers to rich, abundant, and beneficial raindrops, emphasizing their life-giving quality."
         },
         {
           "form": "சிதறித்",
-          "root": null,
+          "root": "சிதர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'சிதர்' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'சிதர்' என்பது 'பரவுதல்', 'சிதறுதல்', 'தூவுதல்' போன்ற பொருள்களைக் குறிக்கும். இங்கு மழைத்துளிகள் பரவலாகப் பொழியப்படுவதைக் குறிக்கிறது. நவீன தமிழிலும் 'சிதறுதல்' என்ற சொல் அதே பொருளில் பரவலாகப் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This past adverbial participle describes the action of the raindrops being scattered or dispersed widely, indicating the widespread nature of the rainfall."
         }
       ]
     },
@@ -80,31 +80,31 @@
       "words": [
         {
           "form": "தலைப்பெயல்",
-          "root": null,
+          "root": "தலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'தலை' (முதல்/முதன்மையான) மற்றும் 'பெயல்' (மழை) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. 'தலை' என்பது இங்கு முதன்மையான, முதல் என்ற பொருளைக் குறிக்கிறது. 'பெயல்' என்பது மழை என்ற பொருளில் வரும். கோடைக்குப் பிறகு பெய்யும் முதல் மழையைக் குறிக்கிறது. நவீன தமிழிலும் 'தலை' என்ற சொல் முதல் என்ற பொருளில் 'தலைமை' போன்ற சொற்களில் உள்ளது, 'பெயல்' என்பது இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This compound noun refers to the first rain of the season, specifically the initial heavy downpour after a dry period, which is crucial for rejuvenating the land."
         },
         {
           "form": "தலைஇய",
-          "root": null,
+          "root": "தலை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'தலை' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம், 'இ' என்னும் சாரியை பெற்று வந்தது. 'தலை' என்பது 'நிகழ்தல்', 'பொருந்துதல்', 'மேம்படுதல்' போன்ற பொருள்களைக் குறிக்கும். இங்கு முதல் மழை பெய்ததால் காடு செழித்ததைக் குறிக்கிறது. நவீன தமிழில் 'தலை' என்ற வினைச்சொல் இந்த பொருளில் அரிதாகவே பயன்படுத்தப்படுகிறது.",
+          "gloss": "This past adverbial participle indicates that the first rain has occurred or settled, implying its completion and the subsequent impact on the forest."
         },
         {
           "form": "தண்ணறுங்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "தண்",
+          "urichol": "உரிச்சொல்",
+          "etymology": "இச்சொல் 'தண்' (குளிர்ச்சி/அழகு) என்னும் உரிச்சொல்லும் 'நறும்' (நறுமணம்) என்னும் உரிச்சொல்லும் இணைந்து உருவானது. 'தண்' என்பது குளிர்ச்சி, அழகு, இனிமை போன்ற பொருள்களைக் குறிக்கும் ஓர் உரிச்சொல். 'நறும்' என்பது நறுமணம், இனிமை போன்ற பொருள்களைக் குறிக்கும். மழை பெய்ததால் காடு குளிர்ச்சியுடனும் நறுமணத்துடனும் இருப்பதைக் குறிக்கிறது. நவீன தமிழில் 'தண்' மற்றும் 'நறும்' ஆகிய இரண்டும் உரிச்சொற்களாகப் பயன்பாட்டில் இல்லை, ஆனால் 'தண்ணீர்', 'நறுமணம்' போன்ற சொற்களில் அவற்றின் வேர்கள் உள்ளன.",
+          "gloss": "This compound adjective, formed by two urichols, describes the forest as being cool, refreshing, and fragrant due to the recent rainfall."
         },
         {
           "form": "கானத்து",
-          "root": null,
+          "root": "கானம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'கானம்' என்னும் பெயர்ச்சொல்லின் ஏழாம் வேற்றுமை உருபு 'அத்து' பெற்று வந்தது. 'கானம்' என்பது காடு, வனம், சோலை போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் இது பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'கானம்' என்ற சொல் இலக்கியப் பயன்பாட்டில் உள்ளது, ஆனால் பேச்சுவழக்கில் 'காடு' என்பதே அதிகம்.",
+          "gloss": "This locative noun refers to the forest or jungle, indicating the place where the cool and fragrant atmosphere prevails after the rain."
         }
       ]
     },
@@ -114,59 +114,59 @@
       "words": [
         {
           "form": "இருள்படப்",
-          "root": null,
+          "root": "இருள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'இருள்' (இருட்டு) என்னும் பெயர்ச்சொல்லும் 'பட' (உண்டாக) என்னும் வினையெச்சமும் இணைந்து உருவானது. 'இருள்' என்பது இருட்டைக் குறிக்கும். 'பட' என்பது 'உண்டாக', 'நிகழ' என்ற பொருளில் வரும். மழை பெய்ததால் காடு இருண்டு காணப்படுவதைக் குறிக்கிறது. நவீன தமிழிலும் 'இருள்' மற்றும் 'பட' ஆகிய சொற்கள் அதே பொருள்களில் உள்ளன.",
+          "gloss": "This compound adverbial phrase describes the state of the forest becoming dark or dim, likely due to the dense foliage and the aftermath of the heavy rain."
         },
         {
           "form": "பொதுளிய",
-          "root": null,
+          "root": "பொதுள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'பொதுள்' என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'பொதுள்' என்பது 'செழித்து வளர்தல்', 'தழைத்தல்', 'நிறைந்திருத்தல்' போன்ற பொருள்களைக் குறிக்கும். இங்கு மரங்கள் செழித்து வளர்ந்து அடர்ந்திருப்பதைக் குறிக்கிறது. நவீன தமிழில் 'பொதுளுதல்' என்ற வினைச்சொல் அரிதாகவே பயன்படுத்தப்படுகிறது, ஆனால் 'பொதுவான' போன்ற சொற்களில் அதன் வேர் உள்ளது.",
+          "gloss": "This past participial adjective describes the trees as having grown luxuriantly and densely, contributing to the darkened appearance of the forest."
         },
         {
           "form": "பராரை",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "பரா",
+          "urichol": "உரிச்சொல்",
+          "etymology": "இச்சொல் 'பரா' (பெரிய/பரந்த) என்னும் உரிச்சொல்லும் 'அரை' (அடிமரம்/கீழ்ப்பகுதி) என்னும் பெயரும் இணைந்து உருவானது. 'பரா' என்பது பெரிய, பரந்த, அகன்ற போன்ற பொருள்களைக் குறிக்கும் ஓர் உரிச்சொல். 'அரை' என்பது மரத்தின் அடிமரம் அல்லது கீழ்ப்பகுதியைக் குறிக்கும். பெரிய அடிமரத்தைக் கொண்ட மரங்களைக் குறிக்கிறது. நவீன தமிழில் 'பரா' உரிச்சொல்லாகப் பயன்பாட்டில் இல்லை, 'அரை' என்ற சொல் இடுப்பு அல்லது பாதி என்ற பொருளில் உள்ளது.",
+          "gloss": "This compound noun, formed with an urichol, refers to trees with large, broad, or spreading trunks, indicating their mature and imposing size."
         },
         {
           "form": "மராஅத்து",
-          "root": null,
+          "root": "மராஅம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'மராஅம்' என்னும் பெயர்ச்சொல்லின் ஆறாம் வேற்றுமை உருபு 'அத்து' பெற்று வந்தது. 'மராஅம்' என்பது கடம்ப மரம் (வெண்கடம்பு) அல்லது ஒரு வகை மரம். சங்க இலக்கியத்தில் இது முருகனுக்குரிய மரமாகக் குறிப்பிடப்படுகிறது. 'அத்து' என்பது இங்கு சாரியையாகவும், வேற்றுமை உருபாகவும் வருகிறது. நவீன தமிழிலும் 'கடம்ப மரம்' என்ற சொல் உள்ளது, ஆனால் 'மராஅம்' என்பது இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This genitive noun refers to the Kadamba tree (Neolamarckia cadamba), specifically indicating that the large-trunked trees mentioned are of this species, which is sacred to Murugan."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".(10)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This notation indicates the line number 10 in the original poem, serving as a structural marker."
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "உருள்பூந்",
-          "root": null,
+          "root": "உருள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'உருள்' (சுழலும்/திரளும்) என்னும் வினைச்சொல்லும் 'பூ' (மலர்) என்னும் பெயரும் இணைந்து உருவானது. 'உருள்' என்பது சுழலுதல், உருளுதல், திரளுதல் போன்ற பொருள்களைக் குறிக்கும். 'பூ' என்பது மலரைக் குறிக்கும். இங்கு மலர்கள் திரண்டு, உருண்டு மாலைகளாக இருப்பதைக் குறிக்கிறது. நவீன தமிழிலும் 'உருளுதல்' மற்றும் 'பூ' ஆகிய சொற்கள் அதே பொருள்களில் உள்ளன.",
+          "gloss": "This compound adjective describes the flowers as being round, spherical, or clustered, forming a dense and rolling appearance, particularly when strung into a garland."
         },
         {
           "form": "தண்டார்",
-          "root": null,
+          "root": "தண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'தண்' (குளிர்ச்சி/அழகு) என்னும் உரிச்சொல்லும் 'தார்' (மாலை) என்னும் பெயரும் இணைந்து உருவானது. 'தண்' என்பது இங்கு குளிர்ச்சி, அழகு, இனிமை போன்ற பொருள்களைக் குறிக்கும். 'தார்' என்பது மாலையைக் குறிக்கும். குளிர்ச்சியான, அழகான மாலை என்ற பொருளில் வருகிறது. நவீன தமிழில் 'தண்' உரிச்சொல்லாகப் பயன்பாட்டில் இல்லை, 'தார்' என்பது மாலை என்ற பொருளில் இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This compound noun refers to a cool, beautiful, or fresh garland, emphasizing its aesthetic and refreshing qualities."
         },
         {
           "form": "புரளும்",
-          "root": null,
+          "root": "புரள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'புரள்' என்னும் வினைச்சொல்லின் நிகழ்காலப் பெயரெச்ச வடிவம். 'புரள்' என்பது 'உருளுதல்', 'சுழலுதல்', 'அசைதல்' போன்ற பொருள்களைக் குறிக்கும். இங்கு மாலை மார்பின் மீது அசைந்து கொண்டிருப்பதைக் குறிக்கிறது. நவீன தமிழிலும் 'புரளுதல்' என்ற சொல் அதே பொருளில் பரவலாகப் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This present participial adjective describes the garland as rolling, swaying, or moving gently on the chest, indicating its dynamic presence."
         },
         {
           "form": "மார்பினன்",
-          "root": null,
+          "root": "மார்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'மார்பு' என்னும் பெயர்ச்சொல்லின் ஏழாம் வேற்றுமை உருபு 'இன்' பெற்று, 'அன்' என்னும் ஆண்பால் விகுதி பெற்று வந்தது. 'மார்பு' என்பது நெஞ்சைக் குறிக்கும். 'இன்' என்பது இங்கு உடையவன் என்ற பொருளில் வருகிறது. மார்பை உடையவன் என்ற பொருளில் முருகனைக் குறிக்கிறது. நவீன தமிழிலும் 'மார்பு' என்ற சொல் அதே பொருளில் உள்ளது, ஆனால் 'மார்பினன்' போன்ற கூட்டுச் சொற்கள் இலக்கிய வழக்காகவே உள்ளன.",
+          "gloss": "This noun, formed with a possessive suffix, refers to the one who possesses a chest, specifically denoting Lord Murugan as the wearer of the garland on his chest."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the original text."
         },
         {
           "form": ".(7",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This notation indicates the starting line number 7 of the poetic segment being referenced, serving as a structural marker."
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a hyphen, used to indicate a range or connection between the line numbers in the original text."
         },
         {
           "form": "11)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This notation indicates the ending line number 11 of the poetic segment being referenced, completing the structural marker for the verse range."
         }
       ]
     }
@@ -254,5 +254,28 @@
   "sectionNumber": 2,
   "title": "கடப்பமாலை புரளும் மார்பினன்",
   "lineStart": 7,
-  "lineEnd": 11
+  "lineEnd": 11,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:16+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:52:15+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 30
+  },
+  "yazhi_urai": "மழைமேகங்கள் வானத்துல வாள் மாதிரி மின்னி, பெரிய மழைத்துளிகளைப் பொழியும். கோடைக்காலத்துக்கு அப்புறம் பெய்யுற முதல் மழையால காடு இருண்டு, செழிப்பா இருக்கும். அங்க இருக்கிற கடம்ப மரங்கள் பூத்து, அந்தப் பூக்கள்தான் முருகனோட மார்புல புரளும் மாலைகள்.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:06+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }

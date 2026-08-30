@@ -1,4 +1,5 @@
 import SangamWorld from '../components/world/SangamWorld'
+import { useSearchParams } from 'react-router-dom'
 
 export default function SangamWorldPage() {
   return (

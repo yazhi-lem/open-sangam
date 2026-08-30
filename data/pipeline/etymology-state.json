@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "pipeline": "etymology-extraction",
+  "provider": "openrouter",
+  "model": "google/gemini-2.5-flash",
+  "promptVersion": "etymology-v3",
+  "updatedAt": "2026-08-30T16:56:20+00:00",
+  "totals": {
+    "verses": 2489,
+    "annotated": 32,
+    "remaining": 2457
+  },
+  "poems": {
+    "mullaippattu": {
+      "verses": 18,
+      "annotated": 0,
+      "remaining": 18,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "nedunalvadai": {
+      "verses": 17,
+      "annotated": 0,
+      "remaining": 17,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "porunaratrupadai": {
+      "verses": 21,
+      "annotated": 0,
+      "remaining": 21,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "kurinjipattu": {
+      "verses": 25,
+      "annotated": 0,
+      "remaining": 25,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "sirupanatrupadai": {
+      "verses": 25,
+      "annotated": 0,
+      "remaining": 25,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "pattinappalai": {
+      "verses": 30,
+      "annotated": 0,
+      "remaining": 30,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "thirumurugatrupadai": {
+      "verses": 32,
+      "annotated": 32,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-08-30T16:56:20+00:00"
+    },
+    "perumpanatrupadai": {
+      "verses": 41,
+      "annotated": 0,
+      "remaining": 41,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "malaipadukadam": {
+      "verses": 45,
+      "annotated": 0,
+      "remaining": 45,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "maduraikanchi": {
+      "verses": 63,
+      "annotated": 0,
+      "remaining": 63,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "paripadal": {
+      "verses": 23,
+      "annotated": 0,
+      "remaining": 23,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "pathitrupathu": {
+      "verses": 80,
+      "annotated": 0,
+      "remaining": 80,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "kalithokai": {
+      "verses": 149,
+      "annotated": 0,
+      "remaining": 149,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "akananooru": {
+      "verses": 220,
+      "annotated": 0,
+      "remaining": 220,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "purananooru": {
+      "verses": 400,
+      "annotated": 0,
+      "remaining": 400,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "natrinai": {
+      "verses": 400,
+      "annotated": 0,
+      "remaining": 400,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "kurunthokai": {
+      "verses": 400,
+      "annotated": 0,
+      "remaining": 400,
+      "status": "pending",
+      "lastRunAt": null
+    },
+    "ainkurunooru": {
+      "verses": 500,
+      "annotated": 0,
+      "remaining": 500,
+      "status": "pending",
+      "lastRunAt": null
+    }
+  },
+  "runs": [
+    {
+      "runId": "fedbff63838a",
+      "startedAt": "2026-08-30T16:29:33+00:00",
+      "finishedAt": "2026-08-30T16:31:09+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v1",
+      "attempted": 32,
+      "annotated": 32,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "14607cf9c0e8",
+      "startedAt": "2026-08-30T16:43:27+00:00",
+      "finishedAt": "2026-08-30T16:46:47+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v2",
+      "attempted": 32,
+      "annotated": 32,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "a85c40908320",
+      "startedAt": "2026-08-30T16:51:41+00:00",
+      "finishedAt": "2026-08-30T16:56:20+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 32,
+      "annotated": 32,
+      "failed": 0,
+      "poems": [
+        "thirumurugatrupadai"
+      ],
+      "failures": []
+    }
+  ]
+}

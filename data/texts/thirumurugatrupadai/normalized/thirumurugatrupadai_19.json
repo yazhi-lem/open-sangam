@@ -3,8 +3,8 @@
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
   "sangamTamil": "மீன்பூத் தன்ன தோன்றலர் மீன்சேர்பு\nவளிகிளர்ந் தன்ன செலவினர் வளியிடைத் . . . .(170)\nதீயெழுந் தன்ன திறலினர் தீப்பட\nஉரும்இடித் தன்ன குரலினர் விழுமிய\nஉறுகுறை மருங்கிந்தம் பெறுமுறை கொண்மார்\nஅந்தரக் கொட்பினர் வந்துடன் காணத் . . . .(169 - 174)",
-  "urai": null,
-  "english": null,
+  "urai": "மீன்கள் பூத்ததைப் போன்ற தோற்றமுடைய நட்சத்திரக் கூட்டங்கள் போலத் தோற்றமளிப்பவர்கள். காற்று வீசுவது போல விரைந்த நடையுடையவர்கள். காற்றிலிருந்து தீ எழுவது போல வலிமையானவர்கள். தீப்பற்றி எரியும்போது இடி இடிப்பது போன்ற குரலையுடையவர்கள். சிறந்த குறைகளைத் தீர்க்கும் பொருட்டு, தங்களுக்கு உரிய பங்கை எடுத்துக்கொள்ளும் பொருட்டு, ஆகாயத்தில் சுழன்று வருபவர்கள். வந்து ஒன்றாகக் காணவும்.",
+  "english": "Like stars that blossom as fish, they appear;\nTheir stride, a swift wind’s surge;\nTheir might, a fire born of the wind;\nTheir voice, a thunderclap when fire ignites.\nTo resolve grave flaws, to claim their rightful share,\nThey circle the sky, to come and witness all.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "மீன்பூத்",
-          "root": null,
+          "root": "மீன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மீன் என்பது சங்க இலக்கியத்தில் பொதுவாக நீர்வாழ் உயிரினங்களையும், குறிப்பாக நட்சத்திரங்களையும் குறிக்கும். இங்கு, 'மீன்பூத்' என்பது 'மீன்கள் பூத்தது போல' என்ற உவமைத் தொடரின் ஒரு பகுதியாக, நட்சத்திரங்கள் வானில் பரவி இருப்பதைச் சுட்டுகிறது. பூத்தல் என்பது பரவுதல், மலர்தல் என்ற பொருளில் வந்துள்ளது.",
+          "gloss": "Referring to the stars that appear as if they have blossomed or spread across the sky, forming a celestial cluster."
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தன்ன என்பது 'போன்ற' அல்லது 'ஒத்த' என்ற பொருளில் வரும் ஓர் உவம உருபு. இது சங்க இலக்கியத்தில் பரவலாகப் பயன்படுத்தப்படும் ஒரு சொல்லாகும். இது 'தான்' என்ற சுட்டுப்பெயருடன் 'அன்' சாரியை பெற்று 'அ' விகுதி பெற்று உவமப் பொருளைத் தருகிறது.",
+          "gloss": "An intensifying particle indicating resemblance or likeness, meaning 'like' or 'similar to'."
         },
         {
           "form": "தோன்றலர்",
-          "root": null,
+          "root": "தோன்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தோன்றலர் என்பது 'தோன்றுபவர்கள்' அல்லது 'காட்சி அளிப்பவர்கள்' என்ற பொருளில் வரும் ஒரு வினைமுற்றுப் பெயர். 'தோன்று' என்ற வினையடியுடன் 'அல்' விகுதி பெற்று, 'அர்' விகுதி பெற்று பலர்பால் வினையாலணையும் பெயராக வந்துள்ளது. இது முருகனின் அடியார்கள் அல்லது தேவர்கள் தோற்றத்தைக் குறிக்கிறது.",
+          "gloss": "Those who appear or manifest themselves, referring to the celestial beings or devotees who are visible."
         },
         {
           "form": "மீன்சேர்பு",
-          "root": null,
+          "root": "மீன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மீன்சேர்பு என்பது 'மீன்கள் சேர்வது போல' என்ற பொருளில் வரும் ஒரு வினைத்தொகை. 'மீன்' என்பது நட்சத்திரங்களையும், 'சேர்பு' என்பது சேர்தல், ஒன்று கூடுதல் என்ற பொருளையும் குறிக்கிறது. இது நட்சத்திரக் கூட்டங்கள் போல ஒன்று திரண்டுள்ள தோற்றத்தைக் குறிக்கிறது.",
+          "gloss": "Referring to the manner in which stars gather or cluster together, suggesting a dense and luminous formation."
         }
       ]
     },
@@ -46,59 +46,59 @@
       "words": [
         {
           "form": "வளிகிளர்ந்",
-          "root": null,
+          "root": "வளி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வளிகிளர்ந் என்பது 'வளி கிளர்ந்தது போல' என்ற உவமைத் தொடரின் ஒரு பகுதி. 'வளி' என்பது காற்று. 'கிளர்ந்' என்பது 'கிளர்ந்து' என்ற வினையெச்சத்தின் சுருக்கம், கிளர்தல் என்பது எழுதல், வீசுதல் என்ற பொருளைத் தரும். காற்று வேகமாக வீசுவதைப் போல என்ற பொருளில் வந்துள்ளது.",
+          "gloss": "Referring to the swift and forceful movement, like the stirring or rising of the wind."
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தன்ன என்பது 'போன்ற' அல்லது 'ஒத்த' என்ற பொருளில் வரும் ஓர் உவம உருபு. இது சங்க இலக்கியத்தில் பரவலாகப் பயன்படுத்தப்படும் ஒரு சொல்லாகும். இது 'தான்' என்ற சுட்டுப்பெயருடன் 'அன்' சாரியை பெற்று 'அ' விகுதி பெற்று உவமப் பொருளைத் தருகிறது.",
+          "gloss": "An intensifying particle indicating resemblance or likeness, meaning 'like' or 'similar to'."
         },
         {
           "form": "செலவினர்",
-          "root": null,
+          "root": "செல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "செலவினர் என்பது 'செல்பவர்கள்' அல்லது 'நடையுடையவர்கள்' என்ற பொருளில் வரும் ஒரு வினைமுற்றுப் பெயர். 'செல்' என்ற வினையடியுடன் 'அல்' விகுதி பெற்று, 'இன்' சாரியை பெற்று 'அர்' விகுதி பெற்று பலர்பால் வினையாலணையும் பெயராக வந்துள்ளது. இது முருகனின் அடியார்கள் அல்லது தேவர்களின் நடையின் வேகத்தைக் குறிக்கிறது.",
+          "gloss": "Those who move or proceed, referring to their swift and energetic gait or movement."
         },
         {
           "form": "வளியிடைத்",
-          "root": null,
+          "root": "வளி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வளியிடைத் என்பது 'வளியின் இடையில்' அல்லது 'காற்றின் நடுவில்' என்ற பொருளில் வரும் ஒரு சொல்லாகும். 'வளி' என்பது காற்று, 'இடை' என்பது நடு, இடம் என்ற பொருளைத் தரும். 'த்' என்பது சந்திப் புணர்ச்சியில் வந்த சாரியை. காற்றிலிருந்து தீ எழுவதைப் போன்ற வலிமையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "In the midst of the wind, or from within the wind, indicating the source or context of the subsequent action."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A punctuation mark indicating the end of a sentence or a pause."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A punctuation mark indicating the end of a sentence or a pause."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A punctuation mark indicating the end of a sentence or a pause."
         },
         {
           "form": ".(170)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A parenthetical notation indicating the verse number 170 in the text."
         }
       ]
     },
@@ -108,31 +108,31 @@
       "words": [
         {
           "form": "தீயெழுந்",
-          "root": null,
+          "root": "தீ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தீயெழுந் என்பது 'தீ எழுந்தது போல' என்ற உவமைத் தொடரின் ஒரு பகுதி. 'தீ' என்பது நெருப்பு. 'எழுந்' என்பது 'எழுந்து' என்ற வினையெச்சத்தின் சுருக்கம், எழுதல் என்பது தோன்றுதல், கிளம்புதல் என்ற பொருளைத் தரும். காற்றிலிருந்து தீ கிளம்புவது போல என்ற பொருளில் வந்துள்ளது.",
+          "gloss": "Referring to the emergence or rising of fire, suggesting a sudden and powerful manifestation."
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தன்ன என்பது 'போன்ற' அல்லது 'ஒத்த' என்ற பொருளில் வரும் ஓர் உவம உருபு. இது சங்க இலக்கியத்தில் பரவலாகப் பயன்படுத்தப்படும் ஒரு சொல்லாகும். இது 'தான்' என்ற சுட்டுப்பெயருடன் 'அன்' சாரியை பெற்று 'அ' விகுதி பெற்று உவமப் பொருளைத் தருகிறது.",
+          "gloss": "An intensifying particle indicating resemblance or likeness, meaning 'like' or 'similar to'."
         },
         {
           "form": "திறலினர்",
-          "root": null,
+          "root": "திறல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "திறலினர் என்பது 'திறலுடையவர்கள்' அல்லது 'வலிமையுடையவர்கள்' என்ற பொருளில் வரும் ஒரு வினைமுற்றுப் பெயர். 'திறல்' என்பது வலிமை, ஆற்றல் என்ற பொருளைத் தரும். 'இன்' சாரியை பெற்று 'அர்' விகுதி பெற்று பலர்பால் வினையாலணையும் பெயராக வந்துள்ளது. இது முருகனின் அடியார்கள் அல்லது தேவர்களின் வலிமையைக் குறிக்கிறது.",
+          "gloss": "Those who possess strength or power, referring to their formidable and potent nature."
         },
         {
           "form": "தீப்பட",
-          "root": null,
+          "root": "தீ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தீப்பட என்பது 'தீ பற்றிக் கொள்ள' அல்லது 'தீ எரிய' என்ற பொருளில் வரும் ஒரு வினையெச்சம். 'தீ' என்பது நெருப்பு, 'படு' என்பது பற்றுதல், உண்டாதல் என்ற பொருளைத் தரும். தீப்பற்றி எரியும்போது இடி இடிப்பது போன்ற குரலைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "When fire ignites or catches, indicating the moment of combustion or intense burning."
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "உரும்இடித்",
-          "root": null,
+          "root": "உரும்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "உரும்இடித் என்பது 'உரும் இடித்தது போல' என்ற உவமைத் தொடரின் ஒரு பகுதி. 'உரும்' என்பது இடி. 'இடித்' என்பது 'இடித்து' என்ற வினையெச்சத்தின் சுருக்கம், இடித்தல் என்பது ஒலித்தல், தாக்குதல் என்ற பொருளைத் தரும். இடி இடிப்பது போல என்ற பொருளில் வந்துள்ளது.",
+          "gloss": "Referring to the sound or action of thunder striking, suggesting a loud and powerful impact."
         },
         {
           "form": "தன்ன",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தன்ன என்பது 'போன்ற' அல்லது 'ஒத்த' என்ற பொருளில் வரும் ஓர் உவம உருபு. இது சங்க இலக்கியத்தில் பரவலாகப் பயன்படுத்தப்படும் ஒரு சொல்லாகும். இது 'தான்' என்ற சுட்டுப்பெயருடன் 'அன்' சாரியை பெற்று 'அ' விகுதி பெற்று உவமப் பொருளைத் தருகிறது.",
+          "gloss": "An intensifying particle indicating resemblance or likeness, meaning 'like' or 'similar to'."
         },
         {
           "form": "குரலினர்",
-          "root": null,
+          "root": "குரல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "குரலினர் என்பது 'குரலுடையவர்கள்' அல்லது 'ஒலியுடையவர்கள்' என்ற பொருளில் வரும் ஒரு வினைமுற்றுப் பெயர். 'குரல்' என்பது ஒலி, சத்தம் என்ற பொருளைத் தரும். 'இன்' சாரியை பெற்று 'அர்' விகுதி பெற்று பலர்பால் வினையாலணையும் பெயராக வந்துள்ளது. இது முருகனின் அடியார்கள் அல்லது தேவர்களின் குரலின் தன்மையைக் குறிக்கிறது.",
+          "gloss": "Those who possess a voice or sound, referring to their powerful and resonant vocalizations."
         },
         {
           "form": "விழுமிய",
-          "root": null,
+          "root": "விழு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "விழுமிய என்பது 'சிறந்த', 'மேலான' என்ற பொருளைத் தரும் ஒரு பெயரடை. 'விழு' என்ற வினையடியுடன் 'மி' விகுதி பெற்று 'அ' விகுதி பெற்று பெயரடையாக வந்துள்ளது. இது குறைகளின் தன்மையைக் குறிக்கிறது, அதாவது சிறந்த குறைகள் அல்லது முக்கியமான பிரச்சனைகள்.",
+          "gloss": "Excellent, noble, or distinguished, describing the quality of the 'kurai' (deficiencies or requests) as being significant and worthy."
         }
       ]
     },
@@ -176,31 +176,31 @@
       "words": [
         {
           "form": "உறுகுறை",
-          "root": null,
+          "root": "உறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "உறுகுறை என்பது 'உற்ற குறை' அல்லது 'ஏற்பட்ட குறை' என்ற பொருளில் வரும் ஒரு வினைத்தொகை. 'உறு' என்பது ஏற்படுதல், உண்டாதல் என்ற பொருளைத் தரும். 'குறை' என்பது குறைபாடு, பிரச்சனை, வேண்டுகோள் என்ற பொருளைத் தரும். இது மக்களுக்கு ஏற்பட்ட குறைகள் அல்லது வேண்டுகோள்களைக் குறிக்கிறது.",
+          "gloss": "The deficiencies or shortcomings that have arisen, referring to the problems or requests that need to be addressed."
         },
         {
           "form": "மருங்கிந்தம்",
-          "root": null,
+          "root": "மருங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மருங்கிந்தம் என்பது 'மருங்கில் தம்' என்ற சொற்களின் புணர்ச்சி. 'மருங்கு' என்பது பக்கம், இடம் என்ற பொருளைத் தரும். 'இன்' என்பது சாரியை. 'தம்' என்பது தமக்குரிய என்ற பொருளில் வரும் சுட்டுப்பெயர். இது தமக்குரிய பங்கை அல்லது தமக்குரிய இடத்தில் என்ற பொருளைத் தருகிறது.",
+          "gloss": "In their vicinity or at their side, referring to the place or context where their share or portion is to be received."
         },
         {
           "form": "பெறுமுறை",
-          "root": null,
+          "root": "பெறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பெறுமுறை என்பது 'பெறும் முறை' அல்லது 'பெறுகின்ற முறை' என்ற பொருளில் வரும் ஒரு வினைத்தொகை. 'பெறு' என்பது பெறுதல், அடைதல் என்ற பொருளைத் தரும். 'முறை' என்பது வழி, பங்கு, உரிமை என்ற பொருளைத் தரும். இது தமக்குரிய பங்கை அல்லது உரிமையைப் பெறும் முறையைக் குறிக்கிறது.",
+          "gloss": "The manner or method of receiving, referring to the rightful share or portion that is to be obtained."
         },
         {
           "form": "கொண்மார்",
-          "root": null,
+          "root": "கொள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கொண்மார் என்பது 'கொள்ளும் பொருட்டு' அல்லது 'பெறும் பொருட்டு' என்ற பொருளில் வரும் ஒரு வியங்கோள் வினைமுற்று. 'கொள்' என்ற வினையடியுடன் 'மார்' விகுதி பெற்று, ஒரு செயலைச் செய்யும் நோக்கத்தைக் குறிக்கிறது. இது தமக்குரிய பங்கை எடுத்துக்கொள்ளும் நோக்கத்தைக் குறிக்கிறது.",
+          "gloss": "In order to take or receive, indicating the purpose or intention of their action, which is to obtain their rightful share."
         }
       ]
     },
@@ -210,73 +210,73 @@
       "words": [
         {
           "form": "அந்தரக்",
-          "root": null,
+          "root": "அந்தரம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "அந்தரக் என்பது 'அந்தரம்' என்ற சொல்லின் புணர்ச்சி. 'அந்தரம்' என்பது ஆகாயம், வானம் என்ற பொருளைத் தரும். 'க்' என்பது சந்திப் புணர்ச்சியில் வந்த சாரியை. ஆகாயத்தில் சுழன்று வருபவர்களைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "Pertaining to the sky or atmosphere, indicating the celestial realm or the space above."
         },
         {
           "form": "கொட்பினர்",
-          "root": null,
+          "root": "கொட்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கொட்பினர் என்பது 'கொட்பு உடையவர்கள்' அல்லது 'சுழன்று வருபவர்கள்' என்ற பொருளில் வரும் ஒரு வினைமுற்றுப் பெயர். 'கொட்பு' என்பது சுழற்சி, அலைதல் என்ற பொருளைத் தரும். 'இன்' சாரியை பெற்று 'அர்' விகுதி பெற்று பலர்பால் வினையாலணையும் பெயராக வந்துள்ளது. இது ஆகாயத்தில் சுழன்று வருபவர்களைக் குறிக்கிறது.",
+          "gloss": "Those who revolve or move in a circular path, referring to the celestial beings who traverse the sky."
         },
         {
           "form": "வந்துடன்",
-          "root": null,
+          "root": "வா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வந்துடன் என்பது 'வந்து உடன்' என்ற சொற்களின் புணர்ச்சி. 'வந்து' என்பது 'வா' என்ற வினையடியின் வினையெச்சம், வருதல் என்ற பொருளைத் தரும். 'உடன்' என்பது சேர்ந்து, ஒன்றாக என்ற பொருளைத் தரும். இது அனைவரும் ஒன்றாக வந்து காண வேண்டும் என்ற பொருளைத் தருகிறது.",
+          "gloss": "Having come together, indicating the collective arrival and presence of multiple individuals."
         },
         {
           "form": "காணத்",
-          "root": null,
+          "root": "காண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "காணத் என்பது 'காண' என்ற வினையெச்சத்தின் புணர்ச்சி. 'காண்' என்பது பார்த்தல், தரிசித்தல் என்ற பொருளைத் தரும். 'த்' என்பது சந்திப் புணர்ச்சியில் வந்த சாரியை. வந்து ஒன்றாகக் காண வேண்டும் என்ற பொருளைத் தருகிறது.",
+          "gloss": "In order to see or behold, indicating the purpose or intention of their collective arrival."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A punctuation mark indicating the end of a sentence or a pause."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A punctuation mark indicating the end of a sentence or a pause."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A punctuation mark indicating the end of a sentence or a pause."
         },
         {
           "form": ".(169",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A parenthetical notation indicating the starting verse number 169 in the text."
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A hyphen used to indicate a range or connection between numbers."
         },
         {
           "form": "174)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "A parenthetical notation indicating the ending verse number 174 in the text, completing the range."
         }
       ]
     }
@@ -288,5 +288,28 @@
   "sectionNumber": 19,
   "title": "தேவர்கள் வருகின்ற காட்சி",
   "lineStart": 169,
-  "lineEnd": 174
+  "lineEnd": 174,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:21+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:53:32+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 34
+  },
+  "yazhi_urai": "மீன் கூட்டங்கள் மாதிரி மின்னுவாங்க. காத்து மாதிரி வேகமா நடப்பாங்க. காத்துல தீ கிளம்புற மாதிரி பலசாலிங்க. தீ பிடிச்சு எரியும்போது இடி இடிக்கிற மாதிரி சத்தம் போடுவாங்க. அவங்க குறைகளைத் தீர்க்கவும், அவங்களுக்கு கிடைக்க வேண்டியதை வாங்கவும் ஆகாயத்துல சுத்தி வருவாங்க. வந்து எல்லாரும் பாருங்க.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:13+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }

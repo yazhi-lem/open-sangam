@@ -3,7 +3,6 @@ import Button from '../components/ui/Button'
 import Badge from '../components/ui/Badge'
 import Card from '../components/ui/Card'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
-import useAppStore from '../store/useAppStore'
 
 const TINAI_HIGHLIGHTS = [
   { id: 'kurinji', tamil: 'குறிஞ்சி', english: 'Mountains', mood: 'Union & Passion', icon: '🏔️', variant: 'kurinji' },
@@ -13,16 +12,27 @@ const TINAI_HIGHLIGHTS = [
   { id: 'palai', tamil: 'பாலை', english: 'Wasteland', mood: 'Separation & Journey', icon: '🏜️', variant: 'palai' },
 ]
 
+const PATTUPPATTU_IDYLLS = [
+  { id: 'thirumurugatrupadai', tamil: 'திருமுருகாற்றுப்படை', english: 'Thirumurugatrupadai', desc: 'Hymn to Murugan', icon: '🙏' },
+  { id: 'porunaratrupadai', tamil: 'பொருநராற்றுப்படை', english: 'Porunaratruppadai', desc: 'Guide to a Bard', icon: '🎶' },
+  { id: 'sirupanatrupadai', tamil: 'சிறுபாணாற்றுப்படை', english: 'Sirupanarruppadai', desc: 'Guide to a Lesser Bard', icon: '🎻' },
+  { id: 'perumpanatrupadai', tamil: 'பெரும்பாணாற்றுப்படை', english: 'Perumpanarruppadai', desc: 'Guide to a Greater Bard', icon: '🎺' },
+  { id: 'mullaippattu', tamil: 'முல்லைப்பாட்டு', english: 'Mullaippattu', desc: 'Forest Song (Love)', icon: '🌲' },
+  { id: 'maduraikkanchi', tamil: 'மதுரைக்காஞ்சி', english: 'Maduraikkanchi', desc: 'Praise of Madurai', icon: '🏛️' },
+  { id: 'nedunalvadai', tamil: 'நெடுநல்வாடை', english: 'Nedunalvadai', desc: 'Long Good Winter (Love)', icon: '❄️' },
+  { id: 'kurinchippattu', tamil: 'குறிஞ்சிப்பாட்டு', english: 'Kurinchippattu', desc: 'Mountain Song (Love)', icon: '🌸' },
+  { id: 'pattinappalai', tamil: 'பட்டினப்பாலை', english: 'Pattinappalai', desc: 'Praise of Kaveripumpattinam', icon: '🚢' },
+  { id: 'malaipadukadam', tamil: 'மலைபடுகடாம்', english: 'Malaipatukatam', desc: 'Echo of the Mountain (Nature)', icon: '⛰️' },
+]
+
 const STATS = [
   { value: '18', label: 'Classical Collections', sub: '8 Anthologies & 10 Idylls' },
-  { value: '2,381', label: 'Classical Poems', sub: 'Preserved in digital JSON' },
-  { value: '473', label: 'Sangam Poets', sub: 'Men & women of antiquity' },
-  { value: '2,000+', label: 'Years of Tradition', sub: 'c. 300 BCE – 300 CE' },
+  { value: '2,489', label: 'Classical Poems', sub: 'Preserved in digital JSON' },
+  { value: '519', label: 'Sangam Poets', sub: 'Men & women of antiquity' },
+  { value: '2,500+', label: 'Years of Tradition', sub: 'c. 500 BCE – 300 CE' },
 ]
 
 export default function Home() {
-  const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
-
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-24">
       {/* Hero Section */}
@@ -35,7 +45,7 @@ export default function Home() {
 
         <Reveal delay={0.1} duration={0.6}>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-primary leading-[1.1]">
-            Explore 2,000 Years of<br />
+            Explore 2,500 Years of<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 dark:from-amber-400 dark:via-amber-300 dark:to-amber-500">
               Classical Tamil Poetry
             </span>
@@ -49,28 +59,21 @@ export default function Home() {
           </p>
         </Reveal>
 
+        <Reveal delay={0.25} duration={0.6}>
+          <p className="tamil text-lg sm:text-xl text-accent font-semibold max-w-2xl mx-auto leading-relaxed">
+            🙏 வணக்கம்! எங்கள் புலவர்களுடன் உரையாடுங்கள் — சங்க அவை உங்களை அழைக்கிறது! ஒன்றாக தமிழை மேலும் வளர்ப்போம்.
+          </p>
+        </Reveal>
+
         {/* Hero CTAs & Quick Search Input */}
         <Reveal delay={0.3} duration={0.6}>
           <div className="space-y-4 pt-2">
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Link to="/book">
-                <Button size="lg" icon="📖">
-                  Open Reader & Library →
+              <Link to="/avai">
+                <Button size="lg" variant="primary" icon="🏛️" className="glow-breathe tamil font-bold">
+                  புலவர்களுடன் பேசுங்கள்
                 </Button>
               </Link>
-              <Link to="/world">
-                <Button size="lg" variant="secondary" icon="🗺️">
-                  Enter Sangam World
-                </Button>
-              </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                icon="🔍"
-                onClick={() => setCommandPaletteOpen(true)}
-              >
-                Search Corpus (⌘K)
-              </Button>
             </div>
 
             <p className="text-xs text-faint">
@@ -118,6 +121,38 @@ export default function Home() {
             </Card>
           </Reveal>
         ))}
+      </section>
+
+      {/* Pattuppattu - Ten Idylls Quick-Nav */}
+      <section className="space-y-8">
+        <div className="text-center space-y-2">
+          <Badge variant="outline" size="sm">Ten Idylls Collection</Badge>
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary">பத்துப்பாட்டு · Ten Idylls</h2>
+          <p className="text-muted text-sm max-w-xl mx-auto">
+            A collection of ten long poems, offering rich insights into Sangam life, nature, and kingship.
+          </p>
+        </div>
+        <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {PATTUPPATTU_IDYLLS.map((idyll) => (
+            <Link key={idyll.id} to={`/book/${idyll.id}`} className="group">
+              <Card variant="interactive" className="p-5 text-center space-y-3 h-full flex flex-col justify-between">
+                <div className="text-4xl transform group-hover:scale-110 transition-transform duration-200" aria-hidden="true">
+                  {idyll.icon}
+                </div>
+                <div>
+                  <Badge variant="default" size="sm" className="mb-2">
+                    {idyll.tamil}
+                  </Badge>
+                  <p className="text-sm font-semibold text-primary">{idyll.english}</p>
+                  <p className="text-xs text-faint mt-1">{idyll.desc}</p>
+                </div>
+                <span className="text-xs font-semibold text-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                  Read Idyll →
+                </span>
+              </Card>
+            </Link>
+          ))}
+        </RevealGroup>
       </section>
 
       {/* Tiṇai Landscapes Quick-Nav */}
@@ -171,7 +206,7 @@ export default function Home() {
             {
               icon: '🔍',
               title: 'Click-to-Define Etymology',
-              desc: 'Tap any word in a verse to unveil its root verb, grammatical class (Urichol), and 2,000-year-old etymology.',
+              desc: 'Tap any word in a verse to unveil its root verb, grammatical class (Urichol), and 2,500-year-old etymology.',
               badge: 'Grammar AI',
             },
             {
@@ -210,8 +245,11 @@ export default function Home() {
             <Link to="/book">
               <Button size="lg">Explore Library →</Button>
             </Link>
+            <Link to="/avai">
+              <Button size="lg" variant="secondary">Chat with Sangam Avai 🏛️</Button>
+            </Link>
             <Link to="/graph">
-              <Button size="lg" variant="secondary">View Connections Graph</Button>
+              <Button size="lg" variant="outline">View Connections Graph</Button>
             </Link>
           </div>
         </Card>

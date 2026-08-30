@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "ஆரம் தாழ்ந்த அம்பகட்டு மார்பின்\nசெம்பொறி வாங்கிய மொய்ம்பின் சுடர்விடுபு\t. . . .(105)\nவண்புகழ் நிறைந்து வசிந்துவாங்கு நிமிர்தோள்",
   "urai": "சந்தனப் பூச்சோடு முத்தாரம் தொங்கும் அவன் மேனியில் செம்புள்ளிகள் காணப்பட்டன. அவை அவன் வாங்கிக் கொண்ட தழும்புகள். வளம் மிக்க அவனது இரண்டு தோள்களில் பன்னிரண்டு கைகள்.",
-  "english": null,
+  "english": "On his broad chest, adorned with garlands and pearls,\nred marks were etched, scars of battles won,\nhis shoulders, rich in fame, twelve arms ascending.",
   "lines": [
     {
       "lineNumber": 1,
@@ -14,29 +14,29 @@
           "form": "ஆரம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "ஆரம் என்ற சொல் சங்க இலக்கியத்தில் சந்தனம், முத்துமாலை ஆகிய இரு பொருள்களிலும் பயன்படுத்தப்பட்டுள்ளது. இச்சொல் 'ஆரு' என்ற வேர்ச்சொல்லில் இருந்து வந்திருக்கலாம், அதன் பொருள் 'அழகு' அல்லது 'நறுமணம்' என்பதாகும். தற்காலத் தமிழில் 'ஆரம்' என்பது பெரும்பாலும் முத்துமாலையையே குறிக்கிறது, சந்தனத்தைக் குறிப்பது குறைவு.",
+          "gloss": "This word refers to a fragrant sandalwood paste or a pearl necklace, both of which are considered adornments for the body, here suggesting the divine beauty of Murugan."
         },
         {
           "form": "தாழ்ந்த",
-          "root": null,
+          "root": "தாழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தாழ்ந்த என்பது 'தாழ்' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'தாழ்' என்பது 'கீழே தொங்குதல்' அல்லது 'குறைதல்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது பெரும்பாலும் தொங்குதல், பணிதல், அல்லது தாழ்வடைதல் போன்ற செயல்களைக் குறிக்கிறது. தற்காலத் தமிழிலும் இதே பொருள் நிலைத்திருக்கிறது.",
+          "gloss": "This past participial adjective describes something that is hanging down or suspended, indicating the way the adornments rest upon the chest."
         },
         {
           "form": "அம்பகட்டு",
-          "root": null,
+          "root": "அம்பகம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "அம்பகட்டு என்பது 'அம்பகம்' என்ற சொல்லின் திரிபு. 'அம்பகம்' என்பது 'அழகு' அல்லது 'விரிவு' என்ற பொருளைத் தரும். 'அம்' என்பது அழகைக் குறிக்கும் ஒரு முன்னொட்டு, 'பகம்' என்பது பகுதியைக் குறிக்கும். இச்சொல் மார்பின் அழகிய விரிந்த தன்மையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் இச்சொல் வழக்கில் இல்லை.",
+          "gloss": "This word describes something that is broad, expansive, and beautiful, specifically referring to the wide and comely chest of Murugan."
         },
         {
           "form": "மார்பின்",
-          "root": null,
+          "root": "மார்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மார்பின் என்பது 'மார்பு' என்ற பெயர்ச்சொல்லின் ஆறாம் வேற்றுமை உருபு (உடைய). 'மார்பு' என்பது உடலின் ஒரு பகுதியைக் குறிக்கிறது. சங்க இலக்கியத்தில் இது வீரம், அழகு ஆகியவற்றின் அடையாளமாகக் கருதப்பட்டது. தற்காலத் தமிழிலும் 'மார்பு' என்ற சொல் அதே பொருளில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This genitive form of 'மார்பு' (chest) indicates possession or relation, signifying the chest upon which the adornments are placed."
         }
       ]
     },
@@ -46,59 +46,59 @@
       "words": [
         {
           "form": "செம்பொறி",
-          "root": null,
+          "root": "செம்பொறி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "செம்பொறி என்பது 'செம்மை' (சிவப்பு) மற்றும் 'பொறி' (புள்ளி, அடையாளம்) ஆகிய இரு சொற்களின் புணர்ச்சி. இது சிவந்த புள்ளிகள் அல்லது தழும்புகளைக் குறிக்கிறது. சங்க இலக்கியத்தில் இது வீரத்தின் அடையாளமாகக் கருதப்பட்டது. தற்காலத் தமிழில் 'பொறி' என்பது பொதுவாக இயந்திரப் பகுதியைக் குறிக்கப் பயன்படுத்தப்பட்டாலும், 'செம்பொறி' என்ற கூட்டுச்சொல் அரிதாகவே பயன்படுத்தப்படுகிறது.",
+          "gloss": "This compound word refers to red marks or spots, often interpreted as scars or birthmarks, which are seen as signs of valor and divine power on Murugan's body."
         },
         {
           "form": "வாங்கிய",
-          "root": null,
+          "root": "வாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வாங்கிய என்பது 'வாங்கு' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'வாங்கு' என்பது 'பெறுதல்', 'ஏற்றுக்கொள்ளுதல்' அல்லது 'வளைதல்' என்ற பொருள்களைத் தரும். இங்குக் காயங்களை ஏற்றுக்கொண்டது என்ற பொருளில் வருகிறது. தற்காலத் தமிழிலும் 'வாங்கு' என்ற சொல் இதே பொருள்களில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This past participial adjective indicates something that has been received, acquired, or taken, suggesting the marks on Murugan's body were willingly borne or acquired through battle."
         },
         {
           "form": "மொய்ம்பின்",
-          "root": null,
+          "root": "மொய்ம்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மொய்ம்பின் என்பது 'மொய்ம்பு' என்ற பெயர்ச்சொல்லின் ஆறாம் வேற்றுமை உருபு. 'மொய்ம்பு' என்பது 'வலிமை', 'திண்மை' அல்லது 'தோள்வலி' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது வீரத்தின் அடையாளமாகக் கருதப்பட்டது. தற்காலத் தமிழில் இச்சொல் அரிதாகவே பயன்படுத்தப்படுகிறது, ஆனால் அதன் பொருள் 'வலிமை' என்றே அறியப்படுகிறது.",
+          "gloss": "This genitive form of 'மொய்ம்பு' (strength, might) indicates the source or attribute of the strength, referring to the powerful and robust physique of Murugan."
         },
         {
           "form": "சுடர்விடுபு",
-          "root": null,
+          "root": "சுடர்விடு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "சுடர்விடுபு என்பது 'சுடர்விடு' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம். 'சுடர்' என்பது ஒளி, 'விடு' என்பது வெளிவிடுதல். எனவே, 'சுடர்விடு' என்பது 'ஒளி வீசுதல்' அல்லது 'பிரகாசித்தல்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது தெய்வீக ஒளியைக் குறிக்கப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் இதே பொருள் நிலைத்திருக்கிறது.",
+          "gloss": "This adverbial participle describes an action of emitting light or shining brightly, emphasizing the radiant and divine aura emanating from Murugan's powerful form."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark indicating the end of a phrase or sentence in the original text, not a word with semantic content."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark indicating the end of a phrase or sentence in the original text, not a word with semantic content."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark indicating the end of a phrase or sentence in the original text, not a word with semantic content."
         },
         {
           "form": ".(105)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This notation indicates the verse number (105) in the Thirumurugatrupadai text, serving as a structural marker rather than a word with linguistic meaning."
         }
       ]
     },
@@ -108,31 +108,31 @@
       "words": [
         {
           "form": "வண்புகழ்",
-          "root": null,
+          "root": "வண்புகழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வண்புகழ் என்பது 'வண்மை' (வளம், கொடை) மற்றும் 'புகழ்' (பெருமை, கீர்த்தி) ஆகிய இரு சொற்களின் புணர்ச்சி. இது சிறந்த புகழ் அல்லது பெருமைமிக்க கீர்த்தியைக் குறிக்கிறது. சங்க இலக்கியத்தில் இது ஒரு தலைவனின் அல்லது தெய்வத்தின் சிறப்பைக் குறிக்கப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'புகழ்' என்ற சொல் அதே பொருளில் பயன்படுத்தப்படுகிறது, ஆனால் 'வண்புகழ்' என்ற கூட்டுச்சொல் இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This compound word signifies abundant fame, glorious reputation, or generous renown, highlighting the widespread and esteemed recognition of Murugan's virtues and deeds."
         },
         {
           "form": "நிறைந்து",
-          "root": null,
+          "root": "நிறை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நிறைந்து என்பது 'நிறை' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம். 'நிறை' என்பது 'நிரம்புதல்', 'முழுமையடைதல்' அல்லது 'மிகுதியாக இருத்தல்' என்ற பொருள்களைத் தரும். சங்க இலக்கியத்தில் இது ஒரு பண்பு அல்லது பொருள் முழுமையாக இருப்பதைக் குறிக்கிறது. தற்காலத் தமிழிலும் இதே பொருள் நிலைத்திருக்கிறது.",
+          "gloss": "This adverbial participle indicates a state of being filled, abundant, or complete, suggesting that Murugan's shoulders are fully endowed with or embody his glorious fame."
         },
         {
           "form": "வசிந்துவாங்கு",
-          "root": null,
+          "root": "வசிந்துவாங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வசிந்துவாங்கு என்பது 'வசிந்து' (வளைந்து) மற்றும் 'வாங்கு' (பெறுதல், வளைதல்) ஆகிய இரு சொற்களின் கூட்டு. இது வளைந்து திரண்ட அல்லது வலிமையுடன் வளைந்த தோள்களைக் குறிக்கிறது. 'வசி' என்பது வளைதல், 'வாங்கு' என்பது வளைந்து நிற்றல். சங்க இலக்கியத்தில் இது வலிமையான, திரண்ட தோள்களைக் குறிக்கப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழில் இச்சொல் வழக்கில் இல்லை.",
+          "gloss": "This compound word describes shoulders that are muscular, well-formed, and gracefully curved, indicating both strength and aesthetic appeal, characteristic of a heroic figure."
         },
         {
           "form": "நிமிர்தோள்",
-          "root": null,
+          "root": "நிமிர்தோள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நிமிர்தோள் என்பது 'நிமிர்' (உயர்ந்த, நேராக) மற்றும் 'தோள்' (புயம்) ஆகிய இரு சொற்களின் புணர்ச்சி. இது உயர்ந்த, நேராக நிமிர்ந்த தோள்களைக் குறிக்கிறது. சங்க இலக்கியத்தில் இது வீரம், கம்பீரம் ஆகியவற்றின் அடையாளமாகக் கருதப்பட்டது. தற்காலத் தமிழிலும் 'தோள்' என்ற சொல் அதே பொருளில் பயன்படுத்தப்படுகிறது, ஆனால் 'நிமிர்தோள்' என்ற கூட்டுச்சொல் இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This compound word refers to shoulders that are erect, lofty, and strong, symbolizing the majestic and powerful bearing of Murugan."
         }
       ]
     }
@@ -144,5 +144,28 @@
   "sectionNumber": 12,
   "title": "பன்னிரு கைகளின் தொழில்கள்",
   "lineStart": 104,
-  "lineEnd": 118
+  "lineEnd": 118,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:18+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:52:45+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 16
+  },
+  "yazhi_urai": "சந்தனம் பூசி, முத்து மாலைகள் தொங்குற அவனோட அகன்ற மார்புல, செம்புள்ளிகள் இருந்துச்சு. அந்தப் புள்ளிகள் எல்லாம் அவன் சண்டையில வாங்கின தழும்புகள். அவனோட தோள்கள் ரொம்ப வலிமையா, புகழோட இருந்துச்சு.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:09+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }

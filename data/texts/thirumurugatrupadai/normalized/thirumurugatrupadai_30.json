@@ -3,8 +3,8 @@
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
   "sangamTamil": "வேறுபல் உருவின் குறும்பல் கூளியர்\nசாறுஅயர் களத்து வீறுபெறத் தோன்றி,\n'அளியன் றானே முதுவாய் இரவலன் வந்தோன்\nபெரும!நின் வண்புகழ் நயந்'தென . . . .(285)\nஇனியவும் நல்லவும் நனிபல ஏத்தித் . . . .(282 - 286)",
-  "urai": null,
-  "english": null,
+  "urai": "பலவிதமான உருவங்களை உடைய சிறிய பூதங்கள், விழா நடக்கும் களத்தில் கம்பீரமாகத் தோன்றி, \"பெரியவனே! இந்த முதுமையான இரவலன் உன்னுடைய வள்ளல் தன்மையைப் புகழ்ந்து வந்திருக்கிறான், இவன் இரங்கத்தக்கவன்\" என்று பல இனிய, நல்ல சொற்களால் போற்றிப் புகழ்ந்தன.",
+  "english": "The small goblins, of varied forms, appeared with grandeur in the festive ground, proclaiming, \"O Great One! This aged bard, a pitiable soul, has come, drawn by your generous fame!\" Thus, with many sweet and good words, they praised him.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "வேறுபல்",
-          "root": null,
+          "root": "வேறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வேறு என்பது 'பல்' என்னும் சொல்லுடன் இணைந்து 'பல வேறுபட்ட' என்ற பொருளைத் தருகிறது. 'வேறு' என்பது பிரித்தல், வேறுபடுத்துதல் என்ற பொருளில் சங்க இலக்கியத்தில் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழில் 'வேறு' என்பது 'மற்றொன்று' அல்லது 'வித்தியாசம்' என்ற பொருளில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This compound word signifies 'various' or 'diverse', indicating the multitude of forms possessed by the goblins."
         },
         {
           "form": "உருவின்",
-          "root": null,
+          "root": "உரு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "உரு என்பது 'வடிவம்' அல்லது 'தோற்றம்' என்ற பொருளைத் தரும் ஒரு பெயர்ச்சொல். 'இன்' என்பது ஐந்தாம் வேற்றுமை உருபாக வந்து, 'உடைய' அல்லது 'கொண்ட' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'உரு' என்பது அழகு, வடிவம் இரண்டையும் குறிக்கும். நவீன தமிழில் 'உருவம்' என்றே பெரும்பாலும் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word, meaning 'of forms' or 'having forms', describes the goblins as possessing various shapes or appearances."
         },
         {
           "form": "குறும்பல்",
-          "root": null,
+          "root": "குறும்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "குறும் என்பது 'சிறிய' என்ற பொருளைத் தரும் உரிச்சொல். 'பல்' என்பது 'பல' என்ற எண்ணிக்கையைக் குறிக்கும். இரண்டும் இணைந்து 'சிறிய பல' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'குறும்' என்பது குறுகிய, சிறிய என்ற பொருளில் வரும். நவீன தமிழில் 'குறுகிய' என்றே பெரும்பாலும் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This compound word translates to 'many small' or 'numerous small', characterizing the goblins as being small in stature but many in number."
         },
         {
           "form": "கூளியர்",
-          "root": null,
+          "root": "கூளி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கூளி என்பது 'பூதம்' அல்லது 'பேய்கள்' என்ற பொருளைத் தரும் ஒரு பெயர்ச்சொல். 'அர்' என்பது பன்மை விகுதி. சங்க இலக்கியத்தில் கூளியர் என்பது பெரும்பாலும் போர்க்களத்தில் பிணந்தின்னும் பேய்களைக் குறிக்கும். நவீன தமிழில் இச்சொல் வழக்கொழிந்துவிட்டது, அல்லது புராணக் கதைகளில் மட்டுமே காணப்படுகிறது.",
+          "gloss": "This word refers to 'goblins' or 'demons', specifically the small, diverse-looking supernatural beings attending the deity."
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "சாறுஅயர்",
-          "root": null,
+          "root": "சாறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "சாறு என்பது 'விழா' அல்லது 'திருவிழா' என்ற பொருளைத் தரும் பெயர்ச்சொல். அயர் என்பது 'நடத்துதல்' அல்லது 'செய்தல்' என்ற பொருளைத் தரும் வினைச்சொல். இரண்டும் இணைந்து 'விழா நடத்தும்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'சாறு' என்பது பெரும்பாலும் தெய்வ வழிபாட்டு விழாவைக் குறிக்கும். நவீன தமிழில் 'சாறு' என்பது பழச்சாறு என்ற பொருளில் மட்டுமே பரவலாகப் பயன்படுத்தப்படுகிறது, விழாவைக் குறிக்க 'திருவிழா' அல்லது 'விழா' என்ற சொற்கள் பயன்படுத்தப்படுகின்றன.",
+          "gloss": "This compound word means 'performing a festival' or 'celebrating a feast', indicating the context of a festive gathering or ritual."
         },
         {
           "form": "களத்து",
-          "root": null,
+          "root": "களம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "களம் என்பது 'இடம்' அல்லது 'போர்க்களம்' என்ற பொருளைத் தரும் பெயர்ச்சொல். 'அத்து' என்பது ஏழாம் வேற்றுமை உருபாக வந்து, 'இடத்தில்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'களம்' என்பது போர்க்களம், விழா நடக்கும் இடம், அல்லது பொதுவான இடம் ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'களம்' என்பது பெரும்பாலும் போர்க்களம், அல்லது ஒரு குறிப்பிட்ட துறை என்ற பொருளில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word, meaning 'in the place' or 'at the site', specifies the location where the festival is being celebrated."
         },
         {
           "form": "வீறுபெறத்",
-          "root": null,
+          "root": "வீறு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வீறு என்பது 'பெருமை' அல்லது 'கம்பீரம்' என்ற பொருளைத் தரும் பெயர்ச்சொல். 'பெற' என்பது 'அடைய' என்ற பொருளைத் தரும் வினையெச்சம். இரண்டும் இணைந்து 'பெருமையுடன் அடைய' அல்லது 'கம்பீரமாக' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'வீறு' என்பது வலிமை, சிறப்பு, பெருமை ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'வீறு' என்பது பெரும்பாலும் 'வீறுகொண்டு எழுதல்' போன்ற சொற்றொடர்களில் காணப்படுகிறது.",
+          "gloss": "This word phrase means 'to obtain grandeur' or 'majestically', describing the manner in which the goblins appeared at the festival ground."
         },
         {
           "form": "தோன்றி,",
-          "root": null,
+          "root": "தோன்று",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தோன்றி என்பது 'தோன்றுதல்' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம். 'தோன்று' என்பது 'வெளிப்படுதல்' அல்லது 'காட்சி அளித்தல்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் 'தோன்று' என்பது தோற்றம், வெளிப்பாடு ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'தோன்றுதல்' என்பது அதே பொருளில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word, meaning 'having appeared' or 'manifesting', describes the action of the goblins emerging into view."
         }
       ]
     },
@@ -80,38 +80,38 @@
       "words": [
         {
           "form": "'அளியன்",
-          "root": null,
+          "root": "அளி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "அளி என்பது 'இரக்கம்' அல்லது 'கருணை' என்ற பொருளைத் தரும் பெயர்ச்சொல். 'அன்' என்பது ஆண்பால் ஒருமை விகுதி. 'அளியன்' என்பது 'இரக்கத்திற்குரியவன்' அல்லது 'பரிதாபத்திற்குரியவன்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'அளி' என்பது கருணை, அன்பு, இரக்கம் ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'அளி' என்பது 'கொடு' என்ற பொருளிலும், 'அளித்தல்' என்ற வினைச்சொல்லிலும் பயன்படுத்தப்படுகிறது, ஆனால் 'அளியன்' என்பது வழக்கொழிந்துவிட்டது.",
+          "gloss": "This word means 'he is pitiable' or 'he is deserving of compassion', referring to the old bard who has come seeking patronage."
         },
         {
           "form": "றானே",
-          "root": null,
+          "root": "தான்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தான் என்பது ஒரு முன்னிலைச் சுட்டுப் பெயர். 'ஏ' என்பது ஒரு அசைச்சொல் அல்லது தேற்றேகாரம், உறுதிப்படுத்தும் பொருளில் வரும். 'றானே' என்பது 'தானே' என்பதன் புணர்ச்சி வடிவம், 'அவனே' அல்லது 'அவரே' என்ற பொருளில் உறுதிப்படுத்துகிறது. சங்க இலக்கியத்தில் 'தான்' என்பது தன்னைக் குறிக்கும், அல்லது ஒருவரைச் சுட்டும். நவீன தமிழில் 'தான்' என்பது அதே பொருளில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word, a combination of 'தான்' (he/himself) and 'ஏ' (an emphatic particle), means 'indeed he' or 'he himself', emphasizing the identity of the pitiable bard."
         },
         {
           "form": "முதுவாய்",
-          "root": null,
+          "root": "முது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "முது என்பது 'பழமையான' அல்லது 'முதிர்ந்த' என்ற பொருளைத் தரும் உரிச்சொல். வாய் என்பது 'சொல்' அல்லது 'பேச்சு' என்ற பொருளைத் தரும் பெயர்ச்சொல். இரண்டும் இணைந்து 'பழமையான சொற்களை உடைய' அல்லது 'அனுபவம் வாய்ந்த பேச்சாளன்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'முது' என்பது முதுமை, அனுபவம் ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'முது' என்பது 'முதியவர்' போன்ற சொற்களில் காணப்படுகிறது.",
+          "gloss": "This compound word means 'of ancient speech' or 'wise-mouthed', describing the bard as an experienced and eloquent speaker, likely due to his age and wisdom."
         },
         {
           "form": "இரவலன்",
-          "root": null,
+          "root": "இரவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இரவு என்பது 'யாசித்தல்' அல்லது 'கேட்டல்' என்ற பொருளைத் தரும் பெயர்ச்சொல். 'அலன்' என்பது வினைமுற்று விகுதி. இரவலன் என்பது 'யாசிப்பவன்' அல்லது 'கேட்பவன்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் 'இரவலன்' என்பது புலவர்கள், பாணர்கள் போன்றோரை குறிக்கும். நவீன தமிழில் 'இரவலன்' என்பது 'பிச்சைக்காரன்' என்ற பொருளில் பயன்படுத்தப்படுகிறது, அதன் மதிப்பு குறைந்துள்ளது.",
+          "gloss": "This word refers to a 'bard' or 'supplicant', specifically a poet or performer who travels and seeks patronage from chieftains."
         },
         {
           "form": "வந்தோன்",
-          "root": null,
+          "root": "வா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வந்தோன் என்பது 'வா' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்சம். 'வந்த' என்பது இறந்தகாலப் பெயரெச்சம், 'ஓன்' என்பது ஆண்பால் ஒருமை விகுதி. 'வந்தவன்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் 'வந்தோன்' என்பது 'வந்தவன்' என்ற பொருளில் பயன்படுத்தப்படும். நவீன தமிழில் 'வந்தவன்' என்றே பெரும்பாலும் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word means 'he who has come' or 'the one who arrived', referring to the bard's action of approaching the chieftain."
         }
       ]
     },
@@ -121,52 +121,52 @@
       "words": [
         {
           "form": "பெரும!நின்",
-          "root": null,
+          "root": "பெரும",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பெரும என்பது 'பெரியவன்' என்ற பொருளைத் தரும் விளிச்சொல். 'நின்' என்பது 'உன்னுடைய' என்ற பொருளைத் தரும் ஆறாம் வேற்றுமை உருபு. இரண்டும் இணைந்து 'பெரியவனே! உன்னுடைய' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'பெரும' என்பது தலைவனை விளிக்கும் சொல்லாகப் பயன்படுத்தப்படும். நவீன தமிழில் 'பெரியவரே' என்றே பெரும்பாலும் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This is an address, 'O Great One!', followed by 'your', indicating a respectful appeal to the chieftain and referring to his qualities."
         },
         {
           "form": "வண்புகழ்",
-          "root": null,
+          "root": "வண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வண் என்பது 'வள்ளல் தன்மை' அல்லது 'கொடைத்தன்மை' என்ற பொருளைத் தரும் உரிச்சொல். புகழ் என்பது 'புகழ்' அல்லது 'பெருமை' என்ற பொருளைத் தரும் பெயர்ச்சொல். இரண்டும் இணைந்து 'வள்ளல் தன்மையால் வந்த புகழ்' அல்லது 'கொடைத்தன்மையின் புகழ்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'வண்' என்பது வள்ளல் தன்மை, செழிப்பு ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'வண்மை' என்றே பெரும்பாலும் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This compound word means 'generous fame' or 'fame for liberality', highlighting the chieftain's renowned quality of generosity."
         },
         {
           "form": "நயந்'தென",
-          "root": null,
+          "root": "நய",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நயந்து என்பது 'நயத்தல்' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம். 'நய' என்பது 'விரும்புதல்' அல்லது 'புகழ்தல்' என்ற பொருளைத் தரும். 'தென' என்பது 'என்று' என்பதன் சுருக்கம். 'விரும்பி' அல்லது 'புகழ்ந்து' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'நயத்தல்' என்பது விரும்புதல், போற்றுதல், புகழ்தல் ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'நயத்தல்' என்பது அவ்வளவாகப் பயன்படுத்தப்படுவதில்லை, 'விரும்புதல்' அல்லது 'புகழ்தல்' என்றே பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word means 'having desired' or 'having praised', indicating that the bard has come because he admires and wishes to praise the chieftain's generosity."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a sentence or a pause in the speech."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a sentence or a pause in the speech."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a sentence or a pause in the speech."
         },
         {
           "form": ".(285)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This indicates the verse number 285, providing a reference point within the text."
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "இனியவும்",
-          "root": null,
+          "root": "இனி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இனி என்பது 'இனிமையான' என்ற பொருளைத் தரும் உரிச்சொல். 'அவும்' என்பது பன்மை விகுதி மற்றும் உம்மை உருபு. 'இனிமையானவையும்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'இனி' என்பது இனிமை, மகிழ்ச்சி ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'இனிமையான' என்றே பெரும்பாலும் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word means 'and pleasant ones' or 'and sweet things', referring to the agreeable and pleasing words spoken by the goblins."
         },
         {
           "form": "நல்லவும்",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நல் என்பது 'நல்ல' என்ற பொருளைத் தரும் உரிச்சொல். 'அவும்' என்பது பன்மை விகுதி மற்றும் உம்மை உருபு. 'நல்லவையும்' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'நல்' என்பது நன்மை, சிறப்பு ஆகியவற்றைக் குறிக்கும். நவீன தமிழில் 'நல்ல' என்றே பெரும்பாலும் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word means 'and good ones' or 'and beneficial things', referring to the virtuous and positive words spoken by the goblins."
         },
         {
           "form": "நனிபல",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "root": "நனி",
+          "urichol": "உரிச்சொல்",
+          "etymology": "நனி என்பது 'மிகவும்' அல்லது 'மிகுதியாக' என்ற பொருளைத் தரும் உரிச்சொல். பல என்பது 'பல' என்ற எண்ணிக்கையைக் குறிக்கும். இரண்டும் இணைந்து 'மிகப் பல' அல்லது 'மிகுதியான பல' என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'நனி' என்பது மிகுதி, சிறப்பு ஆகியவற்றைக் குறிக்கும் ஒரு உரிச்சொல். நவீன தமிழில் 'நனி' என்பது வழக்கொழிந்துவிட்டது, 'மிகவும்' அல்லது 'மிகுதியாக' என்ற சொற்கள் பயன்படுத்தப்படுகின்றன.",
+          "gloss": "This compound word means 'very many' or 'numerous', emphasizing the abundance of pleasant and good words spoken."
         },
         {
           "form": "ஏத்தித்",
-          "root": null,
+          "root": "ஏத்து",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "ஏத்தி என்பது 'ஏத்துதல்' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம். 'ஏத்து' என்பது 'புகழ்தல்' அல்லது 'போற்றுதல்' என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் 'ஏத்துதல்' என்பது தெய்வத்தையோ, தலைவனையோ புகழ்ந்து பாடுதல். நவீன தமிழில் 'ஏத்துதல்' என்பது அதே பொருளில் பயன்படுத்தப்படுகிறது, ஆனால் 'புகழ்தல்' என்பதே பரவலாக உள்ளது.",
+          "gloss": "This word means 'having praised' or 'having extolled', describing the action of the goblins in offering praises to the chieftain."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a sentence or a pause in the speech."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a sentence or a pause in the speech."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a sentence or a pause in the speech."
         },
         {
           "form": ".(282",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This indicates the starting verse number 282 for the preceding lines, providing a reference point within the text."
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a hyphen, indicating a range or continuation between the verse numbers."
         },
         {
           "form": "286)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This indicates the ending verse number 286 for the preceding lines, providing a reference point within the text."
         }
       ]
     }
@@ -254,5 +254,28 @@
   "sectionNumber": 30,
   "title": "சேவிப்போர் கூற்று",
   "lineStart": 282,
-  "lineEnd": 286
+  "lineEnd": 286,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:27+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:55:48+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 30
+  },
+  "yazhi_urai": "பலவிதமான உருவங்கள் கொண்ட சின்னச் சின்ன பூதங்கள், விழா நடக்கும் இடத்துல கம்பீரமா வந்து நின்னுச்சு. \"பெரியவரே! இந்த வயசான பாட்டுக்காரன் உங்களோட புகழைக் கேட்டு வந்திருக்கான். இவன் பாவம்\"னு இனிமையாவும் நல்லதாவும் நிறையப் புகழ்ந்துச்சு.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:19+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }

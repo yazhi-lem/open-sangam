@@ -46,7 +46,7 @@ def test_health():
 
 def test_ask_qa_workflow_extracts_real_citation(monkeypatch):
     monkeypatch.setattr(
-        app_module._runner,
+        app_module._RUNNERS["avvaiyar"],
         "run_async",
         _fake_run_async_factory("kurunthokai_100 is in the kurinji tiṇai."),
     )
@@ -67,7 +67,7 @@ def test_ask_qa_workflow_extracts_real_citation(monkeypatch):
 
 def test_ask_drops_hallucinated_citation(monkeypatch):
     monkeypatch.setattr(
-        app_module._runner,
+        app_module._RUNNERS["avvaiyar"],
         "run_async",
         _fake_run_async_factory("See not_a_real_id for details."),
     )
@@ -80,7 +80,7 @@ def test_ask_drops_hallucinated_citation(monkeypatch):
 
 def test_ask_reuses_supplied_session_id(monkeypatch):
     monkeypatch.setattr(
-        app_module._runner, "run_async", _fake_run_async_factory("ok")
+        app_module._RUNNERS["avvaiyar"], "run_async", _fake_run_async_factory("ok")
     )
 
     resp = client.post(
@@ -103,11 +103,19 @@ def test_ask_rejects_empty_message():
     assert resp.status_code == 400
 
 
-@pytest.mark.parametrize("workflow", ["search", "reimagine", "scenario", "imagery"])
-def test_ask_unimplemented_workflows_return_501(workflow):
+@pytest.mark.parametrize(
+    "workflow,expected_pulavar",
+    [("search", "kapilar"), ("reimagine", "kapilar"), ("scenario", "tholkappiyar"), ("imagery", "paranar")],
+)
+def test_ask_routes_workflow_to_expected_pulavar(monkeypatch, workflow, expected_pulavar):
+    monkeypatch.setattr(
+        app_module._RUNNERS[expected_pulavar], "run_async", _fake_run_async_factory("ok")
+    )
+
     resp = client.post("/avai/ask", json={"message": "hi", "workflow": workflow})
-    assert resp.status_code == 501
-    assert "message" in resp.json()
+
+    assert resp.status_code == 200
+    assert resp.json()["pulavar"] == expected_pulavar
 
 
 def test_ask_agent_failure_returns_502(monkeypatch):
@@ -115,9 +123,9 @@ def test_ask_agent_failure_returns_502(monkeypatch):
         raise RuntimeError("boom")
         yield  # pragma: no cover — makes this an async generator
 
-    monkeypatch.setattr(app_module._runner, "run_async", _raise)
+    monkeypatch.setattr(app_module._RUNNERS["avvaiyar"], "run_async", _raise)
 
     resp = client.post("/avai/ask", json={"message": "hello"})
 
     assert resp.status_code == 502
-    assert resp.json()["message"] == "Agent execution failed"
+    assert resp.json()["message"] == "Agent execution failed: boom"

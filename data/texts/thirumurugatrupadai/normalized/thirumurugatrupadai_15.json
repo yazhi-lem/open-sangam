@@ -4,7 +4,7 @@
   "tinai": "unknown",
   "sangamTamil": "புகைமுகந் தன்ன மாசில் தூவுடை\nமுகைவாய் அவிழ்ந்த தகைசூழ் ஆகத்துச்\nசெவிநேர்பு வைத்த செய்வுறு திவவின் . . . .(140)\nநல்லியாழ் நவின்ற நயனுடை நெஞ்சின்\nமென்மொழி மேவலர் இன்னரம்பு உளர . . . .(138 - 142)",
   "urai": "வெண்புகையை முகந்து வைத்தது போல் தூய ஆடையை மகளிர் உடுத்தியிருந்தனர். அவர்களின் நெஞ்சு முகடுகள் மொட்டுகள் போல் இல்லை. வாய் விரிந்த மொட்டைப் போல அவிழ்ந்து கிடந்தன. யாழின் திவவு காதைப்போல் வளைந்திருக்கும். அந்த யாழ்த்திவவு போல் அவர்களின் நெஞ்சு கூனியிருந்தது. அவர்கள் மென்சொல் நவில விரும்பினர். முடியவில்லை. யாழின் நரம்பு போல் ஒலிதான் வந்தது.",
-  "english": null,
+  "english": "Like smoke, pure white, their garments clung,\nUpon their breasts, like buds unfurled,\nThe lute’s carved peg, curved to the ear,\nA gentle heart, with music filled,\nSoft words they sought, but from the strings,\nA sweet lament, alone was heard.",
   "lines": [
     {
       "lineNumber": 1,
@@ -12,31 +12,31 @@
       "words": [
         {
           "form": "புகைமுகந்",
-          "root": null,
+          "root": "புகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "புகைமுகந் என்பது 'புகை' (smoke) என்னும் பெயர்ச்சொல்லுடன் 'முக' (to gather, to draw in) என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம் இணைந்து உருவானது. இங்கு 'முக' என்பது 'முகத்தல்' என்னும் வினையைக் குறிக்கிறது. சங்க இலக்கியத்தில் புகை என்பது பெரும்பாலும் யாகப்புகையையோ, மலையிலிருந்து எழும் மேகத்தையோ குறிக்கும். தற்காலத் தமிழில் 'புகை' என்பது சிகரெட் புகையையும் குறிக்கும்.",
+          "gloss": "This word describes something that has drawn in or gathered smoke, implying a cloud-like or misty quality."
         },
         {
           "form": "தன்ன",
-          "root": null,
+          "root": "தன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தன்ன என்பது 'தன்' (self) என்னும் சுட்டுப்பெயருடன் 'அ' என்னும் சாரியை இணைந்து உருவானது. இது ஒப்புமைப் பொருளில் வரும் ஒரு இடைச்சொல். சங்க இலக்கியத்தில் இது 'போல' அல்லது 'அனைய' என்னும் பொருளில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழில் 'தன்ன' என்பது பெரும்பாலும் 'தன்னுடைய' என்னும் உடைமைப் பொருளில் பயன்படுத்தப்படுகிறது, ஆனால் இங்கு ஒப்புமைப் பொருளே பொருத்தமானது.",
+          "gloss": "This particle functions as a comparative, indicating 'like' or 'similar to', comparing the quality of the smoke-gathered object to something else."
         },
         {
           "form": "மாசில்",
-          "root": null,
+          "root": "மாசு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மாசில் என்பது 'மாசு' (blemish, impurity) என்னும் பெயர்ச்சொல்லுடன் 'இல்' (without) என்னும் எதிர்மறை இடைச்சொல் இணைந்து உருவானது. இது 'மாசு இல்லாத' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் தூய்மையைக் குறிக்க இச்சொல் பரவலாகப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'மாசில்லாத' என்னும் வடிவம் அதே பொருளில் வழக்கில் உள்ளது.",
+          "gloss": "This adjective describes something as being without blemish or impurity, thus pure and spotless."
         },
         {
           "form": "தூவுடை",
-          "root": null,
+          "root": "தூ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தூவுடை என்பது 'தூ' (pure, white) என்னும் உரிச்சொல்லுடன் 'உடை' (garment, cloth) என்னும் பெயர்ச்சொல் இணைந்து உருவானது. 'தூ' என்பது தூய்மையையும் வெண்மையையும் குறிக்கும் ஒரு பண்புச்சொல். சங்க இலக்கியத்தில் 'தூ' என்னும் உரிச்சொல் பல இடங்களில் தூய்மையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் 'தூய' என்னும் வடிவம் அதிகம் வழக்கில் உள்ளது.",
+          "gloss": "This compound noun refers to a pure or white garment, emphasizing its pristine quality."
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "முகைவாய்",
-          "root": null,
+          "root": "முகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "முகைவாய் என்பது 'முகை' (bud) என்னும் பெயர்ச்சொல்லுடன் 'வாய்' (mouth, opening) என்னும் பெயர்ச்சொல் இணைந்து உருவானது. இது மொட்டின் வாய் அல்லது மொட்டு விரிந்த நிலை என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் மொட்டுகள் மலர்வதைக் குறிக்க இச்சொல் பயன்படுத்தப்பட்டது. தற்காலத் தமிழில் 'மொட்டு' என்னும் சொல் அதிகம் வழக்கில் உள்ளது, 'முகை' என்பது இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This compound noun refers to the opening of a bud, suggesting a state of partial blooming or unfolding."
         },
         {
           "form": "அவிழ்ந்த",
-          "root": null,
+          "root": "அவிழ்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "அவிழ்ந்த என்பது 'அவிழ்' (to untie, to open, to bloom) என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். இது மலர் விரிவதையோ, முடிச்சு அவிழ்வதையோ குறிக்கும். சங்க இலக்கியத்தில் மலர்கள் மலர்வதைக் குறிக்க இச்சொல் பரவலாகப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'அவிழ்' என்னும் வினைச்சொல் அதே பொருளில் வழக்கில் உள்ளது.",
+          "gloss": "This past participial adjective describes something that has opened, bloomed, or become untied."
         },
         {
           "form": "தகைசூழ்",
-          "root": null,
+          "root": "தகை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தகைசூழ் என்பது 'தகை' (beauty, dignity, quality) என்னும் பெயர்ச்சொல்லுடன் 'சூழ்' (to surround, to encompass) என்னும் வினைச்சொல் இணைந்து உருவானது. இது அழகால் சூழப்பட்ட அல்லது அழகு நிறைந்த என்ற பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'தகை' என்பது அழகு, சிறப்பு, தகுதி போன்ற பல பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழில் 'தகைமை' என்னும் வடிவம் அதிகம் வழக்கில் உள்ளது.",
+          "gloss": "This compound describes something encompassed or surrounded by beauty, dignity, or excellence."
         },
         {
           "form": "ஆகத்துச்",
-          "root": null,
+          "root": "ஆகம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "ஆகத்துச் என்பது 'ஆகம்' (body, chest, breast) என்னும் பெயர்ச்சொல்லுடன் ஏழாம் வேற்றுமை உருபான 'அத்து' மற்றும் 'ச்' சாரியை இணைந்து உருவானது. இது 'ஆகத்தில்' அல்லது 'மார்பில்' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'ஆகம்' என்பது உடல், மார்பு, நெஞ்சு போன்ற பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'ஆகம்' என்னும் சொல் இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This locative noun refers to 'in the chest' or 'on the body', indicating a location on the torso."
         }
       ]
     },
@@ -80,59 +80,59 @@
       "words": [
         {
           "form": "செவிநேர்பு",
-          "root": null,
+          "root": "செவி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "செவிநேர்பு என்பது 'செவி' (ear) என்னும் பெயர்ச்சொல்லுடன் 'நேர்பு' (to be straight, to be aligned, to be equal) என்னும் வினையெச்சம் இணைந்து உருவானது. இது 'செவிக்கு நேராக' அல்லது 'செவிக்கு ஒப்பாக' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'நேர்' என்பது நேர்மை, ஒப்புமை போன்ற பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'செவி' மற்றும் 'நேர்' ஆகிய சொற்கள் அதே பொருளில் வழக்கில் உள்ளன.",
+          "gloss": "This compound adverb describes something that is aligned with or similar to an ear, suggesting a curved or ear-like shape."
         },
         {
           "form": "வைத்த",
-          "root": null,
+          "root": "வை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வைத்த என்பது 'வை' (to place, to keep) என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். இது 'வைக்கப்பட்ட' அல்லது 'அமைக்கப்பட்ட' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் இச்சொல் பல பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'வை' என்னும் வினைச்சொல் அதே பொருளில் வழக்கில் உள்ளது.",
+          "gloss": "This past participial adjective describes something that has been placed, set, or arranged."
         },
         {
           "form": "செய்வுறு",
-          "root": null,
+          "root": "செய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "செய்வுறு என்பது 'செய்' (to do, to make) என்னும் வினைச்சொல்லுடன் 'உறு' (to be, to happen, to be intense) என்னும் துணைவினை இணைந்து உருவானது. இது 'செய்யப்பட்ட' அல்லது 'உருவாக்கப்பட்ட' என்னும் பொருளைத் தருகிறது. 'உறு' என்பது இங்கு வலுப்படுத்தும் பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் 'செய்' என்பது உருவாக்குதல், செய்தல் போன்ற பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'செய்' என்னும் வினைச்சொல் அதே பொருளில் வழக்கில் உள்ளது.",
+          "gloss": "This compound adjective describes something that is made or crafted, emphasizing its artificial or constructed nature."
         },
         {
           "form": "திவவின்",
-          "root": null,
+          "root": "திவவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "திவவின் என்பது 'திவவு' (the bridge or fret of a stringed instrument like a yāḻ) என்னும் பெயர்ச்சொல்லுடன் ஐந்தாம் வேற்றுமை உருபான 'இன்' இணைந்து உருவானது. இது 'திவவைப் போல' அல்லது 'திவவினால்' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'திவவு' என்பது யாழின் ஒரு பகுதியைக் குறிக்கும். தற்காலத் தமிழில் யாழ் போன்ற கருவிகள் வழக்கில் இல்லாததால், இச்சொல் இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This ablative noun refers to 'like the bridge (or fret) of a yāḻ', indicating a comparison to its curved or shaped part."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, typically indicating the end of a sentence or a pause."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, typically indicating the end of a sentence or a pause."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, typically indicating the end of a sentence or a pause."
         },
         {
           "form": ".(140)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a numerical annotation, likely indicating the verse number in the text."
         }
       ]
     },
@@ -142,31 +142,31 @@
       "words": [
         {
           "form": "நல்லியாழ்",
-          "root": null,
+          "root": "நல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நல்லியாழ் என்பது 'நல்' (good, excellent) என்னும் உரிச்சொல்லுடன் 'யாழ்' (a stringed musical instrument) என்னும் பெயர்ச்சொல் இணைந்து உருவானது. இது 'நல்ல யாழ்' அல்லது 'சிறந்த யாழ்' என்னும் பொருளைத் தருகிறது. 'நல்' என்பது சங்க இலக்கியத்தில் பண்புப் பொருளில் பரவலாகப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'நல்ல' என்னும் வடிவம் அதே பொருளில் வழக்கில் உள்ளது, ஆனால் 'யாழ்' என்பது இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This compound noun refers to a good or excellent yāḻ, a traditional stringed musical instrument."
         },
         {
           "form": "நவின்ற",
-          "root": null,
+          "root": "நவில்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நவின்ற என்பது 'நவில்' (to practice, to play, to speak) என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். இது 'பயின்ற' அல்லது 'மீட்டிய' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் இச்சொல் இசைக்கருவிகளை வாசிப்பதையும், சொற்களைப் பேசுவதையும் குறிக்கப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'நவில்' என்னும் வினைச்சொல் இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This past participial adjective describes something that has been practiced, played (as a musical instrument), or spoken."
         },
         {
           "form": "நயனுடை",
-          "root": null,
+          "root": "நயன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நயனுடை என்பது 'நயன்' (beauty, grace, pleasantness) என்னும் பெயர்ச்சொல்லுடன் 'உடை' (to possess, having) என்னும் வினைச்சொல் இணைந்து உருவானது. இது 'நயன் உடைய' அல்லது 'அழகுடைய' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'நயன்' என்பது அழகு, இனிமை, நன்மை போன்ற பல பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'நயமான' என்னும் வடிவம் அதே பொருளில் வழக்கில் உள்ளது.",
+          "gloss": "This compound adjective describes something that possesses grace, beauty, or pleasantness."
         },
         {
           "form": "நெஞ்சின்",
-          "root": null,
+          "root": "நெஞ்சு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நெஞ்சின் என்பது 'நெஞ்சு' (heart, mind, chest) என்னும் பெயர்ச்சொல்லுடன் ஐந்தாம் வேற்றுமை உருபான 'இன்' இணைந்து உருவானது. இது 'நெஞ்சைப் போல' அல்லது 'நெஞ்சினால்' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'நெஞ்சு' என்பது உணர்வுகள், எண்ணங்கள், மார்பு போன்ற பல பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'நெஞ்சு' என்னும் சொல் அதே பொருளில் வழக்கில் உள்ளது.",
+          "gloss": "This ablative noun refers to 'from the heart/mind' or 'like the heart/mind', indicating a source or comparison."
         }
       ]
     },
@@ -176,73 +176,73 @@
       "words": [
         {
           "form": "மென்மொழி",
-          "root": null,
+          "root": "மென்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மென்மொழி என்பது 'மென்' (soft, gentle) என்னும் உரிச்சொல்லுடன் 'மொழி' (word, language) என்னும் பெயர்ச்சொல் இணைந்து உருவானது. இது 'மென்மையான மொழி' அல்லது 'இனிய சொல்' என்னும் பொருளைத் தருகிறது. 'மென்' என்பது சங்க இலக்கியத்தில் மென்மை, இனிமை போன்ற பண்புகளைக் குறிக்கப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'மென்' மற்றும் 'மொழி' ஆகிய சொற்கள் அதே பொருளில் வழக்கில் உள்ளன.",
+          "gloss": "This compound noun refers to soft or gentle words, implying pleasant and mild speech."
         },
         {
           "form": "மேவலர்",
-          "root": null,
+          "root": "மேவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மேவலர் என்பது 'மேவு' (to desire, to obtain, to approach) என்னும் வினைச்சொல்லின் வினையாலணையும் பெயர் வடிவம். இது 'விரும்பியவர்' அல்லது 'பொருந்தியவர்' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் 'மேவு' என்பது விரும்புதல், அடைதல், பொருந்துதல் போன்ற பல பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'மேவு' என்னும் வினைச்சொல் இலக்கிய வழக்காகவே உள்ளது.",
+          "gloss": "This noun refers to those who desire, wish for, or are inclined towards something."
         },
         {
           "form": "இன்னரம்பு",
-          "root": null,
+          "root": "இன்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இன்னரம்பு என்பது 'இன்' (sweet, pleasant) என்னும் உரிச்சொல்லுடன் 'நரம்பு' (string, nerve) என்னும் பெயர்ச்சொல் இணைந்து உருவானது. இது 'இனிய நரம்பு' அல்லது 'இனிய ஓசையை எழுப்பும் நரம்பு' என்னும் பொருளைத் தருகிறது. 'இன்' என்பது சங்க இலக்கியத்தில் இனிமை, நன்மை போன்ற பண்புகளைக் குறிக்கப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'இனிய' என்னும் வடிவம் அதே பொருளில் வழக்கில் உள்ளது, 'நரம்பு' என்பது உடல் உறுப்பையும், இசைக்கருவியின் பகுதியையும் குறிக்கும்.",
+          "gloss": "This compound noun refers to a sweet-sounding string, specifically a string of a musical instrument that produces pleasant tones."
         },
         {
           "form": "உளர",
-          "root": null,
+          "root": "உளர்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "உளர என்பது 'உளர்' (to pluck, to stir, to comb) என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். இது 'உளர' அல்லது 'மீட்ட' என்னும் பொருளைத் தருகிறது. சங்க இலக்கியத்தில் இச்சொல் இசைக்கருவிகளின் நரம்புகளை மீட்டுவதையும், கூந்தலைச் சீவுவதையும் குறிக்கப் பயன்படுத்தப்பட்டது. தற்காலத் தமிழிலும் 'உளருதல்' என்னும் வினைச்சொல் அதே பொருளில் வழக்கில் உள்ளது.",
+          "gloss": "This adverbial participle describes the action of plucking or stirring, specifically referring to the plucking of strings on a musical instrument."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, typically indicating the end of a sentence or a pause."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, typically indicating the end of a sentence or a pause."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, typically indicating the end of a sentence or a pause."
         },
         {
           "form": ".(138",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a numerical annotation, likely indicating the starting verse number in a range."
         },
         {
           "form": "-",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, typically indicating a range or a hyphenation."
         },
         {
           "form": "142)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a numerical annotation, likely indicating the ending verse number in a range."
         }
       ]
     }
@@ -254,5 +254,28 @@
   "sectionNumber": 15,
   "title": "மேவலர் இயல்பு",
   "lineStart": 138,
-  "lineEnd": 142
+  "lineEnd": 142,
+  "englishMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:29:20+00:00",
+    "runId": "453e69cb16bb"
+  },
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-08-30T16:53:24+00:00",
+    "runId": "a85c40908320",
+    "wordsAnnotated": 30
+  },
+  "yazhi_urai": "வெள்ளை புகையை அள்ளி வச்ச மாதிரி சுத்தமான துணி உடுத்தியிருந்தாங்க அந்தப் பெண்கள். அவங்க மார்பு மொட்டு மாதிரி இல்லாம, வாய் விரிஞ்ச மொட்டு மாதிரி மலர்ந்து இருந்துச்சு. யாழோட திவவு காது மாதிரி வளைஞ்சிருக்கும். அந்த யாழ் திவவு மாதிரி அவங்க மார்பு கூனி இருந்துச்சு. அவங்க மெதுவா பேசணும்னு ஆசைப்பட்டாங்க. ஆனா முடியல. யாழ் நரம்புல இருந்து வர்ற சத்தம் மாதிரிதான் வந்துச்சு.",
+  "yazhi_uraiMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "english-v1",
+    "generatedAt": "2026-08-30T16:51:12+00:00",
+    "runId": "6cd23ddba45b"
+  }
 }
