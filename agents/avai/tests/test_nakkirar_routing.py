@@ -1,5 +1,5 @@
 import pytest
-from agents.avai.prompts import NAKKIRAR_INSTRUCTION
+from avai.prompts import NAKKIRAR_INSTRUCTION
 
 def test_nakkirar_routing_instructions_present():
     """
