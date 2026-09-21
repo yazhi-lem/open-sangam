@@ -13,14 +13,22 @@ echo "---------------------------------"
 # --- Start Backend Service ---
 echo "Starting backend (FastAPI Uvicorn) from ${BACKEND_DIR}..."
 (
-  if [ -d "${PYTHON_VENV_PATH}" ]; then
-    echo "Activating Python virtual environment..."
-    source "${PYTHON_VENV_PATH}/bin/activate"
-  elif [ -d "agents/avai/venv" ]; then
-    echo "Activating Python virtual environment..."
-    source "agents/avai/venv/bin/activate"
+  ACTIVATE_SCRIPT=""
+  for venv_candidate in "${PYTHON_VENV_PATH}" "agents/avai/venv"; do
+    if [ -f "${venv_candidate}/bin/activate" ]; then
+      ACTIVATE_SCRIPT="${venv_candidate}/bin/activate"
+      break
+    elif [ -f "${venv_candidate}/Scripts/activate" ]; then
+      ACTIVATE_SCRIPT="${venv_candidate}/Scripts/activate"
+      break
+    fi
+  done
+
+  if [ -n "${ACTIVATE_SCRIPT}" ]; then
+    echo "Activating Python virtual environment (${ACTIVATE_SCRIPT})..."
+    source "${ACTIVATE_SCRIPT}"
   else
-    echo "Python virtual environment not found in agents/avai/.venv. Please setup virtual environment first."
+    echo "Python virtual environment not found in ${PYTHON_VENV_PATH} or agents/avai/venv. Please setup virtual environment first."
     exit 1
   fi
   cd "${BACKEND_DIR}" || exit
