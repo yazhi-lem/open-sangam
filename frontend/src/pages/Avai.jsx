@@ -342,10 +342,11 @@ export default function Avai() {
     }
 
     try {
+      const isExplicitSelection = Boolean(agentId)
       const response = await askAvaiAgent({
-        pulavar: effectiveAgentId,
+        pulavar: isExplicitSelection ? effectiveAgentId : null,
         message: query,
-        workflow: activeAgent.workflow,
+        workflow: isExplicitSelection ? activeAgent.workflow : null,
         sessionId,
         context: {
           tinai: selectedTinai || undefined,

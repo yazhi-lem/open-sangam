@@ -66,11 +66,12 @@ def test_ask_qa_workflow_extracts_real_citation(monkeypatch):
 
 
 def test_ask_drops_hallucinated_citation(monkeypatch):
-    monkeypatch.setattr(
-        app_module._RUNNERS["avvaiyar"],
-        "run_async",
-        _fake_run_async_factory("See not_a_real_id for details."),
-    )
+    for runner in app_module._RUNNERS.values():
+        monkeypatch.setattr(
+            runner,
+            "run_async",
+            _fake_run_async_factory("See not_a_real_id for details."),
+        )
 
     resp = client.post("/avai/ask", json={"message": "hello"})
 
@@ -79,9 +80,8 @@ def test_ask_drops_hallucinated_citation(monkeypatch):
 
 
 def test_ask_reuses_supplied_session_id(monkeypatch):
-    monkeypatch.setattr(
-        app_module._RUNNERS["avvaiyar"], "run_async", _fake_run_async_factory("ok")
-    )
+    for runner in app_module._RUNNERS.values():
+        monkeypatch.setattr(runner, "run_async", _fake_run_async_factory("ok"))
 
     resp = client.post(
         "/avai/ask", json={"message": "hello", "session_id": "sess-fixed-1"}
@@ -118,12 +118,42 @@ def test_ask_routes_workflow_to_expected_pulavar(monkeypatch, workflow, expected
     assert resp.json()["pulavar"] == expected_pulavar
 
 
+@pytest.mark.parametrize(
+    "payload,expected_workflow,expected_pulavar",
+    [
+        ({"message": "find verses about love"}, "search", "kapilar"),
+        ({"message": "hii"}, "general", "nakkirar"),
+        ({"message": "what is your workflow?"}, "general", "nakkirar"),
+        ({"message": "who are you?"}, "general", "nakkirar"),
+        (
+            {"message": "find verses about love", "pulavar": "nakkirar"},
+            "general",
+            "nakkirar",
+        ),
+        ({"message": "காதல் பற்றிய பாடல்களைத் தேடு"}, "search", "kapilar"),
+    ],
+)
+def test_routing_regression(monkeypatch, payload, expected_workflow, expected_pulavar):
+    for runner in app_module._RUNNERS.values():
+        monkeypatch.setattr(runner, "run_async", _fake_run_async_factory("ok"))
+
+    resp = client.post("/avai/ask", json=payload)
+
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["workflow"] == expected_workflow
+    assert body["pulavar"] == expected_pulavar
+    assert body["metadata"]["routed_pulavar"] == expected_pulavar
+    assert body["metadata"]["routing_reason"] is not None
+
+
 def test_ask_agent_failure_returns_502(monkeypatch):
     async def _raise(*, user_id, session_id, new_message):
         raise RuntimeError("boom")
         yield  # pragma: no cover — makes this an async generator
 
-    monkeypatch.setattr(app_module._RUNNERS["avvaiyar"], "run_async", _raise)
+    for runner in app_module._RUNNERS.values():
+        monkeypatch.setattr(runner, "run_async", _raise)
 
     resp = client.post("/avai/ask", json={"message": "hello"})
 

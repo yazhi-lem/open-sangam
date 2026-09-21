@@ -22,7 +22,7 @@ class AskContext(BaseModel):
 
 class AskRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=2000)
-    workflow: Workflow | None = "qa"
+    workflow: Workflow | None = None
     pulavar: str | None = Field(
         default=None,
         description="Direct target pulavar: nakkirar, avvaiyar, kapilar, tholkappiyar, paranar, or swarm",
@@ -53,6 +53,9 @@ class AskMetadata(BaseModel):
     model: str
     elapsed_ms: int
     timestamp: str
+    workflow: str | None = None
+    routed_pulavar: str | None = None
+    routing_reason: str | None = None
 
 
 class AskResponse(BaseModel):
