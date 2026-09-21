@@ -7,11 +7,32 @@ const AVAI_API_BASE = import.meta.env.VITE_AVAI_API_URL || ''
 
 const STORAGE_KEY_PREFIX = 'open_sangam_avai_chat_'
 
+async function executeFetch(url, payload, timeoutMs = 25000) {
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs)
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
+    })
+    return { res, error: null }
+  } catch (err) {
+    return { res: null, error: err }
+  } finally {
+    clearTimeout(timeoutId)
+  }
+}
+
 /**
  * Send a user query to a specific Pulavar agent or the Avai Swarm.
  *
  * @param {Object} params
- * @param {string} params.pulavar - 'nakkirar' | 'avvaiyar' | 'kapilar' | 'tholkappiyar' | 'paranar' | 'swarm'
+ * @param {string} [params.pulavar] - 'nakkirar' | 'avvaiyar' | 'kapilar' | 'tholkappiyar' | 'paranar' | 'swarm'
+ * @param {string} [params.poet] - Alias for pulavar
  * @param {string} params.message - User prompt text
  * @param {string} [params.workflow] - 'qa' | 'search' | 'scenario' | 'imagery' | 'general'
  * @param {string} [params.sessionId] - Session ID for multi-turn conversation
@@ -41,48 +62,64 @@ export async function askAvaiAgent({
     },
   }
 
-  try {
-    const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 25000)
+  // Attempt 1: primary endpoint (${AVAI_API_BASE}/avai/ask)
+  const primaryUrl = `${AVAI_API_BASE}/avai/ask`
+  let { res, error } = await executeFetch(primaryUrl, payload)
 
-    let res
-    try {
-      res = await fetch(`${AVAI_API_BASE}/avai/ask`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-        signal: controller.signal,
-      })
-    } catch {
-      if (!AVAI_API_BASE) {
-        res = await fetch('http://127.0.0.1:8080/avai/ask', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(payload),
-          signal: controller.signal,
-        })
-      }
+  // Attempt 2: direct localhost fallback if primary failed on network error and was a relative proxy URL
+  if (error && !AVAI_API_BASE) {
+    const fallbackUrl = 'http://127.0.0.1:8080/avai/ask'
+    const fallback = await executeFetch(fallbackUrl, payload)
+    if (fallback.res) {
+      res = fallback.res
+      error = null
+    } else {
+      error = fallback.error
     }
+  }
 
-    clearTimeout(timeoutId)
-
-    if (res && res.ok) {
+  if (res) {
+    if (res.ok) {
       const data = await res.json()
       return {
         ...data,
         isLive: true,
       }
     }
-  } catch (err) {
-    console.warn(`[AvaiService] Live backend unavailable (${err.message}). Returning offline notice.`)
+
+    // Inspect non-OK HTTP responses: FastAPI JSON error vs gateway/proxy 502/empty
+    const contentType = res.headers.get('content-type') || ''
+    let isJson = contentType.includes('application/json')
+    let errorDetail = ''
+
+    if (isJson) {
+      try {
+        const errorJson = await res.json()
+        errorDetail = errorJson.message || errorJson.detail || (typeof errorJson === 'string' ? errorJson : JSON.stringify(errorJson))
+      } catch {
+        isJson = false
+      }
+    }
+
+    // FastAPI errors (structured JSON with error message/detail)
+    if (isJson && errorDetail) {
+      console.warn(`[AvaiService] Backend error HTTP ${res.status}: ${errorDetail}`)
+      return generateBackendErrorResponse({
+        pulavar: targetPulavar || 'nakkirar',
+        sessionId,
+        status: res.status,
+        errorDetail,
+      })
+    }
+
+    // Proxy-generated failures (empty body or non-JSON, like Vite 502 Bad Gateway)
+    console.warn(`[AvaiService] Proxy gateway failure (HTTP ${res.status}). Returning offline notice.`)
+    return generateClientFallbackResponse({ pulavar: targetPulavar || 'nakkirar', sessionId })
   }
 
-  // Fallback offline notice when backend is unreachable
-  return generateClientFallbackResponse({ pulavar: targetPulavar || 'nakkirar', message, workflow: targetWorkflow || 'general', context, sessionId })
+  // Network down, timeout, or DNS resolution failure
+  console.warn(`[AvaiService] Live backend unreachable (${error?.message || 'network error'}). Returning offline notice.`)
+  return generateClientFallbackResponse({ pulavar: targetPulavar || 'nakkirar', sessionId })
 }
 
 /**
@@ -103,6 +140,40 @@ export function getWorkflowForPulavar(pulavarId) {
     case 'avvaiyar':
     default:
       return 'qa'
+  }
+}
+
+/**
+ * Clearly labeled backend error message returned when backend responds with a FastAPI error (4xx/5xx JSON).
+ */
+function generateBackendErrorResponse({ pulavar, sessionId, status, errorDetail }) {
+  const currentSessionId = sessionId || `sess_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`
+  const detailText = errorDetail ? `\n\n**பிழை விவரம் / Error Details:** \`${errorDetail}\`` : ''
+
+  const responseText = `⚠️ **சேவையகப் பிழை • Backend Error (HTTP ${status})**
+
+மன்னிக்கவும், சங்க அவை சேவையகம் கோரிக்கையைச் செயலாக்கும் போது பிழையைத் தந்துள்ளது (HTTP ${status}).${detailText}
+
+The Sangam Avai backend responded with an HTTP ${status} error. Please check your query or verify backend service logs.`
+
+  return {
+    session_id: currentSessionId,
+    workflow: getWorkflowForPulavar(pulavar || 'nakkirar'),
+    pulavar: pulavar || 'nakkirar',
+    poet: pulavar || 'nakkirar',
+    response_text: responseText,
+    citations: [],
+    scenario: null,
+    imageUrl: null,
+    metadata: {
+      model: 'error',
+      elapsed_ms: 0,
+      timestamp: new Date().toISOString(),
+      error: true,
+      status,
+    },
+    isFallback: true,
+    isLive: false,
   }
 }
 

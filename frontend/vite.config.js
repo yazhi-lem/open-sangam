@@ -13,5 +13,19 @@ export default defineConfig({
   },
   server: {
     fs: { allow: [resolve(fileURLToPath(import.meta.url), '..'), dataDir] },
+    proxy: {
+      '/avai': {
+        target: 'http://127.0.0.1:8080',
+        changeOrigin: true,
+      },
+    },
+  },
+  preview: {
+    proxy: {
+      '/avai': {
+        target: 'http://127.0.0.1:8080',
+        changeOrigin: true,
+      },
+    },
   },
 })

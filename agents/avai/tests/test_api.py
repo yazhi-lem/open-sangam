@@ -122,6 +122,7 @@ def test_ask_routes_workflow_to_expected_pulavar(monkeypatch, workflow, expected
     "payload,expected_workflow,expected_pulavar",
     [
         ({"message": "find verses about love"}, "search", "kapilar"),
+        ({"message": "முல்லை நிலத்து மழை பற்றிய பாடல்கள்"}, "search", "kapilar"),
         ({"message": "hii"}, "general", "nakkirar"),
         ({"message": "what is your workflow?"}, "general", "nakkirar"),
         ({"message": "who are you?"}, "general", "nakkirar"),
@@ -131,6 +132,12 @@ def test_ask_routes_workflow_to_expected_pulavar(monkeypatch, workflow, expected
             "nakkirar",
         ),
         ({"message": "காதல் பற்றிய பாடல்களைத் தேடு"}, "search", "kapilar"),
+        ({"message": "draw a scene of the seashore"}, "imagery", "paranar"),
+        ({"message": "What is the image of a king in classical society?"}, "imagery", "paranar"),
+        ({"message": "explain grammar and prosody rules in tolkappiyam"}, "scenario", "tholkappiyar"),
+        ({"message": "what is the meaning of kurunthokai_40?"}, "qa", "avvaiyar"),
+        ({"message": "குறுந்தொகை 40 பாடலின் பொருள் என்ன?"}, "qa", "avvaiyar"),
+        ({"message": "xyz random unrecognized query 12345"}, "general", "nakkirar"),
     ],
 )
 def test_routing_regression(monkeypatch, payload, expected_workflow, expected_pulavar):
