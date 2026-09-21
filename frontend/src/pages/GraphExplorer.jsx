@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react'
+import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import GRAPH from '@data/knowledge/graph.json'
 import { POEM_BY_ID } from '../data/poems'
@@ -54,14 +54,6 @@ export default function GraphExplorer() {
   const [focusId, setFocusId] = useState(initialFocusId)
   const [typeFilter, setTypeFilter] = useState(null)
   const [hover, setHover] = useState(null)
-
-  // Sync URL param with internal state for deep linking
-  useEffect(() => {
-    const urlFocus = searchParams.get('focus')
-    if (urlFocus && urlFocus !== focusId) {
-      setFocusId(urlFocus)
-    }
-  }, [searchParams, focusId])
 
   const focus = nodeById[focusId]
 
