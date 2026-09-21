@@ -137,6 +137,12 @@ def test_ask_routes_workflow_to_expected_pulavar(monkeypatch, workflow, expected
         ({"message": "explain grammar and prosody rules in tolkappiyam"}, "scenario", "tholkappiyar"),
         ({"message": "what is the meaning of kurunthokai_40?"}, "qa", "avvaiyar"),
         ({"message": "குறுந்தொகை 40 பாடலின் பொருள் என்ன?"}, "qa", "avvaiyar"),
+        ({"message": "நேற்று வரை இந்த பாடலின் பொருள் என்ன?"}, "qa", "avvaiyar"),
+        ({"message": "இதுவரை எத்தனை பாடல்கள் உள்ளன?"}, "general", "nakkirar"),
+        ({"message": "ஒரு காட்சி வரை"}, "imagery", "paranar"),
+        ({"message": "ஓவியம் வரை"}, "imagery", "paranar"),
+        ({"message": "படம் வரை"}, "imagery", "paranar"),
+        ({"message": "ஒரு ஓவியம் வரைந்து தா"}, "imagery", "paranar"),
         ({"message": "xyz random unrecognized query 12345"}, "general", "nakkirar"),
     ],
 )

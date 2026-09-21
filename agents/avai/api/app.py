@@ -84,8 +84,8 @@ def classify_message(message: str) -> tuple[str, str]:
     meta_patterns = [
         r"^(hi+|hello|hey|vanakkam|வணக்கம்|நலமா)[!.,?\s]*$",
         r"\b(who are you|what is your workflow|how do you work|your workflow)\b",
-        r"\b(நீ யார்|யார் நீ|உன் பணி|உன் வேலை|அவை எவ்வாறு செயல்படுகிறது)\b",
-        r"\b(vera edhum|pesa mttiya|வேற எதுவும்|பேச மாட்டியா)\b",
+        r"(?:^|[^\w])(நீ\s*யார்|யார்\s*நீ|உன்\s*பணி|உன்\s*வேலை|அவை\s*எவ்வாறு\s*செயல்படுகிறது)(?:[^\w]|$)",
+        r"\b(vera edhum|pesa mttiya)\b|(?:^|[^\w])(வேற\s*எதுவும்|பேச\s*மாட்டியா)(?:[^\w]|$)",
     ]
     for pat in meta_patterns:
         if re.search(pat, msg_lower):
@@ -93,7 +93,7 @@ def classify_message(message: str) -> tuple[str, str]:
 
     # 2. Verse search & discovery -> search (kapilar)
     search_patterns = [
-        r"\b(find|search|look for|discover|list|show)\b.*\b(verse|verses|poem|poems|song|songs|பாடல்|பாடல்கள்)\b",
+        r"\b(find|search|look for|discover|list|show)\b.*(?:\b(verse|verses|poem|poems|song|songs)\b|(?:^|[^\w])(பாடல்|பாடல்கள்)(?:[^\w]|$))",
         r"\b(verses|poems|songs)\b.*\b(about|on|for)\b",
         r"(பாடல்களைத்\s*தேடு|பாடல்\s*தேடல்|பாடல்கள்\s*தேடு|தேடித்\s*தருக|கண்டுபிடி)",
         r"(பற்றிய\s*பாடல்கள்|குறித்த\s*பாடல்கள்|பாடல்கள்\s*(?:எவை|யாவை)|வருணிக்கும்.*பாடல்கள்)",
@@ -107,7 +107,7 @@ def classify_message(message: str) -> tuple[str, str]:
         r"\b(draw|paint|illustrate)\b",
         r"\b(generate|create|make)\s+(an?\s+)?(image|picture)\b",
         r"\bpicture\s+of\b",
-        r"(ஓவியம்\s*வரை|படம்\s*வரை|காட்சிப்படுத்து|\bவரை\b)",
+        r"(?:ஓவியம்|படம்|காட்சி|சித்திரம்)\s*(?:வரை|வரைக|வரையவும்|வரைந்து)|காட்சிப்படுத்து",
     ]
     for pat in imagery_patterns:
         if re.search(pat, msg_lower):
