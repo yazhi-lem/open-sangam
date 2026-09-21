@@ -132,8 +132,8 @@ def test_ask_routes_workflow_to_expected_pulavar(monkeypatch, workflow, expected
             "nakkirar",
         ),
         ({"message": "காதல் பற்றிய பாடல்களைத் தேடு"}, "search", "kapilar"),
+        ({"message": "மழையையும் மேகங்களையும் கார் காலத்தையும் வருணிக்கும் முல்லைப் பாடல்கள் எவை?"}, "search", "kapilar"),
         ({"message": "draw a scene of the seashore"}, "imagery", "paranar"),
-        ({"message": "What is the image of a king in classical society?"}, "imagery", "paranar"),
         ({"message": "explain grammar and prosody rules in tolkappiyam"}, "scenario", "tholkappiyar"),
         ({"message": "what is the meaning of kurunthokai_40?"}, "qa", "avvaiyar"),
         ({"message": "குறுந்தொகை 40 பாடலின் பொருள் என்ன?"}, "qa", "avvaiyar"),
@@ -152,6 +152,41 @@ def test_routing_regression(monkeypatch, payload, expected_workflow, expected_pu
     assert body["pulavar"] == expected_pulavar
     assert body["metadata"]["routed_pulavar"] == expected_pulavar
     assert body["metadata"]["routing_reason"] is not None
+    if payload.get("pulavar"):
+        assert body["metadata"]["routing_reason"] == "explicit_pulavar_selected"
+        assert body.get("routing_reason") == "explicit_pulavar_selected"
+
+
+def test_intent_routing_ordinary_word_image(monkeypatch):
+    for runner in app_module._RUNNERS.values():
+        monkeypatch.setattr(runner, "run_async", _fake_run_async_factory("ok"))
+
+    resp = client.post(
+        "/avai/ask",
+        json={"message": "What is the image of a king in classical society?"},
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["workflow"] != "imagery", "Ordinary use of 'image' must not route to imagery"
+    assert body["pulavar"] != "paranar", "Ordinary use of 'image' must not route to paranar"
+    assert body["workflow"] == "general"
+    assert body["pulavar"] == "nakkirar"
+    assert body["metadata"]["routing_reason"] == "default_convener"
+
+
+def test_explicit_pulavar_routing_reason(monkeypatch):
+    for runner in app_module._RUNNERS.values():
+        monkeypatch.setattr(runner, "run_async", _fake_run_async_factory("ok"))
+
+    resp = client.post(
+        "/avai/ask",
+        json={"message": "find verses about love", "pulavar": "nakkirar"},
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["pulavar"] == "nakkirar"
+    assert body["metadata"]["routing_reason"] == "explicit_pulavar_selected"
+    assert body.get("routing_reason") == "explicit_pulavar_selected"
 
 
 def test_ask_agent_failure_returns_502(monkeypatch):

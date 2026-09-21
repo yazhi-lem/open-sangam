@@ -96,7 +96,7 @@ def classify_message(message: str) -> tuple[str, str]:
         r"\b(find|search|look for|discover|list|show)\b.*\b(verse|verses|poem|poems|song|songs|பாடல்|பாடல்கள்)\b",
         r"\b(verses|poems|songs)\b.*\b(about|on|for)\b",
         r"(பாடல்களைத்\s*தேடு|பாடல்\s*தேடல்|பாடல்கள்\s*தேடு|தேடித்\s*தருக|கண்டுபிடி)",
-        r"(பற்றிய\s*பாடல்கள்|குறித்த\s*பாடல்கள்)",
+        r"(பற்றிய\s*பாடல்கள்|குறித்த\s*பாடல்கள்|பாடல்கள்\s*(?:எவை|யாவை)|வருணிக்கும்.*பாடல்கள்)",
     ]
     for pat in search_patterns:
         if re.search(pat, msg_lower):
@@ -104,8 +104,10 @@ def classify_message(message: str) -> tuple[str, str]:
 
     # 3. Visual & Imagery -> imagery (paranar)
     imagery_patterns = [
-        r"\b(draw|paint|image|picture|visualize|illustration)\b",
-        r"(படம்|ஓவியம்|காட்சிப்படுத்து|சித்திரம்)",
+        r"\b(draw|paint|illustrate)\b",
+        r"\b(generate|create|make)\s+(an?\s+)?(image|picture)\b",
+        r"\bpicture\s+of\b",
+        r"(ஓவியம்\s*வரை|படம்\s*வரை|காட்சிப்படுத்து|\bவரை\b)",
     ]
     for pat in imagery_patterns:
         if re.search(pat, msg_lower):
@@ -309,6 +311,7 @@ async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResp
         workflow=effective_workflow,
         pulavar=target_pulavar,
         poet=target_pulavar,
+        routing_reason=routing_reason,
         response_text=response_text,
         citations=citations,
         metadata=AskMetadata(

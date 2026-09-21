@@ -66,6 +66,7 @@ class AskResponse(BaseModel):
     workflow: Workflow
     pulavar: str
     poet: str | None = None
+    routing_reason: str | None = None
     response_text: str
     citations: list[Citation]
     metadata: AskMetadata
