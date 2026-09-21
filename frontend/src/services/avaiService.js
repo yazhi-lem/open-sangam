@@ -109,7 +109,7 @@ export function getWorkflowForPulavar(pulavarId) {
 /**
  * Clearly labeled offline fallback message returned when live backend is unreachable.
  */
-function generateClientFallbackResponse({ pulavar, message, context, sessionId }) {
+function generateClientFallbackResponse({ pulavar, sessionId }) {
   const currentSessionId = sessionId || `sess_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`
 
   const responseText = `⚠️ **அவை சேவையகம் இணைப்பிலில்லை • Avai Backend Unreachable**
