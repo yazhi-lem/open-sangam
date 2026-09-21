@@ -1,9 +1,14 @@
 import pytest
 import os
 from unittest.mock import patch, MagicMock
-from agents.avai.image_backend import get_image_backend, NoneImageBackend, GeminiImageBackend
-from agents.avai.tools.image import generate_image
-from agents.avai.schemas import ImageResult
+try:
+    from avai.image_backend import get_image_backend, NoneImageBackend, GeminiImageBackend
+    from avai.tools.image import generate_image
+    from avai.schemas import ImageResult
+except ImportError:
+    from agents.avai.image_backend import get_image_backend, NoneImageBackend, GeminiImageBackend
+    from agents.avai.tools.image import generate_image
+    from agents.avai.schemas import ImageResult
 
 def test_get_image_backend_none():
     with patch.dict(os.environ, {"SANGAM_IMAGE_BACKEND": "none"}):
@@ -49,9 +54,12 @@ def test_gemini_backend_generate(mock_client_cls):
         assert kwargs["prompt"] == "A beautiful forest"
         assert kwargs["config"].aspect_ratio == "16:9"
 
-import agents.avai.tools.image
+try:
+    import avai.tools.image as image_module
+except ImportError:
+    import agents.avai.tools.image as image_module
 
-@patch.object(agents.avai.tools.image, "get_image_backend")
+@patch.object(image_module, "get_image_backend")
 def test_generate_image_tool(mock_get_backend):
     mock_backend = MagicMock()
     mock_backend.generate.return_value = ImageResult(prompt="Test", aspect_ratio="1:1", image_data_uri=None)

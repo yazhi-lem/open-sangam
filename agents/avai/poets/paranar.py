@@ -3,7 +3,7 @@ from google.genai import types
 
 from ..config import get_model
 from ..instructions import PARANAR_INSTRUCTION
-from ..tools import search_verses, get_verse, get_tinai_context
+from ..tools import search_verses, get_verse, get_tinai_context, list_poems, query_knowledge_graph
 from ..tools.image import generate_image
 
 
@@ -65,6 +65,10 @@ class _DeterministicPainter(BaseAgent):
             )
             
         yield Event(author=self.name, content=content)
+
+    @property
+    def tools(self):
+        return [generate_image]
 
 _paranar_painter = _DeterministicPainter()
 
