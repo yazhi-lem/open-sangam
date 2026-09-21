@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # --- Configuration ---
-BACKEND_DIR="agents/avai"
+BACKEND_DIR="agents"
 FRONTEND_DIR="frontend"
-PYTHON_VENV_PATH="${BACKEND_DIR}/venv"
+PYTHON_VENV_PATH="agents/avai/.venv"
 BACKEND_PORT=8080
 FRONTEND_PORT=5173
 
@@ -13,17 +13,20 @@ echo "---------------------------------"
 # --- Start Backend Service ---
 echo "Starting backend (FastAPI Uvicorn) from ${BACKEND_DIR}..."
 (
-  cd "${BACKEND_DIR}" || exit
   if [ -d "${PYTHON_VENV_PATH}" ]; then
     echo "Activating Python virtual environment..."
     source "${PYTHON_VENV_PATH}/bin/activate"
+  elif [ -d "agents/avai/venv" ]; then
+    echo "Activating Python virtual environment..."
+    source "agents/avai/venv/bin/activate"
   else
-    echo "Python virtual environment not found. Please run 'python -m venv venv && source venv/bin/activate && pip install -r requirements.txt' in '${BACKEND_DIR}' first."
+    echo "Python virtual environment not found in agents/avai/.venv. Please setup virtual environment first."
     exit 1
   fi
+  cd "${BACKEND_DIR}" || exit
   echo "Running uvicorn on port ${BACKEND_PORT}..."
   # Use --reload for development, remove for production
-  uvicorn api.app:app --host 0.0.0.0 --port "${BACKEND_PORT}" --reload &
+  python -m uvicorn avai.api.app:app --host 127.0.0.1 --port "${BACKEND_PORT}" --reload &
   BACKEND_PID=$!
   echo "Backend PID: ${BACKEND_PID}"
 ) &
