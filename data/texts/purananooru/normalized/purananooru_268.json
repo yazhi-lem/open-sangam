@@ -27,7 +27,17 @@
       ]
     }
   ],
-  "culturalNotes": [],
+  "culturalNotes": [
+    {
+      "title": "சுவடிச் சிதைவு / Lost Manuscript",
+      "category": "manuscript_history",
+      "description": "புறநானூறு 268ஆம் பாடல் பனையோலைச் சுவடிகளில் சிதைந்து கிடைக்கப்பெறாததால் மூலப் பாடலும் உரையும் கிடைக்கவில்லை. This verse was lost or fragmentary in surviving palm-leaf manuscripts; neither the original Sangam Tamil verse nor classical commentary survives.",
+      "sourceVerse": null,
+      "references": [
+        "உ. வே. சாமிநாதையர் பதிப்பு (1894)"
+      ]
+    }
+  ],
   "audioUrl": null,
   "source": "http://www.sangathamizh.com/8thokai/purananooru/purananooru-புறநானூறு268.html",
   "verified": false,
