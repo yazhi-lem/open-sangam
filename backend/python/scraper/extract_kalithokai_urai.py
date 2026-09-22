@@ -36,6 +36,7 @@ logger = logging.getLogger(__name__)
 # Base directories
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 DATA_BASE = Path(__file__).resolve().parents[3] / "data" / "texts" / "kalithokai"
+DATAPACKAGE_FILE = DATA_BASE / "datapackage.json"
 CACHE_DIR = BACKEND_DIR / "scraper" / "cache"
 CACHE_FILE = CACHE_DIR / "wikisource_pages.json"
 
@@ -298,6 +299,31 @@ def verify_match(poem_first_line: str, raw_segment: str) -> bool:
     return (matches / len(words)) >= 0.5
 
 
+def update_datapackage_stats(updated_count: int) -> bool:
+    """Update datapackage.json stats with the extracted urai count."""
+    if not DATAPACKAGE_FILE.exists():
+        logger.warning(f"datapackage.json does not exist: {DATAPACKAGE_FILE}")
+        return False
+    try:
+        logger.info(f"Updating stats in {DATAPACKAGE_FILE}")
+        with open(DATAPACKAGE_FILE, "r", encoding="utf-8") as f:
+            dp_data = json.load(f)
+        if "stats" in dp_data:
+            dp_data["stats"]["withUrai"] = updated_count
+            DATAPACKAGE_FILE.write_text(
+                json.dumps(dp_data, ensure_ascii=False, indent=2),
+                encoding="utf-8"
+            )
+            logger.info("Successfully updated datapackage.json stats.")
+            return True
+        else:
+            logger.warning("Could not find 'stats' section in datapackage.json.")
+            return False
+    except Exception as e:
+        logger.error(f"Error updating datapackage.json stats: {e}")
+        return False
+
+
 def process_kalithokai_urai() -> Tuple[int, int, int, int, int, int]:
     """
     Orchestrates the entire extraction process:
@@ -424,6 +450,9 @@ def process_kalithokai_urai() -> Tuple[int, int, int, int, int, int]:
         except Exception as e:
             logger.error(f"Error rebuilding consolidated file: {e}")
             errors += 1
+
+        # Step 7: Update datapackage.json stats
+        update_datapackage_stats(updated_files)
 
     except Exception as e:
         logger.error(f"Critical execution error: {e}")
