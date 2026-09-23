@@ -1,0 +1,639 @@
+{
+  "id": "akananooru_341",
+  "poem": "akananooru",
+  "tinai": "palai",
+  "sangamTamil": "உய் தகை இன்றால் தோழி! பைபய,\nகோங்கும் கொய் குழை உற்றன; குயிலும்\nதேம் பாய் மாஅத்து ஓங்கு சினை விளிக்கும்;\nநாடு ஆர் காவிரிக் கோடு தோய் மலிர் நிறைக்\nகழை அழி நீத்தம் சாஅய வழி நாள்,\nமழை கழிந்தன்ன மாக் கால் மயங்கு அறல்,\nபதவு மேயல் அருந்து துளங்கு இமில் நல் ஏறு,\nமதவுடை நாக் கொடு அசை வீடப் பருகி,\nகுறுங் காற் காஞ்சிக் கோதை மெல் இணர்ப்\nபொன் தகை நுண் தாது உறைப்ப, தொக்கு உடன்,\nகுப்பை வார் மணல் எக்கர்த் துஞ்சும்,\nயாணர் வேனில்மன், இது\nமாண் நலம் நுகரும் துணை உடையோர்க்கே?\n- ஆவூர் மூலங்கிழார்.",
+  "urai": "தோழி!  மெல்ல மெல்ல கோங்க மரங்களும் கொய்யும் அளவிற்குத் தளிர்களை ஈன்றுள்ளன.  குயில்களும் மலர்களிலிருந்து தேன் வடியும் மாமரத்தின் உயர்ந்த கிளைகளிலிருந்து கூவுகின்றன.  நாட்டினை நீரால் நிறைக்கும் காவிரி ஆறு கரையைப் பொருந்தி, நிறைந்த நீர் பெருக்கம் கொண்டுள்ளது.  மூங்கிலாகிய ஓடக்கோலை மறைக்கும் வெள்ளம் வற்றிய பின்னாளில், மழை பொழிந்து கழிந்த வேளையில், வாய்க்காலில் உள்ள நீரை அருகம்புல்லை மேய்ந்து உண்ணும் அசைகின்ற திமிலையுடைய அழகிய காளைகள் தங்களுடைய வலிமையுடைய நாக்கினால் தளர்ச்சி நீங்கக் குடித்து, குறிய அடியையுடைய காஞ்சி மரத்தின் மாலைபோன்ற மெல்லிய பூங்கொத்துக்களிலிருந்து பொன் போன்ற நுண்ணிய தாது தங்கள் மேல் உதிர, ஒருங்கே கூடிய நெடிய மேட்டு மணலில் உறங்கும், அழகான வேனில் பருவம் இது.  இது துணைவர்களுடன் கூடியிருக்கும் மகளிர்க்கே இனியதாகும்.  எமக்கு உய்வு இல்லையே!",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உய் தகை இன்றால் தோழி! பைபய,",
+      "words": [
+        {
+          "form": "உய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோழி!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பைபய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கோங்கும் கொய் குழை உற்றன; குயிலும்",
+      "words": [
+        {
+          "form": "கோங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உற்றன;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குயிலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தேம் பாய் மாஅத்து ஓங்கு சினை விளிக்கும்;",
+      "words": [
+        {
+          "form": "தேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாஅத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளிக்கும்;",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நாடு ஆர் காவிரிக் கோடு தோய் மலிர் நிறைக்",
+      "words": [
+        {
+          "form": "நாடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காவிரிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிறைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "கழை அழி நீத்தம் சாஅய வழி நாள்,",
+      "words": [
+        {
+          "form": "கழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீத்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாஅய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாள்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "மழை கழிந்தன்ன மாக் கால் மயங்கு அறல்,",
+      "words": [
+        {
+          "form": "மழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிந்தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மயங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறல்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பதவு மேயல் அருந்து துளங்கு இமில் நல் ஏறு,",
+      "words": [
+        {
+          "form": "பதவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துளங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இமில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏறு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "மதவுடை நாக் கொடு அசை வீடப் பருகி,",
+      "words": [
+        {
+          "form": "மதவுடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அசை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வீடப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பருகி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "குறுங் காற் காஞ்சிக் கோதை மெல் இணர்ப்",
+      "words": [
+        {
+          "form": "குறுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காஞ்சிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோதை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மெல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இணர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "பொன் தகை நுண் தாது உறைப்ப, தொக்கு உடன்,",
+      "words": [
+        {
+          "form": "பொன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உறைப்ப,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடன்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "குப்பை வார் மணல் எக்கர்த் துஞ்சும்,",
+      "words": [
+        {
+          "form": "குப்பை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மணல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எக்கர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துஞ்சும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "யாணர் வேனில்மன், இது",
+      "words": [
+        {
+          "form": "யாணர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேனில்மன்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "மாண் நலம் நுகரும் துணை உடையோர்க்கே?",
+      "words": [
+        {
+          "form": "மாண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுகரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடையோர்க்கே?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "- ஆவூர் மூலங்கிழார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆவூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூலங்கிழார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/akananooru/akananooru-அகநானூறு341.html",
+  "verified": false,
+  "number": 341,
+  "poet": "ஆவூர் மூலங்கிழார்."
+}

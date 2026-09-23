@@ -184,7 +184,10 @@ def build_prompt(verse: dict) -> str:
         f"Words, in order (annotate ALL {len(words)}, do not merge or split any):\n{numbered}\n\n"
         "Return ONLY a JSON array, one object per word, IN THE SAME ORDER, each shaped exactly as:\n"
         '{"form": "...", "root": "...", "urichol": "...", "etymology": "...", "gloss": "..."}\n'
-        f"The array MUST have exactly {len(words)} elements. No markdown, no prose, no code fences."
+        f"The array MUST have exactly {len(words)} elements. No markdown, no prose, no code fences.\n"
+        "IMPORTANT: If any numbered item consists only of dots or punctuation (manuscript lacuna), do NOT skip it; "
+        "include an object for it with root: null, urichol: null, etymology: null, and gloss: 'manuscript lacuna'. "
+        f"Exactly {len(words)} objects required in the array."
     )
 
 

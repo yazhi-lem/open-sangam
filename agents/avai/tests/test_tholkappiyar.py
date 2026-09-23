@@ -8,9 +8,9 @@ def test_tholkappiyar_agent_instantiation():
     # 1. tholkappiyar_agent.name == "tholkappiyar"
     assert tholkappiyar_agent.name == "tholkappiyar"
     
-    # 2. _tholkappiyar_researcher.tools contains exactly get_verse, search_verses, get_tinai_context and nothing else
+    # 2. _tholkappiyar_researcher.tools contains expected tools
     researcher_tool_names = {t.__name__ for t in _tholkappiyar_researcher.tools}
-    assert researcher_tool_names == {"get_verse", "search_verses", "get_tinai_context"}
+    assert researcher_tool_names == {"get_verse", "search_verses", "get_tinai_context", "analyze_prosody", "get_colophon_metadata"}
     
     # 3. _tholkappiyar_formatter.output_schema == Scenario
     assert _tholkappiyar_formatter.output_schema == Scenario
@@ -19,11 +19,11 @@ def test_tholkappiyar_agent_instantiation():
     assert len(_tholkappiyar_formatter.tools) == 0
 
 def test_tholkappiyar_isolation_after_wire_mesh():
-    # 5. After wire_mesh() runs, confirm _tholkappiyar_researcher.tools STILL only contains the original 3 tools
+    # 5. After wire_mesh() runs, confirm _tholkappiyar_researcher.tools STILL only contains the original tools
     wire_mesh()
     
     researcher_tool_names = {getattr(t, 'name', getattr(t, '__name__', '')) for t in _tholkappiyar_researcher.tools}
-    assert researcher_tool_names == {"get_verse", "search_verses", "get_tinai_context"}
+    assert researcher_tool_names == {"get_verse", "search_verses", "get_tinai_context", "analyze_prosody", "get_colophon_metadata"}
     
     # Verify the dummy tools actually got the peer-transfer tools (to ensure wire_mesh did something to it)
     dummy_tools = {getattr(t, 'name', getattr(t, '__name__', '')) for t in tholkappiyar_agent.tools}

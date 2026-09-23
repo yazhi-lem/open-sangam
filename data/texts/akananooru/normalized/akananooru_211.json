@@ -1,0 +1,719 @@
+{
+  "id": "akananooru_211",
+  "poem": "akananooru",
+  "tinai": "palai",
+  "sangamTamil": "கேளாய், எல்ல! தோழி! வாலிய\nசுதை விரிந்தன்ன பல் பூ மராஅம்\nபறை கண்டன்ன பா அடி நோன் தாள்\nதிண் நிலை மருப்பின் வயக் களிறு உரிஞுதொறும்,\nதண் மழை ஆலியின் தாஅய், உழவர்\nவெண்ணெல் வித்தின் அறைமிசை உணங்கும்\nபனி படு சோலை வேங்கடத்து உம்பர்,\nமொழி பெயர் தேஎத்தர் ஆயினும், நல்குவர்\nகுழியிடைக் கொண்ட கன்றுடைப் பெரு நிரை\nபிடி படு பூசலின் எய்தாது ஒழிய,\nகடுஞ் சின வேந்தன் ஏவலின் எய்தி,\nநெடுஞ் சேண் நாட்டில் தலைத்தார்ப் பட்ட\nகல்லா எழினி பல் எறிந்து அழுத்திய\nவன்கண் கதவின் வெண்மணி வாயில்,\nமத்தி நாட்டிய கல் கெழு பனித் துறை,\nநீர் ஒலித்தன்ன பேஎர்\nஅலர் நமக்கு ஒழிய, அழப் பிரிந்தோரே.\n- மாமூலனார்.",
+  "urai": "ஏடி தோழி!  நான் கூறுவதைக் கேட்பாயாக!  வெள்ளை சுண்ணாம்பு பரவினாற்போன்ற கடம்ப மரத்தின் பல மலர்கள், பறையை ஒத்த வட்டமாகிய பரந்த அடியையுடைய வலிய கால்களையும், திண்மையான கோடுகளையும் (தந்தங்களையும்) உடைய வலிய களிற்று யானை உரசும்போதெல்லாம் குளிர்ந்த மழையுடன் விழும் பனிக்கட்டிகள் போல் தாவி, உழவர்களின் வெள்ளை நெல் போல் பாறைகளின் மீது காய்ந்து கிடக்கும், குளிர்ந்த சோலைகளையுடைய வேங்கட மலைக்கு அப்பால் உள்ள மொழி வேறுபட்ட நாட்டில் இருப்பவர் ஆனாலும், அருள் செய்வார்,\n\nபள்ளத்தில் அகப்படுத்திய கன்றுகளையும் பிடி யானைகளையும் உடைய பெரிய கூட்டத்தை அகப்படுத்தும் பூசலின்கண், தன் ஏவலின்படி வராமல் ஒழிந்தமையால், பெருஞ்சினம் கொண்ட சோழ மன்னனின் ஏவலால் சென்று மிகவும் சேய்மையில் உள்ள நாட்டில் முதல் படையில் அகப்பட்ட, கல்லாத எழினியின் பற்களைப் பறித்து வந்து பதித்த வலிய கதவையுடைய வெண்மணி என்னும் ஊரின் வாயிலில் மத்தி என்னும் குறுநில மன்னன் என்பவன் நட்டிய, வீரக்கல் பொருந்திய குளிர்ந்த கடலின் துறையின்கண் நீர் மோதி ஒலிப்பதை ஒத்த பெரும் அலர் நம்பால் வரவும், நாம் அழவும் பிரிந்த நம் தலைவர்.",
+  "english": null,
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கேளாய், எல்ல! தோழி! வாலிய",
+      "words": [
+        {
+          "form": "கேளாய்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எல்ல!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோழி!",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாலிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சுதை விரிந்தன்ன பல் பூ மராஅம்",
+      "words": [
+        {
+          "form": "சுதை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விரிந்தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மராஅம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பறை கண்டன்ன பா அடி நோன் தாள்",
+      "words": [
+        {
+          "form": "பறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்டன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "திண் நிலை மருப்பின் வயக் களிறு உரிஞுதொறும்,",
+      "words": [
+        {
+          "form": "திண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மருப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உரிஞுதொறும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "தண் மழை ஆலியின் தாஅய், உழவர்",
+      "words": [
+        {
+          "form": "தண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆலியின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாஅய்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உழவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "வெண்ணெல் வித்தின் அறைமிசை உணங்கும்",
+      "words": [
+        {
+          "form": "வெண்ணெல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வித்தின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறைமிசை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உணங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பனி படு சோலை வேங்கடத்து உம்பர்,",
+      "words": [
+        {
+          "form": "பனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேங்கடத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உம்பர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "மொழி பெயர் தேஎத்தர் ஆயினும், நல்குவர்",
+      "words": [
+        {
+          "form": "மொழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேஎத்தர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயினும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்குவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "குழியிடைக் கொண்ட கன்றுடைப் பெரு நிரை",
+      "words": [
+        {
+          "form": "குழியிடைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கன்றுடைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "பிடி படு பூசலின் எய்தாது ஒழிய,",
+      "words": [
+        {
+          "form": "பிடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூசலின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எய்தாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒழிய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "கடுஞ் சின வேந்தன் ஏவலின் எய்தி,",
+      "words": [
+        {
+          "form": "கடுஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சின",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேந்தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏவலின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எய்தி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "நெடுஞ் சேண் நாட்டில் தலைத்தார்ப் பட்ட",
+      "words": [
+        {
+          "form": "நெடுஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட்டில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைத்தார்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "கல்லா எழினி பல் எறிந்து அழுத்திய",
+      "words": [
+        {
+          "form": "கல்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழினி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எறிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழுத்திய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "வன்கண் கதவின் வெண்மணி வாயில்,",
+      "words": [
+        {
+          "form": "வன்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெண்மணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாயில்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "மத்தி நாட்டிய கல் கெழு பனித் துறை,",
+      "words": [
+        {
+          "form": "மத்தி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட்டிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெழு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பனித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "நீர் ஒலித்தன்ன பேஎர்",
+      "words": [
+        {
+          "form": "நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒலித்தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேஎர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "அலர் நமக்கு ஒழிய, அழப் பிரிந்தோரே.",
+      "words": [
+        {
+          "form": "அலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நமக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒழிய,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அழப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிரிந்தோரே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "- மாமூலனார்.",
+      "words": [
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாமூலனார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "http://www.sangathamizh.com/8thokai/akananooru/akananooru-அகநானூறு211.html",
+  "verified": false,
+  "number": 211,
+  "poet": "மாமூலனார்."
+}

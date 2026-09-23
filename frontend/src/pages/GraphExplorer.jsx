@@ -49,11 +49,16 @@ export default function GraphExplorer() {
     return { nodeById, adjacency }
   }, [])
 
-  const [searchParams] = useSearchParams()
-  const initialFocusId = searchParams.get('focus') || 'tinai:kurinji'
-  const [focusId, setFocusId] = useState(initialFocusId)
+  const [searchParams, setSearchParams] = useSearchParams()
+  const focusId = searchParams.get('focus') || 'tinai:kurinji'
   const [typeFilter, setTypeFilter] = useState(null)
   const [hover, setHover] = useState(null)
+
+  function setFocusId(nextFocusId) {
+    const nextSearchParams = new URLSearchParams(searchParams)
+    nextSearchParams.set('focus', nextFocusId)
+    setSearchParams(nextSearchParams, { replace: true })
+  }
 
   const focus = nodeById[focusId]
 

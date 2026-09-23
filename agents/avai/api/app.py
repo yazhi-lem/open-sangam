@@ -63,6 +63,78 @@ _WORKFLOW_TO_PULAVAR = {
     "general": "nakkirar",
 }
 
+_PULAVAR_TO_DEFAULT_WORKFLOW = {
+    "avvaiyar": "qa",
+    "kapilar": "search",
+    "tholkappiyar": "scenario",
+    "paranar": "imagery",
+    "nakkirar": "general",
+    "swarm": "qa",
+}
+
+
+def classify_message(message: str) -> tuple[str, str]:
+    """Classifies user message into (workflow, routing_reason).
+    Default for greetings, meta questions, and unknown intent is ('general', ...).
+    """
+    msg = message.strip()
+    msg_lower = msg.lower()
+
+    # 1. Greetings & meta questions -> general (nakkirar)
+    meta_patterns = [
+        r"^(hi+|hello|hey|vanakkam|வணக்கம்|நலமா)[!.,?\s]*$",
+        r"\b(who are you|what is your workflow|how do you work|your workflow)\b",
+        r"(?:^|[^\w])(நீ\s*யார்|யார்\s*நீ|உன்\s*பணி|உன்\s*வேலை|அவை\s*எவ்வாறு\s*செயல்படுகிறது)(?:[^\w]|$)",
+        r"\b(vera edhum|pesa mttiya)\b|(?:^|[^\w])(வேற\s*எதுவும்|பேச\s*மாட்டியா)(?:[^\w]|$)",
+    ]
+    for pat in meta_patterns:
+        if re.search(pat, msg_lower):
+            return "general", "greeting_or_meta"
+
+    # 2. Verse search & discovery -> search (kapilar)
+    search_patterns = [
+        r"\b(find|search|look for|discover|list|show)\b.*(?:\b(verse|verses|poem|poems|song|songs)\b|(?:^|[^\w])(பாடல்|பாடல்கள்)(?:[^\w]|$))",
+        r"\b(verses|poems|songs)\b.*\b(about|on|for)\b",
+        r"(பாடல்களைத்\s*தேடு|பாடல்\s*தேடல்|பாடல்கள்\s*தேடு|தேடித்\s*தருக|கண்டுபிடி)",
+        r"(பற்றிய\s*பாடல்கள்|குறித்த\s*பாடல்கள்|பாடல்கள்\s*(?:எவை|யாவை)|வருணிக்கும்.*பாடல்கள்)",
+    ]
+    for pat in search_patterns:
+        if re.search(pat, msg_lower):
+            return "search", "verse_search_intent"
+
+    # 3. Visual & Imagery -> imagery (paranar)
+    imagery_patterns = [
+        r"\b(draw|paint|illustrate)\b",
+        r"\b(generate|create|make)\s+(an?\s+)?(image|picture)\b",
+        r"\bpicture\s+of\b",
+        r"(?:ஓவியம்|படம்|காட்சி|சித்திரம்)\s*(?:வரை|வரைக|வரையவும்|வரைந்து)|காட்சிப்படுத்து",
+    ]
+    for pat in imagery_patterns:
+        if re.search(pat, msg_lower):
+            return "imagery", "imagery_intent"
+
+    # 4. Grammar, prosody, linguistics -> scenario (tholkappiyar)
+    grammar_patterns = [
+        r"\b(grammar|meter|prosody|poetics|tholkappiyam|tolkappiyam|rule)\b",
+        r"(இலக்கணம்|யாப்பு|தொல்காப்பியம்|சூத்திரம்|அணி)",
+    ]
+    for pat in grammar_patterns:
+        if re.search(pat, msg_lower):
+            return "scenario", "grammar_scenario_intent"
+
+    # 5. Verse commentary / explanation / Q&A -> qa (avvaiyar)
+    qa_patterns = [
+        r"\b[a-z]+_\d{2,4}\b",
+        r"\b(meaning|explain|commentary|philosoph|significance|tiṇai|tinai)\b",
+        r"(பொருள்|விளக்கம்|விளக்குக|கருத்து|தத்துவம்|திணை)",
+    ]
+    for pat in qa_patterns:
+        if re.search(pat, msg_lower):
+            return "qa", "qa_commentary_intent"
+
+    # 6. Default for unknown intent -> nakkirar
+    return "general", "default_convener"
+
 _VERSE_ID_PATTERN = re.compile(r"\b[a-z]+_\d{2,4}\b")
 
 _MODEL_LABEL = "{}:{}".format(
@@ -176,10 +248,20 @@ def _capture_artifact(
 @app.post("/avai/ask", response_model=AskResponse)
 async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResponse:
     target_pulavar = request.pulavar or request.poet
-    if not target_pulavar:
-        target_pulavar = _WORKFLOW_TO_PULAVAR.get(request.workflow or "qa", "avvaiyar")
+    if target_pulavar:
+        effective_workflow = request.workflow or _PULAVAR_TO_DEFAULT_WORKFLOW.get(
+            target_pulavar, "general"
+        )
+        routing_reason = "explicit_pulavar_selected"
+    elif request.workflow:
+        effective_workflow = request.workflow
+        target_pulavar = _WORKFLOW_TO_PULAVAR.get(request.workflow, "nakkirar")
+        routing_reason = "explicit_workflow_selected"
+    else:
+        effective_workflow, routing_reason = classify_message(request.message)
+        target_pulavar = _WORKFLOW_TO_PULAVAR.get(effective_workflow, "nakkirar")
 
-    runner = _RUNNERS.get(target_pulavar, _RUNNERS["avvaiyar"])
+    runner = _RUNNERS.get(target_pulavar, _RUNNERS["nakkirar"])
 
     sessions.prune_expired()
 
@@ -209,7 +291,6 @@ async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResp
         raise HTTPException(status_code=502, detail=f"Agent execution failed: {exc}") from exc
 
     elapsed_ms = int((time.monotonic() - start) * 1000)
-    effective_workflow = request.workflow or "qa"
     response_text = final_text.strip()
     citations = _extract_citations(final_text)
 
@@ -230,11 +311,15 @@ async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResp
         workflow=effective_workflow,
         pulavar=target_pulavar,
         poet=target_pulavar,
+        routing_reason=routing_reason,
         response_text=response_text,
         citations=citations,
         metadata=AskMetadata(
             model=_MODEL_LABEL,
             elapsed_ms=elapsed_ms,
             timestamp=datetime.now(timezone.utc).isoformat(),
+            workflow=effective_workflow,
+            routed_pulavar=target_pulavar,
+            routing_reason=routing_reason,
         ),
     )

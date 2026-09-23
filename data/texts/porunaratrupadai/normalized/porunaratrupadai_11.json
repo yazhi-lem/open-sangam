@@ -13,30 +13,30 @@
         {
           "form": "கதுமெனக்",
           "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "urichol": "உரிச்சொல்",
+          "etymology": "கதுமென என்பது ஒரு விரைவுப் பொருளை உணர்த்தும் உரிச்சொல். இது 'கதுவு' என்னும் வேர்ச்சொல்லிலிருந்து தோன்றியிருக்கலாம். 'கதுவு' என்பது பற்றுதல், விரைந்து செல்லுதல் என்ற பொருள்களைக் குறிக்கும். இச்சொல் சங்க இலக்கியத்தில் 'விரைவாக', 'திடீரென' என்ற பொருளில் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் இதன் நேரடிப் பயன்பாடு குறைவு, ஆனால் 'கதகதப்பு' போன்ற சொற்களில் இதன் சாயலைக் காணலாம்.",
+          "gloss": "This word, functioning as an adverbial particle, signifies 'quickly' or 'suddenly,' indicating the swiftness with which an action is performed."
         },
         {
           "form": "கரைந்து",
-          "root": null,
+          "root": "கரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கரைந்து என்பது 'கரை' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'கரை' என்பதற்கு 'அழைத்தல்', 'கூப்பிடுதல்' என்று பொருள். சங்க இலக்கியத்தில் இது பறவைகள் ஒலி எழுப்புவதையும், மனிதர்கள் அழைப்பதையும் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழிலும் 'கரைதல்' என்பது பறவைகளின் ஒலியைக் குறிக்கப் பயன்படுத்தப்படுகிறது, ஆனால் மனிதர்கள் அழைப்பதைக் குறிக்கும் பயன்பாடு அரிது.",
+          "gloss": "This is the past adverbial participle of the verb 'கரை' (karai), meaning 'having called out' or 'having summoned,' indicating the action of vocalizing an invitation or command."
         },
         {
           "form": "வம்மெனக்",
-          "root": null,
+          "root": "வா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "வம்மெனக் என்பது 'வா' என்னும் வினைச்சொல்லின் ஏவல் பன்மை வடிவமான 'வம்மின்' என்பதன் சுருக்கமும், 'என' என்னும் அசைச்சொல்லும் இணைந்து உருவானது. 'வா' என்பது 'வருதல்' என்ற பொருளைக் குறிக்கும். 'வம்மின்' என்பது 'வாருங்கள்' என்று பொருள்படும். 'என' என்பது 'என்று' என்ற பொருளில் வரும். சங்க இலக்கியத்தில் இது 'வாருங்கள் என்று' என்ற நேரடிப் பேச்சைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழிலும் 'வா' என்ற வினைச்சொல் பரவலாகப் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word combines the imperative plural form 'வம்' (vam), meaning 'come' or 'you all come,' with the particle 'என' (ena), meaning 'saying' or 'as if,' thus conveying the direct speech 'saying \"come!\"'"
         },
         {
           "form": "கூஉ",
-          "root": null,
+          "root": "கூ",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கூஉ என்பது 'கூ' என்னும் வினைச்சொல்லின் அளபெடை வடிவம். 'கூ' என்பதற்கு 'அழைத்தல்', 'கூப்பிடுதல்' என்று பொருள். சங்க இலக்கியத்தில் உணர்ச்சி மிகுதியால் அல்லது தொலைவில் உள்ளவரை அழைக்கும்போது ஒலி நீட்டித்துச் சொல்லும் வழக்கத்தைக் குறிக்க அளபெடை பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழில் அளபெடை பேச்சு வழக்கில் இல்லை, ஆனால் இலக்கியங்களில் அதன் பயன்பாடு உண்டு.",
+          "gloss": "This is an elongated form (அளபெடை) of the verb 'கூ' (kū), meaning 'to call out' or 'to shout,' emphasizing the prolonged or loud nature of the summons."
         }
       ]
     },
@@ -46,31 +46,31 @@
       "words": [
         {
           "form": "யதன்முறை",
-          "root": null,
+          "root": "அது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "யதன்முறை என்பது 'அது' என்னும் சுட்டுப்பெயருடன் 'அன்' சாரியையும், 'முறை' என்னும் பெயர்ச்சொல்லும் இணைந்து உருவானது. 'அது' என்பது சுட்டுப் பொருளைக் குறிக்கும். 'முறை' என்பது 'வழக்கம்', 'நியதி' என்று பொருள்படும். 'ய' என்பது உடம்படுமெய். சங்க இலக்கியத்தில் இது 'அதன் வழக்கம்', 'அதன் முறைமை' என்ற பொருளில் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழிலும் 'முறை' என்ற சொல் வழக்கம், நியதி என்ற பொருள்களில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This compound word combines 'யதன்' (yatan), meaning 'its' or 'of that,' with 'முறை' (muṟai), meaning 'custom,' 'manner,' or 'procedure,' collectively referring to 'its usual manner' or 'the way it is done.'"
         },
         {
           "form": "கழிப்பிய",
-          "root": null,
+          "root": "கழி",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கழிப்பிய என்பது 'கழி' என்னும் வினைச்சொல்லின் பிறவினை வடிவமான 'கழிப்பி' என்பதன் இறந்தகாலப் பெயரெச்சம். 'கழி' என்பதற்கு 'நீக்குதல்', 'கடந்து செல்லுதல்' என்று பொருள். 'கழிப்பி' என்பது 'நீக்குவித்த', 'கடந்து செல்லச் செய்த' என்று பொருள்படும். சங்க இலக்கியத்தில் இது ஒரு செயலை முடித்த அல்லது கடந்துவிட்ட நிலையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழிலும் 'கழித்தல்' என்ற சொல் நீக்குதல், கழித்தல் என்ற பொருள்களில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This is the past adjectival participle of the causative verb 'கழிப்பி' (kaḻippi), derived from 'கழி' (kaḻi), meaning 'having caused to pass' or 'having completed,' indicating an action that has been brought to an end or gone through."
         },
         {
           "form": "பின்றைப்",
-          "root": null,
+          "root": "பின்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பின்றைப் என்பது 'பின்' என்னும் காலப் பெயர்ச்சொல்லுடன் 'ஐ' சாரியையும், 'ப' என்னும் இடைச்சொல்லும் இணைந்து உருவானது. 'பின்' என்பது 'பிறகு', 'பின்னர்' என்று பொருள்படும். 'ஐ' சாரியை காலப் பொருளை வலியுறுத்தும். 'ப' என்பது வலிமிகுதலைக் குறிக்கும். சங்க இலக்கியத்தில் இது 'அதற்குப் பிறகு', 'பின்னர்' என்ற பொருளில் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழிலும் 'பின்பு', 'பிறகு' என்ற சொற்கள் பரவலாகப் பயன்படுத்தப்படுகின்றன.",
+          "gloss": "This word, formed from 'பின்' (piṉ) meaning 'after' or 'subsequently,' with the suffix 'றை' (ṟai) indicating a temporal relationship and the euphonic 'ப்' (p), denotes 'after that' or 'subsequently,' marking a point in time following a previous event."
         },
         {
           "form": "பதனறிந்து",
-          "root": null,
+          "root": "பதம்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "பதனறிந்து என்பது 'பதம்' என்னும் பெயர்ச்சொல்லும், 'அறிந்து' என்னும் வினையெச்சமும் இணைந்து உருவானது. 'பதம்' என்பதற்கு 'சரியான நேரம்', 'தகுந்த நிலை' என்று பொருள். 'அறிந்து' என்பது 'தெரிந்து' என்று பொருள்படும். சங்க இலக்கியத்தில் இது 'சரியான நேரத்தை அறிந்து', 'தகுந்த நிலையை உணர்ந்து' என்ற பொருளில் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழிலும் 'பதம்' என்ற சொல் சரியான நிலை, பக்குவம் என்ற பொருள்களில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This compound word combines 'பதம்' (patam), meaning 'the opportune moment' or 'the right condition,' with 'அறிந்து' (aṟintu), the past adverbial participle of 'அறி' (aṟi) meaning 'having known' or 'having understood,' thus signifying 'having known the opportune moment' or 'having understood the proper condition.'"
         }
       ]
     }
@@ -82,5 +82,13 @@
   "sectionNumber": 11,
   "title": "அரசனை அணுகுதல்",
   "lineStart": 101,
-  "lineEnd": 102
+  "lineEnd": 102,
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-09-23T04:45:45+00:00",
+    "runId": "adc1d2118e94",
+    "wordsAnnotated": 8
+  }
 }

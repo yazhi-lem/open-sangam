@@ -12,17 +12,17 @@
       "words": [
         {
           "form": "தேனெய்யொடு",
-          "root": null,
+          "root": "தேனெய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தேனெய் என்பது தேன் (honey) மற்றும் நெய் (ghee) ஆகிய இரண்டு சொற்களின் புணர்ச்சியால் உருவானது. சங்க இலக்கியத்தில் தேன் என்பது இனிப்புப் பொருளையும், நெய் என்பது கொழுப்புப் பொருளையும் குறிக்கும். இங்கு, தேன் போன்ற இனிப்புச் சுவையுடைய நெய் அல்லது தேனுடன் கலந்த நெய் என்ற பொருளில் வருகிறது. இச்சொல் இன்றும் தேன் மற்றும் நெய் என்ற தனித்தனிப் பொருள்களில் பயன்பாட்டில் உள்ளது.",
+          "gloss": "This word refers to honey-ghee, a mixture of honey and clarified butter, which was a valuable commodity used in bartering or as a food item in the Sangam period."
         },
         {
           "form": "கிழங்குமாறியோர்",
-          "root": null,
+          "root": "கிழங்கு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "கிழங்குமாறியோர் என்பது கிழங்கு (tuber) மற்றும் மாறியோர் (those who exchanged/bartered) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. கிழங்கு என்பது நிலத்தினடியில் விளையும் உணவுப் பொருளைக் குறிக்கிறது. மாறியோர் என்பது 'மாறு' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். இங்கு, கிழங்குகளை பண்டமாற்று செய்தவர்கள் அல்லது கிழங்குகளைக் கொடுத்துப் பண்டமாற்று செய்தவர்கள் என்ற பொருளில் வருகிறது. இச்சொல் இன்றும் கிழங்கு என்ற பொருளில் பயன்பாட்டில் உள்ளது, ஆனால் மாறியோர் என்ற பயன்பாடு பண்டமாற்றுச் சூழலில் இல்லை.",
+          "gloss": "This compound word refers to those who exchanged or bartered tubers, indicating that tubers were a commodity used in trade during that era."
         }
       ]
     },
@@ -32,45 +32,45 @@
       "words": [
         {
           "form": "மீனெய்யொடு",
-          "root": null,
+          "root": "மீனெய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மீனெய்யொடு என்பது மீனெய் (fish oil) மற்றும் ஒடு (with) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. மீனெய் என்பது மீன் (fish) மற்றும் நெய் (oil/fat) ஆகிய சொற்களின் சேர்க்கை. சங்க காலத்தில் மீன் கொழுப்பிலிருந்து எடுக்கப்படும் எண்ணெய் ஒரு முக்கியமான பொருளாக இருந்தது. இச்சொல் இன்றும் மீன் எண்ணெய் என்ற பொருளில் பயன்பாட்டில் உள்ளது, ஆனால் மீனெய் என்ற வடிவம் அரிது.",
+          "gloss": "This word refers to fish oil, a product derived from fish fat, which was also used as a commodity for exchange or consumption."
         },
         {
           "form": "நறவுமறுகவுந்",
-          "root": null,
+          "root": "நறவு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "நறவுமறுகவுந் என்பது நறவு (toddy/liquor), மறுக (to be exchanged/bartered), மற்றும் உம் (also/and) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. நறவு என்பது கள் அல்லது மதுவைக் குறிக்கும். மறுக என்பது 'மறு' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம், இங்கு 'பண்டமாற்று செய்ய' என்ற பொருளில் வருகிறது. இச்சொல் இன்றும் நறவு என்ற பொருளில் இலக்கியப் பயன்பாட்டில் உள்ளது, ஆனால் பேச்சுவழக்கில் கள் என்றே பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word signifies that toddy or liquor was also exchanged or bartered, highlighting its role as a tradable item in the Sangam society."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the verse."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the verse."
         },
         {
           "form": ".",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a punctuation mark, indicating the end of a phrase or sentence in the verse."
         },
         {
           "form": ".(215)",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a numerical annotation, indicating the verse number 215 in the text."
         }
       ]
     },
@@ -80,17 +80,17 @@
       "words": [
         {
           "form": "தீங்கரும்போ",
-          "root": null,
+          "root": "தீங்கரும்பு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "தீங்கரும்போ என்பது தீங்கரும்பு (sweet sugarcane) மற்றும் ஓ (a particle indicating 'with' or 'and') ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. தீங்கரும்பு என்பது தீம் (sweet) மற்றும் கரும்பு (sugarcane) ஆகிய சொற்களின் சேர்க்கை. சங்க காலத்தில் கரும்பு ஒரு முக்கியமான இனிப்புப் பொருளாகவும், பண்டமாற்றுப் பொருளாகவும் இருந்தது. இச்சொல் இன்றும் தீங்கரும்பு என்ற பொருளில் இலக்கியப் பயன்பாட்டில் உள்ளது, ஆனால் பேச்சுவழக்கில் கரும்பு என்றே பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word refers to sweet sugarcane, indicating its use as a valuable commodity, possibly for consumption or exchange."
         },
         {
           "form": "டவல்வகுத்தோர்",
-          "root": null,
+          "root": "அவல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "டவல்வகுத்தோர் என்பது அவல் (flattened rice) மற்றும் வகுத்தோர் (those who prepared/arranged) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. அவல் என்பது நெல்லை இடித்துத் தயாரிக்கப்படும் ஒரு உணவுப் பொருள். வகுத்தோர் என்பது 'வகு' என்ற வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம், இங்கு 'தயாரித்தவர்கள்' அல்லது 'பகிர்ந்தளித்தவர்கள்' என்ற பொருளில் வருகிறது. இச்சொல் இன்றும் அவல் என்ற பொருளில் பயன்பாட்டில் உள்ளது, ஆனால் வகுத்தோர் என்ற பயன்பாடு இந்தச் சூழலில் இல்லை.",
+          "gloss": "This compound word refers to those who prepared or arranged flattened rice, suggesting its role as a food item or a commodity in the exchange system."
         }
       ]
     },
@@ -100,24 +100,24 @@
       "words": [
         {
           "form": "மான்குறையொடு",
-          "root": null,
+          "root": "மான்கறை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மான்குறையொடு என்பது மான் (deer), குறை (meat/portion), மற்றும் ஒடு (with) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. மான் குறை என்பது மான் இறைச்சி அல்லது மானின் ஒரு பகுதி என்ற பொருளில் வருகிறது. சங்க காலத்தில் வேட்டையாடப்பட்ட மான் இறைச்சி ஒரு முக்கியமான உணவுப் பொருளாகவும், பண்டமாற்றுப் பொருளாகவும் இருந்தது. இச்சொல் இன்றும் மான் இறைச்சி என்றே பயன்படுத்தப்படுகிறது, குறை என்ற பயன்பாடு அரிது.",
+          "gloss": "This word refers to deer meat or a portion of deer, indicating its use as a valuable food source and a commodity for exchange."
         },
         {
           "form": "மதுமறுகவுந்",
-          "root": null,
+          "root": "மது",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "மதுமறுகவுந் என்பது மது (liquor/wine), மறுக (to be exchanged/bartered), மற்றும் உம் (also/and) ஆகிய சொற்களின் புணர்ச்சியால் உருவானது. மது என்பது கள் அல்லது மதுவைக் குறிக்கும். மறுக என்பது 'மறு' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம், இங்கு 'பண்டமாற்று செய்ய' என்ற பொருளில் வருகிறது. இச்சொல் இன்றும் மது என்ற பொருளில் பயன்பாட்டில் உள்ளது, ஆனால் மறுக என்ற பயன்பாடு பண்டமாற்றுச் சூழலில் இல்லை.",
+          "gloss": "This word signifies that liquor or wine was also exchanged or bartered, further illustrating the diverse range of goods involved in trade during the Sangam period."
         },
         {
           "form": "217",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": null
+          "gloss": "This is a numerical annotation, indicating the verse number 217 in the text."
         }
       ]
     }
@@ -129,5 +129,13 @@
   "sectionNumber": 19,
   "title": "நில மயக்கமும் நல் ஆட்சியும்",
   "lineStart": 214,
-  "lineEnd": 231
+  "lineEnd": 231,
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-09-23T04:48:48+00:00",
+    "runId": "adc1d2118e94",
+    "wordsAnnotated": 13
+  }
 }

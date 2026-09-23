@@ -211,19 +211,40 @@ function MessageContent({ text }) {
   )
 }
 
+const AUTO_AVAI_PROFILE = {
+  id: 'auto',
+  nameTa: 'சங்க அவை',
+  nameEn: 'Sangam Avai',
+  tag: 'தானியங்கி • Auto Intent',
+  roleTa: 'அவை நடுவர்',
+  bioTa: 'உங்கள் வினாவிற்கு ஏற்ப பொருத்தமான சங்கப் புலவரைத் தேர்ந்தெடுத்து விடையளிக்கும் தானியங்கி அவை.',
+  avatarEmoji: '🏛️',
+  suggestedPrompts: [
+    { ta: 'முல்லைத் திணைப் பாடல்களைத் தேடுக', en: 'Find verses about Mullai landscape' },
+    { ta: 'குறுந்தொகை 40 பாடலின் விளக்கம் தருக', en: 'Explain Kurunthokai 40' },
+    { ta: 'சங்க கால மகளிர் நிலை என்ன?', en: 'Status of women in Sangam era' },
+    { ta: 'குறிஞ்சித் திணை இயற்கை காட்சியை விளக்குக', en: 'Depict Kurinji nature scene' },
+  ],
+}
+
 export default function Avai() {
   const { agentId } = useParams()
   const navigate = useNavigate()
 
-  const effectiveAgentId = agentId && PULAVAR_AGENTS.some((a) => a.id === agentId) ? agentId : 'nakkirar'
-  const activeAgent = PULAVAR_AGENTS.find((a) => a.id === effectiveAgentId) || PULAVAR_AGENTS[0]
+  const isExplicitSelection = Boolean(agentId && PULAVAR_AGENTS.some((a) => a.id === agentId))
+  const effectiveAgentId = isExplicitSelection ? agentId : 'auto'
+  const activeAgent = isExplicitSelection
+    ? PULAVAR_AGENTS.find((a) => a.id === effectiveAgentId) || PULAVAR_AGENTS[0]
+    : AUTO_AVAI_PROFILE
 
   const [selectedTinai, setSelectedTinai] = useState('')
   const [filterOpen, setFilterOpen] = useState(false)
   const [autoTranslateEnabled, setAutoTranslateEnabled] = useState(false)
 
   const [allChats, setAllChats] = useState(() => {
-    const initial = {}
+    const initial = {
+      auto: getSavedChat('auto'),
+    }
     for (const agent of PULAVAR_AGENTS) {
       initial[agent.id] = getSavedChat(agent.id)
     }
@@ -253,7 +274,11 @@ export default function Avai() {
   }, [messages.length, isLoading])
 
   const handleSelectAgent = (id) => {
-    navigate(`/avai/${id}`)
+    if (!id || id === 'auto') {
+      navigate('/avai')
+    } else {
+      navigate(`/avai/${id}`)
+    }
     setMobileAgentDrawer(false)
   }
 
@@ -266,7 +291,11 @@ export default function Avai() {
     setSessionId(null)
     setInputMessage('')
     if (targetPulavarId !== effectiveAgentId) {
-      navigate(`/avai/${targetPulavarId}`)
+      if (!targetPulavarId || targetPulavarId === 'auto') {
+        navigate('/avai')
+      } else {
+        navigate(`/avai/${targetPulavarId}`)
+      }
     }
     setMobileAgentDrawer(false)
   }
@@ -342,10 +371,11 @@ export default function Avai() {
     }
 
     try {
+      const isExplicitSelection = Boolean(agentId)
       const response = await askAvaiAgent({
-        pulavar: effectiveAgentId,
+        pulavar: isExplicitSelection ? effectiveAgentId : null,
         message: query,
-        workflow: activeAgent.workflow,
+        workflow: isExplicitSelection ? activeAgent.workflow : null,
         sessionId,
         context: {
           tinai: selectedTinai || undefined,
@@ -487,6 +517,27 @@ export default function Avai() {
               </span>
             </div>
             <div className="space-y-1">
+              {allChats.auto?.messages?.length > 0 && (
+                <button
+                  key="urayadal-auto"
+                  type="button"
+                  onClick={() => handleSelectAgent('auto')}
+                  className={`w-full text-left p-2 rounded-xl border transition-all duration-200 flex flex-col gap-0.5 focus-ring ${
+                    effectiveAgentId === 'auto'
+                      ? 'bg-accent/10 border-accent text-primary font-medium'
+                      : 'bg-surface-alt/40 border-line text-muted hover:bg-surface hover:border-line-strong'
+                  }`}
+                >
+                  <div className="flex items-center justify-between gap-1 w-full">
+                    <span className="tamil text-xs font-bold text-primary truncate">
+                      {allChats.auto.title || 'சங்க அவை உரையாடல்'}
+                    </span>
+                    <span className="text-[10px] text-faint font-mono bg-surface/80 px-1 py-0.2 rounded shrink-0">
+                      தானியங்கி
+                    </span>
+                  </div>
+                </button>
+              )}
               {PULAVAR_AGENTS.map((agent) => {
                 const chatData = allChats[agent.id]
                 const hasChat = chatData?.messages?.length > 0
@@ -602,15 +653,15 @@ export default function Avai() {
           <header className="px-4 py-3 border-b border-line bg-surface-alt/30 flex items-center justify-between gap-3 shrink-0">
             <div className="flex items-center gap-3 min-w-0">
               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-surface border border-line shrink-0 flex items-center justify-center text-xl tamil font-bold">
-                {activeAgent.nameTa[0]}
+                {isExplicitSelection ? activeAgent.nameTa[0] : '🏛️'}
               </div>
               <div className="min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
                   <h2 className="tamil text-sm sm:text-base font-bold text-primary truncate">
-                    {chatTitle || activeAgent.nameTa}
+                    {chatTitle || (isExplicitSelection ? activeAgent.nameTa : 'சங்க அவை • Sangam Avai')}
                   </h2>
                   <Badge variant="accent" size="sm">
-                    {activeAgent.nameTa} • {activeAgent.tag}
+                    {isExplicitSelection ? `${activeAgent.nameTa} • ${activeAgent.tag}` : 'தானியங்கி • Auto Intent'}
                   </Badge>
                 </div>
               </div>
@@ -723,6 +774,10 @@ export default function Avai() {
 
             {messages.map((msg, idx) => {
               const isUser = msg.role === 'user'
+              const msgPoet = !isUser
+                ? PULAVAR_AGENTS.find((a) => a.id === msg.pulavarId) ||
+                  (msg.pulavarId === 'auto' ? AUTO_AVAI_PROFILE : activeAgent)
+                : null
 
               return (
                 <div
@@ -731,7 +786,7 @@ export default function Avai() {
                 >
                   {!isUser && (
                     <div className="w-8 h-8 rounded-lg bg-surface-alt border border-line shrink-0 select-none flex items-center justify-center text-sm tamil font-bold mt-0.5">
-                      {activeAgent.nameTa[0]}
+                      {msgPoet?.avatarEmoji || msgPoet?.nameTa?.[0] || '🏛️'}
                     </div>
                   )}
 
@@ -744,7 +799,7 @@ export default function Avai() {
                   >
                     {!isUser && (
                       <div className="flex items-center justify-between gap-2 pb-1.5 border-b border-line/60 text-xs">
-                        <span className="tamil font-bold text-accent">{activeAgent.nameTa}</span>
+                        <span className="tamil font-bold text-accent">{msgPoet?.nameTa || activeAgent.nameTa}</span>
                         <button
                           type="button"
                           onClick={() => handleCopyMessage(msg.text, idx)}

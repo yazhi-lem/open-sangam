@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { Columns2, Rows2, ChevronLeft, ChevronRight, Sparkles, Copy } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
@@ -369,9 +369,40 @@ function Reader({ poem, sectionId }) {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [sections.length])
 
+  const sec = sections[active]
+
+  const wordGlossaryMap = useMemo(() => {
+    const map = new Map()
+    if (!sec?.lines) return map
+    for (const line of sec.lines) {
+      if (!line?.words) continue
+      for (const w of line.words) {
+        if (!w?.form) continue
+        const clean = w.form.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
+        if (clean && !map.has(clean)) {
+          map.set(clean, w)
+        }
+      }
+    }
+    return map
+  }, [sec])
+
   async function handleWordClick(wordText) {
     const clean = wordText.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
     if (!clean) return
+
+    const matchedWord = wordGlossaryMap.get(clean)
+    if (
+      matchedWord &&
+      (matchedWord.root != null ||
+        matchedWord.urichol != null ||
+        matchedWord.etymology != null ||
+        matchedWord.gloss != null)
+    ) {
+      setGlossaryWord({ form: wordText, ...matchedWord })
+      return
+    }
+
     setGlossaryWord({ form: wordText })
     setGlossaryLoading(true)
     try {
@@ -412,7 +443,6 @@ function Reader({ poem, sectionId }) {
     )
   }
 
-  const sec = sections[active]
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
   const label = isSection ? sec.title : null

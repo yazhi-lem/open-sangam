@@ -2,6 +2,9 @@ from .corpus import get_verse, list_poems, search_verses
 from .graph import query_knowledge_graph
 from .tinai import get_tinai_context
 from .image import generate_image
+from .analysis import analyze_word_etymology, analyze_prosody
+from .colophon import get_colophon_metadata
+from .crossref import find_parallel_verses
 
 __all__ = [
     "get_verse",
@@ -10,4 +13,9 @@ __all__ = [
     "query_knowledge_graph",
     "get_tinai_context",
     "generate_image",
+    "analyze_word_etymology",
+    "analyze_prosody",
+    "get_colophon_metadata",
+    "find_parallel_verses",
 ]
+
