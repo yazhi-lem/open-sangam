@@ -4,16 +4,16 @@
   "provider": "openrouter",
   "model": "google/gemini-2.5-flash",
   "promptVersion": "etymology-v3",
-  "updatedAt": "2026-09-21T06:44:59+00:00",
+  "updatedAt": "2026-09-23T05:45:47+00:00",
   "totals": {
-    "verses": 2489,
-    "annotated": 67,
-    "remaining": 2422
+    "verses": 2488,
+    "annotated": 190,
+    "remaining": 2298
   },
   "poems": {
     "mullaippattu": {
-      "verses": 18,
-      "annotated": 18,
+      "verses": 17,
+      "annotated": 17,
       "remaining": 0,
       "status": "complete",
       "lastRunAt": "2026-09-21T06:44:59+00:00"
@@ -27,31 +27,31 @@
     },
     "porunaratrupadai": {
       "verses": 21,
-      "annotated": 0,
-      "remaining": 21,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 21,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-23T04:48:48+00:00"
     },
     "kurinjipattu": {
       "verses": 25,
-      "annotated": 0,
-      "remaining": 25,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 25,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-23T05:31:13+00:00"
     },
     "sirupanatrupadai": {
       "verses": 25,
-      "annotated": 0,
-      "remaining": 25,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 25,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-23T05:40:31+00:00"
     },
     "pattinappalai": {
       "verses": 30,
-      "annotated": 0,
-      "remaining": 30,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 30,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-23T05:45:46+00:00"
     },
     "thirumurugatrupadai": {
       "verses": 32,
@@ -83,10 +83,10 @@
     },
     "paripadal": {
       "verses": 23,
-      "annotated": 0,
-      "remaining": 23,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 23,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-23T05:03:02+00:00"
     },
     "pathitrupathu": {
       "verses": 80,
@@ -234,6 +234,123 @@
       "failed": 0,
       "poems": [
         "mullaippattu"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "adc1d2118e94",
+      "startedAt": "2026-09-23T04:44:00+00:00",
+      "finishedAt": "2026-09-23T04:48:48+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 21,
+      "annotated": 21,
+      "failed": 0,
+      "poems": [
+        "porunaratrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "8cc7c58945e1",
+      "startedAt": "2026-09-23T04:57:48+00:00",
+      "finishedAt": "2026-09-23T05:03:02+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 23,
+      "annotated": 23,
+      "failed": 0,
+      "poems": [
+        "paripadal"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "545c9698898e",
+      "startedAt": "2026-09-23T05:03:50+00:00",
+      "finishedAt": "2026-09-23T05:12:29+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 25,
+      "annotated": 23,
+      "failed": 2,
+      "poems": [
+        "kurinjipattu"
+      ],
+      "failures": [
+        "kurinjipattu_21: EtymologyError: expected 45 word annotations, got 44 (after 5 attempts)",
+        "kurinjipattu_24: EtymologyError: expected 9 word annotations, got 8 (after 5 attempts)"
+      ]
+    },
+    {
+      "runId": "da08c26467fb",
+      "startedAt": "2026-09-23T05:13:16+00:00",
+      "finishedAt": "2026-09-23T05:17:00+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 2,
+      "annotated": 1,
+      "failed": 1,
+      "poems": [
+        "kurinjipattu"
+      ],
+      "failures": [
+        "kurinjipattu_24: EtymologyError: expected 9 word annotations, got 8 (after 5 attempts)"
+      ]
+    },
+    {
+      "runId": "19a00fa65b52",
+      "startedAt": "2026-09-23T05:30:52+00:00",
+      "finishedAt": "2026-09-23T05:31:13+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 1,
+      "annotated": 1,
+      "failed": 0,
+      "poems": [
+        "kurinjipattu"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "bd8b28db1b32",
+      "startedAt": "2026-09-23T05:34:26+00:00",
+      "finishedAt": "2026-09-23T05:40:31+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 25,
+      "annotated": 25,
+      "failed": 0,
+      "poems": [
+        "sirupanatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "af47cb9f5a86",
+      "startedAt": "2026-09-23T05:41:32+00:00",
+      "finishedAt": "2026-09-23T05:45:46+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 30,
+      "annotated": 30,
+      "failed": 0,
+      "poems": [
+        "pattinappalai"
       ],
       "failures": []
     }
