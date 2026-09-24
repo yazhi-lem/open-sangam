@@ -445,7 +445,7 @@ function Reader({ poem, sectionId }) {
 
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
-  const label = isSection ? sec.title : null
+  const label = sec.title || sec.heading || sec.poemTitle || null
 
   // Filter sections by search text
   const filteredSections = sections.filter((s) => {
@@ -501,7 +501,7 @@ function Reader({ poem, sectionId }) {
           {filteredSections.map((s) => {
             const indexInFull = sections.findIndex((item) => item.id === s.id)
             const n = isSection ? s.sectionNumber : s.number
-            const t = isSection ? s.title : null
+            const t = s.title || s.heading || s.poemTitle || null
             const isActive = indexInFull === active
             return (
               <button
@@ -658,16 +658,20 @@ function Reader({ poem, sectionId }) {
                 <Card variant="flat" className="p-6 sm:p-8 space-y-5 border-accent/30 bg-surface shadow-xs">
                   {/* Verse Header */}
                   <div className="flex items-center justify-between border-b border-line pb-3">
-                    <div className="space-y-0.5">
+                    <div className="space-y-1">
                       <div className="flex items-center gap-2 flex-wrap">
                         <Badge variant="accent" size="sm">
                           {poem.en} {isSection && sec.lineStart ? `· lines ${sec.lineStart}–${sec.lineEnd}` : `· ${sec.tinai || ''}`}
                         </Badge>
-                        {sec.poet && <span className="tamil text-xs text-muted font-medium">புலவர்: {sec.poet}</span>}
                       </div>
-                      <h1 className={`font-bold text-primary ${isSection ? 'tamil text-2xl sm:text-3xl pt-1' : 'text-lg font-mono pt-0.5'}`}>
+                      <h1 className={`font-bold text-primary ${label || isSection ? 'tamil text-2xl sm:text-3xl pt-1' : 'text-lg font-mono pt-0.5'}`}>
                         {label || `Verse #${num}`}
                       </h1>
+                      {sec.poet && (
+                        <p className="tamil text-sm text-muted font-medium pt-0.5">
+                          புலவர்: <span className="text-primary font-semibold">{sec.poet}</span>
+                        </p>
+                      )}
                     </div>
                     <Button
                       size="sm"
@@ -770,10 +774,14 @@ function Reader({ poem, sectionId }) {
                   </Button>
                 </div>
 
-                <h1 className={`leading-tight font-bold text-primary ${isSection ? 'tamil text-3xl sm:text-4xl' : 'text-muted text-xl font-mono'}`}>
+                <h1 className={`leading-tight font-bold text-primary ${label || isSection ? 'tamil text-3xl sm:text-4xl' : 'text-muted text-xl font-mono'}`}>
                   {label || `Verse #${num}`}
                 </h1>
-                {sec.poet && <p className="text-xs text-muted font-medium tamil">Poet: {sec.poet}</p>}
+                {sec.poet && (
+                  <p className="tamil text-sm text-muted font-medium pt-1">
+                    புலவர்: <span className="text-primary font-semibold">{sec.poet}</span>
+                  </p>
+                )}
               </header>
 
               {/* Original Tamil Verse */}
