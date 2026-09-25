@@ -4,16 +4,16 @@
   "provider": "openrouter",
   "model": "google/gemini-2.5-flash",
   "promptVersion": "etymology-v3",
-  "updatedAt": "2026-09-23T05:45:47+00:00",
+  "updatedAt": "2026-09-25T08:30:24+00:00",
   "totals": {
-    "verses": 2488,
-    "annotated": 190,
-    "remaining": 2298
+    "verses": 2669,
+    "annotated": 528,
+    "remaining": 2141
   },
   "poems": {
     "mullaippattu": {
-      "verses": 17,
-      "annotated": 17,
+      "verses": 18,
+      "annotated": 18,
       "remaining": 0,
       "status": "complete",
       "lastRunAt": "2026-09-21T06:44:59+00:00"
@@ -62,24 +62,24 @@
     },
     "perumpanatrupadai": {
       "verses": 41,
-      "annotated": 0,
-      "remaining": 41,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 41,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-23T14:20:33+00:00"
     },
     "malaipadukadam": {
       "verses": 45,
-      "annotated": 0,
-      "remaining": 45,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 45,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-23T14:32:09+00:00"
     },
     "maduraikanchi": {
       "verses": 63,
-      "annotated": 0,
-      "remaining": 63,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 63,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-23T14:50:30+00:00"
     },
     "paripadal": {
       "verses": 23,
@@ -90,22 +90,22 @@
     },
     "pathitrupathu": {
       "verses": 80,
-      "annotated": 0,
-      "remaining": 80,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 80,
+      "remaining": 0,
+      "status": "complete",
+      "lastRunAt": "2026-09-24T06:14:41+00:00"
     },
     "kalithokai": {
       "verses": 149,
-      "annotated": 0,
-      "remaining": 149,
-      "status": "pending",
-      "lastRunAt": null
+      "annotated": 108,
+      "remaining": 41,
+      "status": "in-progress",
+      "lastRunAt": "2026-09-25T08:30:23+00:00"
     },
     "akananooru": {
-      "verses": 220,
+      "verses": 400,
       "annotated": 0,
-      "remaining": 220,
+      "remaining": 400,
       "status": "pending",
       "lastRunAt": null
     },
@@ -353,6 +353,181 @@
         "pattinappalai"
       ],
       "failures": []
+    },
+    {
+      "runId": "2cf54c18089f",
+      "startedAt": "2026-09-23T14:12:37+00:00",
+      "finishedAt": "2026-09-23T14:20:33+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 41,
+      "annotated": 41,
+      "failed": 0,
+      "poems": [
+        "perumpanatrupadai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "d7e62b8e7eb2",
+      "startedAt": "2026-09-23T14:24:50+00:00",
+      "finishedAt": "2026-09-23T14:32:09+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 45,
+      "annotated": 45,
+      "failed": 0,
+      "poems": [
+        "malaipadukadam"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "eaf846e61082",
+      "startedAt": "2026-09-23T14:37:55+00:00",
+      "finishedAt": "2026-09-23T14:47:24+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 50,
+      "annotated": 50,
+      "failed": 0,
+      "poems": [
+        "maduraikanchi"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "81299ba8f398",
+      "startedAt": "2026-09-23T14:47:58+00:00",
+      "finishedAt": "2026-09-23T14:50:30+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 13,
+      "annotated": 13,
+      "failed": 0,
+      "poems": [
+        "maduraikanchi"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "6e39186f4ca2",
+      "startedAt": "2026-09-24T05:09:18+00:00",
+      "finishedAt": "2026-09-24T05:25:00+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 50,
+      "annotated": 50,
+      "failed": 0,
+      "poems": [
+        "pathitrupathu"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "b06a389ca780",
+      "startedAt": "2026-09-24T05:29:17+00:00",
+      "finishedAt": "2026-09-24T05:46:02+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 17,
+      "annotated": 16,
+      "failed": 1,
+      "poems": [
+        "pathitrupathu"
+      ],
+      "failures": [
+        "pathitrupathu_90: EtymologyError: expected 270 word annotations, got 271 (after 5 attempts)"
+      ]
+    },
+    {
+      "runId": "64a4ada2ea22",
+      "startedAt": "2026-09-24T06:14:41+00:00",
+      "finishedAt": "2026-09-24T06:14:41+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 1,
+      "annotated": 1,
+      "failed": 0,
+      "poems": [
+        "pathitrupathu"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "b495ed4e186d",
+      "startedAt": "2026-09-24T06:15:27+00:00",
+      "finishedAt": "2026-09-24T06:37:06+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 50,
+      "annotated": 44,
+      "failed": 6,
+      "poems": [
+        "kalithokai"
+      ],
+      "failures": [
+        "kalithokai_004: EtymologyError: expected 137 word annotations, got 136 (after 5 attempts)",
+        "kalithokai_047: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)",
+        "kalithokai_048: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)",
+        "kalithokai_049: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)",
+        "kalithokai_050: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)",
+        "kalithokai_051: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)"
+      ]
+    },
+    {
+      "runId": "495fc4071e7e",
+      "startedAt": "2026-09-25T06:20:30+00:00",
+      "finishedAt": "2026-09-25T06:47:54+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 50,
+      "annotated": 50,
+      "failed": 0,
+      "poems": [
+        "kalithokai"
+      ],
+      "failures": []
+    },
+    {
+      "runId": "e4d745972b8b",
+      "startedAt": "2026-09-25T08:11:06+00:00",
+      "finishedAt": "2026-09-25T08:30:23+00:00",
+      "trigger": "manual",
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash",
+      "promptVersion": "etymology-v3",
+      "attempted": 18,
+      "annotated": 13,
+      "failed": 5,
+      "poems": [
+        "kalithokai"
+      ],
+      "failures": [
+        "kalithokai_104: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)",
+        "kalithokai_111: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)",
+        "kalithokai_112: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)",
+        "kalithokai_113: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)",
+        "kalithokai_114: EtymologyError: 403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions (after 5 attempts)"
+      ]
     }
   ]
 }

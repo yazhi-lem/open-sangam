@@ -14,43 +14,43 @@
           "form": "பாடு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'பாடு' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது ஒலித்தல், இசைத்தல் என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது பெரும்பாலும் இசை அல்லது பாடல் என்ற பொருளில் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word refers to the sound or melody, specifically the melodious sound of the waterfall mentioned in the verse."
         },
         {
           "form": "இன்",
           "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "urichol": "இடைச்சொல்",
+          "etymology": "இன் என்பது ஒரு சாரியை அல்லது இடைச்சொல். இது இனிமை, இனிமையான என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது பெரும்பாலும் ஒரு பண்புப் பெயருடன் இணைந்து அதன் இனிமையை வலியுறுத்தப் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This is an intensifier or a particle indicating sweetness or pleasantness, here modifying 'அருவி' to mean 'sweet' or 'pleasant' waterfall."
         },
         {
           "form": "அருவி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'அரு' (பாய்வது) + 'வி' (நீர்) என்ற வேர்ச்சொற்களின் சேர்க்கையாகக் கருதப்படுகிறது. இது மலையிலிருந்து பாயும் நீர்வீழ்ச்சியைக் குறிக்கிறது. நவீன தமிழிலும் இதே பொருள் தொடர்கிறது.",
+          "gloss": "This word denotes a waterfall, specifically the stream of water flowing down from the mountains."
         },
         {
           "form": "பயம்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'பய' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது பயன், நன்மை, விளைச்சல் என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது பெரும்பாலும் வளமான அல்லது பயனுள்ள தன்மையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word signifies benefit, advantage, or fertility, indicating a place that is rich or productive."
         },
         {
           "form": "கெழு",
           "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "urichol": "உரிச்சொல்",
+          "etymology": "கெழு என்பது உரிச்சொல். இது பொருந்திய, நிறைந்த, உடைய என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது ஒரு பொருளுடன் மற்றொன்று நெருக்கமாகப் பொருந்தியிருப்பதைக் குறிக்கப் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This is an intensifier or a particle indicating 'possessing' or 'being endowed with', here suggesting that the place is rich with benefits or fertility."
         },
         {
           "form": "மீமிசை",
           "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "urichol": "உரிச்சொல்",
+          "etymology": "மீமிசை என்பது 'மீ' (மேல்) + 'மிசை' (மேல்) என்ற இரண்டு சொற்களின் கூட்டு. இது மிக உயர்ந்த இடம் அல்லது உச்சி என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது ஒரு இடத்தின் உயரத்தையும் மேன்மையையும் வலியுறுத்தப் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word denotes the very top or summit, emphasizing the elevated position of the place."
         }
       ]
     },
@@ -62,36 +62,36 @@
           "form": "காடு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'கா' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது காத்தல், பாதுகாத்தல் என்ற பொருளைத் தரும். காக்கப்படும் இடம் காடு எனப்பட்டது. நவீன தமிழிலும் இது வனம், அடர்ந்த மரம் நிறைந்த பகுதி என்ற பொருளில் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This word refers to a forest or a dense wooded area, a place where trees and wildlife are preserved."
         },
         {
           "form": "காத்து",
-          "root": null,
+          "root": "கா",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'கா' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது பாதுகாத்தல், காப்பாற்றுதல் என்ற பொருளைத் தரும். 'காத்து' என்பது வினையெச்ச வடிவம். சங்க இலக்கியத்தில் இது ஒரு செயலின் தொடர்ச்சியைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This is a verbal participle meaning 'protecting' or 'guarding', indicating the continuous action of safeguarding the forest."
         },
         {
           "form": "உறையும்",
-          "root": null,
+          "root": "உறை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'உறை' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது தங்குதல், வாழ்தல் என்ற பொருளைத் தரும். 'உறையும்' என்பது பெயரெச்ச வடிவம். சங்க இலக்கியத்தில் இது ஒரு குறிப்பிட்ட இடத்தில் வசிப்பவர்களைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This is a participial noun meaning 'who reside' or 'who live', referring to the inhabitants who dwell in the specified location."
         },
         {
           "form": "கானவர்",
-          "root": null,
+          "root": "கான்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'கான்' (காடு) + 'அவர்' (மக்கள்) என்ற சொற்களின் கூட்டு. இது காட்டில் வாழும் மக்களைக் குறிக்கிறது. சங்க இலக்கியத்தில் இது மலைவாழ் மக்கள், வேடர்கள் என்ற பொருளில் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word refers to the forest dwellers or hill people, those who live in and protect the forest."
         },
         {
           "form": "உளரே",
-          "root": null,
+          "root": "உள்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'உள்' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது இருத்தல், இருப்பு என்ற பொருளைத் தரும். 'உளரே' என்பது 'உளர்' (உள்ளனர்) + 'ஏ' (அசைச்சொல்/வினா) என்ற கூட்டு. சங்க இலக்கியத்தில் இது ஒருவரின் இருப்பை உறுதிப்படுத்த அல்லது வினவப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word means 'they exist' or 'they are present', affirming the presence of the forest dwellers in that place."
         }
       ]
     },
@@ -103,43 +103,43 @@
           "form": "நிலை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'நில்' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது நிலைத்திருத்தல், இருப்பிடம், நிலைமை என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது ஒருவரின் நிலை அல்லது ஒரு இடத்தின் நிலைத்தன்மையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word refers to a state, position, or condition, here implying a stable or established path."
         },
         {
           "form": "துறை",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'துற' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது வழி, பாதை, நீர்த்துறையைக் குறிக்கும். சங்க இலக்கியத்தில் இது ஒரு குறிப்பிட்ட வழி அல்லது அணுகுமுறையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word denotes a path, a way, or a landing place, here referring to a specific route or direction."
         },
         {
           "form": "வழீஇய",
-          "root": null,
+          "root": "வழு",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'வழு' (தவறுதல், பிழைத்தல்) என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'வழீஇய' என்பது வினையெச்ச வடிவம். சங்க இலக்கியத்தில் இது வழி தவறிய, பிழைபட்ட என்ற பொருளில் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This is a verbal participle meaning 'having strayed' or 'having deviated', referring to those who have lost their way."
         },
         {
           "form": "மதன்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'மத' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது வலிமை, செருக்கு, வீரம் என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது பெரும்பாலும் ஒருவரின் மன வலிமையைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word signifies strength, courage, or pride, often referring to mental fortitude or spirit."
         },
         {
           "form": "அழி",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'அழி' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது அழிதல், கெடுதல், குறைதல் என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது ஒரு பொருளின் குறைபாட்டைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word means 'to be destroyed' or 'to diminish', here indicating a loss or weakening of strength or spirit."
         },
         {
           "form": "மாக்கள்",
-          "root": null,
+          "root": "மாண்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'மாண்' (மாண்பு, சிறப்பு) என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'மாக்கள்' என்பது மக்கள், மனிதர்கள் என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது பொதுவாக மனிதர்களைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word refers to people or individuals, specifically those who have lost their way or their spirit."
         }
       ]
     },
@@ -151,43 +151,43 @@
           "form": "புனல்",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'புன' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது நீர், வெள்ளம், ஆறு என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது பொதுவாக நீரைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word denotes water, a stream, or a flood, here referring to the sound of flowing water."
         },
         {
           "form": "படு",
           "root": null,
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'படு' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது உண்டாதல், நிகழ்தல், ஒலித்தல் என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது ஒரு செயல் நிகழ்வதைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word means 'to occur', 'to happen', or 'to sound', here referring to the sound produced by the water."
         },
         {
           "form": "பூசலின்",
-          "root": null,
+          "root": "பூசல்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'பூசல்' (ஒலி, ஆரவாரம்) என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. 'பூசலின்' என்பது ஐந்தாம் வேற்றுமை உருபுடன் கூடிய சொல். சங்க இலக்கியத்தில் இது ஒரு சத்தம் அல்லது ஆரவாரத்தைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This word, in the ablative case, means 'like a sound' or 'like an uproar', comparing the speed of their arrival to the swiftness of a loud sound."
         },
         {
           "form": "விரைந்து",
-          "root": null,
+          "root": "விரை",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'விரை' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது விரைவு, வேகம் என்ற பொருளைத் தரும். 'விரைந்து' என்பது வினையெச்ச வடிவம். சங்க இலக்கியத்தில் இது ஒரு செயலின் வேகத்தைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This is a verbal participle meaning 'quickly' or 'swiftly', describing the rapid manner of their approach."
         },
         {
           "form": "வல்",
           "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "urichol": "உரிச்சொல்",
+          "etymology": "வல் என்பது உரிச்சொல். இது விரைவு, வலிமை, திறமை என்ற பொருளைத் தரும். சங்க இலக்கியத்தில் இது ஒரு செயலின் வேகத்தையும் திறமையையும் வலியுறுத்தப் பயன்படுத்தப்படுகிறது.",
+          "gloss": "This is an intensifier or an adverb meaning 'quickly' or 'swiftly', further emphasizing the speed of their arrival."
         },
         {
           "form": "எய்தி",
-          "root": null,
+          "root": "எய்",
           "urichol": null,
-          "etymology": null,
-          "gloss": null
+          "etymology": "இச்சொல் 'எய்' என்னும் வேர்ச்சொல்லில் இருந்து பிறந்தது. இது அடைதல், சேர்தல் என்ற பொருளைத் தரும். 'எய்தி' என்பது வினையெச்ச வடிவம். சங்க இலக்கியத்தில் இது ஒரு இடத்தை அடைவதைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது.",
+          "gloss": "This is a verbal participle meaning 'having reached' or 'having arrived', indicating their swift arrival at the location."
         }
       ]
     }
@@ -199,5 +199,13 @@
   "sectionNumber": 23,
   "title": "வழி மயங்கினார்க்குக் குறவர்கள் வந்து உதவிபுரிதல்",
   "lineStart": 278,
-  "lineEnd": 291
+  "lineEnd": 291,
+  "etymologyMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "promptVersion": "etymology-v3",
+    "generatedAt": "2026-09-23T14:28:33+00:00",
+    "runId": "d7e62b8e7eb2",
+    "wordsAnnotated": 23
+  }
 }
