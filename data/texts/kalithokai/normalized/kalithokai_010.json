@@ -1157,7 +1157,7 @@
   "source": "http://www.sangathamizh.com/8thokai/kalithokai/kalithokai-கலித்தொகை010.html",
   "verified": false,
   "number": 10,
-  "poet": null,
+  "poet": "பாலை பாடிய பெருங்கடுங்கோ",
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
@@ -1165,5 +1165,6 @@
     "generatedAt": "2026-09-24T06:24:41+00:00",
     "runId": "b495ed4e186d",
     "wordsAnnotated": 143
-  }
+  },
+  "heading": "பாலை வழிச் செல்வோரிடம் வழிகேட்டல்"
 }
