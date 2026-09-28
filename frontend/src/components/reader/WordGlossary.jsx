@@ -21,7 +21,7 @@ export default function WordGlossary({ word, loading = false, onClose }) {
         {/* Root */}
         {!loading && word.root && (
           <div>
-            <p className="text-xs text-faint uppercase tracking-widest mb-1">Root (வேர்ச்சொல்)</p>
+            <p className="text-xs text-faint uppercase tracking-widest mb-1 tamil">Root (வேர்ச்சொல்)</p>
             <p className="tamil text-lg text-primary">{word.root}</p>
           </div>
         )}
@@ -29,8 +29,8 @@ export default function WordGlossary({ word, loading = false, onClose }) {
         {/* Grammatical class */}
         {!loading && word.urichol && (
           <div>
-            <p className="text-xs text-faint uppercase tracking-widest mb-1">Class (உரிச்சொல்)</p>
-            <p className="text-muted">{word.urichol}</p>
+            <p className="text-xs text-faint uppercase tracking-widest mb-1 tamil">Class (உரிச்சொல்)</p>
+            <p className="text-muted tamil">{word.urichol}</p>
           </div>
         )}
 
@@ -38,7 +38,7 @@ export default function WordGlossary({ word, loading = false, onClose }) {
         {!loading && word.etymology && (
           <div>
             <p className="text-xs text-faint uppercase tracking-widest mb-1">Etymology</p>
-            <p className="text-muted text-sm leading-relaxed">{word.etymology}</p>
+            <p className="text-muted text-sm leading-relaxed tamil">{word.etymology}</p>
           </div>
         )}
 
