@@ -498,7 +498,7 @@
   "source": "http://www.sangathamizh.com/8thokai/kalithokai/kalithokai-கலித்தொகை006.html",
   "verified": false,
   "number": 6,
-  "poet": null,
+  "poet": "பாலை பாடிய பெருங்கடுங்கோ",
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
@@ -506,5 +506,6 @@
     "generatedAt": "2026-09-24T06:24:41+00:00",
     "runId": "b495ed4e186d",
     "wordsAnnotated": 60
-  }
+  },
+  "heading": "தலைவியின் ஆற்றாமை கண்டு செலவு தவிர்தல்"
 }

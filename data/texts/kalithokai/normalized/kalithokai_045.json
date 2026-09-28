@@ -1213,7 +1213,7 @@
   "source": "http://www.sangathamizh.com/8thokai/kalithokai/kalithokai-கலித்தொகை045.html",
   "verified": false,
   "number": 45,
-  "poet": null,
+  "poet": "கபிலர்",
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
@@ -1221,5 +1221,6 @@
     "generatedAt": "2026-09-24T06:36:31+00:00",
     "runId": "b495ed4e186d",
     "wordsAnnotated": 151
-  }
+  },
+  "heading": "அறத்தொடு நின்று உண்மையை உரைத்தல்"
 }

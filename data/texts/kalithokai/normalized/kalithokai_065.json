@@ -1306,7 +1306,7 @@
   "source": "http://www.sangathamizh.com/8thokai/kalithokai/kalithokai-கலித்தொகை065.html",
   "verified": false,
   "number": 65,
-  "poet": null,
+  "poet": "கபிலர்",
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
@@ -1314,5 +1314,6 @@
     "generatedAt": "2026-09-25T06:30:06+00:00",
     "runId": "495fc4071e7e",
     "wordsAnnotated": 160
-  }
+  },
+  "heading": "திருமண வாழ்வை உடனே முடிக்குமாறு கோரல்"
 }
