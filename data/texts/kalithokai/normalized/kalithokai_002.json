@@ -1348,7 +1348,7 @@
   "source": "http://www.sangathamizh.com/8thokai/kalithokai/kalithokai-கலித்தொகை002.html",
   "verified": false,
   "number": 2,
-  "poet": null,
+  "poet": "பாலை பாடிய பெருங்கடுங்கோ",
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
@@ -1356,5 +1356,6 @@
     "generatedAt": "2026-09-24T06:17:07+00:00",
     "runId": "b495ed4e186d",
     "wordsAnnotated": 166
-  }
+  },
+  "heading": "அறநெறியோடு பொருள் தேட விழைதல்"
 }

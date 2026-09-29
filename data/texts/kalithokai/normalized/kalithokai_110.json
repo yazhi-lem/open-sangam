@@ -955,7 +955,7 @@
   "source": "http://www.sangathamizh.com/8thokai/kalithokai/kalithokai-கலித்தொகை110.html",
   "verified": false,
   "number": 110,
-  "poet": null,
+  "poet": "சோழன் நல்லுருத்திரனார்",
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
@@ -963,5 +963,6 @@
     "generatedAt": "2026-09-25T08:30:22+00:00",
     "runId": "e4d745972b8b",
     "wordsAnnotated": 115
-  }
+  },
+  "heading": "புல்லாங்குழல் இசையில் மயங்கும் முல்லை வனம்"
 }

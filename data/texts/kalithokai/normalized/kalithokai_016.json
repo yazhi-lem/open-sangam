@@ -1075,7 +1075,7 @@
   "source": "http://www.sangathamizh.com/8thokai/kalithokai/kalithokai-கலித்தொகை016.html",
   "verified": false,
   "number": 16,
-  "poet": null,
+  "poet": "பாலை பாடிய பெருங்கடுங்கோ",
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
@@ -1083,5 +1083,6 @@
     "generatedAt": "2026-09-24T06:24:41+00:00",
     "runId": "b495ed4e186d",
     "wordsAnnotated": 133
-  }
+  },
+  "heading": "பிரிவின் வேதனையைத் தாங்கும் உள்ளம்"
 }
