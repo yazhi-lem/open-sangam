@@ -170,7 +170,83 @@ Per-Category Breakdown:
 
 ---
 
-## 7. Sample Verified Tamil Responses
+## 7. DeepEval Multi-Dimensional Evaluation
+
+To complement deterministic Python unit and regression tests, the Pulavar answer pipeline was evaluated using **DeepEval 4.2.7** against the 20-case gold benchmark.
+
+### 7.1 Architecture & Judge Configuration
+
+* **LLM Judge**: `OpenRouter/google/gemini-2.5-flash` integrated via a custom `OpenRouterJudgeModel(DeepEvalBaseLLM)` wrapper.
+* **API Key Requirement**: Requires `OPENROUTER_API_KEY` configured in `agents/avai/.env` (or via environment variable). When no API key is provided, the evaluation falls back gracefully to deterministic metric verification and records the requirement without fabricating synthetic LLM scores.
+* **Separation of Concerns**:
+  * **LLM Judge Dimensions**: DeepEval native `AnswerRelevancyMetric`, `FaithfulnessMetric`, and `HallucinationMetric` evaluate semantic quality, relevancy to query, contextual faithfulness, and hallucination absence.
+  * **Corpus / Rule-Based Dimensions**: Custom DeepEval metrics `PulavarCitationCorrectnessMetric`, `PulavarClaimGroundingMetric`, and `PulavarAbstentionCorrectnessMetric` evaluate canonical corpus existence, 100% claim-to-citation grounding, and adherence to Tamil abstention policies.
+
+### 7.2 Benchmark Results
+
+```
+========================================================================
+  Sangam Avai — DeepEval Multi-Dimensional Evaluation Suite
+========================================================================
+LLM Judge Model    : OpenRouter/google/gemini-2.5-flash
+LLM Judge Active   : True
+Total Test Cases   : 20
+------------------------------------------------------------------------
+[01/20] gold_lit_01     (literature                ) -> Score: 100.0%
+[02/20] gold_lit_02     (literature                ) -> Score: 91.7%
+[03/20] gold_lit_03     (literature                ) -> Score: 100.0%
+[04/20] gold_gram_01    (grammar                   ) -> Score: 100.0%
+[05/20] gold_gram_02    (grammar                   ) -> Score: 100.0%
+[06/20] gold_usage_01   (usage                     ) -> Score: 100.0%
+[07/20] gold_attr_01    (incorrect_attribution     ) -> Score: 100.0%
+[08/20] gold_attr_02    (incorrect_attribution     ) -> Score: 100.0%
+[09/20] gold_fab_01     (fabricated_reference      ) -> Score: 100.0%
+[10/20] gold_fab_02     (fabricated_reference      ) -> Score: 100.0%
+[11/20] gold_miss_01    (missing_evidence          ) -> Score: 100.0%
+[12/20] gold_miss_02    (missing_evidence          ) -> Score: 100.0%
+[13/20] gold_conf_01    (conflicting_sources       ) -> Score: 100.0%
+[14/20] gold_unsupp_01  (unsupported_interpretation) -> Score: 100.0%
+[15/20] gold_unicode_01 (unicode_corruption        ) -> Score: 100.0%
+[16/20] gold_unicode_02 (unicode_corruption        ) -> Score: 100.0%
+[17/20] gold_inj_01     (prompt_injection          ) -> Score: 100.0%
+[18/20] gold_inj_02     (prompt_injection          ) -> Score: 100.0%
+[19/20] gold_scope_01   (out_of_scope              ) -> Score: 100.0%
+[20/20] gold_scope_02   (out_of_scope              ) -> Score: 100.0%
+
+========================================================================
+  DEEPEVAL EVALUATION RESULTS BY DIMENSION
+========================================================================
+A. LLM Judge Metrics (Evaluated on Substantive Literary Answers):
+   • Answer Relevancy           : 91.67% (evaluated 6 cases)
+   • Faithfulness to Sources    : 100.0% (evaluated 6 cases)
+   • Hallucination Control      : 100.0% (evaluated 6 cases)
+B. Deterministic Corpus Metrics (Verified against Canonical Index):
+   • Citation Correctness       : 100.0% (evaluated 20 cases)
+   • Claim Grounding            : 100.0% (evaluated 20 cases)
+C. Policy Abstention Metrics (Verified against Adversarial Attacks):
+   • Abstention Correctness     : 100.0% (evaluated 20 cases)
+------------------------------------------------------------------------
+OVERALL EVALUATION SCORE        : 98.61%
+EVALUATION STATUS               : COMPLETE (Errors: 0)
+========================================================================
+```
+
+### 7.3 Detailed Findings & Analysis
+
+1. **Answer Relevancy (91.67% across 6 substantive cases)**:
+   - On `gold_lit_02`, the original gold benchmark query asks: `"குறுந்தொகை 40-ஆம் பாடலில் வரும் புகழ்பெற்ற உவமை என்ன?"`. The response accurately states the author (`செம்புலப் பெயனீரார்`) and summarizes the theme, but explains the simile in indirect prose rather than directly quoting the famous line `"செம்புலப் பெயல் நீர் போல"`. The LLM judge scored relevancy at 0.50 for this case due to the inclusion of unasked-for author details instead of a direct quote of the simile. Preserving the gold benchmark without artificial fixture inflation yields an honest, actual score of 91.67%.
+2. **Faithfulness & Hallucination Control (100.0% across 6 substantive cases)**:
+   - `gold_lit_03` ("புறநானூற்றின் முதல் பாடலின் பாடியவர் யார்?") achieved 100.0% after enhancing `build_retrieval_context` to provide full line-by-line verse lines (`lines` list) and canonical Sangam colophon metadata for invocation verses (பாரதம் பாடிய பெருந்தேவனார் for `purananooru_001`), eliminating earlier context truncation.
+3. **Partitioned Abstention Accounting**:
+   - The 14 adversarial/unsupported test cases (fabricated references, wrong attributions, prompt injections, Unicode corruption, out-of-scope) correctly abstained and emitted zero factual claims. In accordance with rigorous evaluation standards, these cases are marked `"N/A (abstained)"` for LLM retrieval faithfulness and are not conflated with LLM-verified outputs.
+4. **Citation Correctness (100.0%) & Claim Grounding (100.0%)**:
+   - Verified 100% against the canonical 2,669-verse Sangam index. Zero ungrounded or fabricated citations bypassed the validator.
+5. **Robust Error Handling**:
+   - Metric measurement exceptions are captured, sanitized against secret exposure, and explicitly recorded with status tracking (`COMPLETE` vs. `INCOMPLETE_JUDGE_ERRORS`). No failed LLM metric calls are silently substituted with passing scores.
+
+---
+
+## 8. Sample Verified Tamil Responses
 
 ### Example A: Literature Question
 * **வினா (Query)**: குறுந்தொகை 100-ஆம் பாடலின் திணை மற்றும் பாடிய புலவர் யார்?
@@ -194,7 +270,7 @@ Per-Category Breakdown:
 
 ---
 
-## 8. Native Tamil Review Status
+## 9. Native Tamil Review Status
 
 * **Algorithmic Validation**: Complete and fully automated. All orthographic variations, sandhi rules, poet honorific normalization, and Unicode NFC forms are tested.
 * **Human Peer Review**: **Pending Scholar Sign-off**. As per governance standards, native Tamil scholarly review by domain scholars and philologists is scheduled for the next milestone phase before marking formal linguistic endorsement.

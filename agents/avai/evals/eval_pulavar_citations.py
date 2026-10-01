@@ -11,6 +11,10 @@ network calls or API keys, reporting:
 from __future__ import annotations
 
 import sys
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
+
 from typing import Any, Dict, List
 
 from ..citation_validator import PulavarCitationValidator
