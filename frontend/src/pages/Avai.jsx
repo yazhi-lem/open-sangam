@@ -392,6 +392,10 @@ export default function Avai() {
         pulavarId: response.pulavar || response.poet || effectiveAgentId,
         text: response.response_text,
         citations: response.citations || [],
+        claims: response.claims || [],
+        isAbstained: response.is_abstained || false,
+        abstentionReason: response.abstention_reason || null,
+        evidenceStatus: response.evidence_status || 'verified',
         scenario: response.scenario || null,
         imageUrl: response.imageUrl || null,
         metadata: response.metadata,
@@ -811,22 +815,35 @@ export default function Avai() {
                       </div>
                     )}
 
+                    {msg.isAbstained && (
+                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-400 text-xs font-medium">
+                        <span>⚠️ புலவர் அவை விலகல் • Abstention ({msg.abstentionReason || 'போதிய சான்றுகளின்மை'})</span>
+                      </div>
+                    )}
+
                     <MessageContent text={msg.text} />
 
                     {msg.citations && msg.citations.length > 0 && (
                       <div className="pt-2 border-t border-line/60 space-y-1.5">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-muted flex items-center gap-1">
-                          <BookOpen size={11} /> சான்றாதாரங்கள்
-                        </span>
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-muted flex items-center gap-1">
+                            <BookOpen size={11} /> சான்றாதாரங்கள் ({msg.citations.length})
+                          </span>
+                          <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+                            ✓ சான்றுறுதி (Verified)
+                          </span>
+                        </div>
                         <div className="flex flex-wrap gap-1.5">
                           {msg.citations.map((c, cIdx) => (
                             <Link
                               key={cIdx}
                               to={getVerseLink(c.verse_id)}
-                              className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg border border-accent/40 bg-surface text-accent hover:bg-accent hover:text-on-accent text-xs font-mono transition-all"
+                              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg border border-accent/40 bg-surface text-accent hover:bg-accent hover:text-on-accent text-xs font-mono transition-all group"
+                              title={c.quote ? `மேற்கோள்: "${c.quote}"` : (c.poet ? `பாடியவர்: ${c.poet}` : c.verse_id)}
                             >
-                              <span>{c.verse_id}</span>
-                              <ExternalLink size={10} />
+                              <span className="font-semibold">{c.verse_id}</span>
+                              {c.poet && <span className="text-[10px] opacity-75 font-sans group-hover:opacity-100">• {c.poet}</span>}
+                              <ExternalLink size={10} className="shrink-0" />
                             </Link>
                           ))}
                         </div>

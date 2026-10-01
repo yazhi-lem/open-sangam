@@ -7,6 +7,7 @@ from typing import Optional
 
 # Re-export agent instruction fragments for backward compatibility
 from .instructions import (
+    ABSTENTION_RULE,
     CITATION_RULE,
     CONTESTED_INTERPRETATION_RULE,
     NAKKIRAR_INSTRUCTION,
@@ -191,6 +192,7 @@ def get_test_prompts(
 __all__ = [
     # Re-exported instructions
     "CITATION_RULE",
+    "ABSTENTION_RULE",
     "CONTESTED_INTERPRETATION_RULE",
     "NAKKIRAR_INSTRUCTION",
     "AVVAIYAR_INSTRUCTION",

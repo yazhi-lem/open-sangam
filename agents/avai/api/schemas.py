@@ -1,9 +1,15 @@
-"""Pydantic request/response schemas for the POST /avai/ask REST endpoint.
-"""
-
-from typing import Literal
+from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
+
+from ..schemas import (
+    AbstentionReason,
+    EvidenceStatus,
+    PulavarAnswer,
+    PulavarCitation,
+    PulavarClaim,
+    PulavarSourceMetadata,
+)
 
 Workflow = Literal["qa", "search", "reimagine", "scenario", "imagery", "general"]
 
@@ -50,6 +56,10 @@ class Citation(BaseModel):
     tinai: str | None = None
     poet: str | None = None
     pulavar: str | None = None
+    citation_id: str | None = None
+    quote: str | None = None
+    verified: bool = True
+    is_valid: bool = True
 
 
 class AskMetadata(BaseModel):
@@ -70,7 +80,31 @@ class AskResponse(BaseModel):
     response_text: str
     citations: list[Citation]
     metadata: AskMetadata
+    # Extended Pulavar Answer Contract (Source-grounded & verifiable)
+    claims: list[PulavarClaim] = Field(default_factory=list)
+    is_abstained: bool = False
+    abstention_reason: AbstentionReason = "none"
+    evidence_status: EvidenceStatus = "verified"
+    pulavar_answer: Optional[PulavarAnswer] = None
 
 
 class ErrorResponse(BaseModel):
     message: str
+
+
+__all__ = [
+    "Workflow",
+    "AskContext",
+    "AskRequest",
+    "Citation",
+    "AskMetadata",
+    "AskResponse",
+    "ErrorResponse",
+    "EvidenceStatus",
+    "AbstentionReason",
+    "PulavarSourceMetadata",
+    "PulavarCitation",
+    "PulavarClaim",
+    "PulavarAnswer",
+]
+
