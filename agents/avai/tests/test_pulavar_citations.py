@@ -133,6 +133,16 @@ def test_abstention_on_unsupported_factual_claim(validator):
     assert ans.is_abstained is True
     assert ans.abstention_reason == "insufficient_evidence"
 
+def test_abstention_message_is_present_for_unsupported_claim(validator):
+    output = "சங்க காலத்தில் அணு ஆயுதங்கள் பயன்படுத்தப்பட்டன."
+    ans = validator.validate_answer(output)
+
+    assert ans.is_abstained is True
+    assert ans.abstention_reason == "insufficient_evidence"
+    assert ans.evidence_status == "abstained"
+    assert ans.abstention_message_ta
+    assert "சான்றாதாரங்கள்" in ans.abstention_message_ta
+
 
 def test_api_returns_pulavar_contract_verified(monkeypatch):
     monkeypatch.setattr(
