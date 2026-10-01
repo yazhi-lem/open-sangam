@@ -17,6 +17,7 @@ from google.adk.sessions import InMemorySessionService
 from google.genai import types
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
+from ..citation_validator import PulavarCitationValidator
 from ..poets.avvaiyar import avvaiyar_agent
 from ..poets.kapilar import kapilar_agent
 from ..poets.nakkirar import nakkirar_agent
@@ -26,9 +27,17 @@ from ..store import artifacts, interaction_graph
 from ..swarm import root_agent
 from ..tools.corpus import get_verse
 from . import sessions
-from .schemas import AskMetadata, AskRequest, AskResponse, Citation
+from .schemas import (
+    AskMetadata,
+    AskRequest,
+    AskResponse,
+    Citation,
+    PulavarAnswer,
+    PulavarClaim,
+)
 
 app = FastAPI(title="Avai Ask API", version="0.1.0")
+_citation_validator = PulavarCitationValidator()
 
 app.add_middleware(
     CORSMiddleware,
@@ -291,8 +300,41 @@ async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResp
         raise HTTPException(status_code=502, detail=f"Agent execution failed: {exc}") from exc
 
     elapsed_ms = int((time.monotonic() - start) * 1000)
-    response_text = final_text.strip()
-    citations = _extract_citations(final_text)
+    raw_response_text = final_text.strip()
+
+    # The model proposes; Python decides.
+    pulavar_answer = _citation_validator.validate_answer(
+        raw_response_text, user_query=request.message
+    )
+
+    if pulavar_answer.is_abstained:
+        response_text = pulavar_answer.answer_text
+        citations: list[Citation] = []
+        effective_claims = pulavar_answer.claims
+        is_abstained = True
+        abstention_reason = pulavar_answer.abstention_reason
+        evidence_status = "abstained"
+    else:
+        response_text = pulavar_answer.answer_text
+        effective_claims = pulavar_answer.claims
+        is_abstained = False
+        abstention_reason = "none"
+        evidence_status = pulavar_answer.evidence_status
+        citations = [
+            Citation(
+                verse_id=c.source_id,
+                poem=c.source.poem if c.source else None,
+                tinai=c.source.tinai if c.source else None,
+                poet=c.source.poet if c.source else None,
+                pulavar=c.source.poet if c.source else None,
+                citation_id=c.citation_id,
+                quote=c.quote,
+                verified=c.is_valid,
+                is_valid=c.is_valid,
+            )
+            for c in pulavar_answer.citations
+            if c.is_valid
+        ]
 
     background_tasks.add_task(
         _capture_artifact,
@@ -314,6 +356,11 @@ async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResp
         routing_reason=routing_reason,
         response_text=response_text,
         citations=citations,
+        claims=effective_claims,
+        is_abstained=is_abstained,
+        abstention_reason=abstention_reason,
+        evidence_status=evidence_status,
+        pulavar_answer=pulavar_answer,
         metadata=AskMetadata(
             model=_MODEL_LABEL,
             elapsed_ms=elapsed_ms,

@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Literal, Optional
 from pydantic import BaseModel, Field
 
 class KaruElements(BaseModel):
@@ -23,3 +23,56 @@ class ImageResult(BaseModel):
         default="AI-recreated imagery — not a historical depiction.",
         description="Mandatory disclaimer for all generated images."
     )
+
+EvidenceStatus = Literal["verified", "partially_verified", "unsupported", "conflicting", "abstained"]
+
+AbstentionReason = Literal[
+    "insufficient_evidence",
+    "fabricated_reference",
+    "incorrect_attribution",
+    "conflicting_evidence",
+    "out_of_scope",
+    "unicode_corruption",
+    "prompt_injection",
+    "none"
+]
+
+class PulavarSourceMetadata(BaseModel):
+    source_id: str = Field(description="Normalized verse or source identifier, e.g. 'kurunthokai_100'")
+    poem: Optional[str] = Field(default=None, description="Poem or anthology name, e.g. 'kurunthokai'")
+    verse_number: Optional[int] = Field(default=None, description="Verse number if applicable")
+    poet: Optional[str] = Field(default=None, description="Attributed poet / author")
+    tinai: Optional[str] = Field(default=None, description="Classical tiṇai")
+    matched_quote: Optional[str] = Field(default=None, description="Quoted original Tamil line or phrase verified in source")
+    line_numbers: List[int] = Field(default_factory=list, description="Verified line numbers in source")
+    source_type: str = Field(default="corpus_verse", description="Type of source: corpus_verse, grammar_rule, colophon")
+    verified: bool = Field(default=False, description="True if verified against primary corpus data")
+
+class PulavarCitation(BaseModel):
+    citation_id: str = Field(description="Unique reference marker, e.g. '[^1]' or 'c1'")
+    source_id: str = Field(description="Target source identifier, e.g. 'kurunthokai_100'")
+    source: Optional[PulavarSourceMetadata] = Field(default=None, description="Resolved source metadata")
+    quote: Optional[str] = Field(default=None, description="Exact or normalized quote from source supporting claim")
+    is_valid: bool = Field(default=False, description="Whether Python validator confirmed this citation")
+    validation_notes: Optional[str] = Field(default=None, description="Validator check details or mismatch notes")
+
+class PulavarClaim(BaseModel):
+    claim_id: str = Field(description="Claim index or id, e.g. 'claim_1'")
+    claim_text: str = Field(description="Individual factual assertion made in the response")
+    claim_text_ta: Optional[str] = Field(default=None, description="Tamil rendition of the factual claim")
+    citation_ids: List[str] = Field(default_factory=list, description="Associated citation IDs supporting this claim")
+    citations: List[PulavarCitation] = Field(default_factory=list, description="Full verified citation objects")
+    evidence_status: EvidenceStatus = Field(default="unsupported", description="Verification status of this specific claim")
+    is_supported: bool = Field(default=False, description="True only if supported by verified citations")
+
+class PulavarAnswer(BaseModel):
+    answer_text: str = Field(description="Final answer text in Tamil / English")
+    answer_text_ta: Optional[str] = Field(default=None, description="Tamil-first response text")
+    claims: List[PulavarClaim] = Field(default_factory=list, description="Decomposed factual claims")
+    citations: List[PulavarCitation] = Field(default_factory=list, description="All verified source citations")
+    evidence_status: EvidenceStatus = Field(default="verified", description="Overall evidence status")
+    is_abstained: bool = Field(default=False, description="True if Pulavar abstains from answering")
+    abstention_reason: AbstentionReason = Field(default="none", description="Reason for abstention")
+    abstention_message_ta: Optional[str] = Field(default=None, description="Tamil explanation for abstention")
+    confidence_score: float = Field(default=1.0, description="Deterministic confidence score between 0.0 and 1.0")
+
