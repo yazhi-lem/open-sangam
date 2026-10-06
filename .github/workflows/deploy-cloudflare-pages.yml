@@ -67,11 +67,12 @@ jobs:
           echo "accountId=$account_id" >> "$GITHUB_OUTPUT"
           echo "projectName=$project_name" >> "$GITHUB_OUTPUT"
 
+      # cloudflare/pages-action@v1 is deprecated and can no longer be resolved;
+      # wrangler-action@v3 running `pages deploy` is Cloudflare's replacement.
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ steps.cloudflare.outputs.apiToken }}
           accountId: ${{ steps.cloudflare.outputs.accountId }}
-          projectName: ${{ steps.cloudflare.outputs.projectName }}
-          directory: frontend/dist
+          command: pages deploy frontend/dist --project-name=${{ steps.cloudflare.outputs.projectName }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
