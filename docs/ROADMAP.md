@@ -7,7 +7,29 @@
 > (Later)** additionally *proposes* new directions — those are clearly marked
 > **[proposed]** and are not yet committed scope.
 >
-> **Last updated:** 2026-08-04
+> **Last updated:** 2026-08-04 · **Q4 2026 section added:** 2026-10-08
+
+---
+
+## Q4 2026: committed plan (8 Oct 2026)
+
+> The horizons below were written on 2026-08-04, before the Q4 launch plan existed. For Q4 2026 this section is the
+> commitment. The milestone tables are in [../NEXT_ACTION.md](../NEXT_ACTION.md).
+
+| Date | Commitment | Federal | Gate |
+|---|---|---|---|
+| **14 Nov 2026** | Public reader: **Maduraikanchi lines 1–100** in three layers (Sangam Tamil · modern Tamil · English) | Mozhi | Scholar sign-off on all 100 lines |
+| **21 Nov 2026** | **Avai + Pulavar** public beta (a source for every claim) | Avai | Citation accuracy ≥90% on a 200-question gold set; native review of 100 answers |
+| **31 Dec 2026** | Maduraikanchi lines 101–300 through the same pipeline | Mozhi | Same scholar gate |
+| **31 Dec 2026** | Tamil red-team suite, 500+ prompts, published with a datasheet | Avai | Native review of the prompts |
+
+**Deferred to 2027:** audio recitation, quizzes and progress tracking, other poems.
+
+**How the older horizons map onto Q4:**
+
+- *Agents M2 (2026-09-30) and M3 (2026-10-31):* not part of the Q4 plan. Q4 agent work is **Pulavar** inside Avai.
+- *Corpus Phase 2 English translation:* the Q4 English layer covers Maduraikanchi lines 1–100 only.
+- *Audio recitation (#10):* deferred to 2027.
 
 ---
 
@@ -113,10 +135,12 @@ scheduled yet.
 | When | Milestone | Scope |
 |---|---|---|
 | **2026-08-31** | Agents **M1** | Foundations + Avvaiyar Q&A evalset; Corpus Phase C started |
-| **2026-09-30** | Agents **M2** | Five-poet swarm (scenario, recreation, imagery, convener) |
-| **2026-10-31** | Agents **M3** | A2A/A2UI `/avai` assembly deployed to Cloud Run |
+| ~~**2026-09-30**~~ (not in the Q4 plan) | Agents **M2** | Five-poet swarm (scenario, recreation, imagery, convener) |
+| ~~**2026-10-31**~~ (not in the Q4 plan) | Agents **M3** | A2A/A2UI `/avai` assembly deployed to Cloud Run |
 | Q4 2026 | Corpus **Phase 2 / E / F** | English drafting, glossary cross-links, verification loop |
-| Q4 2026 → | Reader | Audio recitation, 3D real-data, layout/a11y polish |
+| **14 Nov 2026** | Reader launch | Maduraikanchi 1–100, three layers, scholar-verified |
+| **21 Nov 2026** | Avai public beta | Pulavar with citations, ≥90% gold-set accuracy |
+| 2027 | Reader | Audio recitation, quizzes, other poems |
 | **[proposed]** | Platform | Testing/CI, search, Learn mode, PWA, dataset release |
 
 ---
