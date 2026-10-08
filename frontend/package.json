@@ -9,11 +9,14 @@
     "dev": "vite",
     "prebuild": "node scripts/build-articles.mjs",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint . && node scripts/check-tamil-tracking.mjs",
     "test": "node --test src/data/*.test.js",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/noto-sans-tamil": "^5.3.0",
+    "@fontsource/noto-serif-tamil": "^5.3.0",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.1",
     "dompurify": "^3.4.14",

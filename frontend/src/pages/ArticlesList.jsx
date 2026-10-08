@@ -47,7 +47,7 @@ export default function ArticlesList() {
     <div className="max-w-6xl mx-auto px-4 py-16 space-y-16">
       {/* Header */}
       <header className="text-center space-y-4 max-w-3xl mx-auto">
-        <p className="tamil text-accent text-lg tracking-widest">கட்டுரைகள்</p>
+        <p lang="ta" className="tamil text-accent text-lg">கட்டுரைகள்</p>
         <h1 className="text-4xl sm:text-5xl font-bold text-primary leading-tight">
           Articles & Essays
         </h1>

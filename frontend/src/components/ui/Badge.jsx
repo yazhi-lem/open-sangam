@@ -1,6 +1,17 @@
 /**
  * Badge — semantic status tags, collection tags, and Tiṇai landscape indicators.
+ *
+ * Tamil text is never letter-spaced or upper-cased: when the children contain
+ * Tamil script the tracking/uppercase classes are dropped automatically.
  */
+const TAMIL_RE = /[\u0B80-\u0BFF]/
+
+function containsTamil(node) {
+  if (typeof node === 'string') return TAMIL_RE.test(node)
+  if (Array.isArray(node)) return node.some(containsTamil)
+  return false
+}
+
 export default function Badge({
   children,
   variant = 'default', // 'default' | 'accent' | 'anthology' | 'idyll' | 'kurinji' | 'mullai' | 'marutam' | 'neytal' | 'palai' | 'puram' | 'outline'
@@ -11,10 +22,16 @@ export default function Badge({
 }) {
   const base = 'inline-flex items-center gap-1.5 font-medium rounded-full transition-colors whitespace-nowrap'
 
-  const sizes = {
-    sm: 'text-[10px] px-2 py-0.5 tracking-wider uppercase',
-    md: 'text-xs px-2.5 py-1 tracking-wide',
-  }
+  const tamil = containsTamil(children)
+  const sizes = tamil
+    ? {
+        sm: 'text-[11px] px-2 py-0.5',
+        md: 'text-xs px-2.5 py-1',
+      }
+    : {
+        sm: 'text-[10px] px-2 py-0.5 tracking-wider uppercase',
+        md: 'text-xs px-2.5 py-1 tracking-wide',
+      }
 
   const variants = {
     default: 'bg-surface-alt text-muted border border-line',
@@ -31,7 +48,7 @@ export default function Badge({
   }
 
   return (
-    <span className={`${base} ${sizes[size]} ${variants[variant]} ${className}`} {...props}>
+    <span className={`${base} ${sizes[size] || sizes.md} ${variants[variant]} ${className}`} {...props}>
       {icon && <span className="shrink-0">{icon}</span>}
       <span>{children}</span>
     </span>
