@@ -6,12 +6,16 @@ on:
       - main
     paths:
       - 'frontend/**'
+      - 'data/**'
+      - 'backend/python/**'
       - '.github/workflows/ci.yml'
   push:
     branches:
       - main
     paths:
       - 'frontend/**'
+      - 'data/**'
+      - 'backend/python/**'
       - '.github/workflows/ci.yml'
 
 permissions:
@@ -43,3 +47,33 @@ jobs:
       - name: Build frontend
         working-directory: frontend
         run: npm run build
+
+  # Corpus contract: every data/texts/*/normalized/*.json must match
+  # data/schema/verse_schema.json, and known source gaps must stay listed in
+  # data/schema/known_line_gaps.json. Also runs the backend pipeline tests,
+  # which were not run anywhere in CI before. Local only: no API keys, no network
+  # calls beyond pip.
+  corpus-and-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: backend/python/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r backend/python/requirements.txt
+
+      - name: Validate corpus against schema
+        working-directory: backend/python
+        run: python -m normalizer.validate_corpus
+
+      - name: Run backend tests
+        working-directory: backend/python
+        run: python -m pytest tests -q
