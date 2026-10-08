@@ -5,6 +5,7 @@ from .image import generate_image
 from .analysis import analyze_word_etymology, analyze_prosody
 from .colophon import get_colophon_metadata
 from .crossref import find_parallel_verses
+from .retrieval import retrieve_passages
 
 __all__ = [
     "get_verse",
@@ -17,5 +18,6 @@ __all__ = [
     "analyze_prosody",
     "get_colophon_metadata",
     "find_parallel_verses",
+    "retrieve_passages",
 ]
 
