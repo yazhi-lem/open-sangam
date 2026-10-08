@@ -67,3 +67,31 @@ export function draftBadgeTitle(verse, field) {
   if (status === 'unverified') return 'Collected from the source edition; not yet reviewed by a Tamil scholar.'
   return undefined
 }
+
+const GLOSS_FIELDS = ['root', 'urichol', 'etymology', 'gloss']
+
+/** True when a corpus word entry carries at least one glossary field. */
+export function hasGloss(word) {
+  return Boolean(word) && GLOSS_FIELDS.some((k) => word[k] != null && String(word[k]).trim() !== '')
+}
+
+/**
+ * Trust status of a word's glossary entry. Glossary fields come only from the
+ * corpus file; `etymologyMeta` on the record marks a batch AI draft.
+ * @returns {{ status: 'verified'|'ai-draft'|'unverified'|'missing', model?: string }}
+ */
+export function glossaryStatus(verse, word) {
+  if (!hasGloss(word)) return { status: 'missing' }
+  if (verse?.verified === true) return { status: 'verified' }
+  if (verse?.etymologyMeta) return { status: 'ai-draft', model: verse.etymologyMeta.model || undefined }
+  return { status: 'unverified' }
+}
+
+/** Badge label for a glossary entry, or null when no badge is needed. */
+export function glossaryBadgeLabel(verse, word) {
+  const { status } = glossaryStatus(verse, word)
+  // Tamil text below is an AI-written draft: needs native-reviewer sign-off.
+  if (status === 'ai-draft') return 'வரைவு · AI draft'
+  if (status === 'unverified') return 'வரைவு · Not yet verified'
+  return null
+}
