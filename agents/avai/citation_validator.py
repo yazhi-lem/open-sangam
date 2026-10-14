@@ -193,11 +193,29 @@ def verify_quote_in_verse(
     lines = verse.get("lines", [])
     for line in lines:
         line_clean = _clean_for_match(line.get("text", ""))
-        if clean_quote in line_clean or line_clean in clean_quote:
+        # The quote must sit inside the line. The reverse test (line inside
+        # quote) let a fabricated quote pass by embedding one genuine line;
+        # multi-line quotes are handled by the joined-lines check below.
+        if line_clean and clean_quote in line_clean:
             matched_lines.append(line.get("lineNumber", 0))
 
     if matched_lines:
         return True, matched_lines, None
+
+    # Quote spanning consecutive lines (enjambment): match against the joined
+    # lines and report every line the quote overlaps.
+    cleaned_lines = [(ln.get("lineNumber", 0), _clean_for_match(ln.get("text", ""))) for ln in lines]
+    joined = "".join(text for _, text in cleaned_lines)
+    pos = joined.find(clean_quote) if joined else -1
+    if pos >= 0:
+        end = pos + len(clean_quote)
+        offset = 0
+        spanned = []
+        for number, text in cleaned_lines:
+            if text and offset < end and offset + len(text) > pos:
+                spanned.append(number)
+            offset += len(text)
+        return True, spanned, None
 
     # Check full poem text if line-level match wasn't found (due to enjambment)
     full_text_clean = _clean_for_match(verse.get("sangamTamil", ""))
@@ -210,6 +228,107 @@ def verify_quote_in_verse(
         return True, [], None
 
     return False, [], f"Quote '{quote}' was not found in the verified text of {verse.get('id')}"
+
+
+# --------------------------------------------------------------------------- #
+# Reflection check: is the claim actually about the cited text?
+#
+# A citation can be real (the verse exists, poet and quote match) and still
+# be laundering: the claim says something the cited verse never mentions.
+# The model is asked to self-check (REFLECTION_RULE in instructions.py), but
+# per the Guardrail Pattern Python decides: a factual Tamil claim must share
+# at least one content word (or 3-letter stem) with the cited verse's text,
+# commentary, poet, poem name or tiṇai. Deliberately lenient (paraphrase is
+# fine), it only rejects claims with no lexical link to their source.
+# English-only claims are not checked yet (the English layer is mostly empty).
+
+_TAMIL_WORD_REGEX = re.compile(r"[\u0B80-\u0BFF]+")
+_TAMIL_COMBINING = set(range(0x0BBE, 0x0BCE)) | {0x0BD7}
+
+# Meta words that appear in almost any answer about a poem and so prove
+# nothing about grounding. Internal matching list, not user-facing text.
+_GROUNDING_STOPWORDS = {
+    "இப்பாடல்", "இப்பாடலில்", "பாடல்", "பாடலில்", "பாடலின்", "பாடலைப்", "பாடலை",
+    "பாடியவர்", "புலவர்", "புலவரின்", "திணை", "திணையைச்", "திணையில்", "சங்க",
+    "இலக்கியம்", "இலக்கியத்தில்", "இந்தப்", "இந்த", "இது", "இதில்", "என்று",
+    "என்பது", "எனப்", "கூறுகிறது", "கூறுகிறார்", "குறிப்பிடுகிறது", "குறிப்பிடுகிறார்",
+    "உள்ளது", "உள்ளன", "ஆகும்", "மற்றும்", "ஒரு", "அவர்", "அது", "வரிகள்", "வரியில்",
+}
+_GROUNDING_STOPSTEMS = {"பாட", "புலவ", "திணை", "இலக்", "குறிப்", "கூறு"}
+
+_TINAI_TA = {
+    "kurinji": "குறிஞ்சி", "mullai": "முல்லை", "marutam": "மருதம்",
+    "neytal": "நெய்தல்", "palai": "பாலை",
+}
+_POEM_TA = {
+    "kurunthokai": "குறுந்தொகை", "natrinai": "நற்றிணை", "akananooru": "அகநானூறு",
+    "purananooru": "புறநானூறு", "ainkurunooru": "ஐங்குறுநூறு", "kalithokai": "கலித்தொகை",
+    "pathitrupathu": "பதிற்றுப்பத்து", "paripadal": "பரிபாடல்",
+    "maduraikanchi": "மதுரைக்காஞ்சி", "kurinjipattu": "குறிஞ்சிப்பாட்டு",
+    "mullaippattu": "முல்லைப்பாட்டு", "malaipadukadam": "மலைபடுகடாம்",
+    "nedunalvadai": "நெடுநல்வாடை", "pattinappalai": "பட்டினப்பாலை",
+    "perumpanatrupadai": "பெரும்பாணாற்றுப்படை", "porunaratrupadai": "பொருநராற்றுப்படை",
+    "sirupanatrupadai": "சிறுபாணாற்றுப்படை", "thirumurugatrupadai": "திருமுருகாற்றுப்படை",
+}
+
+
+def _letters(word: str) -> list[str]:
+    """Tamil grapheme clusters: a vowel sign or pulli stays with its letter."""
+    out: list[str] = []
+    for ch in word:
+        if out and ord(ch) in _TAMIL_COMBINING:
+            out[-1] += ch
+        else:
+            out.append(ch)
+    return out
+
+
+def _content_terms(text: str) -> set[str]:
+    """Tamil content words plus 3-letter stems, minus meta stopwords."""
+    terms: set[str] = set()
+    for word in _TAMIL_WORD_REGEX.findall(normalize_tamil_text(text or "")):
+        if word in _GROUNDING_STOPWORDS:
+            continue
+        letters = _letters(word)
+        if len(letters) < 2:
+            continue
+        terms.add(word)
+        if len(letters) >= 3:
+            stem = "".join(letters[:3])
+            if not any(stem.startswith(s) for s in _GROUNDING_STOPSTEMS):
+                terms.add("~" + stem)
+    return terms
+
+
+def _verse_terms(verse: dict) -> set[str]:
+    parts = [
+        verse.get("sangamTamil") or "",
+        verse.get("urai") or "",
+        verse.get("yazhi_urai") or "",
+        verse.get("poet") or "",
+        verse.get("title") or "",
+        verse.get("heading") or "",
+        _TINAI_TA.get(verse.get("tinai") or "", ""),
+        _POEM_TA.get(verse.get("poem") or "", ""),
+    ]
+    return _content_terms(" ".join(parts))
+
+
+def check_claim_grounding(claim_text: str, verse: dict) -> tuple[bool, str | None]:
+    """True when a Tamil claim shares content with the verse it cites.
+
+    Claims without Tamil content words (English-only, or only meta words)
+    are not judged here and return True.
+    """
+    claim_terms = _content_terms(claim_text)
+    if not claim_terms:
+        return True, None
+    if claim_terms & _verse_terms(verse):
+        return True, None
+    return False, (
+        f"Claim shares no content with cited source {verse.get('id')}; "
+        "the citation does not support it"
+    )
 
 
 def parse_raw_proposal(raw_output: str) -> dict:
@@ -425,12 +544,18 @@ class PulavarCitationValidator:
                 if not quote_ok:
                     has_quote_mismatch = True
 
-                is_citation_valid = is_valid_src and poet_ok and quote_ok
+                grounded, grounding_err = (
+                    check_claim_grounding(claim_text, verse) if is_factual else (True, None)
+                )
+
+                is_citation_valid = is_valid_src and poet_ok and quote_ok and grounded
                 val_notes = []
                 if poet_err:
                     val_notes.append(poet_err)
                 if quote_err:
                     val_notes.append(quote_err)
+                if grounding_err:
+                    val_notes.append(grounding_err)
 
                 src_meta = PulavarSourceMetadata(
                     source_id=verse["id"],
@@ -619,5 +744,6 @@ __all__ = [
     "verify_source",
     "verify_poet_attribution",
     "verify_quote_in_verse",
+    "check_claim_grounding",
     "ABSTENTION_MESSAGES_TA",
 ]
