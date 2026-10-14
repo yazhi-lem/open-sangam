@@ -1,3 +1,5 @@
+import GlossComingSoon from './GlossComingSoon'
+
 /**
  * WordGlossary — "Click-to-Define" pop-up for a single word.
  * Shows root meaning, grammatical class (Urichol), and etymology.
@@ -46,6 +48,11 @@ export default function WordGlossary({ word, loading = false, onClose }) {
         {!loading && word.gloss && (
           <div className="pt-2 border-t border-line">
             <p className="text-muted italic">"{word.gloss}"</p>
+          </div>
+        )}
+        {!loading && !word.gloss && (
+          <div className="pt-2 border-t border-line">
+            <GlossComingSoon />
           </div>
         )}
       </div>

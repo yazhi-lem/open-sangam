@@ -54,7 +54,7 @@ single `OPENROUTER_API_KEY` serves both. It is phased, resumable, and bounded:
 | **2** | Paripadal · Pathitrupathu · Kalithokai · Akananooru | 472 | ⬜ |
 | **3** | Purananooru · Natrinai · Kurunthokai · Ainkurunooru | 1,700 | ⬜ |
 
-- Runs nightly at 02:00 UTC via `.github/workflows/translate-english.yml`
+- Nightly workflow removed 14 Oct 2026 (no foreign AI in the corpus; see `data/reports/gemini-removed-fields.json`)
   (200 verses/run) and commits results with `[skip ci]`.
 - **Requires the repo secret `OPENROUTER_API_KEY`** — the job skips cleanly
   without it, so an unconfigured repo never goes red.
@@ -205,7 +205,7 @@ quick-start that links there.
 | Cloud Functions (`backend/functions/`) | ✅ | `POST /translate`, `POST /analyze-word` → Gemini 2.5 Flash; key as Firebase Secret |
 | Firestore rules / indexes | 🔄 | Rules present (public read / admin write); **not populated** — see §8 |
 | Frontend CI (`.github/workflows/ci.yml`) | ✅ | `npm ci` → lint → build on `frontend/**`; **no test step** |
-| Translation job (`translate-english.yml`) | ✅ | Nightly 02:00 UTC + `workflow_dispatch`; 200 verses/run → auto-commit. Needs secret `OPENROUTER_API_KEY` |
+| Translation job (`translate-english.yml`) | ⛔ Removed | Removed 14 Oct 2026 with all Gemini-drafted fields |
 | Deploy (`deploy-cloudflare-pages.yml`) | ✅ | Builds `frontend/dist` → **Cloudflare Pages** (`sangam.yazhi.dev`) |
 | Project automation | ✅ | `setup-project.yml` / `setup-agents-project.yml` create milestones + issues |
 | Agent deploy (Cloud Run) | ⬜ | Dockerfile + `deploy-agent.yml` not yet written (M3 / #42) |
