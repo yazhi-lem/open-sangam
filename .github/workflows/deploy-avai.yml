@@ -1,0 +1,142 @@
+name: Deploy Avai API to Cloud Run
+
+# Builds agents/avai/Dockerfile and deploys it as the public, login-free
+# POST /avai/ask backend that sangam.yazhi.dev calls.
+#
+# One-time setup (repository settings → Secrets and variables → Actions):
+#   secrets.GCP_SA_KEY       JSON key of a service account with roles
+#                            run.admin, artifactregistry.writer,
+#                            iam.serviceAccountUser, secretmanager.secretAccessor
+#   secrets.GCP_PROJECT_ID   the Google Cloud project id
+#   Secret Manager secret    "openrouter-api-key" holding the OpenRouter key
+#   Artifact Registry repo   "avai" (Docker) in the region below
+# Optional repository variables:
+#   vars.AVAI_REGION                  default asia-south1 (Mumbai)
+#   vars.AVAI_ALLOWED_ORIGINS         default https://sangam.yazhi.dev,https://yazhi.dev,https://chat.yazhi.dev
+#   vars.AVAI_RATE_LIMIT_PER_MINUTE   default 12 questions per visitor per minute
+#
+# After the first deploy, put the printed service URL in the
+# VITE_AVAI_API_URL secret so the Cloudflare Pages build points at it.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'agents/avai/**'
+      - 'data/texts/**'
+      - 'data/knowledge/**'
+      - '.github/workflows/deploy-avai.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-avai
+  cancel-in-progress: false
+
+env:
+  SERVICE: avai-api
+  REGION: ${{ vars.AVAI_REGION || 'asia-south1' }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: agents/avai/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r agents/avai/requirements.txt
+
+      - name: Run Avai tests (no API key needed)
+        working-directory: agents
+        run: python -m pytest avai/tests -q
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check deploy credentials
+        id: creds
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+        run: |
+          if [ -z "$GCP_SA_KEY" ] || [ -z "$GCP_PROJECT_ID" ]; then
+            echo "GCP_SA_KEY / GCP_PROJECT_ID not set — skipping the Cloud Run deploy." >> "$GITHUB_STEP_SUMMARY"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.creds.outputs.ready == 'true'
+
+      - name: Authenticate to Google Cloud
+        if: steps.creds.outputs.ready == 'true'
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up gcloud
+        if: steps.creds.outputs.ready == 'true'
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Build and push image
+        if: steps.creds.outputs.ready == 'true'
+        id: image
+        env:
+          PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+        run: |
+          set -eu
+          image="${REGION}-docker.pkg.dev/${PROJECT_ID}/avai/${SERVICE}:${GITHUB_SHA}"
+          gcloud auth configure-docker "${REGION}-docker.pkg.dev" --quiet
+          docker build -f agents/avai/Dockerfile -t "$image" .
+          docker push "$image"
+          echo "ref=$image" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy to Cloud Run
+        if: steps.creds.outputs.ready == 'true'
+        id: deploy
+        env:
+          PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+          ALLOWED_ORIGINS: ${{ vars.AVAI_ALLOWED_ORIGINS || 'https://sangam.yazhi.dev,https://yazhi.dev,https://chat.yazhi.dev' }}
+          RATE_LIMIT: ${{ vars.AVAI_RATE_LIMIT_PER_MINUTE || '12' }}
+        run: |
+          set -eu
+          # Sessions live in process memory (agents/avai/api/sessions.py), so
+          # session affinity keeps a conversation on one instance where possible.
+          # ^|^ switches gcloud's list delimiter so the comma-separated origin
+          # list stays one value.
+          gcloud run deploy "$SERVICE" \
+            --project "$PROJECT_ID" \
+            --region "$REGION" \
+            --image "${{ steps.image.outputs.ref }}" \
+            --allow-unauthenticated \
+            --port 8080 \
+            --memory 1Gi \
+            --cpu 1 \
+            --concurrency 40 \
+            --timeout 120 \
+            --min-instances 0 \
+            --max-instances 3 \
+            --session-affinity \
+            --set-secrets "OPENROUTER_API_KEY=openrouter-api-key:latest" \
+            --set-env-vars "^|^AVAI_ALLOWED_ORIGINS=${ALLOWED_ORIGINS}|AVAI_RATE_LIMIT_PER_MINUTE=${RATE_LIMIT}"
+          url="$(gcloud run services describe "$SERVICE" --project "$PROJECT_ID" --region "$REGION" --format 'value(status.url)')"
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          echo "Avai API deployed: $url — set it as the VITE_AVAI_API_URL secret for the Pages build." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Smoke test
+        if: steps.creds.outputs.ready == 'true'
+        run: |
+          set -eu
+          curl --fail --silent --show-error --retry 5 --retry-delay 5 --retry-all-errors \
+            "${{ steps.deploy.outputs.url }}/avai/health"

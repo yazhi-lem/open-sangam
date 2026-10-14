@@ -1,0 +1,19 @@
+# Docker build context is the repo root (see agents/avai/Dockerfile).
+.git
+**/node_modules
+**/.venv
+**/venv
+**/__pycache__
+**/.pytest_cache
+**/.env
+frontend
+backend
+docs
+content
+data/generated
+data/texts/*/raw
+agents/avai/tests
+agents/avai/evals
+*.zip
+*.mp4
+*.patch
