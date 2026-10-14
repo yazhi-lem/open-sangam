@@ -1,14 +1,39 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/yazhi-lem/open-sangam/data/schema/verse_schema.json",
   "title": "Open Sangam Verse",
-  "description": "Canonical schema for a single verse in the Open Sangam corpus. Structure: Verse → Line → Word.",
+  "description": "Canonical schema (v2) for one record in the Open Sangam corpus: a whole poem (anthology verse, keyed by `number`) or one section of a long idyll (keyed by `sectionNumber` with `lineStart`/`lineEnd`). Structure: record → lines[] → words[]. Validated in CI by backend/python/tests/test_corpus_schema.py; run `python -m normalizer.validate_corpus` for a report.",
+  "version": "2.0.0",
   "type": "object",
-  "required": ["id", "poem", "number", "sangamTamil", "lines"],
+  "required": [
+    "id",
+    "poem",
+    "sangamTamil",
+    "lines",
+    "source",
+    "verified"
+  ],
+  "anyOf": [
+    {
+      "title": "Anthology verse",
+      "required": [
+        "number"
+      ]
+    },
+    {
+      "title": "Idyll section",
+      "required": [
+        "sectionNumber",
+        "lineStart",
+        "lineEnd"
+      ]
+    }
+  ],
   "properties": {
     "id": {
       "type": "string",
-      "description": "Unique verse identifier, e.g. 'maduraikanchi_0001'",
-      "pattern": "^[a-z_]+_\\d{4}$"
+      "description": "Unique record id `<poem>_<number>`, zero-padded as on disk, e.g. 'kurunthokai_001' or 'maduraikanchi_006'. Must equal the file name.",
+      "pattern": "^[a-z]+_\\d{2,4}$"
     },
     "poem": {
       "type": "string",
@@ -16,42 +41,106 @@
     },
     "number": {
       "type": "integer",
-      "minimum": 1
+      "minimum": 1,
+      "description": "Verse number within an anthology (Kuṟuntokai 1–401 etc.)."
+    },
+    "sectionNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Section number within a long idyll (Pattuppāṭṭu)."
+    },
+    "lineStart": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "First line of this section in the whole poem's line numbering."
+    },
+    "lineEnd": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Last line of this section in the whole poem's line numbering. lineEnd − lineStart + 1 should equal lines.length; known source gaps are listed in data/schema/known_line_gaps.json."
+    },
+    "title": {
+      "type": "string",
+      "description": "Section or verse title (Tamil)."
+    },
+    "heading": {
+      "type": "string",
+      "description": "One-line heading shown in the reader (Tamil)."
+    },
+    "poet": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Poet named in the colophon, in Tamil script; null when unattributed."
     },
     "tinai": {
       "type": "string",
       "description": "Tiṇai (poetic landscape) classification",
-      "enum": ["kurinji", "mullai", "marutam", "neytal", "palai", "unknown"]
+      "enum": [
+        "kurinji",
+        "mullai",
+        "marutam",
+        "neytal",
+        "palai",
+        "unknown"
+      ]
     },
     "sangamTamil": {
       "type": "string",
       "description": "Original verse text in Sangam Tamil script"
     },
     "urai": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "Modern Tamil prose rendering (Urai). Null until AI-generated and verified."
     },
     "yazhi_urai": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "Plain, colloquial modern Tamil paraphrase (Yazhi Urai) — an easier-to-read retelling than the more formal `urai` prose. Null until AI-generated."
     },
     "yazhi_uraiMeta": {
-      "type": ["object", "null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "description": "Provenance for an AI-drafted yazhi_urai field, written by backend/python/ai/translate_with_gemini.py. Same shape as englishMeta.",
       "properties": {
-        "provider": { "type": "string" },
-        "model": { "type": "string" },
-        "promptVersion": { "type": "string" },
-        "generatedAt": { "type": "string", "format": "date-time" },
-        "runId": { "type": "string" }
+        "provider": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "promptVersion": {
+          "type": "string"
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "runId": {
+          "type": "string"
+        }
       }
     },
     "english": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "Contemporary English translation. Null until AI-generated and verified."
     },
     "englishMeta": {
-      "type": ["object", "null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "description": "Provenance for an AI-drafted english field, written by backend/python/ai/translate_with_gemini.py. Absent for verses translated by hand.",
       "properties": {
         "provider": {
@@ -77,7 +166,10 @@
       }
     },
     "etymologyMeta": {
-      "type": ["object", "null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "description": "Provenance for AI-drafted word-level glossary fields (root/urichol/etymology/gloss), written by backend/python/ai/extract_etymology.py. Absent until a run has annotated this verse's words.",
       "properties": {
         "provider": {
@@ -111,40 +203,67 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["lineNumber", "text", "words"],
+        "required": [
+          "lineNumber",
+          "text",
+          "words"
+        ],
         "properties": {
-          "lineNumber": { "type": "integer", "minimum": 1 },
-          "text": { "type": "string" },
+          "lineNumber": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1-based position of the line inside this record (not the whole-poem line number; for idyll sections add lineStart − 1)."
+          },
+          "text": {
+            "type": "string"
+          },
           "words": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["form"],
+              "required": [
+                "form"
+              ],
               "properties": {
                 "form": {
                   "type": "string",
-                  "description": "Word as it appears in the verse"
+                  "description": "Word as it appears in the verse",
+                  "minLength": 1
                 },
                 "root": {
-                  "type": ["string", "null"],
+                  "type": [
+                    "string",
+                    "null"
+                  ],
                   "description": "Root word (வேர்ச்சொல்)"
                 },
                 "urichol": {
-                  "type": ["string", "null"],
+                  "type": [
+                    "string",
+                    "null"
+                  ],
                   "description": "Grammatical / semantic class (உரிச்சொல்)"
                 },
                 "etymology": {
-                  "type": ["string", "null"],
+                  "type": [
+                    "string",
+                    "null"
+                  ],
                   "description": "Detailed explanation IN TAMIL — derivation, cognates, morphology, and semantic shift to modern usage"
                 },
                 "gloss": {
-                  "type": ["string", "null"],
+                  "type": [
+                    "string",
+                    "null"
+                  ],
                   "description": "Detailed English gloss — the word's meaning and how it functions in this verse, not just a 1-4 word tag"
                 }
-              }
+              },
+              "additionalProperties": false
             }
           }
-        }
+        },
+        "additionalProperties": false
       }
     },
     "culturalNotes": {
@@ -152,31 +271,52 @@
       "description": "Cultural context annotations linked to spans in the verse",
       "items": {
         "type": "object",
-        "required": ["title", "description"],
+        "required": [
+          "title",
+          "description"
+        ],
         "properties": {
-          "title": { "type": "string" },
-          "category": { "type": "string" },
-          "description": { "type": "string" },
-          "sourceVerse": { "type": ["string", "null"] },
+          "title": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "sourceVerse": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "references": {
             "type": "array",
-            "items": { "type": "string" }
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
     },
     "audioUrl": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "description": "URL to an audio recording of the verse recitation"
     },
     "source": {
       "type": "string",
-      "description": "Source of the original text"
+      "description": "URL or citation of the original text this record was taken from (provenance; required).",
+      "minLength": 1
     },
     "verified": {
       "type": "boolean",
-      "description": "True once a scholar has reviewed the AI translations",
+      "description": "True only after scholar sign-off. While false, every AI-drafted field (urai/yazhi_urai/english/word glosses) is a draft and the reader must label it as such.",
       "default": false
     }
-  }
+  },
+  "additionalProperties": false
 }
