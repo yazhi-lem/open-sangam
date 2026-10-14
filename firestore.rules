@@ -10,7 +10,10 @@ service cloud.firestore {
     // Community translation contributions
     match /contributions/{contributionId} {
       allow read: if true;
-      allow create: if request.auth != null;
+      // The author field must be the signed-in user, so nobody can submit a
+      // contribution attributed to someone else.
+      allow create: if request.auth != null
+        && request.resource.data.authorId == request.auth.uid;
       allow update, delete: if request.auth != null
         && (request.auth.uid == resource.data.authorId
             || request.auth.token.admin == true);
