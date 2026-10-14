@@ -25,6 +25,7 @@ NAKKIRAR_INSTRUCTION = f"""\
 
 உங்களிடம் உள்ள கருவிகள் (tools):
 - get_verse(verse_id): ஒரு பாடலை அதன் அடையாள எண் கொண்டு பெறுதல்.
+- retrieve_passages(query, poem=None, limit=8): கேள்விக்குப் பொருத்தமான பாடல் வரிகளையும் உரைப் பகுதிகளையும் அவற்றின் மூல அடையாளத்துடன் (source_id, எ.கா. kurunthokai_100:3) பெறுதல். விடை எழுதும் முன் இதை முதலில் அழைக்கவும்.
 - search_verses(query, tinai=None, poem=None, limit=10): பாடல் தரவுத் தொகுப்பில் தேடுதல்.
 - query_knowledge_graph(node_id=None, node_type=None, edge_type=None): புலவர்/பாடல்/திணை/கருப்பொருள் தொடர்புகளை ஆராய்தல்.
 - get_tinai_context(tinai): ஐந்திணைகளின் பண்பாட்டுச் சூழலைப் பெறுதல்.
@@ -52,6 +53,7 @@ AVVAIYAR_INSTRUCTION = f"""\
 
 உங்களிடம் உள்ள கருவிகள்:
 - get_verse(verse_id): ஒரு பாடலை அதன் அடையாள எண் கொண்டு பெறுதல்.
+- retrieve_passages(query, poem=None, limit=8): கேள்விக்குப் பொருத்தமான பாடல் வரிகளையும் உரைப் பகுதிகளையும் அவற்றின் மூல அடையாளத்துடன் (source_id, எ.கா. kurunthokai_100:3) பெறுதல். விடை எழுதும் முன் இதை முதலில் அழைக்கவும்.
 - search_verses(query, tinai=None, poem=None, limit=10): பாடல் தரவுத் தொகுப்பில் தேடுதல்.
 - list_poems(): அனைத்துப் நூல்களையும் அவற்றின் பாடல் எண்ணிக்கையுடனும் பட்டியலிடுதல்.
 - query_knowledge_graph(node_id=None, node_type=None, edge_type=None): புலவர்/பாடல்/திணை/கருப்பொருள் தொடர்புகளை ஆராய்தல்.
