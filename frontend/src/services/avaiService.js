@@ -66,8 +66,10 @@ export async function askAvaiAgent({
   const primaryUrl = `${AVAI_API_BASE}/avai/ask`
   let { res, error } = await executeFetch(primaryUrl, payload)
 
-  // Attempt 2: direct localhost fallback if primary failed on network error and was a relative proxy URL
-  if (error && !AVAI_API_BASE) {
+  // Attempt 2: direct localhost fallback if primary failed on network error and was a relative proxy URL.
+  // Dev only: from a deployed HTTPS origin this is blocked as mixed content and
+  // triggers the browser's "access devices on your local network" prompt.
+  if (error && !AVAI_API_BASE && import.meta.env.DEV) {
     const fallbackUrl = 'http://127.0.0.1:8080/avai/ask'
     const fallback = await executeFetch(fallbackUrl, payload)
     if (fallback.res) {
@@ -183,7 +185,10 @@ The Sangam Avai backend responded with an HTTP ${status} error. Please check you
 function generateClientFallbackResponse({ pulavar, sessionId }) {
   const currentSessionId = sessionId || `sess_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`
 
-  const responseText = `⚠️ **அவை சேவையகம் இணைப்பிலில்லை • Avai Backend Unreachable**
+  // Visitors on the deployed site get a plain "try again" notice; the
+  // how-to-start-the-backend steps only make sense on a developer's machine.
+  const responseText = import.meta.env.DEV
+    ? `⚠️ **அவை சேவையகம் இணைப்பிலில்லை • Avai Backend Unreachable**
 
 மன்னிக்கவும், சங்க அவை முகவர் சேவையகத்துடன் (Avai Multi-Agent Backend on port 8080) தொடர்புகொள்ள முடியவில்லை. நேரலை புலவர் உரையாடலைப் பெற சேவையகம் இயங்குவதை உறுதிசெய்யவும்.
 
@@ -194,6 +199,11 @@ The Sangam Avai agent backend is currently unreachable. Live poet inference and 
    \`python -m uvicorn avai.api.app:app --host 127.0.0.1 --port 8080\`
    (அல்லது \`./start_open_sangam.sh\` ஸ்கிரிப்டைப் பயன்படுத்தவும்)
 2. சேவையகம் இயங்கிய பின்னர், உங்கள் வினாவை **மீண்டும் வினவவும் (Retry / Send again)**.`
+    : `⚠️ **புலவர்கள் இப்போது ஓய்வில் உள்ளனர் • The poets are resting**
+
+மன்னிக்கவும், சங்க அவை தற்போது பதிலளிக்க இயலவில்லை. சிறிது நேரம் கழித்து மீண்டும் வினவவும்.
+
+Sangam Avai can't answer right now — it may be busy or briefly offline. Please try again in a minute. Meanwhile, every verse is still open in the [Library](/book).`
 
   return {
     session_id: currentSessionId,
