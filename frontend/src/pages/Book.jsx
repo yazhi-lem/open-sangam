@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { Columns2, Rows2, ChevronLeft, ChevronRight, Sparkles, Copy } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
+import GlossComingSoon from '../components/reader/GlossComingSoon'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
 import { analyzeWord, translateVerse } from '../services/geminiApi'
@@ -743,7 +744,7 @@ function Reader({ poem, sectionId }) {
                       </div>
                     ) : (
                       <div className="space-y-3">
-                        <p className="text-sm text-faint italic">No English translation recorded for this section yet.</p>
+                        <GlossComingSoon />
                         {aiError && <p className="text-xs text-danger">{aiError}</p>}
                         <Button size="sm" onClick={() => handleAiTranslate(sec.sangamTamil)} loading={aiLoading} icon={<Sparkles size={13} />}>
                           Translate with Gemini AI
@@ -822,7 +823,7 @@ function Reader({ poem, sectionId }) {
                     </div>
                   ) : (
                     <div className="space-y-3">
-                      <p className="text-sm text-faint italic">No English translation recorded for this section yet.</p>
+                      <GlossComingSoon />
                       {aiError && <p className="text-xs text-danger">{aiError}</p>}
                       <Button size="sm" onClick={() => handleAiTranslate(sec.sangamTamil)} loading={aiLoading} icon={<Sparkles size={13} />}>
                         Translate with Gemini AI
