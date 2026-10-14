@@ -28,7 +28,7 @@ export default function Articles() {
     <div className="max-w-4xl mx-auto px-4 py-16 space-y-12">
       {/* Header */}
       <header className="space-y-4">
-        <p className="tamil text-accent text-lg tracking-widest">கட்டுரைகள்</p>
+        <p lang="ta" className="tamil text-accent text-lg">கட்டுரைகள்</p>
         <h1 className="text-4xl sm:text-5xl font-bold text-primary leading-tight">Articles</h1>
         <p className="text-muted text-lg max-w-2xl leading-relaxed">
           Essays on Open Sangam, the Sangam corpus, and its bearing on AI for Tamil and

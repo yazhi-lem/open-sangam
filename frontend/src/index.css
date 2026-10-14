@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+/* Fonts are self-hosted via @fontsource (imported in main.jsx); no third-party font CDN. */
 @import "tailwindcss";
 
 /* Enable manual (class-based) dark mode instead of Tailwind v4's default media-query strategy */
@@ -93,6 +93,21 @@ body {
 
 .tamil {
   font-family: var(--font-tamil);
+}
+
+/*
+ * Never letter-space Tamil. Tracking pulls vowel signs (ா ி ை ொ …) and the
+ * pulli away from their consonants and breaks conjuncts. This rule is
+ * unlayered, so it wins over Tailwind's tracking-* utilities (which live in
+ * @layer utilities) even when a parent or the element itself sets them.
+ */
+.tamil,
+.tamil *,
+.tamil-verse,
+.tamil-verse *,
+:not(html)[lang|='ta'],
+:not(html)[lang|='ta'] * {
+  letter-spacing: normal;
 }
 
 .prose-sangam {

@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { Columns2, Rows2, ChevronLeft, ChevronRight, Sparkles, Copy } from 'lucide-react'
+import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
-import { analyzeWord, translateVerse } from '../services/geminiApi'
+import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
@@ -281,12 +281,61 @@ function ClickableVerse({ text, onWordClick, fontSize = 'md' }) {
   )
 }
 
+// Marks a commentary/translation layer that has not had scholar sign-off.
+function DraftBadge({ verse, field }) {
+  const label = draftBadgeLabel(verse, field)
+  if (!label) return null
+  // Label is "<Tamil> · <English>"; the Tamil part gets the Tamil font, no tracking.
+  const [ta, en] = label.split(' · ')
+  return (
+    <span
+      title={draftBadgeTitle(verse, field)}
+      className="inline-flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-2 py-0.5 text-xs font-medium text-amber-800 dark:text-amber-300 whitespace-nowrap"
+    >
+      <span lang="ta" className="tamil">{ta}</span>
+      {en && <span aria-hidden="true">·</span>}
+      {en && <span>{en}</span>}
+    </span>
+  )
+}
+
+// One-thumb segmented control for the reader layers (Sangam / urai / English / all).
+function LayerToggle({ layer, onChange }) {
+  return (
+    <div role="group" aria-label="Reader layers" className="flex items-center gap-1 rounded-xl border border-line bg-surface-alt/60 p-1">
+      {LAYER_OPTIONS.map((l) => {
+        const active = layer === l.id
+        return (
+          <button
+            key={l.id}
+            type="button"
+            onClick={() => onChange(l.id)}
+            aria-pressed={active}
+            title={l.hint}
+            className={`min-h-[36px] min-w-[44px] px-2.5 sm:px-3 text-xs sm:text-sm rounded-lg font-medium transition-colors focus-ring ${
+              l.id === 'sangam' || l.id === 'urai' ? 'tamil' : ''
+            } ${active ? 'bg-primary text-page font-semibold shadow-xs' : 'text-muted hover:text-primary hover:bg-surface-alt'}`}
+          >
+            {l.label}
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
 // ── Reader ────────────────────────────────────────────────────────────────
 
 function Reader({ poem, sectionId }) {
   const [sections, setSections] = useState([])
   const [active, setActive] = useState(0)
-  const [layer, setLayer] = useState('both') // 'sangam' | 'urai' | 'english' | 'both'
+  const [layer, setLayerState] = useState(() => {
+    try {
+      return normalizeLayer(localStorage.getItem('open_sangam_reader_layer') || 'all')
+    } catch {
+      return 'all'
+    }
+  }) // 'sangam' | 'urai' | 'english' | 'all'
   const [layoutMode, setLayoutMode] = useState(() => {
     try {
       return localStorage.getItem('open_sangam_reader_layout') || 'h'
@@ -302,12 +351,16 @@ function Reader({ poem, sectionId }) {
 
   // WordGlossary state
   const [glossaryWord, setGlossaryWord] = useState(null)
-  const [glossaryLoading, setGlossaryLoading] = useState(false)
 
-  // AI translation state
-  const [aiTranslation, setAiTranslation] = useState(null)
-  const [aiLoading, setAiLoading] = useState(false)
-  const [aiError, setAiError] = useState(null)
+  const setLayer = (next) => {
+    const l = normalizeLayer(next)
+    setLayerState(l)
+    try {
+      localStorage.setItem('open_sangam_reader_layer', l)
+    } catch {
+      // ignore
+    }
+  }
 
   // Save layout preference
   const handleSetLayout = (mode) => {
@@ -334,13 +387,6 @@ function Reader({ poem, sectionId }) {
       setActive(0)
     })
   }, [poem, sectionId])
-
-  useEffect(() => {
-    return () => {
-      setAiTranslation(null)
-      setAiError(null)
-    }
-  }, [active])
 
   useEffect(() => {
     contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
@@ -387,45 +433,12 @@ function Reader({ poem, sectionId }) {
     return map
   }, [sec])
 
-  async function handleWordClick(wordText) {
+  // Glossary comes only from the corpus record; no live AI lookup.
+  function handleWordClick(wordText) {
     const clean = wordText.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
     if (!clean) return
-
     const matchedWord = wordGlossaryMap.get(clean)
-    if (
-      matchedWord &&
-      (matchedWord.root != null ||
-        matchedWord.urichol != null ||
-        matchedWord.etymology != null ||
-        matchedWord.gloss != null)
-    ) {
-      setGlossaryWord({ form: wordText, ...matchedWord })
-      return
-    }
-
-    setGlossaryWord({ form: wordText })
-    setGlossaryLoading(true)
-    try {
-      const result = await analyzeWord(clean)
-      setGlossaryWord({ form: wordText, ...result })
-    } catch (err) {
-      console.error('Word analysis failed:', err)
-    } finally {
-      setGlossaryLoading(false)
-    }
-  }
-
-  async function handleAiTranslate(sangamText) {
-    setAiLoading(true)
-    setAiError(null)
-    try {
-      const result = await translateVerse(sangamText, 'english')
-      setAiTranslation(result.text)
-    } catch (err) {
-      setAiError(err.message || 'Translation failed')
-    } finally {
-      setAiLoading(false)
-    }
+    setGlossaryWord({ ...(matchedWord || {}), form: wordText })
   }
 
   function handleCopyVerse(text) {
@@ -443,6 +456,8 @@ function Reader({ poem, sectionId }) {
     )
   }
 
+  const show = visibleLayers(layer)
+  const showCommentary = show.urai || show.english
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
   const label = sec.title || sec.heading || sec.poemTitle || null
@@ -624,26 +639,7 @@ function Reader({ poem, sectionId }) {
               </div>
 
               {/* Layer Toggles */}
-              <div className="flex items-center gap-1">
-                {[
-                  { id: 'sangam', label: 'Tamil' },
-                  { id: 'urai', label: 'உரை' },
-                  { id: 'english', label: 'English' },
-                  { id: 'both', label: 'Both' },
-                ].map((l) => (
-                  <button
-                    key={l.id}
-                    onClick={() => setLayer(l.id)}
-                    className={`px-2 py-1 text-xs rounded-lg font-medium transition-colors focus-ring ${
-                      layer === l.id
-                        ? 'bg-primary text-page font-semibold shadow-xs'
-                        : 'text-muted hover:text-primary hover:bg-surface-alt'
-                    }`}
-                  >
-                    {l.label}
-                  </button>
-                ))}
-              </div>
+              <LayerToggle layer={layer} onChange={setLayer} />
             </div>
           </div>
         </div>
@@ -654,7 +650,8 @@ function Reader({ poem, sectionId }) {
             /* ── HORIZONTAL (H) COMPARATIVE SPLIT VIEW ── */
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
               {/* Left Column: Original Tamil Verse */}
-              <div className="lg:col-span-6 space-y-4">
+              {show.sangam && (
+              <div className={`${showCommentary ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
                 <Card variant="flat" className="p-6 sm:p-8 space-y-5 border-accent/30 bg-surface shadow-xs">
                   {/* Verse Header */}
                   <div className="flex items-center justify-between border-b border-line pb-3">
@@ -702,17 +699,19 @@ function Reader({ poem, sectionId }) {
                   </Card>
                 )}
               </div>
+              )}
 
               {/* Right Column: Commentary & English Translation */}
-              <div className="lg:col-span-6 space-y-4">
+              {showCommentary && (
+              <div className={`${show.sangam ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
                 {/* Modern Commentary (Urai) */}
-                {(layer === 'urai' || layer === 'both' || layer === 'sangam') && (
+                {show.urai && (
                   <Card variant="default" className="p-6 space-y-3 bg-surface shadow-xs">
                     <div className="flex items-center justify-between border-b border-line pb-2">
-                      <span className="text-xs font-bold text-accent uppercase tracking-wider">
-                        உரை (Prose Commentary)
+                      <span className="text-xs font-bold text-accent">
+                        <span className="tamil">உரை</span> (Prose Commentary)
                       </span>
-                      <Badge variant="outline" size="xs">தமிழ் உரை</Badge>
+                      <DraftBadge verse={sec} field="urai" />
                     </div>
                     {sec.urai ? (
                       <p className="tamil text-base sm:text-lg leading-relaxed text-primary">{sec.urai}</p>
@@ -723,36 +722,25 @@ function Reader({ poem, sectionId }) {
                 )}
 
                 {/* English Translation */}
-                {(layer === 'english' || layer === 'both' || layer === 'sangam') && (
+                {show.english && (
                   <Card variant="default" className="p-6 space-y-4 bg-surface shadow-xs">
                     <div className="flex items-center justify-between border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent uppercase tracking-wider">
                         English Translation
                       </span>
-                      <Badge variant="outline" size="xs">Translation</Badge>
+                      <DraftBadge verse={sec} field="english" />
                     </div>
                     {sec.english ? (
                       <p className="text-base sm:text-lg leading-relaxed text-primary">{sec.english}</p>
-                    ) : aiTranslation ? (
-                      <div className="space-y-2">
-                        <p className="text-base sm:text-lg leading-relaxed text-primary">{aiTranslation}</p>
-                        <p className="text-[10px] text-faint italic flex items-center gap-1">
-                          <Sparkles size={11} className="text-accent" />
-                          AI translation powered by Gemini 2.5 Flash
-                        </p>
-                      </div>
                     ) : (
-                      <div className="space-y-3">
-                        <p className="text-sm text-faint italic">No English translation recorded for this section yet.</p>
-                        {aiError && <p className="text-xs text-danger">{aiError}</p>}
-                        <Button size="sm" onClick={() => handleAiTranslate(sec.sangamTamil)} loading={aiLoading} icon={<Sparkles size={13} />}>
-                          Translate with Gemini AI
-                        </Button>
-                      </div>
+                      <p className="text-sm text-faint italic">
+                        English translation for this section is being prepared and will appear after scholar review.
+                      </p>
                     )}
                   </Card>
                 )}
               </div>
+              )}
             </div>
           ) : (
             /* ── VERTICAL (V) STACKED VIEW ── */
@@ -785,7 +773,7 @@ function Reader({ poem, sectionId }) {
               </header>
 
               {/* Original Tamil Verse */}
-              {(layer === 'sangam' || layer === 'both') && (
+              {show.sangam && (
                 <Card variant="flat" className="p-6 sm:p-8 space-y-4 border-accent/20">
                   <div className="flex items-center justify-between border-b border-line pb-2">
                     <span className="text-xs font-semibold text-accent uppercase tracking-wider">
@@ -798,9 +786,14 @@ function Reader({ poem, sectionId }) {
               )}
 
               {/* Modern Commentary (Urai) */}
-              {(layer === 'urai' || layer === 'both') && (
+              {show.urai && (
                 <Card variant="default" className="p-6 space-y-3">
-                  <span className="text-xs font-semibold text-faint uppercase tracking-wider">உரை (Prose Commentary)</span>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs font-semibold text-faint">
+                      <span className="tamil">உரை</span> (Prose Commentary)
+                    </span>
+                    <DraftBadge verse={sec} field="urai" />
+                  </div>
                   {sec.urai ? (
                     <p className="tamil text-base sm:text-lg leading-relaxed text-muted">{sec.urai}</p>
                   ) : (
@@ -810,24 +803,18 @@ function Reader({ poem, sectionId }) {
               )}
 
               {/* English Translation */}
-              {(layer === 'english' || layer === 'both') && (
+              {show.english && (
                 <Card variant="default" className="p-6 space-y-4">
-                  <span className="text-xs font-semibold text-faint uppercase tracking-wider">English Translation</span>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs font-semibold text-faint uppercase tracking-wider">English Translation</span>
+                    <DraftBadge verse={sec} field="english" />
+                  </div>
                   {sec.english ? (
                     <p className="text-base sm:text-lg leading-relaxed text-muted">{sec.english}</p>
-                  ) : aiTranslation ? (
-                    <div className="space-y-2">
-                      <p className="text-base sm:text-lg leading-relaxed text-muted">{aiTranslation}</p>
-                      <p className="text-[10px] text-faint italic">AI translation powered by Gemini 2.5 Flash</p>
-                    </div>
                   ) : (
-                    <div className="space-y-3">
-                      <p className="text-sm text-faint italic">No English translation recorded for this section yet.</p>
-                      {aiError && <p className="text-xs text-danger">{aiError}</p>}
-                      <Button size="sm" onClick={() => handleAiTranslate(sec.sangamTamil)} loading={aiLoading} icon={<Sparkles size={13} />}>
-                        Translate with Gemini AI
-                      </Button>
-                    </div>
+                    <p className="text-sm text-faint italic">
+                      English translation for this section is being prepared and will appear after scholar review.
+                    </p>
                   )}
                 </Card>
               )}
@@ -872,7 +859,7 @@ function Reader({ poem, sectionId }) {
       {glossaryWord && (
         <WordGlossary
           word={glossaryWord}
-          loading={glossaryLoading}
+          verse={sec}
           onClose={() => setGlossaryWord(null)}
         />
       )}

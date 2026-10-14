@@ -515,9 +515,9 @@ export default function Avai() {
           {/* Active Conversations List */}
           <div className="space-y-1.5">
             <div className="flex items-center justify-between px-1">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-muted flex items-center gap-1">
+              <span className="text-[11px] font-bold uppercase text-muted flex items-center gap-1">
                 <MessageSquare size={12} className="text-accent" />
-                உரையாடல்கள் • Recent Chats
+                <span lang="ta" className="tamil">உரையாடல்கள்</span> • Recent Chats
               </span>
             </div>
             <div className="space-y-1">
@@ -577,8 +577,8 @@ export default function Avai() {
           {/* Pulavars Selection Section */}
           <div className="space-y-1.5 pt-2 border-t border-line/60">
             <div className="flex items-center justify-between px-1">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-muted">
-                புலவர்கள் • Pulavars
+              <span className="text-[11px] font-bold uppercase text-muted">
+                <span lang="ta" className="tamil">புலவர்கள்</span> • Pulavars
               </span>
               <button
                 type="button"
@@ -754,7 +754,7 @@ export default function Avai() {
                 </div>
 
                 <div className="space-y-2 max-w-xl mx-auto">
-                  <p className="text-[10px] font-bold uppercase tracking-wider text-muted text-center">
+                  <p lang="ta" className="tamil text-[11px] font-bold text-muted text-center">
                     தொடக்க வினாக்கள்
                   </p>
                   <div className="space-y-1.5">
@@ -826,7 +826,7 @@ export default function Avai() {
                     {msg.citations && msg.citations.length > 0 && (
                       <div className="pt-2 border-t border-line/60 space-y-1.5">
                         <div className="flex items-center justify-between">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-muted flex items-center gap-1">
+                          <span lang="ta" className="tamil text-[11px] font-bold text-muted flex items-center gap-1">
                             <BookOpen size={11} /> சான்றாதாரங்கள் ({msg.citations.length})
                           </span>
                           <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
