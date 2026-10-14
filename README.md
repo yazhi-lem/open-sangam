@@ -143,13 +143,13 @@ authoritative until a scholar reviews it.
 
 #### Word etymology (Click-to-Define Glossary)
 
-`ai/extract_etymology.py` batch-fills the same feature the reader's
-click-to-define glossary (`WordGlossary.jsx` / `geminiApi.js`) otherwise
-fetches live, one word at a time: for every word in a verse it drafts a
+`ai/extract_etymology.py` batch-fills the data behind the reader's
+click-to-define glossary (`WordGlossary.jsx`): for every word in a verse it drafts a
 `root` (வேர்ச்சொல்), `urichol` (உரிச்சொல்), a detailed Tamil `etymology`
 (2-4 sentences — derivation, cognates, sandhi/morphology, semantic shift),
-and a short English `gloss`. Pre-filling the corpus means most clicks resolve instantly
-from disk; the live call still covers whatever hasn't been annotated yet.
+and a short English `gloss`. The reader shows only what is stored in the
+corpus (there is no live AI lookup); words without an entry show a
+"no glossary entry yet" state, and entries on unverified records are labelled as drafts.
 
 ```bash
 cd backend/python

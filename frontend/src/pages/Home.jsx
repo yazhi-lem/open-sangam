@@ -206,14 +206,14 @@ export default function Home() {
             {
               icon: '🔍',
               title: 'Click-to-Define Etymology',
-              desc: 'Tap any word in a verse to unveil its root verb, grammatical class (Urichol), and 2,500-year-old etymology.',
-              badge: 'Grammar AI',
+              desc: 'Tap any word in a verse to see its root, grammatical class (Urichol) and etymology, straight from the corpus. Unreviewed entries are marked as drafts.',
+              badge: 'Glossary',
             },
             {
-              icon: '🤖',
-              title: 'Gemini Scholar Translation',
-              desc: 'Leverage Gemini 2.5 Flash for contextual translation assistance, verified against classical commentaries.',
-              badge: 'Scholar AI',
+              icon: '📜',
+              title: 'Scholar-Reviewed Translation',
+              desc: 'English renderings are clearly labelled as drafts until a Tamil scholar has checked them against the classical commentaries.',
+              badge: 'Draft → Verified',
             },
           ].map((f, i) => (
             <Reveal key={f.title} delay={i * 0.15} y={20}>
