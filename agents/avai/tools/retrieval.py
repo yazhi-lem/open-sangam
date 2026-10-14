@@ -30,7 +30,7 @@ import math
 import re
 from collections import Counter, defaultdict
 from functools import lru_cache
-from typing import Any
+from typing import Any, Optional
 
 from .corpus import _VERSE_INDEX
 
@@ -168,8 +168,12 @@ def _default_index() -> BM25Index:
     return BM25Index(_passages(_VERSE_INDEX))
 
 
+# Optional[...] rather than `str | None`: google-adk 1.18's function-declaration
+# parser rejects PEP 604 unions and would fail every agent run.
 def retrieve_passages(
-    query: str, poem: str | None = None, limit: int = 8
+    query: str,
+    poem: Optional[str] = None,  # noqa: UP045
+    limit: int = 8,
 ) -> list[dict[str, Any]]:
     """Retrieve the corpus passages most relevant to a question, with source ids.
 

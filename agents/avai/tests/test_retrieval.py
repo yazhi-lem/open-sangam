@@ -107,3 +107,14 @@ def test_poet_colophon_line_is_labelled():
     results = retrieve_passages("கபிலர்", poem="kurunthokai", limit=20)
     colophon = [r for r in results if r["source_id"] == "kurunthokai_100:8"]
     assert colophon and colophon[0]["field"] == "colophon"
+
+
+def test_retrieve_passages_builds_an_adk_function_declaration() -> None:
+    # ADK builds tool declarations at run start; an unparseable signature
+    # (e.g. a PEP 604 union) fails every request before the model is called.
+    from google.adk.tools import _automatic_function_calling_util as afc
+    from google.adk.utils.variant_utils import GoogleLLMVariant
+
+    for variant in (GoogleLLMVariant.GEMINI_API, GoogleLLMVariant.VERTEX_AI):
+        decl = afc.build_function_declaration(func=retrieve_passages, variant=variant)
+        assert decl.name == "retrieve_passages"
