@@ -1,0 +1,30 @@
+name: பாடல் திருத்தம் · Verse correction
+description: A wrong word, missing line, poet name or title in the corpus
+labels: ["data", "correction"]
+body:
+  - type: input
+    id: verse
+    attributes:
+      label: பாடல் · Which verse?
+      description: Work, poem number and line, e.g. "Kuruntokai 40, line 3"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: இப்போதுள்ள உரை · Current text
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: திருத்தம் · Proposed text
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: ஆதாரம் · Source
+      description: Edition, page or link that supports the change. Please do not paste text you do not have permission to reuse.
+    validations:
+      required: true

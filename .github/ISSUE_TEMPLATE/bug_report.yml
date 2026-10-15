@@ -1,0 +1,28 @@
+name: பிழை அறிக்கை · Bug report
+description: Something on the site or in the pipeline is broken
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: என்ன நடந்தது? · What happened?
+      description: What did you expect, and what did you see instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: எப்படி மீண்டும் உருவாக்குவது? · Steps to reproduce
+      placeholder: "1. Open ...\n2. Click ...\n3. See ..."
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Page or file
+      placeholder: "e.g. /book/maduraikanchi, frontend/src/pages/Book.jsx"
+  - type: input
+    id: env
+    attributes:
+      label: Browser and device
+      placeholder: "e.g. Chrome 130 on Android 14"

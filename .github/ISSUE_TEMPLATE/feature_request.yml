@@ -1,0 +1,16 @@
+name: புதிய வசதி · Feature request
+description: Suggest an improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: யாருக்கு, என்ன சிக்கல்? · Who is it for, and what problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: உங்கள் யோசனை · What would you like to see?
+    validations:
+      required: true
