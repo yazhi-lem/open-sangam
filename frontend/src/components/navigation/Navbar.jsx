@@ -6,6 +6,8 @@ import { Link, NavLink } from 'react-router-dom'
 import { House, BookOpen, Globe, Brain, Map, FileText, Users } from 'lucide-react'
 import ThemeToggle from '../ui/ThemeToggle'
 import useAppStore from '../../store/useAppStore'
+import lockupColour from '../../assets/brand/lockup-colour.svg'
+import lockupReversed from '../../assets/brand/lockup-reversed.svg'
 
 const NAV_ICON_PROPS = { size: 14, strokeWidth: 1.75, 'aria-hidden': true }
 
@@ -33,17 +35,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-page/80 backdrop-blur-md transition-colors">
       <nav className="w-full px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-        {/* Brand logo */}
+        {/* Brand logo: Z1 ழ mark + Latin "Open Sangam" wordmark (brand kit v0.3). The wordmark
+            is outlined SVG, so the alt text carries the name; no Tamil name in the header. */}
         <Link
           to="/"
-          className="flex shrink-0 items-center gap-2 text-primary font-bold tracking-tight text-lg focus-ring rounded-lg px-1"
+          className="flex shrink-0 items-center min-h-[44px] focus-ring rounded-lg px-1"
           aria-label="Open Sangam — home"
         >
-          <span className="text-2xl" aria-hidden="true">🏛️</span>
-          <div className="flex flex-col whitespace-nowrap leading-tight">
-            <span className="text-primary font-semibold tamil text-base">தமிழ் சங்கம்</span>
-            <span className="text-faint font-medium text-[10px] uppercase tracking-widest">Open Sangam</span>
-          </div>
+          <img src={lockupColour} alt="" width="152" height="32" className="h-8 w-auto dark:hidden" />
+          <img src={lockupReversed} alt="" width="152" height="32" className="hidden h-8 w-auto dark:block" />
         </Link>
 
         {/* Desktop links */}
