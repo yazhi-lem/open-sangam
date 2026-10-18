@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-page/80 backdrop-blur-md transition-colors">
-      <nav className="w-full px-3 sm:px-6 h-16 flex items-center justify-between gap-2 sm:gap-4">
+      <nav className="w-full px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         {/* Brand logo */}
         <Link
           to="/"

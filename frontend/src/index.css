@@ -342,6 +342,13 @@ p, h1, h2, h3, h4, span, blockquote, li {
   html { font-size: 1.125rem; }
 }
 
+/* Header: three 44px controls plus the logo must fit 360px, so tighten the
+   side padding and gap on phones (kept in CSS so this does not touch the same
+   Navbar.jsx lines as the logo change). */
+@media (max-width: 639px) {
+  header > nav { padding-inline: 0.75rem; gap: 0.5rem; }
+}
+
 /* Every tap target is at least 44px tall on phones and touch devices.
    Inside @layer base so any utility class (e.g. min-h-0) can still override.
    Word buttons inside a verse stay inline: they are text, not controls. */
