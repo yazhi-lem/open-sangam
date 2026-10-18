@@ -3,6 +3,7 @@
 
 import json
 from pathlib import Path
+from typing import Optional
 
 DATA_TEXTS = Path(__file__).resolve().parents[3] / "data" / "texts"
 
@@ -52,10 +53,13 @@ def get_verse(verse_id: str) -> dict:
     return verse
 
 
+# Tool signatures use Optional[...] rather than `str | None`: google-adk 1.18's
+# function-declaration parser rejects PEP 604 unions, which failed every agent
+# run before the model was even called (see tests/test_tool_declarations.py).
 def search_verses(
     query: str,
-    tinai: str | None = None,
-    poem: str | None = None,
+    tinai: Optional[str] = None,
+    poem: Optional[str] = None,
     limit: int = 10,
 ) -> list[dict]:
     """தமிழ் மூலப் பாடல், உரை அல்லது பொருண்மை அடிப்படையில் சங்கப் பாடல்களைத் தேடும் கருவி.

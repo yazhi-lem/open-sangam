@@ -6,12 +6,14 @@ on:
       - main
     paths:
       - 'frontend/**'
+      - 'agents/**'
       - '.github/workflows/ci.yml'
   push:
     branches:
       - main
     paths:
       - 'frontend/**'
+      - 'agents/**'
       - '.github/workflows/ci.yml'
 
 permissions:
@@ -28,7 +30,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
 
@@ -47,3 +49,24 @@ jobs:
       - name: Build frontend
         working-directory: frontend
         run: npm run build
+
+  avai-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: agents/avai/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r agents/avai/requirements.txt
+
+      - name: Run Avai tests (no API key needed)
+        working-directory: agents
+        run: python -m pytest avai/tests -q
