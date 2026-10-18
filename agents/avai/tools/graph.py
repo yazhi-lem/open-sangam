@@ -5,6 +5,7 @@ so agents see graph growth from real traffic immediately, not just on disk.
 
 import json
 from pathlib import Path
+from typing import Optional
 
 from ..store import interaction_graph
 
@@ -19,9 +20,9 @@ def _merged_nodes_edges() -> tuple[list[dict], list[dict]]:
 
 
 def query_knowledge_graph(
-    node_id: str | None = None,
-    node_type: str | None = None,
-    edge_type: str | None = None,
+    node_id: Optional[str] = None,
+    node_type: Optional[str] = None,
+    edge_type: Optional[str] = None,
 ) -> dict:
     """சங்க இலக்கிய அறிவுக் வரைபடத்திலிருந்து புலவர்கள், நூல்கள், திணைகள் மற்றும் கருப்பொருள்களுக்கிடையேயான தொடர்புகளை ஆராயும் கருவி.
     """

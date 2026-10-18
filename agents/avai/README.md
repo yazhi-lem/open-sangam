@@ -63,10 +63,12 @@ Read by `config.py`; set them in `agents/avai/.env`.
 | `SANGAM_AGENT_MODEL` | `google/gemini-2.5-flash` | any model id from openrouter.ai/models |
 | `OPENROUTER_API_BASE` | `https://openrouter.ai/api/v1` | override for a proxy/gateway |
 | `GEMINI_API_KEY` | — | required when `SANGAM_AGENT_BACKEND=gemini` |
+| `AVAI_ALLOWED_ORIGINS` | `*` | REST API only: comma-separated CORS origins, e.g. `https://sangam.yazhi.dev` |
+| `AVAI_RATE_LIMIT_PER_MINUTE` | `0` (off) | REST API only: `/avai/ask` calls per client per minute; over it returns `429` |
+| `AVAI_DEBUG_ERRORS` | unset | REST API only: `1` puts the provider's error text in `502` responses (dev only) |
 
-The corpus translation pipeline (`backend/python/ai/translate_with_gemini.py`)
-uses the same `OPENROUTER_API_KEY`, so one key serves both — though each reads
-its own `.env`.
+The embedding step (`backend/python/ai/vectorize.py`) uses the same
+`OPENROUTER_API_KEY`, though it reads its own `.env`.
 
 ## Switching model backend
 
@@ -132,6 +134,24 @@ curl -X POST http://localhost:8080/avai/ask \
 M1 scope: only `"workflow": "qa"` (the default) is wired to a real agent;
 `search`, `reimagine`, `scenario`, and `imagery` validate but return `501`
 until their poets land in M2.
+
+### Deploying the API (Cloud Run)
+
+`agents/avai/Dockerfile` builds the API from the **repository root** (it needs
+`data/texts` and `data/knowledge`):
+
+```bash
+docker build -f agents/avai/Dockerfile -t avai-api .
+docker run -p 8080:8080 -e OPENROUTER_API_KEY=... avai-api
+```
+
+`.github/workflows/deploy-avai.yml` runs the tests, builds the image, and
+deploys it to Cloud Run on every push to `main` that touches `agents/avai/` or
+the corpus. The setup it needs (GCP secrets, the `openrouter-api-key` Secret
+Manager entry, the Artifact Registry repo) is listed at the top of the
+workflow. It skips cleanly until `GCP_SA_KEY` and `GCP_PROJECT_ID` are set.
+After the first deploy, copy the service URL into the `VITE_AVAI_API_URL`
+repository secret so the Cloudflare Pages build calls it.
 
 ## Troubleshooting
 

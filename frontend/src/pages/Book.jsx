@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { Columns2, Rows2, ChevronLeft, ChevronRight, Sparkles, Copy } from 'lucide-react'
+import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
-import { analyzeWord, translateVerse } from '../services/geminiApi'
+import { analyzeWord } from '../services/geminiApi'
+import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
@@ -14,6 +15,8 @@ import Input from '../components/ui/Input'
 import Card from '../components/ui/Card'
 import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
+import Chip from '../components/ui/Chip'
+import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
@@ -123,10 +126,10 @@ function ComingSoonCard({ work }) {
 
 function Library() {
   const [searchQuery, setSearchQuery] = useState('')
-  const [collectionFilter, setCollectionFilter] = useState('all') // 'all' | '8thokai' | '10paddu'
+  const [chipFilter, setChipFilter] = useState(null) // null | id from FILTER_CHIPS
 
   const filteredPoems = POEMS.filter((p) => {
-    const matchesCollection = collectionFilter === 'all' || p.collection === collectionFilter
+    const matchesCollection = poemMatchesChip(p, chipFilter)
     const matchesSearch =
       !searchQuery.trim() ||
       p.ta.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -135,7 +138,6 @@ function Library() {
   })
 
   const byCollection = Object.entries(COLLECTIONS)
-    .filter(([key]) => collectionFilter === 'all' || collectionFilter === key)
     .map(([key, meta]) => ({
       key,
       meta,
@@ -144,53 +146,52 @@ function Library() {
 
   return (
     <div className="min-h-screen bg-page">
-      {/* Hero Header */}
-      <Reveal as="div" className="max-w-6xl mx-auto px-4 sm:px-8 pt-12 pb-8" duration={0.6}>
-        <div className="space-y-3">
-          <Badge variant="accent" size="sm">Scholar Archive</Badge>
-          <h1 className="tamil text-4xl sm:text-6xl font-extrabold text-primary leading-tight">
+      {/* Header: one line of orientation, then search and the akam / puram / tiṇai chips */}
+      <Reveal as="div" className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-6" duration={0.6}>
+        <div className="space-y-2">
+          <h1 className="tamil text-3xl sm:text-5xl font-extrabold text-primary leading-tight">
             சங்க நூலகம்
           </h1>
-          <p className="text-xl sm:text-2xl text-muted font-light tracking-wide">
-            Library of Sangam Classical Works
-          </p>
-          <p className="text-sm text-muted max-w-2xl leading-relaxed pt-1">
-            Classical Tamil literature from the Sangam period (c. 500 BCE – 300 CE). Original verses, modern commentary (Urai), and English translations.
+          <p className="text-lg sm:text-xl text-muted font-light">Library of Sangam works</p>
+          {/* † draft Tamil, needs native review */}
+          <p className="text-sm text-muted pt-1">
+            <span lang="ta" className="tamil">பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி</span>
+            <span className="text-faint"> · Choose a poem → Read → Understand</span>
           </p>
         </div>
 
-        {/* Search & Filter Bar */}
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl border border-line bg-surface-alt/50 backdrop-blur-sm">
-          <div className="w-full sm:w-72">
-            <Input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              onClear={() => setSearchQuery('')}
-              placeholder="Search by poem name in Tamil or English..."
-              icon="🔍"
-            />
-          </div>
+        <div className="mt-6 space-y-3">
+          <Input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onClear={() => setSearchQuery('')}
+            placeholder="Search by poem name in Tamil or English..."
+            icon="🔍"
+          />
 
-          <div className="flex items-center gap-1.5 w-full sm:w-auto overflow-x-auto pb-1 sm:pb-0">
-            {[
-              { id: 'all', label: 'All Works (18)' },
-              { id: '8thokai', label: 'Anthologies (8)' },
-              { id: '10paddu', label: 'Idylls (10)' },
-            ].map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setCollectionFilter(tab.id)}
-                className={`px-3 py-1.5 text-xs font-medium rounded-xl transition-all whitespace-nowrap focus-ring ${
-                  collectionFilter === tab.id
-                    ? 'bg-accent text-on-accent shadow-xs'
-                    : 'text-muted hover:text-primary hover:bg-surface'
-                }`}
-              >
-                {tab.label}
-              </button>
+          {/* Filter chips: outlined pills, selected = filled ink; scroll sideways on phones */}
+          <div
+            role="group"
+            aria-label="Filter by akam, puram or tiṇai"
+            className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0 sm:flex-wrap"
+          >
+            {FILTER_CHIPS.map((c) => (
+              <Chip
+                key={c.id}
+                label={c.label}
+                selected={chipFilter === c.id}
+                onClick={() => setChipFilter(chipFilter === c.id ? null : c.id)}
+              />
             ))}
           </div>
+          {chipFilter && (
+            <p className="text-xs text-faint">
+              <span lang="ta" className="tamil">{IDYLL_NOTE.ta}</span>
+              <span> · </span>
+              <span lang="en">{IDYLL_NOTE.en}</span>
+            </p>
+          )}
         </div>
       </Reveal>
 
@@ -199,8 +200,8 @@ function Library() {
         {byCollection.map(({ key, meta, poems }) => (
           <ScrollTilt key={key} intensity={6}>
             <div className="space-y-6">
-              <div className="flex items-baseline gap-3 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary">{meta.ta}</h2>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
+                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">{meta.ta}</h2>
                 <span className="text-muted text-sm sm:text-base font-medium">{meta.en}</span>
                 <span className="ml-auto text-xs font-mono text-faint">{poems.length} works</span>
               </div>
@@ -226,11 +227,11 @@ function Library() {
           </ScrollTilt>
         ))}
 
-        {collectionFilter === 'all' && !searchQuery.trim() && (
+        {!chipFilter && !searchQuery.trim() && (
           <ScrollTilt intensity={6}>
             <div className="space-y-6">
-              <div className="flex items-baseline gap-3 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary">பதினெண்கீழ்க்கணக்கு</h2>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
+                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">பதினெண்கீழ்க்கணக்கு</h2>
                 <span className="text-muted text-sm sm:text-base font-medium">Coming Soon</span>
                 <span className="ml-auto text-xs font-mono text-faint">{COMING_SOON_WORKS.length} planned</span>
               </div>
@@ -256,9 +257,9 @@ function ClickableVerse({ text, onWordClick, fontSize = 'md' }) {
   const words = text.split(/(\s+)/)
 
   const sizeClasses = {
-    sm: 'text-xl leading-[2]',
-    md: 'text-2xl leading-[2.1]',
-    lg: 'text-3xl leading-[2.2]',
+    sm: 'text-lg sm:text-xl leading-[2]',
+    md: 'text-xl sm:text-2xl leading-[2.1]',
+    lg: 'text-2xl sm:text-3xl leading-[2.2]',
   }
 
   return (
@@ -281,12 +282,51 @@ function ClickableVerse({ text, onWordClick, fontSize = 'md' }) {
   )
 }
 
+// Marks a commentary/translation layer that has not had scholar sign-off.
+// The label is "<Tamil> · <English>" (exactly one ' · '), see data/readerLayers.js.
+function DraftBadge({ verse, field }) {
+  const label = draftBadgeLabel(verse, field)
+  if (!label) return null
+  return <Chip variant="badge" label={label} title={draftBadgeTitle(verse, field)} />
+}
+
+// Layer chips: pick which of the three layers to read. Scrolls sideways on phones.
+function LayerToggle({ layer, onChange }) {
+  return (
+    <div
+      role="group"
+      aria-label="Reader layers"
+      className="-mx-3 flex w-[calc(100%+1.5rem)] gap-2 overflow-x-auto px-3 pb-1 sm:mx-0 sm:w-auto sm:px-0 sm:pb-0"
+    >
+      {LAYER_CHIPS.map((l) => (
+        <Chip
+          key={l.id}
+          label={l.label}
+          title={LAYER_OPTIONS.find((o) => o.id === l.id)?.hint}
+          selected={layer === l.id}
+          onClick={() => onChange(l.id)}
+        />
+      ))}
+    </div>
+  )
+}
+
 // ── Reader ────────────────────────────────────────────────────────────────
 
 function Reader({ poem, sectionId }) {
   const [sections, setSections] = useState([])
   const [active, setActive] = useState(0)
-  const [layer, setLayer] = useState('both') // 'sangam' | 'urai' | 'english' | 'both'
+  const [layer, setLayerState] = useState(() => {
+    try {
+      const stored = localStorage.getItem('open_sangam_reader_layer')
+      if (stored) return normalizeLayer(stored)
+    } catch {
+      // ignore
+    }
+    // First visit: the original verse alone on phones (read first, then open a layer);
+    // all three layers side by side on wide screens.
+    return typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches ? 'all' : 'sangam'
+  }) // 'sangam' | 'urai' | 'english' | 'all'
   const [layoutMode, setLayoutMode] = useState(() => {
     try {
       return localStorage.getItem('open_sangam_reader_layout') || 'h'
@@ -304,10 +344,15 @@ function Reader({ poem, sectionId }) {
   const [glossaryWord, setGlossaryWord] = useState(null)
   const [glossaryLoading, setGlossaryLoading] = useState(false)
 
-  // AI translation state
-  const [aiTranslation, setAiTranslation] = useState(null)
-  const [aiLoading, setAiLoading] = useState(false)
-  const [aiError, setAiError] = useState(null)
+  const setLayer = (next) => {
+    const l = normalizeLayer(next)
+    setLayerState(l)
+    try {
+      localStorage.setItem('open_sangam_reader_layer', l)
+    } catch {
+      // ignore
+    }
+  }
 
   // Save layout preference
   const handleSetLayout = (mode) => {
@@ -334,13 +379,6 @@ function Reader({ poem, sectionId }) {
       setActive(0)
     })
   }, [poem, sectionId])
-
-  useEffect(() => {
-    return () => {
-      setAiTranslation(null)
-      setAiError(null)
-    }
-  }, [active])
 
   useEffect(() => {
     contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
@@ -415,19 +453,6 @@ function Reader({ poem, sectionId }) {
     }
   }
 
-  async function handleAiTranslate(sangamText) {
-    setAiLoading(true)
-    setAiError(null)
-    try {
-      const result = await translateVerse(sangamText, 'english')
-      setAiTranslation(result.text)
-    } catch (err) {
-      setAiError(err.message || 'Translation failed')
-    } finally {
-      setAiLoading(false)
-    }
-  }
-
   function handleCopyVerse(text) {
     if (!text) return
     navigator.clipboard.writeText(text)
@@ -443,6 +468,8 @@ function Reader({ poem, sectionId }) {
     )
   }
 
+  const show = visibleLayers(layer)
+  const showCommentary = show.urai || show.english
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
   const label = sec.title || sec.heading || sec.poemTitle || null
@@ -457,14 +484,25 @@ function Reader({ poem, sectionId }) {
   })
 
   return (
-    <div className="flex h-[calc(100vh-64px)] bg-page overflow-hidden">
+    <div className="relative flex h-[calc(100dvh-64px)] bg-page overflow-hidden">
       {/* Toast Notification */}
       <Toast message={toastMsg} type="success" onClose={() => setToastMsg(null)} />
 
       {/* ── Sidebar ──────────────────────────────────────────────── */}
+      {/* On phones the section list is an overlay drawer (it used to squeeze the verse into
+          ~100px); from md up it is a normal column. */}
+      {sidebarOpen && (
+        <button
+          type="button"
+          aria-label="Close section list"
+          onClick={() => setSidebar(false)}
+          className="md:hidden absolute inset-0 z-20 bg-black/40"
+        />
+      )}
       <aside
-        className={`shrink-0 border-r border-line bg-surface flex flex-col transition-all duration-200 z-20
-          ${sidebarOpen ? 'w-64 md:w-72' : 'w-0 overflow-hidden'}`}
+        className={`shrink-0 border-r border-line bg-surface flex flex-col transition-all duration-200 z-30
+          max-md:absolute max-md:inset-y-0 max-md:left-0
+          ${sidebarOpen ? 'w-[85vw] max-w-sm md:w-72' : 'w-0 overflow-hidden'}`}
       >
         {/* Poem meta */}
         <div className="p-4 border-b border-line bg-surface-alt/40 space-y-2">
@@ -510,7 +548,7 @@ function Reader({ poem, sectionId }) {
                   setActive(indexInFull)
                   if (window.innerWidth < 768) setSidebar(false)
                 }}
-                className={`w-full text-left px-3.5 py-2.5 flex items-start gap-2.5 transition-colors border-l-2 focus-ring
+                className={`w-full min-h-[44px] text-left px-3.5 py-2.5 flex items-start gap-2.5 transition-colors border-l-2 focus-ring
                   ${
                     isActive
                       ? 'border-accent bg-accent/10 text-primary font-semibold'
@@ -530,10 +568,10 @@ function Reader({ poem, sectionId }) {
       {/* ── Content Area ──────────────────────────────────────────────── */}
       <main ref={contentRef} className="flex-1 overflow-y-auto bg-page flex flex-col">
         {/* Reader Top Controls Toolbar */}
-        <div className="sticky top-0 z-10 border-b border-line bg-page/90 backdrop-blur-md px-4 sm:px-6 py-3 shrink-0">
+        <div className="sticky top-0 z-10 border-b border-line bg-page/90 backdrop-blur-md px-3 sm:px-6 py-2 sm:py-3 shrink-0">
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
             {/* Left controls */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 sm:gap-2">
               <Button
                 size="sm"
                 variant="ghost"
@@ -545,12 +583,12 @@ function Reader({ poem, sectionId }) {
               </Button>
 
               {/* Quick Verse Stepper */}
-              <div className="flex items-center gap-1 bg-surface-alt/60 border border-line rounded-xl px-2 py-1 text-xs">
+              <div className="flex items-center bg-surface-alt/60 border border-line rounded-xl px-1 text-xs">
                 <button
                   type="button"
                   onClick={() => setActive((a) => Math.max(0, a - 1))}
                   disabled={active === 0}
-                  className="p-1 hover:text-accent disabled:opacity-30 transition-colors"
+                  className="flex h-11 w-11 items-center justify-center hover:text-accent disabled:opacity-30 transition-colors"
                   title="Previous verse (←)"
                 >
                   <ChevronLeft size={14} />
@@ -562,23 +600,31 @@ function Reader({ poem, sectionId }) {
                   type="button"
                   onClick={() => setActive((a) => Math.min(sections.length - 1, a + 1))}
                   disabled={active === sections.length - 1}
-                  className="p-1 hover:text-accent disabled:opacity-30 transition-colors"
+                  className="flex h-11 w-11 items-center justify-center hover:text-accent disabled:opacity-30 transition-colors"
                   title="Next verse (→)"
                 >
                   <ChevronRight size={14} />
                 </button>
               </div>
+              <button
+                type="button"
+                onClick={() => setFontSize((f) => (f === 'sm' ? 'md' : f === 'md' ? 'lg' : 'sm'))}
+                aria-label={`Text size: ${fontSize === 'sm' ? 'small' : fontSize === 'md' ? 'medium' : 'large'} (tap to change)`}
+                className="sm:hidden flex h-11 min-w-[44px] items-center justify-center rounded-xl border border-line bg-surface-alt/60 px-2 text-sm font-semibold text-primary focus-ring"
+              >
+                Aa
+              </button>
             </div>
 
             {/* Right controls: Layout Mode + Font Size + Layer Toggles */}
-            <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+            <div className="flex w-full sm:w-auto items-center gap-2 sm:gap-3 flex-wrap">
               {/* Layout Switcher (H vs V) */}
-              <div className="flex items-center gap-1 border-r border-line pr-2 sm:pr-3">
+              <div className="hidden lg:flex items-center gap-1 border-r border-line pr-3">
                 <span className="text-[11px] text-faint mr-1 font-semibold hidden md:inline">Layout:</span>
                 <button
                   type="button"
                   onClick={() => handleSetLayout('h')}
-                  className={`p-1.5 rounded-lg flex items-center gap-1 text-xs font-medium transition-all ${
+                  className={`min-h-[44px] min-w-[44px] justify-center p-1.5 rounded-lg flex items-center gap-1 text-xs font-medium transition-all ${
                     layoutMode === 'h'
                       ? 'bg-accent text-on-accent font-bold shadow-xs'
                       : 'text-muted hover:text-primary hover:bg-surface-alt'
@@ -591,7 +637,7 @@ function Reader({ poem, sectionId }) {
                 <button
                   type="button"
                   onClick={() => handleSetLayout('v')}
-                  className={`p-1.5 rounded-lg flex items-center gap-1 text-xs font-medium transition-all ${
+                  className={`min-h-[44px] min-w-[44px] justify-center p-1.5 rounded-lg flex items-center gap-1 text-xs font-medium transition-all ${
                     layoutMode === 'v'
                       ? 'bg-accent text-on-accent font-bold shadow-xs'
                       : 'text-muted hover:text-primary hover:bg-surface-alt'
@@ -604,7 +650,7 @@ function Reader({ poem, sectionId }) {
               </div>
 
               {/* Font Size Adjuster */}
-              <div className="flex items-center gap-1 border-r border-line pr-2 sm:pr-3">
+              <div className="hidden sm:flex items-center gap-1 border-r border-line pr-3">
                 <span className="text-[11px] text-faint mr-1 font-medium hidden sm:inline">Text:</span>
                 {[
                   { id: 'sm', label: 'A-' },
@@ -614,7 +660,7 @@ function Reader({ poem, sectionId }) {
                   <button
                     key={f.id}
                     onClick={() => setFontSize(f.id)}
-                    className={`px-2 py-0.5 text-xs font-medium rounded-md transition-colors ${
+                    className={`min-h-[44px] min-w-[44px] px-2 text-xs font-medium rounded-md transition-colors focus-ring ${
                       fontSize === f.id ? 'bg-primary text-page font-bold' : 'text-muted hover:text-primary'
                     }`}
                   >
@@ -624,26 +670,7 @@ function Reader({ poem, sectionId }) {
               </div>
 
               {/* Layer Toggles */}
-              <div className="flex items-center gap-1">
-                {[
-                  { id: 'sangam', label: 'Tamil' },
-                  { id: 'urai', label: 'உரை' },
-                  { id: 'english', label: 'English' },
-                  { id: 'both', label: 'Both' },
-                ].map((l) => (
-                  <button
-                    key={l.id}
-                    onClick={() => setLayer(l.id)}
-                    className={`px-2 py-1 text-xs rounded-lg font-medium transition-colors focus-ring ${
-                      layer === l.id
-                        ? 'bg-primary text-page font-semibold shadow-xs'
-                        : 'text-muted hover:text-primary hover:bg-surface-alt'
-                    }`}
-                  >
-                    {l.label}
-                  </button>
-                ))}
-              </div>
+              <LayerToggle layer={layer} onChange={setLayer} />
             </div>
           </div>
         </div>
@@ -654,8 +681,9 @@ function Reader({ poem, sectionId }) {
             /* ── HORIZONTAL (H) COMPARATIVE SPLIT VIEW ── */
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
               {/* Left Column: Original Tamil Verse */}
-              <div className="lg:col-span-6 space-y-4">
-                <Card variant="flat" className="p-6 sm:p-8 space-y-5 border-accent/30 bg-surface shadow-xs">
+              {show.sangam && (
+              <div className={`${showCommentary ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
+                <Card variant="flat" className="p-4 sm:p-8 space-y-5 border-accent/30 bg-surface shadow-xs">
                   {/* Verse Header */}
                   <div className="flex items-center justify-between border-b border-line pb-3">
                     <div className="space-y-1">
@@ -702,17 +730,19 @@ function Reader({ poem, sectionId }) {
                   </Card>
                 )}
               </div>
+              )}
 
               {/* Right Column: Commentary & English Translation */}
-              <div className="lg:col-span-6 space-y-4">
+              {showCommentary && (
+              <div className={`${show.sangam ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
                 {/* Modern Commentary (Urai) */}
-                {(layer === 'urai' || layer === 'both' || layer === 'sangam') && (
-                  <Card variant="default" className="p-6 space-y-3 bg-surface shadow-xs">
+                {show.urai && (
+                  <Card variant="default" className="p-4 sm:p-6 space-y-3 bg-surface shadow-xs">
                     <div className="flex items-center justify-between border-b border-line pb-2">
-                      <span className="text-xs font-bold text-accent uppercase tracking-wider">
-                        உரை (Prose Commentary)
+                      <span className="text-xs font-bold text-accent">
+                        <span className="tamil">உரை</span> (Prose Commentary)
                       </span>
-                      <Badge variant="outline" size="xs">தமிழ் உரை</Badge>
+                      <DraftBadge verse={sec} field="urai" />
                     </div>
                     {sec.urai ? (
                       <p className="tamil text-base sm:text-lg leading-relaxed text-primary">{sec.urai}</p>
@@ -723,36 +753,25 @@ function Reader({ poem, sectionId }) {
                 )}
 
                 {/* English Translation */}
-                {(layer === 'english' || layer === 'both' || layer === 'sangam') && (
-                  <Card variant="default" className="p-6 space-y-4 bg-surface shadow-xs">
+                {show.english && (
+                  <Card variant="default" className="p-4 sm:p-6 space-y-4 bg-surface shadow-xs">
                     <div className="flex items-center justify-between border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent uppercase tracking-wider">
                         English Translation
                       </span>
-                      <Badge variant="outline" size="xs">Translation</Badge>
+                      <DraftBadge verse={sec} field="english" />
                     </div>
                     {sec.english ? (
                       <p className="text-base sm:text-lg leading-relaxed text-primary">{sec.english}</p>
-                    ) : aiTranslation ? (
-                      <div className="space-y-2">
-                        <p className="text-base sm:text-lg leading-relaxed text-primary">{aiTranslation}</p>
-                        <p className="text-[10px] text-faint italic flex items-center gap-1">
-                          <Sparkles size={11} className="text-accent" />
-                          AI translation powered by Gemini 2.5 Flash
-                        </p>
-                      </div>
                     ) : (
-                      <div className="space-y-3">
-                        <p className="text-sm text-faint italic">No English translation recorded for this section yet.</p>
-                        {aiError && <p className="text-xs text-danger">{aiError}</p>}
-                        <Button size="sm" onClick={() => handleAiTranslate(sec.sangamTamil)} loading={aiLoading} icon={<Sparkles size={13} />}>
-                          Translate with Gemini AI
-                        </Button>
-                      </div>
+                      <p className="text-sm text-faint italic">
+                        English translation for this section is being prepared and will appear after scholar review.
+                      </p>
                     )}
                   </Card>
                 )}
               </div>
+              )}
             </div>
           ) : (
             /* ── VERTICAL (V) STACKED VIEW ── */
@@ -785,8 +804,8 @@ function Reader({ poem, sectionId }) {
               </header>
 
               {/* Original Tamil Verse */}
-              {(layer === 'sangam' || layer === 'both') && (
-                <Card variant="flat" className="p-6 sm:p-8 space-y-4 border-accent/20">
+              {show.sangam && (
+                <Card variant="flat" className="p-4 sm:p-8 space-y-4 border-accent/20">
                   <div className="flex items-center justify-between border-b border-line pb-2">
                     <span className="text-xs font-semibold text-accent uppercase tracking-wider">
                       Original Classical Tamil
@@ -798,9 +817,14 @@ function Reader({ poem, sectionId }) {
               )}
 
               {/* Modern Commentary (Urai) */}
-              {(layer === 'urai' || layer === 'both') && (
-                <Card variant="default" className="p-6 space-y-3">
-                  <span className="text-xs font-semibold text-faint uppercase tracking-wider">உரை (Prose Commentary)</span>
+              {show.urai && (
+                <Card variant="default" className="p-4 sm:p-6 space-y-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs font-semibold text-faint">
+                      <span className="tamil">உரை</span> (Prose Commentary)
+                    </span>
+                    <DraftBadge verse={sec} field="urai" />
+                  </div>
                   {sec.urai ? (
                     <p className="tamil text-base sm:text-lg leading-relaxed text-muted">{sec.urai}</p>
                   ) : (
@@ -810,24 +834,18 @@ function Reader({ poem, sectionId }) {
               )}
 
               {/* English Translation */}
-              {(layer === 'english' || layer === 'both') && (
-                <Card variant="default" className="p-6 space-y-4">
-                  <span className="text-xs font-semibold text-faint uppercase tracking-wider">English Translation</span>
+              {show.english && (
+                <Card variant="default" className="p-4 sm:p-6 space-y-4">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs font-semibold text-faint uppercase tracking-wider">English Translation</span>
+                    <DraftBadge verse={sec} field="english" />
+                  </div>
                   {sec.english ? (
                     <p className="text-base sm:text-lg leading-relaxed text-muted">{sec.english}</p>
-                  ) : aiTranslation ? (
-                    <div className="space-y-2">
-                      <p className="text-base sm:text-lg leading-relaxed text-muted">{aiTranslation}</p>
-                      <p className="text-[10px] text-faint italic">AI translation powered by Gemini 2.5 Flash</p>
-                    </div>
                   ) : (
-                    <div className="space-y-3">
-                      <p className="text-sm text-faint italic">No English translation recorded for this section yet.</p>
-                      {aiError && <p className="text-xs text-danger">{aiError}</p>}
-                      <Button size="sm" onClick={() => handleAiTranslate(sec.sangamTamil)} loading={aiLoading} icon={<Sparkles size={13} />}>
-                        Translate with Gemini AI
-                      </Button>
-                    </div>
+                    <p className="text-sm text-faint italic">
+                      English translation for this section is being prepared and will appear after scholar review.
+                    </p>
                   )}
                 </Card>
               )}
@@ -842,7 +860,7 @@ function Reader({ poem, sectionId }) {
           )}
 
           {/* Previous / Next Navigation Footer */}
-          <div className="max-w-7xl mx-auto flex items-center justify-between pt-8 pb-4 border-t border-line mt-8">
+          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 pt-8 pb-4 border-t border-line mt-8">
             <Button
               variant="outline"
               size="sm"

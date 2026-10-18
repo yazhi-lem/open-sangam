@@ -4,6 +4,8 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { House, BookOpen, Globe, Brain, Map, FileText, Users } from 'lucide-react'
+import lockupColour from '../../assets/brand/lockup-colour.svg'
+import lockupReversed from '../../assets/brand/lockup-reversed.svg'
 import ThemeToggle from '../ui/ThemeToggle'
 import useAppStore from '../../store/useAppStore'
 import { AVAI_ENABLED } from '../../config/features'
@@ -25,7 +27,7 @@ export default function Navbar() {
   ]
 
   const linkClass = ({ isActive }) =>
-    `relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all focus-ring ${
+    `relative flex min-h-[44px] items-center gap-1.5 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all focus-ring ${
       isActive
         ? 'text-accent bg-accent/10 font-semibold'
         : 'text-muted hover:text-primary hover:bg-surface-alt/60'
@@ -34,39 +36,44 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-page/80 backdrop-blur-md transition-colors">
       <nav className="w-full px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-        {/* Brand logo */}
-        <Link to="/" className="flex items-center gap-2 text-primary font-bold tracking-tight text-lg focus-ring rounded-lg px-1">
-          <span className="text-2xl" aria-hidden="true">🏛️</span>
-          <div className="flex flex-col leading-none">
-            <span className="text-primary font-semibold tamil">தமிழ் சங்கம் (open-sangam/ta)</span>
-          </div>
+        {/* Brand logo: Z1 ழ mark + Latin "Open Sangam" wordmark (brand kit v0.3). The wordmark
+            is outlined SVG, so the alt text carries the name; no Tamil name in the header. */}
+        <Link
+          to="/"
+          className="flex shrink-0 items-center min-h-[44px] focus-ring rounded-lg px-1"
+          aria-label="Open Sangam — home"
+        >
+          <img src={lockupColour} alt="" width="152" height="32" className="h-8 w-auto dark:hidden" />
+          <img src={lockupReversed} alt="" width="152" height="32" className="hidden h-8 w-auto dark:block" />
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden xl:flex shrink-0 items-center gap-1">
           {links.map((l) => (
             <NavLink key={l.to} to={l.to} end={l.end} className={linkClass}>
-              <l.Icon {...NAV_ICON_PROPS} className="shrink-0" />
+              {/* Icons only once there's room; at xl the seven Tamil labels alone fill the bar. */}
+              <l.Icon {...NAV_ICON_PROPS} className="hidden shrink-0 min-[1700px]:block" />
               <span className="tamil text-sm">{l.labelTa}</span>
             </NavLink>
           ))}
         </div>
 
         {/* Search trigger & controls */}
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-1 sm:gap-2">
           {/* Quick Search Button */}
           <button
             type="button"
             onClick={() => setCommandPaletteOpen(true)}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-xl border border-line bg-surface-alt/60 text-muted hover:text-primary hover:border-line-strong transition-all focus-ring text-xs"
+            className="flex h-11 min-w-[44px] items-center justify-center gap-2 whitespace-nowrap px-3 rounded-xl border border-line bg-surface-alt/60 text-muted hover:text-primary hover:border-line-strong transition-all focus-ring text-xs"
             aria-label="தேடல் பலகையைத் திறக்க"
           >
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <circle cx="11" cy="11" r="8" />
               <path d="M21 21l-4.35-4.35" />
             </svg>
-            <span className="hidden sm:inline font-medium">சங்க இலக்கியத் தேடல்...</span>
-            <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[10px] font-mono text-faint bg-surface border border-line rounded">
+            <span className="hidden sm:inline xl:hidden font-medium tamil">தேடல்</span>
+            <span className="hidden min-[1700px]:inline font-medium tamil">சங்க இலக்கியத் தேடல்...</span>
+            <kbd className="hidden min-[1700px]:inline-block px-1.5 py-0.5 text-[10px] font-mono text-faint bg-surface border border-line rounded">
               ⌘K
             </kbd>
           </button>
@@ -77,7 +84,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 rounded-xl text-muted hover:text-primary hover:bg-surface-alt focus-ring transition-colors"
+            className="xl:hidden flex h-11 w-11 items-center justify-center rounded-xl text-muted hover:text-primary hover:bg-surface-alt focus-ring transition-colors"
             aria-label={mobileOpen ? 'பட்டியலை மூடுக' : 'பட்டியலைத் திறக்க'}
             aria-expanded={mobileOpen}
           >
@@ -94,7 +101,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-line bg-surface px-4 py-4 space-y-2 shadow-lg animate-in slide-in-from-top-2 duration-150">
+        <div className="xl:hidden max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-line bg-surface px-4 py-4 space-y-1 shadow-lg animate-in slide-in-from-top-2 duration-150">
           {links.map((l) => (
             <NavLink
               key={l.to}

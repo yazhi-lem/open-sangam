@@ -3,6 +3,8 @@
  */
 import { Link } from 'react-router-dom'
 import useAppStore from '../../store/useAppStore'
+import lockupColour from '../../assets/brand/lockup-colour.svg'
+import lockupReversed from '../../assets/brand/lockup-reversed.svg'
 
 export default function Footer() {
   const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
@@ -18,9 +20,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand & mission */}
           <div className="md:col-span-2 space-y-3">
-            <Link to="/" className="flex items-center gap-2 text-primary font-bold text-lg">
-              <span className="text-2xl" aria-hidden="true">🏛️</span>
-              <span>Open Sangam</span>
+            <Link to="/" className="inline-flex items-center min-h-[44px]" aria-label="Open Sangam — home">
+              <img src={lockupColour} alt="" width="152" height="32" className="h-8 w-auto dark:hidden" />
+              <img src={lockupReversed} alt="" width="152" height="32" className="hidden h-8 w-auto dark:block" />
             </Link>
             <p className="tamil text-accent font-medium text-base">தமிழ் தமிழரின் உயிர்</p>
             <p className="text-muted text-xs leading-relaxed max-w-md">
@@ -33,23 +35,28 @@ export default function Footer() {
             <p className="text-xs font-semibold uppercase tracking-wider text-faint">Explore Corpus</p>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link to="/book" className="text-muted hover:text-accent transition-colors">
+                <Link to="/book" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
                   Library (சங்க நூலகம்)
                 </Link>
               </li>
               <li>
-                <Link to="/world" className="text-muted hover:text-accent transition-colors">
+                <Link to="/world" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
                   Sangam World (சங்க உலகம்)
                 </Link>
               </li>
               <li>
-                <Link to="/knowledge" className="text-muted hover:text-accent transition-colors">
+                <Link to="/knowledge" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
                   Knowledge Base (அறிவு)
                 </Link>
               </li>
               <li>
-                <Link to="/graph" className="text-muted hover:text-accent transition-colors">
+                <Link to="/graph" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
                   Connections Graph (வரைபடம்)
+                </Link>
+              </li>
+              <li>
+                <Link to="/scholars" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
+                  <span lang="ta" className="tamil">உங்கள் உதவி</span>&nbsp;· Help us review
                 </Link>
               </li>
             </ul>
@@ -62,7 +69,7 @@ export default function Footer() {
               <button
                 type="button"
                 onClick={() => setCommandPaletteOpen(true)}
-                className="flex items-center gap-2 text-muted hover:text-accent transition-colors text-left"
+                className="flex min-h-[44px] items-center gap-2 text-muted hover:text-accent transition-colors text-left"
               >
                 <span>Search Corpus</span>
                 <kbd className="px-1.5 py-0.5 text-[10px] font-mono bg-surface border border-line rounded">⌘K</kbd>

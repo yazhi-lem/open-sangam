@@ -68,8 +68,9 @@ Agents M1 milestone.
 5. **Reconcile the docs to reality.** README corpus tables updated to 18 poems /
    2,552 records ✅ (2026-08-04). Still to do: correct Firebase-Hosting →
    Cloudflare-Pages references in the architecture docs.
-6. **Land Phase 1 English drafts.** The nightly pipeline covers the Ten Idylls
-   (~380 verses) first; read the output before letting phases 2–3 run on.
+6. **Review the machine drafts already in the corpus.** The nightly drafting
+   pipeline was removed; existing drafts stay labelled `verified: false` until a
+   scholar reviews them.
 
 ---
 
@@ -85,14 +86,9 @@ Building the assembly out and starting the translation deliverable.
    ship the `/avai` chat (markdown first, then A2UI), Cloud Run deploy + secrets +
    CI, docs/governance/hardening. *Due 2026-10-31.*
 3. **Corpus Phase 2 — English translation.** The batch drafter
-   (`ai/translate_with_gemini.py`) is **built and scheduled**: Gemini 2.5 Flash
-   via OpenRouter, 200 verses nightly, three phases smallest-first, every draft
-   `verified: false` with `englishMeta` provenance and a run record in
-   `data/pipeline/translation-state.json`. Remaining work is *operational*
-   rather than constructional: set the `OPENROUTER_API_KEY` secret, watch cost
-   and quality through phase 1, and settle **stored vs. live** translations —
-   stored drafts are what let the static Cloudflare Pages build stop calling
-   Gemini per verse.
+   (`ai/translate_with_gemini.py`) and its nightly workflow were **removed**.
+   Stored drafts stay in the corpus (`verified: false`, `englishMeta`
+   provenance); new English needs a scholar or a separately approved process.
 4. **Corpus Phase E — karu-poruḷ glossary** + inline verse cross-links in the reader.
 5. **Corpus Phase F / Phase 4 foundations — verification loop.** Stand up the
    human-in-the-loop review protocol so AI drafts can move `verified: false → true`.

@@ -6,6 +6,7 @@ import ScrollToTop from './components/navigation/ScrollToTop'
 import CommandPalette from './components/search/CommandPalette'
 import BackgroundScene from './components/background/BackgroundScene'
 import Home from './pages/Home'
+import Scholars from './pages/Scholars'
 import SangamWorldPage from './pages/SangamWorldPage'
 import Book from './pages/Book'
 import Knowledge from './pages/Knowledge'
@@ -55,6 +56,7 @@ function AppContent() {
             <Route path="/graph" element={<GraphExplorer />} />
             <Route path="/articles" element={<ArticlesList />} />
             <Route path="/articles/:slug" element={<ArticleReader />} />
+            <Route path="/scholars" element={<Scholars />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
