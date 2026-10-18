@@ -6,6 +6,16 @@ import { resolve } from 'node:path'
 
 const dataDir = resolve(fileURLToPath(import.meta.url), '../../data')
 
+// Only the API endpoints go to the local Avai backend. A bare '/avai' prefix
+// also swallowed the /avai page route itself, so reloading /avai in dev or
+// preview hit uvicorn (502) instead of the SPA and rendered a blank page.
+const avaiApiProxy = {
+  '^/avai/(ask|health|dataset)(/|$)': {
+    target: 'http://127.0.0.1:8080',
+    changeOrigin: true,
+  },
+}
+
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
@@ -13,19 +23,9 @@ export default defineConfig({
   },
   server: {
     fs: { allow: [resolve(fileURLToPath(import.meta.url), '..'), dataDir] },
-    proxy: {
-      '/avai': {
-        target: 'http://127.0.0.1:8080',
-        changeOrigin: true,
-      },
-    },
+    proxy: avaiApiProxy,
   },
   preview: {
-    proxy: {
-      '/avai': {
-        target: 'http://127.0.0.1:8080',
-        changeOrigin: true,
-      },
-    },
+    proxy: avaiApiProxy,
   },
 })

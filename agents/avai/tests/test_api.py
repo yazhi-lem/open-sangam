@@ -206,4 +206,40 @@ def test_ask_agent_failure_returns_502(monkeypatch):
     resp = client.post("/avai/ask", json={"message": "hello"})
 
     assert resp.status_code == 502
+    # The provider's own error text stays in the server log, not the response.
+    assert resp.json()["message"] == "Agent execution failed. Please try again."
+    assert "boom" not in resp.text
+
+
+def test_ask_agent_failure_detail_visible_in_debug_mode(monkeypatch):
+    async def _raise(*, user_id, session_id, new_message):
+        raise RuntimeError("boom")
+        yield  # pragma: no cover — makes this an async generator
+
+    for runner in app_module._RUNNERS.values():
+        monkeypatch.setattr(runner, "run_async", _raise)
+    monkeypatch.setenv("AVAI_DEBUG_ERRORS", "1")
+
+    resp = client.post("/avai/ask", json={"message": "hello"})
+
+    assert resp.status_code == 502
     assert resp.json()["message"] == "Agent execution failed: boom"
+
+
+def test_ask_rate_limited_per_client(monkeypatch):
+    monkeypatch.setattr(
+        app_module._RUNNERS["nakkirar"], "run_async", _fake_run_async_factory("வணக்கம்")
+    )
+    monkeypatch.setenv("AVAI_RATE_LIMIT_PER_MINUTE", "2")
+    monkeypatch.setattr(app_module, "_rate_hits", app_module.defaultdict(app_module.deque))
+    headers = {"X-Forwarded-For": "203.0.113.7"}
+
+    assert client.post("/avai/ask", json={"message": "hello"}, headers=headers).status_code == 200
+    assert client.post("/avai/ask", json={"message": "hello"}, headers=headers).status_code == 200
+    limited = client.post("/avai/ask", json={"message": "hello"}, headers=headers)
+    assert limited.status_code == 429
+    assert int(limited.headers["Retry-After"]) >= 1
+
+    # A different client is unaffected.
+    other = client.post("/avai/ask", json={"message": "hello"}, headers={"X-Forwarded-For": "198.51.100.9"})
+    assert other.status_code == 200

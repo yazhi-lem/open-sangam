@@ -24,7 +24,7 @@ export default function Navbar() {
   ]
 
   const linkClass = ({ isActive }) =>
-    `relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all focus-ring ${
+    `relative flex items-center gap-1.5 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all focus-ring ${
       isActive
         ? 'text-accent bg-accent/10 font-semibold'
         : 'text-muted hover:text-primary hover:bg-surface-alt/60'
@@ -34,38 +34,45 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-line bg-page/80 backdrop-blur-md transition-colors">
       <nav className="w-full px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         {/* Brand logo */}
-        <Link to="/" className="flex items-center gap-2 text-primary font-bold tracking-tight text-lg focus-ring rounded-lg px-1">
+        <Link
+          to="/"
+          className="flex shrink-0 items-center gap-2 text-primary font-bold tracking-tight text-lg focus-ring rounded-lg px-1"
+          aria-label="Open Sangam — home"
+        >
           <span className="text-2xl" aria-hidden="true">🏛️</span>
-          <div className="flex flex-col leading-none">
-            <span className="text-primary font-semibold tamil">தமிழ் சங்கம் (open-sangam/ta)</span>
+          <div className="flex flex-col whitespace-nowrap leading-tight">
+            <span className="text-primary font-semibold tamil text-base">தமிழ் சங்கம்</span>
+            <span className="text-faint font-medium text-[10px] uppercase tracking-widest">Open Sangam</span>
           </div>
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden xl:flex shrink-0 items-center gap-1">
           {links.map((l) => (
             <NavLink key={l.to} to={l.to} end={l.end} className={linkClass}>
-              <l.Icon {...NAV_ICON_PROPS} className="shrink-0" />
+              {/* Icons only once there's room; at xl the seven Tamil labels alone fill the bar. */}
+              <l.Icon {...NAV_ICON_PROPS} className="hidden shrink-0 min-[1700px]:block" />
               <span className="tamil text-sm">{l.labelTa}</span>
             </NavLink>
           ))}
         </div>
 
         {/* Search trigger & controls */}
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           {/* Quick Search Button */}
           <button
             type="button"
             onClick={() => setCommandPaletteOpen(true)}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-xl border border-line bg-surface-alt/60 text-muted hover:text-primary hover:border-line-strong transition-all focus-ring text-xs"
+            className="flex items-center gap-2 whitespace-nowrap px-3 py-1.5 rounded-xl border border-line bg-surface-alt/60 text-muted hover:text-primary hover:border-line-strong transition-all focus-ring text-xs"
             aria-label="தேடல் பலகையைத் திறக்க"
           >
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <circle cx="11" cy="11" r="8" />
               <path d="M21 21l-4.35-4.35" />
             </svg>
-            <span className="hidden sm:inline font-medium">சங்க இலக்கியத் தேடல்...</span>
-            <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[10px] font-mono text-faint bg-surface border border-line rounded">
+            <span className="hidden sm:inline xl:hidden font-medium tamil">தேடல்</span>
+            <span className="hidden min-[1700px]:inline font-medium tamil">சங்க இலக்கியத் தேடல்...</span>
+            <kbd className="hidden min-[1700px]:inline-block px-1.5 py-0.5 text-[10px] font-mono text-faint bg-surface border border-line rounded">
               ⌘K
             </kbd>
           </button>
@@ -76,7 +83,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 rounded-xl text-muted hover:text-primary hover:bg-surface-alt focus-ring transition-colors"
+            className="xl:hidden p-2 rounded-xl text-muted hover:text-primary hover:bg-surface-alt focus-ring transition-colors"
             aria-label={mobileOpen ? 'பட்டியலை மூடுக' : 'பட்டியலைத் திறக்க'}
             aria-expanded={mobileOpen}
           >
@@ -93,7 +100,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-line bg-surface px-4 py-4 space-y-2 shadow-lg animate-in slide-in-from-top-2 duration-150">
+        <div className="xl:hidden border-t border-line bg-surface px-4 py-4 space-y-2 shadow-lg animate-in slide-in-from-top-2 duration-150">
           {links.map((l) => (
             <NavLink
               key={l.to}

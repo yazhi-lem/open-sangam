@@ -1,0 +1,7 @@
+# Runtime-only dependencies for the deployed Avai API (Dockerfile).
+# Keep versions in step with requirements.txt, which adds the test/eval tools.
+google-adk[a2a]==1.18.0
+litellm==1.78.5
+python-dotenv==1.1.1
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
