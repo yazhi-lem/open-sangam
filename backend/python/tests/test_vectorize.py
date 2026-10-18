@@ -44,9 +44,9 @@ def corpus(tmp_path, monkeypatch):
     for n in range(1, 4):
         write_verse(mullai, f"mullaippattu_{n:02d}", n)
 
-    from ai import translate_with_gemini as translate_pipeline
+    from ai import corpus_io as corpus_io_module
 
-    monkeypatch.setattr(translate_pipeline, "DATA_BASE", texts)
+    monkeypatch.setattr(corpus_io_module, "DATA_BASE", texts)
     monkeypatch.setattr(pipeline, "EXPORT_DIR", tmp_path / "data" / "knowledge" / "vectors")
     monkeypatch.setattr(pipeline, "STATE_FILE", tmp_path / "data" / "pipeline" / "vectorize-state.json")
     return texts
@@ -188,15 +188,15 @@ class FlakyBackend:
 
 def test_embed_once_retries_then_succeeds(monkeypatch):
     monkeypatch.setattr(pipeline.time, "sleep", lambda _: None)
-    backend = FlakyBackend([pipeline.TranslationError("HTTP 429"), [0.1, 0.2]])
+    backend = FlakyBackend([pipeline.PipelineError("HTTP 429"), [0.1, 0.2]])
     assert pipeline.embed_once(backend, "x") == [0.1, 0.2]
     assert backend.calls == 2
 
 
 def test_embed_once_gives_up_after_max_attempts(monkeypatch):
     monkeypatch.setattr(pipeline.time, "sleep", lambda _: None)
-    backend = FlakyBackend([pipeline.TranslationError("HTTP 500")] * pipeline.MAX_ATTEMPTS)
-    with pytest.raises(pipeline.TranslationError):
+    backend = FlakyBackend([pipeline.PipelineError("HTTP 500")] * pipeline.MAX_ATTEMPTS)
+    with pytest.raises(pipeline.PipelineError):
         pipeline.embed_once(backend, "x")
     assert backend.calls == pipeline.MAX_ATTEMPTS
 

@@ -67,9 +67,8 @@ Read by `config.py`; set them in `agents/avai/.env`.
 | `AVAI_RATE_LIMIT_PER_MINUTE` | `0` (off) | REST API only: `/avai/ask` calls per client per minute; over it returns `429` |
 | `AVAI_DEBUG_ERRORS` | unset | REST API only: `1` puts the provider's error text in `502` responses (dev only) |
 
-The corpus translation pipeline (`backend/python/ai/translate_with_gemini.py`)
-uses the same `OPENROUTER_API_KEY`, so one key serves both — though each reads
-its own `.env`.
+The embedding step (`backend/python/ai/vectorize.py`) uses the same
+`OPENROUTER_API_KEY`, though it reads its own `.env`.
 
 ## Switching model backend
 
