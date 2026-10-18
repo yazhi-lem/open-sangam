@@ -20,8 +20,8 @@ const Input = forwardRef(function Input(
   ref
 ) {
   const sizes = {
-    sm: 'h-8 px-3 text-xs',
-    md: 'h-10 px-3.5 text-sm',
+    sm: 'h-11 px-3 text-base sm:h-8 sm:text-xs',
+    md: 'h-11 px-3.5 text-base sm:h-10 sm:text-sm',
     lg: 'h-12 px-4 text-base',
   }
 
@@ -55,7 +55,7 @@ const Input = forwardRef(function Input(
         <button
           type="button"
           onClick={onClear}
-          className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 text-faint hover:text-primary rounded-full focus-ring transition-colors"
+          className="absolute right-0.5 top-1/2 -translate-y-1/2 flex h-11 w-11 items-center justify-center sm:right-2 sm:h-7 sm:w-7 text-faint hover:text-primary rounded-full focus-ring transition-colors"
           aria-label="Clear input"
         >
           ✕

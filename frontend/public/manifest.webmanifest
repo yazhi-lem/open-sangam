@@ -1,0 +1,16 @@
+{
+  "name": "Open Sangam",
+  "short_name": "Open Sangam",
+  "description": "Sangam literature, held in common. Original verses with draft commentary and translation.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F3EAD7",
+  "theme_color": "#B4321F",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

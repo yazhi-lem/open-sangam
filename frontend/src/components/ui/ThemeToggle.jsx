@@ -15,7 +15,7 @@ export default function ThemeToggle({ className = '' }) {
       aria-pressed={isDark}
       aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
       title={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
-      className={`inline-flex items-center justify-center h-9 w-9 rounded-full border border-line
+      className={`inline-flex items-center justify-center h-11 w-11 rounded-full border border-line
         text-muted hover:text-primary hover:border-line-strong transition-colors
         focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2
         focus-visible:ring-offset-page ${className}`}
