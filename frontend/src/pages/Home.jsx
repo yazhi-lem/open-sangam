@@ -62,7 +62,7 @@ export default function Home() {
 
         <Reveal delay={0.25} duration={0.6}>
           <p className="tamil text-lg sm:text-xl text-accent font-semibold max-w-2xl mx-auto leading-relaxed">
-            🙏 வணக்கம்! எங்கள் புலவர்களுடன் உரையாடுங்கள் — சங்க அவை உங்களை அழைக்கிறது! ஒன்றாகத் தமிழை மேலும் வளர்ப்போம்.
+            🙏 வணக்கம்! எங்கள் புலவர்களுடன் உரையாடுங்கள் — சங்க அவை உங்களை அழைக்கிறது! ஒன்றாக தமிழை மேலும் வளர்ப்போம்.
           </p>
         </Reveal>
 
