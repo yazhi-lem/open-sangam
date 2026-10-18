@@ -1,5 +1,7 @@
 import { useEffect, useId } from 'react'
 import { glossaryBadgeLabel, glossaryStatus } from '../../data/readerLayers.js'
+import { MEANING_SOON } from '../../data/readerStrings.js'
+import ComingSoon from './ComingSoon'
 
 /**
  * WordGlossary — "Click-to-Define" sheet for a single word.
@@ -82,7 +84,7 @@ export default function WordGlossary({ word, verse, onClose }) {
         {word.root && (
           <div>
             <p className="text-xs text-faint mb-1">
-              Root (<span lang="ta" className="tamil">வேர்ச்சொல்</span>)
+              <span lang="ta" className="tamil">வேர்ச்சொல்</span> (Root)
             </p>
             <p lang="ta" className="tamil text-lg text-primary break-words">{word.root}</p>
           </div>
@@ -92,7 +94,7 @@ export default function WordGlossary({ word, verse, onClose }) {
         {word.urichol && (
           <div>
             <p className="text-xs text-faint mb-1">
-              Class (<span lang="ta" className="tamil">உரிச்சொல்</span>)
+              <span lang="ta" className="tamil">சொல்வகை</span> (Class)
             </p>
             <p lang="ta" className="text-muted tamil break-words">{word.urichol}</p>
           </div>
@@ -106,12 +108,14 @@ export default function WordGlossary({ word, verse, onClose }) {
           </div>
         )}
 
-        {/* English gloss */}
-        {word.gloss && (
-          <div className="pt-2 border-t border-line">
+        {/* English gloss, or a bilingual placeholder when the corpus has none */}
+        <div className="pt-2 border-t border-line">
+          {word.gloss ? (
             <p className="text-muted italic break-words">"{word.gloss}"</p>
-          </div>
-        )}
+          ) : (
+            <ComingSoon {...MEANING_SOON} />
+          )}
+        </div>
       </div>
     </div>
   )

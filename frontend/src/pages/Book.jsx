@@ -9,6 +9,8 @@ import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
 import Badge from '../components/ui/Badge'
+import ComingSoon from '../components/reader/ComingSoon'
+import { TRANSLATION_SOON } from '../data/readerStrings.js'
 import Button from '../components/ui/Button'
 import Input from '../components/ui/Input'
 import Card from '../components/ui/Card'
@@ -733,9 +735,7 @@ function Reader({ poem, sectionId }) {
                     {sec.english ? (
                       <p className="text-base sm:text-lg leading-relaxed text-primary">{sec.english}</p>
                     ) : (
-                      <p className="text-sm text-faint italic">
-                        English translation for this section is being prepared and will appear after scholar review.
-                      </p>
+                      <ComingSoon {...TRANSLATION_SOON} />
                     )}
                   </Card>
                 )}
@@ -812,9 +812,7 @@ function Reader({ poem, sectionId }) {
                   {sec.english ? (
                     <p className="text-base sm:text-lg leading-relaxed text-muted">{sec.english}</p>
                   ) : (
-                    <p className="text-sm text-faint italic">
-                      English translation for this section is being prepared and will appear after scholar review.
-                    </p>
+                    <ComingSoon {...TRANSLATION_SOON} />
                   )}
                 </Card>
               )}

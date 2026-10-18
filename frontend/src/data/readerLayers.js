@@ -7,6 +7,11 @@
  * AI-drafted field.
  */
 
+// Badge labels are "<Tamil> · <English>" and must contain exactly one ' · ' (the UI splits on it).
+// Tamil wording from Kabilar, pending human scholar review (†).
+export const MACHINE_DRAFT_LABEL = 'இயந்திர வரைவு · Machine draft'
+export const UNVERIFIED_LABEL = 'வரைவு, அறிஞர் சரிபார்க்கவில்லை · Draft, not scholar-verified'
+
 export const LAYER_OPTIONS = [
   { id: 'sangam', label: 'சங்கம்', hint: 'Original Sangam Tamil' },
   { id: 'urai', label: 'உரை', hint: 'Modern Tamil prose commentary' },
@@ -52,9 +57,9 @@ export function layerStatus(verse, field) {
 /** Short label for a draft badge, or null when no badge is needed. */
 export function draftBadgeLabel(verse, field) {
   const { status } = layerStatus(verse, field)
-  // Tamil text below is an AI-written draft: needs native-reviewer sign-off.
-  if (status === 'ai-draft') return 'வரைவு · AI draft'
-  if (status === 'unverified') return 'வரைவு · Not yet verified'
+  // Labels: see MACHINE_DRAFT_LABEL / UNVERIFIED_LABEL above (Tamil pending scholar review).
+  if (status === 'ai-draft') return MACHINE_DRAFT_LABEL
+  if (status === 'unverified') return UNVERIFIED_LABEL
   return null
 }
 
@@ -90,8 +95,8 @@ export function glossaryStatus(verse, word) {
 /** Badge label for a glossary entry, or null when no badge is needed. */
 export function glossaryBadgeLabel(verse, word) {
   const { status } = glossaryStatus(verse, word)
-  // Tamil text below is an AI-written draft: needs native-reviewer sign-off.
-  if (status === 'ai-draft') return 'வரைவு · AI draft'
-  if (status === 'unverified') return 'வரைவு · Not yet verified'
+  // Labels: see MACHINE_DRAFT_LABEL / UNVERIFIED_LABEL above (Tamil pending scholar review).
+  if (status === 'ai-draft') return MACHINE_DRAFT_LABEL
+  if (status === 'unverified') return UNVERIFIED_LABEL
   return null
 }
