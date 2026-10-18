@@ -1,0 +1,17 @@
+# Cloudflare Pages response headers (https://developers.cloudflare.com/pages/configuration/headers/).
+# Copied to dist/ by Vite. Applies to static assets only (no Pages Functions here).
+
+# Drop Pages' default wildcard CORS header: nothing needs cross-origin reads of the site.
+# Report-Only first: watch the browser console on a preview deploy, then rename the header
+# to Content-Security-Policy. The sha256 is the inline theme script in index.html and must be
+# regenerated if that script changes (`node scripts/check-csp-hash.mjs` after a build).
+# fonts.googleapis.com / fonts.gstatic.com can go once PR #124 (self-hosted fonts) merges.
+
+/*
+  ! Access-Control-Allow-Origin
+  Strict-Transport-Security: max-age=31536000
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), microphone=(), payment=(), usb=()
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'sha256-nIDL/cimN0FnQ4XK39UZbgf5X/OXbcpGIjl4HUi3TIo='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self'; connect-src 'self' https://*.googleapis.com https://*.run.app; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
