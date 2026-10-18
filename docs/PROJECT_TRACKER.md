@@ -16,7 +16,7 @@
 | **B · Reader web app** | 🔄 | Reader, Knowledge, Graph, Sangam World (3D), Articles, Command Palette all shipped | Audio wiring, a11y & layout polish, 3D→real-data |
 | **C · Knowledge graph & entities** | 🔄 | Graph (109 nodes / 292 edges) + `/graph` explorer live (Phases A–B) | Colophon → poets/patrons (Phase C), glossary cross-links (Phase E) |
 | **D · Sangam Avai agent swarm** | 🔄 | M1 scaffold live: 1 of 5 poets, corpus/graph/tiṇai tools, 12 tests pass | Finish M1 evalset; build M2 poet swarm |
-| **E · Backend, infra & CI/CD** | 🔄 | Cloud Functions (`/translate`, `/analyze-word`), Cloudflare Pages deploy, frontend CI, nightly translation job | Agent deploy path; frontend/functions test coverage; resolve storage split |
+| **E · Backend, infra & CI/CD** | 🔄 | Cloudflare Pages deploy, frontend CI, nightly translation job | Agent deploy path; frontend test coverage; resolve storage split |
 
 > ✅ **README reconciled (2026-08-04).** The README corpus tables now match the
 > live data — 18 poems, all readable, 2,552 records — and the stale
@@ -202,7 +202,7 @@ quick-start that links there.
 
 | Piece | Status | Notes |
 |---|---|---|
-| Cloud Functions (`backend/functions/`) | ✅ | `POST /translate`, `POST /analyze-word` → Gemini 2.5 Flash; key as Firebase Secret |
+| Cloud Functions (`backend/functions/`) | 🗑️ | Removed: the public `/translate` and `/analyze-word` Gemini functions had no auth or limits |
 | Firestore rules / indexes | 🔄 | Rules present (public read / admin write); **not populated** — see §8 |
 | Frontend CI (`.github/workflows/ci.yml`) | ✅ | `npm ci` → lint → build on `frontend/**`; **no test step** |
 | Translation job (`translate-english.yml`) | ✅ | Nightly 02:00 UTC + `workflow_dispatch`; 200 verses/run → auto-commit. Needs secret `OPENROUTER_API_KEY` |

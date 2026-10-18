@@ -2,16 +2,12 @@
 
 ## Overview
 
-Open Sangam is a three-tier web application:
+Open Sangam is a static single-page web application:
 
 ```
 Browser (React + Tailwind)
         ↕  HTTPS
-Firebase Hosting  ──→  Firebase Cloud Functions (Node.js)
-                                    ↕
-                          Google Gemini 2.5 Flash API
-                                    ↕
-                          Firebase Firestore (verse data)
+Static hosting (Cloudflare Pages)  ──→  Firebase Firestore (contributions)
 ```
 
 ## Frontend
@@ -34,15 +30,6 @@ Firebase Hosting  ──→  Firebase Cloud Functions (Node.js)
 | `AudioPlayer` | Verse recitation playback |
 
 ## Backend
-
-### Firebase Cloud Functions
-
-Two HTTP functions proxy browser requests to Gemini:
-
-- `POST /translate` — verse → Urai or English translation
-- `POST /analyze-word` — word → root, Urichol, etymology, gloss
-
-The Gemini API key is stored as a Firebase Secret (`GEMINI_API_KEY`) and never exposed to the client.
 
 ### Firestore Data Model
 
@@ -79,10 +66,9 @@ sangathamizh.com  →  scraper  →  raw JSON  →  normalizer  →  normalized 
 | Graph builder | `backend/python/knowledge/build_graph.py` | corpus → `data/knowledge/graph.json` |
 
 The translator reaches Gemini through **OpenRouter**, the same gateway the
-`agents/avai` assembly uses, so one `OPENROUTER_API_KEY` covers both. The
-Cloud Functions path (`/translate`, `/analyze-word`) still calls the Gemini API
-directly with its own Firebase Secret — it serves on-demand browser requests
-for verses the batch pipeline has not reached yet.
+`agents/avai` assembly uses, so one `OPENROUTER_API_KEY` covers both. There
+is no on-demand Gemini endpoint: the former Cloud Functions (`/translate`,
+`/analyze-word`) were public and unauthenticated and have been removed.
 
 Progress is tracked by **derivation, not bookkeeping**: coverage is recounted
 from `data/texts/*/normalized/*.json` at the start of every run, so the state
@@ -92,5 +78,4 @@ file is an audit record rather than a source of truth that can drift.
 
 - Firestore rules enforce public read, admin-only write for verses
 - Contributions require authentication; authors can edit only their own
-- Gemini API key stored as Firebase Secret, accessed only server-side
-- CORS configured on Cloud Functions; allow-list production domain in production
+- No Gemini or other model key is held by the browser or by a public function; model calls run only in the batch pipeline and the agent service
