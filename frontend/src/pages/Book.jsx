@@ -718,7 +718,7 @@ function Reader({ poem, sectionId }) {
                 {/* Modern Commentary (Urai) */}
                 {show.urai && (
                   <Card variant="default" className="p-4 sm:p-6 space-y-3 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent">
                         <span className="tamil">உரை</span> (Prose Commentary)
                       </span>
@@ -735,7 +735,7 @@ function Reader({ poem, sectionId }) {
                 {/* English Translation */}
                 {show.english && (
                   <Card variant="default" className="p-4 sm:p-6 space-y-4 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent uppercase tracking-wider">
                         English Translation
                       </span>
@@ -784,7 +784,7 @@ function Reader({ poem, sectionId }) {
               {/* Original Tamil Verse */}
               {show.sangam && (
                 <Card variant="flat" className="p-4 sm:p-8 space-y-4 border-accent/20">
-                  <div className="flex items-center justify-between border-b border-line pb-2">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                     <span className="text-xs font-semibold text-accent uppercase tracking-wider">
                       Original Classical Tamil
                     </span>

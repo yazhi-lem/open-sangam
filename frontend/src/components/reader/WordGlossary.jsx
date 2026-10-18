@@ -2,6 +2,7 @@ import { useEffect, useId } from 'react'
 import { glossaryBadgeLabel, glossaryStatus } from '../../data/readerLayers.js'
 import { MEANING_SOON } from '../../data/readerStrings.js'
 import ComingSoon from './ComingSoon'
+import Chip from '../ui/Chip'
 
 /**
  * WordGlossary — "Click-to-Define" sheet for a single word.
@@ -29,7 +30,6 @@ export default function WordGlossary({ word, verse, onClose }) {
 
   const { status, model } = glossaryStatus(verse, word)
   const badge = glossaryBadgeLabel(verse, word)
-  const [badgeTa, badgeEn] = badge ? badge.split(' · ') : []
 
   return (
     <div
@@ -49,19 +49,17 @@ export default function WordGlossary({ word, verse, onClose }) {
             <h2 id={titleId} lang="ta" className="tamil-verse text-2xl sm:text-3xl text-accent break-words">
               {word.form}
             </h2>
+            {/* Kal-grey draft chip (same as the reader badges), not amber; wraps on phones. */}
             {badge && (
-              <span
+              <Chip
+                variant="badge"
+                label={badge}
                 title={
                   status === 'ai-draft'
                     ? `Machine-drafted${model ? ` (${model})` : ''}; not yet reviewed by a Tamil scholar.`
                     : 'Not yet reviewed by a Tamil scholar.'
                 }
-                className="inline-flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-2 py-0.5 text-xs font-medium text-amber-800 dark:text-amber-300"
-              >
-                <span lang="ta" className="tamil">{badgeTa}</span>
-                <span aria-hidden="true">·</span>
-                <span>{badgeEn}</span>
-              </span>
+              />
             )}
           </div>
           <button
