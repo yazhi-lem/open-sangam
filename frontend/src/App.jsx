@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Navbar from './components/navigation/Navbar'
 import Footer from './components/navigation/Footer'
@@ -11,12 +12,15 @@ import Knowledge from './pages/Knowledge'
 import GraphExplorer from './pages/GraphExplorer'
 import ArticlesList from './pages/ArticlesList'
 import ArticleReader from './pages/ArticleReader'
-import Avai from './pages/Avai'
 import NotFound from './pages/NotFound'
+import { AVAI_ENABLED } from './config/features'
+
+// Avai is behind a flag (see config/features.js): its code is only fetched when enabled.
+const Avai = AVAI_ENABLED ? lazy(() => import('./pages/Avai')) : null
 
 function AppContent() {
   const location = useLocation()
-  const isAvaiPage = location.pathname.startsWith('/avai')
+  const isAvaiPage = AVAI_ENABLED && location.pathname.startsWith('/avai')
 
   return (
     <div
@@ -40,8 +44,12 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route path="/book/:poemId?/:sectionId?" element={<Book />} />
             <Route path="/reader/:poemId?" element={<Navigate to="/book" replace />} />
-            <Route path="/avai" element={<Avai />} />
-            <Route path="/avai/:agentId" element={<Avai />} />
+            {AVAI_ENABLED && (
+              <>
+                <Route path="/avai" element={<Suspense fallback={null}><Avai /></Suspense>} />
+                <Route path="/avai/:agentId" element={<Suspense fallback={null}><Avai /></Suspense>} />
+              </>
+            )}
             <Route path="/world" element={<SangamWorldPage />} />
             <Route path="/knowledge" element={<Knowledge />} />
             <Route path="/graph" element={<GraphExplorer />} />

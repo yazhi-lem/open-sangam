@@ -3,6 +3,7 @@ import Button from '../components/ui/Button'
 import Badge from '../components/ui/Badge'
 import Card from '../components/ui/Card'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
+import { AVAI_ENABLED } from '../config/features'
 
 const TINAI_HIGHLIGHTS = [
   { id: 'kurinji', tamil: 'குறிஞ்சி', english: 'Mountains', mood: 'Union & Passion', icon: '🏔️', variant: 'kurinji' },
@@ -59,22 +60,26 @@ export default function Home() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.25} duration={0.6}>
-          <p className="tamil text-lg sm:text-xl text-accent font-semibold max-w-2xl mx-auto leading-relaxed">
-            🙏 வணக்கம்! எங்கள் புலவர்களுடன் உரையாடுங்கள் — சங்க அவை உங்களை அழைக்கிறது! ஒன்றாக தமிழை மேலும் வளர்ப்போம்.
-          </p>
-        </Reveal>
+        {AVAI_ENABLED && (
+          <Reveal delay={0.25} duration={0.6}>
+            <p className="tamil text-lg sm:text-xl text-accent font-semibold max-w-2xl mx-auto leading-relaxed">
+              🙏 வணக்கம்! எங்கள் புலவர்களுடன் உரையாடுங்கள் — சங்க அவை உங்களை அழைக்கிறது! ஒன்றாக தமிழை மேலும் வளர்ப்போம்.
+            </p>
+          </Reveal>
+        )}
 
         {/* Hero CTAs & Quick Search Input */}
         <Reveal delay={0.3} duration={0.6}>
           <div className="space-y-4 pt-2">
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <Link to="/avai">
-                <Button size="lg" variant="primary" icon="🏛️" className="glow-breathe tamil font-bold">
-                  புலவர்களுடன் பேசுங்கள்
-                </Button>
-              </Link>
-            </div>
+            {AVAI_ENABLED && (
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <Link to="/avai">
+                  <Button size="lg" variant="primary" icon="🏛️" className="glow-breathe tamil font-bold">
+                    புலவர்களுடன் பேசுங்கள்
+                  </Button>
+                </Link>
+              </div>
+            )}
 
             <p className="text-xs text-faint">
               Press <kbd className="px-1.5 py-0.5 font-mono text-[10px] bg-surface border border-line rounded">⌘K</kbd> anywhere to search poems, verses, or root words.
@@ -245,9 +250,11 @@ export default function Home() {
             <Link to="/book">
               <Button size="lg">Explore Library →</Button>
             </Link>
-            <Link to="/avai">
-              <Button size="lg" variant="secondary">Chat with Sangam Avai 🏛️</Button>
-            </Link>
+            {AVAI_ENABLED && (
+              <Link to="/avai">
+                <Button size="lg" variant="secondary">Chat with Sangam Avai 🏛️</Button>
+              </Link>
+            )}
             <Link to="/graph">
               <Button size="lg" variant="outline">View Connections Graph</Button>
             </Link>
