@@ -33,22 +33,22 @@ export default function Footer() {
             <p className="text-xs font-semibold uppercase tracking-wider text-faint">Explore Corpus</p>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link to="/book" className="text-muted hover:text-accent transition-colors">
+                <Link to="/book" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
                   Library (சங்க நூலகம்)
                 </Link>
               </li>
               <li>
-                <Link to="/world" className="text-muted hover:text-accent transition-colors">
+                <Link to="/world" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
                   Sangam World (சங்க உலகம்)
                 </Link>
               </li>
               <li>
-                <Link to="/knowledge" className="text-muted hover:text-accent transition-colors">
+                <Link to="/knowledge" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
                   Knowledge Base (அறிவு)
                 </Link>
               </li>
               <li>
-                <Link to="/graph" className="text-muted hover:text-accent transition-colors">
+                <Link to="/graph" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
                   Connections Graph (வரைபடம்)
                 </Link>
               </li>
@@ -62,7 +62,7 @@ export default function Footer() {
               <button
                 type="button"
                 onClick={() => setCommandPaletteOpen(true)}
-                className="flex items-center gap-2 text-muted hover:text-accent transition-colors text-left"
+                className="flex min-h-[44px] items-center gap-2 text-muted hover:text-accent transition-colors text-left"
               >
                 <span>Search Corpus</span>
                 <kbd className="px-1.5 py-0.5 text-[10px] font-mono bg-surface border border-line rounded">⌘K</kbd>

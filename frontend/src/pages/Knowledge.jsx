@@ -76,7 +76,7 @@ export default function Knowledge() {
           <a
             key={s.id}
             href={`#${s.id}`}
-            className="text-xs font-medium rounded-xl border border-line bg-surface px-3 py-1.5 text-muted hover:text-accent hover:border-accent/40 transition-colors focus-ring"
+            className="inline-flex min-h-[44px] items-center text-xs font-medium rounded-xl border border-line bg-surface px-3 py-1.5 text-muted hover:text-accent hover:border-accent/40 transition-colors focus-ring"
           >
             <span aria-hidden="true" className="mr-1.5">{s.icon}</span>
             {s.en.split(' — ')[0]}

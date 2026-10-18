@@ -331,3 +331,29 @@ p, h1, h2, h3, h4, span, blockquote, li {
 }
 
 
+
+/* ==========================================================================
+   Mobile / touch
+   ========================================================================== */
+
+/* The desktop design sets a 20px root. On phones that makes Tamil headings
+   wrap to two or three syllables per line, so step the root down to 18px. */
+@media (max-width: 639px) {
+  html { font-size: 1.125rem; }
+}
+
+/* Every tap target is at least 44px tall on phones and touch devices.
+   Inside @layer base so any utility class (e.g. min-h-0) can still override.
+   Word buttons inside a verse stay inline: they are text, not controls. */
+@layer base {
+  @media (max-width: 767px), (pointer: coarse) {
+    button:not(.tamil-verse button, [role='tab'] ),
+    [role='button'],
+    select,
+    input:not([type='checkbox'], [type='radio'], [type='range']),
+    textarea,
+    a.btn {
+      min-height: 44px;
+    }
+  }
+}

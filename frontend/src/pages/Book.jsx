@@ -182,7 +182,7 @@ function Library() {
               <button
                 key={tab.id}
                 onClick={() => setCollectionFilter(tab.id)}
-                className={`px-3 py-1.5 text-xs font-medium rounded-xl transition-all whitespace-nowrap focus-ring ${
+                className={`min-h-[44px] px-3 py-1.5 text-xs font-medium rounded-xl transition-all whitespace-nowrap shrink-0 focus-ring ${
                   collectionFilter === tab.id
                     ? 'bg-accent text-on-accent shadow-xs'
                     : 'text-muted hover:text-primary hover:bg-surface'
@@ -200,8 +200,8 @@ function Library() {
         {byCollection.map(({ key, meta, poems }) => (
           <ScrollTilt key={key} intensity={6}>
             <div className="space-y-6">
-              <div className="flex items-baseline gap-3 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary">{meta.ta}</h2>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
+                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">{meta.ta}</h2>
                 <span className="text-muted text-sm sm:text-base font-medium">{meta.en}</span>
                 <span className="ml-auto text-xs font-mono text-faint">{poems.length} works</span>
               </div>
@@ -230,8 +230,8 @@ function Library() {
         {collectionFilter === 'all' && !searchQuery.trim() && (
           <ScrollTilt intensity={6}>
             <div className="space-y-6">
-              <div className="flex items-baseline gap-3 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary">பதினெண்கீழ்க்கணக்கு</h2>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
+                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">பதினெண்கீழ்க்கணக்கு</h2>
                 <span className="text-muted text-sm sm:text-base font-medium">Coming Soon</span>
                 <span className="ml-auto text-xs font-mono text-faint">{COMING_SOON_WORKS.length} planned</span>
               </div>
@@ -257,9 +257,9 @@ function ClickableVerse({ text, onWordClick, fontSize = 'md' }) {
   const words = text.split(/(\s+)/)
 
   const sizeClasses = {
-    sm: 'text-xl leading-[2]',
-    md: 'text-2xl leading-[2.1]',
-    lg: 'text-3xl leading-[2.2]',
+    sm: 'text-lg sm:text-xl leading-[2]',
+    md: 'text-xl sm:text-2xl leading-[2.1]',
+    lg: 'text-2xl sm:text-3xl leading-[2.2]',
   }
 
   return (
@@ -303,7 +303,7 @@ function DraftBadge({ verse, field }) {
 // One-thumb segmented control for the reader layers (Sangam / urai / English / all).
 function LayerToggle({ layer, onChange }) {
   return (
-    <div role="group" aria-label="Reader layers" className="flex items-center gap-1 rounded-xl border border-line bg-surface-alt/60 p-1">
+    <div role="group" aria-label="Reader layers" className="flex w-full sm:w-auto items-center gap-1 rounded-xl border border-line bg-surface-alt/60 p-1">
       {LAYER_OPTIONS.map((l) => {
         const active = layer === l.id
         return (
@@ -313,7 +313,7 @@ function LayerToggle({ layer, onChange }) {
             onClick={() => onChange(l.id)}
             aria-pressed={active}
             title={l.hint}
-            className={`min-h-[36px] min-w-[44px] px-2.5 sm:px-3 text-xs sm:text-sm rounded-lg font-medium transition-colors focus-ring ${
+            className={`min-h-[44px] min-w-[44px] flex-1 sm:flex-none px-2.5 sm:px-3 text-sm rounded-lg font-medium transition-colors focus-ring ${
               l.id === 'sangam' || l.id === 'urai' ? 'tamil' : ''
             } ${active ? 'bg-primary text-page font-semibold shadow-xs' : 'text-muted hover:text-primary hover:bg-surface-alt'}`}
           >
@@ -494,14 +494,25 @@ function Reader({ poem, sectionId }) {
   })
 
   return (
-    <div className="flex h-[calc(100vh-64px)] bg-page overflow-hidden">
+    <div className="relative flex h-[calc(100dvh-64px)] bg-page overflow-hidden">
       {/* Toast Notification */}
       <Toast message={toastMsg} type="success" onClose={() => setToastMsg(null)} />
 
       {/* ── Sidebar ──────────────────────────────────────────────── */}
+      {/* On phones the section list is an overlay drawer (it used to squeeze the verse into
+          ~100px); from md up it is a normal column. */}
+      {sidebarOpen && (
+        <button
+          type="button"
+          aria-label="Close section list"
+          onClick={() => setSidebar(false)}
+          className="md:hidden absolute inset-0 z-20 bg-black/40"
+        />
+      )}
       <aside
-        className={`shrink-0 border-r border-line bg-surface flex flex-col transition-all duration-200 z-20
-          ${sidebarOpen ? 'w-64 md:w-72' : 'w-0 overflow-hidden'}`}
+        className={`shrink-0 border-r border-line bg-surface flex flex-col transition-all duration-200 z-30
+          max-md:absolute max-md:inset-y-0 max-md:left-0
+          ${sidebarOpen ? 'w-[85vw] max-w-sm md:w-72' : 'w-0 overflow-hidden'}`}
       >
         {/* Poem meta */}
         <div className="p-4 border-b border-line bg-surface-alt/40 space-y-2">
@@ -547,7 +558,7 @@ function Reader({ poem, sectionId }) {
                   setActive(indexInFull)
                   if (window.innerWidth < 768) setSidebar(false)
                 }}
-                className={`w-full text-left px-3.5 py-2.5 flex items-start gap-2.5 transition-colors border-l-2 focus-ring
+                className={`w-full min-h-[44px] text-left px-3.5 py-2.5 flex items-start gap-2.5 transition-colors border-l-2 focus-ring
                   ${
                     isActive
                       ? 'border-accent bg-accent/10 text-primary font-semibold'
@@ -567,10 +578,10 @@ function Reader({ poem, sectionId }) {
       {/* ── Content Area ──────────────────────────────────────────────── */}
       <main ref={contentRef} className="flex-1 overflow-y-auto bg-page flex flex-col">
         {/* Reader Top Controls Toolbar */}
-        <div className="sticky top-0 z-10 border-b border-line bg-page/90 backdrop-blur-md px-4 sm:px-6 py-3 shrink-0">
+        <div className="sticky top-0 z-10 border-b border-line bg-page/90 backdrop-blur-md px-3 sm:px-6 py-2 sm:py-3 shrink-0">
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
             {/* Left controls */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 sm:gap-2">
               <Button
                 size="sm"
                 variant="ghost"
@@ -582,12 +593,12 @@ function Reader({ poem, sectionId }) {
               </Button>
 
               {/* Quick Verse Stepper */}
-              <div className="flex items-center gap-1 bg-surface-alt/60 border border-line rounded-xl px-2 py-1 text-xs">
+              <div className="flex items-center bg-surface-alt/60 border border-line rounded-xl px-1 text-xs">
                 <button
                   type="button"
                   onClick={() => setActive((a) => Math.max(0, a - 1))}
                   disabled={active === 0}
-                  className="p-1 hover:text-accent disabled:opacity-30 transition-colors"
+                  className="flex h-11 w-11 items-center justify-center hover:text-accent disabled:opacity-30 transition-colors"
                   title="Previous verse (←)"
                 >
                   <ChevronLeft size={14} />
@@ -599,23 +610,31 @@ function Reader({ poem, sectionId }) {
                   type="button"
                   onClick={() => setActive((a) => Math.min(sections.length - 1, a + 1))}
                   disabled={active === sections.length - 1}
-                  className="p-1 hover:text-accent disabled:opacity-30 transition-colors"
+                  className="flex h-11 w-11 items-center justify-center hover:text-accent disabled:opacity-30 transition-colors"
                   title="Next verse (→)"
                 >
                   <ChevronRight size={14} />
                 </button>
               </div>
+              <button
+                type="button"
+                onClick={() => setFontSize((f) => (f === 'sm' ? 'md' : f === 'md' ? 'lg' : 'sm'))}
+                aria-label={`Text size: ${fontSize === 'sm' ? 'small' : fontSize === 'md' ? 'medium' : 'large'} (tap to change)`}
+                className="sm:hidden flex h-11 min-w-[44px] items-center justify-center rounded-xl border border-line bg-surface-alt/60 px-2 text-sm font-semibold text-primary focus-ring"
+              >
+                Aa
+              </button>
             </div>
 
             {/* Right controls: Layout Mode + Font Size + Layer Toggles */}
-            <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+            <div className="flex w-full sm:w-auto items-center gap-2 sm:gap-3 flex-wrap">
               {/* Layout Switcher (H vs V) */}
-              <div className="flex items-center gap-1 border-r border-line pr-2 sm:pr-3">
+              <div className="hidden lg:flex items-center gap-1 border-r border-line pr-3">
                 <span className="text-[11px] text-faint mr-1 font-semibold hidden md:inline">Layout:</span>
                 <button
                   type="button"
                   onClick={() => handleSetLayout('h')}
-                  className={`p-1.5 rounded-lg flex items-center gap-1 text-xs font-medium transition-all ${
+                  className={`min-h-[44px] min-w-[44px] justify-center p-1.5 rounded-lg flex items-center gap-1 text-xs font-medium transition-all ${
                     layoutMode === 'h'
                       ? 'bg-accent text-on-accent font-bold shadow-xs'
                       : 'text-muted hover:text-primary hover:bg-surface-alt'
@@ -628,7 +647,7 @@ function Reader({ poem, sectionId }) {
                 <button
                   type="button"
                   onClick={() => handleSetLayout('v')}
-                  className={`p-1.5 rounded-lg flex items-center gap-1 text-xs font-medium transition-all ${
+                  className={`min-h-[44px] min-w-[44px] justify-center p-1.5 rounded-lg flex items-center gap-1 text-xs font-medium transition-all ${
                     layoutMode === 'v'
                       ? 'bg-accent text-on-accent font-bold shadow-xs'
                       : 'text-muted hover:text-primary hover:bg-surface-alt'
@@ -641,7 +660,7 @@ function Reader({ poem, sectionId }) {
               </div>
 
               {/* Font Size Adjuster */}
-              <div className="flex items-center gap-1 border-r border-line pr-2 sm:pr-3">
+              <div className="hidden sm:flex items-center gap-1 border-r border-line pr-3">
                 <span className="text-[11px] text-faint mr-1 font-medium hidden sm:inline">Text:</span>
                 {[
                   { id: 'sm', label: 'A-' },
@@ -651,7 +670,7 @@ function Reader({ poem, sectionId }) {
                   <button
                     key={f.id}
                     onClick={() => setFontSize(f.id)}
-                    className={`px-2 py-0.5 text-xs font-medium rounded-md transition-colors ${
+                    className={`min-h-[44px] min-w-[44px] px-2 text-xs font-medium rounded-md transition-colors focus-ring ${
                       fontSize === f.id ? 'bg-primary text-page font-bold' : 'text-muted hover:text-primary'
                     }`}
                   >
@@ -674,7 +693,7 @@ function Reader({ poem, sectionId }) {
               {/* Left Column: Original Tamil Verse */}
               {show.sangam && (
               <div className={`${showCommentary ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
-                <Card variant="flat" className="p-6 sm:p-8 space-y-5 border-accent/30 bg-surface shadow-xs">
+                <Card variant="flat" className="p-4 sm:p-8 space-y-5 border-accent/30 bg-surface shadow-xs">
                   {/* Verse Header */}
                   <div className="flex items-center justify-between border-b border-line pb-3">
                     <div className="space-y-1">
@@ -728,7 +747,7 @@ function Reader({ poem, sectionId }) {
               <div className={`${show.sangam ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
                 {/* Modern Commentary (Urai) */}
                 {show.urai && (
-                  <Card variant="default" className="p-6 space-y-3 bg-surface shadow-xs">
+                  <Card variant="default" className="p-4 sm:p-6 space-y-3 bg-surface shadow-xs">
                     <div className="flex items-center justify-between border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent">
                         <span className="tamil">உரை</span> (Prose Commentary)
@@ -745,7 +764,7 @@ function Reader({ poem, sectionId }) {
 
                 {/* English Translation */}
                 {show.english && (
-                  <Card variant="default" className="p-6 space-y-4 bg-surface shadow-xs">
+                  <Card variant="default" className="p-4 sm:p-6 space-y-4 bg-surface shadow-xs">
                     <div className="flex items-center justify-between border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent uppercase tracking-wider">
                         English Translation
@@ -796,7 +815,7 @@ function Reader({ poem, sectionId }) {
 
               {/* Original Tamil Verse */}
               {show.sangam && (
-                <Card variant="flat" className="p-6 sm:p-8 space-y-4 border-accent/20">
+                <Card variant="flat" className="p-4 sm:p-8 space-y-4 border-accent/20">
                   <div className="flex items-center justify-between border-b border-line pb-2">
                     <span className="text-xs font-semibold text-accent uppercase tracking-wider">
                       Original Classical Tamil
@@ -809,7 +828,7 @@ function Reader({ poem, sectionId }) {
 
               {/* Modern Commentary (Urai) */}
               {show.urai && (
-                <Card variant="default" className="p-6 space-y-3">
+                <Card variant="default" className="p-4 sm:p-6 space-y-3">
                   <div className="flex items-center justify-between gap-2">
                     <span className="text-xs font-semibold text-faint">
                       <span className="tamil">உரை</span> (Prose Commentary)
@@ -826,7 +845,7 @@ function Reader({ poem, sectionId }) {
 
               {/* English Translation */}
               {show.english && (
-                <Card variant="default" className="p-6 space-y-4">
+                <Card variant="default" className="p-4 sm:p-6 space-y-4">
                   <div className="flex items-center justify-between gap-2">
                     <span className="text-xs font-semibold text-faint uppercase tracking-wider">English Translation</span>
                     <DraftBadge verse={sec} field="english" />
@@ -851,7 +870,7 @@ function Reader({ poem, sectionId }) {
           )}
 
           {/* Previous / Next Navigation Footer */}
-          <div className="max-w-7xl mx-auto flex items-center justify-between pt-8 pb-4 border-t border-line mt-8">
+          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 pt-8 pb-4 border-t border-line mt-8">
             <Button
               variant="outline"
               size="sm"
