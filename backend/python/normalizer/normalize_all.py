@@ -9,8 +9,8 @@ Normalizes raw scraped files for every poem in the registry to:
 Every record is rebuilt from data/texts/{poem_id}/raw/ — which holds ONLY the
 scraped source, never AI output. A re-run therefore merges each new record
 against whatever normalized file already exists for that id (see
-merge_generated_fields()), so english/urai drafts from translate_with_gemini.py
-and word glossaries from extract_etymology.py survive a re-normalize instead
+merge_generated_fields()), so earlier machine-drafted english/urai fields
+and word glossaries survive a re-normalize instead
 of silently reverting to null. See docs/pipeline-scripts.md.
 
 Usage:
@@ -88,8 +88,7 @@ def merge_generated_fields(record: dict, existing: dict | None) -> dict:
     `record` was just rebuilt from raw/ and so has english=None, all-null word
     fields, and verified=False regardless of any prior AI run — raw/ only ever
     holds the scraped source. Without this merge, re-running the normalizer
-    after translate_with_gemini.py or extract_etymology.py would silently
-    discard every AI-generated field.
+    would silently discard every machine-drafted field already stored.
     """
     if existing is None:
         return record
@@ -112,7 +111,7 @@ def merge_generated_fields(record: dict, existing: dict | None) -> dict:
         record["verified"] = True
 
     # Word-level etymology only merges positionally when the word count still
-    # matches what extract_etymology.py last annotated. A source-text
+    # matches what was last annotated. A source-text
     # correction that changes the word count invalidates that mapping, so
     # etymology is left null for that verse rather than mis-applied.
     if existing.get("etymologyMeta"):

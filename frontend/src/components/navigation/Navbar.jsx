@@ -4,6 +4,8 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { House, BookOpen, Globe, Brain, Map, FileText, Users } from 'lucide-react'
+import lockupColour from '../../assets/brand/lockup-colour.svg'
+import lockupReversed from '../../assets/brand/lockup-reversed.svg'
 import ThemeToggle from '../ui/ThemeToggle'
 import useAppStore from '../../store/useAppStore'
 
@@ -24,7 +26,7 @@ export default function Navbar() {
   ]
 
   const linkClass = ({ isActive }) =>
-    `relative flex items-center gap-1.5 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all focus-ring ${
+    `relative flex min-h-[44px] items-center gap-1.5 whitespace-nowrap px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all focus-ring ${
       isActive
         ? 'text-accent bg-accent/10 font-semibold'
         : 'text-muted hover:text-primary hover:bg-surface-alt/60'
@@ -33,17 +35,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-page/80 backdrop-blur-md transition-colors">
       <nav className="w-full px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-        {/* Brand logo */}
+        {/* Brand logo: Z1 ழ mark + Latin "Open Sangam" wordmark (brand kit v0.3). The wordmark
+            is outlined SVG, so the alt text carries the name; no Tamil name in the header. */}
         <Link
           to="/"
-          className="flex shrink-0 items-center gap-2 text-primary font-bold tracking-tight text-lg focus-ring rounded-lg px-1"
+          className="flex shrink-0 items-center min-h-[44px] focus-ring rounded-lg px-1"
           aria-label="Open Sangam — home"
         >
-          <span className="text-2xl" aria-hidden="true">🏛️</span>
-          <div className="flex flex-col whitespace-nowrap leading-tight">
-            <span className="text-primary font-semibold tamil text-base">தமிழ் சங்கம்</span>
-            <span className="text-faint font-medium text-[10px] uppercase tracking-widest">Open Sangam</span>
-          </div>
+          <img src={lockupColour} alt="" width="152" height="32" className="h-8 w-auto dark:hidden" />
+          <img src={lockupReversed} alt="" width="152" height="32" className="hidden h-8 w-auto dark:block" />
         </Link>
 
         {/* Desktop links */}
@@ -58,12 +58,12 @@ export default function Navbar() {
         </div>
 
         {/* Search trigger & controls */}
-        <div className="flex shrink-0 items-center gap-2">
+        <div className="flex shrink-0 items-center gap-1 sm:gap-2">
           {/* Quick Search Button */}
           <button
             type="button"
             onClick={() => setCommandPaletteOpen(true)}
-            className="flex items-center gap-2 whitespace-nowrap px-3 py-1.5 rounded-xl border border-line bg-surface-alt/60 text-muted hover:text-primary hover:border-line-strong transition-all focus-ring text-xs"
+            className="flex h-11 min-w-[44px] items-center justify-center gap-2 whitespace-nowrap px-3 rounded-xl border border-line bg-surface-alt/60 text-muted hover:text-primary hover:border-line-strong transition-all focus-ring text-xs"
             aria-label="தேடல் பலகையைத் திறக்க"
           >
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -83,7 +83,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="xl:hidden p-2 rounded-xl text-muted hover:text-primary hover:bg-surface-alt focus-ring transition-colors"
+            className="xl:hidden flex h-11 w-11 items-center justify-center rounded-xl text-muted hover:text-primary hover:bg-surface-alt focus-ring transition-colors"
             aria-label={mobileOpen ? 'பட்டியலை மூடுக' : 'பட்டியலைத் திறக்க'}
             aria-expanded={mobileOpen}
           >
@@ -100,7 +100,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileOpen && (
-        <div className="xl:hidden border-t border-line bg-surface px-4 py-4 space-y-2 shadow-lg animate-in slide-in-from-top-2 duration-150">
+        <div className="xl:hidden max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-line bg-surface px-4 py-4 space-y-1 shadow-lg animate-in slide-in-from-top-2 duration-150">
           {links.map((l) => (
             <NavLink
               key={l.to}
