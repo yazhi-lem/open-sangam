@@ -39,6 +39,7 @@ import { marked } from 'marked'
 import DOMPurify from 'dompurify'
 import { PULAVAR_AGENTS, TINAI_FILTER_OPTIONS } from '../data/pulavars'
 import { askAvaiAgent, getSavedChat, saveChat, clearSavedChat } from '../services/avaiService'
+import { QUOTE_MATCHED } from '../data/readerStrings'
 import Badge from '../components/ui/Badge'
 import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
@@ -830,8 +831,9 @@ export default function Avai() {
                             <BookOpen size={11} /> சான்றாதாரங்கள் ({msg.citations.length})
                           </span>
                           {msg.evidenceStatus === 'verified' ? (
-                            <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
-                              <span lang="ta" className="tamil">மேற்கோள் தானாகச் சரிபார்க்கப்பட்டது</span> · Citation auto-checked
+                            <span className="min-w-0 text-[10px] px-1.5 py-0.5 rounded font-mono bg-[var(--kal)] text-[var(--olai)]">
+                              {/* Grey, not green: the quote was only compared with corpus text, nothing is verified (†). */}
+                              <span lang="ta" className="tamil">{QUOTE_MATCHED.ta}</span> · {QUOTE_MATCHED.en}
                             </span>
                           ) : (
                             <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-surface-alt text-muted border border-line">

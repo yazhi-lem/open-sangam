@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { TRANSLATION_SOON, MEANING_SOON } from './readerStrings.js'
+import { TRANSLATION_SOON, MEANING_SOON, QUOTE_MATCHED } from './readerStrings.js'
 
 test('placeholder strings are exactly the reviewed wording (Kabilar)', () => {
   assert.equal(TRANSLATION_SOON.ta, 'ஆங்கில மொழிபெயர்ப்பு விரைவில்')
@@ -15,4 +15,12 @@ test('Tamil strings are NFC, have no invisible characters, no known misspelling,
     assert.ok(!ta.includes('மொழிபெபர்ப்பு'), 'known typo')
     assert.ok(!ta.includes('ஆங்கில உரை'), 'உரை means commentary')
   }
+})
+
+test('quote-matched pill is exactly the reviewed wording, is NFC, and never says verified', () => {
+  assert.equal(QUOTE_MATCHED.ta, 'மேற்கோள் பாடலுடன் ஒப்பிடப்பட்டது')
+  assert.equal(QUOTE_MATCHED.en, 'Quote matched to corpus text')
+  assert.equal(QUOTE_MATCHED.ta, QUOTE_MATCHED.ta.normalize('NFC'))
+  assert.doesNotMatch(QUOTE_MATCHED.ta + QUOTE_MATCHED.en, /சரிபார்|verified|checked/i)
+  assert.ok(!`${QUOTE_MATCHED.ta} · ${QUOTE_MATCHED.en}`.includes(' · · '))
 })

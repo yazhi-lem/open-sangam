@@ -14,3 +14,13 @@ export const MEANING_SOON = {
   ta: 'ஆங்கிலப் பொருள் விரைவில்',
   en: 'English meaning coming soon',
 }
+
+/**
+ * Pill on an Avai answer whose cited quote was matched to corpus text by a program. It says only
+ * that the quote was compared, never that anything is verified. Tamil from Kabilar, † pending a
+ * human scholar. One ' · ' separator.
+ */
+export const QUOTE_MATCHED = {
+  ta: 'மேற்கோள் பாடலுடன் ஒப்பிடப்பட்டது',
+  en: 'Quote matched to corpus text',
+}
