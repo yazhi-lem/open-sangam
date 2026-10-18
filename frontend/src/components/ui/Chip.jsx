@@ -34,12 +34,14 @@ export default function Chip({
     return (
       <span
         title={title}
-        className={`inline-flex min-w-0 max-w-full flex-wrap items-center justify-center gap-x-1.5 rounded-2xl bg-[var(--kal)] px-2.5 py-1 text-center text-xs font-medium leading-snug text-white ${className}`}
+        className={`inline-flex min-w-0 max-w-full flex-col items-center justify-center rounded-2xl bg-[var(--kal)] px-2.5 py-1 text-center text-xs font-medium leading-snug text-[var(--olai)] ${className}`}
         {...props}
       >
-        {/* Long badges wrap onto a second line instead of overflowing a 360px card. */}
-        <span lang="ta" className="tamil whitespace-nowrap">{parts.ta}{parts.en && <span aria-hidden="true"> ·</span>}</span>
-        {parts.en && <span lang="en" className="whitespace-nowrap">{parts.en}</span>}
+        {/* Tamil line first, English beneath. The label string keeps its single ' · ', but the
+            separator is not drawn: the two lines already separate the languages, and a dangling
+            ' ·' at the end of the Tamil line looked like a typo. Text is Olai on Kal grey. */}
+        <span lang="ta" className="tamil">{parts.ta}</span>
+        {parts.en && <span lang="en">{parts.en}</span>}
       </span>
     )
   }

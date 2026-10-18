@@ -38,6 +38,11 @@ export default function Scholars() {
 
       {/* No onSubmit, no action, no network: this form is a preview of the final one. */}
       <form className="space-y-5" onSubmit={(e) => e.preventDefault()} noValidate>
+        {/* Read before typing: the notice sits above the fields (†, Tamil pending scholar review). */}
+        <p className="rounded-xl border border-line-strong px-4 py-3 text-center text-sm text-muted" role="note">
+          <span lang="ta" className="tamil block">இப்படிவம் இன்னும் எதையும் அனுப்பாது</span>
+          <span lang="en" className="block text-xs">This form does not send anything yet</span>
+        </p>
         <label className="block space-y-1.5">
           <span className="block text-sm font-semibold text-primary">
             <span lang="ta" className="tamil">பெயர்</span> · Name
@@ -88,10 +93,6 @@ export default function Scholars() {
           <span lang="ta" className="tamil text-base font-semibold">விரைவில்</span>
           <span lang="en" className="text-xs">Coming soon</span>
         </button>
-        <p className="text-center text-sm text-muted">
-          <span lang="ta" className="tamil block">இப்படிவம் இன்னும் எதையும் அனுப்பாது</span>
-          <span lang="en" className="block text-xs">This form does not send anything yet</span>
-        </p>
       </form>
 
       <Link to="/" className="inline-flex min-h-[44px] items-center text-sm font-semibold text-accent">
