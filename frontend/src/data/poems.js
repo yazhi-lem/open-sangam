@@ -128,7 +128,9 @@ export const POEMS = [
     collection: '10paddu',
     count: 782, unit: 'lines',
     available: true,
-    loader: () => import('@data/texts/maduraikanchi/maduraikanchi.json'),
+    // Launch lines (1-100) load first; the rest of the poem streams in afterwards (see Book.jsx).
+    loader: () => import('virtual:poem-slice/maduraikanchi-launch'),
+    loadRest: () => import('virtual:poem-slice/maduraikanchi-rest'),
   },
   {
     id: 'kurinjipattu',

@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
+import poemSlices from './scripts/poem-slices.js'
 
 const dataDir = resolve(fileURLToPath(import.meta.url), '../../data')
 
@@ -17,7 +18,7 @@ const avaiApiProxy = {
 }
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), poemSlices({ dataDir })],
   resolve: {
     alias: { '@data': dataDir },
   },

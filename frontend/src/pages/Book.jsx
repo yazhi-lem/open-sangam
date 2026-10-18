@@ -375,19 +375,54 @@ function Reader({ poem, sectionId }) {
   }
 
   useEffect(() => {
+    let cancelled = false
+    let cancelWaiting = () => {}
+    const indexOfSection = (list) =>
+      sectionId
+        ? list.findIndex((s) => String(s.number || s.sectionNumber || s.id) === String(sectionId))
+        : -1
+
     poem.loader().then((mod) => {
-      setSections(mod.default)
-      if (sectionId) {
-        const foundIdx = mod.default.findIndex(
-          (s) => String(s.number || s.sectionNumber || s.id) === String(sectionId)
-        )
-        if (foundIdx >= 0) {
-          setActive(foundIdx)
-          return
-        }
+      if (cancelled) return
+      const first = mod.default
+      setSections(first)
+      const foundIdx = indexOfSection(first)
+      setActive(foundIdx >= 0 ? foundIdx : 0)
+
+      // Long poems ship a small launch slice first. The remaining sections are fetched on the
+      // first interaction (or after 8 s), so they never compete with the first paint.
+      if (!poem.loadRest) return
+      const fetchRest = () =>
+        poem.loadRest().then((rest) => {
+          if (cancelled) return
+          const all = first.concat(rest.default)
+          setSections(all)
+          if (foundIdx < 0) {
+            const lateIdx = indexOfSection(all)
+            if (lateIdx >= 0) setActive(lateIdx)
+          }
+        })
+      if (sectionId && foundIdx < 0) {
+        fetchRest() // deep link beyond the launch slice
+        return
       }
-      setActive(0)
+      const events = ['pointerdown', 'keydown', 'touchstart', 'wheel']
+      const start = () => {
+        stopWaiting()
+        fetchRest()
+      }
+      const timer = setTimeout(start, 8000)
+      function stopWaiting() {
+        clearTimeout(timer)
+        events.forEach((ev) => window.removeEventListener(ev, start))
+      }
+      events.forEach((ev) => window.addEventListener(ev, start, { passive: true, once: true }))
+      cancelWaiting = stopWaiting
     })
+    return () => {
+      cancelled = true
+      cancelWaiting()
+    }
   }, [poem, sectionId])
 
   useEffect(() => {
