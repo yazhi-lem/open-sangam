@@ -86,7 +86,7 @@ export default function Home() {
         {/* Daily Verse Spotlight Card */}
         <Reveal delay={0.4} duration={0.7}>
           <Card variant="glass" className="p-6 sm:p-8 text-left space-y-4 max-w-3xl mx-auto border-accent/25">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between gap-2">
               <Badge variant="accent" size="sm">Verse Spotlight • குறுந்தொகை 40</Badge>
               <span className="text-xs font-mono text-faint">Kurunthokai 40 · Chembulappeyaneer</span>
             </div>
@@ -212,9 +212,9 @@ export default function Home() {
             },
             {
               icon: '🤖',
-              title: 'Gemini Scholar Translation',
-              desc: 'Leverage Gemini 2.5 Flash for contextual translation assistance, verified against classical commentaries.',
-              badge: 'Scholar AI',
+              title: 'Scholar-Reviewed AI Drafts',
+              desc: 'Gemini 2.5 Flash drafts modern prose and English, checked against the classical commentaries. Drafts stay labelled until a Tamil scholar signs them off.',
+              badge: 'Human in the loop',
             },
           ].map((f, i) => (
             <Reveal key={f.title} delay={i * 0.15} y={20}>

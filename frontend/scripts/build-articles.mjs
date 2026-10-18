@@ -118,7 +118,12 @@ fs.writeFileSync(
 console.log('[Articles Build] Manifest generated at articles/manifest.json');
 
 // Generate RSS 2.0 feed
-const siteUrl = process.env.SITE_URL || 'http://localhost:5173';
+// Default to the production origin so the committed feed/sitemap never point
+// at localhost; CI passes SITE_URL explicitly for the deploy build.
+const siteUrl = (process.env.SITE_URL || 'https://sangam.yazhi.dev').replace(/\/$/, '');
+// Stamp the feed with the newest article's date rather than "now", so a local
+// build doesn't rewrite the committed feed.xml when no article changed.
+const lastUpdated = new Date(articles[0]?.date || 0).toUTCString();
 const feedPath = path.join(publicDir, 'feed.xml');
 
 const rssItems = articles.map(a => {
@@ -142,8 +147,8 @@ const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
     <link>${siteUrl}/articles</link>
     <description>Long-form essays about Open Sangam, Sangam literature, Tamil language technology, and AI.</description>
     <language>en-us</language>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <pubDate>${lastUpdated}</pubDate>
+    <lastBuildDate>${lastUpdated}</lastBuildDate>
     <atom:link href="${siteUrl}/feed.xml" rel="self" type="application/rss+xml"/>
 ${rssItems}
   </channel>
@@ -151,4 +156,27 @@ ${rssItems}
 
 fs.writeFileSync(feedPath, rssFeed, 'utf-8');
 console.log('[Articles Build] RSS feed generated at feed.xml');
+
+// Sitemap + robots.txt — every public SPA route search engines should index.
+const poemsSource = fs.readFileSync(path.resolve(__dirname, '../src/data/poems.js'), 'utf-8');
+const poemIds = [...new Set([...poemsSource.matchAll(/^\s*id: '([a-z]+)'/gm)].map(m => m[1]))];
+const staticRoutes = ['/', '/book', '/avai', '/world', '/knowledge', '/graph', '/articles'];
+const sitemapUrls = [
+  ...staticRoutes.map(r => ({ loc: `${siteUrl}${r === '/' ? '/' : r}` })),
+  ...poemIds.map(id => ({ loc: `${siteUrl}/book/${id}` })),
+  ...articles.map(a => ({ loc: `${siteUrl}/articles/${a.slug}`, lastmod: new Date(a.date).toISOString().slice(0, 10) })),
+];
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated output - DO NOT EDIT DIRECTLY -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.map(u => `  <url><loc>${u.loc}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ''}</url>`).join('\n')}
+</urlset>
+`;
+fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf-8');
+fs.writeFileSync(
+  path.join(publicDir, 'robots.txt'),
+  `# Generated output - DO NOT EDIT DIRECTLY\nUser-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`,
+  'utf-8'
+);
+console.log(`[Articles Build] sitemap.xml (${sitemapUrls.length} URLs) and robots.txt generated`);
 console.log('[Articles Build] Build completed successfully.');
