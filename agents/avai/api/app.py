@@ -2,10 +2,12 @@
 agent swarm, built for the chat.yazhi.dev integration.
 """
 
+import logging
 import os
 import re
 import time
 import uuid
+from collections import defaultdict, deque
 from datetime import datetime, timezone
 
 from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
@@ -36,16 +38,65 @@ from .schemas import (
     PulavarClaim,
 )
 
+logger = logging.getLogger(__name__)
+
 app = FastAPI(title="Avai Ask API", version="0.1.0")
 _citation_validator = PulavarCitationValidator()
 
+
+def _allowed_origins() -> list[str]:
+    # Comma-separated list, e.g. "https://sangam.yazhi.dev,https://yazhi.dev".
+    # Unset (local dev) keeps the old allow-all behaviour.
+    raw = os.getenv("AVAI_ALLOWED_ORIGINS", "*")
+    return [o.strip() for o in raw.split(",") if o.strip()] or ["*"]
+
+
+# The browser client never sends cookies or auth headers, so credentials stay
+# off; that also keeps a "*" origin list valid per the CORS spec.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=_allowed_origins(),
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type"],
 )
+
+
+# Per-client sliding-window limit on POST /avai/ask. The public read mode has
+# no login, and every ask spends model tokens, so a deployed instance sets
+# AVAI_RATE_LIMIT_PER_MINUTE; 0 (the default) disables it for local dev/tests.
+# In-process only, like the session store: good enough for one Cloud Run
+# instance, not a substitute for an edge limit once traffic needs more.
+_RATE_WINDOW_SECONDS = 60.0
+_rate_hits: dict[str, deque] = defaultdict(deque)
+
+
+def _client_key(request: Request) -> str:
+    # Use the RIGHTMOST X-Forwarded-For entry: it is the one appended by the
+    # hosting front end (Cloud Run), while earlier entries are client-supplied
+    # and could be rotated to dodge the limit.
+    forwarded = request.headers.get("x-forwarded-for", "")
+    if forwarded:
+        return forwarded.split(",")[-1].strip()
+    return request.client.host if request.client else "unknown"
+
+
+def _check_rate_limit(request: Request) -> None:
+    limit = int(os.getenv("AVAI_RATE_LIMIT_PER_MINUTE", "0"))
+    if limit <= 0:
+        return
+    now = time.monotonic()
+    hits = _rate_hits[_client_key(request)]
+    while hits and now - hits[0] > _RATE_WINDOW_SECONDS:
+        hits.popleft()
+    if len(hits) >= limit:
+        retry_after = max(1, int(_RATE_WINDOW_SECONDS - (now - hits[0])) + 1)
+        raise HTTPException(
+            status_code=429,
+            detail="Too many questions in a short time. Please wait a minute and ask again.",
+            headers={"Retry-After": str(retry_after)},
+        )
+    hits.append(now)
 
 _session_service = InMemorySessionService()
 
@@ -168,7 +219,11 @@ async def validation_exception_handler(
 async def http_exception_handler(
     request: Request, exc: StarletteHTTPException
 ) -> JSONResponse:
-    return JSONResponse(status_code=exc.status_code, content={"message": exc.detail})
+    return JSONResponse(
+        status_code=exc.status_code,
+        content={"message": exc.detail},
+        headers=getattr(exc, "headers", None),
+    )
 
 
 def _augment_with_context(message: str, context) -> str:
@@ -255,7 +310,10 @@ def _capture_artifact(
 
 
 @app.post("/avai/ask", response_model=AskResponse)
-async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResponse:
+async def ask(
+    request: AskRequest, background_tasks: BackgroundTasks, http_request: Request
+) -> AskResponse:
+    _check_rate_limit(http_request)
     target_pulavar = request.pulavar or request.poet
     if target_pulavar:
         effective_workflow = request.workflow or _PULAVAR_TO_DEFAULT_WORKFLOW.get(
@@ -297,7 +355,13 @@ async def ask(request: AskRequest, background_tasks: BackgroundTasks) -> AskResp
                     if part.text:
                         final_text += part.text
     except Exception as exc:
-        raise HTTPException(status_code=502, detail=f"Agent execution failed: {exc}") from exc
+        # Provider errors can carry request ids, quota details or key hints;
+        # log them server-side and give the public a generic message.
+        logger.exception("Agent execution failed for pulavar=%s", target_pulavar)
+        detail = "Agent execution failed. Please try again."
+        if os.getenv("AVAI_DEBUG_ERRORS") == "1":
+            detail = f"Agent execution failed: {exc}"
+        raise HTTPException(status_code=502, detail=detail) from exc
 
     elapsed_ms = int((time.monotonic() - start) * 1000)
     raw_response_text = final_text.strip()

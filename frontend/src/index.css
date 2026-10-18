@@ -80,6 +80,16 @@ html {
   height: 100%;
 }
 
+/* Page roots are flex items of the column <main>; with `mx-auto` they shrink
+   to their min-content width instead of the viewport, which pushed wide rows
+   off-screen on mobile. Pin them to the main's width (max-w-* still caps). */
+@layer base {
+  main > * {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--font-body);
