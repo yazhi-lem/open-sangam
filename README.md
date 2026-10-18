@@ -30,7 +30,6 @@ cultural and historical context. Think "Duolingo for ancient literature".
 | Corpus | Static JSON in `data/texts/`, validated against verse schema v2 in CI |
 | Data pipeline | Python: scrape → normalize → validate → knowledge graph → vectors |
 | Agents | Google ADK + LiteLLM (OpenRouter, Gemini, Ollama or vLLM), served by FastAPI on Cloud Run |
-| Functions | Firebase Cloud Functions (`/translate`, `/analyze-word`), locked down |
 
 ## Structure
 
@@ -40,7 +39,6 @@ open-sangam/
 ├── agents/avai/     சங்க அவை: ADK agents, REST API, evals
 ├── backend/
 │   ├── python/      scraper, normalizer, validator, vectorizer
-│   └── functions/   Firebase Cloud Functions
 ├── data/            schema, poem texts, library catalog, knowledge graph
 ├── content/         articles
 ├── obsidian-vault/  generated Obsidian vault (export_obsidian.py)
@@ -70,9 +68,6 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 # Agents: run adk from agents/, not agents/avai/
 cd agents/avai && python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
 cp .env.example .env && cd .. && adk run avai     # or: adk web; pytest avai/tests
-
-# Functions
-cd backend/functions && npm install && firebase emulators:start
 ```
 
 Full agent runbook: [`agents/avai/README.md`](./agents/avai/README.md). Pipeline rules: re-running a script never
