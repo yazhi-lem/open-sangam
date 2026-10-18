@@ -644,7 +644,7 @@ export default function Avai() {
               <div className="flex items-start gap-1.5">
                 <BookOpen size={12} className="text-accent shrink-0 mt-0.5" />
                 <p>
-                  <strong className="text-primary font-semibold">சரிபார்க்கப்பட்ட சான்றுகள்:</strong> ஒவ்வொரு விடையும் <code className="font-mono text-[10px] text-accent bg-surface px-1 py-0.2 rounded border border-line">kurunthokai_40</code> வடிவில் பாடல் எண்ணுடன் சான்றளிக்கப்படும்.
+                  <strong className="text-primary font-semibold"><span lang="ta" className="tamil">சான்றுகள் (அறிஞர் இன்னும் சரிபார்க்கவில்லை)</span> · Evidence (not yet scholar-verified):</strong> ஒவ்வொரு விடையும் <code className="font-mono text-[10px] text-accent bg-surface px-1 py-0.2 rounded border border-line">kurunthokai_40</code> வடிவில் பாடல் எண்ணுடன் சான்றளிக்கப்படும்.
                 </p>
               </div>
             </div>

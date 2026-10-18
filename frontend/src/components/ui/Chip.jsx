@@ -34,12 +34,12 @@ export default function Chip({
     return (
       <span
         title={title}
-        className={`${BASE} gap-1.5 bg-[var(--kal)] px-2.5 py-1 text-xs text-white ${className}`}
+        className={`inline-flex min-w-0 max-w-full flex-wrap items-center justify-center gap-x-1.5 rounded-2xl bg-[var(--kal)] px-2.5 py-1 text-center text-xs font-medium leading-snug text-white ${className}`}
         {...props}
       >
-        <span lang="ta" className="tamil">{parts.ta}</span>
-        {parts.en && <span aria-hidden="true">·</span>}
-        {parts.en && <span lang="en">{parts.en}</span>}
+        {/* Long badges wrap onto a second line instead of overflowing a 360px card. */}
+        <span lang="ta" className="tamil whitespace-nowrap">{parts.ta}{parts.en && <span aria-hidden="true"> ·</span>}</span>
+        {parts.en && <span lang="en" className="whitespace-nowrap">{parts.en}</span>}
       </span>
     )
   }
