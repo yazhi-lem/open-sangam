@@ -52,6 +52,11 @@ export default function Footer() {
                   Connections Graph (வரைபடம்)
                 </Link>
               </li>
+              <li>
+                <Link to="/scholars" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
+                  <span lang="ta" className="tamil">உங்கள் உதவி</span>&nbsp;· Help us review
+                </Link>
+              </li>
             </ul>
           </div>
 

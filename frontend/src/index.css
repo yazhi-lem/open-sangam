@@ -364,3 +364,10 @@ p, h1, h2, h3, h4, span, blockquote, li {
     }
   }
 }
+
+/* Brand tokens (brand kit v0.3). Kal grey is the colour of every draft badge;
+   Kumkumam red is reserved for the single primary action on a screen. */
+:root {
+  --kal: #6b6258;
+  --kumkumam: #b4321f;
+}
