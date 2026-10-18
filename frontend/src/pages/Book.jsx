@@ -5,9 +5,7 @@ import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
 import { analyzeWord } from '../services/geminiApi'
-import { normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
-import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
-import Chip from '../components/ui/Chip'
+import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
@@ -17,6 +15,8 @@ import Input from '../components/ui/Input'
 import Card from '../components/ui/Card'
 import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
+import Chip from '../components/ui/Chip'
+import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
@@ -299,7 +299,13 @@ function LayerToggle({ layer, onChange }) {
       className="-mx-3 flex w-[calc(100%+1.5rem)] gap-2 overflow-x-auto px-3 pb-1 sm:mx-0 sm:w-auto sm:px-0 sm:pb-0"
     >
       {LAYER_CHIPS.map((l) => (
-        <Chip key={l.id} label={l.label} selected={layer === l.id} onClick={() => onChange(l.id)} />
+        <Chip
+          key={l.id}
+          label={l.label}
+          title={LAYER_OPTIONS.find((o) => o.id === l.id)?.hint}
+          selected={layer === l.id}
+          onClick={() => onChange(l.id)}
+        />
       ))}
     </div>
   )
