@@ -4,10 +4,10 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { House, BookOpen, Globe, Brain, Map, FileText, Users } from 'lucide-react'
-import ThemeToggle from '../ui/ThemeToggle'
-import useAppStore from '../../store/useAppStore'
 import lockupColour from '../../assets/brand/lockup-colour.svg'
 import lockupReversed from '../../assets/brand/lockup-reversed.svg'
+import ThemeToggle from '../ui/ThemeToggle'
+import useAppStore from '../../store/useAppStore'
 
 const NAV_ICON_PROPS = { size: 14, strokeWidth: 1.75, 'aria-hidden': true }
 
