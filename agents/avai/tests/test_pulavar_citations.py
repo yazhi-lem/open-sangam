@@ -188,3 +188,101 @@ def test_gold_set_benchmark_meets_target():
     assert results["claim_coverage_pct"] >= 90.0
     assert results["abstention_correctness_pct"] >= 90.0
     assert results["source_integrity_pct"] == 100.0
+
+
+# --------------------------------------------------------------------------- #
+# Reflection check: uncited or unsupported claims never reach the user.
+
+
+def _json_answer(claims):
+    import json as _json
+
+    return "```json\n" + _json.dumps(
+        {"answer_text": " ".join(c["claim_text"] for c in claims), "claims": claims},
+        ensure_ascii=False,
+    ) + "\n```"
+
+
+def test_uncited_claim_is_rejected(validator):
+    output = _json_answer(
+        [{"claim_id": "c1", "claim_text": "கபிலர் குறிஞ்சித் திணைப் பாடல்களில் சிறந்தவர் என்று போற்றப்படுகிறார்.", "citations": []}]
+    )
+    ans = validator.validate_answer(output, user_query="கபிலர் பற்றி")
+    assert ans.is_abstained is True
+    assert ans.abstention_reason == "insufficient_evidence"
+
+
+def test_laundered_citation_is_rejected(validator):
+    """The verse exists, but it says nothing about what the claim asserts."""
+    output = _json_answer(
+        [
+            {
+                "claim_id": "c1",
+                "claim_text": "சங்க காலத்து மன்னர்கள் கடற்படை கொண்டு கப்பல் போர் நடத்தினர்.",
+                "citations": [{"source_id": "kurunthokai_040"}],
+            }
+        ]
+    )
+    ans = validator.validate_answer(output, user_query="கடற்படை")
+    assert ans.is_abstained is True
+    assert not [c for c in ans.citations if c.is_valid]
+
+
+def test_grounded_claim_passes(validator):
+    output = _json_answer(
+        [
+            {
+                "claim_id": "c1",
+                "claim_text": "செம்புலப் பெயல் நீர் போல அன்புடை நெஞ்சங்கள் கலந்தன என்கிறது இப்பாடல்.",
+                "citations": [{"source_id": "kurunthokai_040"}],
+            }
+        ]
+    )
+    ans = validator.validate_answer(output, user_query="குறுந்தொகை 40")
+    assert ans.is_abstained is False
+    assert ans.evidence_status == "verified"
+
+
+def test_mixed_answer_drops_only_the_unsupported_claim(validator):
+    output = _json_answer(
+        [
+            {
+                "claim_id": "c1",
+                "claim_text": "செம்புலப் பெயல் நீர் போல அன்புடை நெஞ்சங்கள் கலந்தன.",
+                "citations": [{"source_id": "kurunthokai_040"}],
+            },
+            {
+                "claim_id": "c2",
+                "claim_text": "இப்பாடலைப் பாடியவர் மதுரையில் அரசவைக் கவிஞராக இருந்தார் என்று வரலாறு கூறுகிறது.",
+                "citations": [{"source_id": "kurunthokai_040"}],
+            },
+        ]
+    )
+    ans = validator.validate_answer(output, user_query="குறுந்தொகை 40")
+    assert ans.is_abstained is False
+    assert ans.evidence_status == "partially_verified"
+    assert [c.claim_id for c in ans.claims] == ["c1"]
+    assert "அரசவைக்" not in ans.answer_text
+
+
+def test_english_only_claim_is_not_judged_by_grounding():
+    from avai.citation_validator import check_claim_grounding
+
+    _, verse, _ = verify_source("kurunthokai_040")
+    ok, note = check_claim_grounding("This poem compares lovers to rain on red earth.", verse)
+    assert ok is True and note is None
+
+
+def test_fabricated_quote_embedding_a_real_line_is_rejected():
+    _, verse, _ = verify_source("kurunthokai_040")
+    fake = "விண்ணுலக வானூர்தி பறந்தது செம்புலப் பெயல் நீர் போல"
+    ok, _, err = verify_quote_in_verse(fake, verse)
+    assert ok is False
+    assert "not found" in err
+
+
+def test_quote_spanning_two_lines_reports_both():
+    _, verse, _ = verify_source("kurunthokai_040")
+    ok, lines, err = verify_quote_in_verse("செம்புலப் பெயல் நீர் போல, அன்புடை நெஞ்சம்", verse)
+    assert ok is True and err is None
+    assert lines == [4, 5]

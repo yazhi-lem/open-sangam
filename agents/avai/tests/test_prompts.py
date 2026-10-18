@@ -51,3 +51,23 @@ def test_reexported_instructions():
     assert len(KAPILAR_INSTRUCTION) > 0
     assert len(THOLKAPPIYAR_INSTRUCTION) > 0
     assert len(PARANAR_INSTRUCTION) > 0
+
+
+def test_reflection_rule_is_in_every_pulavar_persona():
+    from avai.instructions import (
+        AVVAIYAR_INSTRUCTION,
+        KAPILAR_INSTRUCTION,
+        NAKKIRAR_INSTRUCTION,
+        PARANAR_INSTRUCTION,
+        REFLECTION_RULE,
+        THOLKAPPIYAR_INSTRUCTION,
+    )
+
+    for instruction in (
+        NAKKIRAR_INSTRUCTION,
+        AVVAIYAR_INSTRUCTION,
+        KAPILAR_INSTRUCTION,
+        THOLKAPPIYAR_INSTRUCTION,
+        PARANAR_INSTRUCTION,
+    ):
+        assert REFLECTION_RULE in instruction

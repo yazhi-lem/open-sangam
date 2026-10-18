@@ -10,6 +10,7 @@
     "prebuild": "node scripts/build-articles.mjs",
     "build": "vite build",
     "lint": "eslint .",
+    "test": "node --test src/data/*.test.js",
     "preview": "vite preview"
   },
   "dependencies": {

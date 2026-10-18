@@ -18,9 +18,9 @@ const PATTUPPATTU_IDYLLS = [
   { id: 'sirupanatrupadai', tamil: 'சிறுபாணாற்றுப்படை', english: 'Sirupanarruppadai', desc: 'Guide to a Lesser Bard', icon: '🎻' },
   { id: 'perumpanatrupadai', tamil: 'பெரும்பாணாற்றுப்படை', english: 'Perumpanarruppadai', desc: 'Guide to a Greater Bard', icon: '🎺' },
   { id: 'mullaippattu', tamil: 'முல்லைப்பாட்டு', english: 'Mullaippattu', desc: 'Forest Song (Love)', icon: '🌲' },
-  { id: 'maduraikkanchi', tamil: 'மதுரைக்காஞ்சி', english: 'Maduraikkanchi', desc: 'Praise of Madurai', icon: '🏛️' },
+  { id: 'maduraikanchi', tamil: 'மதுரைக்காஞ்சி', english: 'Maduraikkanchi', desc: 'Praise of Madurai', icon: '🏛️' },
   { id: 'nedunalvadai', tamil: 'நெடுநல்வாடை', english: 'Nedunalvadai', desc: 'Long Good Winter (Love)', icon: '❄️' },
-  { id: 'kurinchippattu', tamil: 'குறிஞ்சிப்பாட்டு', english: 'Kurinchippattu', desc: 'Mountain Song (Love)', icon: '🌸' },
+  { id: 'kurinjipattu', tamil: 'குறிஞ்சிப்பாட்டு', english: 'Kurinchippattu', desc: 'Mountain Song (Love)', icon: '🌸' },
   { id: 'pattinappalai', tamil: 'பட்டினப்பாலை', english: 'Pattinappalai', desc: 'Praise of Kaveripumpattinam', icon: '🚢' },
   { id: 'malaipadukadam', tamil: 'மலைபடுகடாம்', english: 'Malaipatukatam', desc: 'Echo of the Mountain (Nature)', icon: '⛰️' },
 ]
@@ -54,8 +54,9 @@ export default function Home() {
 
         <Reveal delay={0.2} duration={0.6}>
           <p className="text-muted text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            An interactive scholar-verified reader for the Sangam corpus — interlinear translations,
-            click-to-define root etymologies, and immersive 3D landscape navigation.
+            An open, interactive reader for the Sangam corpus — layered translations,
+            click-to-define root etymologies, and immersive landscape navigation.
+            Every AI draft stays clearly marked until a Tamil scholar signs it off.
           </p>
         </Reveal>
 
@@ -85,7 +86,7 @@ export default function Home() {
         {/* Daily Verse Spotlight Card */}
         <Reveal delay={0.4} duration={0.7}>
           <Card variant="glass" className="p-6 sm:p-8 text-left space-y-4 max-w-3xl mx-auto border-accent/25">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between gap-2">
               <Badge variant="accent" size="sm">Verse Spotlight • குறுந்தொகை 40</Badge>
               <span className="text-xs font-mono text-faint">Kurunthokai 40 · Chembulappeyaneer</span>
             </div>
@@ -211,9 +212,9 @@ export default function Home() {
             },
             {
               icon: '🤖',
-              title: 'Gemini Scholar Translation',
-              desc: 'Leverage Gemini 2.5 Flash for contextual translation assistance, verified against classical commentaries.',
-              badge: 'Scholar AI',
+              title: 'Scholar-Reviewed AI Drafts',
+              desc: 'Gemini 2.5 Flash drafts modern prose and English, checked against the classical commentaries. Drafts stay labelled until a Tamil scholar signs them off.',
+              badge: 'Human in the loop',
             },
           ].map((f, i) => (
             <Reveal key={f.title} delay={i * 0.15} y={20}>

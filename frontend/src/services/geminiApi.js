@@ -4,7 +4,11 @@
  * The API key is kept server-side and never exposed to the browser.
  */
 
-const FUNCTIONS_BASE_URL = import.meta.env.VITE_FUNCTIONS_URL || 'http://127.0.0.1:5001'
+// The emulator default is for local development only; a production build without
+// VITE_FUNCTIONS_URL calls same-origin paths and fails cleanly instead of
+// reaching for the visitor's localhost.
+const FUNCTIONS_BASE_URL =
+  import.meta.env.VITE_FUNCTIONS_URL || (import.meta.env.DEV ? 'http://127.0.0.1:5001' : '')
 
 /**
  * Translate a Sangam Tamil verse to the requested target language.
