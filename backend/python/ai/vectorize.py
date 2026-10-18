@@ -14,8 +14,7 @@ Two outputs, two different lifecycles:
     artifact, and always rebuilt straight from the Chroma collection after a
     write, so it can never drift from what's actually indexed.
 
-Same OpenRouter account as translate_with_gemini.py / extract_etymology.py,
-but a different endpoint (/embeddings, not /chat/completions) and a
+Uses the OpenRouter account's /embeddings endpoint (not /chat/completions) and a
 restricted model: this account's allowed-providers setting only clears
 google-ai-studio/google-vertex/anthropic/etc., and only
 `google/gemini-embedding-001` (3072-dim) is reachable through it — see
@@ -45,9 +44,9 @@ from datetime import datetime, timezone
 import chromadb
 import requests
 
-from ai.translate_with_gemini import (
+from ai.corpus_io import (
     REPO_ROOT,
-    TranslationError,
+    PipelineError,
     discovered_poems,
     load_verse,
     verse_files,
@@ -78,9 +77,7 @@ MAX_RUN_HISTORY = 30
 
 
 class EmbeddingBackend:
-    """Minimal OpenRouter /embeddings client — a sibling to OpenRouterBackend
-    in translate_with_gemini.py, kept separate because it's a different
-    endpoint and response shape, not a chat completion."""
+    """Minimal OpenRouter /embeddings client."""
 
     provider = "openrouter"
     model = EMBED_MODEL
@@ -104,12 +101,12 @@ class EmbeddingBackend:
             timeout=REQUEST_TIMEOUT,
         )
         if response.status_code in RETRY_STATUS:
-            raise TranslationError(f"HTTP {response.status_code}: {response.text[:200]}")
+            raise PipelineError(f"HTTP {response.status_code}: {response.text[:200]}")
         response.raise_for_status()
         payload = response.json()
         data = payload.get("data") or []
         if not data or not data[0].get("embedding"):
-            raise TranslationError(f"no embedding in response: {str(payload)[:200]}")
+            raise PipelineError(f"no embedding in response: {str(payload)[:200]}")
         return data[0]["embedding"]
 
 
@@ -129,13 +126,13 @@ def embed_once(backend: EmbeddingBackend, text: str) -> list[float]:
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
             return backend.embed(text)
-        except (TranslationError, requests.RequestException) as exc:
+        except (PipelineError, requests.RequestException) as exc:
             last_error = exc
             if attempt == MAX_ATTEMPTS:
                 break
             delay = min(2**attempt, 30) + random.uniform(0, 1)
             time.sleep(delay)
-    raise TranslationError(f"{last_error} (after {MAX_ATTEMPTS} attempts)")
+    raise PipelineError(f"{last_error} (after {MAX_ATTEMPTS} attempts)")
 
 
 # --------------------------------------------------------------------------- #
