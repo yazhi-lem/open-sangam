@@ -3,7 +3,7 @@
  *
  * Two families that must not be confused:
  *   variant="filter"  Outlined pill on the page background; selected = filled ink
- *                     (Mai) with page-colour text. A button with aria-pressed. Used for
+ *                     (Mai #1C1917) with Olai #F3EAD7 text (reversed in dark mode). A button with aria-pressed. Used for
  *                     the layer chips and the akam / puram / tiṇai quick-picks.
  *   variant="badge"   Small filled pill in Kal stone grey. Not interactive. Marks draft
  *                     and machine-drafted text. Never terracotta / Kumkumam.
@@ -52,7 +52,7 @@ export default function Chip({
       title={title}
       className={`${BASE} min-h-[44px] min-w-[44px] flex-col border px-4 py-1 leading-tight transition-colors focus-ring ${
         selected
-          ? 'border-primary bg-primary text-page'
+          ? 'border-[var(--mai)] bg-[var(--mai)] text-[var(--olai)] dark:border-[var(--olai)] dark:bg-[var(--olai)] dark:text-[var(--mai)]'
           : 'border-line-strong bg-transparent text-primary hover:border-primary'
       } ${className}`}
       {...props}

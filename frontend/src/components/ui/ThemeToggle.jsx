@@ -13,7 +13,7 @@ export default function ThemeToggle({ className = '' }) {
       type="button"
       onClick={toggleTheme}
       aria-pressed={isDark}
-      aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+      aria-label={isDark ? 'ஒளித் தோற்றத்துக்கு மாற்ற' : 'இருள் தோற்றத்துக்கு மாற்ற'}
       title={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
       className={`inline-flex items-center justify-center h-11 w-11 rounded-full border border-line
         text-muted hover:text-primary hover:border-line-strong transition-colors

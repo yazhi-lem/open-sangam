@@ -23,13 +23,13 @@ test('source text is never labelled draft', () => {
 test('unverified scraped urai is labelled not yet verified', () => {
   const v = { urai: 'உரை', verified: false }
   assert.equal(layerStatus(v, 'urai').status, 'unverified')
-  assert.match(draftBadgeLabel(v, 'urai'), /Not yet verified/)
+  assert.equal(draftBadgeLabel(v, 'urai'), 'வரைவு, அறிஞர் சரிபார்க்கவில்லை · Draft, not scholar-verified')
 })
 
-test('AI-drafted English is labelled AI draft with its model', () => {
+test('AI-drafted English is labelled machine draft with its model', () => {
   const v = { english: 'text', verified: false, englishMeta: { model: 'some/model' } }
   assert.deepEqual(layerStatus(v, 'english'), { status: 'ai-draft', model: 'some/model' })
-  assert.match(draftBadgeLabel(v, 'english'), /AI draft/)
+  assert.equal(draftBadgeLabel(v, 'english'), 'இயந்திர வரைவு · Machine draft')
   assert.match(draftBadgeTitle(v, 'english'), /some\/model/)
 })
 
@@ -43,4 +43,15 @@ test('missing layer has no badge', () => {
   assert.equal(layerStatus({ english: null, verified: false }, 'english').status, 'missing')
   assert.equal(draftBadgeLabel({ english: '  ', verified: false }, 'english'), null)
   assert.equal(layerStatus(null, 'urai').status, 'missing')
+})
+
+test('badge labels have exactly one separator, Tamil first', () => {
+  for (const [v, f] of [
+    [{ urai: 'உரை', verified: false }, 'urai'],
+    [{ english: 'text', verified: false, englishMeta: { model: 'm' } }, 'english'],
+  ]) {
+    const label = draftBadgeLabel(v, f)
+    assert.equal(label.split(' · ').length, 2, label)
+    assert.match(label.split(' · ')[0], /[\u0B80-\u0BFF]/)
+  }
 })

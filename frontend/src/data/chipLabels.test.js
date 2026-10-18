@@ -14,6 +14,14 @@ test('every chip label is "<Tamil> · <English>" with exactly one separator', ()
   }
 })
 
+test('layer chips: full forms carry the long Tamil names, one separator each', () => {
+  const full = Object.fromEntries(LAYER_CHIPS.map((c) => [c.id, c.full]))
+  assert.match(full.sangam, /^சங்கத் தமிழ் மூலம் · /)
+  assert.match(full.urai, /^இன்றைய தமிழில் உரை · /)
+  assert.match(full.english, /^ஆங்கில மொழிபெயர்ப்பு · /)
+  for (const c of LAYER_CHIPS) assert.equal(c.full.split(' · ').length, 2, c.full)
+})
+
 test('layer chips cover exactly the reader layers, "all" first', () => {
   assert.deepEqual(LAYER_CHIPS.map((c) => c.id), ['all', 'sangam', 'urai', 'english'])
 })
