@@ -18,9 +18,9 @@ const PATTUPPATTU_IDYLLS = [
   { id: 'sirupanatrupadai', tamil: 'சிறுபாணாற்றுப்படை', english: 'Sirupanarruppadai', desc: 'Guide to a Lesser Bard', icon: '🎻' },
   { id: 'perumpanatrupadai', tamil: 'பெரும்பாணாற்றுப்படை', english: 'Perumpanarruppadai', desc: 'Guide to a Greater Bard', icon: '🎺' },
   { id: 'mullaippattu', tamil: 'முல்லைப்பாட்டு', english: 'Mullaippattu', desc: 'Forest Song (Love)', icon: '🌲' },
-  { id: 'maduraikkanchi', tamil: 'மதுரைக்காஞ்சி', english: 'Maduraikkanchi', desc: 'Praise of Madurai', icon: '🏛️' },
+  { id: 'maduraikanchi', tamil: 'மதுரைக்காஞ்சி', english: 'Maduraikkanchi', desc: 'Praise of Madurai', icon: '🏛️' },
   { id: 'nedunalvadai', tamil: 'நெடுநல்வாடை', english: 'Nedunalvadai', desc: 'Long Good Winter (Love)', icon: '❄️' },
-  { id: 'kurinchippattu', tamil: 'குறிஞ்சிப்பாட்டு', english: 'Kurinchippattu', desc: 'Mountain Song (Love)', icon: '🌸' },
+  { id: 'kurinjipattu', tamil: 'குறிஞ்சிப்பாட்டு', english: 'Kurinchippattu', desc: 'Mountain Song (Love)', icon: '🌸' },
   { id: 'pattinappalai', tamil: 'பட்டினப்பாலை', english: 'Pattinappalai', desc: 'Praise of Kaveripumpattinam', icon: '🚢' },
   { id: 'malaipadukadam', tamil: 'மலைபடுகடாம்', english: 'Malaipatukatam', desc: 'Echo of the Mountain (Nature)', icon: '⛰️' },
 ]
@@ -54,8 +54,9 @@ export default function Home() {
 
         <Reveal delay={0.2} duration={0.6}>
           <p className="text-muted text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            An interactive scholar-verified reader for the Sangam corpus — interlinear translations,
-            click-to-define root etymologies, and immersive 3D landscape navigation.
+            An open, interactive reader for the Sangam corpus — layered translations,
+            click-to-define root etymologies, and immersive landscape navigation.
+            Every AI draft stays clearly marked until a Tamil scholar signs it off.
           </p>
         </Reveal>
 

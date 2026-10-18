@@ -256,13 +256,26 @@ function PoetryTab({ data }) {
   return (
     <div className="space-y-6">
       <div className={`rounded-xl border ${colors.border} bg-surface-alt/60 p-6 space-y-4`}>
-        <p className={`text-[10px] uppercase tracking-widest font-semibold ${colors.accent}`}>Sample Verse</p>
-        <blockquote>
-          <p className="tamil-verse text-lg text-primary leading-[2.2] whitespace-pre-line">{poetry.classic}</p>
-        </blockquote>
-        <p className="text-xs text-faint italic border-t border-line pt-3 leading-relaxed">
-          {poetry.poem}
-        </p>
+        {poetry.verified === false ? (
+          <>
+            <p className="text-xs text-faint">
+              <span lang="ta" className="tamil">மேற்கோள் சரிபார்ப்பில்</span> (Citation being verified)
+            </p>
+            <p className="text-xs text-faint italic border-t border-line pt-3 leading-relaxed">
+              {poetry.poem}
+            </p>
+          </>
+        ) : (
+          <>
+            <p className={`text-[10px] uppercase tracking-widest font-semibold ${colors.accent}`}>Sample Verse</p>
+            <blockquote>
+              <p className="tamil-verse text-lg text-primary leading-[2.2] whitespace-pre-line">{poetry.classic}</p>
+            </blockquote>
+            <p className="text-xs text-faint italic border-t border-line pt-3 leading-relaxed">
+              {poetry.poem}
+            </p>
+          </>
+        )}
       </div>
 
       {/* Tiṇai explanation */}
