@@ -63,14 +63,14 @@ export function draftBadgeLabel(verse, field) {
   return null
 }
 
-/** Longer tooltip explaining the badge. */
+/** Longer tooltip explaining the badge. Tamil († pending scholar review) uses the same verb as the badge, சரிபார்க்கவில்லை. */
 export function draftBadgeTitle(verse, field) {
   const { status, model } = layerStatus(verse, field)
   if (status === 'ai-draft') {
-    return `இயந்திரத்தால் வரையப்பட்டது${model ? ` (${model})` : ''}; தமிழ் அறிஞர் இன்னும் பார்க்கவில்லை. · Machine-drafted${model ? ` (${model})` : ''}; not yet reviewed by a Tamil scholar.`
+    return `இயந்திரத்தால் வரையப்பட்டது${model ? ` (${model})` : ''}; தமிழ் அறிஞர் இன்னும் சரிபார்க்கவில்லை · Machine-drafted${model ? ` (${model})` : ''}; not yet reviewed by a Tamil scholar.`
   }
   if (status === 'unverified') {
-    return 'மூலப் பதிப்பிலிருந்து தொகுக்கப்பட்டது; தமிழ் அறிஞர் இன்னும் பார்க்கவில்லை. · Collected from the source edition; not yet reviewed by a Tamil scholar.'
+    return 'மூலப் பதிப்பிலிருந்து தொகுக்கப்பட்டது; தமிழ் அறிஞர் இன்னும் சரிபார்க்கவில்லை · Collected from the source edition; not yet reviewed by a Tamil scholar.'
   }
   return undefined
 }

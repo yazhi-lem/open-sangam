@@ -4,6 +4,7 @@ import { useTheme } from '../../hooks/useTheme'
  * ThemeToggle — accessible light/dark switch.
  * A single icon button that flips the theme and announces state changes
  * to screen readers via aria-pressed + aria-label.
+ * Tamil labels († pending scholar review): adjective forms ஒளிரும் / இருண்ட, per Kabilar.
  */
 export default function ThemeToggle({ className = '' }) {
   const { isDark, toggleTheme } = useTheme()
@@ -13,8 +14,8 @@ export default function ThemeToggle({ className = '' }) {
       type="button"
       onClick={toggleTheme}
       aria-pressed={isDark}
-      aria-label={isDark ? 'ஒளித் தோற்றத்துக்கு மாற்ற' : 'இருள் தோற்றத்துக்கு மாற்ற'}
-      title={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+      aria-label={isDark ? 'ஒளிரும் தோற்றத்துக்கு மாற்ற' : 'இருண்ட தோற்றத்துக்கு மாற்ற'}
+      title={isDark ? 'ஒளிரும் தோற்றத்துக்கு மாற்ற · Switch to light theme' : 'இருண்ட தோற்றத்துக்கு மாற்ற · Switch to dark theme'}
       className={`inline-flex items-center justify-center h-11 w-11 rounded-full border border-line
         text-muted hover:text-primary hover:border-line-strong transition-colors
         focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2

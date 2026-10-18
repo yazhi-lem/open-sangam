@@ -31,6 +31,10 @@ test('AI-drafted English is labelled machine draft with its model', () => {
   assert.deepEqual(layerStatus(v, 'english'), { status: 'ai-draft', model: 'some/model' })
   assert.equal(draftBadgeLabel(v, 'english'), 'இயந்திர வரைவு · Machine draft')
   assert.match(draftBadgeTitle(v, 'english'), /some\/model/)
+  // Tooltip: verb matches the badge, one ' · ' separator, no full stop before it.
+  const t = draftBadgeTitle(v, 'english')
+  assert.match(t, /இன்னும் சரிபார்க்கவில்லை · Machine-drafted/)
+  assert.equal(t.split(' · ').length, 2)
 })
 
 test('scholar-verified layers carry no badge', () => {

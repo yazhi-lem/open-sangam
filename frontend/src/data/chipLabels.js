@@ -9,13 +9,14 @@
 /**
  * Reader layer chips, shown as a 2x2 grid. `label` is the short on-chip text; `full` is the
  * long form used for aria-label and the tooltip (title). Tamil wording agreed by Kabilar and
- * Oviya, still pending a human scholar (†). `id` matches readerLayers.js (normalizeLayer).
+ * Oviya, still pending a human scholar (†). Each full form starts with the visible chip text so
+ * the accessible name contains it (WCAG 2.5.3 label-in-name), then adds the long name. `id` matches readerLayers.js (normalizeLayer).
  */
 export const LAYER_CHIPS = [
-  { id: 'all', label: 'அனைத்தும் · All', full: 'அனைத்தும் · All layers' },
+  { id: 'all', label: 'அனைத்தும் · All', full: 'அனைத்தும் (அனைத்து அடுக்குகளும்) · All (all layers)' },
   { id: 'sangam', label: 'மூலம் · Original', full: 'சங்கத் தமிழ் மூலம் · Original Sangam Tamil' },
-  { id: 'urai', label: 'தமிழ் உரை · Tamil commentary', full: 'இன்றைய தமிழில் உரை · Modern Tamil commentary' },
-  { id: 'english', label: 'ஆங்கிலம் · English', full: 'ஆங்கில மொழிபெயர்ப்பு · English translation' },
+  { id: 'urai', label: 'தமிழ் உரை · Tamil commentary', full: 'தமிழ் உரை (இன்றைய தமிழில் உரை) · Tamil commentary (modern Tamil commentary)' },
+  { id: 'english', label: 'ஆங்கிலம் · English', full: 'ஆங்கிலம் (ஆங்கில மொழிபெயர்ப்பு) · English (English translation)' },
 ]
 
 /** Library quick-pick chips. `match` runs against a poem's `tinai` array in data/poems.js. */

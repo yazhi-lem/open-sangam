@@ -296,7 +296,7 @@ function LayerToggle({ layer, onChange }) {
   return (
     <div
       role="group"
-      aria-label="படிப்பு அடுக்குகள்"
+      aria-label="வாசிப்பு அடுக்குகள்" /* † Tamil pending scholar review: வாசிப்பு, not படிப்பு */
       className="grid w-full max-w-md grid-cols-2 gap-2"
     >
       {LAYER_CHIPS.map((l) => (
@@ -614,7 +614,7 @@ function Reader({ poem, sectionId }) {
               <button
                 type="button"
                 onClick={() => setFontSize((f) => (f === 'sm' ? 'md' : f === 'md' ? 'lg' : 'sm'))}
-                aria-label={`எழுத்தின் அளவு: ${fontSize === 'sm' ? 'சிறியது' : fontSize === 'md' ? 'நடுத்தரம்' : 'பெரியது'} · Text size (tap to change)`}
+                aria-label={`எழுத்தின் அளவு: ${fontSize === 'sm' ? 'சிறியது' : fontSize === 'md' ? 'நடுத்தரம்' : 'பெரியது'} (தொட்டு மாற்றலாம்) · Text size: ${fontSize === 'sm' ? 'small' : fontSize === 'md' ? 'medium' : 'large'} (tap to change)`}
                 className="sm:hidden flex h-11 min-w-[44px] items-center justify-center rounded-xl border border-line bg-surface-alt/60 px-2 text-sm font-semibold text-primary focus-ring"
               >
                 Aa

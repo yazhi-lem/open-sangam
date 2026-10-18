@@ -51,7 +51,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/graph" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
-                  <span lang="ta" className="tamil">வரைபடம்</span>&nbsp;· Connections graph
+                  <span lang="ta" className="tamil">தொடர்பு வரைபடம்</span>&nbsp;· Connections graph
                 </Link>
               </li>
               <li>
