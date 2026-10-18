@@ -831,11 +831,11 @@ export default function Avai() {
                           </span>
                           {msg.evidenceStatus === 'verified' ? (
                             <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
-                              ✓ சான்றுறுதி (Verified)
+                              <span lang="ta" className="tamil">மேற்கோள் தானாகச் சரிபார்க்கப்பட்டது</span> · Citation auto-checked
                             </span>
                           ) : (
                             <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-surface-alt text-muted border border-line">
-                              <span lang="ta" className="tamil">மேற்கோள் சரிபார்ப்பில்</span> (Citation being verified)
+                              <span lang="ta" className="tamil">வரைவு, அறிஞர் சரிபார்க்கவில்லை</span> · Draft, not scholar-verified
                             </span>
                           )}
                         </div>
