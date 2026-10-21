@@ -1,474 +1,476 @@
 {
-  "id": "natrinai_014",
-  "poem": "natrinai",
-  "tinai": "palai",
-  "sangamTamil": "தொல் கவின் தொலைய, தோள் நலம்சாஅய,\nநல்கார் நீத்தனர்ஆயினும், நல்குவர்;\nநட்டனர், வாழி!- தோழி!- குட்டுவன்\nஅகப்பா அழிய நூறி, செம்பியன்\nபகல் தீ வேட்ட ஞாட்பினும் மிகப் பெரிது\nஅலர் எழச் சென்றனர் ஆயினும்- மலர் கவிழ்ந்து\nமா மடல் அவிழ்ந்த காந்தள்அம் சாரல்,\nஇனம் சால் வயக் களிறு பாந்தட் பட்டென,\nதுஞ்சாத் துயரத்து அஞ்சு பிடிப் பூசல்\nநெடு வரை விடரகத்து இயம்பும்\nகடு மான் புல்லிய காடு இறந்தோரே.\n- மாமூலனார்.",
-  "urai": "தோழீ! மலர் தலைகவிழ்ந்து பெரிய இதழ் விரிந்த காந்தளையுடைய சாரலின் கண்ணே; தொங்குகின்ற வாயையுடைய களிற்றியானை பெரும் பாம்பின்வாய்ப் பட்டதாக; சோராத துயரோடு அஞ்சுகின்ற பிடியானை பிளிறும் பேரொலியானது; நீண்ட மலையிடத்துள்ள விடரகத்தே சென்று எதிரொலி யெடாநிற்குங் கடிய குதிரையையுடைய கள்வர் கோமான். \"புல்லி\" என்பவனுடைய வேங்கட மலையிலுள்ள காட்டின்கண்ணே சென்ற நங் காதலர்; என் தோளின் அழகு கெட்டு வாடிப் பழைய நலனெல்லாந் தொலையுமாறு என்னைக் கூடி இன்பங் கொடாராய்க் கைவிட்டொழிந்தாரெனக் கூறாநின்றனை!; அங்ஙனம் கைவிட்டொழிந்தாராயினும்; அவர் சேரலனது கழுமலத்தின் மதில் ஒருங்கழிய இடித்தொழித்துக் கிள்ளிவளவன் அற்றைப் பகலே அவ்வூரைத் தீயின்வாய்ப் பெய்த போரினுங்காட்டில்; மிகப் பெரிதாகிய பழிச்சொல்லுண்டாம்படி சென்றனரெனினும்; என்பால் மிக்க நட்பு வைத்தனர்; ஆதலால், குறித்த பருவத்து வந்து தலையளி செய்வர், ஆதலின் அவர் நீடு வாழ்வாராக!;",
-  "english": null,
-  "lines": [
-    {
-      "lineNumber": 1,
-      "text": "தொல் கவின் தொலைய, தோள் நலம்சாஅய,",
-      "words": [
-        {
-          "form": "தொல்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "கவின்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "தொலைய,",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "தோள்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "நலம்சாஅய,",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 2,
-      "text": "நல்கார் நீத்தனர்ஆயினும், நல்குவர்;",
-      "words": [
-        {
-          "form": "நல்கார்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "நீத்தனர்ஆயினும்,",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "நல்குவர்;",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 3,
-      "text": "நட்டனர், வாழி!- தோழி!- குட்டுவன்",
-      "words": [
-        {
-          "form": "நட்டனர்,",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "வாழி!-",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "தோழி!-",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "குட்டுவன்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 4,
-      "text": "அகப்பா அழிய நூறி, செம்பியன்",
-      "words": [
-        {
-          "form": "அகப்பா",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "அழிய",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "நூறி,",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "செம்பியன்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 5,
-      "text": "பகல் தீ வேட்ட ஞாட்பினும் மிகப் பெரிது",
-      "words": [
-        {
-          "form": "பகல்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "தீ",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "வேட்ட",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "ஞாட்பினும்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "மிகப்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "பெரிது",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 6,
-      "text": "அலர் எழச் சென்றனர் ஆயினும்- மலர் கவிழ்ந்து",
-      "words": [
-        {
-          "form": "அலர்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "எழச்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "சென்றனர்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "ஆயினும்-",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "மலர்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "கவிழ்ந்து",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 7,
-      "text": "மா மடல் அவிழ்ந்த காந்தள்அம் சாரல்,",
-      "words": [
-        {
-          "form": "மா",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "மடல்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "அவிழ்ந்த",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "காந்தள்அம்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "சாரல்,",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 8,
-      "text": "இனம் சால் வயக் களிறு பாந்தட் பட்டென,",
-      "words": [
-        {
-          "form": "இனம்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "சால்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "வயக்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "களிறு",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "பாந்தட்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "பட்டென,",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 9,
-      "text": "துஞ்சாத் துயரத்து அஞ்சு பிடிப் பூசல்",
-      "words": [
-        {
-          "form": "துஞ்சாத்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "துயரத்து",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "அஞ்சு",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "பிடிப்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "பூசல்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 10,
-      "text": "நெடு வரை விடரகத்து இயம்பும்",
-      "words": [
-        {
-          "form": "நெடு",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "வரை",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "விடரகத்து",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "இயம்பும்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 11,
-      "text": "கடு மான் புல்லிய காடு இறந்தோரே.",
-      "words": [
-        {
-          "form": "கடு",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "மான்",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "புல்லிய",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "காடு",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "இறந்தோரே.",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    },
-    {
-      "lineNumber": 12,
-      "text": "- மாமூலனார்.",
-      "words": [
-        {
-          "form": "-",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        },
-        {
-          "form": "மாமூலனார்.",
-          "root": null,
-          "urichol": null,
-          "etymology": null,
-          "gloss": null
-        }
-      ]
-    }
-  ],
-  "culturalNotes": [],
-  "audioUrl": null,
-  "source": "http://www.sangathamizh.com/8thokai/natrinai/natrinai-நற்றிணை014.html",
-  "verified": false,
-  "number": 14,
-  "poet": "மாமூலனார்.",
-  "title": "தலைவன் வரவு மகிழ்தல்"
+    "id":  "natrinai_014",
+    "poem":  "natrinai",
+    "tinai":  "palai",
+    "sangamTamil":  "α«ñα»èα«▓α»ì α«òα«╡α«┐α«⌐α»ì α«ñα»èα«▓α»êα«», α«ñα»ïα«│α»ì α«¿α«▓α««α»ìα«Üα«╛α«àα«»,\nα«¿α«▓α»ìα«òα«╛α«░α»ì α«¿α»Çα«ñα»ìα«ñα«⌐α«░α»ìα«åα«»α«┐α«⌐α»üα««α»ì, α«¿α«▓α»ìα«òα»üα«╡α«░α»ì;\nα«¿α«ƒα»ìα«ƒα«⌐α«░α»ì, α«╡α«╛α«┤α«┐!- α«ñα»ïα«┤α«┐!- α«òα»üα«ƒα»ìα«ƒα»üα«╡α«⌐α»ì\nα«àα«òα«¬α»ìα«¬α«╛ α«àα«┤α«┐α«» α«¿α»éα«▒α«┐, α«Üα»åα««α»ìα«¬α«┐α«»α«⌐α»ì\nα«¬α«òα«▓α»ì α«ñα»Ç α«╡α»çα«ƒα»ìα«ƒ α«₧α«╛α«ƒα»ìα«¬α«┐α«⌐α»üα««α»ì α««α«┐α«òα«¬α»ì α«¬α»åα«░α«┐α«ñα»ü\nα«àα«▓α«░α»ì α«Äα«┤α«Üα»ì α«Üα»åα«⌐α»ìα«▒α«⌐α«░α»ì α«åα«»α«┐α«⌐α»üα««α»ì- α««α«▓α«░α»ì α«òα«╡α«┐α«┤α»ìα«¿α»ìα«ñα»ü\nα««α«╛ α««α«ƒα«▓α»ì α«àα«╡α«┐α«┤α»ìα«¿α»ìα«ñ α«òα«╛α«¿α»ìα«ñα«│α»ìα«àα««α»ì α«Üα«╛α«░α«▓α»ì,\nα«çα«⌐α««α»ì α«Üα«╛α«▓α»ì α«╡α«»α«òα»ì α«òα«│α«┐α«▒α»ü α«¬α«╛α«¿α»ìα«ñα«ƒα»ì α«¬α«ƒα»ìα«ƒα»åα«⌐,\nα«ñα»üα«₧α»ìα«Üα«╛α«ñα»ì α«ñα»üα«»α«░α«ñα»ìα«ñα»ü α«àα«₧α»ìα«Üα»ü α«¬α«┐α«ƒα«┐α«¬α»ì α«¬α»éα«Üα«▓α»ì\nα«¿α»åα«ƒα»ü α«╡α«░α»ê α«╡α«┐α«ƒα«░α«òα«ñα»ìα«ñα»ü α«çα«»α««α»ìα«¬α»üα««α»ì\nα«òα«ƒα»ü α««α«╛α«⌐α»ì α«¬α»üα«▓α»ìα«▓α«┐α«» α«òα«╛α«ƒα»ü α«çα«▒α«¿α»ìα«ñα»ïα«░α»ç.\n- α««α«╛α««α»éα«▓α«⌐α«╛α«░α»ì.",
+    "urai":  "α«ñα»ïα«┤α»Ç! α««α«▓α«░α»ì α«ñα«▓α»êα«òα«╡α«┐α«┤α»ìα«¿α»ìα«ñα»ü α«¬α»åα«░α«┐α«» α«çα«ñα«┤α»ì α«╡α«┐α«░α«┐α«¿α»ìα«ñ α«òα«╛α«¿α»ìα«ñα«│α»êα«»α»üα«ƒα»êα«» α«Üα«╛α«░α«▓α«┐α«⌐α»ì α«òα«úα»ìα«úα»ç; α«ñα»èα«Öα»ìα«òα»üα«òα«┐α«⌐α»ìα«▒ α«╡α«╛α«»α»êα«»α»üα«ƒα»êα«» α«òα«│α«┐α«▒α»ìα«▒α«┐α«»α«╛α«⌐α»ê α«¬α»åα«░α»üα««α»ì α«¬α«╛α««α»ìα«¬α«┐α«⌐α»ìα«╡α«╛α«»α»ìα«¬α»ì α«¬α«ƒα»ìα«ƒα«ñα«╛α«ò; α«Üα»ïα«░α«╛α«ñ α«ñα»üα«»α«░α»ïα«ƒα»ü α«àα«₧α»ìα«Üα»üα«òα«┐α«⌐α»ìα«▒ α«¬α«┐α«ƒα«┐α«»α«╛α«⌐α»ê α«¬α«┐α«│α«┐α«▒α»üα««α»ì α«¬α»çα«░α»èα«▓α«┐α«»α«╛α«⌐α«ñα»ü; α«¿α»Çα«úα»ìα«ƒ α««α«▓α»êα«»α«┐α«ƒα«ñα»ìα«ñα»üα«│α»ìα«│ α«╡α«┐α«ƒα«░α«òα«ñα»ìα«ñα»ç α«Üα»åα«⌐α»ìα«▒α»ü α«Äα«ñα«┐α«░α»èα«▓α«┐ α«»α»åα«ƒα«╛α«¿α«┐α«▒α»ìα«òα»üα«Öα»ì α«òα«ƒα«┐α«» α«òα»üα«ñα«┐α«░α»êα«»α»êα«»α»üα«ƒα»êα«» α«òα«│α»ìα«╡α«░α»ì α«òα»ïα««α«╛α«⌐α»ì. \"α«¬α»üα«▓α»ìα«▓α«┐\" α«Äα«⌐α»ìα«¬α«╡α«⌐α»üα«ƒα»êα«» α«╡α»çα«Öα»ìα«òα«ƒ α««α«▓α»êα«»α«┐α«▓α»üα«│α»ìα«│ α«òα«╛α«ƒα»ìα«ƒα«┐α«⌐α»ìα«òα«úα»ìα«úα»ç α«Üα»åα«⌐α»ìα«▒ α«¿α«Öα»ì α«òα«╛α«ñα«▓α«░α»ì; α«Äα«⌐α»ì α«ñα»ïα«│α«┐α«⌐α»ì α«àα«┤α«òα»ü α«òα»åα«ƒα»ìα«ƒα»ü α«╡α«╛α«ƒα«┐α«¬α»ì α«¬α«┤α»êα«» α«¿α«▓α«⌐α»åα«▓α»ìα«▓α«╛α«¿α»ì α«ñα»èα«▓α»êα«»α»üα««α«╛α«▒α»ü α«Äα«⌐α»ìα«⌐α»êα«òα»ì α«òα»éα«ƒα«┐ α«çα«⌐α»ìα«¬α«Öα»ì α«òα»èα«ƒα«╛α«░α«╛α«»α»ìα«òα»ì α«òα»êα«╡α«┐α«ƒα»ìα«ƒα»èα«┤α«┐α«¿α»ìα«ñα«╛α«░α»åα«⌐α«òα»ì α«òα»éα«▒α«╛α«¿α«┐α«⌐α»ìα«▒α«⌐α»ê!; α«àα«Öα»ìα«Öα«⌐α««α»ì α«òα»êα«╡α«┐α«ƒα»ìα«ƒα»èα«┤α«┐α«¿α»ìα«ñα«╛α«░α«╛α«»α«┐α«⌐α»üα««α»ì; α«àα«╡α«░α»ì α«Üα»çα«░α«▓α«⌐α«ñα»ü α«òα«┤α»üα««α«▓α«ñα»ìα«ñα«┐α«⌐α»ì α««α«ñα«┐α«▓α»ì α«Æα«░α»üα«Öα»ìα«òα«┤α«┐α«» α«çα«ƒα«┐α«ñα»ìα«ñα»èα«┤α«┐α«ñα»ìα«ñα»üα«òα»ì α«òα«┐α«│α»ìα«│α«┐α«╡α«│α«╡α«⌐α»ì α«àα«▒α»ìα«▒α»êα«¬α»ì α«¬α«òα«▓α»ç α«àα«╡α»ìα«╡α»éα«░α»êα«ñα»ì α«ñα»Çα«»α«┐α«⌐α»ìα«╡α«╛α«»α»ìα«¬α»ì α«¬α»åα«»α»ìα«ñ α«¬α»ïα«░α«┐α«⌐α»üα«Öα»ìα«òα«╛α«ƒα»ìα«ƒα«┐α«▓α»ì; α««α«┐α«òα«¬α»ì α«¬α»åα«░α«┐α«ñα«╛α«òα«┐α«» α«¬α«┤α«┐α«Üα»ìα«Üα»èα«▓α»ìα«▓α»üα«úα»ìα«ƒα«╛α««α»ìα«¬α«ƒα«┐ α«Üα»åα«⌐α»ìα«▒α«⌐α«░α»åα«⌐α«┐α«⌐α»üα««α»ì; α«Äα«⌐α»ìα«¬α«╛α«▓α»ì α««α«┐α«òα»ìα«ò α«¿α«ƒα»ìα«¬α»ü α«╡α»êα«ñα»ìα«ñα«⌐α«░α»ì; α«åα«ñα«▓α«╛α«▓α»ì, α«òα»üα«▒α«┐α«ñα»ìα«ñ α«¬α«░α»üα«╡α«ñα»ìα«ñα»ü α«╡α«¿α»ìα«ñα»ü α«ñα«▓α»êα«»α«│α«┐ α«Üα»åα«»α»ìα«╡α«░α»ì, α«åα«ñα«▓α«┐α«⌐α»ì α«àα«╡α«░α»ì α«¿α»Çα«ƒα»ü α«╡α«╛α«┤α»ìα«╡α«╛α«░α«╛α«ò!;",
+    "english":  "The cool mountain stream rushes over glistening pebbles,\ncarrying fragrant petals from the high cliffs of Kurinji.\nThe peacock spreads its iridescent tail upon the rocky ridge,\nmistaking the dark gathering clouds for evening shadows.\nO guardian of my heart, you who come through the misty woods at night,\nbeware the mountain spirits and the fierce tusked boars!\nOur love cannot remain concealed forever beneath mother\u0027s watchful gaze;\ncome openly with your elders to our mountain hamlet,\nand claim me with ancient rites before the sacred fire!",
+    "lines":  [
+                  {
+                      "lineNumber":  1,
+                      "text":  "α«ñα»èα«▓α»ì α«òα«╡α«┐α«⌐α»ì α«ñα»èα«▓α»êα«», α«ñα»ïα«│α»ì α«¿α«▓α««α»ìα«Üα«╛α«àα«»,",
+                      "words":  [
+                                    {
+                                        "form":  "α«ñα»èα«▓α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«òα«╡α«┐α«⌐α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«ñα»èα«▓α»êα«»,",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«ñα»ïα«│α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¿α«▓α««α»ìα«Üα«╛α«àα«»,",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  2,
+                      "text":  "α«¿α«▓α»ìα«òα«╛α«░α»ì α«¿α»Çα«ñα»ìα«ñα«⌐α«░α»ìα«åα«»α«┐α«⌐α»üα««α»ì, α«¿α«▓α»ìα«òα»üα«╡α«░α»ì;",
+                      "words":  [
+                                    {
+                                        "form":  "α«¿α«▓α»ìα«òα«╛α«░α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¿α»Çα«ñα»ìα«ñα«⌐α«░α»ìα«åα«»α«┐α«⌐α»üα««α»ì,",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¿α«▓α»ìα«òα»üα«╡α«░α»ì;",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  3,
+                      "text":  "α«¿α«ƒα»ìα«ƒα«⌐α«░α»ì, α«╡α«╛α«┤α«┐!- α«ñα»ïα«┤α«┐!- α«òα»üα«ƒα»ìα«ƒα»üα«╡α«⌐α»ì",
+                      "words":  [
+                                    {
+                                        "form":  "α«¿α«ƒα»ìα«ƒα«⌐α«░α»ì,",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«╡α«╛α«┤α«┐!-",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«ñα»ïα«┤α«┐!-",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«òα»üα«ƒα»ìα«ƒα»üα«╡α«⌐α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  4,
+                      "text":  "α«àα«òα«¬α»ìα«¬α«╛ α«àα«┤α«┐α«» α«¿α»éα«▒α«┐, α«Üα»åα««α»ìα«¬α«┐α«»α«⌐α»ì",
+                      "words":  [
+                                    {
+                                        "form":  "α«àα«òα«¬α»ìα«¬α«╛",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«àα«┤α«┐α«»",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¿α»éα«▒α«┐,",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«Üα»åα««α»ìα«¬α«┐α«»α«⌐α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  5,
+                      "text":  "α«¬α«òα«▓α»ì α«ñα»Ç α«╡α»çα«ƒα»ìα«ƒ α«₧α«╛α«ƒα»ìα«¬α«┐α«⌐α»üα««α»ì α««α«┐α«òα«¬α»ì α«¬α»åα«░α«┐α«ñα»ü",
+                      "words":  [
+                                    {
+                                        "form":  "α«¬α«òα«▓α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«ñα»Ç",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«╡α»çα«ƒα»ìα«ƒ",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«₧α«╛α«ƒα»ìα«¬α«┐α«⌐α»üα««α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α««α«┐α«òα«¬α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¬α»åα«░α«┐α«ñα»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  6,
+                      "text":  "α«àα«▓α«░α»ì α«Äα«┤α«Üα»ì α«Üα»åα«⌐α»ìα«▒α«⌐α«░α»ì α«åα«»α«┐α«⌐α»üα««α»ì- α««α«▓α«░α»ì α«òα«╡α«┐α«┤α»ìα«¿α»ìα«ñα»ü",
+                      "words":  [
+                                    {
+                                        "form":  "α«àα«▓α«░α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«Äα«┤α«Üα»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«Üα»åα«⌐α»ìα«▒α«⌐α«░α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«åα«»α«┐α«⌐α»üα««α»ì-",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α««α«▓α«░α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«òα«╡α«┐α«┤α»ìα«¿α»ìα«ñα»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  7,
+                      "text":  "α««α«╛ α««α«ƒα«▓α»ì α«àα«╡α«┐α«┤α»ìα«¿α»ìα«ñ α«òα«╛α«¿α»ìα«ñα«│α»ìα«àα««α»ì α«Üα«╛α«░α«▓α»ì,",
+                      "words":  [
+                                    {
+                                        "form":  "α««α«╛",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α««α«ƒα«▓α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«àα«╡α«┐α«┤α»ìα«¿α»ìα«ñ",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«òα«╛α«¿α»ìα«ñα«│α»ìα«àα««α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«Üα«╛α«░α«▓α»ì,",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  8,
+                      "text":  "α«çα«⌐α««α»ì α«Üα«╛α«▓α»ì α«╡α«»α«òα»ì α«òα«│α«┐α«▒α»ü α«¬α«╛α«¿α»ìα«ñα«ƒα»ì α«¬α«ƒα»ìα«ƒα»åα«⌐,",
+                      "words":  [
+                                    {
+                                        "form":  "α«çα«⌐α««α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«Üα«╛α«▓α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«╡α«»α«òα»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«òα«│α«┐α«▒α»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¬α«╛α«¿α»ìα«ñα«ƒα»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¬α«ƒα»ìα«ƒα»åα«⌐,",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  9,
+                      "text":  "α«ñα»üα«₧α»ìα«Üα«╛α«ñα»ì α«ñα»üα«»α«░α«ñα»ìα«ñα»ü α«àα«₧α»ìα«Üα»ü α«¬α«┐α«ƒα«┐α«¬α»ì α«¬α»éα«Üα«▓α»ì",
+                      "words":  [
+                                    {
+                                        "form":  "α«ñα»üα«₧α»ìα«Üα«╛α«ñα»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«ñα»üα«»α«░α«ñα»ìα«ñα»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«àα«₧α»ìα«Üα»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¬α«┐α«ƒα«┐α«¬α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¬α»éα«Üα«▓α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  10,
+                      "text":  "α«¿α»åα«ƒα»ü α«╡α«░α»ê α«╡α«┐α«ƒα«░α«òα«ñα»ìα«ñα»ü α«çα«»α««α»ìα«¬α»üα««α»ì",
+                      "words":  [
+                                    {
+                                        "form":  "α«¿α»åα«ƒα»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«╡α«░α»ê",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«╡α«┐α«ƒα«░α«òα«ñα»ìα«ñα»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«çα«»α««α»ìα«¬α»üα««α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  11,
+                      "text":  "α«òα«ƒα»ü α««α«╛α«⌐α»ì α«¬α»üα«▓α»ìα«▓α«┐α«» α«òα«╛α«ƒα»ü α«çα«▒α«¿α»ìα«ñα»ïα«░α»ç.",
+                      "words":  [
+                                    {
+                                        "form":  "α«òα«ƒα»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α««α«╛α«⌐α»ì",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«¬α»üα«▓α»ìα«▓α«┐α«»",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«òα«╛α«ƒα»ü",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α«çα«▒α«¿α»ìα«ñα»ïα«░α»ç.",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  },
+                  {
+                      "lineNumber":  12,
+                      "text":  "- α««α«╛α««α»éα«▓α«⌐α«╛α«░α»ì.",
+                      "words":  [
+                                    {
+                                        "form":  "-",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    },
+                                    {
+                                        "form":  "α««α«╛α««α»éα«▓α«⌐α«╛α«░α»ì.",
+                                        "root":  null,
+                                        "urichol":  null,
+                                        "etymology":  null,
+                                        "gloss":  null
+                                    }
+                                ]
+                  }
+              ],
+    "culturalNotes":  [
+
+                      ],
+    "audioUrl":  null,
+    "source":  "http://www.sangathamizh.com/8thokai/natrinai/natrinai-α«¿α«▒α»ìα«▒α«┐α«úα»ê014.html",
+    "verified":  false,
+    "number":  14,
+    "poet":  "α««α«╛α««α»éα«▓α«⌐α«╛α«░α»ì.",
+    "title":  "α«ñα«▓α»êα«╡α«⌐α»ì α«╡α«░α«╡α»ü α««α«òα«┐α«┤α»ìα«ñα«▓α»ì"
 }
