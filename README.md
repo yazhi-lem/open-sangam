@@ -25,7 +25,6 @@ Open Sangam transforms static, archaic web archives of Sangam-era poetry into a 
 |-------|-----------|
 | Frontend | React.js (Vite) + Tailwind CSS |
 | Backend / Storage | Firebase / Firestore |
-| Cloud Functions | Node.js (Firebase Functions) |
 | Data Pipeline | Python + BeautifulSoup |
 | AI Translation | Google Gemini 2.5 Flash via OpenRouter |
 | Agents | Google ADK + LiteLLM (OpenRouter) |
@@ -36,7 +35,6 @@ Open Sangam transforms static, archaic web archives of Sangam-era poetry into a 
 open-sangam/
 ├── frontend/        # React + Tailwind web app
 ├── backend/
-│   ├── functions/   # Firebase Cloud Functions
 │   └── python/      # Scraping, normalization & AI scripts
 ├── agents/
 │   └── avai/        # சங்க அவை — Google ADK agent assembly
@@ -223,14 +221,6 @@ pytest avai/tests      # 12 tests, no API key needed
 > The single most common failure is running `adk` from `agents/avai/` instead
 > of `agents/`. Full runbook, env-var table, and troubleshooting:
 > **[agents/avai/README.md](./agents/avai/README.md)**.
-
-### Firebase Functions
-
-```bash
-cd backend/functions
-npm install
-firebase emulators:start
-```
 
 ## Phases
 
