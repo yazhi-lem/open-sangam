@@ -8,6 +8,17 @@ admin.initializeApp()
 
 const geminiApiKey = defineSecret('GEMINI_API_KEY')
 
+function getApiKey() {
+  if (process.env.GEMINI_API_KEY) {
+    return process.env.GEMINI_API_KEY
+  }
+  try {
+    return typeof geminiApiKey.value === 'function' ? geminiApiKey.value() : ''
+  } catch {
+    return ''
+  }
+}
+
 // ---------------------------------------------------------------------------
 // POST /translate
 // Body: { verse: string, targetLang: 'english' | 'urai' }
@@ -39,7 +50,11 @@ exports.translate = onRequest({ secrets: [geminiApiKey] }, (req, res) => {
     ].join('\n')
 
     try {
-      const genAI = new GoogleGenerativeAI(geminiApiKey.value())
+      const apiKey = getApiKey()
+      if (!apiKey) {
+        return res.status(500).json({ message: 'GEMINI_API_KEY is not configured in backend' })
+      }
+      const genAI = new GoogleGenerativeAI(apiKey)
       const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
       const result = await model.generateContent(prompt)
       const text = result.response.text().trim()
@@ -78,7 +93,11 @@ exports.analyzeWord = onRequest({ secrets: [geminiApiKey] }, (req, res) => {
     ].join('\n')
 
     try {
-      const genAI = new GoogleGenerativeAI(geminiApiKey.value())
+      const apiKey = getApiKey()
+      if (!apiKey) {
+        return res.status(500).json({ message: 'GEMINI_API_KEY is not configured in backend' })
+      }
+      const genAI = new GoogleGenerativeAI(apiKey)
       const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
       const result = await model.generateContent(prompt)
       const raw = result.response.text().trim()

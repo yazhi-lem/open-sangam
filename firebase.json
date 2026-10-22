@@ -18,6 +18,14 @@
     ],
     "rewrites": [
       {
+        "source": "/translate",
+        "function": "translate"
+      },
+      {
+        "source": "/analyze-word",
+        "function": "analyzeWord"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
+import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy, Sparkles } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
-import { analyzeWord } from '../services/geminiApi'
+import { analyzeWord, translateVerse } from '../services/geminiApi'
 import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
@@ -344,6 +344,11 @@ function Reader({ poem, sectionId }) {
   const [glossaryWord, setGlossaryWord] = useState(null)
   const [glossaryLoading, setGlossaryLoading] = useState(false)
 
+  // AI Translation state
+  const [aiTranslation, setAiTranslation] = useState(null)
+  const [aiLoading, setAiLoading] = useState(false)
+  const [aiError, setAiError] = useState(null)
+
   const setLayer = (next) => {
     const l = normalizeLayer(next)
     setLayerState(l)
@@ -382,7 +387,23 @@ function Reader({ poem, sectionId }) {
 
   useEffect(() => {
     contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
+    setAiTranslation(null)
+    setAiError(null)
   }, [active])
+
+  async function handleAiTranslate(sangamText) {
+    if (!sangamText) return
+    setAiLoading(true)
+    setAiError(null)
+    try {
+      const result = await translateVerse(sangamText, 'english')
+      setAiTranslation(result.text)
+    } catch (err) {
+      setAiError(err.message || 'Translation failed')
+    } finally {
+      setAiLoading(false)
+    }
+  }
 
   // Keyboard Navigation: Left/Right arrows for verse, H/V for layout
   useEffect(() => {
@@ -763,10 +784,33 @@ function Reader({ poem, sectionId }) {
                     </div>
                     {sec.english ? (
                       <p className="text-base sm:text-lg leading-relaxed text-primary">{sec.english}</p>
+                    ) : aiTranslation ? (
+                      <div className="space-y-2">
+                        <p className="text-base sm:text-lg leading-relaxed text-primary">{aiTranslation}</p>
+                        <p className="text-[10px] text-faint italic flex items-center gap-1">
+                          <Sparkles size={11} className="text-accent" />
+                          AI translation powered by Gemini 2.5 Flash
+                        </p>
+                      </div>
                     ) : (
-                      <p className="text-sm text-faint italic">
-                        English translation for this section is being prepared and will appear after scholar review.
-                      </p>
+                      <div className="space-y-3">
+                        <p className="text-sm text-faint italic">
+                          English translation for this section is being prepared and will appear after scholar review.
+                        </p>
+                        {poem.id === 'natrinai' && (
+                          <div className="space-y-2 pt-1">
+                            {aiError && <p className="text-xs text-danger">{aiError}</p>}
+                            <Button
+                              size="sm"
+                              onClick={() => handleAiTranslate(sec.sangamTamil)}
+                              loading={aiLoading}
+                              icon={<Sparkles size={13} />}
+                            >
+                              Translate with Gemini AI
+                            </Button>
+                          </div>
+                        )}
+                      </div>
                     )}
                   </Card>
                 )}
@@ -842,10 +886,33 @@ function Reader({ poem, sectionId }) {
                   </div>
                   {sec.english ? (
                     <p className="text-base sm:text-lg leading-relaxed text-muted">{sec.english}</p>
+                  ) : aiTranslation ? (
+                    <div className="space-y-2">
+                      <p className="text-base sm:text-lg leading-relaxed text-muted">{aiTranslation}</p>
+                      <p className="text-[10px] text-faint italic flex items-center gap-1">
+                        <Sparkles size={11} className="text-accent" />
+                        AI translation powered by Gemini 2.5 Flash
+                      </p>
+                    </div>
                   ) : (
-                    <p className="text-sm text-faint italic">
-                      English translation for this section is being prepared and will appear after scholar review.
-                    </p>
+                    <div className="space-y-3">
+                      <p className="text-sm text-faint italic">
+                        English translation for this section is being prepared and will appear after scholar review.
+                      </p>
+                      {poem.id === 'natrinai' && (
+                        <div className="space-y-2 pt-1">
+                          {aiError && <p className="text-xs text-danger">{aiError}</p>}
+                          <Button
+                            size="sm"
+                            onClick={() => handleAiTranslate(sec.sangamTamil)}
+                            loading={aiLoading}
+                            icon={<Sparkles size={13} />}
+                          >
+                            Translate with Gemini AI
+                          </Button>
+                        </div>
+                      )}
+                    </div>
                   )}
                 </Card>
               )}
