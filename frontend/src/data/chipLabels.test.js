@@ -14,6 +14,23 @@ test('every chip label is "<Tamil> · <English>" with exactly one separator', ()
   }
 })
 
+test('layer chips: full forms carry the long Tamil names, one separator each', () => {
+  const full = Object.fromEntries(LAYER_CHIPS.map((c) => [c.id, c.full]))
+  // Dash pattern (Kabilar, †): "<Tamil short> — <Tamil long> · <English short> — <English long>".
+  assert.equal(full.all, 'அனைத்தும் — அனைத்து அடுக்குகளும் · All — all layers')
+  assert.equal(full.sangam, 'மூலம் — சங்கத் தமிழ் மூலம் · Original — Sangam Tamil original')
+  assert.equal(full.urai, 'தமிழ் உரை — இன்றைய தமிழில் உரை · Tamil commentary — modern Tamil commentary')
+  assert.equal(full.english, 'ஆங்கிலம் — ஆங்கில மொழிபெயர்ப்பு · English — English translation')
+  // Label-in-name: every full form starts with the visible Tamil text and contains the English text.
+  for (const c of LAYER_CHIPS) {
+    const [ta, en] = c.label.split(' · ')
+    assert.ok(c.full.startsWith(`${ta} — `), c.full)
+    assert.ok(c.full.includes(` · ${en} — `), c.full)
+    assert.equal(c.full, c.full.normalize('NFC'))
+  }
+  for (const c of LAYER_CHIPS) assert.equal(c.full.split(' · ').length, 2, c.full)
+})
+
 test('layer chips cover exactly the reader layers, "all" first', () => {
   assert.deepEqual(LAYER_CHIPS.map((c) => c.id), ['all', 'sangam', 'urai', 'english'])
 })

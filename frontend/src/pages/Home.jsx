@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import Card from '../components/ui/Card'
+import Chip from '../components/ui/Chip'
 
 // Home has one job: get a reader into a poem. One primary action, one featured poem,
 // two small side doors (scholars, developers). Tamil first, English second.
 // All Tamil strings on this page are DRAFTS pending native-reviewer sign-off (†).
+// The featured poem is readable now (as a draft), so its card says Draft, not Coming soon.
 
 const REPO_URL = 'https://github.com/yazhi-lem/open-sangam'
 
@@ -23,7 +25,7 @@ export default function Home() {
       <section className="space-y-5 text-center">
         <h1 className="space-y-2">
           <span lang="ta" className="tamil block text-2xl font-bold leading-snug text-primary sm:text-4xl">
-            சங்க இலக்கியம் — எல்லோருக்குமான பொதுச் சொத்து
+            சங்க இலக்கியம் — யாவர்க்கும் பொது
           </span>
           <span lang="en" className="block text-base font-normal text-muted sm:text-xl">
             Sangam literature, held in common
@@ -38,8 +40,8 @@ export default function Home() {
         </Link>
 
         <p className="text-sm text-muted">
-          <span lang="ta" className="tamil">பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி</span>
-          <span className="text-faint"> · Choose a poem → Read → Understand</span>
+          <span lang="ta" className="tamil block">பாடலைத் தேர்ந்தெடுங்கள் → படியுங்கள் → பொருள் அறியுங்கள்</span>
+          <span lang="en" className="block text-faint">Choose a poem → Read → Understand</span>
         </p>
       </section>
 
@@ -51,14 +53,11 @@ export default function Home() {
               <h2 lang="ta" className="tamil text-2xl font-bold text-primary">மதுரைக்காஞ்சி</h2>
               <p lang="en" className="text-sm text-muted">Maduraikanchi</p>
             </div>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-line-strong px-3 py-1 text-xs text-muted">
-              <span lang="ta" className="tamil">விரைவில்</span>
-              <span aria-hidden="true">·</span>
-              <span lang="en">Coming soon</span>
-            </span>
+            {/* Draft badge: Kal grey filled pill, never terracotta. † */}
+            <Chip variant="badge" label="வரைவு · Draft" />
           </div>
           <p className="text-sm font-semibold text-accent">
-            <span lang="ta" className="tamil">வரைவைப் படிக்க</span>
+            <span lang="ta" className="tamil">வரைவைப் படியுங்கள்</span>
             <span> · Read the draft →</span>
           </p>
         </Card>

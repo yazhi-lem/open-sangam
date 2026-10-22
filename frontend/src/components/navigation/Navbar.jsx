@@ -40,7 +40,7 @@ export default function Navbar() {
         <Link
           to="/"
           className="flex shrink-0 items-center min-h-[44px] focus-ring rounded-lg px-1"
-          aria-label="Open Sangam — home"
+          aria-label="Open Sangam — முகப்பு"
         >
           <img src={lockupColour} alt="" width="152" height="32" className="h-8 w-auto dark:hidden" />
           <img src={lockupReversed} alt="" width="152" height="32" className="hidden h-8 w-auto dark:block" />
@@ -84,7 +84,7 @@ export default function Navbar() {
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
             className="xl:hidden flex h-11 w-11 items-center justify-center rounded-xl text-muted hover:text-primary hover:bg-surface-alt focus-ring transition-colors"
-            aria-label={mobileOpen ? 'பட்டியலை மூடுக' : 'பட்டியலைத் திறக்க'}
+            aria-label={mobileOpen ? 'பட்டியலை மூட' : 'பட்டியலைத் திறக்க'}
             aria-expanded={mobileOpen}
           >
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2">
@@ -110,7 +110,10 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               <l.Icon {...NAV_ICON_PROPS} className="shrink-0" />
-              <span className="tamil text-base font-semibold">{l.labelTa}</span>
+              <span className="min-w-0">
+                <span lang="ta" className="tamil block text-base font-semibold">{l.labelTa}</span>
+                <span lang="en" className="block text-xs font-normal text-faint">{l.labelEn}</span>
+              </span>
             </NavLink>
           ))}
         </div>

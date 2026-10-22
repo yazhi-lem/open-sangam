@@ -5,7 +5,7 @@ import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
 import { analyzeWord } from '../services/geminiApi'
-import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
+import { normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
@@ -38,7 +38,7 @@ function PoemCard({ poem }) {
           {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
         </Badge>
         {available ? (
-          <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-xs" title="Available in reader" />
+          <span className="w-2 h-2 rounded-full bg-[var(--kal)] shadow-xs" title="Available in reader" />
         ) : (
           <span className="w-2 h-2 rounded-full bg-line-strong" title="Coming soon" />
         )}
@@ -149,14 +149,14 @@ function Library() {
       {/* Header: one line of orientation, then search and the akam / puram / tiṇai chips */}
       <Reveal as="div" className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-6" duration={0.6}>
         <div className="space-y-2">
-          <h1 className="tamil text-3xl sm:text-5xl font-extrabold text-primary leading-tight">
+          <h1 lang="ta" className="tamil text-3xl sm:text-5xl font-extrabold text-primary leading-tight">
             சங்க நூலகம்
           </h1>
           <p className="text-lg sm:text-xl text-muted font-light">Library of Sangam works</p>
           {/* † draft Tamil, needs native review */}
           <p className="text-sm text-muted pt-1">
-            <span lang="ta" className="tamil">பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி</span>
-            <span className="text-faint"> · Choose a poem → Read → Understand</span>
+            <span lang="ta" className="tamil block">பாடலைத் தேர்ந்தெடுங்கள் → படியுங்கள் → பொருள் அறியுங்கள்</span>
+            <span lang="en" className="block text-faint">Choose a poem → Read → Understand</span>
           </p>
         </div>
 
@@ -173,8 +173,8 @@ function Library() {
           {/* Filter chips: outlined pills, selected = filled ink; scroll sideways on phones */}
           <div
             role="group"
-            aria-label="Filter by akam, puram or tiṇai"
-            className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0 sm:flex-wrap"
+            aria-label="அகம், புறம், திணை வாரியாகத் தேர்ந்தெடுக்க"
+            className="-mx-4 mt-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0 sm:flex-wrap"
           >
             {FILTER_CHIPS.map((c) => (
               <Chip
@@ -185,7 +185,7 @@ function Library() {
               />
             ))}
           </div>
-          {chipFilter && (
+          {chipFilter && chipFilter !== 'puram' && (
             <p className="text-xs text-faint">
               <span lang="ta" className="tamil">{IDYLL_NOTE.ta}</span>
               <span> · </span>
@@ -201,7 +201,7 @@ function Library() {
           <ScrollTilt key={key} intensity={6}>
             <div className="space-y-6">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">{meta.ta}</h2>
+                <h2 lang="ta" className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">{meta.ta}</h2>
                 <span className="text-muted text-sm sm:text-base font-medium">{meta.en}</span>
                 <span className="ml-auto text-xs font-mono text-faint">{poems.length} works</span>
               </div>
@@ -231,7 +231,7 @@ function Library() {
           <ScrollTilt intensity={6}>
             <div className="space-y-6">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">பதினெண்கீழ்க்கணக்கு</h2>
+                <h2 lang="ta" className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">பதினெண்கீழ்க்கணக்கு</h2>
                 <span className="text-muted text-sm sm:text-base font-medium">Coming Soon</span>
                 <span className="ml-auto text-xs font-mono text-faint">{COMING_SOON_WORKS.length} planned</span>
               </div>
@@ -290,19 +290,23 @@ function DraftBadge({ verse, field }) {
   return <Chip variant="badge" label={label} title={draftBadgeTitle(verse, field)} />
 }
 
-// Layer chips: pick which of the three layers to read. Scrolls sideways on phones.
+// Layer chips: pick which layer to read. A 2x2 grid of equal cells, so all four are visible
+// at 360-768px (a sideways scroll hid the fourth). Full names live in aria-label and title.
 function LayerToggle({ layer, onChange }) {
   return (
     <div
       role="group"
-      aria-label="Reader layers"
-      className="-mx-3 flex w-[calc(100%+1.5rem)] gap-2 overflow-x-auto px-3 pb-1 sm:mx-0 sm:w-auto sm:px-0 sm:pb-0"
+      aria-label="வாசிப்பு அடுக்குகள்" /* † Tamil pending scholar review: வாசிப்பு, not படிப்பு */
+      className="grid w-full max-w-md grid-cols-2 gap-2"
     >
       {LAYER_CHIPS.map((l) => (
         <Chip
           key={l.id}
           label={l.label}
-          title={LAYER_OPTIONS.find((o) => o.id === l.id)?.hint}
+          title={l.full}
+          aria-label={l.full}
+          className="w-full"
+
           selected={layer === l.id}
           onClick={() => onChange(l.id)}
         />
@@ -494,12 +498,13 @@ function Reader({ poem, sectionId }) {
       {sidebarOpen && (
         <button
           type="button"
-          aria-label="Close section list"
+          aria-label="பிரிவுப் பட்டியலை மூட"
           onClick={() => setSidebar(false)}
           className="md:hidden absolute inset-0 z-20 bg-black/40"
         />
       )}
       <aside
+        inert={!sidebarOpen}
         className={`shrink-0 border-r border-line bg-surface flex flex-col transition-all duration-200 z-30
           max-md:absolute max-md:inset-y-0 max-md:left-0
           ${sidebarOpen ? 'w-[85vw] max-w-sm md:w-72' : 'w-0 overflow-hidden'}`}
@@ -508,7 +513,7 @@ function Reader({ poem, sectionId }) {
         <div className="p-4 border-b border-line bg-surface-alt/40 space-y-2">
           <Link
             to="/book"
-            className="inline-flex items-center gap-1 text-xs text-muted hover:text-accent transition-colors font-medium"
+            className="inline-flex min-h-[44px] items-center gap-1 text-xs text-muted hover:text-accent transition-colors font-medium"
           >
             ← Back to Library
           </Link>
@@ -518,7 +523,7 @@ function Reader({ poem, sectionId }) {
             </Badge>
             <span className="text-xs text-faint font-mono">{sections.length} verses</span>
           </div>
-          <h2 className="tamil text-xl font-bold text-primary leading-tight pt-1">{poem.ta}</h2>
+          <h2 lang="ta" className="tamil text-xl font-bold text-primary leading-tight pt-1">{poem.ta}</h2>
           <p className="text-xs text-muted">{poem.en}</p>
 
           {/* Section Quick Search */}
@@ -609,7 +614,7 @@ function Reader({ poem, sectionId }) {
               <button
                 type="button"
                 onClick={() => setFontSize((f) => (f === 'sm' ? 'md' : f === 'md' ? 'lg' : 'sm'))}
-                aria-label={`Text size: ${fontSize === 'sm' ? 'small' : fontSize === 'md' ? 'medium' : 'large'} (tap to change)`}
+                aria-label={`எழுத்தின் அளவு: ${fontSize === 'sm' ? 'சிறியது' : fontSize === 'md' ? 'நடுத்தரம்' : 'பெரியது'} (தொட்டு மாற்றலாம்) · Text size: ${fontSize === 'sm' ? 'small' : fontSize === 'md' ? 'medium' : 'large'} (tap to change)`}
                 className="sm:hidden flex h-11 min-w-[44px] items-center justify-center rounded-xl border border-line bg-surface-alt/60 px-2 text-sm font-semibold text-primary focus-ring"
               >
                 Aa
@@ -738,7 +743,7 @@ function Reader({ poem, sectionId }) {
                 {/* Modern Commentary (Urai) */}
                 {show.urai && (
                   <Card variant="default" className="p-4 sm:p-6 space-y-3 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent">
                         <span className="tamil">உரை</span> (Prose Commentary)
                       </span>
@@ -755,7 +760,7 @@ function Reader({ poem, sectionId }) {
                 {/* English Translation */}
                 {show.english && (
                   <Card variant="default" className="p-4 sm:p-6 space-y-4 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent uppercase tracking-wider">
                         English Translation
                       </span>
@@ -806,7 +811,7 @@ function Reader({ poem, sectionId }) {
               {/* Original Tamil Verse */}
               {show.sangam && (
                 <Card variant="flat" className="p-4 sm:p-8 space-y-4 border-accent/20">
-                  <div className="flex items-center justify-between border-b border-line pb-2">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                     <span className="text-xs font-semibold text-accent uppercase tracking-wider">
                       Original Classical Tamil
                     </span>

@@ -3,7 +3,7 @@
  *
  * Two families that must not be confused:
  *   variant="filter"  Outlined pill on the page background; selected = filled ink
- *                     (Mai) with page-colour text. A button with aria-pressed. Used for
+ *                     (Mai #1C1917) with Olai #F3EAD7 text (reversed in dark mode). A button with aria-pressed. Used for
  *                     the layer chips and the akam / puram / tiṇai quick-picks.
  *   variant="badge"   Small filled pill in Kal stone grey. Not interactive. Marks draft
  *                     and machine-drafted text. Never terracotta / Kumkumam.
@@ -34,11 +34,13 @@ export default function Chip({
     return (
       <span
         title={title}
-        className={`${BASE} gap-1.5 bg-[var(--kal)] px-2.5 py-1 text-xs text-white ${className}`}
+        className={`inline-flex min-w-0 max-w-full flex-col items-center justify-center rounded-2xl bg-[var(--kal)] px-2.5 py-1 text-center text-xs font-medium leading-snug text-[var(--olai)] ${className}`}
         {...props}
       >
+        {/* Tamil line first, English beneath. The label string keeps its single ' · ', but the
+            separator is not drawn: the two lines already separate the languages, and a dangling
+            ' ·' at the end of the Tamil line looked like a typo. Text is Olai on Kal grey. */}
         <span lang="ta" className="tamil">{parts.ta}</span>
-        {parts.en && <span aria-hidden="true">·</span>}
         {parts.en && <span lang="en">{parts.en}</span>}
       </span>
     )
@@ -52,7 +54,7 @@ export default function Chip({
       title={title}
       className={`${BASE} min-h-[44px] min-w-[44px] flex-col border px-4 py-1 leading-tight transition-colors focus-ring ${
         selected
-          ? 'border-primary bg-primary text-page'
+          ? 'border-[var(--mai)] bg-[var(--mai)] text-[var(--olai)] dark:border-[var(--olai)] dark:bg-[var(--olai)] dark:text-[var(--mai)]'
           : 'border-line-strong bg-transparent text-primary hover:border-primary'
       } ${className}`}
       {...props}

@@ -56,7 +56,7 @@ const Input = forwardRef(function Input(
           type="button"
           onClick={onClear}
           className="absolute right-0.5 top-1/2 -translate-y-1/2 flex h-11 w-11 items-center justify-center sm:right-2 sm:h-7 sm:w-7 text-faint hover:text-primary rounded-full focus-ring transition-colors"
-          aria-label="Clear input"
+          aria-label="உள்ளீட்டை அழிக்க"
         >
           ✕
         </button>

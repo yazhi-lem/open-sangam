@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand & mission */}
           <div className="md:col-span-2 space-y-3">
-            <Link to="/" className="inline-flex items-center min-h-[44px]" aria-label="Open Sangam — home">
+            <Link to="/" className="inline-flex items-center min-h-[44px]" aria-label="Open Sangam — முகப்பு">
               <img src={lockupColour} alt="" width="152" height="32" className="h-8 w-auto dark:hidden" />
               <img src={lockupReversed} alt="" width="152" height="32" className="hidden h-8 w-auto dark:block" />
             </Link>
@@ -36,22 +36,22 @@ export default function Footer() {
             <ul className="space-y-2 text-xs">
               <li>
                 <Link to="/book" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
-                  Library (சங்க நூலகம்)
+                  <span lang="ta" className="tamil">சங்க நூலகம்</span>&nbsp;· Library
                 </Link>
               </li>
               <li>
                 <Link to="/world" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
-                  Sangam World (சங்க உலகம்)
+                  <span lang="ta" className="tamil">சங்க உலகம்</span>&nbsp;· Sangam World
                 </Link>
               </li>
               <li>
                 <Link to="/knowledge" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
-                  Knowledge Base (அறிவு)
+                  <span lang="ta" className="tamil">அறிவுக் களஞ்சியம்</span>&nbsp;· Knowledge Base
                 </Link>
               </li>
               <li>
                 <Link to="/graph" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
-                  Connections Graph (வரைபடம்)
+                  <span lang="ta" className="tamil">தொடர்பு வரைபடம்</span>&nbsp;· Connections graph
                 </Link>
               </li>
               <li>
@@ -85,7 +85,9 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-line flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-faint">
           <p>
-            © {new Date().getFullYear()} Open Sangam Project • Scholar-verified classical Tamil digital corpus • Part of the{' '}
+            © {new Date().getFullYear()} Open Sangam Project •{' '}
+            <span lang="ta" className="tamil">சங்கத் தமிழ் மின்னணுத் தொகுப்பு — அறிஞர் சரிபார்ப்பு இன்னும் நிறைவடையவில்லை</span>
+            {' '}· Classical Tamil digital corpus — scholar review still pending • Part of the{' '}
             <a
               href="https://yazhi.dev"
               target="_blank"
