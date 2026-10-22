@@ -4,12 +4,13 @@ import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
-import { analyzeWord } from '../services/geminiApi'
 import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
 import Badge from '../components/ui/Badge'
+import ComingSoon from '../components/reader/ComingSoon'
+import { TRANSLATION_SOON } from '../data/readerStrings.js'
 import Button from '../components/ui/Button'
 import Input from '../components/ui/Input'
 import Card from '../components/ui/Card'
@@ -342,7 +343,6 @@ function Reader({ poem, sectionId }) {
 
   // WordGlossary state
   const [glossaryWord, setGlossaryWord] = useState(null)
-  const [glossaryLoading, setGlossaryLoading] = useState(false)
 
   const setLayer = (next) => {
     const l = normalizeLayer(next)
@@ -425,32 +425,12 @@ function Reader({ poem, sectionId }) {
     return map
   }, [sec])
 
-  async function handleWordClick(wordText) {
+  // Glossary comes only from the corpus record; no live AI lookup.
+  function handleWordClick(wordText) {
     const clean = wordText.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
     if (!clean) return
-
     const matchedWord = wordGlossaryMap.get(clean)
-    if (
-      matchedWord &&
-      (matchedWord.root != null ||
-        matchedWord.urichol != null ||
-        matchedWord.etymology != null ||
-        matchedWord.gloss != null)
-    ) {
-      setGlossaryWord({ form: wordText, ...matchedWord })
-      return
-    }
-
-    setGlossaryWord({ form: wordText })
-    setGlossaryLoading(true)
-    try {
-      const result = await analyzeWord(clean)
-      setGlossaryWord({ form: wordText, ...result })
-    } catch (err) {
-      console.error('Word analysis failed:', err)
-    } finally {
-      setGlossaryLoading(false)
-    }
+    setGlossaryWord({ ...(matchedWord || {}), form: wordText })
   }
 
   function handleCopyVerse(text) {
@@ -738,7 +718,7 @@ function Reader({ poem, sectionId }) {
                 {/* Modern Commentary (Urai) */}
                 {show.urai && (
                   <Card variant="default" className="p-4 sm:p-6 space-y-3 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent">
                         <span className="tamil">உரை</span> (Prose Commentary)
                       </span>
@@ -755,7 +735,7 @@ function Reader({ poem, sectionId }) {
                 {/* English Translation */}
                 {show.english && (
                   <Card variant="default" className="p-4 sm:p-6 space-y-4 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                       <span className="text-xs font-bold text-accent uppercase tracking-wider">
                         English Translation
                       </span>
@@ -764,9 +744,7 @@ function Reader({ poem, sectionId }) {
                     {sec.english ? (
                       <p className="text-base sm:text-lg leading-relaxed text-primary">{sec.english}</p>
                     ) : (
-                      <p className="text-sm text-faint italic">
-                        English translation for this section is being prepared and will appear after scholar review.
-                      </p>
+                      <ComingSoon {...TRANSLATION_SOON} />
                     )}
                   </Card>
                 )}
@@ -806,7 +784,7 @@ function Reader({ poem, sectionId }) {
               {/* Original Tamil Verse */}
               {show.sangam && (
                 <Card variant="flat" className="p-4 sm:p-8 space-y-4 border-accent/20">
-                  <div className="flex items-center justify-between border-b border-line pb-2">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-2">
                     <span className="text-xs font-semibold text-accent uppercase tracking-wider">
                       Original Classical Tamil
                     </span>
@@ -843,9 +821,7 @@ function Reader({ poem, sectionId }) {
                   {sec.english ? (
                     <p className="text-base sm:text-lg leading-relaxed text-muted">{sec.english}</p>
                   ) : (
-                    <p className="text-sm text-faint italic">
-                      English translation for this section is being prepared and will appear after scholar review.
-                    </p>
+                    <ComingSoon {...TRANSLATION_SOON} />
                   )}
                 </Card>
               )}
@@ -890,7 +866,7 @@ function Reader({ poem, sectionId }) {
       {glossaryWord && (
         <WordGlossary
           word={glossaryWord}
-          loading={glossaryLoading}
+          verse={sec}
           onClose={() => setGlossaryWord(null)}
         />
       )}
