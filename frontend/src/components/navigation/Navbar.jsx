@@ -8,6 +8,7 @@ import lockupColour from '../../assets/brand/lockup-colour.svg'
 import lockupReversed from '../../assets/brand/lockup-reversed.svg'
 import ThemeToggle from '../ui/ThemeToggle'
 import useAppStore from '../../store/useAppStore'
+import { AVAI_ENABLED } from '../../config/features'
 
 const NAV_ICON_PROPS = { size: 14, strokeWidth: 1.75, 'aria-hidden': true }
 
@@ -18,7 +19,7 @@ export default function Navbar() {
   const links = [
     { to: '/', end: true, labelTa: 'முகப்பு', labelEn: 'Home', Icon: House },
     { to: '/book', labelTa: 'நூலகம்', labelEn: 'Library', Icon: BookOpen },
-    { to: '/avai', labelTa: 'சங்க அவை', labelEn: 'Avai', Icon: Users },
+    ...(AVAI_ENABLED ? [{ to: '/avai', labelTa: 'சங்க அவை', labelEn: 'Avai', Icon: Users }] : []),
     { to: '/world', labelTa: 'சங்க உலகம்', labelEn: 'Sangam World', Icon: Globe },
     { to: '/knowledge', labelTa: 'அறிவு', labelEn: 'Knowledge', Icon: Brain },
     { to: '/graph', labelTa: 'வரைபடம்', labelEn: 'Graph', Icon: Map },
