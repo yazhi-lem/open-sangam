@@ -1,0 +1,133 @@
+/* Static instances of Noto Sans Tamil / Noto Serif Tamil (made from the variable fonts with fontTools) so they embed as TrueType */
+@font-face { font-family:"OS Sans Tamil"; src:url("fonts/NotoSansTamil-400.ttf"); font-weight:400; }
+@font-face { font-family:"OS Sans Tamil"; src:url("fonts/NotoSansTamil-600.ttf"); font-weight:600; }
+@font-face { font-family:"OS Sans Tamil"; src:url("fonts/NotoSansTamil-700.ttf"); font-weight:700 900; }
+@font-face { font-family:"OS Serif Tamil"; src:url("fonts/NotoSerifTamil-400.ttf"); font-weight:100 500; }
+@font-face { font-family:"OS Serif Tamil"; src:url("fonts/NotoSerifTamil-700.ttf"); font-weight:600 700; }
+@font-face { font-family:"OS Serif Tamil"; src:url("fonts/NotoSerifTamil-800.ttf"); font-weight:800 900; }
+
+@page { size: A4; margin: 0; }
+:root{
+  --ink:#0A0A0A; --ink2:#2b2a27; --muted:#6b665c; --forest:#1B4A2E; --forest2:#2f6b46;
+  --gold:#C49A38; --gold-soft:#efe2bf; --cream:#F8F5EF; --paper:#fffdf8; --line:#e4dccb; --kumkum:#b4442c;
+  --kurinji:#5b4a8b; --mullai:#2f6b46; --marutam:#8a9a2b; --neytal:#2a6f8f; --palai:#b4442c;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+html,body{ background:#ccc; }
+body{ font-family:"Noto Sans","OS Sans Tamil",sans-serif; color:var(--ink2); font-size:10.2pt; line-height:1.5;
+      -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+:lang(ta), .ta{ font-family:"OS Sans Tamil","Noto Sans",sans-serif; letter-spacing:0 !important; line-height:1.62; }
+.page{ width:210mm; height:297mm; overflow:hidden; position:relative; background:var(--cream);
+       page-break-after:always; break-after:page; padding:18mm 17mm 22mm 17mm; }
+.page:last-child{ page-break-after:auto; break-after:auto; }
+
+/* running head + foot */
+.run{ position:absolute; top:8mm; left:17mm; right:17mm; display:flex; justify-content:space-between;
+      font-size:7.6pt; color:var(--muted); text-transform:uppercase; letter-spacing:.12em; border-bottom:.3mm solid var(--line); padding-bottom:2mm; }
+:lang(ta) .run{ text-transform:none; letter-spacing:0; font-size:8pt; }
+.run b{ color:var(--forest); font-weight:700; }
+.foot{ position:absolute; bottom:8mm; left:17mm; right:17mm; display:flex; justify-content:space-between; align-items:flex-end;
+       font-size:7.6pt; color:var(--muted); border-top:.3mm solid var(--line); padding-top:2mm; }
+.foot .other{ font-style:italic; color:var(--forest); }
+.foot .other.ta-tag{ font-style:normal; font-family:"OS Serif Tamil",serif; font-size:8.2pt; }
+.foot .pg{ font-weight:700; color:var(--forest); }
+.tinai-bar{ position:absolute; left:0; right:0; bottom:0; height:2.2mm; display:flex; }
+.tinai-bar i{ flex:1; }
+.tinai-bar i:nth-child(1){background:var(--kurinji)} .tinai-bar i:nth-child(2){background:var(--mullai)}
+.tinai-bar i:nth-child(3){background:var(--marutam)} .tinai-bar i:nth-child(4){background:var(--neytal)} .tinai-bar i:nth-child(5){background:var(--palai)}
+
+/* headings */
+.kicker{ font-size:8pt; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:700; margin:2mm 0 2mm; }
+:lang(ta) .kicker{ letter-spacing:0; text-transform:none; font-size:9.5pt; }
+h1{ font-family:"Fraunces","OS Serif Tamil",serif; font-weight:700; color:var(--forest); font-size:25pt; line-height:1.12; margin-bottom:4mm; }
+:lang(ta) h1{ font-family:"OS Serif Tamil",serif; font-size:21pt; line-height:1.38; font-weight:700; }
+h2{ font-family:"Fraunces","OS Serif Tamil",serif; color:var(--forest); font-size:13pt; line-height:1.25; margin:4mm 0 1.6mm; font-weight:650; }
+:lang(ta) h2{ font-family:"OS Serif Tamil",serif; font-size:12pt; line-height:1.45; font-weight:700; }
+h3{ font-size:10.4pt; color:var(--ink); margin:0 0 1mm; font-weight:700; }
+:lang(ta) h3{ font-size:10.2pt; }
+p{ margin:0 0 2.4mm; }
+.lede{ font-size:12pt; line-height:1.5; color:var(--ink); margin-bottom:4mm; font-family:"Fraunces",serif; font-weight:400; }
+:lang(ta) .lede{ font-family:"OS Serif Tamil",serif; font-size:11.2pt; line-height:1.7; }
+ul.dots{ list-style:none; margin:0 0 2.4mm; }
+ul.dots li{ position:relative; padding-left:4.2mm; margin-bottom:1.4mm; }
+ul.dots li::before{ content:""; position:absolute; left:0; top:.62em; width:1.7mm; height:1.7mm; border-radius:50%; background:var(--gold); }
+strong{ color:var(--ink); }
+.muted{ color:var(--muted); }
+.small{ font-size:8.4pt; line-height:1.45; }
+a{ color:var(--forest); text-decoration:none; border-bottom:.25mm solid var(--gold); }
+
+/* layout helpers */
+.cols{ display:grid; grid-template-columns:1fr 1fr; gap:6mm; }
+.cols3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:4mm; }
+.card{ background:var(--paper); border:.3mm solid var(--line); border-radius:2.5mm; padding:4mm 4.4mm; }
+.card.forest{ background:var(--forest); color:#eef3ee; border:none; }
+.card.forest h3,.card.forest strong{ color:#fff; } .card.forest .muted{ color:#cfe0d4; }
+.card.gold{ background:var(--gold-soft); border-color:#e2cf9c; }
+.card h3 .n{ display:inline-block; min-width:6mm; color:var(--gold); }
+.pull{ border-left:1.2mm solid var(--gold); padding:2mm 0 2mm 5mm; margin:4mm 0; }
+.verse{ font-family:"OS Serif Tamil",serif; color:var(--forest); font-size:12.5pt; line-height:1.65; letter-spacing:0; }
+.gloss{ font-family:"Fraunces",serif; font-style:italic; color:var(--muted); font-size:9.6pt; margin-top:1mm; }
+.stat{ background:var(--paper); border:.3mm solid var(--line); border-radius:2.5mm; padding:3.2mm 3.6mm; }
+.stat .num{ font-family:"Fraunces",serif; font-size:21pt; color:var(--forest); font-weight:700; line-height:1.05; }
+.stat .lbl{ font-size:8.4pt; color:var(--ink2); line-height:1.4; margin-top:1mm; }
+:lang(ta) .stat .lbl{ font-size:8.6pt; }
+.tag{ display:inline-block; font-size:7.2pt; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:.5mm 1.8mm; border-radius:1mm; vertical-align:middle; }
+:lang(ta) .tag{ text-transform:none; letter-spacing:0; font-size:7.8pt; }
+.tag.live{ background:#dcebdf; color:var(--forest); } .tag.draft{ background:#f6e3c4; color:#8a5a12; } .tag.gap{ background:#f3d6cf; color:var(--kumkum); } .tag.plan{ background:#e3e3f0; color:#3d3a6b; }
+table.t{ width:100%; border-collapse:collapse; font-size:8.6pt; }
+table.t td, table.t th{ padding:1.2mm 1.6mm; border-bottom:.25mm solid var(--line); text-align:left; vertical-align:top; }
+table.t th{ color:var(--forest); font-size:7.8pt; text-transform:uppercase; letter-spacing:.08em; }
+:lang(ta) table.t th{ text-transform:none; letter-spacing:0; font-size:8.4pt; }
+table.t td.r, table.t th.r{ text-align:right; font-variant-numeric:tabular-nums; }
+.flow{ display:grid; grid-template-columns:repeat(5,1fr); gap:2.4mm; margin:3mm 0 4mm; }
+.flow .step{ background:var(--paper); border:.3mm solid var(--line); border-top:1.4mm solid var(--forest); border-radius:2mm; padding:2.6mm 2.6mm; font-size:8.4pt; line-height:1.42; }
+.flow .step b{ display:block; color:var(--forest); font-size:9.4pt; margin-bottom:.8mm; }
+.tinai-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:2.4mm; margin:2mm 0 3mm; }
+.tinai-grid div{ border-radius:2mm; padding:2.6mm; color:#fff; font-size:8.1pt; line-height:1.38; }
+.tinai-grid b{ display:block; font-family:"OS Serif Tamil",serif; font-size:11pt; margin-bottom:.6mm; }
+.role{ background:var(--paper); border:.3mm solid var(--line); border-radius:2.5mm; padding:3.4mm 4mm; }
+.role h3{ color:var(--forest); font-size:10.6pt; }
+.role .first{ margin-top:1.4mm; font-size:8.5pt; background:var(--cream); border-radius:1.5mm; padding:1.8mm 2.4mm; }
+.role .first b{ color:var(--gold); }
+.qr{ width:30mm; height:30mm; } .qr img{ width:100%; height:100%; }
+.draft-note{ display:none; } /* set to block to print a native-review note */
+
+/* cover */
+.cover{ background:var(--forest); color:#f3efe4; padding:0; }
+.cover .inner{ position:absolute; inset:0; padding:24mm 20mm 20mm; display:flex; flex-direction:column; }
+.cover .brand{ font-size:8.6pt; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); font-weight:700; }
+:lang(ta) .cover .brand{ letter-spacing:0; text-transform:none; font-size:10pt; }
+.cover .big-ta{ font-family:"OS Serif Tamil",serif; font-weight:800; color:var(--gold); font-size:64pt; line-height:1.2; letter-spacing:0; margin-top:26mm; }
+.cover .title{ font-family:"Fraunces",serif; font-size:40pt; font-weight:700; color:#fff; line-height:1.05; margin-top:2mm; }
+.cover .tagline{ font-family:"Fraunces",serif; font-size:17pt; color:#f3efe4; margin-top:7mm; line-height:1.3; max-width:150mm; }
+:lang(ta) .cover .tagline{ font-family:"OS Serif Tamil",serif; font-size:16pt; line-height:1.6; }
+.cover .sub{ font-size:10.4pt; color:#cfe0d4; margin-top:5mm; max-width:150mm; line-height:1.55; }
+.cover .epi{ margin-top:auto; border-top:.3mm solid rgba(196,154,56,.6); padding-top:6mm; }
+.cover .epi .verse{ color:var(--gold); font-size:15pt; }
+.cover .epi .gloss{ color:#cfe0d4; font-size:10pt; }
+.cover .meta{ display:flex; justify-content:space-between; font-size:8.4pt; color:#cfe0d4; margin-top:8mm; }
+.cover .meta .ta-tag{ font-family:"OS Serif Tamil",serif; color:var(--gold); font-size:10pt; }
+.page svg.orn{ position:absolute; right:-28mm; top:-22mm; width:150mm; height:150mm; opacity:.17; }
+.cover .chips{ margin-top:14mm; display:flex; flex-wrap:wrap; gap:2.4mm; max-width:160mm; }
+.cover .chips span{ border:.3mm solid rgba(196,154,56,.7); color:#f3efe4; border-radius:10mm; padding:1.2mm 4mm; font-size:9.4pt; }
+:lang(ta) .cover .chips span{ font-size:9.6pt; }
+.foot .other.en-tag{ font-family:"Fraunces",serif; font-size:8.6pt; }
+/* Tamil sizing: Tamil glyphs run larger than Latin at the same point size */
+html:lang(ta) body{ font-size:9.5pt; }
+html:lang(ta) :lang(ta){ line-height:1.56; }
+html:lang(ta) h1{ font-size:19pt; line-height:1.32; margin-bottom:3mm; }
+html:lang(ta) h2{ font-size:11.2pt; margin:3.2mm 0 1.4mm; }
+html:lang(ta) .lede{ font-size:10.4pt; line-height:1.62; margin-bottom:3mm; }
+html:lang(ta) .small{ font-size:8.2pt; line-height:1.5; }
+html:lang(ta) .tinai-grid div{ font-size:7.8pt; }
+html:lang(ta) .card{ padding:3.4mm 4mm; }
+.example{ margin-top:5mm; display:grid; grid-template-columns:auto 1fr; gap:6mm; align-items:center; background:var(--paper); border:.3mm dashed var(--gold); border-radius:2.5mm; padding:4mm 5mm; }
+.example .word{ font-family:"OS Serif Tamil",serif; font-size:24pt; color:var(--forest); line-height:1.3; letter-spacing:0; }
+.example .letters{ display:flex; gap:1.6mm; margin-top:1mm; }
+.example .letters span{ font-family:"OS Sans Tamil",sans-serif; background:var(--gold-soft); border-radius:1mm; padding:.4mm 2mm; font-size:10pt; }
+.example code{ font-size:7.8pt; color:var(--muted); }
+.roomy .card p.small{ font-size:9.2pt; line-height:1.5; }
+.roomy .small{ font-size:9.2pt; line-height:1.5; }
+.roomy .role .first{ font-size:9.1pt; line-height:1.5; }
+.roomy .flow .step{ font-size:9pt; }
+.roomy .card{ padding:4.4mm 5mm; }
