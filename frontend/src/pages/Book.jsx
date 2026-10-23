@@ -4,7 +4,6 @@ import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
-import { analyzeWord } from '../services/geminiApi'
 import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
@@ -342,7 +341,6 @@ function Reader({ poem, sectionId }) {
 
   // WordGlossary state
   const [glossaryWord, setGlossaryWord] = useState(null)
-  const [glossaryLoading, setGlossaryLoading] = useState(false)
 
   const setLayer = (next) => {
     const l = normalizeLayer(next)
@@ -425,32 +423,12 @@ function Reader({ poem, sectionId }) {
     return map
   }, [sec])
 
-  async function handleWordClick(wordText) {
+  // Glossary comes only from the corpus record; no live AI lookup.
+  function handleWordClick(wordText) {
     const clean = wordText.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
     if (!clean) return
-
     const matchedWord = wordGlossaryMap.get(clean)
-    if (
-      matchedWord &&
-      (matchedWord.root != null ||
-        matchedWord.urichol != null ||
-        matchedWord.etymology != null ||
-        matchedWord.gloss != null)
-    ) {
-      setGlossaryWord({ form: wordText, ...matchedWord })
-      return
-    }
-
-    setGlossaryWord({ form: wordText })
-    setGlossaryLoading(true)
-    try {
-      const result = await analyzeWord(clean)
-      setGlossaryWord({ form: wordText, ...result })
-    } catch (err) {
-      console.error('Word analysis failed:', err)
-    } finally {
-      setGlossaryLoading(false)
-    }
+    setGlossaryWord({ ...(matchedWord || {}), form: wordText })
   }
 
   function handleCopyVerse(text) {
@@ -890,7 +868,7 @@ function Reader({ poem, sectionId }) {
       {glossaryWord && (
         <WordGlossary
           word={glossaryWord}
-          loading={glossaryLoading}
+          verse={sec}
           onClose={() => setGlossaryWord(null)}
         />
       )}
