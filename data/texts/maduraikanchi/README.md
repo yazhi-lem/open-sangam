@@ -1,4 +1,4 @@
-# Maduraikanchi — திருமுருகாற்றுப்படை
+# Maduraikanchi — மதுரைக்காஞ்சி
 
 Maduraikanchi (மதுரைக்காஞ்சி) is one of the Ten Idylls (Pattuppāṭṭu) of Sangam literature.
 It is a long poem of 782 lines composed by Mankudi Maruthanar, describing the glory of the

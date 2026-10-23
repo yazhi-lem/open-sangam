@@ -85,7 +85,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-line flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-faint">
           <p>
-            © {new Date().getFullYear()} Open Sangam Project • Scholar-verified classical Tamil digital corpus • Part of the{' '}
+            © {new Date().getFullYear()} Open Sangam Project • <span lang="ta" className="tamil">வரைவு · அறிஞர் சரிபார்க்கவில்லை</span> (Draft · not yet scholar-verified) • Part of the{' '}
             <a
               href="https://yazhi.dev"
               target="_blank"

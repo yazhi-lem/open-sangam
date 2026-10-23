@@ -179,7 +179,8 @@ export const TINAI_WORLD = {
 
     poetry: {
       classic: 'ஆடுகொள் வீயின் அலர்மலி உந்தி / நாடுகொள் சிறப்பின் நன்னாட்டுப் பெண்டிரொடு / கார்கோள் முன்னிய கமழ்மலர் கடம்பின்',
-      poem: 'Kurunthokai 219 — The kadamba blossoms at first rain; the koel cries from the grove. But you are far away and have not yet come home.',
+      poem: 'The kadamba blossoms at first rain; the koel cries from the grove. But you are far away and have not yet come home.',
+      verified: false, // citation not found in the corpus; hidden from the UI until a scholar confirms the source
     },
 
     colors: { primary: 'from-green-900 to-emerald-950', accent: 'text-green-300', badge: 'bg-green-900/50 text-green-200', border: 'border-green-700' },
@@ -264,7 +265,8 @@ export const TINAI_WORLD = {
 
     poetry: {
       classic: 'மருதம் நிழலிய வெண்மணல் அடைகரை / ஆடுகொள் வேனில் அவிர்மணல் குறுமுன்று',
-      poem: 'Akananuru 136 — She stood by the white sand of the marutam-shaded bank, and her eyes, like the lotus, told of her unspoken anger.',
+      poem: 'She stood by the white sand of the marutam-shaded bank, and her eyes, like the lotus, told of her unspoken anger.',
+      verified: false, // citation not found in the corpus; hidden from the UI until a scholar confirms the source
     },
 
     colors: { primary: 'from-yellow-900 to-amber-950', accent: 'text-yellow-300', badge: 'bg-yellow-900/50 text-yellow-200', border: 'border-yellow-700' },
@@ -348,7 +350,8 @@ export const TINAI_WORLD = {
 
     poetry: {
       classic: 'யான் நீர் வேண்டும் என்பவள் போல / புன்னை அம் கானல் பூ உக வண்டு ஊத',
-      poem: 'Akananuru 100 — The bees scatter the punnai blossoms as if in grief; she stands on the beach, her anklets sounding her longing with each step.',
+      poem: 'The bees scatter the punnai blossoms as if in grief; she stands on the beach, her anklets sounding her longing with each step.',
+      verified: false, // citation not found in the corpus; hidden from the UI until a scholar confirms the source
     },
 
     colors: { primary: 'from-blue-900 to-cyan-950', accent: 'text-blue-300', badge: 'bg-blue-900/50 text-blue-200', border: 'border-blue-700' },
@@ -430,7 +433,8 @@ export const TINAI_WORLD = {
 
     poetry: {
       classic: 'அழல் அவிர் உருப்பின் ஆய் கதிர் திகழ / கொழு நிழல் கரந்த வெம்மை / நிழல் அற்று அலமரும் பகல் வெய்யோற்கு',
-      poem: 'Purananuru 68 — The midday sun stripped every shadow from the wasteland. On that track, my lord walked — and did not look back.',
+      poem: 'The midday sun stripped every shadow from the wasteland. On that track, my lord walked — and did not look back.',
+      verified: false, // citation not found in the corpus; hidden from the UI until a scholar confirms the source
     },
 
     colors: { primary: 'from-orange-900 to-red-950', accent: 'text-orange-300', badge: 'bg-orange-900/50 text-orange-200', border: 'border-orange-700' },

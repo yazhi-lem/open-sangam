@@ -395,7 +395,7 @@ export default function Avai() {
         claims: response.claims || [],
         isAbstained: response.is_abstained || false,
         abstentionReason: response.abstention_reason || null,
-        evidenceStatus: response.evidence_status || 'verified',
+        evidenceStatus: response.evidence_status || 'unverified',
         scenario: response.scenario || null,
         imageUrl: response.imageUrl || null,
         metadata: response.metadata,
@@ -829,9 +829,15 @@ export default function Avai() {
                           <span lang="ta" className="tamil text-[11px] font-bold text-muted flex items-center gap-1">
                             <BookOpen size={11} /> சான்றாதாரங்கள் ({msg.citations.length})
                           </span>
-                          <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
-                            ✓ சான்றுறுதி (Verified)
-                          </span>
+                          {msg.evidenceStatus === 'verified' ? (
+                            <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+                              <span lang="ta" className="tamil">மேற்கோள் தானாகச் சரிபார்க்கப்பட்டது</span> · Citation auto-checked
+                            </span>
+                          ) : (
+                            <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-surface-alt text-muted border border-line">
+                              <span lang="ta" className="tamil">வரைவு, அறிஞர் சரிபார்க்கவில்லை</span> · Draft, not scholar-verified
+                            </span>
+                          )}
                         </div>
                         <div className="flex flex-wrap gap-1.5">
                           {msg.citations.map((c, cIdx) => (
