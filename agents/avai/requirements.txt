@@ -8,5 +8,10 @@ fastapi==0.141.1
 uvicorn[standard]==0.52.1
 httpx==0.28.1  # fastapi.testclient (tests/test_api.py), not used at runtime
 
+# Durable sessions + distributed rate limiting (persistence.py, rate_limit.py)
+sqlalchemy>=2.0,<3
+psycopg[binary]>=3.2,<4
+redis>=5.2,<7
+
 # Evaluation framework (DeepEval LLM judges & metrics)
 deepeval==4.2.7
