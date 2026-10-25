@@ -5,3 +5,8 @@ litellm==1.78.5
 python-dotenv==1.1.1
 fastapi==0.141.1
 uvicorn[standard]==0.52.1
+
+# Durable sessions + distributed rate limiting (persistence.py, rate_limit.py)
+sqlalchemy>=2.0,<3
+psycopg[binary]>=3.2,<4
+redis>=5.2,<7

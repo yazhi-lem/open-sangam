@@ -131,6 +131,25 @@ curl -X POST http://localhost:8080/avai/ask \
   -d '{"message": "What tiṇai is kurunthokai_100?"}'
 ```
 
+### Durable sessions & distributed rate limiting
+
+Sessions use ADK's in-memory service by default. Set `AVAI_DATABASE_URL` to a
+SQLAlchemy URL to switch to `DatabaseSessionService` (Postgres in production):
+
+```env
+AVAI_DATABASE_URL=postgresql+psycopg://avai:password@/avai?host=/cloudsql/PROJECT:asia-south1:avai
+```
+
+Set `AVAI_REDIS_URL` to share rate limits across Cloud Run instances:
+
+```env
+AVAI_REDIS_URL=redis://10.0.0.3:6379/0
+```
+
+Without Redis the limiter falls back to a per-instance window. `/avai/capabilities`
+reports the actual session and rate-limit backends, including whether Redis
+is configured.
+
 ### Production health & capability discovery
 
 | Endpoint | Purpose |

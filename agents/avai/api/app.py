@@ -7,7 +7,6 @@ import os
 import re
 import time
 import uuid
-from collections import defaultdict, deque
 from datetime import datetime, timezone
 
 from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
@@ -15,11 +14,10 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from google.adk.runners import Runner
-from google.adk.sessions import InMemorySessionService
 from google.genai import types
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from .. import health, telemetry
+from .. import health, persistence, rate_limit, telemetry
 from ..citation_validator import PulavarCitationValidator
 from ..poets.avvaiyar import avvaiyar_agent
 from ..poets.kapilar import kapilar_agent
@@ -29,6 +27,8 @@ from ..poets.tholkappiyar import tholkappiyar_agent
 from ..store import artifacts, interaction_graph
 from ..swarm import root_agent
 from ..tools.corpus import get_verse
+from ..utils.context import augment_with_context
+from ..utils.http import allowed_origins
 from . import sessions
 from .schemas import (
     AskMetadata,
@@ -47,61 +47,46 @@ app.add_middleware(telemetry.TelemetryMiddleware)
 _citation_validator = PulavarCitationValidator()
 
 
-def _allowed_origins() -> list[str]:
-    # Comma-separated list, e.g. "https://sangam.yazhi.dev,https://yazhi.dev".
-    # Unset (local dev) keeps the old allow-all behaviour.
-    raw = os.getenv("AVAI_ALLOWED_ORIGINS", "*")
-    return [o.strip() for o in raw.split(",") if o.strip()] or ["*"]
-
-
 # The browser client never sends cookies or auth headers, so credentials stay
 # off; that also keeps a "*" origin list valid per the CORS spec.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=_allowed_origins(),
+    allow_origins=allowed_origins(),
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type"],
+    allow_headers=[
+        "Content-Type",
+        "Authorization",
+        "X-Request-Id",
+        "traceparent",
+        "Idempotency-Key",
+    ],
 )
 
 
-# Per-client sliding-window limit on POST /avai/ask. The public read mode has
-# no login, and every ask spends model tokens, so a deployed instance sets
-# AVAI_RATE_LIMIT_PER_MINUTE; 0 (the default) disables it for local dev/tests.
-# In-process only, like the session store: good enough for one Cloud Run
-# instance, not a substitute for an edge limit once traffic needs more.
-_RATE_WINDOW_SECONDS = 60.0
-_rate_hits: dict[str, deque] = defaultdict(deque)
+# Per-client sliding-window limit on POST /avai/ask. Redis makes the limit
+# shared across Cloud Run instances; without Redis it falls back to a local
+# window. AVAI_RATE_LIMIT_PER_MINUTE=0 disables it for local dev/tests.
+_rate_limiter = rate_limit.AsyncRateLimiter(
+    os.getenv("AVAI_REDIS_URL") or os.getenv("REDIS_URL")
+)
 
 
-def _client_key(request: Request) -> str:
-    # Use the RIGHTMOST X-Forwarded-For entry: it is the one appended by the
-    # hosting front end (Cloud Run), while earlier entries are client-supplied
-    # and could be rotated to dodge the limit.
-    forwarded = request.headers.get("x-forwarded-for", "")
-    if forwarded:
-        return forwarded.split(",")[-1].strip()
-    return request.client.host if request.client else "unknown"
-
-
-def _check_rate_limit(request: Request) -> None:
+async def _check_rate_limit(request: Request) -> None:
     limit = int(os.getenv("AVAI_RATE_LIMIT_PER_MINUTE", "0"))
     if limit <= 0:
         return
-    now = time.monotonic()
-    hits = _rate_hits[_client_key(request)]
-    while hits and now - hits[0] > _RATE_WINDOW_SECONDS:
-        hits.popleft()
-    if len(hits) >= limit:
-        retry_after = max(1, int(_RATE_WINDOW_SECONDS - (now - hits[0])) + 1)
+    try:
+        await _rate_limiter.hit(rate_limit.client_key(request), limit)
+    except rate_limit.RateLimitExceeded as exc:
         raise HTTPException(
             status_code=429,
             detail="Too many questions in a short time. Please wait a minute and ask again.",
-            headers={"Retry-After": str(retry_after)},
-        )
-    hits.append(now)
+            headers={"Retry-After": str(exc.retry_after)},
+        ) from exc
 
-_session_service = InMemorySessionService()
+
+_session_service = persistence.build_session_service()
 
 _PULAVAR_AGENTS = {
     "avvaiyar": avvaiyar_agent,
@@ -216,19 +201,6 @@ async def http_exception_handler(
     )
 
 
-def _augment_with_context(message: str, context) -> str:
-    hints = []
-    if context.tinai:
-        hints.append(f"tiṇai={context.tinai}")
-    if context.poem:
-        hints.append(f"poem={context.poem}")
-    if context.limit != 10:
-        hints.append(f"limit={context.limit}")
-    if not hints:
-        return message
-    return f"{message}\n\n[Context hints: {', '.join(hints)}]"
-
-
 def _extract_citations(text: str) -> list[Citation]:
     citations = []
     seen = set()
@@ -276,7 +248,7 @@ async def health_ready() -> JSONResponse:
 @app.get("/avai/capabilities")
 async def avai_capabilities() -> JSONResponse:
     return JSONResponse(
-        content=health.capabilities(),
+        content=health.capabilities(limiter=_rate_limiter),
         headers={"Cache-Control": "public, max-age=300"},
     )
 
@@ -342,7 +314,7 @@ def _capture_artifact(
 async def ask(
     request: AskRequest, background_tasks: BackgroundTasks, http_request: Request
 ) -> AskResponse:
-    _check_rate_limit(http_request)
+    await _check_rate_limit(http_request)
     target_pulavar = request.pulavar or request.poet
     if target_pulavar:
         effective_workflow = request.workflow or _PULAVAR_TO_DEFAULT_WORKFLOW.get(
@@ -375,12 +347,25 @@ async def ask(
     telemetry.set_request_identity(session_id=session_id, user_id=user_id)
 
     if not sessions.exists(session_id):
-        await _session_service.create_session(
-            app_name=sessions.APP_NAME, user_id=user_id, session_id=session_id
-        )
+        # The in-process registry resets on deploy, but a SQL-backed ADK
+        # session service may still hold the conversation. Check there before
+        # creating, otherwise a restart would try to insert a duplicate id.
+        existing = None
+        try:
+            existing = await _session_service.get_session(
+                app_name=sessions.APP_NAME,
+                user_id=user_id,
+                session_id=session_id,
+            )
+        except Exception:
+            logger.debug("session lookup failed", exc_info=True)
+        if existing is None:
+            await _session_service.create_session(
+                app_name=sessions.APP_NAME, user_id=user_id, session_id=session_id
+            )
     sessions.touch(session_id, user_id)
 
-    outgoing_message = _augment_with_context(request.message, request.context)
+    outgoing_message = augment_with_context(request.message, request.context)
     content = types.Content(role="user", parts=[types.Part(text=outgoing_message)])
 
     provider, model_name = _MODEL_LABEL.split(":", 1)
