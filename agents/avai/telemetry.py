@@ -15,14 +15,11 @@ Design rules:
 from __future__ import annotations
 
 import contextvars
-import hashlib
 import json
 import logging
 import os
-import re
 import threading
 import time
-import uuid
 from collections import defaultdict
 from contextlib import contextmanager
 from dataclasses import dataclass
@@ -32,13 +29,26 @@ from typing import Any, Iterator
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 
+from .utils.ids import (
+    format_traceparent,
+    hash_id,
+    new_request_id,
+    new_span_id,
+    new_trace_id,
+    parse_traceparent,
+)
+from .utils.usage import (
+    estimate_cost_inr,
+    estimate_cost_usd,
+    extract_usage,
+    usd_inr_rate,
+    usd_to_inr,
+)
+
 SERVICE_NAME = "avai-api"
 SERVICE_VERSION = os.getenv("AVAI_VERSION", "0.1.0")
 REQUEST_ID_HEADER = "X-Request-Id"
 TRACEPARENT_HEADER = "traceparent"
-
-_TRACEPARENT_RE = re.compile(r"^[0-9a-f]{2}-([0-9a-f]{32})-[0-9a-f]{16}-[0-9a-f]{2}$")
-
 
 @dataclass
 class RequestContext:
@@ -57,34 +67,6 @@ _current: contextvars.ContextVar[RequestContext | None] = contextvars.ContextVar
 )
 
 
-def hash_id(value: str | None) -> str | None:
-    """Stable, non-reversible id for logs/metrics. Never emit the raw value."""
-    if not value:
-        return None
-    return hashlib.sha256(value.encode("utf-8")).hexdigest()[:16]
-
-
-def new_trace_id() -> str:
-    return uuid.uuid4().hex
-
-
-def new_span_id() -> str:
-    return uuid.uuid4().hex[:16]
-
-
-def parse_traceparent(header: str | None) -> str | None:
-    """Return the 32-hex trace id from a W3C traceparent header, if valid."""
-    if not header:
-        return None
-    match = _TRACEPARENT_RE.match(header.strip().lower())
-    return match.group(1) if match else None
-
-
-def format_traceparent(trace_id: str, span_id: str, sampled: bool = True) -> str:
-    flags = "01" if sampled else "00"
-    return f"00-{trace_id}-{span_id}-{flags}"
-
-
 def current_context() -> RequestContext | None:
     return _current.get()
 
@@ -100,7 +82,7 @@ def bind_request_context(
         existing.route = route or existing.route
         return existing
     ctx = RequestContext(
-        request_id=request_id or uuid.uuid4().hex,
+        request_id=request_id or new_request_id(),
         trace_id=trace_id or new_trace_id(),
         span_id=new_span_id(),
         route=route,
@@ -266,59 +248,6 @@ def reset_metrics() -> None:
 
 # --- model cost attribution ---------------------------------------------
 
-# INR attribution is configurable because FX moves; the default is only a
-# fallback for local dev. Set AVAI_USD_INR_RATE in production.
-DEFAULT_USD_INR_RATE = 88.0
-
-# USD per 1M tokens. Override per deployment without changing code.
-_DEFAULT_PRICING_PER_MTOK = {
-    "google/gemini-2.5-flash": (0.30, 2.50),
-    "gemini-2.5-flash": (0.30, 2.50),
-    "google/gemini-2.5-flash-lite": (0.10, 0.40),
-    "gemini-2.5-flash-lite": (0.10, 0.40),
-}
-
-
-def usd_inr_rate() -> float:
-    return float(os.getenv("AVAI_USD_INR_RATE", str(DEFAULT_USD_INR_RATE)))
-
-
-def usd_to_inr(cost_usd: float) -> float:
-    return round(cost_usd * usd_inr_rate(), 4)
-
-
-def estimate_cost_usd(model: str, token_in: int, token_out: int) -> float:
-    input_price = os.getenv("AVAI_MODEL_INPUT_PRICE_PER_MTOK")
-    output_price = os.getenv("AVAI_MODEL_OUTPUT_PRICE_PER_MTOK")
-    if input_price and output_price:
-        in_per_m, out_per_m = float(input_price), float(output_price)
-    else:
-        in_per_m, out_per_m = _DEFAULT_PRICING_PER_MTOK.get(model, (0.0, 0.0))
-    return round((token_in / 1_000_000) * in_per_m + (token_out / 1_000_000) * out_per_m, 8)
-
-
-def estimate_cost_inr(model: str, token_in: int, token_out: int) -> float:
-    return usd_to_inr(estimate_cost_usd(model, token_in, token_out))
-
-
-def extract_usage(event: Any) -> tuple[int, int]:
-    """Best-effort token usage from an ADK event; returns (input, output)."""
-    usage = getattr(event, "usage_metadata", None) or getattr(event, "usageMetadata", None)
-    if usage is None:
-        return 0, 0
-    token_in = (
-        getattr(usage, "prompt_token_count", None)
-        or getattr(usage, "promptTokenCount", None)
-        or 0
-    )
-    token_out = (
-        getattr(usage, "candidates_token_count", None)
-        or getattr(usage, "candidatesTokenCount", None)
-        or 0
-    )
-    return int(token_in or 0), int(token_out or 0)
-
-
 def record_model_call(
     *,
     provider: str,
@@ -365,7 +294,7 @@ class TelemetryMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         trace_id = parse_traceparent(request.headers.get(TRACEPARENT_HEADER))
         ctx = bind_request_context(
-            request_id=request.headers.get(REQUEST_ID_HEADER) or uuid.uuid4().hex,
+            request_id=request.headers.get(REQUEST_ID_HEADER) or new_request_id(),
             trace_id=trace_id,
             route=request.url.path,
         )

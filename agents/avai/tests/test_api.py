@@ -231,7 +231,7 @@ def test_ask_rate_limited_per_client(monkeypatch):
         app_module._RUNNERS["nakkirar"], "run_async", _fake_run_async_factory("வணக்கம்")
     )
     monkeypatch.setenv("AVAI_RATE_LIMIT_PER_MINUTE", "2")
-    monkeypatch.setattr(app_module, "_rate_hits", app_module.defaultdict(app_module.deque))
+    app_module._rate_limiter.reset()
     headers = {"X-Forwarded-For": "203.0.113.7"}
 
     assert client.post("/avai/ask", json={"message": "hello"}, headers=headers).status_code == 200

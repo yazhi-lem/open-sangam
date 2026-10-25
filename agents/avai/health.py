@@ -19,7 +19,7 @@ import os
 import time
 from datetime import datetime, timezone
 
-from . import config
+from . import config, persistence, rate_limit
 from .store import interaction_graph
 from .tools.corpus import corpus_stats
 from .tools.graph import graph_stats
@@ -205,7 +205,7 @@ def _tool_names(agent) -> list[str]:
     return sorted(set(names))
 
 
-def capabilities() -> dict:
+def capabilities(*, limiter=None) -> dict:
     """Describe the agents and features this deployment actually exposes."""
     from .poets.avvaiyar import avvaiyar_agent
     from .poets.kapilar import kapilar_agent
@@ -242,7 +242,7 @@ def capabilities() -> dict:
     graph = graph_stats()
     growth = interaction_graph.snapshot()
     model = config.get_model_config()
-    rate_limit = int(os.getenv("AVAI_RATE_LIMIT_PER_MINUTE", "0"))
+    rate_limit_per_minute = int(os.getenv("AVAI_RATE_LIMIT_PER_MINUTE", "0"))
     image_backend = os.getenv("SANGAM_IMAGE_BACKEND", "none")
 
     return {
@@ -253,6 +253,8 @@ def capabilities() -> dict:
             "backend": model["backend"],
             "name": model["model"],
             "configured": model["configured"],
+            "self_hosted": model.get("self_hosted", False),
+            "api_base": model.get("api_base"),
             "tool_calling": True,
         },
         "poets": poets,
@@ -263,6 +265,7 @@ def capabilities() -> dict:
             "topology": "peer_mesh",
             "handoffs": {p["id"]: p["handoffs"] for p in poets},
         },
+        "session_persistence": persistence.describe(),
         "corpus": {
             "verses": corpus["verses"],
             "poems": corpus["poems"],
@@ -285,9 +288,15 @@ def capabilities() -> dict:
             "multi_turn_sessions": True,
             "verified_citations": True,
             "abstention_on_unsupported_claims": True,
-            "rate_limiting": rate_limit > 0,
-            "rate_limit_per_minute": rate_limit,
+            "rate_limiting": rate_limit_per_minute > 0,
+            "rate_limit_per_minute": rate_limit_per_minute,
+            "rate_limit_backend": rate_limit.describe(limiter),
             "image_generation": image_backend not in ("none", ""),
             "image_backend": image_backend,
+            "auth_required": bool(os.getenv("AVAI_API_TOKEN")),
+            "prompt_injection_guard": True,
+            "output_secret_redaction": True,
+            "self_hosted_model_supported": True,
         },
+        "rate_limiter": rate_limit.describe(limiter),
     }

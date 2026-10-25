@@ -81,6 +81,19 @@ The embedding step (`backend/python/ai/vectorize.py`) uses the same
   here as a known-broken option rather than removed outright, in case a
   future OpenRouter/Gemma update fixes it.
 - **Gemini direct:** set `SANGAM_AGENT_BACKEND=gemini` and `GEMINI_API_KEY`.
+- **Self-hosted vLLM/TGI/llama.cpp:** set `SANGAM_AGENT_BACKEND=vllm`,
+  `SANGAM_AGENT_MODEL`, and `SANGAM_MODEL_API_BASE` (any OpenAI-compatible
+  endpoint). Use a model that reliably supports tool calling, and evaluate it
+  against the gold set before making it the primary route.
+
+### Safety controls
+
+- Input guard blocks obvious prompt-injection attempts (English, Tamil, and
+  transliterated variants) before the model runs.
+- Output guard redacts credential-like values and neutralizes executable
+  markup before returning text.
+- Set `AVAI_API_TOKEN` to require `Authorization: Bearer <token>` on
+  `POST /avai/ask`. Health, readiness, capabilities, and metrics stay public.
 
 ## ஔவையார் Avvaiyar Q&A agent (M1 issue #4)
 
@@ -130,6 +143,25 @@ curl -X POST http://localhost:8080/avai/ask \
   -H "Content-Type: application/json" \
   -d '{"message": "What tiṇai is kurunthokai_100?"}'
 ```
+
+### Durable sessions & distributed rate limiting
+
+Sessions use ADK's in-memory service by default. Set `AVAI_DATABASE_URL` to a
+SQLAlchemy URL to switch to `DatabaseSessionService` (Postgres in production):
+
+```env
+AVAI_DATABASE_URL=postgresql+psycopg://avai:password@/avai?host=/cloudsql/PROJECT:asia-south1:avai
+```
+
+Set `AVAI_REDIS_URL` to share rate limits across Cloud Run instances:
+
+```env
+AVAI_REDIS_URL=redis://10.0.0.3:6379/0
+```
+
+Without Redis the limiter falls back to a per-instance window. `/avai/capabilities`
+reports the actual session and rate-limit backends, including whether Redis
+is configured.
 
 ### Production health & capability discovery
 
