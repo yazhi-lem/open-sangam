@@ -121,3 +121,16 @@ def test_self_hosted_model_config(monkeypatch):
     assert cfg["api_base"] == "http://vllm:8000/v1"
     assert cfg["self_hosted"] is True
     assert cfg["configured"] is True
+
+
+def test_ollama_model_config(monkeypatch):
+    monkeypatch.setenv("SANGAM_AGENT_BACKEND", "ollama")
+    monkeypatch.setenv("SANGAM_AGENT_MODEL", "qwen2.5:3b")
+    monkeypatch.delenv("SANGAM_MODEL_API_BASE", raising=False)
+
+    cfg = config.get_model_config()
+
+    assert cfg["backend"] == "ollama"
+    assert cfg["model"] == "qwen2.5:3b"
+    assert cfg["api_base"] == "http://127.0.0.1:11434"
+    assert cfg["self_hosted"] is True

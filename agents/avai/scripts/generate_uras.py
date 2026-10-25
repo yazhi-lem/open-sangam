@@ -49,23 +49,34 @@ def generate_yazhi_urai(poem_text: str, poem_metadata: dict) -> str:
     """
     logger.info(f"Generating Yazhi Urai for poem: {poem_metadata.get('id', 'unknown')}")
     # Simulate AI processing
-    urai = f"**யாதோ ஒரு யாழி உரை:**
-இப்பாடல் சங்க இலக்கியத்தின் சிறப்பம்சங்களை எடுத்துரைக்கிறது. இது ${poem_metadata.get('tinai', 'ஒரு திணை')} திணையைச் சார்ந்தது.
-
-[இங்கு யாழி SLM-இன் விரிவான தமிழ் உரை வரும்...]"
+    tinai = poem_metadata.get('tinai', 'ஒரு திணை')
+    urai = (
+        "**யாதோ ஒரு யாழி உரை:**\n"
+        "இப்பாடல் சங்க இலக்கியத்தின் சிறப்பம்சங்களை எடுத்துரைக்கிறது. "
+        f"இது {tinai} திணையைச் சார்ந்தது.\n\n"
+        "[இங்கு யாழி SLM-இன் விரிவான தமிழ் உரை வரும்...]"
+    )
     return urai
 
-def generate_english_synthesis(poem_text: str, yazhi_urai: str) -> str:
+def generate_english_synthesis(
+    poem_text: str, yazhi_urai: str, poem_metadata: dict
+) -> str:
     """
     Placeholder for calling a translation/summarization service for English synthesis.
     This might translate the original poem, the Urai, or both.
     """
     logger.info("Generating English synthesis...")
+    poem_id = poem_metadata.get("id", "unknown")
+    tinai_en = poem_metadata.get("tinaiEn", "a certain Tiṇai")
     # Simulate AI processing
-    synthesis = f"**English Synthesis by Yazhi:**
-This Sangam poem (ID: {poem_metadata.get('id', 'unknown')}) beautifully encapsulates key aspects of ancient Tamil literature, primarily focusing on the '{poem_metadata.get('tinaiEn', 'a certain Tiṇai')}' theme. The accompanying Tamil commentary (Yazhi Urai) provides deep insights into its poetic structure and cultural significance.
-
-[Actual English translation/summary will be generated here...]"
+    synthesis = (
+        "**English Synthesis by Yazhi:**\n"
+        f"This Sangam poem (ID: {poem_id}) beautifully encapsulates key aspects "
+        "of ancient Tamil literature, primarily focusing on the "
+        f"'{tinai_en}' theme. The accompanying Tamil commentary (Yazhi Urai) "
+        "provides deep insights into its poetic structure and cultural significance.\n\n"
+        "[Actual English translation/summary will be generated here...]"
+    )
     return synthesis
 
 def save_generated_content(poem_id: str, urai: str, synthesis: str, output_dir=OUTPUT_DIR):
@@ -105,7 +116,7 @@ def main():
             # Generate Tamil Urai
             yazhi_urai = generate_yazhi_urai(poem_text, poem)
             # Generate English Synthesis
-            english_synthesis = generate_english_synthesis(poem_text, yazhi_urai)
+            english_synthesis = generate_english_synthesis(poem_text, yazhi_urai, poem)
 
             # Save the results
             save_generated_content(poem_id, yazhi_urai, english_synthesis)

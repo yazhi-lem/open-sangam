@@ -85,6 +85,10 @@ The embedding step (`backend/python/ai/vectorize.py`) uses the same
   `SANGAM_AGENT_MODEL`, and `SANGAM_MODEL_API_BASE` (any OpenAI-compatible
   endpoint). Use a model that reliably supports tool calling, and evaluate it
   against the gold set before making it the primary route.
+- **Local Ollama:** set `SANGAM_AGENT_BACKEND=ollama`,
+  `SANGAM_AGENT_MODEL=qwen2.5:3b`, and optionally
+  `SANGAM_MODEL_API_BASE=http://127.0.0.1:11434`. This uses LiteLLM's native
+  `ollama/` provider, which preserves real tool calls.
 
 ### Safety controls
 
