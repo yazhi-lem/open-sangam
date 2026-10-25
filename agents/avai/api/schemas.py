@@ -69,6 +69,10 @@ class AskMetadata(BaseModel):
     workflow: str | None = None
     routed_pulavar: str | None = None
     routing_reason: str | None = None
+    token_in: int = 0
+    token_out: int = 0
+    cost_usd: float = 0.0
+    cost_inr: float = 0.0
 
 
 class AskResponse(BaseModel):

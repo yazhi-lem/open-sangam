@@ -139,6 +139,7 @@ curl -X POST http://localhost:8080/avai/ask \
 | `GET /avai/health/live` | Process liveness: service, build version, uptime |
 | `GET /avai/health/ready` | Corpus + knowledge graph + tiṇai + model config; `503` when critical dependencies fail |
 | `GET /avai/capabilities` | Five poets, Tamil names, workflows, tools, handoffs, corpus/graph counts, features (never secrets) |
+| `GET /avai/metrics` | Counters/histograms: HTTP latency, routes, model tokens, USD/INR cost, citations, abstentions |
 
 Cloud Run uses `/avai/health/live` as its startup and liveness probe. The
 deploy workflow sets `AVAI_STRICT_READINESS=1`, so a missing or invalid
@@ -149,7 +150,12 @@ broken traffic. Away from production the same endpoint reports `degraded`
 ```bash
 curl -s http://localhost:8080/avai/health/ready | python -m json.tool
 curl -s http://localhost:8080/avai/capabilities | python -m json.tool
+curl -s http://localhost:8080/avai/metrics | python -m json.tool
 ```
+
+Every `/avai/ask` response now carries `metadata.token_in`, `token_out`,
+`cost_usd`, and `cost_inr`. Logs are JSON by default; set `AVAI_LOG_JSON=0`
+to disable, and `AVAI_USD_INR_RATE` to keep INR attribution aligned with FX.
 
 The `/avai` frontend calls `/avai/capabilities` on load and shows a live
 “நேரலை • 5 புலவர்கள்” badge when the deployed swarm is reachable.
