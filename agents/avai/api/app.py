@@ -17,7 +17,7 @@ from google.adk.runners import Runner
 from google.genai import types
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from .. import health, persistence, rate_limit, telemetry
+from .. import auth, health, persistence, rate_limit, safety, telemetry
 from ..citation_validator import PulavarCitationValidator
 from ..poets.avvaiyar import avvaiyar_agent
 from ..poets.kapilar import kapilar_agent
@@ -314,7 +314,18 @@ def _capture_artifact(
 async def ask(
     request: AskRequest, background_tasks: BackgroundTasks, http_request: Request
 ) -> AskResponse:
+    auth.require_api_token(http_request)
     await _check_rate_limit(http_request)
+
+    input_safety = safety.inspect_input(request.message)
+    if not input_safety.allowed:
+        telemetry.inc(
+            "avai_safety_blocks_total",
+            stage="input",
+            category=input_safety.category,
+        )
+        raise HTTPException(status_code=400, detail=input_safety.reason)
+
     target_pulavar = request.pulavar or request.poet
     if target_pulavar:
         effective_workflow = request.workflow or _PULAVAR_TO_DEFAULT_WORKFLOW.get(
@@ -414,6 +425,22 @@ async def ask(
         status="ok",
     )
     raw_response_text = final_text.strip()
+    output_safety = safety.inspect_output(raw_response_text)
+    if not output_safety.allowed:
+        telemetry.inc(
+            "avai_safety_blocks_total",
+            stage="output",
+            category=output_safety.category,
+        )
+        logger.warning(
+            "Sanitized unsafe model output",
+            extra={
+                "pulavar": target_pulavar,
+                "error_code": output_safety.category,
+            },
+        )
+        raw_response_text = safety.sanitize_output(raw_response_text)
+        telemetry.inc("avai_safety_redactions_total", category=output_safety.category)
 
     # The model proposes; Python decides.
     pulavar_answer = _citation_validator.validate_answer(
