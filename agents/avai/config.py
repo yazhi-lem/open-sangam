@@ -26,6 +26,30 @@ load_dotenv(Path(__file__).resolve().parent / ".env")
 # override with SANGAM_AGENT_MODEL if that changes.
 DEFAULT_OPENROUTER_MODEL = "google/gemini-2.5-flash"
 DEFAULT_OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
+DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
+
+
+def get_model_config() -> dict:
+    """Describe the selected backend without constructing a model or a client.
+
+    Used by /avai/health/ready and /avai/capabilities. Never returns the API
+    key itself — only whether one is configured.
+    """
+    backend = os.getenv("SANGAM_AGENT_BACKEND", "openrouter")
+    if backend == "gemini":
+        model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_GEMINI_MODEL)
+        api_base = None
+        configured = bool(os.getenv("GEMINI_API_KEY"))
+    else:
+        model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_OPENROUTER_MODEL)
+        api_base = os.getenv("OPENROUTER_API_BASE", DEFAULT_OPENROUTER_API_BASE)
+        configured = bool(os.getenv("OPENROUTER_API_KEY"))
+    return {
+        "backend": backend,
+        "model": model_name,
+        "api_base": api_base,
+        "configured": configured,
+    }
 
 
 def get_model(**kwargs):

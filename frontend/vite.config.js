@@ -11,7 +11,7 @@ const dataDir = resolve(fileURLToPath(import.meta.url), '../../data')
 // also swallowed the /avai page route itself, so reloading /avai in dev or
 // preview hit uvicorn (502) instead of the SPA and rendered a blank page.
 const avaiApiProxy = {
-  '^/avai/(ask|health|dataset)(/|$)': {
+  '^/avai/(ask|health|dataset|capabilities)(/|$)': {
     target: 'http://127.0.0.1:8080',
     changeOrigin: true,
   },

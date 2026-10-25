@@ -84,6 +84,19 @@ def search_verses(
     return results
 
 
+def corpus_stats() -> dict:
+    """Return lightweight corpus counts for health checks and capability discovery.
+
+    Reads only already-loaded state plus the normalized directory names, so a
+    readiness probe stays cheap even on a cold Cloud Run instance.
+    """
+    poem_ids = sorted(
+        normalized_dir.parent.name
+        for normalized_dir in DATA_TEXTS.glob("*/normalized")
+    )
+    return {"verses": len(_VERSE_INDEX), "poems": len(poem_ids), "poem_ids": poem_ids}
+
+
 def list_poems() -> list[dict]:
     """சங்க இலக்கியத் தொகுப்புகளின் பட்டியல் மற்றும் பாடல் எண்ணிக்கையைப் பெற்றுத் தரும் கருவி.
     """

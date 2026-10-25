@@ -19,6 +19,19 @@ def _merged_nodes_edges() -> tuple[list[dict], list[dict]]:
     return _GRAPH["nodes"] + growth["nodes"], _GRAPH["edges"] + growth["edges"]
 
 
+def graph_stats() -> dict:
+    """Return static knowledge-graph counts for health/capability endpoints.
+
+    Live interaction-graph growth is added separately by the health module so
+    this function stays a pure read of the shipped dataset.
+    """
+    return {
+        "nodes": len(_GRAPH.get("nodes", [])),
+        "edges": len(_GRAPH.get("edges", [])),
+        "meta": _GRAPH.get("meta", {}),
+    }
+
+
 def query_knowledge_graph(
     node_id: Optional[str] = None,
     node_type: Optional[str] = None,

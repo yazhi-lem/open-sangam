@@ -7,6 +7,50 @@ const AVAI_API_BASE = import.meta.env.VITE_AVAI_API_URL || ''
 
 const STORAGE_KEY_PREFIX = 'open_sangam_avai_chat_'
 
+async function getJson(path, timeoutMs = 8000) {
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs)
+  try {
+    const res = await fetch(`${AVAI_API_BASE}${path}`, {
+      method: 'GET',
+      headers: { Accept: 'application/json' },
+      signal: controller.signal,
+    })
+    if (!res.ok) {
+      return { data: null, status: res.status, error: `HTTP ${res.status}` }
+    }
+    return { data: await res.json(), status: res.status, error: null }
+  } catch (err) {
+    return { data: null, status: 0, error: err?.message || 'network error' }
+  } finally {
+    clearTimeout(timeoutId)
+  }
+}
+
+/** Live/ready status for the Avai backend (no model call, cheap to poll). */
+export async function fetchAvaiHealth() {
+  const { data, status, error } = await getJson('/avai/health/ready', 5000)
+  return {
+    isLive: Boolean(data && data.status !== 'not_ready'),
+    status: data?.status || 'unreachable',
+    httpStatus: status,
+    error,
+    checks: data?.checks || [],
+    corpus: data?.corpus || null,
+  }
+}
+
+/** What poets, workflows, tools, and corpus this deployment actually exposes. */
+export async function fetchAvaiCapabilities() {
+  const { data, status, error } = await getJson('/avai/capabilities')
+  return {
+    capabilities: data,
+    httpStatus: status,
+    error,
+    isLive: Boolean(data),
+  }
+}
+
 async function executeFetch(url, payload, timeoutMs = 25000) {
   const controller = new AbortController()
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs)

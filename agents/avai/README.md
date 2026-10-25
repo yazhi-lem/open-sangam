@@ -131,6 +131,29 @@ curl -X POST http://localhost:8080/avai/ask \
   -d '{"message": "What tiṇai is kurunthokai_100?"}'
 ```
 
+### Production health & capability discovery
+
+| Endpoint | Purpose |
+|---|---|
+| `GET /avai/health` | Legacy liveness contract: exactly `{"status":"ok"}` |
+| `GET /avai/health/live` | Process liveness: service, build version, uptime |
+| `GET /avai/health/ready` | Corpus + knowledge graph + tiṇai + model config; `503` when critical dependencies fail |
+| `GET /avai/capabilities` | Five poets, Tamil names, workflows, tools, handoffs, corpus/graph counts, features (never secrets) |
+
+Cloud Run uses `/avai/health/live` as its startup and liveness probe. The
+deploy workflow sets `AVAI_STRICT_READINESS=1`, so a missing or invalid
+`OPENROUTER_API_KEY` fails `/avai/health/ready` instead of silently serving
+broken traffic. Away from production the same endpoint reports `degraded`
+(HTTP 200) without a key, keeping the no-LLM test suite runnable.
+
+```bash
+curl -s http://localhost:8080/avai/health/ready | python -m json.tool
+curl -s http://localhost:8080/avai/capabilities | python -m json.tool
+```
+
+The `/avai` frontend calls `/avai/capabilities` on load and shows a live
+“நேரலை • 5 புலவர்கள்” badge when the deployed swarm is reachable.
+
 M1 scope: only `"workflow": "qa"` (the default) is wired to a real agent;
 `search`, `reimagine`, `scenario`, and `imagery` validate but return `501`
 until their poets land in M2.

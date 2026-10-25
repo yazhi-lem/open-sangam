@@ -8,6 +8,11 @@ TINAI_FILE = Path(__file__).resolve().parents[3] / "data" / "knowledge" / "tinai
 _TINAI_CONTEXT = json.loads(TINAI_FILE.read_text(encoding="utf-8"))
 
 
+def tinai_stats() -> dict:
+    """Return the available tiṇai keys for health/capability endpoints."""
+    return {"count": len(_TINAI_CONTEXT), "tinais": sorted(_TINAI_CONTEXT)}
+
+
 def get_tinai_context(tinai: str) -> dict:
     """குறிஞ்சி, முல்லை, மருதம், நெய்தல், பாலை ஆகிய ஐந்து திணைகளின் நிலம், உரிப்பொருள், கருப்பொருள் மற்றும் பாடல்களைப் பெற்றுத் தரும் கருவி.
     """

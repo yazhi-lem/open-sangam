@@ -127,16 +127,34 @@ jobs:
             --timeout 120 \
             --min-instances 0 \
             --max-instances 3 \
+            --cpu-boost \
             --session-affinity \
+            --startup-probe "httpGet.path=/avai/health/live,httpGet.port=8080,initialDelaySeconds=5,timeoutSeconds=3,periodSeconds=10,failureThreshold=6" \
+            --liveness-probe "httpGet.path=/avai/health/live,httpGet.port=8080,initialDelaySeconds=10,timeoutSeconds=3,periodSeconds=30,failureThreshold=3" \
             --set-secrets "OPENROUTER_API_KEY=openrouter-api-key:latest" \
-            --set-env-vars "^|^AVAI_ALLOWED_ORIGINS=${ALLOWED_ORIGINS}|AVAI_RATE_LIMIT_PER_MINUTE=${RATE_LIMIT}"
+            --set-env-vars "^|^AVAI_ALLOWED_ORIGINS=${ALLOWED_ORIGINS}|AVAI_RATE_LIMIT_PER_MINUTE=${RATE_LIMIT}|AVAI_STRICT_READINESS=1|AVAI_VERSION=${GITHUB_SHA}"
           url="$(gcloud run services describe "$SERVICE" --project "$PROJECT_ID" --region "$REGION" --format 'value(status.url)')"
           echo "url=$url" >> "$GITHUB_OUTPUT"
           echo "Avai API deployed: $url — set it as the VITE_AVAI_API_URL secret for the Pages build." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Smoke test
         if: steps.creds.outputs.ready == 'true'
+        env:
+          AVAI_URL: ${{ steps.deploy.outputs.url }}
         run: |
           set -eu
           curl --fail --silent --show-error --retry 5 --retry-delay 5 --retry-all-errors \
-            "${{ steps.deploy.outputs.url }}/avai/health"
+            "$AVAI_URL/avai/health"
+
+          # Readiness is strict in production: corpus + graph + model secret
+          # must all be live before the deploy is considered successful.
+          curl --fail --silent --show-error --retry 5 --retry-delay 5 --retry-all-errors \
+            "$AVAI_URL/avai/health/ready" \
+            | python3 -c 'import json,sys; b=json.load(sys.stdin); assert b["status"]=="ready", b; assert b["corpus"]["verses"] > 2000, b'
+
+          # Capability discovery must expose the full five-poet mesh.
+          curl --fail --silent --show-error --retry 5 --retry-delay 5 --retry-all-errors \
+            "$AVAI_URL/avai/capabilities" \
+            | python3 -c 'import json,sys; b=json.load(sys.stdin); ids={p["id"] for p in b["poets"]}; assert ids=={"nakkirar","avvaiyar","kapilar","tholkappiyar","paranar"}, b; assert b["swarm"]["enabled"], b'
+
+          echo "Avai production smoke test passed (health, readiness, capabilities)." >> "$GITHUB_STEP_SUMMARY"

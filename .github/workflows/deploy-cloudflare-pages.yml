@@ -47,6 +47,8 @@ jobs:
           # Cloud Run URL printed by deploy-avai.yml; without it the Avai chat
           # posts to same-origin /avai/ask, which Pages can't serve.
           VITE_AVAI_API_URL: ${{ secrets.VITE_AVAI_API_URL }}
+          # Launch flag: show /avai in the production nav/router.
+          VITE_ENABLE_AVAI: 'true'
         run: npm run build
 
       - name: Resolve Cloudflare secrets

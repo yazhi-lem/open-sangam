@@ -87,10 +87,12 @@ Fetch etymological analysis for a single Tamil word.
 
 ## POST `/avai/ask`
 
-Ask the Avai agent swarm a question. M1: only `workflow: "qa"` runs a real
-agent (ஔவையார் / Avvaiyar); other workflow values are validated and return
-`501` until the M2 poet swarm lands. Full design: `docs/api/avai-ask-prd.md`.
-Served by `agents/avai/api/app.py`, not Firebase Functions.
+Ask the Avai agent swarm a question. All five poet workflows are wired:
+`qa` → Avvaiyar, `search`/`reimagine` → Kapilar, `scenario` → Tholkappiyar,
+`imagery` → Paranar, `general` → Nakkirar (convener). Omitting `workflow` and
+`pulavar` lets the server classify intent. Full design:
+`docs/api/avai-ask-prd.md`. Served by `agents/avai/api/app.py`, not Firebase
+Functions.
 
 ### Request
 
@@ -149,6 +151,21 @@ Served by `agents/avai/api/app.py`, not Firebase Functions.
 ```json
 { "message": "Agent execution failed" }
 ```
+
+### Health & capability endpoints
+
+```
+GET /avai/health          → {"status":"ok"}                 (legacy liveness)
+GET /avai/health/live     → status, service, version, uptime
+GET /avai/health/ready    → dependency checks; 503 when not answerable
+GET /avai/capabilities    → poets, workflows, tools, corpus/graph, features
+```
+
+`/avai/health/ready` returns `200` with `status: "ready"` or `"degraded"`,
+and `503` with `status: "not_ready"` when the corpus, knowledge graph, or
+tiṇai data cannot load. Deployments also set `AVAI_STRICT_READINESS=1`, which
+makes a missing model API key a hard readiness failure. `/avai/capabilities`
+is safe to cache briefly and never includes secrets.
 
 ---
 

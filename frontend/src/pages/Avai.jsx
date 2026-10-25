@@ -38,7 +38,7 @@ import {
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
 import { PULAVAR_AGENTS, TINAI_FILTER_OPTIONS } from '../data/pulavars'
-import { askAvaiAgent, getSavedChat, saveChat, clearSavedChat } from '../services/avaiService'
+import { askAvaiAgent, getSavedChat, saveChat, clearSavedChat, fetchAvaiCapabilities } from '../services/avaiService'
 import Badge from '../components/ui/Badge'
 import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
@@ -258,10 +258,47 @@ export default function Avai() {
   const [sessionId, setSessionId] = useState(null)
   const [copiedIndex, setCopiedIndex] = useState(null)
   const [mobileAgentDrawer, setMobileAgentDrawer] = useState(false)
+  const [avaiStatus, setAvaiStatus] = useState({
+    state: 'checking',
+    poets: 0,
+    version: '',
+    corpusVerses: 0,
+    graphNodes: 0,
+    graphEdges: 0,
+  })
 
   const chatContainerRef = useRef(null)
   const textareaRef = useRef(null)
   const prevMsgCountRef = useRef(0)
+
+  useEffect(() => {
+    let cancelled = false
+    fetchAvaiCapabilities().then(({ capabilities, isLive }) => {
+      if (cancelled) return
+      if (isLive && capabilities?.poets?.length) {
+        setAvaiStatus({
+          state: 'live',
+          poets: capabilities.poets.length,
+          version: capabilities.version || '',
+          corpusVerses: capabilities.corpus?.verses || 0,
+          graphNodes: capabilities.knowledge_graph?.nodes || 0,
+          graphEdges: capabilities.knowledge_graph?.edges || 0,
+        })
+      } else {
+        setAvaiStatus({
+          state: 'offline',
+          poets: 0,
+          version: '',
+          corpusVerses: 0,
+          graphNodes: 0,
+          graphEdges: 0,
+        })
+      }
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   useEffect(() => {
     if (chatContainerRef.current && (messages.length > prevMsgCountRef.current || isLoading)) {
@@ -469,6 +506,33 @@ export default function Avai() {
               </span>
             </Badge>
             <span className="text-xs text-muted font-mono hidden md:inline">ADK பல்தொடர்பு</span>
+            <span
+              className={`inline-flex items-center gap-1 text-[10px] font-medium px-1.5 py-0.5 rounded-full border ${
+                avaiStatus.state === 'live'
+                  ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400'
+                  : avaiStatus.state === 'checking'
+                    ? 'border-line bg-surface-alt text-muted'
+                    : 'border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-400'
+              }`}
+              title={avaiStatus.version ? `Avai API ${avaiStatus.version}` : 'Avai API capability check'}
+            >
+              <span
+                className={`w-1.5 h-1.5 rounded-full ${
+                  avaiStatus.state === 'live'
+                    ? 'bg-emerald-500'
+                    : avaiStatus.state === 'checking'
+                      ? 'bg-muted animate-pulse'
+                      : 'bg-amber-500'
+                }`}
+              />
+              <span className="tamil">
+                {avaiStatus.state === 'live'
+                  ? `நேரலை • ${avaiStatus.poets} புலவர்கள்`
+                  : avaiStatus.state === 'checking'
+                    ? 'சரிபார்ப்பு...'
+                    : 'இணைப்பு இல்லை'}
+              </span>
+            </span>
           </div>
           <h1 className="text-xl sm:text-2xl font-extrabold text-primary flex items-center gap-2">
             <span>சங்க அவை புலவர் பேரவை</span>
@@ -623,7 +687,11 @@ export default function Avai() {
                 <Database size={13} className="text-accent" />
                 <span>சான்றாதாரத் தரவுத்தளம்</span>
               </span>
-              <span className="text-[10px] font-mono text-faint">2,489 பாக்கள்</span>
+              <span className="text-[10px] font-mono text-faint">
+                {avaiStatus.corpusVerses
+                  ? `${avaiStatus.corpusVerses.toLocaleString('en-IN')} பாக்கள்`
+                  : '2,489 பாக்கள்'}
+              </span>
             </div>
 
             <div className="space-y-1.5 text-[11px] text-muted leading-snug">
@@ -637,7 +705,8 @@ export default function Avai() {
               <div className="flex items-start gap-1.5">
                 <Network size={12} className="text-accent shrink-0 mt-0.5" />
                 <p>
-                  <strong className="text-primary font-semibold">அறிவு வரைபடம் (Knowledge Graph):</strong> 109 முப்பொருள் கணுக்கள், 292 திணை-கருப்பொருள் தொடர்புகள்.
+                  <strong className="text-primary font-semibold">அறிவு வரைபடம் (Knowledge Graph):</strong>{' '}
+                  {avaiStatus.graphNodes || 109} முப்பொருள் கணுக்கள், {avaiStatus.graphEdges || 292} திணை-கருப்பொருள் தொடர்புகள்.
                 </p>
               </div>
 

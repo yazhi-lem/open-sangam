@@ -19,6 +19,7 @@ from google.adk.sessions import InMemorySessionService
 from google.genai import types
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
+from .. import health
 from ..citation_validator import PulavarCitationValidator
 from ..poets.avvaiyar import avvaiyar_agent
 from ..poets.kapilar import kapilar_agent
@@ -114,23 +115,10 @@ _RUNNERS = {
     for name, agent in _PULAVAR_AGENTS.items()
 }
 
-_WORKFLOW_TO_PULAVAR = {
-    "qa": "avvaiyar",
-    "search": "kapilar",
-    "reimagine": "kapilar",
-    "scenario": "tholkappiyar",
-    "imagery": "paranar",
-    "general": "nakkirar",
-}
-
-_PULAVAR_TO_DEFAULT_WORKFLOW = {
-    "avvaiyar": "qa",
-    "kapilar": "search",
-    "tholkappiyar": "scenario",
-    "paranar": "imagery",
-    "nakkirar": "general",
-    "swarm": "qa",
-}
+# Shared with health.py's capability catalogue so routing and discovery
+# cannot drift apart.
+_WORKFLOW_TO_PULAVAR = health.WORKFLOW_TO_PULAVAR
+_PULAVAR_TO_DEFAULT_WORKFLOW = health.PULAVAR_TO_DEFAULT_WORKFLOW
 
 
 def classify_message(message: str) -> tuple[str, str]:
@@ -262,8 +250,33 @@ def _extract_citations(text: str) -> list[Citation]:
 
 
 @app.get("/avai/health")
-async def health() -> dict:
+async def health_check() -> dict:
+    # Kept byte-for-byte compatible with the original contract; richer probes
+    # live at the explicit /live, /ready, and /capabilities routes below.
     return {"status": "ok"}
+
+
+@app.get("/avai/health/live")
+async def health_live() -> dict:
+    return health.liveness()
+
+
+@app.get("/avai/health/ready")
+async def health_ready() -> JSONResponse:
+    payload, status_code = health.readiness()
+    return JSONResponse(
+        status_code=status_code,
+        content=payload,
+        headers={"Cache-Control": "no-store"},
+    )
+
+
+@app.get("/avai/capabilities")
+async def avai_capabilities() -> JSONResponse:
+    return JSONResponse(
+        content=health.capabilities(),
+        headers={"Cache-Control": "public, max-age=300"},
+    )
 
 
 @app.get("/avai/dataset/stats")
