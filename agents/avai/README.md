@@ -81,6 +81,19 @@ The embedding step (`backend/python/ai/vectorize.py`) uses the same
   here as a known-broken option rather than removed outright, in case a
   future OpenRouter/Gemma update fixes it.
 - **Gemini direct:** set `SANGAM_AGENT_BACKEND=gemini` and `GEMINI_API_KEY`.
+- **Self-hosted vLLM/TGI/llama.cpp:** set `SANGAM_AGENT_BACKEND=vllm`,
+  `SANGAM_AGENT_MODEL`, and `SANGAM_MODEL_API_BASE` (any OpenAI-compatible
+  endpoint). Use a model that reliably supports tool calling, and evaluate it
+  against the gold set before making it the primary route.
+
+### Safety controls
+
+- Input guard blocks obvious prompt-injection attempts (English, Tamil, and
+  transliterated variants) before the model runs.
+- Output guard redacts credential-like values and neutralizes executable
+  markup before returning text.
+- Set `AVAI_API_TOKEN` to require `Authorization: Bearer <token>` on
+  `POST /avai/ask`. Health, readiness, capabilities, and metrics stay public.
 
 ## ஔவையார் Avvaiyar Q&A agent (M1 issue #4)
 

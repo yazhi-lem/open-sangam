@@ -27,6 +27,9 @@ load_dotenv(Path(__file__).resolve().parent / ".env")
 DEFAULT_OPENROUTER_MODEL = "google/gemini-2.5-flash"
 DEFAULT_OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
 DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
+DEFAULT_SELF_HOSTED_MODEL = "qwen2.5-7b-instruct"
+DEFAULT_SELF_HOSTED_API_BASE = "http://127.0.0.1:8000/v1"
+SELF_HOSTED_BACKENDS = {"vllm", "openai_compatible", "self_hosted"}
 
 
 def get_model_config() -> dict:
@@ -40,6 +43,10 @@ def get_model_config() -> dict:
         model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_GEMINI_MODEL)
         api_base = None
         configured = bool(os.getenv("GEMINI_API_KEY"))
+    elif backend in SELF_HOSTED_BACKENDS:
+        model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_SELF_HOSTED_MODEL)
+        api_base = os.getenv("SANGAM_MODEL_API_BASE", DEFAULT_SELF_HOSTED_API_BASE)
+        configured = bool(api_base)
     else:
         model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_OPENROUTER_MODEL)
         api_base = os.getenv("OPENROUTER_API_BASE", DEFAULT_OPENROUTER_API_BASE)
@@ -49,6 +56,7 @@ def get_model_config() -> dict:
         "model": model_name,
         "api_base": api_base,
         "configured": configured,
+        "self_hosted": backend in SELF_HOSTED_BACKENDS,
     }
 
 
@@ -57,6 +65,8 @@ def get_model(**kwargs):
 
     SANGAM_AGENT_BACKEND=openrouter (default) → LiteLlm against OpenRouter.
     SANGAM_AGENT_BACKEND=gemini              → direct Gemini API model.
+    SANGAM_AGENT_BACKEND=vllm                → self-hosted OpenAI-compatible
+                                              endpoint (vLLM/TGI/llama.cpp).
     """
     backend = os.getenv("SANGAM_AGENT_BACKEND", "openrouter")
 
@@ -65,6 +75,19 @@ def get_model(**kwargs):
 
         model_name = os.getenv("SANGAM_AGENT_MODEL", "gemini-2.5-flash")
         return Gemini(model=model_name, **kwargs)
+
+    if backend in SELF_HOSTED_BACKENDS:
+        model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_SELF_HOSTED_MODEL)
+        api_base = os.getenv("SANGAM_MODEL_API_BASE", DEFAULT_SELF_HOSTED_API_BASE)
+        # vLLM and most self-hosted servers expose an OpenAI-compatible API.
+        # LiteLLM's openai/ prefix with an explicit api_base keeps this
+        # provider-neutral; SANGAM_MODEL_API_KEY is optional.
+        return LiteLlm(
+            model=f"openai/{model_name}",
+            api_base=api_base,
+            api_key=os.getenv("SANGAM_MODEL_API_KEY", "not-needed"),
+            **kwargs
+        )
 
     if backend == "openrouter":
         # Read via getenv (not environ[...]) so importing this module — and
@@ -84,5 +107,6 @@ def get_model(**kwargs):
         )
 
     raise ValueError(
-        f"Unknown SANGAM_AGENT_BACKEND={backend!r}; expected 'openrouter' or 'gemini'"
+        f"Unknown SANGAM_AGENT_BACKEND={backend!r}; expected one of "
+        "'openrouter', 'gemini', 'vllm', 'openai_compatible', or 'self_hosted'"
     )
