@@ -275,6 +275,12 @@ def capabilities() -> dict:
             "live_edges": len(growth["edges"]),
         },
         "features": {
+            "telemetry": {
+                "structured_logs": True,
+                "metrics_endpoint": "/avai/metrics",
+                "cost_currency": ["USD", "INR"],
+                "request_trace_ids": True,
+            },
             "auto_intent_routing": True,
             "multi_turn_sessions": True,
             "verified_citations": True,

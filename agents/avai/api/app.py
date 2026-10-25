@@ -19,7 +19,7 @@ from google.adk.sessions import InMemorySessionService
 from google.genai import types
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from .. import health
+from .. import health, telemetry
 from ..citation_validator import PulavarCitationValidator
 from ..poets.avvaiyar import avvaiyar_agent
 from ..poets.kapilar import kapilar_agent
@@ -41,7 +41,9 @@ from .schemas import (
 
 logger = logging.getLogger(__name__)
 
+telemetry.configure_logging()
 app = FastAPI(title="Avai Ask API", version="0.1.0")
+app.add_middleware(telemetry.TelemetryMiddleware)
 _citation_validator = PulavarCitationValidator()
 
 
@@ -279,6 +281,18 @@ async def avai_capabilities() -> JSONResponse:
     )
 
 
+@app.get("/avai/metrics")
+async def avai_metrics() -> JSONResponse:
+    """Aggregate in-process telemetry for dashboards and smoke checks.
+
+    Contains counters/histograms only — no prompts, responses, or secrets.
+    """
+    return JSONResponse(
+        content=telemetry.snapshot(),
+        headers={"Cache-Control": "no-store"},
+    )
+
+
 @app.get("/avai/dataset/stats")
 async def dataset_stats() -> dict:
     """Observability for the continuous enrichment loop: how big the agent
@@ -308,18 +322,20 @@ def _capture_artifact(
     """Runs after the response is sent (see BackgroundTasks below) so dataset
     persistence and graph growth never add latency to /avai/ask."""
     citation_dicts = [c.model_dump() for c in citations]
-    artifacts.record_artifact(
-        session_id=session_id,
-        user_id=user_id,
-        workflow=workflow,
-        pulavar=pulavar,
-        message=message,
-        response_text=response_text,
-        citations=citation_dicts,
-        model=_MODEL_LABEL,
-        elapsed_ms=elapsed_ms,
-    )
-    interaction_graph.record_interaction(pulavar, citation_dicts)
+    with telemetry.timer("avai_artifact_persist_duration_ms", pulavar=pulavar):
+        artifacts.record_artifact(
+            session_id=session_id,
+            user_id=user_id,
+            workflow=workflow,
+            pulavar=pulavar,
+            message=message,
+            response_text=response_text,
+            citations=citation_dicts,
+            model=_MODEL_LABEL,
+            elapsed_ms=elapsed_ms,
+        )
+        interaction_graph.record_interaction(pulavar, citation_dicts)
+    telemetry.inc("avai_artifacts_total", pulavar=pulavar, workflow=workflow)
 
 
 @app.post("/avai/ask", response_model=AskResponse)
@@ -342,11 +358,21 @@ async def ask(
         target_pulavar = _WORKFLOW_TO_PULAVAR.get(effective_workflow, "nakkirar")
 
     runner = _RUNNERS.get(target_pulavar, _RUNNERS["nakkirar"])
+    telemetry.set_request_identity(
+        workflow=effective_workflow, pulavar=target_pulavar
+    )
+    telemetry.inc(
+        "avai_route_total",
+        workflow=effective_workflow,
+        pulavar=target_pulavar,
+        reason=routing_reason,
+    )
 
     sessions.prune_expired()
 
     session_id = request.session_id or str(uuid.uuid4())
     user_id = request.user_id or "anonymous"
+    telemetry.set_request_identity(session_id=session_id, user_id=user_id)
 
     if not sessions.exists(session_id):
         await _session_service.create_session(
@@ -357,12 +383,18 @@ async def ask(
     outgoing_message = _augment_with_context(request.message, request.context)
     content = types.Content(role="user", parts=[types.Part(text=outgoing_message)])
 
+    provider, model_name = _MODEL_LABEL.split(":", 1)
     start = time.monotonic()
     final_text = ""
+    token_in_total = 0
+    token_out_total = 0
     try:
         async for event in runner.run_async(
             user_id=user_id, session_id=session_id, new_message=content
         ):
+            token_in, token_out = telemetry.extract_usage(event)
+            token_in_total += token_in
+            token_out_total += token_out
             if event.content and event.content.parts:
                 for part in event.content.parts:
                     if part.text:
@@ -371,18 +403,40 @@ async def ask(
         # Provider errors can carry request ids, quota details or key hints;
         # log them server-side and give the public a generic message.
         logger.exception("Agent execution failed for pulavar=%s", target_pulavar)
+        telemetry.record_model_call(
+            provider=provider,
+            model=model_name,
+            latency_ms=(time.monotonic() - start) * 1000,
+            status="error",
+        )
+        telemetry.inc(
+            "avai_agent_errors_total",
+            pulavar=target_pulavar,
+            error_type=type(exc).__name__,
+        )
         detail = "Agent execution failed. Please try again."
         if os.getenv("AVAI_DEBUG_ERRORS") == "1":
             detail = f"Agent execution failed: {exc}"
         raise HTTPException(status_code=502, detail=detail) from exc
 
     elapsed_ms = int((time.monotonic() - start) * 1000)
+    cost_usd = telemetry.record_model_call(
+        provider=provider,
+        model=model_name,
+        latency_ms=elapsed_ms,
+        token_in=token_in_total,
+        token_out=token_out_total,
+        status="ok",
+    )
     raw_response_text = final_text.strip()
 
     # The model proposes; Python decides.
     pulavar_answer = _citation_validator.validate_answer(
         raw_response_text, user_query=request.message
     )
+
+    for citation in pulavar_answer.citations:
+        telemetry.inc("avai_citation_validations_total", valid=str(citation.is_valid))
 
     if pulavar_answer.is_abstained:
         response_text = pulavar_answer.answer_text
@@ -391,6 +445,7 @@ async def ask(
         is_abstained = True
         abstention_reason = pulavar_answer.abstention_reason
         evidence_status = "abstained"
+        telemetry.inc("avai_abstentions_total", reason=abstention_reason)
     else:
         response_text = pulavar_answer.answer_text
         effective_claims = pulavar_answer.claims
@@ -445,5 +500,9 @@ async def ask(
             workflow=effective_workflow,
             routed_pulavar=target_pulavar,
             routing_reason=routing_reason,
+            token_in=token_in_total,
+            token_out=token_out_total,
+            cost_usd=cost_usd,
+            cost_inr=telemetry.usd_to_inr(cost_usd),
         ),
     )

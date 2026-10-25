@@ -129,7 +129,11 @@ Functions.
   "metadata": {
     "model": "string, e.g. openrouter:google/gemini-2.5-flash",
     "elapsed_ms": "integer",
-    "timestamp": "ISO-8601"
+    "timestamp": "ISO-8601",
+    "token_in": "integer",
+    "token_out": "integer",
+    "cost_usd": "number",
+    "cost_inr": "number"
   }
 }
 ```
@@ -159,6 +163,7 @@ GET /avai/health          → {"status":"ok"}                 (legacy liveness)
 GET /avai/health/live     → status, service, version, uptime
 GET /avai/health/ready    → dependency checks; 503 when not answerable
 GET /avai/capabilities    → poets, workflows, tools, corpus/graph, features
+GET /avai/metrics         → counters/histograms (latency, tokens, USD/INR cost)
 ```
 
 `/avai/health/ready` returns `200` with `status: "ready"` or `"degraded"`,
