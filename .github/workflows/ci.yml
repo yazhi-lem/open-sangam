@@ -104,3 +104,10 @@ jobs:
       - name: Run Avai tests (no API key needed)
         working-directory: agents
         run: python -m pytest avai/tests -q
+
+      - name: Run fast deterministic evaluation
+        working-directory: agents
+        run: python -m avai.evals.fast_eval
+
+      - name: Compile Avai package
+        run: python -m compileall -q agents/avai

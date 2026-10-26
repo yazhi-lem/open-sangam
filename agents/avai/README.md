@@ -122,8 +122,36 @@ directory as above):
 
 ```bash
 cd agents
-pytest avai/tests        # 12 tests
+pytest avai/tests -q
 ```
+
+Fast gate — unit/integration tests plus deterministic agent, routing, tool,
+citation, robustness-dataset, and safety checks. No model or API key needed:
+
+```bash
+./avai/scripts/test_avai.sh
+```
+
+Live gate — adds the real-model smoke test (needs a working provider key):
+
+```bash
+./avai/scripts/test_avai.sh --live
+```
+
+Equivalent direct command:
+
+```bash
+cd agents
+python -m avai.evals.fast_eval
+```
+
+Fast evaluation covers:
+- all five poet agents, expected tools, and peer handoffs
+- workflow and intent routing
+- corpus, graph, and tiṇai tools
+- the 20-case citation/abstention gold set
+- the 150-case robustness dataset integrity
+- prompt-injection and output-redaction guards
 
 Tool tests run against the real `data/texts` and `data/knowledge` corpus,
 no LLM or API key required. `tests/test_api.py` covers the REST API the same
