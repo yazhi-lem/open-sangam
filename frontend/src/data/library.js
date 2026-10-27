@@ -13,6 +13,8 @@
  */
 import catalog from '@data/library/catalog.json'
 import artifactData from '@data/library/artifacts.json'
+import corpusArtifactData from '@data/library/corpus-artifacts.json'
+import researchCampaignData from '@data/library/research-campaigns.json'
 
 export const LIBRARY_SCHEMA_VERSION = catalog.schemaVersion
 export const LIBRARY_COLLECTIONS = catalog.collections
@@ -116,6 +118,32 @@ export function artifactMatchesQuery(artifact, query) {
     artifactClassLabel(artifact.class).ta,
     artifactClassLabel(artifact.class).en,
   ]
+    .filter(Boolean)
+    .some((value) => String(value).toLowerCase().includes(q))
+}
+
+// ── Corpus-attested artifacts & research campaigns ─────────────────────────
+
+export const CORPUS_ARTIFACT_DATA = corpusArtifactData
+export const CORPUS_ARTIFACT_CLASSES = corpusArtifactData.classes
+export const CORPUS_ARTIFACTS = corpusArtifactData.artifacts
+export const CORPUS_ARTIFACT_CLASS_BY_ID = Object.fromEntries(
+  CORPUS_ARTIFACT_CLASSES.map((item) => [item.id, item])
+)
+
+export const RESEARCH_CAMPAIGNS = researchCampaignData.campaigns
+export const RESEARCH_CAMPAIGN_BY_ID = Object.fromEntries(
+  RESEARCH_CAMPAIGNS.map((item) => [item.id, item])
+)
+
+export function corpusArtifactsForClass(classId) {
+  return CORPUS_ARTIFACTS.filter((item) => item.class === classId)
+}
+
+export function corpusArtifactMatchesQuery(item, query) {
+  const q = String(query || '').trim().toLowerCase()
+  if (!q) return true
+  return [item.ta, item.roman, item.en, item.class]
     .filter(Boolean)
     .some((value) => String(value).toLowerCase().includes(q))
 }

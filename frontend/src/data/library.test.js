@@ -11,6 +11,12 @@ const catalog = JSON.parse(
 const artifacts = JSON.parse(
   readFileSync(resolve(here, '../../../data/library/artifacts.json'), 'utf8')
 )
+const corpusArtifacts = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/corpus-artifacts.json'), 'utf8')
+)
+const research = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/research-campaigns.json'), 'utf8')
+)
 
 test('library catalog has unique ids', () => {
   const ids = catalog.works.map((work) => work.id)
@@ -54,5 +60,23 @@ test('every artifact has the seven scholar-reader layer slots', () => {
         `${artifact.id}: bad ${layerId} status`
       )
     }
+  }
+})
+
+
+test('corpus artifact index is classified and has citations', () => {
+  const classIds = new Set(corpusArtifacts.classes.map((item) => item.id))
+  for (const artifact of corpusArtifacts.artifacts) {
+    assert.ok(classIds.has(artifact.class), `${artifact.id}: unknown class`)
+    assert.ok(artifact.count > 0, `${artifact.id}: zero count`)
+    assert.ok(Array.isArray(artifact.samples), `${artifact.id}: no samples`)
+  }
+})
+
+test('research campaigns name an agent, workflow and prompt', () => {
+  for (const campaign of research.campaigns) {
+    assert.ok(campaign.id && campaign.ta && campaign.en, 'campaign identity')
+    assert.ok(campaign.agent && campaign.workflow, `${campaign.id}: missing agent/workflow`)
+    assert.ok(campaign.promptTa && campaign.promptEn, `${campaign.id}: missing prompts`)
   }
 })

@@ -152,6 +152,18 @@ appended to — so it can't drift from what's actually indexed, the same way
 `refresh_poem_artifacts()` rebuilds a poem's combined JSON from its
 normalized files rather than patching it incrementally.
 
+### `knowledge/extract_corpus_artifacts.py` — Material-culture index
+
+```bash
+python -m knowledge.extract_corpus_artifacts
+```
+
+Scans every normalized verse line for a curated Tamil artifact lexicon
+(instruments, ornaments, weapons, transport, ritual objects, vessels, textiles,
+tools, writing) and writes `data/library/corpus-artifacts.json` with counts,
+forms, poem distribution and cited sample lines. It is a research index, not an
+archaeological identification.
+
 ### `knowledge/build_graph.py` — Knowledge graph
 
 ```bash

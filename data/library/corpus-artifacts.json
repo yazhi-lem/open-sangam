@@ -1,0 +1,5645 @@
+{
+  "schemaVersion": 1,
+  "description": "Lexical index of material-culture terms in the normalized Sangam corpus. Counts are attestations in verse lines; they are not archaeological identifications.",
+  "generatedBy": "cd backend/python && python -m knowledge.extract_corpus_artifacts",
+  "recordsScanned": 4399,
+  "classes": [
+    {
+      "id": "music",
+      "ta": "இசைக்கருவிகள்",
+      "en": "Musical instruments",
+      "description": "Harp, flute, drums and performance objects named in the poems.",
+      "terms": [
+        {
+          "ta": "யாழ்",
+          "roman": "yāḻ",
+          "gloss": "harp"
+        },
+        {
+          "ta": "குழல்",
+          "roman": "kuḻal",
+          "gloss": "flute"
+        },
+        {
+          "ta": "முரசு",
+          "roman": "muracu",
+          "gloss": "royal war drum"
+        },
+        {
+          "ta": "பறை",
+          "roman": "paṟai",
+          "gloss": "hand drum"
+        },
+        {
+          "ta": "தண்ணுமை",
+          "roman": "taṇṇumai",
+          "gloss": "barrel drum"
+        },
+        {
+          "ta": "கொக்கரை",
+          "roman": "kokkarai",
+          "gloss": "horn / trumpet"
+        }
+      ]
+    },
+    {
+      "id": "ornament",
+      "ta": "அணிகலன்கள்",
+      "en": "Ornaments and jewellery",
+      "description": "Bangles, earrings, necklaces, pearls, gold and gemstones.",
+      "terms": [
+        {
+          "ta": "தொடி",
+          "roman": "toṭi",
+          "gloss": "bangle"
+        },
+        {
+          "ta": "குழை",
+          "roman": "kuḻai",
+          "gloss": "ear ornament"
+        },
+        {
+          "ta": "மாலை",
+          "roman": "mālai",
+          "gloss": "garland / necklace"
+        },
+        {
+          "ta": "ஆரம்",
+          "roman": "āram",
+          "gloss": "necklace"
+        },
+        {
+          "ta": "முத்து",
+          "roman": "muttu",
+          "gloss": "pearl"
+        },
+        {
+          "ta": "மணி",
+          "roman": "maṇi",
+          "gloss": "gem / bead"
+        },
+        {
+          "ta": "பொன்",
+          "roman": "poṉ",
+          "gloss": "gold"
+        },
+        {
+          "ta": "வளை",
+          "roman": "vaḷai",
+          "gloss": "bangle"
+        },
+        {
+          "ta": "தோடு",
+          "roman": "tōṭu",
+          "gloss": "earring"
+        },
+        {
+          "ta": "மோதிரம்",
+          "roman": "mōtiram",
+          "gloss": "ring"
+        }
+      ]
+    },
+    {
+      "id": "weapon",
+      "ta": "படைக்கலன்கள்",
+      "en": "Weapons and warfare",
+      "description": "Spears, bows, arrows, swords and battle equipment.",
+      "terms": [
+        {
+          "ta": "வேல்",
+          "roman": "vēl",
+          "gloss": "spear"
+        },
+        {
+          "ta": "வில்",
+          "roman": "vil",
+          "gloss": "bow"
+        },
+        {
+          "ta": "அம்பு",
+          "roman": "ampu",
+          "gloss": "arrow"
+        },
+        {
+          "ta": "கணை",
+          "roman": "kaṇai",
+          "gloss": "arrow"
+        },
+        {
+          "ta": "வாள்",
+          "roman": "vāḷ",
+          "gloss": "sword"
+        },
+        {
+          "ta": "எஃகு",
+          "roman": "eḥku",
+          "gloss": "steel / sharp weapon"
+        },
+        {
+          "ta": "கேடயம்",
+          "roman": "kēṭayam",
+          "gloss": "shield"
+        },
+        {
+          "ta": "படை",
+          "roman": "paṭai",
+          "gloss": "army / weapon"
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "ta": "போக்குவரத்து",
+      "en": "Transport and animals",
+      "description": "Chariots, horses, elephants and boats.",
+      "terms": [
+        {
+          "ta": "தேர்",
+          "roman": "tēr",
+          "gloss": "chariot"
+        },
+        {
+          "ta": "குதிரை",
+          "roman": "kutirai",
+          "gloss": "horse"
+        },
+        {
+          "ta": "யானை",
+          "roman": "yāṉai",
+          "gloss": "elephant"
+        },
+        {
+          "ta": "நாவாய்",
+          "roman": "nāvāy",
+          "gloss": "ship"
+        },
+        {
+          "ta": "படகு",
+          "roman": "paṭaku",
+          "gloss": "boat"
+        }
+      ]
+    },
+    {
+      "id": "ritual",
+      "ta": "வழிபாட்டுப் பொருட்கள்",
+      "en": "Ritual and memorial objects",
+      "description": "Hero stones, shrines, offerings and sacred places.",
+      "terms": [
+        {
+          "ta": "நடுகல்",
+          "roman": "naṭukal",
+          "gloss": "hero stone"
+        },
+        {
+          "ta": "வேள்வி",
+          "roman": "vēḷvi",
+          "gloss": "sacrifice / offering"
+        },
+        {
+          "ta": "பூசை",
+          "roman": "pūcai",
+          "gloss": "worship"
+        },
+        {
+          "ta": "கோட்டம்",
+          "roman": "kōṭṭam",
+          "gloss": "shrine"
+        },
+        {
+          "ta": "தெய்வம்",
+          "roman": "teyvam",
+          "gloss": "deity"
+        }
+      ]
+    },
+    {
+      "id": "vessel",
+      "ta": "கலன்கள்",
+      "en": "Vessels and containers",
+      "description": "Pots, jars, bowls and measuring vessels.",
+      "terms": [
+        {
+          "ta": "கலம்",
+          "roman": "kalam",
+          "gloss": "vessel"
+        },
+        {
+          "ta": "குடம்",
+          "roman": "kuṭam",
+          "gloss": "pot"
+        },
+        {
+          "ta": "தாழி",
+          "roman": "tāḻi",
+          "gloss": "large jar"
+        },
+        {
+          "ta": "சாடி",
+          "roman": "cāṭi",
+          "gloss": "jar"
+        },
+        {
+          "ta": "பாணி",
+          "roman": "pāṇi",
+          "gloss": "bowl / vessel"
+        }
+      ]
+    },
+    {
+      "id": "textile",
+      "ta": "ஆடைகள்",
+      "en": "Textiles and dress",
+      "description": "Cloth, silk, garments and weaving terms.",
+      "terms": [
+        {
+          "ta": "ஆடை",
+          "roman": "āṭai",
+          "gloss": "garment"
+        },
+        {
+          "ta": "கலிங்கம்",
+          "roman": "kaliṅkam",
+          "gloss": "cloth"
+        },
+        {
+          "ta": "துகில்",
+          "roman": "tukil",
+          "gloss": "fine cloth"
+        },
+        {
+          "ta": "பட்டு",
+          "roman": "paṭṭu",
+          "gloss": "silk"
+        },
+        {
+          "ta": "நூல்",
+          "roman": "nūl",
+          "gloss": "thread / text"
+        }
+      ]
+    },
+    {
+      "id": "tool",
+      "ta": "கருவிகள்",
+      "en": "Tools and implements",
+      "description": "Ploughs, sickles and agricultural implements.",
+      "terms": [
+        {
+          "ta": "கலப்பை",
+          "roman": "kalappai",
+          "gloss": "plough"
+        },
+        {
+          "ta": "அரிவாள்",
+          "roman": "arivāḷ",
+          "gloss": "sickle"
+        },
+        {
+          "ta": "உழு",
+          "roman": "uḻu",
+          "gloss": "plough / till"
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "ta": "எழுத்துப் பொருட்கள்",
+      "en": "Writing and manuscripts",
+      "description": "Palm leaves, letters, books and poetic texts.",
+      "terms": [
+        {
+          "ta": "ஓலை",
+          "roman": "ōlai",
+          "gloss": "palm leaf"
+        },
+        {
+          "ta": "எழுத்து",
+          "roman": "eḻuttu",
+          "gloss": "writing / letter"
+        },
+        {
+          "ta": "நூல்",
+          "roman": "nūl",
+          "gloss": "book / thread"
+        },
+        {
+          "ta": "செய்யுள்",
+          "roman": "ceyyuḷ",
+          "gloss": "poem"
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "transport-yāṉai",
+      "class": "transport",
+      "ta": "யானை",
+      "roman": "yāṉai",
+      "en": "elephant",
+      "count": 361,
+      "forms": [
+        {
+          "form": "யானை",
+          "count": 249
+        },
+        {
+          "form": "யானைக்",
+          "count": 29
+        },
+        {
+          "form": "யானைப்",
+          "count": 23
+        },
+        {
+          "form": "யானையின்",
+          "count": 13
+        },
+        {
+          "form": "யானைச்",
+          "count": 9
+        },
+        {
+          "form": "யானையொடு",
+          "count": 8
+        },
+        {
+          "form": "யானையும்",
+          "count": 8
+        },
+        {
+          "form": "யானைத்",
+          "count": 7
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 104
+        },
+        {
+          "poem": "purananooru",
+          "count": 82
+        },
+        {
+          "poem": "natrinai",
+          "count": 39
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 32
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 28
+        },
+        {
+          "poem": "kalithokai",
+          "count": 24
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 15
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 7
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 5
+        },
+        {
+          "poem": "naladiyar",
+          "count": 5
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_078",
+          "poem": "ainkurunooru",
+          "ordinal": 78,
+          "lineNumber": 2,
+          "word": "யானையின்",
+          "text": "மதில்கொல் யானையின் கதழ்புநெறி வந்த"
+        },
+        {
+          "recordId": "ainkurunooru_304",
+          "poem": "ainkurunooru",
+          "ordinal": 304,
+          "lineNumber": 2,
+          "word": "யானை",
+          "text": "ஆன்நீர்ப் பத்தல் யானை வெளவும்"
+        },
+        {
+          "recordId": "ainkurunooru_314",
+          "poem": "ainkurunooru",
+          "ordinal": 314,
+          "lineNumber": 3,
+          "word": "யானை",
+          "text": "சிறுகண் யானை ஆள்வீழ்துத் திரித்ரும்"
+        },
+        {
+          "recordId": "ainkurunooru_327",
+          "poem": "ainkurunooru",
+          "ordinal": 327,
+          "lineNumber": 2,
+          "word": "யானை",
+          "text": "சிறுகண் யானை நிலந்தொடல் செல்வா"
+        },
+        {
+          "recordId": "ainkurunooru_352",
+          "poem": "ainkurunooru",
+          "ordinal": 352,
+          "lineNumber": 3,
+          "word": "யானை",
+          "text": "பெருங்கை யானை இருஞ்சினம் உறைக்கும்"
+        },
+        {
+          "recordId": "ainkurunooru_355",
+          "poem": "ainkurunooru",
+          "ordinal": 355,
+          "lineNumber": 4,
+          "word": "யானை",
+          "text": "சிறுகண் யானை திரிதரும்"
+        }
+      ]
+    },
+    {
+      "id": "ornament-maṇi",
+      "class": "ornament",
+      "ta": "மணி",
+      "roman": "maṇi",
+      "en": "gem / bead",
+      "count": 304,
+      "forms": [
+        {
+          "form": "மணி",
+          "count": 202
+        },
+        {
+          "form": "மணிப்",
+          "count": 13
+        },
+        {
+          "form": "மணிக்",
+          "count": 12
+        },
+        {
+          "form": "மணியின்",
+          "count": 10
+        },
+        {
+          "form": "மணித்",
+          "count": 7
+        },
+        {
+          "form": "மணியும்",
+          "count": 5
+        },
+        {
+          "form": "மணிநிற",
+          "count": 3
+        },
+        {
+          "form": "மணிச்",
+          "count": 3
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 70
+        },
+        {
+          "poem": "natrinai",
+          "count": 66
+        },
+        {
+          "poem": "kalithokai",
+          "count": 45
+        },
+        {
+          "poem": "purananooru",
+          "count": 27
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 22
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 17
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 15
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 7
+        },
+        {
+          "poem": "paripadal",
+          "count": 7
+        },
+        {
+          "poem": "sirupanatrupadai",
+          "count": 7
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_014",
+          "poem": "ainkurunooru",
+          "ordinal": 14,
+          "lineNumber": 3,
+          "word": "மணித்துறை",
+          "text": "மணித்துறை வீரன் மார்பே"
+        },
+        {
+          "recordId": "ainkurunooru_045",
+          "poem": "ainkurunooru",
+          "ordinal": 45,
+          "lineNumber": 2,
+          "word": "மணிநிறங்",
+          "text": "வேனில் ஆயின் மணிநிறங் கொள்ளும்"
+        },
+        {
+          "recordId": "ainkurunooru_096",
+          "poem": "ainkurunooru",
+          "ordinal": 96,
+          "lineNumber": 2,
+          "word": "மணிநிற",
+          "text": "மணிநிற நெய்தல் ஆமபலொடு கலிக்கும்"
+        },
+        {
+          "recordId": "ainkurunooru_117",
+          "poem": "ainkurunooru",
+          "ordinal": 117,
+          "lineNumber": 4,
+          "word": "மணிநீர்ச்",
+          "text": "மணிநீர்ச் சேர்ப்பனை மறவா தோர்க்கே."
+        },
+        {
+          "recordId": "ainkurunooru_189",
+          "poem": "ainkurunooru",
+          "ordinal": 189,
+          "lineNumber": 2,
+          "word": "மணியில்",
+          "text": "பொன்படு மணியில் பொற்பத் தோன்றும்"
+        },
+        {
+          "recordId": "ainkurunooru_201",
+          "poem": "ainkurunooru",
+          "ordinal": 201,
+          "lineNumber": 3,
+          "word": "மணியரும்",
+          "text": "பொன்வீ மணியரும் பினவே"
+        }
+      ]
+    },
+    {
+      "id": "transport-tēr",
+      "class": "transport",
+      "ta": "தேர்",
+      "roman": "tēr",
+      "en": "chariot",
+      "count": 258,
+      "forms": [
+        {
+          "form": "தேர்",
+          "count": 166
+        },
+        {
+          "form": "தேர்க்",
+          "count": 20
+        },
+        {
+          "form": "தேர்ப்",
+          "count": 13
+        },
+        {
+          "form": "தேர்ந்து",
+          "count": 9
+        },
+        {
+          "form": "தேர்ச்",
+          "count": 8
+        },
+        {
+          "form": "தேர்த்",
+          "count": 8
+        },
+        {
+          "form": "தேர்வண்",
+          "count": 3
+        },
+        {
+          "form": "தேர்மணிக்",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 86
+        },
+        {
+          "poem": "natrinai",
+          "count": 48
+        },
+        {
+          "poem": "kalithokai",
+          "count": 33
+        },
+        {
+          "poem": "purananooru",
+          "count": 25
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 20
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 20
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 6
+        },
+        {
+          "poem": "thirukkural",
+          "count": 6
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 4
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_055",
+          "poem": "ainkurunooru",
+          "ordinal": 55,
+          "lineNumber": 2,
+          "word": "தேர்வண்",
+          "text": "தேர்வண் கோமான் தேனூர் அன்னஇவள்"
+        },
+        {
+          "recordId": "ainkurunooru_102",
+          "poem": "ainkurunooru",
+          "ordinal": 102,
+          "lineNumber": 4,
+          "word": "தேர்மணிக்",
+          "text": "இன்புற இசைக்கும் அவர் தேர்மணிக் குரலே."
+        },
+        {
+          "recordId": "ainkurunooru_428",
+          "poem": "ainkurunooru",
+          "ordinal": 428,
+          "lineNumber": 1,
+          "word": "தேர்செல",
+          "text": "தேர்செல அழுங்கத் திருவில் கோலி"
+        },
+        {
+          "recordId": "ainkurunooru_451",
+          "poem": "ainkurunooru",
+          "ordinal": 451,
+          "lineNumber": 2,
+          "word": "தேர்தரு",
+          "text": "தேர்தரு விருந்தில் தவிர்குதல் யாவது"
+        },
+        {
+          "recordId": "ainkurunooru_453",
+          "poem": "ainkurunooru",
+          "ordinal": 453,
+          "lineNumber": 5,
+          "word": "தேர்தொடங்",
+          "text": "தேர்தொடங் கின்றால் நம்வயி நானே."
+        },
+        {
+          "recordId": "ainkurunooru_454",
+          "poem": "ainkurunooru",
+          "ordinal": 454,
+          "lineNumber": 4,
+          "word": "தேர்நயந்து",
+          "text": "தேர்நயந்து உறையும் என் மாமைக் கவினே."
+        }
+      ]
+    },
+    {
+      "id": "ornament-mālai",
+      "class": "ornament",
+      "ta": "மாலை",
+      "roman": "mālai",
+      "en": "garland / necklace",
+      "count": 237,
+      "forms": [
+        {
+          "form": "மாலை",
+          "count": 166
+        },
+        {
+          "form": "மாலையும்",
+          "count": 21
+        },
+        {
+          "form": "மாலைப்",
+          "count": 13
+        },
+        {
+          "form": "மாலைக்",
+          "count": 7
+        },
+        {
+          "form": "மாலையொடு",
+          "count": 6
+        },
+        {
+          "form": "மாலைச்",
+          "count": 4
+        },
+        {
+          "form": "மாலையர்",
+          "count": 3
+        },
+        {
+          "form": "மாலைத்",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 48
+        },
+        {
+          "poem": "kalithokai",
+          "count": 43
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 37
+        },
+        {
+          "poem": "natrinai",
+          "count": 33
+        },
+        {
+          "poem": "purananooru",
+          "count": 24
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 12
+        },
+        {
+          "poem": "thirukkural",
+          "count": 11
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 6
+        },
+        {
+          "poem": "paripadal",
+          "count": 5
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 3
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_116",
+          "poem": "ainkurunooru",
+          "ordinal": 116,
+          "lineNumber": 3,
+          "word": "மாலைவந்",
+          "text": "மாலைவந் தன்று மன்ற"
+        },
+        {
+          "recordId": "ainkurunooru_127",
+          "poem": "ainkurunooru",
+          "ordinal": 127,
+          "lineNumber": 2,
+          "word": "மாலை",
+          "text": "தும்பை மாலை இளமுலை"
+        },
+        {
+          "recordId": "ainkurunooru_157",
+          "poem": "ainkurunooru",
+          "ordinal": 157,
+          "lineNumber": 3,
+          "word": "மாலைச்",
+          "text": "காலை யிருந்து மாலைச் சேக்கும்"
+        },
+        {
+          "recordId": "ainkurunooru_183",
+          "poem": "ainkurunooru",
+          "ordinal": 183,
+          "lineNumber": 4,
+          "word": "மாலை",
+          "text": "கடும்பகல் வருதி கையறு மாலை"
+        },
+        {
+          "recordId": "ainkurunooru_197",
+          "poem": "ainkurunooru",
+          "ordinal": 197,
+          "lineNumber": 3,
+          "word": "மாலை",
+          "text": "புலம்புகொள் மாலை மறைய"
+        },
+        {
+          "recordId": "ainkurunooru_215",
+          "poem": "ainkurunooru",
+          "ordinal": 215,
+          "lineNumber": 5,
+          "word": "மாலையும்",
+          "text": "புதன்மலர் மாலையும் பிரிவோர்"
+        }
+      ]
+    },
+    {
+      "id": "ornament-poṉ",
+      "class": "ornament",
+      "ta": "பொன்",
+      "roman": "poṉ",
+      "en": "gold",
+      "count": 233,
+      "forms": [
+        {
+          "form": "பொன்",
+          "count": 133
+        },
+        {
+          "form": "பொன்னின்",
+          "count": 13
+        },
+        {
+          "form": "பொன்போல்",
+          "count": 7
+        },
+        {
+          "form": "பொன்னும்",
+          "count": 7
+        },
+        {
+          "form": "பொன்னுடை",
+          "count": 6
+        },
+        {
+          "form": "பொன்செய்",
+          "count": 5
+        },
+        {
+          "form": "பொன்படு",
+          "count": 4
+        },
+        {
+          "form": "பொன்னினும்",
+          "count": 3
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 57
+        },
+        {
+          "poem": "natrinai",
+          "count": 37
+        },
+        {
+          "poem": "purananooru",
+          "count": 32
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 22
+        },
+        {
+          "poem": "kalithokai",
+          "count": 20
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 16
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 14
+        },
+        {
+          "poem": "naladiyar",
+          "count": 9
+        },
+        {
+          "poem": "thirukkural",
+          "count": 7
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 6
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_001",
+          "poem": "ainkurunooru",
+          "ordinal": 1,
+          "lineNumber": 2,
+          "word": "பொன்பெரிது",
+          "text": "நெற்பல பொலிக பொன்பெரிது சிறக்க"
+        },
+        {
+          "recordId": "ainkurunooru_016",
+          "poem": "ainkurunooru",
+          "ordinal": 16,
+          "lineNumber": 4,
+          "word": "பொன்போர்த்",
+          "text": "பூப்போல் உண்கண் பொன்போர்த் தனவே."
+        },
+        {
+          "recordId": "ainkurunooru_041",
+          "poem": "ainkurunooru",
+          "ordinal": 41,
+          "lineNumber": 4,
+          "word": "பொன்போல்",
+          "text": "பொன்போல் செய்யும் ஊர்கிழ வோனே."
+        },
+        {
+          "recordId": "ainkurunooru_105",
+          "poem": "ainkurunooru",
+          "ordinal": 105,
+          "lineNumber": 4,
+          "word": "பொன்னினும்",
+          "text": "பொன்னினும் சிவந்தன்று கண்டிசின் நூதலே."
+        },
+        {
+          "recordId": "ainkurunooru_110",
+          "poem": "ainkurunooru",
+          "ordinal": 110,
+          "lineNumber": 2,
+          "word": "பொன்னிறம்",
+          "text": "பொன்னிறம் விரியும் பூக்கெழு துறைவனை"
+        },
+        {
+          "recordId": "ainkurunooru_169",
+          "poem": "ainkurunooru",
+          "ordinal": 169,
+          "lineNumber": 2,
+          "word": "பொன்னிணார்",
+          "text": "பொன்னிணார் ஞாழல் முனையில் பொதியவிழ்"
+        }
+      ]
+    },
+    {
+      "id": "ornament-vaḷai",
+      "class": "ornament",
+      "ta": "வளை",
+      "roman": "vaḷai",
+      "en": "bangle",
+      "count": 220,
+      "forms": [
+        {
+          "form": "வளை",
+          "count": 128
+        },
+        {
+          "form": "வளைஇ",
+          "count": 14
+        },
+        {
+          "form": "வளைஇய",
+          "count": 13
+        },
+        {
+          "form": "வளையே",
+          "count": 7
+        },
+        {
+          "form": "வளைக்",
+          "count": 7
+        },
+        {
+          "form": "வளையும்",
+          "count": 3
+        },
+        {
+          "form": "வளையள்",
+          "count": 3
+        },
+        {
+          "form": "வளைப்",
+          "count": 3
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 48
+        },
+        {
+          "poem": "kalithokai",
+          "count": 32
+        },
+        {
+          "poem": "natrinai",
+          "count": 31
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 26
+        },
+        {
+          "poem": "purananooru",
+          "count": 20
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 17
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 9
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 7
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 6
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 4
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_106",
+          "poem": "ainkurunooru",
+          "ordinal": 106,
+          "lineNumber": 3,
+          "word": "வளையினும்",
+          "text": "தன்கடல் வளையினும் இலங்கும்இவள்"
+        },
+        {
+          "recordId": "ainkurunooru_163",
+          "poem": "ainkurunooru",
+          "ordinal": 163,
+          "lineNumber": 4,
+          "word": "வளையே",
+          "text": "இறையேர் முன்கை நீக்கிய வளையே."
+        },
+        {
+          "recordId": "ainkurunooru_191",
+          "poem": "ainkurunooru",
+          "ordinal": 191,
+          "lineNumber": 1,
+          "word": "வளைவார்",
+          "text": "கடற்கோடு செறிந்த வளைவார் முன்கைக்"
+        },
+        {
+          "recordId": "ainkurunooru_192",
+          "poem": "ainkurunooru",
+          "ordinal": 192,
+          "lineNumber": 4,
+          "word": "வளையே",
+          "text": "வீங்கின மாதோ தொழிஎன் வளையே."
+        },
+        {
+          "recordId": "ainkurunooru_195",
+          "poem": "ainkurunooru",
+          "ordinal": 195,
+          "lineNumber": 1,
+          "word": "வளைபடு",
+          "text": "வளைபடு முத்தம் பரதவர் பகரும்"
+        },
+        {
+          "recordId": "ainkurunooru_198",
+          "poem": "ainkurunooru",
+          "ordinal": 198,
+          "lineNumber": 1,
+          "word": "வளையணி",
+          "text": "வளையணி முன்கை வாலெயிற்று அமர்நகை"
+        }
+      ]
+    },
+    {
+      "id": "ornament-toṭi",
+      "class": "ornament",
+      "ta": "தொடி",
+      "roman": "toṭi",
+      "en": "bangle",
+      "count": 154,
+      "forms": [
+        {
+          "form": "தொடி",
+          "count": 99
+        },
+        {
+          "form": "தொடிக்",
+          "count": 7
+        },
+        {
+          "form": "தொடித்",
+          "count": 7
+        },
+        {
+          "form": "தொடியொடு",
+          "count": 4
+        },
+        {
+          "form": "தொடினும்",
+          "count": 3
+        },
+        {
+          "form": "தொடியோர்",
+          "count": 3
+        },
+        {
+          "form": "தொடிக்கை",
+          "count": 3
+        },
+        {
+          "form": "தொடியுடைத்",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 47
+        },
+        {
+          "poem": "kalithokai",
+          "count": 27
+        },
+        {
+          "poem": "natrinai",
+          "count": 19
+        },
+        {
+          "poem": "purananooru",
+          "count": 19
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 13
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 12
+        },
+        {
+          "poem": "thirukkural",
+          "count": 5
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 3
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 2
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_444",
+          "poem": "ainkurunooru",
+          "ordinal": 444,
+          "lineNumber": 2,
+          "word": "தொடிபிளந்து",
+          "text": "நீண்மதில் அரணம் பாய்ந்தெனத் தொடிபிளந்து"
+        },
+        {
+          "recordId": "ainkurunooru_498",
+          "poem": "ainkurunooru",
+          "ordinal": 498,
+          "lineNumber": 1,
+          "word": "தொடிநிலை",
+          "text": "தோள்கவின் எய்தின தொடிநிலை நின்றன"
+        },
+        {
+          "recordId": "akananooru_004",
+          "poem": "akananooru",
+          "ordinal": 4,
+          "lineNumber": 17,
+          "word": "தொடி",
+          "text": "ஆய் தொடி அரிவை! நின் மாண் நலம் படர்ந்தே"
+        },
+        {
+          "recordId": "akananooru_009",
+          "poem": "akananooru",
+          "ordinal": 9,
+          "lineNumber": 12,
+          "word": "தொடி",
+          "text": "தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி,"
+        },
+        {
+          "recordId": "akananooru_009",
+          "poem": "akananooru",
+          "ordinal": 9,
+          "lineNumber": 23,
+          "word": "தொடிக்",
+          "text": "தொடிக் கை தைவரத் தோய்ந்தன்று கொல்லோ"
+        },
+        {
+          "recordId": "akananooru_017",
+          "poem": "akananooru",
+          "ordinal": 17,
+          "lineNumber": 6,
+          "word": "தொடி",
+          "text": "தொடி மாண் சுற்றமும் எம்மும் உள்ளாள்,"
+        }
+      ]
+    },
+    {
+      "id": "weapon-vāḷ",
+      "class": "weapon",
+      "ta": "வாள்",
+      "roman": "vāḷ",
+      "en": "sword",
+      "count": 143,
+      "forms": [
+        {
+          "form": "வாள்",
+          "count": 117
+        },
+        {
+          "form": "வாள்நுதல்",
+          "count": 3
+        },
+        {
+          "form": "வாள்வடு",
+          "count": 2
+        },
+        {
+          "form": "வாள்வனப்",
+          "count": 1
+        },
+        {
+          "form": "வாள்வனப்பு",
+          "count": 1
+        },
+        {
+          "form": "வாள்வரி",
+          "count": 1
+        },
+        {
+          "form": "வாள்போல்",
+          "count": 1
+        },
+        {
+          "form": "வாள்வளம்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 36
+        },
+        {
+          "poem": "purananooru",
+          "count": 32
+        },
+        {
+          "poem": "kalithokai",
+          "count": 17
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 17
+        },
+        {
+          "poem": "natrinai",
+          "count": 12
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 6
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 4
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 4
+        },
+        {
+          "poem": "sirupanatrupadai",
+          "count": 3
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_312",
+          "poem": "ainkurunooru",
+          "ordinal": 312,
+          "lineNumber": 3,
+          "word": "வாள்வனப்",
+          "text": "வாள்வனப் புற்ற அருவிக்"
+        },
+        {
+          "recordId": "ainkurunooru_420",
+          "poem": "ainkurunooru",
+          "ordinal": 420,
+          "lineNumber": 5,
+          "word": "வாள்நுதல்",
+          "text": "வாள்நுதல் அரிவையொடு ஆய்நலம் படர்ந்தே."
+        },
+        {
+          "recordId": "ainkurunooru_423",
+          "poem": "ainkurunooru",
+          "ordinal": 423,
+          "lineNumber": 2,
+          "word": "வாள்நுதல்",
+          "text": "வாள்நுதல் பசப்பச் செலவயர்ந் தனையே"
+        },
+        {
+          "recordId": "ainkurunooru_498",
+          "poem": "ainkurunooru",
+          "ordinal": 498,
+          "lineNumber": 2,
+          "word": "வாள்வனப்பு",
+          "text": "நீள்வரி நெடுங்கண் வாள்வனப்பு உற்றன"
+        },
+        {
+          "recordId": "akananooru_009",
+          "poem": "akananooru",
+          "ordinal": 9,
+          "lineNumber": 24,
+          "word": "வாள்",
+          "text": "நாணொடு மிடைந்த கற்பின், வாள் நுதல்,"
+        },
+        {
+          "recordId": "akananooru_046",
+          "poem": "akananooru",
+          "ordinal": 46,
+          "lineNumber": 13,
+          "word": "வாள்",
+          "text": "ஒளிறு வாள் தானைக் கொற்றச் செழியன்"
+        }
+      ]
+    },
+    {
+      "id": "weapon-vil",
+      "class": "weapon",
+      "ta": "வில்",
+      "roman": "vil",
+      "en": "bow",
+      "count": 131,
+      "forms": [
+        {
+          "form": "வில்",
+          "count": 72
+        },
+        {
+          "form": "வில்லின்",
+          "count": 8
+        },
+        {
+          "form": "வில்லோர்",
+          "count": 7
+        },
+        {
+          "form": "வில்லர்",
+          "count": 4
+        },
+        {
+          "form": "வில்லன்",
+          "count": 3
+        },
+        {
+          "form": "வில்லொடு",
+          "count": 3
+        },
+        {
+          "form": "வில்லேர்",
+          "count": 3
+        },
+        {
+          "form": "வில்லிடத்",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 46
+        },
+        {
+          "poem": "natrinai",
+          "count": 13
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 13
+        },
+        {
+          "poem": "purananooru",
+          "count": 12
+        },
+        {
+          "poem": "kalithokai",
+          "count": 11
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 9
+        },
+        {
+          "poem": "thirukkural",
+          "count": 7
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 5
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 3
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_267",
+          "poem": "ainkurunooru",
+          "ordinal": 267,
+          "lineNumber": 2,
+          "word": "வில்லோர்",
+          "text": "துறுகல் அடுக்கத்து வில்லோர் மாற்றி"
+        },
+        {
+          "recordId": "ainkurunooru_318",
+          "poem": "ainkurunooru",
+          "ordinal": 318,
+          "lineNumber": 2,
+          "word": "வில்லிலை",
+          "text": "வேய்மருள் பணைத்தோள் வில்லிலை நெகிழ"
+        },
+        {
+          "recordId": "ainkurunooru_352",
+          "poem": "ainkurunooru",
+          "ordinal": 352,
+          "lineNumber": 1,
+          "word": "வில்லிடத்",
+          "text": "விழுத்தொடை மறவர் வில்லிடத் தொலைந்தோர்"
+        },
+        {
+          "recordId": "akananooru_009",
+          "poem": "akananooru",
+          "ordinal": 9,
+          "lineNumber": 2,
+          "word": "வில்லோர்",
+          "text": "வில்லோர் தூணி வீங்கப் பெய்த"
+        },
+        {
+          "recordId": "akananooru_025",
+          "poem": "akananooru",
+          "ordinal": 25,
+          "lineNumber": 19,
+          "word": "வில்",
+          "text": "செல் சமம் கடந்த வில் கெழு தடக் கைப்"
+        },
+        {
+          "recordId": "akananooru_031",
+          "poem": "akananooru",
+          "ordinal": 31,
+          "lineNumber": 7,
+          "word": "வில்",
+          "text": "கல்லுடைக் குறும்பின் வயவர் வில் இட,"
+        }
+      ]
+    },
+    {
+      "id": "weapon-vēl",
+      "class": "weapon",
+      "ta": "வேல்",
+      "roman": "vēl",
+      "en": "spear",
+      "count": 124,
+      "forms": [
+        {
+          "form": "வேல்",
+          "count": 113
+        },
+        {
+          "form": "வேல்கெழு",
+          "count": 2
+        },
+        {
+          "form": "வேல்கோ",
+          "count": 1
+        },
+        {
+          "form": "வேல்மகன்",
+          "count": 1
+        },
+        {
+          "form": "வேல்கண்ணள்",
+          "count": 1
+        },
+        {
+          "form": "வேல்ஈண்டு",
+          "count": 1
+        },
+        {
+          "form": "வேல்துரந்து",
+          "count": 1
+        },
+        {
+          "form": "வேல்நிறத்து",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 47
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 18
+        },
+        {
+          "poem": "purananooru",
+          "count": 18
+        },
+        {
+          "poem": "kalithokai",
+          "count": 12
+        },
+        {
+          "poem": "natrinai",
+          "count": 11
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 5
+        },
+        {
+          "poem": "sirupanatrupadai",
+          "count": 4
+        },
+        {
+          "poem": "naladiyar",
+          "count": 2
+        },
+        {
+          "poem": "paripadal",
+          "count": 2
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_006",
+          "poem": "akananooru",
+          "ordinal": 6,
+          "lineNumber": 20,
+          "word": "வேல்",
+          "text": "பல் வேல் மத்தி, கழாஅர் அன்ன எம்"
+        },
+        {
+          "recordId": "akananooru_007",
+          "poem": "akananooru",
+          "ordinal": 7,
+          "lineNumber": 12,
+          "word": "வேல்",
+          "text": "தொலைவு இல் வெள் வேல் விடலையொடு, என் மகள்"
+        },
+        {
+          "recordId": "akananooru_027",
+          "poem": "akananooru",
+          "ordinal": 27,
+          "lineNumber": 15,
+          "word": "வேல்",
+          "text": "வேத்து அமர்க் கடந்த வென்றி நல் வேல்"
+        },
+        {
+          "recordId": "akananooru_035",
+          "poem": "akananooru",
+          "ordinal": 35,
+          "lineNumber": 4,
+          "word": "வேல்",
+          "text": "நுழை நுதி நெடு வேல், குறும் படை, மழவர்"
+        },
+        {
+          "recordId": "akananooru_045",
+          "poem": "akananooru",
+          "ordinal": 45,
+          "lineNumber": 16,
+          "word": "வேல்",
+          "text": "கடல் கால் கிளர்ந்த வென்றி நல் வேல்,"
+        },
+        {
+          "recordId": "akananooru_059",
+          "poem": "akananooru",
+          "ordinal": 59,
+          "lineNumber": 10,
+          "word": "வேல்",
+          "text": "சூர் மருங்கு அறுத்த சுடர் இலை நெடு வேல்"
+        }
+      ]
+    },
+    {
+      "id": "weapon-paṭai",
+      "class": "weapon",
+      "ta": "படை",
+      "roman": "paṭai",
+      "en": "army / weapon",
+      "count": 104,
+      "forms": [
+        {
+          "form": "படை",
+          "count": 50
+        },
+        {
+          "form": "படைக்",
+          "count": 7
+        },
+        {
+          "form": "படைத்",
+          "count": 4
+        },
+        {
+          "form": "படையாக",
+          "count": 3
+        },
+        {
+          "form": "படைப்",
+          "count": 2
+        },
+        {
+          "form": "படைகொள்",
+          "count": 2
+        },
+        {
+          "form": "படைஅமை",
+          "count": 2
+        },
+        {
+          "form": "படையின்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "purananooru",
+          "count": 27
+        },
+        {
+          "poem": "akananooru",
+          "count": 20
+        },
+        {
+          "poem": "kalithokai",
+          "count": 14
+        },
+        {
+          "poem": "thirukkural",
+          "count": 13
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 12
+        },
+        {
+          "poem": "natrinai",
+          "count": 10
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 2
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 2
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 1
+        },
+        {
+          "poem": "mullaippattu",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_035",
+          "poem": "akananooru",
+          "ordinal": 35,
+          "lineNumber": 4,
+          "word": "படை",
+          "text": "நுழை நுதி நெடு வேல், குறும் படை, மழவர்"
+        },
+        {
+          "recordId": "akananooru_055",
+          "poem": "akananooru",
+          "ordinal": 55,
+          "lineNumber": 9,
+          "word": "படைக்",
+          "text": "கண்படை பெறேன், கனவ ஒண் படைக்"
+        },
+        {
+          "recordId": "akananooru_116",
+          "poem": "akananooru",
+          "ordinal": 116,
+          "lineNumber": 16,
+          "word": "படை",
+          "text": "கடல் மருள் பெரும் படை கலங்கத் தாக்கி,"
+        },
+        {
+          "recordId": "akananooru_124",
+          "poem": "akananooru",
+          "ordinal": 124,
+          "lineNumber": 9,
+          "word": "படை",
+          "text": "மின்னு நிமிர்ந்தன்ன பொன் இயற் புனை படை,"
+        },
+        {
+          "recordId": "akananooru_129",
+          "poem": "akananooru",
+          "ordinal": 129,
+          "lineNumber": 12,
+          "word": "படை",
+          "text": "கொழுப்பு ஆ தின்ற கூர்ம் படை மழவர்,"
+        },
+        {
+          "recordId": "akananooru_174",
+          "poem": "akananooru",
+          "ordinal": 174,
+          "lineNumber": 2,
+          "word": "படை",
+          "text": "ஒரு படை கொண்டு, வருபடை பெயர்க்கும்"
+        }
+      ]
+    },
+    {
+      "id": "ornament-kuḻai",
+      "class": "ornament",
+      "ta": "குழை",
+      "roman": "kuḻai",
+      "en": "ear ornament",
+      "count": 92,
+      "forms": [
+        {
+          "form": "குழை",
+          "count": 35
+        },
+        {
+          "form": "குழைய",
+          "count": 13
+        },
+        {
+          "form": "குழைந்த",
+          "count": 6
+        },
+        {
+          "form": "குழைத்த",
+          "count": 5
+        },
+        {
+          "form": "குழைத்",
+          "count": 4
+        },
+        {
+          "form": "குழைக்கு",
+          "count": 3
+        },
+        {
+          "form": "குழைச்",
+          "count": 3
+        },
+        {
+          "form": "குழைப்ப",
+          "count": 3
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 38
+        },
+        {
+          "poem": "kalithokai",
+          "count": 17
+        },
+        {
+          "poem": "natrinai",
+          "count": 11
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 7
+        },
+        {
+          "poem": "purananooru",
+          "count": 6
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 5
+        },
+        {
+          "poem": "paripadal",
+          "count": 2
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 1
+        },
+        {
+          "poem": "naladiyar",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_003",
+          "poem": "akananooru",
+          "ordinal": 3,
+          "lineNumber": 17,
+          "word": "குழைக்கு",
+          "text": "கொடுங் குழைக்கு அமர்த்த நோக்கம்"
+        },
+        {
+          "recordId": "akananooru_006",
+          "poem": "akananooru",
+          "ordinal": 6,
+          "lineNumber": 7,
+          "word": "குழை",
+          "text": "குழை மாண் ஒள் இழை நீ வெய்யோளொடு,"
+        },
+        {
+          "recordId": "akananooru_006",
+          "poem": "akananooru",
+          "ordinal": 6,
+          "lineNumber": 10,
+          "word": "குழைய",
+          "text": "ஏந்து எழில் ஆகத்துப் பூந் தார் குழைய,"
+        },
+        {
+          "recordId": "akananooru_007",
+          "poem": "akananooru",
+          "ordinal": 7,
+          "lineNumber": 19,
+          "word": "குழைச்",
+          "text": "ஒலிக் குழைச் செயலை உடை மாண் அல்குல்,"
+        },
+        {
+          "recordId": "akananooru_009",
+          "poem": "akananooru",
+          "ordinal": 9,
+          "lineNumber": 4,
+          "word": "குழை",
+          "text": "செப்பு அடர் அன்ன செங் குழை அகம்தோறு,"
+        },
+        {
+          "recordId": "akananooru_022",
+          "poem": "akananooru",
+          "ordinal": 22,
+          "lineNumber": 18,
+          "word": "குழைய",
+          "text": "இன் உயிர் குழைய முயங்குதொறும் மெய்ம் மலிந்து,"
+        }
+      ]
+    },
+    {
+      "id": "music-paṟai",
+      "class": "music",
+      "ta": "பறை",
+      "roman": "paṟai",
+      "en": "hand drum",
+      "count": 90,
+      "forms": [
+        {
+          "form": "பறை",
+          "count": 36
+        },
+        {
+          "form": "பறைக்",
+          "count": 8
+        },
+        {
+          "form": "பறையின்",
+          "count": 7
+        },
+        {
+          "form": "பறைத்",
+          "count": 5
+        },
+        {
+          "form": "பறைச்",
+          "count": 4
+        },
+        {
+          "form": "பறைந்த",
+          "count": 3
+        },
+        {
+          "form": "பறையாற்",
+          "count": 3
+        },
+        {
+          "form": "பறைப்",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 36
+        },
+        {
+          "poem": "purananooru",
+          "count": 13
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 10
+        },
+        {
+          "poem": "natrinai",
+          "count": 9
+        },
+        {
+          "poem": "kalithokai",
+          "count": 6
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 6
+        },
+        {
+          "poem": "naladiyar",
+          "count": 3
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 2
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_180",
+          "poem": "ainkurunooru",
+          "ordinal": 180,
+          "lineNumber": 3,
+          "word": "பறைதபு",
+          "text": "பறைதபு முதுகுருகு இருக்கும்"
+        },
+        {
+          "recordId": "akananooru_015",
+          "poem": "akananooru",
+          "ordinal": 15,
+          "lineNumber": 4,
+          "word": "பறைக்",
+          "text": "பாகல் ஆர்கைப் பறைக் கட் பீலித்"
+        },
+        {
+          "recordId": "akananooru_023",
+          "poem": "akananooru",
+          "ordinal": 23,
+          "lineNumber": 2,
+          "word": "பறைக்",
+          "text": "பாடு உலந்தன்றே, பறைக் குரல் எழிலி;"
+        },
+        {
+          "recordId": "akananooru_033",
+          "poem": "akananooru",
+          "ordinal": 33,
+          "lineNumber": 4,
+          "word": "பறை",
+          "text": "ஒன்று ஓங்கு உயர் சினை இருந்த, வன் பறை,"
+        },
+        {
+          "recordId": "akananooru_038",
+          "poem": "akananooru",
+          "ordinal": 38,
+          "lineNumber": 11,
+          "word": "பறை",
+          "text": "கண் என மலர்ந்த சுனையும், வண் பறை"
+        },
+        {
+          "recordId": "akananooru_040",
+          "poem": "akananooru",
+          "ordinal": 40,
+          "lineNumber": 3,
+          "word": "பறைத்",
+          "text": "மீன் ஆர் குருகின் மென் பறைத் தொழுதி"
+        }
+      ]
+    },
+    {
+      "id": "weapon-kaṇai",
+      "class": "weapon",
+      "ta": "கணை",
+      "roman": "kaṇai",
+      "en": "arrow",
+      "count": 79,
+      "forms": [
+        {
+          "form": "கணை",
+          "count": 34
+        },
+        {
+          "form": "கணைக்",
+          "count": 18
+        },
+        {
+          "form": "கணைக்கால்",
+          "count": 5
+        },
+        {
+          "form": "கணையன்",
+          "count": 2
+        },
+        {
+          "form": "கணையின்",
+          "count": 2
+        },
+        {
+          "form": "கணைத்",
+          "count": 2
+        },
+        {
+          "form": "கணைச்",
+          "count": 2
+        },
+        {
+          "form": "கணைத்துளி",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 23
+        },
+        {
+          "poem": "natrinai",
+          "count": 14
+        },
+        {
+          "poem": "purananooru",
+          "count": 11
+        },
+        {
+          "poem": "kalithokai",
+          "count": 8
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 5
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 4
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 4
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 3
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_024",
+          "poem": "akananooru",
+          "ordinal": 24,
+          "lineNumber": 14,
+          "word": "கணை",
+          "text": "கழிப் பிணிக் கறைத் தோல் பொழி கணை உதைப்பு,"
+        },
+        {
+          "recordId": "akananooru_038",
+          "poem": "akananooru",
+          "ordinal": 38,
+          "lineNumber": 4,
+          "word": "கணை",
+          "text": "கணை வலம் தெரிந்து, துணை படர்ந்து உள்ளி,"
+        },
+        {
+          "recordId": "akananooru_044",
+          "poem": "akananooru",
+          "ordinal": 44,
+          "lineNumber": 13,
+          "word": "கணையன்",
+          "text": "கணையன் அகப்படக் கழுமலம் தந்த"
+        },
+        {
+          "recordId": "akananooru_070",
+          "poem": "akananooru",
+          "ordinal": 70,
+          "lineNumber": 11,
+          "word": "கணைக்கால்",
+          "text": "பாசடைக் கலித்த கணைக்கால் நெய்தல்"
+        },
+        {
+          "recordId": "akananooru_126",
+          "poem": "akananooru",
+          "ordinal": 126,
+          "lineNumber": 8,
+          "word": "கணைக்",
+          "text": "காலைத் தந்த கணைக் கோட்டு வாளைக்கு,"
+        },
+        {
+          "recordId": "akananooru_134",
+          "poem": "akananooru",
+          "ordinal": 134,
+          "lineNumber": 12,
+          "word": "கணைக்",
+          "text": "கணைக் கால் அம் பிணைக் காமர் புணர் நிலை"
+        }
+      ]
+    },
+    {
+      "id": "textile-nūl",
+      "class": "textile",
+      "ta": "நூல்",
+      "roman": "nūl",
+      "en": "thread / text",
+      "count": 74,
+      "forms": [
+        {
+          "form": "நூல்",
+          "count": 56
+        },
+        {
+          "form": "நூல்வழிப்",
+          "count": 2
+        },
+        {
+          "form": "நூல்விரித்துக்",
+          "count": 2
+        },
+        {
+          "form": "நூல்கற்றக்",
+          "count": 2
+        },
+        {
+          "form": "நூல்விரித்",
+          "count": 2
+        },
+        {
+          "form": "நூல்பல",
+          "count": 2
+        },
+        {
+          "form": "நூல்மறப்பர்",
+          "count": 2
+        },
+        {
+          "form": "நூல்வல்லன்",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 20
+        },
+        {
+          "poem": "thirukkural",
+          "count": 16
+        },
+        {
+          "poem": "nedunalvadai",
+          "count": 8
+        },
+        {
+          "poem": "kalithokai",
+          "count": 6
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 6
+        },
+        {
+          "poem": "naladiyar",
+          "count": 4
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 2
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        },
+        {
+          "poem": "natrinai",
+          "count": 2
+        },
+        {
+          "poem": "paripadal",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_114",
+          "poem": "akananooru",
+          "ordinal": 114,
+          "lineNumber": 8,
+          "word": "நூல்",
+          "text": "நூல் அறி வலவ! கடவுமதி, உவக்காண்"
+        },
+        {
+          "recordId": "akananooru_114",
+          "poem": "akananooru",
+          "ordinal": 114,
+          "lineNumber": 8,
+          "word": "நூல்",
+          "text": "நூல் அறி வலவ! கடவுமதி, உவக்காண்"
+        },
+        {
+          "recordId": "akananooru_136",
+          "poem": "akananooru",
+          "ordinal": 136,
+          "lineNumber": 14,
+          "word": "நூல்",
+          "text": "தண் நறு முகையொடு வெண் நூல் சூட்டி,"
+        },
+        {
+          "recordId": "akananooru_136",
+          "poem": "akananooru",
+          "ordinal": 136,
+          "lineNumber": 14,
+          "word": "நூல்",
+          "text": "தண் நறு முகையொடு வெண் நூல் சூட்டி,"
+        },
+        {
+          "recordId": "akananooru_181",
+          "poem": "akananooru",
+          "ordinal": 181,
+          "lineNumber": 16,
+          "word": "நூல்",
+          "text": "நான் மறை முது நூல் முக்கண் செல்வன்,"
+        },
+        {
+          "recordId": "akananooru_181",
+          "poem": "akananooru",
+          "ordinal": 181,
+          "lineNumber": 16,
+          "word": "நூல்",
+          "text": "நான் மறை முது நூல் முக்கண் செல்வன்,"
+        }
+      ]
+    },
+    {
+      "id": "writing-nūl",
+      "class": "writing",
+      "ta": "நூல்",
+      "roman": "nūl",
+      "en": "book / thread",
+      "count": 74,
+      "forms": [
+        {
+          "form": "நூல்",
+          "count": 56
+        },
+        {
+          "form": "நூல்வழிப்",
+          "count": 2
+        },
+        {
+          "form": "நூல்விரித்துக்",
+          "count": 2
+        },
+        {
+          "form": "நூல்கற்றக்",
+          "count": 2
+        },
+        {
+          "form": "நூல்விரித்",
+          "count": 2
+        },
+        {
+          "form": "நூல்பல",
+          "count": 2
+        },
+        {
+          "form": "நூல்மறப்பர்",
+          "count": 2
+        },
+        {
+          "form": "நூல்வல்லன்",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 20
+        },
+        {
+          "poem": "thirukkural",
+          "count": 16
+        },
+        {
+          "poem": "nedunalvadai",
+          "count": 8
+        },
+        {
+          "poem": "kalithokai",
+          "count": 6
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 6
+        },
+        {
+          "poem": "naladiyar",
+          "count": 4
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 2
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        },
+        {
+          "poem": "natrinai",
+          "count": 2
+        },
+        {
+          "poem": "paripadal",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_114",
+          "poem": "akananooru",
+          "ordinal": 114,
+          "lineNumber": 8,
+          "word": "நூல்",
+          "text": "நூல் அறி வலவ! கடவுமதி, உவக்காண்"
+        },
+        {
+          "recordId": "akananooru_114",
+          "poem": "akananooru",
+          "ordinal": 114,
+          "lineNumber": 8,
+          "word": "நூல்",
+          "text": "நூல் அறி வலவ! கடவுமதி, உவக்காண்"
+        },
+        {
+          "recordId": "akananooru_136",
+          "poem": "akananooru",
+          "ordinal": 136,
+          "lineNumber": 14,
+          "word": "நூல்",
+          "text": "தண் நறு முகையொடு வெண் நூல் சூட்டி,"
+        },
+        {
+          "recordId": "akananooru_136",
+          "poem": "akananooru",
+          "ordinal": 136,
+          "lineNumber": 14,
+          "word": "நூல்",
+          "text": "தண் நறு முகையொடு வெண் நூல் சூட்டி,"
+        },
+        {
+          "recordId": "akananooru_181",
+          "poem": "akananooru",
+          "ordinal": 181,
+          "lineNumber": 16,
+          "word": "நூல்",
+          "text": "நான் மறை முது நூல் முக்கண் செல்வன்,"
+        },
+        {
+          "recordId": "akananooru_181",
+          "poem": "akananooru",
+          "ordinal": 181,
+          "lineNumber": 16,
+          "word": "நூல்",
+          "text": "நான் மறை முது நூல் முக்கண் செல்வன்,"
+        }
+      ]
+    },
+    {
+      "id": "tool-uḻu",
+      "class": "tool",
+      "ta": "உழு",
+      "roman": "uḻu",
+      "en": "plough / till",
+      "count": 62,
+      "forms": [
+        {
+          "form": "உழுவை",
+          "count": 14
+        },
+        {
+          "form": "உழுத",
+          "count": 12
+        },
+        {
+          "form": "உழு",
+          "count": 6
+        },
+        {
+          "form": "உழுது",
+          "count": 3
+        },
+        {
+          "form": "உழுவைப்",
+          "count": 3
+        },
+        {
+          "form": "உழுஞ்சில்",
+          "count": 2
+        },
+        {
+          "form": "உழுந்தின்",
+          "count": 2
+        },
+        {
+          "form": "உழுந்துநூற்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 15
+        },
+        {
+          "poem": "purananooru",
+          "count": 13
+        },
+        {
+          "poem": "natrinai",
+          "count": 11
+        },
+        {
+          "poem": "kalithokai",
+          "count": 7
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 4
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 3
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 2
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 2
+        },
+        {
+          "poem": "thirukkural",
+          "count": 2
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_211",
+          "poem": "ainkurunooru",
+          "ordinal": 211,
+          "lineNumber": 1,
+          "word": "உழுந்துநூற்",
+          "text": "நெய்யொடு மயக்கிய உழுந்துநூற் றன்ன"
+        },
+        {
+          "recordId": "ainkurunooru_269",
+          "poem": "ainkurunooru",
+          "ordinal": 269,
+          "lineNumber": 1,
+          "word": "உழுதெனக்",
+          "text": "கேழல் உழுதெனக் கிளர்ந்த எருவை"
+        },
+        {
+          "recordId": "ainkurunooru_270",
+          "poem": "ainkurunooru",
+          "ordinal": 270,
+          "lineNumber": 1,
+          "word": "உழுத",
+          "text": "கிழங்ககழ் கேழல் உழுத சிலம்பில்"
+        },
+        {
+          "recordId": "ainkurunooru_283",
+          "poem": "ainkurunooru",
+          "ordinal": 283,
+          "lineNumber": 2,
+          "word": "உழுத",
+          "text": "புன்புல மயக்கத்து உழுத ஏஅனல்"
+        },
+        {
+          "recordId": "akananooru_009",
+          "poem": "akananooru",
+          "ordinal": 9,
+          "lineNumber": 6,
+          "word": "உழுது",
+          "text": "உழுது காண் துளைய ஆகி, ஆர் கழல்பு,"
+        },
+        {
+          "recordId": "akananooru_026",
+          "poem": "akananooru",
+          "ordinal": 26,
+          "lineNumber": 24,
+          "word": "உழு",
+          "text": "தண் துளிக்கு ஏற்ற பல உழு செஞ் செய்"
+        }
+      ]
+    },
+    {
+      "id": "vessel-kalam",
+      "class": "vessel",
+      "ta": "கலம்",
+      "roman": "kalam",
+      "en": "vessel",
+      "count": 50,
+      "forms": [
+        {
+          "form": "கலம்",
+          "count": 47
+        },
+        {
+          "form": "கலம்பெறு",
+          "count": 1
+        },
+        {
+          "form": "கலம்பெயக்",
+          "count": 1
+        },
+        {
+          "form": "கலம்தொடா",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "pathitrupathu",
+          "count": 15
+        },
+        {
+          "poem": "akananooru",
+          "count": 12
+        },
+        {
+          "poem": "kalithokai",
+          "count": 7
+        },
+        {
+          "poem": "purananooru",
+          "count": 6
+        },
+        {
+          "poem": "natrinai",
+          "count": 4
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        },
+        {
+          "poem": "naladiyar",
+          "count": 2
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_003",
+          "poem": "akananooru",
+          "ordinal": 3,
+          "lineNumber": 12,
+          "word": "கலம்",
+          "text": "கலம் தரல் உள்ளமொடு கழியக் காட்டி,"
+        },
+        {
+          "recordId": "akananooru_030",
+          "poem": "akananooru",
+          "ordinal": 30,
+          "lineNumber": 9,
+          "word": "கலம்",
+          "text": "இரந்தோர் வறுங் கலம் மல்க வீசி,"
+        },
+        {
+          "recordId": "akananooru_089",
+          "poem": "akananooru",
+          "ordinal": 89,
+          "lineNumber": 15,
+          "word": "கலம்",
+          "text": "அருங் கலம் தெறுத்த பெரும் புகல் வலத்தர்"
+        },
+        {
+          "recordId": "akananooru_093",
+          "poem": "akananooru",
+          "ordinal": 93,
+          "lineNumber": 6,
+          "word": "கலம்",
+          "text": "பெறல் அரு நன் கலம் எய்தி, நாடும்"
+        },
+        {
+          "recordId": "akananooru_124",
+          "poem": "akananooru",
+          "ordinal": 124,
+          "lineNumber": 1,
+          "word": "கலம்",
+          "text": "'நன் கலம் களிற்றொடு நண்ணார் ஏந்தி,"
+        },
+        {
+          "recordId": "akananooru_143",
+          "poem": "akananooru",
+          "ordinal": 143,
+          "lineNumber": 11,
+          "word": "கலம்",
+          "text": "நசையின் வாழ்நர்க்கு நன் கலம் சுரக்கும்,"
+        }
+      ]
+    },
+    {
+      "id": "ornament-tōṭu",
+      "class": "ornament",
+      "ta": "தோடு",
+      "roman": "tōṭu",
+      "en": "earring",
+      "count": 47,
+      "forms": [
+        {
+          "form": "தோடு",
+          "count": 42
+        },
+        {
+          "form": "தோடும்",
+          "count": 1
+        },
+        {
+          "form": "தோடுறத்",
+          "count": 1
+        },
+        {
+          "form": "தோடுங்",
+          "count": 1
+        },
+        {
+          "form": "தோடுகொள்",
+          "count": 1
+        },
+        {
+          "form": "தோடுஉகைத்து",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "natrinai",
+          "count": 14
+        },
+        {
+          "poem": "akananooru",
+          "count": 13
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 6
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 5
+        },
+        {
+          "poem": "purananooru",
+          "count": 4
+        },
+        {
+          "poem": "kalithokai",
+          "count": 2
+        },
+        {
+          "poem": "mullaippattu",
+          "count": 1
+        },
+        {
+          "poem": "nedunalvadai",
+          "count": 1
+        },
+        {
+          "poem": "porunaratrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_049",
+          "poem": "akananooru",
+          "ordinal": 49,
+          "lineNumber": 17,
+          "word": "தோடு",
+          "text": "தோடு அமை அரிச் சிலம்பு ஒலிப்ப, அவள்"
+        },
+        {
+          "recordId": "akananooru_082",
+          "poem": "akananooru",
+          "ordinal": 82,
+          "lineNumber": 4,
+          "word": "தோடு",
+          "text": "தோடு அமை முழவின் துதை குரல் ஆக,"
+        },
+        {
+          "recordId": "akananooru_130",
+          "poem": "akananooru",
+          "ordinal": 130,
+          "lineNumber": 6,
+          "word": "தோடு",
+          "text": "எயிறுடை நெடுந் தோடு காப்பப், பல உடன்"
+        },
+        {
+          "recordId": "akananooru_138",
+          "poem": "akananooru",
+          "ordinal": 138,
+          "lineNumber": 12,
+          "word": "தோடும்",
+          "text": "தோடும் தொடலையும் கைக்கொண்டு, அல்கலும்"
+        },
+        {
+          "recordId": "akananooru_181",
+          "poem": "akananooru",
+          "ordinal": 181,
+          "lineNumber": 9,
+          "word": "தோடு",
+          "text": "வம்பப் புள்ளின் கம்பலைப் பெருந் தோடு"
+        },
+        {
+          "recordId": "akananooru_231",
+          "poem": "akananooru",
+          "ordinal": 231,
+          "lineNumber": 15,
+          "word": "தோடு",
+          "text": "தோடு ஆர் கூந்தல் மரீஇயோரே"
+        }
+      ]
+    },
+    {
+      "id": "music-yāḻ",
+      "class": "music",
+      "ta": "யாழ்",
+      "roman": "yāḻ",
+      "en": "harp",
+      "count": 42,
+      "forms": [
+        {
+          "form": "யாழ்",
+          "count": 33
+        },
+        {
+          "form": "யாழ்ப்",
+          "count": 4
+        },
+        {
+          "form": "யாழ்க்கு",
+          "count": 1
+        },
+        {
+          "form": "யாழ்ப்பிரமதத்தன்",
+          "count": 1
+        },
+        {
+          "form": "யாழ்முரல",
+          "count": 1
+        },
+        {
+          "form": "யாழ்இனிது",
+          "count": 1
+        },
+        {
+          "form": "யாழ்கோடு",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 14
+        },
+        {
+          "poem": "kalithokai",
+          "count": 11
+        },
+        {
+          "poem": "natrinai",
+          "count": 4
+        },
+        {
+          "poem": "purananooru",
+          "count": 4
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 2
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        },
+        {
+          "poem": "thirukkural",
+          "count": 2
+        },
+        {
+          "poem": "mullaippattu",
+          "count": 1
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 1
+        },
+        {
+          "poem": "pattinappalai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_014",
+          "poem": "akananooru",
+          "ordinal": 14,
+          "lineNumber": 15,
+          "word": "யாழ்",
+          "text": "செவ்வழி நல் யாழ் இசையினென், பையென"
+        },
+        {
+          "recordId": "akananooru_056",
+          "poem": "akananooru",
+          "ordinal": 56,
+          "lineNumber": 11,
+          "word": "யாழ்",
+          "text": "புனிற்றாப் பாய்ந்தெனக் கலங்கி, யாழ் இட்டு,"
+        },
+        {
+          "recordId": "akananooru_082",
+          "poem": "akananooru",
+          "ordinal": 82,
+          "lineNumber": 6,
+          "word": "யாழ்",
+          "text": "மலைப் பூஞ் சாரல் வண்டு யாழ் ஆக,"
+        },
+        {
+          "recordId": "akananooru_088",
+          "poem": "akananooru",
+          "ordinal": 88,
+          "lineNumber": 11,
+          "word": "யாழ்",
+          "text": "இருஞ் சிறைத் தொழுதி ஆர்ப்ப, யாழ் செத்து,"
+        },
+        {
+          "recordId": "akananooru_109",
+          "poem": "akananooru",
+          "ordinal": 109,
+          "lineNumber": 1,
+          "word": "யாழ்",
+          "text": "பல் இதழ் மென் மலர் உண்கண், நல் யாழ்"
+        },
+        {
+          "recordId": "akananooru_186",
+          "poem": "akananooru",
+          "ordinal": 186,
+          "lineNumber": 10,
+          "word": "யாழ்",
+          "text": "ஒண் தொடி மகளிர் பண்டை யாழ் பாட,"
+        }
+      ]
+    },
+    {
+      "id": "music-muracu",
+      "class": "music",
+      "ta": "முரசு",
+      "roman": "muracu",
+      "en": "royal war drum",
+      "count": 40,
+      "forms": [
+        {
+          "form": "முரசு",
+          "count": 22
+        },
+        {
+          "form": "முரசும்",
+          "count": 5
+        },
+        {
+          "form": "முரசுடைப்",
+          "count": 2
+        },
+        {
+          "form": "முரசுமுழங்கு",
+          "count": 2
+        },
+        {
+          "form": "முரசுபாடு",
+          "count": 1
+        },
+        {
+          "form": "முரசுமாறு",
+          "count": 1
+        },
+        {
+          "form": "முரசுபடச்",
+          "count": 1
+        },
+        {
+          "form": "முரசுடைச்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "purananooru",
+          "count": 16
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 9
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 3
+        },
+        {
+          "poem": "natrinai",
+          "count": 3
+        },
+        {
+          "poem": "akananooru",
+          "count": 2
+        },
+        {
+          "poem": "paripadal",
+          "count": 2
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 1
+        },
+        {
+          "poem": "mullaippattu",
+          "count": 1
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_426",
+          "poem": "ainkurunooru",
+          "ordinal": 426,
+          "lineNumber": 3,
+          "word": "முரசுபாடு",
+          "text": "முரசுபாடு அதிர ஏவி"
+        },
+        {
+          "recordId": "ainkurunooru_450",
+          "poem": "ainkurunooru",
+          "ordinal": 450,
+          "lineNumber": 1,
+          "word": "முரசுமாறு",
+          "text": "முரசுமாறு இரட்டும் அருந்தொழில் பகைதணிந்து"
+        },
+        {
+          "recordId": "ainkurunooru_455",
+          "poem": "ainkurunooru",
+          "ordinal": 455,
+          "lineNumber": 1,
+          "word": "முரசுபடச்",
+          "text": "அரசுபகை தணிய முரசுபடச் சினை இ"
+        },
+        {
+          "recordId": "akananooru_156",
+          "poem": "akananooru",
+          "ordinal": 156,
+          "lineNumber": 1,
+          "word": "முரசுடைச்",
+          "text": "முரசுடைச் செல்வர் புரவிச் சூட்டும்"
+        },
+        {
+          "recordId": "akananooru_175",
+          "poem": "akananooru",
+          "ordinal": 175,
+          "lineNumber": 12,
+          "word": "முரசு",
+          "text": "வேலினும் பல் ஊழ் மின்னி, முரசு என"
+        },
+        {
+          "recordId": "kurinjipattu_08",
+          "poem": "kurinjipattu",
+          "ordinal": 8,
+          "lineNumber": 4,
+          "word": "முரசு",
+          "text": "முரசு அதிர்ந்தன்ன இன் குரல் ஏற்றொடு,"
+        }
+      ]
+    },
+    {
+      "id": "vessel-pāṇi",
+      "class": "vessel",
+      "ta": "பாணி",
+      "roman": "pāṇi",
+      "en": "bowl / vessel",
+      "count": 39,
+      "forms": [
+        {
+          "form": "பாணி",
+          "count": 22
+        },
+        {
+          "form": "பாணியின்",
+          "count": 6
+        },
+        {
+          "form": "பாணிக்",
+          "count": 3
+        },
+        {
+          "form": "பாணிப்",
+          "count": 2
+        },
+        {
+          "form": "பாணியும்",
+          "count": 2
+        },
+        {
+          "form": "பாணியேம்",
+          "count": 1
+        },
+        {
+          "form": "பாணித்தே",
+          "count": 1
+        },
+        {
+          "form": "பாணிய",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 10
+        },
+        {
+          "poem": "natrinai",
+          "count": 5
+        },
+        {
+          "poem": "purananooru",
+          "count": 5
+        },
+        {
+          "poem": "kalithokai",
+          "count": 3
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 3
+        },
+        {
+          "poem": "naladiyar",
+          "count": 3
+        },
+        {
+          "poem": "porunaratrupadai",
+          "count": 3
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 2
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 2
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_009",
+          "poem": "akananooru",
+          "ordinal": 9,
+          "lineNumber": 12,
+          "word": "பாணி",
+          "text": "தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி,"
+        },
+        {
+          "recordId": "akananooru_050",
+          "poem": "akananooru",
+          "ordinal": 50,
+          "lineNumber": 4,
+          "word": "பாணி",
+          "text": "மாண் இழை நெடுந் தேர் பாணி நிற்ப,"
+        },
+        {
+          "recordId": "akananooru_087",
+          "poem": "akananooru",
+          "ordinal": 87,
+          "lineNumber": 8,
+          "word": "பாணி",
+          "text": "எழுந்த தண்ணுமை இடங் கட் பாணி,"
+        },
+        {
+          "recordId": "akananooru_098",
+          "poem": "akananooru",
+          "ordinal": 98,
+          "lineNumber": 17,
+          "word": "பாணி",
+          "text": "ஐது அமை பாணி இரீஇ, கைபெயரா,"
+        },
+        {
+          "recordId": "akananooru_105",
+          "poem": "akananooru",
+          "ordinal": 105,
+          "lineNumber": 9,
+          "word": "பாணிப்",
+          "text": "பந்து புடைப்பன்ன பாணிப் பல் அடிச்"
+        },
+        {
+          "recordId": "akananooru_134",
+          "poem": "akananooru",
+          "ordinal": 134,
+          "lineNumber": 7,
+          "word": "பாணி",
+          "text": "வாஅப் பாணி வயங்கு தொழிற் கலிமாத்"
+        }
+      ]
+    },
+    {
+      "id": "ornament-āram",
+      "class": "ornament",
+      "ta": "ஆரம்",
+      "roman": "āram",
+      "en": "necklace",
+      "count": 38,
+      "forms": [
+        {
+          "form": "ஆரம்",
+          "count": 38
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 11
+        },
+        {
+          "poem": "purananooru",
+          "count": 9
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 4
+        },
+        {
+          "poem": "natrinai",
+          "count": 4
+        },
+        {
+          "poem": "kalithokai",
+          "count": 3
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 1
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        },
+        {
+          "poem": "nedunalvadai",
+          "count": 1
+        },
+        {
+          "poem": "paripadal",
+          "count": 1
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_254",
+          "poem": "ainkurunooru",
+          "ordinal": 254,
+          "lineNumber": 1,
+          "word": "ஆரம்",
+          "text": "குன்றக் குறவன் ஆரம் அறுத்தென"
+        },
+        {
+          "recordId": "akananooru_022",
+          "poem": "akananooru",
+          "ordinal": 22,
+          "lineNumber": 12,
+          "word": "ஆரம்",
+          "text": "ஆரம் நாற, அரு விடர்த் ததைந்த"
+        },
+        {
+          "recordId": "akananooru_075",
+          "poem": "akananooru",
+          "ordinal": 75,
+          "lineNumber": 12,
+          "word": "ஆரம்",
+          "text": "ஆரம் தாங்கிய அலர் முலை ஆகத்து,"
+        },
+        {
+          "recordId": "akananooru_100",
+          "poem": "akananooru",
+          "ordinal": 100,
+          "lineNumber": 1,
+          "word": "ஆரம்",
+          "text": "அரையுற்று அமைந்த ஆரம் நீவி,"
+        },
+        {
+          "recordId": "akananooru_120",
+          "poem": "akananooru",
+          "ordinal": 120,
+          "lineNumber": 1,
+          "word": "ஆரம்",
+          "text": "நெடு வேள் மார்பின் ஆரம் போல,"
+        },
+        {
+          "recordId": "akananooru_191",
+          "poem": "akananooru",
+          "ordinal": 191,
+          "lineNumber": 5,
+          "word": "ஆரம்",
+          "text": "ஊர் கண்ட அன்ன ஆரம் வாங்கி,"
+        }
+      ]
+    },
+    {
+      "id": "weapon-eḥku",
+      "class": "weapon",
+      "ta": "எஃகு",
+      "roman": "eḥku",
+      "en": "steel / sharp weapon",
+      "count": 30,
+      "forms": [
+        {
+          "form": "எஃகு",
+          "count": 22
+        },
+        {
+          "form": "எஃகுடை",
+          "count": 4
+        },
+        {
+          "form": "எஃகுடையார்",
+          "count": 1
+        },
+        {
+          "form": "எஃகுறு",
+          "count": 1
+        },
+        {
+          "form": "எஃகுசுமந்து",
+          "count": 1
+        },
+        {
+          "form": "எஃகுஉளம்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "pathitrupathu",
+          "count": 11
+        },
+        {
+          "poem": "akananooru",
+          "count": 10
+        },
+        {
+          "poem": "natrinai",
+          "count": 3
+        },
+        {
+          "poem": "kalithokai",
+          "count": 1
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 1
+        },
+        {
+          "poem": "naladiyar",
+          "count": 1
+        },
+        {
+          "poem": "pattinappalai",
+          "count": 1
+        },
+        {
+          "poem": "purananooru",
+          "count": 1
+        },
+        {
+          "poem": "thirukkural",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_029",
+          "poem": "akananooru",
+          "ordinal": 29,
+          "lineNumber": 5,
+          "word": "எஃகு",
+          "text": "செய்வினைக்கு அகன்ற காலை, எஃகு உற்று"
+        },
+        {
+          "recordId": "akananooru_071",
+          "poem": "akananooru",
+          "ordinal": 71,
+          "lineNumber": 12,
+          "word": "எஃகு",
+          "text": "கூர் எஃகு எறிஞரின் அலைத்தல் ஆனாது,"
+        },
+        {
+          "recordId": "akananooru_072",
+          "poem": "akananooru",
+          "ordinal": 72,
+          "lineNumber": 18,
+          "word": "எஃகு",
+          "text": "அருள் புரி நெஞ்சமொடு எஃகு துணையாக"
+        },
+        {
+          "recordId": "akananooru_102",
+          "poem": "akananooru",
+          "ordinal": 102,
+          "lineNumber": 11,
+          "word": "எஃகுடை",
+          "text": "தாரன், கண்ணியன், எஃகுடை வலத்தன்,"
+        },
+        {
+          "recordId": "akananooru_116",
+          "poem": "akananooru",
+          "ordinal": 116,
+          "lineNumber": 9,
+          "word": "எஃகுடை",
+          "text": "எஃகுடை எழில் நலத்து, ஒருத்தியொடு நெருநை"
+        },
+        {
+          "recordId": "akananooru_202",
+          "poem": "akananooru",
+          "ordinal": 202,
+          "lineNumber": 12,
+          "word": "எஃகு",
+          "text": "தவிர்வு இல் உள்ளமொடு எஃகு துணையாக,"
+        }
+      ]
+    },
+    {
+      "id": "transport-kutirai",
+      "class": "transport",
+      "ta": "குதிரை",
+      "roman": "kutirai",
+      "en": "horse",
+      "count": 29,
+      "forms": [
+        {
+          "form": "குதிரை",
+          "count": 16
+        },
+        {
+          "form": "குதிரைக்",
+          "count": 5
+        },
+        {
+          "form": "குதிரையோ",
+          "count": 3
+        },
+        {
+          "form": "குதிரையை",
+          "count": 2
+        },
+        {
+          "form": "குதிரைதான்",
+          "count": 1
+        },
+        {
+          "form": "குதிரையின்",
+          "count": 1
+        },
+        {
+          "form": "குதிரைத்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "kalithokai",
+          "count": 14
+        },
+        {
+          "poem": "akananooru",
+          "count": 8
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 2
+        },
+        {
+          "poem": "purananooru",
+          "count": 2
+        },
+        {
+          "poem": "sirupanatrupadai",
+          "count": 2
+        },
+        {
+          "poem": "natrinai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_001",
+          "poem": "akananooru",
+          "ordinal": 1,
+          "lineNumber": 2,
+          "word": "குதிரை",
+          "text": "உருவக் குதிரை மழவர் ஓட்டிய"
+        },
+        {
+          "recordId": "akananooru_014",
+          "poem": "akananooru",
+          "ordinal": 14,
+          "lineNumber": 18,
+          "word": "குதிரை",
+          "text": "விடு விசைக் குதிரை விலங்கு பரி முடுக,"
+        },
+        {
+          "recordId": "akananooru_105",
+          "poem": "akananooru",
+          "ordinal": 105,
+          "lineNumber": 10,
+          "word": "குதிரை",
+          "text": "சில் பரிக் குதிரை, பல் வேல் எழினி"
+        },
+        {
+          "recordId": "akananooru_143",
+          "poem": "akananooru",
+          "ordinal": 143,
+          "lineNumber": 13,
+          "word": "குதிரைக்",
+          "text": "மை தவழ் உயர் சிமைக் குதிரைக் கவாஅன்"
+        },
+        {
+          "recordId": "akananooru_148",
+          "poem": "akananooru",
+          "ordinal": 148,
+          "lineNumber": 7,
+          "word": "குதிரை",
+          "text": "கடும் பரிக் குதிரை ஆஅய் எயினன்"
+        },
+        {
+          "recordId": "akananooru_233",
+          "poem": "akananooru",
+          "ordinal": 233,
+          "lineNumber": 6,
+          "word": "குதிரை",
+          "text": "மறப் படைக் குதிரை, மாறா மைந்தின்,"
+        }
+      ]
+    },
+    {
+      "id": "vessel-kuṭam",
+      "class": "vessel",
+      "ta": "குடம்",
+      "roman": "kuṭam",
+      "en": "pot",
+      "count": 27,
+      "forms": [
+        {
+          "form": "குடம்பை",
+          "count": 12
+        },
+        {
+          "form": "குடம்",
+          "count": 5
+        },
+        {
+          "form": "குடம்பைக்",
+          "count": 3
+        },
+        {
+          "form": "குடம்பைப்",
+          "count": 3
+        },
+        {
+          "form": "குடம்பைச்",
+          "count": 2
+        },
+        {
+          "form": "குடம்சுட்டு",
+          "count": 1
+        },
+        {
+          "form": "குடம்பைத்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "natrinai",
+          "count": 13
+        },
+        {
+          "poem": "akananooru",
+          "count": 6
+        },
+        {
+          "poem": "kalithokai",
+          "count": 3
+        },
+        {
+          "poem": "purananooru",
+          "count": 2
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 1
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 1
+        },
+        {
+          "poem": "thirukkural",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_099",
+          "poem": "ainkurunooru",
+          "ordinal": 99,
+          "lineNumber": 1,
+          "word": "குடம்பை",
+          "text": "பழனப் பாகல் முயிறுமூசு குடம்பை"
+        },
+        {
+          "recordId": "akananooru_040",
+          "poem": "akananooru",
+          "ordinal": 40,
+          "lineNumber": 4,
+          "word": "குடம்பை",
+          "text": "குவை இரும் புன்னைக் குடம்பை சேர,"
+        },
+        {
+          "recordId": "akananooru_113",
+          "poem": "akananooru",
+          "ordinal": 113,
+          "lineNumber": 24,
+          "word": "குடம்பை",
+          "text": "அலங்கல் அம் சினைக் குடம்பை புல்லெனப்"
+        },
+        {
+          "recordId": "akananooru_270",
+          "poem": "akananooru",
+          "ordinal": 270,
+          "lineNumber": 12,
+          "word": "குடம்பைச்",
+          "text": "கடவுள் மரத்த முள் மிடை குடம்பைச்"
+        },
+        {
+          "recordId": "akananooru_336",
+          "poem": "akananooru",
+          "ordinal": 336,
+          "lineNumber": 7,
+          "word": "குடம்",
+          "text": "நுண் செயல் அம் குடம் இரீஇ, பண்பின்"
+        },
+        {
+          "recordId": "akananooru_352",
+          "poem": "akananooru",
+          "ordinal": 352,
+          "lineNumber": 1,
+          "word": "குடம்",
+          "text": "'முடவு முதிர் பலவின் குடம் மருள் பெரும் பழம்"
+        }
+      ]
+    },
+    {
+      "id": "music-taṇṇumai",
+      "class": "music",
+      "ta": "தண்ணுமை",
+      "roman": "taṇṇumai",
+      "en": "barrel drum",
+      "count": 25,
+      "forms": [
+        {
+          "form": "தண்ணுமை",
+          "count": 19
+        },
+        {
+          "form": "தண்ணுமைப்",
+          "count": 2
+        },
+        {
+          "form": "தண்ணுமைக்",
+          "count": 2
+        },
+        {
+          "form": "தண்ணுமைக்கு",
+          "count": 1
+        },
+        {
+          "form": "தண்ணுமைத்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 7
+        },
+        {
+          "poem": "natrinai",
+          "count": 5
+        },
+        {
+          "poem": "purananooru",
+          "count": 5
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 3
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 1
+        },
+        {
+          "poem": "kalithokai",
+          "count": 1
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 1
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 1
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_215",
+          "poem": "ainkurunooru",
+          "ordinal": 215,
+          "lineNumber": 3,
+          "word": "தண்ணுமைப்",
+          "text": "தட்டைத் தண்ணுமைப் பின்னர் இயவர்"
+        },
+        {
+          "recordId": "akananooru_040",
+          "poem": "akananooru",
+          "ordinal": 40,
+          "lineNumber": 14,
+          "word": "தண்ணுமை",
+          "text": "தண்ணுமை வெரீஇய தடந் தாள் நாரை"
+        },
+        {
+          "recordId": "akananooru_063",
+          "poem": "akananooru",
+          "ordinal": 63,
+          "lineNumber": 18,
+          "word": "தண்ணுமை",
+          "text": "சேக் கோள் அறையும் தண்ணுமை"
+        },
+        {
+          "recordId": "akananooru_087",
+          "poem": "akananooru",
+          "ordinal": 87,
+          "lineNumber": 8,
+          "word": "தண்ணுமை",
+          "text": "எழுந்த தண்ணுமை இடங் கட் பாணி,"
+        },
+        {
+          "recordId": "akananooru_106",
+          "poem": "akananooru",
+          "ordinal": 106,
+          "lineNumber": 13,
+          "word": "தண்ணுமைக்",
+          "text": "தண்ணுமைக் கண்ணின் அலைஇயர், தன் வயிறே"
+        },
+        {
+          "recordId": "akananooru_174",
+          "poem": "akananooru",
+          "ordinal": 174,
+          "lineNumber": 4,
+          "word": "தண்ணுமை",
+          "text": "பூக் கோள் ஏய தண்ணுமை விலக்கிச்"
+        }
+      ]
+    },
+    {
+      "id": "ornament-muttu",
+      "class": "ornament",
+      "ta": "முத்து",
+      "roman": "muttu",
+      "en": "pearl",
+      "count": 25,
+      "forms": [
+        {
+          "form": "முத்து",
+          "count": 14
+        },
+        {
+          "form": "முத்துடை",
+          "count": 3
+        },
+        {
+          "form": "முத்தும்",
+          "count": 3
+        },
+        {
+          "form": "முத்துப்",
+          "count": 2
+        },
+        {
+          "form": "முத்துக்",
+          "count": 1
+        },
+        {
+          "form": "முத்துடைச்",
+          "count": 1
+        },
+        {
+          "form": "முத்துப்படு",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "kalithokai",
+          "count": 9
+        },
+        {
+          "poem": "natrinai",
+          "count": 3
+        },
+        {
+          "poem": "purananooru",
+          "count": 3
+        },
+        {
+          "poem": "nedunalvadai",
+          "count": 2
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 1
+        },
+        {
+          "poem": "mullaippattu",
+          "count": 1
+        },
+        {
+          "poem": "naladiyar",
+          "count": 1
+        },
+        {
+          "poem": "paripadal",
+          "count": 1
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "kalithokai_040",
+          "poem": "kalithokai",
+          "ordinal": 40,
+          "lineNumber": 4,
+          "word": "முத்து",
+          "text": "முகை வளர் சாந்து உரல், முத்து ஆர் மருப்பின்"
+        },
+        {
+          "recordId": "kalithokai_059",
+          "poem": "kalithokai",
+          "ordinal": 59,
+          "lineNumber": 2,
+          "word": "முத்துக்",
+          "text": "முளை நிமிர்ந்தவை போலும் முத்துக் கோல் அவிர் தொடி,"
+        },
+        {
+          "recordId": "kalithokai_064",
+          "poem": "kalithokai",
+          "ordinal": 64,
+          "lineNumber": 29,
+          "word": "முத்து",
+          "text": "முத்து ஏர் முறுவலாய்! நீ படும் பொன் எல்லாம்"
+        },
+        {
+          "recordId": "kalithokai_079",
+          "poem": "kalithokai",
+          "ordinal": 79,
+          "lineNumber": 12,
+          "word": "முத்து",
+          "text": "பல் காழ் முத்து அணி ஆரம் பற்றினன் பரிவானான்;"
+        },
+        {
+          "recordId": "kalithokai_080",
+          "poem": "kalithokai",
+          "ordinal": 80,
+          "lineNumber": 4,
+          "word": "முத்து",
+          "text": "திகழ் ஒளி முத்து அங்கு அரும்பாகத் தைஇப்"
+        },
+        {
+          "recordId": "kalithokai_093",
+          "poem": "kalithokai",
+          "ordinal": 93,
+          "lineNumber": 11,
+          "word": "முத்து",
+          "text": "'முத்து ஏர் முறுவலாய்! நாம் மணம் புக்கக்கால்,"
+        }
+      ]
+    },
+    {
+      "id": "weapon-ampu",
+      "class": "weapon",
+      "ta": "அம்பு",
+      "roman": "ampu",
+      "en": "arrow",
+      "count": 25,
+      "forms": [
+        {
+          "form": "அம்பு",
+          "count": 16
+        },
+        {
+          "form": "அம்புடை",
+          "count": 3
+        },
+        {
+          "form": "அம்புடைக்",
+          "count": 1
+        },
+        {
+          "form": "அம்புலி",
+          "count": 1
+        },
+        {
+          "form": "அம்பும்",
+          "count": 1
+        },
+        {
+          "form": "அம்புவிட",
+          "count": 1
+        },
+        {
+          "form": "அம்புசென்று",
+          "count": 1
+        },
+        {
+          "form": "அம்புமிகத்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "pathitrupathu",
+          "count": 7
+        },
+        {
+          "poem": "purananooru",
+          "count": 7
+        },
+        {
+          "poem": "akananooru",
+          "count": 5
+        },
+        {
+          "poem": "kalithokai",
+          "count": 4
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        },
+        {
+          "poem": "naladiyar",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_069",
+          "poem": "akananooru",
+          "ordinal": 69,
+          "lineNumber": 16,
+          "word": "அம்புடைக்",
+          "text": "அம்புடைக் கையர் அரண் பல நூறி,"
+        },
+        {
+          "recordId": "akananooru_082",
+          "poem": "akananooru",
+          "ordinal": 82,
+          "lineNumber": 11,
+          "word": "அம்பு",
+          "text": "உருவ வல் விற் பற்றி, அம்பு தெரிந்து,"
+        },
+        {
+          "recordId": "akananooru_269",
+          "poem": "akananooru",
+          "ordinal": 269,
+          "lineNumber": 10,
+          "word": "அம்பு",
+          "text": "அம்பு கொண்டு அறுத்த ஆர் நார் உரிவையின்"
+        },
+        {
+          "recordId": "akananooru_309",
+          "poem": "akananooru",
+          "ordinal": 309,
+          "lineNumber": 3,
+          "word": "அம்பு",
+          "text": "அம்பு சேண் படுத்து வன்புலத்து உய்த்தென,"
+        },
+        {
+          "recordId": "akananooru_375",
+          "poem": "akananooru",
+          "ordinal": 375,
+          "lineNumber": 3,
+          "word": "அம்பு",
+          "text": "அம்பு தொடை அமைதி காண்மார், வம்பலர்"
+        },
+        {
+          "recordId": "kalithokai_006",
+          "poem": "kalithokai",
+          "ordinal": 6,
+          "lineNumber": 3,
+          "word": "அம்பு",
+          "text": "சுரை அம்பு, மூழ்கச் சுருங்கிப், புரையோர் தம்,"
+        }
+      ]
+    },
+    {
+      "id": "textile-paṭṭu",
+      "class": "textile",
+      "ta": "பட்டு",
+      "roman": "paṭṭu",
+      "en": "silk",
+      "count": 24,
+      "forms": [
+        {
+          "form": "பட்டு",
+          "count": 16
+        },
+        {
+          "form": "பட்டுக்",
+          "count": 2
+        },
+        {
+          "form": "பட்டும்",
+          "count": 2
+        },
+        {
+          "form": "பட்டுழி",
+          "count": 1
+        },
+        {
+          "form": "பட்டுடை",
+          "count": 1
+        },
+        {
+          "form": "பட்டுப்பா",
+          "count": 1
+        },
+        {
+          "form": "பட்டுண்டு",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "thirukkural",
+          "count": 5
+        },
+        {
+          "poem": "kalithokai",
+          "count": 4
+        },
+        {
+          "poem": "naladiyar",
+          "count": 4
+        },
+        {
+          "poem": "akananooru",
+          "count": 3
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 2
+        },
+        {
+          "poem": "purananooru",
+          "count": 2
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 1
+        },
+        {
+          "poem": "pattinappalai",
+          "count": 1
+        },
+        {
+          "poem": "porunaratrupadai",
+          "count": 1
+        },
+        {
+          "poem": "thirumurugatrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_128",
+          "poem": "akananooru",
+          "ordinal": 128,
+          "lineNumber": 8,
+          "word": "பட்டு",
+          "text": "இறும்பு பட்டு இருளிய இட்டு அருஞ் சிலம்பில்"
+        },
+        {
+          "recordId": "akananooru_236",
+          "poem": "akananooru",
+          "ordinal": 236,
+          "lineNumber": 11,
+          "word": "பட்டு",
+          "text": "அணி கிளர் சாந்தின் அம் பட்டு இமைப்ப,"
+        },
+        {
+          "recordId": "akananooru_261",
+          "poem": "akananooru",
+          "ordinal": 261,
+          "lineNumber": 13,
+          "word": "பட்டு",
+          "text": "களிறு அட்டுக் குழுமும் ஓசையும், களி பட்டு"
+        },
+        {
+          "recordId": "kalithokai_031",
+          "poem": "kalithokai",
+          "ordinal": 31,
+          "lineNumber": 1,
+          "word": "பட்டுக்",
+          "text": "'கடும் புனல் கால் பட்டுக் கலுழ் தேறிக் கவின் பெற,"
+        },
+        {
+          "recordId": "kalithokai_069",
+          "poem": "kalithokai",
+          "ordinal": 69,
+          "lineNumber": 12,
+          "word": "பட்டுழி",
+          "text": "பட்டுழி அறியாது, பாகனைத் தேரொடும்"
+        },
+        {
+          "recordId": "kalithokai_113",
+          "poem": "kalithokai",
+          "ordinal": 113,
+          "lineNumber": 15,
+          "word": "பட்டு",
+          "text": "உடம்பட்டு நீப்பார் கிளவி, மடம் பட்டு,"
+        }
+      ]
+    },
+    {
+      "id": "ritual-teyvam",
+      "class": "ritual",
+      "ta": "தெய்வம்",
+      "roman": "teyvam",
+      "en": "deity",
+      "count": 23,
+      "forms": [
+        {
+          "form": "தெய்வம்",
+          "count": 22
+        },
+        {
+          "form": "தெய்வம்தான்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "kalithokai",
+          "count": 4
+        },
+        {
+          "poem": "natrinai",
+          "count": 4
+        },
+        {
+          "poem": "akananooru",
+          "count": 3
+        },
+        {
+          "poem": "thirukkural",
+          "count": 3
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 2
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 2
+        },
+        {
+          "poem": "naladiyar",
+          "count": 1
+        },
+        {
+          "poem": "nedunalvadai",
+          "count": 1
+        },
+        {
+          "poem": "paripadal",
+          "count": 1
+        },
+        {
+          "poem": "pattinappalai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_110",
+          "poem": "akananooru",
+          "ordinal": 110,
+          "lineNumber": 4,
+          "word": "தெய்வம்",
+          "text": "கொடுஞ் சுழிப் புகாஅர்த் தெய்வம் நோக்கி,"
+        },
+        {
+          "recordId": "akananooru_166",
+          "poem": "akananooru",
+          "ordinal": 166,
+          "lineNumber": 7,
+          "word": "தெய்வம்",
+          "text": "உயர் பலி பெறூஉம் உரு கெழு தெய்வம்,"
+        },
+        {
+          "recordId": "akananooru_309",
+          "poem": "akananooru",
+          "ordinal": 309,
+          "lineNumber": 4,
+          "word": "தெய்வம்",
+          "text": "தெய்வம் சேர்ந்த பராரை வேம்பில்"
+        },
+        {
+          "recordId": "kalithokai_039",
+          "poem": "kalithokai",
+          "ordinal": 39,
+          "lineNumber": 27,
+          "word": "தெய்வம்",
+          "text": "வரை உறை தெய்வம் உவப்ப, உவந்து"
+        },
+        {
+          "recordId": "kalithokai_103",
+          "poem": "kalithokai",
+          "ordinal": 103,
+          "lineNumber": 76,
+          "word": "தெய்வம்",
+          "text": "தேயா விழுப் புகழ்த் தெய்வம் பரவுதும்"
+        },
+        {
+          "recordId": "kalithokai_131",
+          "poem": "kalithokai",
+          "ordinal": 131,
+          "lineNumber": 1,
+          "word": "தெய்வம்",
+          "text": "பெரும் கடல் தெய்வம் நீர் நோக்கித் தெளித்து, என்"
+        }
+      ]
+    },
+    {
+      "id": "music-kuḻal",
+      "class": "music",
+      "ta": "குழல்",
+      "roman": "kuḻal",
+      "en": "flute",
+      "count": 22,
+      "forms": [
+        {
+          "form": "குழல்",
+          "count": 21
+        },
+        {
+          "form": "குழல்போலும்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "kalithokai",
+          "count": 8
+        },
+        {
+          "poem": "akananooru",
+          "count": 7
+        },
+        {
+          "poem": "natrinai",
+          "count": 2
+        },
+        {
+          "poem": "thirukkural",
+          "count": 2
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 1
+        },
+        {
+          "poem": "purananooru",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_073",
+          "poem": "akananooru",
+          "ordinal": 73,
+          "lineNumber": 2,
+          "word": "குழல்",
+          "text": "நெய் கனி வீழ் குழல் அகப்படத் தைஇ;"
+        },
+        {
+          "recordId": "akananooru_074",
+          "poem": "akananooru",
+          "ordinal": 74,
+          "lineNumber": 17,
+          "word": "குழல்",
+          "text": "வல் வாய்ச் சிறு குழல் வருத்தாக் காலே!"
+        },
+        {
+          "recordId": "akananooru_219",
+          "poem": "akananooru",
+          "ordinal": 219,
+          "lineNumber": 16,
+          "word": "குழல்",
+          "text": "குழல் என நினையும் நீர் இல் நீள் இடை,"
+        },
+        {
+          "recordId": "akananooru_225",
+          "poem": "akananooru",
+          "ordinal": 225,
+          "lineNumber": 8,
+          "word": "குழல்",
+          "text": "ஆய்க் குழல் பாணியின் ஐது வந்து இசைக்கும்,"
+        },
+        {
+          "recordId": "akananooru_245",
+          "poem": "akananooru",
+          "ordinal": 245,
+          "lineNumber": 16,
+          "word": "குழல்",
+          "text": "குழல் இசைத் தும்பி ஆர்க்கும் ஆங்கண்,"
+        },
+        {
+          "recordId": "akananooru_305",
+          "poem": "akananooru",
+          "ordinal": 305,
+          "lineNumber": 16,
+          "word": "குழல்",
+          "text": "நினையா மாக்கள் தீம் குழல் கேட்டே?"
+        }
+      ]
+    },
+    {
+      "id": "textile-tukil",
+      "class": "textile",
+      "ta": "துகில்",
+      "roman": "tukil",
+      "en": "fine cloth",
+      "count": 22,
+      "forms": [
+        {
+          "form": "துகில்",
+          "count": 21
+        },
+        {
+          "form": "துகில்விரி",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "natrinai",
+          "count": 5
+        },
+        {
+          "poem": "kalithokai",
+          "count": 4
+        },
+        {
+          "poem": "akananooru",
+          "count": 2
+        },
+        {
+          "poem": "paripadal",
+          "count": 2
+        },
+        {
+          "poem": "pattinappalai",
+          "count": 2
+        },
+        {
+          "poem": "kurinjipattu",
+          "count": 1
+        },
+        {
+          "poem": "mullaippattu",
+          "count": 1
+        },
+        {
+          "poem": "nedunalvadai",
+          "count": 1
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 1
+        },
+        {
+          "poem": "purananooru",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_293",
+          "poem": "akananooru",
+          "ordinal": 293,
+          "lineNumber": 4,
+          "word": "துகில்",
+          "text": "துகில் ஆய் செய்கைப் பா விரிந்தன்ன"
+        },
+        {
+          "recordId": "akananooru_387",
+          "poem": "akananooru",
+          "ordinal": 387,
+          "lineNumber": 7,
+          "word": "துகில்",
+          "text": "பூந் துகில் இமைக்கும், பொலன் காழ் அல்குல்,"
+        },
+        {
+          "recordId": "kalithokai_065",
+          "poem": "kalithokai",
+          "ordinal": 65,
+          "lineNumber": 4,
+          "word": "துகில்",
+          "text": "அம் துகில் போர்வை அணிபெறத் தைஇ, நம்"
+        },
+        {
+          "recordId": "kalithokai_081",
+          "poem": "kalithokai",
+          "ordinal": 81,
+          "lineNumber": 5,
+          "word": "துகில்",
+          "text": "உரு எஞ்சாது இடை காட்டும் உடை கழல் அம் துகில்"
+        },
+        {
+          "recordId": "kalithokai_085",
+          "poem": "kalithokai",
+          "ordinal": 85,
+          "lineNumber": 5,
+          "word": "துகில்",
+          "text": "தைஇய, பூந் துகில், ஐது கழல் ஒரு திரை;"
+        },
+        {
+          "recordId": "kalithokai_105",
+          "poem": "kalithokai",
+          "ordinal": 105,
+          "lineNumber": 17,
+          "word": "துகில்",
+          "text": "வேல் வலான் உடைத் தாழ்ந்த விளங்கு வெண் துகில் ஏய்ப்ப"
+        }
+      ]
+    },
+    {
+      "id": "textile-kaliṅkam",
+      "class": "textile",
+      "ta": "கலிங்கம்",
+      "roman": "kaliṅkam",
+      "en": "cloth",
+      "count": 18,
+      "forms": [
+        {
+          "form": "கலிங்கம்",
+          "count": 18
+        }
+      ],
+      "poems": [
+        {
+          "poem": "purananooru",
+          "count": 5
+        },
+        {
+          "poem": "maduraikanchi",
+          "count": 3
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 2
+        },
+        {
+          "poem": "sirupanatrupadai",
+          "count": 2
+        },
+        {
+          "poem": "akananooru",
+          "count": 1
+        },
+        {
+          "poem": "kalithokai",
+          "count": 1
+        },
+        {
+          "poem": "kurunthokai",
+          "count": 1
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 1
+        },
+        {
+          "poem": "natrinai",
+          "count": 1
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_136",
+          "poem": "akananooru",
+          "ordinal": 136,
+          "lineNumber": 20,
+          "word": "கலிங்கம்",
+          "text": "முருங்காக் கலிங்கம் முழுவதும் வளைஇ,"
+        },
+        {
+          "recordId": "kalithokai_092",
+          "poem": "kalithokai",
+          "ordinal": 92,
+          "lineNumber": 42,
+          "word": "கலிங்கம்",
+          "text": "ஒருத்தி, அடி தாழ் கலிங்கம் தழீஇ, ஒரு கை"
+        },
+        {
+          "recordId": "kurunthokai_167",
+          "poem": "kurunthokai",
+          "ordinal": 167,
+          "lineNumber": 2,
+          "word": "கலிங்கம்",
+          "text": "கழுவுறு கலிங்கம் கழாஅது உடீஇக்,"
+        },
+        {
+          "recordId": "maduraikanchi_033",
+          "poem": "maduraikanchi",
+          "ordinal": 33,
+          "lineNumber": 3,
+          "word": "கலிங்கம்",
+          "text": "கண்பொரு புகூஉம் ஒண்பூங் கலிங்கம்"
+        },
+        {
+          "recordId": "maduraikanchi_043",
+          "poem": "maduraikanchi",
+          "ordinal": 43,
+          "lineNumber": 3,
+          "word": "கலிங்கம்",
+          "text": "பொன்னுரை காண்மருங் கலிங்கம் பகர்நரும்"
+        },
+        {
+          "recordId": "maduraikanchi_059",
+          "poem": "maduraikanchi",
+          "ordinal": 59,
+          "lineNumber": 7,
+          "word": "கலிங்கம்",
+          "text": "சோறமை வுற்ற நீருடைக் கலிங்கம்"
+        }
+      ]
+    },
+    {
+      "id": "ritual-naṭukal",
+      "class": "ritual",
+      "ta": "நடுகல்",
+      "roman": "naṭukal",
+      "en": "hero stone",
+      "count": 16,
+      "forms": [
+        {
+          "form": "நடுகல்",
+          "count": 15
+        },
+        {
+          "form": "நடுகல்லின்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 9
+        },
+        {
+          "poem": "purananooru",
+          "count": 6
+        },
+        {
+          "poem": "pattinappalai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_035",
+          "poem": "akananooru",
+          "ordinal": 35,
+          "lineNumber": 8,
+          "word": "நடுகல்",
+          "text": "நடுகல் பீலி சூட்டி, துடிப்படுத்து,"
+        },
+        {
+          "recordId": "akananooru_053",
+          "poem": "akananooru",
+          "ordinal": 53,
+          "lineNumber": 11,
+          "word": "நடுகல்",
+          "text": "எழுத்துடை நடுகல் இன் நிழல் வதியும்"
+        },
+        {
+          "recordId": "akananooru_067",
+          "poem": "akananooru",
+          "ordinal": 67,
+          "lineNumber": 10,
+          "word": "நடுகல்",
+          "text": "பீலி சூட்டிய பிறங்கு நிலை நடுகல்"
+        },
+        {
+          "recordId": "akananooru_131",
+          "poem": "akananooru",
+          "ordinal": 131,
+          "lineNumber": 11,
+          "word": "நடுகல்",
+          "text": "பீலி சூட்டிய பிறங்குநிலை நடுகல்"
+        },
+        {
+          "recordId": "akananooru_289",
+          "poem": "akananooru",
+          "ordinal": 289,
+          "lineNumber": 3,
+          "word": "நடுகல்",
+          "text": "நெடு நிலை நடுகல் நாட் பலிக் கூட்டும்"
+        },
+        {
+          "recordId": "akananooru_297",
+          "poem": "akananooru",
+          "ordinal": 297,
+          "lineNumber": 7,
+          "word": "நடுகல்",
+          "text": "மருங்குல் நுணுகிய பேஎம் முதிர் நடுகல்,"
+        }
+      ]
+    },
+    {
+      "id": "ritual-vēḷvi",
+      "class": "ritual",
+      "ta": "வேள்வி",
+      "roman": "vēḷvi",
+      "en": "sacrifice / offering",
+      "count": 16,
+      "forms": [
+        {
+          "form": "வேள்வி",
+          "count": 10
+        },
+        {
+          "form": "வேள்வித்",
+          "count": 2
+        },
+        {
+          "form": "வேள்வியின்",
+          "count": 1
+        },
+        {
+          "form": "வேள்வியில்",
+          "count": 1
+        },
+        {
+          "form": "வேள்விப்",
+          "count": 1
+        },
+        {
+          "form": "வேள்வியோர்க்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "purananooru",
+          "count": 5
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 3
+        },
+        {
+          "poem": "akananooru",
+          "count": 2
+        },
+        {
+          "poem": "thirukkural",
+          "count": 2
+        },
+        {
+          "poem": "thirumurugatrupadai",
+          "count": 2
+        },
+        {
+          "poem": "kalithokai",
+          "count": 1
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_013",
+          "poem": "akananooru",
+          "ordinal": 13,
+          "lineNumber": 11,
+          "word": "வேள்வியின்",
+          "text": "பண்ணி தைஇய பயம் கெழு வேள்வியின்,"
+        },
+        {
+          "recordId": "akananooru_220",
+          "poem": "akananooru",
+          "ordinal": 220,
+          "lineNumber": 6,
+          "word": "வேள்வி",
+          "text": "முன் முயன்று அரிதினின் முடித்த வேள்வி,"
+        },
+        {
+          "recordId": "kalithokai_036",
+          "poem": "kalithokai",
+          "ordinal": 36,
+          "lineNumber": 26,
+          "word": "வேள்வி",
+          "text": "வேள்வி ஆவியின் உயிர்க்கும், என் நெஞ்சே."
+        },
+        {
+          "recordId": "pathitrupathu_64",
+          "poem": "pathitrupathu",
+          "ordinal": 64,
+          "lineNumber": 4,
+          "word": "வேள்வி",
+          "text": "உரைசால் வேள்வி முடித்த கேள்வி,"
+        },
+        {
+          "recordId": "pathitrupathu_70",
+          "poem": "pathitrupathu",
+          "ordinal": 70,
+          "lineNumber": 18,
+          "word": "வேள்வியில்",
+          "text": "வேள்வியில் கடவுள் அருத்தினை; கேள்வி"
+        },
+        {
+          "recordId": "pathitrupathu_74",
+          "poem": "pathitrupathu",
+          "ordinal": 74,
+          "lineNumber": 2,
+          "word": "வேள்வி",
+          "text": "வேள்வி வேட்டனை, உயர்ந்தோர் உவப்ப;"
+        }
+      ]
+    },
+    {
+      "id": "vessel-cāṭi",
+      "class": "vessel",
+      "ta": "சாடி",
+      "roman": "cāṭi",
+      "en": "jar",
+      "count": 16,
+      "forms": [
+        {
+          "form": "சாடி",
+          "count": 11
+        },
+        {
+          "form": "சாடிய",
+          "count": 3
+        },
+        {
+          "form": "சாடியின்",
+          "count": 1
+        },
+        {
+          "form": "சாடிநறவின்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "kalithokai",
+          "count": 8
+        },
+        {
+          "poem": "purananooru",
+          "count": 3
+        },
+        {
+          "poem": "natrinai",
+          "count": 2
+        },
+        {
+          "poem": "akananooru",
+          "count": 1
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 1
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_166",
+          "poem": "akananooru",
+          "ordinal": 166,
+          "lineNumber": 1,
+          "word": "சாடி",
+          "text": "'நல் மரம் குழீஇய நனை முதிர் சாடி"
+        },
+        {
+          "recordId": "kalithokai_052",
+          "poem": "kalithokai",
+          "ordinal": 52,
+          "lineNumber": 4,
+          "word": "சாடி",
+          "text": "நிறம் சாடி முரண் தீர்ந்த நீள் மருப்பு எழில் யானை,"
+        },
+        {
+          "recordId": "kalithokai_091",
+          "poem": "kalithokai",
+          "ordinal": 91,
+          "lineNumber": 11,
+          "word": "சாடிய",
+          "text": "கூர் உகிர் சாடிய மார்பும், குழைந்த நின்"
+        },
+        {
+          "recordId": "kalithokai_101",
+          "poem": "kalithokai",
+          "ordinal": 101,
+          "lineNumber": 22,
+          "word": "சாடி",
+          "text": "விடரி அம் கண்ணிப் பொதுவனைச் சாடி,"
+        },
+        {
+          "recordId": "kalithokai_101",
+          "poem": "kalithokai",
+          "ordinal": 101,
+          "lineNumber": 28,
+          "word": "சாடி",
+          "text": "கதன் அஞ்சான், பாய்ந்த பொதுவனைச் சாடி,"
+        },
+        {
+          "recordId": "kalithokai_105",
+          "poem": "kalithokai",
+          "ordinal": 105,
+          "lineNumber": 33,
+          "word": "சாடி",
+          "text": "நிரைபு மேல் சென்றாரை நீள் மருப்பு உறச் சாடி,"
+        }
+      ]
+    },
+    {
+      "id": "transport-nāvāy",
+      "class": "transport",
+      "ta": "நாவாய்",
+      "roman": "nāvāy",
+      "en": "ship",
+      "count": 11,
+      "forms": [
+        {
+          "form": "நாவாய்",
+          "count": 11
+        }
+      ],
+      "poems": [
+        {
+          "poem": "maduraikanchi",
+          "count": 3
+        },
+        {
+          "poem": "purananooru",
+          "count": 3
+        },
+        {
+          "poem": "akananooru",
+          "count": 1
+        },
+        {
+          "poem": "naladiyar",
+          "count": 1
+        },
+        {
+          "poem": "natrinai",
+          "count": 1
+        },
+        {
+          "poem": "pattinappalai",
+          "count": 1
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_110",
+          "poem": "akananooru",
+          "ordinal": 110,
+          "lineNumber": 18,
+          "word": "நாவாய்",
+          "text": "'நெடுங் கொடி நுடங்கும் நாவாய் தோன்றுவ"
+        },
+        {
+          "recordId": "maduraikanchi_007",
+          "poem": "maduraikanchi",
+          "ordinal": 7,
+          "lineNumber": 9,
+          "word": "நாவாய்",
+          "text": "ஆடி யற் பெரு நாவாய்"
+        },
+        {
+          "recordId": "maduraikanchi_024",
+          "poem": "maduraikanchi",
+          "ordinal": 24,
+          "lineNumber": 7,
+          "word": "நாவாய்",
+          "text": "விழுமிய நாவாய் பெருநீ ரோச்சுநர்"
+        },
+        {
+          "recordId": "maduraikanchi_029",
+          "poem": "maduraikanchi",
+          "ordinal": 29,
+          "lineNumber": 5,
+          "word": "நாவாய்",
+          "text": "நெடுஞ்சுழிப் பட்ட நாவாய் போல"
+        },
+        {
+          "recordId": "naladiyar_224",
+          "poem": "naladiyar",
+          "ordinal": 224,
+          "lineNumber": 2,
+          "word": "நாவாய்",
+          "text": "கடுவசை நாவாய் கரையலைக்குஞ் சேர்ப்ப"
+        },
+        {
+          "recordId": "natrinai_295",
+          "poem": "natrinai",
+          "ordinal": 295,
+          "lineNumber": 6,
+          "word": "நாவாய்",
+          "text": "பல வினை நாவாய் தோன்றும் பெருந் துறை,"
+        }
+      ]
+    },
+    {
+      "id": "vessel-tāḻi",
+      "class": "vessel",
+      "ta": "தாழி",
+      "roman": "tāḻi",
+      "en": "large jar",
+      "count": 11,
+      "forms": [
+        {
+          "form": "தாழி",
+          "count": 5
+        },
+        {
+          "form": "தாழிக்",
+          "count": 2
+        },
+        {
+          "form": "தாழிருங்",
+          "count": 1
+        },
+        {
+          "form": "தாழிமுதல்",
+          "count": 1
+        },
+        {
+          "form": "தாழியும்",
+          "count": 1
+        },
+        {
+          "form": "தாழிய",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 4
+        },
+        {
+          "poem": "purananooru",
+          "count": 4
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 1
+        },
+        {
+          "poem": "natrinai",
+          "count": 1
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_411",
+          "poem": "ainkurunooru",
+          "ordinal": 411,
+          "lineNumber": 4,
+          "word": "தாழிருங்",
+          "text": "தாழிருங் கூந்தல் வம்மடி விரைந்தே."
+        },
+        {
+          "recordId": "akananooru_129",
+          "poem": "akananooru",
+          "ordinal": 129,
+          "lineNumber": 7,
+          "word": "தாழிமுதல்",
+          "text": "தாழிமுதல் கலித்த கோழ் இலைப் பருத்திப்"
+        },
+        {
+          "recordId": "akananooru_165",
+          "poem": "akananooru",
+          "ordinal": 165,
+          "lineNumber": 11,
+          "word": "தாழிக்",
+          "text": "தாழிக் குவளை வாடு மலர் சூட்டி,"
+        },
+        {
+          "recordId": "akananooru_275",
+          "poem": "akananooru",
+          "ordinal": 275,
+          "lineNumber": 1,
+          "word": "தாழி",
+          "text": "ஓங்கு நிலைத் தாழி மல்கச் சார்த்தி,"
+        },
+        {
+          "recordId": "akananooru_369",
+          "poem": "akananooru",
+          "ordinal": 369,
+          "lineNumber": 6,
+          "word": "தாழியும்",
+          "text": "தாழியும் மலர் பல அணியா; கேழ் கொளக்"
+        },
+        {
+          "recordId": "natrinai_271",
+          "poem": "natrinai",
+          "ordinal": 271,
+          "lineNumber": 11,
+          "word": "தாழி",
+          "text": "மா இருந் தாழி கவிப்ப,"
+        }
+      ]
+    },
+    {
+      "id": "writing-ōlai",
+      "class": "writing",
+      "ta": "ஓலை",
+      "roman": "ōlai",
+      "en": "palm leaf",
+      "count": 11,
+      "forms": [
+        {
+          "form": "ஓலை",
+          "count": 6
+        },
+        {
+          "form": "ஓலைக்",
+          "count": 3
+        },
+        {
+          "form": "ஓலைப்",
+          "count": 1
+        },
+        {
+          "form": "ஓலைக்கண்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "natrinai",
+          "count": 4
+        },
+        {
+          "poem": "akananooru",
+          "count": 2
+        },
+        {
+          "poem": "kalithokai",
+          "count": 2
+        },
+        {
+          "poem": "naladiyar",
+          "count": 2
+        },
+        {
+          "poem": "purananooru",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_077",
+          "poem": "akananooru",
+          "ordinal": 77,
+          "lineNumber": 7,
+          "word": "ஓலை",
+          "text": "கயிறு பிணிக் குழிசி ஓலை கொண்மார்,"
+        },
+        {
+          "recordId": "akananooru_337",
+          "poem": "akananooru",
+          "ordinal": 337,
+          "lineNumber": 7,
+          "word": "ஓலைப்",
+          "text": "தூது ஒய் பார்ப்பான் மடி வெள் ஓலைப்"
+        },
+        {
+          "recordId": "kalithokai_094",
+          "poem": "kalithokai",
+          "ordinal": 94,
+          "lineNumber": 42,
+          "word": "ஓலை",
+          "text": "துகள் தபு காட்சி அவையத்தார் ஓலை"
+        },
+        {
+          "recordId": "kalithokai_147",
+          "poem": "kalithokai",
+          "ordinal": 147,
+          "lineNumber": 43,
+          "word": "ஓலைக்கண்",
+          "text": "உறாஅ அரைச! நின் ஓலைக்கண் கொண்டீ,"
+        },
+        {
+          "recordId": "naladiyar_256",
+          "poem": "naladiyar",
+          "ordinal": 256,
+          "lineNumber": 3,
+          "word": "ஓலை",
+          "text": "வற்றிய ஓலை கலகலக்கும் எஞ்ஞான்றும்"
+        },
+        {
+          "recordId": "naladiyar_397",
+          "poem": "naladiyar",
+          "ordinal": 397,
+          "lineNumber": 1,
+          "word": "ஓலைக்",
+          "text": "ஓலைக் கணக்கர் ஒலியடங்கு புன்செக்கர்"
+        }
+      ]
+    },
+    {
+      "id": "textile-āṭai",
+      "class": "textile",
+      "ta": "ஆடை",
+      "roman": "āṭai",
+      "en": "garment",
+      "count": 10,
+      "forms": [
+        {
+          "form": "ஆடை",
+          "count": 3
+        },
+        {
+          "form": "ஆடையை",
+          "count": 2
+        },
+        {
+          "form": "ஆடைப்",
+          "count": 2
+        },
+        {
+          "form": "ஆடையான்",
+          "count": 1
+        },
+        {
+          "form": "ஆடைச்",
+          "count": 1
+        },
+        {
+          "form": "ஆடையும்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "kalithokai",
+          "count": 7
+        },
+        {
+          "poem": "purananooru",
+          "count": 2
+        },
+        {
+          "poem": "natrinai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "kalithokai_018",
+          "poem": "kalithokai",
+          "ordinal": 18,
+          "lineNumber": 10,
+          "word": "ஆடை",
+          "text": "ஒன்றன் கூறு ஆடை உடுப்பவரேஆயினும்,"
+        },
+        {
+          "recordId": "kalithokai_052",
+          "poem": "kalithokai",
+          "ordinal": 52,
+          "lineNumber": 11,
+          "word": "ஆடையை",
+          "text": "ஈர்ந் தண் ஆடையை, எல்லி மாலையை,"
+        },
+        {
+          "recordId": "kalithokai_072",
+          "poem": "kalithokai",
+          "ordinal": 72,
+          "lineNumber": 14,
+          "word": "ஆடை",
+          "text": "ஆடை கொண்டு, ஒலிக்கும், நின் புலைத்தி காட்டு என்றாளோ"
+        },
+        {
+          "recordId": "kalithokai_081",
+          "poem": "kalithokai",
+          "ordinal": 81,
+          "lineNumber": 31,
+          "word": "ஆடை",
+          "text": "உதிர் துகள் உக்க நின் ஆடை ஒலிப்ப"
+        },
+        {
+          "recordId": "kalithokai_102",
+          "poem": "kalithokai",
+          "ordinal": 102,
+          "lineNumber": 37,
+          "word": "ஆடைப்",
+          "text": "அம் துவர் ஆடைப் பொதுவனோடு, ஆய்ந்த"
+        },
+        {
+          "recordId": "kalithokai_108",
+          "poem": "kalithokai",
+          "ordinal": 108,
+          "lineNumber": 10,
+          "word": "ஆடையை",
+          "text": "காயாம்பூங் கண்ணிக் கருந் துவர் ஆடையை,"
+        }
+      ]
+    },
+    {
+      "id": "ritual-kōṭṭam",
+      "class": "ritual",
+      "ta": "கோட்டம்",
+      "roman": "kōṭṭam",
+      "en": "shrine",
+      "count": 8,
+      "forms": [
+        {
+          "form": "கோட்டம்",
+          "count": 6
+        },
+        {
+          "form": "கோட்டம்பலத்துத்",
+          "count": 1
+        },
+        {
+          "form": "கோட்டம்பலவனார்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "kalithokai",
+          "count": 4
+        },
+        {
+          "poem": "natrinai",
+          "count": 2
+        },
+        {
+          "poem": "akananooru",
+          "count": 1
+        },
+        {
+          "poem": "purananooru",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "akananooru_168",
+          "poem": "akananooru",
+          "ordinal": 168,
+          "lineNumber": 15,
+          "word": "கோட்டம்பலத்துத்",
+          "text": "- கோட்டம்பலத்துத் துஞ்சிய சேரமான்."
+        },
+        {
+          "recordId": "kalithokai_082",
+          "poem": "kalithokai",
+          "ordinal": 82,
+          "lineNumber": 4,
+          "word": "கோட்டம்",
+          "text": "புத்தேளிர் கோட்டம் வலம் செய்து இவனொடு"
+        },
+        {
+          "recordId": "kalithokai_094",
+          "poem": "kalithokai",
+          "ordinal": 94,
+          "lineNumber": 23,
+          "word": "கோட்டம்",
+          "text": "மரக் கோட்டம் சேர்ந்து எழுந்த பூங் கொடி போல,"
+        },
+        {
+          "recordId": "kalithokai_107",
+          "poem": "kalithokai",
+          "ordinal": 107,
+          "lineNumber": 7,
+          "word": "கோட்டம்",
+          "text": "கோட்டம் காழ் கோட்டின் எடுத்துக்கொண்டு, ஆட்டிய"
+        },
+        {
+          "recordId": "kalithokai_109",
+          "poem": "kalithokai",
+          "ordinal": 109,
+          "lineNumber": 20,
+          "word": "கோட்டம்",
+          "text": "பாலொடு கோட்டம் புகின்;"
+        },
+        {
+          "recordId": "natrinai_047",
+          "poem": "natrinai",
+          "ordinal": 47,
+          "lineNumber": 8,
+          "word": "கோட்டம்",
+          "text": "அணங்கு அறி கழங்கின் கோட்டம் காட்டி,"
+        }
+      ]
+    },
+    {
+      "id": "writing-ceyyuḷ",
+      "class": "writing",
+      "ta": "செய்யுள்",
+      "roman": "ceyyuḷ",
+      "en": "poem",
+      "count": 5,
+      "forms": [
+        {
+          "form": "செய்யுள்",
+          "count": 5
+        }
+      ],
+      "poems": [
+        {
+          "poem": "purananooru",
+          "count": 4
+        },
+        {
+          "poem": "pathitrupathu",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "pathitrupathu_73",
+          "poem": "pathitrupathu",
+          "ordinal": 73,
+          "lineNumber": 9,
+          "word": "செய்யுள்",
+          "text": "செய்யுள் நாரை ஒய்யும் மகளிர்"
+        },
+        {
+          "recordId": "purananooru_053",
+          "poem": "purananooru",
+          "ordinal": 53,
+          "lineNumber": 11,
+          "word": "செய்யுள்",
+          "text": "செறுத்த செய்யுள் செய்செந் நாவின்,"
+        },
+        {
+          "recordId": "purananooru_202",
+          "poem": "purananooru",
+          "ordinal": 202,
+          "lineNumber": 12,
+          "word": "செய்யுள்",
+          "text": "புகழ்ந்த செய்யுள் கழாஅத் தலையை"
+        },
+        {
+          "recordId": "purananooru_217",
+          "poem": "purananooru",
+          "ordinal": 217,
+          "lineNumber": 1,
+          "word": "செய்யுள்",
+          "text": "அதனைக் கண்டு வியந்த பொத்தியார் பாடிய செய்யுள் இது."
+        },
+        {
+          "recordId": "purananooru_355",
+          "poem": "purananooru",
+          "ordinal": 355,
+          "lineNumber": 1,
+          "word": "செய்யுள்",
+          "text": "தோற்றக் கிடையாத போயின செய்யுள் இது."
+        }
+      ]
+    },
+    {
+      "id": "tool-kalappai",
+      "class": "tool",
+      "ta": "கலப்பை",
+      "roman": "kalappai",
+      "en": "plough",
+      "count": 4,
+      "forms": [
+        {
+          "form": "கலப்பை",
+          "count": 2
+        },
+        {
+          "form": "கலப்பையிர்",
+          "count": 1
+        },
+        {
+          "form": "கலப்பையென்",
+          "count": 1
+        }
+      ],
+      "poems": [
+        {
+          "poem": "purananooru",
+          "count": 2
+        },
+        {
+          "poem": "malaipadukadam",
+          "count": 1
+        },
+        {
+          "poem": "perumpanatrupadai",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "malaipadukadam_01",
+          "poem": "malaipadukadam",
+          "ordinal": 1,
+          "lineNumber": 13,
+          "word": "கலப்பையிர்",
+          "text": "நேர் சீர் சுருக்கி காய கலப்பையிர்"
+        },
+        {
+          "recordId": "perumpanatrupadai_16",
+          "poem": "perumpanatrupadai",
+          "ordinal": 16,
+          "lineNumber": 4,
+          "word": "கலப்பை",
+          "text": "குறும் சாட்டு உருளையொடு கலப்பை சார்த்தி"
+        },
+        {
+          "recordId": "purananooru_206",
+          "poem": "purananooru",
+          "ordinal": 206,
+          "lineNumber": 10,
+          "word": "கலப்பை",
+          "text": "காவினெம் கலனே; சுருக்கினெம் கலப்பை;"
+        },
+        {
+          "recordId": "purananooru_371",
+          "poem": "purananooru",
+          "ordinal": 371,
+          "lineNumber": 3,
+          "word": "கலப்பையென்",
+          "text": "பறையொடு தகைத்த கலப்பையென், முரவுவாய்"
+        }
+      ]
+    },
+    {
+      "id": "writing-eḻuttu",
+      "class": "writing",
+      "ta": "எழுத்து",
+      "roman": "eḻuttu",
+      "en": "writing / letter",
+      "count": 4,
+      "forms": [
+        {
+          "form": "எழுத்துடை",
+          "count": 2
+        },
+        {
+          "form": "எழுத்து",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "akananooru",
+          "count": 3
+        },
+        {
+          "poem": "ainkurunooru",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "ainkurunooru_352",
+          "poem": "ainkurunooru",
+          "ordinal": 352,
+          "lineNumber": 2,
+          "word": "எழுத்துடை",
+          "text": "எழுத்துடை நடுகிஅல் அன்ன விழுப்பிணர்ப்"
+        },
+        {
+          "recordId": "akananooru_053",
+          "poem": "akananooru",
+          "ordinal": 53,
+          "lineNumber": 11,
+          "word": "எழுத்துடை",
+          "text": "எழுத்துடை நடுகல் இன் நிழல் வதியும்"
+        },
+        {
+          "recordId": "akananooru_297",
+          "poem": "akananooru",
+          "ordinal": 297,
+          "lineNumber": 8,
+          "word": "எழுத்து",
+          "text": "பெயர் பயம் படரத் தோன்று குயில் எழுத்து"
+        },
+        {
+          "recordId": "akananooru_343",
+          "poem": "akananooru",
+          "ordinal": 343,
+          "lineNumber": 7,
+          "word": "எழுத்து",
+          "text": "கூர் உளி குயின்ற கோடு மாய் எழுத்து, அவ்"
+        }
+      ]
+    },
+    {
+      "id": "ornament-mōtiram",
+      "class": "ornament",
+      "ta": "மோதிரம்",
+      "roman": "mōtiram",
+      "en": "ring",
+      "count": 2,
+      "forms": [
+        {
+          "form": "மோதிரம்",
+          "count": 2
+        }
+      ],
+      "poems": [
+        {
+          "poem": "kalithokai",
+          "count": 2
+        }
+      ],
+      "samples": [
+        {
+          "recordId": "kalithokai_084",
+          "poem": "kalithokai",
+          "ordinal": 84,
+          "lineNumber": 21,
+          "word": "மோதிரம்",
+          "text": "மோதிரம் யாவோ; யாம் காண்கு;"
+        },
+        {
+          "recordId": "kalithokai_084",
+          "poem": "kalithokai",
+          "ordinal": 84,
+          "lineNumber": 23,
+          "word": "மோதிரம்",
+          "text": "சுறா ஏறு எழுதிய மோதிரம் தொட்டாள்"
+        }
+      ]
+    }
+  ]
+}

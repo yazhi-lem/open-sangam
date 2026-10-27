@@ -38,7 +38,7 @@ function shortLabel(node) {
   return node.label
 }
 
-export default function GraphExplorer() {
+export default function GraphExplorer({ embedded = false }) {
   const { nodeById, adjacency } = useMemo(() => {
     const nodeById = Object.fromEntries(GRAPH.nodes.map((n) => [n.id, n]))
     const adjacency = Object.fromEntries(GRAPH.nodes.map((n) => [n.id, []]))
@@ -96,24 +96,26 @@ export default function GraphExplorer() {
     if (!node) return null
     if (node.type === 'poem') return `/book/${node.id.replace('poem:', '')}`
     if (node.type === 'tinai') return `/world?tinai=${node.id.replace('tinai:', '')}`
-    if (node.type === 'poet') return `/knowledge#poets` // Link to poets section in knowledge base
-    if (node.type === 'karu') return `/knowledge#tinai-porul` // Link to tinai-porul section in knowledge base
+    if (node.type === 'poet') return '/world#people'
+    if (node.type === 'karu') return '/world#people'
     return null
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16 space-y-8">
-      <Reveal y={-16}>
-        <header className="text-center space-y-3 max-w-3xl mx-auto">
-          <Badge variant="accent" size="sm">பிணைப்பு வரைபடம்</Badge>
-          <h1 className="text-4xl sm:text-6xl font-extrabold text-primary">Connections Graph</h1>
-          <p className="text-muted text-base sm:text-lg leading-relaxed">
-            The Sangam corpus as an interlinked knowledge network — <strong className="text-primary">{GRAPH.meta.nodes}</strong> nodes and{' '}
-            <strong className="text-primary">{GRAPH.meta.edges}</strong> relationships mined from {GRAPH.meta.records.toLocaleString()} classical verses.
-            Click any node to explore its connections.
-          </p>
-        </header>
-      </Reveal>
+    <div className={embedded ? 'w-full space-y-5' : 'max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16 space-y-8'}>
+      {!embedded && (
+        <Reveal y={-16}>
+          <header className="text-center space-y-3 max-w-3xl mx-auto">
+            <Badge variant="accent" size="sm">பிணைப்பு வரைபடம்</Badge>
+            <h1 className="text-4xl sm:text-6xl font-extrabold text-primary">Connections Graph</h1>
+            <p className="text-muted text-base sm:text-lg leading-relaxed">
+              The Sangam corpus as an interlinked knowledge network — <strong className="text-primary">{GRAPH.meta.nodes}</strong> nodes and{' '}
+              <strong className="text-primary">{GRAPH.meta.edges}</strong> relationships mined from {GRAPH.meta.records.toLocaleString()} classical verses.
+              Click any node to explore its connections.
+            </p>
+          </header>
+        </Reveal>
+      )}
 
       {/* Legend & Filter Controls */}
       <div className="flex flex-wrap items-center justify-center gap-2">

@@ -6,6 +6,8 @@ import useAppStore from '../store/useAppStore'
 import Badge from '../components/ui/Badge'
 import Card from '../components/ui/Card'
 import Reveal from '../components/motion/Reveal'
+import GraphExplorer from './GraphExplorer'
+import ResearchDesk from '../components/world/ResearchDesk'
 
 function pick(language, ta, en) {
   return language === 'ta' ? ta : en
@@ -160,6 +162,18 @@ export default function SangamWorldPage() {
         ))}
       </div>
 
+      <section id="connections" className="mb-12">
+        <div className="mb-4 border-b border-line-strong pb-2">
+          <h2 className={`text-2xl font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
+            {L('பிணைப்பு வரைபடம்', 'Connections map')}
+          </h2>
+          <p className="text-sm text-muted">
+            {L('திணை · பாடல் · புலவர் · கருப்பொருள் — ஒரே வலைப்பின்னல்.', 'Tiṇai · poem · poet · karu-poruḷ — one network.')}
+          </p>
+        </div>
+        <GraphExplorer embedded />
+      </section>
+
       <section className="mb-12">
         <div className="mb-4 flex items-end justify-between gap-3 border-b border-line-strong pb-2">
           <div>
@@ -177,7 +191,7 @@ export default function SangamWorldPage() {
         </div>
       </section>
 
-      <section>
+      <section id="people">
         <div className="mb-4 border-b border-line-strong pb-2">
           <h2 className={`text-2xl font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
             {L('மக்களும் வாழ்க்கையும்', 'People & life')}
@@ -191,6 +205,10 @@ export default function SangamWorldPage() {
             <KnowledgeBlock key={section.id} section={section} language={language} />
           ))}
         </div>
+      </section>
+
+      <section id="research" className="mt-12 border-t border-line-strong pt-8">
+        <ResearchDesk />
       </section>
     </div>
   )
