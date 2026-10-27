@@ -4,6 +4,7 @@ import { AVAI_RESEARCH_BRIEFS } from '../../data/library'
 import useAppStore from '../../store/useAppStore'
 import Badge from '../ui/Badge'
 import Card from '../ui/Card'
+import Markdown from '../ui/Markdown'
 
 export default function AvaiBriefs() {
   const language = useAppStore((s) => s.language)
@@ -48,9 +49,9 @@ export default function AvaiBriefs() {
             </button>
             {openId === brief.id && (
               <div className="mt-3 border-t border-line/60 pt-3">
-                <p className="line-clamp-4 whitespace-pre-wrap text-[11px] leading-relaxed text-muted">
-                  {brief.excerptTa}
-                </p>
+                <div className="max-h-96 overflow-y-auto rounded-lg border border-line bg-surface-alt/40 p-3">
+                  <Markdown text={brief.responseText} className="text-[12px]" />
+                </div>
                 <a
                   href={`https://github.com/yazhi-lem/open-sangam/blob/main/data/library/avai-research/${brief.file}`}
                   className="mt-2 inline-flex items-center gap-1 text-[10px] font-semibold text-accent hover:underline"

@@ -7,6 +7,7 @@ import { AVAI_ENABLED } from '../config/features'
 import useAppStore from '../store/useAppStore'
 import Card from '../components/ui/Card'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
+import Markdown from '../components/ui/Markdown'
 import { PULAVAR_AGENTS } from '../data/pulavars'
 
 const REPO_URL = 'https://github.com/yazhi-lem/open-sangam'
@@ -44,7 +45,10 @@ export default function Home() {
     }
 
     try {
-      const response = await askAvaiAgent({ message, pulavar: 'nakkirar', workflow: 'general' })
+      const briefPrompt = language === 'ta'
+        ? `${message}\n\nஇதை ஒரு விரிவான ஆய்வுக் கடிதமாக எழுதுங்கள். Markdown-இல் தலைப்பு, சுருக்கம், சான்றுகள், விளக்கம், முடிவு, மேலும் ஆய்வுக் கேள்விகள் என்ற பிரிவுகளுடன் தருக.`
+        : `${message}\n\nWrite this as a detailed research brief in Markdown with sections: Title, Summary, Evidence, Analysis, Conclusion, Follow-up Questions.`
+      const response = await askAvaiAgent({ message: briefPrompt, pulavar: 'nakkirar', workflow: 'general' })
       const text = response?.response_text || response?.answer || ''
       if (!text || response?.isFallback) {
         const local = await askLocalNakkirar({ message, language })
@@ -154,8 +158,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="max-h-72 overflow-y-auto whitespace-pre-wrap text-sm leading-relaxed text-primary">
-              {answer}
+            <div className="max-h-96 overflow-y-auto">
+              <Markdown text={answer} className="text-sm" />
             </div>
             {citations.length > 0 && (
               <div className="mt-3 border-t border-line/60 pt-2">

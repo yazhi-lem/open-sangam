@@ -15,6 +15,7 @@ import useAppStore from '../../store/useAppStore'
 import Badge from '../ui/Badge'
 import Button from '../ui/Button'
 import Card from '../ui/Card'
+import Markdown from '../ui/Markdown'
 
 function pick(language, ta, en) {
   return language === 'ta' ? ta : en
@@ -46,10 +47,14 @@ export default function ResearchDesk() {
       return
     }
     try {
+      const prompt = language === 'ta' ? campaign.promptTa : campaign.promptEn
+      const briefPrompt = language === 'ta'
+        ? `${prompt}\n\nஇதை விரிவான ஆய்வுக் கடிதமாக Markdown-இல் எழுதுங்கள்: தலைப்பு, சுருக்கம், சான்றுகள், விளக்கம், முடிவு, மேலும் ஆய்வுக் கேள்விகள்.`
+        : `${prompt}\n\nWrite this as a detailed research brief in Markdown with: Title, Summary, Evidence, Analysis, Conclusion, Follow-up Questions.`
       const response = await askAvaiAgent({
         pulavar: campaign.agent,
         workflow: campaign.workflow,
-        message: language === 'ta' ? campaign.promptTa : campaign.promptEn,
+        message: briefPrompt,
       })
       setAnswer(response?.response_text || response?.answer || '')
     } catch (err) {
@@ -150,8 +155,8 @@ export default function ResearchDesk() {
             </div>
             {error && <p className="mt-2 text-sm text-danger">{error}</p>}
             {answer && (
-              <div className="mt-3 max-h-80 overflow-y-auto whitespace-pre-wrap rounded-xl border border-line bg-surface-alt/40 p-3 text-sm leading-relaxed text-primary">
-                {answer}
+              <div className="mt-3 max-h-96 overflow-y-auto rounded-xl border border-line bg-surface-alt/40 p-3">
+                <Markdown text={answer} className="text-sm" />
               </div>
             )}
             {!answer && !error && (
