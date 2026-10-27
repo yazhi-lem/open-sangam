@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0734",
+  "poem": "thirukkural",
+  "number": 734,
+  "title": "நாடு",
+  "heading": "2.3.1",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உறுபசியும் ஓவாப் பிணியும் செறுபகையும்\nசேரா தியல்வது நாடு.",
+  "urai": null,
+  "english": "That is a 'land' whose peaceful anna ls know, Nor famine fierce, nor wasting plague, nor ravage of the foe.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உறுபசியும் ஓவாப் பிணியும் செறுபகையும்",
+      "words": [
+        {
+          "form": "உறுபசியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓவாப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிணியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செறுபகையும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சேரா தியல்வது நாடு.",
+      "words": [
+        {
+          "form": "சேரா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தியல்வது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0943",
+  "poem": "thirukkural",
+  "number": 943,
+  "title": "மருந்து",
+  "heading": "2.3.22",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "அற்றால் அறவறிந்து உண்க அஃதுடம்பு\nபெற்றான் நெடிதுய்க்கும் ஆறு.",
+  "urai": null,
+  "english": "Who has a body gained may long the gift retain, If, food digested well, in measure due he eat again.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அற்றால் அறவறிந்து உண்க அஃதுடம்பு",
+      "words": [
+        {
+          "form": "அற்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறவறிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உண்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஃதுடம்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பெற்றான் நெடிதுய்க்கும் ஆறு.",
+      "words": [
+        {
+          "form": "பெற்றான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடிதுய்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆறு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

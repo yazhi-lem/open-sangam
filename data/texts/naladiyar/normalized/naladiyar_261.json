@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_261",
+  "poem": "naladiyar",
+  "number": 261,
+  "title": "நன்றியில் செல்வம்",
+  "heading": "2.27",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "அருகல தாகிப் பலபழுத்தக் கண்ணும்\nபொரிதாள் விளவினை வாவல் குறுகா\nபெரிதணிய ராயினும் பீடிலார் செல்வம்\nகருதும் கடப்பாட்ட தன்று.",
+  "urai": null,
+  "english": "The bat approaches not the Feronia with its dry stem, though it be nigh at hand and bear abundant fruit; so, although mean people are very close at hand, their wealth is not a thing that can be counted upon.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அருகல தாகிப் பலபழுத்தக் கண்ணும்",
+      "words": [
+        {
+          "form": "அருகல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாகிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலபழுத்தக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பொரிதாள் விளவினை வாவல் குறுகா",
+      "words": [
+        {
+          "form": "பொரிதாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளவினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாவல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறுகா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பெரிதணிய ராயினும் பீடிலார் செல்வம்",
+      "words": [
+        {
+          "form": "பெரிதணிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பீடிலார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்வம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கருதும் கடப்பாட்ட தன்று.",
+      "words": [
+        {
+          "form": "கருதும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடப்பாட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1277",
+  "poem": "thirukkural",
+  "number": 1277,
+  "title": "குறிப்பறிவுறுத்தல்",
+  "heading": "3.2.13",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "தண்ணந் துறைவன் தணந்தமை நம்மினும்\nமுன்னம் உணர்ந்த வளை.",
+  "urai": null,
+  "english": "My severance from the lord of this cool shore, My very armlets told me long before.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தண்ணந் துறைவன் தணந்தமை நம்மினும்",
+      "words": [
+        {
+          "form": "தண்ணந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறைவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தணந்தமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நம்மினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "முன்னம் உணர்ந்த வளை.",
+      "words": [
+        {
+          "form": "முன்னம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உணர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_374",
+  "poem": "naladiyar",
+  "number": 374,
+  "title": "பொது மகளிர்",
+  "heading": "3.38",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "ஆணமில் நெஞ்சத் தணிநீலக் கண்ணார்க்குக்\nகாணமி லாதார் கடுவனையர் - காணவே\nசெக்கூர்ந்து கொண்டாரும் செய்த பொருளுடையார்\nஅக்காரம் அன்னார் அவர்க்கு.",
+  "urai": null,
+  "english": "Money makes a man the wanton's darling. To the damsels of loveless hearts, whose eyes are as beauteous as blue water-lilies, those who have no wealth are as poison! Even those who have turned the (oil) press, in sight of all men, if they have wealth, are as sugar to them.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஆணமில் நெஞ்சத் தணிநீலக் கண்ணார்க்குக்",
+      "words": [
+        {
+          "form": "ஆணமில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தணிநீலக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணார்க்குக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "காணமி லாதார் கடுவனையர் - காணவே",
+      "words": [
+        {
+          "form": "காணமி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடுவனையர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காணவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "செக்கூர்ந்து கொண்டாரும் செய்த பொருளுடையார்",
+      "words": [
+        {
+          "form": "செக்கூர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டாரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருளுடையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "அக்காரம் அன்னார் அவர்க்கு.",
+      "words": [
+        {
+          "form": "அக்காரம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்னார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவர்க்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

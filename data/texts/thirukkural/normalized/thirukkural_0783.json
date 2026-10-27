@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0783",
+  "poem": "thirukkural",
+  "number": 783,
+  "title": "படைச்செருக்கு",
+  "heading": "2.3.5",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "நவில்தொறும் நூல்நயம் போலும் பயில்தொறும்\nபண்புடை யாளர் தொடர்பு.",
+  "urai": null,
+  "english": "Learned scroll the more you ponder, Sweeter grows the mental food; So the heart by use grows fonder, Bound in friendship with the good.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நவில்தொறும் நூல்நயம் போலும் பயில்தொறும்",
+      "words": [
+        {
+          "form": "நவில்தொறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நூல்நயம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயில்தொறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பண்புடை யாளர் தொடர்பு.",
+      "words": [
+        {
+          "form": "பண்புடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாளர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடர்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

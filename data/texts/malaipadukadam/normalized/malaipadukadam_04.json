@@ -2,7 +2,7 @@
   "id": "malaipadukadam_04",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "அமைவர பண்ணி அருள் நெறி திரியாது\nஇசை பெறு திருவின் வேத்தவை ஏற்ப\nதுறை பல முற்றிய பை தீர் பாணரொடு\nஉயர்ந்து ஓங்கு பெரு மலை ஊறு இன்று ஏறலின்",
+  "sangamTamil": "அமைவர பண்ணி அருள் நெறி திரியாது\nஇசை பெறு திருவின் வேத்தவை ஏற்ப\nதுறை பல முற்றிய பை தீர் பாணரொடு\nஉயர்ந்து ஓங்கு பெரு மலை ஊறு இன்று ஏறலின்\nமதந்தபு ஞமலி நாவி னன்ன\nதுளங்கியன் மெலிந்த கல்பொரு சீறடிக்\nகணங்கொ டோகையிற் கதுப்பிகுத் தசைஇ\nவிலங்குமலைத் தமர்ந்த சேயரி நாட்டத்\nதிலங்குவளை விறலியர் நிற்புறஞ் சுற்றக்\nகயம்புக் கன்ன பயம்படு தண்ணிழற்\nபுனல்கால் கழீஇய மணல்வார் புறவிற்\nபுலம்புவிட் டிருந்த புனிறில் காட்சிக்\nகலம்பெறு கண்ணுள ரொக்கற் றலைவ",
   "urai": "பேரியாழ்ப் பாணரோடு அவர்களின் தலைவன் உயர்ந்தோங்கிய மலையில் ஏறுகிறான். யாழை இசைத்துக்கொண்டே களைப்புத் துன்பம் தெரியாமல் பாணர் கூட்டம் ஏறுகிறது. அவர்களிடம் இசைச் செல்வம் இருந்தது. அதனை அவர்கள் அருள்தரும் பாங்கில் அள்ளி வழங்குவார்கள். அமைந்த விருப்பத்தோடு பண்ணிசைத்து வழங்குவார்கள்.",
   "english": null,
   "lines": [
@@ -190,11 +190,317 @@
           "gloss": "This word, meaning 'because of climbing' or 'due to the ascent', indicates the action of ascending the mountain, which is performed without any difficulty."
         }
       ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "மதந்தபு ஞமலி நாவி னன்ன",
+      "words": [
+        {
+          "form": "மதந்தபு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞமலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "துளங்கியன் மெலிந்த கல்பொரு சீறடிக்",
+      "words": [
+        {
+          "form": "துளங்கியன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மெலிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்பொரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சீறடிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "கணங்கொ டோகையிற் கதுப்பிகுத் தசைஇ",
+      "words": [
+        {
+          "form": "கணங்கொ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டோகையிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதுப்பிகுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தசைஇ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "விலங்குமலைத் தமர்ந்த சேயரி நாட்டத்",
+      "words": [
+        {
+          "form": "விலங்குமலைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தமர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேயரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட்டத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "திலங்குவளை விறலியர் நிற்புறஞ் சுற்றக்",
+      "words": [
+        {
+          "form": "திலங்குவளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விறலியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிற்புறஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுற்றக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "கயம்புக் கன்ன பயம்படு தண்ணிழற்",
+      "words": [
+        {
+          "form": "கயம்புக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயம்படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்ணிழற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "புனல்கால் கழீஇய மணல்வார் புறவிற்",
+      "words": [
+        {
+          "form": "புனல்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழீஇய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மணல்வார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புறவிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "புலம்புவிட் டிருந்த புனிறில் காட்சிக்",
+      "words": [
+        {
+          "form": "புலம்புவிட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டிருந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புனிறில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்சிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "கலம்பெறு கண்ணுள ரொக்கற் றலைவ",
+      "words": [
+        {
+          "form": "கலம்பெறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணுள",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரொக்கற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றலைவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்04.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்04.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 4,
   "title": "பாணரும் விறலியரும் சூழ இருந்த கூத்தர் தலைவனை அழைத்தல்",

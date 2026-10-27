@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0418",
+  "poem": "thirukkural",
+  "number": 418,
+  "title": "கேள்வி",
+  "heading": "2.1.4",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "கேட்பினுங் கேளாத் தகையவே கேள்வியால்\nதோட்கப் படாத செவி.",
+  "urai": null,
+  "english": "Where teaching hath not oped the learner's ear, The man may listen, but he scarce can hear.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கேட்பினுங் கேளாத் தகையவே கேள்வியால்",
+      "words": [
+        {
+          "form": "கேட்பினுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேளாத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகையவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேள்வியால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தோட்கப் படாத செவி.",
+      "words": [
+        {
+          "form": "தோட்கப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படாத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செவி.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

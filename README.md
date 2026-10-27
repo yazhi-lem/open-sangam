@@ -2,13 +2,14 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
-See [NEXT_ACTION.md](./NEXT_ACTION.md) for the roadmap, **October 2026 Pilot**, and **December 2026 Launch** deliverables.
+See [NEXT_ACTION.md](./NEXT_ACTION.md) for the roadmap, **October 2026 Pilot**, and **December 2026 Launch** deliverables. The wider library plan — Pathinenkilkkanakku, classics, artifacts, and multilingual reader requirements — lives in [docs/LIBRARY_ROADMAP.md](./docs/LIBRARY_ROADMAP.md).
 
 Open Sangam transforms static, archaic web archives of Sangam-era poetry into a multi-layered learning experience — providing linguistic, cultural, and historical context. Think "Duolingo for Ancient Literature."
 
 ## Features
 
 - **Layered View** — Toggle between Sangam Tamil, Modern Tamil prose (*Urai*), and English for every verse
+- **Tamil Library** — One catalog for Sangam works, Pathinenkilkkanakku, classics, and future artifact/document collections, with language and availability metadata
 - **Click-to-Define Glossary** — Click any word for root meaning, grammatical class (*Urichol*), and etymology
 - **Sangam World** — Immersive Tiṇai landscape navigator (Kuṟiñci · Mullai · Marutam · Neytal · Pālai)
 - **Knowledge Encyclopedia** — Illustrated guide to the Sangam age: anthologies, akam/puṟam, the tiṇai framework, poets, patron-kings, music, and daily life
@@ -42,6 +43,7 @@ open-sangam/
 │   └── avai/        # சங்க அவை — Google ADK agent assembly
 ├── data/
 │   ├── schema/      # JSON schema (Verse → Line → Word)
+│   ├── library/     # Wider Tamil Library catalog (Pathinenkilkkanakku, classics, artifacts)
 │   ├── texts/       # Processed poem data
 │   └── pipeline/    # Translation run state & progress metadata
 └── docs/            # Architecture, governance, style guide
@@ -69,6 +71,12 @@ cp .env.example .env   # then set OPENROUTER_API_KEY
 
 # Normalize to OKF datapackage (JSON schema + datapackage.json)
 .venv/bin/python -m normalizer.normalize_all --poem all
+
+# Ingest Thirukkural + Naladiyar with public-domain English translations
+.venv/bin/python -m scraper.scrape_pathinen --work all
+
+# Repair any idyll line gaps / heading ranges from Project Madurai
+.venv/bin/python -m scraper.scrape_projectmadurai --poem all
 
 # Run the pipeline's own tests (no API key needed)
 .venv/bin/python -m pytest tests
@@ -290,21 +298,28 @@ Poem                              Sections  Scrape    Normalize  Library   Engli
 நெடுநல்வாடை        Nedunalvadai      17    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
 ```
 
+### பதினெண்கீழ்க்கணக்கு — Pathinenkilkkanakku
+
+```
+Work                    Verses  Tamil   English   Library
+──────────────────────────────────────────────────────────
+திருக்குறள் Tirukkural   1,330  ██████  ██████    ██████  public-domain Pope translation
+நாலடியார்  Naladiyar       400  ██████  ██████    ██████  public-domain Pope/Ellis translation
+```
+
 ### Overall Progress
 
 ```
-Total poems          18  ████████████████  all scraped, normalized & in the Library
-Total records     2,489  ████████████████  fully normalized (Verse → Line → Word)
-Tamil prose (Urai) 2,469 ███████████████░  99% carry source prose
-English translation     0 ░░░░░░░░░░░░░░░░  Phase 2 — pipeline live, drafting nightly
+Total works          20  ████████████████  all scraped, normalized & in the Library
+Total records     4,399  ████████████████  fully normalized (Verse → Line → Word)
+Tamil prose (Urai) 2,653 ███████████████░  Sangam source prose
+English translation 1,762 ██████████░░░░░░  1,330 Kural + 400 Naladiyar + 32 Sangam
 Scholar-verified        0 ░░░░░░░░░░░░░░░░  Phase 4 — not started
 ```
 
-> Run `python -m ai.translate_with_gemini --status` from `backend/python/` for
-> the live per-poem figures; the numbers above are a snapshot.
-
-> **Readable in [சங்க நூலகம் — Library of Sangam](/frontend):** all 18 poems —
-> நற்றிணை · குறுந்தொகை · ஐங்குறுநூறு · கலித்தொகை · அகநானூறு · பதிற்றுப்பத்து · புறநானூறு · பரிபாடல் · திருமுருகாற்றுப்படை · பொருநராற்றுப்படை · சிறுபாணாற்றுப்படை · பெரும்பாணாற்றுப்படை · மலைபடுகடாம் · மதுரைக்காஞ்சி · குறிஞ்சிப்பாட்டு · பட்டினப்பாலை · முல்லைப்பாட்டு · நெடுநல்வாடை
+> **Readable in [தமிழ் நூலகம் — Tamil Library](/frontend):** all 18 Sangam works
+> plus திருக்குறள் and நாலடியார், with public-domain English translations.
+> The remaining Pathinenkilkkanakku works are catalogued in `data/library/catalog.json`.
 
 ---
 

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0894",
+  "poem": "thirukkural",
+  "number": 894,
+  "title": "பெரியாரைப் பிழையாமை",
+  "heading": "2.3.17",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "கூற்றத்தைக் கையால் விளித்தற்றால் ஆற்றுவார்க்கு\nஆற்றாதார் இன்னா செயல்.",
+  "urai": null,
+  "english": "When powerless man 'gainst men of power will evil deeds essay, Tis beck'ning with the hand for Death to seize them for its prey.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கூற்றத்தைக் கையால் விளித்தற்றால் ஆற்றுவார்க்கு",
+      "words": [
+        {
+          "form": "கூற்றத்தைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கையால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளித்தற்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆற்றுவார்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஆற்றாதார் இன்னா செயல்.",
+      "words": [
+        {
+          "form": "ஆற்றாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்னா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செயல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

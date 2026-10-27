@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0415",
+  "poem": "thirukkural",
+  "number": 415,
+  "title": "கேள்வி",
+  "heading": "2.1.4",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "இழுக்கல் உடையுழி ஊற்றுக்கோல் அற்றே\nஒழுக்க முடையார்வாய்ச் சொல்.",
+  "urai": null,
+  "english": "Like staff in hand of him in slippery ground who strays Are words from mouth of those who walk in righteous ways.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இழுக்கல் உடையுழி ஊற்றுக்கோல் அற்றே",
+      "words": [
+        {
+          "form": "இழுக்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடையுழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊற்றுக்கோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அற்றே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஒழுக்க முடையார்வாய்ச் சொல்.",
+      "words": [
+        {
+          "form": "ஒழுக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முடையார்வாய்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

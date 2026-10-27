@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0051",
+  "poem": "thirukkural",
+  "number": 51,
+  "title": "வாழ்க்கைத் துணைநலம்",
+  "heading": "1.2.2",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "மனைக்தக்க மாண்புடையள் ஆகித்தற் கொண்டான்\nவளத்தக்காள் வாழ்க்கைத் துணை.",
+  "urai": null,
+  "english": "As doth the house beseem, she shows her wifely dignity; As doth her husband's wealth befit, she spends: help - meet is she.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மனைக்தக்க மாண்புடையள் ஆகித்தற் கொண்டான்",
+      "words": [
+        {
+          "form": "மனைக்தக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாண்புடையள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆகித்தற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வளத்தக்காள் வாழ்க்கைத் துணை.",
+      "words": [
+        {
+          "form": "வளத்தக்காள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்க்கைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

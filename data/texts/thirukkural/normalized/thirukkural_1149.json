@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1149",
+  "poem": "thirukkural",
+  "number": 1149,
+  "title": "அலரறிவுறுத்தல்",
+  "heading": "3.1.7",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "அலர்நாண ஒல்வதோ அஞ்சலோம்பு என்றார்\nபலர்நாண நீத்தக் கடை.",
+  "urai": null,
+  "english": "When he who said 'Fear not!' hath left me blamed, While many shrink, can I from rumour hide ashamed?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அலர்நாண ஒல்வதோ அஞ்சலோம்பு என்றார்",
+      "words": [
+        {
+          "form": "அலர்நாண",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒல்வதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஞ்சலோம்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பலர்நாண நீத்தக் கடை.",
+      "words": [
+        {
+          "form": "பலர்நாண",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீத்தக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

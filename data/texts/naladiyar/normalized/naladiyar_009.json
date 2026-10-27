@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_009",
+  "poem": "naladiyar",
+  "number": 9,
+  "title": "செல்வம் நிலையாமை",
+  "heading": "1.1",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "உண்ணான் ஒளிநிறான் ஓங்கு புகழ்செய்யான்\nதுன்னருங் கேளிர் துயர்களையான் - கொன்னே\nவழங்கான் பொருள்காத் திருப்பானேல், அஆ\nஇழந்தான்என் றெண்ணப் படும்.",
+  "urai": null,
+  "english": "The miser loses all. He eats not, sheds no light of splendour around, performs no deeds that merit lofty praise, soothes no sorrow that choice friends feel, spends nought, but hoards his wealth in vain : “Aha! he's lost it all,' shall men pronounce.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உண்ணான் ஒளிநிறான் ஓங்கு புகழ்செய்யான்",
+      "words": [
+        {
+          "form": "உண்ணான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒளிநிறான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகழ்செய்யான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "துன்னருங் கேளிர் துயர்களையான் - கொன்னே",
+      "words": [
+        {
+          "form": "துன்னருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேளிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துயர்களையான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொன்னே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வழங்கான் பொருள்காத் திருப்பானேல், அஆ",
+      "words": [
+        {
+          "form": "வழங்கான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருள்காத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திருப்பானேல்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஆ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "இழந்தான்என் றெண்ணப் படும்.",
+      "words": [
+        {
+          "form": "இழந்தான்என்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றெண்ணப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

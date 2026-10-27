@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0612",
+  "poem": "thirukkural",
+  "number": 612,
+  "title": "ஆள்வினையுடைமை",
+  "heading": "2.1.24",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வினைக்கண் வினைகெடல் ஓம்பல் வினைக்குறை\nதீர்ந்தாரின் தீர்ந்தன்று உலகு.",
+  "urai": null,
+  "english": "In action be thou, 'ware of act's defeat; The world leaves those who work leave incomplete!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வினைக்கண் வினைகெடல் ஓம்பல் வினைக்குறை",
+      "words": [
+        {
+          "form": "வினைக்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினைகெடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓம்பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினைக்குறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தீர்ந்தாரின் தீர்ந்தன்று உலகு.",
+      "words": [
+        {
+          "form": "தீர்ந்தாரின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீர்ந்தன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உலகு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

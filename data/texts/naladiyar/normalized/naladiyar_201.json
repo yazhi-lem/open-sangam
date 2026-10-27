@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_201",
+  "poem": "naladiyar",
+  "number": 201,
+  "title": "சுற்றந்தழால்",
+  "heading": "2.21",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "வயாவும் வருத்தமும் ஈன்றக்கால் நோவும்\nகவாஅன் மகற்கண்டு தாய்மறந் தாஅங்கு\nஅசாஅத்தான் உற்ற வருத்தம் உசாஅத்தன்\nகேளிரைக் காணக் கெடும்.",
+  "urai": null,
+  "english": "Comfort from sympathy of kinsmen. As a mother when she sees her son upon her lap forgets the languors, the pains, and the throes of birth; so trouble arising from weakness will die when a man sees his sympathizing kinsmen around him.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வயாவும் வருத்தமும் ஈன்றக்கால் நோவும்",
+      "words": [
+        {
+          "form": "வயாவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வருத்தமும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈன்றக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கவாஅன் மகற்கண்டு தாய்மறந் தாஅங்கு",
+      "words": [
+        {
+          "form": "கவாஅன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகற்கண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாய்மறந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாஅங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "அசாஅத்தான் உற்ற வருத்தம் உசாஅத்தன்",
+      "words": [
+        {
+          "form": "அசாஅத்தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வருத்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உசாஅத்தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கேளிரைக் காணக் கெடும்.",
+      "words": [
+        {
+          "form": "கேளிரைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காணக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெடும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

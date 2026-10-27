@@ -2,7 +2,7 @@
   "id": "perumpanatrupadai_34",
   "poem": "perumpanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "காழோர் இகழ் பதம் நோக்கி கீழ\nநெடும் கை யானை நெய் மிதி கவளம்\nகடும் சூல் மந்தி கவரும் காவில்\nகளிறு கதன் அடக்கிய வெளிறு இல் கந்தின்",
+  "sangamTamil": "காழோர் இகழ் பதம் நோக்கி கீழ\nநெடும் கை யானை நெய் மிதி கவளம்\nகடும் சூல் மந்தி கவரும் காவில்\nகளிறு கதன் அடக்கிய வெளிறு இல் கந்தின்\nதிண்டேர் குழித்த குண்டுநெடுந் தெருவிற்\nபடைதொலை பறியா மைந்துமலி பெரும்புகழ்க்\nகடைகால் யாத்த பல்குடி கெழீஇக்\nகொடையுங் கோளும் வழங்குநர்த் தடுத்த\nஅடையா வாயின் மிளைசூழ் படப்பை\nநீனிற வுருவி னெடியோன் கொப்பூழ்\nநான்முக வொருவற் பயந்த பல்லிதழ்த்\nதாமரைப் பொகுட்டிற் காண்வரத் தோன்றிச்\nசுடும ணோங்கிய நெடுநகர் வரைப்பின்\nஇழுமென் புள்ளி னீண்டுகிளைத் தொழுதிக்\nகொழுமென் சினைய கோளி யுள்ளும்\nபழமீக் கூறும் பலாஅப் போலப்\nபுலவுக் கடலுடுத்த வானஞ் சூடிய\nமலர்தலை யுலகத் துள்ளும் பலர்தொழ\nவிழவுமேம் பட்ட பழவிறன் மூதூர்",
   "urai": "இளந்திரையன் ஊர் கச்சி. அம் மாநகரத் தெருக்களில் யானைகள் கட்டப்பட்டிருக்கும். காடுகளில் யானைகளைக் குழியில் விழச்செய்து பழக்கிக்கொண்டிருப்பர். காழோர் என்போர் யானைப் பாகர். அவர்கள் சோற்றில் நெய் ஊற்றிப் பிணைந்து கவளமாக்கிப் பழக்கி வைத்திருக்கும் யானைக்கு ஊட்டுவர். இவர்கள் சோர்ந்திருக்கும் காலம் பாரத்து கருவுற்றிருக்கும் மந்தி நெய்ம்மிதி கவளத்தைக் கவர்ந்து சென்று உண்ணும். வெளிறு என்பது யானை கட்டிவைக்கும் இடம். கந்து என்பது பற்றுக்கோடு இங்கு யானையைக் கட்டி வைக்கும் தூண். வெளிறு இல்லாத கந்து என்பது, வைரம் பாயாத இளங் குச்சிகளால் மூடி, யானையை விழச் செய்யாத பற்றுக்கோடு உள்ள இடம். வேறு சில காழோர் வெளிறு இல்லாத கந்தினைப் பயன்படுத்திக் காட்டிலுள்ள யானையைக் குழியில் விழச்செய்து அதன் சினத்தை அடக்கிக் கொண்டிருப்பார்கள்.",
   "english": null,
   "lines": [
@@ -183,11 +183,521 @@
           "gloss": "The word 'கந்தின்' refers to 'from the post' or 'from the pillar,' specifically indicating a strong stake or column to which elephants are tied."
         }
       ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "திண்டேர் குழித்த குண்டுநெடுந் தெருவிற்",
+      "words": [
+        {
+          "form": "திண்டேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழித்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குண்டுநெடுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெருவிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "படைதொலை பறியா மைந்துமலி பெரும்புகழ்க்",
+      "words": [
+        {
+          "form": "படைதொலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பறியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மைந்துமலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரும்புகழ்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "கடைகால் யாத்த பல்குடி கெழீஇக்",
+      "words": [
+        {
+          "form": "கடைகால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்குடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெழீஇக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "கொடையுங் கோளும் வழங்குநர்த் தடுத்த",
+      "words": [
+        {
+          "form": "கொடையுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழங்குநர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தடுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "அடையா வாயின் மிளைசூழ் படப்பை",
+      "words": [
+        {
+          "form": "அடையா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிளைசூழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படப்பை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "நீனிற வுருவி னெடியோன் கொப்பூழ்",
+      "words": [
+        {
+          "form": "நீனிற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வுருவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னெடியோன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொப்பூழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "நான்முக வொருவற் பயந்த பல்லிதழ்த்",
+      "words": [
+        {
+          "form": "நான்முக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வொருவற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்லிதழ்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "தாமரைப் பொகுட்டிற் காண்வரத் தோன்றிச்",
+      "words": [
+        {
+          "form": "தாமரைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொகுட்டிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காண்வரத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோன்றிச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "சுடும ணோங்கிய நெடுநகர் வரைப்பின்",
+      "words": [
+        {
+          "form": "சுடும",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ணோங்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுநகர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரைப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "இழுமென் புள்ளி னீண்டுகிளைத் தொழுதிக்",
+      "words": [
+        {
+          "form": "இழுமென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புள்ளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னீண்டுகிளைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழுதிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "கொழுமென் சினைய கோளி யுள்ளும்",
+      "words": [
+        {
+          "form": "கொழுமென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சினைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுள்ளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "பழமீக் கூறும் பலாஅப் போலப்",
+      "words": [
+        {
+          "form": "பழமீக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலாஅப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "புலவுக் கடலுடுத்த வானஞ் சூடிய",
+      "words": [
+        {
+          "form": "புலவுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடலுடுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வானஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூடிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "மலர்தலை யுலகத் துள்ளும் பலர்தொழ",
+      "words": [
+        {
+          "form": "மலர்தலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுலகத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துள்ளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலர்தொழ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "விழவுமேம் பட்ட பழவிறன் மூதூர்",
+      "words": [
+        {
+          "form": "விழவுமேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பழவிறன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூதூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை34.html",
+  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை34.html; Project Madurai pmuni0492",
   "verified": false,
   "sectionNumber": 34,
   "title": "கச்சி மூதூரின் சிறப்பு",

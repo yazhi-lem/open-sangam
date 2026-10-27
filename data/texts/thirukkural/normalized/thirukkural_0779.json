@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0779",
+  "poem": "thirukkural",
+  "number": 779,
+  "title": "படைச்செருக்கு",
+  "heading": "2.3.5",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "இழைத்தது இகவாமைச் சாவாரை யாரே\nபிழைத்தது ஒறுக்கிற் பவர்.",
+  "urai": null,
+  "english": "Who says they err, and visits them scorn, Who die and faithful guard the vow they've sworn?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இழைத்தது இகவாமைச் சாவாரை யாரே",
+      "words": [
+        {
+          "form": "இழைத்தது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இகவாமைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாவாரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாரே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பிழைத்தது ஒறுக்கிற் பவர்.",
+      "words": [
+        {
+          "form": "பிழைத்தது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒறுக்கிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பவர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

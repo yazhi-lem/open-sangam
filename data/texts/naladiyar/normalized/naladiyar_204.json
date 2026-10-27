@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_204",
+  "poem": "naladiyar",
+  "number": 204,
+  "title": "சுற்றந்தழால்",
+  "heading": "2.21",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "உலகறியத் தீரக் கலப்பினும் நில்லா\nசிலபகலாம் சிற்றினத்தார் கேண்மை - நிலைதிரியா\nநிற்கும் பெரியோர் நெறியடைய நின்றனைத்தால்\nஒற்கமி லாளர் தொடர்பு.",
+  "urai": null,
+  "english": "The friendship of the great alone is lasting. Though mingled in a complete intimacy so that all the world knows of it, the friendship of the little will last but little time. Connection with the firm unyielding men endures till the great one's path, who never swerve, is reached.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உலகறியத் தீரக் கலப்பினும் நில்லா",
+      "words": [
+        {
+          "form": "உலகறியத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீரக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலப்பினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நில்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சிலபகலாம் சிற்றினத்தார் கேண்மை - நிலைதிரியா",
+      "words": [
+        {
+          "form": "சிலபகலாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிற்றினத்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலைதிரியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நிற்கும் பெரியோர் நெறியடைய நின்றனைத்தால்",
+      "words": [
+        {
+          "form": "நிற்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரியோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெறியடைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்றனைத்தால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "ஒற்கமி லாளர் தொடர்பு.",
+      "words": [
+        {
+          "form": "ஒற்கமி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லாளர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடர்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

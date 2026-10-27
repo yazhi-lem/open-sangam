@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_232",
+  "poem": "naladiyar",
+  "number": 232,
+  "title": "கூடா நட்பு",
+  "heading": "2.24",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "சீரியார் கேண்மை சிறந்த சிறப்பிற்றாய்\nமாரிபோல் மாண்ட பயத்ததாம் - மாரி\nவறந்தக்கால் போலுமே வாலருவி நாட\nசிறந்தக்கால் சீரிலார் நட்பு.",
+  "urai": null,
+  "english": "The friendship of the excellent like rain ; of others like drought. Lord of the land of pure (white, forming) waterfalls! The friendship of the virtuous is of exceeding excellence, and yields glorious results — like (seasonable) rain; but the friendship of the vicious, even in the time of its exuberance, is as when the rain fails in the time of drought.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "சீரியார் கேண்மை சிறந்த சிறப்பிற்றாய்",
+      "words": [
+        {
+          "form": "சீரியார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறப்பிற்றாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மாரிபோல் மாண்ட பயத்ததாம் - மாரி",
+      "words": [
+        {
+          "form": "மாரிபோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயத்ததாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வறந்தக்கால் போலுமே வாலருவி நாட",
+      "words": [
+        {
+          "form": "வறந்தக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலுமே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாலருவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சிறந்தக்கால் சீரிலார் நட்பு.",
+      "words": [
+        {
+          "form": "சிறந்தக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சீரிலார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நட்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

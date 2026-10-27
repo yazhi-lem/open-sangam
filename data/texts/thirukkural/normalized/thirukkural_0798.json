@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0798",
+  "poem": "thirukkural",
+  "number": 798,
+  "title": "நட்பாராய்தல்",
+  "heading": "2.3.7",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உள்ளற்க உள்ளம் சிறுகுவ கொள்ளற்க\nஅல்லற்கண் ஆற்றறுப்பார் நட்பு.",
+  "urai": null,
+  "english": "Think not the thoughts that dwarf the soul; nor take For friends the men who friends in time of grief forsake.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உள்ளற்க உள்ளம் சிறுகுவ கொள்ளற்க",
+      "words": [
+        {
+          "form": "உள்ளற்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகுவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்ளற்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அல்லற்கண் ஆற்றறுப்பார் நட்பு.",
+      "words": [
+        {
+          "form": "அல்லற்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆற்றறுப்பார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நட்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_391",
+  "poem": "naladiyar",
+  "number": 391,
+  "title": "காமநுதலியல்",
+  "heading": "3.40",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "முயங்காக்காற் பாயும் பசலைமற் றூடி\nஉயங்காக்கால் உப்பின்றாம் காமம் - வயங்கோதம்\nநில்லாத் திரையலைக்கும் நீள்கழித் தண்சேர்ப்ப\nபுல்லாப் புலப்பதோர் ஆறு.",
+  "urai": null,
+  "english": "‘The way of true love never did run smooth.' 'Lord of the cool shore of the deep bay, where the gleaming ocean's restless billows beat! 'If there be no fond embrace, a sickly hue will spread itself (over her face); and, if there be no lovers' quarrels, love will lack its zest. ‘To embrace and disagree is the one way (of love).'",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "முயங்காக்காற் பாயும் பசலைமற் றூடி",
+      "words": [
+        {
+          "form": "முயங்காக்காற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாயும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பசலைமற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றூடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "உயங்காக்கால் உப்பின்றாம் காமம் - வயங்கோதம்",
+      "words": [
+        {
+          "form": "உயங்காக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உப்பின்றாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காமம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயங்கோதம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நில்லாத் திரையலைக்கும் நீள்கழித் தண்சேர்ப்ப",
+      "words": [
+        {
+          "form": "நில்லாத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரையலைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீள்கழித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்சேர்ப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "புல்லாப் புலப்பதோர் ஆறு.",
+      "words": [
+        {
+          "form": "புல்லாப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலப்பதோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆறு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

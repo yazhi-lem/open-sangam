@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1142",
+  "poem": "thirukkural",
+  "number": 1142,
+  "title": "அலரறிவுறுத்தல்",
+  "heading": "3.1.7",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "மலரன்ன கண்ணாள் அருமை அறியாது\nஅலரெமக்கு ஈந்ததிவ் வூர்.",
+  "urai": null,
+  "english": "The village hath to us this rumour giv'n, that makes her mine; Unweeting all the rareness of the maid with flower-like eyne.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மலரன்ன கண்ணாள் அருமை அறியாது",
+      "words": [
+        {
+          "form": "மலரன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறியாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அலரெமக்கு ஈந்ததிவ் வூர்.",
+      "words": [
+        {
+          "form": "அலரெமக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈந்ததிவ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வூர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

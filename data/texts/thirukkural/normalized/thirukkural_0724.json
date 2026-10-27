@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0724",
+  "poem": "thirukkural",
+  "number": 724,
+  "title": "அவையஞ்சாமை",
+  "heading": "2.2.10",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "கற்றார்முன் கற்ற செலச்சொல்லித் தாம்கற்ற\nமிக்காருள் மிக்க கொளல்.",
+  "urai": null,
+  "english": "What you have learned, in penetrating words speak out before The learn'd; but learn what men more learn'd can teach you more.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கற்றார்முன் கற்ற செலச்சொல்லித் தாம்கற்ற",
+      "words": [
+        {
+          "form": "கற்றார்முன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செலச்சொல்லித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாம்கற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மிக்காருள் மிக்க கொளல்.",
+      "words": [
+        {
+          "form": "மிக்காருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

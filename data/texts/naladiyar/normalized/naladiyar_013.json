@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_013",
+  "poem": "naladiyar",
+  "number": 13,
+  "title": "இளமை நிலையாமை",
+  "heading": "1.2",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "சொல்தளர்ந்து கோல்ஊன்றிச் சோர்ந்த நடையினராய்ப்\nபல்கழன்று பண்டம் பழிகாறும் - இல்செறிந்து\nகாம நெறிபடரும் கண்ணினார்க்கு இல்லையே\nஏம நெறிபடரு மாறு.",
+  "urai": null,
+  "english": "Men are loath to give up bodily pleasures. Speech falters, they lean on a staff, and walk tottering, their teeth fall out; yet, till the vessel (the body) is scorned by all, they linger in the house, still indulging fond desires; to these no way of safety opens out.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "சொல்தளர்ந்து கோல்ஊன்றிச் சோர்ந்த நடையினராய்ப்",
+      "words": [
+        {
+          "form": "சொல்தளர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோல்ஊன்றிச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நடையினராய்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பல்கழன்று பண்டம் பழிகாறும் - இல்செறிந்து",
+      "words": [
+        {
+          "form": "பல்கழன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பண்டம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பழிகாறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்செறிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "காம நெறிபடரும் கண்ணினார்க்கு இல்லையே",
+      "words": [
+        {
+          "form": "காம",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெறிபடரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணினார்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லையே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "ஏம நெறிபடரு மாறு.",
+      "words": [
+        {
+          "form": "ஏம",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெறிபடரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாறு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

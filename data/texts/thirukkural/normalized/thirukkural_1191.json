@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1191",
+  "poem": "thirukkural",
+  "number": 1191,
+  "title": "தனிப்படர்மிகுதி",
+  "heading": "3.2.5",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "தாம்வீழ்வார் தம்வீழப் பெற்றவர் பெற்றாரே\nகாமத்துக் காழில் கனி.",
+  "urai": null,
+  "english": "The bliss to be beloved by those they love who gains, Of love the stoneless, luscious fruit obtains.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தாம்வீழ்வார் தம்வீழப் பெற்றவர் பெற்றாரே",
+      "words": [
+        {
+          "form": "தாம்வீழ்வார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தம்வீழப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெற்றவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெற்றாரே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "காமத்துக் காழில் கனி.",
+      "words": [
+        {
+          "form": "காமத்துக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காழில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கனி.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

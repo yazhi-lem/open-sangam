@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_284",
+  "poem": "naladiyar",
+  "number": 284,
+  "title": "இன்மை",
+  "heading": "2.29",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "உண்டாய போழ்தின் உடைந்துழிக் காகம்போல்\nதொண்டரா யிரவர் தொகுபவே - வண்டாய்த்\nதிரிதரும் காலத்துத் தீதிலிரோ என்பார்\nஒருவரும் இல்வுலகத் தில்.",
+  "urai": null,
+  "english": "Time-serving friends. When wealth is there, obsequious myriads will assemble, like crows around the fallen corpse. When wealth, as the beetle wheels its flight, is gone, no one in all the world will ask, ‘Is it well with you?'",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உண்டாய போழ்தின் உடைந்துழிக் காகம்போல்",
+      "words": [
+        {
+          "form": "உண்டாய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போழ்தின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடைந்துழிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காகம்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தொண்டரா யிரவர் தொகுபவே - வண்டாய்த்",
+      "words": [
+        {
+          "form": "தொண்டரா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யிரவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொகுபவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வண்டாய்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "திரிதரும் காலத்துத் தீதிலிரோ என்பார்",
+      "words": [
+        {
+          "form": "திரிதரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காலத்துத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீதிலிரோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்பார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "ஒருவரும் இல்வுலகத் தில்.",
+      "words": [
+        {
+          "form": "ஒருவரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்வுலகத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தில்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

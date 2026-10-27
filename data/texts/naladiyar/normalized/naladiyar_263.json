@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_263",
+  "poem": "naladiyar",
+  "number": 263,
+  "title": "நன்றியில் செல்வம்",
+  "heading": "2.27",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "மல்கு திரைய கடற்கோட் டிருப்பினும்,\nவல்லூற் றுவரில் கிணற்றின்கண் சென்றுண்பர்\nசெல்வம் பெரிதுடைய ராயினும் சேண்சென்றும்\nநல்குவார் கட்டே நசை.",
+  "urai": null,
+  "english": "Though living on the sea-shore, men go to the fresh spring to drink. Though men live on the curved shore of the sea with its multitudinous waves, they go and drink at the well, with its perennial fountain of fresh water from the rock; so even if those (who are neighbours) are very wealthy, the desire (of the poor) is towards the liberal, though these may be far to seek.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மல்கு திரைய கடற்கோட் டிருப்பினும்,",
+      "words": [
+        {
+          "form": "மல்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடற்கோட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டிருப்பினும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வல்லூற் றுவரில் கிணற்றின்கண் சென்றுண்பர்",
+      "words": [
+        {
+          "form": "வல்லூற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றுவரில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிணற்றின்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்றுண்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "செல்வம் பெரிதுடைய ராயினும் சேண்சென்றும்",
+      "words": [
+        {
+          "form": "செல்வம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரிதுடைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேண்சென்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நல்குவார் கட்டே நசை.",
+      "words": [
+        {
+          "form": "நல்குவார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கட்டே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நசை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

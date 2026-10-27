@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0057",
+  "poem": "thirukkural",
+  "number": 57,
+  "title": "வாழ்க்கைத் துணைநலம்",
+  "heading": "1.2.2",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "சிறைகாக்கும் காப்பெவன் செய்யும் மகளிர்\nநிறைகாக்கும் காப்பே தலை.",
+  "urai": null,
+  "english": "Of what avail is wat ch and ward? Honour's woman's safest guard.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "சிறைகாக்கும் காப்பெவன் செய்யும் மகளிர்",
+      "words": [
+        {
+          "form": "சிறைகாக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காப்பெவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்யும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகளிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நிறைகாக்கும் காப்பே தலை.",
+      "words": [
+        {
+          "form": "நிறைகாக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காப்பே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

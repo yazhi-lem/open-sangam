@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_269",
+  "poem": "naladiyar",
+  "number": 269,
+  "title": "நன்றியில் செல்வம்",
+  "heading": "2.27",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "பொன்னிறச் செந்நெல் பொதியொடு பீள்வாட\nமின்னொளிர் வானங் கடலுள்ளுங் கான்றுகுக்கும்\nவெண்மை யுடையார் விழுச்செல்வம் எய்தியக்கால்\nவண்மையும் அன்ன தகைத்து.",
+  "urai": null,
+  "english": "Misplaced liberality; rain on the sea. While the red paddy's golden germ is parched within the ear and dies, the cloud gleaming with lightnings pours forth its treasures on the sea. When silly men gain ample wealth, even so are their liberal gifts bestowed !",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பொன்னிறச் செந்நெல் பொதியொடு பீள்வாட",
+      "words": [
+        {
+          "form": "பொன்னிறச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செந்நெல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொதியொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பீள்வாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மின்னொளிர் வானங் கடலுள்ளுங் கான்றுகுக்கும்",
+      "words": [
+        {
+          "form": "மின்னொளிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வானங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடலுள்ளுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கான்றுகுக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வெண்மை யுடையார் விழுச்செல்வம் எய்தியக்கால்",
+      "words": [
+        {
+          "form": "வெண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுடையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விழுச்செல்வம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எய்தியக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "வண்மையும் அன்ன தகைத்து.",
+      "words": [
+        {
+          "form": "வண்மையும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகைத்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

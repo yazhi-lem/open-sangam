@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_083",
+  "poem": "naladiyar",
+  "number": 83,
+  "title": "பிறர்மனை நயவாமை",
+  "heading": "1.9",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "புக்க விடத்தச்சம் போதரும் போதச்சம்\nதுய்க்கு மிடத்தச்சம் தோன்றாமல் காப்பச்சம்\nஎக்காலும் அச்சம் தருமால் எவன்கொலோ\nஉட்கான் பிறன்இல் புகல்.",
+  "urai": null,
+  "english": "Fear on every side. In entering in there's fear; in home returning fear; during enjoyment is fear; in guarding the secret is fear; it evermore brings fear: why shuns he not with dread the entrance of neighbour's house?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "புக்க விடத்தச்சம் போதரும் போதச்சம்",
+      "words": [
+        {
+          "form": "புக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடத்தச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போதரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போதச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "துய்க்கு மிடத்தச்சம் தோன்றாமல் காப்பச்சம்",
+      "words": [
+        {
+          "form": "துய்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிடத்தச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோன்றாமல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காப்பச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "எக்காலும் அச்சம் தருமால் எவன்கொலோ",
+      "words": [
+        {
+          "form": "எக்காலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தருமால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எவன்கொலோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "உட்கான் பிறன்இல் புகல்.",
+      "words": [
+        {
+          "form": "உட்கான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறன்இல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

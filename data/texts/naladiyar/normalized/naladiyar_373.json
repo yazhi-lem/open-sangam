@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_373",
+  "poem": "naladiyar",
+  "number": 373,
+  "title": "பொது மகளிர்",
+  "heading": "3.38",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "அங்கண் விசும்பின் அமரர் தொழப்படுஞ்\nசெங்கண்மா லாயினும் ஆகமன்- தங்கைக்\nகொடுப்பதொன் றில்லாரைக் கொய்தளி ரன்னார்\nவிடுப்பர்தங் கையால் தொழுது.",
+  "urai": null,
+  "english": "Courtezans forsake those who have no wealth. Though he be Mal, the fiery-eyed, whom in the heaven's fair homes immortals worship, if in hand he bring no gift the women tender as the buds men cull, will straight dismiss him, bowing low with folded hands.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அங்கண் விசும்பின் அமரர் தொழப்படுஞ்",
+      "words": [
+        {
+          "form": "அங்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விசும்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அமரர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழப்படுஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "செங்கண்மா லாயினும் ஆகமன்- தங்கைக்",
+      "words": [
+        {
+          "form": "செங்கண்மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லாயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆகமன்-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தங்கைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கொடுப்பதொன் றில்லாரைக் கொய்தளி ரன்னார்",
+      "words": [
+        {
+          "form": "கொடுப்பதொன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றில்லாரைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொய்தளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரன்னார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "விடுப்பர்தங் கையால் தொழுது.",
+      "words": [
+        {
+          "form": "விடுப்பர்தங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கையால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழுது.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

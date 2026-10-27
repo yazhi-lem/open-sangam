@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-27",
+  "description": "Catalog of Tamil works and artifact collections beyond the Ettuthokai / Pattuppattu reader corpus. `availability` is `reader` when normalized verse JSON exists, `metadata` when only the catalog record is present, and `planned` when there is no data yet. `languages` lists text languages; `translations` lists available translation languages. Adding a work here does not claim it is readable: ingestion is tracked in docs/LIBRARY_ROADMAP.md.",
+  "collections": [
+    {
+      "id": "pathinenkilkkanakku",
+      "ta": "பதினெண்கீழ்க்கணக்கு",
+      "en": "Eighteen Minor Works",
+      "kind": "didactic",
+      "description": "Post-Sangam gnomic and didactic anthologies on ethics, statecraft, and everyday life. The canonical eighteen works, including the Tirukkural and Naladiyar."
+    },
+    {
+      "id": "tamil-classics",
+      "ta": "தமிழ்ச் செவ்வியல்",
+      "en": "Tamil Classics",
+      "kind": "classical",
+      "description": "Grammar, epics, and major classical works that sit outside the Sangam anthologies but are essential to the Tamil literary canon."
+    },
+    {
+      "id": "artifacts",
+      "ta": "தமிழ்க் கலைப்பொருட்கள்",
+      "en": "Tamil Artifacts",
+      "kind": "material-culture",
+      "description": "Inscriptions, hero stones, coins, sculpture, palm-leaf manuscripts, music, and other material-culture collections for a future object reader."
+    }
+  ],
+  "works": [
+    {
+      "id": "thirukkural",
+      "ta": "திருக்குறள்",
+      "en": "Tirukkural",
+      "collection": "pathinenkilkkanakku",
+      "author": "திருவள்ளுவர் · Tiruvalluvar",
+      "period": "c. 1st–5th century CE",
+      "count": 1330,
+      "unit": "couplets",
+      "languages": [
+        "ta"
+      ],
+      "translations": [
+        "en"
+      ],
+      "availability": "reader",
+      "source": "Project Madurai (Tamil) + public-domain Pope/Ellis/Bharathiyar translations",
+      "rights": "public-domain text; translation rights vary",
+      "notes": "Three books: Arattuppal, Porutpal, Kamattuppal. High-priority ingestion target. Readable in /book with public-domain English translation."
+    },
+    {
+      "id": "naladiyar",
+      "ta": "நாலடியார்",
+      "en": "Naladiyar",
+      "collection": "pathinenkilkkanakku",
+      "author": "பல புலவர்கள் · many poets",
+      "period": "c. 4th–7th century CE",
+      "count": 400,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [
+        "en"
+      ],
+      "availability": "reader",
+      "source": "Project Madurai (Tamil) + public-domain Pope/Ellis/Bharathiyar translations",
+      "rights": "public-domain text",
+      "notes": "Four-hundred quatrains on virtue and householder ethics. Readable in /book with public-domain English translation."
+    },
+    {
+      "id": "nanmanikkadikai",
+      "ta": "நான்மணிக்கடிகை",
+      "en": "Nanmanikkadigai",
+      "collection": "pathinenkilkkanakku",
+      "author": "விளம்பி நாகனார் · Vilambi Naganar",
+      "period": "post-Sangam",
+      "count": 100,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "inna-narpathu",
+      "ta": "இன்னா நாற்பது",
+      "en": "Inna Narpathu",
+      "collection": "pathinenkilkkanakku",
+      "author": "கபிலர் · Kapilar (attributed)",
+      "period": "post-Sangam",
+      "count": 40,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "iniyavai-narpathu",
+      "ta": "இனியவை நாற்பது",
+      "en": "Iniyavai Narpathu",
+      "collection": "pathinenkilkkanakku",
+      "author": "பூதஞ்சேந்தனார் · Puthan Chenthanar",
+      "period": "post-Sangam",
+      "count": 40,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "kaar-narpathu",
+      "ta": "கார் நாற்பது",
+      "en": "Kaar Narpathu",
+      "collection": "pathinenkilkkanakku",
+      "author": "கணிமேதாவியார் · Kanimethaviyar",
+      "period": "post-Sangam",
+      "count": 40,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "kalavazhi-narpathu",
+      "ta": "களவழி நாற்பது",
+      "en": "Kalavazhi Narpathu",
+      "collection": "pathinenkilkkanakku",
+      "author": "பொய்கையார் · Poigaiyar",
+      "period": "post-Sangam",
+      "count": 40,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "ainthinai-aimpathu",
+      "ta": "ஐந்திணை ஐம்பது",
+      "en": "Ainthinai Aimpathu",
+      "collection": "pathinenkilkkanakku",
+      "author": "மாறன் பொறையனார் · Maran Poraiyanar",
+      "period": "post-Sangam",
+      "count": 50,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "thinaimozhi-aimpathu",
+      "ta": "திணைமொழி ஐம்பது",
+      "en": "Thinaimozhi Aimpathu",
+      "collection": "pathinenkilkkanakku",
+      "author": "கண்ணன் சேந்தனார் · Kannan Chenthanar",
+      "period": "post-Sangam",
+      "count": 50,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "thinaimalai-nurraimpathu",
+      "ta": "திணைமாலை நூற்றைம்பது",
+      "en": "Thinaimalai Nurraimpathu",
+      "collection": "pathinenkilkkanakku",
+      "author": "கண்ணன் சேந்தனார் · Kannan Chenthanar",
+      "period": "post-Sangam",
+      "count": 150,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "ainthinai-ezhupathu",
+      "ta": "ஐந்திணை எழுபது",
+      "en": "Ainthinai Ezhupathu",
+      "collection": "pathinenkilkkanakku",
+      "author": "மூலனார் · Mulanar",
+      "period": "post-Sangam",
+      "count": 70,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "thirikadugam",
+      "ta": "திரிகடுகம்",
+      "en": "Thirikadugam",
+      "collection": "pathinenkilkkanakku",
+      "author": "நல்லாதனார் · Nallathanar",
+      "period": "post-Sangam",
+      "count": 100,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "acharakkovai",
+      "ta": "ஆசாரக்கோவை",
+      "en": "Acharakkovai",
+      "collection": "pathinenkilkkanakku",
+      "author": "பெருவாயின் முள்ளியார் · Peruvayin Mulliyar",
+      "period": "post-Sangam",
+      "count": 100,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "pazhamozhi-nanuru",
+      "ta": "பழமொழி நானூறு",
+      "en": "Pazhamozhi Nanuru",
+      "collection": "pathinenkilkkanakku",
+      "author": "முன்றுறை அரையனார் · Mundrurai Araiyanar",
+      "period": "post-Sangam",
+      "count": 400,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "sirupanjamulam",
+      "ta": "சிறுபஞ்சமூலம்",
+      "en": "Sirupanjamulam",
+      "collection": "pathinenkilkkanakku",
+      "author": "காரியாசான் · Kariyasan",
+      "period": "post-Sangam",
+      "count": 100,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "muthumozhikkanchi",
+      "ta": "முதுமொழிக்காஞ்சி",
+      "en": "Muthumozhikkanchi",
+      "collection": "pathinenkilkkanakku",
+      "author": "மதுரை கூடலூர் கிழார் · Madurai Koodalur Kizhar",
+      "period": "post-Sangam",
+      "count": 100,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "elathi",
+      "ta": "ஏலாதி",
+      "en": "Elathi",
+      "collection": "pathinenkilkkanakku",
+      "author": "கணிமேதாவியார் · Kanimethaviyar",
+      "period": "post-Sangam",
+      "count": 80,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "kainnilai",
+      "ta": "கைந்நிலை",
+      "en": "Kainnilai",
+      "collection": "pathinenkilkkanakku",
+      "author": "புலவர் குழந்தை · Pulavar Kulanthai (attributed)",
+      "period": "post-Sangam",
+      "count": 40,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": ""
+    },
+    {
+      "id": "tholkappiyam",
+      "ta": "தொல்காப்பியம்",
+      "en": "Tholkappiyam",
+      "collection": "tamil-classics",
+      "author": "தொல்காப்பியர் · Tholkappiyar",
+      "period": "c. 5th century BCE–2nd century CE",
+      "count": 3,
+      "unit": "books",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Tamil Virtual Academy / Project Madurai",
+      "rights": "public-domain text; commentary rights vary",
+      "notes": "Ezhuthathikaram, Sollathikaram, Porulathikaram — the foundational Tamil grammar."
+    },
+    {
+      "id": "silappatikaram",
+      "ta": "சிலப்பதிகாரம்",
+      "en": "Silappatikaram",
+      "collection": "tamil-classics",
+      "author": "இளங்கோவடிகள் · Ilango Adigal",
+      "period": "c. 5th–6th century CE",
+      "count": 3,
+      "unit": "books",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai",
+      "rights": "public-domain text",
+      "notes": "The Tamil epic of Kannagi and Kovalan; 30 cantos."
+    },
+    {
+      "id": "manimekalai",
+      "ta": "மணிமேகலை",
+      "en": "Manimekalai",
+      "collection": "tamil-classics",
+      "author": "சீத்தலைச் சாத்தனார் · Sittalai Sattanar",
+      "period": "c. 6th century CE",
+      "count": 30,
+      "unit": "cantos",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai (Kausalya Hart English translation also on PM)",
+      "rights": "public-domain text",
+      "notes": "Buddhist epic and sequel to Silappatikaram."
+    },
+    {
+      "id": "nannul",
+      "ta": "நன்னூல்",
+      "en": "Nannul",
+      "collection": "tamil-classics",
+      "author": "பவணந்தி முனிவர் · Pavanandi Munivar",
+      "period": "c. 13th century CE",
+      "count": 462,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": "Medieval Tamil grammar in three books."
+    },
+    {
+      "id": "tevaram",
+      "ta": "தேவாரம்",
+      "en": "Tevaram",
+      "collection": "tamil-classics",
+      "author": "திருஞானசம்பந்தர், திருநாவுக்கரசர், சுந்தரர்",
+      "period": "c. 7th–8th century CE",
+      "count": 7,
+      "unit": "tirumurai (within 12)",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Tamil Virtual Academy / Project Madurai",
+      "rights": "public-domain text",
+      "notes": "Saiva devotional hymns; Project Madurai hosts English translations of parts."
+    },
+    {
+      "id": "nalayira-divya-prabandham",
+      "ta": "நாலாயிர திவ்ய பிரபந்தம்",
+      "en": "Nalayira Divya Prabandham",
+      "collection": "tamil-classics",
+      "author": "ஆழ்வார்கள் · Alvars",
+      "period": "c. 7th–9th century CE",
+      "count": 4000,
+      "unit": "pasurams",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai (Kausalya Hart English translation)",
+      "rights": "public-domain text; translation rights vary",
+      "notes": "Vaishnava devotional corpus in twelve parts."
+    },
+    {
+      "id": "hero-stones",
+      "ta": "நடுகற்கள்",
+      "en": "Hero Stones (Nadukal)",
+      "collection": "artifacts",
+      "author": "various",
+      "period": "Sangam–medieval",
+      "count": 0,
+      "unit": "objects",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "planned",
+      "source": "Tamil Nadu State Department of Archaeology / museum collections",
+      "rights": "object metadata and images need per-item rights review",
+      "notes": "Future object reader: inscription text, translation, provenance, and 3D/photo viewers."
+    },
+    {
+      "id": "tamil-inscriptions",
+      "ta": "தமிழ்க் கல்வெட்டுகள்",
+      "en": "Tamil Inscriptions",
+      "collection": "artifacts",
+      "author": "various",
+      "period": "3rd century BCE onward",
+      "count": 0,
+      "unit": "inscriptions",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "planned",
+      "source": "Indian Epigraphy / Tamil Nadu Archaeology Department",
+      "rights": "metadata and estampage rights vary by source",
+      "notes": "Needs a document/object schema with transcription, transliteration, translation, and date fields."
+    },
+    {
+      "id": "palm-leaf-manuscripts",
+      "ta": "ஓலைச்சுவடிகள்",
+      "en": "Palm-leaf Manuscripts",
+      "collection": "artifacts",
+      "author": "various",
+      "period": "medieval–colonial",
+      "count": 0,
+      "unit": "manuscripts",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "planned",
+      "source": "Tamil Nadu Government Oriental Manuscripts Library / Sarasvati Mahal Library",
+      "rights": "per-item rights and access conditions",
+      "notes": "Future page-image + transcription reader with zoom, folio navigation, and multilingual notes."
+    },
+    {
+      "id": "tamil-coins",
+      "ta": "தமிழ் நாணயங்கள்",
+      "en": "Tamil Coins",
+      "collection": "artifacts",
+      "author": "various",
+      "period": "Sangam–colonial",
+      "count": 0,
+      "unit": "objects",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "planned",
+      "source": "museum collections",
+      "rights": "per-item rights",
+      "notes": "Future object catalogue with obverse/reverse images, legend transcription, and dynasty metadata."
+    }
+  ]
+}

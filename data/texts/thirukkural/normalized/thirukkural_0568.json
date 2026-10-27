@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0568",
+  "poem": "thirukkural",
+  "number": 568,
+  "title": "வெருவந்தசெய்யாமை",
+  "heading": "2.1.19",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "இனத்தாற்றி எண்ணாத வேந்தன் சினத்தாற்றிச்\nசீறிற் சிறுகும் திரு.",
+  "urai": null,
+  "english": "Who leaves the work to those around, and thinks of it no more; If he in wrathful mood reprove, his prosperous days are o'er!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இனத்தாற்றி எண்ணாத வேந்தன் சினத்தாற்றிச்",
+      "words": [
+        {
+          "form": "இனத்தாற்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எண்ணாத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேந்தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சினத்தாற்றிச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சீறிற் சிறுகும் திரு.",
+      "words": [
+        {
+          "form": "சீறிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

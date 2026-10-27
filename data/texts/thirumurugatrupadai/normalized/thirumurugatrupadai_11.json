@@ -2,7 +2,7 @@
   "id": "thirumurugatrupadai_11",
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "ஐவேறு உருவின் செய்வினை முற்றிய\nமுடியொடு விளங்கிய முரண்மிகு திருமணி\nமின்உறழ் இமைப்பின் சென்னிப் பொற்ப\t. . . .(85)",
+  "sangamTamil": "ஐவேறு உருவின் செய்வினை முற்றிய\nமுடியொடு விளங்கிய முரண்மிகு திருமணி\nமின்உறழ் இமைப்பின் சென்னிப் பொற்ப\t. . . .(85)\nநகைதாழ்பு துயல்வரூஉம் வகையமை பொலங்குழை\nசேண்விளங் கியற்கை வாண்மதி கவைஇ\nயகலா மீனி னவிர்வன விமைப்பத்\nதாவில் கொள்கைத் தந்தொழின் முடிமார்\nமனனேர் பெழுதரு வாணிற முகனே\nமாயிருண் ஞால மறுவின்றி விளங்கப்\nபல்கதிர் விரிந்தன் றொருமுக மொருமுக\nமார்வல ரேத்த வமர்ந்தினி தொழுகிக்\nகாதலி னுவந்து வரங்கொடுத் தன்றே யொருமுக\nமந்திர விதியின் மரபுளி வழாஅ\nவந்தணர் வேள்வியோர்க் கும்மே யொருமுக\nமெஞ்சிய பொருள்களை யேமுற நாடித்\nதிங்கள் போலத் திசைவிளக் கும்மே யொருமுகஞ்\nசெறுநர்த் தேய்த்துச் செல்சம முருக்கிக்\nகறுவுகொ ணெஞ்மொடு களம்வேட் டன்றே யொருமுகங்\nகுறவர் மடமகள் கொடிபோ னுசுப்பின்\nமடவரல் வள்ளியொடு நகைமர்ந் தன்றே\nயாங்கம், மூவிரு முகனு முறைநவின் றொழுகலி",
   "urai": "முருகன் தன் தலையில் முடி சூடிக்கொண்டிருந்தான். அந்த முடியில் ஐந்து முகப் பட்டை தீட்டிய திருமணி பதிக்கப்பட்டிருந்தது. பொன்முடியில் நீலநிற மணியின் ஒளி முரணியிருந்தது. (பொன்னிறத்தில் நீலநிறம் முரண்) இது அவன் தலைக்குப் பொலிவைத் தந்தது. (அஞ்சுமுகம் தோன்றின் ஆறுமுகம் தோன்றும். என்று இப்பாடலின் இறுதியில் வரும் வெண்பாவுக்குப் பொருள் கொள்ளும்போது அஞ்சுமுகம் என்பதற்கு இந்த ஐந்து பட்டை மணியையும் கொள்ளலாம்.)",
   "english": "Upon his head, adorned with a crown\nwhere a resplendent gem,\ncut with five facets,\nshines with a fierce brilliance.\nIts gleam, like lightning,\ngraces his brow.",
   "lines": [
@@ -135,11 +135,651 @@
           "gloss": "This is a numerical annotation indicating the verse number in the text, not a word with semantic content within the poetic line itself."
         }
       ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நகைதாழ்பு துயல்வரூஉம் வகையமை பொலங்குழை",
+      "words": [
+        {
+          "form": "நகைதாழ்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துயல்வரூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வகையமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொலங்குழை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "சேண்விளங் கியற்கை வாண்மதி கவைஇ",
+      "words": [
+        {
+          "form": "சேண்விளங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கியற்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாண்மதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவைஇ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "யகலா மீனி னவிர்வன விமைப்பத்",
+      "words": [
+        {
+          "form": "யகலா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மீனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னவிர்வன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விமைப்பத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "தாவில் கொள்கைத் தந்தொழின் முடிமார்",
+      "words": [
+        {
+          "form": "தாவில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்கைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தந்தொழின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முடிமார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "மனனேர் பெழுதரு வாணிற முகனே",
+      "words": [
+        {
+          "form": "மனனேர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெழுதரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாணிற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முகனே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "மாயிருண் ஞால மறுவின்றி விளங்கப்",
+      "words": [
+        {
+          "form": "மாயிருண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞால",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறுவின்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளங்கப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "பல்கதிர் விரிந்தன் றொருமுக மொருமுக",
+      "words": [
+        {
+          "form": "பல்கதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விரிந்தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றொருமுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொருமுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "மார்வல ரேத்த வமர்ந்தினி தொழுகிக்",
+      "words": [
+        {
+          "form": "மார்வல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரேத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வமர்ந்தினி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழுகிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "காதலி னுவந்து வரங்கொடுத் தன்றே யொருமுக",
+      "words": [
+        {
+          "form": "காதலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னுவந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரங்கொடுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்றே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொருமுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "மந்திர விதியின் மரபுளி வழாஅ",
+      "words": [
+        {
+          "form": "மந்திர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விதியின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரபுளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழாஅ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "வந்தணர் வேள்வியோர்க் கும்மே யொருமுக",
+      "words": [
+        {
+          "form": "வந்தணர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேள்வியோர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கும்மே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொருமுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "மெஞ்சிய பொருள்களை யேமுற நாடித்",
+      "words": [
+        {
+          "form": "மெஞ்சிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருள்களை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யேமுற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "திங்கள் போலத் திசைவிளக் கும்மே யொருமுகஞ்",
+      "words": [
+        {
+          "form": "திங்கள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திசைவிளக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கும்மே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொருமுகஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "செறுநர்த் தேய்த்துச் செல்சம முருக்கிக்",
+      "words": [
+        {
+          "form": "செறுநர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேய்த்துச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்சம",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முருக்கிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "கறுவுகொ ணெஞ்மொடு களம்வேட் டன்றே யொருமுகங்",
+      "words": [
+        {
+          "form": "கறுவுகொ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ணெஞ்மொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களம்வேட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டன்றே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொருமுகங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "குறவர் மடமகள் கொடிபோ னுசுப்பின்",
+      "words": [
+        {
+          "form": "குறவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடமகள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொடிபோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னுசுப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 20,
+      "text": "மடவரல் வள்ளியொடு நகைமர்ந் தன்றே",
+      "words": [
+        {
+          "form": "மடவரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வள்ளியொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நகைமர்ந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்றே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 21,
+      "text": "யாங்கம், மூவிரு முகனு முறைநவின் றொழுகலி",
+      "words": [
+        {
+          "form": "யாங்கம்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூவிரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முகனு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முறைநவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றொழுகலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/thirumurugatrupadai/thirumurugatrupadai-திருமுருகாற்றுப்படை11.html",
+  "source": "http://www.sangathamizh.com/10paddu/thirumurugatrupadai/thirumurugatrupadai-திருமுருகாற்றுப்படை11.html; Project Madurai pmuni0493",
   "verified": false,
   "sectionNumber": 11,
   "title": "ஆறு முகங்களின் இயல்புகள்",

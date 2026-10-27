@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1046",
+  "poem": "thirukkural",
+  "number": 1046,
+  "title": "நல்குரவு",
+  "heading": "2.4.10",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "நற்பொருள் நன்குணர்ந்து சொல்லினும் நல்கூர்ந்தார்\nசொற்பொருள் சோர்வு படும்.",
+  "urai": null,
+  "english": "Though deepest sense, well understood, the poor man's words convey, Their sense from memory of mankind will fade away.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நற்பொருள் நன்குணர்ந்து சொல்லினும் நல்கூர்ந்தார்",
+      "words": [
+        {
+          "form": "நற்பொருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்குணர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்கூர்ந்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சொற்பொருள் சோர்வு படும்.",
+      "words": [
+        {
+          "form": "சொற்பொருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோர்வு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

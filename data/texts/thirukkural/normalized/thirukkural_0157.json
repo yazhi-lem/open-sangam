@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0157",
+  "poem": "thirukkural",
+  "number": 157,
+  "title": "பொறையுடைமை",
+  "heading": "1.2.12",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "திறனல்ல தற்பிறர் செய்யினும் நோநொந்து\nஅறனல்ல செய்யாமை நன்று.",
+  "urai": null,
+  "english": "Though others work thee ill, thus shalt thou blessing reap; Grieve for their sin, thyself from vicious action keep!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "திறனல்ல தற்பிறர் செய்யினும் நோநொந்து",
+      "words": [
+        {
+          "form": "திறனல்ல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தற்பிறர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்யினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோநொந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அறனல்ல செய்யாமை நன்று.",
+      "words": [
+        {
+          "form": "அறனல்ல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்யாமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

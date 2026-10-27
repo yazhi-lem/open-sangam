@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_253",
+  "poem": "naladiyar",
+  "number": 253,
+  "title": "அறிவின்மை",
+  "heading": "2.26",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கல்லென்று தந்தை கழற அதனையோர்\nசொல்லென்று கொள்ளா திகழ்ந்தவன் - மெல்ல\nஎழுத்தோலை பல்லார்முன் நீட்ட விளியா\nவழுக்கோலைக் கொண்டு விடும்.",
+  "urai": null,
+  "english": "Folly of refusing to learn in youth. He who, when his father urgently bade him learn, did not take it as a serious matter, but contemned it; when, before many men, some one gently presents a written palm-leaf, will in anger fetch a stick to beat him as guilty of an insult.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கல்லென்று தந்தை கழற அதனையோர்",
+      "words": [
+        {
+          "form": "கல்லென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தந்தை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அதனையோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சொல்லென்று கொள்ளா திகழ்ந்தவன் - மெல்ல",
+      "words": [
+        {
+          "form": "சொல்லென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்ளா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திகழ்ந்தவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மெல்ல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "எழுத்தோலை பல்லார்முன் நீட்ட விளியா",
+      "words": [
+        {
+          "form": "எழுத்தோலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்லார்முன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "வழுக்கோலைக் கொண்டு விடும்.",
+      "words": [
+        {
+          "form": "வழுக்கோலைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

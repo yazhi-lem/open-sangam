@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_257",
+  "poem": "naladiyar",
+  "number": 257,
+  "title": "அறிவின்மை",
+  "heading": "2.26",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "பன்றிக்கூழ்ப் பத்தரில் தேமா வடித்தற்றால்\nநன்றறியா மாந்தர்க் கறத்தா றுரைக்குங்கால்\nகுன்றின்மேற் கொட்டுந் தறிபோல் தலைதகர்ந்து\nசென்றிசையா வாகுஞ் செவிக்கு.",
+  "urai": null,
+  "english": "Good instruction thrown away on thankless people. When you expound the way of virtue to ungrateful people, —which is like mashing up sweet mangoes for a pig in a food — trough , — those virtuous teachings lose all their force —have their point (தலை) broken (தகர்) by the obtuseness of the disciple— and do not enter into, or suit his ear, — like a stake which one would drive in on the side of a hill.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பன்றிக்கூழ்ப் பத்தரில் தேமா வடித்தற்றால்",
+      "words": [
+        {
+          "form": "பன்றிக்கூழ்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பத்தரில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேமா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வடித்தற்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நன்றறியா மாந்தர்க் கறத்தா றுரைக்குங்கால்",
+      "words": [
+        {
+          "form": "நன்றறியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாந்தர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கறத்தா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றுரைக்குங்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "குன்றின்மேற் கொட்டுந் தறிபோல் தலைதகர்ந்து",
+      "words": [
+        {
+          "form": "குன்றின்மேற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொட்டுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தறிபோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைதகர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சென்றிசையா வாகுஞ் செவிக்கு.",
+      "words": [
+        {
+          "form": "சென்றிசையா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாகுஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செவிக்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

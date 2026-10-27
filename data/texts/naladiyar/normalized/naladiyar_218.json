@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_218",
+  "poem": "naladiyar",
+  "number": 218,
+  "title": "நட்பாராய்தல்",
+  "heading": "2.22",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நாய்க்கால் சிறுவிரல்போல் நன்கணிய ராயினும்\nஈக்கால் துணையும் உதவாதார் நட்பென்னாம்?\nசேய்த்தானும் சென்று கொளல்வேண்டும், செய்விளைக்கும்\nவாய்க்கால் அனையார் தொடர்பு.",
+  "urai": null,
+  "english": "Friendship of those who though near aid not. Of what value is the friendship of those who being very near like the little claw on a dog's leg, afford not help as much as a fly's foot? Though you go far to seek it, lay hold of the friendship of those who are like the water channel that causes the crops in the field to flourish.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நாய்க்கால் சிறுவிரல்போல் நன்கணிய ராயினும்",
+      "words": [
+        {
+          "form": "நாய்க்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுவிரல்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்கணிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஈக்கால் துணையும் உதவாதார் நட்பென்னாம்?",
+      "words": [
+        {
+          "form": "ஈக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணையும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உதவாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நட்பென்னாம்?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "சேய்த்தானும் சென்று கொளல்வேண்டும், செய்விளைக்கும்",
+      "words": [
+        {
+          "form": "சேய்த்தானும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளல்வேண்டும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்விளைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "வாய்க்கால் அனையார் தொடர்பு.",
+      "words": [
+        {
+          "form": "வாய்க்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அனையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடர்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

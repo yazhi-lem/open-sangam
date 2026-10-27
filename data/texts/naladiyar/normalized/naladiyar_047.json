@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_047",
+  "poem": "naladiyar",
+  "number": 47,
+  "title": "தூய்தன்மை",
+  "heading": "1.5",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "ஊறி உவர்த்தக்க ஒன்பது வாய்ப்புலனும்\nகோதிக் குழம்பலைக்கும் கும்பத்தைப் - பேதை\nபெருந்தோளி பெய்வளாய் என்னுமீப் போர்த்த\nகருந்தோலால் கண்விளக்கப் பட்டு.",
+  "urai": null,
+  "english": "The body disgusting. The fool will address the earthen pot (the body), from which defilement oozes, which from nine disgusting outlets scatters pollution, and in which slimy liquids move to and fro—and say, 'O thou of the rounded arms,' ‘O thou with armlets decked, ‘—because it is made bright to his eyes by a covering of black skin.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஊறி உவர்த்தக்க ஒன்பது வாய்ப்புலனும்",
+      "words": [
+        {
+          "form": "ஊறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உவர்த்தக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒன்பது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்ப்புலனும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கோதிக் குழம்பலைக்கும் கும்பத்தைப் - பேதை",
+      "words": [
+        {
+          "form": "கோதிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழம்பலைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கும்பத்தைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேதை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பெருந்தோளி பெய்வளாய் என்னுமீப் போர்த்த",
+      "words": [
+        {
+          "form": "பெருந்தோளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெய்வளாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்னுமீப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போர்த்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கருந்தோலால் கண்விளக்கப் பட்டு.",
+      "words": [
+        {
+          "form": "கருந்தோலால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்விளக்கப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்டு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

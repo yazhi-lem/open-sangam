@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_132",
+  "poem": "naladiyar",
+  "number": 132,
+  "title": "கல்வி",
+  "heading": "2.14",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "இம்மை பயக்குமால் ஈயக் குறைவின்றால்\nதம்மை விளக்குமால் தாமுளராக் கேடின்றால்\nஎம்மை யுலகத்தும் யாம்காணேம் கல்விபோல்\nமம்மர் அறுக்கும் மருந்து.",
+  "urai": null,
+  "english": "The remedy for bewilderment Since in this world it yields fruit; since given it grows not less ; since it makes men illustrious; since it perishes not as long as (its possessors) themselves exist; in any world we see not any medicine that, like learning, removes the delusions of sense.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இம்மை பயக்குமால் ஈயக் குறைவின்றால்",
+      "words": [
+        {
+          "form": "இம்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயக்குமால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈயக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறைவின்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தம்மை விளக்குமால் தாமுளராக் கேடின்றால்",
+      "words": [
+        {
+          "form": "தம்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளக்குமால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாமுளராக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேடின்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "எம்மை யுலகத்தும் யாம்காணேம் கல்விபோல்",
+      "words": [
+        {
+          "form": "எம்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுலகத்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாம்காணேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்விபோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மம்மர் அறுக்கும் மருந்து.",
+      "words": [
+        {
+          "form": "மம்மர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறுக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மருந்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0050",
+  "poem": "thirukkural",
+  "number": 50,
+  "title": "இல்வாழ்க்கை",
+  "heading": "1.2.1",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உநற்யும்\nதெய்வத்துள் வைக்கப் படும்.",
+  "urai": null,
+  "english": "Who shares domestic life, by household virtues graced, Shall, mid the Gods, in heaven who dwell, be placed. ------------",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உநற்யும்",
+      "words": [
+        {
+          "form": "வையத்துள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்வாங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்பவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வான்உநற்யும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தெய்வத்துள் வைக்கப் படும்.",
+      "words": [
+        {
+          "form": "தெய்வத்துள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வைக்கப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

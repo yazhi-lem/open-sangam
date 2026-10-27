@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_072",
+  "poem": "naladiyar",
+  "number": 72,
+  "title": "பொறையுடைமை",
+  "heading": "1.8",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நேரல்லார் நீரல்ல சொல்லியக்கால் மற்றது\nதாரித் திருத்தல் தகுதிமற் - றோரும்\nபுகழ்மையாக் கொள்ளாது பொங்குநீர் ஞாலம்\nசமழ்மையாக் கொண்டு விடும்.",
+  "urai": null,
+  "english": "Insults from inferiors. When persons not our equals say unfitting things, to bear and to be still is worthy conduct. The world girt by foaming waters regards not a contrary course as praise-worthy, but as discreditable.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நேரல்லார் நீரல்ல சொல்லியக்கால் மற்றது",
+      "words": [
+        {
+          "form": "நேரல்லார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீரல்ல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லியக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மற்றது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தாரித் திருத்தல் தகுதிமற் - றோரும்",
+      "words": [
+        {
+          "form": "தாரித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திருத்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகுதிமற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றோரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "புகழ்மையாக் கொள்ளாது பொங்குநீர் ஞாலம்",
+      "words": [
+        {
+          "form": "புகழ்மையாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்ளாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொங்குநீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞாலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சமழ்மையாக் கொண்டு விடும்.",
+      "words": [
+        {
+          "form": "சமழ்மையாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

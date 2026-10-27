@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_299",
+  "poem": "naladiyar",
+  "number": 299,
+  "title": "மானம்",
+  "heading": "2.30",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நச்சியார்க் கீயாமை நாணன்று நாணாளும்\nஅச்சத்தால் நாணுதல் நாணன்றாம் - எச்சத்தின்\nமெல்லிய ராகித்தம் மேலாயார் செய்தது\nசொல்லா திருப்பது நாண்.",
+  "urai": null,
+  "english": "What is dishonouring. It is no shame (disgrace) not to (be able to give to those who desire it of us. The shrinking on account of fear (felt) day by day is not shame (modesty). But to become reduced in other ways, and not to [dare to] tell what injuries those who love us not have inflicted on us is shame (disgrace, or self-respect).",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நச்சியார்க் கீயாமை நாணன்று நாணாளும்",
+      "words": [
+        {
+          "form": "நச்சியார்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீயாமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாணன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாணாளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அச்சத்தால் நாணுதல் நாணன்றாம் - எச்சத்தின்",
+      "words": [
+        {
+          "form": "அச்சத்தால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாணுதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாணன்றாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எச்சத்தின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மெல்லிய ராகித்தம் மேலாயார் செய்தது",
+      "words": [
+        {
+          "form": "மெல்லிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராகித்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேலாயார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்தது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சொல்லா திருப்பது நாண்.",
+      "words": [
+        {
+          "form": "சொல்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திருப்பது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாண்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

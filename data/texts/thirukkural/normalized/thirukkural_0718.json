@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0718",
+  "poem": "thirukkural",
+  "number": 718,
+  "title": "அவையறிதல்",
+  "heading": "2.2.9",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உணர்வ துடையார்முன் சொல்லல் வளர்வதன்\nபாத்தியுள் நீர்சொரிந் தற்று.",
+  "urai": null,
+  "english": "To speak where understanding hearers you obtain, Is sprinkling water on the fields of growing grain!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உணர்வ துடையார்முன் சொல்லல் வளர்வதன்",
+      "words": [
+        {
+          "form": "உணர்வ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துடையார்முன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளர்வதன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பாத்தியுள் நீர்சொரிந் தற்று.",
+      "words": [
+        {
+          "form": "பாத்தியுள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்சொரிந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தற்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_103",
+  "poem": "naladiyar",
+  "number": 103,
+  "title": "பழவினை",
+  "heading": "1.11",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "வளம்பட வேண்டாதார் யார்யாரும் இல்லை\nஅளந்தன போகம் அவர்அவர் ஆற்றால்\nவிளங்காய் திரட்டினார் இல்லை, களங்கனியைக்\nகாரெனச் செய்தாரும் இல்.",
+  "urai": null,
+  "english": "Wishes are inoperative. Who would not see Prosperity? All seek her gifts; but as men's ways are, so each man's enjoyments are meted out. Who made the Vilam's apple round? Or who gave its dusky hue to the Kalam fruit ?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வளம்பட வேண்டாதார் யார்யாரும் இல்லை",
+      "words": [
+        {
+          "form": "வளம்பட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யார்யாரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அளந்தன போகம் அவர்அவர் ஆற்றால்",
+      "words": [
+        {
+          "form": "அளந்தன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போகம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவர்அவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆற்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "விளங்காய் திரட்டினார் இல்லை, களங்கனியைக்",
+      "words": [
+        {
+          "form": "விளங்காய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரட்டினார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களங்கனியைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "காரெனச் செய்தாரும் இல்.",
+      "words": [
+        {
+          "form": "காரெனச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்தாரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

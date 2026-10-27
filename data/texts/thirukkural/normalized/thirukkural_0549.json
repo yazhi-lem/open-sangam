@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0549",
+  "poem": "thirukkural",
+  "number": 549,
+  "title": "செங்கோன்மை",
+  "heading": "2.1.17",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "குடிபுறங் காத்தோம்பிக் குற்றம் கடிதல்\nவடுவன்று வேந்தன் தொழில்.",
+  "urai": null,
+  "english": "Abroad to guard, at home to punish, brings No just reproach; 'tis work assigned to kings.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "குடிபுறங் காத்தோம்பிக் குற்றம் கடிதல்",
+      "words": [
+        {
+          "form": "குடிபுறங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காத்தோம்பிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடிதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வடுவன்று வேந்தன் தொழில்.",
+      "words": [
+        {
+          "form": "வடுவன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேந்தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழில்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

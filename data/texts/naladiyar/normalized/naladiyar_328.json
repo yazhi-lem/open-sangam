@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_328",
+  "poem": "naladiyar",
+  "number": 328,
+  "title": "புல்லறிவாண்மை",
+  "heading": "2.33",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "சிறுகாலை யேதமக்குச் செல்வுழி வல்சி\nஇறுகிறுகத் தோட்கோப்புக் கொள்ளார் - இறுகிறுகிப்\nபின்னறிவாம் என்றிருக்கும் பேதையார் கைகாட்டும்\nபொன்னும் புளிவிளிங்கா யாம்.",
+  "urai": null,
+  "english": "The miser's death-bed. In the very earliest time (in early youth) they take not food for the journey which they must make (into another world), tying tightly the wallet on their shoulders ; but tying tightly (their treasure bags), they say, 'In after days we will learn wisdom;' the gold these idiots will indict with their hands (as legacies, when they are speechless, and in the grasp of death) will be as sour vilam fruit.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "சிறுகாலை யேதமக்குச் செல்வுழி வல்சி",
+      "words": [
+        {
+          "form": "சிறுகாலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யேதமக்குச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்வுழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வல்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "இறுகிறுகத் தோட்கோப்புக் கொள்ளார் - இறுகிறுகிப்",
+      "words": [
+        {
+          "form": "இறுகிறுகத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோட்கோப்புக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்ளார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இறுகிறுகிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பின்னறிவாம் என்றிருக்கும் பேதையார் கைகாட்டும்",
+      "words": [
+        {
+          "form": "பின்னறிவாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றிருக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேதையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கைகாட்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பொன்னும் புளிவிளிங்கா யாம்.",
+      "words": [
+        {
+          "form": "பொன்னும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புளிவிளிங்கா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாம்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

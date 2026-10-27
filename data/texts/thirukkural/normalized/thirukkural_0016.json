@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0016",
+  "poem": "thirukkural",
+  "number": 16,
+  "title": "வான்சிறப்பு",
+  "heading": "1.1.2",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "விசும்பின் துளிவீழின் அல்லால்மற் றாங்கே\nபசும்புல் தலைகாண்பு அரிது.",
+  "urai": null,
+  "english": "If from the clouds no drops of rain are shed. 'Tis rare to see green herb lift up its head.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "விசும்பின் துளிவீழின் அல்லால்மற் றாங்கே",
+      "words": [
+        {
+          "form": "விசும்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துளிவீழின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அல்லால்மற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றாங்கே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பசும்புல் தலைகாண்பு அரிது.",
+      "words": [
+        {
+          "form": "பசும்புல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைகாண்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அரிது.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

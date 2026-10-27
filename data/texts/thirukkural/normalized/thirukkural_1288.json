@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1288",
+  "poem": "thirukkural",
+  "number": 1288,
+  "title": "புணர்ச்சிவிதும்பல்",
+  "heading": "3.2.14",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "இளித்தக்க இன்னா செயினும் களித்தார்க்குக்\nகள்ளற்றே கள்வநின் மார்பு.",
+  "urai": null,
+  "english": "Though shameful ill it works, dear is the palm-tree wine To drunkards; traitor, so to me that breast of thine!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இளித்தக்க இன்னா செயினும் களித்தார்க்குக்",
+      "words": [
+        {
+          "form": "இளித்தக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்னா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களித்தார்க்குக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கள்ளற்றே கள்வநின் மார்பு.",
+      "words": [
+        {
+          "form": "கள்ளற்றே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கள்வநின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மார்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

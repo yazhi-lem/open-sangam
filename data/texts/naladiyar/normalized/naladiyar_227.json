@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_227",
+  "poem": "naladiyar",
+  "number": 227,
+  "title": "நட்பிற் பிழை பொறுத்தல்",
+  "heading": "2.23",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "இலங்குநீர்த் தண்சேர்ப்ப. இன்னா செயினும்\nகலந்து பழிகாணார் சான்றோர் - கலந்தபின்\nதீமை எடுத்துரைக்கும் திண்ணறி வில்லாதார்\nதாமும் அவரிற் கடை.",
+  "urai": null,
+  "english": "Those who forsake friends that have committed a fault are worse than they. Lord of the cool shore of the shining sea! The perfect ones when they have contracted an intimacy with any, see no faults in them, even if they do things that cause pain. Those who, being without stable wisdom, take up and tell out men's evil deeds after contracting an intimacy with them, are themselves worse than they.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இலங்குநீர்த் தண்சேர்ப்ப. இன்னா செயினும்",
+      "words": [
+        {
+          "form": "இலங்குநீர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்சேர்ப்ப.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்னா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கலந்து பழிகாணார் சான்றோர் - கலந்தபின்",
+      "words": [
+        {
+          "form": "கலந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பழிகாணார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சான்றோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலந்தபின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தீமை எடுத்துரைக்கும் திண்ணறி வில்லாதார்",
+      "words": [
+        {
+          "form": "தீமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எடுத்துரைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திண்ணறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வில்லாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தாமும் அவரிற் கடை.",
+      "words": [
+        {
+          "form": "தாமும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவரிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

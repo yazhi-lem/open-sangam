@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_199",
+  "poem": "naladiyar",
+  "number": 199,
+  "title": "தாளாண்மை",
+  "heading": "2.20",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "தீங்கரும் பீன்று திரள்கால் உளையலா஢\nதேங்கமழ் நாற்றம் இழந்தாஅங்கு - ஓங்கும்\nஉயர்குடி யுள்பிறப்பின் என்னாம் பெயர்பொறிக்கும்\nபேராண்மை இல்லாக் கடை.",
+  "urai": null,
+  "english": "High birth useless without lofty energies. Like the flowers on a rounded stalk, with hair like filaments that sweet cane bare, when the sweet fragrance they breathed is lost, what gain accrues from birth in a lofty noble house when energy that makes the name noteworthy, is wanting?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தீங்கரும் பீன்று திரள்கால் உளையலா஢",
+      "words": [
+        {
+          "form": "தீங்கரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பீன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரள்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உளையலா஢",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தேங்கமழ் நாற்றம் இழந்தாஅங்கு - ஓங்கும்",
+      "words": [
+        {
+          "form": "தேங்கமழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இழந்தாஅங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உயர்குடி யுள்பிறப்பின் என்னாம் பெயர்பொறிக்கும்",
+      "words": [
+        {
+          "form": "உயர்குடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுள்பிறப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்னாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயர்பொறிக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பேராண்மை இல்லாக் கடை.",
+      "words": [
+        {
+          "form": "பேராண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

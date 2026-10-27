@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1083",
+  "poem": "thirukkural",
+  "number": 1083,
+  "title": "தகையணங்குறுத்தல்",
+  "heading": "3.1.1",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பண்டறியேன் கூற்றென் பதனை இனியறிந்தேன்\nபெண்டகையால் பேரமர்க் கட்டு.",
+  "urai": null,
+  "english": "Death's form I formerly Knew not; but now 'tis plain to me; He comes in lovely maiden's guise, With soul-subduing eyes.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பண்டறியேன் கூற்றென் பதனை இனியறிந்தேன்",
+      "words": [
+        {
+          "form": "பண்டறியேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூற்றென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பதனை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இனியறிந்தேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பெண்டகையால் பேரமர்க் கட்டு.",
+      "words": [
+        {
+          "form": "பெண்டகையால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேரமர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கட்டு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

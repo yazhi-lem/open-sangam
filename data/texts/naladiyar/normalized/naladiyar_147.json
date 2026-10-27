@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_147",
+  "poem": "naladiyar",
+  "number": 147,
+  "title": "குடிப்பிறப்பு",
+  "heading": "2.15",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "செய்கை யழிந்து சிதல்மண்டிற் றாயினும்\nபெய்யா ஒருசிறை பேரில் உடைத்தாகும்\nஎவ்வ முழந்தக் கடைத்துங் குடிப்பிறந்தார்\nசெய்வர் செயற்பா லவை.",
+  "urai": null,
+  "english": "High-born men do their duty always. Though its frame-work has perished, and thronging white ants infest it, in a spacious mansion some room will still afford shelter from the rain. Thus, although want annoys them, the nobly born even yet will do what should be done.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "செய்கை யழிந்து சிதல்மண்டிற் றாயினும்",
+      "words": [
+        {
+          "form": "செய்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யழிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிதல்மண்டிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றாயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பெய்யா ஒருசிறை பேரில் உடைத்தாகும்",
+      "words": [
+        {
+          "form": "பெய்யா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒருசிறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேரில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடைத்தாகும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "எவ்வ முழந்தக் கடைத்துங் குடிப்பிறந்தார்",
+      "words": [
+        {
+          "form": "எவ்வ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முழந்தக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடைத்துங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடிப்பிறந்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "செய்வர் செயற்பா லவை.",
+      "words": [
+        {
+          "form": "செய்வர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செயற்பா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லவை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

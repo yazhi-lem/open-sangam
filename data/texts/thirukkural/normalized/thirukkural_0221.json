@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0221",
+  "poem": "thirukkural",
+  "number": 221,
+  "title": "ஈகை",
+  "heading": "1.2.19",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வறியார்க்கொன்று ஈவதே ஈகைமற் றெல்லாம்\nகுறியெதிர்ப்பை நீர துடைத்து.",
+  "urai": null,
+  "english": "Call that a gift to needy men thou dost dispense, All else is void of good, seeking for recompense.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வறியார்க்கொன்று ஈவதே ஈகைமற் றெல்லாம்",
+      "words": [
+        {
+          "form": "வறியார்க்கொன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈவதே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈகைமற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றெல்லாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "குறியெதிர்ப்பை நீர துடைத்து.",
+      "words": [
+        {
+          "form": "குறியெதிர்ப்பை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துடைத்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

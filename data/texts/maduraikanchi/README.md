@@ -8,10 +8,10 @@ Pandyan king Nedunj Cheliyan and the city of Madurai.
 
 | Step | Status |
 |------|--------|
-| Scraping | ⚠️ Partial — 63 sections cover lines 1–782, but only 634 lines are present: the source pages omit 148 lines in 15 sections (see `data/schema/known_line_gaps.json`; needs a second, licence-cleared source) |
+| Scraping | ✅ Complete — 63 sections cover lines 1–782, all 782 lines present (missing source lines filled from Project Madurai `pmuni0496`) |
 | Normalization (OKF) | ✅ Done — `maduraikanchi.json` + `datapackage.json` |
 | Tamil Prose Urai | ✅ Done — 60/63 sections have prose translation (scraped) |
-| AI Translation (English) | ⬜ Pending — run `translate_with_gemini --lang english` |
+| English translation | ⬜ Pending — needs a licence-cleared translation source (see `docs/LIBRARY_ROADMAP.md`) |
 | Scholar Verification | ⬜ Pending |
 
 ## Running the pipeline
@@ -22,8 +22,8 @@ pip install -r requirements.txt
 cp .env.example .env  # add your GEMINI_API_KEY
 
 python -m scraper.scrape_maduraikanchi
+python -m scraper.scrape_projectmadurai --poem maduraikanchi  # fills gaps + repairs line ranges
 python -m normalizer.normalize_to_json --poem maduraikanchi
-python -m ai.translate_with_gemini --poem maduraikanchi --lang both
 ```
 
 Raw scraped files land in `raw/` (git-ignored).

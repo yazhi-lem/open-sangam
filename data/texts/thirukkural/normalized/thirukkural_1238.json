@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1238",
+  "poem": "thirukkural",
+  "number": 1238,
+  "title": "பொழுதுகண்டிரங்கல்",
+  "heading": "3.2.8",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "முயங்கிய கைகளை ஊக்கப் பசந்தது\nபைந்தொடிப் பேதை நுதல்.",
+  "urai": null,
+  "english": "One day the fervent pressure of embracing arms I checked, Grew wan the forehead of the maid with golden armlet decked.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "முயங்கிய கைகளை ஊக்கப் பசந்தது",
+      "words": [
+        {
+          "form": "முயங்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கைகளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊக்கப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பசந்தது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பைந்தொடிப் பேதை நுதல்.",
+      "words": [
+        {
+          "form": "பைந்தொடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேதை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுதல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0720",
+  "poem": "thirukkural",
+  "number": 720,
+  "title": "அவையறிதல்",
+  "heading": "2.2.9",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "அங்கணத்துள் உக்க அமிழ்தற்றால் தங்கணத்தார்\nஅல்லார்முன் கோட்டி கொளல்.",
+  "urai": null,
+  "english": "Ambrosia in the sewer spilt, is word Spoken in presence of the alien herd. -------------",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அங்கணத்துள் உக்க அமிழ்தற்றால் தங்கணத்தார்",
+      "words": [
+        {
+          "form": "அங்கணத்துள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அமிழ்தற்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தங்கணத்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அல்லார்முன் கோட்டி கொளல்.",
+      "words": [
+        {
+          "form": "அல்லார்முன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோட்டி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

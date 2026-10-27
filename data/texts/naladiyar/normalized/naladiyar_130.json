@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_130",
+  "poem": "naladiyar",
+  "number": 130,
+  "title": "தீவினையச்சம்",
+  "heading": "1.13",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "மனைப்பாசம் கைவிடாய் மக்கட்கென் றேங்கி\nஎனைத்தூழி வாழ்தியோ, நெஞ்சே - எனைத்தும்\nசிறுவரையே யாயினும் செய்தநன் றல்லால்\nஉறுபயனோ இல்லை உயிர்க்கு.",
+  "urai": null,
+  "english": "To do good is life's gain. O mind! thou leavest not the bonds of home. How many cycles, pray, with thou live yearning still for children? Save the good he has done, however small its measure may be, there is no true result to any living soul. அறத்துப்பால் முற்றும்.   End of Part I. பகுதி 2. பொருட்பால் /  PART II. ON WEALTH",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மனைப்பாசம் கைவிடாய் மக்கட்கென் றேங்கி",
+      "words": [
+        {
+          "form": "மனைப்பாசம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கைவிடாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மக்கட்கென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றேங்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "எனைத்தூழி வாழ்தியோ, நெஞ்சே - எனைத்தும்",
+      "words": [
+        {
+          "form": "எனைத்தூழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்தியோ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எனைத்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "சிறுவரையே யாயினும் செய்தநன் றல்லால்",
+      "words": [
+        {
+          "form": "சிறுவரையே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்தநன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றல்லால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "உறுபயனோ இல்லை உயிர்க்கு.",
+      "words": [
+        {
+          "form": "உறுபயனோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உயிர்க்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0858",
+  "poem": "thirukkural",
+  "number": 858,
+  "title": "இகல்",
+  "heading": "2.3.13",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "இகலிற்கு எதிர்சாய்தல் ஆக்கம் அதனை\nமிக்லூக்கின் ஊக்குமாம் கேடு.",
+  "urai": null,
+  "english": "'Tis gain to turn the soul from enmity; Ruin reigns where this hath mastery.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இகலிற்கு எதிர்சாய்தல் ஆக்கம் அதனை",
+      "words": [
+        {
+          "form": "இகலிற்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எதிர்சாய்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆக்கம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அதனை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மிக்லூக்கின் ஊக்குமாம் கேடு.",
+      "words": [
+        {
+          "form": "மிக்லூக்கின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊக்குமாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேடு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

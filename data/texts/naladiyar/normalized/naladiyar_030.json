@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_030",
+  "poem": "naladiyar",
+  "number": 30,
+  "title": "யாக்கை நிலையாமை",
+  "heading": "1.3",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கேளாதே வந்து கிளைகளாய் இல்தோன்றி\nவாளாதே போவரால் மாந்தர்கள் - வாளாதே\nசேக்கை மரன்ஒழியச் சேண்நீங்கு புள்போல\nயாக்கை தமர்க்கொழிய நீத்து.",
+  "urai": null,
+  "english": "All human relationships merely temporary. Unasked men come, appear in the home as kinsmen, and then silently go. As the bird silently deserts the tree where its nest yet remains, and goes far off, so these leave but their body to their friends.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கேளாதே வந்து கிளைகளாய் இல்தோன்றி",
+      "words": [
+        {
+          "form": "கேளாதே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளைகளாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்தோன்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வாளாதே போவரால் மாந்தர்கள் - வாளாதே",
+      "words": [
+        {
+          "form": "வாளாதே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போவரால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாந்தர்கள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாளாதே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "சேக்கை மரன்ஒழியச் சேண்நீங்கு புள்போல",
+      "words": [
+        {
+          "form": "சேக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரன்ஒழியச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேண்நீங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புள்போல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "யாக்கை தமர்க்கொழிய நீத்து.",
+      "words": [
+        {
+          "form": "யாக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தமர்க்கொழிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீத்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

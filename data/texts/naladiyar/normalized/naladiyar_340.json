@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_340",
+  "poem": "naladiyar",
+  "number": 340,
+  "title": "பேதைமை",
+  "heading": "2.34",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கற்றனவும் கண்ணகன்ற சாயலும் இற்பிறப்பும்\nபக்கத்தார் பாராட்டப் பாடெய்தும் தானுரைப்பின்\nமைத்துனர் பல்கி மருந்தின் தணியாத\nபித்தனென் றெள்ளப் படும்.",
+  "urai": null,
+  "english": "Self-laudation. The learning a man has acquired, his world - renowned excellence, and his nobility of birth, will gain for him respect when the bystanders celebrate them; but if he himself proclaim them, the young kinsmen crowding around will deride him as one afflicted with a mania not to be mitigated by any medicine.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கற்றனவும் கண்ணகன்ற சாயலும் இற்பிறப்பும்",
+      "words": [
+        {
+          "form": "கற்றனவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணகன்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாயலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இற்பிறப்பும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பக்கத்தார் பாராட்டப் பாடெய்தும் தானுரைப்பின்",
+      "words": [
+        {
+          "form": "பக்கத்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாராட்டப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாடெய்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தானுரைப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மைத்துனர் பல்கி மருந்தின் தணியாத",
+      "words": [
+        {
+          "form": "மைத்துனர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மருந்தின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தணியாத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பித்தனென் றெள்ளப் படும்.",
+      "words": [
+        {
+          "form": "பித்தனென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றெள்ளப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

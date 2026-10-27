@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1295",
+  "poem": "thirukkural",
+  "number": 1295,
+  "title": "நெஞ்சொடுபுலத்தல்",
+  "heading": "3.2.15",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பெறாஅமை அஞ்சும் பெறின்பிரிவு அஞ்சும்\nஅறாஅ இடும்பைத்தென் நெஞ்சு.",
+  "urai": null,
+  "english": "I fear I shall not gain, I fear to lose him when I gain; And thus my heart endures unceasing pain.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பெறாஅமை அஞ்சும் பெறின்பிரிவு அஞ்சும்",
+      "words": [
+        {
+          "form": "பெறாஅமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஞ்சும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறின்பிரிவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஞ்சும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அறாஅ இடும்பைத்தென் நெஞ்சு.",
+      "words": [
+        {
+          "form": "அறாஅ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இடும்பைத்தென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

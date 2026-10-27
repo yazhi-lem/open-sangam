@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0599",
+  "poem": "thirukkural",
+  "number": 599,
+  "title": "ஊக்கமுடைமை",
+  "heading": "2.1.22",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பரியது கூர்ங்கோட்டது ஆயினும் யானை\n஦வ்ருஉம் புலிதாக் குறின்.",
+  "urai": null,
+  "english": "Huge bulk of elephant with pointed tusk all armed, When tiger threatens shrinks away alarmed!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பரியது கூர்ங்கோட்டது ஆயினும் யானை",
+      "words": [
+        {
+          "form": "பரியது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூர்ங்கோட்டது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "஦வ்ருஉம் புலிதாக் குறின்.",
+      "words": [
+        {
+          "form": "஦வ்ருஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலிதாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறின்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

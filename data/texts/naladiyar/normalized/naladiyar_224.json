@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_224",
+  "poem": "naladiyar",
+  "number": 224,
+  "title": "நட்பிற் பிழை பொறுத்தல்",
+  "heading": "2.23",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "மடிதிரை தந்திட்ட வான்கதிர் முத்தம்\nகடுவசை நாவாய் கரையலைக்குஞ் சேர்ப்ப\nவிடுதற் கா஢யா ரியல்பிலரேல் நெஞ்சம்\nசுடுதற்கு மூட்டிய தீ.",
+  "urai": null,
+  "english": "To be wroth with those we love, is like fire in the breast! Lord of the shore where pearls of purest lustre are thrown up by circling waves, and where swift darting boats are borne through the surf !—when friends who we may not leave have alien hearts, it is as a scorching fire enkindled in the soul.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மடிதிரை தந்திட்ட வான்கதிர் முத்தம்",
+      "words": [
+        {
+          "form": "மடிதிரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தந்திட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வான்கதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முத்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கடுவசை நாவாய் கரையலைக்குஞ் சேர்ப்ப",
+      "words": [
+        {
+          "form": "கடுவசை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாவாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கரையலைக்குஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்ப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "விடுதற் கா஢யா ரியல்பிலரேல் நெஞ்சம்",
+      "words": [
+        {
+          "form": "விடுதற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கா஢யா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரியல்பிலரேல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சுடுதற்கு மூட்டிய தீ.",
+      "words": [
+        {
+          "form": "சுடுதற்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூட்டிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீ.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

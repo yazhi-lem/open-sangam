@@ -2,7 +2,7 @@
   "id": "malaipadukadam_29",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "செல்லும் தேஎத்து பெயர் மருங்கு அறிமார்\nகல் எறிந்து எழுதிய நல் அரை மராஅத்த\nகடவுள் ஓங்கிய காடு ஏசு கவலை\nஒட்டாது அகன்ற ஒன்னா தெவ்வர்\nசுட்டினும் பனிக்கும் சுரம் தவ பலவே",
+  "sangamTamil": "செல்லும் தேஎத்து பெயர் மருங்கு அறிமார்\nகல் எறிந்து எழுதிய நல் அரை மராஅத்த\nகடவுள் ஓங்கிய காடு ஏசு கவலை\nஒட்டாது அகன்ற ஒன்னா தெவ்வர்\nசுட்டினும் பனிக்கும் சுரம் தவ பலவே\nதேம்பாய் கண்ணித் தேர்வீசு கவிகை\nயோம்பா வள்ளற் படர்ந்திகு மெனினே\nமேம்பட வெறுத்தவவன் றொஃறிணை மூதூ\nராங்கன மற்றே நம்ம னோர்க்கே\nயசைவுழி யசைஇ யஞ்சாது கழிமின்",
   "urai": "இப்பாதை எந்த ஊருக்குச் செல்கிறது என்பதை மரத்தில் கல்லால் கொட்டி எழுதி வைத்திருந்தனர். பாதைகள் பிரியும் சந்தியின் நடுவில் கைகாட்டி மரங்கள் மட்டும் அல்லாமல் பலரும் போற்றிப் புகழும் கடவுளைச் செதுக்கிய காட்டு மரங்களும் இருந்தன. அவற்றின் பெயரைச் சொன்ன மாத்திரத்திலேயே பகைவர்கள் நடுங்குவர். இப்படிப்பட்ட காட்டுப் பாதைகள் பல இருந்தன.",
   "english": null,
   "lines": [
@@ -210,11 +210,181 @@
           "gloss": "This is a plural noun meaning 'many', with the emphatic particle '-ஏ', signifying 'indeed many' or 'there were many', referring to the numerous difficult paths."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "தேம்பாய் கண்ணித் தேர்வீசு கவிகை",
+      "words": [
+        {
+          "form": "தேம்பாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேர்வீசு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவிகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "யோம்பா வள்ளற் படர்ந்திகு மெனினே",
+      "words": [
+        {
+          "form": "யோம்பா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வள்ளற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படர்ந்திகு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மெனினே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "மேம்பட வெறுத்தவவன் றொஃறிணை மூதூ",
+      "words": [
+        {
+          "form": "மேம்பட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெறுத்தவவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றொஃறிணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூதூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "ராங்கன மற்றே நம்ம னோர்க்கே",
+      "words": [
+        {
+          "form": "ராங்கன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மற்றே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நம்ம",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னோர்க்கே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "யசைவுழி யசைஇ யஞ்சாது கழிமின்",
+      "words": [
+        {
+          "form": "யசைவுழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யசைஇ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யஞ்சாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்29.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்29.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 29,
   "title": "நன்னனுடைய பகைவர் இருக்கும் அரு நிலங்கள்",

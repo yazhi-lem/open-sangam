@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_390",
+  "poem": "naladiyar",
+  "number": 390,
+  "title": "கற்புடை மகளிர்",
+  "heading": "2.39",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "அரும்பவிழ் தாரினான் எம்அருளும் என்று\nபெரும்பொய் உரையாதி, பாண - கரும்பின்\nகடைக்கண் அனையம்நாம் ஊரற் கதனால்\nஇடைக்கண் அனையார்க் குரை.",
+  "urai": null,
+  "english": "The pining wife 'Minstrel , utter not a gross falsehood, saying that he who wears a garland of opening buds will favour us!’ ‘To the lord of the town we are as the (tasteless) tip of the sugar-cane ; therefore, tell (such a tale) to them who are like its middle (sweet, juicy) joints.' பொருட்பால் முற்றும் /  End of Part II பகுதி 3 . காமத்துப்பால் /  PART III. ON LOVE (OR PLEASURE)",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அரும்பவிழ் தாரினான் எம்அருளும் என்று",
+      "words": [
+        {
+          "form": "அரும்பவிழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாரினான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எம்அருளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பெரும்பொய் உரையாதி, பாண - கரும்பின்",
+      "words": [
+        {
+          "form": "பெரும்பொய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உரையாதி,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாண",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கரும்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கடைக்கண் அனையம்நாம் ஊரற் கதனால்",
+      "words": [
+        {
+          "form": "கடைக்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அனையம்நாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊரற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதனால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "இடைக்கண் அனையார்க் குரை.",
+      "words": [
+        {
+          "form": "இடைக்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அனையார்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குரை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

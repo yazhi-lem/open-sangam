@@ -2,7 +2,7 @@
   "id": "pattinappalai_22",
   "poem": "pattinappalai",
   "tinai": "unknown",
-  "sangamTamil": "பெற்றவை மகிழ்தல் செய்யான், செற்றோர்\nகடி அரண் தொலைத்த கதவு கொல் மருப்பின்\nமுடி உடைக் கருந்தலை புரட்டும் முன் தாள்\nஉகிர் உடை அடிய ஓங்கு எழில் யானை,\nவடி மணிப் புரவியொடு, வயவர் வீழப்",
+  "sangamTamil": "பெற்றவை மகிழ்தல் செய்யான், செற்றோர்\nகடி அரண் தொலைத்த கதவு கொல் மருப்பின்\nமுடி உடைக் கருந்தலை புரட்டும் முன் தாள்\nஉகிர் உடை அடிய ஓங்கு எழில் யானை,\nவடி மணிப் புரவியொடு, வயவர் வீழப்\nபெருநல் வானத்துப் பருந்துலாய் நடப்பத்\nதூறிவர் துறுகற் போலப்போர் வேட்டு\nவேறுபல் பூளையொ டுழிஞை சூடிப்\nபேய்க்க ண‌ன்ன பிளிறுகடி முரச\nமாக்க ண‌கலறை ய‌திர்வன முழங்க\nமுனைகெடச் சென்று முன்சம முருக்கித்\nதலைதவச் சென்று தண்பணை யெடுப்பி",
   "urai": "கரிகாலனுக்கு அரசு போர் வெற்றியால் கிடைத்தது - அரசுத்தாயம் பெற்ற மகிழ்வோடு திருமாவளவன் அமையவில்லை. அவனை அழிக்க முற்பட்டோரின் அரண்களைத் தொலைத்தான். வளவனின் யானை அவனது பகைவரின் முடிபுனைந்த தலைகளைத் தன் முன்னங்கால் நகங்களால் புரட்டியது. பகைவரின் யானை, புரவி, வயவர் அனைவரும் வீழ்ந்தனர். பெயர் விளக்கம் : கரியின் காலால் வளம் பெற்ற வளவன். அதனால் கரிகாலன் எனப்பட்டான். மா = கரிமா = யானை, திருவை மாவால் பெற்ற வளவன் = திருமாவளவன். சான்று இங்குக் கூறப்பட்டுள்ள யானைப்போர்.",
   "english": null,
   "lines": [
@@ -224,11 +224,249 @@
           "gloss": "so as to fall or to be defeated, indicating the complete collapse and defeat of the enemy forces."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "பெருநல் வானத்துப் பருந்துலாய் நடப்பத்",
+      "words": [
+        {
+          "form": "பெருநல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வானத்துப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பருந்துலாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நடப்பத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "தூறிவர் துறுகற் போலப்போர் வேட்டு",
+      "words": [
+        {
+          "form": "தூறிவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறுகற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலப்போர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேட்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "வேறுபல் பூளையொ டுழிஞை சூடிப்",
+      "words": [
+        {
+          "form": "வேறுபல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூளையொ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டுழிஞை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "பேய்க்க ண‌ன்ன பிளிறுகடி முரச",
+      "words": [
+        {
+          "form": "பேய்க்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ண‌ன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிளிறுகடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முரச",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "மாக்க ண‌கலறை ய‌திர்வன முழங்க",
+      "words": [
+        {
+          "form": "மாக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ண‌கலறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ய‌திர்வன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முழங்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "முனைகெடச் சென்று முன்சம முருக்கித்",
+      "words": [
+        {
+          "form": "முனைகெடச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முன்சம",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முருக்கித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "தலைதவச் சென்று தண்பணை யெடுப்பி",
+      "words": [
+        {
+          "form": "தலைதவச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்பணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யெடுப்பி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/paddinappalai/paddinappalai-பட்டினப்பாலை22.html",
+  "source": "http://www.sangathamizh.com/10paddu/paddinappalai/paddinappalai-பட்டினப்பாலை22.html; Project Madurai pmuni0479",
   "verified": false,
   "sectionNumber": 22,
   "title": "திருமாவளவனது போர்த்திறன்",

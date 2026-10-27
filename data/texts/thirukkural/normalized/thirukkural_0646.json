@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0646",
+  "poem": "thirukkural",
+  "number": 646,
+  "title": "சொல்வன்மை",
+  "heading": "2.2.2",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வேட்பத்தாஞ் சொல்லிப் பிறர்சொல் பயன்கோடல்\nமாட்சியின் மாசற்றார் கோள்.",
+  "urai": null,
+  "english": "Charming each hearer's ear, of others' words to seize the sense, Is method wise of men of spotless excellence.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வேட்பத்தாஞ் சொல்லிப் பிறர்சொல் பயன்கோடல்",
+      "words": [
+        {
+          "form": "வேட்பத்தாஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறர்சொல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயன்கோடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மாட்சியின் மாசற்றார் கோள்.",
+      "words": [
+        {
+          "form": "மாட்சியின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாசற்றார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோள்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

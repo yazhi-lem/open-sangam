@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1148",
+  "poem": "thirukkural",
+  "number": 1148,
+  "title": "அலரறிவுறுத்தல்",
+  "heading": "3.1.7",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "நெய்யால் எரிநுதுப்பேம் என்றற்றால் கெளவையால்\nகாமம் நுதுப்பேம் எனல்.",
+  "urai": null,
+  "english": "With butter-oil extinguish fire! 'Twill prove Harder by scandal to extinguish love.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நெய்யால் எரிநுதுப்பேம் என்றற்றால் கெளவையால்",
+      "words": [
+        {
+          "form": "நெய்யால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எரிநுதுப்பேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றற்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெளவையால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "காமம் நுதுப்பேம் எனல்.",
+      "words": [
+        {
+          "form": "காமம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுதுப்பேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எனல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

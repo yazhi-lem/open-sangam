@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0966",
+  "poem": "thirukkural",
+  "number": 966,
+  "title": "மானம்",
+  "heading": "2.4.2",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "புகழ்இன்றால் புத்தேள்நாட்டு உய்யாதால் என்மற்று\nஇகழ்வார்பின் சென்று நிலை.",
+  "urai": null,
+  "english": "It yields no praise, nor to the land of Gods throws wide the gate: Why follow men who scorn, and at their bidding wait?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "புகழ்இன்றால் புத்தேள்நாட்டு உய்யாதால் என்மற்று",
+      "words": [
+        {
+          "form": "புகழ்இன்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புத்தேள்நாட்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உய்யாதால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்மற்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "இகழ்வார்பின் சென்று நிலை.",
+      "words": [
+        {
+          "form": "இகழ்வார்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

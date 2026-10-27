@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_357",
+  "poem": "naladiyar",
+  "number": 357,
+  "title": "கயமை",
+  "heading": "2.36",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "ஒருநன்றி செய்தவர்க் கொன்றி யெழுந்த\nபிழைநூறும் சான்றோர் பொறுப்பர் - கயவர்க்கு\nஎழுநூறு நன்றிசெய் தொன்றுதீ தாயின்\nஎழுநூறும் தீதாய் விடும்.",
+  "urai": null,
+  "english": "The good are grateful; the base ungrateful and malignant. The good attach themselves to those that have done them one act of kindness, and forgive a hundred wrongs that arise. The base receive seven hundred benefits, but one wrong will turn them all to evil.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஒருநன்றி செய்தவர்க் கொன்றி யெழுந்த",
+      "words": [
+        {
+          "form": "ஒருநன்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்தவர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொன்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யெழுந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பிழைநூறும் சான்றோர் பொறுப்பர் - கயவர்க்கு",
+      "words": [
+        {
+          "form": "பிழைநூறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சான்றோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொறுப்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கயவர்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "எழுநூறு நன்றிசெய் தொன்றுதீ தாயின்",
+      "words": [
+        {
+          "form": "எழுநூறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்றிசெய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொன்றுதீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "எழுநூறும் தீதாய் விடும்.",
+      "words": [
+        {
+          "form": "எழுநூறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீதாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

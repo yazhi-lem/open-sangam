@@ -6,7 +6,7 @@
   "lineStart": 616,
   "lineEnd": 620,
   "tinai": "palai",
-  "sangamTamil": "உரையும் பாட்டும் ஆட்டும் விரைஇ\nவேறுவேறு கம்பலை வெறிகொள்பு மயங்கிப்",
+  "sangamTamil": "உரையும் பாட்டும் ஆட்டும் விரைஇ\nவேறுவேறு கம்பலை வெறிகொள்பு மயங்கிப்\nபேரிசை நன்னன் பெறும்பெயர் நன்னாட்\nசேரி விழவி னார்ப்பெழுந் தாங்கு\nமுந்தை யாமஞ் சென்ற பின்றைப்",
   "urai": "சாலினி ஆட்டம் குரவை எனப்படும். வேலன் ஆட்டம் தழூஉ எனப்படும். இந்த இருபாலார் ஆட்டத்தையும் வெறி என்பர். வெறியாட்டத்தின்போது இடையிடையே பேசுவார்கள், பாடுவார்கள், ஆடுவார்கள். எனவே இதனை வெறிக்கூத்து என்றும் வழங்குவர்.",
   "english": null,
   "lines": [
@@ -77,11 +77,113 @@
           "gloss": "The word 'மயங்கிப்' is a past participle meaning 'having mingled' or 'having become confused/agitated,' indicating that the various commotions were intertwined and created a state of disarray or intense activity."
         }
       ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பேரிசை நன்னன் பெறும்பெயர் நன்னாட்",
+      "words": [
+        {
+          "form": "பேரிசை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்னன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறும்பெயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்னாட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சேரி விழவி னார்ப்பெழுந் தாங்கு",
+      "words": [
+        {
+          "form": "சேரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விழவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னார்ப்பெழுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "முந்தை யாமஞ் சென்ற பின்றைப்",
+      "words": [
+        {
+          "form": "முந்தை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாமஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பின்றைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி53.html",
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி53.html; Project Madurai pmuni0496",
   "verified": false,
   "etymologyMeta": {
     "provider": "openrouter",

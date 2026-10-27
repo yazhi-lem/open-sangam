@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0322",
+  "poem": "thirukkural",
+  "number": 322,
+  "title": "கொல்லாமை",
+  "heading": "1.3.9",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பகுத்துண்டு பல்லுயிர் ஓம்புதல் நூலோர்\nதொகுத்தவற்றுள் எல்லாந் தலை.",
+  "urai": null,
+  "english": "Let those that need partake your meal; guard every-thing that lives; This the chief and sum of lore that hoarded wisdom gives.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பகுத்துண்டு பல்லுயிர் ஓம்புதல் நூலோர்",
+      "words": [
+        {
+          "form": "பகுத்துண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்லுயிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓம்புதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நூலோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தொகுத்தவற்றுள் எல்லாந் தலை.",
+      "words": [
+        {
+          "form": "தொகுத்தவற்றுள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எல்லாந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

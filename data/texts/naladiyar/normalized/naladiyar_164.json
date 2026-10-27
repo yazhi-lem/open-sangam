@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_164",
+  "poem": "naladiyar",
+  "number": 164,
+  "title": "பெரியாரைப் பிழையாமை",
+  "heading": "2.17",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "விரிநிற நாகம் விடருள தேனும்\nஉருமின் கடுஞ்சினம் சேணின்றும் உட்கும்\nஅருமை யுடைய அரண்சேர்ந்தும் உய்யார்\nபெருமை யுடையார் செறின்.",
+  "urai": null,
+  "english": "None safe from the wrath of the great. The serpent rich of hue, though it dwell in the mountain-cleft, from far is frighted by the thunderbolt's fierce wrath; so men escape not though hid in strongholds hard to reach, when those great in virtue are wroth.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "விரிநிற நாகம் விடருள தேனும்",
+      "words": [
+        {
+          "form": "விரிநிற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாகம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடருள",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேனும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "உருமின் கடுஞ்சினம் சேணின்றும் உட்கும்",
+      "words": [
+        {
+          "form": "உருமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடுஞ்சினம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேணின்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உட்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "அருமை யுடைய அரண்சேர்ந்தும் உய்யார்",
+      "words": [
+        {
+          "form": "அருமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுடைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அரண்சேர்ந்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உய்யார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பெருமை யுடையார் செறின்.",
+      "words": [
+        {
+          "form": "பெருமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுடையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செறின்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1026",
+  "poem": "thirukkural",
+  "number": 1026,
+  "title": "குடிசெயல்வகை",
+  "heading": "2.4.8",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "நல்லாண்மை என்பது ஒருவற்குத் தான்பிறந்த\nஇல்லாண்மை ஆக்கிக் கொளல்.",
+  "urai": null,
+  "english": "Of virtuous manliness the world accords the praise To him who gives his powers, the house from which he sprang to raise.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நல்லாண்மை என்பது ஒருவற்குத் தான்பிறந்த",
+      "words": [
+        {
+          "form": "நல்லாண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்பது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒருவற்குத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தான்பிறந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "இல்லாண்மை ஆக்கிக் கொளல்.",
+      "words": [
+        {
+          "form": "இல்லாண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆக்கிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

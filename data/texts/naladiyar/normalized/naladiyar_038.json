@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_038",
+  "poem": "naladiyar",
+  "number": 38,
+  "title": "அறன் வலியுறுத்தல்",
+  "heading": "1.4",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "உறக்கும் துணையதோர் ஆலம்வித் தீண்டி\nஇறப்ப நிழற்பயந் தாஅங்கு - அறப்பயனும்\nதான்சிறி தாயினும் தக்கார்கைப் பட்டக்கால்\nவான்சிறிதாப் போர்த்து விடும்.",
+  "urai": null,
+  "english": "A benefit conferred by the worthy on the worthy. The banyan seed, though it be minute as one might see in dreams, grows to a mighty tree of amplest shade; so gifts from a virtuous hand, received by a worthy hand, though small, will hide the diminish'd heavens.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உறக்கும் துணையதோர் ஆலம்வித் தீண்டி",
+      "words": [
+        {
+          "form": "உறக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணையதோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆலம்வித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீண்டி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "இறப்ப நிழற்பயந் தாஅங்கு - அறப்பயனும்",
+      "words": [
+        {
+          "form": "இறப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிழற்பயந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாஅங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறப்பயனும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தான்சிறி தாயினும் தக்கார்கைப் பட்டக்கால்",
+      "words": [
+        {
+          "form": "தான்சிறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தக்கார்கைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்டக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "வான்சிறிதாப் போர்த்து விடும்.",
+      "words": [
+        {
+          "form": "வான்சிறிதாப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போர்த்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

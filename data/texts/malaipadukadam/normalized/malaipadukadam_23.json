@@ -2,7 +2,7 @@
   "id": "malaipadukadam_23",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "பாடு இன் அருவி பயம் கெழு மீமிசை\nகாடு காத்து உறையும் கானவர் உளரே\nநிலை துறை வழீஇய மதன் அழி மாக்கள்\nபுனல் படு பூசலின் விரைந்து வல் எய்தி",
+  "sangamTamil": "பாடு இன் அருவி பயம் கெழு மீமிசை\nகாடு காத்து உறையும் கானவர் உளரே\nநிலை துறை வழீஇய மதன் அழி மாக்கள்\nபுனல் படு பூசலின் விரைந்து வல் எய்தி\nயுண்டற் கினிய பழனுங் கண்டோர்\nமலைதற் கினிய பூவுங் காட்டி\nயூறு நிரம்பிய வாறவர் முந்துற\nநும்மி னெஞ்சத் தவலம் வீட\nவிம்மென் கடும்போ டினியி ராகுவி\nரறிஞர் கூறிய மாதிரங் கைக்கொள்பு\nகுறியவு நெடியவு மூழிழிபு புதுவோர்\nநோக்கினும் பனிக்கு நோய்வகூ ரடுக்கத்\nதலர்தாய வரிநிழ லசையினி ரிருப்பிற்\nபலதிறம் பெயர்பவை கேட்குவிர் மாதோ",
   "urai": "வெயில் படாத மரமடர்ந்த காடாயினும், மக்கள் நடமாட்டம் இல்லாத நேரத்திலும் மானைத் தேடிக்கொண்டு குறவர்கள் வில்லும் கையுமாக அலைவர். அவர்களே திசை தடுமாறும் ஞாயிறு தெரியாக் கானகம் அது. அக் குன்றங்களுக்குச் சென்றால் பாறைமீது அமர்ந்துகொண்டு உங்களுடைய இசைக்கருவிகளை முழக்குங்கள் காட்டைக் காப்பாற்றிக்கொண்டு வாழும் கானவர்கள் அங்கெல்லாம் இருப்பார்கள். வழி தவறியவர்களுக்கெல்லாம் உதவ ஓடோடி வருவார்கள். தண்ணீரின் ஓசை போல் பாதுகாப்புக் குரல் கொடுத்துக் கொண்டே உங்களிடம் வந்து சேர்வார்கள்.",
   "english": null,
   "lines": [
@@ -190,11 +190,351 @@
           "gloss": "This is a verbal participle meaning 'having reached' or 'having arrived', indicating their swift arrival at the location."
         }
       ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "யுண்டற் கினிய பழனுங் கண்டோர்",
+      "words": [
+        {
+          "form": "யுண்டற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கினிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பழனுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்டோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "மலைதற் கினிய பூவுங் காட்டி",
+      "words": [
+        {
+          "form": "மலைதற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கினிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூவுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்டி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "யூறு நிரம்பிய வாறவர் முந்துற",
+      "words": [
+        {
+          "form": "யூறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிரம்பிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாறவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முந்துற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நும்மி னெஞ்சத் தவலம் வீட",
+      "words": [
+        {
+          "form": "நும்மி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னெஞ்சத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வீட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "விம்மென் கடும்போ டினியி ராகுவி",
+      "words": [
+        {
+          "form": "விம்மென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடும்போ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டினியி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராகுவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "ரறிஞர் கூறிய மாதிரங் கைக்கொள்பு",
+      "words": [
+        {
+          "form": "ரறிஞர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூறிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாதிரங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கைக்கொள்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "குறியவு நெடியவு மூழிழிபு புதுவோர்",
+      "words": [
+        {
+          "form": "குறியவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடியவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூழிழிபு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புதுவோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "நோக்கினும் பனிக்கு நோய்வகூ ரடுக்கத்",
+      "words": [
+        {
+          "form": "நோக்கினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பனிக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோய்வகூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரடுக்கத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "தலர்தாய வரிநிழ லசையினி ரிருப்பிற்",
+      "words": [
+        {
+          "form": "தலர்தாய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரிநிழ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லசையினி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரிருப்பிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "பலதிறம் பெயர்பவை கேட்குவிர் மாதோ",
+      "words": [
+        {
+          "form": "பலதிறம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயர்பவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேட்குவிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்23.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்23.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 23,
   "title": "வழி மயங்கினார்க்குக் குறவர்கள் வந்து உதவிபுரிதல்",

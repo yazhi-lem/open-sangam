@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0190",
+  "poem": "thirukkural",
+  "number": 190,
+  "title": "புறங்கூறாமை",
+  "heading": "1.2.15",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "ஏதிலார் குற்றம்போல் தங்குற்றங் காண்கிற்பின்\nதீதுண்டோ  மன்னும் உயிர்க்கு.",
+  "urai": null,
+  "english": "If each his own, as neighbours' faults would scan, Could any evil hap to living man? --------------",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஏதிலார் குற்றம்போல் தங்குற்றங் காண்கிற்பின்",
+      "words": [
+        {
+          "form": "ஏதிலார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குற்றம்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தங்குற்றங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காண்கிற்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தீதுண்டோ  மன்னும் உயிர்க்கு.",
+      "words": [
+        {
+          "form": "தீதுண்டோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மன்னும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உயிர்க்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

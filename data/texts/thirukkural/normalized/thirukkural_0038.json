@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0038",
+  "poem": "thirukkural",
+  "number": 38,
+  "title": "அறன்வலியுறுத்தல்",
+  "heading": "1.1.4",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வீழ்நாள் படாஅமை நன்றாற்றின் அஃதொருவன்\nவாழ்நாள் வழியடைக்கும் கல்.",
+  "urai": null,
+  "english": "If no day passing idly, good to do each day you toil, A stone it will be to block the way of future days of moil.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வீழ்நாள் படாஅமை நன்றாற்றின் அஃதொருவன்",
+      "words": [
+        {
+          "form": "வீழ்நாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படாஅமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்றாற்றின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஃதொருவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வாழ்நாள் வழியடைக்கும் கல்.",
+      "words": [
+        {
+          "form": "வாழ்நாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழியடைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

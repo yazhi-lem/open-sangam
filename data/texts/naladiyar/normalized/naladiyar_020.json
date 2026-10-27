@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_020",
+  "poem": "naladiyar",
+  "number": 20,
+  "title": "இளமை நிலையாமை",
+  "heading": "1.2",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "ஆட்பார்த் துழலும் அருளில்கூற் றுண்மையால்\nதோட்கோப்புக் காலத்தால் கொண்டுய்ம்மின் - பீட்பிதுக்கிப்\nபிள்ளையைத் தாய்அலறக் கோடலான் மற்றதன்\nகள்ளம் கடைப்பிடித்தல் நன்று.",
+  "urai": null,
+  "english": "The infant slain by death. Relentless death is roaming round, and eyes his man! 'Tis true. Take up your wallet, scape betimes. He bears away the new-born babe, while the mother sorely laments. It is good to bear in mind his guile.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஆட்பார்த் துழலும் அருளில்கூற் றுண்மையால்",
+      "words": [
+        {
+          "form": "ஆட்பார்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துழலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அருளில்கூற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றுண்மையால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தோட்கோப்புக் காலத்தால் கொண்டுய்ம்மின் - பீட்பிதுக்கிப்",
+      "words": [
+        {
+          "form": "தோட்கோப்புக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காலத்தால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டுய்ம்மின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பீட்பிதுக்கிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பிள்ளையைத் தாய்அலறக் கோடலான் மற்றதன்",
+      "words": [
+        {
+          "form": "பிள்ளையைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாய்அலறக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோடலான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மற்றதன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கள்ளம் கடைப்பிடித்தல் நன்று.",
+      "words": [
+        {
+          "form": "கள்ளம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடைப்பிடித்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

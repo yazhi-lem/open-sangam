@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_339",
+  "poem": "naladiyar",
+  "number": 339,
+  "title": "பேதைமை",
+  "heading": "2.34",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "விழைந்தொருவர் தம்மை வியப்ப ஒருவர்\nவிழைந்திலேம் என்றிருக்கும் கேண்மை - தழங்குகுரல்\nபாய்திரைசூழ் வையம் பயப்பினும் இன்னாதே\nஆய்நலம் இல்லாதார் மாட்டு.",
+  "urai": null,
+  "english": "Friendship without reciprocity. Friendship with those who are destitute of exquisite goodness, and who, though you cultivate them with affectionate deference, (morosely) say we entertain affection for none,'—though it should yield as its fruit the earth, which the sea with its noisy chime of leaping billows girds around,—would be only affliction.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "விழைந்தொருவர் தம்மை வியப்ப ஒருவர்",
+      "words": [
+        {
+          "form": "விழைந்தொருவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தம்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒருவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "விழைந்திலேம் என்றிருக்கும் கேண்மை - தழங்குகுரல்",
+      "words": [
+        {
+          "form": "விழைந்திலேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றிருக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தழங்குகுரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பாய்திரைசூழ் வையம் பயப்பினும் இன்னாதே",
+      "words": [
+        {
+          "form": "பாய்திரைசூழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வையம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயப்பினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்னாதே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "ஆய்நலம் இல்லாதார் மாட்டு.",
+      "words": [
+        {
+          "form": "ஆய்நலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாட்டு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

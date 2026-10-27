@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_035",
+  "poem": "naladiyar",
+  "number": 35,
+  "title": "அறன் வலியுறுத்தல்",
+  "heading": "1.4",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கரும்பாட்டிக் கட்டி சிறுகாலைக் கொண்டார்\nதுரும்பெழுந்து வேம்கால் துயராண் டுழவார்\nவருந்தி உடம்பின் பயன்கொண்டார் கூற்றம்\nவருங்கால் பரிவ திலர்.",
+  "urai": null,
+  "english": "The same. The body only sapless stalks. Those who have pressed the sugar-cane, and early taken the juice, when the refuse heaped up burns, will suffer no grief: those who have toiled and gained the fruit won from embodied existence will feel no pangs when death shall come.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கரும்பாட்டிக் கட்டி சிறுகாலைக் கொண்டார்",
+      "words": [
+        {
+          "form": "கரும்பாட்டிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கட்டி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகாலைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "துரும்பெழுந்து வேம்கால் துயராண் டுழவார்",
+      "words": [
+        {
+          "form": "துரும்பெழுந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேம்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துயராண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டுழவார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வருந்தி உடம்பின் பயன்கொண்டார் கூற்றம்",
+      "words": [
+        {
+          "form": "வருந்தி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உடம்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயன்கொண்டார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "வருங்கால் பரிவ திலர்.",
+      "words": [
+        {
+          "form": "வருங்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திலர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

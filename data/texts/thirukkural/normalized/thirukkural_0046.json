@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0046",
+  "poem": "thirukkural",
+  "number": 46,
+  "title": "இல்வாழ்க்கை",
+  "heading": "1.2.1",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "அறத்தாற்றின் இல்வாழ்க்கை ஆற்றின் புறத்தாற்றில்\nபோஒய்ப் பெறுவ தெவன்?",
+  "urai": null,
+  "english": "If man in active household life a virtuous soul retain, What fruit from other modes of virtue can he gain?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அறத்தாற்றின் இல்வாழ்க்கை ஆற்றின் புறத்தாற்றில்",
+      "words": [
+        {
+          "form": "அறத்தாற்றின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்வாழ்க்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆற்றின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புறத்தாற்றில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "போஒய்ப் பெறுவ தெவன்?",
+      "words": [
+        {
+          "form": "போஒய்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறுவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெவன்?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

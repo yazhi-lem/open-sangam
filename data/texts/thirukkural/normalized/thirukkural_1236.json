@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1236",
+  "poem": "thirukkural",
+  "number": 1236,
+  "title": "பொழுதுகண்டிரங்கல்",
+  "heading": "3.2.8",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "தொடியொடு தோள்நெகிழ நோவல் அவரைக்\nகொடியர் எனக்கூறல் நொந்து.",
+  "urai": null,
+  "english": "I grieve, 'tis pain to me to hear him cruel chid, Because the armlet from my wasted arm has slid.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தொடியொடு தோள்நெகிழ நோவல் அவரைக்",
+      "words": [
+        {
+          "form": "தொடியொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோள்நெகிழ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோவல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவரைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கொடியர் எனக்கூறல் நொந்து.",
+      "words": [
+        {
+          "form": "கொடியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எனக்கூறல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நொந்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

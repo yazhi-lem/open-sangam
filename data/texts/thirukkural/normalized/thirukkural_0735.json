@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0735",
+  "poem": "thirukkural",
+  "number": 735,
+  "title": "நாடு",
+  "heading": "2.3.1",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பல்குழுவும் பாழ்செய்யும் உட்பகையும் வேந்தலைக்கும்\nகொல்குறும்பும் இல்லது நாடு.",
+  "urai": null,
+  "english": "From factions free, and desolating civil strife, and band Of lurking murderers that king afflict, that is the 'land'.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பல்குழுவும் பாழ்செய்யும் உட்பகையும் வேந்தலைக்கும்",
+      "words": [
+        {
+          "form": "பல்குழுவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாழ்செய்யும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உட்பகையும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேந்தலைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கொல்குறும்பும் இல்லது நாடு.",
+      "words": [
+        {
+          "form": "கொல்குறும்பும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

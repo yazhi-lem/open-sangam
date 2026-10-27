@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1198",
+  "poem": "thirukkural",
+  "number": 1198,
+  "title": "தனிப்படர்மிகுதி",
+  "heading": "3.2.5",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வீழ்வாரின் இன்சொல் பெறாஅது உலகத்து\nவாழ்வாரின் வன்கணார் இல்.",
+  "urai": null,
+  "english": "Who hear from lover's lips no pleasant word from day to day, Yet in the world live out their life,- no braver souls than they!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வீழ்வாரின் இன்சொல் பெறாஅது உலகத்து",
+      "words": [
+        {
+          "form": "வீழ்வாரின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்சொல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறாஅது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உலகத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வாழ்வாரின் வன்கணார் இல்.",
+      "words": [
+        {
+          "form": "வாழ்வாரின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வன்கணார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_031",
+  "poem": "naladiyar",
+  "number": 31,
+  "title": "அறன் வலியுறுத்தல்",
+  "heading": "1.4",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "அகத்தாரே வாழ்வார்என் றண்ணாந்து நோக்கிப்\nபுகத்தாம் பெறாஅர் பறங்கடை பற்றி\nமிகத்தாம் வருந்தி இருப்பரே மேலைத்\nதவத்தால் தவம்செய்யா தார்.",
+  "urai": null,
+  "english": "The door closed. Too late. ‘Yet those within are blest,' so saying, they look up, but obtain no entrance: their place is at the outer gate. There will they suffer much, who thro' lack of former penitence do no penance now. [In a former state penance won for them a human shape. As men they have now failed.]",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அகத்தாரே வாழ்வார்என் றண்ணாந்து நோக்கிப்",
+      "words": [
+        {
+          "form": "அகத்தாரே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்வார்என்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றண்ணாந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "புகத்தாம் பெறாஅர் பறங்கடை பற்றி",
+      "words": [
+        {
+          "form": "புகத்தாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறாஅர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பறங்கடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பற்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மிகத்தாம் வருந்தி இருப்பரே மேலைத்",
+      "words": [
+        {
+          "form": "மிகத்தாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வருந்தி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இருப்பரே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேலைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தவத்தால் தவம்செய்யா தார்.",
+      "words": [
+        {
+          "form": "தவத்தால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவம்செய்யா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

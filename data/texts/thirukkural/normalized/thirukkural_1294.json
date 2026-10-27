@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1294",
+  "poem": "thirukkural",
+  "number": 1294,
+  "title": "நெஞ்சொடுபுலத்தல்",
+  "heading": "3.2.15",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "இனிஅன்ன நின்னொடு சூழ்வார்யார் நெஞ்சே\nதுனிசெய்து துவ்வாய்காண் மற்று.",
+  "urai": null,
+  "english": "'See, thou first show offended pride, and then submit,' I bade; Henceforth such council who will share with thee my heart?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இனிஅன்ன நின்னொடு சூழ்வார்யார் நெஞ்சே",
+      "words": [
+        {
+          "form": "இனிஅன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்னொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூழ்வார்யார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "துனிசெய்து துவ்வாய்காண் மற்று.",
+      "words": [
+        {
+          "form": "துனிசெய்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துவ்வாய்காண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மற்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

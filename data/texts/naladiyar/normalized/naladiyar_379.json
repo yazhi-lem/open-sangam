@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_379",
+  "poem": "naladiyar",
+  "number": 379,
+  "title": "பொது மகளிர்",
+  "heading": "3.38",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "ஊறுசெய் நெஞ்சந்தம் உள்ளடக்கி ஒண்ணுதலார்\nதேறா மொழிந்த மொழிகேட்டுத் - தேறி\nஎமரென்று கொள்வாரும் கொள்பவே யார்க்கும்\nதமரல்லர் தம்உடம்பி னார்.",
+  "urai": null,
+  "english": "Let him be deceived that will. Let those accept (wantons' false love), who take them as their own believing the words uttered to inspire belief, by the bright-browed ones, who keep concealed within the cruelty that lurks in their heart. Those whose bodies are their sole wealth belong to none, (i. e. they have no souls to give!).",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஊறுசெய் நெஞ்சந்தம் உள்ளடக்கி ஒண்ணுதலார்",
+      "words": [
+        {
+          "form": "ஊறுசெய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சந்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளடக்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒண்ணுதலார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தேறா மொழிந்த மொழிகேட்டுத் - தேறி",
+      "words": [
+        {
+          "form": "தேறா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொழிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொழிகேட்டுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "எமரென்று கொள்வாரும் கொள்பவே யார்க்கும்",
+      "words": [
+        {
+          "form": "எமரென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்வாரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்பவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யார்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தமரல்லர் தம்உடம்பி னார்.",
+      "words": [
+        {
+          "form": "தமரல்லர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தம்உடம்பி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

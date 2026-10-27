@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0556",
+  "poem": "thirukkural",
+  "number": 556,
+  "title": "கொடுங்கோன்மை",
+  "heading": "2.1.18",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "மன்னர்க்கு மன்னுதல் செங்கோன்மை அஃதின்றேல்\nமன்னாவாம் மன்னர்க் கொளி.",
+  "urai": null,
+  "english": "To rulers' rule stability is sceptre right; When this is not, quenched is the rulers' light.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மன்னர்க்கு மன்னுதல் செங்கோன்மை அஃதின்றேல்",
+      "words": [
+        {
+          "form": "மன்னர்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மன்னுதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செங்கோன்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஃதின்றேல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மன்னாவாம் மன்னர்க் கொளி.",
+      "words": [
+        {
+          "form": "மன்னாவாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மன்னர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளி.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

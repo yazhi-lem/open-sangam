@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_226",
+  "poem": "naladiyar",
+  "number": 226,
+  "title": "நட்பிற் பிழை பொறுத்தல்",
+  "heading": "2.23",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "இன்னா செயினும் விடுதற் கா஢யாரைத்\nதுன்னாத் துறத்தல் தகுவதோ - துன்னருஞ்சீர்\nவிண்குத்து நீள்வரை வெற்ப. களைபவோ\nகண்குத்திற் றென்றுதங் கை.",
+  "urai": null,
+  "english": "Friends are not to be forsaken on account of their faults. When those from whom it is hard to part do evil things should men at once renounce them?—Lord of the lengthening hills that pierce the sky, whence rarest giftsdescend !—Do men cut off their hand because it pricked their eye?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இன்னா செயினும் விடுதற் கா஢யாரைத்",
+      "words": [
+        {
+          "form": "இன்னா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடுதற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கா஢யாரைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "துன்னாத் துறத்தல் தகுவதோ - துன்னருஞ்சீர்",
+      "words": [
+        {
+          "form": "துன்னாத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறத்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகுவதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துன்னருஞ்சீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "விண்குத்து நீள்வரை வெற்ப. களைபவோ",
+      "words": [
+        {
+          "form": "விண்குத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீள்வரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெற்ப.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களைபவோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கண்குத்திற் றென்றுதங் கை.",
+      "words": [
+        {
+          "form": "கண்குத்திற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றென்றுதங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

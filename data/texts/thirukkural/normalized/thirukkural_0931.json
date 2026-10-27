@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0931",
+  "poem": "thirukkural",
+  "number": 931,
+  "title": "சூது",
+  "heading": "2.3.21",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வேண்டற்க வென்றிடினும் சூதினை வென்றதூஉம்\nதூண்டிற்பொன் மீன்விழுங்கி அற்று.",
+  "urai": null,
+  "english": "Seek not the gamester's play; though you should win, Your gain is as the baited hook the fish takes in.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வேண்டற்க வென்றிடினும் சூதினை வென்றதூஉம்",
+      "words": [
+        {
+          "form": "வேண்டற்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வென்றிடினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூதினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வென்றதூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தூண்டிற்பொன் மீன்விழுங்கி அற்று.",
+      "words": [
+        {
+          "form": "தூண்டிற்பொன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மீன்விழுங்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அற்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -2,7 +2,7 @@
   "id": "perumpanatrupadai_33",
   "poem": "perumpanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "காந்தள் அம் சிலம்பில் களிறு படிந்து ஆங்கு\nபாம்பு அணை பள்ளி அமர்ந்தோன் ஆங்கண்\nவெயில் நுழைபு அறியா குயில் நுழை பொதும்பர்",
+  "sangamTamil": "காந்தள் அம் சிலம்பில் களிறு படிந்து ஆங்கு\nபாம்பு அணை பள்ளி அமர்ந்தோன் ஆங்கண்\nவெயில் நுழைபு அறியா குயில் நுழை பொதும்பர்\nகுறுங்காற் காஞ்சி சுற்றிய நெடுங்கொடிப்\nபாசிலைக் குருகின் புன்புற வரிப்பூக்\nகாரகற் கூவியர் பாகொடு பிடித்த\nஇழைசூழ் வட்டம் பால்கலந் தவைபோல்\nநிழறாழ் வார்மண னீர்முகத் துறைப்பப்\nபுனல்கால் கழீஇய பொழிறொறுந் திரள்காற்\nசோலைக் கமுகின் சூல்வயிற் றன்ன\nநீலப் பைங்குடந் தொலைச்சி நாளும்\nபெருமகி ழிருக்கை மரீஇச் சிறுகோட்டுக்\nகுழவித் திங்கட் கோணேர்ந் தாங்குச்\nசுறவுவா யமைத்த சுரும்புசூழ் சுடர்நுதல்\nநறவுபெயர்த் தமைத்த நல்லெழின் மழைக்கண்\nமடவரன் மகளிரொடு பகல்விளை யாடிப்\nபெறற்கருந் தொல்சீர்த் துறக்க மேய்க்கும்\nபொய்யா மரபிற் பூமலி பெருந்துறைச்\nசெவ்விகொள் பவரோ டசைஇ யவ்வயின்\nஅருந்திறற் கடவுள் வாழ்த்திச் சிறிதுநும்\nகருங்கோட் டின்னிய மியல்கினிர் கழிமின்",
   "urai": "அடுத்து பொதும்பர் என்னும் அடர்காடுகள் வழியாகச் செல்ல வேண்டும். குயின் என்பது மேகம். குயின் நுழைந்து செல்ல வேண்டிய அளவுக்கு அந்த அடர்காட்டுப் பொதும்பரில் மரங்கள் ஓங்கி உயர்ந்திருக்கும். வெயில்கூட நுழைய முடியாது. பொதும்பர் மலைப்பகுதியில் இருந்தால் அதனைச் சிலம்பு என்பர். காரணம் மலை எதிரொலிக்கும். காந்தள் பூத்திருக்கும் சிலம்பில் களிறு படிந்திருப்பது போல் பாம்பணையில் திருமால் பள்ளி கொண்டிருப்பான். அவனைத் தொழுது கொண்டே மேலும் செல்லலாம். (இப்போதுள்ள சின்ன காஞ்சி வரதராசப் பெருமாள்) காந்தள் மலர் படம் விரித்திருக்கும் நாகத்துக்கும், களிறு கரியநிறத் திருமாலுக்கும் உவமை.",
   "english": null,
   "lines": [
@@ -142,11 +142,623 @@
           "gloss": "Potumpar refers to a dense grove, a thicket, or a cluster of trees, characterized by its deep shade and impenetrable nature, where even sunlight struggles to enter."
         }
       ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "குறுங்காற் காஞ்சி சுற்றிய நெடுங்கொடிப்",
+      "words": [
+        {
+          "form": "குறுங்காற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காஞ்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுற்றிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுங்கொடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "பாசிலைக் குருகின் புன்புற வரிப்பூக்",
+      "words": [
+        {
+          "form": "பாசிலைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குருகின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புன்புற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரிப்பூக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "காரகற் கூவியர் பாகொடு பிடித்த",
+      "words": [
+        {
+          "form": "காரகற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூவியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாகொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிடித்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "இழைசூழ் வட்டம் பால்கலந் தவைபோல்",
+      "words": [
+        {
+          "form": "இழைசூழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வட்டம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பால்கலந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவைபோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நிழறாழ் வார்மண னீர்முகத் துறைப்பப்",
+      "words": [
+        {
+          "form": "நிழறாழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வார்மண",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னீர்முகத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறைப்பப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "புனல்கால் கழீஇய பொழிறொறுந் திரள்காற்",
+      "words": [
+        {
+          "form": "புனல்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழீஇய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொழிறொறுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திரள்காற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "சோலைக் கமுகின் சூல்வயிற் றன்ன",
+      "words": [
+        {
+          "form": "சோலைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமுகின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூல்வயிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "நீலப் பைங்குடந் தொலைச்சி நாளும்",
+      "words": [
+        {
+          "form": "நீலப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பைங்குடந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொலைச்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "பெருமகி ழிருக்கை மரீஇச் சிறுகோட்டுக்",
+      "words": [
+        {
+          "form": "பெருமகி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ழிருக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரீஇச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகோட்டுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "குழவித் திங்கட் கோணேர்ந் தாங்குச்",
+      "words": [
+        {
+          "form": "குழவித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திங்கட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோணேர்ந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாங்குச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "சுறவுவா யமைத்த சுரும்புசூழ் சுடர்நுதல்",
+      "words": [
+        {
+          "form": "சுறவுவா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யமைத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுரும்புசூழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுடர்நுதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "நறவுபெயர்த் தமைத்த நல்லெழின் மழைக்கண்",
+      "words": [
+        {
+          "form": "நறவுபெயர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தமைத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்லெழின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மழைக்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "மடவரன் மகளிரொடு பகல்விளை யாடிப்",
+      "words": [
+        {
+          "form": "மடவரன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகளிரொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகல்விளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "பெறற்கருந் தொல்சீர்த் துறக்க மேய்க்கும்",
+      "words": [
+        {
+          "form": "பெறற்கருந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொல்சீர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேய்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "பொய்யா மரபிற் பூமலி பெருந்துறைச்",
+      "words": [
+        {
+          "form": "பொய்யா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரபிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூமலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருந்துறைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "செவ்விகொள் பவரோ டசைஇ யவ்வயின்",
+      "words": [
+        {
+          "form": "செவ்விகொள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பவரோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டசைஇ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யவ்வயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 20,
+      "text": "அருந்திறற் கடவுள் வாழ்த்திச் சிறிதுநும்",
+      "words": [
+        {
+          "form": "அருந்திறற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடவுள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்த்திச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறிதுநும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 21,
+      "text": "கருங்கோட் டின்னிய மியல்கினிர் கழிமின்",
+      "words": [
+        {
+          "form": "கருங்கோட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டின்னிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மியல்கினிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை33.html",
+  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை33.html; Project Madurai pmuni0492",
   "verified": false,
   "sectionNumber": 33,
   "title": "திருவெஃகாவின் சிறப்பும் திருமால் வழிபாடும்",

@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_172",
+  "poem": "naladiyar",
+  "number": 172,
+  "title": "நல்லினம் சேர்தல்",
+  "heading": "2.18",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "அறிமின் அறநெறி அஞ்சுமின் கூற்றம்\nபொறுமின் பிறர்கடுஞ்சொல் போற்றுமின் வஞ்சம்\nவெறுமின் வினைதீயார் கேண்மை எஞ்ஞான்றும்\nபெறுமின் பெரியார்வாய்ச் சொல்.",
+  "urai": null,
+  "english": "Six precepts. Know virtue's path ! Dread death! Beat others' words severe! Beware ye practise no deceit! Friendship detest with men of evil deeds! Daily get gain of words that fall from greatmen's lips!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அறிமின் அறநெறி அஞ்சுமின் கூற்றம்",
+      "words": [
+        {
+          "form": "அறிமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறநெறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஞ்சுமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பொறுமின் பிறர்கடுஞ்சொல் போற்றுமின் வஞ்சம்",
+      "words": [
+        {
+          "form": "பொறுமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறர்கடுஞ்சொல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போற்றுமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வஞ்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வெறுமின் வினைதீயார் கேண்மை எஞ்ஞான்றும்",
+      "words": [
+        {
+          "form": "வெறுமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினைதீயார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எஞ்ஞான்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பெறுமின் பெரியார்வாய்ச் சொல்.",
+      "words": [
+        {
+          "form": "பெறுமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரியார்வாய்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

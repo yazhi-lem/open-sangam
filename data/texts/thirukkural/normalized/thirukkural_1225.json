@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1225",
+  "poem": "thirukkural",
+  "number": 1225,
+  "title": "பொழுதுகண்டிரங்கல்",
+  "heading": "3.2.8",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "காலைக்குச் செய்தநன்று என்கொல் எவன்கொல்யான்\nமாலைக்குச் செய்த பகை?",
+  "urai": null,
+  "english": "O morn, how have I won thy grace? thou bring'st relief O eve, why art thou foe! thou dost renew my grief.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "காலைக்குச் செய்தநன்று என்கொல் எவன்கொல்யான்",
+      "words": [
+        {
+          "form": "காலைக்குச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்தநன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்கொல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எவன்கொல்யான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மாலைக்குச் செய்த பகை?",
+      "words": [
+        {
+          "form": "மாலைக்குச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகை?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

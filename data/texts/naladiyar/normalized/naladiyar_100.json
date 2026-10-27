@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_100",
+  "poem": "naladiyar",
+  "number": 100,
+  "title": "ஈகை",
+  "heading": "1.10",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கடிப்பிடு கண்முரசம் காதத்தோர் கேட்பர்\nஇடித்து முழங்கியதோர் யோசனையோர் கேட்பர்\nஅடுக்கிய மூவுலகும் கேட்குமே சான்றோர்\nகொடுத்தா ரெனப்படும் சொல்.",
+  "urai": null,
+  "english": "The fame of charitable deeds. The sound of beaten drum a katham off they'll hear; the thunder's voice through a whole yojanai will reach men's ears; the three successive worlds will hear the word that says, ‘Men excellent their gifts have given.'",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கடிப்பிடு கண்முரசம் காதத்தோர் கேட்பர்",
+      "words": [
+        {
+          "form": "கடிப்பிடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்முரசம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காதத்தோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேட்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "இடித்து முழங்கியதோர் யோசனையோர் கேட்பர்",
+      "words": [
+        {
+          "form": "இடித்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முழங்கியதோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யோசனையோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேட்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "அடுக்கிய மூவுலகும் கேட்குமே சான்றோர்",
+      "words": [
+        {
+          "form": "அடுக்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூவுலகும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேட்குமே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சான்றோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கொடுத்தா ரெனப்படும் சொல்.",
+      "words": [
+        {
+          "form": "கொடுத்தா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரெனப்படும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

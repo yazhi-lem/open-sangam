@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_068",
+  "poem": "naladiyar",
+  "number": 68,
+  "title": "சினம் இன்மை",
+  "heading": "1.7",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நெடுங்காலம் ஓடினும் நீசர் வெகுளி\nகெடுங்காலம் இன்றிப் பரக்கும் - அடுங்காலை\nநீர்கொண்ட வெப்பம்போல் தானே தணியுமே\nசீர்கொண்ட சான்றோர் சினம்.",
+  "urai": null,
+  "english": "The wrath of the base never expends itself. That of the good of itself dies out. Long time though base men's wrath run on, it spreads abroad, and knows no time when heat is spent; as the heat of water, when boiled at cooking time, itself grow's cool, the ire of perfect men of worth abates.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நெடுங்காலம் ஓடினும் நீசர் வெகுளி",
+      "words": [
+        {
+          "form": "நெடுங்காலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓடினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீசர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெகுளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கெடுங்காலம் இன்றிப் பரக்கும் - அடுங்காலை",
+      "words": [
+        {
+          "form": "கெடுங்காலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்றிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடுங்காலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நீர்கொண்ட வெப்பம்போல் தானே தணியுமே",
+      "words": [
+        {
+          "form": "நீர்கொண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெப்பம்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தானே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தணியுமே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சீர்கொண்ட சான்றோர் சினம்.",
+      "words": [
+        {
+          "form": "சீர்கொண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சான்றோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சினம்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

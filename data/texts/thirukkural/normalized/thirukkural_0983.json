@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0983",
+  "poem": "thirukkural",
+  "number": 983,
+  "title": "சான்றாண்மை",
+  "heading": "2.4.4",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "அன்புநாண் ஒப்புரவு கண்ணோட்டம் வாய்மையொடு\nஐந்துசால் ஊன்றிய தூண்.",
+  "urai": null,
+  "english": "Love, modesty, beneficence, benignant grace, With truth, are pillars five of perfect virtue's resting-place.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அன்புநாண் ஒப்புரவு கண்ணோட்டம் வாய்மையொடு",
+      "words": [
+        {
+          "form": "அன்புநாண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒப்புரவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணோட்டம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்மையொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஐந்துசால் ஊன்றிய தூண்.",
+      "words": [
+        {
+          "form": "ஐந்துசால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊன்றிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூண்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

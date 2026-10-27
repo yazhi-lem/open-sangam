@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_196",
+  "poem": "naladiyar",
+  "number": 196,
+  "title": "தாளாண்மை",
+  "heading": "2.20",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "ஆற்றும் துணையும் அறிவினை உள்ளடக்கி\nஊக்கம் உரையார் உணர்வுடையார் - ஊக்கம்\nஉறுப்பினால் ஆராயும் ஒண்மை யுடையார்\nகுறிப்பின்கீழ்ப் பட்ட துலகு.",
+  "urai": null,
+  "english": "Reserve as to your own plans, and skill in detecting those of others. Till the time for action comes men of understanding keep close within themselves their wisdom and speak not of their designs (ஊக்கம் = What they are labouring to effect). The world is subject to the nod of the brilliant (diplomatists) who search out (and know) men's designs from outward indications (lit. from) their members, i.e. from eye, gesture, tone, expression etc.).",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஆற்றும் துணையும் அறிவினை உள்ளடக்கி",
+      "words": [
+        {
+          "form": "ஆற்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணையும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறிவினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளடக்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஊக்கம் உரையார் உணர்வுடையார் - ஊக்கம்",
+      "words": [
+        {
+          "form": "ஊக்கம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உரையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உணர்வுடையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊக்கம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உறுப்பினால் ஆராயும் ஒண்மை யுடையார்",
+      "words": [
+        {
+          "form": "உறுப்பினால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆராயும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுடையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "குறிப்பின்கீழ்ப் பட்ட துலகு.",
+      "words": [
+        {
+          "form": "குறிப்பின்கீழ்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துலகு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

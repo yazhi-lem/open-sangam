@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0600",
+  "poem": "thirukkural",
+  "number": 600,
+  "title": "ஊக்கமுடைமை",
+  "heading": "2.1.22",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உரமொருவற்கு உள்ள வெறுக்கைஅஃ தில்லார்\nமரம்மக்க ளாதலே வேறு.",
+  "urai": null,
+  "english": "Firmness of soul in man is real excellance; Others are trees, their human form a mere pretence. -------------",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உரமொருவற்கு உள்ள வெறுக்கைஅஃ தில்லார்",
+      "words": [
+        {
+          "form": "உரமொருவற்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ள",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெறுக்கைஅஃ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தில்லார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மரம்மக்க ளாதலே வேறு.",
+      "words": [
+        {
+          "form": "மரம்மக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ளாதலே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேறு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

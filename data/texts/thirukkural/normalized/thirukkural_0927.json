@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0927",
+  "poem": "thirukkural",
+  "number": 927,
+  "title": "கள்ளுண்ணாமை",
+  "heading": "2.3.20",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உள்ளொற்றி உள்ளூர் நகப்படுவர் எஞ்ஞான்றும்\nகள்ளொற்றிக் கண்சாய் பவர்3",
+  "urai": null,
+  "english": "Who turn aside to drink, and droop their heavy eye, Shall be their townsmen's jest, when they the fault espy.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உள்ளொற்றி உள்ளூர் நகப்படுவர் எஞ்ஞான்றும்",
+      "words": [
+        {
+          "form": "உள்ளொற்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நகப்படுவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எஞ்ஞான்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கள்ளொற்றிக் கண்சாய் பவர்3",
+      "words": [
+        {
+          "form": "கள்ளொற்றிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்சாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பவர்3",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

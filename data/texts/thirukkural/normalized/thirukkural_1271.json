@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1271",
+  "poem": "thirukkural",
+  "number": 1271,
+  "title": "குறிப்பறிவுறுத்தல்",
+  "heading": "3.2.13",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "கரப்பினுங் கையிகந் தொல்லாநின் உண்கண்\nஉரைக்கல் உறுவதொன் றுண்டு.",
+  "urai": null,
+  "english": "Thou hid'st it, yet thine eye, disdaining all restraint, Something, I know not, what, would utter of complaint.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கரப்பினுங் கையிகந் தொல்லாநின் உண்கண்",
+      "words": [
+        {
+          "form": "கரப்பினுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கையிகந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொல்லாநின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உண்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "உரைக்கல் உறுவதொன் றுண்டு.",
+      "words": [
+        {
+          "form": "உரைக்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உறுவதொன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றுண்டு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

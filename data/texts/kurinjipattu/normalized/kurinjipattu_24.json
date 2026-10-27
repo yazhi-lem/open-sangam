@@ -2,27 +2,41 @@
   "id": "kurinjipattu_24",
   "poem": "kurinjipattu",
   "tinai": "kurinji",
-  "sangamTamil": ".............................. அதற்கொண்டு,\nஅன்றை அன்ன விருப்பொடு, என்றும்\nஇரவரல் மாலையனே, வருதோறும்",
+  "sangamTamil": "லுண்டுறை நிறுத்துப் பெயர்ந்தன னதற்கொண்\nஅன்றை அன்ன விருப்பொடு, என்றும்\nஇரவரல் மாலையனே, வருதோறும்\nகாவலர் கடுகினுங் கதநாய் குரைப்பினு\nநீதுயி லெழினு நிலவுவெளிப் படினும்\nவேய்புரை மென்றோ ளின்றுயி லென்றும்\nபெறாஅன் பெயரினு முனிய லுறாஅ\nனிளமையி னிகந்தன்று மிலனே வளமையிற்\nறன்னிலை தீர்ந்தன்று மிலனே கொன்னூர் 245\nமாய வரவி னியல்புநினைஇத் தேற்றி\nநீரெறி மலரிற் சாஅயிதழ் சோரா\nவீரிய கலுழுமிவள் பெருமதர் மழைக்க\nணாகத் தரிப்பனி யுறைப்ப நாளும்\nவலைப்படு மஞ்சையி னலஞ்செலச் சாஅய்\nநினைத்தொறுங் கலுழுமா லிவளே கங்கு",
   "urai": "அன்று முதல் இரவில் வருதல் அவனுக்கு வழக்கமாயிற்று - பின்னர், நாள்தோறும் இரவில் வந்து கெஞ்சினான் அன்று என்னை அடைந்த அதே ஆவலோடு ஒவ்வொரு நாளும் என்னிடம் வந்து என்னைத் தனக்குத் தரும்படி கெஞ்சினான். மாலைபோல் தொடர்ந்து நெருங்கிக் கேட்டான்.",
   "english": null,
   "lines": [
     {
       "lineNumber": 1,
-      "text": ".............................. அதற்கொண்டு,",
+      "text": "லுண்டுறை நிறுத்துப் பெயர்ந்தன னதற்கொண்",
       "words": [
         {
-          "form": "..............................",
+          "form": "லுண்டுறை",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "manuscript lacuna"
+          "gloss": null
         },
         {
-          "form": "அதற்கொண்டு,",
-          "root": "அது",
+          "form": "நிறுத்துப்",
+          "root": null,
           "urichol": null,
-          "etymology": "இச்சொல் 'அது' (சுட்டுப் பெயர்) மற்றும் 'கொண்டு' (வினைச்சொல்) ஆகிய இரண்டு சொற்களின் புணர்ச்சியால் உருவானது. 'அது' என்பது சுட்டும் பொருளைக் குறிக்கும். 'கொண்டு' என்பது 'கொள்ளுதல்' என்ற வினையடியிலிருந்து பிறந்தது. சங்க இலக்கியத்தில், 'கொண்டு' என்பது ஒரு செயலைத் தொடர்ந்து நிகழும் தன்மையைக் குறிக்கப் பயன்பட்டது. நவீன தமிழில், 'அதனால்' அல்லது 'அதன்பின்' என்ற பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "From that point onwards; indicating a continuation or consequence from a previously mentioned event or state."
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயர்ந்தன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னதற்கொண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
         }
       ]
     },
@@ -86,11 +100,426 @@
           "gloss": "Every time he comes, whenever he arrives; indicating a repetitive action that occurs each instance of his coming."
         }
       ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "காவலர் கடுகினுங் கதநாய் குரைப்பினு",
+      "words": [
+        {
+          "form": "காவலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடுகினுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதநாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குரைப்பினு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "நீதுயி லெழினு நிலவுவெளிப் படினும்",
+      "words": [
+        {
+          "form": "நீதுயி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லெழினு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலவுவெளிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "வேய்புரை மென்றோ ளின்றுயி லென்றும்",
+      "words": [
+        {
+          "form": "வேய்புரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மென்றோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ளின்றுயி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லென்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பெறாஅன் பெயரினு முனிய லுறாஅ",
+      "words": [
+        {
+          "form": "பெறாஅன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயரினு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முனிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லுறாஅ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "னிளமையி னிகந்தன்று மிலனே வளமையிற்",
+      "words": [
+        {
+          "form": "னிளமையி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னிகந்தன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிலனே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளமையிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "றன்னிலை தீர்ந்தன்று மிலனே கொன்னூர் 245",
+      "words": [
+        {
+          "form": "றன்னிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீர்ந்தன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிலனே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொன்னூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "245",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "மாய வரவி னியல்புநினைஇத் தேற்றி",
+      "words": [
+        {
+          "form": "மாய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னியல்புநினைஇத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேற்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "நீரெறி மலரிற் சாஅயிதழ் சோரா",
+      "words": [
+        {
+          "form": "நீரெறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலரிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாஅயிதழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோரா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "வீரிய கலுழுமிவள் பெருமதர் மழைக்க",
+      "words": [
+        {
+          "form": "வீரிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலுழுமிவள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருமதர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மழைக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "ணாகத் தரிப்பனி யுறைப்ப நாளும்",
+      "words": [
+        {
+          "form": "ணாகத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தரிப்பனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுறைப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "வலைப்படு மஞ்சையி னலஞ்செலச் சாஅய்",
+      "words": [
+        {
+          "form": "வலைப்படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மஞ்சையி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னலஞ்செலச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாஅய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "நினைத்தொறுங் கலுழுமா லிவளே கங்கு",
+      "words": [
+        {
+          "form": "நினைத்தொறுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலுழுமா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லிவளே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/kurinchippattu/kurinchippattu-குறிஞ்சிப்பாட்டு24.html",
+  "source": "http://www.sangathamizh.com/10paddu/kurinchippattu/kurinchippattu-குறிஞ்சிப்பாட்டு24.html; Project Madurai pmuni0495",
   "verified": false,
   "sectionNumber": 24,
   "title": "தலைவன் வரும் வழியின் அருமை நினைந்து - தலைவி கலங்குதல்!",

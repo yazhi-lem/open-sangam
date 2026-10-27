@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1090",
+  "poem": "thirukkural",
+  "number": 1090,
+  "title": "தகையணங்குறுத்தல்",
+  "heading": "3.1.1",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உண்டார்கண் அல்லது அடுநறாக் காமம்போல்\nகண்டார் மகிழ்செய்தல் இன்று.",
+  "urai": null,
+  "english": "The palm-tree's fragrant wine, To those who taste yields joys divine; But love hath rare felicity For those that only see! -------------",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உண்டார்கண் அல்லது அடுநறாக் காமம்போல்",
+      "words": [
+        {
+          "form": "உண்டார்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அல்லது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடுநறாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காமம்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கண்டார் மகிழ்செய்தல் இன்று.",
+      "words": [
+        {
+          "form": "கண்டார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகிழ்செய்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

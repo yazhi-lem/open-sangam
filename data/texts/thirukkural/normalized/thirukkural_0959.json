@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0959",
+  "poem": "thirukkural",
+  "number": 959,
+  "title": "குடிமை",
+  "heading": "2.4.1",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "நிலத்தில் கிடந்தமை கால்காட்டும் காட்டும்\nகுலத்தில் பிறந்தார்வாய்ச் சொல்.",
+  "urai": null,
+  "english": "Of soil the plants that spring thereout will show the worth: The words they speak declare the men of noble birth.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நிலத்தில் கிடந்தமை கால்காட்டும் காட்டும்",
+      "words": [
+        {
+          "form": "நிலத்தில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிடந்தமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கால்காட்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "குலத்தில் பிறந்தார்வாய்ச் சொல்.",
+      "words": [
+        {
+          "form": "குலத்தில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறந்தார்வாய்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

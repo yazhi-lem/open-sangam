@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0865",
+  "poem": "thirukkural",
+  "number": 865,
+  "title": "பகைமாட்சி",
+  "heading": "2.3.14",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வழிநோக்கான் வாய்ப்பன செய்யான் பழிநோக்கான்\nபண்பிலன் பற்றார்க்கு இனிது.",
+  "urai": null,
+  "english": "No way of right he scans, no precepts bind, no crimes affright, No grace of good he owns; such man's his foes' delight.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வழிநோக்கான் வாய்ப்பன செய்யான் பழிநோக்கான்",
+      "words": [
+        {
+          "form": "வழிநோக்கான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்ப்பன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செய்யான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பழிநோக்கான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பண்பிலன் பற்றார்க்கு இனிது.",
+      "words": [
+        {
+          "form": "பண்பிலன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பற்றார்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இனிது.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

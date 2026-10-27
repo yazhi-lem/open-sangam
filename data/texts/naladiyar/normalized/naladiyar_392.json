@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_392",
+  "poem": "naladiyar",
+  "number": 392,
+  "title": "காமநுதலியல்",
+  "heading": "3.40",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "தம்மமர் காதலர் தார்சூழ் அணியகலம்\nவிம்ம முயங்கும் துணையில்லார்க் - கிம்மெனப்\nபெய்ய எழிலி முழங்கும் திசையெல்லாம்\nநெய்தல் அறைந்தன்ன நீர்த்து.",
+  "urai": null,
+  "english": "The Lonely one ‘To those who were wont to strain in close embrace their own beloved whose broad breast was girt with garlands, when the rains patter down, it is as though one beat the funeral drum through all the regions where the muttering of the thunder is heard from out the clouds; since they are deprived of their loved one's society.'",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தம்மமர் காதலர் தார்சூழ் அணியகலம்",
+      "words": [
+        {
+          "form": "தம்மமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காதலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தார்சூழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அணியகலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "விம்ம முயங்கும் துணையில்லார்க் - கிம்மெனப்",
+      "words": [
+        {
+          "form": "விம்ம",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முயங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணையில்லார்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிம்மெனப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பெய்ய எழிலி முழங்கும் திசையெல்லாம்",
+      "words": [
+        {
+          "form": "பெய்ய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழிலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முழங்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திசையெல்லாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நெய்தல் அறைந்தன்ன நீர்த்து.",
+      "words": [
+        {
+          "form": "நெய்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறைந்தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்த்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

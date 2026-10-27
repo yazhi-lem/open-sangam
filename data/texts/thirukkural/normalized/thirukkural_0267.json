@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0267",
+  "poem": "thirukkural",
+  "number": 267,
+  "title": "தவம்",
+  "heading": "1.3.3",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "சுடச்சுடரும் பொன்போல் ஒளிவிடும் துன்பஞ்\nசுடச்சுட நோற்கிற் பவர்க்கு.",
+  "urai": null,
+  "english": "The hotter glows the fining fire, the gold the brighter shines; The pain of penitence, like fire, the soul of man refines.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "சுடச்சுடரும் பொன்போல் ஒளிவிடும் துன்பஞ்",
+      "words": [
+        {
+          "form": "சுடச்சுடரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொன்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒளிவிடும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துன்பஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சுடச்சுட நோற்கிற் பவர்க்கு.",
+      "words": [
+        {
+          "form": "சுடச்சுட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோற்கிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பவர்க்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

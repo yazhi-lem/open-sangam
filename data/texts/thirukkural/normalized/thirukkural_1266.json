@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1266",
+  "poem": "thirukkural",
+  "number": 1266,
+  "title": "அவர்வயின்விதும்பல்",
+  "heading": "3.2.12",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வருகமன் கொண்கன் ஒருநாள் பருகுவன்\nபைதல்நோய் எல்லாம் கெட.",
+  "urai": null,
+  "english": "O let my spouse but come again to me one day! I'll drink that nectar: wasting grief shall flee away. May my husband return some day; and then will I enjoy (him) so as to destroy all this agonizing sorrow.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வருகமன் கொண்கன் ஒருநாள் பருகுவன்",
+      "words": [
+        {
+          "form": "வருகமன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்கன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒருநாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பருகுவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பைதல்நோய் எல்லாம் கெட.",
+      "words": [
+        {
+          "form": "பைதல்நோய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எல்லாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெட.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

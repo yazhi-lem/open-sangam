@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_315",
+  "poem": "naladiyar",
+  "number": 315,
+  "title": "அவையறிதல்",
+  "heading": "2.32",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "வென்றிப் பொருட்டால் விலங்கொத்து மெய்கொள்ளார்\nகன்றிக் கறுத்தெழுந்து காய்வாரோ - டொன்றி\nஉரைவித் தகமெழுவார் காண்பவே, கையுள்\nசுரைவித்துப் போலுந்தம் பல்.",
+  "urai": null,
+  "english": "Convincing arguments. They who arise to utter words of wisdom, having associated themselves with the assembly of those who rage and burn and fume with anger, like beasts, for the mere sake of victory, not understanding the truth, shall see their own teeth like pumpkin seeds in their hands!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வென்றிப் பொருட்டால் விலங்கொத்து மெய்கொள்ளார்",
+      "words": [
+        {
+          "form": "வென்றிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருட்டால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விலங்கொத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மெய்கொள்ளார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கன்றிக் கறுத்தெழுந்து காய்வாரோ - டொன்றி",
+      "words": [
+        {
+          "form": "கன்றிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கறுத்தெழுந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காய்வாரோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டொன்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உரைவித் தகமெழுவார் காண்பவே, கையுள்",
+      "words": [
+        {
+          "form": "உரைவித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகமெழுவார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காண்பவே,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கையுள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சுரைவித்துப் போலுந்தம் பல்.",
+      "words": [
+        {
+          "form": "சுரைவித்துப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலுந்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

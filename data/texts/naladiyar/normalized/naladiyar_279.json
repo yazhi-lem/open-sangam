@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_279",
+  "poem": "naladiyar",
+  "number": 279,
+  "title": "ஈயாமை",
+  "heading": "2.28",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "இரவலர் கன்றாக ஈவார்ஆ வாக\nவிரகிற் சுரப்பதாம் வண்மை - விரகின்றி\nவல்லவர் ஊன்ற வடிஆபோல் வாய்வைத்துக்\nகொல்லச் சுரப்பதாம் கீழ்.",
+  "urai": null,
+  "english": "Those wanting in liberal instinct give only on compulsion. Liberality is that which yields its gifts spontaneously (from good instinct), the askers being as the calf and the givers as the cow; meanness yields only when put into a strait and forced, as a cow with no good instinct gives a scanty supply (வடி) when strong ones press.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இரவலர் கன்றாக ஈவார்ஆ வாக",
+      "words": [
+        {
+          "form": "இரவலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கன்றாக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈவார்ஆ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "விரகிற் சுரப்பதாம் வண்மை - விரகின்றி",
+      "words": [
+        {
+          "form": "விரகிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுரப்பதாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விரகின்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வல்லவர் ஊன்ற வடிஆபோல் வாய்வைத்துக்",
+      "words": [
+        {
+          "form": "வல்லவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊன்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வடிஆபோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்வைத்துக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கொல்லச் சுரப்பதாம் கீழ்.",
+      "words": [
+        {
+          "form": "கொல்லச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுரப்பதாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீழ்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

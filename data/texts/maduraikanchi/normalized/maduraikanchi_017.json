@@ -6,7 +6,7 @@
   "lineStart": 197,
   "lineEnd": 209,
   "tinai": "palai",
-  "sangamTamil": "உயர்நிலை உலகம் அமிழ்தொடு பெறினும்\nபொய்சேண் நீங்கிய வாய்நட் பினையே\nமுழங்குகட லேணி மலர்தலை யுலகமொடு\nஉயர்ந்த தேஎத்து விழுமியோர் வரினும்\nபகைவர்க் கஞ்சிப் பணிந்தொழு கலையே\nதென்புல மருங்கின் விண்டு நிறைய\nவாணன் வைத்த விழுநிதி பெறினும்\nபழிநமக் கெழுக என்னாய் விழுநிதி\nஈதல் உள்ளமொடு இசைவேட் குவையே",
+  "sangamTamil": "உயர்நிலை உலகம் அமிழ்தொடு பெறினும்\nபொய்சேண் நீங்கிய வாய்நட் பினையே\nமுழங்குகட லேணி மலர்தலை யுலகமொடு\nஉயர்ந்த தேஎத்து விழுமியோர் வரினும்\nபகைவர்க் கஞ்சிப் பணிந்தொழு கலையே\nதென்புல மருங்கின் விண்டு நிறைய\nவாணன் வைத்த விழுநிதி பெறினும்\nபழிநமக் கெழுக என்னாய் விழுநிதி\nஈதல் உள்ளமொடு இசைவேட் குவையே\nயன்னாய் நின்னொடு முன்னிலை யெவனோ\nகொன்னொன்று கிளக்குவ லடுபோ ரண்ணல்\nகேட்டிசின் வாழி கெடுகநின் னவலங்\nகெடாது நிலைஇயர்நின் சேண்விளக்கு நல்லிசை",
   "urai": "வானுலகத்தை அமிழ்தத்தோடு சேர்த்துக் கொடுத்தாலும் தான் கொடுத்த வாக்கிலிருந்து தவற மாட்டான். பகைவர்க்கு அஞ்சிப் பணியாதவன் முழங்கும் கடல் ஏணிக்கு மேல் உலகம் மலர்ந்து பூத்திருக்கிறது.உயர்ந்த மேல் உலகத்தின் வானோர் மண்ணுலகத்தையே படையாகத் திரட்டிக்கொண்டு எதிர்த்து வந்தாலும் செழியன் பணியமாட்டான். பழிக்கு அஞ்சுபவன் - பாண்டிய நாட்டின் தென்பகுதியில் வாணன் என்பவன் விழுமிய நிதிக்குவியலை மூங்கில் குழாய்களில் சேமித்து வைத்திருந்தான். அதனை முழுமையாகப் பெறுவதாயினும் ‘ஏற்றல்’ பழி வரும் என்று எண்ணி வாங்கமாட்டான். புகழ்வேள்வி செய்பவன் - தன்னிடம் உள்ள விழுமிய செல்வத்தை யெல்லாம் ‘ஈய வேண்டும்’ என்னும் எண்ணத்தோடு வாரி வழங்கும் இசை வேள்வியைச் செய்வான்.",
   "english": null,
   "lines": [
@@ -315,11 +315,147 @@
           "gloss": "This verb, meaning 'you will accumulate' or 'you will gather,' indicates the act of collecting or amassing something, often referring to wealth or good deeds, with an emphatic particle."
         }
       ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "யன்னாய் நின்னொடு முன்னிலை யெவனோ",
+      "words": [
+        {
+          "form": "யன்னாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்னொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முன்னிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யெவனோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "கொன்னொன்று கிளக்குவ லடுபோ ரண்ணல்",
+      "words": [
+        {
+          "form": "கொன்னொன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளக்குவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லடுபோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரண்ணல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "கேட்டிசின் வாழி கெடுகநின் னவலங்",
+      "words": [
+        {
+          "form": "கேட்டிசின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெடுகநின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னவலங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "கெடாது நிலைஇயர்நின் சேண்விளக்கு நல்லிசை",
+      "words": [
+        {
+          "form": "கெடாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலைஇயர்நின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேண்விளக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்லிசை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி17.html",
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி17.html; Project Madurai pmuni0496",
   "verified": false,
   "etymologyMeta": {
     "provider": "openrouter",

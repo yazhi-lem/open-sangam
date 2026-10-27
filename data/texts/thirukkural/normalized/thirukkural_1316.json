@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1316",
+  "poem": "thirukkural",
+  "number": 1316,
+  "title": "புலவி நுணுக்கம்",
+  "heading": "3.2.17",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உள்ளினேன் என்றேன்மற் றென்மறந்தீர் என்றென்னைப்\nபுல்லாள் புலத்தக் கனள்.",
+  "urai": null,
+  "english": "'Each day I called to mind your charms,' 'O, then, you had forgot,' She cried, and then her opened arms, Forthwith embraced me not.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உள்ளினேன் என்றேன்மற் றென்மறந்தீர் என்றென்னைப்",
+      "words": [
+        {
+          "form": "உள்ளினேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றேன்மற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றென்மறந்தீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றென்னைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "புல்லாள் புலத்தக் கனள்.",
+      "words": [
+        {
+          "form": "புல்லாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலத்தக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கனள்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

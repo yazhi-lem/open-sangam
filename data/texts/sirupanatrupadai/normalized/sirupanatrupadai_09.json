@@ -2,27 +2,41 @@
   "id": "sirupanatrupadai_09",
   "poem": "sirupanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "..................................நிழல் திகழ்\nநீல நாகம் நல்கிய கலிங்கம்\nஆல் அமர் செல்வற்கு அமர்ந்தனன் கொடுத்த\nசாவம் தாங்கிய சாந்து புலர் திணி தோள்\nஆர்வ நன் மொழி ஆயும்",
+  "sangamTamil": "கழறொடித் தடக்கைக் காரியு நிழறிகழ்\nநீல நாகம் நல்கிய கலிங்கம்\nஆல் அமர் செல்வற்கு அமர்ந்தனன் கொடுத்த\nசாவம் தாங்கிய சாந்து புலர் திணி தோள்",
   "urai": "இவன் மகிழ்ந்திருக்கும்போது சந்தனம் பூசிய கோலத்தோடு காட்சி தருபவன். சினந்திருக்கும்போது வில்லும் கையுமாகத் திரிபவன். ஆலமரத்தடியில் குடிகொண்டிருந்த சிவபெருமானின் சிலை ஆடை இல்லாமல் இருப்பதைக் கண்ட இவன் நச்சு (நீலம்) கொண்ட நாகப்பாம்பு ஒன்று இவனுக்குத் தந்த மேலாடையை அச்சிலைக்குப் போர்த்தி மகிழ்ந்தான்.",
   "english": null,
   "lines": [
     {
       "lineNumber": 1,
-      "text": "..................................நிழல் திகழ்",
+      "text": "கழறொடித் தடக்கைக் காரியு நிழறிகழ்",
       "words": [
         {
-          "form": "..................................நிழல்",
+          "form": "கழறொடித்",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "manuscript lacuna"
+          "gloss": null
         },
         {
-          "form": "திகழ்",
+          "form": "தடக்கைக்",
           "root": null,
           "urichol": null,
-          "etymology": "திகழ் என்னும் வேர்ச்சொல், ஒளி வீசுதல், விளங்குதல், சிறப்புறுதல் போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் பரவலாகப் பயன்படுத்தப்படும் இச்சொல், இன்றும் அதே பொருளில் வழக்கில் உள்ளது. 'திகழ்கின்ற' என்பது போன்ற பெயரெச்ச வடிவங்களும் உண்டு.",
-          "gloss": "This word signifies to shine, to be resplendent, or to be prominent, indicating a radiant or distinguished quality of the preceding noun."
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காரியு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிழறிகழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
         }
       ]
     },
@@ -148,50 +162,16 @@
           "gloss": "This noun refers to the shoulder, a part of the human body, often symbolizing strength, courage, and the ability to bear burdens."
         }
       ]
-    },
-    {
-      "lineNumber": 5,
-      "text": "ஆர்வ நன் மொழி ஆயும்",
-      "words": [
-        {
-          "form": "ஆர்வ",
-          "root": "ஆர்வம்",
-          "urichol": null,
-          "etymology": "ஆர்வம் என்னும் வேர்ச்சொல்லிலிருந்து தோன்றிய ஆர்வ என்பது 'விருப்பம்', 'பற்று' அல்லது 'அன்பு' என்னும் பொருளைத் தரும் ஒரு பண்புப்பெயர். சங்க இலக்கியத்தில் மனதின் ஈடுபாடு, விருப்பம் போன்ற பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத்திலும் அதே பொருளில் வழக்கில் உள்ளது.",
-          "gloss": "This adjective means 'of desire,' 'of affection,' or 'of enthusiasm,' indicating a heartfelt or passionate quality."
-        },
-        {
-          "form": "நன்",
-          "root": "நல்",
-          "urichol": null,
-          "etymology": "நல் என்னும் வேர்ச்சொல்லிலிருந்து தோன்றிய நன் என்பது 'நல்ல' அல்லது 'சிறந்த' என்னும் பொருளைத் தரும் ஒரு பண்புப்பெயர். சங்க இலக்கியத்தில் ஒரு பொருளின் சிறப்பைக் குறிக்கப் பரவலாகப் பயன்படுத்தப்பட்டது. தற்காலத்திலும் 'நல்ல' என்றே வழக்கில் உள்ளது.",
-          "gloss": "This adjective means 'good,' 'excellent,' or 'auspicious,' describing the positive quality of the words or speech."
-        },
-        {
-          "form": "மொழி",
-          "root": null,
-          "urichol": null,
-          "etymology": "மொழி என்னும் சொல் பேச்சு, சொல் அல்லது மொழியைக் குறிக்கும். சங்க இலக்கியத்தில் கருத்துக்களை வெளிப்படுத்தும் ஊடகமாகப் பரவலாகப் பயன்படுத்தப்பட்டது. தற்காலத்திலும் அதே பொருளில் வழக்கில் உள்ளது.",
-          "gloss": "This noun refers to speech, words, or language, specifically indicating the expressions or utterances made."
-        },
-        {
-          "form": "ஆயும்",
-          "root": "ஆய்",
-          "urichol": null,
-          "etymology": "ஆய் என்னும் வேர்ச்சொல்லிலிருந்து தோன்றிய ஆயும் என்பது 'ஆராயும்', 'தேர்ந்தெடுக்கும்' அல்லது 'பரிசீலிக்கும்' என்னும் பொருளைத் தரும் ஒரு வினையெச்சம் அல்லது பெயரெச்சம். இங்கு 'ஆராயும்' என்ற பொருளில் வந்துள்ளது. சங்க இலக்கியத்தில் நுட்பமாக ஆராய்தல், தேர்ந்தெடுத்தல் போன்ற பொருள்களில் பயன்படுத்தப்பட்டது. தற்காலத்திலும் அதே பொருளில் வழக்கில் உள்ளது.",
-          "gloss": "This verb, in its participial form, means 'examining,' 'considering,' or 'selecting,' indicating a careful and discerning process of evaluation."
-        }
-      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை09.html",
+  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை09.html; Project Madurai pmuni0483",
   "verified": false,
   "sectionNumber": 9,
   "title": "கடையெழு வள்ளல்களின் சிறப்பு - ஆய் அண்டிரன்",
   "lineStart": 95,
-  "lineEnd": 99,
+  "lineEnd": 98,
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",

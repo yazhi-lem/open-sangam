@@ -2,7 +2,7 @@
   "id": "malaipadukadam_08",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "தீயின் அன்ன ஒண் செங்காந்தள்\nதூவல் கலித்த புது முகை ஊன் செத்து\nஅறியாது எடுத்த புன் புற சேவல்\nஊஉன் அன்மையின் உண்ணாது உகுத்தென\nநெருப்பின் அன்ன பல் இதழ் தாஅய்\nவெறிக்களம் கடுக்கும் வியல் அறைதோறும்\nமண இல் கமழும் மா மலை சாரல்",
+  "sangamTamil": "தீயின் அன்ன ஒண் செங்காந்தள்\nதூவல் கலித்த புது முகை ஊன் செத்து\nஅறியாது எடுத்த புன் புற சேவல்\nஊஉன் அன்மையின் உண்ணாது உகுத்தென\nநெருப்பின் அன்ன பல் இதழ் தாஅய்\nவெறிக்களம் கடுக்கும் வியல் அறைதோறும்\nமண இல் கமழும் மா மலை சாரல்\nறேனினர் கிழக்கின ரூனார் வட்டியர்\nசிறுகட் பன்றிப் பழுதுளி போக்கிப்\nபொருதுதொலை யானைக் கோடுசீ ராகத்\nதூவொடு மலிந்த காய கானவர்\nசெழும்பல் யாணர்ச் சிறுகுடிப் படினே\nயிரும்பே ரொக்கலொடு பதமிகப் பெறுகுவி",
   "urai": "காந்தள் பூ சிவப்பு நிறத்தில் பூத்திருந்தது. அதனைப் புலால்-கறித்துண்டு என்று கருதி எடுத்துச் சென்ற கழுகு உண்ணாமல் உதிர்த்தது. அவை அகன்ற பாறைகளில் விழுந்து நெருப்புப் பிழம்புகள் போலக் கிடந்தன. மணலில் உதிர்ந்தவை மணம் பரப்பிக்கொண்டிருந்தன. முருகனை வேண்டி வெறியாடிய களத்தில் புலவுத் துண்டுகள் ஆங்காங்கே கிடக்கும். அதுபோலக் காந்தள் பூக்கள் பாறைமேல் பூத்துக் கிடந்தன.",
   "english": null,
   "lines": [
@@ -285,11 +285,215 @@
           "gloss": "Mountain slope or foothills, referring to the lower part of the mountain where the fragrant petals are found."
         }
       ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "றேனினர் கிழக்கின ரூனார் வட்டியர்",
+      "words": [
+        {
+          "form": "றேனினர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிழக்கின",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரூனார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வட்டியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "சிறுகட் பன்றிப் பழுதுளி போக்கிப்",
+      "words": [
+        {
+          "form": "சிறுகட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பன்றிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பழுதுளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போக்கிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "பொருதுதொலை யானைக் கோடுசீ ராகத்",
+      "words": [
+        {
+          "form": "பொருதுதொலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோடுசீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராகத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "தூவொடு மலிந்த காய கானவர்",
+      "words": [
+        {
+          "form": "தூவொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கானவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "செழும்பல் யாணர்ச் சிறுகுடிப் படினே",
+      "words": [
+        {
+          "form": "செழும்பல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாணர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகுடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படினே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "யிரும்பே ரொக்கலொடு பதமிகப் பெறுகுவி",
+      "words": [
+        {
+          "form": "யிரும்பே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரொக்கலொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பதமிகப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறுகுவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்08.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்08.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 8,
   "title": "கானவர் குடியின் இயல்பு",

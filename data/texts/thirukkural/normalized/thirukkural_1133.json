@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1133",
+  "poem": "thirukkural",
+  "number": 1133,
+  "title": "நாணுத்துறவுரைத்தல்",
+  "heading": "3.1.6",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "நாணொடு நல்லாண்மை பண்டுடையேன் இன்றுடையேன்\nகாமுற்றார் ஏறும் மடல்.",
+  "urai": null,
+  "english": "I once retained reserve and seemly manliness; To-day I nought possess but lovers' 'horse of palm'.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நாணொடு நல்லாண்மை பண்டுடையேன் இன்றுடையேன்",
+      "words": [
+        {
+          "form": "நாணொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்லாண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பண்டுடையேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்றுடையேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "காமுற்றார் ஏறும் மடல்.",
+      "words": [
+        {
+          "form": "காமுற்றார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

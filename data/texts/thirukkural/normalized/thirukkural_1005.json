@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1005",
+  "poem": "thirukkural",
+  "number": 1005,
+  "title": "நன்றியில்செல்வம்",
+  "heading": "2.4.6",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "கொடுப்பதூஉம் துய்ப்பதூஉம் இல்லார்க்கு அடுக்கிய\nகோடியுண் டாயினும் இல்.",
+  "urai": null,
+  "english": "Amid accumulated millions they are poor, Who nothing give and nought enjoy of all they store.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கொடுப்பதூஉம் துய்ப்பதூஉம் இல்லார்க்கு அடுக்கிய",
+      "words": [
+        {
+          "form": "கொடுப்பதூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துய்ப்பதூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லார்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடுக்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கோடியுண் டாயினும் இல்.",
+      "words": [
+        {
+          "form": "கோடியுண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டாயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

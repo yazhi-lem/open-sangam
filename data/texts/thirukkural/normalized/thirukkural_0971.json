@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0971",
+  "poem": "thirukkural",
+  "number": 971,
+  "title": "பெருமை",
+  "heading": "2.4.3",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "ஒளிஒருவற்கு உள்ள வெறுக்கை இளிஒருவற்கு\nஅஃதிறந்து வாழ்தும் எனல்.",
+  "urai": null,
+  "english": "The light of life is mental energy; disgrace is his Who says, 'I 'ill lead a happy life devoid of this.'",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஒளிஒருவற்கு உள்ள வெறுக்கை இளிஒருவற்கு",
+      "words": [
+        {
+          "form": "ஒளிஒருவற்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ள",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெறுக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இளிஒருவற்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அஃதிறந்து வாழ்தும் எனல்.",
+      "words": [
+        {
+          "form": "அஃதிறந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எனல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

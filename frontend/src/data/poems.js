@@ -4,6 +4,7 @@
 export const COLLECTIONS = {
   '8thokai': { ta: 'எட்டுத்தொகை', en: 'Eight Anthologies', desc: 'Eight classical Tamil poetic anthologies spanning the Akam (interior) and Puram (exterior) traditions.' },
   '10paddu': { ta: 'பத்துப்பாட்டு', en: 'Ten Idylls', desc: 'Ten long poems celebrating kings, cities, and the Tamil landscape in elaborate verse.' },
+  'pathinenkilkkanakku': { ta: 'பதினெண்கீழ்க்கணக்கு', en: 'Eighteen Minor Works', desc: 'Post-Sangam didactic and gnomic anthologies. The first two, Tirukkural and Naladiyar, are now readable with public-domain English translations.' },
 }
 
 export const POEMS = [
@@ -155,6 +156,24 @@ export const POEMS = [
     count: 103, unit: 'lines',
     available: true,
     loader: () => import('@data/texts/mullaippattu/mullaippattu.json'),
+  },
+  {
+    id: 'thirukkural',
+    ta: 'திருக்குறள்', en: 'Tirukkural',
+    collection: 'pathinenkilkkanakku',
+    count: 1330, unit: 'couplets',
+    tinai: [],
+    available: true,
+    loader: () => import('@data/texts/thirukkural/thirukkural.json'),
+  },
+  {
+    id: 'naladiyar',
+    ta: 'நாலடியார்', en: 'Naladiyar',
+    collection: 'pathinenkilkkanakku',
+    count: 400, unit: 'quatrains',
+    tinai: [],
+    available: true,
+    loader: () => import('@data/texts/naladiyar/naladiyar.json'),
   },
   {
     id: 'nedunalvadai',

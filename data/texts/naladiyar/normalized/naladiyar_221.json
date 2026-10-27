@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_221",
+  "poem": "naladiyar",
+  "number": 221,
+  "title": "நட்பிற் பிழை பொறுத்தல்",
+  "heading": "2.23",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நல்லா ரெனத்தாம் நனிவிரும்பிக் கொண்டாரை\nஅல்லா ரெனினும் அடக்கிக் கொளல்வேண்டும்.\nநெல்லுக் குமியுண்டு, நீர்க்கு நுரைஉண்டு\nபுல்லிதழ் பூவிற்கும் உண்டு.",
+  "urai": null,
+  "english": "Bear with infirmities. None are perfect. When those to whom with strong desire we clung as good, prove otherwise, keep the sad secret bid, - cling to them still! The growing grain has husks; the water has its foam: flowers too have scentless outer sheath of leaves.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நல்லா ரெனத்தாம் நனிவிரும்பிக் கொண்டாரை",
+      "words": [
+        {
+          "form": "நல்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரெனத்தாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நனிவிரும்பிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டாரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அல்லா ரெனினும் அடக்கிக் கொளல்வேண்டும்.",
+      "words": [
+        {
+          "form": "அல்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரெனினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடக்கிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளல்வேண்டும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நெல்லுக் குமியுண்டு, நீர்க்கு நுரைஉண்டு",
+      "words": [
+        {
+          "form": "நெல்லுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குமியுண்டு,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுரைஉண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "புல்லிதழ் பூவிற்கும் உண்டு.",
+      "words": [
+        {
+          "form": "புல்லிதழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூவிற்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உண்டு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

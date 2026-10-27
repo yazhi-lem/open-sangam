@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1311",
+  "poem": "thirukkural",
+  "number": 1311,
+  "title": "புலவி நுணுக்கம்",
+  "heading": "3.2.17",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பெண்ணியலார் எல்லாரும் கண்ணின் பொதுஉண்பர்\nநண்ணேன் பரத்தநின் மார்பு.",
+  "urai": null,
+  "english": "From thy regard all womankind Enjoys an equal grace; O thou of wandering fickle mind, I shrink from thine embrace!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பெண்ணியலார் எல்லாரும் கண்ணின் பொதுஉண்பர்",
+      "words": [
+        {
+          "form": "பெண்ணியலார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எல்லாரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொதுஉண்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நண்ணேன் பரத்தநின் மார்பு.",
+      "words": [
+        {
+          "form": "நண்ணேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரத்தநின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மார்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

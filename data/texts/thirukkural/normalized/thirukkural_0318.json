@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0318",
+  "poem": "thirukkural",
+  "number": 318,
+  "title": "இன்னாசெய்யாமை",
+  "heading": "1.3.8",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "தன்னுயிர்ககு ஏன்னாமை தானறிவான் என்கொலோ\nமன்னுயிர்க்கு இன்னா செயல்.",
+  "urai": null,
+  "english": "Whose soul has felt the bitter smart of wrong, how can He wrongs inflict on ever-living soul of man?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தன்னுயிர்ககு ஏன்னாமை தானறிவான் என்கொலோ",
+      "words": [
+        {
+          "form": "தன்னுயிர்ககு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏன்னாமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தானறிவான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்கொலோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மன்னுயிர்க்கு இன்னா செயல்.",
+      "words": [
+        {
+          "form": "மன்னுயிர்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்னா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செயல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

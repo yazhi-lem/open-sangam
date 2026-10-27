@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_145",
+  "poem": "naladiyar",
+  "number": 145,
+  "title": "குடிப்பிறப்பு",
+  "heading": "2.15",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கல்லாமை அச்சம் கயவர் தொழிலச்சம்\nசொல்லாமை யுள்ளுமோர் சோர்வச்சம் - எல்லாம்\nஇரப்பார்க்கொன் றீயாமை அச்சம் மரத்தாரிம்\nமாணாக் குடிப்பிறந் தார்.",
+  "urai": null,
+  "english": "These four pious fears exist only among the really worthy. Dread of unlearned ignorance; dread of the work that base men do; dread of forgetful slip in words which one must not utter; dread of not giving to those that ask: those who are born of a race not so distinguished by conscientious fears are as trees.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கல்லாமை அச்சம் கயவர் தொழிலச்சம்",
+      "words": [
+        {
+          "form": "கல்லாமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கயவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழிலச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சொல்லாமை யுள்ளுமோர் சோர்வச்சம் - எல்லாம்",
+      "words": [
+        {
+          "form": "சொல்லாமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுள்ளுமோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோர்வச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எல்லாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "இரப்பார்க்கொன் றீயாமை அச்சம் மரத்தாரிம்",
+      "words": [
+        {
+          "form": "இரப்பார்க்கொன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றீயாமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அச்சம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரத்தாரிம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மாணாக் குடிப்பிறந் தார்.",
+      "words": [
+        {
+          "form": "மாணாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடிப்பிறந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

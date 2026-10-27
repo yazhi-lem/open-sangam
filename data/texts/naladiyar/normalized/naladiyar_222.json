@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_222",
+  "poem": "naladiyar",
+  "number": 222,
+  "title": "நட்பிற் பிழை பொறுத்தல்",
+  "heading": "2.23",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "செறுத்தோ றுடைப்பினும் செம்புனலோ டுடார்,\nமறுத்தும் சிறைசெய்வர் நீர்நசைஇ வாழ்நர்\nவெறுப்ப வெறுப்பச் செயினும் பொறுப்பரே\nதாம்வேண்டிக் கொண்டார் தொடர்பு.",
+  "urai": null,
+  "english": "Bear with your friends' faults, as the cultivator bears with the stream that often bursts its enclosure. If though they dam it up, the fresh flood should burst its bonds, men do not feel aggrieved; but straightway imprison it again, for by the precious stream they live: so though their friends again and again do very disagreeable things, men bear with those whose friendship is dear.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "செறுத்தோ றுடைப்பினும் செம்புனலோ டுடார்,",
+      "words": [
+        {
+          "form": "செறுத்தோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றுடைப்பினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செம்புனலோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டுடார்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மறுத்தும் சிறைசெய்வர் நீர்நசைஇ வாழ்நர்",
+      "words": [
+        {
+          "form": "மறுத்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறைசெய்வர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீர்நசைஇ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்நர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வெறுப்ப வெறுப்பச் செயினும் பொறுப்பரே",
+      "words": [
+        {
+          "form": "வெறுப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெறுப்பச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொறுப்பரே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தாம்வேண்டிக் கொண்டார் தொடர்பு.",
+      "words": [
+        {
+          "form": "தாம்வேண்டிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடர்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

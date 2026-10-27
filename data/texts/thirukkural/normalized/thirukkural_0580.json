@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0580",
+  "poem": "thirukkural",
+  "number": 580,
+  "title": "கண்ணோட் டம்",
+  "heading": "2.1.20",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பெயக்கண்டும் நஞ்சுண் டமைவர் நயத்தக்க\nநாகரிகம் வேண்டு பவர்.",
+  "urai": null,
+  "english": "They drink with smiling grace, though poison interfused they see, Who seek the praise of all-esteemed courtesy. -------------",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பெயக்கண்டும் நஞ்சுண் டமைவர் நயத்தக்க",
+      "words": [
+        {
+          "form": "பெயக்கண்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நஞ்சுண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டமைவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நயத்தக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நாகரிகம் வேண்டு பவர்.",
+      "words": [
+        {
+          "form": "நாகரிகம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பவர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

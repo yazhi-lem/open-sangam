@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0926",
+  "poem": "thirukkural",
+  "number": 926,
+  "title": "கள்ளுண்ணாமை",
+  "heading": "2.3.20",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "துஞ்சினார் செத்தாரின் வேறல்லர் எஞ்ஞான்றும்\nநஞ்சுண்பார் கள்ளுண் பவர்.",
+  "urai": null,
+  "english": "Sleepers are as the dead, no otherwise they seem; Who drink intoxicating draughts, they poison quaff, we deem.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "துஞ்சினார் செத்தாரின் வேறல்லர் எஞ்ஞான்றும்",
+      "words": [
+        {
+          "form": "துஞ்சினார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செத்தாரின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேறல்லர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எஞ்ஞான்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நஞ்சுண்பார் கள்ளுண் பவர்.",
+      "words": [
+        {
+          "form": "நஞ்சுண்பார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கள்ளுண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பவர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

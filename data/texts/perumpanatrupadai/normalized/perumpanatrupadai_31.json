@@ -2,7 +2,7 @@
   "id": "perumpanatrupadai_31",
   "poem": "perumpanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "குன்று உறழ் யானை மருங்குல் ஏய்க்கும்\nவண் தோட்டு தெங்கின் வாடு மடல் வேய்ந்த\nமஞ்சள் முன்றில் மணம் நாறு படப்பை\nதண்டலை உழவர் தனி மனை சேப்பின்",
+  "sangamTamil": "குன்று உறழ் யானை மருங்குல் ஏய்க்கும்\nவண் தோட்டு தெங்கின் வாடு மடல் வேய்ந்த\nமஞ்சள் முன்றில் மணம் நாறு படப்பை\nதண்டலை உழவர் தனி மனை சேப்பின்\nதாழ்கோட் பலவின் சூழ்சுளைப் பெரும்பழம்\nவீழி றாழைக் குழவித் தீநீர்க்\nகவைமுலை யிரும்பிடிக் கவுண்மருப் பேய்க்குங்\nகுலைமுதிர் வாழைக் கூனி வெண்பழம்\nதிரளரைப் பெண்ணை நுங்கொடு பிறவும்\nதீம்பஃறார முனையிற் சேம்பின்\nமுளைப்புறா முதிர்கிழங் கார்குவிர் பகற்பெயல்",
   "urai": "கலங்கரை விளக்குப் பகுதியைத் தாண்டிச் சென்றால் மஞ்சள் விளையும் படப்பைப் பகுதியில் தண்டலை உழவர்களின் தனி மனைகளை அடையலாம். அந்தத் தனிமனை குன்றுபோல் உயர்ந்திருக்கும். யானைக்கால் போல் நான்கு கால் நட்டு அதன் பரண்மீது கட்டப்பட்டிருக்கும். அது தென்னங் கீற்றுகளால் வேயப்பட்டிருக்கும். அங்கு சென்றால் விருந்துணவு பெறலாம்.",
   "english": null,
   "lines": [
@@ -176,11 +176,242 @@
           "gloss": "சேப்பின் means 'if one reaches' or 'if one arrives', indicating a conditional action of reaching a destination."
         }
       ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "தாழ்கோட் பலவின் சூழ்சுளைப் பெரும்பழம்",
+      "words": [
+        {
+          "form": "தாழ்கோட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூழ்சுளைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரும்பழம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "வீழி றாழைக் குழவித் தீநீர்க்",
+      "words": [
+        {
+          "form": "வீழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றாழைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழவித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீநீர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "கவைமுலை யிரும்பிடிக் கவுண்மருப் பேய்க்குங்",
+      "words": [
+        {
+          "form": "கவைமுலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யிரும்பிடிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவுண்மருப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேய்க்குங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "குலைமுதிர் வாழைக் கூனி வெண்பழம்",
+      "words": [
+        {
+          "form": "குலைமுதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெண்பழம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "திரளரைப் பெண்ணை நுங்கொடு பிறவும்",
+      "words": [
+        {
+          "form": "திரளரைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெண்ணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுங்கொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "தீம்பஃறார முனையிற் சேம்பின்",
+      "words": [
+        {
+          "form": "தீம்பஃறார",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முனையிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேம்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "முளைப்புறா முதிர்கிழங் கார்குவிர் பகற்பெயல்",
+      "words": [
+        {
+          "form": "முளைப்புறா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முதிர்கிழங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கார்குவிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகற்பெயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை31.html",
+  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை31.html; Project Madurai pmuni0492",
   "verified": false,
   "sectionNumber": 31,
   "title": "தோப்புக் குடிகளில் நிகழும் உபசாரம்",

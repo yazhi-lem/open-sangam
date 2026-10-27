@@ -2,7 +2,7 @@
   "id": "porunaratrupadai_12",
   "poem": "porunaratrupadai",
   "tinai": "unknown",
-  "sangamTamil": "துராஅய் துற்றிய துருவையும் புழுக்கின்\nபராஅரை வேவை பருகெனத் தண்டிக்\nகாழிற் சுட்ட கோழூன் கொழுங்குறை . . . .(105)\nயூழி னூழின் வாய்வெய் தொற்றி\nயவையவை முனிகுவ மெனினே\nவேறுபல் லுருவின் விரகுதந் திரீஇ",
+  "sangamTamil": "துராஅய் துற்றிய துருவையும் புழுக்கின்\nபராஅரை வேவை பருகெனத் தண்டிக்\nகாழிற் சுட்ட கோழூன் கொழுங்குறை . . . .(105)\nயூழி னூழின் வாய்வெய் தொற்றி\nயவையவை முனிகுவ மெனினே\nவேறுபல் லுருவின் விரகுதந் திரீஇ\nமண்ணமை முழவின் பண்ணமை சீறியா\nழொண்ணுதல் விறலியர் பாணி தூங்க\nமகிழ்ப்பதம் பன்னாட் கழிப்பி யொருநா\nளவிழ்ப்பதங் கொள்கென் றிரப்ப முகிழ்த்தகை\nமுரவை போகிய முரியா வரிசி\nவிரலென நிமிர்ந்த நிரலமை புழுக்கல்\nபரல்வறைக் கருனை காடியின் மிதப்ப\nவயின்ற காலைப் பயின்றினி திருந்து\nகொல்லை யுழுகொழு வேய்ப்பப் பல்லே\nயெல்லையு மிரவு மூன்றின்று மழுங்கி\nயுயிர்ப்பிடம் பெறாஅ தூண்முனிந் தொருநாட்",
   "urai": "பதத்தோடு சுட்டுச் சமைத்த செம்மறியாட்டுக் கறியும் சோறும் கூடிய உணவை அருகிருந்து ஊட்டலானான். அருகம்புல் மேய்ந்த துருவை என்னும் செம்மறியாடு. பராரை எனப்படும் அதன் பருத்த கால்தொடை. அதனைப் புழுக்கிய வேவை. வேவையை இக்காலத்தில் சூப் என்பர். அரசனாயிற்றே என்று அவனிடம் நெருங்கத் தயங்கினோம். அவன் விடவில்லை. தண்டினான். பருகுக என்று சொல்லித் தடுத்தான். (தண்டித்தான்) காழ் என்பது வைரம் பாய்ந்த கட்டையில் செய்த உண்கலம். கை சுடாமல் இருக்க மரக் கிண்ணத்தில் தந்தான். அதில் கொழுத்த கறித் துண்டுகளும் இருந்தன. சூடு வாயில் சுட்டதால் வாயால் ஊதி ஊதிச் சுவைத்துப் பருகினோம். ஊழின் ஊழின் ஒற்றினோம். அவ்வப்போது வாயில் ஒற்றடம் போட்டுக் கொண்டோம். அவை சலிக்கும்போது முனிவந்தோம். அதாவது முகம் சுளித்தோம். உடனே அவன் வேறு பல மாதிரிகளில் சமைத்த உணவை வரவழைத்தான். தந்திரமாக வரவழைத்துக் கொடுத்தான்.",
   "english": null,
   "lines": [
@@ -230,11 +230,385 @@
           "gloss": "This elongated past participial form of the verb 'to give' signifies 'having given' or 'having brought', indicating the completion of an action of providing or presenting."
         }
       ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "மண்ணமை முழவின் பண்ணமை சீறியா",
+      "words": [
+        {
+          "form": "மண்ணமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முழவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பண்ணமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சீறியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "ழொண்ணுதல் விறலியர் பாணி தூங்க",
+      "words": [
+        {
+          "form": "ழொண்ணுதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விறலியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூங்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "மகிழ்ப்பதம் பன்னாட் கழிப்பி யொருநா",
+      "words": [
+        {
+          "form": "மகிழ்ப்பதம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பன்னாட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிப்பி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொருநா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "ளவிழ்ப்பதங் கொள்கென் றிரப்ப முகிழ்த்தகை",
+      "words": [
+        {
+          "form": "ளவிழ்ப்பதங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்கென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றிரப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முகிழ்த்தகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "முரவை போகிய முரியா வரிசி",
+      "words": [
+        {
+          "form": "முரவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போகிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முரியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரிசி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "விரலென நிமிர்ந்த நிரலமை புழுக்கல்",
+      "words": [
+        {
+          "form": "விரலென",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிமிர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிரலமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புழுக்கல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "பரல்வறைக் கருனை காடியின் மிதப்ப",
+      "words": [
+        {
+          "form": "பரல்வறைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கருனை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காடியின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிதப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "வயின்ற காலைப் பயின்றினி திருந்து",
+      "words": [
+        {
+          "form": "வயின்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காலைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயின்றினி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திருந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "கொல்லை யுழுகொழு வேய்ப்பப் பல்லே",
+      "words": [
+        {
+          "form": "கொல்லை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுழுகொழு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேய்ப்பப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பல்லே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "யெல்லையு மிரவு மூன்றின்று மழுங்கி",
+      "words": [
+        {
+          "form": "யெல்லையு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிரவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூன்றின்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மழுங்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "யுயிர்ப்பிடம் பெறாஅ தூண்முனிந் தொருநாட்",
+      "words": [
+        {
+          "form": "யுயிர்ப்பிடம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறாஅ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூண்முனிந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொருநாட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/porunaratrupadai/porunaratruppadai-பொருநராற்றுப்படை12.html",
+  "source": "http://www.sangathamizh.com/10paddu/porunaratrupadai/porunaratruppadai-பொருநராற்றுப்படை12.html; Project Madurai pmuni0487",
   "verified": false,
   "sectionNumber": 12,
   "title": "உணவு கொடுத்து ஓம்பிய முறை",

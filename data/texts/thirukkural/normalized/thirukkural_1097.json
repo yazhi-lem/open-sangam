@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1097",
+  "poem": "thirukkural",
+  "number": 1097,
+  "title": "குறிப்பறிதல்",
+  "heading": "3.1.2",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "செறாஅச் சிறுசொல்லும் செற்றார்போல் நோக்கும்\nஉறாஅர்போன்று உற்றார் குறிப்பு.",
+  "urai": null,
+  "english": "The slighting words that anger feign, while eyes their love reveal. Are signs of those that love, but would their love conceal.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "செறாஅச் சிறுசொல்லும் செற்றார்போல் நோக்கும்",
+      "words": [
+        {
+          "form": "செறாஅச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுசொல்லும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செற்றார்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "உறாஅர்போன்று உற்றார் குறிப்பு.",
+      "words": [
+        {
+          "form": "உறாஅர்போன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உற்றார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறிப்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

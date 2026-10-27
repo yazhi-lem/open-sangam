@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0185",
+  "poem": "thirukkural",
+  "number": 185,
+  "title": "புறங்கூறாமை",
+  "heading": "1.2.15",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "அறஞ்சொல்லும் நெஞ்சத்தான் அன்மை புறஞ்சொல்லும்\nபுன்மையாற் காணப் படும்.",
+  "urai": null,
+  "english": "The slanderous meanness that an absent friend defames, 'This man in words owns virtue, not in heart,' proclaims.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அறஞ்சொல்லும் நெஞ்சத்தான் அன்மை புறஞ்சொல்லும்",
+      "words": [
+        {
+          "form": "அறஞ்சொல்லும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சத்தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புறஞ்சொல்லும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "புன்மையாற் காணப் படும்.",
+      "words": [
+        {
+          "form": "புன்மையாற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காணப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -2,7 +2,7 @@
   "id": "mullaippattu_14",
   "poem": "mullaippattu",
   "tinai": "mullai",
-  "sangamTamil": "பகைவர் சுட்டிய படைகொள் நோன் விரல்,\nநகை தாழ்க் கண்ணி நல் வலம் திருத்தி,\nஅரசு இருந்த பனிக்கும் முரசு முழங்கு பாசறை\nஇன் துயில் வதியுநன்..............",
+  "sangamTamil": "பகைவர் சுட்டிய படைகொள் நோன் விரல்,\nநகை தாழ்க் கண்ணி நல் வலம் திருத்தி,\nஅரசு இருந்த பனிக்கும் முரசு முழங்கு பாசறை",
   "urai": "அவன் சுட்டிக்காட்டிய அரசர்கள் அவனது வெற்றியைப் பாராட்டிக்கொண்டு நடுங்கியவண்ணம் நின்றனர்.",
   "english": null,
   "lines": [
@@ -142,43 +142,16 @@
           "gloss": "This noun refers to a military camp or encampment, a temporary dwelling for soldiers during wartime, and it is the setting where the hero is resting."
         }
       ]
-    },
-    {
-      "lineNumber": 4,
-      "text": "இன் துயில் வதியுநன்..............",
-      "words": [
-        {
-          "form": "இன்",
-          "root": null,
-          "urichol": "உரிச்சொல்",
-          "etymology": "இன் என்பது இனிமை, சிறப்பு, நலம் போன்ற பொருள்களை உணர்த்தும் ஓர் உரிச்சொல். இது சங்க இலக்கியத்தில் ஒரு பொருளின் இனிமையைக் குறிக்கப் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. 'இன் துயில்' என்பது இனிய துயில் என்ற பொருளைத் தரும்.",
-          "gloss": "This is an 'urichol' (descriptive word) meaning sweet, pleasant, or delightful, and it modifies 'துயில்' (sleep), indicating that the sleep is sweet or comfortable."
-        },
-        {
-          "form": "துயில்",
-          "root": null,
-          "urichol": null,
-          "etymology": "துயில் என்பது உறக்கம், தூக்கம் என்ற பொருள்களைக் குறிக்கும் ஒரு பெயர்ச்சொல். இது சங்க காலம் தொட்டே அதே பொருளில் பயன்படுத்தப்பட்டு வருகிறது. 'இன் துயில்' என்பது இனிய உறக்கம் என்ற பொருளைத் தரும்.",
-          "gloss": "This noun refers to sleep or slumber, and when combined with 'இன்' (sweet), it describes a pleasant or comfortable sleep that the hero is experiencing."
-        },
-        {
-          "form": "வதியுநன்..............",
-          "root": "வதி",
-          "urichol": null,
-          "etymology": "வதி என்னும் வினைச்சொல்லின் வினையாலணையும் பெயர் வடிவம். வதிதல் என்பது தங்குதல், இருத்தல், வசித்தல் என்ற பொருள்களைக் குறிக்கும். வதியுநன் என்பது தங்குபவன், வசிப்பவன் என்ற பொருளைத் தரும். இங்கு, இனிய துயிலில் தங்குபவன், அதாவது உறங்குபவன் என்பதைக் குறிக்கிறது.",
-          "gloss": "This is a verbal noun derived from 'வதி' (to dwell, to reside, to stay), meaning 'one who dwells' or 'one who stays,' and in this context, it refers to the hero who is resting or sleeping in the sweet slumber."
-        }
-      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mullaippattu/mullaippattu-முல்லைப்பாட்டு14.html",
+  "source": "http://www.sangathamizh.com/10paddu/mullaippattu/mullaippattu-முல்லைப்பாட்டு14.html; Project Madurai pmuni0488",
   "verified": false,
   "sectionNumber": 14,
   "title": "வெற்றிக்குப் பின் பாசறையில் மன்னன்",
   "lineStart": 77,
-  "lineEnd": 80,
+  "lineEnd": 79,
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",

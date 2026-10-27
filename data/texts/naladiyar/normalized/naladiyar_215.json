@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_215",
+  "poem": "naladiyar",
+  "number": 215,
+  "title": "நட்பாராய்தல்",
+  "heading": "2.22",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கோட்டுப்பூப் போல மலர்ந்துபிற் கூம்பாது\nவேட்டதே வேட்டதாம் நட்பாட்சி - தோட்ட\nகயப்பூப்போல் முன்மலர்ந்து பிற்கூம்பு வாரை\nநயப்பாரும் நட்பாரும் இல்.",
+  "urai": null,
+  "english": "Tree-flowers and water-flowers. The use and wont of friendship is that, what once it has loved it loves always,— like the flower on the tree-branch which having once unfolded afterwards closes not; but who will esteem, or make friends of those who are like flowers on the surface of the excavated tank, which unfold and afterwards close themselves?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கோட்டுப்பூப் போல மலர்ந்துபிற் கூம்பாது",
+      "words": [
+        {
+          "form": "கோட்டுப்பூப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலர்ந்துபிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூம்பாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வேட்டதே வேட்டதாம் நட்பாட்சி - தோட்ட",
+      "words": [
+        {
+          "form": "வேட்டதே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேட்டதாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நட்பாட்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கயப்பூப்போல் முன்மலர்ந்து பிற்கூம்பு வாரை",
+      "words": [
+        {
+          "form": "கயப்பூப்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முன்மலர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிற்கூம்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நயப்பாரும் நட்பாரும் இல்.",
+      "words": [
+        {
+          "form": "நயப்பாரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நட்பாரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

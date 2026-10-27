@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0886",
+  "poem": "thirukkural",
+  "number": 886,
+  "title": "உட்பகை",
+  "heading": "2.3.16",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "ஒன்றாமை ஒன்றியார் கட்படின் எஞ்ஞான்றும்\nபொன்றாமை ஒன்றல் அரிது.",
+  "urai": null,
+  "english": "If discord finds a place midst those who dwelt at one before, 'Tis ever hard to keep destruction from the door.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஒன்றாமை ஒன்றியார் கட்படின் எஞ்ஞான்றும்",
+      "words": [
+        {
+          "form": "ஒன்றாமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒன்றியார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கட்படின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எஞ்ஞான்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பொன்றாமை ஒன்றல் அரிது.",
+      "words": [
+        {
+          "form": "பொன்றாமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒன்றல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அரிது.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -2,7 +2,7 @@
   "id": "thirumurugatrupadai_17",
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "கடுவொடு ஒடுங்கிய தூம்படை வால்எயிற்று\nஅழலென உயிர்க்கும் அஞ்சுவரு கடுந்திறல்\nபாம்புபடப் புடைக்கும் பல்வரிக் கொடுஞ்சிறைப் . . . .(150)\nபுள்ளணி நீள்கொடிச் செல்வனும், வெள்ளேறு",
+  "sangamTamil": "கடுவொடு ஒடுங்கிய தூம்படை வால்எயிற்று\nஅழலென உயிர்க்கும் அஞ்சுவரு கடுந்திறல்\nபாம்புபடப் புடைக்கும் பல்வரிக் கொடுஞ்சிறைப் . . . .(150)\nபுள்ளணி நீள்கொடிச் செல்வனும், வெள்ளேறு\nவலவயி னுயரிய பலர்புகழ் திணிதோ\nளுமையமர்ந்து விளங்கு மிமையா முக்கண்\nமூவெயின் முருக்கிய முரண்மிகு செல்வனு\nநூற்றுப்பத் தடுக்கிய நாட்டத்து நூறுபல்\nவேள்வி முற்றிய வென்றடு கொற்றத்\nதீரிரன் டேந்திய மருப்பி னெழினடைத்\nதாழ்பெருந் தடக்கை யுயர்த்த யானை\nயெருத்த மேறிய திருக்கிளர் செல்வனு",
   "urai": "பாம்புப் பல்லின் துளையில் நஞ்சு ஒடுங்கியிருக்கும். பாம்பு தீயைப் போல் பெருமூச்சு விடும். கண்டவுடன் மக்கள் அஞ்சி ஒதுங்கும் திறம் கொண்டது பாம்பு. இத்தகைய பாம்பை உணவுக்காகக் கொல்லும் திறம் படைத்ததாய்க் கழுத்தும் வயிறும் வெளுத்திருப்பது கருடப் பறவை. இதனைக் கொடியாகக் கொண்டவன் திருமால்.",
   "english": "With fangs white and hollow, where venom hides,\nA serpent, breathing fire, its fearsome might,\nIs struck down by the many-lined, crooked-winged bird,\nWhose neck and belly gleam, a hunter of snakes.\nHe, whose long banner bears this bird, is Cellavaṉ,\nAnd the white bull.",
   "lines": [
@@ -169,11 +169,283 @@
           "gloss": "The white bull; this refers to the white bull, Nandi, which is the vehicle of Lord Shiva, and is mentioned alongside Vishnu."
         }
       ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "வலவயி னுயரிய பலர்புகழ் திணிதோ",
+      "words": [
+        {
+          "form": "வலவயி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னுயரிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலர்புகழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திணிதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "ளுமையமர்ந்து விளங்கு மிமையா முக்கண்",
+      "words": [
+        {
+          "form": "ளுமையமர்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிமையா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முக்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "மூவெயின் முருக்கிய முரண்மிகு செல்வனு",
+      "words": [
+        {
+          "form": "மூவெயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முருக்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முரண்மிகு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்வனு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நூற்றுப்பத் தடுக்கிய நாட்டத்து நூறுபல்",
+      "words": [
+        {
+          "form": "நூற்றுப்பத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தடுக்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட்டத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நூறுபல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "வேள்வி முற்றிய வென்றடு கொற்றத்",
+      "words": [
+        {
+          "form": "வேள்வி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முற்றிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வென்றடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொற்றத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "தீரிரன் டேந்திய மருப்பி னெழினடைத்",
+      "words": [
+        {
+          "form": "தீரிரன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டேந்திய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மருப்பி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னெழினடைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "தாழ்பெருந் தடக்கை யுயர்த்த யானை",
+      "words": [
+        {
+          "form": "தாழ்பெருந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தடக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுயர்த்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "யெருத்த மேறிய திருக்கிளர் செல்வனு",
+      "words": [
+        {
+          "form": "யெருத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேறிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திருக்கிளர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்வனு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/thirumurugatrupadai/thirumurugatrupadai-திருமுருகாற்றுப்படை17.html",
+  "source": "http://www.sangathamizh.com/10paddu/thirumurugatrupadai/thirumurugatrupadai-திருமுருகாற்றுப்படை17.html; Project Madurai pmuni0493",
   "verified": false,
   "sectionNumber": 17,
   "title": "திருமால், சிவன், இந்திரன், ஆகியோரின் இயல்புகள்",

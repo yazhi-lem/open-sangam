@@ -2,7 +2,7 @@
   "id": "perumpanatrupadai_15",
   "poem": "perumpanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "தொடுதோல் மரீஇய வடு ஆழ் நோன் அடி\nவிழு தண்டு ஊன்றிய மழு தின் வன் கை\nஉறி கா ஊர்ந்த மறு படு மயிர் சுவல்\nமேம் பால் உரைத்த ஓரி ஓங்கு மிசை\nகோட்டவும் கொடியவும் விரைஇ காட்ட\nபல் பூ மிடைந்த படலை கண்ணி\nஒன்று அமர் உடுக்கை கூழ் ஆர் இடையன்",
+  "sangamTamil": "தொடுதோல் மரீஇய வடு ஆழ் நோன் அடி\nவிழு தண்டு ஊன்றிய மழு தின் வன் கை\nஉறி கா ஊர்ந்த மறு படு மயிர் சுவல்\nமேம் பால் உரைத்த ஓரி ஓங்கு மிசை\nகோட்டவும் கொடியவும் விரைஇ காட்ட\nபல் பூ மிடைந்த படலை கண்ணி\nஒன்று அமர் உடுக்கை கூழ் ஆர் இடையன்\nகன்றமர் நிரையொடு கானத் தல்கி\nயந்நு ணர்விர்புகை கமழக் கைம்முயன்று\nஞெலிகோற் கொண்ட பெருவிறன் ஞெகிழிச்\nசெந்தீத் தோட்ட கருந்துளைக் குழலி\nனின்றீம் பாலை முனையிற் குமிழின்\nபுழற்கோட்டுத் தொடுத்த மரற்புரி நரம்பின்\nவில்யா ழிசைக்கும் விரலெறி குறிஞ்சிப்\nபல்காற் பறவை கிளைசெத் தோர்க்கும்\nபுல்லார் வியன்புலம் போகி முள்ளுடுத்",
   "urai": "இடையன் தன் காலில் செருப்பு அணிந்திருந்தான். தோளில் கனக்கும் பால் கறந்த பானை இருபுறமும் தொங்கும் காவடித் தண்டைத் தாங்கிப் பிடித்தும், வாக்க வரும் விலங்கை வீழ்த்த வைத்திலுந்த மழுவை ஊன்றிப் பிடித்தும் அவனது வலிமை மிக்க கைகள் காப்புக் காய்த்துப் போயிருந்தன. இரண்டு பக்கமும் பால்குட உறி தொங்கும் காவடித் தண்டைச் சுமந்து சுமந்து அவன் தோளிலும் காப்புக் காய்த்திருந்தது. தலைமயிர் அவனது தோளில் சுருண்டு விழுந்தது. கறந்த பாலின் ஈரத்தை அவன் தன் ஓரி மயிரில் தடவிக் கொண்டான். மரக் கிளைகளிலும் கொடிகளிலும் பூக்கும் பலவகைப் பூக்களை ஒன்றை அடுத்து ஒன்றாக மாற்றி மாற்றித் தொடுத்த படலைக் கண்ணியை அவன் தலையில் அணிந்திருந்தான். மாற்று ஆடை இல்லாமையால் ஒரே ஆடையை விரும்பி உடுத்திக் கொள்ளும் பழக்கம் உள்ளவன். என்றாலும் வயிறாரக் கூழ் குடிப்பான்.",
   "english": null,
   "lines": [
@@ -334,11 +334,317 @@
           "gloss": "This noun refers to a 'shepherd' or 'cowherd', the central figure of the description, belonging to the pastoral community."
         }
       ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "கன்றமர் நிரையொடு கானத் தல்கி",
+      "words": [
+        {
+          "form": "கன்றமர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிரையொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கானத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தல்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "யந்நு ணர்விர்புகை கமழக் கைம்முயன்று",
+      "words": [
+        {
+          "form": "யந்நு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ணர்விர்புகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமழக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கைம்முயன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "ஞெலிகோற் கொண்ட பெருவிறன் ஞெகிழிச்",
+      "words": [
+        {
+          "form": "ஞெலிகோற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருவிறன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞெகிழிச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "செந்தீத் தோட்ட கருந்துளைக் குழலி",
+      "words": [
+        {
+          "form": "செந்தீத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கருந்துளைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குழலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "னின்றீம் பாலை முனையிற் குமிழின்",
+      "words": [
+        {
+          "form": "னின்றீம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முனையிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குமிழின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "புழற்கோட்டுத் தொடுத்த மரற்புரி நரம்பின்",
+      "words": [
+        {
+          "form": "புழற்கோட்டுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரற்புரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நரம்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "வில்யா ழிசைக்கும் விரலெறி குறிஞ்சிப்",
+      "words": [
+        {
+          "form": "வில்யா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ழிசைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விரலெறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறிஞ்சிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "பல்காற் பறவை கிளைசெத் தோர்க்கும்",
+      "words": [
+        {
+          "form": "பல்காற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பறவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிளைசெத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோர்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "புல்லார் வியன்புலம் போகி முள்ளுடுத்",
+      "words": [
+        {
+          "form": "புல்லார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வியன்புலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போகி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முள்ளுடுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை15.html",
+  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை15.html; Project Madurai pmuni0492",
   "verified": false,
   "sectionNumber": 15,
   "title": "முல்லை நிலக் கோவலரின் குழலிசை",

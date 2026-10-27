@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0726",
+  "poem": "thirukkural",
+  "number": 726,
+  "title": "அவையஞ்சாமை",
+  "heading": "2.2.10",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "வாளொடென் வன்கண்ணர் அல்லார்க்கு நூலொடென்\nநுண்ணவை அஞ்சு பவர்க்கு.",
+  "urai": null,
+  "english": "To those who lack the hero's eye what can the sword avail? Or science what, to those before the council keen who quail?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "வாளொடென் வன்கண்ணர் அல்லார்க்கு நூலொடென்",
+      "words": [
+        {
+          "form": "வாளொடென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வன்கண்ணர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அல்லார்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நூலொடென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நுண்ணவை அஞ்சு பவர்க்கு.",
+      "words": [
+        {
+          "form": "நுண்ணவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஞ்சு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பவர்க்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

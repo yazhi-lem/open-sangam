@@ -2,7 +2,7 @@
   "id": "porunaratrupadai_19",
   "poem": "porunaratrupadai",
   "tinai": "unknown",
-  "sangamTamil": "தேனெய்யொடு கிழங்குமாறியோர்\nமீனெய்யொடு நறவுமறுகவுந் . . . .(215)\nதீங்கரும்போ டவல்வகுத்தோர்\nமான்குறையொடு மதுமறுகவுந் 217",
+  "sangamTamil": "தேனெய்யொடு கிழங்குமாறியோர்\nமீனெய்யொடு நறவுமறுகவுந் . . . .(215)\nதீங்கரும்போ டவல்வகுத்தோர்\nமான்குறையொடு மதுமறுகவுந் 217\nகுறிஞ்சி பரதவர் பாட நெய்த\nனறும்பூங் கண்ணி குறவர் சூடக்\nகானவர் மருதம் பாட வகவர்\nநீனிற முல்லைப் பஃறிணை நுவலக்\nகானக்கோழி கதிர்குத்த\nமனைக்கோழி தினைக்கவர\nவரைமந்தி கழிமூழ்கக்\nகழிநாரை வரையிறுப்பத்\nதண்வைப்பினா னாடுகுழீஇ\nமண்மருங்கினான் மறுவின்றி\nயொருகுடையா னொன்றுகூறப்\nபெரிதாண்ட பெருங்கேண்மை\nயறனொடு புணர்ந்த திறனறி செங்கோ\nலன்னோன் வாழி வெனவேற் குருசில்",
   "urai": "மயிலானது முல்லை நிலத்துப் புறவு சலித்தால் நெய்தல் நிலத்தில் பூத்திருக்கும் புன்னை மரத்துக்குச் சென்றுவிடும். அருகில் சுறாமீன் வந்துபோகும் கடலலை மோதும். அதில் வாழும் இறால் மீனைத் தின்ற நாரை பூத்திருக்கும் அதே புன்னை மரத்தில் அமர்ந்திருக்கும். கடலோரப் புன்னை மரத்தில் இருக்கும்போது கடலலை ஓசையை வெறுத்து அந்த மரத்தை விட்டுவிட்டு நாரை பனைமர மடலுக்குப் பறந்து செல்லும். அதுவும் சலித்தால் தென்னை மடலுக்குச் செல்லும். அதிக உயரம் பறக்க முடியாத மயில் குலை தள்ளியிருக்கும் வாழை மரத்தில் அமரும். காந்தள் பூத்திருக்கும் இடத்திற்குச் செல்லும். அருகிலுள்ள மீனவர் பாக்கத்துக் குடிசைப் பகுதியில் இருக்கும் நாகமரத்தில் பாலைநில மக்கள் தம் உடுக்கு போன்ற குடுகுடுப்பைகளைக் கட்டித் தொங்க விட்டிருப்பர். அது காற்றில் ஆடும்போது ஓசை உண்டாகும். வண்டுகள் இசை பாடும். இந்த இசைக்கு ஏற்ப மயில் தோகை விரித்து ஆடும். இப்படிப் பல்வேறு நிலமேடுகளில் இடம் பெயர்ந்து மயில் ஆடும். தேன்நெய்க்குக் கிழங்கு, மீன்நெய்க்கு நறவு, மதுவுக்கு மான்கறி என்று பண்டமாற்று வாணிகம் பல்வேறு மணல்மேடுகளில் நடைபெறும்.",
   "english": null,
   "lines": [
@@ -120,11 +120,375 @@
           "gloss": "This is a numerical annotation, indicating the verse number 217 in the text."
         }
       ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "குறிஞ்சி பரதவர் பாட நெய்த",
+      "words": [
+        {
+          "form": "குறிஞ்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரதவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெய்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "னறும்பூங் கண்ணி குறவர் சூடக்",
+      "words": [
+        {
+          "form": "னறும்பூங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூடக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "கானவர் மருதம் பாட வகவர்",
+      "words": [
+        {
+          "form": "கானவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மருதம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வகவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நீனிற முல்லைப் பஃறிணை நுவலக்",
+      "words": [
+        {
+          "form": "நீனிற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முல்லைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பஃறிணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுவலக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "கானக்கோழி கதிர்குத்த",
+      "words": [
+        {
+          "form": "கானக்கோழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கதிர்குத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "மனைக்கோழி தினைக்கவர",
+      "words": [
+        {
+          "form": "மனைக்கோழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தினைக்கவர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "வரைமந்தி கழிமூழ்கக்",
+      "words": [
+        {
+          "form": "வரைமந்தி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிமூழ்கக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "கழிநாரை வரையிறுப்பத்",
+      "words": [
+        {
+          "form": "கழிநாரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரையிறுப்பத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "தண்வைப்பினா னாடுகுழீஇ",
+      "words": [
+        {
+          "form": "தண்வைப்பினா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னாடுகுழீஇ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "மண்மருங்கினான் மறுவின்றி",
+      "words": [
+        {
+          "form": "மண்மருங்கினான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறுவின்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "யொருகுடையா னொன்றுகூறப்",
+      "words": [
+        {
+          "form": "யொருகுடையா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னொன்றுகூறப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "பெரிதாண்ட பெருங்கேண்மை",
+      "words": [
+        {
+          "form": "பெரிதாண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்கேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "யறனொடு புணர்ந்த திறனறி செங்கோ",
+      "words": [
+        {
+          "form": "யறனொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புணர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திறனறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செங்கோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "லன்னோன் வாழி வெனவேற் குருசில்",
+      "words": [
+        {
+          "form": "லன்னோன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெனவேற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குருசில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/porunaratrupadai/porunaratruppadai-பொருநராற்றுப்படை19.html",
+  "source": "http://www.sangathamizh.com/10paddu/porunaratrupadai/porunaratruppadai-பொருநராற்றுப்படை19.html; Project Madurai pmuni0487",
   "verified": false,
   "sectionNumber": 19,
   "title": "நில மயக்கமும் நல் ஆட்சியும்",

@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_082",
+  "poem": "naladiyar",
+  "number": 82,
+  "title": "பிறர்மனை நயவாமை",
+  "heading": "1.9",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "அறம்புகழ் கேண்மை பெருமைஇந் நான்கும்\nபிறன்தாரம் நச்சுவார்ச் சேரா - பிறன்தாரம்\nநச்சுவார்ச் சேரும் பகைபழி பாவம்என்று\nஅச்சத்தோடு இந்நாற் பொருள்.",
+  "urai": null,
+  "english": "The sinner forfeits much, and incurs much. Virtue, praise, friendship, greatness, all these four draw not anigh the men who covet their neighbour's wife. Hatred, disgrace and guilt, with fear, these four possessions abide with men who covet their neighbour's wife.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அறம்புகழ் கேண்மை பெருமைஇந் நான்கும்",
+      "words": [
+        {
+          "form": "அறம்புகழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருமைஇந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நான்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பிறன்தாரம் நச்சுவார்ச் சேரா - பிறன்தாரம்",
+      "words": [
+        {
+          "form": "பிறன்தாரம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நச்சுவார்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேரா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறன்தாரம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நச்சுவார்ச் சேரும் பகைபழி பாவம்என்று",
+      "words": [
+        {
+          "form": "நச்சுவார்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகைபழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாவம்என்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "அச்சத்தோடு இந்நாற் பொருள்.",
+      "words": [
+        {
+          "form": "அச்சத்தோடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இந்நாற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருள்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_287",
+  "poem": "naladiyar",
+  "number": 287,
+  "title": "இன்மை",
+  "heading": "2.29",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நீர்மையே யன்றி நிரம்ப எழுந்ததங்\nகூர்மையும் எல்லாம் ஒருங்கிழப்பர் - கூர்மையின்\nமுல்லை அலைக்கும் எயிற்றாய். நிரப்பென்னும்\nஅல்லல் அடையப்பட் டார்.",
+  "urai": null,
+  "english": "Poverty ruins all. O thou whose teeth vie in sharpness with jasmine buds! — When sharp distress of poverty assails, men lose all their attributes of goodness at once, with the mind's acuteness gained from amplest stores of wisdom.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நீர்மையே யன்றி நிரம்ப எழுந்ததங்",
+      "words": [
+        {
+          "form": "நீர்மையே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யன்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிரம்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழுந்ததங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கூர்மையும் எல்லாம் ஒருங்கிழப்பர் - கூர்மையின்",
+      "words": [
+        {
+          "form": "கூர்மையும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எல்லாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒருங்கிழப்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூர்மையின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "முல்லை அலைக்கும் எயிற்றாய். நிரப்பென்னும்",
+      "words": [
+        {
+          "form": "முல்லை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அலைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எயிற்றாய்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிரப்பென்னும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "அல்லல் அடையப்பட் டார்.",
+      "words": [
+        {
+          "form": "அல்லல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அடையப்பட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

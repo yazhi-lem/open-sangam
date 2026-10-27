@@ -1,0 +1,34 @@
+{
+  "name": "open-sangam-thirukkural",
+  "title": "திருக்குறள் — Tirukkural",
+  "description": "Tirukkural (திருக்குறள்), Pathinenkilkkanakku — 1330 verses with public-domain English translation.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Madurai Tamil text",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html"
+    },
+    {
+      "title": "Project Madurai English translation",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html"
+    }
+  ],
+  "resources": [
+    {
+      "name": "thirukkural",
+      "path": "thirukkural.json",
+      "mediatype": "application/json",
+      "encoding": "utf-8"
+    }
+  ],
+  "stats": {
+    "records": 1330,
+    "withEnglish": 1330
+  }
+}

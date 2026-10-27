@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1212",
+  "poem": "thirukkural",
+  "number": 1212,
+  "title": "கனவுநிலையுரைத்தல்",
+  "heading": "3.2.7",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "கயலுண்கண் யானிரப்பத் துஞ்சிற் கலந்தார்க்கு\nஉயலுண்மை சாற்றுவேன் மன்.",
+  "urai": null,
+  "english": "If my dark, carp-like eye will close in sleep, as I implore, The tale of my long-suffering life I'll tell my loved one o'er.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கயலுண்கண் யானிரப்பத் துஞ்சிற் கலந்தார்க்கு",
+      "words": [
+        {
+          "form": "கயலுண்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானிரப்பத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துஞ்சிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலந்தார்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "உயலுண்மை சாற்றுவேன் மன்.",
+      "words": [
+        {
+          "form": "உயலுண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சாற்றுவேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மன்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

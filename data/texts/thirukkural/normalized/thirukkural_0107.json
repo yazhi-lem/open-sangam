@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0107",
+  "poem": "thirukkural",
+  "number": 107,
+  "title": "செய்ந்நன்றி அறிதல்",
+  "heading": "1.2.7",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "எழுமை எழுபிறப்பும் உள்ளுவர் தங்கண்\nவிழுமந் துடைத்தவர் நட்பு.",
+  "urai": null,
+  "english": "Through all seven worlds, in seven-fold birth, Remains in mem'ry of the wise. Friendship of those who wiped on earth, The tears of sorrow from their eyes.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "எழுமை எழுபிறப்பும் உள்ளுவர் தங்கண்",
+      "words": [
+        {
+          "form": "எழுமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழுபிறப்பும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளுவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தங்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "விழுமந் துடைத்தவர் நட்பு.",
+      "words": [
+        {
+          "form": "விழுமந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துடைத்தவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நட்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

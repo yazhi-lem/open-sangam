@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1246",
+  "poem": "thirukkural",
+  "number": 1246,
+  "title": "நெஞ்சொடுகிளத்தல்",
+  "heading": "3.2.10",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "கலந்துணர்த்தும் காதலர்க் கண்டாற் புலந்துணராய்\nபொய்க்காய்வு காய்திஎன் நெஞ்சு.",
+  "urai": null,
+  "english": "My heart, false is the fire that burns; thou canst not wrath maintain, If thou thy love behold, embracing, soothing all thy pain.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கலந்துணர்த்தும் காதலர்க் கண்டாற் புலந்துணராய்",
+      "words": [
+        {
+          "form": "கலந்துணர்த்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காதலர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்டாற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புலந்துணராய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பொய்க்காய்வு காய்திஎன் நெஞ்சு.",
+      "words": [
+        {
+          "form": "பொய்க்காய்வு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காய்திஎன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

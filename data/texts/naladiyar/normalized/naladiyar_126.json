@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_126",
+  "poem": "naladiyar",
+  "number": 126,
+  "title": "தீவினையச்சம்",
+  "heading": "1.13",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "சான்றோ ரெனமதித்துச் சார்ந்தாய்மன் சார்ந்தாய்க்குச்\nசான்றாண்மை சார்ந்தார்கண் இல்லாயின் - சார்ந்தாய்கேள்\nசாந்தகத் துண்டென்று செப்புத் திறந்தொருவன்\nபாம்பகத்துக் கண்ட துடைத்து.",
+  "urai": null,
+  "english": "Disappointment and danger from foolish attachments. Thou didst attach thyself (to unworthy persons), saying, they are men of absolute integrity! If to thee who hast thus attached thyself, integrity in those thine intimates does not appear; hear, O thou who hast so attached thyself, it is as if one opened a casket, thinking it contained an odorous unguent, and saw a snake within.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "சான்றோ ரெனமதித்துச் சார்ந்தாய்மன் சார்ந்தாய்க்குச்",
+      "words": [
+        {
+          "form": "சான்றோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரெனமதித்துச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சார்ந்தாய்மன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சார்ந்தாய்க்குச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சான்றாண்மை சார்ந்தார்கண் இல்லாயின் - சார்ந்தாய்கேள்",
+      "words": [
+        {
+          "form": "சான்றாண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சார்ந்தார்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லாயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சார்ந்தாய்கேள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "சாந்தகத் துண்டென்று செப்புத் திறந்தொருவன்",
+      "words": [
+        {
+          "form": "சாந்தகத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துண்டென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செப்புத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திறந்தொருவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பாம்பகத்துக் கண்ட துடைத்து.",
+      "words": [
+        {
+          "form": "பாம்பகத்துக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துடைத்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

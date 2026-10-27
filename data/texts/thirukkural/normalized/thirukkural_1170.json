@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1170",
+  "poem": "thirukkural",
+  "number": 1170,
+  "title": "படர்மெலிந்திரங்கல்",
+  "heading": "3.2.2",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உள்ளம்போன்று உள்வழிச் செல்கிற்பின் வெள்ளநீர்\nநீந்தல மன்னோஎன் கண்.",
+  "urai": null,
+  "english": "When eye of mine would as my soul go forth to him, It knows not how through floods of its own tears to swim. ----------",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உள்ளம்போன்று உள்வழிச் செல்கிற்பின் வெள்ளநீர்",
+      "words": [
+        {
+          "form": "உள்ளம்போன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்வழிச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்கிற்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெள்ளநீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நீந்தல மன்னோஎன் கண்.",
+      "words": [
+        {
+          "form": "நீந்தல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மன்னோஎன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

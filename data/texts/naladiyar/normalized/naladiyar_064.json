@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_064",
+  "poem": "naladiyar",
+  "number": 64,
+  "title": "சினம் இன்மை",
+  "heading": "1.7",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நேர்த்து நிகரல்லார் நீரல்ல சொல்லியக்கால்\nவேர்த்து வெகுளார் விழுமியோர் - ஓர்த்ததனை\nஉள்ளத்தான் உள்ளி உரைத்துராய் ஊர்கேட்பத்\nதுள்ளித்தூண் முட்டுமாம் கீழ்.",
+  "urai": null,
+  "english": "The good man's meekness. The low man's ungoverned fury. When men who are beneath them confront them, and speak unseemly words, the excellent wax not hot with anger. The base man will brood over it, chafe and rave for all the town to hear, and leap, and dash his head against a post.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நேர்த்து நிகரல்லார் நீரல்ல சொல்லியக்கால்",
+      "words": [
+        {
+          "form": "நேர்த்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிகரல்லார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீரல்ல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லியக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வேர்த்து வெகுளார் விழுமியோர் - ஓர்த்ததனை",
+      "words": [
+        {
+          "form": "வேர்த்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெகுளார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விழுமியோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓர்த்ததனை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உள்ளத்தான் உள்ளி உரைத்துராய் ஊர்கேட்பத்",
+      "words": [
+        {
+          "form": "உள்ளத்தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உரைத்துராய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊர்கேட்பத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "துள்ளித்தூண் முட்டுமாம் கீழ்.",
+      "words": [
+        {
+          "form": "துள்ளித்தூண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முட்டுமாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீழ்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

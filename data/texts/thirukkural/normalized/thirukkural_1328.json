@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1328",
+  "poem": "thirukkural",
+  "number": 1328,
+  "title": "ஊடலுவகை",
+  "heading": "3.2.18",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "ஊடிப் பெறுகுவம் கொல்லோ நுதல்வெயர்ப்பக்\nகூடலில் தோன்றிய உப்பு.",
+  "urai": null,
+  "english": "And shall we ever more the sweetness know of that embrace With dewy brow; to which 'feigned anger' lent its piquant grace.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஊடிப் பெறுகுவம் கொல்லோ நுதல்வெயர்ப்பக்",
+      "words": [
+        {
+          "form": "ஊடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறுகுவம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொல்லோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுதல்வெயர்ப்பக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கூடலில் தோன்றிய உப்பு.",
+      "words": [
+        {
+          "form": "கூடலில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோன்றிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உப்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

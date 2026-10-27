@@ -3,10 +3,10 @@
   "poem": "maduraikanchi",
   "sectionNumber": 12,
   "title": "கொற்கைக்குத் தலைவன்",
-  "lineStart": 131,
+  "lineStart": 130,
   "lineEnd": 138,
   "tinai": "palai",
-  "sangamTamil": "நட்டவர் குடி யுயர்க் குவை\nசெற்றவர் அரசு பெயர்க் குவை\nபேரு லகத்து மேஎந் தோன்றிச்\nசீரு டைய விழுச் சிறப்பின்\nவிளைந்து முதிர்ந்த விழு முத்தின்\nஇலங்கு வளை இருஞ் சேரிக்\nகட் கொண்டிக் குடிப் பாக்கத்து\nநற் கொற்கை யோர்நசைப் பொருந",
+  "sangamTamil": "நட்டவர் குடி யுயர்க் குவை\nசெற்றவர் அரசு பெயர்க் குவை\nபேரு லகத்து மேஎந் தோன்றிச்\nசீரு டைய விழுச் சிறப்பின்\nவிளைந்து முதிர்ந்த விழு முத்தின்\nஇலங்கு வளை இருஞ் சேரிக்\nகட் கொண்டிக் குடிப் பாக்கத்து\nநற் கொற்கை யோர்நசைப் பொருந\nசெற்ற தெவ்வர் கலங்கத் தலைச்சென்",
   "urai": "வேந்தே! நீ உன்னோடு நட்பு கொண்ட அரசர்களின் குடியை உயர்வடையச் செய்வாய். உன்னோடு பகை கொண்ட அரசர்களைப் பெயர்த்தெரிவாய். கொற்கை பேருலகத்தில் பெயர்பெற்று மேலோங்கி நிற்கிறது. அதற்குக் காரணம் சீரும் சிறப்பும் மிக்க முத்து விளையும் சங்குகள் அங்கு விளைவதுதான். கொற்கைத் துறைமுகத்துச் சேரியில் வாழும் குடிமக்கள் செல்வ வளத்தில் கள்ளுண்டு களிப்பினும் உன்னை (நெடுஞ்செழியனை) அடையும் ஆசையோடு போராடுகின்றனர்.",
   "english": null,
   "lines": [
@@ -281,11 +281,45 @@
           "gloss": "O Bard or O Warrior, serving as a vocative address to the poet or minstrel, who is the recipient of the king's praise and the narrator of the poem."
         }
       ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "செற்ற தெவ்வர் கலங்கத் தலைச்சென்",
+      "words": [
+        {
+          "form": "செற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெவ்வர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலங்கத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைச்சென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி12.html",
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி12.html; Project Madurai pmuni0496",
   "verified": false,
   "etymologyMeta": {
     "provider": "openrouter",

@@ -2,7 +2,7 @@
   "id": "malaipadukadam_27",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "உரை செல வெறுத்த அவன் நீங்கா சுற்றமொடு\nபுரை தவ உயரிய மழை மருள் பல் தோல்\nஅரசு நிலை தளர்க்கும் அருப்பமும் உடைய\nபின்னி அன்ன பிணங்கு அரில் நுழைதொறும்\nமுன்னோன் வாங்கிய கடு விசை கணை கோல்\nஇன் இசை நல் யாழ் பத்தரும் விசி பிணி\nமண் ஆர் முழவின் கண்ணும் ஓம்பி\nகை பிணி விடாஅது பைபய கழிமின்",
+  "sangamTamil": "உரை செல வெறுத்த அவன் நீங்கா சுற்றமொடு\nபுரை தவ உயரிய மழை மருள் பல் தோல்\nஅரசு நிலை தளர்க்கும் அருப்பமும் உடைய\nபின்னி அன்ன பிணங்கு அரில் நுழைதொறும்\nமுன்னோன் வாங்கிய கடு விசை கணை கோல்\nஇன் இசை நல் யாழ் பத்தரும் விசி பிணி\nமண் ஆர் முழவின் கண்ணும் ஓம்பி\nகை பிணி விடாஅது பைபய கழிமின்\nகளிறுமலைந் தன்ன கண்கூடு துறுகற்\nறளிபொழி கானந் தலைதவப் பலவே\nயொன்னாத் தெவ்வ ருலைவிடத் தார்த்தென\nநல்வழிக் கொடுத்த நாணுடை மறவர்\nசெல்லா நல்லிசைப் பெயரொடு நட்ட\nகல்லேசு கவலை யெண்ணுமிகப் பலவே",
   "urai": "கொடிகள் பின்னிக் கிடக்கும் பிணங்கர் காட்டில் நுழையும்போது ஒருவரோடு ஒருவர் கைகளைப் பிடித்துக் கொண்டு மெல்ல மெல்லச் செல்லுங்கள். அந்த பிணங்கர்க் காடு அரசன் படையில் முன்னே செல்லும் தோல் படையையே நிலைகலங்கச் செய்ய வல்லவை. முன்னே செல்பவன் தன் அம்பால் தன்மேல் மோதும் முள்ளை ஒதுக்கிப் பிடித்துக்கொண்டு செல்வான். தான் கடந்ததும் அதை விட்டுவிடுவான். அது பின்னே வருபவர்மேல் மோதித் தாக்கும். உங்களின் யாழ், பத்தர், முழவு போன்ற இசைக் கருவிகள் மீதும் மோதித் தாக்கும். எனவே அவற்றையும் பாதுகாத்துக் கொண்டு கவனமாகச் செல்லுங்கள். அரசன் நன்னனின் சுற்றம் பலரும் புகழக் கேட்டுக் கேட்டு புகழையே வெறுத்திருந்தது. இங்குச் சுற்றம் என்பது படை. அது அவனை விட்டு அகலாமல் பாதுகாப்பாக இருந்துவந்தது.",
   "english": null,
   "lines": [
@@ -375,11 +375,215 @@
           "gloss": "This is an imperative plural verb, meaning 'pass through' or 'proceed', giving a direct command to the travelers to move forward cautiously."
         }
       ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "களிறுமலைந் தன்ன கண்கூடு துறுகற்",
+      "words": [
+        {
+          "form": "களிறுமலைந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்கூடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறுகற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "றளிபொழி கானந் தலைதவப் பலவே",
+      "words": [
+        {
+          "form": "றளிபொழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கானந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைதவப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "யொன்னாத் தெவ்வ ருலைவிடத் தார்த்தென",
+      "words": [
+        {
+          "form": "யொன்னாத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெவ்வ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ருலைவிடத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தார்த்தென",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "நல்வழிக் கொடுத்த நாணுடை மறவர்",
+      "words": [
+        {
+          "form": "நல்வழிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொடுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாணுடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "செல்லா நல்லிசைப் பெயரொடு நட்ட",
+      "words": [
+        {
+          "form": "செல்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்லிசைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெயரொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "கல்லேசு கவலை யெண்ணுமிகப் பலவே",
+      "words": [
+        {
+          "form": "கல்லேசு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யெண்ணுமிகப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்27.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்27.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 27,
   "title": "அரண்களும் நடுகற்களும் உள்ள வழிகள்",

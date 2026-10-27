@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1161",
+  "poem": "thirukkural",
+  "number": 1161,
+  "title": "படர்மெலிந்திரங்கல்",
+  "heading": "3.2.2",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "மறைப்பேன்மன் யானிஃதோ நோயை இறைப்பவர்க்கு\nஊற்றுநீர் போல மிகும்.",
+  "urai": null,
+  "english": "I would my pain conceal, but see! it surging swells, As streams to those that draw from ever-springing wells.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மறைப்பேன்மன் யானிஃதோ நோயை இறைப்பவர்க்கு",
+      "words": [
+        {
+          "form": "மறைப்பேன்மன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானிஃதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோயை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இறைப்பவர்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஊற்றுநீர் போல மிகும்.",
+      "words": [
+        {
+          "form": "ஊற்றுநீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிகும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

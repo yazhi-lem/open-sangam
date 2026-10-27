@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1187",
+  "poem": "thirukkural",
+  "number": 1187,
+  "title": "பசப்புறுபருவரல்",
+  "heading": "3.2.4",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "புல்லிக் கிடந்தேன் புடைபெயர்ந்தேன் அவ்வளவில்\nஅள்ளிக்கொள் வற்றே பசப்பு.",
+  "urai": null,
+  "english": "I lay in his embrace, I turned unwittingly; Forthwith this hue, as you might grasp it, came on me.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "புல்லிக் கிடந்தேன் புடைபெயர்ந்தேன் அவ்வளவில்",
+      "words": [
+        {
+          "form": "புல்லிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிடந்தேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புடைபெயர்ந்தேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவ்வளவில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அள்ளிக்கொள் வற்றே பசப்பு.",
+      "words": [
+        {
+          "form": "அள்ளிக்கொள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வற்றே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பசப்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

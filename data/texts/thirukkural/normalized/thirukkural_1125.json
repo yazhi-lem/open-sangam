@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1125",
+  "poem": "thirukkural",
+  "number": 1125,
+  "title": "காதற்சிறப்புரைத்தல்",
+  "heading": "3.1.5",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "உள்ளுவன் மன்யான் மறப்பின் மறப்பறியேன்\nஒள்ளமர்க் கண்ணாள் குணம்.",
+  "urai": null,
+  "english": "I might recall, if I could once forget; but from my heart Her charms fade not, whose eyes gleam like the warrior's dart.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உள்ளுவன் மன்யான் மறப்பின் மறப்பறியேன்",
+      "words": [
+        {
+          "form": "உள்ளுவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மன்யான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறப்பறியேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஒள்ளமர்க் கண்ணாள் குணம்.",
+      "words": [
+        {
+          "form": "ஒள்ளமர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குணம்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

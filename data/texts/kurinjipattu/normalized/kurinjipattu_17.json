@@ -2,34 +2,41 @@
   "id": "kurinjipattu_17",
   "poem": "kurinjipattu",
   "tinai": "kurinji",
-  "sangamTamil": "................................ வார் கோல்\nஉடு உறும் பகழி வாங்கிக் கடு விசை\nஅண்ணல் யானை அணி முகத்து அழுத்தலின்,\nபுண் உமிழ் குருதி முகம் பாய்ந்து இழி தரப்\nபுள்ளி வரி நுதல் சிதைய, நில்லாது\nஅயர்ந்து புறங்கொடுத்த பின்னர், நெடுவேள்\nஅணங்கு உறு மகளிர் ஆடு களம் கடுப்பத்",
+  "sangamTamil": "சூருறு மஞ்ஞையி னடுங்க வார்கோ\nஉடு உறும் பகழி வாங்கிக் கடு விசை\nஅண்ணல் யானை அணி முகத்து அழுத்தலின்,\nபுண் உமிழ் குருதி முகம் பாய்ந்து இழி தரப்\nபுள்ளி வரி நுதல் சிதைய, நில்லாது\nஅயர்ந்து புறங்கொடுத்த பின்னர், நெடுவேள்\nஅணங்கு உறு மகளிர் ஆடு களம் கடுப்பத்\nதிணிநிலைக் கடம்பின் றிரளரை வளைஇய\nதுணையறை மாலையிற் கைபிணி விடேஎ\nநுரையுடைக் கலுழி பாய்தலி னுரவுத்திரை\nயடுங்கரை வாழையி னடுங்கப் பெருந்ததை\nயஞ்சி லோதி யசையல் யாவது\nமஞ்ச லோம்புநின் னணிநல நுகர்கென\nமாசறு சுடர்நுத னீவி நீடுநினைந்",
   "urai": "அவன் யானை முகத்தில் அம்பு எய்தான் - நீண்ட கோலில் விண்மீன்போல் முனையுள்ள அம்பைக் கடுவிசையோடு அவன் எய்தான். களிற்றின் அழகிய முகத்தில் அது பாய்ந்தது. அப்புண்ணிலிருந்து குருதி பாய்ந்து ஒழுகியது. அதன் நெற்றியிலிருந்த புள்ளிகளும், வரிக்கோடுகளும் சிதைந்தன. அயர்ந்து போன அந்த ஆண்யானை அங்கே நிற்காமல் திரும்பி ஓடிவிட்டது. உடனே நாங்கள் முருகனுக்கு வெறியாடும் களத்தில் மகளிர் கைகோத்துக் கொண்டு ஆடுவதுபோல் கைகோத்துக் கொண்டோம்.",
   "english": null,
   "lines": [
     {
       "lineNumber": 1,
-      "text": "................................ வார் கோல்",
+      "text": "சூருறு மஞ்ஞையி னடுங்க வார்கோ",
       "words": [
         {
-          "form": "................................",
+          "form": "சூருறு",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "This represents the preceding, unprovided text of the verse, indicating a continuation from an earlier part of the poem."
+          "gloss": null
         },
         {
-          "form": "வார்",
+          "form": "மஞ்ஞையி",
           "root": null,
           "urichol": null,
-          "etymology": "வார் என்ற சொல் 'நீண்ட' அல்லது 'வளைந்த' என்ற பொருளில் சங்க இலக்கியத்தில் பல இடங்களில் பயன்படுத்தப்பட்டுள்ளது. இது 'வளை' அல்லது 'நீள்' என்ற வினைச்சொல்லின் அடியாகப் பிறந்திருக்கலாம். தற்காலத் தமிழிலும் 'வார்' என்ற சொல் நீளமான பொருட்களைக் குறிக்கப் பயன்படுகிறது, எடுத்துக்காட்டாக 'வார் கயிறு'.",
-          "gloss": "This adjective describes something as long or extended, here referring to the length of the bow or arrow shaft."
+          "etymology": null,
+          "gloss": null
         },
         {
-          "form": "கோல்",
+          "form": "னடுங்க",
           "root": null,
           "urichol": null,
-          "etymology": "கோல் என்ற சொல் 'கம்பு', 'தடி', 'அம்பு' போன்ற பல பொருட்களைக் குறிக்கும். சங்க இலக்கியத்தில் இது அம்பு, வில், அல்லது தடி போன்ற ஆயுதங்களைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. தற்காலத் தமிழிலும் 'கோல்' என்பது தடி, குச்சி போன்ற பொருட்களைக் குறிக்கிறது.",
-          "gloss": "This noun refers to a shaft or stick, here specifically denoting the shaft of an arrow or a bow."
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வார்கோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
         }
       ]
     },
@@ -299,16 +306,254 @@
           "gloss": "This infinitive verb means 'to resemble', 'to be like', or 'to be similar to', indicating that the scene described is comparable to the women dancing in the ritual ground."
         }
       ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "திணிநிலைக் கடம்பின் றிரளரை வளைஇய",
+      "words": [
+        {
+          "form": "திணிநிலைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடம்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றிரளரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளைஇய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "துணையறை மாலையிற் கைபிணி விடேஎ",
+      "words": [
+        {
+          "form": "துணையறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாலையிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கைபிணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடேஎ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "நுரையுடைக் கலுழி பாய்தலி னுரவுத்திரை",
+      "words": [
+        {
+          "form": "நுரையுடைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலுழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாய்தலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னுரவுத்திரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "யடுங்கரை வாழையி னடுங்கப் பெருந்ததை",
+      "words": [
+        {
+          "form": "யடுங்கரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழையி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னடுங்கப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருந்ததை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "யஞ்சி லோதி யசையல் யாவது",
+      "words": [
+        {
+          "form": "யஞ்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லோதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யசையல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாவது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "மஞ்ச லோம்புநின் னணிநல நுகர்கென",
+      "words": [
+        {
+          "form": "மஞ்ச",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லோம்புநின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னணிநல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுகர்கென",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "மாசறு சுடர்நுத னீவி நீடுநினைந்",
+      "words": [
+        {
+          "form": "மாசறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுடர்நுத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னீவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீடுநினைந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/kurinchippattu/kurinchippattu-குறிஞ்சிப்பாட்டு17.html",
+  "source": "http://www.sangathamizh.com/10paddu/kurinchippattu/kurinchippattu-குறிஞ்சிப்பாட்டு17.html; Project Madurai pmuni0495",
   "verified": false,
   "sectionNumber": 17,
   "title": "யானை மீது அம்பைச் செலுத்தினான் தலைவன்",
   "lineStart": 169,
-  "lineEnd": 183,
+  "lineEnd": 182,
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",

@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_251",
+  "poem": "naladiyar",
+  "number": 251,
+  "title": "அறிவின்மை",
+  "heading": "2.26",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நுண்ணுணர் வின்மை வறுமை, அஃதுடைமை\nபண்ணப் பணைத்த பெருஞ்செல்வம் - எண்ணுங்கால்\nபெண்ணவாய் ஆணிழந்த பேடி யணியாளோ,\nகண்ணவாத் தக்க கலம்.",
+  "urai": null,
+  "english": "Lack of accurate perception is poverty. Mere externals are nothing. The want of refined knowledge is poverty, its possession is very great and abundant wealth. When one considers, will not a sexless creature, more woman than man, adorn herself with the jewels that her eye desires ?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நுண்ணுணர் வின்மை வறுமை, அஃதுடைமை",
+      "words": [
+        {
+          "form": "நுண்ணுணர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வின்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வறுமை,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அஃதுடைமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பண்ணப் பணைத்த பெருஞ்செல்வம் - எண்ணுங்கால்",
+      "words": [
+        {
+          "form": "பண்ணப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பணைத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருஞ்செல்வம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எண்ணுங்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பெண்ணவாய் ஆணிழந்த பேடி யணியாளோ,",
+      "words": [
+        {
+          "form": "பெண்ணவாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆணிழந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யணியாளோ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கண்ணவாத் தக்க கலம்.",
+      "words": [
+        {
+          "form": "கண்ணவாத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலம்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

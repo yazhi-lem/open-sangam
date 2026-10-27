@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_028",
+  "poem": "naladiyar",
+  "number": 28,
+  "title": "யாக்கை நிலையாமை",
+  "heading": "1.3",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "யாக்கையை யாப்புடைத்தாப் பெற்றவர் தாம்பெற்ற\nயாக்கையா லாய பயன்கொள்க - யாக்கை\nமலையாடு மஞ்சுபோல் தோன்றிமற் றாங்கே\nநிலையாது நீத்து விடும்.",
+  "urai": null,
+  "english": "The body like a cloud on the hillside. Those who've gained and held fast by this well-knit  frame (a human body) should take the gain the body they have gained is intended to yield. Like a cloud that wanders over the hills, the body here appears, and abiding not, departs leaving no trace behind.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "யாக்கையை யாப்புடைத்தாப் பெற்றவர் தாம்பெற்ற",
+      "words": [
+        {
+          "form": "யாக்கையை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாப்புடைத்தாப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெற்றவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாம்பெற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "யாக்கையா லாய பயன்கொள்க - யாக்கை",
+      "words": [
+        {
+          "form": "யாக்கையா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லாய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயன்கொள்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மலையாடு மஞ்சுபோல் தோன்றிமற் றாங்கே",
+      "words": [
+        {
+          "form": "மலையாடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மஞ்சுபோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தோன்றிமற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றாங்கே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நிலையாது நீத்து விடும்.",
+      "words": [
+        {
+          "form": "நிலையாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

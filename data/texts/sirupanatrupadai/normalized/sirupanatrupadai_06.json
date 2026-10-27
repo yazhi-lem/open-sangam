@@ -2,7 +2,7 @@
   "id": "sirupanatrupadai_06",
   "poem": "sirupanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "வானம் வாய்த்த வளமலைக் கவாஅன்\nகான மஞ்ஞைக்குக் கலிங்கம் நல்கிய\nஅருந்திறல் அணங்கின் ஆவியர் பெருமகன்\nபெருங்கல் நாடன் பேகனும்",
+  "sangamTamil": "வானம் வாய்த்த வளமலைக் கவாஅன்\nகான மஞ்ஞைக்குக் கலிங்கம் நல்கிய\nஅருந்திறல் அணங்கின் ஆவியர் பெருமகன்",
   "urai": "இது முதல் ஏழு வள்ளல்களின் கொடைத்திறன் போற்றப்படுகிறது. (இவர்களை நாம் கடையெழு வள்ளல்கள் என்று வழங்குகிறோம்). இந்த ஏழு பேர் இழுத்துச் சென்ற ஈகை என்னும் தேரை இழுக்கும் நுகத்தை நல்லியக்கோடன் தனி ஒருவனாகவே இழுத்துச் சென்றான் என்று பாடல் வளர்கிறது. அதாவது, அந்த ஏழு வள்ளல்களுக்குப் பின்னர் இருந்த ஒரே ஒரு வள்ளல் இவன் மட்டுமே எனப் போற்றப்படுகிறான். அரிய உடல்திறனும், கண்டவரை வருத்தும் கட்டழகும் கொண்டவர்கள் ஆவியர்-குடி மக்கள். தலைவன் பேகன். பெருங்கல் நாடு எனப் போற்றப்படும் பழனிமலைப் பகுதியில் வாழ்பவர்கள் அந்த ஆவியர் குடி மக்கள். பேகன் ஒருநாள் மழை பொழியும் மலைச்சாரல் பாதையில் சென்றுகொண்டிருந்தபோது மயில் ஒன்று ஆடுவதைப் பார்த்து, அது குளிரில் நடுங்குவதாக எண்ணித் தன் போர்வையை அதன்மீது போர்த்தி விட்டவன்.",
   "english": null,
   "lines": [
@@ -107,43 +107,16 @@
           "gloss": "The word 'பெருமகன்' is a compound of 'பெரிய' (great, noble) and 'மகன்' (son, leader), meaning 'the great leader' or 'the noble chieftain', indicating a person of high status and authority."
         }
       ]
-    },
-    {
-      "lineNumber": 4,
-      "text": "பெருங்கல் நாடன் பேகனும்",
-      "words": [
-        {
-          "form": "பெருங்கல்",
-          "root": "பெரிய",
-          "urichol": null,
-          "etymology": "பெருங்கல் என்பது 'பெரிய' (பெரிய) மற்றும் 'கல்' (மலை, பாறை) ஆகிய இரு சொற்களின் புணர்ச்சியால் உருவானது. 'பெரிய' என்பது இங்கு அளவு அல்லது முக்கியத்துவத்தில் பெரிய என்பதைக் குறிக்கும். 'கல்' என்பது இங்கு மலை அல்லது பாறை. ஆக, 'பெருங்கல்' என்பது பெரிய மலை அல்லது பாறைகள் நிறைந்த மலை என்பதைக் குறிக்கிறது. தற்காலத்திலும் இச்சொல் இதே பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "The word 'பெருங்கல்' is a compound of 'பெரிய' (large, great) and 'கல்' (stone, rock, mountain), meaning 'of the great mountain' or 'of the mountain with large rocks', referring to a prominent and imposing mountainous region."
-        },
-        {
-          "form": "நாடன்",
-          "root": "நாடு",
-          "urichol": null,
-          "etymology": "நாடன் என்பது 'நாடு' (நாடு, நிலப்பகுதி) என்னும் சொல்லுடன் 'அன்' என்னும் ஆண்பால் விகுதி சேர்ந்து உருவானது. 'நாடு' என்பது ஒரு குறிப்பிட்ட நிலப்பகுதியைக் குறிக்கும். 'நாடன்' என்பது அந்த நாட்டைச் சேர்ந்தவன் அல்லது அந்த நாட்டிற்குத் தலைவன் என்ற பொருளில் வந்துள்ளது. தற்காலத்திலும் 'நாட்டான்' என்ற சொல் இதே பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "The word 'நாடன்' is derived from 'நாடு' (country, land) with a masculine suffix, meaning 'the ruler of the land' or 'the chieftain of the country', indicating a person who governs or belongs to a specific territory."
-        },
-        {
-          "form": "பேகனும்",
-          "root": "பேகன்",
-          "urichol": null,
-          "etymology": "பேகனும் என்பது 'பேகன்' என்னும் பெயருடன் 'உம்' என்னும் உயர்வு சிறப்பு அல்லது எண்ணும்மை விகுதி சேர்ந்து உருவானது. 'பேகன்' என்பது சங்ககால வள்ளல்களில் ஒருவனின் பெயர். 'உம்' என்பது இங்கு 'மட்டுமல்லாமல்' அல்லது 'மேலும்' என்ற பொருளில் வந்துள்ளது, அதாவது பேகன் என்பவனும் கொடையாளி என்பதைக் குறிக்கிறது. இச்சொல் ஒரு குறிப்பிட்ட பெயரைக் குறிப்பதால், அதன் பொருள் மாறவில்லை.",
-          "gloss": "The word 'பேகனும்' refers to 'Pēkan also', with 'Pēkan' being the proper name of one of the seven great philanthropists of the Sangam era, and 'உம்' serving as an inclusive particle, meaning 'even Pēkan' or 'Pēkan as well'."
-        }
-      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை06.html",
+  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை06.html; Project Madurai pmuni0483",
   "verified": false,
   "sectionNumber": 6,
   "title": "கடையெழு வள்ளல்களின் சிறப்பு",
   "lineStart": 84,
-  "lineEnd": 87,
+  "lineEnd": 86,
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",

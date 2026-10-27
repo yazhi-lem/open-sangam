@@ -2,7 +2,7 @@
   "id": "malaipadukadam_09",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "அன்று அவண் அசைஇ அல் சேர்ந்து அல்கி\nகன்று எரி ஒள் இணர் கடும்பொடு மலைந்து\nசேந்த செயலை செப்பம் போகி\nஅலங்கு கழை நரலும் ஆரி படுகர்\nசிலம்பு அடைந்து இருந்த பாக்கம் எய்தி\nநோனா செருவின் வலம் படு நோன் தாள்\nமான விறல் வேள் வயிரியம் எனினே",
+  "sangamTamil": "அன்று அவண் அசைஇ அல் சேர்ந்து அல்கி\nகன்று எரி ஒள் இணர் கடும்பொடு மலைந்து\nசேந்த செயலை செப்பம் போகி\nஅலங்கு கழை நரலும் ஆரி படுகர்\nசிலம்பு அடைந்து இருந்த பாக்கம் எய்தி\nநோனா செருவின் வலம் படு நோன் தாள்\nமான விறல் வேள் வயிரியம் எனினே\nநும்மில் போல நில்லாது புக்குக்\nகிழவிர் போல கேளாது கெழீஇச்\nசேட்புலம் பகல வினிய கூறிப்\nபரூஉக்குறை பொழிந்த நெய்க்கண் வேவையொடு\nகுரூஉக்க ணிறடிப் பொம்மல் பெறுகுவி",
   "urai": "கானவர் பாக்கத்தில் அன்று இரவு தங்கியிருந்துவிட்டு மறுநாள் ஆரியப் படுகர் வாழும் பாக்கம் செல்லுங்கள். எரிபோல் தழைத்துச் சிவந்திருக்கும் செயலையந் தளிர்களை மாலையாகத் தொடுத்து சுற்றத்தார் அனைவரும் அணிந்துகொண்டு செல்லுங்கள். மூங்கில் அடர்ந்து அடைந்துகிடக்கும் அப் பாக்கத்துக்குச் சென்றபின், நாங்கள் மான விறல் வேல் நன்னனைப் பார்க்க வந்த பாணர்கள் என்று சொன்னவுடனேயே....",
   "english": null,
   "lines": [
@@ -306,11 +306,181 @@
           "gloss": "If one says or if you say, introducing a conditional statement about what to say upon reaching the village."
         }
       ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நும்மில் போல நில்லாது புக்குக்",
+      "words": [
+        {
+          "form": "நும்மில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நில்லாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புக்குக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "கிழவிர் போல கேளாது கெழீஇச்",
+      "words": [
+        {
+          "form": "கிழவிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேளாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெழீஇச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "சேட்புலம் பகல வினிய கூறிப்",
+      "words": [
+        {
+          "form": "சேட்புலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூறிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "பரூஉக்குறை பொழிந்த நெய்க்கண் வேவையொடு",
+      "words": [
+        {
+          "form": "பரூஉக்குறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொழிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெய்க்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேவையொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "குரூஉக்க ணிறடிப் பொம்மல் பெறுகுவி",
+      "words": [
+        {
+          "form": "குரூஉக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ணிறடிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொம்மல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறுகுவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்09.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்09.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 9,
   "title": "வழியிலுள்ள சிற்றூர்களில் நிகழும் விருந்து",

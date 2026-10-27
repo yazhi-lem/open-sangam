@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0091",
+  "poem": "thirukkural",
+  "number": 91,
+  "title": "இனியவைகூறல்",
+  "heading": "1.2.6",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "இன்சொலால் ஈரம் அளைஇப் படிறுஇலவாம்\nசெம்பொருள் கண்டார்வாய்ச் சொல்.",
+  "urai": null,
+  "english": "Pleasant words are words with all pervading love that burn; Words from his guileless mouth who can the very truth discern.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இன்சொலால் ஈரம் அளைஇப் படிறுஇலவாம்",
+      "words": [
+        {
+          "form": "இன்சொலால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈரம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அளைஇப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படிறுஇலவாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "செம்பொருள் கண்டார்வாய்ச் சொல்.",
+      "words": [
+        {
+          "form": "செம்பொருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்டார்வாய்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

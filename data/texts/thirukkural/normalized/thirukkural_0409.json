@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0409",
+  "poem": "thirukkural",
+  "number": 409,
+  "title": "கல்லாமை",
+  "heading": "2.1.3",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "மேற்பிறந்தா ராயினும் கல்லாதார் கீழ்ப்பிறந்தும்\nகற்றார் அனைத்திலர் பாடு.",
+  "urai": null,
+  "english": "Lower are men unlearned, though noble be their race, Than low-born men adorned with learning's grace.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மேற்பிறந்தா ராயினும் கல்லாதார் கீழ்ப்பிறந்தும்",
+      "words": [
+        {
+          "form": "மேற்பிறந்தா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்லாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீழ்ப்பிறந்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கற்றார் அனைத்திலர் பாடு.",
+      "words": [
+        {
+          "form": "கற்றார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அனைத்திலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாடு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

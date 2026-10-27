@@ -2,7 +2,7 @@
   "id": "malaipadukadam_11",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "செரு செய் முன்பின் குருசில் முன்னிய\nபரிசில் மறப்ப நீடலும் உரியிர்\nஅனையது அன்று அவன் மலை மிசை நாடே",
+  "sangamTamil": "செரு செய் முன்பின் குருசில் முன்னிய\nபரிசில் மறப்ப நீடலும் உரியிர்\nஅனையது அன்று அவன் மலை மிசை நாடே\nநிரையிதழ்க் குவளைக் கடிவீ தொடினும்\nவரையர மகளி ரிருக்கை காணினு\nமுயிர்செல வெம்பிப் பனித்தலு முரியிர்\nபலநா ணில்லாது நிலநாடு படர்மின்",
   "urai": "நீங்கள் போராற்றல் மிக்க அரசனாகிய நன்னனை நோக்கிச் சென்று கொண்டிருக்கிறீர்கள். அவனிடம் பெறவேண்டிய பரிசிலை மறந்துவிட்டு மலைக்குறவர் விருந்தில் மயங்கி அங்கேயே தங்கி விடுதலும் கூடும். அப்படிப் பட்டது நன்னனின் மலைநாடு.",
   "english": null,
   "lines": [
@@ -128,11 +128,147 @@
           "gloss": "The word 'நாடே' is a noun 'நாடு' (country, land, region) with the emphatic particle 'ஏ,' meaning 'the country indeed,' or 'the land itself,' emphasizing the specific territory or region being discussed."
         }
       ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நிரையிதழ்க் குவளைக் கடிவீ தொடினும்",
+      "words": [
+        {
+          "form": "நிரையிதழ்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குவளைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடிவீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "வரையர மகளி ரிருக்கை காணினு",
+      "words": [
+        {
+          "form": "வரையர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரிருக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காணினு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "முயிர்செல வெம்பிப் பனித்தலு முரியிர்",
+      "words": [
+        {
+          "form": "முயிர்செல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெம்பிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பனித்தலு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முரியிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பலநா ணில்லாது நிலநாடு படர்மின்",
+      "words": [
+        {
+          "form": "பலநா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ணில்லாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலநாடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படர்மின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்11.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்11.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 11,
   "title": "மலைநாட்டில் நெடுநாள் தங்காது, நிலநாட்டில் செல்ல வேண்டுதல்",

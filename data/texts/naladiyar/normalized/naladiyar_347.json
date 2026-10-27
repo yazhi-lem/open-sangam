@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_347",
+  "poem": "naladiyar",
+  "number": 347,
+  "title": "கீழ்மை",
+  "heading": "2.35",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "மைதீர் பசும்பொன்மேல் மாண்ட மணியழுத்திச்\nசெய்த தெனினுஞ் செருப்புத்தன் காற்கேயாம்\nஎய்திய செல்வத்த ராயினும்  கீழ்களைச்\nசெய்தொழிலால் காணப் படும்.",
+  "urai": null,
+  "english": "The slipper. Though made of faultless yellow gold, enwrought with choicest pearls, the slipper serves but for one's foot; though the base be deemed prosperous through the wealth they have gained, their baseness will be seen by their actions.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மைதீர் பசும்பொன்மேல் மாண்ட மணியழுத்திச்",
+      "words": [
+        {
+          "form": "மைதீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பசும்பொன்மேல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மணியழுத்திச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "செய்த தெனினுஞ் செருப்புத்தன் காற்கேயாம்",
+      "words": [
+        {
+          "form": "செய்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெனினுஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செருப்புத்தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காற்கேயாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "எய்திய செல்வத்த ராயினும்  கீழ்களைச்",
+      "words": [
+        {
+          "form": "எய்திய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்வத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீழ்களைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "செய்தொழிலால் காணப் படும்.",
+      "words": [
+        {
+          "form": "செய்தொழிலால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காணப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

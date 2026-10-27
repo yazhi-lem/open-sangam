@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_015",
+  "poem": "naladiyar",
+  "number": 15,
+  "title": "இளமை நிலையாமை",
+  "heading": "1.2",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "எனக்குத்தாய் ஆகியாள் என்னைஈங் கிட்டுத்\nதனக்குத்தாய் நாடியே சென்றாள் - தனக்குத்தாய்\nஆகி யவளும் அதுவானால் தாய்த்தாய்க்கொண்டு\nஏகும் அளித்திவ் வுலகு.",
+  "urai": null,
+  "english": "Endless series of successive generations. My mother bare me, left me here, and went to seek her mother, who in the selfsame manner has gone in search; and thus in ceaseless round goes on the mother-quest. Such is the grace this world affords !",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "எனக்குத்தாய் ஆகியாள் என்னைஈங் கிட்டுத்",
+      "words": [
+        {
+          "form": "எனக்குத்தாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆகியாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்னைஈங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிட்டுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தனக்குத்தாய் நாடியே சென்றாள் - தனக்குத்தாய்",
+      "words": [
+        {
+          "form": "தனக்குத்தாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடியே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்றாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தனக்குத்தாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "ஆகி யவளும் அதுவானால் தாய்த்தாய்க்கொண்டு",
+      "words": [
+        {
+          "form": "ஆகி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யவளும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அதுவானால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாய்த்தாய்க்கொண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "ஏகும் அளித்திவ் வுலகு.",
+      "words": [
+        {
+          "form": "ஏகும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அளித்திவ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வுலகு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

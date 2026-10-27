@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_298",
+  "poem": "naladiyar",
+  "number": 298,
+  "title": "மானம்",
+  "heading": "2.30",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நல்லர் பெரிதளியர் நல்கூர்ந்தார் என்றெள்ளிச்\nசெல்வர் சிறுநோக்கு நோக்குங்கால் - கொல்லன்\nஉலையூதும் தீயேபோல் உள்கனலும் கொல்லோ,\nதலையாய சான்றோர் மனம்.",
+  "urai": null,
+  "english": "The rich man's contemptuous pity. When the very worthy and thoroughly learned see the rich men's glance of disparagement, as they say contemptuously, 'These are good people —persons in greatly reduced circumstances—poor folks,' does not their mind kindle into flame within them, like the fire by the breath of the bellows on the blacksmith's forge?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நல்லர் பெரிதளியர் நல்கூர்ந்தார் என்றெள்ளிச்",
+      "words": [
+        {
+          "form": "நல்லர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெரிதளியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்கூர்ந்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றெள்ளிச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "செல்வர் சிறுநோக்கு நோக்குங்கால் - கொல்லன்",
+      "words": [
+        {
+          "form": "செல்வர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுநோக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்குங்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொல்லன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உலையூதும் தீயேபோல் உள்கனலும் கொல்லோ,",
+      "words": [
+        {
+          "form": "உலையூதும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீயேபோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்கனலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொல்லோ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தலையாய சான்றோர் மனம்.",
+      "words": [
+        {
+          "form": "தலையாய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சான்றோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மனம்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

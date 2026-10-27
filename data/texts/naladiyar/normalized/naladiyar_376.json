@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_376",
+  "poem": "naladiyar",
+  "number": 376,
+  "title": "பொது மகளிர்",
+  "heading": "3.38",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "பொத்தநூற் கல்லும் புணர்பிரியா அன்றிலும்போல்\nநித்தலும் நம்மைப் பிரியலம் என்றுரைத்த\nபொற்றொடியும் போர்த்தகர்க்கோ டாயினாள் நன்னெஞ்சே\nநிற்றியோ போதியோ நீ.",
+  "urai": null,
+  "english": "Feigned love becomes open hostility. ‘We will never part, like the precious stone strung on its thread, or the Andril,' said the damsel with golden bracelets: she has now become the horn of a fighting ram (she angrily repels me). Dear heart! dost linger still, or wilt thou go?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பொத்தநூற் கல்லும் புணர்பிரியா அன்றிலும்போல்",
+      "words": [
+        {
+          "form": "பொத்தநூற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கல்லும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புணர்பிரியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்றிலும்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நித்தலும் நம்மைப் பிரியலம் என்றுரைத்த",
+      "words": [
+        {
+          "form": "நித்தலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நம்மைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிரியலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றுரைத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பொற்றொடியும் போர்த்தகர்க்கோ டாயினாள் நன்னெஞ்சே",
+      "words": [
+        {
+          "form": "பொற்றொடியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போர்த்தகர்க்கோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டாயினாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்னெஞ்சே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நிற்றியோ போதியோ நீ.",
+      "words": [
+        {
+          "form": "நிற்றியோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போதியோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீ.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

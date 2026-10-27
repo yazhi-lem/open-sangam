@@ -1,0 +1,168 @@
+{
+  "id": "naladiyar_157",
+  "poem": "naladiyar",
+  "number": 157,
+  "title": "மேன்மக்கள்",
+  "heading": "2.16",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கள்ளார், கள் ளுண்ணார், கடிவ கடிந்தெரிணஇ,\nஎள்ளிப் பிறரை இகழ்ந்துரையார், - தள்ளியும்\nவாயில்பொய் கூறார், வடுவறு காட்சியார்\nசாயிற் பரிவ திலர்.",
+  "urai": null,
+  "english": "The wise free from gross evils. They defraud not, drink not palm-wine, shun what is forbidden, never despise and speak contemptuously of their neighbours, nor even forgetfully do they utter anything untrue with their mouth : these men of faultless vision grieve not though they fall into distress.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கள்ளார், கள் ளுண்ணார், கடிவ கடிந்தெரிணஇ,",
+      "words": [
+        {
+          "form": "கள்ளார்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ளுண்ணார்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடிவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடிந்தெரிணஇ,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "எள்ளிப் பிறரை இகழ்ந்துரையார், - தள்ளியும்",
+      "words": [
+        {
+          "form": "எள்ளிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இகழ்ந்துரையார்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தள்ளியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "வாயில்பொய் கூறார், வடுவறு காட்சியார்",
+      "words": [
+        {
+          "form": "வாயில்பொய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூறார்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வடுவறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்சியார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சாயிற் பரிவ திலர்.",
+      "words": [
+        {
+          "form": "சாயிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திலர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

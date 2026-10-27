@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0597",
+  "poem": "thirukkural",
+  "number": 597,
+  "title": "ஊக்கமுடைமை",
+  "heading": "2.1.22",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "சிதைவிடத்து ஒல்கார் உரவோர் புதையம்பிற்\nபட்டுப்பா டூன்றுங் களிறு.",
+  "urai": null,
+  "english": "The men of lofty mind quail not in ruin's fateful hour, The elephant retains his dignity mind arrows' deadly shower.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "சிதைவிடத்து ஒல்கார் உரவோர் புதையம்பிற்",
+      "words": [
+        {
+          "form": "சிதைவிடத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒல்கார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உரவோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புதையம்பிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பட்டுப்பா டூன்றுங் களிறு.",
+      "words": [
+        {
+          "form": "பட்டுப்பா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டூன்றுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களிறு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_182",
+  "poem": "naladiyar",
+  "number": 182,
+  "title": "பெருமை",
+  "heading": "2.19",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "இற்சார்வின் ஏமாந்தேம் ஈங்கமைந்தேம் என்றெண்ணிப்\nபொச்சாந் தொழுகுவர் பேதையார் - அச்சார்வு\nநின்றன போன்று நிலையா எனவுணர்ந்தார்\nஎன்றும் பரிவ திலர்.",
+  "urai": null,
+  "english": "Fools make their home in a changing world. Fools thinking 'we have found joy in the refuge of home,' and 'we are here in perfect repose, forgetful (of the instability of all things), go on their way. Those who have felt that 'refuge' is unstable, while it seems to stand fast, never fix their fond desire (on it).",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இற்சார்வின் ஏமாந்தேம் ஈங்கமைந்தேம் என்றெண்ணிப்",
+      "words": [
+        {
+          "form": "இற்சார்வின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏமாந்தேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈங்கமைந்தேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்றெண்ணிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பொச்சாந் தொழுகுவர் பேதையார் - அச்சார்வு",
+      "words": [
+        {
+          "form": "பொச்சாந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழுகுவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேதையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அச்சார்வு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நின்றன போன்று நிலையா எனவுணர்ந்தார்",
+      "words": [
+        {
+          "form": "நின்றன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிலையா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எனவுணர்ந்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "என்றும் பரிவ திலர்.",
+      "words": [
+        {
+          "form": "என்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திலர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1248",
+  "poem": "thirukkural",
+  "number": 1248,
+  "title": "நெஞ்சொடுகிளத்தல்",
+  "heading": "3.2.10",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பரிந்தவர் நல்காரென்று ஏங்கிப் பிரிந்தவர்\nபின்செல்வாய் பேதைஎன் நெஞ்சு.",
+  "urai": null,
+  "english": "Thou art befooled, my heart, thou followest him who flees from thee; And still thou yearning criest: 'He will nor pity show nor love to me.'",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பரிந்தவர் நல்காரென்று ஏங்கிப் பிரிந்தவர்",
+      "words": [
+        {
+          "form": "பரிந்தவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்காரென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஏங்கிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிரிந்தவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பின்செல்வாய் பேதைஎன் நெஞ்சு.",
+      "words": [
+        {
+          "form": "பின்செல்வாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேதைஎன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

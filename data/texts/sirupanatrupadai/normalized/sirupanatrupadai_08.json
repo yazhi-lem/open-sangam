@@ -2,27 +2,41 @@
   "id": "sirupanatrupadai_08",
   "poem": "sirupanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "..................................கறங்கு மணி\nவால் உளைப் புரவியொடு வையகம் மருள\nஈர நல் மொழி இரவலர்க்கு ஈந்த,\nஅழல் திகழ்ந்து இமைக்கும் அஞ்சுவரு நெடு வேல்\nகழல் தொடித் தடக் கை காரியும்",
+  "sangamTamil": "பறம்பிற் கோமான் பாரியுங் கறங்குமணி\nவால் உளைப் புரவியொடு வையகம் மருள\nஈர நல் மொழி இரவலர்க்கு ஈந்த,\nஅழல் திகழ்ந்து இமைக்கும் அஞ்சுவரு நெடு வேல்",
   "urai": "இவனது கையில் உள்ள வாள் பகைவர்களை வீசிச் செந்நிறம் கொண்டு ஒளிரும். ஆனால் இவனோ தன்னைத் தேடிவந்து கேட்டவர்களுக்கு ஒலிக்கும் மணி கட்டியிருக்கும் வெண்மயிர்ப் பிடரிக் குதிரைகளைப் பரிசாக வழங்கினான். அப்போது அவன் பேசும் அன்பு மொழிகள் விதை முளைக்க உதவும் ஈரநிலம் போன்றவை. அந்த உரை உலகத்தையே வியப்பில் ஆழ்த்துபவை.",
   "english": null,
   "lines": [
     {
       "lineNumber": 1,
-      "text": "..................................கறங்கு மணி",
+      "text": "பறம்பிற் கோமான் பாரியுங் கறங்குமணி",
       "words": [
         {
-          "form": "..................................கறங்கு",
-          "root": "கறங்கு",
+          "form": "பறம்பிற்",
+          "root": null,
           "urichol": null,
-          "etymology": "கறங்கு என்பது ஒலிக்கும் தன்மையைக் குறிக்கும் ஒரு வினைச்சொல். சங்க இலக்கியத்தில் இது மணி, பறவை, காற்று போன்ற பலவற்றின் ஒலியைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழில் 'கறங்கு' என்ற சொல் தனித்து வழக்கில் இல்லை, ஆனால் 'கறங்குதல்' என்ற வினைச்சொல் சுழலுதல், ஒலித்தல் என்ற பொருள்களில் சில இடங்களில் காணப்படுகிறது.",
-          "gloss": "This word refers to something that makes a resounding or ringing sound, here specifically describing the bells tied to the horses."
+          "etymology": null,
+          "gloss": null
         },
         {
-          "form": "மணி",
-          "root": "மணி",
+          "form": "கோமான்",
+          "root": null,
           "urichol": null,
-          "etymology": "மணி என்பது ஒலி எழுப்பும் உலோகப் பொருள் அல்லது விலைமதிப்பற்ற கல்லைக் குறிக்கும். சங்க இலக்கியத்தில் இது பெரும்பாலும் ஒலிக்கும் மணிகளையே சுட்டுகிறது. நவீன தமிழிலும் 'மணி' என்ற சொல் அதே பொருளில், அதாவது ஒலி எழுப்பும் கருவி அல்லது ரத்தினம் என்ற பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "This word denotes a bell, specifically referring to the bells that are ringing and attached to the horses."
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாரியுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கறங்குமணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
         }
       ]
     },
@@ -155,57 +169,16 @@
           "gloss": "This word refers to a spear, specifically a long, awe-inspiring, and brilliantly flashing spear."
         }
       ]
-    },
-    {
-      "lineNumber": 5,
-      "text": "கழல் தொடித் தடக் கை காரியும்",
-      "words": [
-        {
-          "form": "கழல்",
-          "root": "கழல்",
-          "urichol": null,
-          "etymology": "கழல் என்பது வீரர்களின் காலில் அணியப்படும் ஒரு அணிகலனைக் குறிக்கும். இது வீரத்தின் அடையாளமாகக் கருதப்பட்டது. சங்க இலக்கியத்தில் இது வீரர்களின் பெருமையையும் போர்த் திறனையும் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'கழல்' என்ற சொல் இலக்கிய வழக்கில் வீரர்களின் அணிகலனைக் குறிக்கிறது.",
-          "gloss": "This word refers to an anklet or a warrior's leg ornament, symbolizing valor and heroism."
-        },
-        {
-          "form": "தொடித்",
-          "root": "தொடி",
-          "urichol": null,
-          "etymology": "தொடி என்பது கையில் அணியப்படும் வளையல் அல்லது காப்பைக் குறிக்கும் ஒரு பெயர்ச்சொல். சங்க இலக்கியத்தில் இது ஆண், பெண் இருபாலரும் அணியும் அணிகலனைக் குறிக்கப் பயன்படுத்தப்பட்டுள்ளது. 'தொடித்' என்பது 'தொடி' என்ற சொல்லுடன் 'த்' என்ற சந்தி சேர்ந்துள்ளது. நவீன தமிழிலும் 'தொடி' என்ற சொல் இலக்கிய வழக்கில் வளையலைக் குறிக்கிறது.",
-          "gloss": "This word refers to a bracelet or armlet, indicating an ornament worn on the arm."
-        },
-        {
-          "form": "தடக்",
-          "root": "தடம்",
-          "urichol": "உரிச்சொல்",
-          "etymology": "தடக் என்பது 'தடம்' என்ற உரிச்சொல்லின் திரிபு, இது அகலம், பெருமை, வலிமை ஆகியவற்றைக் குறிக்கும். சங்க இலக்கியத்தில் இது ஒரு பொருளின் அல்லது உறுப்பின் பெரிய, வலிமையான தன்மையைக் குறிக்கப் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. 'தடக் கை' என்பது அகன்ற, வலிமையான கை என்ற பொருளைத் தருகிறது. நவீன தமிழிலும் 'தடம்' என்ற சொல் பெரிய, அகன்ற என்ற பொருள்களில் இலக்கிய வழக்கில் உள்ளது.",
-          "gloss": "This word, an urichol, signifies 'broad,' 'large,' or 'mighty,' describing the hand as powerful and expansive."
-        },
-        {
-          "form": "கை",
-          "root": "கை",
-          "urichol": null,
-          "etymology": "கை என்பது மனித உடலின் ஒரு பகுதியான கையைக் குறிக்கும் ஒரு பெயர்ச்சொல். சங்க இலக்கியத்தில் இது செயல், உதவி, வலிமை போன்ற பல பொருள்களில் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் 'கை' என்ற சொல் அதே பொருளில் வழக்கில் உள்ளது.",
-          "gloss": "This word refers to the hand, here specifically the broad and powerful hand adorned with bracelets."
-        },
-        {
-          "form": "காரியும்",
-          "root": "காரி",
-          "urichol": null,
-          "etymology": "காரியும் என்பது 'காரி' என்ற பெயருடன் 'உம்' என்ற இடைச்சொல் சேர்ந்துள்ளது. காரி என்பது சங்ககால வள்ளல்களில் ஒருவனான காரி என்பவனைக் குறிக்கும். 'உம்' என்ற இடைச்சொல் உயர்வு சிறப்பைக் குறிக்கவோ அல்லது பிறவற்றையும் சேர்த்துச் சொல்லவோ பயன்படுத்தப்படுகிறது. நவீன தமிழில் 'காரி' என்ற பெயர் வழக்கில் இருந்தாலும், சங்ககால வள்ளலைக் குறிக்கும் பயன்பாடு இலக்கியத்திற்கே உரியது.",
-          "gloss": "This word refers to Kari, one of the famous chieftains and philanthropists of the Sangam era, with the 'um' particle emphasizing his greatness or including him among other great figures."
-        }
-      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை08.html",
+  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை08.html; Project Madurai pmuni0483",
   "verified": false,
   "sectionNumber": 8,
   "title": "கடையெழு வள்ளல்களின் சிறப்பு - காரி",
   "lineStart": 91,
-  "lineEnd": 95,
+  "lineEnd": 94,
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",

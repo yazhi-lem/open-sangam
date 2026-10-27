@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0187",
+  "poem": "thirukkural",
+  "number": 187,
+  "title": "புறங்கூறாமை",
+  "heading": "1.2.15",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பகச்சொல்லிக் கேளிர்ப் பிரிப்பர் நகச்சொல்லி\nநட்பாடல் தேற்றா தவர்.",
+  "urai": null,
+  "english": "With friendly art who know not pleasant words to say, Speak words that sever hearts, and drive choice friends away.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பகச்சொல்லிக் கேளிர்ப் பிரிப்பர் நகச்சொல்லி",
+      "words": [
+        {
+          "form": "பகச்சொல்லிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேளிர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிரிப்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நகச்சொல்லி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நட்பாடல் தேற்றா தவர்.",
+      "words": [
+        {
+          "form": "நட்பாடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேற்றா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தவர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

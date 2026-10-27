@@ -16,6 +16,7 @@ import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
 import Chip from '../components/ui/Chip'
 import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
+import { LIBRARY_COLLECTIONS, LIBRARY_WORKS, AVAILABILITY_LABELS, languageLabel, workMatchesQuery } from '../data/library.js'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
@@ -30,11 +31,22 @@ function PoemCard({ poem }) {
         : 'border-line bg-surface-alt/40 cursor-default opacity-85'
     }`
 
+  const collectionLabel = {
+    '8thokai': 'Anthology',
+    '10paddu': 'Idyll',
+    pathinenkilkkanakku: 'Minor Work',
+  }[poem.collection] || 'Work'
+  const collectionVariant = {
+    '8thokai': 'anthology',
+    '10paddu': 'idyll',
+    pathinenkilkkanakku: 'accent',
+  }[poem.collection] || 'default'
+
   const content = (
     <>
       <div className="flex items-center justify-between gap-2 mb-3">
-        <Badge variant={poem.collection === '8thokai' ? 'anthology' : 'idyll'} size="sm">
-          {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
+        <Badge variant={collectionVariant} size="sm">
+          {collectionLabel}
         </Badge>
         {available ? (
           <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-xs" title="Available in reader" />
@@ -81,45 +93,70 @@ function PoemCard({ poem }) {
   return <div className={cardClassName}>{content}</div>
 }
 
-// ── Coming Soon (post-Sangam works not yet in the corpus) ──────────────────
+// ── Wider Tamil Library (catalogued, not yet all readable) ─────────────────
 
-const COMING_SOON_WORKS = [
-  {
-    ta: 'திருக்குறள்',
-    en: 'Thirukkural',
-    desc: "Tiruvalluvar's 1,330-couplet ethical masterwork on virtue, wealth, and love.",
-    count: 1330,
-    unit: 'couplets',
-  },
-  {
-    ta: 'பதினெண்கீழ்க்கணக்கு',
-    en: 'Pathinenkeezhkanakku',
-    desc: 'The Eighteen Minor Works — post-Sangam didactic and gnomic poetry collections.',
-    count: 18,
-    unit: 'works',
-  },
-]
-
-function ComingSoonCard({ work }) {
+function CatalogWorkCard({ work }) {
+  const status = AVAILABILITY_LABELS[work.availability] || AVAILABILITY_LABELS.metadata
+  const readable = work.availability === 'reader'
   return (
-    <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-dashed border-line bg-surface-alt/40 p-5 opacity-85">
-      <div className="flex items-center justify-between gap-2 mb-3">
-        <Badge variant="outline" size="sm">Roadmap</Badge>
-        <span className="w-2 h-2 rounded-full bg-line-strong" title="Coming soon" />
+    <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface p-5 transition-all duration-200">
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <Badge variant={readable ? 'accent' : 'outline'} size="sm">
+          {status.ta} · {status.en}
+        </Badge>
+        <span className="text-[10px] font-mono text-faint">{work.period}</span>
       </div>
-      <h3 className="tamil text-lg sm:text-xl font-bold leading-snug mb-1 shrink-0 line-clamp-2 break-words [overflow-wrap:anywhere] min-h-[2.6em] text-muted">
+      <h3 className="tamil mb-1 line-clamp-2 min-h-[2.6em] shrink-0 text-lg font-bold leading-snug text-primary sm:text-xl">
         {work.ta}
       </h3>
-      <p className="text-sm mb-4 shrink-0 leading-relaxed break-words [overflow-wrap:anywhere] line-clamp-2 min-h-[2.2em] text-faint">
-        {work.en} — {work.desc}
+      <p className="mb-2 line-clamp-1 text-sm text-muted">{work.en}</p>
+      <p className="mb-4 line-clamp-2 min-h-[2.2em] text-xs leading-relaxed text-faint">
+        {work.author}
       </p>
-      <div className="mt-auto pt-3 border-t border-line/60 flex items-center justify-between text-xs font-mono">
-        <span className="text-faint">
-          {work.count.toLocaleString()} {work.unit}
+      <div className="mt-auto flex items-center justify-between gap-3 border-t border-line/60 pt-3 text-xs">
+        <span className="flex flex-wrap gap-1">
+          {work.languages.map((code) => (
+            <span key={code} className="rounded-full bg-surface-alt px-2 py-0.5 font-mono text-[10px] text-muted">
+              {languageLabel(code)}
+            </span>
+          ))}
+          {work.translations?.map((code) => (
+            <span key={code} className="rounded-full bg-accent/10 px-2 py-0.5 font-mono text-[10px] text-accent">
+              {languageLabel(code)}
+            </span>
+          ))}
         </span>
-        <span className="text-faint font-semibold">Coming soon</span>
+        <span className="shrink-0 font-mono text-faint">
+          {work.count ? `${work.count.toLocaleString()} ${work.unit}` : work.unit}
+        </span>
       </div>
     </div>
+  )
+}
+
+function CatalogCollection({ collection, works }) {
+  return (
+    <ScrollTilt intensity={6}>
+      <div className="space-y-6">
+        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-line-strong pb-3">
+          <h2 className="tamil min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl">{collection.ta}</h2>
+          <span className="text-sm font-medium text-muted sm:text-base">{collection.en}</span>
+          <span className="ml-auto text-xs font-mono text-faint">{works.length} works</span>
+        </div>
+        <p className="max-w-2xl text-sm leading-relaxed text-muted">{collection.description}</p>
+        {works.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-line p-8 text-center text-sm text-muted">
+            No works matching this search.
+          </div>
+        ) : (
+          <RevealGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4" amount={0.08}>
+            {works.map((work) => (
+              <CatalogWorkCard key={work.id} work={work} />
+            ))}
+          </RevealGroup>
+        )}
+      </div>
+    </ScrollTilt>
   )
 }
 
@@ -149,9 +186,9 @@ function Library() {
       <Reveal as="div" className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-6" duration={0.6}>
         <div className="space-y-2">
           <h1 className="tamil text-3xl sm:text-5xl font-extrabold text-primary leading-tight">
-            சங்க நூலகம்
+            தமிழ் நூலகம்
           </h1>
-          <p className="text-lg sm:text-xl text-muted font-light">Library of Sangam works</p>
+          <p className="text-lg sm:text-xl text-muted font-light">Tamil Library · Sangam corpus, Pathinenkilkkanakku, classics & artifacts</p>
           {/* † draft Tamil, needs native review */}
           <p className="text-sm text-muted pt-1">
             <span lang="ta" className="tamil">பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி</span>
@@ -226,25 +263,23 @@ function Library() {
           </ScrollTilt>
         ))}
 
-        {!chipFilter && !searchQuery.trim() && (
-          <ScrollTilt intensity={6}>
-            <div className="space-y-6">
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">பதினெண்கீழ்க்கணக்கு</h2>
-                <span className="text-muted text-sm sm:text-base font-medium">Coming Soon</span>
-                <span className="ml-auto text-xs font-mono text-faint">{COMING_SOON_WORKS.length} planned</span>
-              </div>
-              <p className="text-sm text-muted max-w-2xl leading-relaxed">
-                Post-Sangam didactic works next on the roadmap — outside the Ettuthokai / Pattuppattu corpus this library currently reads from.
-              </p>
-              <RevealGroup className="grid grid-cols-1 sm:grid-cols-2 gap-4" amount={0.08}>
-                {COMING_SOON_WORKS.map((work) => (
-                  <ComingSoonCard key={work.en} work={work} />
-                ))}
-              </RevealGroup>
-            </div>
-          </ScrollTilt>
-        )}
+        {!chipFilter &&
+          LIBRARY_COLLECTIONS.map((collection) => {
+            const works = LIBRARY_WORKS.filter(
+              (work) =>
+                work.collection === collection.id &&
+                !POEM_BY_ID[work.id] &&
+                workMatchesQuery(work, searchQuery)
+            )
+            if (!works.length && searchQuery.trim()) return null
+            return (
+              <CatalogCollection
+                key={collection.id}
+                collection={collection}
+                works={works}
+              />
+            )
+          })}
       </div>
     </div>
   )
@@ -492,7 +527,7 @@ function Reader({ poem, sectionId }) {
     if (!sectionFilter.trim()) return true
     const q = sectionFilter.toLowerCase()
     const n = isSection ? s.sectionNumber : s.number
-    const t = isSection ? s.title : s.poet || ''
+    const t = s.title || s.heading || s.poet || ''
     return String(n).includes(q) || t.toLowerCase().includes(q)
   })
 

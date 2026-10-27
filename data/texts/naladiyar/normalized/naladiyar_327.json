@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_327",
+  "poem": "naladiyar",
+  "number": 327,
+  "title": "புல்லறிவாண்மை",
+  "heading": "2.33",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "தாமேயும் இன்புறார், தக்கார்க்கு நன்றாற்றார்\nஏமஞ்சார் நன்னெறியும் சேர்கலார் - தாமயங்கி\nஆக்கத்துள் தூங்கி அவத்தமே வாழ்நாளைப்\nபோக்குவார் புல்லறிவி னார்.",
+  "urai": null,
+  "english": "Wasted lives. Men of scanty wisdom are those who do not themselves enjoy any sweets of life, bestow no benefactions on worthy persons, draw not nigh the good path that safeguards (the soul), but infatuated and absorbed in the acquisition of wealth, pass away their days of life in vain.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தாமேயும் இன்புறார், தக்கார்க்கு நன்றாற்றார்",
+      "words": [
+        {
+          "form": "தாமேயும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்புறார்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தக்கார்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்றாற்றார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஏமஞ்சார் நன்னெறியும் சேர்கலார் - தாமயங்கி",
+      "words": [
+        {
+          "form": "ஏமஞ்சார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்னெறியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்கலார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாமயங்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "ஆக்கத்துள் தூங்கி அவத்தமே வாழ்நாளைப்",
+      "words": [
+        {
+          "form": "ஆக்கத்துள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூங்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவத்தமே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்நாளைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "போக்குவார் புல்லறிவி னார்.",
+      "words": [
+        {
+          "form": "போக்குவார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புல்லறிவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

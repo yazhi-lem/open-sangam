@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0539",
+  "poem": "thirukkural",
+  "number": 539,
+  "title": "பொச்சாவாமை",
+  "heading": "2.1.16",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "இகழ்ச்சியின் கெட்டாரை உள்ளுக தாந்தம்\nமகிழ்ச்சியின் மைந்துறும் போழ்து.",
+  "urai": null,
+  "english": "Think on the men whom scornful mind hath brought to nought, When exultation overwhelms thy wildered thought.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இகழ்ச்சியின் கெட்டாரை உள்ளுக தாந்தம்",
+      "words": [
+        {
+          "form": "இகழ்ச்சியின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெட்டாரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உள்ளுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாந்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மகிழ்ச்சியின் மைந்துறும் போழ்து.",
+      "words": [
+        {
+          "form": "மகிழ்ச்சியின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மைந்துறும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போழ்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

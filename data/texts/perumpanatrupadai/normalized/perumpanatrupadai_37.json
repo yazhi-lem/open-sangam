@@ -2,7 +2,7 @@
   "id": "perumpanatrupadai_37",
   "poem": "perumpanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "பெரும் கை யானை கொடும் தொடி படுக்கும்\nகரும் கை கொல்லன் இரும்பு விசைத்து எறிந்த\nகூட திண் இசை வெரீஇ மாடத்து\nஇறை உறை புறவின் செம் கால் சேவல்\nஇன் துயில் இரியும் பொன் துஞ்சு வியல் நகர்",
+  "sangamTamil": "பெரும் கை யானை கொடும் தொடி படுக்கும்\nகரும் கை கொல்லன் இரும்பு விசைத்து எறிந்த\nகூட திண் இசை வெரீஇ மாடத்து\nஇறை உறை புறவின் செம் கால் சேவல்\nஇன் துயில் இரியும் பொன் துஞ்சு வியல் நகர்\nகுணகடல் வரைப்பின் முந்நீர் நாப்பண்\nபகல்செய் மண்டிலம் பாரித் தாங்கு\nமுறைவேண்டு நர்க்குங் குறைவேண்டு நர்க்கும்\nவேண்டுப வேண்டுப வேண்டினர்க் கருளி\nஇடைத்தெரிந் துணரு மிருடீர் காட்சிக்\nகொடைக்கட னிறுத்த கூம்பா வுள்ளத்\nதுரும்பில் சுற்றமோ டிருந்தோற் குறுகிப்",
   "urai": "அரசன் இளந்திரையனின் அரண்மனை ஓங்கி உயர்ந்த மாடங்களைக் கொண்டது. அதில் புறாக்கள் வாழும். அவற்றில் ஆண்-புறாக்களின் கால்கள் சிவப்புநிறம் கொண்டவை. கொல்லர் போர்-யானைகளின் தந்தங்களுக்கு காப்பு வளையல்கள் செய்வார்கள். அதற்காக அவர்கள் உலைக்கூடத்தில் இரும்பைத் தட்டும் ஓசையைக் கேட்டு அஞ்சி வெருவி அங்குள்ள மாடப் புறாக்களின் சேவல்கள் அங்குமிங்கும் ஓடிக் கொண்டிருக்கும். அரண்மனையில் செல்வம் பயன்படுத்த முடியாமல் தூங்கும்.",
   "english": null,
   "lines": [
@@ -245,11 +245,249 @@
           "gloss": "This noun refers to a 'palace' or 'city', specifically the grand and spacious royal residence of Ilantiraiyan."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "குணகடல் வரைப்பின் முந்நீர் நாப்பண்",
+      "words": [
+        {
+          "form": "குணகடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரைப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முந்நீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாப்பண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பகல்செய் மண்டிலம் பாரித் தாங்கு",
+      "words": [
+        {
+          "form": "பகல்செய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மண்டிலம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாரித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாங்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "முறைவேண்டு நர்க்குங் குறைவேண்டு நர்க்கும்",
+      "words": [
+        {
+          "form": "முறைவேண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நர்க்குங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறைவேண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நர்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "வேண்டுப வேண்டுப வேண்டினர்க் கருளி",
+      "words": [
+        {
+          "form": "வேண்டுப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டுப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டினர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கருளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "இடைத்தெரிந் துணரு மிருடீர் காட்சிக்",
+      "words": [
+        {
+          "form": "இடைத்தெரிந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிருடீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்சிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "கொடைக்கட னிறுத்த கூம்பா வுள்ளத்",
+      "words": [
+        {
+          "form": "கொடைக்கட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னிறுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூம்பா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வுள்ளத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "துரும்பில் சுற்றமோ டிருந்தோற் குறுகிப்",
+      "words": [
+        {
+          "form": "துரும்பில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுற்றமோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டிருந்தோற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறுகிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை37.html",
+  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை37.html; Project Madurai pmuni0492",
   "verified": false,
   "sectionNumber": 37,
   "title": "இளந்திரையன் மந்திரச் சுற்றத்தொடு அரசு வீற்றிருக்கும் காட்சி",

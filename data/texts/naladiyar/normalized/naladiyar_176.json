@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_176",
+  "poem": "naladiyar",
+  "number": 176,
+  "title": "நல்லினம் சேர்தல்",
+  "heading": "2.18",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "ஒண்கதிர் வாள்மதியும் சேர்தலால் ஓங்கிய\nஅங்கண் விசும்பின் முயலும் தொழப்படுஉம்\nகுன்றிய சீர்மைய ராயினும் சீர்பெறுவர்,\nகுன்றன்னார் கேண்மை கொளின்.",
+  "urai": null,
+  "english": "The hare in the moon is worshipped. Because it is in the bright-beamed moon the very hare in heaven's lofty fair expanse is worshipped. Though scant their worthiness, men obtain worth who share friendship with those firm as a hill.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "ஒண்கதிர் வாள்மதியும் சேர்தலால் ஓங்கிய",
+      "words": [
+        {
+          "form": "ஒண்கதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாள்மதியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்தலால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓங்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அங்கண் விசும்பின் முயலும் தொழப்படுஉம்",
+      "words": [
+        {
+          "form": "அங்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விசும்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முயலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழப்படுஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "குன்றிய சீர்மைய ராயினும் சீர்பெறுவர்,",
+      "words": [
+        {
+          "form": "குன்றிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சீர்மைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சீர்பெறுவர்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "குன்றன்னார் கேண்மை கொளின்.",
+      "words": [
+        {
+          "form": "குன்றன்னார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளின்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

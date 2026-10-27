@@ -45,6 +45,41 @@ wholesale — that's fine, because `raw/` only ever holds a scrape of the source
 site, never AI output. If the source page hasn't changed, the re-fetch is a
 no-op in substance.
 
+### `scraper/scrape_projectmadurai.py` — Fill idyll gaps
+
+```bash
+python -m scraper.scrape_projectmadurai --poem all
+python -m scraper.scrape_projectmadurai --poem maduraikanchi --dry-run
+```
+
+Fills the idyll line gaps and repairs heading-range defects left by the primary
+source, using the complete Project Madurai edition of each idyll. Existing lines
+and word annotations are preserved; only missing lines are inserted, and section
+`lineStart`/`lineEnd` are re-derived when the source heading was wrong. The
+script also updates `data/schema/known_line_gaps.json`, so a clean validation
+run stays its normal green state.
+
+Source pages are cached under the already-ignored `data/texts/<poem>/raw/`.
+
+### `scraper/scrape_pathinen.py` — Thirukkural + Naladiyar
+
+```bash
+python -m scraper.scrape_pathinen --work all
+python -m scraper.scrape_pathinen --work thirukkural
+```
+
+Ingests the first two Pathinenkilkkanakku works from Project Madurai:
+
+| Work | Tamil | English |
+|---|---|---|
+| Tirukkural | `pmuni0001` | G. U. Pope et al., 1886 (`pmuni0153`) |
+| Naladiyar | `pmuni0016` | G. U. Pope / F. W. Ellis, 1893 (`pmuni0711`) |
+
+Both translations are public domain. Four verses that are missing or
+mislabelled in the HTML editions are filled from the other Project Madurai
+editions and the Internet Archive scan of the same translation. No machine
+translation is used.
+
 ### `normalizer/normalize_all.py` — Normalize
 
 ```bash

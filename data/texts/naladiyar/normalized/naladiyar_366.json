@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_366",
+  "poem": "naladiyar",
+  "number": 366,
+  "title": "பன்னெறி",
+  "heading": "2.37",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கல்லாக் கழிப்பர் தலையாயார் நல்லவை\nதுவ்வாக் கழிப்பர் இடைகள் கடைகள்\nஇனிதுண்ணோம் ஆரப் பெறேமியாம் என்னும்\nமுனிவினாற் கண்பா டிலர்.",
+  "urai": null,
+  "english": "Three kinds of men; those that learn, those that enjoy, and those that complain. The men of noblest mood pass their time in learning. The middle sort pass their time in the enjoyment of good things. The last and lowest cry : 'Our food is not sweet,' 'We've not got our fill,' and in angry mood lie sleepless.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கல்லாக் கழிப்பர் தலையாயார் நல்லவை",
+      "words": [
+        {
+          "form": "கல்லாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிப்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலையாயார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நல்லவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "துவ்வாக் கழிப்பர் இடைகள் கடைகள்",
+      "words": [
+        {
+          "form": "துவ்வாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிப்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இடைகள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடைகள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "இனிதுண்ணோம் ஆரப் பெறேமியாம் என்னும்",
+      "words": [
+        {
+          "form": "இனிதுண்ணோம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆரப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறேமியாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்னும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "முனிவினாற் கண்பா டிலர்.",
+      "words": [
+        {
+          "form": "முனிவினாற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்பா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டிலர்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

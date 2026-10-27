@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_158",
+  "poem": "naladiyar",
+  "number": 158,
+  "title": "மேன்மக்கள்",
+  "heading": "2.16",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "பிறர்மறை யின்கண் செவிடாய்த் திறனறிந்து\nஏதிலா ரிற்கண், குருடனாய்த் தீய\nபுறங்கூற்றின் மூகையாய் நிற்பானேல், யாதும்\nஅறங்கூற வேண்டா அவற்கு.",
+  "urai": null,
+  "english": "When a man should be deaf, blind, and dumb. Deaf to others' secrets, blind to his neighbour's wife, dumb to evil backbiting—if, knowing what is befitting, a man thus abides, it is not necessary to teach him any virtuous precepts.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பிறர்மறை யின்கண் செவிடாய்த் திறனறிந்து",
+      "words": [
+        {
+          "form": "பிறர்மறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யின்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செவிடாய்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திறனறிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஏதிலா ரிற்கண், குருடனாய்த் தீய",
+      "words": [
+        {
+          "form": "ஏதிலா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரிற்கண்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குருடனாய்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "புறங்கூற்றின் மூகையாய் நிற்பானேல், யாதும்",
+      "words": [
+        {
+          "form": "புறங்கூற்றின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூகையாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிற்பானேல்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாதும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "அறங்கூற வேண்டா அவற்கு.",
+      "words": [
+        {
+          "form": "அறங்கூற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேண்டா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அவற்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

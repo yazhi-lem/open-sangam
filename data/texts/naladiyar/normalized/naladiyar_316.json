@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_316",
+  "poem": "naladiyar",
+  "number": 316,
+  "title": "அவையறிதல்",
+  "heading": "2.32",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "பாடமே ஓதிப் பயன்தெரிதல் தேற்றாத\nமுடர் முனிதக்க சொல்லுங்கால் - கேடருஞ்சீர்ச்\nசான்றோர் சமழ்த்தனர் நிற்பவே, மற்றவரை\nஈன்றாட் கிறப்பப் பரிந்து.",
+  "urai": null,
+  "english": "Fools disgrace themselves in the assembly of the learned. When foolish men chant their lesson, not knowing the fruit that lesson yields, but uttering words that gender wrath, the learned ones, whose fame dies not, will stand by ashamed, sorely pitying the mother that bare them.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பாடமே ஓதிப் பயன்தெரிதல் தேற்றாத",
+      "words": [
+        {
+          "form": "பாடமே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஓதிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயன்தெரிதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேற்றாத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "முடர் முனிதக்க சொல்லுங்கால் - கேடருஞ்சீர்ச்",
+      "words": [
+        {
+          "form": "முடர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முனிதக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லுங்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேடருஞ்சீர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "சான்றோர் சமழ்த்தனர் நிற்பவே, மற்றவரை",
+      "words": [
+        {
+          "form": "சான்றோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சமழ்த்தனர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிற்பவே,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மற்றவரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "ஈன்றாட் கிறப்பப் பரிந்து.",
+      "words": [
+        {
+          "form": "ஈன்றாட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிறப்பப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிந்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}
