@@ -1,46 +1,43 @@
 /**
- * readerLayers.js — which layers the reader shows, and how trustworthy each is.
+ * readerLayers.js — nine-layer scholarly reader model.
  *
- * Pure functions (no React) so they can be unit-tested with `node --test`.
- * Contract with data/schema/verse_schema.json: `verified` is true only after
- * scholar sign-off; `englishMeta` / `yazhi_uraiMeta` / `uraiMeta` mark an
- * AI-drafted field.
+ * Layer ids are stable. `sangam` and `both` are legacy ids mapped forward.
  */
 
 export const LAYER_OPTIONS = [
-  { id: 'sangam', label: 'சங்கம்', hint: 'Original Sangam Tamil' },
+  { id: 'original', label: 'மூலம்', hint: 'Original Sangam Tamil' },
+  { id: 'transliteration', label: 'ஒலிபெயர்ப்பு', hint: 'Roman transliteration' },
   { id: 'urai', label: 'உரை', hint: 'Modern Tamil prose commentary' },
   { id: 'english', label: 'English', hint: 'English translation' },
-  { id: 'all', label: 'All', hint: 'All three layers' },
+  { id: 'glossary', label: 'சொற்கள்', hint: 'Word glossary and etymology' },
+  { id: 'notes', label: 'குறிப்புகள்', hint: 'Editorial and cultural notes' },
+  { id: 'poetics', label: 'யாப்பு', hint: 'Metre, tiṇai and poetics' },
+  { id: 'context', label: 'சூழல்', hint: 'Landscape, people and daily life' },
+  { id: 'voice', label: 'குரல்', hint: 'Spoken recitation' },
+  { id: 'all', label: 'அனைத்தும்', hint: 'All nine layers' },
 ]
 
+const TEXT_LAYERS = ['original', 'transliteration', 'urai', 'english', 'glossary', 'notes', 'poetics', 'context', 'voice']
 const LAYER_IDS = new Set(LAYER_OPTIONS.map((l) => l.id))
 
-/** Normalise a stored/legacy layer id ('both' was the old name for 'all'). */
 export function normalizeLayer(layer) {
   if (layer === 'both') return 'all'
+  if (layer === 'sangam') return 'original'
   return LAYER_IDS.has(layer) ? layer : 'all'
 }
 
-/** Which of the three text layers are visible for a toggle value. */
 export function visibleLayers(layer) {
   const l = normalizeLayer(layer)
-  return {
-    sangam: l === 'sangam' || l === 'all',
-    urai: l === 'urai' || l === 'all',
-    english: l === 'english' || l === 'all',
-  }
+  return Object.fromEntries(
+    TEXT_LAYERS.map((id) => [id, l === 'all' || l === id])
+  )
 }
 
 const META_KEY = { urai: 'uraiMeta', yazhi_urai: 'yazhi_uraiMeta', english: 'englishMeta' }
 
-/**
- * Trust status of one layer of a verse.
- * @returns {{ status: 'source'|'verified'|'ai-draft'|'unverified'|'missing', model?: string }}
- */
 export function layerStatus(verse, field) {
   if (!verse) return { status: 'missing' }
-  if (field === 'sangam') return { status: 'source' }
+  if (field === 'original' || field === 'sangam') return { status: 'source' }
   const text = verse[field]
   if (!text || !String(text).trim()) return { status: 'missing' }
   if (verse.verified === true) return { status: 'verified' }
@@ -49,16 +46,13 @@ export function layerStatus(verse, field) {
   return { status: 'unverified' }
 }
 
-/** Short label for a draft badge, or null when no badge is needed. */
 export function draftBadgeLabel(verse, field) {
   const { status } = layerStatus(verse, field)
-  // Tamil text below is an AI-written draft: needs native-reviewer sign-off.
   if (status === 'ai-draft') return 'வரைவு · AI draft'
   if (status === 'unverified') return 'வரைவு · Not yet verified'
   return null
 }
 
-/** Longer tooltip explaining the badge. */
 export function draftBadgeTitle(verse, field) {
   const { status, model } = layerStatus(verse, field)
   if (status === 'ai-draft') {
@@ -70,16 +64,10 @@ export function draftBadgeTitle(verse, field) {
 
 const GLOSS_FIELDS = ['root', 'urichol', 'etymology', 'gloss']
 
-/** True when a corpus word entry carries at least one glossary field. */
 export function hasGloss(word) {
   return Boolean(word) && GLOSS_FIELDS.some((k) => word[k] != null && String(word[k]).trim() !== '')
 }
 
-/**
- * Trust status of a word's glossary entry. Glossary fields come only from the
- * corpus file; `etymologyMeta` on the record marks a batch AI draft.
- * @returns {{ status: 'verified'|'ai-draft'|'unverified'|'missing', model?: string }}
- */
 export function glossaryStatus(verse, word) {
   if (!hasGloss(word)) return { status: 'missing' }
   if (verse?.verified === true) return { status: 'verified' }
@@ -87,10 +75,8 @@ export function glossaryStatus(verse, word) {
   return { status: 'unverified' }
 }
 
-/** Badge label for a glossary entry, or null when no badge is needed. */
 export function glossaryBadgeLabel(verse, word) {
   const { status } = glossaryStatus(verse, word)
-  // Tamil text below is an AI-written draft: needs native-reviewer sign-off.
   if (status === 'ai-draft') return 'வரைவு · AI draft'
   if (status === 'unverified') return 'வரைவு · Not yet verified'
   return null

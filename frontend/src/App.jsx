@@ -9,10 +9,6 @@ import Home from './pages/Home'
 import Scholars from './pages/Scholars'
 import SangamWorldPage from './pages/SangamWorldPage'
 import Book from './pages/Book'
-import Knowledge from './pages/Knowledge'
-import GraphExplorer from './pages/GraphExplorer'
-import ArticlesList from './pages/ArticlesList'
-import ArticleReader from './pages/ArticleReader'
 import ArtifactReader from './pages/ArtifactReader'
 import NotFound from './pages/NotFound'
 import { AVAI_ENABLED } from './config/features'
@@ -53,10 +49,10 @@ function AppContent() {
               </>
             )}
             <Route path="/world" element={<SangamWorldPage />} />
-            <Route path="/knowledge" element={<Knowledge />} />
-            <Route path="/graph" element={<GraphExplorer />} />
-            <Route path="/articles" element={<ArticlesList />} />
-            <Route path="/articles/:slug" element={<ArticleReader />} />
+            <Route path="/knowledge" element={<Navigate to="/world" replace />} />
+            <Route path="/graph" element={<Navigate to="/world" replace />} />
+            <Route path="/articles" element={<Navigate to="/world" replace />} />
+            <Route path="/articles/:slug" element={<Navigate to="/world" replace />} />
             <Route path="/artifacts/:artifactId" element={<ArtifactReader />} />
             <Route path="/scholars" element={<Scholars />} />
             <Route path="*" element={<NotFound />} />

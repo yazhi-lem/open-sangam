@@ -2,6 +2,7 @@ import { create } from 'zustand'
 
 const WORLD_RENDER_MODE_KEY = 'sangam:worldRenderMode'
 const THEME_KEY = 'sangam:theme'
+const LANGUAGE_KEY = 'sangam:language'
 
 function loadWorldRenderMode() {
   if (typeof localStorage === 'undefined') return 'auto'
@@ -16,6 +17,17 @@ function loadTheme() {
     return document.documentElement.classList.contains('dark') ? 'dark' : 'light'
   }
   return 'light'
+}
+
+function loadLanguage() {
+  if (typeof localStorage === 'undefined') return 'ta'
+  return localStorage.getItem(LANGUAGE_KEY) === 'en' ? 'en' : 'ta'
+}
+
+function applyLanguage(language) {
+  if (typeof document === 'undefined') return
+  document.documentElement.lang = language
+  document.documentElement.dataset.uiLanguage = language
 }
 
 function applyTheme(theme) {
@@ -60,6 +72,21 @@ const useAppStore = create((set) => ({
   commandPaletteOpen: false,
   setCommandPaletteOpen: (open) => set({ commandPaletteOpen: open }),
   toggleCommandPalette: () => set((state) => ({ commandPaletteOpen: !state.commandPaletteOpen })),
+
+  // Interface language: one language at a time, persisted.
+  language: loadLanguage(),
+  setLanguage: (language) => {
+    const next = language === 'en' ? 'en' : 'ta'
+    if (typeof localStorage !== 'undefined') localStorage.setItem(LANGUAGE_KEY, next)
+    applyLanguage(next)
+    set({ language: next })
+  },
+  toggleLanguage: () => set((state) => {
+    const next = state.language === 'ta' ? 'en' : 'ta'
+    if (typeof localStorage !== 'undefined') localStorage.setItem(LANGUAGE_KEY, next)
+    applyLanguage(next)
+    return { language: next }
+  }),
 
   // Light/Dark theme. Initialized from the class index.html already applied
   // pre-hydration (localStorage choice, or system preference on first visit)

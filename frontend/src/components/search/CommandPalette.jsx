@@ -6,7 +6,6 @@ import { useState, useEffect, useMemo, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useAppStore from '../../store/useAppStore'
 import { POEMS } from '../../data/poems'
-import { KNOWLEDGE_SECTIONS } from '../../data/knowledge'
 import { TINAI_LIST } from '../../data/tinaiWorld'
 
 export default function CommandPalette() {
@@ -14,6 +13,7 @@ export default function CommandPalette() {
   const setOpen = useAppStore((s) => s.setCommandPaletteOpen)
   const toggleTheme = useAppStore((s) => s.toggleTheme)
   const isDark = useAppStore((s) => s.theme === 'dark')
+  const language = useAppStore((s) => s.language)
 
   const [query, setQuery] = useState('')
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -54,13 +54,15 @@ export default function CommandPalette() {
     const results = []
 
     // Quick navigation actions
+    const nav = {
+      ta: { home: 'முகப்பு', world: 'சங்க உலகம்', library: 'நூலகம்', search: 'தேடல்' },
+      en: { home: 'Home', world: 'Sangam World', library: 'Library', search: 'Search' },
+    }[language]
     results.push(
-      { id: 'nav-home', category: 'Navigation', title: 'Home · முகப்பு', subtitle: 'Return to landing page', icon: '🏠', action: () => navigate('/') },
-      { id: 'nav-book', category: 'Navigation', title: 'Library · சங்க நூலகம்', subtitle: 'Browse 18 classical Tamil collections', icon: '📖', action: () => navigate('/book') },
-      { id: 'nav-world', category: 'Navigation', title: 'Sangam World · சங்க உலகம்', subtitle: 'Explore 5 poetic landscapes', icon: '🗺️', action: () => navigate('/world') },
-      { id: 'nav-knowledge', category: 'Navigation', title: 'Knowledge Base · அறிவு', subtitle: 'Learn history, metrics, and academy lore', icon: '💡', action: () => navigate('/knowledge') },
-      { id: 'nav-graph', category: 'Navigation', title: 'Connections Graph · வரைபடம்', subtitle: 'Interactive ego-network of corpus', icon: '🕸️', action: () => navigate('/graph') },
-      { id: 'act-theme', category: 'Actions', title: `Switch Theme to ${isDark ? 'Light Mode' : 'Dark Mode'}`, subtitle: 'Toggle app color palette', icon: isDark ? '☀️' : '🌙', action: () => toggleTheme() }
+      { id: 'nav-home', category: language === 'ta' ? 'வழிசெலுத்தல்' : 'Navigation', title: nav.home, subtitle: language === 'ta' ? 'முகப்புப் பக்கம்' : 'Landing page', icon: '🏠', action: () => navigate('/') },
+      { id: 'nav-world', category: language === 'ta' ? 'வழிசெலுத்தல்' : 'Navigation', title: nav.world, subtitle: language === 'ta' ? 'ஐந்து திணைகள், மக்கள், வாழ்க்கை' : 'Five landscapes, people, life', icon: '🗺️', action: () => navigate('/world') },
+      { id: 'nav-book', category: language === 'ta' ? 'வழிசெலுத்தல்' : 'Navigation', title: nav.library, subtitle: language === 'ta' ? 'பாடல்களும் கலைப்பொருட்களும்' : 'Poems and artifacts', icon: '📖', action: () => navigate('/book') },
+      { id: 'act-theme', category: language === 'ta' ? 'செயல்கள்' : 'Actions', title: language === 'ta' ? 'தோற்றத்தை மாற்று' : 'Toggle theme', subtitle: language === 'ta' ? 'ஒளி / இருள்' : 'Light / dark', icon: isDark ? '☀️' : '🌙', action: () => toggleTheme() }
     )
 
     // Poems
@@ -87,18 +89,6 @@ export default function CommandPalette() {
       })
     })
 
-    // Knowledge Sections
-    KNOWLEDGE_SECTIONS.forEach((ks) => {
-      results.push({
-        id: `know-${ks.id}`,
-        category: 'Knowledge Topics',
-        title: `${ks.ta} — ${ks.en}`,
-        subtitle: ks.intro.slice(0, 75) + '…',
-        icon: ks.icon,
-        action: () => navigate(`/knowledge#${ks.id}`),
-      })
-    })
-
     if (!query.trim()) return results
 
     const q = query.toLowerCase()
@@ -108,7 +98,7 @@ export default function CommandPalette() {
         item.subtitle.toLowerCase().includes(q) ||
         item.category.toLowerCase().includes(q)
     )
-  }, [query, navigate, isDark, toggleTheme])
+  }, [query, navigate, isDark, toggleTheme, language])
 
   // Handle arrow key navigation
   const handleInputKeyDown = (e) => {

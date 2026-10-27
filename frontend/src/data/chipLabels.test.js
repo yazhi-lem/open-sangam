@@ -15,7 +15,7 @@ test('every chip label is "<Tamil> · <English>" with exactly one separator', ()
 })
 
 test('layer chips cover exactly the reader layers, "all" first', () => {
-  assert.deepEqual(LAYER_CHIPS.map((c) => c.id), ['all', 'sangam', 'urai', 'english'])
+  assert.deepEqual(LAYER_CHIPS.map((c) => c.id), ['all', 'original', 'transliteration', 'urai', 'english', 'glossary', 'notes', 'poetics', 'context', 'voice'])
 })
 
 test('filter chips are exactly akam, puram and the five tiṇai, with மருதம் spelled with ம', () => {

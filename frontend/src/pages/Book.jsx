@@ -4,7 +4,8 @@ import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
-import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
+import VoiceLayer from '../components/reader/VoiceLayer'
+import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle, hasGloss } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
 import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
@@ -16,6 +17,8 @@ import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
 import Chip from '../components/ui/Chip'
 import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
+import { TINAI_WORLD } from '../data/tinaiWorld.js'
+import useAppStore from '../store/useAppStore'
 import {
   LIBRARY_COLLECTIONS,
   LIBRARY_WORKS,
@@ -174,13 +177,14 @@ function ArtifactCard({ artifact }) {
 }
 
 function ArtifactCollection({ collection, artifacts }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   return (
     <ScrollTilt intensity={6}>
       <div className="space-y-8">
         <div className="border-b border-line-strong pb-3">
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <h2 className="tamil min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl">{collection.ta}</h2>
-            <span className="text-sm font-medium text-muted sm:text-base">{collection.en}</span>
+            <h2 className={`min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl ${language === 'ta' ? 'tamil' : ''}`}>{L(collection.ta, collection.en)}</h2>
             <span className="ml-auto text-xs font-mono text-faint">{artifacts.length} records</span>
           </div>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted">{collection.description}</p>
@@ -191,8 +195,7 @@ function ArtifactCollection({ collection, artifacts }) {
           return (
             <section key={cls.id} className="space-y-3">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <h3 className="tamil text-lg font-bold text-primary">{cls.ta}</h3>
-                <span className="text-xs font-medium text-muted">{cls.en}</span>
+                <h3 className={`text-lg font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>{L(cls.ta, cls.en)}</h3>
                 <span className="ml-auto text-xs font-mono text-faint">{items.length}</span>
               </div>
               <p className="text-xs text-faint">{cls.description}</p>
@@ -208,12 +211,13 @@ function ArtifactCollection({ collection, artifacts }) {
 }
 
 function CatalogCollection({ collection, works }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   return (
     <ScrollTilt intensity={6}>
       <div className="space-y-6">
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-line-strong pb-3">
-          <h2 className="tamil min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl">{collection.ta}</h2>
-          <span className="text-sm font-medium text-muted sm:text-base">{collection.en}</span>
+          <h2 className={`min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl ${language === 'ta' ? 'tamil' : ''}`}>{L(collection.ta, collection.en)}</h2>
           <span className="ml-auto text-xs font-mono text-faint">{works.length} works</span>
         </div>
         <p className="max-w-2xl text-sm leading-relaxed text-muted">{collection.description}</p>
@@ -234,6 +238,8 @@ function CatalogCollection({ collection, works }) {
 }
 
 function Library() {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const [searchQuery, setSearchQuery] = useState('')
   const [chipFilter, setChipFilter] = useState(null) // null | id from FILTER_CHIPS
 
@@ -258,14 +264,15 @@ function Library() {
       {/* Header: one line of orientation, then search and the akam / puram / tiṇai chips */}
       <Reveal as="div" className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-6" duration={0.6}>
         <div className="space-y-2">
-          <h1 className="tamil text-3xl sm:text-5xl font-extrabold text-primary leading-tight">
-            தமிழ் நூலகம்
+          <h1 className={`text-3xl sm:text-5xl font-extrabold text-primary leading-tight ${language === 'ta' ? 'tamil' : ''}`}>
+            {L('தமிழ் நூலகம்', 'Tamil Library')}
           </h1>
-          <p className="text-lg sm:text-xl text-muted font-light">Tamil Library · Sangam corpus, Pathinenkilkkanakku, classics & artifacts</p>
+          <p className="text-lg sm:text-xl text-muted font-light">
+            {L('சங்கம் · பதினெண்கீழ்க்கணக்கு · கலைப்பொருட்கள்', 'Sangam · Pathinenkilkkanakku · Artifacts')}
+          </p>
           {/* † draft Tamil, needs native review */}
-          <p className="text-sm text-muted pt-1">
-            <span lang="ta" className="tamil">பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி</span>
-            <span className="text-faint"> · Choose a poem → Read → Understand</span>
+          <p className={`text-sm text-muted pt-1 ${language === 'ta' ? 'tamil' : ''}`}>
+            {L('பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி', 'Choose a poem → Read → Understand')}
           </p>
         </div>
 
@@ -275,7 +282,7 @@ function Library() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             onClear={() => setSearchQuery('')}
-            placeholder="Search by poem name in Tamil or English..."
+            placeholder={L("தமிழ் அல்லது ஆங்கிலப் பெயரில் தேடுங்கள்...", "Search by Tamil or English name...")}
             icon="🔍"
           />
 
@@ -310,8 +317,7 @@ function Library() {
           <ScrollTilt key={key} intensity={6}>
             <div className="space-y-6">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">{meta.ta}</h2>
-                <span className="text-muted text-sm sm:text-base font-medium">{meta.en}</span>
+                <h2 className={`text-2xl sm:text-3xl font-bold text-primary break-words min-w-0 ${language === 'ta' ? 'tamil' : ''}`}>{L(meta.ta, meta.en)}</h2>
                 <span className="ml-auto text-xs font-mono text-faint">{poems.length} works</span>
               </div>
               <p className="text-sm text-muted max-w-2xl leading-relaxed">{meta.desc}</p>
@@ -445,7 +451,7 @@ function Reader({ poem, sectionId }) {
     }
     // First visit: the original verse alone on phones (read first, then open a layer);
     // all three layers side by side on wide screens.
-    return typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches ? 'all' : 'sangam'
+    return typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches ? 'all' : 'original'
   }) // 'sangam' | 'urai' | 'english' | 'all'
   const [layoutMode, setLayoutMode] = useState(() => {
     try {
@@ -603,7 +609,8 @@ function Reader({ poem, sectionId }) {
   }
 
   const show = visibleLayers(layer)
-  const showCommentary = show.urai || show.english
+  const contextTinai = sec.tinai ? TINAI_WORLD[sec.tinai] : null
+  const glossaryEntries = [...wordGlossaryMap.values()].filter(hasGloss).slice(0, 60)
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
   const label = sec.title || sec.heading || sec.poemTitle || null
@@ -811,187 +818,147 @@ function Reader({ poem, sectionId }) {
 
         {/* ── Main Presentation Canvas ─────────────────────────── */}
         <div className="flex-1 px-4 sm:px-6 md:px-8 py-6">
-          {layoutMode === 'h' ? (
-            /* ── HORIZONTAL (H) COMPARATIVE SPLIT VIEW ── */
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-              {/* Left Column: Original Tamil Verse */}
-              {show.sangam && (
-              <div className={`${showCommentary ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
-                <Card variant="flat" className="p-4 sm:p-8 space-y-5 border-accent/30 bg-surface shadow-xs">
-                  {/* Verse Header */}
-                  <div className="flex items-center justify-between border-b border-line pb-3">
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <Badge variant="accent" size="sm">
-                          {poem.en} {isSection && sec.lineStart ? `· lines ${sec.lineStart}–${sec.lineEnd}` : `· ${sec.tinai || ''}`}
-                        </Badge>
-                      </div>
-                      <h1 className={`font-bold text-primary ${label || isSection ? 'tamil text-2xl sm:text-3xl pt-1' : 'text-lg font-mono pt-0.5'}`}>
-                        {label || `Verse #${num}`}
-                      </h1>
-                      {sec.poet && (
-                        <p className="tamil text-sm text-muted font-medium pt-0.5">
-                          புலவர்: <span className="text-primary font-semibold">{sec.poet}</span>
-                        </p>
-                      )}
-                    </div>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      onClick={() => handleCopyVerse(sec.sangamTamil)}
-                      title="Copy verse text"
-                      icon={<Copy size={13} />}
-                    >
-                      Copy
-                    </Button>
-                  </div>
-
-                  {/* Classical Tamil Lines with word lookup */}
-                  <div className="py-2">
-                    <ClickableVerse text={sec.sangamTamil} onWordClick={handleWordClick} fontSize={fontSize} />
-                  </div>
-
-                  <div className="flex items-center justify-between text-[11px] text-faint border-t border-line/60 pt-3">
-                    <span>💡 Tap any word to view root etymology</span>
-                    <span className="font-mono">Classical Tamil</span>
-                  </div>
-                </Card>
-
-                {/* Audio Recitation Player if present */}
-                {sec.audioUrl && (
-                  <Card variant="flat" className="p-4">
-                    <AudioPlayer audioUrl={sec.audioUrl} label="Listen to verse recitation" />
-                  </Card>
-                )}
-              </div>
-              )}
-
-              {/* Right Column: Commentary & English Translation */}
-              {showCommentary && (
-              <div className={`${show.sangam ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
-                {/* Modern Commentary (Urai) */}
-                {show.urai && (
-                  <Card variant="default" className="p-4 sm:p-6 space-y-3 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
-                      <span className="text-xs font-bold text-accent">
-                        <span className="tamil">உரை</span> (Prose Commentary)
-                      </span>
-                      <DraftBadge verse={sec} field="urai" />
-                    </div>
-                    {sec.urai ? (
-                      <p className="tamil text-base sm:text-lg leading-relaxed text-primary">{sec.urai}</p>
-                    ) : (
-                      <p className="text-sm text-faint italic">உரை இல்லை (No prose commentary available)</p>
-                    )}
-                  </Card>
-                )}
-
-                {/* English Translation */}
-                {show.english && (
-                  <Card variant="default" className="p-4 sm:p-6 space-y-4 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
-                      <span className="text-xs font-bold text-accent uppercase tracking-wider">
-                        English Translation
-                      </span>
-                      <DraftBadge verse={sec} field="english" />
-                    </div>
-                    {sec.english ? (
-                      <p className="text-base sm:text-lg leading-relaxed text-primary">{sec.english}</p>
-                    ) : (
-                      <p className="text-sm text-faint italic">
-                        English translation for this section is being prepared and will appear after scholar review.
-                      </p>
-                    )}
-                  </Card>
-                )}
-              </div>
-              )}
-            </div>
-          ) : (
-            /* ── VERTICAL (V) STACKED VIEW ── */
-            <div className="max-w-3xl mx-auto space-y-6">
-              {/* Section Header */}
-              <header className="space-y-2 border-b border-line pb-6">
-                <div className="flex items-center justify-between">
-                  <Badge variant="accent" size="sm">
-                    {poem.en} {isSection && sec.lineStart ? `· lines ${sec.lineStart}–${sec.lineEnd}` : `· ${sec.tinai || ''}`}
-                  </Badge>
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    onClick={() => handleCopyVerse(sec.sangamTamil)}
-                    title="Copy verse text"
-                    icon={<Copy size={13} />}
-                  >
-                    Copy
-                  </Button>
-                </div>
-
-                <h1 className={`leading-tight font-bold text-primary ${label || isSection ? 'tamil text-3xl sm:text-4xl' : 'text-muted text-xl font-mono'}`}>
+          <div className="max-w-7xl mx-auto space-y-4">
+            {/* Verse identity / copy strip */}
+            <Card variant="flat" className="flex flex-wrap items-center justify-between gap-3 border-accent/30 p-4 shadow-xs">
+              <div className="min-w-0">
+                <Badge variant="accent" size="sm">
+                  {poem.en} {isSection && sec.lineStart ? `· lines ${sec.lineStart}–${sec.lineEnd}` : `· ${sec.tinai || ''}`}
+                </Badge>
+                <h1 className={`mt-1 truncate font-bold text-primary ${label || isSection ? 'tamil text-xl sm:text-2xl' : 'text-lg font-mono'}`}>
                   {label || `Verse #${num}`}
                 </h1>
-                {sec.poet && (
-                  <p className="tamil text-sm text-muted font-medium pt-1">
-                    புலவர்: <span className="text-primary font-semibold">{sec.poet}</span>
-                  </p>
-                )}
-              </header>
+                {sec.poet && <p className="tamil text-xs text-muted">புலவர்: {sec.poet}</p>}
+              </div>
+              <Button size="sm" variant="ghost" onClick={() => handleCopyVerse(sec.sangamTamil)} icon={<Copy size={13} />}>
+                Copy
+              </Button>
+            </Card>
 
-              {/* Original Tamil Verse */}
-              {show.sangam && (
-                <Card variant="flat" className="p-4 sm:p-8 space-y-4 border-accent/20">
+            <div className={layoutMode === 'h' ? 'grid gap-4 lg:grid-cols-2' : 'space-y-4'}>
+              {show.original && (
+                <Card variant="flat" className="space-y-3 border-accent/20 p-4 sm:p-6">
                   <div className="flex items-center justify-between border-b border-line pb-2">
-                    <span className="text-xs font-semibold text-accent uppercase tracking-wider">
-                      Original Classical Tamil
-                    </span>
-                    <span className="text-[11px] text-faint">Tap any word for etymology</span>
+                    <span className="text-xs font-semibold text-accent">Original · மூலம்</span>
+                    <span className="text-[11px] text-faint">Tap a word</span>
                   </div>
                   <ClickableVerse text={sec.sangamTamil} onWordClick={handleWordClick} fontSize={fontSize} />
                 </Card>
               )}
 
-              {/* Modern Commentary (Urai) */}
+              {show.transliteration && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Transliteration · ஒலிபெயர்ப்பு</p>
+                  {sec.transliteration ? (
+                    <p className="whitespace-pre-wrap text-base leading-relaxed text-primary">{sec.transliteration}</p>
+                  ) : (
+                    <p className="text-sm text-faint italic">Transliteration is not yet available for this verse.</p>
+                  )}
+                </Card>
+              )}
+
+              {show.voice && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Voice · குரல்</p>
+                  <VoiceLayer text={sec.sangamTamil} />
+                  {sec.audioUrl && <AudioPlayer audioUrl={sec.audioUrl} label="Scholar recording" />}
+                </Card>
+              )}
+
               {show.urai && (
-                <Card variant="default" className="p-4 sm:p-6 space-y-3">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-xs font-semibold text-faint">
-                      <span className="tamil">உரை</span> (Prose Commentary)
-                    </span>
+                <Card variant="default" className="space-y-3 p-4 sm:p-6">
+                  <div className="flex items-center justify-between border-b border-line pb-2">
+                    <span className="text-xs font-bold text-accent">உரை · Modern Tamil</span>
                     <DraftBadge verse={sec} field="urai" />
                   </div>
                   {sec.urai ? (
-                    <p className="tamil text-base sm:text-lg leading-relaxed text-muted">{sec.urai}</p>
+                    <p className="tamil text-base leading-relaxed text-primary">{sec.urai}</p>
                   ) : (
                     <p className="text-sm text-faint italic">உரை இல்லை (No prose commentary available)</p>
                   )}
                 </Card>
               )}
 
-              {/* English Translation */}
               {show.english && (
-                <Card variant="default" className="p-4 sm:p-6 space-y-4">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-xs font-semibold text-faint uppercase tracking-wider">English Translation</span>
+                <Card variant="default" className="space-y-3 p-4 sm:p-6">
+                  <div className="flex items-center justify-between border-b border-line pb-2">
+                    <span className="text-xs font-bold text-accent">English</span>
                     <DraftBadge verse={sec} field="english" />
                   </div>
                   {sec.english ? (
-                    <p className="text-base sm:text-lg leading-relaxed text-muted">{sec.english}</p>
+                    <p className="text-base leading-relaxed text-primary">{sec.english}</p>
                   ) : (
-                    <p className="text-sm text-faint italic">
-                      English translation for this section is being prepared and will appear after scholar review.
-                    </p>
+                    <p className="text-sm text-faint italic">English translation is being prepared.</p>
                   )}
                 </Card>
               )}
 
-              {/* Audio Recitation */}
-              {sec.audioUrl && (
-                <Card variant="flat" className="p-4">
-                  <AudioPlayer audioUrl={sec.audioUrl} label="Listen to verse recitation" />
+              {show.glossary && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Glossary · சொற்கள்</p>
+                  {glossaryEntries.length ? (
+                    <dl className="divide-y divide-line/60">
+                      {glossaryEntries.map((word) => (
+                        <div key={word.form} className="grid grid-cols-[7rem_1fr] gap-3 py-1.5 text-sm">
+                          <dt className="tamil font-semibold text-primary">{word.form}</dt>
+                          <dd className="text-muted">{word.gloss || word.etymology || word.root || '—'}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  ) : (
+                    <p className="text-sm text-faint italic">No word glossary has been attached to this verse yet.</p>
+                  )}
+                </Card>
+              )}
+
+              {show.notes && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Notes · குறிப்புகள்</p>
+                  {sec.culturalNotes?.length ? (
+                    <ul className="list-disc space-y-1.5 pl-5 text-sm text-primary">
+                      {sec.culturalNotes.map((note, index) => (
+                        <li key={index}><strong>{note.title}</strong>{note.description ? ` — ${note.description}` : ''}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm text-faint italic">No editorial notes for this verse yet.</p>
+                  )}
+                </Card>
+              )}
+
+              {show.poetics && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Poetics · யாப்பு</p>
+                  {sec.poetics ? (
+                    <p className="text-sm leading-relaxed text-primary">{sec.poetics}</p>
+                  ) : contextTinai?.poetry ? (
+                    <div className="space-y-2">
+                      <p className="tamil text-sm leading-relaxed text-primary">{contextTinai.poetry.classic}</p>
+                      <p className="text-xs text-muted">{contextTinai.poetry.poem}</p>
+                    </div>
+                  ) : (
+                    <p className="text-sm text-faint italic">Metre and poetics metadata is not yet attached.</p>
+                  )}
+                </Card>
+              )}
+
+              {show.context && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Context · சூழல்</p>
+                  {contextTinai ? (
+                    <div className="space-y-1.5 text-sm text-primary">
+                      <p><strong>{contextTinai.ta}</strong> — {contextTinai.atmosphere.season.desc}</p>
+                      <p className="text-muted">Deity: {contextTinai.deity.ta}</p>
+                      <p className="text-muted">People: {contextTinai.people.map((p) => p.ta).join(' · ')}</p>
+                      <p className="text-muted">Life: {contextTinai.crafts.map((c) => c.ta).join(' · ')}</p>
+                    </div>
+                  ) : (
+                    <p className="text-sm text-faint italic">This verse has no tiṇai context tag.</p>
+                  )}
                 </Card>
               )}
             </div>
-          )}
+          </div>
 
           {/* Previous / Next Navigation Footer */}
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 pt-8 pb-4 border-t border-line mt-8">
