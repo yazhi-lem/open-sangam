@@ -152,6 +152,21 @@ appended to — so it can't drift from what's actually indexed, the same way
 `refresh_poem_artifacts()` rebuilds a poem's combined JSON from its
 normalized files rather than patching it incrementally.
 
+### `knowledge/extract_stories.py` — Akam & Puram story seeds
+
+```bash
+python -m knowledge.extract_stories
+```
+
+Turns each Sangam verse into a structured story seed: kind (`akam`/`puram`),
+archetype, characters, setting, conflict, turn, resolution, theme and cited
+evidence. Akam uses the five tiṇai emotional arcs; puram is classified into war,
+patronage, hero-stone, kingship, elegy, love, ethics, nature, devotion and
+reflection. Writes `data/library/stories.json`.
+
+These are research seeds, not literary retellings. Every story keeps its source
+record id and a text/urai excerpt.
+
 ### `knowledge/extract_corpus_artifacts.py` — Material-culture index
 
 ```bash

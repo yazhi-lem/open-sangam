@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { TINAI_LIST } from '../data/tinaiWorld'
 import { KNOWLEDGE_BY_ID } from '../data/knowledge'
@@ -8,6 +9,7 @@ import Card from '../components/ui/Card'
 import Reveal from '../components/motion/Reveal'
 import GraphExplorer from './GraphExplorer'
 import ResearchDesk from '../components/world/ResearchDesk'
+const StoriesSection = lazy(() => import('../components/world/StoriesSection'))
 
 function pick(language, ta, en) {
   return language === 'ta' ? ta : en
@@ -190,6 +192,10 @@ export default function SangamWorldPage() {
           ))}
         </div>
       </section>
+
+      <Suspense fallback={<div className="mb-12 h-40 animate-pulse rounded-2xl border border-line bg-surface" />}>
+        <StoriesSection />
+      </Suspense>
 
       <section id="people">
         <div className="mb-4 border-b border-line-strong pb-2">

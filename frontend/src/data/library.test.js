@@ -17,6 +17,9 @@ const corpusArtifacts = JSON.parse(
 const research = JSON.parse(
   readFileSync(resolve(here, '../../../data/library/research-campaigns.json'), 'utf8')
 )
+const stories = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/stories.json'), 'utf8')
+)
 
 test('library catalog has unique ids', () => {
   const ids = catalog.works.map((work) => work.id)
@@ -78,5 +81,17 @@ test('research campaigns name an agent, workflow and prompt', () => {
     assert.ok(campaign.id && campaign.ta && campaign.en, 'campaign identity')
     assert.ok(campaign.agent && campaign.workflow, `${campaign.id}: missing agent/workflow`)
     assert.ok(campaign.promptTa && campaign.promptEn, `${campaign.id}: missing prompts`)
+  }
+})
+
+
+test('story seeds cover akam and puram with evidence', () => {
+  assert.equal(stories.counts.total, stories.stories.length)
+  assert.ok(stories.counts.akam > 0)
+  assert.ok(stories.counts.puram > 0)
+  for (const story of stories.stories.slice(0, 200)) {
+    assert.ok(['akam', 'puram'].includes(story.kind), `${story.id}: bad kind`)
+    assert.ok(story.recordId, `${story.id}: no record id`)
+    assert.ok(story.evidence?.text || story.evidence?.urai, `${story.id}: no evidence`)
   }
 })
