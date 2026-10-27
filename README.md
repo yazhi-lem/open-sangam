@@ -9,7 +9,8 @@ Open Sangam transforms static, archaic web archives of Sangam-era poetry into a 
 ## Features
 
 - **Layered View** — Toggle between Sangam Tamil, Modern Tamil prose (*Urai*), and English for every verse
-- **Tamil Library** — One catalog for Sangam works, Pathinenkilkkanakku, classics, and future artifact/document collections, with language and availability metadata
+- **Tamil Library** — One catalog for Sangam works, Pathinenkilkkanakku, classics, and artifacts, with language and availability metadata
+- **Artifact Scholar Reader** — Compact multi-layer reader for inscriptions, coins, manuscripts, sculpture, architecture and material culture, with explicit rights and layer-status tracking
 - **Click-to-Define Glossary** — Click any word for root meaning, grammatical class (*Urichol*), and etymology
 - **Sangam World** — Immersive Tiṇai landscape navigator (Kuṟiñci · Mullai · Marutam · Neytal · Pālai)
 - **Knowledge Encyclopedia** — Illustrated guide to the Sangam age: anthologies, akam/puṟam, the tiṇai framework, poets, patron-kings, music, and daily life

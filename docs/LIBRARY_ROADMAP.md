@@ -18,6 +18,8 @@ up.
 | Sangam poetry registry | `frontend/src/data/poems.js` | 18 works readable |
 | Wider library catalog | `data/library/catalog.json` | Pathinenkilkkanakku (18), Tamil classics, artifact collections |
 | Catalog UI | `frontend/src/pages/Book.jsx` (`/book`) | Sangam + Thirukkural + Naladiyar readable; rest catalogued |
+| Artifact register | `data/library/artifacts.json` | 20 classified artifacts with seven reader layers |
+| Artifact scholar reader | `frontend/src/pages/ArtifactReader.jsx` (`/artifacts/:id`) | Compact, multi-layer, condensed reading |
 | Pathinenkilkkanakku texts | `data/texts/thirukkural/`, `data/texts/naladiyar/` | 1,730 verses with public-domain English |
 | Corpus schema | `data/schema/verse_schema.json` | poem → section/verse → line → word |
 | Gap repair | `backend/python/scraper/scrape_projectmadurai.py` | All idyll line gaps and heading-range defects repaired |
@@ -124,9 +126,13 @@ Prabandham. These need chapter/canto navigation, not just verse pagination.
 
 ### Phase C — Artifacts and documents
 
-Hero stones, inscriptions, coins, palm-leaf manuscripts, sculpture. These need
-the new document/object schema, image viewers, and per-item rights review. Do
-not bulk-download museum images without a rights record.
+Started. The artifact register and `/artifacts/:id` scholar reader cover
+epigraphy, numismatics, manuscripts, sculpture, architecture, music and
+material culture. The editorial and legal rules are in
+[ARTIFACT_LIBRARY.md](./ARTIFACT_LIBRARY.md).
+
+Do not bulk-download museum images without a rights record. Metadata may be
+catalogued; images, estampages and full editions need explicit permission.
 
 ---
 

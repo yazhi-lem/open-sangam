@@ -1,0 +1,142 @@
+# Tamil Artifact Library — Scholarly Reader
+
+This is the legal and editorial framework for the Open Sangam artifact register.
+It is written for a Tamil scholar, not for a scraper: every object is catalogued
+with an explicit class, period, script, holder, rights status, and layer-level
+evidence state.
+
+The register lives in `data/library/artifacts.json`. The reader is
+`/artifacts/:id` (`frontend/src/pages/ArtifactReader.jsx`).
+
+---
+
+## 1. Classification
+
+| Class | Tamil | Scope |
+|---|---|---|
+| `epigraphy` | கல்வெட்டியல் | Cave, rock, hero-stone, temple and copper-plate inscriptions; estampages |
+| `numismatics` | நாணயவியல் | Punch-marked, Roman, Pandya, Chola and later coins; hoards |
+| `manuscripts` | சுவடியியல் | Palm-leaf and paper manuscripts, printed editions, lexicons, maps, colonial documents |
+| `sculpture` | சிற்பவியல் | Hero stones, bronzes, terracotta, religious icons |
+| `architecture` | கட்டிடக்கலையியல் | Megaliths, temples, forts, architectural fragments |
+| `music` | இசைக்கருவியியல் | Yazh, pann, musical inscriptions, performance objects |
+| `material-culture` | பொருட்கலாச்சாரம் | Pottery, beads, tools, everyday objects from excavated sites |
+
+Every artifact record carries `class` + `subclass`; the catalog UI groups by
+class, and the reader always shows the class in the header.
+
+---
+
+## 2. Legal source matrix
+
+| Source | Use | Rights | Rule |
+|---|---|---|---|
+| Project Madurai | Tamil e-texts and public-domain translations | open | Keep the Project Madurai header/attribution |
+| Internet Archive | Public-domain scans | open-metadata | Use only items marked public domain, not lending-only |
+| Tamil Lexicon (University of Madras) | Dictionary entries | open | Cite volume and page |
+| Archaeological Survey of India | Epigraphia Indica, Annual Reports, South Indian Inscriptions | open-metadata | Public-domain reports; check image rights |
+| Tamil Nadu State Department of Archaeology | Inscriptions, hero stones, estampages | permission-required | Cite metadata; obtain written permission for images |
+| Government Museum, Chennai | Object photography | permission-required | No image reuse without permission |
+| TN Government Oriental Manuscripts Library | Palm-leaf surrogates | permission-required | Permission per shelfmark |
+| Sarasvati Mahal Library, Thanjavur | Manuscripts | permission-required | Permission per shelfmark |
+| The Met / Cleveland / Smithsonian Open Access | CC0 object records | open | Use only CC0-designated records |
+| British Library | Public Domain Mark items | open-metadata | Verify each shelfmark; do not assume blanket PD |
+| Wikimedia Commons | Images | open-metadata | Follow the licence on the file page |
+| Tamil Virtual Academy | Reference editions | reference-only | Link and cite; do not bulk-copy |
+| Iravatham Mahadevan, *Early Tamil Epigraphy* | Scholarly readings | reference-only | Cite, do not reproduce tables without permission |
+
+**Golden rule:** metadata can be catalogued; images, estampages, full
+transcriptions and translations need an explicit rights line. A missing layer is
+shown as `Not yet digitised`, never filled with an uncredited guess.
+
+---
+
+## 3. Artifacts currently in the library
+
+| # | Artifact | Tamil | Class | Period | Layers available |
+|---|---|---|---|---|---|
+| 1 | Mangulam Cave Inscription | மாங்குளம் குகைக் கல்வெட்டு | Epigraphy | c. 3rd–2nd c. BCE | Object, notes, provenance |
+| 2 | Jambai Inscription | ஜம்பைக் கல்வெட்டு | Epigraphy | c. 1st–2nd c. CE | Object, notes, provenance |
+| 3 | Hero Stones (Nadukal) | நடுகற்கள் | Epigraphy | Sangam–medieval | Object, notes, provenance |
+| 4 | Tamil Copper-Plate Grant | தமிழ்ச் செப்பேடு | Epigraphy | Pallava–Chola | Object, notes, provenance |
+| 5 | Brihadeeswarar Temple Inscription | பிரகதீஸ்வரர் கோயில் கல்வெட்டு | Epigraphy | 11th c. CE | Object, notes, provenance |
+| 6 | Sangam-Era Punch-Marked Coins | சங்ககாலக் காசுகள் | Numismatics | c. 3rd c. BCE–3rd c. CE | Object, notes, provenance |
+| 7 | Roman Coins from Arikamedu | அரிக்கமேடு உரோமானிய நாணயங்கள் | Numismatics | 1st c. BCE–2nd c. CE | Object, notes, provenance |
+| 8 | Pandya and Chola Coins | பாண்டிய-சோழ நாணயங்கள் | Numismatics | 9th–13th c. CE | Object, notes, provenance |
+| 9 | Palm-Leaf Manuscript Collection | ஓலைச்சுவடித் தொகுப்பு | Manuscripts | medieval–colonial | Object, notes, provenance |
+| 10 | Tirukkural Palm-Leaf Manuscript | திருக்குறள் ஓலைச்சுவடி | Manuscripts | representative | All seven layers |
+| 11 | Tamil Lexicon, Printed Edition | தமிழ்ப் பேரகராதி | Manuscripts | 1924–1936 | Object, translation, notes, provenance |
+| 12 | Chola Bronze Nataraja | சோழர் வெண்கல நடராஜர் | Sculpture | c. 11th c. CE | Object, glossary, notes, provenance |
+| 13 | Arikamedu Terracotta Figurine | அரிக்கமேடு மட்பாண்டச் சிற்பம் | Sculpture | 1st c. BCE–2nd c. CE | Object, notes, provenance |
+| 14 | Megalithic Dolmen | பெருங்கற்காலத் தோல்மென் | Architecture | c. 1000–300 BCE | Object, glossary, notes, provenance |
+| 15 | Brihadeeswarar Temple Architecture | பிரகதீஸ்வரர் கோயில் கட்டிடக்கலை | Architecture | completed 1010 CE | Object, glossary, notes, provenance |
+| 16 | Yazh (Reconstruction) | யாழ் இசைக்கருவி | Music | Sangam–medieval | Object, text, glossary, notes, provenance |
+| 17 | Colonial Map of Madurai | மதுரை காலனித்துவ வரைபடம் | Manuscripts | 18th–19th c. | Object, notes, provenance |
+| 18 | Arikamedu Beads | அரிக்கமேடு மணிகள் | Material culture | 1st c. BCE–2nd c. CE | Object, glossary, notes, provenance |
+| 19 | Black-and-Red Ware | கருப்பு-சிவப்பு மட்பாண்டம் | Material culture | 2nd c. BCE–2nd c. CE | Object, glossary, notes, provenance |
+| 20 | Nineteenth-Century Tamil Printed Book | பத்தொன்பதாம் நூற்றாண்டுத் தமிழ்ப் புத்தகம் | Manuscripts | 19th c. | Object, notes, provenance |
+
+---
+
+## 4. Reader design
+
+The compact scholar reader has seven layers:
+
+1. **Object** — class, period, place, script, language, material, holder
+2. **Text** — transcription (original script)
+3. **Transliteration** — ISO 15919 (or the edition’s scheme)
+4. **Translation** — English, with named translator/source
+5. **Glossary** — term → gloss
+6. **Notes** — editorial and comparative notes
+7. **Provenance** — source, rights, citation
+
+Controls:
+
+- **Condense** — one tightly packed reading column instead of separate cards
+- **Parallel** — two-column layout for comparing text / transliteration / translation
+- **Pending shown/hidden** — whether undigitised layers remain visible
+- **Layer chips** — turn individual layers on/off
+- **Cite** — copies a ready citation
+
+Layer states: `available`, `draft`, `pending`, `reference`. A pending layer is
+never silently omitted; it appears with the reason.
+
+---
+
+## 5. Recommended next artifacts to ingest legally
+
+Priority order for the next scholarly pass:
+
+1. **Mangulam and Jambai estampages** — obtain rights-cleared images and a
+   published reading; attach transcription, transliteration, translation.
+2. **Tamil Nadu hero-stone corpus** — begin with district museum records and
+   field documentation; one inscription per object.
+3. **Arikamedu excavation archive** — pottery, beads, terracotta and Roman
+   coins; use ASI/public-domain reports.
+4. **Tamil Lexicon** — first full document-reader; public domain and highly
+   reusable.
+5. **Sangam-era coin types** — attach obverse/reverse images only where a
+   museum grants CC0 or permission.
+6. **Palm-leaf manuscripts** — start with one shelfmark from a library that
+   grants surrogate rights, not a whole collection.
+7. **Chola bronzes** — begin with Met/Cleveland/Smithsonian CC0 object records.
+8. **Colonial maps of Madurai** — British Library Public Domain Mark items;
+   add georeferencing and place-name index.
+9. **Megalithic sites** — ASI site records and plans; no site-image reuse
+   without permission.
+10. **Yazh reconstructions** — label every reconstruction as interpretive and
+    link to Sangam corpus references.
+
+---
+
+## 6. Adding an artifact
+
+1. Add the class if it does not exist.
+2. Add a source with `rights` and `note`.
+3. Add the artifact with `class`, `subclass`, `period`, `place`, `script`,
+   `language`, `material`, `holder`, `sourceId`, `sourceUrl`, `rights`.
+4. Create all seven layer slots. Use `pending` with a note when evidence is
+   not digitised.
+5. Never paste a transcription or translation without a named source/citation.
+6. Run `npm test` and `npm run build` in `frontend/`; the artifact invariant
+   test enforces unique ids, valid classes/sources and all seven layers.

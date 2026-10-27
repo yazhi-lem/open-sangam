@@ -12,6 +12,7 @@
  *   planned  → collection placeholder (artifacts, manuscripts, inscriptions)
  */
 import catalog from '@data/library/catalog.json'
+import artifactData from '@data/library/artifacts.json'
 
 export const LIBRARY_SCHEMA_VERSION = catalog.schemaVersion
 export const LIBRARY_COLLECTIONS = catalog.collections
@@ -48,4 +49,73 @@ export function languageLabel(code) {
       translit: 'Transliteration',
     }[code] || code
   )
+}
+
+// ── Artifacts / material culture ────────────────────────────────────────────
+
+export const ARTIFACT_SCHEMA_VERSION = artifactData.schemaVersion
+export const ARTIFACT_CLASSES = artifactData.classes
+export const ARTIFACT_SOURCES = artifactData.sources
+export const ARTIFACTS = artifactData.artifacts
+export const ARTIFACT_CLASS_BY_ID = Object.fromEntries(
+  ARTIFACT_CLASSES.map((item) => [item.id, item])
+)
+export const ARTIFACT_BY_ID = Object.fromEntries(
+  ARTIFACTS.map((item) => [item.id, item])
+)
+export const ARTIFACT_SOURCE_BY_ID = Object.fromEntries(
+  ARTIFACT_SOURCES.map((item) => [item.id, item])
+)
+
+export const ARTIFACT_LAYERS = [
+  { id: 'object', ta: 'பொருள்', en: 'Object' },
+  { id: 'text', ta: 'மூல உரை', en: 'Text' },
+  { id: 'transliteration', ta: 'ஒலிபெயர்ப்பு', en: 'Transliteration' },
+  { id: 'translation', ta: 'மொழிபெயர்ப்பு', en: 'Translation' },
+  { id: 'glossary', ta: 'சொல்லகராதி', en: 'Glossary' },
+  { id: 'notes', ta: 'குறிப்புகள்', en: 'Notes' },
+  { id: 'provenance', ta: 'மூலாதாரம்', en: 'Provenance' },
+]
+
+export const LAYER_STATUS_LABELS = {
+  available: { ta: 'உள்ளது', en: 'Available' },
+  draft: { ta: 'வரைவு', en: 'Draft' },
+  pending: { ta: 'நிலுவையில்', en: 'Not yet digitised' },
+  reference: { ta: 'மேற்கோள்', en: 'Reference only' },
+}
+
+export function artifactClassLabel(id) {
+  return ARTIFACT_CLASS_BY_ID[id] || { ta: id, en: id }
+}
+
+export function artifactSourceLabel(id) {
+  return ARTIFACT_SOURCE_BY_ID[id] || { name: id, rights: 'unknown' }
+}
+
+export function artifactLayerStatus(artifact, layerId) {
+  if (layerId === 'object') return 'available'
+  return artifact?.layers?.[layerId]?.status || 'pending'
+}
+
+export function artifactAvailableLayerCount(artifact) {
+  return ARTIFACT_LAYERS.filter(
+    (layer) => artifactLayerStatus(artifact, layer.id) === 'available'
+  ).length
+}
+
+export function artifactMatchesQuery(artifact, query) {
+  const q = String(query || '').trim().toLowerCase()
+  if (!q) return true
+  return [
+    artifact.ta,
+    artifact.en,
+    artifact.subclass,
+    artifact.period,
+    artifact.place,
+    artifact.script,
+    artifactClassLabel(artifact.class).ta,
+    artifactClassLabel(artifact.class).en,
+  ]
+    .filter(Boolean)
+    .some((value) => String(value).toLowerCase().includes(q))
 }

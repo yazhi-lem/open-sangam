@@ -16,7 +16,18 @@ import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
 import Chip from '../components/ui/Chip'
 import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
-import { LIBRARY_COLLECTIONS, LIBRARY_WORKS, AVAILABILITY_LABELS, languageLabel, workMatchesQuery } from '../data/library.js'
+import {
+  LIBRARY_COLLECTIONS,
+  LIBRARY_WORKS,
+  AVAILABILITY_LABELS,
+  ARTIFACTS,
+  ARTIFACT_CLASSES,
+  artifactClassLabel,
+  artifactAvailableLayerCount,
+  artifactMatchesQuery,
+  languageLabel,
+  workMatchesQuery,
+} from '../data/library.js'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
@@ -131,6 +142,68 @@ function CatalogWorkCard({ work }) {
         </span>
       </div>
     </div>
+  )
+}
+
+function ArtifactCard({ artifact }) {
+  const nav = useNavigate()
+  const cls = artifactClassLabel(artifact.class)
+  return (
+    <button
+      type="button"
+      onClick={() => nav(`/artifacts/${artifact.id}`)}
+      className="group flex h-full min-w-0 flex-col rounded-2xl border border-line bg-surface p-4 text-left transition-all duration-200 hover:border-accent/60 hover:shadow-md focus-ring"
+    >
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <Badge variant="accent" size="sm">{cls.ta} · {cls.en}</Badge>
+        <span className="text-[10px] font-mono text-faint">{artifact.period}</span>
+      </div>
+      <h3 className="tamil mb-1 line-clamp-2 min-h-[2.6em] text-lg font-bold leading-snug text-primary group-hover:text-accent">
+        {artifact.ta}
+      </h3>
+      <p className="mb-2 line-clamp-1 text-sm text-muted">{artifact.en}</p>
+      <p className="mb-3 line-clamp-2 text-xs leading-relaxed text-faint">{artifact.summary}</p>
+      <div className="mt-auto flex items-center justify-between gap-2 border-t border-line/60 pt-3 text-[11px]">
+        <span className="font-mono text-faint">
+          {artifactAvailableLayerCount(artifact)}/7 layers
+        </span>
+        <span className="truncate text-muted">{artifact.rights}</span>
+      </div>
+    </button>
+  )
+}
+
+function ArtifactCollection({ collection, artifacts }) {
+  return (
+    <ScrollTilt intensity={6}>
+      <div className="space-y-8">
+        <div className="border-b border-line-strong pb-3">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <h2 className="tamil min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl">{collection.ta}</h2>
+            <span className="text-sm font-medium text-muted sm:text-base">{collection.en}</span>
+            <span className="ml-auto text-xs font-mono text-faint">{artifacts.length} records</span>
+          </div>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted">{collection.description}</p>
+        </div>
+        {ARTIFACT_CLASSES.map((cls) => {
+          const items = artifacts.filter((artifact) => artifact.class === cls.id)
+          if (!items.length) return null
+          return (
+            <section key={cls.id} className="space-y-3">
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <h3 className="tamil text-lg font-bold text-primary">{cls.ta}</h3>
+                <span className="text-xs font-medium text-muted">{cls.en}</span>
+                <span className="ml-auto text-xs font-mono text-faint">{items.length}</span>
+              </div>
+              <p className="text-xs text-faint">{cls.description}</p>
+              <RevealGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4" amount={0.05}>
+                {items.map((artifact) => <ArtifactCard key={artifact.id} artifact={artifact} />)}
+              </RevealGroup>
+            </section>
+          )
+        })}
+      </div>
+    </ScrollTilt>
   )
 }
 
@@ -265,6 +338,19 @@ function Library() {
 
         {!chipFilter &&
           LIBRARY_COLLECTIONS.map((collection) => {
+            if (collection.id === 'artifacts') {
+              const artifacts = ARTIFACTS.filter((artifact) =>
+                artifactMatchesQuery(artifact, searchQuery)
+              )
+              if (!artifacts.length && searchQuery.trim()) return null
+              return (
+                <ArtifactCollection
+                  key={collection.id}
+                  collection={collection}
+                  artifacts={artifacts}
+                />
+              )
+            }
             const works = LIBRARY_WORKS.filter(
               (work) =>
                 work.collection === collection.id &&

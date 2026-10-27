@@ -8,6 +8,9 @@ const here = dirname(fileURLToPath(import.meta.url))
 const catalog = JSON.parse(
   readFileSync(resolve(here, '../../../data/library/catalog.json'), 'utf8')
 )
+const artifacts = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/artifacts.json'), 'utf8')
+)
 
 test('library catalog has unique ids', () => {
   const ids = catalog.works.map((work) => work.id)
@@ -25,5 +28,31 @@ test('every work belongs to a declared collection and declares languages', () =>
     assert.ok(collections.has(work.collection), `${work.id}: unknown collection`)
     assert.ok(Array.isArray(work.languages) && work.languages.length > 0, `${work.id}: no languages`)
     assert.ok(['reader', 'metadata', 'planned'].includes(work.availability), `${work.id}: bad availability`)
+  }
+})
+
+
+test('artifact register is internally consistent', () => {
+  const classIds = new Set(artifacts.classes.map((item) => item.id))
+  const sourceIds = new Set(artifacts.sources.map((item) => item.id))
+  const artifactIds = artifacts.artifacts.map((item) => item.id)
+  assert.equal(new Set(artifactIds).size, artifactIds.length)
+  for (const artifact of artifacts.artifacts) {
+    assert.ok(classIds.has(artifact.class), `${artifact.id}: unknown class`)
+    assert.ok(sourceIds.has(artifact.sourceId), `${artifact.id}: unknown source`)
+    assert.ok(artifact.layers, `${artifact.id}: no layers`)
+  }
+})
+
+test('every artifact has the seven scholar-reader layer slots', () => {
+  const layerIds = ['text', 'transliteration', 'translation', 'glossary', 'notes', 'provenance']
+  for (const artifact of artifacts.artifacts) {
+    for (const layerId of layerIds) {
+      assert.ok(artifact.layers[layerId], `${artifact.id}: missing ${layerId} layer`)
+      assert.ok(
+        ['available', 'draft', 'pending', 'reference'].includes(artifact.layers[layerId].status),
+        `${artifact.id}: bad ${layerId} status`
+      )
+    }
   }
 })

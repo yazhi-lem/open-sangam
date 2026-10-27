@@ -13,6 +13,7 @@ import Knowledge from './pages/Knowledge'
 import GraphExplorer from './pages/GraphExplorer'
 import ArticlesList from './pages/ArticlesList'
 import ArticleReader from './pages/ArticleReader'
+import ArtifactReader from './pages/ArtifactReader'
 import NotFound from './pages/NotFound'
 import { AVAI_ENABLED } from './config/features'
 
@@ -56,6 +57,7 @@ function AppContent() {
             <Route path="/graph" element={<GraphExplorer />} />
             <Route path="/articles" element={<ArticlesList />} />
             <Route path="/articles/:slug" element={<ArticleReader />} />
+            <Route path="/artifacts/:artifactId" element={<ArtifactReader />} />
             <Route path="/scholars" element={<Scholars />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

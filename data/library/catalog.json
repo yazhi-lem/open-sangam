@@ -22,7 +22,7 @@
       "ta": "தமிழ்க் கலைப்பொருட்கள்",
       "en": "Tamil Artifacts",
       "kind": "material-culture",
-      "description": "Inscriptions, hero stones, coins, sculpture, palm-leaf manuscripts, music, and other material-culture collections for a future object reader."
+      "description": "Inscriptions, coins, manuscripts, sculpture, architecture, music and material culture. The full register, legal sources and scholar-reader layers live in data/library/artifacts.json (see docs/ARTIFACT_LIBRARY.md)."
     }
   ],
   "works": [
@@ -461,78 +461,6 @@
       "source": "Project Madurai (Kausalya Hart English translation)",
       "rights": "public-domain text; translation rights vary",
       "notes": "Vaishnava devotional corpus in twelve parts."
-    },
-    {
-      "id": "hero-stones",
-      "ta": "நடுகற்கள்",
-      "en": "Hero Stones (Nadukal)",
-      "collection": "artifacts",
-      "author": "various",
-      "period": "Sangam–medieval",
-      "count": 0,
-      "unit": "objects",
-      "languages": [
-        "ta"
-      ],
-      "translations": [],
-      "availability": "planned",
-      "source": "Tamil Nadu State Department of Archaeology / museum collections",
-      "rights": "object metadata and images need per-item rights review",
-      "notes": "Future object reader: inscription text, translation, provenance, and 3D/photo viewers."
-    },
-    {
-      "id": "tamil-inscriptions",
-      "ta": "தமிழ்க் கல்வெட்டுகள்",
-      "en": "Tamil Inscriptions",
-      "collection": "artifacts",
-      "author": "various",
-      "period": "3rd century BCE onward",
-      "count": 0,
-      "unit": "inscriptions",
-      "languages": [
-        "ta"
-      ],
-      "translations": [],
-      "availability": "planned",
-      "source": "Indian Epigraphy / Tamil Nadu Archaeology Department",
-      "rights": "metadata and estampage rights vary by source",
-      "notes": "Needs a document/object schema with transcription, transliteration, translation, and date fields."
-    },
-    {
-      "id": "palm-leaf-manuscripts",
-      "ta": "ஓலைச்சுவடிகள்",
-      "en": "Palm-leaf Manuscripts",
-      "collection": "artifacts",
-      "author": "various",
-      "period": "medieval–colonial",
-      "count": 0,
-      "unit": "manuscripts",
-      "languages": [
-        "ta"
-      ],
-      "translations": [],
-      "availability": "planned",
-      "source": "Tamil Nadu Government Oriental Manuscripts Library / Sarasvati Mahal Library",
-      "rights": "per-item rights and access conditions",
-      "notes": "Future page-image + transcription reader with zoom, folio navigation, and multilingual notes."
-    },
-    {
-      "id": "tamil-coins",
-      "ta": "தமிழ் நாணயங்கள்",
-      "en": "Tamil Coins",
-      "collection": "artifacts",
-      "author": "various",
-      "period": "Sangam–colonial",
-      "count": 0,
-      "unit": "objects",
-      "languages": [
-        "ta"
-      ],
-      "translations": [],
-      "availability": "planned",
-      "source": "museum collections",
-      "rights": "per-item rights",
-      "notes": "Future object catalogue with obverse/reverse images, legend transcription, and dynasty metadata."
     }
   ]
 }
