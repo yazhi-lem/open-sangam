@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Quote, Send, Sparkles } from 'lucide-react'
 import { askAvaiAgent } from '../services/avaiService'
+import { askLocalNakkirar } from '../services/localNakkirar'
 import { AVAI_ENABLED } from '../config/features'
 import useAppStore from '../store/useAppStore'
 import Card from '../components/ui/Card'
@@ -18,6 +19,7 @@ export default function Home() {
   const [question, setQuestion] = useState('')
   const [answer, setAnswer] = useState('')
   const [citations, setCitations] = useState([])
+  const [isLocal, setIsLocal] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -25,19 +27,43 @@ export default function Home() {
     event.preventDefault()
     const message = question.trim()
     if (!message || loading) return
-    if (!AVAI_ENABLED) {
-      setError(L('அவை பொதுப் பீட்டா தொடங்கிய பின் இயங்கும்.', 'Avai will open with the public beta.'))
-      return
-    }
     setLoading(true)
     setError('')
     setAnswer('')
+    setCitations([])
+    setIsLocal(false)
+
+    // No backend in production: Nakkirar answers locally from bundled evidence.
+    if (!AVAI_ENABLED) {
+      const local = await askLocalNakkirar({ message, language })
+      setAnswer(local.response_text)
+      setCitations(local.citations || [])
+      setIsLocal(true)
+      setLoading(false)
+      return
+    }
+
     try {
       const response = await askAvaiAgent({ message, pulavar: 'nakkirar', workflow: 'general' })
-      setAnswer(response?.response_text || response?.answer || '')
-      setCitations(response?.citations || [])
+      const text = response?.response_text || response?.answer || ''
+      if (!text || response?.isFallback) {
+        const local = await askLocalNakkirar({ message, language })
+        setAnswer(local.response_text)
+        setCitations(local.citations || [])
+        setIsLocal(true)
+      } else {
+        setAnswer(text)
+        setCitations(response?.citations || [])
+      }
     } catch (err) {
-      setError(err?.message || L('அவையை அணுக முடியவில்லை.', 'Could not reach Avai.'))
+      try {
+        const local = await askLocalNakkirar({ message, language })
+        setAnswer(local.response_text)
+        setCitations(local.citations || [])
+        setIsLocal(true)
+      } catch {
+        setError(err?.message || L('அவையை அணுக முடியவில்லை.', 'Could not reach Avai.'))
+      }
     } finally {
       setLoading(false)
     }
@@ -121,7 +147,11 @@ export default function Home() {
                 <p className={`text-xs font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
                   {L('நக்கீரர்', 'Nakkirar')}
                 </p>
-                <p className="text-[10px] text-faint">{L('சங்க அவைத் தலைவர்', 'Convener, Sangam Avai')}</p>
+                <p className="text-[10px] text-faint">
+                  {isLocal
+                    ? L('உள்ளூர் நூலகச் சான்று · Local corpus evidence', 'Local corpus evidence')
+                    : L('சங்க அவைத் தலைவர் · Convener, Sangam Avai', 'Convener, Sangam Avai')}
+                </p>
               </div>
             </div>
             <div className="max-h-72 overflow-y-auto whitespace-pre-wrap text-sm leading-relaxed text-primary">
