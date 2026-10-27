@@ -1,19 +1,23 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Send, Sparkles } from 'lucide-react'
+import { ArrowRight, Quote, Send, Sparkles } from 'lucide-react'
 import { askAvaiAgent } from '../services/avaiService'
 import { AVAI_ENABLED } from '../config/features'
 import useAppStore from '../store/useAppStore'
 import Card from '../components/ui/Card'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
+import { PULAVAR_AGENTS } from '../data/pulavars'
 
 const REPO_URL = 'https://github.com/yazhi-lem/open-sangam'
 
 export default function Home() {
   const language = useAppStore((s) => s.language)
   const L = (ta, en) => (language === 'ta' ? ta : en)
+  const nakkirar = PULAVAR_AGENTS.find((agent) => agent.id === 'nakkirar')
+  const suggested = nakkirar?.suggestedPrompts || []
   const [question, setQuestion] = useState('')
   const [answer, setAnswer] = useState('')
+  const [citations, setCitations] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -29,8 +33,9 @@ export default function Home() {
     setError('')
     setAnswer('')
     try {
-      const response = await askAvaiAgent({ message, pulavar: 'swarm', workflow: 'qa' })
+      const response = await askAvaiAgent({ message, pulavar: 'nakkirar', workflow: 'general' })
       setAnswer(response?.response_text || response?.answer || '')
+      setCitations(response?.citations || [])
     } catch (err) {
       setError(err?.message || L('அவையை அணுக முடியவில்லை.', 'Could not reach Avai.'))
     } finally {
@@ -56,18 +61,40 @@ export default function Home() {
       </section>
 
       <Card variant="default" className="space-y-3 p-5 sm:p-6">
-        <div className="flex items-center gap-2">
-          <Sparkles size={18} className="text-accent" aria-hidden="true" />
-          <h2 className={`text-base font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
-            {L('சங்க அவையைக் கேளுங்கள்', 'Ask the Sangam Avai')}
-          </h2>
+        <div className="flex items-center gap-3">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/15 text-xl" aria-hidden="true">
+            {nakkirar?.avatarEmoji || '👑'}
+          </span>
+          <div>
+            <h2 className={`text-base font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
+              {L('நக்கீரரைக் கேளுங்கள்', 'Ask Nakkirar')}
+            </h2>
+            <p className="text-xs text-faint">
+              {L('சங்க அவைத் தலைமைப் புலவர் · Chief Critic & Convener', 'Chief Critic & Convener · Sangam Avai')}
+            </p>
+          </div>
+          <Sparkles size={18} className="ml-auto text-accent" aria-hidden="true" />
         </div>
         <p className={`text-sm text-muted ${language === 'ta' ? 'tamil' : ''}`}>
           {L(
-            'புலவர், பாடல், திணை, சொற்பொருள் பற்றி எதையும் கேளுங்கள்.',
-            'Ask about a poet, poem, landscape, word meaning, or daily life.'
+            'புலவர், பாடல், திணை, சொற்பொருள், சான்று — நக்கீரர் சான்றுகளுடன் விடையளிப்பார்.',
+            'Ask about poets, poems, tiṇai, word meaning or evidence — Nakkirar answers with citations.'
           )}
         </p>
+        {suggested.length > 0 && (
+          <div className="flex flex-wrap gap-1.5">
+            {suggested.slice(0, 3).map((prompt) => (
+              <button
+                key={prompt.en}
+                type="button"
+                onClick={() => setQuestion(L(prompt.ta, prompt.en))}
+                className={`rounded-full border border-line px-2.5 py-1 text-left text-[11px] text-muted hover:border-accent hover:text-accent ${language === 'ta' ? 'tamil' : ''}`}
+              >
+                {L(prompt.ta, prompt.en).slice(0, 90)}
+              </button>
+            ))}
+          </div>
+        )}
         <form onSubmit={ask} className="flex flex-col gap-2 sm:flex-row">
           <input
             value={question}
@@ -87,8 +114,33 @@ export default function Home() {
         </form>
         {error && <p className="text-sm text-danger">{error}</p>}
         {answer && (
-          <div className="max-h-72 overflow-y-auto whitespace-pre-wrap rounded-xl border border-line bg-surface-alt/40 p-4 text-sm leading-relaxed text-primary">
-            {answer}
+          <div className="rounded-xl border border-accent/25 bg-surface-alt/40 p-4">
+            <div className="mb-2 flex items-center gap-2 border-b border-line/60 pb-2">
+              <span className="text-lg" aria-hidden="true">{nakkirar?.avatarEmoji || '👑'}</span>
+              <div>
+                <p className={`text-xs font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
+                  {L('நக்கீரர்', 'Nakkirar')}
+                </p>
+                <p className="text-[10px] text-faint">{L('சங்க அவைத் தலைவர்', 'Convener, Sangam Avai')}</p>
+              </div>
+            </div>
+            <div className="max-h-72 overflow-y-auto whitespace-pre-wrap text-sm leading-relaxed text-primary">
+              {answer}
+            </div>
+            {citations.length > 0 && (
+              <div className="mt-3 border-t border-line/60 pt-2">
+                <p className="mb-1 flex items-center gap-1 text-[10px] font-semibold text-faint">
+                  <Quote size={11} /> {L('சான்றுகள்', 'Citations')}
+                </p>
+                <ul className="space-y-1 text-[11px] text-muted">
+                  {citations.slice(0, 5).map((cite, index) => (
+                    <li key={index}>
+                      {typeof cite === 'string' ? cite : cite.text || cite.verse || JSON.stringify(cite)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         )}
       </Card>
