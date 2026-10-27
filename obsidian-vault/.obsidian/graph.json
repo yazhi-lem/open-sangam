@@ -1,0 +1,59 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "colorGroups": [
+    {
+      "query": "tag:#tinai",
+      "color": {
+        "a": 1,
+        "rgb": 11899648
+      }
+    },
+    {
+      "query": "tag:#work",
+      "color": {
+        "a": 1,
+        "rgb": 5187839
+      }
+    },
+    {
+      "query": "tag:#poet",
+      "color": {
+        "a": 1,
+        "rgb": 371380
+      }
+    },
+    {
+      "query": "tag:#artifact",
+      "color": {
+        "a": 1,
+        "rgb": 895497
+      }
+    },
+    {
+      "query": "tag:#entity",
+      "color": {
+        "a": 1,
+        "rgb": 8132855
+      }
+    },
+    {
+      "query": "tag:#story",
+      "color": {
+        "a": 1,
+        "rgb": 14655368
+      }
+    },
+    {
+      "query": "tag:#research",
+      "color": {
+        "a": 1,
+        "rgb": 3447003
+      }
+    }
+  ]
+}
