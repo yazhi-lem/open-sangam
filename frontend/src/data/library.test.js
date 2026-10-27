@@ -23,6 +23,12 @@ const stories = JSON.parse(
 const anthology = JSON.parse(
   readFileSync(resolve(here, '../../../data/library/story-anthology.json'), 'utf8')
 )
+const entities = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/corpus-entities.json'), 'utf8')
+)
+const briefs = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/avai-research/index.json'), 'utf8')
+)
 
 test('library catalog has unique ids', () => {
   const ids = catalog.works.map((work) => work.id)
@@ -108,5 +114,25 @@ test('curated story anthology has akam and puram and source links', () => {
     assert.ok(story.recordId, `${story.id}: no record id`)
     assert.ok(story.sourceUrl, `${story.id}: no source URL`)
     assert.ok(story.narrativeTa && story.narrativeEn, `${story.id}: no narrative`)
+  }
+})
+
+
+test('corpus entity index is classified and cited', () => {
+  const categories = new Set(entities.categories.map((item) => item.id))
+  assert.ok(entities.entities.length > 50)
+  for (const entity of entities.entities) {
+    assert.ok(categories.has(entity.category), `${entity.id}: unknown category`)
+    assert.ok(entity.count > 0, `${entity.id}: zero count`)
+    assert.ok(entity.samples?.length, `${entity.id}: no samples`)
+  }
+})
+
+test('Avai research briefs keep provenance and citation counts', () => {
+  assert.ok(briefs.briefs.length >= 6)
+  for (const brief of briefs.briefs) {
+    assert.ok(brief.id && brief.titleTa && brief.titleEn, 'brief identity')
+    assert.ok(brief.agent && brief.evidenceStatus, `${brief.id}: missing provenance`)
+    assert.ok(typeof brief.citationCount === 'number', `${brief.id}: missing citations`)
   }
 })

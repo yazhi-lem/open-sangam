@@ -170,6 +170,27 @@ record id and a text/urai excerpt.
 A separate hand-curated anthology lives in `data/library/story-anthology.json`
 with full Tamil and English retellings and direct source-verse links.
 
+### `knowledge/extract_corpus_entities.py` — Flora, fauna, food, work & emotion index
+
+```bash
+python -m knowledge.extract_corpus_entities
+```
+
+Builds `data/library/corpus-entities.json`: flora, fauna, food/drink,
+occupations, kinship, places/dynasties, landscape motifs and emotions, each with
+attestation counts, poem distribution and cited sample lines.
+
+### `knowledge/run_avai_campaigns.py` — Avai research briefs
+
+```bash
+# with the local Avai API running on :8080
+python -m knowledge.run_avai_campaigns --campaign all --language ta
+```
+
+Runs the curated campaigns through the local Avai agents and writes
+`data/library/avai-research/<campaign>.json` plus an `index.json` manifest.
+Briefs retain citations, evidence status and abstention reasons.
+
 ### `knowledge/extract_corpus_artifacts.py` — Material-culture index
 
 ```bash

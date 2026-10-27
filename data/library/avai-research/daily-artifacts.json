@@ -1,0 +1,4851 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "daily-artifacts",
+  "titleTa": "அன்றாடப் பொருட்களும் அணிகலன்களும்",
+  "titleEn": "Daily objects and ornaments",
+  "agent": "avvaiyar",
+  "workflow": "qa",
+  "language": "ta",
+  "prompt": "சங்கப் பாடல்களில் வரும் அணிகலன்கள், கலன்கள், ஆடைகள், வீட்டுப் பொருட்கள் பற்றித் தொகுத்துக் கூறுக.",
+  "generatedAt": "2026-10-27T19:22:25.502333+00:00",
+  "elapsedSeconds": 95.3,
+  "responseText": "---\n- பொன்னாலான தொடி அணிந்த மகளிர்: \"பொற்றொடி மகளிர் புறங்கடை உகுத்த\" [natrinai_258:5]; உரை இதை \"பொன்னாலாகிய தொடியையுடைய மகளிர்\" என விளக்குகிறது [natrinai_258:urai].\n- ஒளிரும் வளை: \"நெருங்கு ஏர் எல்வளை ஓடுவ கண்டே\" [natrinai_258:11]; \"விளங்கு தொடி முன்கை\" [akananooru_058:8]; \"வளை அணி முன்கை\" [natrinai_071:2].\n- கடகம் (கை/தோள் வளை): \"மடைசெறி முன்கை கடகமொடு ஈத்தனன்\" [purananooru_150:21].\n- முத்துப் பரல்கள் இடப்பட்ட பொற்சிலம்பு: \"முத்து அரிப் பொற்சிலம்பு ஒலிப்பத் தத்துற்று\" [natrinai_110:5]; உரை \"முத்துக்களை உள்ளே பரலாகப் போடப்பட்ட பொன்னாலாகிய சிலம்பு\" [natrinai_110:urai].\n- நூபுரம்: \"திருந்துஅடி நூபுரம் ஆர்ப்ப இயலி\" [kalithokai_083:16]; \"நூபுரப் புட்டில்\" [kalithokai_096:16].\n- கிண்கிணி (சலங்கை): \"வார் பொலம் கிண்கிணி, ஆர்ப்ப இயற்றி\" [kalithokai_096:17].\n- பல சரடுகள் கொண்ட முத்தாரம்: \"பல் காழ் முத்து அணி ஆரம் பற்றினன்\" [kalithokai_079:12]; \"மார்பிற் பூண்ட வயங்குகாழ் ஆரம்\" [purananooru_150:20].\n- முத்துச் சரம் அறுந்து சிந்துவது போன்ற கண்ணீர்: \"சொரி முத்தம் காழ் சோர்வ போன்றன\" [kalithokai_082:14].\n- கண்ணி (தலைமாலை): \"வண்டு இமிர் வகை இணர் வாங்கினன்\" [kalithokai_079:16]; \"கண்ணியால் குறி கொண்டாள்\" [kalithokai_079:17].\n- தலைமணி: \"வான்கதிர்த் திருமணி விளங்கும் சென்னி\" [purananooru_150:6].\n- உத்தி (நெற்றிச் சுட்டி), சிகழிகை, வல்லிகை, கண்டிகை, புல்லிகை — இவற்றை அப்பாடலின் உரை \"மகளிர் அணி\", \"ஒருவகை காதணி\" என விளக்குகிறது [kalithokai_096:urai]. கவனிக்க: அப்பாடலில் இவை குதிரைக்கு உருவகமாக வந்துள்ளன [kalithokai_096:13].\n- மேகலை: \"தார் மணி பூண்ட தமனிய மேகலை\" [kalithokai_096:15]; \"அரை வரை மேகலை\" [paripadal_21:14]. 'மேகலை' இரு பாடல்களிலேயே வருகிறது [analyze: மேகலை → 2 இடங்கள்].\n---\n- **பொற்கலம்** — பாலுணவை ஏந்திய பொற்கலம்: \"விரி கதிர்ப் பொற்கலத்து ஒரு கை ஏந்தி\" [natrinai_110:2].\n- **பசுங்கலம்** — புதிய மண்ணால் செய்த, நீர் ஏற்கும் மட்கலம்: \"ஈர் மண் செய்கை நீர் படு பசுங் கலம்\" [natrinai_308:9]; மழைநீரை ஏற்றுக் கரைவதற்கு உவமை [natrinai_308:urai].\n- **தாழி** — குயவன் வனைந்த பெரிய மண்தாழி: \"கலம் செய்கோவே, கலம் செய்கோவே\" [purananooru_256:1]; \"ஈமத் தாழி அகலிது ஆக வனைமோ\" [purananooru_256:5]; உரை \"தாழி செய்யும் குயவனே\" [purananooru_256:urai].\n- **குடிஞை** — நீர்க்குடம்: \"நெடு மால் வரைய குடிஞையோடு இரட்டும்\" [akananooru_009:13].\n- **வான்கலம்** — உணவு பரிமாறும் பரந்த வட்டில்: \"மீன் பூத்து அன்ன வான் கலம் பரப்பி\" [perumpanatrupadai_39:13]; உரை \"உண்கல வட்டில்களைப் பரப்பி\" [perumpanatrupadai_39:urai].\n- **மணி** — அரக்கு உலையில் வார்த்து எடுக்கப்பட்ட மணி: \"மெழுகு ஆன்று ஊது உலைப் பெய்த பகுவாய்த் தெண் மணி\" [kurunthokai_155:4].\n- **அளவைக் கருவிகள்** — உழக்கு, நாழி: \"வெதிர் உழக்கு நாழியால் சேதிகைக் குத்தி\" [kalithokai_096:27].\n**'கலம்' என்பது ஒரு பொருள் மட்டுமல்ல:** அணிகலன் (\"தென் கடல் முத்தமொடு நன் கலம் பெறுகுவை\" [pathitrupathu_67:4]), பாத்திரம் ([natrinai_308:9]), ஓடம் (\"ஓடு கலம் கரையும்\" [perumpanatrupadai_30:5]) எனப் பல பொருள்களில் வருகிறது. எனவே இதற்கு ஒரே பொருளை முடிவாகக் கூற முடியாது; சூழல் கொண்டு பொருள் வேறுபடும்.\n---\n- **கலிங்கம்** — இழை தெரியாத அளவுக்கு நெருக்கமாக நெய்யப்பட்ட மெல்லிய புத்தாடை: \"இழை மருங்கு அறியா நுழை நூல் கலிங்கம்\" [malaipadukadam_45:1]; உரையும் இதைப் \"புத்தாடை\" என விளக்குகிறது [malaipadukadam_45:urai]. கலிங்க நாட்டுப் பெயரிலிருந்து வந்ததாகவும் ஒரு கருதுகோள் உள்ளது [malaipadukadam_45:1].\n- **பட்டு / துகில்** — இரு வகை ஆடைகளாக வேறுபடுத்தப்பட்டுள்ளன: \"பட்டு நீக்கித் துகில் உடுத்தும்\" [pattinappalai_07:4]; இப்பாடல் புணர்ந்த மகளிர் பட்டும் துகிலும் உடுத்தியதைக் கூறுகிறது [pattinappalai_07:urai].\n- **உத்தரியம்** — மேலாடை என உரை விளக்குகிறது [kalithokai_096:urai].\n- **ஈர ஆடை** — நீராடிய பின் கட்டிய ஈரமான ஆடை: \"ஈர்ந் தண் ஆடையை\" [kalithokai_052:11].\n- **கிழிந்த/பழைய ஆடை** — பாசிபோல் கரைந்த கந்தல் ஆடை: \"பாசி அன்ன சிதர்வை நீக்கி\" [perumpanatrupadai_39:4]; \"கூதிர்ப் பருந்தின் இருஞ் சிறகு அன்ன / பாறிய சிதாரேன்\" [purananooru_150:1–2].\n---\n- **உலக்கை + உரல்** — வள்ளைப்பாட்டுடன் நெல் இடிக்கும் கருவி: \"தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி\" [akananooru_009:12]; \"பாசவல் இடிக்கும் இருங் காழ் உலக்கை\" [akananooru_141:18]; \"நீழல் முன்றில் நில உரல் பெய்து\" [perumpanatrupadai_10:2].\n- **முறம்** — நெல் புடைக்கும் கருவி [kalithokai_052:1]; **சுளகு** — திருநீறு அகற்றப் பயன்பட்டது: \"நீறாடு சுளகின் சீறிடம் நீக்கி\" [purananooru_249:12].\n- **அடுப்பு, உலை** — \"பல் கோட்டு அடுப்பில் பால் உலை இரீஇ\" [akananooru_141:15].\n- **ஆப்பி** — தரை மெழுகும் சாணம்: \"மெழுகு, ஆப்பிகண் கலுழ்நீ ரானே\" [purananooru_249:14].\n- **கட்டில்** — \"மாலை முன்றில குறுங்கால் கட்டில்\" [ainkurunooru_410:1].\n- **முன்றில், முற்றம்** — [ainkurunooru_410:1]; \"நீழல் முன்றில்\" [perumpanatrupadai_10:2]; \"ஆய் சுதை மாடத்து அணி நிலா முற்றத்துள்\" [kalithokai_096:19].\n- **கதவு** — \"பொருந்து நோன் கதவு ஒற்றிப் புலம்பி\" [kalithokai_083:2].\n- **சாலகம் (சாளரம்)** — \"சாலகத்து ஒல்கிய கண்ணர்\" [kalithokai_083:13].\n- **பந்தர் (பந்தல்)** — \"பந்தர் ஓடி\" [natrinai_110:7].\n- **விளக்கு** — தெருவில் ஏற்றும் விளக்கு: \"மறுகு விளக்கு உறுத்து, மாலை தூக்கி\" [akananooru_141:9]; \"சிறுகுடி மறுகு விளக்கு உறுத்தலின்\" [akananooru_192:12].\n- **படுக்கை/மெத்தை** — கட்டிலில் மயிர் திணித்த மெத்தை, அதன்மேல் அன்னத்தூவி மெத்தை, அதன்மேல் விரிப்பு என்பது காலஞ்சென்ற உரை விவரிப்பு [nedunalvadai_13:urai] — இது திருத்தப்படாத (draft) உரைப்பகுதி என்பதைக் கவனத்தில் கொள்க.\n---\n- அணிகலன்கள் பலவும் **பொன், முத்து** சார்ந்தவை [natrinai_110:5], [kalithokai_096:15]; மண், செப்பு, அரக்கு சார்ந்த கலன்களும் உள்ளன [natrinai_308:9], [kurunthokai_155:4].\n- ஒரே சொல் பல பொருள் தரும் நிலை ('கலம்') சங்கப் பாடல்களில் பொதுவானது [pathitrupathu_67:4], [natrinai_308:9], [perumpanatrupadai_30:5]; எனவே சொற்பொருள் கூற்றுகளை ஒரு கருத்தாக மட்டும் முடிவு செய்யாமல், சூழல் வைத்துப் பிரித்தல் வேண்டும்.\n**சான்றுகள் (மூல அடையாளங்கள்):** natrinai_110, natrinai_258, natrinai_308, natrinai_071, kurunthokai_155, akananooru_009, akananooru_058, akananooru_141, akananooru_192, ainkurunooru_410, kalithokai_052, kalithokai_079, kalithokai_082, kalithokai_083, kalithokai_096, purananooru_150, purananooru_249, purananooru_256, pattinappalai_07, perumpanatrupadai_10, perumpanatrupadai_30, perumpanatrupadai_39, malaipadukadam_45, paripadal_21, pathitrupathu_67, nedunalvadai_13.",
+  "pulavarAnswer": {
+    "answer_text": "---\n- பொன்னாலான தொடி அணிந்த மகளிர்: \"பொற்றொடி மகளிர் புறங்கடை உகுத்த\" [natrinai_258:5]; உரை இதை \"பொன்னாலாகிய தொடியையுடைய மகளிர்\" என விளக்குகிறது [natrinai_258:urai].\n- ஒளிரும் வளை: \"நெருங்கு ஏர் எல்வளை ஓடுவ கண்டே\" [natrinai_258:11]; \"விளங்கு தொடி முன்கை\" [akananooru_058:8]; \"வளை அணி முன்கை\" [natrinai_071:2].\n- கடகம் (கை/தோள் வளை): \"மடைசெறி முன்கை கடகமொடு ஈத்தனன்\" [purananooru_150:21].\n- முத்துப் பரல்கள் இடப்பட்ட பொற்சிலம்பு: \"முத்து அரிப் பொற்சிலம்பு ஒலிப்பத் தத்துற்று\" [natrinai_110:5]; உரை \"முத்துக்களை உள்ளே பரலாகப் போடப்பட்ட பொன்னாலாகிய சிலம்பு\" [natrinai_110:urai].\n- நூபுரம்: \"திருந்துஅடி நூபுரம் ஆர்ப்ப இயலி\" [kalithokai_083:16]; \"நூபுரப் புட்டில்\" [kalithokai_096:16].\n- கிண்கிணி (சலங்கை): \"வார் பொலம் கிண்கிணி, ஆர்ப்ப இயற்றி\" [kalithokai_096:17].\n- பல சரடுகள் கொண்ட முத்தாரம்: \"பல் காழ் முத்து அணி ஆரம் பற்றினன்\" [kalithokai_079:12]; \"மார்பிற் பூண்ட வயங்குகாழ் ஆரம்\" [purananooru_150:20].\n- முத்துச் சரம் அறுந்து சிந்துவது போன்ற கண்ணீர்: \"சொரி முத்தம் காழ் சோர்வ போன்றன\" [kalithokai_082:14].\n- கண்ணி (தலைமாலை): \"வண்டு இமிர் வகை இணர் வாங்கினன்\" [kalithokai_079:16]; \"கண்ணியால் குறி கொண்டாள்\" [kalithokai_079:17].\n- தலைமணி: \"வான்கதிர்த் திருமணி விளங்கும் சென்னி\" [purananooru_150:6].\n- உத்தி (நெற்றிச் சுட்டி), சிகழிகை, வல்லிகை, கண்டிகை, புல்லிகை — இவற்றை அப்பாடலின் உரை \"மகளிர் அணி\", \"ஒருவகை காதணி\" என விளக்குகிறது [kalithokai_096:urai]. கவனிக்க: அப்பாடலில் இவை குதிரைக்கு உருவகமாக வந்துள்ளன [kalithokai_096:13].\n- மேகலை: \"தார் மணி பூண்ட தமனிய மேகலை\" [kalithokai_096:15]; \"அரை வரை மேகலை\" [paripadal_21:14]. 'மேகலை' இரு பாடல்களிலேயே வருகிறது [analyze: மேகலை → 2 இடங்கள்].\n---\n- **பொற்கலம்** — பாலுணவை ஏந்திய பொற்கலம்: \"விரி கதிர்ப் பொற்கலத்து ஒரு கை ஏந்தி\" [natrinai_110:2].\n- **பசுங்கலம்** — புதிய மண்ணால் செய்த, நீர் ஏற்கும் மட்கலம்: \"ஈர் மண் செய்கை நீர் படு பசுங் கலம்\" [natrinai_308:9]; மழைநீரை ஏற்றுக் கரைவதற்கு உவமை [natrinai_308:urai].\n- **தாழி** — குயவன் வனைந்த பெரிய மண்தாழி: \"கலம் செய்கோவே, கலம் செய்கோவே\" [purananooru_256:1]; \"ஈமத் தாழி அகலிது ஆக வனைமோ\" [purananooru_256:5]; உரை \"தாழி செய்யும் குயவனே\" [purananooru_256:urai].\n- **குடிஞை** — நீர்க்குடம்: \"நெடு மால் வரைய குடிஞையோடு இரட்டும்\" [akananooru_009:13].\n- **வான்கலம்** — உணவு பரிமாறும் பரந்த வட்டில்: \"மீன் பூத்து அன்ன வான் கலம் பரப்பி\" [perumpanatrupadai_39:13]; உரை \"உண்கல வட்டில்களைப் பரப்பி\" [perumpanatrupadai_39:urai].\n- **மணி** — அரக்கு உலையில் வார்த்து எடுக்கப்பட்ட மணி: \"மெழுகு ஆன்று ஊது உலைப் பெய்த பகுவாய்த் தெண் மணி\" [kurunthokai_155:4].\n- **அளவைக் கருவிகள்** — உழக்கு, நாழி: \"வெதிர் உழக்கு நாழியால் சேதிகைக் குத்தி\" [kalithokai_096:27].\n**'கலம்' என்பது ஒரு பொருள் மட்டுமல்ல:** அணிகலன் (\"தென் கடல் முத்தமொடு நன் கலம் பெறுகுவை\" [pathitrupathu_67:4]), பாத்திரம் ([natrinai_308:9]), ஓடம் (\"ஓடு கலம் கரையும்\" [perumpanatrupadai_30:5]) எனப் பல பொருள்களில் வருகிறது. எனவே இதற்கு ஒரே பொருளை முடிவாகக் கூற முடியாது; சூழல் கொண்டு பொருள் வேறுபடும்.\n---\n- **கலிங்கம்** — இழை தெரியாத அளவுக்கு நெருக்கமாக நெய்யப்பட்ட மெல்லிய புத்தாடை: \"இழை மருங்கு அறியா நுழை நூல் கலிங்கம்\" [malaipadukadam_45:1]; உரையும் இதைப் \"புத்தாடை\" என விளக்குகிறது [malaipadukadam_45:urai]. கலிங்க நாட்டுப் பெயரிலிருந்து வந்ததாகவும் ஒரு கருதுகோள் உள்ளது [malaipadukadam_45:1].\n- **பட்டு / துகில்** — இரு வகை ஆடைகளாக வேறுபடுத்தப்பட்டுள்ளன: \"பட்டு நீக்கித் துகில் உடுத்தும்\" [pattinappalai_07:4]; இப்பாடல் புணர்ந்த மகளிர் பட்டும் துகிலும் உடுத்தியதைக் கூறுகிறது [pattinappalai_07:urai].\n- **உத்தரியம்** — மேலாடை என உரை விளக்குகிறது [kalithokai_096:urai].\n- **ஈர ஆடை** — நீராடிய பின் கட்டிய ஈரமான ஆடை: \"ஈர்ந் தண் ஆடையை\" [kalithokai_052:11].\n- **கிழிந்த/பழைய ஆடை** — பாசிபோல் கரைந்த கந்தல் ஆடை: \"பாசி அன்ன சிதர்வை நீக்கி\" [perumpanatrupadai_39:4]; \"கூதிர்ப் பருந்தின் இருஞ் சிறகு அன்ன / பாறிய சிதாரேன்\" [purananooru_150:1–2].\n---\n- **உலக்கை + உரல்** — வள்ளைப்பாட்டுடன் நெல் இடிக்கும் கருவி: \"தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி\" [akananooru_009:12]; \"பாசவல் இடிக்கும் இருங் காழ் உலக்கை\" [akananooru_141:18]; \"நீழல் முன்றில் நில உரல் பெய்து\" [perumpanatrupadai_10:2].\n- **முறம்** — நெல் புடைக்கும் கருவி [kalithokai_052:1]; **சுளகு** — திருநீறு அகற்றப் பயன்பட்டது: \"நீறாடு சுளகின் சீறிடம் நீக்கி\" [purananooru_249:12].\n- **அடுப்பு, உலை** — \"பல் கோட்டு அடுப்பில் பால் உலை இரீஇ\" [akananooru_141:15].\n- **ஆப்பி** — தரை மெழுகும் சாணம்: \"மெழுகு, ஆப்பிகண் கலுழ்நீ ரானே\" [purananooru_249:14].\n- **கட்டில்** — \"மாலை முன்றில குறுங்கால் கட்டில்\" [ainkurunooru_410:1].\n- **முன்றில், முற்றம்** — [ainkurunooru_410:1]; \"நீழல் முன்றில்\" [perumpanatrupadai_10:2]; \"ஆய் சுதை மாடத்து அணி நிலா முற்றத்துள்\" [kalithokai_096:19].\n- **கதவு** — \"பொருந்து நோன் கதவு ஒற்றிப் புலம்பி\" [kalithokai_083:2].\n- **சாலகம் (சாளரம்)** — \"சாலகத்து ஒல்கிய கண்ணர்\" [kalithokai_083:13].\n- **பந்தர் (பந்தல்)** — \"பந்தர் ஓடி\" [natrinai_110:7].\n- **விளக்கு** — தெருவில் ஏற்றும் விளக்கு: \"மறுகு விளக்கு உறுத்து, மாலை தூக்கி\" [akananooru_141:9]; \"சிறுகுடி மறுகு விளக்கு உறுத்தலின்\" [akananooru_192:12].\n- **படுக்கை/மெத்தை** — கட்டிலில் மயிர் திணித்த மெத்தை, அதன்மேல் அன்னத்தூவி மெத்தை, அதன்மேல் விரிப்பு என்பது காலஞ்சென்ற உரை விவரிப்பு [nedunalvadai_13:urai] — இது திருத்தப்படாத (draft) உரைப்பகுதி என்பதைக் கவனத்தில் கொள்க.\n---\n- அணிகலன்கள் பலவும் **பொன், முத்து** சார்ந்தவை [natrinai_110:5], [kalithokai_096:15]; மண், செப்பு, அரக்கு சார்ந்த கலன்களும் உள்ளன [natrinai_308:9], [kurunthokai_155:4].\n- ஒரே சொல் பல பொருள் தரும் நிலை ('கலம்') சங்கப் பாடல்களில் பொதுவானது [pathitrupathu_67:4], [natrinai_308:9], [perumpanatrupadai_30:5]; எனவே சொற்பொருள் கூற்றுகளை ஒரு கருத்தாக மட்டும் முடிவு செய்யாமல், சூழல் வைத்துப் பிரித்தல் வேண்டும்.\n**சான்றுகள் (மூல அடையாளங்கள்):** natrinai_110, natrinai_258, natrinai_308, natrinai_071, kurunthokai_155, akananooru_009, akananooru_058, akananooru_141, akananooru_192, ainkurunooru_410, kalithokai_052, kalithokai_079, kalithokai_082, kalithokai_083, kalithokai_096, purananooru_150, purananooru_249, purananooru_256, pattinappalai_07, perumpanatrupadai_10, perumpanatrupadai_30, perumpanatrupadai_39, malaipadukadam_45, paripadal_21, pathitrupathu_67, nedunalvadai_13.",
+    "answer_text_ta": "---\n- பொன்னாலான தொடி அணிந்த மகளிர்: \"பொற்றொடி மகளிர் புறங்கடை உகுத்த\" [natrinai_258:5]; உரை இதை \"பொன்னாலாகிய தொடியையுடைய மகளிர்\" என விளக்குகிறது [natrinai_258:urai].\n- ஒளிரும் வளை: \"நெருங்கு ஏர் எல்வளை ஓடுவ கண்டே\" [natrinai_258:11]; \"விளங்கு தொடி முன்கை\" [akananooru_058:8]; \"வளை அணி முன்கை\" [natrinai_071:2].\n- கடகம் (கை/தோள் வளை): \"மடைசெறி முன்கை கடகமொடு ஈத்தனன்\" [purananooru_150:21].\n- முத்துப் பரல்கள் இடப்பட்ட பொற்சிலம்பு: \"முத்து அரிப் பொற்சிலம்பு ஒலிப்பத் தத்துற்று\" [natrinai_110:5]; உரை \"முத்துக்களை உள்ளே பரலாகப் போடப்பட்ட பொன்னாலாகிய சிலம்பு\" [natrinai_110:urai].\n- நூபுரம்: \"திருந்துஅடி நூபுரம் ஆர்ப்ப இயலி\" [kalithokai_083:16]; \"நூபுரப் புட்டில்\" [kalithokai_096:16].\n- கிண்கிணி (சலங்கை): \"வார் பொலம் கிண்கிணி, ஆர்ப்ப இயற்றி\" [kalithokai_096:17].\n- பல சரடுகள் கொண்ட முத்தாரம்: \"பல் காழ் முத்து அணி ஆரம் பற்றினன்\" [kalithokai_079:12]; \"மார்பிற் பூண்ட வயங்குகாழ் ஆரம்\" [purananooru_150:20].\n- முத்துச் சரம் அறுந்து சிந்துவது போன்ற கண்ணீர்: \"சொரி முத்தம் காழ் சோர்வ போன்றன\" [kalithokai_082:14].\n- கண்ணி (தலைமாலை): \"வண்டு இமிர் வகை இணர் வாங்கினன்\" [kalithokai_079:16]; \"கண்ணியால் குறி கொண்டாள்\" [kalithokai_079:17].\n- தலைமணி: \"வான்கதிர்த் திருமணி விளங்கும் சென்னி\" [purananooru_150:6].\n- உத்தி (நெற்றிச் சுட்டி), சிகழிகை, வல்லிகை, கண்டிகை, புல்லிகை — இவற்றை அப்பாடலின் உரை \"மகளிர் அணி\", \"ஒருவகை காதணி\" என விளக்குகிறது [kalithokai_096:urai]. கவனிக்க: அப்பாடலில் இவை குதிரைக்கு உருவகமாக வந்துள்ளன [kalithokai_096:13].\n- மேகலை: \"தார் மணி பூண்ட தமனிய மேகலை\" [kalithokai_096:15]; \"அரை வரை மேகலை\" [paripadal_21:14]. 'மேகலை' இரு பாடல்களிலேயே வருகிறது [analyze: மேகலை → 2 இடங்கள்].\n---\n- **பொற்கலம்** — பாலுணவை ஏந்திய பொற்கலம்: \"விரி கதிர்ப் பொற்கலத்து ஒரு கை ஏந்தி\" [natrinai_110:2].\n- **பசுங்கலம்** — புதிய மண்ணால் செய்த, நீர் ஏற்கும் மட்கலம்: \"ஈர் மண் செய்கை நீர் படு பசுங் கலம்\" [natrinai_308:9]; மழைநீரை ஏற்றுக் கரைவதற்கு உவமை [natrinai_308:urai].\n- **தாழி** — குயவன் வனைந்த பெரிய மண்தாழி: \"கலம் செய்கோவே, கலம் செய்கோவே\" [purananooru_256:1]; \"ஈமத் தாழி அகலிது ஆக வனைமோ\" [purananooru_256:5]; உரை \"தாழி செய்யும் குயவனே\" [purananooru_256:urai].\n- **குடிஞை** — நீர்க்குடம்: \"நெடு மால் வரைய குடிஞையோடு இரட்டும்\" [akananooru_009:13].\n- **வான்கலம்** — உணவு பரிமாறும் பரந்த வட்டில்: \"மீன் பூத்து அன்ன வான் கலம் பரப்பி\" [perumpanatrupadai_39:13]; உரை \"உண்கல வட்டில்களைப் பரப்பி\" [perumpanatrupadai_39:urai].\n- **மணி** — அரக்கு உலையில் வார்த்து எடுக்கப்பட்ட மணி: \"மெழுகு ஆன்று ஊது உலைப் பெய்த பகுவாய்த் தெண் மணி\" [kurunthokai_155:4].\n- **அளவைக் கருவிகள்** — உழக்கு, நாழி: \"வெதிர் உழக்கு நாழியால் சேதிகைக் குத்தி\" [kalithokai_096:27].\n**'கலம்' என்பது ஒரு பொருள் மட்டுமல்ல:** அணிகலன் (\"தென் கடல் முத்தமொடு நன் கலம் பெறுகுவை\" [pathitrupathu_67:4]), பாத்திரம் ([natrinai_308:9]), ஓடம் (\"ஓடு கலம் கரையும்\" [perumpanatrupadai_30:5]) எனப் பல பொருள்களில் வருகிறது. எனவே இதற்கு ஒரே பொருளை முடிவாகக் கூற முடியாது; சூழல் கொண்டு பொருள் வேறுபடும்.\n---\n- **கலிங்கம்** — இழை தெரியாத அளவுக்கு நெருக்கமாக நெய்யப்பட்ட மெல்லிய புத்தாடை: \"இழை மருங்கு அறியா நுழை நூல் கலிங்கம்\" [malaipadukadam_45:1]; உரையும் இதைப் \"புத்தாடை\" என விளக்குகிறது [malaipadukadam_45:urai]. கலிங்க நாட்டுப் பெயரிலிருந்து வந்ததாகவும் ஒரு கருதுகோள் உள்ளது [malaipadukadam_45:1].\n- **பட்டு / துகில்** — இரு வகை ஆடைகளாக வேறுபடுத்தப்பட்டுள்ளன: \"பட்டு நீக்கித் துகில் உடுத்தும்\" [pattinappalai_07:4]; இப்பாடல் புணர்ந்த மகளிர் பட்டும் துகிலும் உடுத்தியதைக் கூறுகிறது [pattinappalai_07:urai].\n- **உத்தரியம்** — மேலாடை என உரை விளக்குகிறது [kalithokai_096:urai].\n- **ஈர ஆடை** — நீராடிய பின் கட்டிய ஈரமான ஆடை: \"ஈர்ந் தண் ஆடையை\" [kalithokai_052:11].\n- **கிழிந்த/பழைய ஆடை** — பாசிபோல் கரைந்த கந்தல் ஆடை: \"பாசி அன்ன சிதர்வை நீக்கி\" [perumpanatrupadai_39:4]; \"கூதிர்ப் பருந்தின் இருஞ் சிறகு அன்ன / பாறிய சிதாரேன்\" [purananooru_150:1–2].\n---\n- **உலக்கை + உரல்** — வள்ளைப்பாட்டுடன் நெல் இடிக்கும் கருவி: \"தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி\" [akananooru_009:12]; \"பாசவல் இடிக்கும் இருங் காழ் உலக்கை\" [akananooru_141:18]; \"நீழல் முன்றில் நில உரல் பெய்து\" [perumpanatrupadai_10:2].\n- **முறம்** — நெல் புடைக்கும் கருவி [kalithokai_052:1]; **சுளகு** — திருநீறு அகற்றப் பயன்பட்டது: \"நீறாடு சுளகின் சீறிடம் நீக்கி\" [purananooru_249:12].\n- **அடுப்பு, உலை** — \"பல் கோட்டு அடுப்பில் பால் உலை இரீஇ\" [akananooru_141:15].\n- **ஆப்பி** — தரை மெழுகும் சாணம்: \"மெழுகு, ஆப்பிகண் கலுழ்நீ ரானே\" [purananooru_249:14].\n- **கட்டில்** — \"மாலை முன்றில குறுங்கால் கட்டில்\" [ainkurunooru_410:1].\n- **முன்றில், முற்றம்** — [ainkurunooru_410:1]; \"நீழல் முன்றில்\" [perumpanatrupadai_10:2]; \"ஆய் சுதை மாடத்து அணி நிலா முற்றத்துள்\" [kalithokai_096:19].\n- **கதவு** — \"பொருந்து நோன் கதவு ஒற்றிப் புலம்பி\" [kalithokai_083:2].\n- **சாலகம் (சாளரம்)** — \"சாலகத்து ஒல்கிய கண்ணர்\" [kalithokai_083:13].\n- **பந்தர் (பந்தல்)** — \"பந்தர் ஓடி\" [natrinai_110:7].\n- **விளக்கு** — தெருவில் ஏற்றும் விளக்கு: \"மறுகு விளக்கு உறுத்து, மாலை தூக்கி\" [akananooru_141:9]; \"சிறுகுடி மறுகு விளக்கு உறுத்தலின்\" [akananooru_192:12].\n- **படுக்கை/மெத்தை** — கட்டிலில் மயிர் திணித்த மெத்தை, அதன்மேல் அன்னத்தூவி மெத்தை, அதன்மேல் விரிப்பு என்பது காலஞ்சென்ற உரை விவரிப்பு [nedunalvadai_13:urai] — இது திருத்தப்படாத (draft) உரைப்பகுதி என்பதைக் கவனத்தில் கொள்க.\n---\n- அணிகலன்கள் பலவும் **பொன், முத்து** சார்ந்தவை [natrinai_110:5], [kalithokai_096:15]; மண், செப்பு, அரக்கு சார்ந்த கலன்களும் உள்ளன [natrinai_308:9], [kurunthokai_155:4].\n- ஒரே சொல் பல பொருள் தரும் நிலை ('கலம்') சங்கப் பாடல்களில் பொதுவானது [pathitrupathu_67:4], [natrinai_308:9], [perumpanatrupadai_30:5]; எனவே சொற்பொருள் கூற்றுகளை ஒரு கருத்தாக மட்டும் முடிவு செய்யாமல், சூழல் வைத்துப் பிரித்தல் வேண்டும்.\n**சான்றுகள் (மூல அடையாளங்கள்):** natrinai_110, natrinai_258, natrinai_308, natrinai_071, kurunthokai_155, akananooru_009, akananooru_058, akananooru_141, akananooru_192, ainkurunooru_410, kalithokai_052, kalithokai_079, kalithokai_082, kalithokai_083, kalithokai_096, purananooru_150, purananooru_249, purananooru_256, pattinappalai_07, perumpanatrupadai_10, perumpanatrupadai_30, perumpanatrupadai_39, malaipadukadam_45, paripadal_21, pathitrupathu_67, nedunalvadai_13.",
+    "claims": [
+      {
+        "claim_id": "claim_3",
+        "claim_text": "---",
+        "claim_text_ta": "---",
+        "citation_ids": [],
+        "citations": [],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_5",
+        "claim_text": "- பொன்னாலான தொடி அணிந்த மகளிர்: \"பொற்றொடி மகளிர் புறங்கடை உகுத்த\" [natrinai_258:5]; உரை இதை \"பொன்னாலாகிய தொடியையுடைய மகளிர்\" என விளக்குகிறது [natrinai_258:urai].",
+        "claim_text_ta": "- பொன்னாலான தொடி அணிந்த மகளிர்: \"பொற்றொடி மகளிர் புறங்கடை உகுத்த\" [natrinai_258:5]; உரை இதை \"பொன்னாலாகிய தொடியையுடைய மகளிர்\" என விளக்குகிறது [natrinai_258:urai].",
+        "citation_ids": [
+          "natrinai_258"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_258_0]",
+            "source_id": "natrinai_258",
+            "source": {
+              "source_id": "natrinai_258",
+              "poem": "natrinai",
+              "verse_number": 258,
+              "poet": "நக்கீரர்.",
+              "tinai": "neytal",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_6",
+        "claim_text": "- ஒளிரும் வளை: \"நெருங்கு ஏர் எல்வளை ஓடுவ கண்டே\" [natrinai_258:11]; \"விளங்கு தொடி முன்கை\" [akananooru_058:8]; \"வளை அணி முன்கை\" [natrinai_071:2].",
+        "claim_text_ta": "- ஒளிரும் வளை: \"நெருங்கு ஏர் எல்வளை ஓடுவ கண்டே\" [natrinai_258:11]; \"விளங்கு தொடி முன்கை\" [akananooru_058:8]; \"வளை அணி முன்கை\" [natrinai_071:2].",
+        "citation_ids": [
+          "natrinai_258",
+          "akananooru_058",
+          "natrinai_071"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_258_0]",
+            "source_id": "natrinai_258",
+            "source": {
+              "source_id": "natrinai_258",
+              "poem": "natrinai",
+              "verse_number": 258,
+              "poet": "நக்கீரர்.",
+              "tinai": "neytal",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_akananooru_058_1]",
+            "source_id": "akananooru_058",
+            "source": {
+              "source_id": "akananooru_058",
+              "poem": "akananooru",
+              "verse_number": 58,
+              "poet": "மதுரைப் பண்ட வாணிகன் இளந்தேவனார்.",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_natrinai_071_2]",
+            "source_id": "natrinai_071",
+            "source": {
+              "source_id": "natrinai_071",
+              "poem": "natrinai",
+              "verse_number": 71,
+              "poet": "வண்ணப்புறக் கந்தரத்தனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_7",
+        "claim_text": "- கடகம் (கை/தோள் வளை): \"மடைசெறி முன்கை கடகமொடு ஈத்தனன்\" [purananooru_150:21].",
+        "claim_text_ta": "- கடகம் (கை/தோள் வளை): \"மடைசெறி முன்கை கடகமொடு ஈத்தனன்\" [purananooru_150:21].",
+        "citation_ids": [
+          "purananooru_150"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_purananooru_150_0]",
+            "source_id": "purananooru_150",
+            "source": {
+              "source_id": "purananooru_150",
+              "poem": "purananooru",
+              "verse_number": 150,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_9",
+        "claim_text": "- முத்துப் பரல்கள் இடப்பட்ட பொற்சிலம்பு: \"முத்து அரிப் பொற்சிலம்பு ஒலிப்பத் தத்துற்று\" [natrinai_110:5]; உரை \"முத்துக்களை உள்ளே பரலாகப் போடப்பட்ட பொன்னாலாகிய சிலம்பு\" [natrinai_110:urai].",
+        "claim_text_ta": "- முத்துப் பரல்கள் இடப்பட்ட பொற்சிலம்பு: \"முத்து அரிப் பொற்சிலம்பு ஒலிப்பத் தத்துற்று\" [natrinai_110:5]; உரை \"முத்துக்களை உள்ளே பரலாகப் போடப்பட்ட பொன்னாலாகிய சிலம்பு\" [natrinai_110:urai].",
+        "citation_ids": [
+          "natrinai_110"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_110_0]",
+            "source_id": "natrinai_110",
+            "source": {
+              "source_id": "natrinai_110",
+              "poem": "natrinai",
+              "verse_number": 110,
+              "poet": "போதனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_10",
+        "claim_text": "- நூபுரம்: \"திருந்துஅடி நூபுரம் ஆர்ப்ப இயலி\" [kalithokai_083:16]; \"நூபுரப் புட்டில்\" [kalithokai_096:16].",
+        "claim_text_ta": "- நூபுரம்: \"திருந்துஅடி நூபுரம் ஆர்ப்ப இயலி\" [kalithokai_083:16]; \"நூபுரப் புட்டில்\" [kalithokai_096:16].",
+        "citation_ids": [
+          "kalithokai_083",
+          "kalithokai_096"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_083_0]",
+            "source_id": "kalithokai_083",
+            "source": {
+              "source_id": "kalithokai_083",
+              "poem": "kalithokai",
+              "verse_number": 83,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_kalithokai_096_1]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_11",
+        "claim_text": "- கிண்கிணி (சலங்கை): \"வார் பொலம் கிண்கிணி, ஆர்ப்ப இயற்றி\" [kalithokai_096:17].",
+        "claim_text_ta": "- கிண்கிணி (சலங்கை): \"வார் பொலம் கிண்கிணி, ஆர்ப்ப இயற்றி\" [kalithokai_096:17].",
+        "citation_ids": [
+          "kalithokai_096"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_096_0]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_13",
+        "claim_text": "- பல சரடுகள் கொண்ட முத்தாரம்: \"பல் காழ் முத்து அணி ஆரம் பற்றினன்\" [kalithokai_079:12]; \"மார்பிற் பூண்ட வயங்குகாழ் ஆரம்\" [purananooru_150:20].",
+        "claim_text_ta": "- பல சரடுகள் கொண்ட முத்தாரம்: \"பல் காழ் முத்து அணி ஆரம் பற்றினன்\" [kalithokai_079:12]; \"மார்பிற் பூண்ட வயங்குகாழ் ஆரம்\" [purananooru_150:20].",
+        "citation_ids": [
+          "kalithokai_079",
+          "purananooru_150"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_079_0]",
+            "source_id": "kalithokai_079",
+            "source": {
+              "source_id": "kalithokai_079",
+              "poem": "kalithokai",
+              "verse_number": 79,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_purananooru_150_1]",
+            "source_id": "purananooru_150",
+            "source": {
+              "source_id": "purananooru_150",
+              "poem": "purananooru",
+              "verse_number": 150,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_14",
+        "claim_text": "- முத்துச் சரம் அறுந்து சிந்துவது போன்ற கண்ணீர்: \"சொரி முத்தம் காழ் சோர்வ போன்றன\" [kalithokai_082:14].",
+        "claim_text_ta": "- முத்துச் சரம் அறுந்து சிந்துவது போன்ற கண்ணீர்: \"சொரி முத்தம் காழ் சோர்வ போன்றன\" [kalithokai_082:14].",
+        "citation_ids": [
+          "kalithokai_082"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_082_0]",
+            "source_id": "kalithokai_082",
+            "source": {
+              "source_id": "kalithokai_082",
+              "poem": "kalithokai",
+              "verse_number": 82,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_16",
+        "claim_text": "- கண்ணி (தலைமாலை): \"வண்டு இமிர் வகை இணர் வாங்கினன்\" [kalithokai_079:16]; \"கண்ணியால் குறி கொண்டாள்\" [kalithokai_079:17].",
+        "claim_text_ta": "- கண்ணி (தலைமாலை): \"வண்டு இமிர் வகை இணர் வாங்கினன்\" [kalithokai_079:16]; \"கண்ணியால் குறி கொண்டாள்\" [kalithokai_079:17].",
+        "citation_ids": [
+          "kalithokai_079"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_079_0]",
+            "source_id": "kalithokai_079",
+            "source": {
+              "source_id": "kalithokai_079",
+              "poem": "kalithokai",
+              "verse_number": 79,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_17",
+        "claim_text": "- தலைமணி: \"வான்கதிர்த் திருமணி விளங்கும் சென்னி\" [purananooru_150:6].",
+        "claim_text_ta": "- தலைமணி: \"வான்கதிர்த் திருமணி விளங்கும் சென்னி\" [purananooru_150:6].",
+        "citation_ids": [
+          "purananooru_150"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_purananooru_150_0]",
+            "source_id": "purananooru_150",
+            "source": {
+              "source_id": "purananooru_150",
+              "poem": "purananooru",
+              "verse_number": 150,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_18",
+        "claim_text": "- உத்தி (நெற்றிச் சுட்டி), சிகழிகை, வல்லிகை, கண்டிகை, புல்லிகை — இவற்றை அப்பாடலின் உரை \"மகளிர் அணி\", \"ஒருவகை காதணி\" என விளக்குகிறது [kalithokai_096:urai]. கவனிக்க: அப்பாடலில் இவை குதிரைக்கு உருவகமாக வந்துள்ளன [kalithokai_096:13].",
+        "claim_text_ta": "- உத்தி (நெற்றிச் சுட்டி), சிகழிகை, வல்லிகை, கண்டிகை, புல்லிகை — இவற்றை அப்பாடலின் உரை \"மகளிர் அணி\", \"ஒருவகை காதணி\" என விளக்குகிறது [kalithokai_096:urai]. கவனிக்க: அப்பாடலில் இவை குதிரைக்கு உருவகமாக வந்துள்ளன [kalithokai_096:13].",
+        "citation_ids": [
+          "kalithokai_096"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_096_0]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_20",
+        "claim_text": "- மேகலை: \"தார் மணி பூண்ட தமனிய மேகலை\" [kalithokai_096:15]; \"அரை வரை மேகலை\" [paripadal_21:14]. 'மேகலை' இரு பாடல்களிலேயே வருகிறது [analyze: மேகலை → 2 இடங்கள்].",
+        "claim_text_ta": "- மேகலை: \"தார் மணி பூண்ட தமனிய மேகலை\" [kalithokai_096:15]; \"அரை வரை மேகலை\" [paripadal_21:14]. 'மேகலை' இரு பாடல்களிலேயே வருகிறது [analyze: மேகலை → 2 இடங்கள்].",
+        "citation_ids": [
+          "kalithokai_096",
+          "paripadal_21"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_096_0]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_paripadal_21_1]",
+            "source_id": "paripadal_21",
+            "source": {
+              "source_id": "paripadal_21",
+              "poem": "paripadal",
+              "verse_number": 21,
+              "poet": "நல்லச்சுதனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_21",
+        "claim_text": "---",
+        "claim_text_ta": "---",
+        "citation_ids": [],
+        "citations": [],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_22",
+        "claim_text": "- **பொற்கலம்** — பாலுணவை ஏந்திய பொற்கலம்: \"விரி கதிர்ப் பொற்கலத்து ஒரு கை ஏந்தி\" [natrinai_110:2].",
+        "claim_text_ta": "- **பொற்கலம்** — பாலுணவை ஏந்திய பொற்கலம்: \"விரி கதிர்ப் பொற்கலத்து ஒரு கை ஏந்தி\" [natrinai_110:2].",
+        "citation_ids": [
+          "natrinai_110"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_110_0]",
+            "source_id": "natrinai_110",
+            "source": {
+              "source_id": "natrinai_110",
+              "poem": "natrinai",
+              "verse_number": 110,
+              "poet": "போதனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_23",
+        "claim_text": "- **பசுங்கலம்** — புதிய மண்ணால் செய்த, நீர் ஏற்கும் மட்கலம்: \"ஈர் மண் செய்கை நீர் படு பசுங் கலம்\" [natrinai_308:9]; மழைநீரை ஏற்றுக் கரைவதற்கு உவமை [natrinai_308:urai].",
+        "claim_text_ta": "- **பசுங்கலம்** — புதிய மண்ணால் செய்த, நீர் ஏற்கும் மட்கலம்: \"ஈர் மண் செய்கை நீர் படு பசுங் கலம்\" [natrinai_308:9]; மழைநீரை ஏற்றுக் கரைவதற்கு உவமை [natrinai_308:urai].",
+        "citation_ids": [
+          "natrinai_308"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_308_0]",
+            "source_id": "natrinai_308",
+            "source": {
+              "source_id": "natrinai_308",
+              "poem": "natrinai",
+              "verse_number": 308,
+              "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_24",
+        "claim_text": "- **தாழி** — குயவன் வனைந்த பெரிய மண்தாழி: \"கலம் செய்கோவே, கலம் செய்கோவே\" [purananooru_256:1]; \"ஈமத் தாழி அகலிது ஆக வனைமோ\" [purananooru_256:5]; உரை \"தாழி செய்யும் குயவனே\" [purananooru_256:urai].",
+        "claim_text_ta": "- **தாழி** — குயவன் வனைந்த பெரிய மண்தாழி: \"கலம் செய்கோவே, கலம் செய்கோவே\" [purananooru_256:1]; \"ஈமத் தாழி அகலிது ஆக வனைமோ\" [purananooru_256:5]; உரை \"தாழி செய்யும் குயவனே\" [purananooru_256:urai].",
+        "citation_ids": [
+          "purananooru_256"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_purananooru_256_0]",
+            "source_id": "purananooru_256",
+            "source": {
+              "source_id": "purananooru_256",
+              "poem": "purananooru",
+              "verse_number": 256,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_25",
+        "claim_text": "- **குடிஞை** — நீர்க்குடம்: \"நெடு மால் வரைய குடிஞையோடு இரட்டும்\" [akananooru_009:13].",
+        "claim_text_ta": "- **குடிஞை** — நீர்க்குடம்: \"நெடு மால் வரைய குடிஞையோடு இரட்டும்\" [akananooru_009:13].",
+        "citation_ids": [
+          "akananooru_009"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_akananooru_009_0]",
+            "source_id": "akananooru_009",
+            "source": {
+              "source_id": "akananooru_009",
+              "poem": "akananooru",
+              "verse_number": 9,
+              "poet": "கல்லாடனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_26",
+        "claim_text": "- **வான்கலம்** — உணவு பரிமாறும் பரந்த வட்டில்: \"மீன் பூத்து அன்ன வான் கலம் பரப்பி\" [perumpanatrupadai_39:13]; உரை \"உண்கல வட்டில்களைப் பரப்பி\" [perumpanatrupadai_39:urai].",
+        "claim_text_ta": "- **வான்கலம்** — உணவு பரிமாறும் பரந்த வட்டில்: \"மீன் பூத்து அன்ன வான் கலம் பரப்பி\" [perumpanatrupadai_39:13]; உரை \"உண்கல வட்டில்களைப் பரப்பி\" [perumpanatrupadai_39:urai].",
+        "citation_ids": [
+          "perumpanatrupadai_39"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_perumpanatrupadai_39_0]",
+            "source_id": "perumpanatrupadai_39",
+            "source": {
+              "source_id": "perumpanatrupadai_39",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_27",
+        "claim_text": "- **மணி** — அரக்கு உலையில் வார்த்து எடுக்கப்பட்ட மணி: \"மெழுகு ஆன்று ஊது உலைப் பெய்த பகுவாய்த் தெண் மணி\" [kurunthokai_155:4].",
+        "claim_text_ta": "- **மணி** — அரக்கு உலையில் வார்த்து எடுக்கப்பட்ட மணி: \"மெழுகு ஆன்று ஊது உலைப் பெய்த பகுவாய்த் தெண் மணி\" [kurunthokai_155:4].",
+        "citation_ids": [
+          "kurunthokai_155"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kurunthokai_155_0]",
+            "source_id": "kurunthokai_155",
+            "source": {
+              "source_id": "kurunthokai_155",
+              "poem": "kurunthokai",
+              "verse_number": 155,
+              "poet": "உரோடகத்துக் காரத்தனார்.",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_28",
+        "claim_text": "- **அளவைக் கருவிகள்** — உழக்கு, நாழி: \"வெதிர் உழக்கு நாழியால் சேதிகைக் குத்தி\" [kalithokai_096:27].",
+        "claim_text_ta": "- **அளவைக் கருவிகள்** — உழக்கு, நாழி: \"வெதிர் உழக்கு நாழியால் சேதிகைக் குத்தி\" [kalithokai_096:27].",
+        "citation_ids": [
+          "kalithokai_096"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_096_0]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_29",
+        "claim_text": "**'கலம்' என்பது ஒரு பொருள் மட்டுமல்ல:** அணிகலன் (\"தென் கடல் முத்தமொடு நன் கலம் பெறுகுவை\" [pathitrupathu_67:4]), பாத்திரம் ([natrinai_308:9]), ஓடம் (\"ஓடு கலம் கரையும்\" [perumpanatrupadai_30:5]) எனப் பல பொருள்களில் வருகிறது. எனவே இதற்கு ஒரே பொருளை முடிவாகக் கூற முடியாது; சூழல் கொண்டு பொருள் வேறுபடும்.",
+        "claim_text_ta": "**'கலம்' என்பது ஒரு பொருள் மட்டுமல்ல:** அணிகலன் (\"தென் கடல் முத்தமொடு நன் கலம் பெறுகுவை\" [pathitrupathu_67:4]), பாத்திரம் ([natrinai_308:9]), ஓடம் (\"ஓடு கலம் கரையும்\" [perumpanatrupadai_30:5]) எனப் பல பொருள்களில் வருகிறது. எனவே இதற்கு ஒரே பொருளை முடிவாகக் கூற முடியாது; சூழல் கொண்டு பொருள் வேறுபடும்.",
+        "citation_ids": [
+          "pathitrupathu_67",
+          "natrinai_308",
+          "perumpanatrupadai_30"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_67_0]",
+            "source_id": "pathitrupathu_67",
+            "source": {
+              "source_id": "pathitrupathu_67",
+              "poem": "pathitrupathu",
+              "verse_number": 67,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_natrinai_308_1]",
+            "source_id": "natrinai_308",
+            "source": {
+              "source_id": "natrinai_308",
+              "poem": "natrinai",
+              "verse_number": 308,
+              "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_perumpanatrupadai_30_2]",
+            "source_id": "perumpanatrupadai_30",
+            "source": {
+              "source_id": "perumpanatrupadai_30",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_30",
+        "claim_text": "---",
+        "claim_text_ta": "---",
+        "citation_ids": [],
+        "citations": [],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_31",
+        "claim_text": "- **கலிங்கம்** — இழை தெரியாத அளவுக்கு நெருக்கமாக நெய்யப்பட்ட மெல்லிய புத்தாடை: \"இழை மருங்கு அறியா நுழை நூல் கலிங்கம்\" [malaipadukadam_45:1]; உரையும் இதைப் \"புத்தாடை\" என விளக்குகிறது [malaipadukadam_45:urai]. கலிங்க நாட்டுப் பெயரிலிருந்து வந்ததாகவும் ஒரு கருதுகோள் உள்ளது [malaipadukadam_45:1].",
+        "claim_text_ta": "- **கலிங்கம்** — இழை தெரியாத அளவுக்கு நெருக்கமாக நெய்யப்பட்ட மெல்லிய புத்தாடை: \"இழை மருங்கு அறியா நுழை நூல் கலிங்கம்\" [malaipadukadam_45:1]; உரையும் இதைப் \"புத்தாடை\" என விளக்குகிறது [malaipadukadam_45:urai]. கலிங்க நாட்டுப் பெயரிலிருந்து வந்ததாகவும் ஒரு கருதுகோள் உள்ளது [malaipadukadam_45:1].",
+        "citation_ids": [
+          "malaipadukadam_45"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_malaipadukadam_45_0]",
+            "source_id": "malaipadukadam_45",
+            "source": {
+              "source_id": "malaipadukadam_45",
+              "poem": "malaipadukadam",
+              "verse_number": null,
+              "poet": "இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_32",
+        "claim_text": "- **பட்டு / துகில்** — இரு வகை ஆடைகளாக வேறுபடுத்தப்பட்டுள்ளன: \"பட்டு நீக்கித் துகில் உடுத்தும்\" [pattinappalai_07:4]; இப்பாடல் புணர்ந்த மகளிர் பட்டும் துகிலும் உடுத்தியதைக் கூறுகிறது [pattinappalai_07:urai].",
+        "claim_text_ta": "- **பட்டு / துகில்** — இரு வகை ஆடைகளாக வேறுபடுத்தப்பட்டுள்ளன: \"பட்டு நீக்கித் துகில் உடுத்தும்\" [pattinappalai_07:4]; இப்பாடல் புணர்ந்த மகளிர் பட்டும் துகிலும் உடுத்தியதைக் கூறுகிறது [pattinappalai_07:urai].",
+        "citation_ids": [
+          "pattinappalai_07"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pattinappalai_07_0]",
+            "source_id": "pattinappalai_07",
+            "source": {
+              "source_id": "pattinappalai_07",
+              "poem": "pattinappalai",
+              "verse_number": null,
+              "poet": "கடியலூர் உருத்திரங்கண்ணனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_33",
+        "claim_text": "- **உத்தரியம்** — மேலாடை என உரை விளக்குகிறது [kalithokai_096:urai].",
+        "claim_text_ta": "- **உத்தரியம்** — மேலாடை என உரை விளக்குகிறது [kalithokai_096:urai].",
+        "citation_ids": [
+          "kalithokai_096"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_096_0]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_34",
+        "claim_text": "- **ஈர ஆடை** — நீராடிய பின் கட்டிய ஈரமான ஆடை: \"ஈர்ந் தண் ஆடையை\" [kalithokai_052:11].",
+        "claim_text_ta": "- **ஈர ஆடை** — நீராடிய பின் கட்டிய ஈரமான ஆடை: \"ஈர்ந் தண் ஆடையை\" [kalithokai_052:11].",
+        "citation_ids": [
+          "kalithokai_052"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_052_0]",
+            "source_id": "kalithokai_052",
+            "source": {
+              "source_id": "kalithokai_052",
+              "poem": "kalithokai",
+              "verse_number": 52,
+              "poet": "கபிலர்",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_35",
+        "claim_text": "- **கிழிந்த/பழைய ஆடை** — பாசிபோல் கரைந்த கந்தல் ஆடை: \"பாசி அன்ன சிதர்வை நீக்கி\" [perumpanatrupadai_39:4]; \"கூதிர்ப் பருந்தின் இருஞ் சிறகு அன்ன / பாறிய சிதாரேன்\" [purananooru_150:1–2].",
+        "claim_text_ta": "- **கிழிந்த/பழைய ஆடை** — பாசிபோல் கரைந்த கந்தல் ஆடை: \"பாசி அன்ன சிதர்வை நீக்கி\" [perumpanatrupadai_39:4]; \"கூதிர்ப் பருந்தின் இருஞ் சிறகு அன்ன / பாறிய சிதாரேன்\" [purananooru_150:1–2].",
+        "citation_ids": [
+          "perumpanatrupadai_39",
+          "purananooru_150"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_perumpanatrupadai_39_0]",
+            "source_id": "perumpanatrupadai_39",
+            "source": {
+              "source_id": "perumpanatrupadai_39",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_purananooru_150_1]",
+            "source_id": "purananooru_150",
+            "source": {
+              "source_id": "purananooru_150",
+              "poem": "purananooru",
+              "verse_number": 150,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_36",
+        "claim_text": "---",
+        "claim_text_ta": "---",
+        "citation_ids": [],
+        "citations": [],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_38",
+        "claim_text": "- **உலக்கை + உரல்** — வள்ளைப்பாட்டுடன் நெல் இடிக்கும் கருவி: \"தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி\" [akananooru_009:12]; \"பாசவல் இடிக்கும் இருங் காழ் உலக்கை\" [akananooru_141:18]; \"நீழல் முன்றில் நில உரல் பெய்து\" [perumpanatrupadai_10:2].",
+        "claim_text_ta": "- **உலக்கை + உரல்** — வள்ளைப்பாட்டுடன் நெல் இடிக்கும் கருவி: \"தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி\" [akananooru_009:12]; \"பாசவல் இடிக்கும் இருங் காழ் உலக்கை\" [akananooru_141:18]; \"நீழல் முன்றில் நில உரல் பெய்து\" [perumpanatrupadai_10:2].",
+        "citation_ids": [
+          "akananooru_009",
+          "akananooru_141",
+          "perumpanatrupadai_10"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_akananooru_009_0]",
+            "source_id": "akananooru_009",
+            "source": {
+              "source_id": "akananooru_009",
+              "poem": "akananooru",
+              "verse_number": 9,
+              "poet": "கல்லாடனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_akananooru_141_1]",
+            "source_id": "akananooru_141",
+            "source": {
+              "source_id": "akananooru_141",
+              "poem": "akananooru",
+              "verse_number": 141,
+              "poet": "நக்கீரர்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_perumpanatrupadai_10_2]",
+            "source_id": "perumpanatrupadai_10",
+            "source": {
+              "source_id": "perumpanatrupadai_10",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_39",
+        "claim_text": "- **முறம்** — நெல் புடைக்கும் கருவி [kalithokai_052:1]; **சுளகு** — திருநீறு அகற்றப் பயன்பட்டது: \"நீறாடு சுளகின் சீறிடம் நீக்கி\" [purananooru_249:12].",
+        "claim_text_ta": "- **முறம்** — நெல் புடைக்கும் கருவி [kalithokai_052:1]; **சுளகு** — திருநீறு அகற்றப் பயன்பட்டது: \"நீறாடு சுளகின் சீறிடம் நீக்கி\" [purananooru_249:12].",
+        "citation_ids": [
+          "kalithokai_052",
+          "purananooru_249"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_052_0]",
+            "source_id": "kalithokai_052",
+            "source": {
+              "source_id": "kalithokai_052",
+              "poem": "kalithokai",
+              "verse_number": 52,
+              "poet": "கபிலர்",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_purananooru_249_1]",
+            "source_id": "purananooru_249",
+            "source": {
+              "source_id": "purananooru_249",
+              "poem": "purananooru",
+              "verse_number": 249,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_40",
+        "claim_text": "- **அடுப்பு, உலை** — \"பல் கோட்டு அடுப்பில் பால் உலை இரீஇ\" [akananooru_141:15].",
+        "claim_text_ta": "- **அடுப்பு, உலை** — \"பல் கோட்டு அடுப்பில் பால் உலை இரீஇ\" [akananooru_141:15].",
+        "citation_ids": [
+          "akananooru_141"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_akananooru_141_0]",
+            "source_id": "akananooru_141",
+            "source": {
+              "source_id": "akananooru_141",
+              "poem": "akananooru",
+              "verse_number": 141,
+              "poet": "நக்கீரர்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_41",
+        "claim_text": "- **ஆப்பி** — தரை மெழுகும் சாணம்: \"மெழுகு, ஆப்பிகண் கலுழ்நீ ரானே\" [purananooru_249:14].",
+        "claim_text_ta": "- **ஆப்பி** — தரை மெழுகும் சாணம்: \"மெழுகு, ஆப்பிகண் கலுழ்நீ ரானே\" [purananooru_249:14].",
+        "citation_ids": [
+          "purananooru_249"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_purananooru_249_0]",
+            "source_id": "purananooru_249",
+            "source": {
+              "source_id": "purananooru_249",
+              "poem": "purananooru",
+              "verse_number": 249,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_43",
+        "claim_text": "- **கட்டில்** — \"மாலை முன்றில குறுங்கால் கட்டில்\" [ainkurunooru_410:1].",
+        "claim_text_ta": "- **கட்டில்** — \"மாலை முன்றில குறுங்கால் கட்டில்\" [ainkurunooru_410:1].",
+        "citation_ids": [
+          "ainkurunooru_410"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_ainkurunooru_410_0]",
+            "source_id": "ainkurunooru_410",
+            "source": {
+              "source_id": "ainkurunooru_410",
+              "poem": "ainkurunooru",
+              "verse_number": 410,
+              "poet": "பேயனார்",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_44",
+        "claim_text": "- **முன்றில், முற்றம்** — [ainkurunooru_410:1]; \"நீழல் முன்றில்\" [perumpanatrupadai_10:2]; \"ஆய் சுதை மாடத்து அணி நிலா முற்றத்துள்\" [kalithokai_096:19].",
+        "claim_text_ta": "- **முன்றில், முற்றம்** — [ainkurunooru_410:1]; \"நீழல் முன்றில்\" [perumpanatrupadai_10:2]; \"ஆய் சுதை மாடத்து அணி நிலா முற்றத்துள்\" [kalithokai_096:19].",
+        "citation_ids": [
+          "ainkurunooru_410",
+          "perumpanatrupadai_10",
+          "kalithokai_096"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_ainkurunooru_410_0]",
+            "source_id": "ainkurunooru_410",
+            "source": {
+              "source_id": "ainkurunooru_410",
+              "poem": "ainkurunooru",
+              "verse_number": 410,
+              "poet": "பேயனார்",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_perumpanatrupadai_10_1]",
+            "source_id": "perumpanatrupadai_10",
+            "source": {
+              "source_id": "perumpanatrupadai_10",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_kalithokai_096_2]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_45",
+        "claim_text": "- **கதவு** — \"பொருந்து நோன் கதவு ஒற்றிப் புலம்பி\" [kalithokai_083:2].",
+        "claim_text_ta": "- **கதவு** — \"பொருந்து நோன் கதவு ஒற்றிப் புலம்பி\" [kalithokai_083:2].",
+        "citation_ids": [
+          "kalithokai_083"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_083_0]",
+            "source_id": "kalithokai_083",
+            "source": {
+              "source_id": "kalithokai_083",
+              "poem": "kalithokai",
+              "verse_number": 83,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_46",
+        "claim_text": "- **சாலகம் (சாளரம்)** — \"சாலகத்து ஒல்கிய கண்ணர்\" [kalithokai_083:13].",
+        "claim_text_ta": "- **சாலகம் (சாளரம்)** — \"சாலகத்து ஒல்கிய கண்ணர்\" [kalithokai_083:13].",
+        "citation_ids": [
+          "kalithokai_083"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kalithokai_083_0]",
+            "source_id": "kalithokai_083",
+            "source": {
+              "source_id": "kalithokai_083",
+              "poem": "kalithokai",
+              "verse_number": 83,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_47",
+        "claim_text": "- **பந்தர் (பந்தல்)** — \"பந்தர் ஓடி\" [natrinai_110:7].",
+        "claim_text_ta": "- **பந்தர் (பந்தல்)** — \"பந்தர் ஓடி\" [natrinai_110:7].",
+        "citation_ids": [
+          "natrinai_110"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_110_0]",
+            "source_id": "natrinai_110",
+            "source": {
+              "source_id": "natrinai_110",
+              "poem": "natrinai",
+              "verse_number": 110,
+              "poet": "போதனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_48",
+        "claim_text": "- **விளக்கு** — தெருவில் ஏற்றும் விளக்கு: \"மறுகு விளக்கு உறுத்து, மாலை தூக்கி\" [akananooru_141:9]; \"சிறுகுடி மறுகு விளக்கு உறுத்தலின்\" [akananooru_192:12].",
+        "claim_text_ta": "- **விளக்கு** — தெருவில் ஏற்றும் விளக்கு: \"மறுகு விளக்கு உறுத்து, மாலை தூக்கி\" [akananooru_141:9]; \"சிறுகுடி மறுகு விளக்கு உறுத்தலின்\" [akananooru_192:12].",
+        "citation_ids": [
+          "akananooru_141",
+          "akananooru_192"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_akananooru_141_0]",
+            "source_id": "akananooru_141",
+            "source": {
+              "source_id": "akananooru_141",
+              "poem": "akananooru",
+              "verse_number": 141,
+              "poet": "நக்கீரர்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_akananooru_192_1]",
+            "source_id": "akananooru_192",
+            "source": {
+              "source_id": "akananooru_192",
+              "poem": "akananooru",
+              "verse_number": 192,
+              "poet": "பொதும்பில்கிழான் வெண்கண்ணனார்.",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_49",
+        "claim_text": "- **படுக்கை/மெத்தை** — கட்டிலில் மயிர் திணித்த மெத்தை, அதன்மேல் அன்னத்தூவி மெத்தை, அதன்மேல் விரிப்பு என்பது காலஞ்சென்ற உரை விவரிப்பு [nedunalvadai_13:urai] — இது திருத்தப்படாத (draft) உரைப்பகுதி என்பதைக் கவனத்தில் கொள்க.",
+        "claim_text_ta": "- **படுக்கை/மெத்தை** — கட்டிலில் மயிர் திணித்த மெத்தை, அதன்மேல் அன்னத்தூவி மெத்தை, அதன்மேல் விரிப்பு என்பது காலஞ்சென்ற உரை விவரிப்பு [nedunalvadai_13:urai] — இது திருத்தப்படாத (draft) உரைப்பகுதி என்பதைக் கவனத்தில் கொள்க.",
+        "citation_ids": [
+          "nedunalvadai_13"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_nedunalvadai_13_0]",
+            "source_id": "nedunalvadai_13",
+            "source": {
+              "source_id": "nedunalvadai_13",
+              "poem": "nedunalvadai",
+              "verse_number": null,
+              "poet": "மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_50",
+        "claim_text": "---",
+        "claim_text_ta": "---",
+        "citation_ids": [],
+        "citations": [],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_51",
+        "claim_text": "- அணிகலன்கள் பலவும் **பொன், முத்து** சார்ந்தவை [natrinai_110:5], [kalithokai_096:15]; மண், செப்பு, அரக்கு சார்ந்த கலன்களும் உள்ளன [natrinai_308:9], [kurunthokai_155:4].",
+        "claim_text_ta": "- அணிகலன்கள் பலவும் **பொன், முத்து** சார்ந்தவை [natrinai_110:5], [kalithokai_096:15]; மண், செப்பு, அரக்கு சார்ந்த கலன்களும் உள்ளன [natrinai_308:9], [kurunthokai_155:4].",
+        "citation_ids": [
+          "natrinai_110",
+          "kalithokai_096",
+          "natrinai_308",
+          "kurunthokai_155"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_110_0]",
+            "source_id": "natrinai_110",
+            "source": {
+              "source_id": "natrinai_110",
+              "poem": "natrinai",
+              "verse_number": 110,
+              "poet": "போதனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_kalithokai_096_1]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_natrinai_308_2]",
+            "source_id": "natrinai_308",
+            "source": {
+              "source_id": "natrinai_308",
+              "poem": "natrinai",
+              "verse_number": 308,
+              "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_kurunthokai_155_3]",
+            "source_id": "kurunthokai_155",
+            "source": {
+              "source_id": "kurunthokai_155",
+              "poem": "kurunthokai",
+              "verse_number": 155,
+              "poet": "உரோடகத்துக் காரத்தனார்.",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_52",
+        "claim_text": "- ஒரே சொல் பல பொருள் தரும் நிலை ('கலம்') சங்கப் பாடல்களில் பொதுவானது [pathitrupathu_67:4], [natrinai_308:9], [perumpanatrupadai_30:5]; எனவே சொற்பொருள் கூற்றுகளை ஒரு கருத்தாக மட்டும் முடிவு செய்யாமல், சூழல் வைத்துப் பிரித்தல் வேண்டும்.",
+        "claim_text_ta": "- ஒரே சொல் பல பொருள் தரும் நிலை ('கலம்') சங்கப் பாடல்களில் பொதுவானது [pathitrupathu_67:4], [natrinai_308:9], [perumpanatrupadai_30:5]; எனவே சொற்பொருள் கூற்றுகளை ஒரு கருத்தாக மட்டும் முடிவு செய்யாமல், சூழல் வைத்துப் பிரித்தல் வேண்டும்.",
+        "citation_ids": [
+          "pathitrupathu_67",
+          "natrinai_308",
+          "perumpanatrupadai_30"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_67_0]",
+            "source_id": "pathitrupathu_67",
+            "source": {
+              "source_id": "pathitrupathu_67",
+              "poem": "pathitrupathu",
+              "verse_number": 67,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_natrinai_308_1]",
+            "source_id": "natrinai_308",
+            "source": {
+              "source_id": "natrinai_308",
+              "poem": "natrinai",
+              "verse_number": 308,
+              "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_perumpanatrupadai_30_2]",
+            "source_id": "perumpanatrupadai_30",
+            "source": {
+              "source_id": "perumpanatrupadai_30",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_53",
+        "claim_text": "**சான்றுகள் (மூல அடையாளங்கள்):** natrinai_110, natrinai_258, natrinai_308, natrinai_071, kurunthokai_155, akananooru_009, akananooru_058, akananooru_141, akananooru_192, ainkurunooru_410, kalithokai_052, kalithokai_079, kalithokai_082, kalithokai_083, kalithokai_096, purananooru_150, purananooru_249, purananooru_256, pattinappalai_07, perumpanatrupadai_10, perumpanatrupadai_30, perumpanatrupadai_39, malaipadukadam_45, paripadal_21, pathitrupathu_67, nedunalvadai_13.",
+        "claim_text_ta": "**சான்றுகள் (மூல அடையாளங்கள்):** natrinai_110, natrinai_258, natrinai_308, natrinai_071, kurunthokai_155, akananooru_009, akananooru_058, akananooru_141, akananooru_192, ainkurunooru_410, kalithokai_052, kalithokai_079, kalithokai_082, kalithokai_083, kalithokai_096, purananooru_150, purananooru_249, purananooru_256, pattinappalai_07, perumpanatrupadai_10, perumpanatrupadai_30, perumpanatrupadai_39, malaipadukadam_45, paripadal_21, pathitrupathu_67, nedunalvadai_13.",
+        "citation_ids": [
+          "perumpanatrupadai_30"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_110_0]",
+            "source_id": "natrinai_110",
+            "source": {
+              "source_id": "natrinai_110",
+              "poem": "natrinai",
+              "verse_number": 110,
+              "poet": "போதனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source natrinai_110; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_natrinai_258_1]",
+            "source_id": "natrinai_258",
+            "source": {
+              "source_id": "natrinai_258",
+              "poem": "natrinai",
+              "verse_number": 258,
+              "poet": "நக்கீரர்.",
+              "tinai": "neytal",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source natrinai_258; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_natrinai_308_2]",
+            "source_id": "natrinai_308",
+            "source": {
+              "source_id": "natrinai_308",
+              "poem": "natrinai",
+              "verse_number": 308,
+              "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source natrinai_308; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_natrinai_071_3]",
+            "source_id": "natrinai_071",
+            "source": {
+              "source_id": "natrinai_071",
+              "poem": "natrinai",
+              "verse_number": 71,
+              "poet": "வண்ணப்புறக் கந்தரத்தனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source natrinai_071; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_kurunthokai_155_4]",
+            "source_id": "kurunthokai_155",
+            "source": {
+              "source_id": "kurunthokai_155",
+              "poem": "kurunthokai",
+              "verse_number": 155,
+              "poet": "உரோடகத்துக் காரத்தனார்.",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source kurunthokai_155; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_akananooru_009_5]",
+            "source_id": "akananooru_009",
+            "source": {
+              "source_id": "akananooru_009",
+              "poem": "akananooru",
+              "verse_number": 9,
+              "poet": "கல்லாடனார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source akananooru_009; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_akananooru_058_6]",
+            "source_id": "akananooru_058",
+            "source": {
+              "source_id": "akananooru_058",
+              "poem": "akananooru",
+              "verse_number": 58,
+              "poet": "மதுரைப் பண்ட வாணிகன் இளந்தேவனார்.",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source akananooru_058; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_akananooru_141_7]",
+            "source_id": "akananooru_141",
+            "source": {
+              "source_id": "akananooru_141",
+              "poem": "akananooru",
+              "verse_number": 141,
+              "poet": "நக்கீரர்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source akananooru_141; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_akananooru_192_8]",
+            "source_id": "akananooru_192",
+            "source": {
+              "source_id": "akananooru_192",
+              "poem": "akananooru",
+              "verse_number": 192,
+              "poet": "பொதும்பில்கிழான் வெண்கண்ணனார்.",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source akananooru_192; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_ainkurunooru_410_9]",
+            "source_id": "ainkurunooru_410",
+            "source": {
+              "source_id": "ainkurunooru_410",
+              "poem": "ainkurunooru",
+              "verse_number": 410,
+              "poet": "பேயனார்",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source ainkurunooru_410; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_kalithokai_052_10]",
+            "source_id": "kalithokai_052",
+            "source": {
+              "source_id": "kalithokai_052",
+              "poem": "kalithokai",
+              "verse_number": 52,
+              "poet": "கபிலர்",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source kalithokai_052; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_kalithokai_079_11]",
+            "source_id": "kalithokai_079",
+            "source": {
+              "source_id": "kalithokai_079",
+              "poem": "kalithokai",
+              "verse_number": 79,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source kalithokai_079; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_kalithokai_082_12]",
+            "source_id": "kalithokai_082",
+            "source": {
+              "source_id": "kalithokai_082",
+              "poem": "kalithokai",
+              "verse_number": 82,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source kalithokai_082; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_kalithokai_083_13]",
+            "source_id": "kalithokai_083",
+            "source": {
+              "source_id": "kalithokai_083",
+              "poem": "kalithokai",
+              "verse_number": 83,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source kalithokai_083; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_kalithokai_096_14]",
+            "source_id": "kalithokai_096",
+            "source": {
+              "source_id": "kalithokai_096",
+              "poem": "kalithokai",
+              "verse_number": 96,
+              "poet": "மருதன் இளநாகனார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source kalithokai_096; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_purananooru_150_15]",
+            "source_id": "purananooru_150",
+            "source": {
+              "source_id": "purananooru_150",
+              "poem": "purananooru",
+              "verse_number": 150,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source purananooru_150; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_purananooru_249_16]",
+            "source_id": "purananooru_249",
+            "source": {
+              "source_id": "purananooru_249",
+              "poem": "purananooru",
+              "verse_number": 249,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source purananooru_249; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_purananooru_256_17]",
+            "source_id": "purananooru_256",
+            "source": {
+              "source_id": "purananooru_256",
+              "poem": "purananooru",
+              "verse_number": 256,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source purananooru_256; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_pattinappalai_07_18]",
+            "source_id": "pattinappalai_07",
+            "source": {
+              "source_id": "pattinappalai_07",
+              "poem": "pattinappalai",
+              "verse_number": null,
+              "poet": "கடியலூர் உருத்திரங்கண்ணனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source pattinappalai_07; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_perumpanatrupadai_10_19]",
+            "source_id": "perumpanatrupadai_10",
+            "source": {
+              "source_id": "perumpanatrupadai_10",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source perumpanatrupadai_10; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_perumpanatrupadai_30_20]",
+            "source_id": "perumpanatrupadai_30",
+            "source": {
+              "source_id": "perumpanatrupadai_30",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_perumpanatrupadai_39_21]",
+            "source_id": "perumpanatrupadai_39",
+            "source": {
+              "source_id": "perumpanatrupadai_39",
+              "poem": "perumpanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source perumpanatrupadai_39; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_malaipadukadam_45_22]",
+            "source_id": "malaipadukadam_45",
+            "source": {
+              "source_id": "malaipadukadam_45",
+              "poem": "malaipadukadam",
+              "verse_number": null,
+              "poet": "இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source malaipadukadam_45; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_paripadal_21_23]",
+            "source_id": "paripadal_21",
+            "source": {
+              "source_id": "paripadal_21",
+              "poem": "paripadal",
+              "verse_number": 21,
+              "poet": "நல்லச்சுதனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source paripadal_21; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_pathitrupathu_67_24]",
+            "source_id": "pathitrupathu_67",
+            "source": {
+              "source_id": "pathitrupathu_67",
+              "poem": "pathitrupathu",
+              "verse_number": 67,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source pathitrupathu_67; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_nedunalvadai_13_25]",
+            "source_id": "nedunalvadai_13",
+            "source": {
+              "source_id": "nedunalvadai_13",
+              "poem": "nedunalvadai",
+              "verse_number": null,
+              "poet": "மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source nedunalvadai_13; the citation does not support it"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "[^c_natrinai_258_0]",
+        "source_id": "natrinai_258",
+        "source": {
+          "source_id": "natrinai_258",
+          "poem": "natrinai",
+          "verse_number": 258,
+          "poet": "நக்கீரர்.",
+          "tinai": "neytal",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_akananooru_058_1]",
+        "source_id": "akananooru_058",
+        "source": {
+          "source_id": "akananooru_058",
+          "poem": "akananooru",
+          "verse_number": 58,
+          "poet": "மதுரைப் பண்ட வாணிகன் இளந்தேவனார்.",
+          "tinai": "kurinji",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_natrinai_071_2]",
+        "source_id": "natrinai_071",
+        "source": {
+          "source_id": "natrinai_071",
+          "poem": "natrinai",
+          "verse_number": 71,
+          "poet": "வண்ணப்புறக் கந்தரத்தனார்.",
+          "tinai": "palai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_purananooru_150_1]",
+        "source_id": "purananooru_150",
+        "source": {
+          "source_id": "purananooru_150",
+          "poem": "purananooru",
+          "verse_number": 150,
+          "poet": null,
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_natrinai_110_0]",
+        "source_id": "natrinai_110",
+        "source": {
+          "source_id": "natrinai_110",
+          "poem": "natrinai",
+          "verse_number": 110,
+          "poet": "போதனார்.",
+          "tinai": "palai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_kalithokai_083_0]",
+        "source_id": "kalithokai_083",
+        "source": {
+          "source_id": "kalithokai_083",
+          "poem": "kalithokai",
+          "verse_number": 83,
+          "poet": "மருதன் இளநாகனார்",
+          "tinai": "marutam",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_kalithokai_096_1]",
+        "source_id": "kalithokai_096",
+        "source": {
+          "source_id": "kalithokai_096",
+          "poem": "kalithokai",
+          "verse_number": 96,
+          "poet": "மருதன் இளநாகனார்",
+          "tinai": "marutam",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_kalithokai_079_0]",
+        "source_id": "kalithokai_079",
+        "source": {
+          "source_id": "kalithokai_079",
+          "poem": "kalithokai",
+          "verse_number": 79,
+          "poet": "மருதன் இளநாகனார்",
+          "tinai": "marutam",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_kalithokai_082_0]",
+        "source_id": "kalithokai_082",
+        "source": {
+          "source_id": "kalithokai_082",
+          "poem": "kalithokai",
+          "verse_number": 82,
+          "poet": "மருதன் இளநாகனார்",
+          "tinai": "marutam",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_paripadal_21_1]",
+        "source_id": "paripadal_21",
+        "source": {
+          "source_id": "paripadal_21",
+          "poem": "paripadal",
+          "verse_number": 21,
+          "poet": "நல்லச்சுதனார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_natrinai_308_1]",
+        "source_id": "natrinai_308",
+        "source": {
+          "source_id": "natrinai_308",
+          "poem": "natrinai",
+          "verse_number": 308,
+          "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+          "tinai": "palai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_purananooru_256_0]",
+        "source_id": "purananooru_256",
+        "source": {
+          "source_id": "purananooru_256",
+          "poem": "purananooru",
+          "verse_number": 256,
+          "poet": null,
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_akananooru_009_0]",
+        "source_id": "akananooru_009",
+        "source": {
+          "source_id": "akananooru_009",
+          "poem": "akananooru",
+          "verse_number": 9,
+          "poet": "கல்லாடனார்.",
+          "tinai": "palai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_perumpanatrupadai_39_0]",
+        "source_id": "perumpanatrupadai_39",
+        "source": {
+          "source_id": "perumpanatrupadai_39",
+          "poem": "perumpanatrupadai",
+          "verse_number": null,
+          "poet": null,
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_kurunthokai_155_3]",
+        "source_id": "kurunthokai_155",
+        "source": {
+          "source_id": "kurunthokai_155",
+          "poem": "kurunthokai",
+          "verse_number": 155,
+          "poet": "உரோடகத்துக் காரத்தனார்.",
+          "tinai": "mullai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_67_0]",
+        "source_id": "pathitrupathu_67",
+        "source": {
+          "source_id": "pathitrupathu_67",
+          "poem": "pathitrupathu",
+          "verse_number": 67,
+          "poet": "கபிலர்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_perumpanatrupadai_30_20]",
+        "source_id": "perumpanatrupadai_30",
+        "source": {
+          "source_id": "perumpanatrupadai_30",
+          "poem": "perumpanatrupadai",
+          "verse_number": null,
+          "poet": null,
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_malaipadukadam_45_0]",
+        "source_id": "malaipadukadam_45",
+        "source": {
+          "source_id": "malaipadukadam_45",
+          "poem": "malaipadukadam",
+          "verse_number": null,
+          "poet": "இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pattinappalai_07_0]",
+        "source_id": "pattinappalai_07",
+        "source": {
+          "source_id": "pattinappalai_07",
+          "poem": "pattinappalai",
+          "verse_number": null,
+          "poet": "கடியலூர் உருத்திரங்கண்ணனார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_kalithokai_052_0]",
+        "source_id": "kalithokai_052",
+        "source": {
+          "source_id": "kalithokai_052",
+          "poem": "kalithokai",
+          "verse_number": 52,
+          "poet": "கபிலர்",
+          "tinai": "kurinji",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_akananooru_141_0]",
+        "source_id": "akananooru_141",
+        "source": {
+          "source_id": "akananooru_141",
+          "poem": "akananooru",
+          "verse_number": 141,
+          "poet": "நக்கீரர்.",
+          "tinai": "palai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_perumpanatrupadai_10_1]",
+        "source_id": "perumpanatrupadai_10",
+        "source": {
+          "source_id": "perumpanatrupadai_10",
+          "poem": "perumpanatrupadai",
+          "verse_number": null,
+          "poet": null,
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_purananooru_249_0]",
+        "source_id": "purananooru_249",
+        "source": {
+          "source_id": "purananooru_249",
+          "poem": "purananooru",
+          "verse_number": 249,
+          "poet": null,
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_ainkurunooru_410_0]",
+        "source_id": "ainkurunooru_410",
+        "source": {
+          "source_id": "ainkurunooru_410",
+          "poem": "ainkurunooru",
+          "verse_number": 410,
+          "poet": "பேயனார்",
+          "tinai": "mullai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_akananooru_192_1]",
+        "source_id": "akananooru_192",
+        "source": {
+          "source_id": "akananooru_192",
+          "poem": "akananooru",
+          "verse_number": 192,
+          "poet": "பொதும்பில்கிழான் வெண்கண்ணனார்.",
+          "tinai": "kurinji",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_nedunalvadai_13_0]",
+        "source_id": "nedunalvadai_13",
+        "source": {
+          "source_id": "nedunalvadai_13",
+          "poem": "nedunalvadai",
+          "verse_number": null,
+          "poet": "மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      }
+    ],
+    "evidence_status": "partially_verified",
+    "is_abstained": false,
+    "abstention_reason": "none",
+    "abstention_message_ta": null,
+    "confidence_score": 0.85
+  },
+  "citations": [
+    {
+      "verse_id": "natrinai_258",
+      "poem": "natrinai",
+      "tinai": "neytal",
+      "poet": "நக்கீரர்.",
+      "pulavar": "நக்கீரர்.",
+      "citation_id": "[^c_natrinai_258_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "akananooru_058",
+      "poem": "akananooru",
+      "tinai": "kurinji",
+      "poet": "மதுரைப் பண்ட வாணிகன் இளந்தேவனார்.",
+      "pulavar": "மதுரைப் பண்ட வாணிகன் இளந்தேவனார்.",
+      "citation_id": "[^c_akananooru_058_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "natrinai_071",
+      "poem": "natrinai",
+      "tinai": "palai",
+      "poet": "வண்ணப்புறக் கந்தரத்தனார்.",
+      "pulavar": "வண்ணப்புறக் கந்தரத்தனார்.",
+      "citation_id": "[^c_natrinai_071_2]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "purananooru_150",
+      "poem": "purananooru",
+      "tinai": "unknown",
+      "poet": null,
+      "pulavar": null,
+      "citation_id": "[^c_purananooru_150_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "natrinai_110",
+      "poem": "natrinai",
+      "tinai": "palai",
+      "poet": "போதனார்.",
+      "pulavar": "போதனார்.",
+      "citation_id": "[^c_natrinai_110_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "kalithokai_083",
+      "poem": "kalithokai",
+      "tinai": "marutam",
+      "poet": "மருதன் இளநாகனார்",
+      "pulavar": "மருதன் இளநாகனார்",
+      "citation_id": "[^c_kalithokai_083_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "kalithokai_096",
+      "poem": "kalithokai",
+      "tinai": "marutam",
+      "poet": "மருதன் இளநாகனார்",
+      "pulavar": "மருதன் இளநாகனார்",
+      "citation_id": "[^c_kalithokai_096_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "kalithokai_079",
+      "poem": "kalithokai",
+      "tinai": "marutam",
+      "poet": "மருதன் இளநாகனார்",
+      "pulavar": "மருதன் இளநாகனார்",
+      "citation_id": "[^c_kalithokai_079_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "kalithokai_082",
+      "poem": "kalithokai",
+      "tinai": "marutam",
+      "poet": "மருதன் இளநாகனார்",
+      "pulavar": "மருதன் இளநாகனார்",
+      "citation_id": "[^c_kalithokai_082_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "paripadal_21",
+      "poem": "paripadal",
+      "tinai": "unknown",
+      "poet": "நல்லச்சுதனார்",
+      "pulavar": "நல்லச்சுதனார்",
+      "citation_id": "[^c_paripadal_21_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "natrinai_308",
+      "poem": "natrinai",
+      "tinai": "palai",
+      "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+      "pulavar": "எயினந்தை மகன் இளங்கீரனார்.",
+      "citation_id": "[^c_natrinai_308_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "purananooru_256",
+      "poem": "purananooru",
+      "tinai": "unknown",
+      "poet": null,
+      "pulavar": null,
+      "citation_id": "[^c_purananooru_256_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "akananooru_009",
+      "poem": "akananooru",
+      "tinai": "palai",
+      "poet": "கல்லாடனார்.",
+      "pulavar": "கல்லாடனார்.",
+      "citation_id": "[^c_akananooru_009_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "perumpanatrupadai_39",
+      "poem": "perumpanatrupadai",
+      "tinai": "unknown",
+      "poet": null,
+      "pulavar": null,
+      "citation_id": "[^c_perumpanatrupadai_39_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "kurunthokai_155",
+      "poem": "kurunthokai",
+      "tinai": "mullai",
+      "poet": "உரோடகத்துக் காரத்தனார்.",
+      "pulavar": "உரோடகத்துக் காரத்தனார்.",
+      "citation_id": "[^c_kurunthokai_155_3]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_67",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "கபிலர்",
+      "pulavar": "கபிலர்",
+      "citation_id": "[^c_pathitrupathu_67_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "perumpanatrupadai_30",
+      "poem": "perumpanatrupadai",
+      "tinai": "unknown",
+      "poet": null,
+      "pulavar": null,
+      "citation_id": "[^c_perumpanatrupadai_30_20]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "malaipadukadam_45",
+      "poem": "malaipadukadam",
+      "tinai": "unknown",
+      "poet": "இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+      "pulavar": "இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+      "citation_id": "[^c_malaipadukadam_45_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pattinappalai_07",
+      "poem": "pattinappalai",
+      "tinai": "unknown",
+      "poet": "கடியலூர் உருத்திரங்கண்ணனார்",
+      "pulavar": "கடியலூர் உருத்திரங்கண்ணனார்",
+      "citation_id": "[^c_pattinappalai_07_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "kalithokai_052",
+      "poem": "kalithokai",
+      "tinai": "kurinji",
+      "poet": "கபிலர்",
+      "pulavar": "கபிலர்",
+      "citation_id": "[^c_kalithokai_052_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "akananooru_141",
+      "poem": "akananooru",
+      "tinai": "palai",
+      "poet": "நக்கீரர்.",
+      "pulavar": "நக்கீரர்.",
+      "citation_id": "[^c_akananooru_141_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "perumpanatrupadai_10",
+      "poem": "perumpanatrupadai",
+      "tinai": "unknown",
+      "poet": null,
+      "pulavar": null,
+      "citation_id": "[^c_perumpanatrupadai_10_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "purananooru_249",
+      "poem": "purananooru",
+      "tinai": "unknown",
+      "poet": null,
+      "pulavar": null,
+      "citation_id": "[^c_purananooru_249_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "ainkurunooru_410",
+      "poem": "ainkurunooru",
+      "tinai": "mullai",
+      "poet": "பேயனார்",
+      "pulavar": "பேயனார்",
+      "citation_id": "[^c_ainkurunooru_410_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "akananooru_192",
+      "poem": "akananooru",
+      "tinai": "kurinji",
+      "poet": "பொதும்பில்கிழான் வெண்கண்ணனார்.",
+      "pulavar": "பொதும்பில்கிழான் வெண்கண்ணனார்.",
+      "citation_id": "[^c_akananooru_192_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "nedunalvadai_13",
+      "poem": "nedunalvadai",
+      "tinai": "unknown",
+      "poet": "மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+      "pulavar": "மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+      "citation_id": "[^c_nedunalvadai_13_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_3",
+      "claim_text": "---",
+      "claim_text_ta": "---",
+      "citation_ids": [],
+      "citations": [],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_5",
+      "claim_text": "- பொன்னாலான தொடி அணிந்த மகளிர்: \"பொற்றொடி மகளிர் புறங்கடை உகுத்த\" [natrinai_258:5]; உரை இதை \"பொன்னாலாகிய தொடியையுடைய மகளிர்\" என விளக்குகிறது [natrinai_258:urai].",
+      "claim_text_ta": "- பொன்னாலான தொடி அணிந்த மகளிர்: \"பொற்றொடி மகளிர் புறங்கடை உகுத்த\" [natrinai_258:5]; உரை இதை \"பொன்னாலாகிய தொடியையுடைய மகளிர்\" என விளக்குகிறது [natrinai_258:urai].",
+      "citation_ids": [
+        "natrinai_258"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_258_0]",
+          "source_id": "natrinai_258",
+          "source": {
+            "source_id": "natrinai_258",
+            "poem": "natrinai",
+            "verse_number": 258,
+            "poet": "நக்கீரர்.",
+            "tinai": "neytal",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_6",
+      "claim_text": "- ஒளிரும் வளை: \"நெருங்கு ஏர் எல்வளை ஓடுவ கண்டே\" [natrinai_258:11]; \"விளங்கு தொடி முன்கை\" [akananooru_058:8]; \"வளை அணி முன்கை\" [natrinai_071:2].",
+      "claim_text_ta": "- ஒளிரும் வளை: \"நெருங்கு ஏர் எல்வளை ஓடுவ கண்டே\" [natrinai_258:11]; \"விளங்கு தொடி முன்கை\" [akananooru_058:8]; \"வளை அணி முன்கை\" [natrinai_071:2].",
+      "citation_ids": [
+        "natrinai_258",
+        "akananooru_058",
+        "natrinai_071"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_258_0]",
+          "source_id": "natrinai_258",
+          "source": {
+            "source_id": "natrinai_258",
+            "poem": "natrinai",
+            "verse_number": 258,
+            "poet": "நக்கீரர்.",
+            "tinai": "neytal",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_akananooru_058_1]",
+          "source_id": "akananooru_058",
+          "source": {
+            "source_id": "akananooru_058",
+            "poem": "akananooru",
+            "verse_number": 58,
+            "poet": "மதுரைப் பண்ட வாணிகன் இளந்தேவனார்.",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_natrinai_071_2]",
+          "source_id": "natrinai_071",
+          "source": {
+            "source_id": "natrinai_071",
+            "poem": "natrinai",
+            "verse_number": 71,
+            "poet": "வண்ணப்புறக் கந்தரத்தனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_7",
+      "claim_text": "- கடகம் (கை/தோள் வளை): \"மடைசெறி முன்கை கடகமொடு ஈத்தனன்\" [purananooru_150:21].",
+      "claim_text_ta": "- கடகம் (கை/தோள் வளை): \"மடைசெறி முன்கை கடகமொடு ஈத்தனன்\" [purananooru_150:21].",
+      "citation_ids": [
+        "purananooru_150"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_purananooru_150_0]",
+          "source_id": "purananooru_150",
+          "source": {
+            "source_id": "purananooru_150",
+            "poem": "purananooru",
+            "verse_number": 150,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_9",
+      "claim_text": "- முத்துப் பரல்கள் இடப்பட்ட பொற்சிலம்பு: \"முத்து அரிப் பொற்சிலம்பு ஒலிப்பத் தத்துற்று\" [natrinai_110:5]; உரை \"முத்துக்களை உள்ளே பரலாகப் போடப்பட்ட பொன்னாலாகிய சிலம்பு\" [natrinai_110:urai].",
+      "claim_text_ta": "- முத்துப் பரல்கள் இடப்பட்ட பொற்சிலம்பு: \"முத்து அரிப் பொற்சிலம்பு ஒலிப்பத் தத்துற்று\" [natrinai_110:5]; உரை \"முத்துக்களை உள்ளே பரலாகப் போடப்பட்ட பொன்னாலாகிய சிலம்பு\" [natrinai_110:urai].",
+      "citation_ids": [
+        "natrinai_110"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_110_0]",
+          "source_id": "natrinai_110",
+          "source": {
+            "source_id": "natrinai_110",
+            "poem": "natrinai",
+            "verse_number": 110,
+            "poet": "போதனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_10",
+      "claim_text": "- நூபுரம்: \"திருந்துஅடி நூபுரம் ஆர்ப்ப இயலி\" [kalithokai_083:16]; \"நூபுரப் புட்டில்\" [kalithokai_096:16].",
+      "claim_text_ta": "- நூபுரம்: \"திருந்துஅடி நூபுரம் ஆர்ப்ப இயலி\" [kalithokai_083:16]; \"நூபுரப் புட்டில்\" [kalithokai_096:16].",
+      "citation_ids": [
+        "kalithokai_083",
+        "kalithokai_096"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_083_0]",
+          "source_id": "kalithokai_083",
+          "source": {
+            "source_id": "kalithokai_083",
+            "poem": "kalithokai",
+            "verse_number": 83,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_kalithokai_096_1]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_11",
+      "claim_text": "- கிண்கிணி (சலங்கை): \"வார் பொலம் கிண்கிணி, ஆர்ப்ப இயற்றி\" [kalithokai_096:17].",
+      "claim_text_ta": "- கிண்கிணி (சலங்கை): \"வார் பொலம் கிண்கிணி, ஆர்ப்ப இயற்றி\" [kalithokai_096:17].",
+      "citation_ids": [
+        "kalithokai_096"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_096_0]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_13",
+      "claim_text": "- பல சரடுகள் கொண்ட முத்தாரம்: \"பல் காழ் முத்து அணி ஆரம் பற்றினன்\" [kalithokai_079:12]; \"மார்பிற் பூண்ட வயங்குகாழ் ஆரம்\" [purananooru_150:20].",
+      "claim_text_ta": "- பல சரடுகள் கொண்ட முத்தாரம்: \"பல் காழ் முத்து அணி ஆரம் பற்றினன்\" [kalithokai_079:12]; \"மார்பிற் பூண்ட வயங்குகாழ் ஆரம்\" [purananooru_150:20].",
+      "citation_ids": [
+        "kalithokai_079",
+        "purananooru_150"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_079_0]",
+          "source_id": "kalithokai_079",
+          "source": {
+            "source_id": "kalithokai_079",
+            "poem": "kalithokai",
+            "verse_number": 79,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_purananooru_150_1]",
+          "source_id": "purananooru_150",
+          "source": {
+            "source_id": "purananooru_150",
+            "poem": "purananooru",
+            "verse_number": 150,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_14",
+      "claim_text": "- முத்துச் சரம் அறுந்து சிந்துவது போன்ற கண்ணீர்: \"சொரி முத்தம் காழ் சோர்வ போன்றன\" [kalithokai_082:14].",
+      "claim_text_ta": "- முத்துச் சரம் அறுந்து சிந்துவது போன்ற கண்ணீர்: \"சொரி முத்தம் காழ் சோர்வ போன்றன\" [kalithokai_082:14].",
+      "citation_ids": [
+        "kalithokai_082"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_082_0]",
+          "source_id": "kalithokai_082",
+          "source": {
+            "source_id": "kalithokai_082",
+            "poem": "kalithokai",
+            "verse_number": 82,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_16",
+      "claim_text": "- கண்ணி (தலைமாலை): \"வண்டு இமிர் வகை இணர் வாங்கினன்\" [kalithokai_079:16]; \"கண்ணியால் குறி கொண்டாள்\" [kalithokai_079:17].",
+      "claim_text_ta": "- கண்ணி (தலைமாலை): \"வண்டு இமிர் வகை இணர் வாங்கினன்\" [kalithokai_079:16]; \"கண்ணியால் குறி கொண்டாள்\" [kalithokai_079:17].",
+      "citation_ids": [
+        "kalithokai_079"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_079_0]",
+          "source_id": "kalithokai_079",
+          "source": {
+            "source_id": "kalithokai_079",
+            "poem": "kalithokai",
+            "verse_number": 79,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_17",
+      "claim_text": "- தலைமணி: \"வான்கதிர்த் திருமணி விளங்கும் சென்னி\" [purananooru_150:6].",
+      "claim_text_ta": "- தலைமணி: \"வான்கதிர்த் திருமணி விளங்கும் சென்னி\" [purananooru_150:6].",
+      "citation_ids": [
+        "purananooru_150"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_purananooru_150_0]",
+          "source_id": "purananooru_150",
+          "source": {
+            "source_id": "purananooru_150",
+            "poem": "purananooru",
+            "verse_number": 150,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_18",
+      "claim_text": "- உத்தி (நெற்றிச் சுட்டி), சிகழிகை, வல்லிகை, கண்டிகை, புல்லிகை — இவற்றை அப்பாடலின் உரை \"மகளிர் அணி\", \"ஒருவகை காதணி\" என விளக்குகிறது [kalithokai_096:urai]. கவனிக்க: அப்பாடலில் இவை குதிரைக்கு உருவகமாக வந்துள்ளன [kalithokai_096:13].",
+      "claim_text_ta": "- உத்தி (நெற்றிச் சுட்டி), சிகழிகை, வல்லிகை, கண்டிகை, புல்லிகை — இவற்றை அப்பாடலின் உரை \"மகளிர் அணி\", \"ஒருவகை காதணி\" என விளக்குகிறது [kalithokai_096:urai]. கவனிக்க: அப்பாடலில் இவை குதிரைக்கு உருவகமாக வந்துள்ளன [kalithokai_096:13].",
+      "citation_ids": [
+        "kalithokai_096"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_096_0]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_20",
+      "claim_text": "- மேகலை: \"தார் மணி பூண்ட தமனிய மேகலை\" [kalithokai_096:15]; \"அரை வரை மேகலை\" [paripadal_21:14]. 'மேகலை' இரு பாடல்களிலேயே வருகிறது [analyze: மேகலை → 2 இடங்கள்].",
+      "claim_text_ta": "- மேகலை: \"தார் மணி பூண்ட தமனிய மேகலை\" [kalithokai_096:15]; \"அரை வரை மேகலை\" [paripadal_21:14]. 'மேகலை' இரு பாடல்களிலேயே வருகிறது [analyze: மேகலை → 2 இடங்கள்].",
+      "citation_ids": [
+        "kalithokai_096",
+        "paripadal_21"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_096_0]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_paripadal_21_1]",
+          "source_id": "paripadal_21",
+          "source": {
+            "source_id": "paripadal_21",
+            "poem": "paripadal",
+            "verse_number": 21,
+            "poet": "நல்லச்சுதனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_21",
+      "claim_text": "---",
+      "claim_text_ta": "---",
+      "citation_ids": [],
+      "citations": [],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_22",
+      "claim_text": "- **பொற்கலம்** — பாலுணவை ஏந்திய பொற்கலம்: \"விரி கதிர்ப் பொற்கலத்து ஒரு கை ஏந்தி\" [natrinai_110:2].",
+      "claim_text_ta": "- **பொற்கலம்** — பாலுணவை ஏந்திய பொற்கலம்: \"விரி கதிர்ப் பொற்கலத்து ஒரு கை ஏந்தி\" [natrinai_110:2].",
+      "citation_ids": [
+        "natrinai_110"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_110_0]",
+          "source_id": "natrinai_110",
+          "source": {
+            "source_id": "natrinai_110",
+            "poem": "natrinai",
+            "verse_number": 110,
+            "poet": "போதனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_23",
+      "claim_text": "- **பசுங்கலம்** — புதிய மண்ணால் செய்த, நீர் ஏற்கும் மட்கலம்: \"ஈர் மண் செய்கை நீர் படு பசுங் கலம்\" [natrinai_308:9]; மழைநீரை ஏற்றுக் கரைவதற்கு உவமை [natrinai_308:urai].",
+      "claim_text_ta": "- **பசுங்கலம்** — புதிய மண்ணால் செய்த, நீர் ஏற்கும் மட்கலம்: \"ஈர் மண் செய்கை நீர் படு பசுங் கலம்\" [natrinai_308:9]; மழைநீரை ஏற்றுக் கரைவதற்கு உவமை [natrinai_308:urai].",
+      "citation_ids": [
+        "natrinai_308"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_308_0]",
+          "source_id": "natrinai_308",
+          "source": {
+            "source_id": "natrinai_308",
+            "poem": "natrinai",
+            "verse_number": 308,
+            "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_24",
+      "claim_text": "- **தாழி** — குயவன் வனைந்த பெரிய மண்தாழி: \"கலம் செய்கோவே, கலம் செய்கோவே\" [purananooru_256:1]; \"ஈமத் தாழி அகலிது ஆக வனைமோ\" [purananooru_256:5]; உரை \"தாழி செய்யும் குயவனே\" [purananooru_256:urai].",
+      "claim_text_ta": "- **தாழி** — குயவன் வனைந்த பெரிய மண்தாழி: \"கலம் செய்கோவே, கலம் செய்கோவே\" [purananooru_256:1]; \"ஈமத் தாழி அகலிது ஆக வனைமோ\" [purananooru_256:5]; உரை \"தாழி செய்யும் குயவனே\" [purananooru_256:urai].",
+      "citation_ids": [
+        "purananooru_256"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_purananooru_256_0]",
+          "source_id": "purananooru_256",
+          "source": {
+            "source_id": "purananooru_256",
+            "poem": "purananooru",
+            "verse_number": 256,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_25",
+      "claim_text": "- **குடிஞை** — நீர்க்குடம்: \"நெடு மால் வரைய குடிஞையோடு இரட்டும்\" [akananooru_009:13].",
+      "claim_text_ta": "- **குடிஞை** — நீர்க்குடம்: \"நெடு மால் வரைய குடிஞையோடு இரட்டும்\" [akananooru_009:13].",
+      "citation_ids": [
+        "akananooru_009"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_akananooru_009_0]",
+          "source_id": "akananooru_009",
+          "source": {
+            "source_id": "akananooru_009",
+            "poem": "akananooru",
+            "verse_number": 9,
+            "poet": "கல்லாடனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_26",
+      "claim_text": "- **வான்கலம்** — உணவு பரிமாறும் பரந்த வட்டில்: \"மீன் பூத்து அன்ன வான் கலம் பரப்பி\" [perumpanatrupadai_39:13]; உரை \"உண்கல வட்டில்களைப் பரப்பி\" [perumpanatrupadai_39:urai].",
+      "claim_text_ta": "- **வான்கலம்** — உணவு பரிமாறும் பரந்த வட்டில்: \"மீன் பூத்து அன்ன வான் கலம் பரப்பி\" [perumpanatrupadai_39:13]; உரை \"உண்கல வட்டில்களைப் பரப்பி\" [perumpanatrupadai_39:urai].",
+      "citation_ids": [
+        "perumpanatrupadai_39"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_perumpanatrupadai_39_0]",
+          "source_id": "perumpanatrupadai_39",
+          "source": {
+            "source_id": "perumpanatrupadai_39",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_27",
+      "claim_text": "- **மணி** — அரக்கு உலையில் வார்த்து எடுக்கப்பட்ட மணி: \"மெழுகு ஆன்று ஊது உலைப் பெய்த பகுவாய்த் தெண் மணி\" [kurunthokai_155:4].",
+      "claim_text_ta": "- **மணி** — அரக்கு உலையில் வார்த்து எடுக்கப்பட்ட மணி: \"மெழுகு ஆன்று ஊது உலைப் பெய்த பகுவாய்த் தெண் மணி\" [kurunthokai_155:4].",
+      "citation_ids": [
+        "kurunthokai_155"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kurunthokai_155_0]",
+          "source_id": "kurunthokai_155",
+          "source": {
+            "source_id": "kurunthokai_155",
+            "poem": "kurunthokai",
+            "verse_number": 155,
+            "poet": "உரோடகத்துக் காரத்தனார்.",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_28",
+      "claim_text": "- **அளவைக் கருவிகள்** — உழக்கு, நாழி: \"வெதிர் உழக்கு நாழியால் சேதிகைக் குத்தி\" [kalithokai_096:27].",
+      "claim_text_ta": "- **அளவைக் கருவிகள்** — உழக்கு, நாழி: \"வெதிர் உழக்கு நாழியால் சேதிகைக் குத்தி\" [kalithokai_096:27].",
+      "citation_ids": [
+        "kalithokai_096"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_096_0]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_29",
+      "claim_text": "**'கலம்' என்பது ஒரு பொருள் மட்டுமல்ல:** அணிகலன் (\"தென் கடல் முத்தமொடு நன் கலம் பெறுகுவை\" [pathitrupathu_67:4]), பாத்திரம் ([natrinai_308:9]), ஓடம் (\"ஓடு கலம் கரையும்\" [perumpanatrupadai_30:5]) எனப் பல பொருள்களில் வருகிறது. எனவே இதற்கு ஒரே பொருளை முடிவாகக் கூற முடியாது; சூழல் கொண்டு பொருள் வேறுபடும்.",
+      "claim_text_ta": "**'கலம்' என்பது ஒரு பொருள் மட்டுமல்ல:** அணிகலன் (\"தென் கடல் முத்தமொடு நன் கலம் பெறுகுவை\" [pathitrupathu_67:4]), பாத்திரம் ([natrinai_308:9]), ஓடம் (\"ஓடு கலம் கரையும்\" [perumpanatrupadai_30:5]) எனப் பல பொருள்களில் வருகிறது. எனவே இதற்கு ஒரே பொருளை முடிவாகக் கூற முடியாது; சூழல் கொண்டு பொருள் வேறுபடும்.",
+      "citation_ids": [
+        "pathitrupathu_67",
+        "natrinai_308",
+        "perumpanatrupadai_30"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_67_0]",
+          "source_id": "pathitrupathu_67",
+          "source": {
+            "source_id": "pathitrupathu_67",
+            "poem": "pathitrupathu",
+            "verse_number": 67,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_natrinai_308_1]",
+          "source_id": "natrinai_308",
+          "source": {
+            "source_id": "natrinai_308",
+            "poem": "natrinai",
+            "verse_number": 308,
+            "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_perumpanatrupadai_30_2]",
+          "source_id": "perumpanatrupadai_30",
+          "source": {
+            "source_id": "perumpanatrupadai_30",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_30",
+      "claim_text": "---",
+      "claim_text_ta": "---",
+      "citation_ids": [],
+      "citations": [],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_31",
+      "claim_text": "- **கலிங்கம்** — இழை தெரியாத அளவுக்கு நெருக்கமாக நெய்யப்பட்ட மெல்லிய புத்தாடை: \"இழை மருங்கு அறியா நுழை நூல் கலிங்கம்\" [malaipadukadam_45:1]; உரையும் இதைப் \"புத்தாடை\" என விளக்குகிறது [malaipadukadam_45:urai]. கலிங்க நாட்டுப் பெயரிலிருந்து வந்ததாகவும் ஒரு கருதுகோள் உள்ளது [malaipadukadam_45:1].",
+      "claim_text_ta": "- **கலிங்கம்** — இழை தெரியாத அளவுக்கு நெருக்கமாக நெய்யப்பட்ட மெல்லிய புத்தாடை: \"இழை மருங்கு அறியா நுழை நூல் கலிங்கம்\" [malaipadukadam_45:1]; உரையும் இதைப் \"புத்தாடை\" என விளக்குகிறது [malaipadukadam_45:urai]. கலிங்க நாட்டுப் பெயரிலிருந்து வந்ததாகவும் ஒரு கருதுகோள் உள்ளது [malaipadukadam_45:1].",
+      "citation_ids": [
+        "malaipadukadam_45"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_malaipadukadam_45_0]",
+          "source_id": "malaipadukadam_45",
+          "source": {
+            "source_id": "malaipadukadam_45",
+            "poem": "malaipadukadam",
+            "verse_number": null,
+            "poet": "இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_32",
+      "claim_text": "- **பட்டு / துகில்** — இரு வகை ஆடைகளாக வேறுபடுத்தப்பட்டுள்ளன: \"பட்டு நீக்கித் துகில் உடுத்தும்\" [pattinappalai_07:4]; இப்பாடல் புணர்ந்த மகளிர் பட்டும் துகிலும் உடுத்தியதைக் கூறுகிறது [pattinappalai_07:urai].",
+      "claim_text_ta": "- **பட்டு / துகில்** — இரு வகை ஆடைகளாக வேறுபடுத்தப்பட்டுள்ளன: \"பட்டு நீக்கித் துகில் உடுத்தும்\" [pattinappalai_07:4]; இப்பாடல் புணர்ந்த மகளிர் பட்டும் துகிலும் உடுத்தியதைக் கூறுகிறது [pattinappalai_07:urai].",
+      "citation_ids": [
+        "pattinappalai_07"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pattinappalai_07_0]",
+          "source_id": "pattinappalai_07",
+          "source": {
+            "source_id": "pattinappalai_07",
+            "poem": "pattinappalai",
+            "verse_number": null,
+            "poet": "கடியலூர் உருத்திரங்கண்ணனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_33",
+      "claim_text": "- **உத்தரியம்** — மேலாடை என உரை விளக்குகிறது [kalithokai_096:urai].",
+      "claim_text_ta": "- **உத்தரியம்** — மேலாடை என உரை விளக்குகிறது [kalithokai_096:urai].",
+      "citation_ids": [
+        "kalithokai_096"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_096_0]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_34",
+      "claim_text": "- **ஈர ஆடை** — நீராடிய பின் கட்டிய ஈரமான ஆடை: \"ஈர்ந் தண் ஆடையை\" [kalithokai_052:11].",
+      "claim_text_ta": "- **ஈர ஆடை** — நீராடிய பின் கட்டிய ஈரமான ஆடை: \"ஈர்ந் தண் ஆடையை\" [kalithokai_052:11].",
+      "citation_ids": [
+        "kalithokai_052"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_052_0]",
+          "source_id": "kalithokai_052",
+          "source": {
+            "source_id": "kalithokai_052",
+            "poem": "kalithokai",
+            "verse_number": 52,
+            "poet": "கபிலர்",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_35",
+      "claim_text": "- **கிழிந்த/பழைய ஆடை** — பாசிபோல் கரைந்த கந்தல் ஆடை: \"பாசி அன்ன சிதர்வை நீக்கி\" [perumpanatrupadai_39:4]; \"கூதிர்ப் பருந்தின் இருஞ் சிறகு அன்ன / பாறிய சிதாரேன்\" [purananooru_150:1–2].",
+      "claim_text_ta": "- **கிழிந்த/பழைய ஆடை** — பாசிபோல் கரைந்த கந்தல் ஆடை: \"பாசி அன்ன சிதர்வை நீக்கி\" [perumpanatrupadai_39:4]; \"கூதிர்ப் பருந்தின் இருஞ் சிறகு அன்ன / பாறிய சிதாரேன்\" [purananooru_150:1–2].",
+      "citation_ids": [
+        "perumpanatrupadai_39",
+        "purananooru_150"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_perumpanatrupadai_39_0]",
+          "source_id": "perumpanatrupadai_39",
+          "source": {
+            "source_id": "perumpanatrupadai_39",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_purananooru_150_1]",
+          "source_id": "purananooru_150",
+          "source": {
+            "source_id": "purananooru_150",
+            "poem": "purananooru",
+            "verse_number": 150,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_36",
+      "claim_text": "---",
+      "claim_text_ta": "---",
+      "citation_ids": [],
+      "citations": [],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_38",
+      "claim_text": "- **உலக்கை + உரல்** — வள்ளைப்பாட்டுடன் நெல் இடிக்கும் கருவி: \"தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி\" [akananooru_009:12]; \"பாசவல் இடிக்கும் இருங் காழ் உலக்கை\" [akananooru_141:18]; \"நீழல் முன்றில் நில உரல் பெய்து\" [perumpanatrupadai_10:2].",
+      "claim_text_ta": "- **உலக்கை + உரல்** — வள்ளைப்பாட்டுடன் நெல் இடிக்கும் கருவி: \"தொடி மாண் உலக்கைத் தூண்டு உரல் பாணி\" [akananooru_009:12]; \"பாசவல் இடிக்கும் இருங் காழ் உலக்கை\" [akananooru_141:18]; \"நீழல் முன்றில் நில உரல் பெய்து\" [perumpanatrupadai_10:2].",
+      "citation_ids": [
+        "akananooru_009",
+        "akananooru_141",
+        "perumpanatrupadai_10"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_akananooru_009_0]",
+          "source_id": "akananooru_009",
+          "source": {
+            "source_id": "akananooru_009",
+            "poem": "akananooru",
+            "verse_number": 9,
+            "poet": "கல்லாடனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_akananooru_141_1]",
+          "source_id": "akananooru_141",
+          "source": {
+            "source_id": "akananooru_141",
+            "poem": "akananooru",
+            "verse_number": 141,
+            "poet": "நக்கீரர்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_perumpanatrupadai_10_2]",
+          "source_id": "perumpanatrupadai_10",
+          "source": {
+            "source_id": "perumpanatrupadai_10",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_39",
+      "claim_text": "- **முறம்** — நெல் புடைக்கும் கருவி [kalithokai_052:1]; **சுளகு** — திருநீறு அகற்றப் பயன்பட்டது: \"நீறாடு சுளகின் சீறிடம் நீக்கி\" [purananooru_249:12].",
+      "claim_text_ta": "- **முறம்** — நெல் புடைக்கும் கருவி [kalithokai_052:1]; **சுளகு** — திருநீறு அகற்றப் பயன்பட்டது: \"நீறாடு சுளகின் சீறிடம் நீக்கி\" [purananooru_249:12].",
+      "citation_ids": [
+        "kalithokai_052",
+        "purananooru_249"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_052_0]",
+          "source_id": "kalithokai_052",
+          "source": {
+            "source_id": "kalithokai_052",
+            "poem": "kalithokai",
+            "verse_number": 52,
+            "poet": "கபிலர்",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_purananooru_249_1]",
+          "source_id": "purananooru_249",
+          "source": {
+            "source_id": "purananooru_249",
+            "poem": "purananooru",
+            "verse_number": 249,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_40",
+      "claim_text": "- **அடுப்பு, உலை** — \"பல் கோட்டு அடுப்பில் பால் உலை இரீஇ\" [akananooru_141:15].",
+      "claim_text_ta": "- **அடுப்பு, உலை** — \"பல் கோட்டு அடுப்பில் பால் உலை இரீஇ\" [akananooru_141:15].",
+      "citation_ids": [
+        "akananooru_141"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_akananooru_141_0]",
+          "source_id": "akananooru_141",
+          "source": {
+            "source_id": "akananooru_141",
+            "poem": "akananooru",
+            "verse_number": 141,
+            "poet": "நக்கீரர்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_41",
+      "claim_text": "- **ஆப்பி** — தரை மெழுகும் சாணம்: \"மெழுகு, ஆப்பிகண் கலுழ்நீ ரானே\" [purananooru_249:14].",
+      "claim_text_ta": "- **ஆப்பி** — தரை மெழுகும் சாணம்: \"மெழுகு, ஆப்பிகண் கலுழ்நீ ரானே\" [purananooru_249:14].",
+      "citation_ids": [
+        "purananooru_249"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_purananooru_249_0]",
+          "source_id": "purananooru_249",
+          "source": {
+            "source_id": "purananooru_249",
+            "poem": "purananooru",
+            "verse_number": 249,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_43",
+      "claim_text": "- **கட்டில்** — \"மாலை முன்றில குறுங்கால் கட்டில்\" [ainkurunooru_410:1].",
+      "claim_text_ta": "- **கட்டில்** — \"மாலை முன்றில குறுங்கால் கட்டில்\" [ainkurunooru_410:1].",
+      "citation_ids": [
+        "ainkurunooru_410"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_ainkurunooru_410_0]",
+          "source_id": "ainkurunooru_410",
+          "source": {
+            "source_id": "ainkurunooru_410",
+            "poem": "ainkurunooru",
+            "verse_number": 410,
+            "poet": "பேயனார்",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_44",
+      "claim_text": "- **முன்றில், முற்றம்** — [ainkurunooru_410:1]; \"நீழல் முன்றில்\" [perumpanatrupadai_10:2]; \"ஆய் சுதை மாடத்து அணி நிலா முற்றத்துள்\" [kalithokai_096:19].",
+      "claim_text_ta": "- **முன்றில், முற்றம்** — [ainkurunooru_410:1]; \"நீழல் முன்றில்\" [perumpanatrupadai_10:2]; \"ஆய் சுதை மாடத்து அணி நிலா முற்றத்துள்\" [kalithokai_096:19].",
+      "citation_ids": [
+        "ainkurunooru_410",
+        "perumpanatrupadai_10",
+        "kalithokai_096"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_ainkurunooru_410_0]",
+          "source_id": "ainkurunooru_410",
+          "source": {
+            "source_id": "ainkurunooru_410",
+            "poem": "ainkurunooru",
+            "verse_number": 410,
+            "poet": "பேயனார்",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_perumpanatrupadai_10_1]",
+          "source_id": "perumpanatrupadai_10",
+          "source": {
+            "source_id": "perumpanatrupadai_10",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_kalithokai_096_2]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_45",
+      "claim_text": "- **கதவு** — \"பொருந்து நோன் கதவு ஒற்றிப் புலம்பி\" [kalithokai_083:2].",
+      "claim_text_ta": "- **கதவு** — \"பொருந்து நோன் கதவு ஒற்றிப் புலம்பி\" [kalithokai_083:2].",
+      "citation_ids": [
+        "kalithokai_083"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_083_0]",
+          "source_id": "kalithokai_083",
+          "source": {
+            "source_id": "kalithokai_083",
+            "poem": "kalithokai",
+            "verse_number": 83,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_46",
+      "claim_text": "- **சாலகம் (சாளரம்)** — \"சாலகத்து ஒல்கிய கண்ணர்\" [kalithokai_083:13].",
+      "claim_text_ta": "- **சாலகம் (சாளரம்)** — \"சாலகத்து ஒல்கிய கண்ணர்\" [kalithokai_083:13].",
+      "citation_ids": [
+        "kalithokai_083"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kalithokai_083_0]",
+          "source_id": "kalithokai_083",
+          "source": {
+            "source_id": "kalithokai_083",
+            "poem": "kalithokai",
+            "verse_number": 83,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_47",
+      "claim_text": "- **பந்தர் (பந்தல்)** — \"பந்தர் ஓடி\" [natrinai_110:7].",
+      "claim_text_ta": "- **பந்தர் (பந்தல்)** — \"பந்தர் ஓடி\" [natrinai_110:7].",
+      "citation_ids": [
+        "natrinai_110"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_110_0]",
+          "source_id": "natrinai_110",
+          "source": {
+            "source_id": "natrinai_110",
+            "poem": "natrinai",
+            "verse_number": 110,
+            "poet": "போதனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_48",
+      "claim_text": "- **விளக்கு** — தெருவில் ஏற்றும் விளக்கு: \"மறுகு விளக்கு உறுத்து, மாலை தூக்கி\" [akananooru_141:9]; \"சிறுகுடி மறுகு விளக்கு உறுத்தலின்\" [akananooru_192:12].",
+      "claim_text_ta": "- **விளக்கு** — தெருவில் ஏற்றும் விளக்கு: \"மறுகு விளக்கு உறுத்து, மாலை தூக்கி\" [akananooru_141:9]; \"சிறுகுடி மறுகு விளக்கு உறுத்தலின்\" [akananooru_192:12].",
+      "citation_ids": [
+        "akananooru_141",
+        "akananooru_192"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_akananooru_141_0]",
+          "source_id": "akananooru_141",
+          "source": {
+            "source_id": "akananooru_141",
+            "poem": "akananooru",
+            "verse_number": 141,
+            "poet": "நக்கீரர்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_akananooru_192_1]",
+          "source_id": "akananooru_192",
+          "source": {
+            "source_id": "akananooru_192",
+            "poem": "akananooru",
+            "verse_number": 192,
+            "poet": "பொதும்பில்கிழான் வெண்கண்ணனார்.",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_49",
+      "claim_text": "- **படுக்கை/மெத்தை** — கட்டிலில் மயிர் திணித்த மெத்தை, அதன்மேல் அன்னத்தூவி மெத்தை, அதன்மேல் விரிப்பு என்பது காலஞ்சென்ற உரை விவரிப்பு [nedunalvadai_13:urai] — இது திருத்தப்படாத (draft) உரைப்பகுதி என்பதைக் கவனத்தில் கொள்க.",
+      "claim_text_ta": "- **படுக்கை/மெத்தை** — கட்டிலில் மயிர் திணித்த மெத்தை, அதன்மேல் அன்னத்தூவி மெத்தை, அதன்மேல் விரிப்பு என்பது காலஞ்சென்ற உரை விவரிப்பு [nedunalvadai_13:urai] — இது திருத்தப்படாத (draft) உரைப்பகுதி என்பதைக் கவனத்தில் கொள்க.",
+      "citation_ids": [
+        "nedunalvadai_13"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_nedunalvadai_13_0]",
+          "source_id": "nedunalvadai_13",
+          "source": {
+            "source_id": "nedunalvadai_13",
+            "poem": "nedunalvadai",
+            "verse_number": null,
+            "poet": "மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_50",
+      "claim_text": "---",
+      "claim_text_ta": "---",
+      "citation_ids": [],
+      "citations": [],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_51",
+      "claim_text": "- அணிகலன்கள் பலவும் **பொன், முத்து** சார்ந்தவை [natrinai_110:5], [kalithokai_096:15]; மண், செப்பு, அரக்கு சார்ந்த கலன்களும் உள்ளன [natrinai_308:9], [kurunthokai_155:4].",
+      "claim_text_ta": "- அணிகலன்கள் பலவும் **பொன், முத்து** சார்ந்தவை [natrinai_110:5], [kalithokai_096:15]; மண், செப்பு, அரக்கு சார்ந்த கலன்களும் உள்ளன [natrinai_308:9], [kurunthokai_155:4].",
+      "citation_ids": [
+        "natrinai_110",
+        "kalithokai_096",
+        "natrinai_308",
+        "kurunthokai_155"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_110_0]",
+          "source_id": "natrinai_110",
+          "source": {
+            "source_id": "natrinai_110",
+            "poem": "natrinai",
+            "verse_number": 110,
+            "poet": "போதனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_kalithokai_096_1]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_natrinai_308_2]",
+          "source_id": "natrinai_308",
+          "source": {
+            "source_id": "natrinai_308",
+            "poem": "natrinai",
+            "verse_number": 308,
+            "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_kurunthokai_155_3]",
+          "source_id": "kurunthokai_155",
+          "source": {
+            "source_id": "kurunthokai_155",
+            "poem": "kurunthokai",
+            "verse_number": 155,
+            "poet": "உரோடகத்துக் காரத்தனார்.",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_52",
+      "claim_text": "- ஒரே சொல் பல பொருள் தரும் நிலை ('கலம்') சங்கப் பாடல்களில் பொதுவானது [pathitrupathu_67:4], [natrinai_308:9], [perumpanatrupadai_30:5]; எனவே சொற்பொருள் கூற்றுகளை ஒரு கருத்தாக மட்டும் முடிவு செய்யாமல், சூழல் வைத்துப் பிரித்தல் வேண்டும்.",
+      "claim_text_ta": "- ஒரே சொல் பல பொருள் தரும் நிலை ('கலம்') சங்கப் பாடல்களில் பொதுவானது [pathitrupathu_67:4], [natrinai_308:9], [perumpanatrupadai_30:5]; எனவே சொற்பொருள் கூற்றுகளை ஒரு கருத்தாக மட்டும் முடிவு செய்யாமல், சூழல் வைத்துப் பிரித்தல் வேண்டும்.",
+      "citation_ids": [
+        "pathitrupathu_67",
+        "natrinai_308",
+        "perumpanatrupadai_30"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_67_0]",
+          "source_id": "pathitrupathu_67",
+          "source": {
+            "source_id": "pathitrupathu_67",
+            "poem": "pathitrupathu",
+            "verse_number": 67,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_natrinai_308_1]",
+          "source_id": "natrinai_308",
+          "source": {
+            "source_id": "natrinai_308",
+            "poem": "natrinai",
+            "verse_number": 308,
+            "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_perumpanatrupadai_30_2]",
+          "source_id": "perumpanatrupadai_30",
+          "source": {
+            "source_id": "perumpanatrupadai_30",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_53",
+      "claim_text": "**சான்றுகள் (மூல அடையாளங்கள்):** natrinai_110, natrinai_258, natrinai_308, natrinai_071, kurunthokai_155, akananooru_009, akananooru_058, akananooru_141, akananooru_192, ainkurunooru_410, kalithokai_052, kalithokai_079, kalithokai_082, kalithokai_083, kalithokai_096, purananooru_150, purananooru_249, purananooru_256, pattinappalai_07, perumpanatrupadai_10, perumpanatrupadai_30, perumpanatrupadai_39, malaipadukadam_45, paripadal_21, pathitrupathu_67, nedunalvadai_13.",
+      "claim_text_ta": "**சான்றுகள் (மூல அடையாளங்கள்):** natrinai_110, natrinai_258, natrinai_308, natrinai_071, kurunthokai_155, akananooru_009, akananooru_058, akananooru_141, akananooru_192, ainkurunooru_410, kalithokai_052, kalithokai_079, kalithokai_082, kalithokai_083, kalithokai_096, purananooru_150, purananooru_249, purananooru_256, pattinappalai_07, perumpanatrupadai_10, perumpanatrupadai_30, perumpanatrupadai_39, malaipadukadam_45, paripadal_21, pathitrupathu_67, nedunalvadai_13.",
+      "citation_ids": [
+        "perumpanatrupadai_30"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_110_0]",
+          "source_id": "natrinai_110",
+          "source": {
+            "source_id": "natrinai_110",
+            "poem": "natrinai",
+            "verse_number": 110,
+            "poet": "போதனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source natrinai_110; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_natrinai_258_1]",
+          "source_id": "natrinai_258",
+          "source": {
+            "source_id": "natrinai_258",
+            "poem": "natrinai",
+            "verse_number": 258,
+            "poet": "நக்கீரர்.",
+            "tinai": "neytal",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source natrinai_258; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_natrinai_308_2]",
+          "source_id": "natrinai_308",
+          "source": {
+            "source_id": "natrinai_308",
+            "poem": "natrinai",
+            "verse_number": 308,
+            "poet": "எயினந்தை மகன் இளங்கீரனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source natrinai_308; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_natrinai_071_3]",
+          "source_id": "natrinai_071",
+          "source": {
+            "source_id": "natrinai_071",
+            "poem": "natrinai",
+            "verse_number": 71,
+            "poet": "வண்ணப்புறக் கந்தரத்தனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source natrinai_071; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_kurunthokai_155_4]",
+          "source_id": "kurunthokai_155",
+          "source": {
+            "source_id": "kurunthokai_155",
+            "poem": "kurunthokai",
+            "verse_number": 155,
+            "poet": "உரோடகத்துக் காரத்தனார்.",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source kurunthokai_155; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_akananooru_009_5]",
+          "source_id": "akananooru_009",
+          "source": {
+            "source_id": "akananooru_009",
+            "poem": "akananooru",
+            "verse_number": 9,
+            "poet": "கல்லாடனார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source akananooru_009; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_akananooru_058_6]",
+          "source_id": "akananooru_058",
+          "source": {
+            "source_id": "akananooru_058",
+            "poem": "akananooru",
+            "verse_number": 58,
+            "poet": "மதுரைப் பண்ட வாணிகன் இளந்தேவனார்.",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source akananooru_058; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_akananooru_141_7]",
+          "source_id": "akananooru_141",
+          "source": {
+            "source_id": "akananooru_141",
+            "poem": "akananooru",
+            "verse_number": 141,
+            "poet": "நக்கீரர்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source akananooru_141; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_akananooru_192_8]",
+          "source_id": "akananooru_192",
+          "source": {
+            "source_id": "akananooru_192",
+            "poem": "akananooru",
+            "verse_number": 192,
+            "poet": "பொதும்பில்கிழான் வெண்கண்ணனார்.",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source akananooru_192; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_ainkurunooru_410_9]",
+          "source_id": "ainkurunooru_410",
+          "source": {
+            "source_id": "ainkurunooru_410",
+            "poem": "ainkurunooru",
+            "verse_number": 410,
+            "poet": "பேயனார்",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source ainkurunooru_410; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_kalithokai_052_10]",
+          "source_id": "kalithokai_052",
+          "source": {
+            "source_id": "kalithokai_052",
+            "poem": "kalithokai",
+            "verse_number": 52,
+            "poet": "கபிலர்",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source kalithokai_052; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_kalithokai_079_11]",
+          "source_id": "kalithokai_079",
+          "source": {
+            "source_id": "kalithokai_079",
+            "poem": "kalithokai",
+            "verse_number": 79,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source kalithokai_079; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_kalithokai_082_12]",
+          "source_id": "kalithokai_082",
+          "source": {
+            "source_id": "kalithokai_082",
+            "poem": "kalithokai",
+            "verse_number": 82,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source kalithokai_082; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_kalithokai_083_13]",
+          "source_id": "kalithokai_083",
+          "source": {
+            "source_id": "kalithokai_083",
+            "poem": "kalithokai",
+            "verse_number": 83,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source kalithokai_083; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_kalithokai_096_14]",
+          "source_id": "kalithokai_096",
+          "source": {
+            "source_id": "kalithokai_096",
+            "poem": "kalithokai",
+            "verse_number": 96,
+            "poet": "மருதன் இளநாகனார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source kalithokai_096; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_purananooru_150_15]",
+          "source_id": "purananooru_150",
+          "source": {
+            "source_id": "purananooru_150",
+            "poem": "purananooru",
+            "verse_number": 150,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source purananooru_150; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_purananooru_249_16]",
+          "source_id": "purananooru_249",
+          "source": {
+            "source_id": "purananooru_249",
+            "poem": "purananooru",
+            "verse_number": 249,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source purananooru_249; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_purananooru_256_17]",
+          "source_id": "purananooru_256",
+          "source": {
+            "source_id": "purananooru_256",
+            "poem": "purananooru",
+            "verse_number": 256,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source purananooru_256; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_pattinappalai_07_18]",
+          "source_id": "pattinappalai_07",
+          "source": {
+            "source_id": "pattinappalai_07",
+            "poem": "pattinappalai",
+            "verse_number": null,
+            "poet": "கடியலூர் உருத்திரங்கண்ணனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source pattinappalai_07; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_perumpanatrupadai_10_19]",
+          "source_id": "perumpanatrupadai_10",
+          "source": {
+            "source_id": "perumpanatrupadai_10",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source perumpanatrupadai_10; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_perumpanatrupadai_30_20]",
+          "source_id": "perumpanatrupadai_30",
+          "source": {
+            "source_id": "perumpanatrupadai_30",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_perumpanatrupadai_39_21]",
+          "source_id": "perumpanatrupadai_39",
+          "source": {
+            "source_id": "perumpanatrupadai_39",
+            "poem": "perumpanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source perumpanatrupadai_39; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_malaipadukadam_45_22]",
+          "source_id": "malaipadukadam_45",
+          "source": {
+            "source_id": "malaipadukadam_45",
+            "poem": "malaipadukadam",
+            "verse_number": null,
+            "poet": "இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source malaipadukadam_45; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_paripadal_21_23]",
+          "source_id": "paripadal_21",
+          "source": {
+            "source_id": "paripadal_21",
+            "poem": "paripadal",
+            "verse_number": 21,
+            "poet": "நல்லச்சுதனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source paripadal_21; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_pathitrupathu_67_24]",
+          "source_id": "pathitrupathu_67",
+          "source": {
+            "source_id": "pathitrupathu_67",
+            "poem": "pathitrupathu",
+            "verse_number": 67,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source pathitrupathu_67; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_nedunalvadai_13_25]",
+          "source_id": "nedunalvadai_13",
+          "source": {
+            "source_id": "nedunalvadai_13",
+            "poem": "nedunalvadai",
+            "verse_number": null,
+            "poet": "மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source nedunalvadai_13; the citation does not support it"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    }
+  ],
+  "isAbstained": false,
+  "abstentionReason": "none",
+  "evidenceStatus": "partially_verified",
+  "metadata": {
+    "model": "openrouter:deepseek/deepseek-v4.1-flash-1017",
+    "elapsed_ms": 95218,
+    "timestamp": "2026-10-27T19:22:25.496783+00:00",
+    "workflow": "qa",
+    "routed_pulavar": "avvaiyar",
+    "routing_reason": "explicit_pulavar_selected",
+    "token_in": 1728921,
+    "token_out": 16424,
+    "cost_usd": 0.26919255,
+    "cost_inr": 23.6889
+  }
+}

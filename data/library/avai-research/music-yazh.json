@@ -1,0 +1,2949 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "music-yazh",
+  "titleTa": "யாழும் பண்ணும் இசை மரபும்",
+  "titleEn": "Yazh, pann and musical life",
+  "agent": "kapilar",
+  "workflow": "search",
+  "language": "ta",
+  "prompt": "யாழ், குழல், முரசு, பறை, பண் பற்றிய சங்கப் பாடல் குறிப்புகளைத் தேடித் தொகுத்துத் தருக.",
+  "generatedAt": "2026-10-27T19:20:50.205761+00:00",
+  "elapsedSeconds": 36.0,
+  "responseText": "| 1 | [pathitrupathu_46] (பரணர்) | “தொடை படு பேரியாழ் பாலை பண்ணி”, “பணியா மரபின் உழிஞை பாட” — யாழும் பண்ணும் ஒருங்கே |\n| 2 | [pathitrupathu_66] (கபிலர்) | “வாங்கு இரு மருப்பின் தீம் தொடை பழுனிய / இடனுடைப் பேரியாழ் பாலை பண்ணி” |\n| 3 | [pathitrupathu_57] (காக்கை பாடினியார் நச்செள்ளையார்) | “விரல் கவர் பேரியாழ் பாலை பண்ணி, குரல் புணர் இன் இசைத் தழிஞ்சி பாடி” |\n| 4 | [pathitrupathu_41] (பரணர்) | “புணர் புரி நரம்பின் … வணர் அமை நல் யாழ் இளையர் பொறுப்ப” |\n| 5 | [pathitrupathu_65] (கபிலர்) | “தீம் தொடை நரம்பின் பாலை வல்லோன் … பண்ணுப் பெயர்த்தாங்கு” |\n| 6 | [sirupanatrupadai_22] | யாழின் உறுப்புகள் (குடம், வயிறு, திருகாணி) விரிவாக வருணிக்கப்படும் பாடல் |\n| 7 | [ainkurunooru_475], [ainkurunooru_478] (பேயனார்) | “சீறியாழ்ப் பாணன்”, “முல்லை நல்யாழ்ப் பாண” — யாழ் பாணர் குறிப்பு |\n| 1 | [ainkurunooru_215] (கபிலர், குறிஞ்சி) | “தட்டைத் தண்ணுமைப் பின்னர் இயவர் / தீங்குழல் ஆம்பலின் இனிய இமிரும்” — குழலும் தண்ணுமையும் |\n| 2 | [paripadal_12] | “ஒத்த குழலின் ஒலியெழ” — குழல், முழவு, தண்ணுமை, மத்தரி, தடாரி, மகுளி ஒருங்கு |\n| 3 | [paripadal_19] | “கைவைத் திமிர்புகுழல் காண்குவோரும்” |\n| 4 | [ainkurunooru_306] (ஓதலாந்தையார்) | “குழலினும் இனைகுவள்” — குழல் **உவமையாக** (மெல்லிய இசைக்கு) |\n| 5 | [ainkurunooru_458] (பேயனார்) | பாணர் கொன்றைப் பழத்தால் குழல் செய்தல் குறித்த **கற்பனை** குறிப்பு |\n| 1 | [pathitrupathu_66] (கபிலர்) | “இடி இசை முரசமொடு ஒன்றுமொழிந்து” |\n| 2 | [pathitrupathu_41] (பரணர்) | “முரசுடைப் பெருஞ் சமத்து”, “எடுத்தேறு ஏய கடிப்புடை வியன்கண்” (முரசின் கண்) |\n| 3 | [pathitrupathu_30] (பாலைக் கௌதமனார்) | “நின் தழங்கு குரல் முரசே”; பெருஞ்சோற்று நிலையும் முரசும் |\n| 4 | [pathitrupathu_90] (பெருங்குன்றூர் கிழார்) | “உரும் என முழங்கும் முரசின்” |\n| 5 | [paripadal_22] | “முரசு அதிர்பவை போல் முழங்கு இடி” |\n| 6 | [pathitrupathu_17] (குமட்டூர்க் கண்ணனார்) | “கடம்பு அறுத்து இயற்றிய வலம்படு வியன் பணை” — உரை இதனைப் பெரிய முரசு எனக் கொள்கிறது (சொல் நேரடியாக இல்லை; உரை வழி மட்டும்) |\n| 7 | [pathitrupathu_44] (பரணர்) | “முரசம் கொண்டு”, “முரசு செய முரச்சி” — பகைவர் முரசைக் கைக்கொள்ளல் |\n| 1 | [paripadal_10] | “பறை அறையப் போந்தது … வையைப் புனல்” — நேரடிப் பறைக் குறிப்பு |\n| 2 | [pathitrupathu_70] (கபிலர்) | “பறைக் குரல் அருவி” — அருவியின் ஒலிக்குப் **பறை உவமை** |\n| 3 | [pathitrupathu_30] | “அரும் பறை வினைஞர்” — பறைத் தொழிலாளர் |\n| 4 | [ainkurunooru_215] (கபிலர்) | “தட்டைத் தண்ணுமை” — தண்ணுமைப் பறை |\n| 5 | [paripadal_12] | தண்ணுமை, மத்தரி, தடாரி, மகுளி, முழவு ஆகிய தாளக் கருவிகள் பட்டியல் |\n⚠️ வேறுபாட்டுக் குறிப்பு: [ainkurunooru_086] (“மென்பறை விளிக்குறல்”) மற்றும் [ainkurunooru_180] (“பறைதபு முதுகுருகு”) ஆகியவை **கருவியைக் குறிக்கவில்லை** — பறவையின் ஒலி/தோற்றத்தைக் குறிக்கும் பயன்பாடுகள்; எனவே பறைச் சான்றாகக் கொள்ளத் தக்கவை அல்ல.\n| 1 | [pathitrupathu_46] | “பேரியாழ் பாலை பண்ணி” — பாலைப் பண் |\n| 2 | [pathitrupathu_66] (கபிலர்) | “பேரியாழ் பாலை பண்ணி” |\n| 3 | [pathitrupathu_57] | “பாலை பண்ணி … தழிஞ்சி பாடி” |\n| 4 | [pathitrupathu_65] (கபிலர்) | “பண்ணுப் பெயர்த்தாங்கு” — பண்ணின் மாற்றீடு |\n| 5 | [pathitrupathu_41] (பரணர்) | “பண் அமை முழவும், பதலையும்” |\n| 6 | [sirupanatrupadai_22] | “நூல் நெறி மரபின், பண்ணி ஆனாது” — பண் மரபு |\n| 7 | [paripadal_12] | பாடலின் உரைத் தலைப்பில் “பண்: பண்ணுப் பாலையாழ்”, “பண் வகுத்தவர்: நந்நாகனார்” (உரை வழிச் செய்தி) |\n- **மிகச் செறிவான மூலங்கள்** (ஒரே பாடலில் பல கருவிகள்): [pathitrupathu_41], [pathitrupathu_66], [pathitrupathu_46], [paripadal_12], [paripadal_19] — இவை ஐந்து பொருண்மைகளுக்கும் சிறந்த தொகுப்புப் பாடல்கள்.\n- **விவாதத்திற்குரிய பகுதி**: [paripadal_12]-இல் வரும் தண்ணுமை, மத்தரி, தடாரி, மகுளி, பதலை ஆகியவற்றின் தனித்தனி வடிவம்/வகைப்பாடு உரை வழியாகவே தெரிகிறது; ஆய்வாளர் பல்வேறு வகைப்பாடுகள் தருவர் — இதை ஒரு முடிவாகக் கொள்ள வேண்டாம்.",
+  "pulavarAnswer": {
+    "answer_text": "| 1 | [pathitrupathu_46] (பரணர்) | “தொடை படு பேரியாழ் பாலை பண்ணி”, “பணியா மரபின் உழிஞை பாட” — யாழும் பண்ணும் ஒருங்கே |\n| 2 | [pathitrupathu_66] (கபிலர்) | “வாங்கு இரு மருப்பின் தீம் தொடை பழுனிய / இடனுடைப் பேரியாழ் பாலை பண்ணி” |\n| 3 | [pathitrupathu_57] (காக்கை பாடினியார் நச்செள்ளையார்) | “விரல் கவர் பேரியாழ் பாலை பண்ணி, குரல் புணர் இன் இசைத் தழிஞ்சி பாடி” |\n| 4 | [pathitrupathu_41] (பரணர்) | “புணர் புரி நரம்பின் … வணர் அமை நல் யாழ் இளையர் பொறுப்ப” |\n| 5 | [pathitrupathu_65] (கபிலர்) | “தீம் தொடை நரம்பின் பாலை வல்லோன் … பண்ணுப் பெயர்த்தாங்கு” |\n| 6 | [sirupanatrupadai_22] | யாழின் உறுப்புகள் (குடம், வயிறு, திருகாணி) விரிவாக வருணிக்கப்படும் பாடல் |\n| 7 | [ainkurunooru_475], [ainkurunooru_478] (பேயனார்) | “சீறியாழ்ப் பாணன்”, “முல்லை நல்யாழ்ப் பாண” — யாழ் பாணர் குறிப்பு |\n| 1 | [ainkurunooru_215] (கபிலர், குறிஞ்சி) | “தட்டைத் தண்ணுமைப் பின்னர் இயவர் / தீங்குழல் ஆம்பலின் இனிய இமிரும்” — குழலும் தண்ணுமையும் |\n| 2 | [paripadal_12] | “ஒத்த குழலின் ஒலியெழ” — குழல், முழவு, தண்ணுமை, மத்தரி, தடாரி, மகுளி ஒருங்கு |\n| 3 | [paripadal_19] | “கைவைத் திமிர்புகுழல் காண்குவோரும்” |\n| 4 | [ainkurunooru_306] (ஓதலாந்தையார்) | “குழலினும் இனைகுவள்” — குழல் **உவமையாக** (மெல்லிய இசைக்கு) |\n| 5 | [ainkurunooru_458] (பேயனார்) | பாணர் கொன்றைப் பழத்தால் குழல் செய்தல் குறித்த **கற்பனை** குறிப்பு |\n| 1 | [pathitrupathu_66] (கபிலர்) | “இடி இசை முரசமொடு ஒன்றுமொழிந்து” |\n| 2 | [pathitrupathu_41] (பரணர்) | “முரசுடைப் பெருஞ் சமத்து”, “எடுத்தேறு ஏய கடிப்புடை வியன்கண்” (முரசின் கண்) |\n| 3 | [pathitrupathu_30] (பாலைக் கௌதமனார்) | “நின் தழங்கு குரல் முரசே”; பெருஞ்சோற்று நிலையும் முரசும் |\n| 4 | [pathitrupathu_90] (பெருங்குன்றூர் கிழார்) | “உரும் என முழங்கும் முரசின்” |\n| 5 | [paripadal_22] | “முரசு அதிர்பவை போல் முழங்கு இடி” |\n| 6 | [pathitrupathu_17] (குமட்டூர்க் கண்ணனார்) | “கடம்பு அறுத்து இயற்றிய வலம்படு வியன் பணை” — உரை இதனைப் பெரிய முரசு எனக் கொள்கிறது (சொல் நேரடியாக இல்லை; உரை வழி மட்டும்) |\n| 7 | [pathitrupathu_44] (பரணர்) | “முரசம் கொண்டு”, “முரசு செய முரச்சி” — பகைவர் முரசைக் கைக்கொள்ளல் |\n| 1 | [paripadal_10] | “பறை அறையப் போந்தது … வையைப் புனல்” — நேரடிப் பறைக் குறிப்பு |\n| 2 | [pathitrupathu_70] (கபிலர்) | “பறைக் குரல் அருவி” — அருவியின் ஒலிக்குப் **பறை உவமை** |\n| 3 | [pathitrupathu_30] | “அரும் பறை வினைஞர்” — பறைத் தொழிலாளர் |\n| 4 | [ainkurunooru_215] (கபிலர்) | “தட்டைத் தண்ணுமை” — தண்ணுமைப் பறை |\n| 5 | [paripadal_12] | தண்ணுமை, மத்தரி, தடாரி, மகுளி, முழவு ஆகிய தாளக் கருவிகள் பட்டியல் |\n⚠️ வேறுபாட்டுக் குறிப்பு: [ainkurunooru_086] (“மென்பறை விளிக்குறல்”) மற்றும் [ainkurunooru_180] (“பறைதபு முதுகுருகு”) ஆகியவை **கருவியைக் குறிக்கவில்லை** — பறவையின் ஒலி/தோற்றத்தைக் குறிக்கும் பயன்பாடுகள்; எனவே பறைச் சான்றாகக் கொள்ளத் தக்கவை அல்ல.\n| 1 | [pathitrupathu_46] | “பேரியாழ் பாலை பண்ணி” — பாலைப் பண் |\n| 2 | [pathitrupathu_66] (கபிலர்) | “பேரியாழ் பாலை பண்ணி” |\n| 3 | [pathitrupathu_57] | “பாலை பண்ணி … தழிஞ்சி பாடி” |\n| 4 | [pathitrupathu_65] (கபிலர்) | “பண்ணுப் பெயர்த்தாங்கு” — பண்ணின் மாற்றீடு |\n| 5 | [pathitrupathu_41] (பரணர்) | “பண் அமை முழவும், பதலையும்” |\n| 6 | [sirupanatrupadai_22] | “நூல் நெறி மரபின், பண்ணி ஆனாது” — பண் மரபு |\n| 7 | [paripadal_12] | பாடலின் உரைத் தலைப்பில் “பண்: பண்ணுப் பாலையாழ்”, “பண் வகுத்தவர்: நந்நாகனார்” (உரை வழிச் செய்தி) |\n- **மிகச் செறிவான மூலங்கள்** (ஒரே பாடலில் பல கருவிகள்): [pathitrupathu_41], [pathitrupathu_66], [pathitrupathu_46], [paripadal_12], [paripadal_19] — இவை ஐந்து பொருண்மைகளுக்கும் சிறந்த தொகுப்புப் பாடல்கள்.\n- **விவாதத்திற்குரிய பகுதி**: [paripadal_12]-இல் வரும் தண்ணுமை, மத்தரி, தடாரி, மகுளி, பதலை ஆகியவற்றின் தனித்தனி வடிவம்/வகைப்பாடு உரை வழியாகவே தெரிகிறது; ஆய்வாளர் பல்வேறு வகைப்பாடுகள் தருவர் — இதை ஒரு முடிவாகக் கொள்ள வேண்டாம்.",
+    "answer_text_ta": "| 1 | [pathitrupathu_46] (பரணர்) | “தொடை படு பேரியாழ் பாலை பண்ணி”, “பணியா மரபின் உழிஞை பாட” — யாழும் பண்ணும் ஒருங்கே |\n| 2 | [pathitrupathu_66] (கபிலர்) | “வாங்கு இரு மருப்பின் தீம் தொடை பழுனிய / இடனுடைப் பேரியாழ் பாலை பண்ணி” |\n| 3 | [pathitrupathu_57] (காக்கை பாடினியார் நச்செள்ளையார்) | “விரல் கவர் பேரியாழ் பாலை பண்ணி, குரல் புணர் இன் இசைத் தழிஞ்சி பாடி” |\n| 4 | [pathitrupathu_41] (பரணர்) | “புணர் புரி நரம்பின் … வணர் அமை நல் யாழ் இளையர் பொறுப்ப” |\n| 5 | [pathitrupathu_65] (கபிலர்) | “தீம் தொடை நரம்பின் பாலை வல்லோன் … பண்ணுப் பெயர்த்தாங்கு” |\n| 6 | [sirupanatrupadai_22] | யாழின் உறுப்புகள் (குடம், வயிறு, திருகாணி) விரிவாக வருணிக்கப்படும் பாடல் |\n| 7 | [ainkurunooru_475], [ainkurunooru_478] (பேயனார்) | “சீறியாழ்ப் பாணன்”, “முல்லை நல்யாழ்ப் பாண” — யாழ் பாணர் குறிப்பு |\n| 1 | [ainkurunooru_215] (கபிலர், குறிஞ்சி) | “தட்டைத் தண்ணுமைப் பின்னர் இயவர் / தீங்குழல் ஆம்பலின் இனிய இமிரும்” — குழலும் தண்ணுமையும் |\n| 2 | [paripadal_12] | “ஒத்த குழலின் ஒலியெழ” — குழல், முழவு, தண்ணுமை, மத்தரி, தடாரி, மகுளி ஒருங்கு |\n| 3 | [paripadal_19] | “கைவைத் திமிர்புகுழல் காண்குவோரும்” |\n| 4 | [ainkurunooru_306] (ஓதலாந்தையார்) | “குழலினும் இனைகுவள்” — குழல் **உவமையாக** (மெல்லிய இசைக்கு) |\n| 5 | [ainkurunooru_458] (பேயனார்) | பாணர் கொன்றைப் பழத்தால் குழல் செய்தல் குறித்த **கற்பனை** குறிப்பு |\n| 1 | [pathitrupathu_66] (கபிலர்) | “இடி இசை முரசமொடு ஒன்றுமொழிந்து” |\n| 2 | [pathitrupathu_41] (பரணர்) | “முரசுடைப் பெருஞ் சமத்து”, “எடுத்தேறு ஏய கடிப்புடை வியன்கண்” (முரசின் கண்) |\n| 3 | [pathitrupathu_30] (பாலைக் கௌதமனார்) | “நின் தழங்கு குரல் முரசே”; பெருஞ்சோற்று நிலையும் முரசும் |\n| 4 | [pathitrupathu_90] (பெருங்குன்றூர் கிழார்) | “உரும் என முழங்கும் முரசின்” |\n| 5 | [paripadal_22] | “முரசு அதிர்பவை போல் முழங்கு இடி” |\n| 6 | [pathitrupathu_17] (குமட்டூர்க் கண்ணனார்) | “கடம்பு அறுத்து இயற்றிய வலம்படு வியன் பணை” — உரை இதனைப் பெரிய முரசு எனக் கொள்கிறது (சொல் நேரடியாக இல்லை; உரை வழி மட்டும்) |\n| 7 | [pathitrupathu_44] (பரணர்) | “முரசம் கொண்டு”, “முரசு செய முரச்சி” — பகைவர் முரசைக் கைக்கொள்ளல் |\n| 1 | [paripadal_10] | “பறை அறையப் போந்தது … வையைப் புனல்” — நேரடிப் பறைக் குறிப்பு |\n| 2 | [pathitrupathu_70] (கபிலர்) | “பறைக் குரல் அருவி” — அருவியின் ஒலிக்குப் **பறை உவமை** |\n| 3 | [pathitrupathu_30] | “அரும் பறை வினைஞர்” — பறைத் தொழிலாளர் |\n| 4 | [ainkurunooru_215] (கபிலர்) | “தட்டைத் தண்ணுமை” — தண்ணுமைப் பறை |\n| 5 | [paripadal_12] | தண்ணுமை, மத்தரி, தடாரி, மகுளி, முழவு ஆகிய தாளக் கருவிகள் பட்டியல் |\n⚠️ வேறுபாட்டுக் குறிப்பு: [ainkurunooru_086] (“மென்பறை விளிக்குறல்”) மற்றும் [ainkurunooru_180] (“பறைதபு முதுகுருகு”) ஆகியவை **கருவியைக் குறிக்கவில்லை** — பறவையின் ஒலி/தோற்றத்தைக் குறிக்கும் பயன்பாடுகள்; எனவே பறைச் சான்றாகக் கொள்ளத் தக்கவை அல்ல.\n| 1 | [pathitrupathu_46] | “பேரியாழ் பாலை பண்ணி” — பாலைப் பண் |\n| 2 | [pathitrupathu_66] (கபிலர்) | “பேரியாழ் பாலை பண்ணி” |\n| 3 | [pathitrupathu_57] | “பாலை பண்ணி … தழிஞ்சி பாடி” |\n| 4 | [pathitrupathu_65] (கபிலர்) | “பண்ணுப் பெயர்த்தாங்கு” — பண்ணின் மாற்றீடு |\n| 5 | [pathitrupathu_41] (பரணர்) | “பண் அமை முழவும், பதலையும்” |\n| 6 | [sirupanatrupadai_22] | “நூல் நெறி மரபின், பண்ணி ஆனாது” — பண் மரபு |\n| 7 | [paripadal_12] | பாடலின் உரைத் தலைப்பில் “பண்: பண்ணுப் பாலையாழ்”, “பண் வகுத்தவர்: நந்நாகனார்” (உரை வழிச் செய்தி) |\n- **மிகச் செறிவான மூலங்கள்** (ஒரே பாடலில் பல கருவிகள்): [pathitrupathu_41], [pathitrupathu_66], [pathitrupathu_46], [paripadal_12], [paripadal_19] — இவை ஐந்து பொருண்மைகளுக்கும் சிறந்த தொகுப்புப் பாடல்கள்.\n- **விவாதத்திற்குரிய பகுதி**: [paripadal_12]-இல் வரும் தண்ணுமை, மத்தரி, தடாரி, மகுளி, பதலை ஆகியவற்றின் தனித்தனி வடிவம்/வகைப்பாடு உரை வழியாகவே தெரிகிறது; ஆய்வாளர் பல்வேறு வகைப்பாடுகள் தருவர் — இதை ஒரு முடிவாகக் கொள்ள வேண்டாம்.",
+    "claims": [
+      {
+        "claim_id": "claim_4",
+        "claim_text": "| 1 | [pathitrupathu_46] (பரணர்) | “தொடை படு பேரியாழ் பாலை பண்ணி”, “பணியா மரபின் உழிஞை பாட” — யாழும் பண்ணும் ஒருங்கே |",
+        "claim_text_ta": "| 1 | [pathitrupathu_46] (பரணர்) | “தொடை படு பேரியாழ் பாலை பண்ணி”, “பணியா மரபின் உழிஞை பாட” — யாழும் பண்ணும் ஒருங்கே |",
+        "citation_ids": [
+          "pathitrupathu_46"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_46_0]",
+            "source_id": "pathitrupathu_46",
+            "source": {
+              "source_id": "pathitrupathu_46",
+              "poem": "pathitrupathu",
+              "verse_number": 46,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_5",
+        "claim_text": "| 2 | [pathitrupathu_66] (கபிலர்) | “வாங்கு இரு மருப்பின் தீம் தொடை பழுனிய / இடனுடைப் பேரியாழ் பாலை பண்ணி” |",
+        "claim_text_ta": "| 2 | [pathitrupathu_66] (கபிலர்) | “வாங்கு இரு மருப்பின் தீம் தொடை பழுனிய / இடனுடைப் பேரியாழ் பாலை பண்ணி” |",
+        "citation_ids": [
+          "pathitrupathu_66"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_66_0]",
+            "source_id": "pathitrupathu_66",
+            "source": {
+              "source_id": "pathitrupathu_66",
+              "poem": "pathitrupathu",
+              "verse_number": 66,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_6",
+        "claim_text": "| 3 | [pathitrupathu_57] (காக்கை பாடினியார் நச்செள்ளையார்) | “விரல் கவர் பேரியாழ் பாலை பண்ணி, குரல் புணர் இன் இசைத் தழிஞ்சி பாடி” |",
+        "claim_text_ta": "| 3 | [pathitrupathu_57] (காக்கை பாடினியார் நச்செள்ளையார்) | “விரல் கவர் பேரியாழ் பாலை பண்ணி, குரல் புணர் இன் இசைத் தழிஞ்சி பாடி” |",
+        "citation_ids": [
+          "pathitrupathu_57"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_57_0]",
+            "source_id": "pathitrupathu_57",
+            "source": {
+              "source_id": "pathitrupathu_57",
+              "poem": "pathitrupathu",
+              "verse_number": 57,
+              "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_7",
+        "claim_text": "| 4 | [pathitrupathu_41] (பரணர்) | “புணர் புரி நரம்பின் … வணர் அமை நல் யாழ் இளையர் பொறுப்ப” |",
+        "claim_text_ta": "| 4 | [pathitrupathu_41] (பரணர்) | “புணர் புரி நரம்பின் … வணர் அமை நல் யாழ் இளையர் பொறுப்ப” |",
+        "citation_ids": [
+          "pathitrupathu_41"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_41_0]",
+            "source_id": "pathitrupathu_41",
+            "source": {
+              "source_id": "pathitrupathu_41",
+              "poem": "pathitrupathu",
+              "verse_number": 41,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_8",
+        "claim_text": "| 5 | [pathitrupathu_65] (கபிலர்) | “தீம் தொடை நரம்பின் பாலை வல்லோன் … பண்ணுப் பெயர்த்தாங்கு” |",
+        "claim_text_ta": "| 5 | [pathitrupathu_65] (கபிலர்) | “தீம் தொடை நரம்பின் பாலை வல்லோன் … பண்ணுப் பெயர்த்தாங்கு” |",
+        "citation_ids": [
+          "pathitrupathu_65"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_65_0]",
+            "source_id": "pathitrupathu_65",
+            "source": {
+              "source_id": "pathitrupathu_65",
+              "poem": "pathitrupathu",
+              "verse_number": 65,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_9",
+        "claim_text": "| 6 | [sirupanatrupadai_22] | யாழின் உறுப்புகள் (குடம், வயிறு, திருகாணி) விரிவாக வருணிக்கப்படும் பாடல் |",
+        "claim_text_ta": "| 6 | [sirupanatrupadai_22] | யாழின் உறுப்புகள் (குடம், வயிறு, திருகாணி) விரிவாக வருணிக்கப்படும் பாடல் |",
+        "citation_ids": [
+          "sirupanatrupadai_22"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_sirupanatrupadai_22_0]",
+            "source_id": "sirupanatrupadai_22",
+            "source": {
+              "source_id": "sirupanatrupadai_22",
+              "poem": "sirupanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_10",
+        "claim_text": "| 7 | [ainkurunooru_475], [ainkurunooru_478] (பேயனார்) | “சீறியாழ்ப் பாணன்”, “முல்லை நல்யாழ்ப் பாண” — யாழ் பாணர் குறிப்பு |",
+        "claim_text_ta": "| 7 | [ainkurunooru_475], [ainkurunooru_478] (பேயனார்) | “சீறியாழ்ப் பாணன்”, “முல்லை நல்யாழ்ப் பாண” — யாழ் பாணர் குறிப்பு |",
+        "citation_ids": [
+          "ainkurunooru_475",
+          "ainkurunooru_478"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_ainkurunooru_475_0]",
+            "source_id": "ainkurunooru_475",
+            "source": {
+              "source_id": "ainkurunooru_475",
+              "poem": "ainkurunooru",
+              "verse_number": 475,
+              "poet": "பேயனார்",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_ainkurunooru_478_1]",
+            "source_id": "ainkurunooru_478",
+            "source": {
+              "source_id": "ainkurunooru_478",
+              "poem": "ainkurunooru",
+              "verse_number": 478,
+              "poet": "பேயனார்",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_13",
+        "claim_text": "| 1 | [ainkurunooru_215] (கபிலர், குறிஞ்சி) | “தட்டைத் தண்ணுமைப் பின்னர் இயவர் / தீங்குழல் ஆம்பலின் இனிய இமிரும்” — குழலும் தண்ணுமையும் |",
+        "claim_text_ta": "| 1 | [ainkurunooru_215] (கபிலர், குறிஞ்சி) | “தட்டைத் தண்ணுமைப் பின்னர் இயவர் / தீங்குழல் ஆம்பலின் இனிய இமிரும்” — குழலும் தண்ணுமையும் |",
+        "citation_ids": [
+          "ainkurunooru_215"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_ainkurunooru_215_0]",
+            "source_id": "ainkurunooru_215",
+            "source": {
+              "source_id": "ainkurunooru_215",
+              "poem": "ainkurunooru",
+              "verse_number": 215,
+              "poet": "கபிலர்",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_14",
+        "claim_text": "| 2 | [paripadal_12] | “ஒத்த குழலின் ஒலியெழ” — குழல், முழவு, தண்ணுமை, மத்தரி, தடாரி, மகுளி ஒருங்கு |",
+        "claim_text_ta": "| 2 | [paripadal_12] | “ஒத்த குழலின் ஒலியெழ” — குழல், முழவு, தண்ணுமை, மத்தரி, தடாரி, மகுளி ஒருங்கு |",
+        "citation_ids": [
+          "paripadal_12"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_paripadal_12_0]",
+            "source_id": "paripadal_12",
+            "source": {
+              "source_id": "paripadal_12",
+              "poem": "paripadal",
+              "verse_number": 12,
+              "poet": "நல்வழுதியார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_15",
+        "claim_text": "| 3 | [paripadal_19] | “கைவைத் திமிர்புகுழல் காண்குவோரும்” |",
+        "claim_text_ta": "| 3 | [paripadal_19] | “கைவைத் திமிர்புகுழல் காண்குவோரும்” |",
+        "citation_ids": [
+          "paripadal_19"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_paripadal_19_0]",
+            "source_id": "paripadal_19",
+            "source": {
+              "source_id": "paripadal_19",
+              "poem": "paripadal",
+              "verse_number": 19,
+              "poet": "நப்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_16",
+        "claim_text": "| 4 | [ainkurunooru_306] (ஓதலாந்தையார்) | “குழலினும் இனைகுவள்” — குழல் **உவமையாக** (மெல்லிய இசைக்கு) |",
+        "claim_text_ta": "| 4 | [ainkurunooru_306] (ஓதலாந்தையார்) | “குழலினும் இனைகுவள்” — குழல் **உவமையாக** (மெல்லிய இசைக்கு) |",
+        "citation_ids": [
+          "ainkurunooru_306"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_ainkurunooru_306_0]",
+            "source_id": "ainkurunooru_306",
+            "source": {
+              "source_id": "ainkurunooru_306",
+              "poem": "ainkurunooru",
+              "verse_number": 306,
+              "poet": "ஓதலாந்தையார்",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_17",
+        "claim_text": "| 5 | [ainkurunooru_458] (பேயனார்) | பாணர் கொன்றைப் பழத்தால் குழல் செய்தல் குறித்த **கற்பனை** குறிப்பு |",
+        "claim_text_ta": "| 5 | [ainkurunooru_458] (பேயனார்) | பாணர் கொன்றைப் பழத்தால் குழல் செய்தல் குறித்த **கற்பனை** குறிப்பு |",
+        "citation_ids": [
+          "ainkurunooru_458"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_ainkurunooru_458_0]",
+            "source_id": "ainkurunooru_458",
+            "source": {
+              "source_id": "ainkurunooru_458",
+              "poem": "ainkurunooru",
+              "verse_number": 458,
+              "poet": "பேயனார்",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_20",
+        "claim_text": "| 1 | [pathitrupathu_66] (கபிலர்) | “இடி இசை முரசமொடு ஒன்றுமொழிந்து” |",
+        "claim_text_ta": "| 1 | [pathitrupathu_66] (கபிலர்) | “இடி இசை முரசமொடு ஒன்றுமொழிந்து” |",
+        "citation_ids": [
+          "pathitrupathu_66"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_66_0]",
+            "source_id": "pathitrupathu_66",
+            "source": {
+              "source_id": "pathitrupathu_66",
+              "poem": "pathitrupathu",
+              "verse_number": 66,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_21",
+        "claim_text": "| 2 | [pathitrupathu_41] (பரணர்) | “முரசுடைப் பெருஞ் சமத்து”, “எடுத்தேறு ஏய கடிப்புடை வியன்கண்” (முரசின் கண்) |",
+        "claim_text_ta": "| 2 | [pathitrupathu_41] (பரணர்) | “முரசுடைப் பெருஞ் சமத்து”, “எடுத்தேறு ஏய கடிப்புடை வியன்கண்” (முரசின் கண்) |",
+        "citation_ids": [
+          "pathitrupathu_41"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_41_0]",
+            "source_id": "pathitrupathu_41",
+            "source": {
+              "source_id": "pathitrupathu_41",
+              "poem": "pathitrupathu",
+              "verse_number": 41,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_22",
+        "claim_text": "| 3 | [pathitrupathu_30] (பாலைக் கௌதமனார்) | “நின் தழங்கு குரல் முரசே”; பெருஞ்சோற்று நிலையும் முரசும் |",
+        "claim_text_ta": "| 3 | [pathitrupathu_30] (பாலைக் கௌதமனார்) | “நின் தழங்கு குரல் முரசே”; பெருஞ்சோற்று நிலையும் முரசும் |",
+        "citation_ids": [
+          "pathitrupathu_30"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_30_0]",
+            "source_id": "pathitrupathu_30",
+            "source": {
+              "source_id": "pathitrupathu_30",
+              "poem": "pathitrupathu",
+              "verse_number": 30,
+              "poet": "பாலைக் கௌதமனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_23",
+        "claim_text": "| 4 | [pathitrupathu_90] (பெருங்குன்றூர் கிழார்) | “உரும் என முழங்கும் முரசின்” |",
+        "claim_text_ta": "| 4 | [pathitrupathu_90] (பெருங்குன்றூர் கிழார்) | “உரும் என முழங்கும் முரசின்” |",
+        "citation_ids": [
+          "pathitrupathu_90"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_90_0]",
+            "source_id": "pathitrupathu_90",
+            "source": {
+              "source_id": "pathitrupathu_90",
+              "poem": "pathitrupathu",
+              "verse_number": 90,
+              "poet": "பெருங்குன்றூர் கிழார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_24",
+        "claim_text": "| 5 | [paripadal_22] | “முரசு அதிர்பவை போல் முழங்கு இடி” |",
+        "claim_text_ta": "| 5 | [paripadal_22] | “முரசு அதிர்பவை போல் முழங்கு இடி” |",
+        "citation_ids": [
+          "paripadal_22"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_paripadal_22_0]",
+            "source_id": "paripadal_22",
+            "source": {
+              "source_id": "paripadal_22",
+              "poem": "paripadal",
+              "verse_number": 22,
+              "poet": "ஆசிரியர் அறியப்படவில்லை.",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_25",
+        "claim_text": "| 6 | [pathitrupathu_17] (குமட்டூர்க் கண்ணனார்) | “கடம்பு அறுத்து இயற்றிய வலம்படு வியன் பணை” — உரை இதனைப் பெரிய முரசு எனக் கொள்கிறது (சொல் நேரடியாக இல்லை; உரை வழி மட்டும்) |",
+        "claim_text_ta": "| 6 | [pathitrupathu_17] (குமட்டூர்க் கண்ணனார்) | “கடம்பு அறுத்து இயற்றிய வலம்படு வியன் பணை” — உரை இதனைப் பெரிய முரசு எனக் கொள்கிறது (சொல் நேரடியாக இல்லை; உரை வழி மட்டும்) |",
+        "citation_ids": [
+          "pathitrupathu_17"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_17_0]",
+            "source_id": "pathitrupathu_17",
+            "source": {
+              "source_id": "pathitrupathu_17",
+              "poem": "pathitrupathu",
+              "verse_number": 17,
+              "poet": "குமட்டூர்க் கண்ணனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_26",
+        "claim_text": "| 7 | [pathitrupathu_44] (பரணர்) | “முரசம் கொண்டு”, “முரசு செய முரச்சி” — பகைவர் முரசைக் கைக்கொள்ளல் |",
+        "claim_text_ta": "| 7 | [pathitrupathu_44] (பரணர்) | “முரசம் கொண்டு”, “முரசு செய முரச்சி” — பகைவர் முரசைக் கைக்கொள்ளல் |",
+        "citation_ids": [
+          "pathitrupathu_44"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_44_0]",
+            "source_id": "pathitrupathu_44",
+            "source": {
+              "source_id": "pathitrupathu_44",
+              "poem": "pathitrupathu",
+              "verse_number": 44,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_29",
+        "claim_text": "| 1 | [paripadal_10] | “பறை அறையப் போந்தது … வையைப் புனல்” — நேரடிப் பறைக் குறிப்பு |",
+        "claim_text_ta": "| 1 | [paripadal_10] | “பறை அறையப் போந்தது … வையைப் புனல்” — நேரடிப் பறைக் குறிப்பு |",
+        "citation_ids": [
+          "paripadal_10"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_paripadal_10_0]",
+            "source_id": "paripadal_10",
+            "source": {
+              "source_id": "paripadal_10",
+              "poem": "paripadal",
+              "verse_number": 10,
+              "poet": "கரும்பிள்ளைப் பூதனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_30",
+        "claim_text": "| 2 | [pathitrupathu_70] (கபிலர்) | “பறைக் குரல் அருவி” — அருவியின் ஒலிக்குப் **பறை உவமை** |",
+        "claim_text_ta": "| 2 | [pathitrupathu_70] (கபிலர்) | “பறைக் குரல் அருவி” — அருவியின் ஒலிக்குப் **பறை உவமை** |",
+        "citation_ids": [
+          "pathitrupathu_70"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_70_0]",
+            "source_id": "pathitrupathu_70",
+            "source": {
+              "source_id": "pathitrupathu_70",
+              "poem": "pathitrupathu",
+              "verse_number": 70,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_31",
+        "claim_text": "| 3 | [pathitrupathu_30] | “அரும் பறை வினைஞர்” — பறைத் தொழிலாளர் |",
+        "claim_text_ta": "| 3 | [pathitrupathu_30] | “அரும் பறை வினைஞர்” — பறைத் தொழிலாளர் |",
+        "citation_ids": [
+          "pathitrupathu_30"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_30_0]",
+            "source_id": "pathitrupathu_30",
+            "source": {
+              "source_id": "pathitrupathu_30",
+              "poem": "pathitrupathu",
+              "verse_number": 30,
+              "poet": "பாலைக் கௌதமனார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_32",
+        "claim_text": "| 4 | [ainkurunooru_215] (கபிலர்) | “தட்டைத் தண்ணுமை” — தண்ணுமைப் பறை |",
+        "claim_text_ta": "| 4 | [ainkurunooru_215] (கபிலர்) | “தட்டைத் தண்ணுமை” — தண்ணுமைப் பறை |",
+        "citation_ids": [
+          "ainkurunooru_215"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_ainkurunooru_215_0]",
+            "source_id": "ainkurunooru_215",
+            "source": {
+              "source_id": "ainkurunooru_215",
+              "poem": "ainkurunooru",
+              "verse_number": 215,
+              "poet": "கபிலர்",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_33",
+        "claim_text": "| 5 | [paripadal_12] | தண்ணுமை, மத்தரி, தடாரி, மகுளி, முழவு ஆகிய தாளக் கருவிகள் பட்டியல் |",
+        "claim_text_ta": "| 5 | [paripadal_12] | தண்ணுமை, மத்தரி, தடாரி, மகுளி, முழவு ஆகிய தாளக் கருவிகள் பட்டியல் |",
+        "citation_ids": [
+          "paripadal_12"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_paripadal_12_0]",
+            "source_id": "paripadal_12",
+            "source": {
+              "source_id": "paripadal_12",
+              "poem": "paripadal",
+              "verse_number": 12,
+              "poet": "நல்வழுதியார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_34",
+        "claim_text": "⚠️ வேறுபாட்டுக் குறிப்பு: [ainkurunooru_086] (“மென்பறை விளிக்குறல்”) மற்றும் [ainkurunooru_180] (“பறைதபு முதுகுருகு”) ஆகியவை **கருவியைக் குறிக்கவில்லை** — பறவையின் ஒலி/தோற்றத்தைக் குறிக்கும் பயன்பாடுகள்; எனவே பறைச் சான்றாகக் கொள்ளத் தக்கவை அல்ல.",
+        "claim_text_ta": "⚠️ வேறுபாட்டுக் குறிப்பு: [ainkurunooru_086] (“மென்பறை விளிக்குறல்”) மற்றும் [ainkurunooru_180] (“பறைதபு முதுகுருகு”) ஆகியவை **கருவியைக் குறிக்கவில்லை** — பறவையின் ஒலி/தோற்றத்தைக் குறிக்கும் பயன்பாடுகள்; எனவே பறைச் சான்றாகக் கொள்ளத் தக்கவை அல்ல.",
+        "citation_ids": [
+          "ainkurunooru_086",
+          "ainkurunooru_180"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_ainkurunooru_086_0]",
+            "source_id": "ainkurunooru_086",
+            "source": {
+              "source_id": "ainkurunooru_086",
+              "poem": "ainkurunooru",
+              "verse_number": 86,
+              "poet": "ஓரம்போகியார்",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_ainkurunooru_180_1]",
+            "source_id": "ainkurunooru_180",
+            "source": {
+              "source_id": "ainkurunooru_180",
+              "poem": "ainkurunooru",
+              "verse_number": 180,
+              "poet": "அம்மூவனார்",
+              "tinai": "neytal",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_37",
+        "claim_text": "| 1 | [pathitrupathu_46] | “பேரியாழ் பாலை பண்ணி” — பாலைப் பண் |",
+        "claim_text_ta": "| 1 | [pathitrupathu_46] | “பேரியாழ் பாலை பண்ணி” — பாலைப் பண் |",
+        "citation_ids": [
+          "pathitrupathu_46"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_46_0]",
+            "source_id": "pathitrupathu_46",
+            "source": {
+              "source_id": "pathitrupathu_46",
+              "poem": "pathitrupathu",
+              "verse_number": 46,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_38",
+        "claim_text": "| 2 | [pathitrupathu_66] (கபிலர்) | “பேரியாழ் பாலை பண்ணி” |",
+        "claim_text_ta": "| 2 | [pathitrupathu_66] (கபிலர்) | “பேரியாழ் பாலை பண்ணி” |",
+        "citation_ids": [
+          "pathitrupathu_66"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_66_0]",
+            "source_id": "pathitrupathu_66",
+            "source": {
+              "source_id": "pathitrupathu_66",
+              "poem": "pathitrupathu",
+              "verse_number": 66,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_39",
+        "claim_text": "| 3 | [pathitrupathu_57] | “பாலை பண்ணி … தழிஞ்சி பாடி” |",
+        "claim_text_ta": "| 3 | [pathitrupathu_57] | “பாலை பண்ணி … தழிஞ்சி பாடி” |",
+        "citation_ids": [
+          "pathitrupathu_57"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_57_0]",
+            "source_id": "pathitrupathu_57",
+            "source": {
+              "source_id": "pathitrupathu_57",
+              "poem": "pathitrupathu",
+              "verse_number": 57,
+              "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_40",
+        "claim_text": "| 4 | [pathitrupathu_65] (கபிலர்) | “பண்ணுப் பெயர்த்தாங்கு” — பண்ணின் மாற்றீடு |",
+        "claim_text_ta": "| 4 | [pathitrupathu_65] (கபிலர்) | “பண்ணுப் பெயர்த்தாங்கு” — பண்ணின் மாற்றீடு |",
+        "citation_ids": [
+          "pathitrupathu_65"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_65_0]",
+            "source_id": "pathitrupathu_65",
+            "source": {
+              "source_id": "pathitrupathu_65",
+              "poem": "pathitrupathu",
+              "verse_number": 65,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_41",
+        "claim_text": "| 5 | [pathitrupathu_41] (பரணர்) | “பண் அமை முழவும், பதலையும்” |",
+        "claim_text_ta": "| 5 | [pathitrupathu_41] (பரணர்) | “பண் அமை முழவும், பதலையும்” |",
+        "citation_ids": [
+          "pathitrupathu_41"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_41_0]",
+            "source_id": "pathitrupathu_41",
+            "source": {
+              "source_id": "pathitrupathu_41",
+              "poem": "pathitrupathu",
+              "verse_number": 41,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_42",
+        "claim_text": "| 6 | [sirupanatrupadai_22] | “நூல் நெறி மரபின், பண்ணி ஆனாது” — பண் மரபு |",
+        "claim_text_ta": "| 6 | [sirupanatrupadai_22] | “நூல் நெறி மரபின், பண்ணி ஆனாது” — பண் மரபு |",
+        "citation_ids": [
+          "sirupanatrupadai_22"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_sirupanatrupadai_22_0]",
+            "source_id": "sirupanatrupadai_22",
+            "source": {
+              "source_id": "sirupanatrupadai_22",
+              "poem": "sirupanatrupadai",
+              "verse_number": null,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_43",
+        "claim_text": "| 7 | [paripadal_12] | பாடலின் உரைத் தலைப்பில் “பண்: பண்ணுப் பாலையாழ்”, “பண் வகுத்தவர்: நந்நாகனார்” (உரை வழிச் செய்தி) |",
+        "claim_text_ta": "| 7 | [paripadal_12] | பாடலின் உரைத் தலைப்பில் “பண்: பண்ணுப் பாலையாழ்”, “பண் வகுத்தவர்: நந்நாகனார்” (உரை வழிச் செய்தி) |",
+        "citation_ids": [
+          "paripadal_12"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_paripadal_12_0]",
+            "source_id": "paripadal_12",
+            "source": {
+              "source_id": "paripadal_12",
+              "poem": "paripadal",
+              "verse_number": 12,
+              "poet": "நல்வழுதியார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_44",
+        "claim_text": "- **மிகச் செறிவான மூலங்கள்** (ஒரே பாடலில் பல கருவிகள்): [pathitrupathu_41], [pathitrupathu_66], [pathitrupathu_46], [paripadal_12], [paripadal_19] — இவை ஐந்து பொருண்மைகளுக்கும் சிறந்த தொகுப்புப் பாடல்கள்.",
+        "claim_text_ta": "- **மிகச் செறிவான மூலங்கள்** (ஒரே பாடலில் பல கருவிகள்): [pathitrupathu_41], [pathitrupathu_66], [pathitrupathu_46], [paripadal_12], [paripadal_19] — இவை ஐந்து பொருண்மைகளுக்கும் சிறந்த தொகுப்புப் பாடல்கள்.",
+        "citation_ids": [
+          "pathitrupathu_41",
+          "pathitrupathu_46",
+          "paripadal_12",
+          "paripadal_19"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_41_0]",
+            "source_id": "pathitrupathu_41",
+            "source": {
+              "source_id": "pathitrupathu_41",
+              "poem": "pathitrupathu",
+              "verse_number": 41,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_pathitrupathu_66_1]",
+            "source_id": "pathitrupathu_66",
+            "source": {
+              "source_id": "pathitrupathu_66",
+              "poem": "pathitrupathu",
+              "verse_number": 66,
+              "poet": "கபிலர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": false
+            },
+            "quote": null,
+            "is_valid": false,
+            "validation_notes": "Claim shares no content with cited source pathitrupathu_66; the citation does not support it"
+          },
+          {
+            "citation_id": "[^c_pathitrupathu_46_2]",
+            "source_id": "pathitrupathu_46",
+            "source": {
+              "source_id": "pathitrupathu_46",
+              "poem": "pathitrupathu",
+              "verse_number": 46,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_paripadal_12_3]",
+            "source_id": "paripadal_12",
+            "source": {
+              "source_id": "paripadal_12",
+              "poem": "paripadal",
+              "verse_number": 12,
+              "poet": "நல்வழுதியார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_paripadal_19_4]",
+            "source_id": "paripadal_19",
+            "source": {
+              "source_id": "paripadal_19",
+              "poem": "paripadal",
+              "verse_number": 19,
+              "poet": "நப்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_45",
+        "claim_text": "- **விவாதத்திற்குரிய பகுதி**: [paripadal_12]-இல் வரும் தண்ணுமை, மத்தரி, தடாரி, மகுளி, பதலை ஆகியவற்றின் தனித்தனி வடிவம்/வகைப்பாடு உரை வழியாகவே தெரிகிறது; ஆய்வாளர் பல்வேறு வகைப்பாடுகள் தருவர் — இதை ஒரு முடிவாகக் கொள்ள வேண்டாம்.",
+        "claim_text_ta": "- **விவாதத்திற்குரிய பகுதி**: [paripadal_12]-இல் வரும் தண்ணுமை, மத்தரி, தடாரி, மகுளி, பதலை ஆகியவற்றின் தனித்தனி வடிவம்/வகைப்பாடு உரை வழியாகவே தெரிகிறது; ஆய்வாளர் பல்வேறு வகைப்பாடுகள் தருவர் — இதை ஒரு முடிவாகக் கொள்ள வேண்டாம்.",
+        "citation_ids": [
+          "paripadal_12"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_paripadal_12_0]",
+            "source_id": "paripadal_12",
+            "source": {
+              "source_id": "paripadal_12",
+              "poem": "paripadal",
+              "verse_number": 12,
+              "poet": "நல்வழுதியார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "[^c_pathitrupathu_46_2]",
+        "source_id": "pathitrupathu_46",
+        "source": {
+          "source_id": "pathitrupathu_46",
+          "poem": "pathitrupathu",
+          "verse_number": 46,
+          "poet": "பரணர்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_66_0]",
+        "source_id": "pathitrupathu_66",
+        "source": {
+          "source_id": "pathitrupathu_66",
+          "poem": "pathitrupathu",
+          "verse_number": 66,
+          "poet": "கபிலர்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_57_0]",
+        "source_id": "pathitrupathu_57",
+        "source": {
+          "source_id": "pathitrupathu_57",
+          "poem": "pathitrupathu",
+          "verse_number": 57,
+          "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_41_0]",
+        "source_id": "pathitrupathu_41",
+        "source": {
+          "source_id": "pathitrupathu_41",
+          "poem": "pathitrupathu",
+          "verse_number": 41,
+          "poet": "பரணர்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_65_0]",
+        "source_id": "pathitrupathu_65",
+        "source": {
+          "source_id": "pathitrupathu_65",
+          "poem": "pathitrupathu",
+          "verse_number": 65,
+          "poet": "கபிலர்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_sirupanatrupadai_22_0]",
+        "source_id": "sirupanatrupadai_22",
+        "source": {
+          "source_id": "sirupanatrupadai_22",
+          "poem": "sirupanatrupadai",
+          "verse_number": null,
+          "poet": null,
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_ainkurunooru_475_0]",
+        "source_id": "ainkurunooru_475",
+        "source": {
+          "source_id": "ainkurunooru_475",
+          "poem": "ainkurunooru",
+          "verse_number": 475,
+          "poet": "பேயனார்",
+          "tinai": "mullai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_ainkurunooru_478_1]",
+        "source_id": "ainkurunooru_478",
+        "source": {
+          "source_id": "ainkurunooru_478",
+          "poem": "ainkurunooru",
+          "verse_number": 478,
+          "poet": "பேயனார்",
+          "tinai": "mullai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_ainkurunooru_215_0]",
+        "source_id": "ainkurunooru_215",
+        "source": {
+          "source_id": "ainkurunooru_215",
+          "poem": "ainkurunooru",
+          "verse_number": 215,
+          "poet": "கபிலர்",
+          "tinai": "kurinji",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_paripadal_12_0]",
+        "source_id": "paripadal_12",
+        "source": {
+          "source_id": "paripadal_12",
+          "poem": "paripadal",
+          "verse_number": 12,
+          "poet": "நல்வழுதியார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_paripadal_19_4]",
+        "source_id": "paripadal_19",
+        "source": {
+          "source_id": "paripadal_19",
+          "poem": "paripadal",
+          "verse_number": 19,
+          "poet": "நப்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_ainkurunooru_306_0]",
+        "source_id": "ainkurunooru_306",
+        "source": {
+          "source_id": "ainkurunooru_306",
+          "poem": "ainkurunooru",
+          "verse_number": 306,
+          "poet": "ஓதலாந்தையார்",
+          "tinai": "palai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_ainkurunooru_458_0]",
+        "source_id": "ainkurunooru_458",
+        "source": {
+          "source_id": "ainkurunooru_458",
+          "poem": "ainkurunooru",
+          "verse_number": 458,
+          "poet": "பேயனார்",
+          "tinai": "mullai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_30_0]",
+        "source_id": "pathitrupathu_30",
+        "source": {
+          "source_id": "pathitrupathu_30",
+          "poem": "pathitrupathu",
+          "verse_number": 30,
+          "poet": "பாலைக் கௌதமனார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_90_0]",
+        "source_id": "pathitrupathu_90",
+        "source": {
+          "source_id": "pathitrupathu_90",
+          "poem": "pathitrupathu",
+          "verse_number": 90,
+          "poet": "பெருங்குன்றூர் கிழார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_paripadal_22_0]",
+        "source_id": "paripadal_22",
+        "source": {
+          "source_id": "paripadal_22",
+          "poem": "paripadal",
+          "verse_number": 22,
+          "poet": "ஆசிரியர் அறியப்படவில்லை.",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_17_0]",
+        "source_id": "pathitrupathu_17",
+        "source": {
+          "source_id": "pathitrupathu_17",
+          "poem": "pathitrupathu",
+          "verse_number": 17,
+          "poet": "குமட்டூர்க் கண்ணனார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_44_0]",
+        "source_id": "pathitrupathu_44",
+        "source": {
+          "source_id": "pathitrupathu_44",
+          "poem": "pathitrupathu",
+          "verse_number": 44,
+          "poet": "பரணர்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_paripadal_10_0]",
+        "source_id": "paripadal_10",
+        "source": {
+          "source_id": "paripadal_10",
+          "poem": "paripadal",
+          "verse_number": 10,
+          "poet": "கரும்பிள்ளைப் பூதனார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_70_0]",
+        "source_id": "pathitrupathu_70",
+        "source": {
+          "source_id": "pathitrupathu_70",
+          "poem": "pathitrupathu",
+          "verse_number": 70,
+          "poet": "கபிலர்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_ainkurunooru_086_0]",
+        "source_id": "ainkurunooru_086",
+        "source": {
+          "source_id": "ainkurunooru_086",
+          "poem": "ainkurunooru",
+          "verse_number": 86,
+          "poet": "ஓரம்போகியார்",
+          "tinai": "marutam",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_ainkurunooru_180_1]",
+        "source_id": "ainkurunooru_180",
+        "source": {
+          "source_id": "ainkurunooru_180",
+          "poem": "ainkurunooru",
+          "verse_number": 180,
+          "poet": "அம்மூவனார்",
+          "tinai": "neytal",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      }
+    ],
+    "evidence_status": "partially_verified",
+    "is_abstained": false,
+    "abstention_reason": "none",
+    "abstention_message_ta": null,
+    "confidence_score": 0.85
+  },
+  "citations": [
+    {
+      "verse_id": "pathitrupathu_46",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "பரணர்",
+      "pulavar": "பரணர்",
+      "citation_id": "[^c_pathitrupathu_46_2]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_66",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "கபிலர்",
+      "pulavar": "கபிலர்",
+      "citation_id": "[^c_pathitrupathu_66_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_57",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+      "pulavar": "காக்கை பாடினியார் நச்செள்ளையார்",
+      "citation_id": "[^c_pathitrupathu_57_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_41",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "பரணர்",
+      "pulavar": "பரணர்",
+      "citation_id": "[^c_pathitrupathu_41_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_65",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "கபிலர்",
+      "pulavar": "கபிலர்",
+      "citation_id": "[^c_pathitrupathu_65_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "sirupanatrupadai_22",
+      "poem": "sirupanatrupadai",
+      "tinai": "unknown",
+      "poet": null,
+      "pulavar": null,
+      "citation_id": "[^c_sirupanatrupadai_22_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "ainkurunooru_475",
+      "poem": "ainkurunooru",
+      "tinai": "mullai",
+      "poet": "பேயனார்",
+      "pulavar": "பேயனார்",
+      "citation_id": "[^c_ainkurunooru_475_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "ainkurunooru_478",
+      "poem": "ainkurunooru",
+      "tinai": "mullai",
+      "poet": "பேயனார்",
+      "pulavar": "பேயனார்",
+      "citation_id": "[^c_ainkurunooru_478_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "ainkurunooru_215",
+      "poem": "ainkurunooru",
+      "tinai": "kurinji",
+      "poet": "கபிலர்",
+      "pulavar": "கபிலர்",
+      "citation_id": "[^c_ainkurunooru_215_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "paripadal_12",
+      "poem": "paripadal",
+      "tinai": "unknown",
+      "poet": "நல்வழுதியார்",
+      "pulavar": "நல்வழுதியார்",
+      "citation_id": "[^c_paripadal_12_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "paripadal_19",
+      "poem": "paripadal",
+      "tinai": "unknown",
+      "poet": "நப்",
+      "pulavar": "நப்",
+      "citation_id": "[^c_paripadal_19_4]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "ainkurunooru_306",
+      "poem": "ainkurunooru",
+      "tinai": "palai",
+      "poet": "ஓதலாந்தையார்",
+      "pulavar": "ஓதலாந்தையார்",
+      "citation_id": "[^c_ainkurunooru_306_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "ainkurunooru_458",
+      "poem": "ainkurunooru",
+      "tinai": "mullai",
+      "poet": "பேயனார்",
+      "pulavar": "பேயனார்",
+      "citation_id": "[^c_ainkurunooru_458_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_30",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "பாலைக் கௌதமனார்",
+      "pulavar": "பாலைக் கௌதமனார்",
+      "citation_id": "[^c_pathitrupathu_30_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_90",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "பெருங்குன்றூர் கிழார்",
+      "pulavar": "பெருங்குன்றூர் கிழார்",
+      "citation_id": "[^c_pathitrupathu_90_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "paripadal_22",
+      "poem": "paripadal",
+      "tinai": "unknown",
+      "poet": "ஆசிரியர் அறியப்படவில்லை.",
+      "pulavar": "ஆசிரியர் அறியப்படவில்லை.",
+      "citation_id": "[^c_paripadal_22_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_17",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "குமட்டூர்க் கண்ணனார்",
+      "pulavar": "குமட்டூர்க் கண்ணனார்",
+      "citation_id": "[^c_pathitrupathu_17_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_44",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "பரணர்",
+      "pulavar": "பரணர்",
+      "citation_id": "[^c_pathitrupathu_44_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "paripadal_10",
+      "poem": "paripadal",
+      "tinai": "unknown",
+      "poet": "கரும்பிள்ளைப் பூதனார்",
+      "pulavar": "கரும்பிள்ளைப் பூதனார்",
+      "citation_id": "[^c_paripadal_10_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_70",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "கபிலர்",
+      "pulavar": "கபிலர்",
+      "citation_id": "[^c_pathitrupathu_70_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "ainkurunooru_086",
+      "poem": "ainkurunooru",
+      "tinai": "marutam",
+      "poet": "ஓரம்போகியார்",
+      "pulavar": "ஓரம்போகியார்",
+      "citation_id": "[^c_ainkurunooru_086_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "ainkurunooru_180",
+      "poem": "ainkurunooru",
+      "tinai": "neytal",
+      "poet": "அம்மூவனார்",
+      "pulavar": "அம்மூவனார்",
+      "citation_id": "[^c_ainkurunooru_180_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_4",
+      "claim_text": "| 1 | [pathitrupathu_46] (பரணர்) | “தொடை படு பேரியாழ் பாலை பண்ணி”, “பணியா மரபின் உழிஞை பாட” — யாழும் பண்ணும் ஒருங்கே |",
+      "claim_text_ta": "| 1 | [pathitrupathu_46] (பரணர்) | “தொடை படு பேரியாழ் பாலை பண்ணி”, “பணியா மரபின் உழிஞை பாட” — யாழும் பண்ணும் ஒருங்கே |",
+      "citation_ids": [
+        "pathitrupathu_46"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_46_0]",
+          "source_id": "pathitrupathu_46",
+          "source": {
+            "source_id": "pathitrupathu_46",
+            "poem": "pathitrupathu",
+            "verse_number": 46,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_5",
+      "claim_text": "| 2 | [pathitrupathu_66] (கபிலர்) | “வாங்கு இரு மருப்பின் தீம் தொடை பழுனிய / இடனுடைப் பேரியாழ் பாலை பண்ணி” |",
+      "claim_text_ta": "| 2 | [pathitrupathu_66] (கபிலர்) | “வாங்கு இரு மருப்பின் தீம் தொடை பழுனிய / இடனுடைப் பேரியாழ் பாலை பண்ணி” |",
+      "citation_ids": [
+        "pathitrupathu_66"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_66_0]",
+          "source_id": "pathitrupathu_66",
+          "source": {
+            "source_id": "pathitrupathu_66",
+            "poem": "pathitrupathu",
+            "verse_number": 66,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_6",
+      "claim_text": "| 3 | [pathitrupathu_57] (காக்கை பாடினியார் நச்செள்ளையார்) | “விரல் கவர் பேரியாழ் பாலை பண்ணி, குரல் புணர் இன் இசைத் தழிஞ்சி பாடி” |",
+      "claim_text_ta": "| 3 | [pathitrupathu_57] (காக்கை பாடினியார் நச்செள்ளையார்) | “விரல் கவர் பேரியாழ் பாலை பண்ணி, குரல் புணர் இன் இசைத் தழிஞ்சி பாடி” |",
+      "citation_ids": [
+        "pathitrupathu_57"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_57_0]",
+          "source_id": "pathitrupathu_57",
+          "source": {
+            "source_id": "pathitrupathu_57",
+            "poem": "pathitrupathu",
+            "verse_number": 57,
+            "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_7",
+      "claim_text": "| 4 | [pathitrupathu_41] (பரணர்) | “புணர் புரி நரம்பின் … வணர் அமை நல் யாழ் இளையர் பொறுப்ப” |",
+      "claim_text_ta": "| 4 | [pathitrupathu_41] (பரணர்) | “புணர் புரி நரம்பின் … வணர் அமை நல் யாழ் இளையர் பொறுப்ப” |",
+      "citation_ids": [
+        "pathitrupathu_41"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_41_0]",
+          "source_id": "pathitrupathu_41",
+          "source": {
+            "source_id": "pathitrupathu_41",
+            "poem": "pathitrupathu",
+            "verse_number": 41,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_8",
+      "claim_text": "| 5 | [pathitrupathu_65] (கபிலர்) | “தீம் தொடை நரம்பின் பாலை வல்லோன் … பண்ணுப் பெயர்த்தாங்கு” |",
+      "claim_text_ta": "| 5 | [pathitrupathu_65] (கபிலர்) | “தீம் தொடை நரம்பின் பாலை வல்லோன் … பண்ணுப் பெயர்த்தாங்கு” |",
+      "citation_ids": [
+        "pathitrupathu_65"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_65_0]",
+          "source_id": "pathitrupathu_65",
+          "source": {
+            "source_id": "pathitrupathu_65",
+            "poem": "pathitrupathu",
+            "verse_number": 65,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_9",
+      "claim_text": "| 6 | [sirupanatrupadai_22] | யாழின் உறுப்புகள் (குடம், வயிறு, திருகாணி) விரிவாக வருணிக்கப்படும் பாடல் |",
+      "claim_text_ta": "| 6 | [sirupanatrupadai_22] | யாழின் உறுப்புகள் (குடம், வயிறு, திருகாணி) விரிவாக வருணிக்கப்படும் பாடல் |",
+      "citation_ids": [
+        "sirupanatrupadai_22"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_sirupanatrupadai_22_0]",
+          "source_id": "sirupanatrupadai_22",
+          "source": {
+            "source_id": "sirupanatrupadai_22",
+            "poem": "sirupanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_10",
+      "claim_text": "| 7 | [ainkurunooru_475], [ainkurunooru_478] (பேயனார்) | “சீறியாழ்ப் பாணன்”, “முல்லை நல்யாழ்ப் பாண” — யாழ் பாணர் குறிப்பு |",
+      "claim_text_ta": "| 7 | [ainkurunooru_475], [ainkurunooru_478] (பேயனார்) | “சீறியாழ்ப் பாணன்”, “முல்லை நல்யாழ்ப் பாண” — யாழ் பாணர் குறிப்பு |",
+      "citation_ids": [
+        "ainkurunooru_475",
+        "ainkurunooru_478"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_ainkurunooru_475_0]",
+          "source_id": "ainkurunooru_475",
+          "source": {
+            "source_id": "ainkurunooru_475",
+            "poem": "ainkurunooru",
+            "verse_number": 475,
+            "poet": "பேயனார்",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_ainkurunooru_478_1]",
+          "source_id": "ainkurunooru_478",
+          "source": {
+            "source_id": "ainkurunooru_478",
+            "poem": "ainkurunooru",
+            "verse_number": 478,
+            "poet": "பேயனார்",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_13",
+      "claim_text": "| 1 | [ainkurunooru_215] (கபிலர், குறிஞ்சி) | “தட்டைத் தண்ணுமைப் பின்னர் இயவர் / தீங்குழல் ஆம்பலின் இனிய இமிரும்” — குழலும் தண்ணுமையும் |",
+      "claim_text_ta": "| 1 | [ainkurunooru_215] (கபிலர், குறிஞ்சி) | “தட்டைத் தண்ணுமைப் பின்னர் இயவர் / தீங்குழல் ஆம்பலின் இனிய இமிரும்” — குழலும் தண்ணுமையும் |",
+      "citation_ids": [
+        "ainkurunooru_215"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_ainkurunooru_215_0]",
+          "source_id": "ainkurunooru_215",
+          "source": {
+            "source_id": "ainkurunooru_215",
+            "poem": "ainkurunooru",
+            "verse_number": 215,
+            "poet": "கபிலர்",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_14",
+      "claim_text": "| 2 | [paripadal_12] | “ஒத்த குழலின் ஒலியெழ” — குழல், முழவு, தண்ணுமை, மத்தரி, தடாரி, மகுளி ஒருங்கு |",
+      "claim_text_ta": "| 2 | [paripadal_12] | “ஒத்த குழலின் ஒலியெழ” — குழல், முழவு, தண்ணுமை, மத்தரி, தடாரி, மகுளி ஒருங்கு |",
+      "citation_ids": [
+        "paripadal_12"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_paripadal_12_0]",
+          "source_id": "paripadal_12",
+          "source": {
+            "source_id": "paripadal_12",
+            "poem": "paripadal",
+            "verse_number": 12,
+            "poet": "நல்வழுதியார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_15",
+      "claim_text": "| 3 | [paripadal_19] | “கைவைத் திமிர்புகுழல் காண்குவோரும்” |",
+      "claim_text_ta": "| 3 | [paripadal_19] | “கைவைத் திமிர்புகுழல் காண்குவோரும்” |",
+      "citation_ids": [
+        "paripadal_19"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_paripadal_19_0]",
+          "source_id": "paripadal_19",
+          "source": {
+            "source_id": "paripadal_19",
+            "poem": "paripadal",
+            "verse_number": 19,
+            "poet": "நப்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_16",
+      "claim_text": "| 4 | [ainkurunooru_306] (ஓதலாந்தையார்) | “குழலினும் இனைகுவள்” — குழல் **உவமையாக** (மெல்லிய இசைக்கு) |",
+      "claim_text_ta": "| 4 | [ainkurunooru_306] (ஓதலாந்தையார்) | “குழலினும் இனைகுவள்” — குழல் **உவமையாக** (மெல்லிய இசைக்கு) |",
+      "citation_ids": [
+        "ainkurunooru_306"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_ainkurunooru_306_0]",
+          "source_id": "ainkurunooru_306",
+          "source": {
+            "source_id": "ainkurunooru_306",
+            "poem": "ainkurunooru",
+            "verse_number": 306,
+            "poet": "ஓதலாந்தையார்",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_17",
+      "claim_text": "| 5 | [ainkurunooru_458] (பேயனார்) | பாணர் கொன்றைப் பழத்தால் குழல் செய்தல் குறித்த **கற்பனை** குறிப்பு |",
+      "claim_text_ta": "| 5 | [ainkurunooru_458] (பேயனார்) | பாணர் கொன்றைப் பழத்தால் குழல் செய்தல் குறித்த **கற்பனை** குறிப்பு |",
+      "citation_ids": [
+        "ainkurunooru_458"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_ainkurunooru_458_0]",
+          "source_id": "ainkurunooru_458",
+          "source": {
+            "source_id": "ainkurunooru_458",
+            "poem": "ainkurunooru",
+            "verse_number": 458,
+            "poet": "பேயனார்",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_20",
+      "claim_text": "| 1 | [pathitrupathu_66] (கபிலர்) | “இடி இசை முரசமொடு ஒன்றுமொழிந்து” |",
+      "claim_text_ta": "| 1 | [pathitrupathu_66] (கபிலர்) | “இடி இசை முரசமொடு ஒன்றுமொழிந்து” |",
+      "citation_ids": [
+        "pathitrupathu_66"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_66_0]",
+          "source_id": "pathitrupathu_66",
+          "source": {
+            "source_id": "pathitrupathu_66",
+            "poem": "pathitrupathu",
+            "verse_number": 66,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_21",
+      "claim_text": "| 2 | [pathitrupathu_41] (பரணர்) | “முரசுடைப் பெருஞ் சமத்து”, “எடுத்தேறு ஏய கடிப்புடை வியன்கண்” (முரசின் கண்) |",
+      "claim_text_ta": "| 2 | [pathitrupathu_41] (பரணர்) | “முரசுடைப் பெருஞ் சமத்து”, “எடுத்தேறு ஏய கடிப்புடை வியன்கண்” (முரசின் கண்) |",
+      "citation_ids": [
+        "pathitrupathu_41"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_41_0]",
+          "source_id": "pathitrupathu_41",
+          "source": {
+            "source_id": "pathitrupathu_41",
+            "poem": "pathitrupathu",
+            "verse_number": 41,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_22",
+      "claim_text": "| 3 | [pathitrupathu_30] (பாலைக் கௌதமனார்) | “நின் தழங்கு குரல் முரசே”; பெருஞ்சோற்று நிலையும் முரசும் |",
+      "claim_text_ta": "| 3 | [pathitrupathu_30] (பாலைக் கௌதமனார்) | “நின் தழங்கு குரல் முரசே”; பெருஞ்சோற்று நிலையும் முரசும் |",
+      "citation_ids": [
+        "pathitrupathu_30"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_30_0]",
+          "source_id": "pathitrupathu_30",
+          "source": {
+            "source_id": "pathitrupathu_30",
+            "poem": "pathitrupathu",
+            "verse_number": 30,
+            "poet": "பாலைக் கௌதமனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_23",
+      "claim_text": "| 4 | [pathitrupathu_90] (பெருங்குன்றூர் கிழார்) | “உரும் என முழங்கும் முரசின்” |",
+      "claim_text_ta": "| 4 | [pathitrupathu_90] (பெருங்குன்றூர் கிழார்) | “உரும் என முழங்கும் முரசின்” |",
+      "citation_ids": [
+        "pathitrupathu_90"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_90_0]",
+          "source_id": "pathitrupathu_90",
+          "source": {
+            "source_id": "pathitrupathu_90",
+            "poem": "pathitrupathu",
+            "verse_number": 90,
+            "poet": "பெருங்குன்றூர் கிழார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_24",
+      "claim_text": "| 5 | [paripadal_22] | “முரசு அதிர்பவை போல் முழங்கு இடி” |",
+      "claim_text_ta": "| 5 | [paripadal_22] | “முரசு அதிர்பவை போல் முழங்கு இடி” |",
+      "citation_ids": [
+        "paripadal_22"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_paripadal_22_0]",
+          "source_id": "paripadal_22",
+          "source": {
+            "source_id": "paripadal_22",
+            "poem": "paripadal",
+            "verse_number": 22,
+            "poet": "ஆசிரியர் அறியப்படவில்லை.",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_25",
+      "claim_text": "| 6 | [pathitrupathu_17] (குமட்டூர்க் கண்ணனார்) | “கடம்பு அறுத்து இயற்றிய வலம்படு வியன் பணை” — உரை இதனைப் பெரிய முரசு எனக் கொள்கிறது (சொல் நேரடியாக இல்லை; உரை வழி மட்டும்) |",
+      "claim_text_ta": "| 6 | [pathitrupathu_17] (குமட்டூர்க் கண்ணனார்) | “கடம்பு அறுத்து இயற்றிய வலம்படு வியன் பணை” — உரை இதனைப் பெரிய முரசு எனக் கொள்கிறது (சொல் நேரடியாக இல்லை; உரை வழி மட்டும்) |",
+      "citation_ids": [
+        "pathitrupathu_17"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_17_0]",
+          "source_id": "pathitrupathu_17",
+          "source": {
+            "source_id": "pathitrupathu_17",
+            "poem": "pathitrupathu",
+            "verse_number": 17,
+            "poet": "குமட்டூர்க் கண்ணனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_26",
+      "claim_text": "| 7 | [pathitrupathu_44] (பரணர்) | “முரசம் கொண்டு”, “முரசு செய முரச்சி” — பகைவர் முரசைக் கைக்கொள்ளல் |",
+      "claim_text_ta": "| 7 | [pathitrupathu_44] (பரணர்) | “முரசம் கொண்டு”, “முரசு செய முரச்சி” — பகைவர் முரசைக் கைக்கொள்ளல் |",
+      "citation_ids": [
+        "pathitrupathu_44"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_44_0]",
+          "source_id": "pathitrupathu_44",
+          "source": {
+            "source_id": "pathitrupathu_44",
+            "poem": "pathitrupathu",
+            "verse_number": 44,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_29",
+      "claim_text": "| 1 | [paripadal_10] | “பறை அறையப் போந்தது … வையைப் புனல்” — நேரடிப் பறைக் குறிப்பு |",
+      "claim_text_ta": "| 1 | [paripadal_10] | “பறை அறையப் போந்தது … வையைப் புனல்” — நேரடிப் பறைக் குறிப்பு |",
+      "citation_ids": [
+        "paripadal_10"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_paripadal_10_0]",
+          "source_id": "paripadal_10",
+          "source": {
+            "source_id": "paripadal_10",
+            "poem": "paripadal",
+            "verse_number": 10,
+            "poet": "கரும்பிள்ளைப் பூதனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_30",
+      "claim_text": "| 2 | [pathitrupathu_70] (கபிலர்) | “பறைக் குரல் அருவி” — அருவியின் ஒலிக்குப் **பறை உவமை** |",
+      "claim_text_ta": "| 2 | [pathitrupathu_70] (கபிலர்) | “பறைக் குரல் அருவி” — அருவியின் ஒலிக்குப் **பறை உவமை** |",
+      "citation_ids": [
+        "pathitrupathu_70"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_70_0]",
+          "source_id": "pathitrupathu_70",
+          "source": {
+            "source_id": "pathitrupathu_70",
+            "poem": "pathitrupathu",
+            "verse_number": 70,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_31",
+      "claim_text": "| 3 | [pathitrupathu_30] | “அரும் பறை வினைஞர்” — பறைத் தொழிலாளர் |",
+      "claim_text_ta": "| 3 | [pathitrupathu_30] | “அரும் பறை வினைஞர்” — பறைத் தொழிலாளர் |",
+      "citation_ids": [
+        "pathitrupathu_30"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_30_0]",
+          "source_id": "pathitrupathu_30",
+          "source": {
+            "source_id": "pathitrupathu_30",
+            "poem": "pathitrupathu",
+            "verse_number": 30,
+            "poet": "பாலைக் கௌதமனார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_32",
+      "claim_text": "| 4 | [ainkurunooru_215] (கபிலர்) | “தட்டைத் தண்ணுமை” — தண்ணுமைப் பறை |",
+      "claim_text_ta": "| 4 | [ainkurunooru_215] (கபிலர்) | “தட்டைத் தண்ணுமை” — தண்ணுமைப் பறை |",
+      "citation_ids": [
+        "ainkurunooru_215"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_ainkurunooru_215_0]",
+          "source_id": "ainkurunooru_215",
+          "source": {
+            "source_id": "ainkurunooru_215",
+            "poem": "ainkurunooru",
+            "verse_number": 215,
+            "poet": "கபிலர்",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_33",
+      "claim_text": "| 5 | [paripadal_12] | தண்ணுமை, மத்தரி, தடாரி, மகுளி, முழவு ஆகிய தாளக் கருவிகள் பட்டியல் |",
+      "claim_text_ta": "| 5 | [paripadal_12] | தண்ணுமை, மத்தரி, தடாரி, மகுளி, முழவு ஆகிய தாளக் கருவிகள் பட்டியல் |",
+      "citation_ids": [
+        "paripadal_12"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_paripadal_12_0]",
+          "source_id": "paripadal_12",
+          "source": {
+            "source_id": "paripadal_12",
+            "poem": "paripadal",
+            "verse_number": 12,
+            "poet": "நல்வழுதியார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_34",
+      "claim_text": "⚠️ வேறுபாட்டுக் குறிப்பு: [ainkurunooru_086] (“மென்பறை விளிக்குறல்”) மற்றும் [ainkurunooru_180] (“பறைதபு முதுகுருகு”) ஆகியவை **கருவியைக் குறிக்கவில்லை** — பறவையின் ஒலி/தோற்றத்தைக் குறிக்கும் பயன்பாடுகள்; எனவே பறைச் சான்றாகக் கொள்ளத் தக்கவை அல்ல.",
+      "claim_text_ta": "⚠️ வேறுபாட்டுக் குறிப்பு: [ainkurunooru_086] (“மென்பறை விளிக்குறல்”) மற்றும் [ainkurunooru_180] (“பறைதபு முதுகுருகு”) ஆகியவை **கருவியைக் குறிக்கவில்லை** — பறவையின் ஒலி/தோற்றத்தைக் குறிக்கும் பயன்பாடுகள்; எனவே பறைச் சான்றாகக் கொள்ளத் தக்கவை அல்ல.",
+      "citation_ids": [
+        "ainkurunooru_086",
+        "ainkurunooru_180"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_ainkurunooru_086_0]",
+          "source_id": "ainkurunooru_086",
+          "source": {
+            "source_id": "ainkurunooru_086",
+            "poem": "ainkurunooru",
+            "verse_number": 86,
+            "poet": "ஓரம்போகியார்",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_ainkurunooru_180_1]",
+          "source_id": "ainkurunooru_180",
+          "source": {
+            "source_id": "ainkurunooru_180",
+            "poem": "ainkurunooru",
+            "verse_number": 180,
+            "poet": "அம்மூவனார்",
+            "tinai": "neytal",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_37",
+      "claim_text": "| 1 | [pathitrupathu_46] | “பேரியாழ் பாலை பண்ணி” — பாலைப் பண் |",
+      "claim_text_ta": "| 1 | [pathitrupathu_46] | “பேரியாழ் பாலை பண்ணி” — பாலைப் பண் |",
+      "citation_ids": [
+        "pathitrupathu_46"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_46_0]",
+          "source_id": "pathitrupathu_46",
+          "source": {
+            "source_id": "pathitrupathu_46",
+            "poem": "pathitrupathu",
+            "verse_number": 46,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_38",
+      "claim_text": "| 2 | [pathitrupathu_66] (கபிலர்) | “பேரியாழ் பாலை பண்ணி” |",
+      "claim_text_ta": "| 2 | [pathitrupathu_66] (கபிலர்) | “பேரியாழ் பாலை பண்ணி” |",
+      "citation_ids": [
+        "pathitrupathu_66"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_66_0]",
+          "source_id": "pathitrupathu_66",
+          "source": {
+            "source_id": "pathitrupathu_66",
+            "poem": "pathitrupathu",
+            "verse_number": 66,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_39",
+      "claim_text": "| 3 | [pathitrupathu_57] | “பாலை பண்ணி … தழிஞ்சி பாடி” |",
+      "claim_text_ta": "| 3 | [pathitrupathu_57] | “பாலை பண்ணி … தழிஞ்சி பாடி” |",
+      "citation_ids": [
+        "pathitrupathu_57"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_57_0]",
+          "source_id": "pathitrupathu_57",
+          "source": {
+            "source_id": "pathitrupathu_57",
+            "poem": "pathitrupathu",
+            "verse_number": 57,
+            "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_40",
+      "claim_text": "| 4 | [pathitrupathu_65] (கபிலர்) | “பண்ணுப் பெயர்த்தாங்கு” — பண்ணின் மாற்றீடு |",
+      "claim_text_ta": "| 4 | [pathitrupathu_65] (கபிலர்) | “பண்ணுப் பெயர்த்தாங்கு” — பண்ணின் மாற்றீடு |",
+      "citation_ids": [
+        "pathitrupathu_65"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_65_0]",
+          "source_id": "pathitrupathu_65",
+          "source": {
+            "source_id": "pathitrupathu_65",
+            "poem": "pathitrupathu",
+            "verse_number": 65,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_41",
+      "claim_text": "| 5 | [pathitrupathu_41] (பரணர்) | “பண் அமை முழவும், பதலையும்” |",
+      "claim_text_ta": "| 5 | [pathitrupathu_41] (பரணர்) | “பண் அமை முழவும், பதலையும்” |",
+      "citation_ids": [
+        "pathitrupathu_41"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_41_0]",
+          "source_id": "pathitrupathu_41",
+          "source": {
+            "source_id": "pathitrupathu_41",
+            "poem": "pathitrupathu",
+            "verse_number": 41,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_42",
+      "claim_text": "| 6 | [sirupanatrupadai_22] | “நூல் நெறி மரபின், பண்ணி ஆனாது” — பண் மரபு |",
+      "claim_text_ta": "| 6 | [sirupanatrupadai_22] | “நூல் நெறி மரபின், பண்ணி ஆனாது” — பண் மரபு |",
+      "citation_ids": [
+        "sirupanatrupadai_22"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_sirupanatrupadai_22_0]",
+          "source_id": "sirupanatrupadai_22",
+          "source": {
+            "source_id": "sirupanatrupadai_22",
+            "poem": "sirupanatrupadai",
+            "verse_number": null,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_43",
+      "claim_text": "| 7 | [paripadal_12] | பாடலின் உரைத் தலைப்பில் “பண்: பண்ணுப் பாலையாழ்”, “பண் வகுத்தவர்: நந்நாகனார்” (உரை வழிச் செய்தி) |",
+      "claim_text_ta": "| 7 | [paripadal_12] | பாடலின் உரைத் தலைப்பில் “பண்: பண்ணுப் பாலையாழ்”, “பண் வகுத்தவர்: நந்நாகனார்” (உரை வழிச் செய்தி) |",
+      "citation_ids": [
+        "paripadal_12"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_paripadal_12_0]",
+          "source_id": "paripadal_12",
+          "source": {
+            "source_id": "paripadal_12",
+            "poem": "paripadal",
+            "verse_number": 12,
+            "poet": "நல்வழுதியார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_44",
+      "claim_text": "- **மிகச் செறிவான மூலங்கள்** (ஒரே பாடலில் பல கருவிகள்): [pathitrupathu_41], [pathitrupathu_66], [pathitrupathu_46], [paripadal_12], [paripadal_19] — இவை ஐந்து பொருண்மைகளுக்கும் சிறந்த தொகுப்புப் பாடல்கள்.",
+      "claim_text_ta": "- **மிகச் செறிவான மூலங்கள்** (ஒரே பாடலில் பல கருவிகள்): [pathitrupathu_41], [pathitrupathu_66], [pathitrupathu_46], [paripadal_12], [paripadal_19] — இவை ஐந்து பொருண்மைகளுக்கும் சிறந்த தொகுப்புப் பாடல்கள்.",
+      "citation_ids": [
+        "pathitrupathu_41",
+        "pathitrupathu_46",
+        "paripadal_12",
+        "paripadal_19"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_41_0]",
+          "source_id": "pathitrupathu_41",
+          "source": {
+            "source_id": "pathitrupathu_41",
+            "poem": "pathitrupathu",
+            "verse_number": 41,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_pathitrupathu_66_1]",
+          "source_id": "pathitrupathu_66",
+          "source": {
+            "source_id": "pathitrupathu_66",
+            "poem": "pathitrupathu",
+            "verse_number": 66,
+            "poet": "கபிலர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": false
+          },
+          "quote": null,
+          "is_valid": false,
+          "validation_notes": "Claim shares no content with cited source pathitrupathu_66; the citation does not support it"
+        },
+        {
+          "citation_id": "[^c_pathitrupathu_46_2]",
+          "source_id": "pathitrupathu_46",
+          "source": {
+            "source_id": "pathitrupathu_46",
+            "poem": "pathitrupathu",
+            "verse_number": 46,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_paripadal_12_3]",
+          "source_id": "paripadal_12",
+          "source": {
+            "source_id": "paripadal_12",
+            "poem": "paripadal",
+            "verse_number": 12,
+            "poet": "நல்வழுதியார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_paripadal_19_4]",
+          "source_id": "paripadal_19",
+          "source": {
+            "source_id": "paripadal_19",
+            "poem": "paripadal",
+            "verse_number": 19,
+            "poet": "நப்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_45",
+      "claim_text": "- **விவாதத்திற்குரிய பகுதி**: [paripadal_12]-இல் வரும் தண்ணுமை, மத்தரி, தடாரி, மகுளி, பதலை ஆகியவற்றின் தனித்தனி வடிவம்/வகைப்பாடு உரை வழியாகவே தெரிகிறது; ஆய்வாளர் பல்வேறு வகைப்பாடுகள் தருவர் — இதை ஒரு முடிவாகக் கொள்ள வேண்டாம்.",
+      "claim_text_ta": "- **விவாதத்திற்குரிய பகுதி**: [paripadal_12]-இல் வரும் தண்ணுமை, மத்தரி, தடாரி, மகுளி, பதலை ஆகியவற்றின் தனித்தனி வடிவம்/வகைப்பாடு உரை வழியாகவே தெரிகிறது; ஆய்வாளர் பல்வேறு வகைப்பாடுகள் தருவர் — இதை ஒரு முடிவாகக் கொள்ள வேண்டாம்.",
+      "citation_ids": [
+        "paripadal_12"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_paripadal_12_0]",
+          "source_id": "paripadal_12",
+          "source": {
+            "source_id": "paripadal_12",
+            "poem": "paripadal",
+            "verse_number": 12,
+            "poet": "நல்வழுதியார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    }
+  ],
+  "isAbstained": false,
+  "abstentionReason": "none",
+  "evidenceStatus": "partially_verified",
+  "metadata": {
+    "model": "openrouter:deepseek/deepseek-v4.1-flash-1017",
+    "elapsed_ms": 35946,
+    "timestamp": "2026-10-27T19:20:50.202229+00:00",
+    "workflow": "search",
+    "routed_pulavar": "kapilar",
+    "routing_reason": "explicit_pulavar_selected",
+    "token_in": 194533,
+    "token_out": 5467,
+    "cost_usd": 0.03246015,
+    "cost_inr": 2.8565
+  }
+}

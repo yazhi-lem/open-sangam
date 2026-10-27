@@ -5,6 +5,8 @@ import {
   RESEARCH_CAMPAIGNS,
   CORPUS_ARTIFACTS,
   CORPUS_ARTIFACT_CLASSES,
+  CORPUS_ENTITY_CATEGORIES,
+  CORPUS_ENTITIES,
   corpusArtifactMatchesQuery,
 } from '../../data/library'
 import { askAvaiAgent } from '../../services/avaiService'
@@ -26,6 +28,7 @@ export default function ResearchDesk() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [artifactQuery, setArtifactQuery] = useState('')
+  const [entityCategory, setEntityCategory] = useState(CORPUS_ENTITY_CATEGORIES[0]?.id || 'flora')
 
   const campaign = RESEARCH_CAMPAIGNS.find((item) => item.id === campaignId)
   const visibleArtifacts = CORPUS_ARTIFACTS.filter((item) =>
@@ -201,6 +204,57 @@ export default function ResearchDesk() {
               )}
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="mb-4 flex flex-wrap items-end justify-between gap-3 border-b border-line-strong pb-2">
+          <div>
+            <h2 className={`text-2xl font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
+              {L('களச் சொற்கள்', 'Corpus entity index')}
+            </h2>
+            <p className="text-sm text-muted">
+              {L('தாவரம், விலங்கு, உணவு, தொழில், உறவு, இடம், உணர்வு — சான்றுகளுடன்.', 'Flora, fauna, food, work, kinship, place and emotion — with citations.')}
+            </p>
+          </div>
+          <span className="text-xs font-mono text-faint">{CORPUS_ENTITIES.length} terms</span>
+        </div>
+        <div className="mb-3 flex flex-wrap gap-1.5">
+          {CORPUS_ENTITY_CATEGORIES.map((category) => (
+            <button
+              key={category.id}
+              type="button"
+              onClick={() => setEntityCategory(category.id)}
+              className={`rounded-full border px-2.5 py-1 text-[10px] ${
+                entityCategory === category.id
+                  ? 'border-accent bg-accent/10 text-accent'
+                  : 'border-line text-muted hover:border-accent'
+              }`}
+            >
+              {L(category.ta, category.en)}
+            </button>
+          ))}
+        </div>
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {CORPUS_ENTITIES.filter((entity) => entity.category === entityCategory)
+            .sort((a, b) => b.count - a.count)
+            .slice(0, 18)
+            .map((entity) => (
+              <Card key={entity.id} variant="flat" className="p-3">
+                <div className="flex items-baseline justify-between gap-2">
+                  <p className={`text-sm font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
+                    {L(entity.ta, entity.en)}
+                  </p>
+                  <span className="text-[10px] font-mono text-accent">{entity.count}</span>
+                </div>
+                <p className="text-[10px] text-faint">{entity.roman} · {entity.en}</p>
+                {entity.samples?.[0] && (
+                  <p className="mt-1 line-clamp-2 text-[11px] leading-relaxed text-muted">
+                    {entity.samples[0].text}
+                  </p>
+                )}
+              </Card>
+            ))}
         </div>
       </section>
     </div>

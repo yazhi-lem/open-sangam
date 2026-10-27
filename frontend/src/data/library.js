@@ -14,6 +14,8 @@
 import catalog from '@data/library/catalog.json'
 import artifactData from '@data/library/artifacts.json'
 import corpusArtifactData from '@data/library/corpus-artifacts.json'
+import corpusEntityData from '@data/library/corpus-entities.json'
+import avaiResearchData from '@data/library/avai-research/index.json'
 import researchCampaignData from '@data/library/research-campaigns.json'
 
 export const LIBRARY_SCHEMA_VERSION = catalog.schemaVersion
@@ -147,3 +149,9 @@ export function corpusArtifactMatchesQuery(item, query) {
     .filter(Boolean)
     .some((value) => String(value).toLowerCase().includes(q))
 }
+
+export const CORPUS_ENTITY_DATA = corpusEntityData
+export const CORPUS_ENTITY_CATEGORIES = corpusEntityData.categories
+export const CORPUS_ENTITIES = corpusEntityData.entities
+
+export const AVAI_RESEARCH_BRIEFS = avaiResearchData.briefs

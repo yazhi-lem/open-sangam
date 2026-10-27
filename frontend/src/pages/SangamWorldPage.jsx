@@ -10,6 +10,7 @@ import Reveal from '../components/motion/Reveal'
 import GraphExplorer from './GraphExplorer'
 import ResearchDesk from '../components/world/ResearchDesk'
 import ResearchNotes from '../components/world/ResearchNotes'
+import AvaiBriefs from '../components/world/AvaiBriefs'
 const StoriesSection = lazy(() => import('../components/world/StoriesSection'))
 
 function pick(language, ta, en) {
@@ -217,6 +218,8 @@ export default function SangamWorldPage() {
       <section id="research" className="mt-12 border-t border-line-strong pt-8">
         <ResearchDesk />
       </section>
+
+      <AvaiBriefs />
 
       <ResearchNotes />
     </div>
