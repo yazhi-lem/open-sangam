@@ -165,3 +165,11 @@ data/library/catalog.json          ← curated catalog (works + collections)
 Future additions should not hard-code new works in React. Add them to
 `data/library/catalog.json`; the UI reads the catalog. Only works with a
 `loader` in `frontend/src/data/poems.js` open the verse reader today.
+
+
+## Tamil research articles
+
+The Tamil research notes live in `content/articles/`. Six starting articles cover
+corpus artifacts, akam/puram story structures, hero stones, women poets, ports
+and Roman trade, and yazh/pann music. They are surfaced inside Sangam World
+under **ஆய்வுக் கட்டுரைகள்** without adding a fourth navbar item.

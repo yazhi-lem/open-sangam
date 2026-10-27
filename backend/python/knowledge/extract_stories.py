@@ -29,7 +29,7 @@ from pathlib import Path
 DATA_BASE = Path(__file__).parents[3] / "data" / "texts"
 OUT_PATH = Path(__file__).parents[3] / "data" / "library" / "stories.json"
 
-AKAM_POEMS = {"natrinai", "kurunthokai", "ainkurunooru", "kalithokai", "akananooru"}
+AKAM_POEMS = {"natrinai", "kurunthokai", "ainkurunooru", "kalithokai", "akananooru", "kurinjipattu", "mullaippattu"}
 POST_SANGAM = {"thirukkural", "naladiyar"}
 AKAM_TINAI = {"kurinji", "mullai", "marutam", "neytal", "palai"}
 

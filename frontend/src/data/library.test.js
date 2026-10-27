@@ -20,6 +20,9 @@ const research = JSON.parse(
 const stories = JSON.parse(
   readFileSync(resolve(here, '../../../data/library/stories.json'), 'utf8')
 )
+const anthology = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/story-anthology.json'), 'utf8')
+)
 
 test('library catalog has unique ids', () => {
   const ids = catalog.works.map((work) => work.id)
@@ -93,5 +96,17 @@ test('story seeds cover akam and puram with evidence', () => {
     assert.ok(['akam', 'puram'].includes(story.kind), `${story.id}: bad kind`)
     assert.ok(story.recordId, `${story.id}: no record id`)
     assert.ok(story.evidence?.text || story.evidence?.urai, `${story.id}: no evidence`)
+  }
+})
+
+
+test('curated story anthology has akam and puram and source links', () => {
+  assert.ok(anthology.stories.length >= 8)
+  assert.ok(anthology.stories.some((story) => story.kind === 'akam'))
+  assert.ok(anthology.stories.some((story) => story.kind === 'puram'))
+  for (const story of anthology.stories) {
+    assert.ok(story.recordId, `${story.id}: no record id`)
+    assert.ok(story.sourceUrl, `${story.id}: no source URL`)
+    assert.ok(story.narrativeTa && story.narrativeEn, `${story.id}: no narrative`)
   }
 })

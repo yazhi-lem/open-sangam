@@ -1,5 +1,93 @@
 [
   {
+    "title": "அகமும் புறமும்: சங்கப் பாடல்களிலிருந்து கதைகள் எப்படி வெளிவருகின்றன?",
+    "slug": "akam-puram-kathaikal",
+    "summary": "2,669 சங்கப் பாடல்களிலிருந்து அகம் மற்றும் புறக் கதை விதைகள் — உணர்வுப் பயணம், நிகழ்வுப் பயணம், கதாபாத்திரங்கள், மோதல் மற்றும் திருப்பம்.",
+    "author": "Open Sangam Research",
+    "date": "2026-10-28",
+    "tags": [
+      "Tamil Research",
+      "Sangam",
+      "Akam",
+      "Puram",
+      "Stories"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "நடுகல்லும் வீரமும்: சங்கப் புறமும் நினைவின் கல் மொழியும்",
+    "slug": "natukal-veeram",
+    "summary": "நடுகல், வீர மரணம், புகழ், நினைவு — சங்கப் பாடல்களும் தமிழ்க் கல்வெட்டியலும் சொல்லும் கதை.",
+    "author": "Open Sangam Research",
+    "date": "2026-10-28",
+    "tags": [
+      "Tamil Research",
+      "Sangam",
+      "Hero Stones",
+      "Puram"
+    ],
+    "readingTime": 1
+  },
+  {
+    "title": "யாழும் பண்ணும்: சங்க இசையின் குரல்",
+    "slug": "sangam-isai-yazh",
+    "summary": "யாழ், குழல், முரசு, பறை, பண் — சங்கப் பாடல்களில் இசை எப்படி நிலம், காதல், போர் ஆகியவற்றோடு இணைகிறது.",
+    "author": "Open Sangam Research",
+    "date": "2026-10-28",
+    "tags": [
+      "Tamil Research",
+      "Sangam",
+      "Music",
+      "Yazh",
+      "Pann"
+    ],
+    "readingTime": 1
+  },
+  {
+    "title": "சங்கக் கவிதையில் கலைப்பொருட்கள்: யாழ் முதல் வளை வரை",
+    "slug": "sangam-kavithaiyil-kalaigal",
+    "summary": "சங்கப் பாடல்களில் வரும் இசைக்கருவிகள், அணிகலன்கள், படைக்கலன்கள், கலன்கள், ஆடைகள் — எண்ணிக்கையும் சான்றுப் பாடல்களும்.",
+    "author": "Open Sangam Research",
+    "date": "2026-10-28",
+    "tags": [
+      "Tamil Research",
+      "Sangam",
+      "Artifacts",
+      "Material Culture"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "சங்கப் பெண் புலவர்கள்: குரலும் நிலமும்",
+    "slug": "sangam-pen-pulavargal",
+    "summary": "ஔவையார், நச்செள்ளையார், காக்கைப் பாடினியார் உள்ளிட்ட பெண் புலவர்களின் குரல் அகமும் புறமும் எப்படி இணைகிறது.",
+    "author": "Open Sangam Research",
+    "date": "2026-10-28",
+    "tags": [
+      "Tamil Research",
+      "Sangam",
+      "Women Poets",
+      "Akam",
+      "Puram"
+    ],
+    "readingTime": 2
+  },
+  {
+    "title": "துறைமுகங்களும் உரோமானிய வாணிபமும்: கடல் கடந்த சங்கம்",
+    "slug": "sangam-turai-vanibam",
+    "summary": "நாவாய், யவனர், பொன், முத்து, துறைமுக நகரங்கள் — சங்கப் பாடல்களும் அரிக்கமேடு தொல்பொருட்களும் சொல்லும் வாணிபக் கதை.",
+    "author": "Open Sangam Research",
+    "date": "2026-10-28",
+    "tags": [
+      "Tamil Research",
+      "Sangam",
+      "Trade",
+      "Ports",
+      "Arikamedu"
+    ],
+    "readingTime": 1
+  },
+  {
     "title": "AI for Tamil: Neural Machine Translation and LLMs",
     "slug": "ai-for-tamil-nmt-llms",
     "summary": "Exploring the challenges and breakthroughs in building large language models and neural translators specifically optimized for Tamil's rich morphology.",

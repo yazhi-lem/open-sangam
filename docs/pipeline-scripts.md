@@ -167,6 +167,9 @@ reflection. Writes `data/library/stories.json`.
 These are research seeds, not literary retellings. Every story keeps its source
 record id and a text/urai excerpt.
 
+A separate hand-curated anthology lives in `data/library/story-anthology.json`
+with full Tamil and English retellings and direct source-verse links.
+
 ### `knowledge/extract_corpus_artifacts.py` — Material-culture index
 
 ```bash

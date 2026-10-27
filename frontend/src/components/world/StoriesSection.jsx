@@ -2,12 +2,14 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, BookOpen, Search } from 'lucide-react'
 import storyData from '@data/library/stories.json'
+import anthologyData from '@data/library/story-anthology.json'
 import useAppStore from '../../store/useAppStore'
 import Badge from '../ui/Badge'
 import Card from '../ui/Card'
 
 const STORIES = storyData.stories
 const STORY_ARCHETYPES = storyData.archetypes
+const ANTHOLOGY = anthologyData.stories
 
 function storyMatchesQuery(story, query) {
   const q = String(query || '').trim().toLowerCase()
@@ -55,6 +57,33 @@ export default function StoriesSection() {
         <Badge variant="accent" size="sm">
           {L('2,669 கதை விதைகள்', '2,669 story seeds')}
         </Badge>
+      </div>
+
+      <div className="mb-6">
+        <h3 className={`mb-2 text-sm font-bold text-faint ${language === 'ta' ? 'tamil' : ''}`}>
+          {L('தொகுத்த கதைகள்', 'Curated stories')}
+        </h3>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {ANTHOLOGY.slice(0, 6).map((story) => (
+            <Card key={story.id} variant="default" className="flex flex-col gap-2 p-3">
+              <div className="flex items-center justify-between gap-2">
+                <Badge variant={story.kind === 'akam' ? 'mullai' : 'puram'} size="sm">
+                  {story.kind === 'akam' ? L('அகம்', 'Akam') : L('புறம்', 'Puram')}
+                </Badge>
+                <span className="text-[10px] font-mono text-faint">{story.poem}</span>
+              </div>
+              <h4 className={`text-sm font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
+                {L(story.titleTa, story.titleEn)}
+              </h4>
+              <p className={`line-clamp-3 text-[11px] leading-relaxed text-muted ${language === 'ta' ? 'tamil' : ''}`}>
+                {L(story.narrativeTa, story.narrativeEn)}
+              </p>
+              <Link to={story.sourceUrl} className="mt-auto inline-flex items-center gap-1 text-[10px] font-semibold text-accent hover:underline">
+                <BookOpen size={11} /> {L('மூலப் பாடல்', 'Source verse')} <ArrowRight size={10} />
+              </Link>
+            </Card>
+          ))}
+        </div>
       </div>
 
       <div className="mb-3 flex flex-wrap items-center gap-2">
