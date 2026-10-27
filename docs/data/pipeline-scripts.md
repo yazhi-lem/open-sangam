@@ -203,6 +203,19 @@ tools, writing) and writes `data/library/corpus-artifacts.json` with counts,
 forms, poem distribution and cited sample lines. It is a research index, not an
 archaeological identification.
 
+### `knowledge/export_obsidian.py` — Obsidian second brain
+
+```bash
+cd backend/python
+python -m knowledge.export_obsidian --verses index
+python -m knowledge.export_obsidian --verses all --clean
+```
+
+Exports the corpus, tiṇai, works, poets, artifacts, entities, curated stories,
+Avai briefs and articles as a linked Obsidian vault at `obsidian-vault/`.
+`--verses index` writes one verse-index note per work; `--verses all` also writes
+one atomic note per verse.
+
 ### `knowledge/build_graph.py` — Knowledge graph
 
 ```bash

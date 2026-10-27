@@ -146,6 +146,7 @@ export default function GraphExplorer({ embedded = false }) {
 
   const focusMeta = TYPE_META[focus?.type] || TYPE_META.tinai
   const types = GRAPH.meta.nodeTypes || Object.keys(TYPE_META)
+  const tinaiNodes = GRAPH.nodes.filter((node) => node.type === 'tinai' && node.tinai !== 'unknown')
 
   function deepLink(node) {
     if (!node) return null
@@ -199,6 +200,27 @@ export default function GraphExplorer({ embedded = false }) {
           </header>
         </Reveal>
       )}
+
+      <div className="flex flex-wrap items-center gap-2 rounded-xl border border-line bg-surface p-2">
+        <span className="px-1 text-[10px] font-semibold uppercase tracking-wide text-faint">Tiṇai</span>
+        {tinaiNodes.map((node) => {
+          const active = focusId === node.id
+          return (
+            <button
+              key={node.id}
+              type="button"
+              onClick={() => setFocusId(node.id)}
+              className={`rounded-full border px-2.5 py-1 text-[11px] font-medium transition-colors ${
+                active ? 'border-accent bg-accent/15 text-accent' : 'border-line text-muted hover:border-accent'
+              }`}
+              title={node.label}
+            >
+              {node.label.split(' · ')[0]}
+              <span className="ml-1 font-mono text-[9px] opacity-70">{node.weight}</span>
+            </button>
+          )
+        })}
+      </div>
 
       <div className="flex flex-wrap items-center gap-2">
         <button

@@ -2,7 +2,7 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
-Plan and status live in [`factory/`](./factory): [`CURRENT`](./factory/CURRENT.md) · [`NEXT`](./factory/NEXT.md) · [`RUNWAY`](./factory/RUNWAY.md). The wider library plan (Pathinenkilkkanakku, classics, artifacts, multilingual reader) is in [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md). Retired docs are summarised in [`archives/`](./archives).
+Plan and status live in [`factory/`](./factory): [`CURRENT`](./factory/CURRENT.md) · [`NEXT`](./factory/NEXT.md) · [`RUNWAY`](./factory/RUNWAY.md). The wider library plan (Pathinenkilkkanakku, classics, artifacts, multilingual reader) is in [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md). An Obsidian-ready Markdown vault is generated at `obsidian-vault/` (`backend/python/knowledge/export_obsidian.py`). Retired docs are summarised in [`archives/`](./archives).
 
 Open Sangam turns static web archives of Sangam-era poetry into a layered learning experience with linguistic,
 cultural and historical context. Think "Duolingo for ancient literature".
@@ -43,6 +43,7 @@ open-sangam/
 │   └── functions/   Firebase Cloud Functions
 ├── data/            schema, poem texts, library catalog, knowledge graph
 ├── content/         articles
+├── obsidian-vault/  generated Obsidian vault (export_obsidian.py)
 ├── docs/            architecture, contracts, governance, library, runbooks
 ├── factory/         CURRENT · NEXT · RUNWAY
 └── archives/        dated doc snapshots
