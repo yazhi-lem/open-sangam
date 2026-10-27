@@ -31,6 +31,8 @@ REPO = HERE.parents[3]
 TEXTS = REPO / "data" / "texts"
 OUT = REPO / "data" / "knowledge"
 LEXICON = HERE.parent / "tinai_lexicon.json"
+CORPUS_ARTIFACTS = REPO / "data" / "library" / "corpus-artifacts.json"
+CORPUS_ENTITIES = REPO / "data" / "library" / "corpus-entities.json"
 
 TINAI_EN = {
     "kurinji": "Kuṟiñci · Mountains",
@@ -213,6 +215,56 @@ def main() -> None:
                 edges.append({"source": f"poet:{poet}", "target": f"poem:{pm}",
                               "rel": "COMPOSED", "weight": c})
 
+    # artifact nodes + poem→artifact edges from the lexical artifact index
+    if CORPUS_ARTIFACTS.exists():
+        artifact_data = json.loads(CORPUS_ARTIFACTS.read_text(encoding="utf-8"))
+        for artifact in artifact_data.get("artifacts", []):
+            if artifact.get("count", 0) < 3:
+                continue
+            nid = f"artifact:{artifact['id']}"
+            add_node(
+                nid,
+                f"{artifact['ta']} · {artifact['en']}",
+                "artifact",
+                category=artifact.get("class"),
+                weight=artifact.get("count", 0),
+                roman=artifact.get("roman"),
+            )
+            for poem_row in artifact.get("poems", []):
+                pm = poem_row.get("poem")
+                if pm and f"poem:{pm}" in seen:
+                    edges.append({
+                        "source": f"poem:{pm}",
+                        "target": nid,
+                        "rel": "MENTIONS",
+                        "weight": poem_row.get("count", 1),
+                    })
+
+    # broader entity nodes (flora, fauna, food, work, kinship, place, motif, emotion)
+    if CORPUS_ENTITIES.exists():
+        entity_data = json.loads(CORPUS_ENTITIES.read_text(encoding="utf-8"))
+        for entity in entity_data.get("entities", []):
+            if entity.get("count", 0) < 3:
+                continue
+            nid = f"entity:{entity['id']}"
+            add_node(
+                nid,
+                f"{entity['ta']} · {entity['en']}",
+                "entity",
+                category=entity.get("category"),
+                weight=entity.get("count", 0),
+                roman=entity.get("roman"),
+            )
+            for poem_row in entity.get("poems", []):
+                pm = poem_row.get("poem")
+                if pm and f"poem:{pm}" in seen:
+                    edges.append({
+                        "source": f"poem:{pm}",
+                        "target": nid,
+                        "rel": "MENTIONS",
+                        "weight": poem_row.get("count", 1),
+                    })
+
     # karu entity nodes + tinai→entity edges (attested in corpus)
     for t in lexicon:
         for r in attest[t].values():
@@ -230,8 +282,8 @@ def main() -> None:
             "records": len(corpus),
             "nodes": len(nodes),
             "edges": len(edges),
-            "relTypes": ["HAS_TINAI", "WROTE_IN", "COMPOSED", "ATTESTS"],
-            "nodeTypes": ["tinai", "poem", "poet", "karu"],
+            "relTypes": ["HAS_TINAI", "WROTE_IN", "COMPOSED", "ATTESTS", "MENTIONS"],
+            "nodeTypes": ["tinai", "poem", "poet", "karu", "artifact", "entity"],
             "generatedFrom": "data/texts/*/*.json",
         },
         "nodes": nodes,
