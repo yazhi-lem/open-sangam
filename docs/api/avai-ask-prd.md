@@ -4,11 +4,11 @@
 and what is planned) · **Owner:** Avai agent workstream · **Consumers:**
 chat.yazhi.dev (primary), future first-party `/avai` frontend route
 
-Related docs: `docs/agent-implementation-plan.md` (the agent swarm's M1–M3
+Related docs: `archives/2026-10-27-docs-digest.md` §4 (the agent swarm's M1–M3
 roadmap — this PRD's REST endpoint is additive to that plan, not a
-replacement for the A2A exposure it defines for M3), `docs/api-contracts.md`
+replacement for the A2A exposure it defines for M3), `docs/api/api-contracts.md`
 (endpoint contract, alongside the existing Cloud Functions),
-`docs/integration/chat-yazhi-integration.md` (integration guide),
+`archives/2026-10-27-docs-digest.md` §4 (integration notes),
 `agents/avai/README.md` (setup and local run instructions).
 
 ---
@@ -30,7 +30,7 @@ OpenRouter key in chat.yazhi.dev itself.
   against now, even though only one workflow (`qa`) is wired to a real agent.
 - Multi-turn conversations via a `session_id` the caller can echo back.
 - Consistent error shapes with the existing Cloud Functions API
-  (`{"message": "..."}`, see `docs/api-contracts.md`), so callers already
+  (`{"message": "..."}`, see `docs/api/api-contracts.md`), so callers already
   integrated with `/translate` and `/analyze-word` don't need a second error
   convention.
 - No new production secrets exposed to chat.yazhi.dev — the OpenRouter/Gemini
@@ -48,7 +48,7 @@ Deferred to later phases (tracked below, not in this implementation):
   in-process and lost on redeploy.
 - The `search`, `reimagine`, `scenario`, and `imagery` workflows — these map
   to Kapilar, Tholkappiyar, and Paranar, which don't exist until M2
-  (`docs/agent-implementation-plan.md` §9). The API accepts these workflow
+  (agent plan, archived). The API accepts these workflow
   values today and returns `501` so chat.yazhi.dev can code against the full
   contract ahead of time, but calling them does nothing yet.
 - Cloud Run deployment — this phase is local-only (`uvicorn` on a dev
@@ -67,7 +67,7 @@ linkable/checkable references.
 
 Implemented in `agents/avai/api/app.py` (FastAPI), schemas in
 `agents/avai/api/schemas.py`. Full request/response shapes, including field
-constraints, are in `docs/api-contracts.md`; summarized here:
+constraints, are in `docs/api/api-contracts.md`; summarized here:
 
 ```
 POST /avai/ask
@@ -149,7 +149,7 @@ capability without breaking the contract:
 | 2 | WebSocket streaming (`WS /avai/ask/stream`) for token-by-token responses |
 | 3 | Intent classification — Nakkirar routes to the right M2 poet instead of every request going straight to Avvaiyar; unblocks `search`/`reimagine`/`scenario`/`imagery` as M2 poets land |
 | 4 | Authentication (bearer token) + rate limiting — **required before any real chat.yazhi.dev traffic**, not optional hardening |
-| 5 | Session persistence beyond a single process (Redis), Cloud Run deployment per `docs/agent-implementation-plan.md` §7 |
+| 5 | Session persistence beyond a single process (Redis), Cloud Run deployment per `docs/avai/avai-launch-runbook.md` |
 
 ## 8. Testing & verification
 

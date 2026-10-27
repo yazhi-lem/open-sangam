@@ -1,7 +1,7 @@
 """Usage-driven interaction graph — grows from live /avai/ask traffic.
 
 Kept separate from the curated data/knowledge/graph.json ("nothing is
-hand-asserted" — see docs/data-collection-plan.md §7, and
+hand-asserted" — see docs/data/data-collection-plan.md §7, and
 backend/python/knowledge/build_graph.py's "base world graph" design goal).
 Each turn's citations strengthen agent -> poem / agent -> tiṇai edges, so the
 graph keeps growing from real usage without touching the corpus-derived base
