@@ -2,7 +2,7 @@
   "id": "sirupanatrupadai_16",
   "poem": "sirupanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "அலை நீர்த் தாழை அன்னம் பூப்பவும்,\nதலை நாள் செருந்தி தமனியம் மருட்டவும்,\nகடுஞ்சூல் முண்டகம் கதிர் மணி கழாஅலவும்,\nநெடுங்கால் புன்னை நித்திலம் வைப்பவும்,\nகானல் வெண் மணல் கடல் உலாய் நிமிர்தர,\nபாடல் சான்ற நெய்தல் நெடு வழி\nமணி நீர் வைப்பு மதிலொடு பெயரிய\nபனி நீர்ப் படுவின் பட்டினம் படரின்",
+  "sangamTamil": "அலை நீர்த் தாழை அன்னம் பூப்பவும்,\nதலை நாள் செருந்தி தமனியம் மருட்டவும்,\nகடுஞ்சூல் முண்டகம் கதிர் மணி கழாஅலவும்,\nநெடுங்கால் புன்னை நித்திலம் வைப்பவும்,\nகானல் வெண் மணல் கடல் உலாய் நிமிர்தர,\nபாடல் சான்ற நெய்தல் நெடு வழி\nமணி நீர் வைப்பு மதிலொடு பெயரிய\nபனி நீர்ப் படுவின் பட்டினம் படரின்\nனோங்குநிலை யொட்டகந் துயின்மடிந் தன்ன\nவீங்குதிரை கொணர்ந்த விரைமர விறகிற்\nகரும்புகைச் செந்தீ மாட்டிப் பெருந்தோண்\nமதியேக் கறூஉ மாசறு திருமுகத்து\nநுதிவே னோக்கி னுளைமக ளரித்த\nபழம்படு தேறல் பரதவர் மடுப்பக்\nகிளைமலர்ப் படப்பைக் கிடங்கிற் கோமான்\nற‌ளையவிழ் தெரியற் றகையோற் பாடி\nயறற்குழற் பாணி தூங்கி யவரொடு\nவறற்குழற் சூட்டின் வயின்வயிற் பெறுகுவிர்",
   "urai": "நீங்கள் நல்லியக்கோடன் ஊருக்குச் செல்லும் வழியில் எயிற்பட்டினத்தின் வழியாகச் செல்ல வேண்டி இருக்கும். அதனை அடைய நெய்தல்நிலப் பெருவழியில் செல்ல வேண்டி வரும். அங்கே அலைமோதும் நீரில் தாழம்பூ அன்னப்பறவை போல் பூத்திருக்கும். அன்று பூத்த செருந்திப் பூக்கள் பொன் கொட்டிக் கிடப்பதுபோல் கிடந்து மருட்சியூட்டும். முண்டகப் ப்பூக்களைக் கதிர்மணிகள் என்று எண்ணிக் கடல் அலைகள் கழுவிக்கொண்டிருக்கும். புன்னைமரம் பூத்து முத்துக்களைத் தலையில் வைத்திருக்கும். கடற் கானல் வெண்மணலில் கடல்லை வந்து உலாவிக் கொண்டிருக்கும். அந்த நெய்தல் நிலப் பொருவழியில் சென்றால் கடலின் மணிநீர் சார்ந்த நிலத்தில், பனிநீர்ப் (நன்னீர்) பள்ளத்தில் இருக்கும் பட்டினம் ஒன்றை அடையலாம். அது மதிலொடு பெயரிய பட்டினம். (மதில் = எயில் | மதிலின் பெயர் இணைந்துள்ள பட்டினம் | எயிற்பட்டினம்). அங்குச் சென்றால்,",
   "english": null,
   "lines": [
@@ -333,11 +333,351 @@
           "gloss": "This verbal participle, with the conditional suffix 'இன்', means 'if one goes' or 'if one reaches', indicating a condition for arriving at the destination."
         }
       ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "னோங்குநிலை யொட்டகந் துயின்மடிந் தன்ன",
+      "words": [
+        {
+          "form": "னோங்குநிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொட்டகந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துயின்மடிந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "வீங்குதிரை கொணர்ந்த விரைமர விறகிற்",
+      "words": [
+        {
+          "form": "வீங்குதிரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொணர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விரைமர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விறகிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "கரும்புகைச் செந்தீ மாட்டிப் பெருந்தோண்",
+      "words": [
+        {
+          "form": "கரும்புகைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செந்தீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாட்டிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருந்தோண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "மதியேக் கறூஉ மாசறு திருமுகத்து",
+      "words": [
+        {
+          "form": "மதியேக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கறூஉ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாசறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திருமுகத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "நுதிவே னோக்கி னுளைமக ளரித்த",
+      "words": [
+        {
+          "form": "நுதிவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னோக்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னுளைமக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ளரித்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "பழம்படு தேறல் பரதவர் மடுப்பக்",
+      "words": [
+        {
+          "form": "பழம்படு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேறல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரதவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடுப்பக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "கிளைமலர்ப் படப்பைக் கிடங்கிற் கோமான்",
+      "words": [
+        {
+          "form": "கிளைமலர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படப்பைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிடங்கிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோமான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "ற‌ளையவிழ் தெரியற் றகையோற் பாடி",
+      "words": [
+        {
+          "form": "ற‌ளையவிழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெரியற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றகையோற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "யறற்குழற் பாணி தூங்கி யவரொடு",
+      "words": [
+        {
+          "form": "யறற்குழற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூங்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யவரொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "வறற்குழற் சூட்டின் வயின்வயிற் பெறுகுவிர்",
+      "words": [
+        {
+          "form": "வறற்குழற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சூட்டின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயின்வயிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறுகுவிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை16.html",
+  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை16.html; Project Madurai pmuni0483",
   "verified": false,
   "sectionNumber": 16,
   "title": "எயிற்பட்டினத்தில் கிடைக்கும் பொருள்கள்",

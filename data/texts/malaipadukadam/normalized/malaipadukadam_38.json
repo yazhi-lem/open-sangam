@@ -2,7 +2,7 @@
   "id": "malaipadukadam_38",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "பொருந்தா தெவ்வர் இரும் தலை துமிய\nபருந்து பட கடக்கு ஒள் வாள் மறவர்\nகரும் கடை எஃகம் சாத்திய புதவின்\nஅரும் கடி வாயில் அயிராது புகுமின்",
+  "sangamTamil": "பொருந்தா தெவ்வர் இரும் தலை துமிய\nபருந்து பட கடக்கு ஒள் வாள் மறவர்\nகரும் கடை எஃகம் சாத்திய புதவின்\nஅரும் கடி வாயில் அயிராது புகுமின்\nமன்றில் வதியுநர் சேட்புலப் பரிசிலர்\nவெல்போர்ச் சேஎய்ப் பெருவிற லுள்ளி\nவந்தோர் மன்ற வளியர் தாமெனக்\nகண்டோ ரெல்லா மமர்ந்தினிதி னோக்கி\nவிருந்திறை யவரவ ரெதிர்கொளக் குறுகிப்",
   "urai": "படைக் கொட்டிலில் வாளும் வேலும் தாறுமாறாகச் சாத்தப் பட்டிருக்கும். அவை நன்னனின் மறவர்கள் பருந்துகள் பின்தொடரப் பகைவர் தலைகளைத் துண்டாக்கியவை. அவற்றைக் கண்டு சோர்ந்து விடாமல் கோட்டை வாயிலைக் கடந்து உள்ளே செல்லுங்கள்.",
   "english": null,
   "lines": [
@@ -176,11 +176,181 @@
           "gloss": "This imperative verb, meaning 'enter ye' or 'you all enter', is a direct command to the listeners to go inside the fort."
         }
       ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "மன்றில் வதியுநர் சேட்புலப் பரிசிலர்",
+      "words": [
+        {
+          "form": "மன்றில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வதியுநர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேட்புலப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரிசிலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "வெல்போர்ச் சேஎய்ப் பெருவிற லுள்ளி",
+      "words": [
+        {
+          "form": "வெல்போர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேஎய்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருவிற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லுள்ளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "வந்தோர் மன்ற வளியர் தாமெனக்",
+      "words": [
+        {
+          "form": "வந்தோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மன்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாமெனக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "கண்டோ ரெல்லா மமர்ந்தினிதி னோக்கி",
+      "words": [
+        {
+          "form": "கண்டோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரெல்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மமர்ந்தினிதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னோக்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "விருந்திறை யவரவ ரெதிர்கொளக் குறுகிப்",
+      "words": [
+        {
+          "form": "விருந்திறை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யவரவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரெதிர்கொளக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறுகிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்38.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்38.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 38,
   "title": "மூதூர் மக்கள் விருந்து எதிர்கொள்ளுதல்",

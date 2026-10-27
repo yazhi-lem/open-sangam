@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_245",
+  "poem": "naladiyar",
+  "number": 245,
+  "title": "அறிவுடைமை",
+  "heading": "2.25",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கடல்சார்ந்தும் இன்னீர் பிறக்கும், மலைசார்ந்தும்\nஉப்பீண் டுவரி பிறத்தலால் தத்தம்\nஇனத்தனையர் அல்லர் எறிகடற்றண் சேர்ப்ப\nமனத்தனையர் மக்களென் பார்.",
+  "urai": null,
+  "english": "Not environment, but mind makes the man. Though close by the sea, sweet waters oft-times spring up there; on the hill-side the waters often gush out all brine! Thus men are not as their race. — Lord of the dashing sea's cool shore! Men are as their minds.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கடல்சார்ந்தும் இன்னீர் பிறக்கும், மலைசார்ந்தும்",
+      "words": [
+        {
+          "form": "கடல்சார்ந்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இன்னீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறக்கும்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலைசார்ந்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "உப்பீண் டுவரி பிறத்தலால் தத்தம்",
+      "words": [
+        {
+          "form": "உப்பீண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டுவரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறத்தலால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தத்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "இனத்தனையர் அல்லர் எறிகடற்றண் சேர்ப்ப",
+      "words": [
+        {
+          "form": "இனத்தனையர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அல்லர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எறிகடற்றண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்ப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மனத்தனையர் மக்களென் பார்.",
+      "words": [
+        {
+          "form": "மனத்தனையர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மக்களென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பார்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

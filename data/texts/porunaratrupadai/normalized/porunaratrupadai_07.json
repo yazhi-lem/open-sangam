@@ -2,7 +2,7 @@
   "id": "porunaratrupadai_07",
   "poem": "porunaratrupadai",
   "tinai": "unknown",
-  "sangamTamil": "வாடுபசி யுழந்தநின் னிரும்பே ரொக்கலொடு\nநீடுபசி யொராஅல் வேண்டி னீடின்\nறெழுமதி வாழி யேழின் கிழவ",
+  "sangamTamil": "வாடுபசி யுழந்தநின் னிரும்பே ரொக்கலொடு\nநீடுபசி யொராஅல் வேண்டி னீடின்\nறெழுமதி வாழி யேழின் கிழவ\nபழுமர முள்ளிய பறவையின் யானுமவ\nனிழுமென் சும்மை யிடனுடை வரைப்பி\nனசையுநர்த் தடையா நன்பெரு வாயி\nலிசையேன் புக்கென் னிடும்பை தீர\nவெய்த்த மெய்யே னெய்யே னாகிப்\nபைத்த பாம்பின் றுத்தி யேய்ப்பக்\nகைக்கச டிருந்தவென் கண்ணகன் றடாரி\nயிருசீர்ப் பாணிக் கேற்ப விரிகதிர்\nவெள்ளி முளைத்த நள்ளிருள் விடிய\nலொன்றியான் பெட்டா வளவையி னொன்றிய",
   "urai": "கோடியல் தலைவ நீ நின் குறிக்கோளை அறிந்தவனாயினும் எங்கு யாரிடம் செல்ல வேண்டும் என்று நினைத்துப் பார்க்காமல் கால் போன வழியில் சென்று கொண்டிருப்பது நீ முன்பு நோற்ற நோன்பின் பயனாகும். என்றாலும் நான் சொல்வதைப் போற்றிக் கேட்பாயாக ! உன் சுற்றத்தார் அடித்துத் தின்னும் பசியால் வருந்துகின்றனர். அந்த நீண்ட நாள் பசியைப் போக்க விரும்பினால் காலம் தாழ்த்தாமல் நான் சொல்லும் இடத்திற்குச் செல்ல எழுக ! வாழ்க!",
   "english": null,
   "lines": [
@@ -107,11 +107,351 @@
           "gloss": "This word is a vocative form of 'kiḻavan' (lord, master, owner), used to address a leader or a person of authority, signifying 'O Lord!' or 'O Master!'"
         }
       ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "பழுமர முள்ளிய பறவையின் யானுமவ",
+      "words": [
+        {
+          "form": "பழுமர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முள்ளிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பறவையின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யானுமவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "னிழுமென் சும்மை யிடனுடை வரைப்பி",
+      "words": [
+        {
+          "form": "னிழுமென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சும்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யிடனுடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரைப்பி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "னசையுநர்த் தடையா நன்பெரு வாயி",
+      "words": [
+        {
+          "form": "னசையுநர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தடையா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்பெரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாயி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "லிசையேன் புக்கென் னிடும்பை தீர",
+      "words": [
+        {
+          "form": "லிசையேன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புக்கென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னிடும்பை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "வெய்த்த மெய்யே னெய்யே னாகிப்",
+      "words": [
+        {
+          "form": "வெய்த்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மெய்யே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னெய்யே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னாகிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "பைத்த பாம்பின் றுத்தி யேய்ப்பக்",
+      "words": [
+        {
+          "form": "பைத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாம்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றுத்தி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யேய்ப்பக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "கைக்கச டிருந்தவென் கண்ணகன் றடாரி",
+      "words": [
+        {
+          "form": "கைக்கச",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டிருந்தவென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ணகன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றடாரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "யிருசீர்ப் பாணிக் கேற்ப விரிகதிர்",
+      "words": [
+        {
+          "form": "யிருசீர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாணிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேற்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விரிகதிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "வெள்ளி முளைத்த நள்ளிருள் விடிய",
+      "words": [
+        {
+          "form": "வெள்ளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முளைத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நள்ளிருள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "லொன்றியான் பெட்டா வளவையி னொன்றிய",
+      "words": [
+        {
+          "form": "லொன்றியான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெட்டா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வளவையி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னொன்றிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/porunaratrupadai/porunaratruppadai-பொருநராற்றுப்படை07.html",
+  "source": "http://www.sangathamizh.com/10paddu/porunaratrupadai/porunaratruppadai-பொருநராற்றுப்படை07.html; Project Madurai pmuni0487",
   "verified": false,
   "sectionNumber": 7,
   "title": "பரிசு பெற்றோன் பாடின முறை",

@@ -2,7 +2,7 @@
   "id": "perumpanatrupadai_25",
   "poem": "perumpanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "பச்சூன் பெய்த சுவல் பிணி பைம் தோல்\nகோள் வல் பாண்மகன் தலை வலித்து யாத்த\nநெடும் கழை தூண்டில் நடுங்க நாண் கொளீஇ\nகொடு வாய் இரும்பின் மடி தலை புலம்ப\nபொதி இரை கதுவிய போழ் வாய் வாளை\nநீர் நணி பிரம்பின் நடுங்கு நிழல் வெரூஉம்",
+  "sangamTamil": "பச்சூன் பெய்த சுவல் பிணி பைம் தோல்\nகோள் வல் பாண்மகன் தலை வலித்து யாத்த\nநெடும் கழை தூண்டில் நடுங்க நாண் கொளீஇ\nகொடு வாய் இரும்பின் மடி தலை புலம்ப\nபொதி இரை கதுவிய போழ் வாய் வாளை\nநீர் நணி பிரம்பின் நடுங்கு நிழல் வெரூஉம்\nநீத்துடை நெடுங்கயந் தீப்பட மலர்ந்த\nகடவு ளொண்பூ வடைத லோம்பி\nஉறைகான் மாறிய வோங்குயர் நனந்தலை\nஅகலிரு வானத்துக் குறைவி லேய்ப்ப\nஅரக்கிதழ்க் குவளையொடு நீல நீடி\nமுரட்பூ மலிந்த முதுநீர்ப் பொய்கைக்\nகுறுந ரிட்ட கூம்புவிடு பன்மலர்\nபெருநா ளமையத்துப் பிணையினிர் கழிமின்",
   "urai": "பாண்மகன் தூண்டில் போட்டு மீன் பிடிப்பான். மீன்தூண்டிலில் மாட்டுவதற்காகத் தரப்படும் இறைச்சி இரையைத் தோல் பையில் போட்டு அதனைத் தோளில் மாட்டிக் கொண்டிருப்பான். நீண்ட மூங்கில் கோலின் நுனித்தலையில் மெல்லிய நரம்பு நூலைக் கட்டி அதன் மற்றொரு நுனியில் இரும்பினாலான தூண்டிலைக் கட்டியிருப்பான் தூண்டிலின் இரும்பு தெரியாதபடி பச்சைக் கறி செருகப் பட்டிருக்கும். வாளைமீன் அந்த இறையைக் கவ்வும்.. எனினும் எப்படியோ தப்பிவிடும். தப்பிய வாளைமீன் பிரம்புப் புதருக்குப் பக்கத்தில் செல்லும்போது வளர்ந்திருக்கும் பிரம்பின் நிழலைப் பார்த்து அதனைத் தூண்டிலின் கோல் என்று எண்ணி நடுங்கும்.",
   "english": null,
   "lines": [
@@ -293,11 +293,283 @@
           "gloss": "This future participial adjective, derived from the verb 'வெருவு' (to be afraid, to fear), describes the Vaalai fish that will be frightened or scared by the shadow."
         }
       ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "நீத்துடை நெடுங்கயந் தீப்பட மலர்ந்த",
+      "words": [
+        {
+          "form": "நீத்துடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுங்கயந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீப்பட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "கடவு ளொண்பூ வடைத லோம்பி",
+      "words": [
+        {
+          "form": "கடவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ளொண்பூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வடைத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லோம்பி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "உறைகான் மாறிய வோங்குயர் நனந்தலை",
+      "words": [
+        {
+          "form": "உறைகான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாறிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வோங்குயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நனந்தலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "அகலிரு வானத்துக் குறைவி லேய்ப்ப",
+      "words": [
+        {
+          "form": "அகலிரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வானத்துக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறைவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லேய்ப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "அரக்கிதழ்க் குவளையொடு நீல நீடி",
+      "words": [
+        {
+          "form": "அரக்கிதழ்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குவளையொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "முரட்பூ மலிந்த முதுநீர்ப் பொய்கைக்",
+      "words": [
+        {
+          "form": "முரட்பூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முதுநீர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொய்கைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "குறுந ரிட்ட கூம்புவிடு பன்மலர்",
+      "words": [
+        {
+          "form": "குறுந",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரிட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூம்புவிடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பன்மலர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "பெருநா ளமையத்துப் பிணையினிர் கழிமின்",
+      "words": [
+        {
+          "form": "பெருநா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ளமையத்துப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிணையினிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை25.html",
+  "source": "http://www.sangathamizh.com/10paddu/perumpanatruppadai/perumpanatruppadai-பெரும்பாணாற்றுப்படை25.html; Project Madurai pmuni0492",
   "verified": false,
   "sectionNumber": 25,
   "title": "காலையில் நீர்ப்பூக்களைச் சூடிப் போதல்",

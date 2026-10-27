@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0275",
+  "poem": "thirukkural",
+  "number": 275,
+  "title": "கூடாவொழுக்கம்",
+  "heading": "1.3.4",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "பற்றற்றேம் என்பார் படிற்றொழுக்கம் எற்றெற்றென்று\nஏதம் பலவுந் தரும்.",
+  "urai": null,
+  "english": "'Our souls are free,' who say, yet practise evil secretly, 'What folly have we wrought!' by many shames o'er-whelmed, shall cry.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பற்றற்றேம் என்பார் படிற்றொழுக்கம் எற்றெற்றென்று",
+      "words": [
+        {
+          "form": "பற்றற்றேம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்பார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படிற்றொழுக்கம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எற்றெற்றென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஏதம் பலவுந் தரும்.",
+      "words": [
+        {
+          "form": "ஏதம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலவுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தரும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

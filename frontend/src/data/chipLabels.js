@@ -9,9 +9,15 @@
 /** Reader layer chips. `id` matches readerLayers.js (normalizeLayer / visibleLayers). */
 export const LAYER_CHIPS = [
   { id: 'all', label: 'அனைத்தும் · All' },
-  { id: 'sangam', label: 'சங்கத் தமிழ் மூலம் · Original' },
-  { id: 'urai', label: 'இன்றைய தமிழில் உரை · Modern Tamil commentary' },
-  { id: 'english', label: 'ஆங்கில மொழிபெயர்ப்பு · English translation' },
+  { id: 'original', label: 'மூலம் · Original' },
+  { id: 'transliteration', label: 'ஒலிபெயர்ப்பு · Transliteration' },
+  { id: 'urai', label: 'இன்றைய தமிழில் உரை · Modern Tamil' },
+  { id: 'english', label: 'ஆங்கில மொழிபெயர்ப்பு · English' },
+  { id: 'glossary', label: 'சொல்லகராதி · Glossary' },
+  { id: 'notes', label: 'குறிப்புகள் · Notes' },
+  { id: 'poetics', label: 'யாப்பியல் · Poetics' },
+  { id: 'context', label: 'சூழல் · Context' },
+  { id: 'voice', label: 'ஒலிவாசிப்பு · Voice' },
 ]
 
 /** Library quick-pick chips. `match` runs against a poem's `tinai` array in data/poems.js. */

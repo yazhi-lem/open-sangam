@@ -2,7 +2,7 @@
   "id": "malaipadukadam_21",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "கயம் கண்டு அன்ன அகன் பை அம் கண்\nமைந்து மலி சினத்த களிறு மதன் அழிக்கும்\nதுஞ்சு மரம் கடுக்கும் மாசுணம் விலங்கி\nஇகந்து சேண் கமழும் பூவும் உண்டோர்\nமறந்து அமைகல்லா பழனும் ஊழ் இறந்து\nபெரும் பயன் கழியினும் மாந்தர் துன்னார்\nஇரும் கால் வீயும் பெரு மர குழாமும்\nஇடனும் வலனும் நினையினிர் நோக்கி\nகுறி அறிந்து அவையவை குறுகாது கழிமின்",
+  "sangamTamil": "கயம் கண்டு அன்ன அகன் பை அம் கண்\nமைந்து மலி சினத்த களிறு மதன் அழிக்கும்\nதுஞ்சு மரம் கடுக்கும் மாசுணம் விலங்கி\nஇகந்து சேண் கமழும் பூவும் உண்டோர்\nமறந்து அமைகல்லா பழனும் ஊழ் இறந்து\nபெரும் பயன் கழியினும் மாந்தர் துன்னார்\nஇரும் கால் வீயும் பெரு மர குழாமும்\nஇடனும் வலனும் நினையினிர் நோக்கி\nகுறி அறிந்து அவையவை குறுகாது கழிமின்\nகோடுபல முரஞ்சிய கோளி யாலத்துக்\nகூடியத் தன்ன குரல்புணர் புள்ளி\nனாடுகா ணனந்தலை மென்மெல வகன்மின்",
   "urai": "குளம் போன்ற அகன்ற வாயைக் கொண்ட மலைப்பாம்பு யானையின் வலிமையையும் அழிக்க வல்லது. அது தூங்கும் மரம் போலக் கிடக்கும். விலகிச் செல்லுங்கள். கண்ணில் பட்ட பூக்களையெல்லாம் முகராதீர்கள். விழுந்து கிடக்கும் பழங்களையெல்லாம் சாப்பிடாதீர்கள். இடப்புறமும் வலப்புறமும் உள்ள பெரிய மரங்களையும் பூக்களையும் பார்த்துக் கொண்டு வழியைத் தவற விட்டுவிடாதீர்கள்.",
   "english": null,
   "lines": [
@@ -395,11 +395,113 @@
           "gloss": "The word 'கழிமின்' is an imperative plural verb meaning 'you (plural) should pass by' or 'you should avoid', instructing the listeners to bypass the dangerous areas."
         }
       ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "கோடுபல முரஞ்சிய கோளி யாலத்துக்",
+      "words": [
+        {
+          "form": "கோடுபல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முரஞ்சிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாலத்துக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "கூடியத் தன்ன குரல்புணர் புள்ளி",
+      "words": [
+        {
+          "form": "கூடியத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குரல்புணர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புள்ளி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "னாடுகா ணனந்தலை மென்மெல வகன்மின்",
+      "words": [
+        {
+          "form": "னாடுகா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ணனந்தலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மென்மெல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வகன்மின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்21.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்21.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 21,
   "title": "வழியில் மேற்கொள்ளவேண்டும் முன் எச்சரிக்கைகள்",

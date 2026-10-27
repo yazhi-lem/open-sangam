@@ -2,7 +2,7 @@
   "id": "thirumurugatrupadai_09",
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "செருப்புகன்று எடுத்த சேணுயர் நெடுங்கொடி\nவரிப்புனை பந்தொடு பாவை தூங்கப்\nபொருநர்த் தேய்த்த போரரு வாயில்\nதிருவீற் றிருந்த தீதுதீர் நியமத்து\t. . . .(70)\nமாடமலி மறுகின் கூடற் குடவயின்",
+  "sangamTamil": "செருப்புகன்று எடுத்த சேணுயர் நெடுங்கொடி\nவரிப்புனை பந்தொடு பாவை தூங்கப்\nபொருநர்த் தேய்த்த போரரு வாயில்\nதிருவீற் றிருந்த தீதுதீர் நியமத்து\t. . . .(70)\nமாடமலி மறுகின் கூடற் குடவயின்\nனிருஞ்சேற் றகல்வயல் விரிந்துவா யவிழ்ந்த\nமுட்டாட் டாமரைத் துஞ்சி வைகறைக்\nகட்கமழ் நெய்த லூதி யெற்படக்\nகண்போன் மலர்ந்த காமரு சுனைமல\nகுன்றமர்ந் துறைதலு முரிய னதா அன்று\nதிருச்சீரலைவாய்",
   "urai": "போரை விரும்பி ஆடவர் உயர்த்திய கொடிகள் மதுரையில் எப்போதும் பறந்துகொண்டேயிருக்கும். மகளிர் பந்தும் பாவையும் விளையாடிக் கொண்டிருப்பர். போரிட்டோரைத் தேய்த்துத் தேய்த்துப் போரிடுவர் இல்லாமல் போனதால் செல்வத் திருமகள் அரியணை ஏறி ஆண்டுகொண்டிருப்பாள். இப்படிப்பட்ட கடைத்தெருக்களும் மாடமறுகுகளும் கூடியிருப்பதுதான் கூடல் எனப்படும் மதுரை",
   "english": "The high, towering banners, raised by men who delighted in war,\nFluttered ceaselessly. Women played with striped balls and dolls.\nAt the gates of battle, where foes were ground down until none remained,\nProsperity’s goddess, Tiru, sat enthroned, ruling without blemish,\nIn the markets free from fault, where mansions lined the streets of Kūṭal, to the west.",
   "lines": [
@@ -203,11 +203,201 @@
           "gloss": "This compound indicates the western direction or the western side, specifying a geographical orientation."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "னிருஞ்சேற் றகல்வயல் விரிந்துவா யவிழ்ந்த",
+      "words": [
+        {
+          "form": "னிருஞ்சேற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றகல்வயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விரிந்துவா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யவிழ்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "முட்டாட் டாமரைத் துஞ்சி வைகறைக்",
+      "words": [
+        {
+          "form": "முட்டாட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டாமரைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துஞ்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வைகறைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "கட்கமழ் நெய்த லூதி யெற்படக்",
+      "words": [
+        {
+          "form": "கட்கமழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெய்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லூதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யெற்படக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "கண்போன் மலர்ந்த காமரு சுனைமல",
+      "words": [
+        {
+          "form": "கண்போன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காமரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுனைமல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "குன்றமர்ந் துறைதலு முரிய னதா அன்று",
+      "words": [
+        {
+          "form": "குன்றமர்ந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறைதலு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முரிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னதா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "திருச்சீரலைவாய்",
+      "words": [
+        {
+          "form": "திருச்சீரலைவாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/thirumurugatrupadai/thirumurugatrupadai-திருமுருகாற்றுப்படை09.html",
+  "source": "http://www.sangathamizh.com/10paddu/thirumurugatrupadai/thirumurugatrupadai-திருமுருகாற்றுப்படை09.html; Project Madurai pmuni0493",
   "verified": false,
   "sectionNumber": 9,
   "title": "திருப்பரங்குன்றில் முருகன் வீற்றிருத்தல்",

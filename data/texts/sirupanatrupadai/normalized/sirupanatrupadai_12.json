@@ -2,27 +2,41 @@
   "id": "sirupanatrupadai_12",
   "poem": "sirupanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "..................................நளி சினை\nநறும் போது கஞலிய நாகு முதிர் நாகத்து\nகுறும் பொறை நல் நாடு கோடியர்க்கு ஈந்த,\nகாரிக் குதிரைக் காரியொடு மலைந்த\nஓரிக் குதிரை ஓரியும்............",
+  "sangamTamil": "நளிமலை நாட னள்ளியு நளிசினை\nநறும் போது கஞலிய நாகு முதிர் நாகத்து\nகுறும் பொறை நல் நாடு கோடியர்க்கு ஈந்த,\nகாரிக் குதிரைக் காரியொடு மலைந்த\nஓரிக் குதிரை ஓரியும்............\nகெழுசமங் கடந்த வெழுவுறழ் திணிதோ\nளெழுவர் பூண்ட வீகைச் செந்நுகம்",
   "urai": "ஓரி. ஓரி என்னும் பெயர் கொண்ட குதிரையில் ஏறிச்சென்று ஓரி தாக்கினான். காரி என்னும் பெயர் கொண்ட குதிரையில் வந்து காரி எதிர்த்துப் போரிட்டான். முடிவில் காரியின் குறும்பறை நன்னாடு ஓரிக்குக் கிடைத்தது. போர் வெற்றியில் கிடைத்த அந்த நாட்டைத் தனது போர் வெற்றியைப் புகழ்ந்து யாழ் மீட்டிப் பாடிய பாணர்களுக்குக் கொடுத்தவன் ஓரி. நாகு முதிர் நாகம் குறும்பொறை நன்னாடு – நாகு என்னும் நாகமரங்கள் மிகுதியாக இருந்ததால் ‘நாகம்’ என்னும் பெயரைப் பெற்றிருந்த நாகமலையை உடைய ‘குறும்பொறை நாடு’",
   "english": null,
   "lines": [
     {
       "lineNumber": 1,
-      "text": "..................................நளி சினை",
+      "text": "நளிமலை நாட னள்ளியு நளிசினை",
       "words": [
         {
-          "form": "..................................நளி",
-          "root": null,
-          "urichol": "உரிச்சொல்",
-          "etymology": "நளி என்பது சங்க இலக்கியத்தில் 'செறிவு', 'பெருமை', 'குளிர்ச்சி' போன்ற பல பொருள்களில் வரும் ஓர் உரிச்சொல். இது ஒரு தனிச் சொல்லாகவே வேர்ச்சொல் தன்மையுடன் திகழ்கிறது. நவீன தமிழில் இதன் நேரடிப் பயன்பாடு குறைவு, ஆனால் 'நளிதல்' (செறிதல்) போன்ற வினைச்சொற்களில் இதன் வேர் காணப்படுகிறது.",
-          "gloss": "This urichol denotes abundance, density, or coolness, here implying a dense growth or a majestic presence, often used to describe natural features like trees or mountains."
-        },
-        {
-          "form": "சினை",
+          "form": "நளிமலை",
           "root": null,
           "urichol": null,
-          "etymology": "சினை என்பது மரத்தின் கிளை, அரும்பு, அல்லது கருப்பொருள் ஆகியவற்றைக் குறிக்கும் ஒரு பெயர்ச்சொல். இதன் வேர்ச்சொல் சின்- என்பதாக இருக்கலாம், இது 'சிறிய பகுதி' அல்லது 'பிரிவு' என்பதைக் குறிக்கும். சங்க இலக்கியத்தில் மரத்தின் கிளைகளையும், விலங்குகளின் கருவையும் குறிக்கப் பரவலாகப் பயன்படுத்தப்பட்டுள்ளது. நவீன தமிழிலும் இதே பொருளில் 'சினைப்பற்று' (கருப்பற்றுதல்) போன்ற சொற்களில் வழக்கில் உள்ளது.",
-          "gloss": "This noun refers to a branch or a shoot of a tree, indicating the part of the tree where flowers or fruits develop."
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னள்ளியு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நளிசினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
         }
       ]
     },
@@ -182,11 +196,79 @@
           "gloss": "This noun, combined with the conjunctive particle 'உம்', refers to the chieftain Ori, with the particle adding emphasis or indicating inclusion, suggesting 'Ori also' or 'even Ori'."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "கெழுசமங் கடந்த வெழுவுறழ் திணிதோ",
+      "words": [
+        {
+          "form": "கெழுசமங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெழுவுறழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திணிதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "ளெழுவர் பூண்ட வீகைச் செந்நுகம்",
+      "words": [
+        {
+          "form": "ளெழுவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூண்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வீகைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செந்நுகம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை12.html",
+  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை12.html; Project Madurai pmuni0483",
   "verified": false,
   "sectionNumber": 12,
   "title": "கடையெழு வள்ளல்களின் சிறப்பு - ஓரி",

@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
+import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy, Square, Volume2 } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
-import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle } from '../data/readerLayers.js'
+import VoiceLayer from '../components/reader/VoiceLayer'
+import { normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle, hasGloss } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
-import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
 import Badge from '../components/ui/Badge'
 import Button from '../components/ui/Button'
@@ -15,7 +15,21 @@ import Card from '../components/ui/Card'
 import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
 import Chip from '../components/ui/Chip'
-import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
+import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip, splitLabel } from '../data/chipLabels.js'
+import { TINAI_WORLD } from '../data/tinaiWorld.js'
+import useAppStore from '../store/useAppStore'
+import {
+  LIBRARY_COLLECTIONS,
+  LIBRARY_WORKS,
+  AVAILABILITY_LABELS,
+  ARTIFACTS,
+  ARTIFACT_CLASSES,
+  artifactClassLabel,
+  artifactAvailableLayerCount,
+  artifactMatchesQuery,
+  languageLabel,
+  workMatchesQuery,
+} from '../data/library.js'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
@@ -30,11 +44,22 @@ function PoemCard({ poem }) {
         : 'border-line bg-surface-alt/40 cursor-default opacity-85'
     }`
 
+  const collectionLabel = {
+    '8thokai': 'Anthology',
+    '10paddu': 'Idyll',
+    pathinenkilkkanakku: 'Minor Work',
+  }[poem.collection] || 'Work'
+  const collectionVariant = {
+    '8thokai': 'anthology',
+    '10paddu': 'idyll',
+    pathinenkilkkanakku: 'accent',
+  }[poem.collection] || 'default'
+
   const content = (
     <>
       <div className="flex items-center justify-between gap-2 mb-3">
-        <Badge variant={poem.collection === '8thokai' ? 'anthology' : 'idyll'} size="sm">
-          {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
+        <Badge variant={collectionVariant} size="sm">
+          {collectionLabel}
         </Badge>
         {available ? (
           <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-xs" title="Available in reader" />
@@ -44,7 +69,7 @@ function PoemCard({ poem }) {
       </div>
 
       <h3
-        className={`tamil text-lg sm:text-xl font-bold leading-snug mb-1 shrink-0 line-clamp-2 break-words [overflow-wrap:anywhere] min-h-[2.6em]
+        className={`tamil text-base sm:text-lg font-bold leading-snug mb-1 shrink-0 line-clamp-2 break-words [overflow-wrap:anywhere] min-h-[2.6em]
           ${available ? 'text-primary group-hover:text-accent' : 'text-muted'}`}
       >
         {poem.ta}
@@ -81,49 +106,139 @@ function PoemCard({ poem }) {
   return <div className={cardClassName}>{content}</div>
 }
 
-// ── Coming Soon (post-Sangam works not yet in the corpus) ──────────────────
+// ── Wider Tamil Library (catalogued, not yet all readable) ─────────────────
 
-const COMING_SOON_WORKS = [
-  {
-    ta: 'திருக்குறள்',
-    en: 'Thirukkural',
-    desc: "Tiruvalluvar's 1,330-couplet ethical masterwork on virtue, wealth, and love.",
-    count: 1330,
-    unit: 'couplets',
-  },
-  {
-    ta: 'பதினெண்கீழ்க்கணக்கு',
-    en: 'Pathinenkeezhkanakku',
-    desc: 'The Eighteen Minor Works — post-Sangam didactic and gnomic poetry collections.',
-    count: 18,
-    unit: 'works',
-  },
-]
-
-function ComingSoonCard({ work }) {
+function CatalogWorkCard({ work }) {
+  const status = AVAILABILITY_LABELS[work.availability] || AVAILABILITY_LABELS.metadata
+  const readable = work.availability === 'reader'
   return (
-    <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-dashed border-line bg-surface-alt/40 p-5 opacity-85">
-      <div className="flex items-center justify-between gap-2 mb-3">
-        <Badge variant="outline" size="sm">Roadmap</Badge>
-        <span className="w-2 h-2 rounded-full bg-line-strong" title="Coming soon" />
+    <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface p-4 transition-all duration-200">
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <Badge variant={readable ? 'accent' : 'outline'} size="sm">
+          {status.ta} · {status.en}
+        </Badge>
+        <span className="text-[10px] font-mono text-faint">{work.period}</span>
       </div>
-      <h3 className="tamil text-lg sm:text-xl font-bold leading-snug mb-1 shrink-0 line-clamp-2 break-words [overflow-wrap:anywhere] min-h-[2.6em] text-muted">
+      <h3 className="tamil mb-1 line-clamp-2 min-h-[2.6em] shrink-0 text-lg font-bold leading-snug text-primary sm:text-xl">
         {work.ta}
       </h3>
-      <p className="text-sm mb-4 shrink-0 leading-relaxed break-words [overflow-wrap:anywhere] line-clamp-2 min-h-[2.2em] text-faint">
-        {work.en} — {work.desc}
+      <p className="mb-2 line-clamp-1 text-sm text-muted">{work.en}</p>
+      <p className="mb-4 line-clamp-2 min-h-[2.2em] text-xs leading-relaxed text-faint">
+        {work.author}
       </p>
-      <div className="mt-auto pt-3 border-t border-line/60 flex items-center justify-between text-xs font-mono">
-        <span className="text-faint">
-          {work.count.toLocaleString()} {work.unit}
+      <div className="mt-auto flex items-center justify-between gap-3 border-t border-line/60 pt-3 text-xs">
+        <span className="flex flex-wrap gap-1">
+          {work.languages.map((code) => (
+            <span key={code} className="rounded-full bg-surface-alt px-2 py-0.5 font-mono text-[10px] text-muted">
+              {languageLabel(code)}
+            </span>
+          ))}
+          {work.translations?.map((code) => (
+            <span key={code} className="rounded-full bg-accent/10 px-2 py-0.5 font-mono text-[10px] text-accent">
+              {languageLabel(code)}
+            </span>
+          ))}
         </span>
-        <span className="text-faint font-semibold">Coming soon</span>
+        <span className="shrink-0 font-mono text-faint">
+          {work.count ? `${work.count.toLocaleString()} ${work.unit}` : work.unit}
+        </span>
+      </div>
+    </div>
+  )
+}
+
+function ArtifactCard({ artifact }) {
+  const nav = useNavigate()
+  const cls = artifactClassLabel(artifact.class)
+  return (
+    <button
+      type="button"
+      onClick={() => nav(`/artifacts/${artifact.id}`)}
+      className="group flex h-full min-w-0 flex-col rounded-2xl border border-line bg-surface p-3.5 text-left transition-all duration-200 hover:border-accent/60 hover:shadow-md focus-ring"
+    >
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <Badge variant="accent" size="sm">{cls.ta} · {cls.en}</Badge>
+        <span className="text-[10px] font-mono text-faint">{artifact.period}</span>
+      </div>
+      <h3 className="tamil mb-1 line-clamp-2 min-h-[2.6em] text-lg font-bold leading-snug text-primary group-hover:text-accent">
+        {artifact.ta}
+      </h3>
+      <p className="mb-2 line-clamp-1 text-sm text-muted">{artifact.en}</p>
+      <p className="mb-3 line-clamp-2 text-xs leading-relaxed text-faint">{artifact.summary}</p>
+      <div className="mt-auto flex items-center justify-between gap-2 border-t border-line/60 pt-3 text-[11px]">
+        <span className="font-mono text-faint">
+          {artifactAvailableLayerCount(artifact)}/7 layers
+        </span>
+        <span className="truncate text-muted">{artifact.rights}</span>
+      </div>
+    </button>
+  )
+}
+
+function ArtifactCollection({ collection, artifacts }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
+  return (
+    <div>
+      <div className="space-y-8">
+        <div className="border-b border-line-strong pb-3">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <h2 className={`min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl ${language === 'ta' ? 'tamil' : ''}`}>{L(collection.ta, collection.en)}</h2>
+            <span className="ml-auto text-xs font-mono text-faint">{artifacts.length} records</span>
+          </div>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted">{collection.description}</p>
+        </div>
+        {ARTIFACT_CLASSES.map((cls) => {
+          const items = artifacts.filter((artifact) => artifact.class === cls.id)
+          if (!items.length) return null
+          return (
+            <section key={cls.id} className="space-y-3">
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <h3 className={`text-lg font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>{L(cls.ta, cls.en)}</h3>
+                <span className="ml-auto text-xs font-mono text-faint">{items.length}</span>
+              </div>
+              <p className="text-xs text-faint">{cls.description}</p>
+              <RevealGroup className="grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4" amount={0.05}>
+                {items.map((artifact) => <ArtifactCard key={artifact.id} artifact={artifact} />)}
+              </RevealGroup>
+            </section>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+function CatalogCollection({ collection, works }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
+  return (
+    <div>
+      <div className="space-y-6">
+        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-line-strong pb-3">
+          <h2 className={`min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl ${language === 'ta' ? 'tamil' : ''}`}>{L(collection.ta, collection.en)}</h2>
+          <span className="ml-auto text-xs font-mono text-faint">{works.length} works</span>
+        </div>
+        <p className="max-w-2xl text-sm leading-relaxed text-muted">{collection.description}</p>
+        {works.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-line p-8 text-center text-sm text-muted">
+            No works matching this search.
+          </div>
+        ) : (
+          <RevealGroup className="grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4" amount={0.08}>
+            {works.map((work) => (
+              <CatalogWorkCard key={work.id} work={work} />
+            ))}
+          </RevealGroup>
+        )}
       </div>
     </div>
   )
 }
 
 function Library() {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const [searchQuery, setSearchQuery] = useState('')
   const [chipFilter, setChipFilter] = useState(null) // null | id from FILTER_CHIPS
 
@@ -146,16 +261,17 @@ function Library() {
   return (
     <div className="min-h-screen bg-page">
       {/* Header: one line of orientation, then search and the akam / puram / tiṇai chips */}
-      <Reveal as="div" className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-6" duration={0.6}>
+      <Reveal as="div" className="w-full px-4 sm:px-6 pt-6 pb-5" duration={0.6}>
         <div className="space-y-2">
-          <h1 className="tamil text-3xl sm:text-5xl font-extrabold text-primary leading-tight">
-            சங்க நூலகம்
+          <h1 className={`text-2xl sm:text-4xl font-extrabold text-primary leading-tight ${language === 'ta' ? 'tamil' : ''}`}>
+            {L('தமிழ் நூலகம்', 'Tamil Library')}
           </h1>
-          <p className="text-lg sm:text-xl text-muted font-light">Library of Sangam works</p>
+          <p className="text-base sm:text-lg text-muted font-light">
+            {L('சங்கம் · பதினெண்கீழ்க்கணக்கு · கலைப்பொருட்கள்', 'Sangam · Pathinenkilkkanakku · Artifacts')}
+          </p>
           {/* † draft Tamil, needs native review */}
-          <p className="text-sm text-muted pt-1">
-            <span lang="ta" className="tamil">பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி</span>
-            <span className="text-faint"> · Choose a poem → Read → Understand</span>
+          <p className={`text-sm text-muted pt-1 ${language === 'ta' ? 'tamil' : ''}`}>
+            {L('பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி', 'Choose a poem → Read → Understand')}
           </p>
         </div>
 
@@ -165,7 +281,7 @@ function Library() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             onClear={() => setSearchQuery('')}
-            placeholder="Search by poem name in Tamil or English..."
+            placeholder={L("தமிழ் அல்லது ஆங்கிலப் பெயரில் தேடுங்கள்...", "Search by Tamil or English name...")}
             icon="🔍"
           />
 
@@ -195,13 +311,12 @@ function Library() {
       </Reveal>
 
       {/* Collections Grid */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24 space-y-16">
+      <div className="w-full px-4 sm:px-6 pb-16 space-y-10">
         {byCollection.map(({ key, meta, poems }) => (
-          <ScrollTilt key={key} intensity={6}>
+          <div key={key}>
             <div className="space-y-6">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">{meta.ta}</h2>
-                <span className="text-muted text-sm sm:text-base font-medium">{meta.en}</span>
+                <h2 className={`text-xl sm:text-2xl font-bold text-primary break-words min-w-0 ${language === 'ta' ? 'tamil' : ''}`}>{L(meta.ta, meta.en)}</h2>
                 <span className="ml-auto text-xs font-mono text-faint">{poems.length} works</span>
               </div>
               <p className="text-sm text-muted max-w-2xl leading-relaxed">{meta.desc}</p>
@@ -212,7 +327,7 @@ function Library() {
                 </div>
               ) : (
                 <RevealGroup
-                  className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${
+                  className={`grid auto-rows-fr grid-cols-1 sm:grid-cols-2 gap-3 ${
                     key === '10paddu' ? 'lg:grid-cols-3' : 'lg:grid-cols-4'
                   }`}
                   amount={0.08}
@@ -223,28 +338,39 @@ function Library() {
                 </RevealGroup>
               )}
             </div>
-          </ScrollTilt>
+          </div>
         ))}
 
-        {!chipFilter && !searchQuery.trim() && (
-          <ScrollTilt intensity={6}>
-            <div className="space-y-6">
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
-                <h2 className="tamil text-2xl sm:text-3xl font-bold text-primary break-words min-w-0">பதினெண்கீழ்க்கணக்கு</h2>
-                <span className="text-muted text-sm sm:text-base font-medium">Coming Soon</span>
-                <span className="ml-auto text-xs font-mono text-faint">{COMING_SOON_WORKS.length} planned</span>
-              </div>
-              <p className="text-sm text-muted max-w-2xl leading-relaxed">
-                Post-Sangam didactic works next on the roadmap — outside the Ettuthokai / Pattuppattu corpus this library currently reads from.
-              </p>
-              <RevealGroup className="grid grid-cols-1 sm:grid-cols-2 gap-4" amount={0.08}>
-                {COMING_SOON_WORKS.map((work) => (
-                  <ComingSoonCard key={work.en} work={work} />
-                ))}
-              </RevealGroup>
-            </div>
-          </ScrollTilt>
-        )}
+        {!chipFilter &&
+          LIBRARY_COLLECTIONS.map((collection) => {
+            if (collection.id === 'artifacts') {
+              const artifacts = ARTIFACTS.filter((artifact) =>
+                artifactMatchesQuery(artifact, searchQuery)
+              )
+              if (!artifacts.length && searchQuery.trim()) return null
+              return (
+                <ArtifactCollection
+                  key={collection.id}
+                  collection={collection}
+                  artifacts={artifacts}
+                />
+              )
+            }
+            const works = LIBRARY_WORKS.filter(
+              (work) =>
+                work.collection === collection.id &&
+                !POEM_BY_ID[work.id] &&
+                workMatchesQuery(work, searchQuery)
+            )
+            if (!works.length && searchQuery.trim()) return null
+            return (
+              <CatalogCollection
+                key={collection.id}
+                collection={collection}
+                works={works}
+              />
+            )
+          })}
       </div>
     </div>
   )
@@ -291,24 +417,71 @@ function DraftBadge({ verse, field }) {
 
 // Layer chips: pick which of the three layers to read. Scrolls sideways on phones.
 function LayerToggle({ layer, onChange }) {
+  const language = useAppStore((s) => s.language)
   return (
     <div
       role="group"
       aria-label="Reader layers"
-      className="-mx-3 flex w-[calc(100%+1.5rem)] gap-2 overflow-x-auto px-3 pb-1 sm:mx-0 sm:w-auto sm:px-0 sm:pb-0"
+      className="flex w-full gap-1 overflow-x-auto pb-1"
     >
-      {LAYER_CHIPS.map((l) => (
-        <Chip
-          key={l.id}
-          label={l.label}
-          title={LAYER_OPTIONS.find((o) => o.id === l.id)?.hint}
-          selected={layer === l.id}
-          onClick={() => onChange(l.id)}
-        />
-      ))}
+      {LAYER_CHIPS.map((l) => {
+        const parts = splitLabel(l.label)
+        const label = language === 'ta' ? parts.ta : parts.en
+        const selected = layer === l.id
+        return (
+          <button
+            key={l.id}
+            type="button"
+            onClick={() => onChange(l.id)}
+            title={l.label}
+            aria-pressed={selected}
+            className={`min-h-[32px] shrink-0 rounded-full border px-2.5 py-1 text-[11px] font-medium transition-colors focus-ring ${
+              selected
+                ? 'border-primary bg-primary text-page'
+                : 'border-line-strong text-muted hover:border-primary hover:text-primary'
+            }`}
+          >
+            {label}
+          </button>
+        )
+      })}
     </div>
   )
 }
+
+function InlineVoiceButton({ text }) {
+  const [speaking, setSpeaking] = useState(false)
+
+  function toggle() {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window) || !text) return
+    if (speaking) {
+      window.speechSynthesis.cancel()
+      setSpeaking(false)
+      return
+    }
+    window.speechSynthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.lang = 'ta-IN'
+    utterance.rate = 0.9
+    utterance.onend = () => setSpeaking(false)
+    utterance.onerror = () => setSpeaking(false)
+    window.speechSynthesis.speak(utterance)
+    setSpeaking(true)
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={toggle}
+      className="inline-flex min-h-[32px] items-center gap-1.5 rounded-full border border-line px-2.5 py-1 text-[11px] font-medium text-muted hover:text-accent hover:border-accent transition-colors focus-ring"
+      aria-label={speaking ? 'Stop voice' : 'Listen to verse'}
+    >
+      {speaking ? <Square size={12} /> : <Volume2 size={13} />}
+      {speaking ? 'Stop' : 'Voice'}
+    </button>
+  )
+}
+
 
 // ── Reader ────────────────────────────────────────────────────────────────
 
@@ -324,7 +497,7 @@ function Reader({ poem, sectionId }) {
     }
     // First visit: the original verse alone on phones (read first, then open a layer);
     // all three layers side by side on wide screens.
-    return typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches ? 'all' : 'sangam'
+    return typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches ? 'all' : 'original'
   }) // 'sangam' | 'urai' | 'english' | 'all'
   const [layoutMode, setLayoutMode] = useState(() => {
     try {
@@ -482,7 +655,8 @@ function Reader({ poem, sectionId }) {
   }
 
   const show = visibleLayers(layer)
-  const showCommentary = show.urai || show.english
+  const contextTinai = sec.tinai ? TINAI_WORLD[sec.tinai] : null
+  const glossaryEntries = [...wordGlossaryMap.values()].filter(hasGloss).slice(0, 60)
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
   const label = sec.title || sec.heading || sec.poemTitle || null
@@ -492,7 +666,7 @@ function Reader({ poem, sectionId }) {
     if (!sectionFilter.trim()) return true
     const q = sectionFilter.toLowerCase()
     const n = isSection ? s.sectionNumber : s.number
-    const t = isSection ? s.title : s.poet || ''
+    const t = s.title || s.heading || s.poet || ''
     return String(n).includes(q) || t.toLowerCase().includes(q)
   })
 
@@ -582,7 +756,7 @@ function Reader({ poem, sectionId }) {
       <main ref={contentRef} className="flex-1 overflow-y-auto bg-page flex flex-col">
         {/* Reader Top Controls Toolbar */}
         <div className="sticky top-0 z-10 border-b border-line bg-page/90 backdrop-blur-md px-3 sm:px-6 py-2 sm:py-3 shrink-0">
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+          <div className="w-full flex flex-wrap items-center justify-between gap-3">
             {/* Left controls */}
             <div className="flex items-center gap-1 sm:gap-2">
               <Button
@@ -690,190 +864,153 @@ function Reader({ poem, sectionId }) {
 
         {/* ── Main Presentation Canvas ─────────────────────────── */}
         <div className="flex-1 px-4 sm:px-6 md:px-8 py-6">
-          {layoutMode === 'h' ? (
-            /* ── HORIZONTAL (H) COMPARATIVE SPLIT VIEW ── */
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-              {/* Left Column: Original Tamil Verse */}
-              {show.sangam && (
-              <div className={`${showCommentary ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
-                <Card variant="flat" className="p-4 sm:p-8 space-y-5 border-accent/30 bg-surface shadow-xs">
-                  {/* Verse Header */}
-                  <div className="flex items-center justify-between border-b border-line pb-3">
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <Badge variant="accent" size="sm">
-                          {poem.en} {isSection && sec.lineStart ? `· lines ${sec.lineStart}–${sec.lineEnd}` : `· ${sec.tinai || ''}`}
-                        </Badge>
-                      </div>
-                      <h1 className={`font-bold text-primary ${label || isSection ? 'tamil text-2xl sm:text-3xl pt-1' : 'text-lg font-mono pt-0.5'}`}>
-                        {label || `Verse #${num}`}
-                      </h1>
-                      {sec.poet && (
-                        <p className="tamil text-sm text-muted font-medium pt-0.5">
-                          புலவர்: <span className="text-primary font-semibold">{sec.poet}</span>
-                        </p>
-                      )}
-                    </div>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      onClick={() => handleCopyVerse(sec.sangamTamil)}
-                      title="Copy verse text"
-                      icon={<Copy size={13} />}
-                    >
-                      Copy
-                    </Button>
-                  </div>
-
-                  {/* Classical Tamil Lines with word lookup */}
-                  <div className="py-2">
-                    <ClickableVerse text={sec.sangamTamil} onWordClick={handleWordClick} fontSize={fontSize} />
-                  </div>
-
-                  <div className="flex items-center justify-between text-[11px] text-faint border-t border-line/60 pt-3">
-                    <span>💡 Tap any word to view root etymology</span>
-                    <span className="font-mono">Classical Tamil</span>
-                  </div>
-                </Card>
-
-                {/* Audio Recitation Player if present */}
-                {sec.audioUrl && (
-                  <Card variant="flat" className="p-4">
-                    <AudioPlayer audioUrl={sec.audioUrl} label="Listen to verse recitation" />
-                  </Card>
-                )}
-              </div>
-              )}
-
-              {/* Right Column: Commentary & English Translation */}
-              {showCommentary && (
-              <div className={`${show.sangam ? 'lg:col-span-6' : 'lg:col-span-12'} space-y-4`}>
-                {/* Modern Commentary (Urai) */}
-                {show.urai && (
-                  <Card variant="default" className="p-4 sm:p-6 space-y-3 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
-                      <span className="text-xs font-bold text-accent">
-                        <span className="tamil">உரை</span> (Prose Commentary)
-                      </span>
-                      <DraftBadge verse={sec} field="urai" />
-                    </div>
-                    {sec.urai ? (
-                      <p className="tamil text-base sm:text-lg leading-relaxed text-primary">{sec.urai}</p>
-                    ) : (
-                      <p className="text-sm text-faint italic">உரை இல்லை (No prose commentary available)</p>
-                    )}
-                  </Card>
-                )}
-
-                {/* English Translation */}
-                {show.english && (
-                  <Card variant="default" className="p-4 sm:p-6 space-y-4 bg-surface shadow-xs">
-                    <div className="flex items-center justify-between border-b border-line pb-2">
-                      <span className="text-xs font-bold text-accent uppercase tracking-wider">
-                        English Translation
-                      </span>
-                      <DraftBadge verse={sec} field="english" />
-                    </div>
-                    {sec.english ? (
-                      <p className="text-base sm:text-lg leading-relaxed text-primary">{sec.english}</p>
-                    ) : (
-                      <p className="text-sm text-faint italic">
-                        English translation for this section is being prepared and will appear after scholar review.
-                      </p>
-                    )}
-                  </Card>
-                )}
-              </div>
-              )}
-            </div>
-          ) : (
-            /* ── VERTICAL (V) STACKED VIEW ── */
-            <div className="max-w-3xl mx-auto space-y-6">
-              {/* Section Header */}
-              <header className="space-y-2 border-b border-line pb-6">
-                <div className="flex items-center justify-between">
-                  <Badge variant="accent" size="sm">
-                    {poem.en} {isSection && sec.lineStart ? `· lines ${sec.lineStart}–${sec.lineEnd}` : `· ${sec.tinai || ''}`}
-                  </Badge>
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    onClick={() => handleCopyVerse(sec.sangamTamil)}
-                    title="Copy verse text"
-                    icon={<Copy size={13} />}
-                  >
-                    Copy
-                  </Button>
-                </div>
-
-                <h1 className={`leading-tight font-bold text-primary ${label || isSection ? 'tamil text-3xl sm:text-4xl' : 'text-muted text-xl font-mono'}`}>
+          <div className="w-full space-y-4">
+            {/* Verse identity / copy strip */}
+            <Card variant="flat" className="flex flex-wrap items-center justify-between gap-3 border-accent/30 p-4 shadow-xs">
+              <div className="min-w-0">
+                <Badge variant="accent" size="sm">
+                  {poem.en} {isSection && sec.lineStart ? `· lines ${sec.lineStart}–${sec.lineEnd}` : `· ${sec.tinai || ''}`}
+                </Badge>
+                <h1 className={`mt-1 truncate font-bold text-primary ${label || isSection ? 'tamil text-xl sm:text-2xl' : 'text-lg font-mono'}`}>
                   {label || `Verse #${num}`}
                 </h1>
-                {sec.poet && (
-                  <p className="tamil text-sm text-muted font-medium pt-1">
-                    புலவர்: <span className="text-primary font-semibold">{sec.poet}</span>
-                  </p>
-                )}
-              </header>
+                {sec.poet && <p className="tamil text-xs text-muted">புலவர்: {sec.poet}</p>}
+              </div>
+              <div className="flex items-center gap-2">
+                <InlineVoiceButton text={sec.sangamTamil} />
+                <Button size="sm" variant="ghost" onClick={() => handleCopyVerse(sec.sangamTamil)} icon={<Copy size={13} />}>
+                  Copy
+                </Button>
+              </div>
+            </Card>
 
-              {/* Original Tamil Verse */}
-              {show.sangam && (
-                <Card variant="flat" className="p-4 sm:p-8 space-y-4 border-accent/20">
+            <div className={layoutMode === 'h' ? 'grid gap-4 lg:grid-cols-2' : 'space-y-4'}>
+              {show.original && (
+                <Card variant="flat" className="space-y-3 border-accent/20 p-4 sm:p-6">
                   <div className="flex items-center justify-between border-b border-line pb-2">
-                    <span className="text-xs font-semibold text-accent uppercase tracking-wider">
-                      Original Classical Tamil
-                    </span>
-                    <span className="text-[11px] text-faint">Tap any word for etymology</span>
+                    <span className="text-xs font-semibold text-accent">Original · மூலம்</span>
+                    <InlineVoiceButton text={sec.sangamTamil} />
                   </div>
                   <ClickableVerse text={sec.sangamTamil} onWordClick={handleWordClick} fontSize={fontSize} />
                 </Card>
               )}
 
-              {/* Modern Commentary (Urai) */}
+              {show.transliteration && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Transliteration · ஒலிபெயர்ப்பு</p>
+                  {sec.transliteration ? (
+                    <p className="whitespace-pre-wrap text-base leading-relaxed text-primary">{sec.transliteration}</p>
+                  ) : (
+                    <p className="text-sm text-faint italic">Transliteration is not yet available for this verse.</p>
+                  )}
+                </Card>
+              )}
+
+              {show.voice && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Voice · குரல்</p>
+                  <VoiceLayer text={sec.sangamTamil} />
+                  {sec.audioUrl && <AudioPlayer audioUrl={sec.audioUrl} label="Scholar recording" />}
+                </Card>
+              )}
+
               {show.urai && (
-                <Card variant="default" className="p-4 sm:p-6 space-y-3">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-xs font-semibold text-faint">
-                      <span className="tamil">உரை</span> (Prose Commentary)
-                    </span>
+                <Card variant="default" className="space-y-3 p-4 sm:p-6">
+                  <div className="flex items-center justify-between border-b border-line pb-2">
+                    <span className="text-xs font-bold text-accent">உரை · Modern Tamil</span>
                     <DraftBadge verse={sec} field="urai" />
                   </div>
                   {sec.urai ? (
-                    <p className="tamil text-base sm:text-lg leading-relaxed text-muted">{sec.urai}</p>
+                    <p className="tamil text-base leading-relaxed text-primary">{sec.urai}</p>
                   ) : (
                     <p className="text-sm text-faint italic">உரை இல்லை (No prose commentary available)</p>
                   )}
                 </Card>
               )}
 
-              {/* English Translation */}
               {show.english && (
-                <Card variant="default" className="p-4 sm:p-6 space-y-4">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-xs font-semibold text-faint uppercase tracking-wider">English Translation</span>
+                <Card variant="default" className="space-y-3 p-4 sm:p-6">
+                  <div className="flex items-center justify-between border-b border-line pb-2">
+                    <span className="text-xs font-bold text-accent">English</span>
                     <DraftBadge verse={sec} field="english" />
                   </div>
                   {sec.english ? (
-                    <p className="text-base sm:text-lg leading-relaxed text-muted">{sec.english}</p>
+                    <p className="text-base leading-relaxed text-primary">{sec.english}</p>
                   ) : (
-                    <p className="text-sm text-faint italic">
-                      English translation for this section is being prepared and will appear after scholar review.
-                    </p>
+                    <p className="text-sm text-faint italic">English translation is being prepared.</p>
                   )}
                 </Card>
               )}
 
-              {/* Audio Recitation */}
-              {sec.audioUrl && (
-                <Card variant="flat" className="p-4">
-                  <AudioPlayer audioUrl={sec.audioUrl} label="Listen to verse recitation" />
+              {show.glossary && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Glossary · சொற்கள்</p>
+                  {glossaryEntries.length ? (
+                    <dl className="divide-y divide-line/60">
+                      {glossaryEntries.map((word) => (
+                        <div key={word.form} className="grid grid-cols-[7rem_1fr] gap-3 py-1.5 text-sm">
+                          <dt className="tamil font-semibold text-primary">{word.form}</dt>
+                          <dd className="text-muted">{word.gloss || word.etymology || word.root || '—'}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  ) : (
+                    <p className="text-sm text-faint italic">No word glossary has been attached to this verse yet.</p>
+                  )}
+                </Card>
+              )}
+
+              {show.notes && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Notes · குறிப்புகள்</p>
+                  {sec.culturalNotes?.length ? (
+                    <ul className="list-disc space-y-1.5 pl-5 text-sm text-primary">
+                      {sec.culturalNotes.map((note, index) => (
+                        <li key={index}><strong>{note.title}</strong>{note.description ? ` — ${note.description}` : ''}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm text-faint italic">No editorial notes for this verse yet.</p>
+                  )}
+                </Card>
+              )}
+
+              {show.poetics && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Poetics · யாப்பு</p>
+                  {sec.poetics ? (
+                    <p className="text-sm leading-relaxed text-primary">{sec.poetics}</p>
+                  ) : contextTinai?.poetry ? (
+                    <div className="space-y-2">
+                      <p className="tamil text-sm leading-relaxed text-primary">{contextTinai.poetry.classic}</p>
+                      <p className="text-xs text-muted">{contextTinai.poetry.poem}</p>
+                    </div>
+                  ) : (
+                    <p className="text-sm text-faint italic">Metre and poetics metadata is not yet attached.</p>
+                  )}
+                </Card>
+              )}
+
+              {show.context && (
+                <Card variant="default" className="space-y-2 p-4 sm:p-6">
+                  <p className="text-xs font-semibold text-accent">Context · சூழல்</p>
+                  {contextTinai ? (
+                    <div className="space-y-1.5 text-sm text-primary">
+                      <p><strong>{contextTinai.ta}</strong> — {contextTinai.atmosphere.season.desc}</p>
+                      <p className="text-muted">Deity: {contextTinai.deity.ta}</p>
+                      <p className="text-muted">People: {contextTinai.people.map((p) => p.ta).join(' · ')}</p>
+                      <p className="text-muted">Life: {contextTinai.crafts.map((c) => c.ta).join(' · ')}</p>
+                    </div>
+                  ) : (
+                    <p className="text-sm text-faint italic">This verse has no tiṇai context tag.</p>
+                  )}
                 </Card>
               )}
             </div>
-          )}
+          </div>
 
           {/* Previous / Next Navigation Footer */}
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 pt-8 pb-4 border-t border-line mt-8">
+          <div className="w-full flex flex-wrap items-center justify-between gap-2 pt-8 pb-4 border-t border-line mt-8">
             <Button
               variant="outline"
               size="sm"

@@ -18,15 +18,17 @@ test('legacy "both" maps to "all"; unknown ids fall back to "all"', () => {
 })
 
 test('each toggle shows exactly its layer', () => {
-  assert.deepEqual(visibleLayers('sangam'), { sangam: true, urai: false, english: false })
-  assert.deepEqual(visibleLayers('urai'), { sangam: false, urai: true, english: false })
-  assert.deepEqual(visibleLayers('english'), { sangam: false, urai: false, english: true })
-  assert.deepEqual(visibleLayers('all'), { sangam: true, urai: true, english: true })
+  assert.deepEqual(visibleLayers('original'), { original: true, transliteration: false, urai: false, english: false, glossary: false, notes: false, poetics: false, context: false, voice: false })
+  assert.equal(visibleLayers('urai').urai, true)
+  assert.equal(visibleLayers('urai').original, false)
+  assert.equal(visibleLayers('english').english, true)
+  assert.equal(visibleLayers('english').original, false)
+  for (const value of Object.values(visibleLayers('all'))) assert.equal(value, true)
 })
 
 test('source text is never labelled draft', () => {
-  assert.equal(layerStatus({ sangamTamil: 'x', verified: false }, 'sangam').status, 'source')
-  assert.equal(draftBadgeLabel({ sangamTamil: 'x', verified: false }, 'sangam'), null)
+  assert.equal(layerStatus({ sangamTamil: 'x', verified: false }, 'original').status, 'source')
+  assert.equal(draftBadgeLabel({ sangamTamil: 'x', verified: false }, 'original'), null)
 })
 
 test('unverified scraped urai is labelled not yet verified', () => {

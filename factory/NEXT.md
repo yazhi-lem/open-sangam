@@ -13,16 +13,16 @@ not a scramble.
 | ID | P | Task | DRI | Size | Exit criterion | Depends on | Due |
 |---|---|---|---|---|---|---|---|
 | R1 | P0 | **Lock in the scholar.** Name, agreement, credit line, review format (per-line ✅ / ✏️ with reason), and a daily quota of 20 lines from 29 Oct | Mozhi lead | S (1d) | Written agreement; first 20 lines reviewed by 30 Oct | — | 29 Oct |
-| R2 | P0 | **Decide the 62–74 source gap** (`CURRENT` D1): marker text, or a second licence-cleared source | Mozhi lead + scholar | S (0.5d) | Decision recorded in `data/texts/maduraikanchi/README.md`; if (b), the reader renders a visible gap marker (test) | R1 | 30 Oct |
+| R2 | P0 | **Close out the 62–74 fill** (`CURRENT` D1): record Project Madurai's reuse terms and have the scholar check the five filled lines against a print edition | Mozhi lead + scholar | S (0.25d) | Terms archived in `docs/`; the scholar's check noted in `data/texts/maduraikanchi/README.md` | R1 | 30 Oct |
 | R3 | P0 | **Urai licence.** Send the written request to the source site; if there is no yes by 3 Nov, draft own urai for 1–100, marked draft | Mozhi lead | S (1d) + M fallback | Permission archived in `docs/`, **or** own urai for 9 sections in the corpus with `verified: false` | — | 3 Nov |
 | R4 | P0 | **English lines + keyword glosses, 1–100** by a human translator, or as drafts the scholar reviews line by line; `englishMeta` records the author | Translator (assign) | M (3d) | 9 launch sections carry `english` + glosses; schema v2 CI green | R1 | 1 Nov |
-| R5 | P0 | **Scholar sign-off pass** across all three layers, written as `verified: true` + reviewer + date per record, through one reviewed change | Scholar · Mozhi lead (merges) | L (5 review days) | 100/100 launch lines (or 95 + an approved gap marker) `verified: true`; correction diff in the review change | R2–R4 | 8 Nov |
+| R5 | P0 | **Scholar sign-off pass** across all three layers, written as `verified: true` + reviewer + date per record, through one reviewed change | Scholar · Mozhi lead (merges) | L (5 review days) | 100/100 launch lines `verified: true`; correction diff in the review change | R2–R4 | 8 Nov |
 | R6 | P0 | **Correction log + contributor credits page** | Frontend DRI | S (1d) | `/credits` lists the scholar, translator and contributors; the correction log renders from the review change | R5 | 8 Nov |
 | R7 | P0 | **Launch-readiness review**: run the gate checklist (below) on a production build | Mozhi lead | S (0.5d) | Every checklist row ✅ or has a waiver signed by the lead | R5, R6 | 10 Nov |
 | R8 | P1 | Land the waiting mobile/Tamil fixes and decide the draft-labelling change | Frontend DRI | S (1d) | Both merged or closed with a reason | — | 31 Oct |
 | R9 | P1 | Hand the launch campaign assets (screens, a 3-line pitch, credits) to yazhi-dev Media | Mozhi lead | S (0.5d) | Assets delivered | R7 | 11 Nov |
 
-**Reader launch gate checklist (R7):** 100 lines signed (or 95 + approved marker) · three layers shown only for signed
+**Reader launch gate checklist (R7):** 100 lines signed · three layers shown only for signed
 records · no unverified English presented as verified · Tamil never letter-spaced · 360 px layout OK · Lighthouse
 mobile ≥ 90 on `/book/maduraikanchi` · CSP violations in report-only reviewed (empty, or explained) · rollback = the
 previous Cloudflare Pages deployment, one click, tested.

@@ -1,0 +1,670 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-27",
+  "description": "Tamil artifact register for the Open Sangam scholar reader. Every record is readable even when its inscription/manuscript layers are not yet digitised: layers carry an explicit status so the reader never invents text or translations. Rights are recorded per source.",
+  "classes": [
+    {
+      "id": "epigraphy",
+      "ta": "கல்வெட்டியல்",
+      "en": "Epigraphy",
+      "description": "Stone, cave, temple and copper-plate inscriptions; hero stones and estampages."
+    },
+    {
+      "id": "numismatics",
+      "ta": "நாணயவியல்",
+      "en": "Numismatics",
+      "description": "Punch-marked, Roman, Pandya, Chola and later Tamil coins and hoards."
+    },
+    {
+      "id": "manuscripts",
+      "ta": "சுவடியியல்",
+      "en": "Manuscripts & Documents",
+      "description": "Palm-leaf and paper manuscripts, printed editions, lexicons and colonial documents."
+    },
+    {
+      "id": "sculpture",
+      "ta": "சிற்பவியல்",
+      "en": "Sculpture & Iconography",
+      "description": "Hero stones, bronzes, terracottas and religious icons."
+    },
+    {
+      "id": "architecture",
+      "ta": "கட்டிடக்கலையியல்",
+      "en": "Architecture & Monuments",
+      "description": "Megaliths, temples, forts and architectural fragments."
+    },
+    {
+      "id": "music",
+      "ta": "இசைக்கருவியியல்",
+      "en": "Music & Performance",
+      "description": "Yazh, pann, musical inscriptions and performance objects."
+    },
+    {
+      "id": "material-culture",
+      "ta": "பொருட்கலாச்சாரம்",
+      "en": "Material Culture",
+      "description": "Pottery, beads, tools and everyday objects from excavated Tamil sites."
+    }
+  ],
+  "sources": [
+    {
+      "id": "project-madurai",
+      "name": "Project Madurai",
+      "url": "https://www.projectmadurai.org/",
+      "rights": "open",
+      "note": "Freely distributable e-texts; every file states its own terms."
+    },
+    {
+      "id": "tn-archaeology",
+      "name": "Tamil Nadu State Department of Archaeology",
+      "url": "https://www.tnarch.gov.in/",
+      "rights": "permission-required",
+      "note": "Metadata may be cited; images, estampages and full reports need written permission."
+    },
+    {
+      "id": "asi",
+      "name": "Archaeological Survey of India",
+      "url": "https://asi.nic.in/",
+      "rights": "open-metadata",
+      "note": "Government reports such as Epigraphia Indica and Annual Reports on Indian Epigraphy are public domain; check individual image rights."
+    },
+    {
+      "id": "govt-museum-chennai",
+      "name": "Government Museum, Chennai",
+      "url": "https://govtmuseumchennai.org/",
+      "rights": "permission-required",
+      "note": "Object photography and high-resolution images require permission."
+    },
+    {
+      "id": "tn-oriental-manuscripts",
+      "name": "Tamil Nadu Government Oriental Manuscripts Library",
+      "url": "https://www.tn.gov.in/",
+      "rights": "permission-required",
+      "note": "Manuscript surrogates and transcriptions need library permission."
+    },
+    {
+      "id": "sarasvati-mahal",
+      "name": "Sarasvati Mahal Library, Thanjavur",
+      "url": "https://www.sarasvatimahallibrary.tn.nic.in/",
+      "rights": "permission-required",
+      "note": "Manuscript images and editions require permission."
+    },
+    {
+      "id": "met",
+      "name": "The Metropolitan Museum of Art — Open Access",
+      "url": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+      "rights": "open",
+      "note": "CC0 for Open Access images and metadata."
+    },
+    {
+      "id": "cleveland",
+      "name": "Cleveland Museum of Art — Open Access",
+      "url": "https://www.clevelandart.org/open-access",
+      "rights": "open",
+      "note": "CC0 for Open Access images and metadata."
+    },
+    {
+      "id": "smithsonian",
+      "name": "Smithsonian Open Access",
+      "url": "https://www.si.edu/openaccess",
+      "rights": "open",
+      "note": "CC0 for designated open-access records."
+    },
+    {
+      "id": "british-library",
+      "name": "British Library",
+      "url": "https://www.bl.uk/",
+      "rights": "open-metadata",
+      "note": "Use Public Domain Mark items only; verify each shelfmark."
+    },
+    {
+      "id": "internet-archive",
+      "name": "Internet Archive",
+      "url": "https://archive.org/",
+      "rights": "open-metadata",
+      "note": "Use items marked public domain; avoid lending-only scans."
+    },
+    {
+      "id": "wikimedia",
+      "name": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/",
+      "rights": "open-metadata",
+      "note": "Reuse only under the licence shown on the file page (CC0, CC BY, CC BY-SA)."
+    },
+    {
+      "id": "tamil-lexicon",
+      "name": "Tamil Lexicon, University of Madras (1924–1936)",
+      "url": "https://archive.org/details/tamillexicon",
+      "rights": "open",
+      "note": "Public-domain dictionary; cite volume and page."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "mangulam-cave-inscription",
+      "ta": "மாங்குளம் குகைக் கல்வெட்டு",
+      "en": "Mangulam Cave Inscription",
+      "class": "epigraphy",
+      "subclass": "Tamil Brahmi cave inscription",
+      "period": "c. 3rd–2nd century BCE",
+      "place": "Mangulam, Madurai district",
+      "script": "Tamil Brahmi",
+      "language": "Old Tamil",
+      "material": "rock",
+      "holder": "Tamil Nadu State Department of Archaeology",
+      "sourceId": "tn-archaeology",
+      "sourceUrl": "https://www.tnarch.gov.in/",
+      "rights": "open-metadata",
+      "summary": "One of the earliest dated Tamil-Brahmi cave inscriptions, associated with Jain ascetics and the Pandya chief Nedunjeliyan. A foundational object for the history of Tamil writing.",
+      "layers": {
+        "text": { "status": "pending", "note": "Transcription pending rights-cleared estampage or field collation." },
+        "transliteration": { "status": "pending", "note": "Transliteration follows the scholarly edition chosen for transcription." },
+        "translation": { "status": "pending", "note": "English rendering will be cited to a named published reading." },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Compare with the Jambai and Arikamedu inscriptions for early Tamil-Brahmi letter forms.", "Do not treat this reader as an epigraphic edition until a named estampage and edition are attached."] },
+        "provenance": { "status": "available", "value": "Catalogued from public archaeological metadata; no image or estampage is reproduced." }
+      }
+    },
+    {
+      "id": "jambai-inscription",
+      "ta": "ஜம்பைக் கல்வெட்டு",
+      "en": "Jambai Inscription",
+      "class": "epigraphy",
+      "subclass": "Tamil Brahmi hero-stone inscription",
+      "period": "c. 1st–2nd century CE",
+      "place": "Jambai, Villupuram district",
+      "script": "Tamil Brahmi",
+      "language": "Old Tamil",
+      "material": "stone",
+      "holder": "Tamil Nadu State Department of Archaeology",
+      "sourceId": "tn-archaeology",
+      "sourceUrl": "https://www.tnarch.gov.in/",
+      "rights": "open-metadata",
+      "summary": "A celebrated early Tamil-Brahmi inscription associated with a Chola chief and the hero-stone tradition; important for the transition from cave labels to public memorial inscriptions.",
+      "layers": {
+        "text": { "status": "pending", "note": "Transcription pending a rights-cleared published estampage." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Useful classroom comparison with Mangulam for script development and royal patronage."] },
+        "provenance": { "status": "available", "value": "Public archaeological metadata; image rights not cleared." }
+      }
+    },
+    {
+      "id": "hero-stone-collection",
+      "ta": "நடுகற்கள்",
+      "en": "Hero Stones (Nadukal)",
+      "class": "epigraphy",
+      "subclass": "memorial stone with inscription and relief",
+      "period": "Sangam–medieval",
+      "place": "Tamil Nadu",
+      "script": "Tamil",
+      "language": "Tamil",
+      "material": "stone",
+      "holder": "various district museums and field sites",
+      "sourceId": "tn-archaeology",
+      "sourceUrl": "https://www.tnarch.gov.in/",
+      "rights": "permission-required",
+      "summary": "Memorial stones for warriors, sati stones and cattle-raid deaths. They combine a relief panel, a short inscription and a local performance tradition.",
+      "layers": {
+        "text": { "status": "pending", "note": "Collection-level record; item-level transcriptions need field documentation." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Reader template supports one inscription per hero stone plus a relief description layer.", "Record donor, village, date and reading in the citation, not in free text."] },
+        "provenance": { "status": "available", "value": "Collection-level metadata; per-object rights review required." }
+      }
+    },
+    {
+      "id": "tamil-copper-plate-grant",
+      "ta": "தமிழ்ச் செப்பேடு",
+      "en": "Tamil Copper-Plate Grant",
+      "class": "epigraphy",
+      "subclass": "copper-plate charter",
+      "period": "Pallava–Chola",
+      "place": "Tamil Nadu",
+      "script": "Tamil / Grantha",
+      "language": "Tamil / Sanskrit",
+      "material": "copper alloy",
+      "holder": "Government Museum, Chennai / temple collections",
+      "sourceId": "govt-museum-chennai",
+      "sourceUrl": "https://govtmuseumchennai.org/",
+      "rights": "permission-required",
+      "summary": "Land-grant charters recording donations, boundaries, immunities and royal genealogy. A key source for medieval Tamil legal and agrarian history.",
+      "layers": {
+        "text": { "status": "pending", "note": "Requires a specific plate set and a published edition." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Model charter layers: obverse/reverse transcription, boundary list, donor/recipient, date and imprecation formula."] },
+        "provenance": { "status": "available", "value": "Representative class record; no specific plate is claimed." }
+      }
+    },
+    {
+      "id": "brihadeeswarar-temple-inscription",
+      "ta": "பிரகதீஸ்வரர் கோயில் கல்வெட்டு",
+      "en": "Brihadeeswarar Temple Inscription",
+      "class": "epigraphy",
+      "subclass": "temple wall inscription",
+      "period": "11th century CE",
+      "place": "Thanjavur",
+      "script": "Tamil",
+      "language": "Tamil",
+      "material": "stone",
+      "holder": "Archaeological Survey of India",
+      "sourceId": "asi",
+      "sourceUrl": "https://asi.nic.in/",
+      "rights": "open-metadata",
+      "summary": "Chola-period temple inscriptions record endowments, officials, dancers, musicians and temple economy. The Thanjavur corpus is a cornerstone of Tamil epigraphy.",
+      "layers": {
+        "text": { "status": "pending", "note": "Attach a specific numbered inscription from South Indian Inscriptions before transcription." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Cross-link with the Chola bronze and temple architecture records.", "Cite South Indian Inscriptions volume and inscription number."] },
+        "provenance": { "status": "available", "value": "ASI public report metadata; inscription image not reproduced." }
+      }
+    },
+    {
+      "id": "sangam-punch-marked-coins",
+      "ta": "சங்ககாலக் காசுகள்",
+      "en": "Sangam-Era Punch-Marked Coins",
+      "class": "numismatics",
+      "subclass": "punch-marked coin",
+      "period": "c. 3rd century BCE–3rd century CE",
+      "place": "Tamil Nadu",
+      "script": "symbols / early Tamil-Brahmi",
+      "language": "Old Tamil",
+      "material": "silver / copper",
+      "holder": "various museum collections",
+      "sourceId": "govt-museum-chennai",
+      "sourceUrl": "https://govtmuseumchennai.org/",
+      "rights": "permission-required",
+      "summary": "Punch-marked coins circulated in the Tamil country before and during the Sangam period. Symbols, weight standards and hoard context are the primary evidence.",
+      "layers": {
+        "text": { "status": "pending", "note": "Legend transcription only when a named coin type is attached." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Reader should support obverse/reverse image layers and symbol glossary.", "Record weight, die axis and hoard provenance."] },
+        "provenance": { "status": "available", "value": "Class-level record; no specific coin image is reproduced." }
+      }
+    },
+    {
+      "id": "roman-coins-ariakamedu",
+      "ta": "அரிக்கமேடு உரோமானிய நாணயங்கள்",
+      "en": "Roman Coins from Arikamedu",
+      "class": "numismatics",
+      "subclass": "Roman coin / trade hoard",
+      "period": "1st century BCE–2nd century CE",
+      "place": "Arikamedu, Puducherry",
+      "script": "Latin",
+      "language": "Latin",
+      "material": "silver / gold",
+      "holder": "various museum collections",
+      "sourceId": "asi",
+      "sourceUrl": "https://asi.nic.in/",
+      "rights": "open-metadata",
+      "summary": "Roman coins from Arikamedu and other Tamil coast sites document Indian Ocean trade with the Mediterranean. They are essential context for Sangam-era ports and Yavana merchants.",
+      "layers": {
+        "text": { "status": "pending", "note": "Attach a specific RIC/coin type before legend transcription." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Link to Sangam references to Yavana traders and to the Arikamedu material-culture records."] },
+        "provenance": { "status": "available", "value": "Public excavation metadata; coin images not reproduced." }
+      }
+    },
+    {
+      "id": "pandya-chola-coins",
+      "ta": "பாண்டிய-சோழ நாணயங்கள்",
+      "en": "Pandya and Chola Coins",
+      "class": "numismatics",
+      "subclass": "dynastic coinage",
+      "period": "c. 9th–13th century CE",
+      "place": "Tamil Nadu",
+      "script": "Tamil",
+      "language": "Tamil",
+      "material": "gold / silver / copper",
+      "holder": "various museum collections",
+      "sourceId": "govt-museum-chennai",
+      "sourceUrl": "https://govtmuseumchennai.org/",
+      "rights": "permission-required",
+      "summary": "Pandya and Chola coins carry dynastic emblems, titles and occasional Tamil legends. They support the study of royal authority, trade and temple donation.",
+      "layers": {
+        "text": { "status": "pending", "note": "Legend layer requires a specific coin type and published catalogue number." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Reader supports obverse/reverse, weight, metal and provenance fields."] },
+        "provenance": { "status": "available", "value": "Class-level record; per-coin rights review required." }
+      }
+    },
+    {
+      "id": "palm-leaf-manuscript-collection",
+      "ta": "ஓலைச்சுவடித் தொகுப்பு",
+      "en": "Palm-Leaf Manuscript Collection",
+      "class": "manuscripts",
+      "subclass": "ola-leaf manuscript",
+      "period": "medieval–colonial",
+      "place": "Tamil Nadu",
+      "script": "Tamil",
+      "language": "Tamil",
+      "material": "palm leaf",
+      "holder": "Tamil Nadu Government Oriental Manuscripts Library / Sarasvati Mahal Library",
+      "sourceId": "tn-oriental-manuscripts",
+      "sourceUrl": "https://www.tn.gov.in/",
+      "rights": "permission-required",
+      "summary": "Palm-leaf manuscripts preserve literature, grammar, medicine, astronomy and ritual. The reader needs folio navigation, zoom, transcription and a separate note layer.",
+      "layers": {
+        "text": { "status": "pending", "note": "Attach a specific shelfmark and folio before transcription." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Model layers: folio image, transcription, transliteration, modern Tamil, English, notes, provenance.", "Do not OCR palm leaves without a folio-level correction pass."] },
+        "provenance": { "status": "available", "value": "Collection-level record; no manuscript image is reproduced." }
+      }
+    },
+    {
+      "id": "thirukkural-ola-manuscript",
+      "ta": "திருக்குறள் ஓலைச்சுவடி",
+      "en": "Tirukkural Palm-Leaf Manuscript",
+      "class": "manuscripts",
+      "subclass": "representative ola-leaf reader",
+      "period": "representative (text: classical)",
+      "place": "Tamil Nadu",
+      "script": "Tamil",
+      "language": "Tamil",
+      "material": "palm leaf",
+      "holder": "representative digital surrogate",
+      "sourceId": "project-madurai",
+      "sourceUrl": "https://www.projectmadurai.org/",
+      "rights": "open",
+      "summary": "A representative manuscript reader using Tirukkural 1, a public-domain text, so scholars can test the compact multi-layer manuscript view before a physical shelfmark is attached.",
+      "layers": {
+        "text": {
+          "status": "available",
+          "value": ["அகர முதல எழுத்தெல்லாம் ஆதி", "பகவன் முதற்றே உலகு."],
+          "source": "Tirukkural 1 (public domain)"
+        },
+        "transliteration": {
+          "status": "available",
+          "value": ["akara mutala eḻuttellām āti", "pakavaṉ mutaṟṟē ulaku."],
+          "scheme": "ISO 15919"
+        },
+        "translation": {
+          "status": "available",
+          "value": ["As ‘A’ is the first of all letters, so the Primal Deity is first in the world."],
+          "source": "G. U. Pope et al., 1886 (public domain)"
+        },
+        "glossary": {
+          "status": "available",
+          "entries": [
+            { "term": "அகரம்", "gloss": "the letter A; the first letter" },
+            { "term": "முதல்", "gloss": "first, beginning" },
+            { "term": "பகவன்", "gloss": "the Lord, the Primal Being" },
+            { "term": "உலகு", "gloss": "world" }
+          ]
+        },
+        "notes": {
+          "status": "available",
+          "entries": ["This is a representative reader, not a claim about a specific physical manuscript.", "Replace the surrogate layers with folio images and shelfmark before scholarly citation."]
+        },
+        "provenance": {
+          "status": "available",
+          "value": "Text and translation from public-domain Project Madurai editions; manuscript object pending."
+        }
+      }
+    },
+    {
+      "id": "tamil-lexicon-printed-edition",
+      "ta": "தமிழ்ப் பேரகராதி",
+      "en": "Tamil Lexicon, Printed Edition",
+      "class": "manuscripts",
+      "subclass": "printed reference work",
+      "period": "1924–1936",
+      "place": "Madras",
+      "script": "Tamil",
+      "language": "Tamil / English",
+      "material": "paper",
+      "holder": "University of Madras",
+      "sourceId": "tamil-lexicon",
+      "sourceUrl": "https://archive.org/details/tamillexicon",
+      "rights": "open",
+      "summary": "The Tamil Lexicon is the foundational historical dictionary of Tamil. It is public domain and an ideal first document-reader for headword, etymology and citation layers.",
+      "layers": {
+        "text": { "status": "pending", "note": "Attach a specific headword and volume/page." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "available", "value": ["Lexicon entries are already bilingual Tamil–English; the reader can display the headword, Tamil definition and English gloss as separate layers."] },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Use this record as the first document/lexicon ingest target.", "Cite volume and page for every extracted entry."] },
+        "provenance": { "status": "available", "value": "Public-domain edition; verify the Internet Archive item is the public-domain scan." }
+      }
+    },
+    {
+      "id": "chola-bronze-nataraja",
+      "ta": "சோழர் வெண்கல நடராஜர்",
+      "en": "Chola Bronze Nataraja",
+      "class": "sculpture",
+      "subclass": "Chola bronze icon",
+      "period": "c. 11th century CE",
+      "place": "Tamil Nadu",
+      "script": null,
+      "language": null,
+      "material": "copper alloy",
+      "holder": "The Metropolitan Museum of Art (open-access example)",
+      "sourceId": "met",
+      "sourceUrl": "https://www.metmuseum.org/",
+      "rights": "open",
+      "summary": "Chola bronzes are among the great achievements of Tamil sculpture. The Nataraja icon fuses dance, cosmology and Saiva theology; object metadata can be linked to Tamil literary and ritual texts.",
+      "layers": {
+        "text": { "status": "pending", "note": "Iconographic labels and associated Tamil hymns can be attached as a text layer." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "available", "entries": [{ "term": "நடராஜர்", "gloss": "Nataraja, the lord of dance" }, { "term": "ஆனந்த தாண்டவம்", "gloss": "the dance of bliss" }] },
+        "notes": { "status": "available", "entries": ["Use a Met CC0 object record before attaching an image.", "Distinguish the iconography layer from any specific temple provenance."] },
+        "provenance": { "status": "available", "value": "Class record; attach a specific Met object ID and CC0 citation before publishing an image." }
+      }
+    },
+    {
+      "id": "arikamedu-terracotta",
+      "ta": "அரிக்கமேடு மட்பாண்டச் சிற்பம்",
+      "en": "Arikamedu Terracotta Figurine",
+      "class": "sculpture",
+      "subclass": "terracotta figurine",
+      "period": "1st century BCE–2nd century CE",
+      "place": "Arikamedu, Puducherry",
+      "script": null,
+      "language": null,
+      "material": "terracotta",
+      "holder": "various museum collections",
+      "sourceId": "asi",
+      "sourceUrl": "https://asi.nic.in/",
+      "rights": "open-metadata",
+      "summary": "Terracottas from Arikamedu show everyday dress, ornament and ritual life in an Indo-Roman trading port. They complement the Roman coin and pottery records.",
+      "layers": {
+        "text": { "status": "pending", "note": "Object labels and excavation context form the text layer." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Attach excavation report, context, and museum accession number."] },
+        "provenance": { "status": "available", "value": "Excavation metadata; image rights per museum." }
+      }
+    },
+    {
+      "id": "megalithic-dolmen",
+      "ta": "பெருங்கற்காலத் தோல்மென்",
+      "en": "Megalithic Dolmen",
+      "class": "architecture",
+      "subclass": "megalithic tomb",
+      "period": "c. 1000 BCE–300 BCE",
+      "place": "Tamil Nadu",
+      "script": null,
+      "language": null,
+      "material": "stone",
+      "holder": "Archaeological Survey of India / state protected sites",
+      "sourceId": "asi",
+      "sourceUrl": "https://asi.nic.in/",
+      "rights": "open-metadata",
+      "summary": "Megalithic dolmens, cists and urn burials are the material background of early Tamil society. They connect archaeology with Sangam references to memorial and burial practices.",
+      "layers": {
+        "text": { "status": "pending", "note": "Site plan, typology and excavation notes form the text layer." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "available", "entries": [{ "term": "தொல்மென்", "gloss": "dolmen; portal tomb" }, { "term": "கல்வட்டம்", "gloss": "stone circle" }, { "term": "நடுகல்", "gloss": "hero stone" }] },
+        "notes": { "status": "available", "entries": ["Use site-level protection status and ASI/state inventory number."] },
+        "provenance": { "status": "available", "value": "Public site metadata; no site image reproduced." }
+      }
+    },
+    {
+      "id": "brihadeeswarar-temple-architecture",
+      "ta": "பிரகதீஸ்வரர் கோயில் கட்டிடக்கலை",
+      "en": "Brihadeeswarar Temple Architecture",
+      "class": "architecture",
+      "subclass": "Chola temple",
+      "period": "completed 1010 CE",
+      "place": "Thanjavur",
+      "script": "Tamil",
+      "language": "Tamil",
+      "material": "granite",
+      "holder": "Archaeological Survey of India / UNESCO",
+      "sourceId": "asi",
+      "sourceUrl": "https://asi.nic.in/",
+      "rights": "open-metadata",
+      "summary": "The Thanjavur temple is the masterpiece of Chola architecture and a UNESCO World Heritage property. Its plan, sculpture programme and inscriptions form a single interpretable archive.",
+      "layers": {
+        "text": { "status": "pending", "note": "Attach the temple inscription record and architectural description." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "available", "entries": [{ "term": "விமானம்", "gloss": "sanctum tower" }, { "term": "மண்டபம்", "gloss": "hall" }, { "term": "கோபுரம்", "gloss": "gateway tower" }] },
+        "notes": { "status": "available", "entries": ["Link architecture layers to the Brihadeeswarar inscription record.", "Use ASI/UNESCO citations for conservation status."] },
+        "provenance": { "status": "available", "value": "Public heritage metadata; images require per-source rights." }
+      }
+    },
+    {
+      "id": "yazh-reconstruction",
+      "ta": "யாழ் இசைக்கருவி",
+      "en": "Yazh (Reconstruction)",
+      "class": "music",
+      "subclass": "stringed instrument",
+      "period": "Sangam–medieval",
+      "place": "Tamil country",
+      "script": null,
+      "language": null,
+      "material": "wood / gut / metal",
+      "holder": "museum reconstructions",
+      "sourceId": "wikimedia",
+      "sourceUrl": "https://commons.wikimedia.org/",
+      "rights": "open-metadata",
+      "summary": "The yazh is the harp of Sangam poetry, central to pann music and the imagery of Tamil love and war. No complete ancient instrument survives; reconstructions are interpretive.",
+      "layers": {
+        "text": { "status": "available", "value": ["Sangam poems refer to the yāḻ, its strings, pann and players. Use the corpus search to collect references."], "source": "Sangam corpus" },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "available", "entries": [{ "term": "யாழ்", "gloss": "yazh, harp" }, { "term": "பண்", "gloss": "melodic mode" }, { "term": "விறலி", "gloss": "female bard / performer" }] },
+        "notes": { "status": "available", "entries": ["Label every reconstruction as interpretive, not an excavated object."] },
+        "provenance": { "status": "available", "value": "Reference record; any image must carry the Commons licence." }
+      }
+    },
+    {
+      "id": "colonial-map-madurai",
+      "ta": "மதுரை காலனித்துவ வரைபடம்",
+      "en": "Colonial Map of Madurai",
+      "class": "manuscripts",
+      "subclass": "colonial map",
+      "period": "18th–19th century",
+      "place": "Madurai",
+      "script": "English / Tamil",
+      "language": "English / Tamil",
+      "material": "paper",
+      "holder": "British Library / Tamil Nadu State Archives",
+      "sourceId": "british-library",
+      "sourceUrl": "https://www.bl.uk/",
+      "rights": "open-metadata",
+      "summary": "Colonial maps of Madurai and Tamil towns preserve street layouts, temples, tanks and river courses. They are a bridge between the Sangam city and the modern urban archive.",
+      "layers": {
+        "text": { "status": "pending", "note": "Attach a specific map shelfmark and georeferenced transcription." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Do not reuse a map image unless the British Library item is Public Domain Mark.", "Reader should support map pan/zoom, place-name index and georeference layer."] },
+        "provenance": { "status": "available", "value": "Class record; no map image reproduced." }
+      }
+    },
+    {
+      "id": "arikamedu-beads",
+      "ta": "அரிக்கமேடு மணிகள்",
+      "en": "Arikamedu Beads",
+      "class": "material-culture",
+      "subclass": "glass / stone beads",
+      "period": "1st century BCE–2nd century CE",
+      "place": "Arikamedu, Puducherry",
+      "script": null,
+      "language": null,
+      "material": "glass / carnelian / quartz",
+      "holder": "various museum collections",
+      "sourceId": "asi",
+      "sourceUrl": "https://asi.nic.in/",
+      "rights": "open-metadata",
+      "summary": "Arikamedu was a major bead-making and trade centre. Beads are a compact entry point into craft production, exchange and daily ornament in early Tamil society.",
+      "layers": {
+        "text": { "status": "pending", "note": "Object catalogue and excavation context form the text layer." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "available", "entries": [{ "term": "மணி", "gloss": "bead" }, { "term": "பதுமம்", "gloss": "lotus / bead shape" }] },
+        "notes": { "status": "available", "entries": ["Record material, shape, drill technique and context."] },
+        "provenance": { "status": "available", "value": "Excavation metadata; image rights per museum." }
+      }
+    },
+    {
+      "id": "black-and-red-ware",
+      "ta": "கருப்பு-சிவப்பு மட்பாண்டம்",
+      "en": "Black-and-Red Ware",
+      "class": "material-culture",
+      "subclass": "ceramic ware",
+      "period": "c. 2nd century BCE–2nd century CE",
+      "place": "Tamil Nadu",
+      "script": null,
+      "language": null,
+      "material": "pottery",
+      "holder": "various museum collections",
+      "sourceId": "asi",
+      "sourceUrl": "https://asi.nic.in/",
+      "rights": "open-metadata",
+      "summary": "Black-and-red ware is a diagnostic ceramic of early historic Tamil sites, including Arikamedu. Form and fabric layers connect excavation reports to daily life.",
+      "layers": {
+        "text": { "status": "pending", "note": "Attach a specific vessel form and excavation context." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "available", "entries": [{ "term": "மட்பாண்டம்", "gloss": "pottery" }, { "term": "கலம்", "gloss": "vessel" }] },
+        "notes": { "status": "available", "entries": ["Reader layers should include fabric, form, surface treatment and context."] },
+        "provenance": { "status": "available", "value": "Public excavation metadata; image rights per museum." }
+      }
+    },
+    {
+      "id": "tamil-printed-book-19c",
+      "ta": "பத்தொன்பதாம் நூற்றாண்டுத் தமிழ்ப் புத்தகம்",
+      "en": "Nineteenth-Century Tamil Printed Book",
+      "class": "manuscripts",
+      "subclass": "printed book",
+      "period": "19th century",
+      "place": "Tamil Nadu / Madras",
+      "script": "Tamil",
+      "language": "Tamil",
+      "material": "paper",
+      "holder": "British Library / Internet Archive",
+      "sourceId": "internet-archive",
+      "sourceUrl": "https://archive.org/",
+      "rights": "open-metadata",
+      "summary": "Nineteenth-century Tamil printed editions show the transition from palm-leaf to print, including new punctuation, title pages and editorial conventions.",
+      "layers": {
+        "text": { "status": "pending", "note": "Attach a public-domain scan and page-level transcription." },
+        "transliteration": { "status": "pending", "note": "" },
+        "translation": { "status": "pending", "note": "" },
+        "glossary": { "status": "pending", "entries": [] },
+        "notes": { "status": "available", "entries": ["Use only public-domain scans, not lending-only copies.", "Page-level reader should support facing transcription and modern Tamil gloss."] },
+        "provenance": { "status": "available", "value": "Class record; no scan attached." }
+      }
+    }
+  ]
+}

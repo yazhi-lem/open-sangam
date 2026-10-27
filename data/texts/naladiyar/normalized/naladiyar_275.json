@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_275",
+  "poem": "naladiyar",
+  "number": 275,
+  "title": "ஈயாமை",
+  "heading": "2.28",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "எறிநீர்ப் பெருங்கடல் எய்தி யிருந்தும்\nஅறுநீர்ச் சிறுகிணற் றூறல்பார்த் துண்பர்\nமறுமை யறியாதா ராக்கத்தின் சான்றோர்\nகழிநல் குரவே தலை.",
+  "urai": null,
+  "english": "Poverty better than the wealth of those who live for this world alone. Though they have got the mighty sea with its dashing waves (to drink from), men wait for the stream slowly issuing from the little well, often dry, and drink there; so the exceeding poverty of the virtuous is preferable to the wealth of those who know not of the world to come.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "எறிநீர்ப் பெருங்கடல் எய்தி யிருந்தும்",
+      "words": [
+        {
+          "form": "எறிநீர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்கடல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எய்தி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யிருந்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அறுநீர்ச் சிறுகிணற் றூறல்பார்த் துண்பர்",
+      "words": [
+        {
+          "form": "அறுநீர்ச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிறுகிணற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றூறல்பார்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துண்பர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மறுமை யறியாதா ராக்கத்தின் சான்றோர்",
+      "words": [
+        {
+          "form": "மறுமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யறியாதா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராக்கத்தின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சான்றோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கழிநல் குரவே தலை.",
+      "words": [
+        {
+          "form": "கழிநல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குரவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலை.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

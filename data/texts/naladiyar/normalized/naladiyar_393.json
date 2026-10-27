@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_393",
+  "poem": "naladiyar",
+  "number": 393,
+  "title": "காமநுதலியல்",
+  "heading": "3.40",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கம்மஞ்செய் மாக்கள் கருவி ஒடுக்கிய\nமம்மர்கொள் மாலை மலராய்ந்து பூத்தொடுப்பாள்\nகைம்மாலை இட்டுக் கலுழ்ந்தாள் துணையில்லார்க்கு\nஇம்மாலை என்செய்வ தென்று.",
+  "urai": null,
+  "english": "The forsaken one at eventide At wildering eventide, when workmen all put by their tools, she culled choice flowers, and wove a gay garland ; — then let it fall from her hands, and wailed, 'What can this wreath avail to me who weep alone?’",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கம்மஞ்செய் மாக்கள் கருவி ஒடுக்கிய",
+      "words": [
+        {
+          "form": "கம்மஞ்செய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாக்கள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கருவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒடுக்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மம்மர்கொள் மாலை மலராய்ந்து பூத்தொடுப்பாள்",
+      "words": [
+        {
+          "form": "மம்மர்கொள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மலராய்ந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூத்தொடுப்பாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கைம்மாலை இட்டுக் கலுழ்ந்தாள் துணையில்லார்க்கு",
+      "words": [
+        {
+          "form": "கைம்மாலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இட்டுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலுழ்ந்தாள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணையில்லார்க்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "இம்மாலை என்செய்வ தென்று.",
+      "words": [
+        {
+          "form": "இம்மாலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "என்செய்வ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தென்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -2,7 +2,7 @@
   "id": "malaipadukadam_44",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "உயர்ந்த கட்டில் உரும்பு இல் சுற்றத்து\nஅகன்ற தாயத்து அஃகிய நுட்பத்து\nஇலம் என மலர்ந்த கையர் ஆகி\nதம் பெயர் தம்மொடு கொண்டனர் மாய்ந்தோர்\nநெடு வரை இழிதரு நீத்தம் சால் அருவி\nகடு வரல் கலுழி கட்கு இன் சேயாற்று\nவடு வாழ் எக்கர் மணலினும் பலரே",
+  "sangamTamil": "உயர்ந்த கட்டில் உரும்பு இல் சுற்றத்து\n550. உரும்பில் சுற்றம் : \"உரும்பில் சுற்றமோ டிருந்தோற் குறுகி\"(பெரும்பாண். 447)\nஅகன்ற தாயத்து அஃகிய நுட்பத்து\nதம் பெயர் தம்மொடு கொண்டனர் மாய்ந்தோர்\nநெடு வரை இழிதரு நீத்தம் சால் அருவி\nகடு வரல் கலுழி கட்கு இன் சேயாற்று\nவடு வாழ் எக்கர் மணலினும் பலரே\nஅதனால், புகழொடுங் கழிகநம் வரைந்த நாளெனப்\nபரந்திடங் கொடுக்கும் விசும்புதோ யுள்ளமொடு\nநயந்தனிர் சென்ற நும்மினுந் தான்பெரி\nதுவந்த வுள்ளமோ டமர்ந்தினிது நோக்கி",
   "urai": "தம் பெயரைத் தம்மோடு கொண்டுசென்ற மக்கள் சேயாற்று மணலைக்காட்டிலும் பலர். நன்னன் சேயாற்று வெள்ளம் போலப் பயன்படுபவன். பல அரசர்கள் உயர்ந்த அரியணையில் வீற்றிருப்பர். தம்மோடு உருமுதல் இல்லாத உரிமைச் சுற்றத்தோடு வீற்றிருப்பர். மிக விரிவான ஆட்சிப் பரப்பைக் கொண்டிருப்பர். ஆனால் அவர்களது அறிவு நுட்பம் சுருங்கியதாக இருக்கும். இல்லை இல்லை என்று சொல்லி எப்போதும் கையேந்திக் கொண்டும், இருப்பதைக் கூடத் தராமல் கையை விரித்துக் கொண்டும் வாழ்வார்கள். இப்படிப்பட்டவர்கள் நன்னன் நாட்டில் ஓடும் சேயாற்று மணலின் எண்ணிக்கையைவிட மிகுதியானவர்கள். சேயாற்று வெள்ளம் உயர்ந்த மலைகளிலிருந்து இறங்கி வரும். வயல்களில் பாய்ந்து கலங்கலாகி மீண்டும் ஆற்றில் விழும். இப்படி கண்ணுக்கு இனிமையாக இருக்கும். (நன்னன் சேயாற்று வெள்ளம் போன்றவன் - என்பது கருத்து.)",
   "english": null,
   "lines": [
@@ -49,6 +49,75 @@
     },
     {
       "lineNumber": 2,
+      "text": "550. உரும்பில் சுற்றம் : \"உரும்பில் சுற்றமோ டிருந்தோற் குறுகி\"(பெரும்பாண். 447)",
+      "words": [
+        {
+          "form": "550.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உரும்பில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": ":",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "\"உரும்பில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுற்றமோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டிருந்தோற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறுகி\"(பெரும்பாண்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "447)",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
       "text": "அகன்ற தாயத்து அஃகிய நுட்பத்து",
       "words": [
         {
@@ -78,47 +147,6 @@
           "urichol": null,
           "etymology": "நுட்பத்து என்பது 'நுட்பம்' என்ற பெயர்ச்சொல்லின் ஏழாம் வேற்றுமை உருபு (இடப்பொருள்). 'நுட்பம்' என்பது நுண்ணறிவு, கூர்மையான அறிவு, நுண்மையான தன்மை போன்ற பொருள்களைக் குறிக்கும். சங்க இலக்கியத்தில் இது அறிவின் கூர்மையைக் குறிக்கப் பயன்படுத்தப்படுகிறது. இக்காலத்திலும் 'நுட்பம்' என்ற சொல் இதே பொருளில் பயன்படுத்தப்படுகிறது.",
           "gloss": "This word, in the locative case, refers to 'subtlety' or 'acumen,' specifically the intellectual sharpness or insight of the rulers."
-        }
-      ]
-    },
-    {
-      "lineNumber": 3,
-      "text": "இலம் என மலர்ந்த கையர் ஆகி",
-      "words": [
-        {
-          "form": "இலம்",
-          "root": "இல்",
-          "urichol": null,
-          "etymology": "இலம் என்பது 'இல்' என்னும் எதிர்மறை வினைச்சொல்லின் தன்மைப் பன்மை வடிவம். 'இல்' என்பது 'இல்லை' என்பதன் சுருக்கம். சங்க இலக்கியத்தில் இது 'எங்களிடம் இல்லை' என்ற பொருளில் பயன்படுத்தப்படுகிறது. இக்காலத்திலும் 'இல்லை' என்ற சொல் இதே பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "This word, meaning 'we have not' or 'we possess nothing,' represents the declaration of poverty or lack made by those who are unwilling to give."
-        },
-        {
-          "form": "என",
-          "root": null,
-          "urichol": null,
-          "etymology": "என என்பது ஒரு வினையெச்சம் அல்லது இடைச்சொல். இது 'என்று' என்ற பொருளில் பயன்படுத்தப்படுகிறது. சங்க இலக்கியத்தில் இது ஒரு கூற்றை அல்லது கருத்தை மேற்கோள் காட்டப் பயன்படுத்தப்படுகிறது. இக்காலத்திலும் 'என' என்ற சொல் இதே பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "This particle functions as a quotative marker, meaning 'thus' or 'saying,' introducing the statement of 'we have nothing.'"
-        },
-        {
-          "form": "மலர்ந்த",
-          "root": "மலர்",
-          "urichol": null,
-          "etymology": "மலர்ந்த என்பது 'மலர்' என்னும் வினைச்சொல்லின் இறந்தகாலப் பெயரெச்ச வடிவம். 'மலர்' என்பது விரிதல், மலர்தல் என்ற பொருள்களைத் தரும். இங்கு 'கைகள் மலர்தல்' என்பது கைகளை விரித்தல், அதாவது ஈயாமல் கைகளை விரித்துக் காட்டுதல் என்ற பொருளில் பயன்படுத்தப்படுகிறது. இக்காலத்திலும் 'மலர்' என்ற சொல் மலர்தல் என்ற பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "This past participial adjective means 'opened' or 'spread,' describing the hands that are opened to show their emptiness, implying an unwillingness to give."
-        },
-        {
-          "form": "கையர்",
-          "root": "கை",
-          "urichol": null,
-          "etymology": "கையர் என்பது 'கை' என்ற பெயர்ச்சொல்லுடன் 'அர்' என்ற பன்மை விகுதி சேர்ந்து உருவானது. 'கை' என்பது உடலின் ஒரு உறுப்பு. இங்கு 'கையர்' என்பது கைகளை உடையவர்கள், அதாவது கையேந்துபவர்கள் அல்லது ஈயாதவர்கள் என்ற பொருளில் பயன்படுத்தப்படுகிறது. இக்காலத்திலும் 'கை' என்ற சொல் இதே பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "This plural noun refers to 'those with hands,' specifically implying individuals who extend their hands either to beg or to show their empty palms, refusing to give."
-        },
-        {
-          "form": "ஆகி",
-          "root": "ஆகு",
-          "urichol": null,
-          "etymology": "ஆகி என்பது 'ஆகு' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். 'ஆகு' என்பது ஆதல், நிகழ்தல் என்ற பொருள்களைத் தரும். சங்க இலக்கியத்தில் இது ஒரு நிலைமையை அடைதல் அல்லது ஒரு செயலைச் செய்தல் என்ற பொருளில் பயன்படுத்தப்படுகிறது. இக்காலத்திலும் 'ஆகி' என்ற சொல் இதே பொருளில் பயன்படுத்தப்படுகிறது.",
-          "gloss": "This verbal participle means 'having become' or 'being,' connecting the state of having empty, open hands to the subsequent actions or characteristics of these individuals."
         }
       ]
     },
@@ -299,11 +327,154 @@
           "gloss": "This plural noun, intensified by the particle 'ē,' means 'many people' or 'numerous individuals,' emphasizing the vast quantity of those who perished without leaving a lasting legacy."
         }
       ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "அதனால், புகழொடுங் கழிகநம் வரைந்த நாளெனப்",
+      "words": [
+        {
+          "form": "அதனால்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகழொடுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிகநம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரைந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாளெனப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "பரந்திடங் கொடுக்கும் விசும்புதோ யுள்ளமொடு",
+      "words": [
+        {
+          "form": "பரந்திடங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொடுக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விசும்புதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுள்ளமொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "நயந்தனிர் சென்ற நும்மினுந் தான்பெரி",
+      "words": [
+        {
+          "form": "நயந்தனிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நும்மினுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தான்பெரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "துவந்த வுள்ளமோ டமர்ந்தினிது நோக்கி",
+      "words": [
+        {
+          "form": "துவந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வுள்ளமோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டமர்ந்தினிது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்44.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்44.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 44,
   "title": "நன்னனது குளிர்ந்த நோக்கம்",

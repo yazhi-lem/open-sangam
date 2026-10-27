@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_259",
+  "poem": "naladiyar",
+  "number": 259,
+  "title": "அறிவின்மை",
+  "heading": "2.26",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "பொழிந்தினிது நாறினும் பூமிசைதல் செல்லாது\nஇழிந்தவை காமுறூஉம் ஈப்போல், - இழிந்தவை\nதாங்கலந்த நெஞ்சினார்க் கென்னாகும் தக்கார்வாய்த்\nதேன்கலந்த தேற்றச்சொல் தேர்வு.",
+  "urai": null,
+  "english": "The fly desires not the fragrant honey. The base esteem not sweet and powerful words. To those whose minds are full of foul things, — like the fly which goes not to feed on the flower that pours forth sweetness and breathes perfume, but fixes its eager desire on ordure,—What clear comprehension can there be of the lucid words full of honied sweetness that issue from the mouths of the worthy?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பொழிந்தினிது நாறினும் பூமிசைதல் செல்லாது",
+      "words": [
+        {
+          "form": "பொழிந்தினிது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாறினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூமிசைதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்லாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "இழிந்தவை காமுறூஉம் ஈப்போல், - இழிந்தவை",
+      "words": [
+        {
+          "form": "இழிந்தவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காமுறூஉம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈப்போல்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இழிந்தவை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "தாங்கலந்த நெஞ்சினார்க் கென்னாகும் தக்கார்வாய்த்",
+      "words": [
+        {
+          "form": "தாங்கலந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சினார்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கென்னாகும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தக்கார்வாய்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தேன்கலந்த தேற்றச்சொல் தேர்வு.",
+      "words": [
+        {
+          "form": "தேன்கலந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேற்றச்சொல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேர்வு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -6,7 +6,7 @@
   "lineStart": 621,
   "lineEnd": 628,
   "tinai": "palai",
-  "sangamTamil": "பணிலங் கலியவிந் தடங்கக் காழ்சாய்த்து\nநொடைநவில் நெடுங்கடை அடைத்து மடமதர்\nஒள்ளிழை மகளிர் பள்ளி யயர",
+  "sangamTamil": "பணிலங் கலியவிந் தடங்கக் காழ்சாய்த்து\nநொடைநவில் நெடுங்கடை அடைத்து மடமதர்\nஒள்ளிழை மகளிர் பள்ளி யயர\nநல்வரி யிறாஅல் புரையு மெல்லடை\nயயிருருப் புற்ற வாடமை விசயங்\nகவவொடு பிடித்த வகையமை மோதகந்\nதீஞ்சேற்றுக் கூவியர் தூங்குவன ருறங்க\nவிழவி னாடும் வயிரியர் மடியப்",
   "urai": "சங்குகளின் முழக்கம் அடங்கிப் போயிற்று. மகளிர் இல்லக் கதவுகளை அடைத்தனர். காழ் எனப்படும் தாழ்ப்பாள் போட்டனர். கதவை மூடும்போதும், தாழ்ப்பாள் போடும்போதும் இசைத்தொடை எழுந்து நவின்றது. மகளிர் பள்ளி கொண்டனர். அவர்கள் மடமையும் தூக்க மதமதப்பும் கொண்ட நிலையினராய் அயர்ந்து தூங்கினர். இவ்வாறு இரண்டாம் யாமம் கழிந்தது.",
   "english": null,
   "lines": [
@@ -111,11 +111,181 @@
           "gloss": "The word 'யயர' (yayaṟa) means 'to become drowsy' or 'to fall asleep', describing the state of the women as they succumb to sleep."
         }
       ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "நல்வரி யிறாஅல் புரையு மெல்லடை",
+      "words": [
+        {
+          "form": "நல்வரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யிறாஅல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புரையு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மெல்லடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "யயிருருப் புற்ற வாடமை விசயங்",
+      "words": [
+        {
+          "form": "யயிருருப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாடமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விசயங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "கவவொடு பிடித்த வகையமை மோதகந்",
+      "words": [
+        {
+          "form": "கவவொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிடித்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வகையமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மோதகந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "தீஞ்சேற்றுக் கூவியர் தூங்குவன ருறங்க",
+      "words": [
+        {
+          "form": "தீஞ்சேற்றுக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூவியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூங்குவன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ருறங்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "விழவி னாடும் வயிரியர் மடியப்",
+      "words": [
+        {
+          "form": "விழவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னாடும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயிரியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடியப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி54.html",
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி54.html; Project Madurai pmuni0496",
   "verified": false,
   "etymologyMeta": {
     "provider": "openrouter",

@@ -1,0 +1,1169 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "women-poets",
+  "titleTa": "பெண் புலவர்களும் அவர்களின் திணைகளும்",
+  "titleEn": "Women poets and their landscapes",
+  "agent": "avvaiyar",
+  "workflow": "qa",
+  "language": "ta",
+  "prompt": null,
+  "generatedAt": "2026-10-27T19:27:25.606217+00:00",
+  "responseText": "- கொளுவில் பாடியோராக நேரடியாகப் பெயர் பெறுகிறார்: “- ஔவையார்.” [kurunthokai_015:7], [kurunthokai_023:6], [akananooru_011:16].\n- **குறுந்தொகை 15** (பாலை): “சேயிலை வெள் வேல் விடலையொடு / தொகு வளை முன் கை மடந்தை நட்பே” — தலைவியின் நட்பு முரசு–சங்கொலியுடன் உறுதிப்படுவதைப் பாடுகிறார் [kurunthokai_015].\n- **குறுந்தொகை 23** (குறிஞ்சி): “அகவன் மகளே! … பாடுக பாட்டே! / இன்னும் பாடுக பாட்டே” — பாடலையும் இசையையும் போற்றும் பாடல் [kurunthokai_023].\n- ஐந்திணையிலும் பாடியவர் என்பதற்குச் சான்று: மருதம் [natrinai_390], குறிஞ்சி [natrinai_129], முல்லை [natrinai_381], நெய்தல் [natrinai_295].\n- கொளுவில் முழுப் பெயர் “- காக்கை பாடினியார் நச்செள்ளையார்.” [kurunthokai_210:7].\n- **குறுந்தொகை 210** (முல்லை): “விருந்து வரக் கரைந்த காக்கையது பலியே” — தலைவியின் பெருந்தோள் நெகிழ்ந்த துன்பத்திற்குக் காக்கைக்குப் படைக்கும் பலியும் சிறிதே என்னும் பாடல் [kurunthokai_210].\n- **பதிற்றுப்பத்து 51**: “பாடல் சான்று நீடினை உறைதலின்” [pathitrupathu_51:22]; பதிகக்குறிப்பு “ஆடுகோட்பாட்டுச் சேரலாதனைக் காக்கை பாடினியார்நச்செள்ளையார் பாடியது” என்று பாடப்பட்டோரைக் குறிக்கிறது [pathitrupathu_50:urai].\n- தரவுத்தளத்தில் இப்பெயர் **தனிக் கொளுவாக இல்லை**; “காக்கை பாடினியார் நச்செள்ளையார்” என்ற இணைப்பெயராகவே பதிவாகியுள்ளது [kurunthokai_210:7], [pathitrupathu_51].\n- பொதுவாகப் **பாடினியர்** (பெண் பாடகியர்) சிறப்பிக்கப்பட்டதற்குச் சான்று: “மறம் பாடிய பாடினி யும்மே” [purananooru_011:11]; பாடினிக்கு அணிகலன்கள் பரிசாக வழங்கப்பட்டதாக உரை கூறுகிறது [purananooru_011:urai].",
+  "pulavarAnswer": {
+    "answer_text": "- கொளுவில் பாடியோராக நேரடியாகப் பெயர் பெறுகிறார்: “- ஔவையார்.” [kurunthokai_015:7], [kurunthokai_023:6], [akananooru_011:16].\n- **குறுந்தொகை 15** (பாலை): “சேயிலை வெள் வேல் விடலையொடு / தொகு வளை முன் கை மடந்தை நட்பே” — தலைவியின் நட்பு முரசு–சங்கொலியுடன் உறுதிப்படுவதைப் பாடுகிறார் [kurunthokai_015].\n- **குறுந்தொகை 23** (குறிஞ்சி): “அகவன் மகளே! … பாடுக பாட்டே! / இன்னும் பாடுக பாட்டே” — பாடலையும் இசையையும் போற்றும் பாடல் [kurunthokai_023].\n- ஐந்திணையிலும் பாடியவர் என்பதற்குச் சான்று: மருதம் [natrinai_390], குறிஞ்சி [natrinai_129], முல்லை [natrinai_381], நெய்தல் [natrinai_295].\n- கொளுவில் முழுப் பெயர் “- காக்கை பாடினியார் நச்செள்ளையார்.” [kurunthokai_210:7].\n- **குறுந்தொகை 210** (முல்லை): “விருந்து வரக் கரைந்த காக்கையது பலியே” — தலைவியின் பெருந்தோள் நெகிழ்ந்த துன்பத்திற்குக் காக்கைக்குப் படைக்கும் பலியும் சிறிதே என்னும் பாடல் [kurunthokai_210].\n- **பதிற்றுப்பத்து 51**: “பாடல் சான்று நீடினை உறைதலின்” [pathitrupathu_51:22]; பதிகக்குறிப்பு “ஆடுகோட்பாட்டுச் சேரலாதனைக் காக்கை பாடினியார்நச்செள்ளையார் பாடியது” என்று பாடப்பட்டோரைக் குறிக்கிறது [pathitrupathu_50:urai].\n- தரவுத்தளத்தில் இப்பெயர் **தனிக் கொளுவாக இல்லை**; “காக்கை பாடினியார் நச்செள்ளையார்” என்ற இணைப்பெயராகவே பதிவாகியுள்ளது [kurunthokai_210:7], [pathitrupathu_51].\n- பொதுவாகப் **பாடினியர்** (பெண் பாடகியர்) சிறப்பிக்கப்பட்டதற்குச் சான்று: “மறம் பாடிய பாடினி யும்மே” [purananooru_011:11]; பாடினிக்கு அணிகலன்கள் பரிசாக வழங்கப்பட்டதாக உரை கூறுகிறது [purananooru_011:urai].",
+    "answer_text_ta": "- கொளுவில் பாடியோராக நேரடியாகப் பெயர் பெறுகிறார்: “- ஔவையார்.” [kurunthokai_015:7], [kurunthokai_023:6], [akananooru_011:16].\n- **குறுந்தொகை 15** (பாலை): “சேயிலை வெள் வேல் விடலையொடு / தொகு வளை முன் கை மடந்தை நட்பே” — தலைவியின் நட்பு முரசு–சங்கொலியுடன் உறுதிப்படுவதைப் பாடுகிறார் [kurunthokai_015].\n- **குறுந்தொகை 23** (குறிஞ்சி): “அகவன் மகளே! … பாடுக பாட்டே! / இன்னும் பாடுக பாட்டே” — பாடலையும் இசையையும் போற்றும் பாடல் [kurunthokai_023].\n- ஐந்திணையிலும் பாடியவர் என்பதற்குச் சான்று: மருதம் [natrinai_390], குறிஞ்சி [natrinai_129], முல்லை [natrinai_381], நெய்தல் [natrinai_295].\n- கொளுவில் முழுப் பெயர் “- காக்கை பாடினியார் நச்செள்ளையார்.” [kurunthokai_210:7].\n- **குறுந்தொகை 210** (முல்லை): “விருந்து வரக் கரைந்த காக்கையது பலியே” — தலைவியின் பெருந்தோள் நெகிழ்ந்த துன்பத்திற்குக் காக்கைக்குப் படைக்கும் பலியும் சிறிதே என்னும் பாடல் [kurunthokai_210].\n- **பதிற்றுப்பத்து 51**: “பாடல் சான்று நீடினை உறைதலின்” [pathitrupathu_51:22]; பதிகக்குறிப்பு “ஆடுகோட்பாட்டுச் சேரலாதனைக் காக்கை பாடினியார்நச்செள்ளையார் பாடியது” என்று பாடப்பட்டோரைக் குறிக்கிறது [pathitrupathu_50:urai].\n- தரவுத்தளத்தில் இப்பெயர் **தனிக் கொளுவாக இல்லை**; “காக்கை பாடினியார் நச்செள்ளையார்” என்ற இணைப்பெயராகவே பதிவாகியுள்ளது [kurunthokai_210:7], [pathitrupathu_51].\n- பொதுவாகப் **பாடினியர்** (பெண் பாடகியர்) சிறப்பிக்கப்பட்டதற்குச் சான்று: “மறம் பாடிய பாடினி யும்மே” [purananooru_011:11]; பாடினிக்கு அணிகலன்கள் பரிசாக வழங்கப்பட்டதாக உரை கூறுகிறது [purananooru_011:urai].",
+    "claims": [
+      {
+        "claim_id": "claim_2",
+        "claim_text": "- கொளுவில் பாடியோராக நேரடியாகப் பெயர் பெறுகிறார்: “- ஔவையார்.” [kurunthokai_015:7], [kurunthokai_023:6], [akananooru_011:16].",
+        "claim_text_ta": "- கொளுவில் பாடியோராக நேரடியாகப் பெயர் பெறுகிறார்: “- ஔவையார்.” [kurunthokai_015:7], [kurunthokai_023:6], [akananooru_011:16].",
+        "citation_ids": [
+          "kurunthokai_015",
+          "kurunthokai_023",
+          "akananooru_011"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kurunthokai_015_0]",
+            "source_id": "kurunthokai_015",
+            "source": {
+              "source_id": "kurunthokai_015",
+              "poem": "kurunthokai",
+              "verse_number": 15,
+              "poet": "ஔவையார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_kurunthokai_023_1]",
+            "source_id": "kurunthokai_023",
+            "source": {
+              "source_id": "kurunthokai_023",
+              "poem": "kurunthokai",
+              "verse_number": 23,
+              "poet": "ஔவையார்.",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_akananooru_011_2]",
+            "source_id": "akananooru_011",
+            "source": {
+              "source_id": "akananooru_011",
+              "poem": "akananooru",
+              "verse_number": 11,
+              "poet": "ஔவையார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_3",
+        "claim_text": "- **குறுந்தொகை 15** (பாலை): “சேயிலை வெள் வேல் விடலையொடு / தொகு வளை முன் கை மடந்தை நட்பே” — தலைவியின் நட்பு முரசு–சங்கொலியுடன் உறுதிப்படுவதைப் பாடுகிறார் [kurunthokai_015].",
+        "claim_text_ta": "- **குறுந்தொகை 15** (பாலை): “சேயிலை வெள் வேல் விடலையொடு / தொகு வளை முன் கை மடந்தை நட்பே” — தலைவியின் நட்பு முரசு–சங்கொலியுடன் உறுதிப்படுவதைப் பாடுகிறார் [kurunthokai_015].",
+        "citation_ids": [
+          "kurunthokai_015"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kurunthokai_015_0]",
+            "source_id": "kurunthokai_015",
+            "source": {
+              "source_id": "kurunthokai_015",
+              "poem": "kurunthokai",
+              "verse_number": 15,
+              "poet": "ஔவையார்.",
+              "tinai": "palai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_4",
+        "claim_text": "- **குறுந்தொகை 23** (குறிஞ்சி): “அகவன் மகளே! … பாடுக பாட்டே! / இன்னும் பாடுக பாட்டே” — பாடலையும் இசையையும் போற்றும் பாடல் [kurunthokai_023].",
+        "claim_text_ta": "- **குறுந்தொகை 23** (குறிஞ்சி): “அகவன் மகளே! … பாடுக பாட்டே! / இன்னும் பாடுக பாட்டே” — பாடலையும் இசையையும் போற்றும் பாடல் [kurunthokai_023].",
+        "citation_ids": [
+          "kurunthokai_023"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kurunthokai_023_0]",
+            "source_id": "kurunthokai_023",
+            "source": {
+              "source_id": "kurunthokai_023",
+              "poem": "kurunthokai",
+              "verse_number": 23,
+              "poet": "ஔவையார்.",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_5",
+        "claim_text": "- ஐந்திணையிலும் பாடியவர் என்பதற்குச் சான்று: மருதம் [natrinai_390], குறிஞ்சி [natrinai_129], முல்லை [natrinai_381], நெய்தல் [natrinai_295].",
+        "claim_text_ta": "- ஐந்திணையிலும் பாடியவர் என்பதற்குச் சான்று: மருதம் [natrinai_390], குறிஞ்சி [natrinai_129], முல்லை [natrinai_381], நெய்தல் [natrinai_295].",
+        "citation_ids": [
+          "natrinai_390",
+          "natrinai_129",
+          "natrinai_381",
+          "natrinai_295"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_natrinai_390_0]",
+            "source_id": "natrinai_390",
+            "source": {
+              "source_id": "natrinai_390",
+              "poem": "natrinai",
+              "verse_number": 390,
+              "poet": "அவ்வையார்.",
+              "tinai": "marutam",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_natrinai_129_1]",
+            "source_id": "natrinai_129",
+            "source": {
+              "source_id": "natrinai_129",
+              "poem": "natrinai",
+              "verse_number": 129,
+              "poet": "அவ்வையார்.",
+              "tinai": "kurinji",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_natrinai_381_2]",
+            "source_id": "natrinai_381",
+            "source": {
+              "source_id": "natrinai_381",
+              "poem": "natrinai",
+              "verse_number": 381,
+              "poet": "அவ்வையார்.",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_natrinai_295_3]",
+            "source_id": "natrinai_295",
+            "source": {
+              "source_id": "natrinai_295",
+              "poem": "natrinai",
+              "verse_number": 295,
+              "poet": "அவ்வையார்.",
+              "tinai": "neytal",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_6",
+        "claim_text": "- கொளுவில் முழுப் பெயர் “- காக்கை பாடினியார் நச்செள்ளையார்.” [kurunthokai_210:7].",
+        "claim_text_ta": "- கொளுவில் முழுப் பெயர் “- காக்கை பாடினியார் நச்செள்ளையார்.” [kurunthokai_210:7].",
+        "citation_ids": [
+          "kurunthokai_210"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kurunthokai_210_0]",
+            "source_id": "kurunthokai_210",
+            "source": {
+              "source_id": "kurunthokai_210",
+              "poem": "kurunthokai",
+              "verse_number": 210,
+              "poet": "காக்கை பாடினியார் நச்செள்ளையார்.",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_7",
+        "claim_text": "- **குறுந்தொகை 210** (முல்லை): “விருந்து வரக் கரைந்த காக்கையது பலியே” — தலைவியின் பெருந்தோள் நெகிழ்ந்த துன்பத்திற்குக் காக்கைக்குப் படைக்கும் பலியும் சிறிதே என்னும் பாடல் [kurunthokai_210].",
+        "claim_text_ta": "- **குறுந்தொகை 210** (முல்லை): “விருந்து வரக் கரைந்த காக்கையது பலியே” — தலைவியின் பெருந்தோள் நெகிழ்ந்த துன்பத்திற்குக் காக்கைக்குப் படைக்கும் பலியும் சிறிதே என்னும் பாடல் [kurunthokai_210].",
+        "citation_ids": [
+          "kurunthokai_210"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_kurunthokai_210_0]",
+            "source_id": "kurunthokai_210",
+            "source": {
+              "source_id": "kurunthokai_210",
+              "poem": "kurunthokai",
+              "verse_number": 210,
+              "poet": "காக்கை பாடினியார் நச்செள்ளையார்.",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_8",
+        "claim_text": "- **பதிற்றுப்பத்து 51**: “பாடல் சான்று நீடினை உறைதலின்” [pathitrupathu_51:22]; பதிகக்குறிப்பு “ஆடுகோட்பாட்டுச் சேரலாதனைக் காக்கை பாடினியார்நச்செள்ளையார் பாடியது” என்று பாடப்பட்டோரைக் குறிக்கிறது [pathitrupathu_50:urai].",
+        "claim_text_ta": "- **பதிற்றுப்பத்து 51**: “பாடல் சான்று நீடினை உறைதலின்” [pathitrupathu_51:22]; பதிகக்குறிப்பு “ஆடுகோட்பாட்டுச் சேரலாதனைக் காக்கை பாடினியார்நச்செள்ளையார் பாடியது” என்று பாடப்பட்டோரைக் குறிக்கிறது [pathitrupathu_50:urai].",
+        "citation_ids": [
+          "pathitrupathu_51",
+          "pathitrupathu_50"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_51_0]",
+            "source_id": "pathitrupathu_51",
+            "source": {
+              "source_id": "pathitrupathu_51",
+              "poem": "pathitrupathu",
+              "verse_number": 51,
+              "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_pathitrupathu_50_1]",
+            "source_id": "pathitrupathu_50",
+            "source": {
+              "source_id": "pathitrupathu_50",
+              "poem": "pathitrupathu",
+              "verse_number": 50,
+              "poet": "பரணர்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_9",
+        "claim_text": "- தரவுத்தளத்தில் இப்பெயர் **தனிக் கொளுவாக இல்லை**; “காக்கை பாடினியார் நச்செள்ளையார்” என்ற இணைப்பெயராகவே பதிவாகியுள்ளது [kurunthokai_210:7], [pathitrupathu_51].",
+        "claim_text_ta": "- தரவுத்தளத்தில் இப்பெயர் **தனிக் கொளுவாக இல்லை**; “காக்கை பாடினியார் நச்செள்ளையார்” என்ற இணைப்பெயராகவே பதிவாகியுள்ளது [kurunthokai_210:7], [pathitrupathu_51].",
+        "citation_ids": [
+          "pathitrupathu_51",
+          "kurunthokai_210"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_pathitrupathu_51_0]",
+            "source_id": "pathitrupathu_51",
+            "source": {
+              "source_id": "pathitrupathu_51",
+              "poem": "pathitrupathu",
+              "verse_number": 51,
+              "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          },
+          {
+            "citation_id": "[^c_kurunthokai_210_1]",
+            "source_id": "kurunthokai_210",
+            "source": {
+              "source_id": "kurunthokai_210",
+              "poem": "kurunthokai",
+              "verse_number": 210,
+              "poet": "காக்கை பாடினியார் நச்செள்ளையார்.",
+              "tinai": "mullai",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      },
+      {
+        "claim_id": "claim_10",
+        "claim_text": "- பொதுவாகப் **பாடினியர்** (பெண் பாடகியர்) சிறப்பிக்கப்பட்டதற்குச் சான்று: “மறம் பாடிய பாடினி யும்மே” [purananooru_011:11]; பாடினிக்கு அணிகலன்கள் பரிசாக வழங்கப்பட்டதாக உரை கூறுகிறது [purananooru_011:urai].",
+        "claim_text_ta": "- பொதுவாகப் **பாடினியர்** (பெண் பாடகியர்) சிறப்பிக்கப்பட்டதற்குச் சான்று: “மறம் பாடிய பாடினி யும்மே” [purananooru_011:11]; பாடினிக்கு அணிகலன்கள் பரிசாக வழங்கப்பட்டதாக உரை கூறுகிறது [purananooru_011:urai].",
+        "citation_ids": [
+          "purananooru_011"
+        ],
+        "citations": [
+          {
+            "citation_id": "[^c_purananooru_011_0]",
+            "source_id": "purananooru_011",
+            "source": {
+              "source_id": "purananooru_011",
+              "poem": "purananooru",
+              "verse_number": 11,
+              "poet": null,
+              "tinai": "unknown",
+              "matched_quote": null,
+              "line_numbers": [],
+              "source_type": "corpus_verse",
+              "verified": true
+            },
+            "quote": null,
+            "is_valid": true,
+            "validation_notes": "Verified against canonical corpus"
+          }
+        ],
+        "evidence_status": "verified",
+        "is_supported": true
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "[^c_kurunthokai_015_0]",
+        "source_id": "kurunthokai_015",
+        "source": {
+          "source_id": "kurunthokai_015",
+          "poem": "kurunthokai",
+          "verse_number": 15,
+          "poet": "ஔவையார்.",
+          "tinai": "palai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_kurunthokai_023_0]",
+        "source_id": "kurunthokai_023",
+        "source": {
+          "source_id": "kurunthokai_023",
+          "poem": "kurunthokai",
+          "verse_number": 23,
+          "poet": "ஔவையார்.",
+          "tinai": "kurinji",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_akananooru_011_2]",
+        "source_id": "akananooru_011",
+        "source": {
+          "source_id": "akananooru_011",
+          "poem": "akananooru",
+          "verse_number": 11,
+          "poet": "ஔவையார்.",
+          "tinai": "palai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_natrinai_390_0]",
+        "source_id": "natrinai_390",
+        "source": {
+          "source_id": "natrinai_390",
+          "poem": "natrinai",
+          "verse_number": 390,
+          "poet": "அவ்வையார்.",
+          "tinai": "marutam",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_natrinai_129_1]",
+        "source_id": "natrinai_129",
+        "source": {
+          "source_id": "natrinai_129",
+          "poem": "natrinai",
+          "verse_number": 129,
+          "poet": "அவ்வையார்.",
+          "tinai": "kurinji",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_natrinai_381_2]",
+        "source_id": "natrinai_381",
+        "source": {
+          "source_id": "natrinai_381",
+          "poem": "natrinai",
+          "verse_number": 381,
+          "poet": "அவ்வையார்.",
+          "tinai": "mullai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_natrinai_295_3]",
+        "source_id": "natrinai_295",
+        "source": {
+          "source_id": "natrinai_295",
+          "poem": "natrinai",
+          "verse_number": 295,
+          "poet": "அவ்வையார்.",
+          "tinai": "neytal",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_kurunthokai_210_1]",
+        "source_id": "kurunthokai_210",
+        "source": {
+          "source_id": "kurunthokai_210",
+          "poem": "kurunthokai",
+          "verse_number": 210,
+          "poet": "காக்கை பாடினியார் நச்செள்ளையார்.",
+          "tinai": "mullai",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_51_0]",
+        "source_id": "pathitrupathu_51",
+        "source": {
+          "source_id": "pathitrupathu_51",
+          "poem": "pathitrupathu",
+          "verse_number": 51,
+          "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_pathitrupathu_50_1]",
+        "source_id": "pathitrupathu_50",
+        "source": {
+          "source_id": "pathitrupathu_50",
+          "poem": "pathitrupathu",
+          "verse_number": 50,
+          "poet": "பரணர்",
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      },
+      {
+        "citation_id": "[^c_purananooru_011_0]",
+        "source_id": "purananooru_011",
+        "source": {
+          "source_id": "purananooru_011",
+          "poem": "purananooru",
+          "verse_number": 11,
+          "poet": null,
+          "tinai": "unknown",
+          "matched_quote": null,
+          "line_numbers": [],
+          "source_type": "corpus_verse",
+          "verified": true
+        },
+        "quote": null,
+        "is_valid": true,
+        "validation_notes": "Verified against canonical corpus"
+      }
+    ],
+    "evidence_status": "partially_verified",
+    "is_abstained": false,
+    "abstention_reason": "none",
+    "abstention_message_ta": null,
+    "confidence_score": 0.85
+  },
+  "citations": [
+    {
+      "verse_id": "kurunthokai_015",
+      "poem": "kurunthokai",
+      "tinai": "palai",
+      "poet": "ஔவையார்.",
+      "pulavar": "ஔவையார்.",
+      "citation_id": "[^c_kurunthokai_015_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "kurunthokai_023",
+      "poem": "kurunthokai",
+      "tinai": "kurinji",
+      "poet": "ஔவையார்.",
+      "pulavar": "ஔவையார்.",
+      "citation_id": "[^c_kurunthokai_023_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "akananooru_011",
+      "poem": "akananooru",
+      "tinai": "palai",
+      "poet": "ஔவையார்.",
+      "pulavar": "ஔவையார்.",
+      "citation_id": "[^c_akananooru_011_2]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "natrinai_390",
+      "poem": "natrinai",
+      "tinai": "marutam",
+      "poet": "அவ்வையார்.",
+      "pulavar": "அவ்வையார்.",
+      "citation_id": "[^c_natrinai_390_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "natrinai_129",
+      "poem": "natrinai",
+      "tinai": "kurinji",
+      "poet": "அவ்வையார்.",
+      "pulavar": "அவ்வையார்.",
+      "citation_id": "[^c_natrinai_129_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "natrinai_381",
+      "poem": "natrinai",
+      "tinai": "mullai",
+      "poet": "அவ்வையார்.",
+      "pulavar": "அவ்வையார்.",
+      "citation_id": "[^c_natrinai_381_2]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "natrinai_295",
+      "poem": "natrinai",
+      "tinai": "neytal",
+      "poet": "அவ்வையார்.",
+      "pulavar": "அவ்வையார்.",
+      "citation_id": "[^c_natrinai_295_3]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "kurunthokai_210",
+      "poem": "kurunthokai",
+      "tinai": "mullai",
+      "poet": "காக்கை பாடினியார் நச்செள்ளையார்.",
+      "pulavar": "காக்கை பாடினியார் நச்செள்ளையார்.",
+      "citation_id": "[^c_kurunthokai_210_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_51",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+      "pulavar": "காக்கை பாடினியார் நச்செள்ளையார்",
+      "citation_id": "[^c_pathitrupathu_51_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "pathitrupathu_50",
+      "poem": "pathitrupathu",
+      "tinai": "unknown",
+      "poet": "பரணர்",
+      "pulavar": "பரணர்",
+      "citation_id": "[^c_pathitrupathu_50_1]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    },
+    {
+      "verse_id": "purananooru_011",
+      "poem": "purananooru",
+      "tinai": "unknown",
+      "poet": null,
+      "pulavar": null,
+      "citation_id": "[^c_purananooru_011_0]",
+      "quote": null,
+      "verified": true,
+      "is_valid": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim_2",
+      "claim_text": "- கொளுவில் பாடியோராக நேரடியாகப் பெயர் பெறுகிறார்: “- ஔவையார்.” [kurunthokai_015:7], [kurunthokai_023:6], [akananooru_011:16].",
+      "claim_text_ta": "- கொளுவில் பாடியோராக நேரடியாகப் பெயர் பெறுகிறார்: “- ஔவையார்.” [kurunthokai_015:7], [kurunthokai_023:6], [akananooru_011:16].",
+      "citation_ids": [
+        "kurunthokai_015",
+        "kurunthokai_023",
+        "akananooru_011"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kurunthokai_015_0]",
+          "source_id": "kurunthokai_015",
+          "source": {
+            "source_id": "kurunthokai_015",
+            "poem": "kurunthokai",
+            "verse_number": 15,
+            "poet": "ஔவையார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_kurunthokai_023_1]",
+          "source_id": "kurunthokai_023",
+          "source": {
+            "source_id": "kurunthokai_023",
+            "poem": "kurunthokai",
+            "verse_number": 23,
+            "poet": "ஔவையார்.",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_akananooru_011_2]",
+          "source_id": "akananooru_011",
+          "source": {
+            "source_id": "akananooru_011",
+            "poem": "akananooru",
+            "verse_number": 11,
+            "poet": "ஔவையார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_3",
+      "claim_text": "- **குறுந்தொகை 15** (பாலை): “சேயிலை வெள் வேல் விடலையொடு / தொகு வளை முன் கை மடந்தை நட்பே” — தலைவியின் நட்பு முரசு–சங்கொலியுடன் உறுதிப்படுவதைப் பாடுகிறார் [kurunthokai_015].",
+      "claim_text_ta": "- **குறுந்தொகை 15** (பாலை): “சேயிலை வெள் வேல் விடலையொடு / தொகு வளை முன் கை மடந்தை நட்பே” — தலைவியின் நட்பு முரசு–சங்கொலியுடன் உறுதிப்படுவதைப் பாடுகிறார் [kurunthokai_015].",
+      "citation_ids": [
+        "kurunthokai_015"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kurunthokai_015_0]",
+          "source_id": "kurunthokai_015",
+          "source": {
+            "source_id": "kurunthokai_015",
+            "poem": "kurunthokai",
+            "verse_number": 15,
+            "poet": "ஔவையார்.",
+            "tinai": "palai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_4",
+      "claim_text": "- **குறுந்தொகை 23** (குறிஞ்சி): “அகவன் மகளே! … பாடுக பாட்டே! / இன்னும் பாடுக பாட்டே” — பாடலையும் இசையையும் போற்றும் பாடல் [kurunthokai_023].",
+      "claim_text_ta": "- **குறுந்தொகை 23** (குறிஞ்சி): “அகவன் மகளே! … பாடுக பாட்டே! / இன்னும் பாடுக பாட்டே” — பாடலையும் இசையையும் போற்றும் பாடல் [kurunthokai_023].",
+      "citation_ids": [
+        "kurunthokai_023"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kurunthokai_023_0]",
+          "source_id": "kurunthokai_023",
+          "source": {
+            "source_id": "kurunthokai_023",
+            "poem": "kurunthokai",
+            "verse_number": 23,
+            "poet": "ஔவையார்.",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_5",
+      "claim_text": "- ஐந்திணையிலும் பாடியவர் என்பதற்குச் சான்று: மருதம் [natrinai_390], குறிஞ்சி [natrinai_129], முல்லை [natrinai_381], நெய்தல் [natrinai_295].",
+      "claim_text_ta": "- ஐந்திணையிலும் பாடியவர் என்பதற்குச் சான்று: மருதம் [natrinai_390], குறிஞ்சி [natrinai_129], முல்லை [natrinai_381], நெய்தல் [natrinai_295].",
+      "citation_ids": [
+        "natrinai_390",
+        "natrinai_129",
+        "natrinai_381",
+        "natrinai_295"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_natrinai_390_0]",
+          "source_id": "natrinai_390",
+          "source": {
+            "source_id": "natrinai_390",
+            "poem": "natrinai",
+            "verse_number": 390,
+            "poet": "அவ்வையார்.",
+            "tinai": "marutam",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_natrinai_129_1]",
+          "source_id": "natrinai_129",
+          "source": {
+            "source_id": "natrinai_129",
+            "poem": "natrinai",
+            "verse_number": 129,
+            "poet": "அவ்வையார்.",
+            "tinai": "kurinji",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_natrinai_381_2]",
+          "source_id": "natrinai_381",
+          "source": {
+            "source_id": "natrinai_381",
+            "poem": "natrinai",
+            "verse_number": 381,
+            "poet": "அவ்வையார்.",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_natrinai_295_3]",
+          "source_id": "natrinai_295",
+          "source": {
+            "source_id": "natrinai_295",
+            "poem": "natrinai",
+            "verse_number": 295,
+            "poet": "அவ்வையார்.",
+            "tinai": "neytal",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_6",
+      "claim_text": "- கொளுவில் முழுப் பெயர் “- காக்கை பாடினியார் நச்செள்ளையார்.” [kurunthokai_210:7].",
+      "claim_text_ta": "- கொளுவில் முழுப் பெயர் “- காக்கை பாடினியார் நச்செள்ளையார்.” [kurunthokai_210:7].",
+      "citation_ids": [
+        "kurunthokai_210"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kurunthokai_210_0]",
+          "source_id": "kurunthokai_210",
+          "source": {
+            "source_id": "kurunthokai_210",
+            "poem": "kurunthokai",
+            "verse_number": 210,
+            "poet": "காக்கை பாடினியார் நச்செள்ளையார்.",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_7",
+      "claim_text": "- **குறுந்தொகை 210** (முல்லை): “விருந்து வரக் கரைந்த காக்கையது பலியே” — தலைவியின் பெருந்தோள் நெகிழ்ந்த துன்பத்திற்குக் காக்கைக்குப் படைக்கும் பலியும் சிறிதே என்னும் பாடல் [kurunthokai_210].",
+      "claim_text_ta": "- **குறுந்தொகை 210** (முல்லை): “விருந்து வரக் கரைந்த காக்கையது பலியே” — தலைவியின் பெருந்தோள் நெகிழ்ந்த துன்பத்திற்குக் காக்கைக்குப் படைக்கும் பலியும் சிறிதே என்னும் பாடல் [kurunthokai_210].",
+      "citation_ids": [
+        "kurunthokai_210"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_kurunthokai_210_0]",
+          "source_id": "kurunthokai_210",
+          "source": {
+            "source_id": "kurunthokai_210",
+            "poem": "kurunthokai",
+            "verse_number": 210,
+            "poet": "காக்கை பாடினியார் நச்செள்ளையார்.",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_8",
+      "claim_text": "- **பதிற்றுப்பத்து 51**: “பாடல் சான்று நீடினை உறைதலின்” [pathitrupathu_51:22]; பதிகக்குறிப்பு “ஆடுகோட்பாட்டுச் சேரலாதனைக் காக்கை பாடினியார்நச்செள்ளையார் பாடியது” என்று பாடப்பட்டோரைக் குறிக்கிறது [pathitrupathu_50:urai].",
+      "claim_text_ta": "- **பதிற்றுப்பத்து 51**: “பாடல் சான்று நீடினை உறைதலின்” [pathitrupathu_51:22]; பதிகக்குறிப்பு “ஆடுகோட்பாட்டுச் சேரலாதனைக் காக்கை பாடினியார்நச்செள்ளையார் பாடியது” என்று பாடப்பட்டோரைக் குறிக்கிறது [pathitrupathu_50:urai].",
+      "citation_ids": [
+        "pathitrupathu_51",
+        "pathitrupathu_50"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_51_0]",
+          "source_id": "pathitrupathu_51",
+          "source": {
+            "source_id": "pathitrupathu_51",
+            "poem": "pathitrupathu",
+            "verse_number": 51,
+            "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_pathitrupathu_50_1]",
+          "source_id": "pathitrupathu_50",
+          "source": {
+            "source_id": "pathitrupathu_50",
+            "poem": "pathitrupathu",
+            "verse_number": 50,
+            "poet": "பரணர்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_9",
+      "claim_text": "- தரவுத்தளத்தில் இப்பெயர் **தனிக் கொளுவாக இல்லை**; “காக்கை பாடினியார் நச்செள்ளையார்” என்ற இணைப்பெயராகவே பதிவாகியுள்ளது [kurunthokai_210:7], [pathitrupathu_51].",
+      "claim_text_ta": "- தரவுத்தளத்தில் இப்பெயர் **தனிக் கொளுவாக இல்லை**; “காக்கை பாடினியார் நச்செள்ளையார்” என்ற இணைப்பெயராகவே பதிவாகியுள்ளது [kurunthokai_210:7], [pathitrupathu_51].",
+      "citation_ids": [
+        "pathitrupathu_51",
+        "kurunthokai_210"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_pathitrupathu_51_0]",
+          "source_id": "pathitrupathu_51",
+          "source": {
+            "source_id": "pathitrupathu_51",
+            "poem": "pathitrupathu",
+            "verse_number": 51,
+            "poet": "காக்கை பாடினியார் நச்செள்ளையார்",
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        },
+        {
+          "citation_id": "[^c_kurunthokai_210_1]",
+          "source_id": "kurunthokai_210",
+          "source": {
+            "source_id": "kurunthokai_210",
+            "poem": "kurunthokai",
+            "verse_number": 210,
+            "poet": "காக்கை பாடினியார் நச்செள்ளையார்.",
+            "tinai": "mullai",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    },
+    {
+      "claim_id": "claim_10",
+      "claim_text": "- பொதுவாகப் **பாடினியர்** (பெண் பாடகியர்) சிறப்பிக்கப்பட்டதற்குச் சான்று: “மறம் பாடிய பாடினி யும்மே” [purananooru_011:11]; பாடினிக்கு அணிகலன்கள் பரிசாக வழங்கப்பட்டதாக உரை கூறுகிறது [purananooru_011:urai].",
+      "claim_text_ta": "- பொதுவாகப் **பாடினியர்** (பெண் பாடகியர்) சிறப்பிக்கப்பட்டதற்குச் சான்று: “மறம் பாடிய பாடினி யும்மே” [purananooru_011:11]; பாடினிக்கு அணிகலன்கள் பரிசாக வழங்கப்பட்டதாக உரை கூறுகிறது [purananooru_011:urai].",
+      "citation_ids": [
+        "purananooru_011"
+      ],
+      "citations": [
+        {
+          "citation_id": "[^c_purananooru_011_0]",
+          "source_id": "purananooru_011",
+          "source": {
+            "source_id": "purananooru_011",
+            "poem": "purananooru",
+            "verse_number": 11,
+            "poet": null,
+            "tinai": "unknown",
+            "matched_quote": null,
+            "line_numbers": [],
+            "source_type": "corpus_verse",
+            "verified": true
+          },
+          "quote": null,
+          "is_valid": true,
+          "validation_notes": "Verified against canonical corpus"
+        }
+      ],
+      "evidence_status": "verified",
+      "is_supported": true
+    }
+  ],
+  "isAbstained": false,
+  "abstentionReason": "none",
+  "evidenceStatus": "partially_verified",
+  "metadata": {
+    "model": "openrouter:deepseek/deepseek-v4.1-flash-1017",
+    "elapsed_ms": 43539,
+    "timestamp": "2026-10-27T19:25:49.491164+00:00",
+    "workflow": "qa",
+    "routed_pulavar": "avvaiyar",
+    "routing_reason": "explicit_pulavar_selected",
+    "token_in": 285844,
+    "token_out": 5096,
+    "cost_usd": 0.0459342,
+    "cost_inr": 4.0422
+  }
+}

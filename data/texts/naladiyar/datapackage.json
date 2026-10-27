@@ -1,0 +1,34 @@
+{
+  "name": "open-sangam-naladiyar",
+  "title": "நாலடியார் — Naladiyar",
+  "description": "Naladiyar (நாலடியார்), Pathinenkilkkanakku — 400 verses with public-domain English translation.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Madurai Tamil text",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html"
+    },
+    {
+      "title": "Project Madurai English translation",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html"
+    }
+  ],
+  "resources": [
+    {
+      "name": "naladiyar",
+      "path": "naladiyar.json",
+      "mediatype": "application/json",
+      "encoding": "utf-8"
+    }
+  ],
+  "stats": {
+    "records": 400,
+    "withEnglish": 400
+  }
+}

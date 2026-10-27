@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_331",
+  "poem": "naladiyar",
+  "number": 331,
+  "title": "பேதைமை",
+  "heading": "2.34",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கொலைஞர் உலையேற்றித் தீமடுப்ப ஆமை\nநிலையறியா தந்நீர்ப் படிந்தாடி யற்றே\nகொலைவல் பெருங்கூற்றம் கோள்பார்ப்ப ஈண்டை\nவலையகத்துச் செம்மாப்பார் மாண்பு.",
+  "urai": null,
+  "english": "Men disport themselves in the very meshes of death's net. While the turtle's murderers have put it into the pot, and kindled fire beneath, it sports unconscious of its fate: such is their worth who joy entangled in life's not, while death, the mighty murderer, waits to seize them.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கொலைஞர் உலையேற்றித் தீமடுப்ப ஆமை",
+      "words": [
+        {
+          "form": "கொலைஞர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உலையேற்றித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீமடுப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஆமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நிலையறியா தந்நீர்ப் படிந்தாடி யற்றே",
+      "words": [
+        {
+          "form": "நிலையறியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தந்நீர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படிந்தாடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யற்றே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கொலைவல் பெருங்கூற்றம் கோள்பார்ப்ப ஈண்டை",
+      "words": [
+        {
+          "form": "கொலைவல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருங்கூற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோள்பார்ப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈண்டை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "வலையகத்துச் செம்மாப்பார் மாண்பு.",
+      "words": [
+        {
+          "form": "வலையகத்துச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செம்மாப்பார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாண்பு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

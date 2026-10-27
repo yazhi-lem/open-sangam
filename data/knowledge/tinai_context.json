@@ -1,14 +1,26 @@
 {
  "kurinji": {
-  "verseCount": 470,
+  "verseCount": 510,
   "topPoets": [
    {
     "poet": "கபிலர்",
-    "count": 152
+    "count": 214
    },
    {
     "poet": "பரணர்",
-    "count": 22
+    "count": 29
+   },
+   {
+    "poet": "மதுரை மருதன் இளநாகனார்",
+    "count": 6
+   },
+   {
+    "poet": "மதுரைப் பண்ட வாணிகன் இளந்தேவனார்",
+    "count": 3
+   },
+   {
+    "poet": "மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+    "count": 3
    },
    {
     "poet": "அள்ளூர் நன்முல்லையார்",
@@ -21,18 +33,6 @@
    {
     "poet": "அவ்வையார்",
     "count": 3
-   },
-   {
-    "poet": "மதுரை மருதன் இளநாகனார்",
-    "count": 3
-   },
-   {
-    "poet": "பெருங்குன்றூர் கிழார்",
-    "count": 2
-   },
-   {
-    "poet": "வெறிபாடிய காமக்கண்ணியார்",
-    "count": 2
    }
   ],
   "poemBreakdown": [
@@ -50,7 +50,7 @@
    },
    {
     "poem": "akananooru",
-    "count": 40
+    "count": 80
    },
    {
     "poem": "kalithokai",
@@ -67,7 +67,7 @@
      "cat": "flora",
      "ta": "வேங்கை",
      "en": "Venkai (Indian Kino)",
-     "count": 61,
+     "count": 77,
      "samples": [
       {
        "id": "ainkurunooru_208",
@@ -90,7 +90,7 @@
      "cat": "flora",
      "ta": "காந்தள்",
      "en": "Kantal (Gloriosa Lily)",
-     "count": 36,
+     "count": 40,
      "samples": [
       {
        "id": "ainkurunooru_254",
@@ -113,7 +113,7 @@
      "cat": "flora",
      "ta": "குறிஞ்சி",
      "en": "Kurinji (Strobilanthes)",
-     "count": 7,
+     "count": 8,
      "samples": [
       {
        "id": "akananooru_102",
@@ -121,14 +121,14 @@
        "number": 102
       },
       {
+       "id": "akananooru_308",
+       "poem": "akananooru",
+       "number": 308
+      },
+      {
        "id": "kurinjipattu_10",
        "poem": "kurinjipattu",
        "number": null
-      },
-      {
-       "id": "kurunthokai_003",
-       "poem": "kurunthokai",
-       "number": 3
       }
      ]
     },
@@ -136,8 +136,13 @@
      "cat": "flora",
      "ta": "மூங்கில்",
      "en": "Bamboo",
-     "count": 3,
+     "count": 4,
      "samples": [
+      {
+       "id": "akananooru_332",
+       "poem": "akananooru",
+       "number": 332
+      },
       {
        "id": "kalithokai_050",
        "poem": "kalithokai",
@@ -147,11 +152,6 @@
        "id": "kurunthokai_179",
        "poem": "kurunthokai",
        "number": 179
-      },
-      {
-       "id": "kurunthokai_201",
-       "poem": "kurunthokai",
-       "number": 201
       }
      ]
     }
@@ -161,7 +161,7 @@
      "cat": "fauna",
      "ta": "யானை",
      "en": "Elephant",
-     "count": 53,
+     "count": 68,
      "samples": [
       {
        "id": "akananooru_018",
@@ -184,7 +184,7 @@
      "cat": "fauna",
      "ta": "மான்",
      "en": "Spotted Deer",
-     "count": 29,
+     "count": 34,
      "samples": [
       {
        "id": "akananooru_008",
@@ -207,7 +207,7 @@
      "cat": "fauna",
      "ta": "மயில்",
      "en": "Peacock",
-     "count": 17,
+     "count": 21,
      "samples": [
       {
        "id": "ainkurunooru_250",
@@ -230,8 +230,13 @@
      "cat": "fauna",
      "ta": "குரங்கு",
      "en": "Monkey",
-     "count": 1,
+     "count": 2,
      "samples": [
+      {
+       "id": "akananooru_368",
+       "poem": "akananooru",
+       "number": 368
+      },
       {
        "id": "kurunthokai_288",
        "poem": "kurunthokai",
@@ -245,7 +250,7 @@
      "cat": "landscape",
      "ta": "அருவி",
      "en": "Waterfall",
-     "count": 71,
+     "count": 85,
      "samples": [
       {
        "id": "ainkurunooru_220",
@@ -268,7 +273,7 @@
      "cat": "landscape",
      "ta": "சிலம்பு",
      "en": "Hill Stream",
-     "count": 10,
+     "count": 11,
      "samples": [
       {
        "id": "ainkurunooru_293",
@@ -281,9 +286,9 @@
        "number": 198
       },
       {
-       "id": "kalithokai_046",
-       "poem": "kalithokai",
-       "number": 46
+       "id": "akananooru_362",
+       "poem": "akananooru",
+       "number": 362
       }
      ]
     }
@@ -293,7 +298,7 @@
      "cat": "people",
      "ta": "குறவர்",
      "en": "Kuravar",
-     "count": 17,
+     "count": 20,
      "samples": [
       {
        "id": "ainkurunooru_213",
@@ -316,7 +321,7 @@
      "cat": "people",
      "ta": "வேலன்",
      "en": "Velan",
-     "count": 15,
+     "count": 17,
      "samples": [
       {
        "id": "ainkurunooru_241",
@@ -403,39 +408,39 @@
   ]
  },
  "mullai": {
-  "verseCount": 231,
+  "verseCount": 251,
   "topPoets": [
    {
     "poet": "பேயனார்",
-    "count": 102
+    "count": 103
+   },
+   {
+    "poet": "நப்பூதனார்",
+    "count": 18
+   },
+   {
+    "poet": "சோழன் நல்லுருத்திரனார்",
+    "count": 17
+   },
+   {
+    "poet": "இடைக்காடனார்",
+    "count": 8
+   },
+   {
+    "poet": "ஒக்கூர் மாசாத்தியார்",
+    "count": 6
    },
    {
     "poet": "அவ்வையார்",
     "count": 6
    },
    {
-    "poet": "இடைக்காடனார்",
-    "count": 5
-   },
-   {
-    "poet": "ஒக்கூர் மாசாத்தியார்",
+    "poet": "மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
     "count": 4
    },
    {
     "poet": "மதுரை மருதன் இளநாகனார்",
     "count": 3
-   },
-   {
-    "poet": "குறுங்குடி மருதனார்",
-    "count": 2
-   },
-   {
-    "poet": "மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
-    "count": 2
-   },
-   {
-    "poet": "கோவர்த்தனார்",
-    "count": 2
    }
   ],
   "poemBreakdown": [
@@ -448,12 +453,12 @@
     "count": 45
    },
    {
-    "poem": "natrinai",
-    "count": 30
+    "poem": "akananooru",
+    "count": 40
    },
    {
-    "poem": "akananooru",
-    "count": 20
+    "poem": "natrinai",
+    "count": 30
    },
    {
     "poem": "mullaippattu",
@@ -474,7 +479,7 @@
      "cat": "flora",
      "ta": "முல்லை",
      "en": "Mullai (Jasmine)",
-     "count": 56,
+     "count": 66,
      "samples": [
       {
        "id": "ainkurunooru_408",
@@ -497,7 +502,7 @@
      "cat": "flora",
      "ta": "கொன்றை",
      "en": "Konrai (Indian Laburnum)",
-     "count": 26,
+     "count": 27,
      "samples": [
       {
        "id": "ainkurunooru_412",
@@ -581,7 +586,7 @@
      "cat": "fauna",
      "ta": "முயல்",
      "en": "Hare",
-     "count": 2,
+     "count": 4,
      "samples": [
       {
        "id": "ainkurunooru_421",
@@ -589,9 +594,14 @@
        "number": 421
       },
       {
-       "id": "natrinai_059",
-       "poem": "natrinai",
-       "number": 59
+       "id": "akananooru_284",
+       "poem": "akananooru",
+       "number": 284
+      },
+      {
+       "id": "akananooru_394",
+       "poem": "akananooru",
+       "number": 394
       }
      ]
     }
@@ -697,15 +707,19 @@
   ]
  },
  "marutam": {
-  "verseCount": 202,
+  "verseCount": 257,
   "topPoets": [
    {
     "poet": "ஓரம்போகியார்",
-    "count": 103
+    "count": 105
+   },
+   {
+    "poet": "மருதன் இளநாகனார்",
+    "count": 35
    },
    {
     "poet": "பரணர்",
-    "count": 16
+    "count": 26
    },
    {
     "poet": "ஆலங்குடி வங்கனார்",
@@ -720,16 +734,12 @@
     "count": 3
    },
    {
-    "poet": "அவ்வையார்",
+    "poet": "நக்கீரர்",
     "count": 3
    },
    {
-    "poet": "நக்கீரர்",
-    "count": 2
-   },
-   {
-    "poet": "படுமரத்து மோசிகீரனார்",
-    "count": 2
+    "poet": "மதுரை மருதன் இளநாகனார்",
+    "count": 3
    }
   ],
   "poemBreakdown": [
@@ -742,12 +752,16 @@
     "count": 50
    },
    {
-    "poem": "natrinai",
-    "count": 32
+    "poem": "akananooru",
+    "count": 40
    },
    {
-    "poem": "akananooru",
-    "count": 20
+    "poem": "kalithokai",
+    "count": 35
+   },
+   {
+    "poem": "natrinai",
+    "count": 32
    }
   ],
   "attested": {
@@ -756,7 +770,7 @@
      "cat": "flora",
      "ta": "ஆம்பல்",
      "en": "White Water Lily",
-     "count": 27,
+     "count": 32,
      "samples": [
       {
        "id": "ainkurunooru_021",
@@ -779,7 +793,7 @@
      "cat": "flora",
      "ta": "மருதம்",
      "en": "Marutam (Arjuna Tree)",
-     "count": 4,
+     "count": 5,
      "samples": [
       {
        "id": "ainkurunooru_074",
@@ -817,7 +831,7 @@
      "cat": "fauna",
      "ta": "எருமை",
      "en": "Water Buffalo",
-     "count": 18,
+     "count": 20,
      "samples": [
       {
        "id": "ainkurunooru_091",
@@ -840,7 +854,7 @@
      "cat": "fauna",
      "ta": "நாரை",
      "en": "Painted Stork",
-     "count": 4,
+     "count": 5,
      "samples": [
       {
        "id": "ainkurunooru_009",
@@ -853,9 +867,22 @@
        "number": 70
       },
       {
-       "id": "natrinai_180",
-       "poem": "natrinai",
-       "number": 180
+       "id": "akananooru_276",
+       "poem": "akananooru",
+       "number": 276
+      }
+     ]
+    },
+    {
+     "cat": "fauna",
+     "ta": "கொக்கு",
+     "en": "Grey Heron",
+     "count": 1,
+     "samples": [
+      {
+       "id": "kalithokai_094",
+       "poem": "kalithokai",
+       "number": 94
       }
      ]
     }
@@ -865,7 +892,7 @@
      "cat": "landscape",
      "ta": "வயல்",
      "en": "Paddy Field",
-     "count": 6,
+     "count": 12,
      "samples": [
       {
        "id": "ainkurunooru_072",
@@ -883,6 +910,37 @@
        "number": 26
       }
      ]
+    },
+    {
+     "cat": "landscape",
+     "ta": "ஆறு",
+     "en": "River",
+     "count": 2,
+     "samples": [
+      {
+       "id": "kalithokai_089",
+       "poem": "kalithokai",
+       "number": 89
+      },
+      {
+       "id": "kalithokai_095",
+       "poem": "kalithokai",
+       "number": 95
+      }
+     ]
+    },
+    {
+     "cat": "landscape",
+     "ta": "குளம்",
+     "en": "Tank / Pond",
+     "count": 1,
+     "samples": [
+      {
+       "id": "kalithokai_096",
+       "poem": "kalithokai",
+       "number": 96
+      }
+     ]
     }
    ],
    "people": [
@@ -890,7 +948,7 @@
      "cat": "people",
      "ta": "உழவர்",
      "en": "Uzhavar",
-     "count": 2,
+     "count": 6,
      "samples": [
       {
        "id": "ainkurunooru_003",
@@ -898,9 +956,14 @@
        "number": 3
       },
       {
-       "id": "natrinai_340",
-       "poem": "natrinai",
-       "number": 340
+       "id": "akananooru_216",
+       "poem": "akananooru",
+       "number": 216
+      },
+      {
+       "id": "akananooru_266",
+       "poem": "akananooru",
+       "number": 266
       }
      ]
     }
@@ -953,11 +1016,15 @@
   ]
  },
  "neytal": {
-  "verseCount": 311,
+  "verseCount": 344,
   "topPoets": [
    {
     "poet": "அம்மூவனார்",
     "count": 123
+   },
+   {
+    "poet": "நல்லந்துவனார்",
+    "count": 33
    },
    {
     "poet": "உலோச்சனார்",
@@ -982,10 +1049,6 @@
    {
     "poet": "அவ்வையார்",
     "count": 3
-   },
-   {
-    "poet": "நம்பி குட்டுவனார்",
-    "count": 3
    }
   ],
   "poemBreakdown": [
@@ -1006,6 +1069,10 @@
     "count": 39
    },
    {
+    "poem": "kalithokai",
+    "count": 33
+   },
+   {
     "poem": "purananooru",
     "count": 1
    }
@@ -1016,7 +1083,7 @@
      "cat": "flora",
      "ta": "புன்னை",
      "en": "Punnai (Alexandrian Laurel)",
-     "count": 69,
+     "count": 75,
      "samples": [
       {
        "id": "ainkurunooru_103",
@@ -1039,7 +1106,7 @@
      "cat": "flora",
      "ta": "நெய்தல்",
      "en": "Neytal (Blue Water Lily)",
-     "count": 46,
+     "count": 50,
      "samples": [
       {
        "id": "ainkurunooru_101",
@@ -1062,7 +1129,7 @@
      "cat": "flora",
      "ta": "தாழை",
      "en": "Thadavalam / Thaazhai (Screw Pine)",
-     "count": 25,
+     "count": 30,
      "samples": [
       {
        "id": "akananooru_020",
@@ -1108,7 +1175,7 @@
      "cat": "flora",
      "ta": "சுரம்",
      "en": "Coastal Scrub",
-     "count": 6,
+     "count": 8,
      "samples": [
       {
        "id": "akananooru_080",
@@ -1133,7 +1200,7 @@
      "cat": "fauna",
      "ta": "நாரை",
      "en": "Egret / Sea Heron",
-     "count": 30,
+     "count": 32,
      "samples": [
       {
        "id": "ainkurunooru_114",
@@ -1156,7 +1223,7 @@
      "cat": "fauna",
      "ta": "சுறா",
      "en": "Shark",
-     "count": 16,
+     "count": 18,
      "samples": [
       {
        "id": "akananooru_120",
@@ -1250,49 +1317,49 @@
   ]
  },
  "palai": {
-  "verseCount": 495,
+  "verseCount": 595,
   "topPoets": [
    {
     "poet": "ஓதலாந்தையார்",
     "count": 102
    },
    {
-    "poet": "மாமூலனார்",
-    "count": 15
+    "poet": "மாங்குடி மருதனார்",
+    "count": 63
    },
    {
     "poet": "பாலை பாடிய பெருங்கடுங்கோ",
-    "count": 15
+    "count": 56
+   },
+   {
+    "poet": "மாமூலனார்",
+    "count": 29
    },
    {
     "poet": "கயமனார்",
-    "count": 12
+    "count": 19
    },
    {
     "poet": "மதுரை மருதன் இளநாகனார்",
-    "count": 8
+    "count": 16
    },
    {
     "poet": "குடவாயிற் கீரத்தனார்",
-    "count": 7
+    "count": 9
    },
    {
     "poet": "கல்லாடனார்",
-    "count": 6
-   },
-   {
-    "poet": "ஔவையார்",
-    "count": 6
+    "count": 8
    }
   ],
   "poemBreakdown": [
    {
-    "poem": "natrinai",
-    "count": 104
+    "poem": "akananooru",
+    "count": 201
    },
    {
-    "poem": "akananooru",
-    "count": 101
+    "poem": "natrinai",
+    "count": 104
    },
    {
     "poem": "ainkurunooru",
@@ -1318,7 +1385,7 @@
      "cat": "fauna",
      "ta": "புலி",
      "en": "Tiger",
-     "count": 32,
+     "count": 46,
      "samples": [
       {
        "id": "ainkurunooru_316",
@@ -1341,7 +1408,7 @@
      "cat": "fauna",
      "ta": "காக்கை",
      "en": "Crow",
-     "count": 4,
+     "count": 7,
      "samples": [
       {
        "id": "ainkurunooru_314",
@@ -1354,9 +1421,9 @@
        "number": 391
       },
       {
-       "id": "natrinai_281",
-       "poem": "natrinai",
-       "number": 281
+       "id": "akananooru_313",
+       "poem": "akananooru",
+       "number": 313
       }
      ]
     },
@@ -1364,7 +1431,7 @@
      "cat": "fauna",
      "ta": "நரி",
      "en": "Jackal / Fox",
-     "count": 4,
+     "count": 6,
      "samples": [
       {
        "id": "akananooru_057",
@@ -1377,9 +1444,9 @@
        "number": 193
       },
       {
-       "id": "natrinai_164",
-       "poem": "natrinai",
-       "number": 164
+       "id": "akananooru_337",
+       "poem": "akananooru",
+       "number": 337
       }
      ]
     },
@@ -1387,17 +1454,22 @@
      "cat": "fauna",
      "ta": "பாம்பு",
      "en": "Serpent",
-     "count": 2,
+     "count": 4,
      "samples": [
+      {
+       "id": "akananooru_313",
+       "poem": "akananooru",
+       "number": 313
+      },
+      {
+       "id": "akananooru_339",
+       "poem": "akananooru",
+       "number": 339
+      },
       {
        "id": "kalithokai_015",
        "poem": "kalithokai",
        "number": 15
-      },
-      {
-       "id": "natrinai_264",
-       "poem": "natrinai",
-       "number": 264
       }
      ]
     },
@@ -1420,7 +1492,7 @@
      "cat": "landscape",
      "ta": "சுரம்",
      "en": "Desolate Road / Wild Path",
-     "count": 77,
+     "count": 106,
      "samples": [
       {
        "id": "ainkurunooru_301",
@@ -1445,7 +1517,7 @@
      "cat": "people",
      "ta": "மறவர்",
      "en": "Maravar",
-     "count": 23,
+     "count": 28,
      "samples": [
       {
        "id": "ainkurunooru_352",
@@ -1468,7 +1540,7 @@
      "cat": "people",
      "ta": "எயினர்",
      "en": "Eyinar",
-     "count": 4,
+     "count": 5,
      "samples": [
       {
        "id": "ainkurunooru_363",

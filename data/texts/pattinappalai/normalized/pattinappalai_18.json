@@ -2,7 +2,7 @@
   "id": "pattinappalai_18",
   "poem": "pattinappalai",
   "tinai": "unknown",
-  "sangamTamil": "நீர் நாப்பண்ணும், நிலத்தின் மேலும்,\nஏமாப்ப இனிது துஞ்சிக்\nகிளை கலித்துப் பகை பேணாது,\nவலைஞர் முன்றில் மீன் பிறழவும்,\nவிலைஞர் குரம்பை மா ஈண்டவும்,",
+  "sangamTamil": "நீர் நாப்பண்ணும், நிலத்தின் மேலும்,\nஏமாப்ப இனிது துஞ்சிக்\nகிளை கலித்துப் பகை பேணாது,\nவலைஞர் முன்றில் மீன் பிறழவும்,\nவிலைஞர் குரம்பை மா ஈண்டவும்,\nகொலைகடிந்துங் களவுநீக்கியு\nம‌மரர்ப் பேணியு மாவுதி ய‌ருத்தியு\nநல்லானொடு பகடோம்பியு\nநான்மறையோர் புகழ்பரப்பியும்\nபண்ணிய ம‌ட்டியும் பசும்பதங் கொடுத்தும்\nபுண்ணிய முட்டாத் தண்ணிழல் வாழ்க்கைக்\nகொடுமேழி நசையுழவர்\nநடுவுநின்ற நன்னெஞ்சினோர்\nவடுவஞ்சி வாய்மொழிந்து\nதமவும் பிறவு மொப்ப நாடிக்\nகொள்வதூஉ மிகைகொளாது\nகொடுப்பதூஉங் குறைப‌டாது\nபல்பண்டம் பகர்ந்துவீசுந்\nதொல்கொண்டித் துவன்றிருக்கைப*",
   "urai": "வலைஞர் முற்றத்தில் மீன், விலைஞர் பட்டிகளில் குதிரை பெருகிக் கிடக்கும் நிம்மதியான வாழ்க்கை. நீருக்கிடையே நாவாயிலும் தூங்கலாம். நிலத்தில் எங்கு வேண்டுமானாலும் தூங்கலாம். என்று விரும்பிய இடத்தில் இன்பமாக நாட்டு மக்கள் உறங்கினர். சுற்றம் செழித்தது. பகையைப் பற்றி யாரும் கவலைப்படவில்லை. வலைவீசுவோரின் நீர் முற்றத்தில் மீன்கள் மிகுதியாகப் புரண்டன. குதிரை விற்போரின் குடிசைப் பகுதியில் நாவாயில் வந்து இறங்கிய குதிரைகள் பெருகின.",
   "english": null,
   "lines": [
@@ -168,11 +168,347 @@
           "gloss": "This word, derived from 'indu' (to gather, to be abundant), is an adverbial participle meaning 'and also gathering' or 'and also becoming abundant', describing the large number of horses present."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "கொலைகடிந்துங் களவுநீக்கியு",
+      "words": [
+        {
+          "form": "கொலைகடிந்துங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களவுநீக்கியு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "ம‌மரர்ப் பேணியு மாவுதி ய‌ருத்தியு",
+      "words": [
+        {
+          "form": "ம‌மரர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேணியு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாவுதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ய‌ருத்தியு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நல்லானொடு பகடோம்பியு",
+      "words": [
+        {
+          "form": "நல்லானொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகடோம்பியு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "நான்மறையோர் புகழ்பரப்பியும்",
+      "words": [
+        {
+          "form": "நான்மறையோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகழ்பரப்பியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "பண்ணிய ம‌ட்டியும் பசும்பதங் கொடுத்தும்",
+      "words": [
+        {
+          "form": "பண்ணிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ம‌ட்டியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பசும்பதங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொடுத்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "புண்ணிய முட்டாத் தண்ணிழல் வாழ்க்கைக்",
+      "words": [
+        {
+          "form": "புண்ணிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முட்டாத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தண்ணிழல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்க்கைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "கொடுமேழி நசையுழவர்",
+      "words": [
+        {
+          "form": "கொடுமேழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நசையுழவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "நடுவுநின்ற நன்னெஞ்சினோர்",
+      "words": [
+        {
+          "form": "நடுவுநின்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்னெஞ்சினோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "வடுவஞ்சி வாய்மொழிந்து",
+      "words": [
+        {
+          "form": "வடுவஞ்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாய்மொழிந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "தமவும் பிறவு மொப்ப நாடிக்",
+      "words": [
+        {
+          "form": "தமவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாடிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "கொள்வதூஉ மிகைகொளாது",
+      "words": [
+        {
+          "form": "கொள்வதூஉ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிகைகொளாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "கொடுப்பதூஉங் குறைப‌டாது",
+      "words": [
+        {
+          "form": "கொடுப்பதூஉங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறைப‌டாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "பல்பண்டம் பகர்ந்துவீசுந்",
+      "words": [
+        {
+          "form": "பல்பண்டம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகர்ந்துவீசுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "தொல்கொண்டித் துவன்றிருக்கைப*",
+      "words": [
+        {
+          "form": "தொல்கொண்டித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துவன்றிருக்கைப*",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/paddinappalai/paddinappalai-பட்டினப்பாலை18.html",
+  "source": "http://www.sangathamizh.com/10paddu/paddinappalai/paddinappalai-பட்டினப்பாலை18.html; Project Madurai pmuni0479",
   "verified": false,
   "sectionNumber": 18,
   "title": "காவிரிப்பூம்பட்டினத்து உழவர்களின் நல் இயல்புகள் மற்றும் வணிகர் குடிச்சிறப்பு",

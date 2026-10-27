@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_093",
+  "poem": "naladiyar",
+  "number": 93,
+  "title": "ஈகை",
+  "heading": "1.10",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நடுக்குற்றுத் தற்சேர்ந்தார் துன்பம் துடையார்\nகொடுத்துத்தான் துய்ப்பினும் ஈண்டுங்கால் ஈண்டும்\nமிடுக்குற்றுப் பற்றினும் நில்லாது செல்வம்\nவிடுக்கும் வினையுலந்தக் கால்.",
+  "urai": null,
+  "english": "It is useless saving: fate gives and takes away. Though dread of want they do not relieve the woes of men who as suppliants draw near! Yet although men enjoy and give, wealth grows in growing time: cling to it, and yet it flies when former deeds that brought wealth have lost their power.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நடுக்குற்றுத் தற்சேர்ந்தார் துன்பம் துடையார்",
+      "words": [
+        {
+          "form": "நடுக்குற்றுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தற்சேர்ந்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துன்பம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துடையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கொடுத்துத்தான் துய்ப்பினும் ஈண்டுங்கால் ஈண்டும்",
+      "words": [
+        {
+          "form": "கொடுத்துத்தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துய்ப்பினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈண்டுங்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈண்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மிடுக்குற்றுப் பற்றினும் நில்லாது செல்வம்",
+      "words": [
+        {
+          "form": "மிடுக்குற்றுப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பற்றினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நில்லாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்வம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "விடுக்கும் வினையுலந்தக் கால்.",
+      "words": [
+        {
+          "form": "விடுக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினையுலந்தக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கால்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

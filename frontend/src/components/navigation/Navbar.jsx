@@ -3,12 +3,13 @@
  */
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { House, BookOpen, Globe, Brain, Map, FileText, Users } from 'lucide-react'
+import { House, BookOpen, Globe } from 'lucide-react'
 import lockupColour from '../../assets/brand/lockup-colour.svg'
 import lockupReversed from '../../assets/brand/lockup-reversed.svg'
 import ThemeToggle from '../ui/ThemeToggle'
+import LanguageToggle from '../ui/LanguageToggle'
 import useAppStore from '../../store/useAppStore'
-import { AVAI_ENABLED } from '../../config/features'
+
 
 const NAV_ICON_PROPS = { size: 14, strokeWidth: 1.75, 'aria-hidden': true }
 
@@ -16,14 +17,11 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const setCommandPaletteOpen = useAppStore((s) => s.setCommandPaletteOpen)
 
+  const language = useAppStore((s) => s.language)
   const links = [
-    { to: '/', end: true, labelTa: 'முகப்பு', labelEn: 'Home', Icon: House },
-    { to: '/book', labelTa: 'நூலகம்', labelEn: 'Library', Icon: BookOpen },
-    ...(AVAI_ENABLED ? [{ to: '/avai', labelTa: 'சங்க அவை', labelEn: 'Avai', Icon: Users }] : []),
-    { to: '/world', labelTa: 'சங்க உலகம்', labelEn: 'Sangam World', Icon: Globe },
-    { to: '/knowledge', labelTa: 'அறிவு', labelEn: 'Knowledge', Icon: Brain },
-    { to: '/graph', labelTa: 'வரைபடம்', labelEn: 'Graph', Icon: Map },
-    { to: '/articles', labelTa: 'கட்டுரைகள்', labelEn: 'Articles', Icon: FileText },
+    { to: '/', end: true, ta: 'முகப்பு', en: 'Home', Icon: House },
+    { to: '/world', ta: 'சங்க உலகம்', en: 'Sangam World', Icon: Globe },
+    { to: '/book', ta: 'நூலகம்', en: 'Library', Icon: BookOpen },
   ]
 
   const linkClass = ({ isActive }) =>
@@ -53,7 +51,7 @@ export default function Navbar() {
             <NavLink key={l.to} to={l.to} end={l.end} className={linkClass}>
               {/* Icons only once there's room; at xl the seven Tamil labels alone fill the bar. */}
               <l.Icon {...NAV_ICON_PROPS} className="hidden shrink-0 min-[1700px]:block" />
-              <span className="tamil text-sm">{l.labelTa}</span>
+              <span className={language === 'ta' ? 'tamil text-sm' : 'text-sm'}>{language === 'ta' ? l.ta : l.en}</span>
             </NavLink>
           ))}
         </div>
@@ -71,13 +69,14 @@ export default function Navbar() {
               <circle cx="11" cy="11" r="8" />
               <path d="M21 21l-4.35-4.35" />
             </svg>
-            <span className="hidden sm:inline xl:hidden font-medium tamil">தேடல்</span>
-            <span className="hidden min-[1700px]:inline font-medium tamil">சங்க இலக்கியத் தேடல்...</span>
+            <span className={`hidden sm:inline xl:hidden font-medium ${language === 'ta' ? 'tamil' : ''}`}>{language === 'ta' ? 'தேடல்' : 'Search'}</span>
+            <span className={`hidden min-[1700px]:inline font-medium ${language === 'ta' ? 'tamil' : ''}`}>{language === 'ta' ? 'சங்க இலக்கியத் தேடல்...' : 'Search Sangam literature...'}</span>
             <kbd className="hidden min-[1700px]:inline-block px-1.5 py-0.5 text-[10px] font-mono text-faint bg-surface border border-line rounded">
               ⌘K
             </kbd>
           </button>
 
+          <LanguageToggle />
           <ThemeToggle />
 
           {/* Mobile hamburger button */}
@@ -111,7 +110,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               <l.Icon {...NAV_ICON_PROPS} className="shrink-0" />
-              <span className="tamil text-base font-semibold">{l.labelTa}</span>
+              <span className={language === 'ta' ? 'tamil text-base font-semibold' : 'text-base font-semibold'}>{language === 'ta' ? l.ta : l.en}</span>
             </NavLink>
           ))}
         </div>

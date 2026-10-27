@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_070",
+  "poem": "naladiyar",
+  "number": 70,
+  "title": "சினம் இன்மை",
+  "heading": "1.7",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கூர்த்துநாய் கெளவிக் கொளக்கண்டும் தம்வாயால்\nபேர்த்துநாய் கெளவினார் ஈங்கில்லை - ஈர்த்தன்றிக்\nகீழ்மக்கள் கீழாய சொல்லியக்கால் சொல்பவோ\nமேன்மக்கள் தம்வாயால் மீட்டு.",
+  "urai": null,
+  "english": "Return not railing for railing. Though a dog, in range, should lay hold of them, there are none in the world who, in return, would lay hold of it with their mouth; and thus, when low men speak, not what is fitting, but low words, will high-minded men, in reply, utter such words with their mouth.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கூர்த்துநாய் கெளவிக் கொளக்கண்டும் தம்வாயால்",
+      "words": [
+        {
+          "form": "கூர்த்துநாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெளவிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளக்கண்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தம்வாயால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "பேர்த்துநாய் கெளவினார் ஈங்கில்லை - ஈர்த்தன்றிக்",
+      "words": [
+        {
+          "form": "பேர்த்துநாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெளவினார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈங்கில்லை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஈர்த்தன்றிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கீழ்மக்கள் கீழாய சொல்லியக்கால் சொல்பவோ",
+      "words": [
+        {
+          "form": "கீழ்மக்கள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீழாய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லியக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்பவோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மேன்மக்கள் தம்வாயால் மீட்டு.",
+      "words": [
+        {
+          "form": "மேன்மக்கள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தம்வாயால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மீட்டு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -2,7 +2,7 @@
   "id": "kurinjipattu_25",
   "poem": "kurinjipattu",
   "tinai": "kurinji",
-  "sangamTamil": "அளைச்செறி உழுவையும், ஆளியும், உளியமும்,\nபுழல் கோட்டு ஆமான் புகல்வியும், களிறும்,\nவலியின் தப்பும் வன்கண் வெஞ்சினத்து\nஉருமும், சூரும், இரை தேர் அரவமும்,\nஒடுங்கு இருங் குட்டத்து அருஞ்சுழி வழங்கும்\nகொடும் தாள் முதலையும் இடங்கரும் கராமும்,",
+  "sangamTamil": "அளைச்செறி உழுவையும், ஆளியும், உளியமும்,\nபுழல் கோட்டு ஆமான் புகல்வியும், களிறும்,\nவலியின் தப்பும் வன்கண் வெஞ்சினத்து\nஉருமும், சூரும், இரை தேர் அரவமும்,\nஒடுங்கு இருங் குட்டத்து அருஞ்சுழி வழங்கும்\nகொடும் தாள் முதலையும் இடங்கரும் கராமும்,\nநூழிலு மிழுக்கு மூழடி முட்டமும்\nபழுவும் பாந்தளு முளப்படப் பிறவும்\nவழுவின் வழாஅ விழுமமவர்\nகுழுமலை விடரக முடையவா லெனவே.",
   "urai": "இவள் கலங்குவதெல்லால் அவன் வரும் வழியில் இடர்ப்பாடுகள் உள்ளனவே என்பதுதான். குகையில் பதுங்கும் புலி, சிங்கம், கரடி, முட்டித் தள்ளும் கொம்புகளையுடைய காட்டாட்டுக் கடா, எதிர்த்துப் போரிடும் ஆண்யானை போன்றவற்றைத் தாக்கி அழிக்கும் வெஞ்சினம் அவனுக்கு இருந்தது. என்றாலும் இடி, பேய், இரை தேடும் மலைப்பாம்பு ஆகியவற்றிற்கு அவன் என் செய்வான்? நீர்க்குழிகள், நீர்ச்சுழிகள், அவற்றில் இரைதேடும் முதலை, இடங்கர், கராம் முதலான முதலையினத்துக்கு அவன் என்ன செய்வான்? – என்று கலங்குகிறாள்.",
   "english": null,
   "lines": [
@@ -237,11 +237,140 @@
           "gloss": "கராமும் refers to yet another species of crocodile, possibly a larger or more formidable one, completing the enumeration of dangerous aquatic reptiles."
         }
       ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "நூழிலு மிழுக்கு மூழடி முட்டமும்",
+      "words": [
+        {
+          "form": "நூழிலு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிழுக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூழடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முட்டமும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "பழுவும் பாந்தளு முளப்படப் பிறவும்",
+      "words": [
+        {
+          "form": "பழுவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாந்தளு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முளப்படப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிறவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "வழுவின் வழாஅ விழுமமவர்",
+      "words": [
+        {
+          "form": "வழுவின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழாஅ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விழுமமவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "குழுமலை விடரக முடையவா லெனவே.",
+      "words": [
+        {
+          "form": "குழுமலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடரக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முடையவா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லெனவே.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/kurinchippattu/kurinchippattu-குறிஞ்சிப்பாட்டு25.html",
+  "source": "http://www.sangathamizh.com/10paddu/kurinchippattu/kurinchippattu-குறிஞ்சிப்பாட்டு25.html; Project Madurai pmuni0495",
   "verified": false,
   "sectionNumber": 25,
   "title": "அவன் வரும் வழி இடர்கள் வாட்டியது இவளை!",

@@ -1,19 +1,22 @@
 {
  "meta": {
-  "records": 2489,
-  "nodes": 109,
-  "edges": 292,
+  "records": 4399,
+  "nodes": 256,
+  "edges": 1303,
   "relTypes": [
    "HAS_TINAI",
    "WROTE_IN",
    "COMPOSED",
-   "ATTESTS"
+   "ATTESTS",
+   "MENTIONS"
   ],
   "nodeTypes": [
    "tinai",
    "poem",
    "poet",
-   "karu"
+   "karu",
+   "artifact",
+   "entity"
   ],
   "generatedFrom": "data/texts/*/*.json"
  },
@@ -23,42 +26,42 @@
    "label": "Kuṟiñci · Mountains",
    "type": "tinai",
    "tinai": "kurinji",
-   "weight": 470
+   "weight": 510
   },
   {
    "id": "tinai:mullai",
    "label": "Mullai · Forest",
    "type": "tinai",
    "tinai": "mullai",
-   "weight": 231
+   "weight": 251
   },
   {
    "id": "tinai:marutam",
    "label": "Marutam · Cropland",
    "type": "tinai",
    "tinai": "marutam",
-   "weight": 202
+   "weight": 257
   },
   {
    "id": "tinai:neytal",
    "label": "Neytal · Seashore",
    "type": "tinai",
    "tinai": "neytal",
-   "weight": 311
+   "weight": 344
   },
   {
    "id": "tinai:palai",
    "label": "Pālai · Wasteland",
    "type": "tinai",
    "tinai": "palai",
-   "weight": 495
+   "weight": 595
   },
   {
    "id": "tinai:unknown",
    "label": "Unclassified",
    "type": "tinai",
    "tinai": "unknown",
-   "weight": 780
+   "weight": 2442
   },
   {
    "id": "poem:ainkurunooru",
@@ -70,7 +73,7 @@
    "id": "poem:akananooru",
    "label": "akananooru",
    "type": "poem",
-   "weight": 220
+   "weight": 400
   },
   {
    "id": "poem:kalithokai",
@@ -107,6 +110,12 @@
    "label": "mullaippattu",
    "type": "poem",
    "weight": 18
+  },
+  {
+   "id": "poem:naladiyar",
+   "label": "naladiyar",
+   "type": "poem",
+   "weight": 400
   },
   {
    "id": "poem:natrinai",
@@ -163,16 +172,34 @@
    "weight": 25
   },
   {
+   "id": "poem:thirukkural",
+   "label": "thirukkural",
+   "type": "poem",
+   "weight": 1330
+  },
+  {
    "id": "poem:thirumurugatrupadai",
    "label": "thirumurugatrupadai",
    "type": "poem",
    "weight": 32
   },
   {
+   "id": "poet:திருவள்ளுவர்",
+   "label": "திருவள்ளுவர்",
+   "type": "poet",
+   "weight": 1330
+  },
+  {
+   "id": "poet:பல புலவர்கள்",
+   "label": "பல புலவர்கள்",
+   "type": "poet",
+   "weight": 400
+  },
+  {
    "id": "poet:கபிலர்",
    "label": "கபிலர்",
    "type": "poet",
-   "weight": 167
+   "weight": 230
   },
   {
    "id": "poet:அம்மூவனார்",
@@ -184,7 +211,13 @@
    "id": "poet:ஓரம்போகியார்",
    "label": "ஓரம்போகியார்",
    "type": "poet",
-   "weight": 105
+   "weight": 107
+  },
+  {
+   "id": "poet:பேயனார்",
+   "label": "பேயனார்",
+   "type": "poet",
+   "weight": 104
   },
   {
    "id": "poet:ஓதலாந்தையார்",
@@ -193,16 +226,46 @@
    "weight": 103
   },
   {
-   "id": "poet:பேயனார்",
-   "label": "பேயனார்",
-   "type": "poet",
-   "weight": 103
-  },
-  {
    "id": "poet:பரணர்",
    "label": "பரணர்",
    "type": "poet",
-   "weight": 55
+   "weight": 73
+  },
+  {
+   "id": "poet:மாங்குடி மருதனார்",
+   "label": "மாங்குடி மருதனார்",
+   "type": "poet",
+   "weight": 64
+  },
+  {
+   "id": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "label": "பாலை பாடிய பெருங்கடுங்கோ",
+   "type": "poet",
+   "weight": 56
+  },
+  {
+   "id": "poet:இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+   "label": "இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+   "type": "poet",
+   "weight": 45
+  },
+  {
+   "id": "poet:மருதன் இளநாகனார்",
+   "label": "மருதன் இளநாகனார்",
+   "type": "poet",
+   "weight": 38
+  },
+  {
+   "id": "poet:நல்லந்துவனார்",
+   "label": "நல்லந்துவனார்",
+   "type": "poet",
+   "weight": 37
+  },
+  {
+   "id": "poet:மதுரை மருதன் இளநாகனார்",
+   "label": "மதுரை மருதன் இளநாகனார்",
+   "type": "poet",
+   "weight": 32
   },
   {
    "id": "poet:உலோச்சனார்",
@@ -211,16 +274,46 @@
    "weight": 31
   },
   {
-   "id": "poet:மதுரை மருதன் இளநாகனார்",
-   "label": "மதுரை மருதன் இளநாகனார்",
+   "id": "poet:கடியலூர் உருத்திரங்கண்ணனார்",
+   "label": "கடியலூர் உருத்திரங்கண்ணனார்",
    "type": "poet",
-   "weight": 20
+   "weight": 31
   },
   {
    "id": "poet:மாமூலனார்",
    "label": "மாமூலனார்",
    "type": "poet",
-   "weight": 16
+   "weight": 30
+  },
+  {
+   "id": "poet:கயமனார்",
+   "label": "கயமனார்",
+   "type": "poet",
+   "weight": 21
+  },
+  {
+   "id": "poet:நப்பூதனார்",
+   "label": "நப்பூதனார்",
+   "type": "poet",
+   "weight": 18
+  },
+  {
+   "id": "poet:நக்கீரர்",
+   "label": "நக்கீரர்",
+   "type": "poet",
+   "weight": 17
+  },
+  {
+   "id": "poet:சோழன் நல்லுருத்திரனார்",
+   "label": "சோழன் நல்லுருத்திரனார்",
+   "type": "poet",
+   "weight": 17
+  },
+  {
+   "id": "poet:மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+   "label": "மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+   "type": "poet",
+   "weight": 17
   },
   {
    "id": "poet:அவ்வையார்",
@@ -229,14 +322,8 @@
    "weight": 16
   },
   {
-   "id": "poet:பாலை பாடிய பெருங்கடுங்கோ",
-   "label": "பாலை பாடிய பெருங்கடுங்கோ",
-   "type": "poet",
-   "weight": 15
-  },
-  {
-   "id": "poet:கயமனார்",
-   "label": "கயமனார்",
+   "id": "poet:குடவாயிற் கீரத்தனார்",
+   "label": "குடவாயிற் கீரத்தனார்",
    "type": "poet",
    "weight": 14
   },
@@ -245,18 +332,6 @@
    "label": "பெருங்குன்றூர் கிழார்",
    "type": "poet",
    "weight": 12
-  },
-  {
-   "id": "poet:நக்கீரர்",
-   "label": "நக்கீரர்",
-   "type": "poet",
-   "weight": 12
-  },
-  {
-   "id": "poet:குடவாயிற் கீரத்தனார்",
-   "label": "குடவாயிற் கீரத்தனார்",
-   "type": "poet",
-   "weight": 11
   },
   {
    "id": "poet:அரிசில் கிழார்",
@@ -301,175 +376,1251 @@
    "weight": 10
   },
   {
+   "id": "poet:கல்லாடனார்",
+   "label": "கல்லாடனார்",
+   "type": "poet",
+   "weight": 9
+  },
+  {
    "id": "poet:ஔவையார்",
    "label": "ஔவையார்",
    "type": "poet",
    "weight": 9
   },
   {
-   "id": "poet:கல்லாடனார்",
-   "label": "கல்லாடனார்",
-   "type": "poet",
-   "weight": 7
-  },
-  {
-   "id": "poet:வெள்ளிவீதியார்",
-   "label": "வெள்ளிவீதியார்",
-   "type": "poet",
-   "weight": 7
-  },
-  {
    "id": "poet:நக்கீரனார்",
    "label": "நக்கீரனார்",
    "type": "poet",
-   "weight": 7
-  },
-  {
-   "id": "poet:ஆலம்பேரி சாத்தனார்",
-   "label": "ஆலம்பேரி சாத்தனார்",
-   "type": "poet",
-   "weight": 6
-  },
-  {
-   "id": "poet:ஆலங்குடி வங்கனார்",
-   "label": "ஆலங்குடி வங்கனார்",
-   "type": "poet",
-   "weight": 6
+   "weight": 9
   },
   {
    "id": "poet:இடைக்காடனார்",
    "label": "இடைக்காடனார்",
    "type": "poet",
-   "weight": 6
+   "weight": 9
   },
   {
-   "id": "poet:கச்சிப்பேட்டு நன்னாகையார்",
-   "label": "கச்சிப்பேட்டு நன்னாகையார்",
+   "id": "poet:வெள்ளிவீதியார்",
+   "label": "வெள்ளிவீதியார்",
    "type": "poet",
-   "weight": 6
-  },
-  {
-   "id": "poet:பேரி சாத்தனார்",
-   "label": "பேரி சாத்தனார்",
-   "type": "poet",
-   "weight": 6
-  },
-  {
-   "id": "poet:சிறைக்குடி ஆந்தையார்",
-   "label": "சிறைக்குடி ஆந்தையார்",
-   "type": "poet",
-   "weight": 5
-  },
-  {
-   "id": "poet:ஒக்கூர் மாசாத்தியார்",
-   "label": "ஒக்கூர் மாசாத்தியார்",
-   "type": "poet",
-   "weight": 5
-  },
-  {
-   "id": "poet:வெள்ளி வீதியார்",
-   "label": "வெள்ளி வீதியார்",
-   "type": "poet",
-   "weight": 5
-  },
-  {
-   "id": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
-   "label": "மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
-   "type": "poet",
-   "weight": 4
-  },
-  {
-   "id": "poet:சீத்தலைச் சாத்தனார்",
-   "label": "சீத்தலைச் சாத்தனார்",
-   "type": "poet",
-   "weight": 4
+   "weight": 8
   },
   {
    "id": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
    "label": "மதுரை அறுவை வாணிகன் இளவேட்டனார்",
    "type": "poet",
-   "weight": 4
+   "weight": 7
   },
   {
-   "id": "poet:இளங்கீரனார்",
-   "label": "இளங்கீரனார்",
+   "id": "poet:ஒக்கூர் மாசாத்தியார்",
+   "label": "ஒக்கூர் மாசாத்தியார்",
    "type": "poet",
-   "weight": 4
+   "weight": 7
   },
   {
-   "id": "poet:நல்லந்துவனார்",
-   "label": "நல்லந்துவனார்",
+   "id": "poet:எயினந்தை மகனார் இளங்கீரனார்",
+   "label": "எயினந்தை மகனார் இளங்கீரனார்",
    "type": "poet",
-   "weight": 4
+   "weight": 6
   },
   {
-   "id": "poet:ஒரோடோ கத்துக் கந்தரத்தனார்",
-   "label": "ஒரோடோ கத்துக் கந்தரத்தனார்",
-   "type": "poet",
-   "weight": 3
+   "id": "artifact:transport-yāṉai",
+   "label": "யானை · elephant",
+   "type": "artifact",
+   "category": "transport",
+   "weight": 361,
+   "roman": "yāṉai"
+  },
+  {
+   "id": "artifact:ornament-maṇi",
+   "label": "மணி · gem / bead",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 304,
+   "roman": "maṇi"
+  },
+  {
+   "id": "artifact:transport-tēr",
+   "label": "தேர் · chariot",
+   "type": "artifact",
+   "category": "transport",
+   "weight": 258,
+   "roman": "tēr"
+  },
+  {
+   "id": "artifact:ornament-mālai",
+   "label": "மாலை · garland / necklace",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 237,
+   "roman": "mālai"
+  },
+  {
+   "id": "artifact:ornament-poṉ",
+   "label": "பொன் · gold",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 233,
+   "roman": "poṉ"
+  },
+  {
+   "id": "artifact:ornament-vaḷai",
+   "label": "வளை · bangle",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 220,
+   "roman": "vaḷai"
+  },
+  {
+   "id": "artifact:ornament-toṭi",
+   "label": "தொடி · bangle",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 154,
+   "roman": "toṭi"
+  },
+  {
+   "id": "artifact:weapon-vāḷ",
+   "label": "வாள் · sword",
+   "type": "artifact",
+   "category": "weapon",
+   "weight": 143,
+   "roman": "vāḷ"
+  },
+  {
+   "id": "artifact:weapon-vil",
+   "label": "வில் · bow",
+   "type": "artifact",
+   "category": "weapon",
+   "weight": 131,
+   "roman": "vil"
+  },
+  {
+   "id": "artifact:weapon-vēl",
+   "label": "வேல் · spear",
+   "type": "artifact",
+   "category": "weapon",
+   "weight": 124,
+   "roman": "vēl"
+  },
+  {
+   "id": "artifact:weapon-paṭai",
+   "label": "படை · army / weapon",
+   "type": "artifact",
+   "category": "weapon",
+   "weight": 104,
+   "roman": "paṭai"
+  },
+  {
+   "id": "artifact:ornament-kuḻai",
+   "label": "குழை · ear ornament",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 92,
+   "roman": "kuḻai"
+  },
+  {
+   "id": "artifact:music-paṟai",
+   "label": "பறை · hand drum",
+   "type": "artifact",
+   "category": "music",
+   "weight": 90,
+   "roman": "paṟai"
+  },
+  {
+   "id": "artifact:weapon-kaṇai",
+   "label": "கணை · arrow",
+   "type": "artifact",
+   "category": "weapon",
+   "weight": 79,
+   "roman": "kaṇai"
+  },
+  {
+   "id": "artifact:textile-nūl",
+   "label": "நூல் · thread / text",
+   "type": "artifact",
+   "category": "textile",
+   "weight": 74,
+   "roman": "nūl"
+  },
+  {
+   "id": "artifact:writing-nūl",
+   "label": "நூல் · book / thread",
+   "type": "artifact",
+   "category": "writing",
+   "weight": 74,
+   "roman": "nūl"
+  },
+  {
+   "id": "artifact:tool-uḻu",
+   "label": "உழு · plough / till",
+   "type": "artifact",
+   "category": "tool",
+   "weight": 62,
+   "roman": "uḻu"
+  },
+  {
+   "id": "artifact:vessel-kalam",
+   "label": "கலம் · vessel",
+   "type": "artifact",
+   "category": "vessel",
+   "weight": 50,
+   "roman": "kalam"
+  },
+  {
+   "id": "artifact:ornament-tōṭu",
+   "label": "தோடு · earring",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 47,
+   "roman": "tōṭu"
+  },
+  {
+   "id": "artifact:music-yāḻ",
+   "label": "யாழ் · harp",
+   "type": "artifact",
+   "category": "music",
+   "weight": 42,
+   "roman": "yāḻ"
+  },
+  {
+   "id": "artifact:music-muracu",
+   "label": "முரசு · royal war drum",
+   "type": "artifact",
+   "category": "music",
+   "weight": 40,
+   "roman": "muracu"
+  },
+  {
+   "id": "artifact:vessel-pāṇi",
+   "label": "பாணி · bowl / vessel",
+   "type": "artifact",
+   "category": "vessel",
+   "weight": 39,
+   "roman": "pāṇi"
+  },
+  {
+   "id": "artifact:ornament-āram",
+   "label": "ஆரம் · necklace",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 38,
+   "roman": "āram"
+  },
+  {
+   "id": "artifact:weapon-eḥku",
+   "label": "எஃகு · steel / sharp weapon",
+   "type": "artifact",
+   "category": "weapon",
+   "weight": 30,
+   "roman": "eḥku"
+  },
+  {
+   "id": "artifact:transport-kutirai",
+   "label": "குதிரை · horse",
+   "type": "artifact",
+   "category": "transport",
+   "weight": 29,
+   "roman": "kutirai"
+  },
+  {
+   "id": "artifact:vessel-kuṭam",
+   "label": "குடம் · pot",
+   "type": "artifact",
+   "category": "vessel",
+   "weight": 27,
+   "roman": "kuṭam"
+  },
+  {
+   "id": "artifact:music-taṇṇumai",
+   "label": "தண்ணுமை · barrel drum",
+   "type": "artifact",
+   "category": "music",
+   "weight": 25,
+   "roman": "taṇṇumai"
+  },
+  {
+   "id": "artifact:ornament-muttu",
+   "label": "முத்து · pearl",
+   "type": "artifact",
+   "category": "ornament",
+   "weight": 25,
+   "roman": "muttu"
+  },
+  {
+   "id": "artifact:weapon-ampu",
+   "label": "அம்பு · arrow",
+   "type": "artifact",
+   "category": "weapon",
+   "weight": 25,
+   "roman": "ampu"
+  },
+  {
+   "id": "artifact:textile-paṭṭu",
+   "label": "பட்டு · silk",
+   "type": "artifact",
+   "category": "textile",
+   "weight": 24,
+   "roman": "paṭṭu"
+  },
+  {
+   "id": "artifact:ritual-teyvam",
+   "label": "தெய்வம் · deity",
+   "type": "artifact",
+   "category": "ritual",
+   "weight": 23,
+   "roman": "teyvam"
+  },
+  {
+   "id": "artifact:music-kuḻal",
+   "label": "குழல் · flute",
+   "type": "artifact",
+   "category": "music",
+   "weight": 22,
+   "roman": "kuḻal"
+  },
+  {
+   "id": "artifact:textile-tukil",
+   "label": "துகில் · fine cloth",
+   "type": "artifact",
+   "category": "textile",
+   "weight": 22,
+   "roman": "tukil"
+  },
+  {
+   "id": "artifact:textile-kaliṅkam",
+   "label": "கலிங்கம் · cloth",
+   "type": "artifact",
+   "category": "textile",
+   "weight": 18,
+   "roman": "kaliṅkam"
+  },
+  {
+   "id": "artifact:ritual-naṭukal",
+   "label": "நடுகல் · hero stone",
+   "type": "artifact",
+   "category": "ritual",
+   "weight": 16,
+   "roman": "naṭukal"
+  },
+  {
+   "id": "artifact:ritual-vēḷvi",
+   "label": "வேள்வி · sacrifice / offering",
+   "type": "artifact",
+   "category": "ritual",
+   "weight": 16,
+   "roman": "vēḷvi"
+  },
+  {
+   "id": "artifact:vessel-cāṭi",
+   "label": "சாடி · jar",
+   "type": "artifact",
+   "category": "vessel",
+   "weight": 16,
+   "roman": "cāṭi"
+  },
+  {
+   "id": "artifact:transport-nāvāy",
+   "label": "நாவாய் · ship",
+   "type": "artifact",
+   "category": "transport",
+   "weight": 11,
+   "roman": "nāvāy"
+  },
+  {
+   "id": "artifact:vessel-tāḻi",
+   "label": "தாழி · large jar",
+   "type": "artifact",
+   "category": "vessel",
+   "weight": 11,
+   "roman": "tāḻi"
+  },
+  {
+   "id": "artifact:writing-ōlai",
+   "label": "ஓலை · palm leaf",
+   "type": "artifact",
+   "category": "writing",
+   "weight": 11,
+   "roman": "ōlai"
+  },
+  {
+   "id": "artifact:textile-āṭai",
+   "label": "ஆடை · garment",
+   "type": "artifact",
+   "category": "textile",
+   "weight": 10,
+   "roman": "āṭai"
+  },
+  {
+   "id": "artifact:ritual-kōṭṭam",
+   "label": "கோட்டம் · shrine",
+   "type": "artifact",
+   "category": "ritual",
+   "weight": 8,
+   "roman": "kōṭṭam"
+  },
+  {
+   "id": "artifact:writing-ceyyuḷ",
+   "label": "செய்யுள் · poem",
+   "type": "artifact",
+   "category": "writing",
+   "weight": 5,
+   "roman": "ceyyuḷ"
+  },
+  {
+   "id": "artifact:tool-kalappai",
+   "label": "கலப்பை · plough",
+   "type": "artifact",
+   "category": "tool",
+   "weight": 4,
+   "roman": "kalappai"
+  },
+  {
+   "id": "artifact:writing-eḻuttu",
+   "label": "எழுத்து · writing / letter",
+   "type": "artifact",
+   "category": "writing",
+   "weight": 4,
+   "roman": "eḻuttu"
+  },
+  {
+   "id": "entity:emotion-kātal",
+   "label": "காதல் · love",
+   "type": "entity",
+   "category": "emotion",
+   "weight": 61,
+   "roman": "kātal"
+  },
+  {
+   "id": "entity:emotion-aṉpu",
+   "label": "அன்பு · affection",
+   "type": "entity",
+   "category": "emotion",
+   "weight": 60,
+   "roman": "aṉpu"
+  },
+  {
+   "id": "entity:emotion-tuyar",
+   "label": "துயர் · sorrow",
+   "type": "entity",
+   "category": "emotion",
+   "weight": 53,
+   "roman": "tuyar"
+  },
+  {
+   "id": "entity:emotion-aṟam",
+   "label": "அறம் · virtue",
+   "type": "entity",
+   "category": "emotion",
+   "weight": 51,
+   "roman": "aṟam"
+  },
+  {
+   "id": "entity:emotion-pirivu",
+   "label": "பிரிவு · separation",
+   "type": "entity",
+   "category": "emotion",
+   "weight": 21,
+   "roman": "pirivu"
+  },
+  {
+   "id": "entity:emotion-ūṭal",
+   "label": "ஊடல் · lovers' quarrel",
+   "type": "entity",
+   "category": "emotion",
+   "weight": 5,
+   "roman": "ūṭal"
+  },
+  {
+   "id": "entity:emotion-makiḻcci",
+   "label": "மகிழ்ச்சி · joy",
+   "type": "entity",
+   "category": "emotion",
+   "weight": 4,
+   "roman": "makiḻcci"
+  },
+  {
+   "id": "entity:fauna-yāṉai",
+   "label": "யானை · elephant",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 361,
+   "roman": "yāṉai"
+  },
+  {
+   "id": "entity:fauna-āṭu",
+   "label": "ஆடு · goat",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 209,
+   "roman": "āṭu"
+  },
+  {
+   "id": "entity:fauna-puli",
+   "label": "புலி · tiger",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 133,
+   "roman": "puli"
+  },
+  {
+   "id": "entity:fauna-māṉ",
+   "label": "மான் · deer",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 128,
+   "roman": "māṉ"
+  },
+  {
+   "id": "entity:fauna-vaṇṭu",
+   "label": "வண்டு · beetle / bee",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 123,
+   "roman": "vaṇṭu"
+  },
+  {
+   "id": "entity:fauna-pacu",
+   "label": "பசு · cow",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 122,
+   "roman": "pacu"
+  },
+  {
+   "id": "entity:fauna-mīṉ",
+   "label": "மீன் · fish",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 107,
+   "roman": "mīṉ"
+  },
+  {
+   "id": "entity:fauna-mayil",
+   "label": "மயில் · peacock",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 51,
+   "roman": "mayil"
+  },
+  {
+   "id": "entity:fauna-pāmpu",
+   "label": "பாம்பு · snake",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 40,
+   "roman": "pāmpu"
+  },
+  {
+   "id": "entity:fauna-kākkai",
+   "label": "காக்கை · crow",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 38,
+   "roman": "kākkai"
+  },
+  {
+   "id": "entity:fauna-kutirai",
+   "label": "குதிரை · horse",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 29,
+   "roman": "kutirai"
+  },
+  {
+   "id": "entity:fauna-paruntu",
+   "label": "பருந்து · kite / eagle",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 25,
+   "roman": "paruntu"
+  },
+  {
+   "id": "entity:fauna-kuyil",
+   "label": "குயில் · koel",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 24,
+   "roman": "kuyil"
+  },
+  {
+   "id": "entity:fauna-kayal",
+   "label": "கயல் · carp",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 16,
+   "roman": "kayal"
+  },
+  {
+   "id": "entity:fauna-nākam",
+   "label": "நாகம் · cobra",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 12,
+   "roman": "nākam"
+  },
+  {
+   "id": "entity:fauna-āntai",
+   "label": "ஆந்தை · owl",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 8,
+   "roman": "āntai"
+  },
+  {
+   "id": "entity:fauna-erutu",
+   "label": "எருது · bull",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 6,
+   "roman": "erutu"
+  },
+  {
+   "id": "entity:fauna-kuraṅku",
+   "label": "குரங்கு · monkey",
+   "type": "entity",
+   "category": "fauna",
+   "weight": 4,
+   "roman": "kuraṅku"
+  },
+  {
+   "id": "entity:flora-vēṅkai",
+   "label": "வேங்கை · Indian kino",
+   "type": "entity",
+   "category": "flora",
+   "weight": 137,
+   "roman": "vēṅkai"
+  },
+  {
+   "id": "entity:flora-mullai",
+   "label": "முல்லை · jasmine",
+   "type": "entity",
+   "category": "flora",
+   "weight": 110,
+   "roman": "mullai"
+  },
+  {
+   "id": "entity:flora-puṉṉai",
+   "label": "புன்னை · punnai tree",
+   "type": "entity",
+   "category": "flora",
+   "weight": 94,
+   "roman": "puṉṉai"
+  },
+  {
+   "id": "entity:flora-kuvaḷai",
+   "label": "குவளை · blue water lily",
+   "type": "entity",
+   "category": "flora",
+   "weight": 85,
+   "roman": "kuvaḷai"
+  },
+  {
+   "id": "entity:flora-neytal",
+   "label": "நெய்தல் · water lily",
+   "type": "entity",
+   "category": "flora",
+   "weight": 85,
+   "roman": "neytal"
+  },
+  {
+   "id": "entity:flora-tāmarai",
+   "label": "தாமரை · lotus",
+   "type": "entity",
+   "category": "flora",
+   "weight": 71,
+   "roman": "tāmarai"
+  },
+  {
+   "id": "entity:flora-āmpal",
+   "label": "ஆம்பல் · water lily",
+   "type": "entity",
+   "category": "flora",
+   "weight": 59,
+   "roman": "āmpal"
+  },
+  {
+   "id": "entity:flora-kāntaḷ",
+   "label": "காந்தள் · flame lily",
+   "type": "entity",
+   "category": "flora",
+   "weight": 55,
+   "roman": "kāntaḷ"
+  },
+  {
+   "id": "entity:flora-koṉṟai",
+   "label": "கொன்றை · Indian laburnum",
+   "type": "entity",
+   "category": "flora",
+   "weight": 43,
+   "roman": "koṉṟai"
+  },
+  {
+   "id": "entity:flora-paṉai",
+   "label": "பனை · palmyra palm",
+   "type": "entity",
+   "category": "flora",
+   "weight": 30,
+   "roman": "paṉai"
+  },
+  {
+   "id": "entity:flora-kāyā",
+   "label": "காயா · kaya tree",
+   "type": "entity",
+   "category": "flora",
+   "weight": 22,
+   "roman": "kāyā"
+  },
+  {
+   "id": "entity:flora-kuṟiñci",
+   "label": "குறிஞ்சி · kurinji flower",
+   "type": "entity",
+   "category": "flora",
+   "weight": 18,
+   "roman": "kuṟiñci"
+  },
+  {
+   "id": "entity:flora-pātiri",
+   "label": "பாதிரி · trumpet-flower tree",
+   "type": "entity",
+   "category": "flora",
+   "weight": 16,
+   "roman": "pātiri"
+  },
+  {
+   "id": "entity:flora-kaṭampu",
+   "label": "கடம்பு · kadamba",
+   "type": "entity",
+   "category": "flora",
+   "weight": 11,
+   "roman": "kaṭampu"
+  },
+  {
+   "id": "entity:flora-mūṅkil",
+   "label": "மூங்கில் · bamboo",
+   "type": "entity",
+   "category": "flora",
+   "weight": 9,
+   "roman": "mūṅkil"
+  },
+  {
+   "id": "entity:flora-vēmpu",
+   "label": "வேம்பு · neem",
+   "type": "entity",
+   "category": "flora",
+   "weight": 7,
+   "roman": "vēmpu"
+  },
+  {
+   "id": "entity:flora-āl",
+   "label": "ஆல் · banyan",
+   "type": "entity",
+   "category": "flora",
+   "weight": 6,
+   "roman": "āl"
+  },
+  {
+   "id": "entity:flora-piṭavam",
+   "label": "பிடவம் · forest creeper",
+   "type": "entity",
+   "category": "flora",
+   "weight": 4,
+   "roman": "piṭavam"
+  },
+  {
+   "id": "entity:flora-marutu",
+   "label": "மருது · maruthu tree",
+   "type": "entity",
+   "category": "flora",
+   "weight": 4,
+   "roman": "marutu"
+  },
+  {
+   "id": "entity:flora-kōṅku",
+   "label": "கோங்கு · silk-cotton tree",
+   "type": "entity",
+   "category": "flora",
+   "weight": 3,
+   "roman": "kōṅku"
+  },
+  {
+   "id": "entity:food-kaḷ",
+   "label": "கள் · toddy",
+   "type": "entity",
+   "category": "food",
+   "weight": 163,
+   "roman": "kaḷ"
+  },
+  {
+   "id": "entity:food-pāl",
+   "label": "பால் · milk",
+   "type": "entity",
+   "category": "food",
+   "weight": 87,
+   "roman": "pāl"
+  },
+  {
+   "id": "entity:food-paḻam",
+   "label": "பழம் · fruit",
+   "type": "entity",
+   "category": "food",
+   "weight": 51,
+   "roman": "paḻam"
+  },
+  {
+   "id": "entity:food-kaṉi",
+   "label": "கனி · ripe fruit",
+   "type": "entity",
+   "category": "food",
+   "weight": 49,
+   "roman": "kaṉi"
+  },
+  {
+   "id": "entity:food-tēṉ",
+   "label": "தேன் · honey",
+   "type": "entity",
+   "category": "food",
+   "weight": 44,
+   "roman": "tēṉ"
+  },
+  {
+   "id": "entity:food-cōṟu",
+   "label": "சோறு · cooked rice",
+   "type": "entity",
+   "category": "food",
+   "weight": 32,
+   "roman": "cōṟu"
+  },
+  {
+   "id": "entity:food-arici",
+   "label": "அரிசி · rice",
+   "type": "entity",
+   "category": "food",
+   "weight": 16,
+   "roman": "arici"
+  },
+  {
+   "id": "entity:food-aval",
+   "label": "அவல் · flattened rice",
+   "type": "entity",
+   "category": "food",
+   "weight": 14,
+   "roman": "aval"
+  },
+  {
+   "id": "entity:food-tayir",
+   "label": "தயிர் · curd",
+   "type": "entity",
+   "category": "food",
+   "weight": 9,
+   "roman": "tayir"
+  },
+  {
+   "id": "entity:food-kūḻ",
+   "label": "கூழ் · gruel",
+   "type": "entity",
+   "category": "food",
+   "weight": 8,
+   "roman": "kūḻ"
+  },
+  {
+   "id": "entity:food-kiḻaṅku",
+   "label": "கிழங்கு · tuber",
+   "type": "entity",
+   "category": "food",
+   "weight": 7,
+   "roman": "kiḻaṅku"
+  },
+  {
+   "id": "entity:food-veṇṇey",
+   "label": "வெண்ணெய் · butter",
+   "type": "entity",
+   "category": "food",
+   "weight": 6,
+   "roman": "veṇṇey"
+  },
+  {
+   "id": "entity:kinship-tōḻi",
+   "label": "தோழி · friend",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 497,
+   "roman": "tōḻi"
+  },
+  {
+   "id": "entity:kinship-tantai",
+   "label": "தந்தை · father",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 69,
+   "roman": "tantai"
+  },
+  {
+   "id": "entity:kinship-makaḷ",
+   "label": "மகள் · daughter",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 56,
+   "roman": "makaḷ"
+  },
+  {
+   "id": "entity:kinship-makaṉ",
+   "label": "மகன் · son",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 54,
+   "roman": "makaṉ"
+  },
+  {
+   "id": "entity:kinship-tāy",
+   "label": "தாய் · mother",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 34,
+   "roman": "tāy"
+  },
+  {
+   "id": "entity:kinship-attai",
+   "label": "அத்தை · aunt",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 24,
+   "roman": "attai"
+  },
+  {
+   "id": "entity:kinship-kaṇavaṉ",
+   "label": "கணவன் · husband",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 14,
+   "roman": "kaṇavaṉ"
+  },
+  {
+   "id": "entity:kinship-cuṟṟam",
+   "label": "சுற்றம் · kin",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 12,
+   "roman": "cuṟṟam"
+  },
+  {
+   "id": "entity:kinship-talaivaṉ",
+   "label": "தலைவன் · hero",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 8,
+   "roman": "talaivaṉ"
+  },
+  {
+   "id": "entity:kinship-maṉaivi",
+   "label": "மனைவி · wife",
+   "type": "entity",
+   "category": "kinship",
+   "weight": 6,
+   "roman": "maṉaivi"
+  },
+  {
+   "id": "entity:motif-malai",
+   "label": "மலை · mountain",
+   "type": "entity",
+   "category": "motif",
+   "weight": 404,
+   "roman": "malai"
+  },
+  {
+   "id": "entity:motif-maḻai",
+   "label": "மழை · rain",
+   "type": "entity",
+   "category": "motif",
+   "weight": 291,
+   "roman": "maḻai"
+  },
+  {
+   "id": "entity:motif-mālai",
+   "label": "மாலை · evening",
+   "type": "entity",
+   "category": "motif",
+   "weight": 237,
+   "roman": "mālai"
+  },
+  {
+   "id": "entity:motif-kaṭal",
+   "label": "கடல் · sea",
+   "type": "entity",
+   "category": "motif",
+   "weight": 187,
+   "roman": "kaṭal"
+  },
+  {
+   "id": "entity:motif-kār",
+   "label": "கார் · rainy season",
+   "type": "entity",
+   "category": "motif",
+   "weight": 117,
+   "roman": "kār"
+  },
+  {
+   "id": "entity:motif-pakal",
+   "label": "பகல் · day",
+   "type": "entity",
+   "category": "motif",
+   "weight": 84,
+   "roman": "pakal"
+  },
+  {
+   "id": "entity:motif-kāṭu",
+   "label": "காடு · forest",
+   "type": "entity",
+   "category": "motif",
+   "weight": 75,
+   "roman": "kāṭu"
+  },
+  {
+   "id": "entity:motif-iravu",
+   "label": "இரவு · night",
+   "type": "entity",
+   "category": "motif",
+   "weight": 52,
+   "roman": "iravu"
+  },
+  {
+   "id": "entity:motif-pālai",
+   "label": "பாலை · wasteland",
+   "type": "entity",
+   "category": "motif",
+   "weight": 48,
+   "roman": "pālai"
+  },
+  {
+   "id": "entity:motif-veyil",
+   "label": "வெயில் · sunshine",
+   "type": "entity",
+   "category": "motif",
+   "weight": 43,
+   "roman": "veyil"
+  },
+  {
+   "id": "entity:motif-vayal",
+   "label": "வயல் · paddy field",
+   "type": "entity",
+   "category": "motif",
+   "weight": 33,
+   "roman": "vayal"
+  },
+  {
+   "id": "entity:motif-nilā",
+   "label": "நிலா · moon",
+   "type": "entity",
+   "category": "motif",
+   "weight": 15,
+   "roman": "nilā"
+  },
+  {
+   "id": "entity:motif-kūtir",
+   "label": "கூதிர் · cold season",
+   "type": "entity",
+   "category": "motif",
+   "weight": 13,
+   "roman": "kūtir"
+  },
+  {
+   "id": "entity:occupation-pāṇar",
+   "label": "பாணர் · bards",
+   "type": "entity",
+   "category": "occupation",
+   "weight": 41,
+   "roman": "pāṇar"
+  },
+  {
+   "id": "entity:occupation-uḻavar",
+   "label": "உழவர் · farmer",
+   "type": "entity",
+   "category": "occupation",
+   "weight": 32,
+   "roman": "uḻavar"
+  },
+  {
+   "id": "entity:occupation-kuṟavar",
+   "label": "குறவர் · hill people",
+   "type": "entity",
+   "category": "occupation",
+   "weight": 30,
+   "roman": "kuṟavar"
+  },
+  {
+   "id": "entity:occupation-pulavar",
+   "label": "புலவர் · poet",
+   "type": "entity",
+   "category": "occupation",
+   "weight": 30,
+   "roman": "pulavar"
+  },
+  {
+   "id": "entity:occupation-āyar",
+   "label": "ஆயர் · cowherd",
+   "type": "entity",
+   "category": "occupation",
+   "weight": 24,
+   "roman": "āyar"
+  },
+  {
+   "id": "entity:occupation-viṟaliyar",
+   "label": "விறலியர் · women performers",
+   "type": "entity",
+   "category": "occupation",
+   "weight": 23,
+   "roman": "viṟaliyar"
+  },
+  {
+   "id": "entity:occupation-yavanar",
+   "label": "யவனர் · Yavana / western traders",
+   "type": "entity",
+   "category": "occupation",
+   "weight": 5,
+   "roman": "yavanar"
+  },
+  {
+   "id": "entity:place-cēra",
+   "label": "சேர · Chera",
+   "type": "entity",
+   "category": "place",
+   "weight": 409,
+   "roman": "cēra"
+  },
+  {
+   "id": "entity:place-maturai",
+   "label": "மதுரை · Madurai",
+   "type": "entity",
+   "category": "place",
+   "weight": 132,
+   "roman": "maturai"
+  },
+  {
+   "id": "entity:place-kāviri",
+   "label": "காவிரி · Kaveri",
+   "type": "entity",
+   "category": "place",
+   "weight": 45,
+   "roman": "kāviri"
+  },
+  {
+   "id": "entity:place-cōḻa",
+   "label": "சோழ · Chola",
+   "type": "entity",
+   "category": "place",
+   "weight": 30,
+   "roman": "cōḻa"
+  },
+  {
+   "id": "entity:place-vañci",
+   "label": "வஞ்சி · Vanji",
+   "type": "entity",
+   "category": "place",
+   "weight": 29,
+   "roman": "vañci"
+  },
+  {
+   "id": "entity:place-vaiyai",
+   "label": "வையை · Vaigai",
+   "type": "entity",
+   "category": "place",
+   "weight": 20,
+   "roman": "vaiyai"
+  },
+  {
+   "id": "entity:place-kūṭal",
+   "label": "கூடல் · Koodal / Madurai",
+   "type": "entity",
+   "category": "place",
+   "weight": 17,
+   "roman": "kūṭal"
+  },
+  {
+   "id": "entity:place-pāṇṭiya",
+   "label": "பாண்டிய · Pandya",
+   "type": "entity",
+   "category": "place",
+   "weight": 16,
+   "roman": "pāṇṭiya"
+  },
+  {
+   "id": "entity:place-paṟampu",
+   "label": "பறம்பு · Parambu",
+   "type": "entity",
+   "category": "place",
+   "weight": 4,
+   "roman": "paṟampu"
+  },
+  {
+   "id": "entity:place-muciṟi",
+   "label": "முசிறி · Muziris",
+   "type": "entity",
+   "category": "place",
+   "weight": 3,
+   "roman": "muciṟi"
   },
   {
    "id": "karu:kurinji:வேங்கை",
    "label": "வேங்கை · Venkai (Indian Kino)",
    "type": "karu",
    "cat": "flora",
-   "weight": 61
+   "weight": 77
   },
   {
    "id": "karu:kurinji:குறவர்",
    "label": "குறவர் · Kuravar",
    "type": "karu",
    "cat": "people",
-   "weight": 17
+   "weight": 20
   },
   {
    "id": "karu:kurinji:அருவி",
    "label": "அருவி · Waterfall",
    "type": "karu",
    "cat": "landscape",
-   "weight": 71
+   "weight": 85
   },
   {
    "id": "karu:kurinji:வேலன்",
    "label": "வேலன் · Velan",
    "type": "karu",
    "cat": "people",
-   "weight": 15
+   "weight": 17
   },
   {
    "id": "karu:kurinji:மயில்",
    "label": "மயில் · Peacock",
    "type": "karu",
    "cat": "fauna",
-   "weight": 17
+   "weight": 21
   },
   {
    "id": "karu:kurinji:காந்தள்",
    "label": "காந்தள் · Kantal (Gloriosa Lily)",
    "type": "karu",
    "cat": "flora",
-   "weight": 36
+   "weight": 40
   },
   {
    "id": "karu:kurinji:சிலம்பு",
    "label": "சிலம்பு · Hill Stream",
    "type": "karu",
    "cat": "landscape",
-   "weight": 10
+   "weight": 11
   },
   {
    "id": "karu:kurinji:மான்",
    "label": "மான் · Spotted Deer",
    "type": "karu",
    "cat": "fauna",
-   "weight": 29
+   "weight": 34
   },
   {
    "id": "karu:kurinji:யானை",
    "label": "யானை · Elephant",
    "type": "karu",
    "cat": "fauna",
-   "weight": 53
+   "weight": 68
   },
   {
    "id": "karu:kurinji:முருகன்",
@@ -483,42 +1634,42 @@
    "label": "குறிஞ்சி · Kurinji (Strobilanthes)",
    "type": "karu",
    "cat": "flora",
-   "weight": 7
+   "weight": 8
   },
   {
    "id": "karu:kurinji:மூங்கில்",
    "label": "மூங்கில் · Bamboo",
    "type": "karu",
    "cat": "flora",
-   "weight": 3
+   "weight": 4
   },
   {
    "id": "karu:kurinji:குரங்கு",
    "label": "குரங்கு · Monkey",
    "type": "karu",
    "cat": "fauna",
-   "weight": 1
+   "weight": 2
   },
   {
    "id": "karu:mullai:முல்லை",
    "label": "முல்லை · Mullai (Jasmine)",
    "type": "karu",
    "cat": "flora",
-   "weight": 56
+   "weight": 66
   },
   {
    "id": "karu:mullai:கொன்றை",
    "label": "கொன்றை · Konrai (Indian Laburnum)",
    "type": "karu",
    "cat": "flora",
-   "weight": 26
+   "weight": 27
   },
   {
    "id": "karu:mullai:முயல்",
    "label": "முயல் · Hare",
    "type": "karu",
    "cat": "fauna",
-   "weight": 2
+   "weight": 4
   },
   {
    "id": "karu:mullai:பிடவம்",
@@ -567,42 +1718,63 @@
    "label": "உழவர் · Uzhavar",
    "type": "karu",
    "cat": "people",
-   "weight": 2
+   "weight": 6
   },
   {
    "id": "karu:marutam:நாரை",
    "label": "நாரை · Painted Stork",
    "type": "karu",
    "cat": "fauna",
-   "weight": 4
+   "weight": 5
   },
   {
    "id": "karu:marutam:ஆம்பல்",
    "label": "ஆம்பல் · White Water Lily",
    "type": "karu",
    "cat": "flora",
-   "weight": 27
+   "weight": 32
   },
   {
    "id": "karu:marutam:வயல்",
    "label": "வயல் · Paddy Field",
    "type": "karu",
    "cat": "landscape",
-   "weight": 6
+   "weight": 12
   },
   {
    "id": "karu:marutam:மருதம்",
    "label": "மருதம் · Marutam (Arjuna Tree)",
    "type": "karu",
    "cat": "flora",
-   "weight": 4
+   "weight": 5
   },
   {
    "id": "karu:marutam:எருமை",
    "label": "எருமை · Water Buffalo",
    "type": "karu",
    "cat": "fauna",
-   "weight": 18
+   "weight": 20
+  },
+  {
+   "id": "karu:marutam:ஆறு",
+   "label": "ஆறு · River",
+   "type": "karu",
+   "cat": "landscape",
+   "weight": 2
+  },
+  {
+   "id": "karu:marutam:கொக்கு",
+   "label": "கொக்கு · Grey Heron",
+   "type": "karu",
+   "cat": "fauna",
+   "weight": 1
+  },
+  {
+   "id": "karu:marutam:குளம்",
+   "label": "குளம் · Tank / Pond",
+   "type": "karu",
+   "cat": "landscape",
+   "weight": 1
   },
   {
    "id": "karu:marutam:வாழை",
@@ -616,21 +1788,21 @@
    "label": "நெய்தல் · Neytal (Blue Water Lily)",
    "type": "karu",
    "cat": "flora",
-   "weight": 46
+   "weight": 50
   },
   {
    "id": "karu:neytal:புன்னை",
    "label": "புன்னை · Punnai (Alexandrian Laurel)",
    "type": "karu",
    "cat": "flora",
-   "weight": 69
+   "weight": 75
   },
   {
    "id": "karu:neytal:நாரை",
    "label": "நாரை · Egret / Sea Heron",
    "type": "karu",
    "cat": "fauna",
-   "weight": 30
+   "weight": 32
   },
   {
    "id": "karu:neytal:பரதவர்",
@@ -644,21 +1816,21 @@
    "label": "தாழை · Thadavalam / Thaazhai (Screw Pine)",
    "type": "karu",
    "cat": "flora",
-   "weight": 25
+   "weight": 30
   },
   {
    "id": "karu:neytal:சுரம்",
    "label": "சுரம் · Coastal Scrub",
    "type": "karu",
    "cat": "flora",
-   "weight": 6
+   "weight": 8
   },
   {
    "id": "karu:neytal:சுறா",
    "label": "சுறா · Shark",
    "type": "karu",
    "cat": "fauna",
-   "weight": 16
+   "weight": 18
   },
   {
    "id": "karu:neytal:கண்டல்",
@@ -672,7 +1844,7 @@
    "label": "சுரம் · Desolate Road / Wild Path",
    "type": "karu",
    "cat": "landscape",
-   "weight": 77
+   "weight": 106
   },
   {
    "id": "karu:palai:கழுகு",
@@ -686,42 +1858,42 @@
    "label": "காக்கை · Crow",
    "type": "karu",
    "cat": "fauna",
-   "weight": 4
+   "weight": 7
   },
   {
    "id": "karu:palai:புலி",
    "label": "புலி · Tiger",
    "type": "karu",
    "cat": "fauna",
-   "weight": 32
+   "weight": 46
   },
   {
    "id": "karu:palai:மறவர்",
    "label": "மறவர் · Maravar",
    "type": "karu",
    "cat": "people",
-   "weight": 23
+   "weight": 28
   },
   {
    "id": "karu:palai:எயினர்",
    "label": "எயினர் · Eyinar",
    "type": "karu",
    "cat": "people",
-   "weight": 4
+   "weight": 5
   },
   {
    "id": "karu:palai:நரி",
    "label": "நரி · Jackal / Fox",
    "type": "karu",
    "cat": "fauna",
-   "weight": 4
+   "weight": 6
   },
   {
    "id": "karu:palai:பாம்பு",
    "label": "பாம்பு · Serpent",
    "type": "karu",
    "cat": "fauna",
-   "weight": 2
+   "weight": 4
   }
  ],
  "edges": [
@@ -759,25 +1931,25 @@
    "source": "poem:akananooru",
    "target": "tinai:palai",
    "rel": "HAS_TINAI",
-   "weight": 101
+   "weight": 201
   },
   {
    "source": "poem:akananooru",
    "target": "tinai:kurinji",
    "rel": "HAS_TINAI",
-   "weight": 40
+   "weight": 80
   },
   {
    "source": "poem:akananooru",
    "target": "tinai:mullai",
    "rel": "HAS_TINAI",
-   "weight": 20
+   "weight": 40
   },
   {
    "source": "poem:akananooru",
    "target": "tinai:marutam",
    "rel": "HAS_TINAI",
-   "weight": 20
+   "weight": 40
   },
   {
    "source": "poem:akananooru",
@@ -799,15 +1971,21 @@
   },
   {
    "source": "poem:kalithokai",
-   "target": "tinai:unknown",
+   "target": "tinai:marutam",
    "rel": "HAS_TINAI",
-   "weight": 68
+   "weight": 35
   },
   {
    "source": "poem:kalithokai",
    "target": "tinai:mullai",
    "rel": "HAS_TINAI",
    "weight": 17
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "tinai:neytal",
+   "rel": "HAS_TINAI",
+   "weight": 33
   },
   {
    "source": "poem:kurinjipattu",
@@ -862,6 +2040,12 @@
    "target": "tinai:mullai",
    "rel": "HAS_TINAI",
    "weight": 18
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 400
   },
   {
    "source": "poem:natrinai",
@@ -954,16 +2138,46 @@
    "weight": 25
   },
   {
+   "source": "poem:thirukkural",
+   "target": "tinai:unknown",
+   "rel": "HAS_TINAI",
+   "weight": 1330
+  },
+  {
    "source": "poem:thirumurugatrupadai",
    "target": "tinai:unknown",
    "rel": "HAS_TINAI",
    "weight": 32
   },
   {
+   "source": "poet:திருவள்ளுவர்",
+   "target": "tinai:unknown",
+   "rel": "WROTE_IN",
+   "weight": 1330
+  },
+  {
+   "source": "poet:திருவள்ளுவர்",
+   "target": "poem:thirukkural",
+   "rel": "COMPOSED",
+   "weight": 1330
+  },
+  {
+   "source": "poet:பல புலவர்கள்",
+   "target": "tinai:unknown",
+   "rel": "WROTE_IN",
+   "weight": 400
+  },
+  {
+   "source": "poet:பல புலவர்கள்",
+   "target": "poem:naladiyar",
+   "rel": "COMPOSED",
+   "weight": 400
+  },
+  {
    "source": "poet:கபிலர்",
    "target": "tinai:kurinji",
    "rel": "WROTE_IN",
-   "weight": 152
+   "weight": 214
   },
   {
    "source": "poet:கபிலர்",
@@ -976,6 +2190,12 @@
    "target": "tinai:neytal",
    "rel": "WROTE_IN",
    "weight": 3
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
   },
   {
    "source": "poet:கபிலர்",
@@ -997,9 +2217,21 @@
   },
   {
    "source": "poet:கபிலர்",
+   "target": "poem:kalithokai",
+   "rel": "COMPOSED",
+   "weight": 29
+  },
+  {
+   "source": "poet:கபிலர்",
    "target": "poem:kurunthokai",
    "rel": "COMPOSED",
    "weight": 28
+  },
+  {
+   "source": "poet:கபிலர்",
+   "target": "poem:kurinjipattu",
+   "rel": "COMPOSED",
+   "weight": 25
   },
   {
    "source": "poet:கபிலர்",
@@ -1009,15 +2241,15 @@
   },
   {
    "source": "poet:கபிலர்",
-   "target": "poem:pathitrupathu",
+   "target": "poem:akananooru",
    "rel": "COMPOSED",
-   "weight": 10
+   "weight": 18
   },
   {
    "source": "poet:கபிலர்",
-   "target": "poem:akananooru",
+   "target": "poem:pathitrupathu",
    "rel": "COMPOSED",
-   "weight": 9
+   "weight": 10
   },
   {
    "source": "poet:அம்மூவனார்",
@@ -1065,7 +2297,7 @@
    "source": "poet:ஓரம்போகியார்",
    "target": "tinai:marutam",
    "rel": "WROTE_IN",
-   "weight": 103
+   "weight": 105
   },
   {
    "source": "poet:ஓரம்போகியார்",
@@ -1090,6 +2322,12 @@
    "target": "poem:kurunthokai",
    "rel": "COMPOSED",
    "weight": 3
+  },
+  {
+   "source": "poet:ஓரம்போகியார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 2
   },
   {
    "source": "poet:ஓரம்போகியார்",
@@ -1098,6 +2336,36 @@
    "weight": 2
   },
   {
+   "source": "poet:பேயனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 103
+  },
+  {
+   "source": "poet:பேயனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:பேயனார்",
+   "target": "poem:ainkurunooru",
+   "rel": "COMPOSED",
+   "weight": 100
+  },
+  {
+   "source": "poet:பேயனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:பேயனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
    "source": "poet:ஓதலாந்தையார்",
    "target": "tinai:palai",
    "rel": "WROTE_IN",
@@ -1122,40 +2390,16 @@
    "weight": 3
   },
   {
-   "source": "poet:பேயனார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 102
-  },
-  {
-   "source": "poet:பேயனார்",
-   "target": "tinai:marutam",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:பேயனார்",
-   "target": "poem:ainkurunooru",
-   "rel": "COMPOSED",
-   "weight": 100
-  },
-  {
-   "source": "poet:பேயனார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 3
-  },
-  {
    "source": "poet:பரணர்",
    "target": "tinai:kurinji",
    "rel": "WROTE_IN",
-   "weight": 22
+   "weight": 29
   },
   {
    "source": "poet:பரணர்",
    "target": "tinai:marutam",
    "rel": "WROTE_IN",
-   "weight": 16
+   "weight": 26
   },
   {
    "source": "poet:பரணர்",
@@ -1167,7 +2411,7 @@
    "source": "poet:பரணர்",
    "target": "tinai:palai",
    "rel": "WROTE_IN",
-   "weight": 3
+   "weight": 4
   },
   {
    "source": "poet:பரணர்",
@@ -1183,15 +2427,15 @@
   },
   {
    "source": "poet:பரணர்",
-   "target": "poem:kurunthokai",
+   "target": "poem:akananooru",
    "rel": "COMPOSED",
-   "weight": 17
+   "weight": 34
   },
   {
    "source": "poet:பரணர்",
-   "target": "poem:akananooru",
+   "target": "poem:kurunthokai",
    "rel": "COMPOSED",
-   "weight": 16
+   "weight": 17
   },
   {
    "source": "poet:பரணர்",
@@ -1204,6 +2448,198 @@
    "target": "poem:pathitrupathu",
    "rel": "COMPOSED",
    "weight": 10
+  },
+  {
+   "source": "poet:மாங்குடி மருதனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 63
+  },
+  {
+   "source": "poet:மாங்குடி மருதனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மாங்குடி மருதனார்",
+   "target": "poem:maduraikanchi",
+   "rel": "COMPOSED",
+   "weight": 63
+  },
+  {
+   "source": "poet:மாங்குடி மருதனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 56
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "poem:kalithokai",
+   "rel": "COMPOSED",
+   "weight": 35
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 11
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 8
+  },
+  {
+   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+   "target": "tinai:unknown",
+   "rel": "WROTE_IN",
+   "weight": 45
+  },
+  {
+   "source": "poet:இரணியமுட்டத்துப் பெருங்குன்றூர்ப் பெருங்கௌசிகனார்",
+   "target": "poem:malaipadukadam",
+   "rel": "COMPOSED",
+   "weight": 45
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 35
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "poem:kalithokai",
+   "rel": "COMPOSED",
+   "weight": 35
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
+   "source": "poet:மருதன் இளநாகனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:நல்லந்துவனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 33
+  },
+  {
+   "source": "poet:நல்லந்துவனார்",
+   "target": "tinai:unknown",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:நல்லந்துவனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:நல்லந்துவனார்",
+   "target": "poem:kalithokai",
+   "rel": "COMPOSED",
+   "weight": 33
+  },
+  {
+   "source": "poet:நல்லந்துவனார்",
+   "target": "poem:paripadal",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:நல்லந்துவனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 16
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 6
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 4
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 22
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 9
+  },
+  {
+   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
   },
   {
    "source": "poet:உலோச்சனார்",
@@ -1236,49 +2672,25 @@
    "weight": 4
   },
   {
-   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "source": "poet:கடியலூர் உருத்திரங்கண்ணனார்",
+   "target": "tinai:unknown",
+   "rel": "WROTE_IN",
+   "weight": 30
+  },
+  {
+   "source": "poet:கடியலூர் உருத்திரங்கண்ணனார்",
    "target": "tinai:palai",
    "rel": "WROTE_IN",
-   "weight": 8
+   "weight": 1
   },
   {
-   "source": "poet:மதுரை மருதன் இளநாகனார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 4
-  },
-  {
-   "source": "poet:மதுரை மருதன் இளநாகனார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:மதுரை மருதன் இளநாகனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:மதுரை மருதன் இளநாகனார்",
-   "target": "tinai:marutam",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:மதுரை மருதன் இளநாகனார்",
-   "target": "poem:akananooru",
+   "source": "poet:கடியலூர் உருத்திரங்கண்ணனார்",
+   "target": "poem:pattinappalai",
    "rel": "COMPOSED",
-   "weight": 10
+   "weight": 30
   },
   {
-   "source": "poet:மதுரை மருதன் இளநாகனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 9
-  },
-  {
-   "source": "poet:மதுரை மருதன் இளநாகனார்",
+   "source": "poet:கடியலூர் உருத்திரங்கண்ணனார்",
    "target": "poem:kurunthokai",
    "rel": "COMPOSED",
    "weight": 1
@@ -1287,7 +2699,7 @@
    "source": "poet:மாமூலனார்",
    "target": "tinai:palai",
    "rel": "WROTE_IN",
-   "weight": 15
+   "weight": 29
   },
   {
    "source": "poet:மாமூலனார்",
@@ -1299,7 +2711,7 @@
    "source": "poet:மாமூலனார்",
    "target": "poem:akananooru",
    "rel": "COMPOSED",
-   "weight": 13
+   "weight": 27
   },
   {
    "source": "poet:மாமூலனார்",
@@ -1312,106 +2724,214 @@
    "target": "poem:kurunthokai",
    "rel": "COMPOSED",
    "weight": 1
-  },
-  {
-   "source": "poet:அவ்வையார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 6
-  },
-  {
-   "source": "poet:அவ்வையார்",
-   "target": "tinai:marutam",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:அவ்வையார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:அவ்வையார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:அவ்வையார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:அவ்வையார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 8
-  },
-  {
-   "source": "poet:அவ்வையார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 8
-  },
-  {
-   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 15
-  },
-  {
-   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 8
-  },
-  {
-   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
-   "weight": 5
-  },
-  {
-   "source": "poet:பாலை பாடிய பெருங்கடுங்கோ",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 2
   },
   {
    "source": "poet:கயமனார்",
    "target": "tinai:palai",
    "rel": "WROTE_IN",
+   "weight": 19
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கயமனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
    "weight": 12
   },
   {
    "source": "poet:கயமனார்",
-   "target": "tinai:marutam",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:கயமனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:கயமனார்",
    "target": "poem:natrinai",
    "rel": "COMPOSED",
    "weight": 6
   },
   {
    "source": "poet:கயமனார்",
-   "target": "poem:akananooru",
+   "target": "poem:kurunthokai",
    "rel": "COMPOSED",
-   "weight": 5
+   "weight": 3
   },
   {
-   "source": "poet:கயமனார்",
+   "source": "poet:நப்பூதனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 18
+  },
+  {
+   "source": "poet:நப்பூதனார்",
+   "target": "poem:mullaippattu",
+   "rel": "COMPOSED",
+   "weight": 18
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 8
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 4
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 10
+  },
+  {
+   "source": "poet:நக்கீரர்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 6
+  },
+  {
+   "source": "poet:நக்கீரர்",
    "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:சோழன் நல்லுருத்திரனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 17
+  },
+  {
+   "source": "poet:சோழன் நல்லுருத்திரனார்",
+   "target": "poem:kalithokai",
+   "rel": "COMPOSED",
+   "weight": 17
+  },
+  {
+   "source": "poet:மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+   "target": "tinai:unknown",
+   "rel": "WROTE_IN",
+   "weight": 17
+  },
+  {
+   "source": "poet:மதுரை கணக்காயனார் மகனார் நக்கீரனார்",
+   "target": "poem:nedunalvadai",
+   "rel": "COMPOSED",
+   "weight": 17
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 6
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 8
+  },
+  {
+   "source": "poet:அவ்வையார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 8
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 9
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 2
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:marutam",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 8
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:குடவாயிற் கீரத்தனார்",
+   "target": "poem:natrinai",
    "rel": "COMPOSED",
    "weight": 3
   },
@@ -1444,96 +2964,6 @@
    "target": "poem:natrinai",
    "rel": "COMPOSED",
    "weight": 1
-  },
-  {
-   "source": "poet:நக்கீரர்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 4
-  },
-  {
-   "source": "poet:நக்கீரர்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 4
-  },
-  {
-   "source": "poet:நக்கீரர்",
-   "target": "tinai:marutam",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:நக்கீரர்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:நக்கீரர்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:நக்கீரர்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 6
-  },
-  {
-   "source": "poet:நக்கீரர்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
-   "weight": 5
-  },
-  {
-   "source": "poet:நக்கீரர்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 1
-  },
-  {
-   "source": "poet:குடவாயிற் கீரத்தனார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 7
-  },
-  {
-   "source": "poet:குடவாயிற் கீரத்தனார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:குடவாயிற் கீரத்தனார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:குடவாயிற் கீரத்தனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:குடவாயிற் கீரத்தனார்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
-   "weight": 5
-  },
-  {
-   "source": "poet:குடவாயிற் கீரத்தனார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 3
-  },
-  {
-   "source": "poet:குடவாயிற் கீரத்தனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 3
   },
   {
    "source": "poet:அரிசில் கிழார்",
@@ -1692,6 +3122,30 @@
    "weight": 10
   },
   {
+   "source": "poet:கல்லாடனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 8
+  },
+  {
+   "source": "poet:கல்லாடனார்",
+   "target": "tinai:neytal",
+   "rel": "WROTE_IN",
+   "weight": 1
+  },
+  {
+   "source": "poet:கல்லாடனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 7
+  },
+  {
+   "source": "poet:கல்லாடனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 2
+  },
+  {
    "source": "poet:ஔவையார்",
    "target": "tinai:palai",
    "rel": "WROTE_IN",
@@ -1722,28 +3176,70 @@
    "weight": 2
   },
   {
-   "source": "poet:கல்லாடனார்",
-   "target": "tinai:palai",
+   "source": "poet:நக்கீரனார்",
+   "target": "tinai:neytal",
    "rel": "WROTE_IN",
-   "weight": 6
+   "weight": 3
   },
   {
-   "source": "poet:கல்லாடனார்",
-   "target": "tinai:neytal",
+   "source": "poet:நக்கீரனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "tinai:kurinji",
+   "rel": "WROTE_IN",
+   "weight": 3
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "poem:akananooru",
+   "rel": "COMPOSED",
+   "weight": 4
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "poem:kurunthokai",
+   "rel": "COMPOSED",
+   "weight": 4
+  },
+  {
+   "source": "poet:நக்கீரனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 1
+  },
+  {
+   "source": "poet:இடைக்காடனார்",
+   "target": "tinai:mullai",
+   "rel": "WROTE_IN",
+   "weight": 8
+  },
+  {
+   "source": "poet:இடைக்காடனார்",
+   "target": "tinai:palai",
    "rel": "WROTE_IN",
    "weight": 1
   },
   {
-   "source": "poet:கல்லாடனார்",
+   "source": "poet:இடைக்காடனார்",
    "target": "poem:akananooru",
    "rel": "COMPOSED",
    "weight": 5
   },
   {
-   "source": "poet:கல்லாடனார்",
+   "source": "poet:இடைக்காடனார்",
+   "target": "poem:natrinai",
+   "rel": "COMPOSED",
+   "weight": 3
+  },
+  {
+   "source": "poet:இடைக்காடனார்",
    "target": "poem:kurunthokai",
    "rel": "COMPOSED",
-   "weight": 2
+   "weight": 1
   },
   {
    "source": "poet:வெள்ளிவீதியார்",
@@ -1753,15 +3249,15 @@
   },
   {
    "source": "poet:வெள்ளிவீதியார்",
-   "target": "tinai:neytal",
+   "target": "tinai:kurinji",
    "rel": "WROTE_IN",
    "weight": 2
   },
   {
    "source": "poet:வெள்ளிவீதியார்",
-   "target": "tinai:kurinji",
+   "target": "tinai:neytal",
    "rel": "WROTE_IN",
-   "weight": 1
+   "weight": 2
   },
   {
    "source": "poet:வெள்ளிவீதியார்",
@@ -1779,7 +3275,7 @@
    "source": "poet:வெள்ளிவீதியார்",
    "target": "poem:akananooru",
    "rel": "COMPOSED",
-   "weight": 1
+   "weight": 2
   },
   {
    "source": "poet:வெள்ளிவீதியார்",
@@ -1788,206 +3284,38 @@
    "weight": 1
   },
   {
-   "source": "poet:நக்கீரனார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:நக்கீரனார்",
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
    "target": "tinai:kurinji",
    "rel": "WROTE_IN",
    "weight": 3
   },
   {
-   "source": "poet:நக்கீரனார்",
-   "target": "tinai:palai",
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "target": "tinai:mullai",
    "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:நக்கீரனார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 4
-  },
-  {
-   "source": "poet:நக்கீரனார்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
    "weight": 2
   },
   {
-   "source": "poet:நக்கீரனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 1
-  },
-  {
-   "source": "poet:ஆலம்பேரி சாத்தனார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 4
-  },
-  {
-   "source": "poet:ஆலம்பேரி சாத்தனார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:ஆலம்பேரி சாத்தனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:ஆலம்பேரி சாத்தனார்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
-   "weight": 4
-  },
-  {
-   "source": "poet:ஆலம்பேரி சாத்தனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 2
-  },
-  {
-   "source": "poet:ஆலங்குடி வங்கனார்",
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
    "target": "tinai:marutam",
    "rel": "WROTE_IN",
-   "weight": 6
-  },
-  {
-   "source": "poet:ஆலங்குடி வங்கனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 3
-  },
-  {
-   "source": "poet:ஆலங்குடி வங்கனார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 2
-  },
-  {
-   "source": "poet:ஆலங்குடி வங்கனார்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
    "weight": 1
   },
   {
-   "source": "poet:இடைக்காடனார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 5
-  },
-  {
-   "source": "poet:இடைக்காடனார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:இடைக்காடனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 3
-  },
-  {
-   "source": "poet:இடைக்காடனார்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
-   "weight": 2
-  },
-  {
-   "source": "poet:இடைக்காடனார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 1
-  },
-  {
-   "source": "poet:கச்சிப்பேட்டு நன்னாகையார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:கச்சிப்பேட்டு நன்னாகையார்",
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
    "target": "tinai:neytal",
    "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:கச்சிப்பேட்டு நன்னாகையார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
    "weight": 1
   },
   {
-   "source": "poet:கச்சிப்பேட்டு நன்னாகையார்",
-   "target": "poem:kurunthokai",
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
+   "target": "poem:akananooru",
    "rel": "COMPOSED",
    "weight": 6
   },
   {
-   "source": "poet:பேரி சாத்தனார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:பேரி சாத்தனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:பேரி சாத்தனார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:பேரி சாத்தனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 5
-  },
-  {
-   "source": "poet:பேரி சாத்தனார்",
+   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
    "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 1
-  },
-  {
-   "source": "poet:சிறைக்குடி ஆந்தையார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:சிறைக்குடி ஆந்தையார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:சிறைக்குடி ஆந்தையார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:சிறைக்குடி ஆந்தையார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 4
-  },
-  {
-   "source": "poet:சிறைக்குடி ஆந்தையார்",
-   "target": "poem:natrinai",
    "rel": "COMPOSED",
    "weight": 1
   },
@@ -1995,7 +3323,7 @@
    "source": "poet:ஒக்கூர் மாசாத்தியார்",
    "target": "tinai:mullai",
    "rel": "WROTE_IN",
-   "weight": 4
+   "weight": 6
   },
   {
    "source": "poet:ஒக்கூர் மாசாத்தியார்",
@@ -2010,264 +3338,6156 @@
    "weight": 5
   },
   {
-   "source": "poet:வெள்ளி வீதியார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:வெள்ளி வீதியார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:வெள்ளி வீதியார்",
-   "target": "tinai:marutam",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:வெள்ளி வீதியார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:வெள்ளி வீதியார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
-   "weight": 3
-  },
-  {
-   "source": "poet:வெள்ளி வீதியார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 2
-  },
-  {
-   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 2
-  },
-  {
-   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 1
-  },
-  {
-   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
+   "source": "poet:ஒக்கூர் மாசாத்தியார்",
    "target": "poem:akananooru",
    "rel": "COMPOSED",
    "weight": 2
   },
   {
-   "source": "poet:மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்",
-   "target": "poem:natrinai",
+   "source": "poet:எயினந்தை மகனார் இளங்கீரனார்",
+   "target": "tinai:palai",
+   "rel": "WROTE_IN",
+   "weight": 6
+  },
+  {
+   "source": "poet:எயினந்தை மகனார் இளங்கீரனார்",
+   "target": "poem:akananooru",
    "rel": "COMPOSED",
+   "weight": 6
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 104
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 82
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 39
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 32
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 28
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:transport-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 70
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 66
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 45
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 27
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 22
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "artifact:ornament-maṇi",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 86
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 48
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 33
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 25
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:transport-tēr",
+   "rel": "MENTIONS",
    "weight": 2
   },
   {
-   "source": "poet:சீத்தலைச் சாத்தனார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 1
+   "source": "poem:akananooru",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 48
   },
   {
-   "source": "poet:சீத்தலைச் சாத்தனார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 1
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 43
   },
   {
-   "source": "poet:சீத்தலைச் சாத்தனார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 1
+   "source": "poem:kurunthokai",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 37
   },
   {
-   "source": "poet:சீத்தலைச் சாத்தனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 1
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 33
   },
   {
-   "source": "poet:சீத்தலைச் சாத்தனார்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:ornament-mālai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 57
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 37
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 32
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 22
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:ornament-poṉ",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 48
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 32
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 31
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 26
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:ornament-vaḷai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
+   "weight": 47
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
+   "weight": 27
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
+   "weight": 19
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
+   "weight": 19
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
    "weight": 2
   },
   {
-   "source": "poet:சீத்தலைச் சாத்தனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:ornament-toṭi",
+   "rel": "MENTIONS",
    "weight": 2
   },
   {
-   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
-   "target": "tinai:marutam",
-   "rel": "WROTE_IN",
-   "weight": 1
+   "source": "poem:akananooru",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 36
   },
   {
-   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
-   "target": "tinai:mullai",
-   "rel": "WROTE_IN",
-   "weight": 1
+   "source": "poem:purananooru",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 32
   },
   {
-   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
-   "target": "tinai:neytal",
-   "rel": "WROTE_IN",
-   "weight": 1
+   "source": "poem:kalithokai",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 17
   },
   {
-   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
-   "weight": 1
+   "source": "poem:pathitrupathu",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 17
   },
   {
-   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
+   "source": "poem:natrinai",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
    "weight": 3
   },
   {
-   "source": "poet:மதுரை அறுவை வாணிகன் இளவேட்டனார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
+   "source": "poem:maduraikanchi",
+   "target": "artifact:weapon-vāḷ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 46
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:weapon-vil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 47
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 18
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 18
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:weapon-vēl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
+   "weight": 27
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
    "weight": 1
   },
   {
-   "source": "poet:இளங்கீரனார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:இளங்கீரனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
+   "source": "poem:mullaippattu",
+   "target": "artifact:weapon-paṭai",
+   "rel": "MENTIONS",
    "weight": 1
   },
   {
-   "source": "poet:இளங்கீரனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
-   "weight": 3
+   "source": "poem:akananooru",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
+   "weight": 38
   },
   {
-   "source": "poet:இளங்கீரனார்",
-   "target": "poem:kurunthokai",
-   "rel": "COMPOSED",
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
    "weight": 1
   },
   {
-   "source": "poet:நல்லந்துவனார்",
-   "target": "tinai:unknown",
-   "rel": "WROTE_IN",
-   "weight": 3
-  },
-  {
-   "source": "poet:நல்லந்துவனார்",
-   "target": "tinai:kurinji",
-   "rel": "WROTE_IN",
+   "source": "poem:malaipadukadam",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
    "weight": 1
   },
   {
-   "source": "poet:நல்லந்துவனார்",
-   "target": "poem:paripadal",
-   "rel": "COMPOSED",
-   "weight": 3
-  },
-  {
-   "source": "poet:நல்லந்துவனார்",
-   "target": "poem:natrinai",
-   "rel": "COMPOSED",
+   "source": "poem:naladiyar",
+   "target": "artifact:ornament-kuḻai",
+   "rel": "MENTIONS",
    "weight": 1
   },
   {
-   "source": "poet:ஒரோடோ கத்துக் கந்தரத்தனார்",
-   "target": "tinai:palai",
-   "rel": "WROTE_IN",
+   "source": "poem:akananooru",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 36
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
    "weight": 3
   },
   {
-   "source": "poet:ஒரோடோ கத்துக் கந்தரத்தனார்",
-   "target": "poem:akananooru",
-   "rel": "COMPOSED",
+   "source": "poem:malaipadukadam",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:music-paṟai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 23
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
    "weight": 3
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:weapon-kaṇai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:textile-nūl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:writing-nūl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:tool-uḻu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:vessel-kalam",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:vessel-kalam",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:vessel-kalam",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:vessel-kalam",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:vessel-kalam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:vessel-kalam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:vessel-kalam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:vessel-kalam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:porunaratrupadai",
+   "target": "artifact:ornament-tōṭu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "artifact:music-yāḻ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:music-muracu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:porunaratrupadai",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:vessel-pāṇi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-āram",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:weapon-eḥku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:transport-kutirai",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:transport-kutirai",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:transport-kutirai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:transport-kutirai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "artifact:transport-kutirai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:transport-kutirai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:vessel-kuṭam",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:vessel-kuṭam",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:vessel-kuṭam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:vessel-kuṭam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:vessel-kuṭam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:vessel-kuṭam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:vessel-kuṭam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:music-taṇṇumai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ornament-muttu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:weapon-ampu",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:weapon-ampu",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:weapon-ampu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:weapon-ampu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:weapon-ampu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:weapon-ampu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:porunaratrupadai",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirumurugatrupadai",
+   "target": "artifact:textile-paṭṭu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "artifact:ritual-teyvam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:music-kuḻal",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:music-kuḻal",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:music-kuḻal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:music-kuḻal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:music-kuḻal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:music-kuḻal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:music-kuḻal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:textile-tukil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:textile-kaliṅkam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ritual-naṭukal",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ritual-naṭukal",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "artifact:ritual-naṭukal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ritual-vēḷvi",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:ritual-vēḷvi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ritual-vēḷvi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "artifact:ritual-vēḷvi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirumurugatrupadai",
+   "target": "artifact:ritual-vēḷvi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ritual-vēḷvi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:ritual-vēḷvi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:vessel-cāṭi",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:vessel-cāṭi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:vessel-cāṭi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:vessel-cāṭi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:vessel-cāṭi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:vessel-cāṭi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "artifact:transport-nāvāy",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:transport-nāvāy",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:transport-nāvāy",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:transport-nāvāy",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:transport-nāvāy",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "artifact:transport-nāvāy",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:transport-nāvāy",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:vessel-tāḻi",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:vessel-tāḻi",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:vessel-tāḻi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:vessel-tāḻi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:vessel-tāḻi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:writing-ōlai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:writing-ōlai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:writing-ōlai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "artifact:writing-ōlai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:writing-ōlai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:textile-āṭai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:textile-āṭai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:textile-āṭai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "artifact:ritual-kōṭṭam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "artifact:ritual-kōṭṭam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:ritual-kōṭṭam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:ritual-kōṭṭam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:writing-ceyyuḷ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "artifact:writing-ceyyuḷ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "artifact:tool-kalappai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "artifact:tool-kalappai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "artifact:tool-kalappai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "artifact:writing-eḻuttu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "artifact:writing-eḻuttu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:emotion-kātal",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:emotion-kātal",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:emotion-kātal",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:emotion-kātal",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:emotion-kātal",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:emotion-kātal",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:emotion-kātal",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:emotion-kātal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:emotion-aṉpu",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:emotion-aṉpu",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:emotion-aṉpu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:emotion-aṉpu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:emotion-aṉpu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:emotion-aṉpu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:emotion-aṉpu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:emotion-aṉpu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:emotion-tuyar",
+   "rel": "MENTIONS",
+   "weight": 23
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:emotion-tuyar",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:emotion-tuyar",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:emotion-tuyar",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:emotion-tuyar",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:emotion-tuyar",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "entity:emotion-tuyar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:emotion-tuyar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:emotion-aṟam",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:emotion-aṟam",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:emotion-aṟam",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:emotion-aṟam",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:emotion-aṟam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:emotion-aṟam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:emotion-aṟam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:emotion-aṟam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:emotion-pirivu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:emotion-pirivu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:emotion-pirivu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:emotion-pirivu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:emotion-pirivu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:emotion-pirivu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:emotion-pirivu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:emotion-ūṭal",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:emotion-ūṭal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:emotion-ūṭal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:emotion-makiḻcci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:emotion-makiḻcci",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:emotion-makiḻcci",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 104
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 82
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 39
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 32
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 28
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:fauna-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:fauna-yāṉai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-āṭu",
+   "rel": "MENTIONS",
+   "weight": 59
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-āṭu",
+   "rel": "MENTIONS",
+   "weight": 31
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-āṭu",
+   "rel": "MENTIONS",
+   "weight": 27
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-āṭu",
+   "rel": "MENTIONS",
+   "weight": 25
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-āṭu",
+   "rel": "MENTIONS",
+   "weight": 22
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-āṭu",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:fauna-āṭu",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:fauna-āṭu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-puli",
+   "rel": "MENTIONS",
+   "weight": 44
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-puli",
+   "rel": "MENTIONS",
+   "weight": 28
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-puli",
+   "rel": "MENTIONS",
+   "weight": 18
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-puli",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-puli",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:fauna-puli",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-puli",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "entity:fauna-puli",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-māṉ",
+   "rel": "MENTIONS",
+   "weight": 31
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-māṉ",
+   "rel": "MENTIONS",
+   "weight": 29
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-māṉ",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-māṉ",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-māṉ",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:fauna-māṉ",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-māṉ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:fauna-māṉ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-vaṇṭu",
+   "rel": "MENTIONS",
+   "weight": 38
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-vaṇṭu",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-vaṇṭu",
+   "rel": "MENTIONS",
+   "weight": 18
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-vaṇṭu",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-vaṇṭu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:fauna-vaṇṭu",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-vaṇṭu",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:fauna-vaṇṭu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-pacu",
+   "rel": "MENTIONS",
+   "weight": 28
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-pacu",
+   "rel": "MENTIONS",
+   "weight": 22
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-pacu",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-pacu",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-pacu",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:fauna-pacu",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:fauna-pacu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-pacu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-mīṉ",
+   "rel": "MENTIONS",
+   "weight": 31
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-mīṉ",
+   "rel": "MENTIONS",
+   "weight": 29
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-mīṉ",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-mīṉ",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-mīṉ",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-mīṉ",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:fauna-mīṉ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "entity:fauna-mīṉ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-mayil",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-mayil",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-mayil",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-mayil",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-mayil",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:fauna-mayil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:fauna-mayil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "entity:fauna-mayil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-pāmpu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-pāmpu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-pāmpu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-pāmpu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:fauna-pāmpu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-pāmpu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:fauna-pāmpu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:fauna-pāmpu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:fauna-kākkai",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-kākkai",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-kākkai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-kākkai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-kākkai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:fauna-kākkai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:fauna-kākkai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-kākkai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-kutirai",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-kutirai",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-kutirai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-kutirai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:fauna-kutirai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-kutirai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-paruntu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-paruntu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-paruntu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-paruntu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-paruntu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-paruntu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:fauna-paruntu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:fauna-paruntu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-kuyil",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-kuyil",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-kuyil",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-kuyil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:fauna-kuyil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-kuyil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:fauna-kuyil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-kayal",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:fauna-kayal",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-kayal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-kayal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-kayal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "entity:fauna-kayal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:fauna-kayal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:fauna-nākam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-nākam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:fauna-nākam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-nākam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "entity:fauna-nākam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:fauna-nākam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-nākam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:fauna-nākam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-āntai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-āntai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-āntai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:fauna-erutu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:fauna-erutu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:fauna-erutu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:fauna-kuraṅku",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:fauna-kuraṅku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-vēṅkai",
+   "rel": "MENTIONS",
+   "weight": 43
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-vēṅkai",
+   "rel": "MENTIONS",
+   "weight": 32
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-vēṅkai",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-vēṅkai",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-vēṅkai",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-vēṅkai",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-vēṅkai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:flora-vēṅkai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-mullai",
+   "rel": "MENTIONS",
+   "weight": 29
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-mullai",
+   "rel": "MENTIONS",
+   "weight": 18
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-mullai",
+   "rel": "MENTIONS",
+   "weight": 18
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-mullai",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-mullai",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-mullai",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:flora-mullai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:flora-mullai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-puṉṉai",
+   "rel": "MENTIONS",
+   "weight": 34
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-puṉṉai",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-puṉṉai",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-puṉṉai",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-puṉṉai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:flora-puṉṉai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-puṉṉai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-puṉṉai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-kuvaḷai",
+   "rel": "MENTIONS",
+   "weight": 26
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-kuvaḷai",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-kuvaḷai",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-kuvaḷai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-kuvaḷai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-kuvaḷai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-kuvaḷai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:flora-kuvaḷai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-neytal",
+   "rel": "MENTIONS",
+   "weight": 19
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-neytal",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-neytal",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-neytal",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-neytal",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-neytal",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-neytal",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-neytal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-tāmarai",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-tāmarai",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-tāmarai",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-tāmarai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-tāmarai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:flora-tāmarai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-tāmarai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-tāmarai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-āmpal",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-āmpal",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-āmpal",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-āmpal",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-āmpal",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-āmpal",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-āmpal",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-āmpal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-kāntaḷ",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-kāntaḷ",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-kāntaḷ",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-kāntaḷ",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-kāntaḷ",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-kāntaḷ",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-kāntaḷ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-kāntaḷ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-koṉṟai",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-koṉṟai",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-koṉṟai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-koṉṟai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-koṉṟai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-koṉṟai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-koṉṟai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "entity:flora-koṉṟai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-paṉai",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-paṉai",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-paṉai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:flora-paṉai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-paṉai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:flora-paṉai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-paṉai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:flora-paṉai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-kāyā",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-kāyā",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-kāyā",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-kāyā",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-kāyā",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-kāyā",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "entity:flora-kāyā",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:flora-kāyā",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-kuṟiñci",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-kuṟiñci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:flora-kuṟiñci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:flora-kuṟiñci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirumurugatrupadai",
+   "target": "entity:flora-kuṟiñci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-kuṟiñci",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-kuṟiñci",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:flora-kuṟiñci",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-pātiri",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-pātiri",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-pātiri",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-pātiri",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-pātiri",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-pātiri",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:flora-pātiri",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:flora-pātiri",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-kaṭampu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-kaṭampu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-kaṭampu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:flora-kaṭampu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:flora-kaṭampu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirumurugatrupadai",
+   "target": "entity:flora-kaṭampu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-mūṅkil",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:flora-mūṅkil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-mūṅkil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-mūṅkil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-mūṅkil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-vēmpu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-vēmpu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:flora-vēmpu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "entity:flora-vēmpu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:flora-āl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-āl",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:flora-āl",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:flora-āl",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirumurugatrupadai",
+   "target": "entity:flora-āl",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:flora-piṭavam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-piṭavam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:flora-piṭavam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-marutu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:flora-marutu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:flora-marutu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:flora-kōṅku",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-kaḷ",
+   "rel": "MENTIONS",
+   "weight": 33
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-kaḷ",
+   "rel": "MENTIONS",
+   "weight": 32
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-kaḷ",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:food-kaḷ",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:food-kaḷ",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:food-kaḷ",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:food-kaḷ",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:food-kaḷ",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-pāl",
+   "rel": "MENTIONS",
+   "weight": 21
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-pāl",
+   "rel": "MENTIONS",
+   "weight": 19
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:food-pāl",
+   "rel": "MENTIONS",
+   "weight": 19
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-pāl",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:food-pāl",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:food-pāl",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:food-pāl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:food-pāl",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-paḻam",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-paḻam",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:food-paḻam",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:food-paḻam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:food-paḻam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-paḻam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:food-paḻam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:food-paḻam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-kaṉi",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-kaṉi",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-kaṉi",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:food-kaṉi",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:food-kaṉi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:food-kaṉi",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:food-kaṉi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:food-kaṉi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-tēṉ",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:food-tēṉ",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-tēṉ",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:food-tēṉ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-tēṉ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:food-tēṉ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:food-tēṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:food-tēṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-cōṟu",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-cōṟu",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-cōṟu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:food-cōṟu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:food-cōṟu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "entity:food-cōṟu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:food-cōṟu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "entity:food-cōṟu",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-arici",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-arici",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:food-arici",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:food-arici",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-arici",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:food-arici",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "entity:food-arici",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-aval",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-aval",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:food-aval",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:food-aval",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-aval",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:food-aval",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-tayir",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-tayir",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:food-tayir",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:food-tayir",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:food-tayir",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-kūḻ",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:food-kūḻ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:food-kūḻ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:food-kūḻ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-kūḻ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-kiḻaṅku",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:food-kiḻaṅku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-kiḻaṅku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:food-kiḻaṅku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:porunaratrupadai",
+   "target": "entity:food-kiḻaṅku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:food-kiḻaṅku",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:food-veṇṇey",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:food-veṇṇey",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:food-veṇṇey",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:food-veṇṇey",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:kinship-tōḻi",
+   "rel": "MENTIONS",
+   "weight": 132
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:kinship-tōḻi",
+   "rel": "MENTIONS",
+   "weight": 130
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-tōḻi",
+   "rel": "MENTIONS",
+   "weight": 115
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:kinship-tōḻi",
+   "rel": "MENTIONS",
+   "weight": 62
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:kinship-tōḻi",
+   "rel": "MENTIONS",
+   "weight": 56
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:kinship-tōḻi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:kinship-tōḻi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-tantai",
+   "rel": "MENTIONS",
+   "weight": 19
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:kinship-tantai",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-tantai",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:kinship-tantai",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:kinship-tantai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:kinship-tantai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:kinship-tantai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:kinship-tantai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:kinship-makaḷ",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:kinship-makaḷ",
+   "rel": "MENTIONS",
+   "weight": 14
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-makaḷ",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:kinship-makaḷ",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:kinship-makaḷ",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-makaḷ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:kinship-makaḷ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "entity:kinship-makaḷ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:kinship-makaṉ",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-makaṉ",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:kinship-makaṉ",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-makaṉ",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:kinship-makaṉ",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:kinship-makaṉ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:kinship-makaṉ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:kinship-makaṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:kinship-tāy",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:kinship-tāy",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:kinship-tāy",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:kinship-tāy",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-tāy",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:kinship-tāy",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-tāy",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:kinship-tāy",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-attai",
+   "rel": "MENTIONS",
+   "weight": 22
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:kinship-attai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-kaṇavaṉ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:kinship-kaṇavaṉ",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:kinship-kaṇavaṉ",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:kinship-kaṇavaṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:kinship-kaṇavaṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-kaṇavaṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:kinship-kaṇavaṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirumurugatrupadai",
+   "target": "entity:kinship-kaṇavaṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-cuṟṟam",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:kinship-cuṟṟam",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:kinship-cuṟṟam",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:kinship-cuṟṟam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:kinship-cuṟṟam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-cuṟṟam",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-talaivaṉ",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:kinship-talaivaṉ",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-talaivaṉ",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:kinship-maṉaivi",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:kinship-maṉaivi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:kinship-maṉaivi",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-malai",
+   "rel": "MENTIONS",
+   "weight": 80
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-malai",
+   "rel": "MENTIONS",
+   "weight": 73
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-malai",
+   "rel": "MENTIONS",
+   "weight": 60
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-malai",
+   "rel": "MENTIONS",
+   "weight": 50
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-malai",
+   "rel": "MENTIONS",
+   "weight": 44
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-malai",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:motif-malai",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-malai",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-maḻai",
+   "rel": "MENTIONS",
+   "weight": 99
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-maḻai",
+   "rel": "MENTIONS",
+   "weight": 53
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-maḻai",
+   "rel": "MENTIONS",
+   "weight": 29
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-maḻai",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-maḻai",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-maḻai",
+   "rel": "MENTIONS",
+   "weight": 16
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-maḻai",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:motif-maḻai",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-mālai",
+   "rel": "MENTIONS",
+   "weight": 48
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-mālai",
+   "rel": "MENTIONS",
+   "weight": 43
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-mālai",
+   "rel": "MENTIONS",
+   "weight": 37
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-mālai",
+   "rel": "MENTIONS",
+   "weight": 33
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-mālai",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-mālai",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:motif-mālai",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-mālai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-kaṭal",
+   "rel": "MENTIONS",
+   "weight": 46
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-kaṭal",
+   "rel": "MENTIONS",
+   "weight": 36
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-kaṭal",
+   "rel": "MENTIONS",
+   "weight": 26
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-kaṭal",
+   "rel": "MENTIONS",
+   "weight": 21
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-kaṭal",
+   "rel": "MENTIONS",
+   "weight": 18
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-kaṭal",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:motif-kaṭal",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-kaṭal",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-kār",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-kār",
+   "rel": "MENTIONS",
+   "weight": 20
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-kār",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-kār",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-kār",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-kār",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-kār",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:motif-kār",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-pakal",
+   "rel": "MENTIONS",
+   "weight": 30
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-pakal",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-pakal",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-pakal",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:motif-pakal",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-pakal",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-pakal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:motif-pakal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-kāṭu",
+   "rel": "MENTIONS",
+   "weight": 27
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-kāṭu",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-kāṭu",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-kāṭu",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-kāṭu",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-kāṭu",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:motif-kāṭu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-kāṭu",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-iravu",
+   "rel": "MENTIONS",
+   "weight": 12
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-iravu",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-iravu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-iravu",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:motif-iravu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-iravu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-iravu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:motif-iravu",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-pālai",
+   "rel": "MENTIONS",
+   "weight": 13
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-pālai",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-pālai",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-pālai",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-pālai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:motif-pālai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:motif-pālai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:motif-pālai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-veyil",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-veyil",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-veyil",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-veyil",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-veyil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-veyil",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:motif-veyil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:motif-veyil",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-vayal",
+   "rel": "MENTIONS",
+   "weight": 11
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-vayal",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-vayal",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-vayal",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-vayal",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-vayal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "entity:motif-vayal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "entity:motif-vayal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:motif-nilā",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-nilā",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:motif-nilā",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-nilā",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:motif-nilā",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-nilā",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:motif-kūtir",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:motif-kūtir",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:motif-kūtir",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:motif-kūtir",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "entity:motif-kūtir",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:motif-kūtir",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:occupation-pāṇar",
+   "rel": "MENTIONS",
+   "weight": 17
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:occupation-pāṇar",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:occupation-pāṇar",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:occupation-pāṇar",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:occupation-pāṇar",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:occupation-pāṇar",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:occupation-pāṇar",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:occupation-pāṇar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:occupation-uḻavar",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:occupation-uḻavar",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:occupation-uḻavar",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:occupation-uḻavar",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:occupation-uḻavar",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:occupation-uḻavar",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:occupation-uḻavar",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:occupation-uḻavar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:occupation-kuṟavar",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:occupation-kuṟavar",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:occupation-kuṟavar",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:occupation-kuṟavar",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:occupation-kuṟavar",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:occupation-kuṟavar",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:occupation-kuṟavar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:porunaratrupadai",
+   "target": "entity:occupation-kuṟavar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:occupation-pulavar",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:occupation-pulavar",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:occupation-pulavar",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:occupation-pulavar",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:occupation-pulavar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:occupation-pulavar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "entity:occupation-pulavar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:occupation-pulavar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:occupation-āyar",
+   "rel": "MENTIONS",
+   "weight": 23
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:occupation-āyar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:occupation-viṟaliyar",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:occupation-viṟaliyar",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:occupation-viṟaliyar",
+   "rel": "MENTIONS",
+   "weight": 5
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:occupation-viṟaliyar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:occupation-viṟaliyar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:porunaratrupadai",
+   "target": "entity:occupation-viṟaliyar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:occupation-viṟaliyar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:occupation-yavanar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:mullaippattu",
+   "target": "entity:occupation-yavanar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:nedunalvadai",
+   "target": "entity:occupation-yavanar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:perumpanatrupadai",
+   "target": "entity:occupation-yavanar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:occupation-yavanar",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-cēra",
+   "rel": "MENTIONS",
+   "weight": 93
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:place-cēra",
+   "rel": "MENTIONS",
+   "weight": 77
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:place-cēra",
+   "rel": "MENTIONS",
+   "weight": 70
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:place-cēra",
+   "rel": "MENTIONS",
+   "weight": 39
+  },
+  {
+   "source": "poem:naladiyar",
+   "target": "entity:place-cēra",
+   "rel": "MENTIONS",
+   "weight": 28
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-cēra",
+   "rel": "MENTIONS",
+   "weight": 27
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:place-cēra",
+   "rel": "MENTIONS",
+   "weight": 26
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:place-cēra",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-maturai",
+   "rel": "MENTIONS",
+   "weight": 75
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:place-maturai",
+   "rel": "MENTIONS",
+   "weight": 29
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:place-maturai",
+   "rel": "MENTIONS",
+   "weight": 24
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:place-maturai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:place-maturai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-maturai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:sirupanatrupadai",
+   "target": "entity:place-maturai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-kāviri",
+   "rel": "MENTIONS",
+   "weight": 23
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-kāviri",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:place-kāviri",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:place-kāviri",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:pattinappalai",
+   "target": "entity:place-kāviri",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:place-kāviri",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:malaipadukadam",
+   "target": "entity:place-kāviri",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:place-kāviri",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-cōḻa",
+   "rel": "MENTIONS",
+   "weight": 15
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:place-cōḻa",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-cōḻa",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:place-cōḻa",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:place-cōḻa",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-vañci",
+   "rel": "MENTIONS",
+   "weight": 9
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-vañci",
+   "rel": "MENTIONS",
+   "weight": 7
+  },
+  {
+   "source": "poem:ainkurunooru",
+   "target": "entity:place-vañci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurinjipattu",
+   "target": "entity:place-vañci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:place-vañci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:place-vañci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:thirukkural",
+   "target": "entity:place-vañci",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:place-vañci",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:place-vaiyai",
+   "rel": "MENTIONS",
+   "weight": 8
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:place-vaiyai",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-vaiyai",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:place-vaiyai",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-vaiyai",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-kūṭal",
+   "rel": "MENTIONS",
+   "weight": 6
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:place-kūṭal",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-kūṭal",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:place-kūṭal",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:maduraikanchi",
+   "target": "entity:place-kūṭal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:paripadal",
+   "target": "entity:place-kūṭal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:pathitrupathu",
+   "target": "entity:place-kūṭal",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-pāṇṭiya",
+   "rel": "MENTIONS",
+   "weight": 10
+  },
+  {
+   "source": "poem:kurunthokai",
+   "target": "entity:place-pāṇṭiya",
+   "rel": "MENTIONS",
+   "weight": 3
+  },
+  {
+   "source": "poem:kalithokai",
+   "target": "entity:place-pāṇṭiya",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:natrinai",
+   "target": "entity:place-pāṇṭiya",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-pāṇṭiya",
+   "rel": "MENTIONS",
+   "weight": 1
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-paṟampu",
+   "rel": "MENTIONS",
+   "weight": 4
+  },
+  {
+   "source": "poem:akananooru",
+   "target": "entity:place-muciṟi",
+   "rel": "MENTIONS",
+   "weight": 2
+  },
+  {
+   "source": "poem:purananooru",
+   "target": "entity:place-muciṟi",
+   "rel": "MENTIONS",
+   "weight": 1
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:வேங்கை",
    "rel": "ATTESTS",
-   "weight": 61,
+   "weight": 77,
    "cat": "flora"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:குறவர்",
    "rel": "ATTESTS",
-   "weight": 17,
+   "weight": 20,
    "cat": "people"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:அருவி",
    "rel": "ATTESTS",
-   "weight": 71,
+   "weight": 85,
    "cat": "landscape"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:வேலன்",
    "rel": "ATTESTS",
-   "weight": 15,
+   "weight": 17,
    "cat": "people"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:மயில்",
    "rel": "ATTESTS",
-   "weight": 17,
+   "weight": 21,
    "cat": "fauna"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:காந்தள்",
    "rel": "ATTESTS",
-   "weight": 36,
+   "weight": 40,
    "cat": "flora"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:சிலம்பு",
    "rel": "ATTESTS",
-   "weight": 10,
+   "weight": 11,
    "cat": "landscape"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:மான்",
    "rel": "ATTESTS",
-   "weight": 29,
+   "weight": 34,
    "cat": "fauna"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:யானை",
    "rel": "ATTESTS",
-   "weight": 53,
+   "weight": 68,
    "cat": "fauna"
   },
   {
@@ -2281,42 +9501,42 @@
    "source": "tinai:kurinji",
    "target": "karu:kurinji:குறிஞ்சி",
    "rel": "ATTESTS",
-   "weight": 7,
+   "weight": 8,
    "cat": "flora"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:மூங்கில்",
    "rel": "ATTESTS",
-   "weight": 3,
+   "weight": 4,
    "cat": "flora"
   },
   {
    "source": "tinai:kurinji",
    "target": "karu:kurinji:குரங்கு",
    "rel": "ATTESTS",
-   "weight": 1,
+   "weight": 2,
    "cat": "fauna"
   },
   {
    "source": "tinai:mullai",
    "target": "karu:mullai:முல்லை",
    "rel": "ATTESTS",
-   "weight": 56,
+   "weight": 66,
    "cat": "flora"
   },
   {
    "source": "tinai:mullai",
    "target": "karu:mullai:கொன்றை",
    "rel": "ATTESTS",
-   "weight": 26,
+   "weight": 27,
    "cat": "flora"
   },
   {
    "source": "tinai:mullai",
    "target": "karu:mullai:முயல்",
    "rel": "ATTESTS",
-   "weight": 2,
+   "weight": 4,
    "cat": "fauna"
   },
   {
@@ -2365,43 +9585,64 @@
    "source": "tinai:marutam",
    "target": "karu:marutam:உழவர்",
    "rel": "ATTESTS",
-   "weight": 2,
+   "weight": 6,
    "cat": "people"
   },
   {
    "source": "tinai:marutam",
    "target": "karu:marutam:நாரை",
    "rel": "ATTESTS",
-   "weight": 4,
+   "weight": 5,
    "cat": "fauna"
   },
   {
    "source": "tinai:marutam",
    "target": "karu:marutam:ஆம்பல்",
    "rel": "ATTESTS",
-   "weight": 27,
+   "weight": 32,
    "cat": "flora"
   },
   {
    "source": "tinai:marutam",
    "target": "karu:marutam:வயல்",
    "rel": "ATTESTS",
-   "weight": 6,
+   "weight": 12,
    "cat": "landscape"
   },
   {
    "source": "tinai:marutam",
    "target": "karu:marutam:மருதம்",
    "rel": "ATTESTS",
-   "weight": 4,
+   "weight": 5,
    "cat": "flora"
   },
   {
    "source": "tinai:marutam",
    "target": "karu:marutam:எருமை",
    "rel": "ATTESTS",
-   "weight": 18,
+   "weight": 20,
    "cat": "fauna"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:ஆறு",
+   "rel": "ATTESTS",
+   "weight": 2,
+   "cat": "landscape"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:கொக்கு",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "fauna"
+  },
+  {
+   "source": "tinai:marutam",
+   "target": "karu:marutam:குளம்",
+   "rel": "ATTESTS",
+   "weight": 1,
+   "cat": "landscape"
   },
   {
    "source": "tinai:marutam",
@@ -2414,21 +9655,21 @@
    "source": "tinai:neytal",
    "target": "karu:neytal:நெய்தல்",
    "rel": "ATTESTS",
-   "weight": 46,
+   "weight": 50,
    "cat": "flora"
   },
   {
    "source": "tinai:neytal",
    "target": "karu:neytal:புன்னை",
    "rel": "ATTESTS",
-   "weight": 69,
+   "weight": 75,
    "cat": "flora"
   },
   {
    "source": "tinai:neytal",
    "target": "karu:neytal:நாரை",
    "rel": "ATTESTS",
-   "weight": 30,
+   "weight": 32,
    "cat": "fauna"
   },
   {
@@ -2442,21 +9683,21 @@
    "source": "tinai:neytal",
    "target": "karu:neytal:தாழை",
    "rel": "ATTESTS",
-   "weight": 25,
+   "weight": 30,
    "cat": "flora"
   },
   {
    "source": "tinai:neytal",
    "target": "karu:neytal:சுரம்",
    "rel": "ATTESTS",
-   "weight": 6,
+   "weight": 8,
    "cat": "flora"
   },
   {
    "source": "tinai:neytal",
    "target": "karu:neytal:சுறா",
    "rel": "ATTESTS",
-   "weight": 16,
+   "weight": 18,
    "cat": "fauna"
   },
   {
@@ -2470,7 +9711,7 @@
    "source": "tinai:palai",
    "target": "karu:palai:சுரம்",
    "rel": "ATTESTS",
-   "weight": 77,
+   "weight": 106,
    "cat": "landscape"
   },
   {
@@ -2484,42 +9725,42 @@
    "source": "tinai:palai",
    "target": "karu:palai:காக்கை",
    "rel": "ATTESTS",
-   "weight": 4,
+   "weight": 7,
    "cat": "fauna"
   },
   {
    "source": "tinai:palai",
    "target": "karu:palai:புலி",
    "rel": "ATTESTS",
-   "weight": 32,
+   "weight": 46,
    "cat": "fauna"
   },
   {
    "source": "tinai:palai",
    "target": "karu:palai:மறவர்",
    "rel": "ATTESTS",
-   "weight": 23,
+   "weight": 28,
    "cat": "people"
   },
   {
    "source": "tinai:palai",
    "target": "karu:palai:எயினர்",
    "rel": "ATTESTS",
-   "weight": 4,
+   "weight": 5,
    "cat": "people"
   },
   {
    "source": "tinai:palai",
    "target": "karu:palai:நரி",
    "rel": "ATTESTS",
-   "weight": 4,
+   "weight": 6,
    "cat": "fauna"
   },
   {
    "source": "tinai:palai",
    "target": "karu:palai:பாம்பு",
    "rel": "ATTESTS",
-   "weight": 2,
+   "weight": 4,
    "cat": "fauna"
   }
  ]

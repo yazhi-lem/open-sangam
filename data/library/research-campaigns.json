@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-27",
+  "description": "Curated Avai research campaigns for Open Sangam. Each campaign names a Pulavar agent, workflow and a grounded question; results are research leads, not verified articles.",
+  "campaigns": [
+    {
+      "id": "women-poets",
+      "ta": "பெண் புலவர்களும் அவர்களின் திணைகளும்",
+      "en": "Women poets and their landscapes",
+      "agent": "avvaiyar",
+      "workflow": "qa",
+      "promptTa": "சங்கக் காலப் பெண் புலவர்கள் யார்? அவர்கள் எந்தெந்த திணைகளில் பாடினார்கள்? சான்றுப் பாடல்களுடன் விளக்குக.",
+      "promptEn": "Who were the women poets of the Sangam age, and which tiṇai landscapes did they sing? Ground every claim in cited verses.",
+      "keywords": ["பெண் புலவர்", "ஔவையார்", "திணை", "women poets"]
+    },
+    {
+      "id": "trade-ports",
+      "ta": "துறைமுகங்களும் உரோமானிய வாணிபமும்",
+      "en": "Ports and Roman trade",
+      "agent": "paranar",
+      "workflow": "imagery",
+      "promptTa": "சங்கப் பாடல்களில் கூறப்படும் துறைமுகங்கள், நாவாய், யவனர், பொன் மற்றும் முத்து வாணிபம் பற்றித் தொகுத்துக் கூறுக.",
+      "promptEn": "Synthesize what the Sangam poems say about ports, ships, Yavana traders, gold and pearl trade.",
+      "keywords": ["துறைமுகம்", "யவனர்", "நாவாய்", "trade"]
+    },
+    {
+      "id": "hero-stones",
+      "ta": "நடுகற்களும் நினைவு மரபும்",
+      "en": "Hero stones and memorial culture",
+      "agent": "tholkappiyar",
+      "workflow": "scenario",
+      "promptTa": "நடுகல், வீரம், புறத்திணை மரபு ஆகியவற்றைச் சங்கப் பாடல்கள் எவ்வாறு இணைக்கின்றன? சான்றுகளுடன் விளக்குக.",
+      "promptEn": "How do Sangam poems connect hero stones, valour and puṟam conventions? Cite the verses.",
+      "keywords": ["நடுகல்", "வீரம்", "புறம்", "hero stone"]
+    },
+    {
+      "id": "music-yazh",
+      "ta": "யாழும் பண்ணும் இசை மரபும்",
+      "en": "Yazh, pann and musical life",
+      "agent": "kapilar",
+      "workflow": "search",
+      "promptTa": "யாழ், குழல், முரசு, பறை, பண் பற்றிய சங்கப் பாடல் குறிப்புகளைத் தேடித் தொகுத்துத் தருக.",
+      "promptEn": "Find and group Sangam references to yāḻ, flute, muracu, paṟai and pann modes.",
+      "keywords": ["யாழ்", "பண்", "முரசு", "music"]
+    },
+    {
+      "id": "daily-artifacts",
+      "ta": "அன்றாடப் பொருட்களும் அணிகலன்களும்",
+      "en": "Daily objects and ornaments",
+      "agent": "avvaiyar",
+      "workflow": "qa",
+      "promptTa": "சங்கப் பாடல்களில் வரும் அணிகலன்கள், கலன்கள், ஆடைகள், வீட்டுப் பொருட்கள் பற்றித் தொகுத்துக் கூறுக.",
+      "promptEn": "Summarize ornaments, vessels, textiles and household objects attested in the Sangam corpus.",
+      "keywords": ["அணிகலன்", "கலம்", "ஆடை", "material culture"]
+    },
+    {
+      "id": "patronage",
+      "ta": "புலவர்-வள்ளல் கொடை மரபு",
+      "en": "Poet-patron gift economy",
+      "agent": "nakkirar",
+      "workflow": "general",
+      "promptTa": "சங்கக் கால மன்னர்களும் வள்ளல்களும் புலவர்களுக்கு வழங்கிய கொடையின் வடிவங்களைச் சான்றுகளுடன் விவாதிக்க.",
+      "promptEn": "Discuss the forms of royal and chiefly patronage recorded in Sangam poems, with cited examples.",
+      "keywords": ["கொடை", "வள்ளல்", "புலவர்", "patronage"]
+    }
+  ]
+}

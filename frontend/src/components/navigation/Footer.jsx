@@ -45,14 +45,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/knowledge" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
-                  Knowledge Base (அறிவு)
-                </Link>
               </li>
               <li>
-                <Link to="/graph" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">
-                  Connections Graph (வரைபடம்)
-                </Link>
               </li>
               <li>
                 <Link to="/scholars" className="inline-flex min-h-[44px] items-center text-muted hover:text-accent transition-colors">

@@ -2,7 +2,7 @@
   "id": "malaipadukadam_33",
   "poem": "malaipadukadam",
   "tinai": "unknown",
-  "sangamTamil": "செவ்வீ வேங்கை பூவின் அன்ன\nவேய் கொள் அரிசி மிதவை சொரிந்த\nசுவல் விளை நெல்லின் அவரை அம் புளிங்கூழ்\nஅற்கு இடை உழந்த நும் வருத்தம் வீட\nஅகலுள் ஆங்கண் கழி மிடைந்து இயற்றிய\nபுல் வேய் குரம்பை குடிதொறும் பெறுகுவிர்",
+  "sangamTamil": "செவ்வீ வேங்கை பூவின் அன்ன\nவேய் கொள் அரிசி மிதவை சொரிந்த\nசுவல் விளை நெல்லின் அவரை அம் புளிங்கூழ்\nஅற்கு இடை உழந்த நும் வருத்தம் வீட\nஅகலுள் ஆங்கண் கழி மிடைந்து இயற்றிய\nபுல் வேய் குரம்பை குடிதொறும் பெறுகுவிர்\nபென்னறைந் தன்ன நுண்ணே ரரிசி\nவெண்ணெறிந் தியற்றிய மாக்க ணமலை\nதண்ணெ னுண்ணிழு துள்ளீ டாக\nவசையினிர் சேப்பி னல்கலும் பெறுகுவிர்\nவிசையங் கொழித்த பூழி யன்ன\nவுண்ணுநர்த் தடுத்த நுண்ணிடி நுவணை\nநொய்ம்மர விறகின் ஞெகிழி மாட்டிப்\nபனிசே ணீங்க வினிதுடன் றுஞ்சிப்\nபுலரி விடியற் புள்ளோர்த்துக் கழிமின்",
   "urai": "வேங்கைப் பூ சிவப்பாக மலரும். வெந்தால் அதுபோல் மலரக்கூடியது மூங்கில் அரிசிச் சோறும், நன்செய் அல்லாத புன்செய் மேட்டு நிலத்தில் விளைந்த நெல்லஞ்சோறும் ஆகும். அந்தச் சோற்றுக்கு அவரைக்காய்ப் புளிக்குழம்பு. தெருக்களில் மூங்கில் கழிகளின்மேல் புல்லால் வேய்ந்த குடிசை. அந்தக் குடிசைகளில் எல்லாம் அந்த அவரைக்காய்ப் புளிக்குழம்புச் சோற்றை நடந்துவந்த களைப்புத் தீரப் பெறலாம்.",
   "english": null,
   "lines": [
@@ -258,11 +258,317 @@
           "gloss": "This is a future tense plural verb in the second person, meaning 'you will receive' or 'you will obtain', assuring the travelers that they will be given food and shelter."
         }
       ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பென்னறைந் தன்ன நுண்ணே ரரிசி",
+      "words": [
+        {
+          "form": "பென்னறைந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுண்ணே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரரிசி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "வெண்ணெறிந் தியற்றிய மாக்க ணமலை",
+      "words": [
+        {
+          "form": "வெண்ணெறிந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தியற்றிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ணமலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "தண்ணெ னுண்ணிழு துள்ளீ டாக",
+      "words": [
+        {
+          "form": "தண்ணெ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னுண்ணிழு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துள்ளீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டாக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "வசையினிர் சேப்பி னல்கலும் பெறுகுவிர்",
+      "words": [
+        {
+          "form": "வசையினிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேப்பி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னல்கலும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறுகுவிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "விசையங் கொழித்த பூழி யன்ன",
+      "words": [
+        {
+          "form": "விசையங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொழித்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "வுண்ணுநர்த் தடுத்த நுண்ணிடி நுவணை",
+      "words": [
+        {
+          "form": "வுண்ணுநர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தடுத்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுண்ணிடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுவணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "நொய்ம்மர விறகின் ஞெகிழி மாட்டிப்",
+      "words": [
+        {
+          "form": "நொய்ம்மர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விறகின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞெகிழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாட்டிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "பனிசே ணீங்க வினிதுடன் றுஞ்சிப்",
+      "words": [
+        {
+          "form": "பனிசே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ணீங்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினிதுடன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றுஞ்சிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "புலரி விடியற் புள்ளோர்த்துக் கழிமின்",
+      "words": [
+        {
+          "form": "புலரி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடியற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புள்ளோர்த்துக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிமின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்33.html",
+  "source": "http://www.sangathamizh.com/10paddu/malaipadukadam/malaipadukadam-மலைபடுகடாம்33.html; Project Madurai pmuni0505",
   "verified": false,
   "sectionNumber": 33,
   "title": "புல் வேய்ந்த குடிசைகளில் புளிங் கூழும் பிறவும் பெறுதல்",

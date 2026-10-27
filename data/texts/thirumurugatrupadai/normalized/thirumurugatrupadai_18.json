@@ -2,7 +2,7 @@
   "id": "thirumurugatrupadai_18",
   "poem": "thirumurugatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "நாற்பெருந் தெய்வத்து நன்னகர் நிலைஇய . . . .(160)\nஉலகம் காக்கும் ஒன்றுபுரி கொள்கைப்\nபலர்புகழ் மூவரும் தலைவ ராக",
+  "sangamTamil": "நாற்பெருந் தெய்வத்து நன்னகர் நிலைஇய . . . .(160)\nஉலகம் காக்கும் ஒன்றுபுரி கொள்கைப்\nபலர்புகழ் மூவரும் தலைவ ராக\nவேமுறு ஞாலந் தன்னிற் றோன்றித்\nதாமரை பயந்த தாவி லூழி\nநான்முக வொருவற் சுட்டிக் காண்வரப்\nபகலிற் றோன்று மிகலில் காட்சி\nநால்வே றியக்கைப் பதினொரு மூவரொ\nடொன்பதிற் றிரட்டி யுயர்நிலை பெறீஇயர்",
   "urai": "திருமால், சிவன், இந்திரன், பிரமன் என்போர் நான்கு பெருந்தெய்வங்கள். திருவாவினன்குடியில் இவர்களுக்குக் கோயில்கள் இருந்தன. பலராலும் புகழப்படும் மேலே சொன்ன நால்வரும் ஒத்த கருத்துடையராய் உலகினைக் காப்பாற்றி வருகின்றனர். இவர்கள் தலைவர்கள்.",
   "english": "In the good city where the four great deities reside,\nThe three praised by many, united in purpose,\nProtect the world as its leaders.",
   "lines": [
@@ -135,11 +135,215 @@
           "gloss": "This word, the infinitive/adverbial participle of 'ஆகு' (to become, to be), means 'being' or 'having become', indicating that the deities function in the capacity of leaders."
         }
       ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "வேமுறு ஞாலந் தன்னிற் றோன்றித்",
+      "words": [
+        {
+          "form": "வேமுறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஞாலந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தன்னிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றோன்றித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "தாமரை பயந்த தாவி லூழி",
+      "words": [
+        {
+          "form": "தாமரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பயந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லூழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "நான்முக வொருவற் சுட்டிக் காண்வரப்",
+      "words": [
+        {
+          "form": "நான்முக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வொருவற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுட்டிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காண்வரப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "பகலிற் றோன்று மிகலில் காட்சி",
+      "words": [
+        {
+          "form": "பகலிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றோன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மிகலில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நால்வே றியக்கைப் பதினொரு மூவரொ",
+      "words": [
+        {
+          "form": "நால்வே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றியக்கைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பதினொரு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மூவரொ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "டொன்பதிற் றிரட்டி யுயர்நிலை பெறீஇயர்",
+      "words": [
+        {
+          "form": "டொன்பதிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றிரட்டி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யுயர்நிலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெறீஇயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/thirumurugatrupadai/thirumurugatrupadai-திருமுருகாற்றுப்படை18.html",
+  "source": "http://www.sangathamizh.com/10paddu/thirumurugatrupadai/thirumurugatrupadai-திருமுருகாற்றுப்படை18.html; Project Madurai pmuni0493",
   "verified": false,
   "sectionNumber": 18,
   "title": "பிரமனுக்காகத் திரண்டு வந்த தேவர்கள்",

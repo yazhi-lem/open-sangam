@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_319",
+  "poem": "naladiyar",
+  "number": 319,
+  "title": "அவையறிதல்",
+  "heading": "2.32",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "பொழிப்பகல நுட்பநூ லெச்சமிந் நான்கின்\nகொழித்தகலங் காட்டாதார் சொற்கள் - பழிப்பில்\nநிரையாமா சேர்க்கும் நெடுங்குன்ற நாட\nஉரையாமோ நூலிற்கு நன்கு?",
+  "urai": null,
+  "english": "A perfect commentary. Lord of the land of long chains of hills where the wild cattle assemble in herds! Is that a good commentary to a faultless composition, which consists of the words of those who do not sift it thoroughly, in the four divisions of summary, amplification, minute exposition, and supplementary information, and thus exhibit the full import?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "பொழிப்பகல நுட்பநூ லெச்சமிந் நான்கின்",
+      "words": [
+        {
+          "form": "பொழிப்பகல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுட்பநூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லெச்சமிந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நான்கின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கொழித்தகலங் காட்டாதார் சொற்கள் - பழிப்பில்",
+      "words": [
+        {
+          "form": "கொழித்தகலங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்டாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொற்கள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பழிப்பில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நிரையாமா சேர்க்கும் நெடுங்குன்ற நாட",
+      "words": [
+        {
+          "form": "நிரையாமா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுங்குன்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "உரையாமோ நூலிற்கு நன்கு?",
+      "words": [
+        {
+          "form": "உரையாமோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நூலிற்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்கு?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

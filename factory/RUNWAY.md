@@ -21,7 +21,7 @@
 ## 2. Critical path to 14 Nov
 
 ```
-scholar engaged (29 Oct) ─┬─► gap decision (30 Oct) ───────────────┐
+scholar engaged (29 Oct) ─┬─► 62–74 fill checked (30 Oct) ─────────┐
                           ├─► urai licence or own urai (3 Nov) ────┤
                           └─► English 1–100 (1 Nov) ───────────────┴─► sign-off 20 lines/day (29 Oct → 8 Nov)
                                                                             │
@@ -51,7 +51,7 @@ float. Its main risk is accuracy below 90% (R5).
 | # | Risk | L | I | Mitigation | Trigger to act | Owner |
 |---|---|---|---|---|---|---|
 | R1 | Scholar unavailable or slower than 20 lines/day | 3 | 3 | Name a second reviewer now; batch review by section; tooling that shows the three layers side by side | < 60 lines signed by 4 Nov | Mozhi lead |
-| R2 | Source gap (62–74) blocks "every line signed" | 3 | 2 | Decision D1 (visible marker); second source in parallel | No decision by 30 Oct | Mozhi lead |
+| R2 | The Project Madurai lines (62–74) fail the scholar's check, or their reuse terms are unclear | 1 | 2 | Scholar checks against a print edition; fall back to a visible "missing in source" marker | Not cleared by 30 Oct | Mozhi lead |
 | R3 | Urai permission refused or silent | 2 | 3 | Own urai for 1–100 (small) | No yes by 3 Nov | Mozhi lead |
 | R4 | English quality is too literal or too loose (style guide §2) | 2 | 2 | Translator follows `editorial-style-guide.md`; scholar checks against a print edition | Scholar rejects > 20% | Translator |
 | R5 | Avai < 90% on the gold set | 2 | 3 | Deterministic grounding (`TamilGroundingPlugin`), reflection check, abstain more | < 85% on 5 Nov | Avai lead |

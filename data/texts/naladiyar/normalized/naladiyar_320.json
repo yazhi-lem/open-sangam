@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_320",
+  "poem": "naladiyar",
+  "number": 320,
+  "title": "அவையறிதல்",
+  "heading": "2.32",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "இற்பிறப் பில்லா ரெனைத்துநூல் கற்பினும்\nசொற்பிறரைக் காக்குங் கருவியரோ? - இற்பிறந்த\nநல்லறி வாளர் நவின்றநூல் தேற்றாதார்\nபுல்லறிவு தாமறிவ தில்.",
+  "urai": null,
+  "english": "Critics. Will those who are not of high family, however they may study learned works, be fit instruments to guard others from faults of speech? And men of good family who are well learned will not (seem to) be aware of the deficiencies of those who do not comprehend the works they talk of. 33 . புல்லறிவாண்மை / Ch. 33. Insufficient Knowledge",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இற்பிறப் பில்லா ரெனைத்துநூல் கற்பினும்",
+      "words": [
+        {
+          "form": "இற்பிறப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பில்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரெனைத்துநூல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கற்பினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "சொற்பிறரைக் காக்குங் கருவியரோ? - இற்பிறந்த",
+      "words": [
+        {
+          "form": "சொற்பிறரைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காக்குங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கருவியரோ?",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இற்பிறந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நல்லறி வாளர் நவின்றநூல் தேற்றாதார்",
+      "words": [
+        {
+          "form": "நல்லறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாளர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நவின்றநூல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேற்றாதார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "புல்லறிவு தாமறிவ தில்.",
+      "words": [
+        {
+          "form": "புல்லறிவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாமறிவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தில்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_173",
+  "poem": "naladiyar",
+  "number": 173,
+  "title": "நல்லினம் சேர்தல்",
+  "heading": "2.18",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "அடைந்தார்ப் பிரிவும் அரும்பிணியும் கேடும்\nஉடங்குடம்பு கொண்டார்க் குறலால் - தொடங்கிப்\nபிறப்பின்னா தென்றுணரும் பேரறிவி னாரை\nஉறப்புணர்க அம்மாஎன் நெஞ்சு.",
+  "urai": null,
+  "english": "Life has many evils. Attach yourself to the wise. Severance of close-joined friends and sore disease and death, all these combined hap to those that have assumed a human body: so the truly wise have felt that birth, from the very first, is bitterness. Ah! soul, cleave close to these!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அடைந்தார்ப் பிரிவும் அரும்பிணியும் கேடும்",
+      "words": [
+        {
+          "form": "அடைந்தார்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிரிவும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அரும்பிணியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேடும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "உடங்குடம்பு கொண்டார்க் குறலால் - தொடங்கிப்",
+      "words": [
+        {
+          "form": "உடங்குடம்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டார்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறலால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடங்கிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "பிறப்பின்னா தென்றுணரும் பேரறிவி னாரை",
+      "words": [
+        {
+          "form": "பிறப்பின்னா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தென்றுணரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பேரறிவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னாரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "உறப்புணர்க அம்மாஎன் நெஞ்சு.",
+      "words": [
+        {
+          "form": "உறப்புணர்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அம்மாஎன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_394",
+  "poem": "naladiyar",
+  "number": 394,
+  "title": "காமநுதலியல்",
+  "heading": "3.40",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "செல்சுடர் நோக்கிச் சிதரா஢க்கண் கொண்டநீர்\nமெல்விரல் ஊழ்தெறியா விம்மித்தன் - மெல்விரலின்\nநாள்வைத்து நங்குற்றம் எண்ணுங்கொல், அந்தோதன்\nதோள்வைத் தணைமேல் கிடந்து.",
+  "urai": null,
+  "english": "The lover says to his friend (பாகன்) in regard to his forsaken bride : 'Regarding the setting sun, and wiping away one by one with her soft finger the tears that well up in her eyes, suffused with red, sobbing she lies resting her arms on the couch, setting off the days on those same tender fingers : alas; are they my faults she is counting up?'",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "செல்சுடர் நோக்கிச் சிதரா஢க்கண் கொண்டநீர்",
+      "words": [
+        {
+          "form": "செல்சுடர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோக்கிச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சிதரா஢க்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டநீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "மெல்விரல் ஊழ்தெறியா விம்மித்தன் - மெல்விரலின்",
+      "words": [
+        {
+          "form": "மெல்விரல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊழ்தெறியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விம்மித்தன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மெல்விரலின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நாள்வைத்து நங்குற்றம் எண்ணுங்கொல், அந்தோதன்",
+      "words": [
+        {
+          "form": "நாள்வைத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நங்குற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எண்ணுங்கொல்,",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அந்தோதன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தோள்வைத் தணைமேல் கிடந்து.",
+      "words": [
+        {
+          "form": "தோள்வைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தணைமேல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கிடந்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

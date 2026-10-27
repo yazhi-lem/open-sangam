@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_288",
+  "poem": "naladiyar",
+  "number": 288,
+  "title": "இன்மை",
+  "heading": "2.29",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "இட்டாற்றுப் பட்டொன் றிரந்தவர்க் காற்றாது\nமுட்டாற்றுப் பட்டும் முயன்றுள்ளூர் வாழ்தலின்\nநெட்டாற்றுச் சென்று நிரைமனையில் கைந்நீட்டும்\nகெட்டாற்று வாழ்க்கையே நன்று.",
+  "urai": null,
+  "english": "The struggle with want. Better indeed is the life that pertains to the ruinous course (கெட்ட ஆறு), that going far away (நெட்டாறு), stretches out (supplicating) hand at every door, than to dwell at home (உள்ளூர் ) toiling, subjectto (ஆற்றுப்பட்டு ) obstacles (முத்து ). not giving aught to those that ask, because of straitened circumstances.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இட்டாற்றுப் பட்டொன் றிரந்தவர்க் காற்றாது",
+      "words": [
+        {
+          "form": "இட்டாற்றுப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்டொன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றிரந்தவர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காற்றாது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "முட்டாற்றுப் பட்டும் முயன்றுள்ளூர் வாழ்தலின்",
+      "words": [
+        {
+          "form": "முட்டாற்றுப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முயன்றுள்ளூர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்தலின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "நெட்டாற்றுச் சென்று நிரைமனையில் கைந்நீட்டும்",
+      "words": [
+        {
+          "form": "நெட்டாற்றுச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிரைமனையில்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கைந்நீட்டும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கெட்டாற்று வாழ்க்கையே நன்று.",
+      "words": [
+        {
+          "form": "கெட்டாற்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாழ்க்கையே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நன்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

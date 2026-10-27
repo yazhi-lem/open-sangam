@@ -23,7 +23,7 @@ plus Avai/Pulavar, a cited-answer assembly ("the model proposes; Python decides"
 
 | # | Finding | Fix |
 |---|---|---|
-| D1 | **Source gap in the launch scope.** Lines 1–100 hold 95 lines: `maduraikanchi_006` (62–74) prints 8 of 13 | `factory/CURRENT.md` D1 |
+| D1 | **Source gap in the launch scope** (resolved). `maduraikanchi_006` (62–74) printed 8 of 13 lines; the rest were filled from Project Madurai | `factory/CURRENT.md` D1 |
 | D2 | Urai reuse terms with the source site are unconfirmed, yet urai is a launch layer | `factory/NEXT.md` R3 |
 | D3 | Avai launch date: runbook 14 Nov vs plan 21 Nov | `factory/NEXT.md` A1 |
 | D4 | ≥ 9 backlog items are still open for work already merged | `factory/NEXT.md` H2 |

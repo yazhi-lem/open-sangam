@@ -2,7 +2,7 @@
   "id": "mullaippattu_11",
   "poem": "mullaippattu",
   "tinai": "mullai",
-  "sangamTamil": "மத்திகை வளைஇய மறிந்து வீங்கு செறிவுடை\nமெய்ப்பை புக்க, வெருவரும் தோற்றத்து,\nவலி புணர் யாக்கை வன்கண் யவனர்\nபுலித்தொடர் விட்ட, புனை மாண் நல் இல்,\nதிரு மணி விளக்கம் காட்டி.............",
+  "sangamTamil": "மத்திகை வளைஇய மறிந்து வீங்கு செறிவுடை\nமெய்ப்பை புக்க, வெருவரும் தோற்றத்து,\nவலி புணர் யாக்கை வன்கண் யவனர்\nபுலித்தொடர் விட்ட, புனை மாண் நல் இல்,",
   "urai": "இடையில் கச்சமாகக் கட்டிய உடை, உடலில் மெய்ப்பைச் சட்டை, அச்சம் தரும் தோற்றம், வலிமை மிக்க உடம்பு, உறுதி கொண்ட நெஞ்சுரம் ஆகியவற்றைக் கொண்ட யவனர் பழகிய புலியை சங்கிலித் தொடரிலிருந்து விடுவித்து அரசன் படுக்கைக்குக் காவல் புரிந்தனர்.",
   "english": null,
   "lines": [
@@ -169,50 +169,16 @@
           "gloss": "This noun refers to a 'house' or 'abode', specifically the royal residence where the king sleeps."
         }
       ]
-    },
-    {
-      "lineNumber": 5,
-      "text": "திரு மணி விளக்கம் காட்டி.............",
-      "words": [
-        {
-          "form": "திரு",
-          "root": null,
-          "urichol": null,
-          "etymology": "திரு என்பது செல்வம், அழகு, சிறப்பு, புனிதத்தன்மை ஆகியவற்றைக் குறிக்கும் ஒரு சொல். இங்கு விளக்கின் அழகையும், சிறப்பையும் குறிக்கிறது. இது ஒரு அடைமொழியாகப் பயன்படுத்தப்பட்டுள்ளது.",
-          "gloss": "This word, often used as an honorific prefix, signifies 'sacred', 'beautiful', 'auspicious', or 'excellent', here describing the quality of the gem-lamps."
-        },
-        {
-          "form": "மணி",
-          "root": null,
-          "urichol": null,
-          "etymology": "மணி என்பது இரத்தினம், முத்து, ஒளிவிடும் கல் ஆகியவற்றைக் குறிக்கும் ஒரு பெயர்ச்சொல். இங்கு ஒளிவிடும் கற்களால் செய்யப்பட்ட விளக்கைக் குறிக்கிறது.",
-          "gloss": "This noun refers to 'gems' or 'jewels', indicating that the lamps are made of or adorned with precious stones."
-        },
-        {
-          "form": "விளக்கம்",
-          "root": "விளக்கு",
-          "urichol": null,
-          "etymology": "விளக்கம் என்பது 'விளக்கு' என்ற வினைச்சொல்லின் பெயர்ச்சொல் வடிவம். 'விளக்கு' என்றால் ஒளி தருதல், பிரகாசித்தல். இங்கு ஒளி தரும் விளக்குகள் அல்லது தீபங்களைக் குறிக்கிறது.",
-          "gloss": "This noun refers to 'lamps' or 'lights', specifically those that illuminate and provide brightness."
-        },
-        {
-          "form": "காட்டி.............",
-          "root": "காட்டு",
-          "urichol": null,
-          "etymology": "காட்டி என்பது 'காட்டு' என்ற வினைச்சொல்லின் வினையெச்ச வடிவம். 'காட்டு' என்றால் காண்பித்தல், வெளிப்படுத்துதல், ஒளிரச் செய்தல் என்று பொருள். இங்கு விளக்குகள் ஒளியைப் பரப்பியதைக் குறிக்கிறது.",
-          "gloss": "This is an adverbial participle of the verb 'காட்டு' (to show, to display, to illuminate), indicating that the lamps were displaying or emitting light."
-        }
-      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mullaippattu/mullaippattu-முல்லைப்பாட்டு11.html",
+  "source": "http://www.sangathamizh.com/10paddu/mullaippattu/mullaippattu-முல்லைப்பாட்டு11.html; Project Madurai pmuni0488",
   "verified": false,
   "sectionNumber": 11,
   "title": "மன்னன் இருப்பிடத்தில் யவனர்",
   "lineStart": 59,
-  "lineEnd": 63,
+  "lineEnd": 62,
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",

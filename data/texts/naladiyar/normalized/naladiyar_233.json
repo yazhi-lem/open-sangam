@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_233",
+  "poem": "naladiyar",
+  "number": 233,
+  "title": "கூடா நட்பு",
+  "heading": "2.24",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நுண்ணுணர்வி னாரொடு கூடி நுகர்வுடைமை\nவிண்ணுலகே யொக்கும் விழைவிற்றால் - நுண்ணு஡ல்\nஉணர்வில ராகிய ஊதியம் இல்லார்ப்\nபுணர்தல் நிரயத்துள் ஒன்று.",
+  "urai": null,
+  "english": "Bliss enjoyed with the wise is heaven; association with the ignorant and worthless is hell. Enjoyment of the society of men of refinement resembles the heavenly world in the pleasure it affords. Closest contact with those destitute of fine perception of the value of learned pursuits —men who gain no wisdom from you, nor you from them—is one of the hells.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நுண்ணுணர்வி னாரொடு கூடி நுகர்வுடைமை",
+      "words": [
+        {
+          "form": "நுண்ணுணர்வி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னாரொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுகர்வுடைமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "விண்ணுலகே யொக்கும் விழைவிற்றால் - நுண்ணு஡ல்",
+      "words": [
+        {
+          "form": "விண்ணுலகே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யொக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விழைவிற்றால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுண்ணு஡ல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உணர்வில ராகிய ஊதியம் இல்லார்ப்",
+      "words": [
+        {
+          "form": "உணர்வில",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராகிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஊதியம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லார்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "புணர்தல் நிரயத்துள் ஒன்று.",
+      "words": [
+        {
+          "form": "புணர்தல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிரயத்துள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ஒன்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

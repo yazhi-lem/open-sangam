@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_044",
+  "poem": "naladiyar",
+  "number": 44,
+  "title": "தூய்தன்மை",
+  "heading": "1.5",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "தெண்ணீர்க் குவளை பொருகயல் வேலென்று\nகண்ணில்புன் மாக்கள் கவற்ற விடுவேனோ\nஉண்ணீர் களைந்தக்கால் நுங்குசூன் றிட்டன்ன\nகண்ணீர்மை கண்டொழுகு வேன்.",
+  "urai": null,
+  "english": "Female eyes shall not bewilder me ! Shall I abandon (my ascetic purpose) because blind, low men worry me, saying (that woman's eye is like) the water-lily in the clear stream, or the warring carp, or a javelin? I will pursue my virtuous way as having seen (that) the eye's real nature (is), like (that of) the palm-tree fruit (which is) scooped out, after the water has been drained off!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "தெண்ணீர்க் குவளை பொருகயல் வேலென்று",
+      "words": [
+        {
+          "form": "தெண்ணீர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குவளை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொருகயல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேலென்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கண்ணில்புன் மாக்கள் கவற்ற விடுவேனோ",
+      "words": [
+        {
+          "form": "கண்ணில்புன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாக்கள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கவற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடுவேனோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "உண்ணீர் களைந்தக்கால் நுங்குசூன் றிட்டன்ன",
+      "words": [
+        {
+          "form": "உண்ணீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களைந்தக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுங்குசூன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றிட்டன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கண்ணீர்மை கண்டொழுகு வேன்.",
+      "words": [
+        {
+          "form": "கண்ணீர்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்டொழுகு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேன்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

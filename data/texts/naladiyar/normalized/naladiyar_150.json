@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_150",
+  "poem": "naladiyar",
+  "number": 150,
+  "title": "குடிப்பிறப்பு",
+  "heading": "2.15",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "எற்றொன்றும் இல்லா இடத்தும் குடிப்பிறந்தார்\nஅற்றத்தற் சேர்ந்தார்க் கசைவிடத் தூற்றாவர்\nஅற்றக் கடைத்தும் அகல்யா றகழ்ந்தக்கால்\nதெற்றெனத் தெண்ணீர் படும்.",
+  "urai": null,
+  "english": "The noble even in poverty afford aid do those who seek it. The nobly born, even when destitute, are props in time of feebleness to the needy ones that draw nigh to them. So, when the wide river is dry, if you dig in its bed, forth with clear waters gush out.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "எற்றொன்றும் இல்லா இடத்தும் குடிப்பிறந்தார்",
+      "words": [
+        {
+          "form": "எற்றொன்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இடத்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடிப்பிறந்தார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அற்றத்தற் சேர்ந்தார்க் கசைவிடத் தூற்றாவர்",
+      "words": [
+        {
+          "form": "அற்றத்தற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்ந்தார்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கசைவிடத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தூற்றாவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "அற்றக் கடைத்தும் அகல்யா றகழ்ந்தக்கால்",
+      "words": [
+        {
+          "form": "அற்றக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடைத்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அகல்யா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றகழ்ந்தக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தெற்றெனத் தெண்ணீர் படும்.",
+      "words": [
+        {
+          "form": "தெற்றெனத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெண்ணீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "படும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

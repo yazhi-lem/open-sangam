@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_311",
+  "poem": "naladiyar",
+  "number": 311,
+  "title": "அவையறிதல்",
+  "heading": "2.32",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "மெய்ஞ்ஞானக் கோட்டி உறழ்வழி விட்டாங்கோர்\nஅஞ்ஞானந் தந்திட் டதுவாங் கறத்துழாய்க்\nகைஞ்ஞானங் கொண்டொழுகுங் காரறி வாளர்முன்\nசொன்ஞானஞ் சோர விடல்.",
+  "urai": null,
+  "english": "Cast not pearls before swine. Decline entirely to utter words of wisdom before heretics (காரறிவாளர் = men of darkened knowledge — men who professing to be wise, have their understanding darkened), who having forsaken the way pertaining to the assemblies of true wisdom, have there laid down propositions of unwisdom, and propagating them diligently, live in accordance with their own shallow wisdom!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "மெய்ஞ்ஞானக் கோட்டி உறழ்வழி விட்டாங்கோர்",
+      "words": [
+        {
+          "form": "மெய்ஞ்ஞானக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கோட்டி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உறழ்வழி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விட்டாங்கோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "அஞ்ஞானந் தந்திட் டதுவாங் கறத்துழாய்க்",
+      "words": [
+        {
+          "form": "அஞ்ஞானந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தந்திட்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டதுவாங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கறத்துழாய்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கைஞ்ஞானங் கொண்டொழுகுங் காரறி வாளர்முன்",
+      "words": [
+        {
+          "form": "கைஞ்ஞானங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டொழுகுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காரறி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாளர்முன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "சொன்ஞானஞ் சோர விடல்.",
+      "words": [
+        {
+          "form": "சொன்ஞானஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சோர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடல்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

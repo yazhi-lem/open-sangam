@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_128",
+  "poem": "naladiyar",
+  "number": 128,
+  "title": "தீவினையச்சம்",
+  "heading": "1.13",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "உள்ளத்தான் நள்ளா துறுதித் தொழிலராய்க்\nகள்ளத்தான் நட்டார் கழிகேண்மை - தெள்ளிப்\nபுனற்செதும்பு நின்றலைக்கும் பூங்குன்ற நாட\nமனத்துக்கண் மாசாய் விடும்.",
+  "urai": null,
+  "english": "Friends from self-interest Lord of the flowery hilly land where streams wash out and carry hither and thither (precious things) from the marshy land ! — The effusive friendship of those who do not attach themselves (to us) in heart, but perform certain friendly acts merely to strengthen their own position, and who form friendships guilefully, will issue in disappointment to the minds (of those who are intimate with them).",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உள்ளத்தான் நள்ளா துறுதித் தொழிலராய்க்",
+      "words": [
+        {
+          "form": "உள்ளத்தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நள்ளா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துறுதித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொழிலராய்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "கள்ளத்தான் நட்டார் கழிகேண்மை - தெள்ளிப்",
+      "words": [
+        {
+          "form": "கள்ளத்தான்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நட்டார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிகேண்மை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெள்ளிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "புனற்செதும்பு நின்றலைக்கும் பூங்குன்ற நாட",
+      "words": [
+        {
+          "form": "புனற்செதும்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நின்றலைக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூங்குன்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மனத்துக்கண் மாசாய் விடும்.",
+      "words": [
+        {
+          "form": "மனத்துக்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாசாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விடும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

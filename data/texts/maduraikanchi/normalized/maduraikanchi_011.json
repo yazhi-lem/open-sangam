@@ -4,9 +4,9 @@
   "sectionNumber": 11,
   "title": "முதுவெள்ளிலையார் ஏவல் கேட்ப, தலையாலங்கானத்தில் பகைவர்களை வென்றமை",
   "lineStart": 120,
-  "lineEnd": 130,
+  "lineEnd": 129,
   "tinai": "palai",
-  "sangamTamil": "வியன் மேவல் விழுச் செல்வத்து\nஇரு வகையான் இசை சான்ற\nசிறு குடிப் பெருந் தொழுவர்\nகுடி கெழீஇய நானிலவ ரொடு\nதொன்று மொழிந்து தொழில் கேட்பக்",
+  "sangamTamil": "வியன் மேவல் விழுச் செல்வத்து\nஇரு வகையான் இசை சான்ற\nசிறு குடிப் பெருந் தொழுவர்\nகுடி கெழீஇய நானிலவ ரொடு\nதொன்று மொழிந்து தொழில் கேட்பக்\nகாலென்னக் கடிதுராஅய்\nநாடுகெட வெரிபரப்பியாலங்கானத் தஞ்சுவரவிறுத்\nதரசுபட வமருழக்கி\nமுரசுகொண்டு களம்வேட்ட\nவடுதிறலுயர் புகழ்வேந்தே",
   "urai": "சிறுகுடியில் வாழ்ந்த பெருந்தொழுவர் அறிவு வழங்குதல், ஆக்கம் பெற உதவுதல் என்னும் இருவேறு பாங்குகளால் புகழ் பெற்றிருந்தனர். பலரும் விரும்பிப் பேணும் பெருஞ்செல்வம் பெற்றவர்களாகவும் விளங்கினர். குறிஞ்சி, முல்லை, மருதம், நெய்தல் என்னும் நால்வகை நிலங்களிலும் வாழ்ந்த இவர்கள் வழிவழியாகப் பாண்டியன் இட்ட பணியையும் நிறைவேற்றி வந்தனர்.",
   "english": null,
   "lines": [
@@ -179,11 +179,118 @@
           "gloss": "The word 'கேட்பக்' (kēṭpak) is a past participial adverb derived from the verb 'கேள்' (kēḷ), meaning to hear, ask, or request; here, it implies that the duties were requested or assigned to them, and they were expected to listen and comply."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "காலென்னக் கடிதுராஅய்",
+      "words": [
+        {
+          "form": "காலென்னக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடிதுராஅய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "நாடுகெட வெரிபரப்பியாலங்கானத் தஞ்சுவரவிறுத்",
+      "words": [
+        {
+          "form": "நாடுகெட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெரிபரப்பியாலங்கானத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தஞ்சுவரவிறுத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "தரசுபட வமருழக்கி",
+      "words": [
+        {
+          "form": "தரசுபட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வமருழக்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "முரசுகொண்டு களம்வேட்ட",
+      "words": [
+        {
+          "form": "முரசுகொண்டு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களம்வேட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "வடுதிறலுயர் புகழ்வேந்தே",
+      "words": [
+        {
+          "form": "வடுதிறலுயர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகழ்வேந்தே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி11.html",
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி11.html; Project Madurai pmuni0496",
   "verified": false,
   "etymologyMeta": {
     "provider": "openrouter",

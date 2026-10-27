@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_178",
+  "poem": "naladiyar",
+  "number": 178,
+  "title": "நல்லினம் சேர்தல்",
+  "heading": "2.18",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கொல்லை யிரும்புனத்துக் குற்றி யடைந்தபுல்\nஒல்காவே யாகும் உழவ ருழுபடைக்கு\nமெல்லியரே யாயினும் நற்சார்வு சார்ந்தார்மேல்\nசெல்லாவாம் செற்றார் சினம்.",
+  "urai": null,
+  "english": "The society of the good a protection. Grass close around the stump in the field adjoining the house will not be destroyed by the ploughshare of the farmer ; [thus] though men are weak, if they get under safe protection, the wrath of their foes will not reach them.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கொல்லை யிரும்புனத்துக் குற்றி யடைந்தபுல்",
+      "words": [
+        {
+          "form": "கொல்லை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யிரும்புனத்துக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குற்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யடைந்தபுல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "ஒல்காவே யாகும் உழவ ருழுபடைக்கு",
+      "words": [
+        {
+          "form": "ஒல்காவே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாகும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உழவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ருழுபடைக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "மெல்லியரே யாயினும் நற்சார்வு சார்ந்தார்மேல்",
+      "words": [
+        {
+          "form": "மெல்லியரே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நற்சார்வு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சார்ந்தார்மேல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "செல்லாவாம் செற்றார் சினம்.",
+      "words": [
+        {
+          "form": "செல்லாவாம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செற்றார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சினம்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

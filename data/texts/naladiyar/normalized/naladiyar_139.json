@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_139",
+  "poem": "naladiyar",
+  "number": 139,
+  "title": "கல்வி",
+  "heading": "2.14",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "கல்லாரே யாயினும் கற்றாரைச் சேர்ந்தொழுகின்\nநல்லறிவு நாளுந் தலைப்படுவர் - தொல்சிறப்பின்\nஒண்ணிறப் பாதிரிப்பூச் சேர்தலால் புத்தோடு\nதண்ணீர்க்குத் தான்பயந் தாங்கு.",
+  "urai": null,
+  "english": "The benefits of association with the learned. The pot impregnated with odour. Though themselves unlearned, if men live in association with the learned they advance daily in excellent knowledge. The new vessel, by contact with the Padri-flower of old renown and lustrous hue, imparts fragrance to the cold water it contains.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "கல்லாரே யாயினும் கற்றாரைச் சேர்ந்தொழுகின்",
+      "words": [
+        {
+          "form": "கல்லாரே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாயினும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கற்றாரைச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்ந்தொழுகின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நல்லறிவு நாளுந் தலைப்படுவர் - தொல்சிறப்பின்",
+      "words": [
+        {
+          "form": "நல்லறிவு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாளுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைப்படுவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொல்சிறப்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "ஒண்ணிறப் பாதிரிப்பூச் சேர்தலால் புத்தோடு",
+      "words": [
+        {
+          "form": "ஒண்ணிறப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாதிரிப்பூச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேர்தலால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புத்தோடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தண்ணீர்க்குத் தான்பயந் தாங்கு.",
+      "words": [
+        {
+          "form": "தண்ணீர்க்குத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தான்பயந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாங்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

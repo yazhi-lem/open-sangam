@@ -6,7 +6,7 @@
   "lineStart": 545,
   "lineEnd": 558,
   "tinai": "palai",
-  "sangamTamil": "ஒண்சுடர் உருப்பொளி மழுங்கச் சினந்தணிந்து\nசென்ற ஞாயிறு நன்பகற் கொண்டு\nகுடமுதற் குன்றஞ் சேரக் குணமுதல்\nநாள்முதிர் மதியந் தோன்றி நிலாவிரிபு\nபகலுரு வுற்ற இரவுவர நயந்தோர்",
+  "sangamTamil": "ஒண்சுடர் உருப்பொளி மழுங்கச் சினந்தணிந்து\nசென்ற ஞாயிறு நன்பகற் கொண்டு\nகுடமுதற் குன்றஞ் சேரக் குணமுதல்\nநாள்முதிர் மதியந் தோன்றி நிலாவிரிபு\nபகலுரு வுற்ற இரவுவர நயந்தோர்\nகாத லின்றுணை புணர்மா ராயிதழ்த்\nதண்ணறுங் கழுநீர் துணைப்ப விழைபுனையூஉ\nநன்னெடுங் கூந்த னறுவிரை குடைய\nநரந்த மரைப்ப நறுஞ்சாந்து மறுக\nமென்னூற் கலிங்கங் கமழ்புகை மடுப்பக்\nபெண்மகிழ் வுற்ற பிணைநோக்கு மகளிர்\nநெடுஞ்சுடர் விளக்கங் கொளீஇ நெடுநக\nரெல்லை யல்லா நோயொடு புகுந்து\nகல்லென் மாலை நீங்க நாணுக்கொள",
   "urai": "உருப்பு ஒளி = கடும் வெயில். ஞாயிறு ஒளியும் வெயிலுமாகிய தன் சினம் தணிந்து தன் நன்பகல் பொழுதை மேலைத்திசை முதலில் சேர்த்தது. அப்போது கீழைத்திசை முதலில் 15 நாள் முதிர்ந்த மதியம் தோன்றித் தன் நிலவொளியை விரித்துப் பகல்செய்து கொண்டிருந்தது. இதனை விரும்பியவர்கள் அதன் பயனைத் துய்க்கலாயினர்.",
   "english": null,
   "lines": [
@@ -179,11 +179,317 @@
           "gloss": "This plural noun refers to 'those who desired' or 'those who appreciated,' indicating the people who enjoyed the bright, moonlit night."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "காத லின்றுணை புணர்மா ராயிதழ்த்",
+      "words": [
+        {
+          "form": "காத",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லின்றுணை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புணர்மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ராயிதழ்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "தண்ணறுங் கழுநீர் துணைப்ப விழைபுனையூஉ",
+      "words": [
+        {
+          "form": "தண்ணறுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழுநீர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணைப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விழைபுனையூஉ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "நன்னெடுங் கூந்த னறுவிரை குடைய",
+      "words": [
+        {
+          "form": "நன்னெடுங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னறுவிரை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "நரந்த மரைப்ப நறுஞ்சாந்து மறுக",
+      "words": [
+        {
+          "form": "நரந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரைப்ப",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நறுஞ்சாந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "மென்னூற் கலிங்கங் கமழ்புகை மடுப்பக்",
+      "words": [
+        {
+          "form": "மென்னூற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலிங்கங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கமழ்புகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மடுப்பக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "பெண்மகிழ் வுற்ற பிணைநோக்கு மகளிர்",
+      "words": [
+        {
+          "form": "பெண்மகிழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வுற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிணைநோக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகளிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "நெடுஞ்சுடர் விளக்கங் கொளீஇ நெடுநக",
+      "words": [
+        {
+          "form": "நெடுஞ்சுடர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விளக்கங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளீஇ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெடுநக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "ரெல்லை யல்லா நோயொடு புகுந்து",
+      "words": [
+        {
+          "form": "ரெல்லை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யல்லா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நோயொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகுந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "கல்லென் மாலை நீங்க நாணுக்கொள",
+      "words": [
+        {
+          "form": "கல்லென்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீங்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாணுக்கொள",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி47.html",
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி47.html; Project Madurai pmuni0496",
   "verified": false,
   "etymologyMeta": {
     "provider": "openrouter",

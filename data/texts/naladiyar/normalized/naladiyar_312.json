@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_312",
+  "poem": "naladiyar",
+  "number": 312,
+  "title": "அவையறிதல்",
+  "heading": "2.32",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "நாப்பாடம் சொல்லி நயமுணர்வார் போல்செறிக்கும்\nதீப்புலவர் சேரார் செறிவுடையார் - தீப்புலவன்\nகோட்டியுள் குன்றக் குடிப்பழிக்கும் அல்லர்க்கால்\nதோட்புடைக் கொள்ளா எழும்.",
+  "urai": null,
+  "english": "Avoid the angry violent disputant. Well-disciplined men come not near the heretic (=man of evil learning, the teacher of an evil system), who stores up (in his memory certain formulas, comp. 304), as though he understood their worth, and repeats them by rote (lit. as a tongue-lesson). The heretic, if worsted in the assembly, will abuse the family (of his opponents); or he will spring up and challenge them to fight.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நாப்பாடம் சொல்லி நயமுணர்வார் போல்செறிக்கும்",
+      "words": [
+        {
+          "form": "நாப்பாடம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நயமுணர்வார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போல்செறிக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "தீப்புலவர் சேரார் செறிவுடையார் - தீப்புலவன்",
+      "words": [
+        {
+          "form": "தீப்புலவர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேரார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செறிவுடையார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீப்புலவன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கோட்டியுள் குன்றக் குடிப்பழிக்கும் அல்லர்க்கால்",
+      "words": [
+        {
+          "form": "கோட்டியுள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குன்றக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடிப்பழிக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அல்லர்க்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "தோட்புடைக் கொள்ளா எழும்.",
+      "words": [
+        {
+          "form": "தோட்புடைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்ளா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எழும்.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

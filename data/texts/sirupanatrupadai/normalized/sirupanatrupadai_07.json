@@ -2,34 +2,41 @@
   "id": "sirupanatrupadai_07",
   "poem": "sirupanatrupadai",
   "tinai": "unknown",
-  "sangamTamil": "............................... சுரும்பு உண\nநறு வீ உறைக்கும் நாக நெடு வழிச்\nசிறு வீ முல்லைக்குப் பெருந்தேர் நல்கிய\nபிறங்கு வெள்ளருவி வீழும் சாரல்\nபறம்பின் கோமான் பாரியும்",
+  "sangamTamil": "பெருங்க னாடன் பேகனுஞ் சுரும்புண\nநறு வீ உறைக்கும் நாக நெடு வழிச்\nசிறு வீ முல்லைக்குப் பெருந்தேர் நல்கிய\nபிறங்கு வெள்ளருவி வீழும் சாரல்",
   "urai": "அருவி விழும் காட்சி தொலைதூரம் தெரியும் மலை பறம்புமலை இவன் அந்தப் பறம்புமலைத் தலைவன். ஒருநாள் நாகமலைப் பாதையில் சென்றுகொண்டிருந்தபோது படர்வதற்குப் பற்றுக்கோடு இல்லாமல் ஆடிக்கொண்டிருந்த சுரும்புத் தேனீக்கள் தேன் உண்ணும் முல்லைக்கொடி படர்வதற்குப் படர்வதற்குக் கொழுகொம்பு இல்லாமல் ஆடிக்கொண்டிருந்ததைப் பார்த்து, அது படர்வதற்காகத் தன் மிகப் பெரிய தேரையே நிறுத்தி விட்டுச் சென்றவன்.",
   "english": null,
   "lines": [
     {
       "lineNumber": 1,
-      "text": "............................... சுரும்பு உண",
+      "text": "பெருங்க னாடன் பேகனுஞ் சுரும்புண",
       "words": [
         {
-          "form": "...............................",
+          "form": "பெருங்க",
           "root": null,
           "urichol": null,
           "etymology": null,
-          "gloss": "manuscript lacuna"
+          "gloss": null
         },
         {
-          "form": "சுரும்பு",
+          "form": "னாடன்",
           "root": null,
           "urichol": null,
-          "etymology": "சுரும்பு என்பது சங்க இலக்கியத்தில் வண்டினத்தைக் குறிக்கும் சொல். இது 'சுரும்' என்னும் ஒலிக்குறிப்புச் சொல்லில் இருந்து பிறந்திருக்கலாம். இச்சொல் இன்றும் வண்டைக் குறிக்கப் பயன்பட்டாலும், சங்க இலக்கியத்தில் இதன் பயன்பாடு மிகுதி.",
-          "gloss": "The word 'சுரும்பு' refers to a beetle or a bee, specifically indicating the insect that feeds on nectar in this context."
+          "etymology": null,
+          "gloss": null
         },
         {
-          "form": "உண",
-          "root": "உண்",
+          "form": "பேகனுஞ்",
+          "root": null,
           "urichol": null,
-          "etymology": "உண என்பது 'உண்' என்னும் வினைச்சொல்லின் வினையெச்ச வடிவம். இது 'உண்ண' என்பதன் சுருங்கிய வடிவம். சங்க காலத்தில் 'உண' என்பது 'உண்ணும்படி' அல்லது 'உண்பதற்காக' என்ற பொருளில் பரவலாகப் பயன்படுத்தப்பட்டது. நவீன தமிழில் 'உண்ண' என்றே பெரும்பாலும் பயன்படுத்தப்படுகிறது.",
-          "gloss": "The word 'உண' is a verbal participle meaning 'to eat' or 'in order to eat', indicating the action of the bees consuming nectar."
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுரும்புண",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
         }
       ]
     },
@@ -155,43 +162,16 @@
           "gloss": "The word 'சாரல்' refers to the 'mountain slope' or 'foothills', indicating the area where the waterfall is located."
         }
       ]
-    },
-    {
-      "lineNumber": 5,
-      "text": "பறம்பின் கோமான் பாரியும்",
-      "words": [
-        {
-          "form": "பறம்பின்",
-          "root": "பறம்பு",
-          "urichol": null,
-          "etymology": "பறம்பின் என்பது 'பறம்பு' என்னும் சொல்லுடன் ஆறாம் வேற்றுமை உருபான 'இன்' சேர்ந்து வந்த வடிவம். பறம்பு என்பது ஒரு மலையின் பெயர். சங்க காலத்தில் பாரி மன்னன் ஆண்ட மலையாகப் புகழ்பெற்றது. இன்றும் 'பறம்புமலை' என்ற பெயர் வழக்கில் உள்ளது.",
-          "gloss": "The word 'பறம்பின்' refers to 'Pārambu hill', with the genitive case marker indicating 'of Pārambu'."
-        },
-        {
-          "form": "கோமான்",
-          "root": "கோ",
-          "urichol": null,
-          "etymology": "கோமான் என்பது 'கோ' (அரசன்) மற்றும் 'மான்' (மகன், தலைவன்) ஆகிய சொற்களின் புணர்ச்சியால் உருவான சொல். இது 'அரசன்', 'தலைவன்' என்ற பொருளைத் தருகிறது. சங்க காலத்தில் மன்னர்களையும், தலைவர்களையும் குறிக்கப் பயன்படுத்தப்பட்டது. இன்றும் 'கோமான்' என்ற சொல் இலக்கிய வழக்கில் தலைவனைக் குறிக்கப் பயன்படுத்தப்படுகிறது.",
-          "gloss": "The word 'கோமான்' means 'king' or 'chieftain', referring to the ruler of Pārambu hill."
-        },
-        {
-          "form": "பாரியும்",
-          "root": "பாரி",
-          "urichol": null,
-          "etymology": "பாரியும் என்பது 'பாரி' என்னும் மன்னனின் பெயருடன் 'உம்' என்னும் இடைச்சொல் சேர்ந்து வந்த வடிவம். பாரி சங்க காலத்தின் புகழ்பெற்ற வள்ளல்களில் ஒருவன். இச்சொல் 'பாரி என்பவனும்' என்ற பொருளைத் தருகிறது. இன்றும் 'பாரி' என்ற பெயர் வழக்கில் உள்ளது.",
-          "gloss": "The word 'பாரியும்' refers to 'Pāri', a renowned chieftain and philanthropist, with the conjunctive particle 'உம்' implying 'Pāri also' or 'even Pāri'."
-        }
-      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை07.html",
+  "source": "http://www.sangathamizh.com/10paddu/sirupanatruppadai/sirupanatruppadai-சிறுபாணாற்றுப்படை07.html; Project Madurai pmuni0483",
   "verified": false,
   "sectionNumber": 7,
   "title": "கடையெழு வள்ளல்களின் சிறப்பு - பாரி",
   "lineStart": 87,
-  "lineEnd": 91,
+  "lineEnd": 90,
   "etymologyMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",

@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1241",
+  "poem": "thirukkural",
+  "number": 1241,
+  "title": "நெஞ்சொடுகிளத்தல்",
+  "heading": "3.2.10",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "நினைத்தொன்று சொல்லாயோ நெஞ்சே எனைத்தொன்றும்\nஎவ்வநோய் தீர்க்கும் மருந்து.",
+  "urai": null,
+  "english": "My heart, canst thou not thinking of some med'cine tell, Not any one, to drive away this grief incurable?",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "நினைத்தொன்று சொல்லாயோ நெஞ்சே எனைத்தொன்றும்",
+      "words": [
+        {
+          "form": "நினைத்தொன்று",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சொல்லாயோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நெஞ்சே",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "எனைத்தொன்றும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "எவ்வநோய் தீர்க்கும் மருந்து.",
+      "words": [
+        {
+          "form": "எவ்வநோய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீர்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மருந்து.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

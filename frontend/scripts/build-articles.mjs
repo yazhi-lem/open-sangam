@@ -160,10 +160,15 @@ console.log('[Articles Build] RSS feed generated at feed.xml');
 // Sitemap + robots.txt — every public SPA route search engines should index.
 const poemsSource = fs.readFileSync(path.resolve(__dirname, '../src/data/poems.js'), 'utf-8');
 const poemIds = [...new Set([...poemsSource.matchAll(/^\s*id: '([a-z]+)'/gm)].map(m => m[1]))];
-const staticRoutes = ['/', '/book', '/avai', '/world', '/knowledge', '/graph', '/articles'];
+const staticRoutes = ['/', '/book', '/world', '/articles'];
+const artifactsPath = path.resolve(__dirname, '../../data/library/artifacts.json');
+const artifactIds = fs.existsSync(artifactsPath)
+  ? JSON.parse(fs.readFileSync(artifactsPath, 'utf-8')).artifacts.map((artifact) => artifact.id)
+  : [];
 const sitemapUrls = [
   ...staticRoutes.map(r => ({ loc: `${siteUrl}${r === '/' ? '/' : r}` })),
   ...poemIds.map(id => ({ loc: `${siteUrl}/book/${id}` })),
+  ...artifactIds.map(id => ({ loc: `${siteUrl}/artifacts/${id}` })),
   ...articles.map(a => ({ loc: `${siteUrl}/articles/${a.slug}`, lastmod: new Date(a.date).toISOString().slice(0, 10) })),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

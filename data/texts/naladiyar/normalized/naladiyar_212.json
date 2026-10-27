@@ -1,0 +1,161 @@
+{
+  "id": "naladiyar_212",
+  "poem": "naladiyar",
+  "number": 212,
+  "title": "நட்பாராய்தல்",
+  "heading": "2.22",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "இற்பிறப் பெண்ணி இடைதிரியா ரென்பதோர்\nநற்புடை கொண்டமை யல்லது - பொற்கேழ்\nபுனலொழுகப் புள்ளிரியும் பூங்குன்ற நாட\nமனமறியப் பட்டதொன் றன்று.",
+  "urai": null,
+  "english": "Examine the lineage of a candidate for your friendship. Lord of the land of flowery hills, where wild-fowl golden in hue fly, scared by the rush of the waterfall. Regarding the mobility of their birth—these will not swerve:—To say thus is a good ground of confidence—(a good position to take up); but to say ‘their minds are known,' is not any (i. e. real ground).",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "இற்பிறப் பெண்ணி இடைதிரியா ரென்பதோர்",
+      "words": [
+        {
+          "form": "இற்பிறப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெண்ணி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இடைதிரியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரென்பதோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "நற்புடை கொண்டமை யல்லது - பொற்கேழ்",
+      "words": [
+        {
+          "form": "நற்புடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொண்டமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யல்லது",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "-",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பொற்கேழ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "புனலொழுகப் புள்ளிரியும் பூங்குன்ற நாட",
+      "words": [
+        {
+          "form": "புனலொழுகப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புள்ளிரியும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூங்குன்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நாட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "மனமறியப் பட்டதொன் றன்று.",
+      "words": [
+        {
+          "form": "மனமறியப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பட்டதொன்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றன்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

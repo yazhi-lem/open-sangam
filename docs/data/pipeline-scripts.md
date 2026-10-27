@@ -45,6 +45,41 @@ wholesale — that's fine, because `raw/` only ever holds a scrape of the source
 site, never AI output. If the source page hasn't changed, the re-fetch is a
 no-op in substance.
 
+### `scraper/scrape_projectmadurai.py` — Fill idyll gaps
+
+```bash
+python -m scraper.scrape_projectmadurai --poem all
+python -m scraper.scrape_projectmadurai --poem maduraikanchi --dry-run
+```
+
+Fills the idyll line gaps and repairs heading-range defects left by the primary
+source, using the complete Project Madurai edition of each idyll. Existing lines
+and word annotations are preserved; only missing lines are inserted, and section
+`lineStart`/`lineEnd` are re-derived when the source heading was wrong. The
+script also updates `data/schema/known_line_gaps.json`, so a clean validation
+run stays its normal green state.
+
+Source pages are cached under the already-ignored `data/texts/<poem>/raw/`.
+
+### `scraper/scrape_pathinen.py` — Thirukkural + Naladiyar
+
+```bash
+python -m scraper.scrape_pathinen --work all
+python -m scraper.scrape_pathinen --work thirukkural
+```
+
+Ingests the first two Pathinenkilkkanakku works from Project Madurai:
+
+| Work | Tamil | English |
+|---|---|---|
+| Tirukkural | `pmuni0001` | G. U. Pope et al., 1886 (`pmuni0153`) |
+| Naladiyar | `pmuni0016` | G. U. Pope / F. W. Ellis, 1893 (`pmuni0711`) |
+
+Both translations are public domain. Four verses that are missing or
+mislabelled in the HTML editions are filled from the other Project Madurai
+editions and the Internet Archive scan of the same translation. No machine
+translation is used.
+
 ### `normalizer/normalize_all.py` — Normalize
 
 ```bash
@@ -116,6 +151,57 @@ scripts). The `.jsonl` export is always **rewritten from Chroma**, never
 appended to — so it can't drift from what's actually indexed, the same way
 `refresh_poem_artifacts()` rebuilds a poem's combined JSON from its
 normalized files rather than patching it incrementally.
+
+### `knowledge/extract_stories.py` — Akam & Puram story seeds
+
+```bash
+python -m knowledge.extract_stories
+```
+
+Turns each Sangam verse into a structured story seed: kind (`akam`/`puram`),
+archetype, characters, setting, conflict, turn, resolution, theme and cited
+evidence. Akam uses the five tiṇai emotional arcs; puram is classified into war,
+patronage, hero-stone, kingship, elegy, love, ethics, nature, devotion and
+reflection. Writes `data/library/stories.json`.
+
+These are research seeds, not literary retellings. Every story keeps its source
+record id and a text/urai excerpt.
+
+A separate hand-curated anthology lives in `data/library/story-anthology.json`
+with full Tamil and English retellings and direct source-verse links.
+
+### `knowledge/extract_corpus_entities.py` — Flora, fauna, food, work & emotion index
+
+```bash
+python -m knowledge.extract_corpus_entities
+```
+
+Builds `data/library/corpus-entities.json`: flora, fauna, food/drink,
+occupations, kinship, places/dynasties, landscape motifs and emotions, each with
+attestation counts, poem distribution and cited sample lines.
+
+### `knowledge/run_avai_campaigns.py` — Avai research briefs
+
+```bash
+# with the local Avai API running on :8080
+python -m knowledge.run_avai_campaigns --campaign all --language ta
+```
+
+Runs the curated campaigns through the local Avai agents and writes
+`data/library/avai-research/<campaign>.json` plus an `index.json` manifest.
+Briefs retain citations, evidence status and abstention reasons.
+
+### `knowledge/extract_corpus_artifacts.py` — Material-culture index
+
+```bash
+python -m knowledge.extract_corpus_artifacts
+```
+
+Scans every normalized verse line for a curated Tamil artifact lexicon
+(instruments, ornaments, weapons, transport, ritual objects, vessels, textiles,
+tools, writing) and writes `data/library/corpus-artifacts.json` with counts,
+forms, poem distribution and cited sample lines. It is a research index, not an
+archaeological identification.
 
 ### `knowledge/build_graph.py` — Knowledge graph
 

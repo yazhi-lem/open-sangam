@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_368",
+  "poem": "naladiyar",
+  "number": 368,
+  "title": "பன்னெறி",
+  "heading": "2.37",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "உடைப்பெருஞ் செல்வரும் சான்றோரும் கெட்டுப்\nபுடைப்பெண்டிர் மக்களும் கீழும் பெருகிக்\nகடைக்கால் தலைக்கண்ண தாகிக் குடைக்கால்போல்\nகீழ்மேலாய் நிற்கும் உலகு.",
+  "urai": null,
+  "english": "Bad times. The wealthy men of great possessions and the perfect have perished, while wantons' sons and base men multiply. The lowest takes chief place, and, like the umbrella's handle, this world is upside down!",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "உடைப்பெருஞ் செல்வரும் சான்றோரும் கெட்டுப்",
+      "words": [
+        {
+          "form": "உடைப்பெருஞ்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செல்வரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சான்றோரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கெட்டுப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "புடைப்பெண்டிர் மக்களும் கீழும் பெருகிக்",
+      "words": [
+        {
+          "form": "புடைப்பெண்டிர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மக்களும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீழும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெருகிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கடைக்கால் தலைக்கண்ண தாகிக் குடைக்கால்போல்",
+      "words": [
+        {
+          "form": "கடைக்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தலைக்கண்ண",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாகிக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குடைக்கால்போல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கீழ்மேலாய் நிற்கும் உலகு.",
+      "words": [
+        {
+          "form": "கீழ்மேலாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நிற்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "உலகு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

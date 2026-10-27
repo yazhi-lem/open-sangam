@@ -6,7 +6,7 @@
   "lineStart": 629,
   "lineEnd": 653,
   "tinai": "palai",
-  "sangamTamil": "பாடான் றவிந்த பனிக்கடல் புரையப்\nபாயல் வளர்வோர் கண்ணினிது மடுப்பப்\nபானாட் கொண்ட கங்கு லிடையது\nபேயும் அணங்கும் உருவுகொண் டாய்கோற்\nகூற்றக் கொஃறேர் கழுதொடு கொட்ப",
+  "sangamTamil": "பாடான் றவிந்த பனிக்கடல் புரையப்\nபாயல் வளர்வோர் கண்ணினிது மடுப்பப்\nபானாட் கொண்ட கங்கு லிடையது\nபேயும் அணங்கும் உருவுகொண் டாய்கோற்\nகூற்றக் கொஃறேர் கழுதொடு கொட்ப\nவிரும்பிடி மேஎந்தோ லன்ன விருள்சேர்பு\nகல்லு மரனுந் துணிக்குங் கூர்மைத்\nதொடலை வாளர் தொடுதோ லடியர்\nகுறங்கிடைப் பதித்த கூர்நுனைக் குறும்பிடிச்\nசிறந்த கருமை நுண்வினை நுணங்கற\nனிறங்கவர்பு புனைந்த நீலக் கச்சினர்\nமென்னூ லேணிப் பன்மாண் சுற்றினர்\nநிலனக ழுளியர் கலனசைஇக் கொட்குங்\nகண்மா றாடவ ரொடுக்க மொற்றி\nவயக்களிறு பார்க்கும் வயப்புலி போலத்\nதுஞ்சாக் கண்ண ரஞ்சாக் கொள்கைய\nரறிந்தோர் புகழ்ந்த வாண்மையர் செறிந்த\nநூல்வழிப் பிழையா நுணங்குநுண் டேர்ச்சி\nயூர்காப் பாள ரூக்கருங் கணையினர்\nதேர்வழக்கு தெருவி னீர்திரண் டொழுக\nமழையமைந் துற்ற வரைநா ளமயமு\nமசைவில ரெழுந்து நயம்வந்து வழங்கலிற்\nகடவுள் வழங்குங் கையறு கங்குலு\nமச்ச மறியா தேம மாகிய\nமற்றை யாமம் பகலுறக் கழிப்பிப்",
   "urai": "கடலில் அலை ஓயாது. பனியால் மூடப்பட்டிருக்கும் கடலில் அலை இருக்குமா? பனிக்கடல் போல மக்கள் படுத்து இனிமையாக உறங்கினர். கங்குல் 6 யாமங்கள் கொண்டது. அதில் 3 கழிந்து விட்ட படியாலே இரவுக்காலத்தில் அது பாதிநாள் [பானாள்] ஆயிற்று. இந்த நேரத்தில் பேய், அணங்கு, கூற்றம், கழுது ஆகியவை சுழன்று கொண்டிருந்தன.",
   "english": null,
   "lines": [
@@ -179,11 +179,691 @@
           "gloss": "This is the adverbial participle form of the root 'கொட்பு' (to whirl, to wander, to roam), meaning 'to roam around' or 'to wander', describing the movement of the various supernatural beings during the night."
         }
       ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "விரும்பிடி மேஎந்தோ லன்ன விருள்சேர்பு",
+      "words": [
+        {
+          "form": "விரும்பிடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மேஎந்தோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லன்ன",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "விருள்சேர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "கல்லு மரனுந் துணிக்குங் கூர்மைத்",
+      "words": [
+        {
+          "form": "கல்லு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மரனுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துணிக்குங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூர்மைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "தொடலை வாளர் தொடுதோ லடியர்",
+      "words": [
+        {
+          "form": "தொடலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாளர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தொடுதோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லடியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "குறங்கிடைப் பதித்த கூர்நுனைக் குறும்பிடிச்",
+      "words": [
+        {
+          "form": "குறங்கிடைப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பதித்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கூர்நுனைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குறும்பிடிச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "சிறந்த கருமை நுண்வினை நுணங்கற",
+      "words": [
+        {
+          "form": "சிறந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கருமை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுண்வினை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுணங்கற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "னிறங்கவர்பு புனைந்த நீலக் கச்சினர்",
+      "words": [
+        {
+          "form": "னிறங்கவர்பு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புனைந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நீலக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கச்சினர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "மென்னூ லேணிப் பன்மாண் சுற்றினர்",
+      "words": [
+        {
+          "form": "மென்னூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லேணிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பன்மாண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சுற்றினர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "நிலனக ழுளியர் கலனசைஇக் கொட்குங்",
+      "words": [
+        {
+          "form": "நிலனக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ழுளியர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலனசைஇக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொட்குங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "கண்மா றாடவ ரொடுக்க மொற்றி",
+      "words": [
+        {
+          "form": "கண்மா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றாடவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரொடுக்க",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொற்றி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "வயக்களிறு பார்க்கும் வயப்புலி போலத்",
+      "words": [
+        {
+          "form": "வயக்களிறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பார்க்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வயப்புலி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போலத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "துஞ்சாக் கண்ண ரஞ்சாக் கொள்கைய",
+      "words": [
+        {
+          "form": "துஞ்சாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கண்ண",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரஞ்சாக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொள்கைய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "ரறிந்தோர் புகழ்ந்த வாண்மையர் செறிந்த",
+      "words": [
+        {
+          "form": "ரறிந்தோர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகழ்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வாண்மையர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செறிந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "நூல்வழிப் பிழையா நுணங்குநுண் டேர்ச்சி",
+      "words": [
+        {
+          "form": "நூல்வழிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பிழையா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நுணங்குநுண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டேர்ச்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "யூர்காப் பாள ரூக்கருங் கணையினர்",
+      "words": [
+        {
+          "form": "யூர்காப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாள",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரூக்கருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கணையினர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 20,
+      "text": "தேர்வழக்கு தெருவி னீர்திரண் டொழுக",
+      "words": [
+        {
+          "form": "தேர்வழக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தெருவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "னீர்திரண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டொழுக",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 21,
+      "text": "மழையமைந் துற்ற வரைநா ளமயமு",
+      "words": [
+        {
+          "form": "மழையமைந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துற்ற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வரைநா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ளமயமு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 22,
+      "text": "மசைவில ரெழுந்து நயம்வந்து வழங்கலிற்",
+      "words": [
+        {
+          "form": "மசைவில",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரெழுந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நயம்வந்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழங்கலிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 23,
+      "text": "கடவுள் வழங்குங் கையறு கங்குலு",
+      "words": [
+        {
+          "form": "கடவுள்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வழங்குங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கையறு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கங்குலு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 24,
+      "text": "மச்ச மறியா தேம மாகிய",
+      "words": [
+        {
+          "form": "மச்ச",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மறியா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தேம",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாகிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 25,
+      "text": "மற்றை யாமம் பகலுறக் கழிப்பிப்",
+      "words": [
+        {
+          "form": "மற்றை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "யாமம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பகலுறக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கழிப்பிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி55.html",
+  "source": "http://www.sangathamizh.com/10paddu/mathuraikaanchi/mathuraikaanchi-மதுரைக்காஞ்சி55.html; Project Madurai pmuni0496",
   "verified": false,
   "etymologyMeta": {
     "provider": "openrouter",

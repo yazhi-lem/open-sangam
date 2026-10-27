@@ -2,7 +2,7 @@
   "id": "pattinappalai_04",
   "poem": "pattinappalai",
   "tinai": "unknown",
-  "sangamTamil": "வெள்ளை உப்பின் கொள்ளை சாற்றி,\nநெல்லொடு வந்த வல்வாய்ப் பஃறி,\nபணை நிலைப் புரவியின் அணை முதல் பிணிக்கும்,",
+  "sangamTamil": "வெள்ளை உப்பின் கொள்ளை சாற்றி,\nநெல்லொடு வந்த வல்வாய்ப் பஃறி,\nபணை நிலைப் புரவியின் அணை முதல் பிணிக்கும்,\nகழிசூழ்படப்பைக் கலியாணர்ப்\nபொழிற்புறவிற் பூந்தண்டலை\nமழைநீங்கிய மாவிசும்பின்\nமதிசேர்ந்த மகவெண்மீ\nனுருகெழுதிற லுயர்கோட்டத்து\nமுருகமர்பூ முரண்கிடக்கை\nவரியணிசுடர் வான்பொய்கை\nயிருகாமத் திணையேரிப்\nபுலிப்பொறிப் போர்க்கதவிற்\nறிருத்துஞ்சுந் திண்காப்பிற்\nபுகழ்நிலைஇய மொழிவளர\nவறநிலைஇய வகனட்டிற்\nசோறுவாக்கிய கொழுங்கஞ்சி\nயாறுபோலப் பரந்தொழுகி\nயேறுபொரச் சேறாகித்\nதேரோடத் துகள்கெழுமி\nநீறாடிய களிறுபோல\nவேறுபட்ட வினையோவத்து\nவெண்கோயின் மாசூட்டுந்\nதண்கேணித் தகைமுற்றத்துப்\nபகட்டெருத்தின் பலசாலைத்\nதவப்பள்ளித் தாழ்காவி\nனவிர்சடை முனிவ ரங்கி வேட்கு\nமாவுதி நறும்புகை முனைஇக் குயிறம்\nமாயிரும் பெடையோ டிரியல் போகிப்\nபூதங் காக்கும் புகலருங் கடி நகர்த்\nதூதுணம் புறவொடு துச்சிற் சேக்கு",
   "urai": "காவிரிப்பூம்பட்டினத்தில் நிலவாணிகம் - உப்பேற்றிக்கொண்டு ஆற்றின் வழியே சென்ற பஃறி மிதவை பண்டமாற்றாக விற்பனை செய்த நெல்லோடு மீண்டது. ஆற்றோரங்களில் குதிரைகளைக் கட்டும் முளைக்கம்பத்தில் அந்தப் பஃறிகள் தண்ணீர் அடித்துக்கொண்டு ஓடாமல் இருப்பதற்காகக் கட்டப்பட்டிருந்தன.",
   "english": null,
   "lines": [
@@ -121,11 +121,628 @@
           "gloss": "The word 'பிணிக்கும்' means 'will tie' or 'ties', indicating that the boats are tied to the mooring posts."
         }
       ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "கழிசூழ்படப்பைக் கலியாணர்ப்",
+      "words": [
+        {
+          "form": "கழிசூழ்படப்பைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கலியாணர்ப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 5,
+      "text": "பொழிற்புறவிற் பூந்தண்டலை",
+      "words": [
+        {
+          "form": "பொழிற்புறவிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பூந்தண்டலை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 6,
+      "text": "மழைநீங்கிய மாவிசும்பின்",
+      "words": [
+        {
+          "form": "மழைநீங்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாவிசும்பின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 7,
+      "text": "மதிசேர்ந்த மகவெண்மீ",
+      "words": [
+        {
+          "form": "மதிசேர்ந்த",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மகவெண்மீ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 8,
+      "text": "னுருகெழுதிற லுயர்கோட்டத்து",
+      "words": [
+        {
+          "form": "னுருகெழுதிற",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "லுயர்கோட்டத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 9,
+      "text": "முருகமர்பூ முரண்கிடக்கை",
+      "words": [
+        {
+          "form": "முருகமர்பூ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முரண்கிடக்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 10,
+      "text": "வரியணிசுடர் வான்பொய்கை",
+      "words": [
+        {
+          "form": "வரியணிசுடர்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வான்பொய்கை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 11,
+      "text": "யிருகாமத் திணையேரிப்",
+      "words": [
+        {
+          "form": "யிருகாமத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திணையேரிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 12,
+      "text": "புலிப்பொறிப் போர்க்கதவிற்",
+      "words": [
+        {
+          "form": "புலிப்பொறிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போர்க்கதவிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 13,
+      "text": "றிருத்துஞ்சுந் திண்காப்பிற்",
+      "words": [
+        {
+          "form": "றிருத்துஞ்சுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "திண்காப்பிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 14,
+      "text": "புகழ்நிலைஇய மொழிவளர",
+      "words": [
+        {
+          "form": "புகழ்நிலைஇய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மொழிவளர",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 15,
+      "text": "வறநிலைஇய வகனட்டிற்",
+      "words": [
+        {
+          "form": "வறநிலைஇய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வகனட்டிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 16,
+      "text": "சோறுவாக்கிய கொழுங்கஞ்சி",
+      "words": [
+        {
+          "form": "சோறுவாக்கிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொழுங்கஞ்சி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 17,
+      "text": "யாறுபோலப் பரந்தொழுகி",
+      "words": [
+        {
+          "form": "யாறுபோலப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பரந்தொழுகி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 18,
+      "text": "யேறுபொரச் சேறாகித்",
+      "words": [
+        {
+          "form": "யேறுபொரச்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேறாகித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 19,
+      "text": "தேரோடத் துகள்கெழுமி",
+      "words": [
+        {
+          "form": "தேரோடத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துகள்கெழுமி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 20,
+      "text": "நீறாடிய களிறுபோல",
+      "words": [
+        {
+          "form": "நீறாடிய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "களிறுபோல",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 21,
+      "text": "வேறுபட்ட வினையோவத்து",
+      "words": [
+        {
+          "form": "வேறுபட்ட",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வினையோவத்து",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 22,
+      "text": "வெண்கோயின் மாசூட்டுந்",
+      "words": [
+        {
+          "form": "வெண்கோயின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "மாசூட்டுந்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 23,
+      "text": "தண்கேணித் தகைமுற்றத்துப்",
+      "words": [
+        {
+          "form": "தண்கேணித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தகைமுற்றத்துப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 24,
+      "text": "பகட்டெருத்தின் பலசாலைத்",
+      "words": [
+        {
+          "form": "பகட்டெருத்தின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பலசாலைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 25,
+      "text": "தவப்பள்ளித் தாழ்காவி",
+      "words": [
+        {
+          "form": "தவப்பள்ளித்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாழ்காவி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 26,
+      "text": "னவிர்சடை முனிவ ரங்கி வேட்கு",
+      "words": [
+        {
+          "form": "னவிர்சடை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முனிவ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரங்கி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேட்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 27,
+      "text": "மாவுதி நறும்புகை முனைஇக் குயிறம்",
+      "words": [
+        {
+          "form": "மாவுதி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நறும்புகை",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முனைஇக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குயிறம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 28,
+      "text": "மாயிரும் பெடையோ டிரியல் போகிப்",
+      "words": [
+        {
+          "form": "மாயிரும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பெடையோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "டிரியல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "போகிப்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 29,
+      "text": "பூதங் காக்கும் புகலருங் கடி நகர்த்",
+      "words": [
+        {
+          "form": "பூதங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காக்கும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புகலருங்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கடி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "நகர்த்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 30,
+      "text": "தூதுணம் புறவொடு துச்சிற் சேக்கு",
+      "words": [
+        {
+          "form": "தூதுணம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "புறவொடு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "துச்சிற்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "சேக்கு",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
     }
   ],
   "culturalNotes": [],
   "audioUrl": null,
-  "source": "http://www.sangathamizh.com/10paddu/paddinappalai/paddinappalai-பட்டினப்பாலை04.html",
+  "source": "http://www.sangathamizh.com/10paddu/paddinappalai/paddinappalai-பட்டினப்பாலை04.html; Project Madurai pmuni0479",
   "verified": false,
   "sectionNumber": 4,
   "title": "நகரச் சிறப்பு",

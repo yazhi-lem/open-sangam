@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_0929",
+  "poem": "thirukkural",
+  "number": 929,
+  "title": "கள்ளுண்ணாமை",
+  "heading": "2.3.20",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "களித்தானைக் காரணம் காட்டுதல் கீழ்நீர்க்\nகுளித்தானைத் தீத்துரீஇ அற்று.",
+  "urai": null,
+  "english": "Like him who, lamp in hand, would seek one sunk beneath the wave. Is he who strives to sober drunken man with reasonings grave.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "களித்தானைக் காரணம் காட்டுதல் கீழ்நீர்க்",
+      "words": [
+        {
+          "form": "களித்தானைக்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காரணம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "காட்டுதல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கீழ்நீர்க்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "குளித்தானைத் தீத்துரீஇ அற்று.",
+      "words": [
+        {
+          "form": "குளித்தானைத்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தீத்துரீஇ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அற்று.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

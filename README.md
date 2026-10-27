@@ -2,7 +2,7 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
-Plan and status live in [`factory/`](./factory): [`CURRENT`](./factory/CURRENT.md) · [`NEXT`](./factory/NEXT.md) · [`RUNWAY`](./factory/RUNWAY.md). Retired docs are summarised in [`archives/`](./archives).
+Plan and status live in [`factory/`](./factory): [`CURRENT`](./factory/CURRENT.md) · [`NEXT`](./factory/NEXT.md) · [`RUNWAY`](./factory/RUNWAY.md). The wider library plan (Pathinenkilkkanakku, classics, artifacts, multilingual reader) is in [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md). Retired docs are summarised in [`archives/`](./archives).
 
 Open Sangam turns static web archives of Sangam-era poetry into a layered learning experience with linguistic,
 cultural and historical context. Think "Duolingo for ancient literature".
@@ -11,6 +11,10 @@ cultural and historical context. Think "Duolingo for ancient literature".
 
 - **Layered view.** Sangam Tamil · modern Tamil prose (*urai*) · English, one layer at a time. Unreviewed text is
   labelled as a draft.
+- **Tamil Library.** One catalog for Sangam works, Pathinenkilkkanakku, classics and artifacts, with language and
+  availability metadata.
+- **Artifact scholar reader.** Inscriptions, coins, manuscripts, sculpture, architecture and material culture, with
+  explicit rights and per-layer status.
 - **Click-to-define glossary.** Root, grammatical class (*urichol*) and etymology, read from the corpus only.
 - **Sangam World.** A tiṇai landscape navigator (Kuṟiñci · Mullai · Marutam · Neytal · Pālai).
 - **Knowledge.** An encyclopedia of the Sangam age, plus a connections graph mined from the verses.
@@ -37,9 +41,9 @@ open-sangam/
 ├── backend/
 │   ├── python/      scraper, normalizer, validator, vectorizer
 │   └── functions/   Firebase Cloud Functions
-├── data/            schema, poem texts, knowledge graph
+├── data/            schema, poem texts, library catalog, knowledge graph
 ├── content/         articles
-├── docs/            architecture, contracts, governance, runbooks
+├── docs/            architecture, contracts, governance, library, runbooks
 ├── factory/         CURRENT · NEXT · RUNWAY
 └── archives/        dated doc snapshots
 ```
@@ -54,6 +58,8 @@ cd frontend && npm install && npm run dev
 cd backend/python
 python -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python -m scraper.scrape_poem --poem all          # resumable
+.venv/bin/python -m scraper.scrape_projectmadurai --poem all  # fill idyll line gaps, repair heading ranges
+.venv/bin/python -m scraper.scrape_pathinen --work all        # Tirukkural + Naladiyar, public-domain English
 .venv/bin/python -m normalizer.normalize_all --poem all     # OKF datapackage
 .venv/bin/python -m normalizer.validate_corpus              # schema v2 + known line gaps
 .venv/bin/python -m pytest tests
@@ -76,12 +82,14 @@ destroys a field another script produced ([`docs/data/pipeline-scripts.md`](./do
 
 | | Count | Notes |
 |---|---:|---|
-| Poems | 18 | Eight Anthologies + Ten Idylls: scraped, normalized, in the Library |
-| Verse records | 2,489 | Verse → Line → Word |
-| Modern Tamil prose (urai) | 99% | from the source; reuse terms being confirmed |
-| English | 32 records | all machine drafts, `verified: false` |
+| Works in the reader | 20 | 18 Sangam (Eight Anthologies + Ten Idylls) + Tirukkural + Naladiyar |
+| Records | 4,399 | Verse → Line → Word; 2,489 Sangam |
+| Modern Tamil prose (urai) | 2,653 records | Sangam source prose; reuse terms being confirmed |
+| English | 1,762 records | 1,330 Kural + 400 Naladiyar (public-domain Pope/Ellis) · 32 Sangam machine drafts, `verified: false` |
 | Scholar-verified | 0 | the Q4 launch scope is Maduraikanchi lines 1–100 |
-| Lines missing in the source | 1,225 in 93 sections | `data/schema/known_line_gaps.json`; CI fails if this changes unannounced |
+| Lines missing in the source | 0 | gaps filled from Project Madurai; `data/schema/known_line_gaps.json` is empty and CI fails if it changes unannounced |
+
+Other Pathinenkilkkanakku works are catalogued (not yet readable) in `data/library/catalog.json`.
 
 Every AI-generated field stays `verified: false` until a scholar reviews it
 ([`docs/data/data-governance.md`](./docs/data/data-governance.md)).
@@ -93,6 +101,7 @@ Every AI-generated field stays `verified: false` until a scholar reviews it
 | Architecture & contracts | [`docs/architecture.md`](./docs/architecture.md) · [`docs/api/api-contracts.md`](./docs/api/api-contracts.md) · [`docs/api/avai-ask-prd.md`](./docs/api/avai-ask-prd.md) |
 | Avai | [`docs/avai/pulavar-verifiable-citations.md`](./docs/avai/pulavar-verifiable-citations.md) · [`docs/avai/avai-launch-runbook.md`](./docs/avai/avai-launch-runbook.md) · [`agents/avai/evals/TAXONOMY.md`](./agents/avai/evals/TAXONOMY.md) |
 | Data | [`docs/data/pipeline-scripts.md`](./docs/data/pipeline-scripts.md) · [`docs/data/data-collection-plan.md`](./docs/data/data-collection-plan.md) · [`docs/data/data-governance.md`](./docs/data/data-governance.md) · [`docs/data/editorial-style-guide.md`](./docs/data/editorial-style-guide.md) |
+| Library | [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md) · [`docs/library/ARTIFACT_LIBRARY.md`](./docs/library/ARTIFACT_LIBRARY.md) |
 | Outreach | [`docs/brochures/`](./docs/brochures) · [`content/articles/`](./content/articles) |
 
 ## License

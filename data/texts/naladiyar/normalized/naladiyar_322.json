@@ -1,0 +1,154 @@
+{
+  "id": "naladiyar_322",
+  "poem": "naladiyar",
+  "number": 322,
+  "title": "புல்லறிவாண்மை",
+  "heading": "2.33",
+  "poet": "பல புலவர்கள்",
+  "tinai": "unknown",
+  "sangamTamil": "அவ்வியம் இல்லார் அறத்தா றுரைக்குங்கால்\nசெவ்விய ரல்லார் செவிகொடுத்தும் கேட்கலார்\nகவ்வித்தோல் தின்னும் குணுங்கர்நாய் பாற்சோற்றின்\nசெவ்விய கொளல்தேற்றா தாங்கு.",
+  "urai": null,
+  "english": "Foolish people hearing hear not. When men of ungrudging soul declare the way of virtue, those who are not rightly disposed, although they give ear, hear not. Even so the currier's dog seizes on and devours leather, not appreciating the flavour of milk and rice.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-ellis-1893",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:30:20.554060+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "அவ்வியம் இல்லார் அறத்தா றுரைக்குங்கால்",
+      "words": [
+        {
+          "form": "அவ்வியம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "இல்லார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "அறத்தா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "றுரைக்குங்கால்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "செவ்விய ரல்லார் செவிகொடுத்தும் கேட்கலார்",
+      "words": [
+        {
+          "form": "செவ்விய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ரல்லார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "செவிகொடுத்தும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கேட்கலார்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "text": "கவ்வித்தோல் தின்னும் குணுங்கர்நாய் பாற்சோற்றின்",
+      "words": [
+        {
+          "form": "கவ்வித்தோல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தின்னும்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "குணுங்கர்நாய்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "பாற்சோற்றின்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 4,
+      "text": "செவ்விய கொளல்தேற்றா தாங்கு.",
+      "words": [
+        {
+          "form": "செவ்விய",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "கொளல்தேற்றா",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "தாங்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0016.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0711.html",
+  "verified": false
+}

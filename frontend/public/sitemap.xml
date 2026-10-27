@@ -3,10 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sangam.yazhi.dev/</loc></url>
   <url><loc>https://sangam.yazhi.dev/book</loc></url>
-  <url><loc>https://sangam.yazhi.dev/avai</loc></url>
   <url><loc>https://sangam.yazhi.dev/world</loc></url>
-  <url><loc>https://sangam.yazhi.dev/knowledge</loc></url>
-  <url><loc>https://sangam.yazhi.dev/graph</loc></url>
   <url><loc>https://sangam.yazhi.dev/articles</loc></url>
   <url><loc>https://sangam.yazhi.dev/book/natrinai</loc></url>
   <url><loc>https://sangam.yazhi.dev/book/kurunthokai</loc></url>
@@ -25,7 +22,35 @@
   <url><loc>https://sangam.yazhi.dev/book/kurinjipattu</loc></url>
   <url><loc>https://sangam.yazhi.dev/book/pattinappalai</loc></url>
   <url><loc>https://sangam.yazhi.dev/book/mullaippattu</loc></url>
+  <url><loc>https://sangam.yazhi.dev/book/thirukkural</loc></url>
+  <url><loc>https://sangam.yazhi.dev/book/naladiyar</loc></url>
   <url><loc>https://sangam.yazhi.dev/book/nedunalvadai</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/mangulam-cave-inscription</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/jambai-inscription</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/hero-stone-collection</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/tamil-copper-plate-grant</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/brihadeeswarar-temple-inscription</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/sangam-punch-marked-coins</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/roman-coins-ariakamedu</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/pandya-chola-coins</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/palm-leaf-manuscript-collection</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/thirukkural-ola-manuscript</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/tamil-lexicon-printed-edition</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/chola-bronze-nataraja</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/arikamedu-terracotta</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/megalithic-dolmen</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/brihadeeswarar-temple-architecture</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/yazh-reconstruction</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/colonial-map-madurai</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/arikamedu-beads</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/black-and-red-ware</loc></url>
+  <url><loc>https://sangam.yazhi.dev/artifacts/tamil-printed-book-19c</loc></url>
+  <url><loc>https://sangam.yazhi.dev/articles/akam-puram-kathaikal</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://sangam.yazhi.dev/articles/natukal-veeram</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://sangam.yazhi.dev/articles/sangam-isai-yazh</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://sangam.yazhi.dev/articles/sangam-kavithaiyil-kalaigal</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://sangam.yazhi.dev/articles/sangam-pen-pulavargal</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://sangam.yazhi.dev/articles/sangam-turai-vanibam</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://sangam.yazhi.dev/articles/ai-for-tamil-nmt-llms</loc><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://sangam.yazhi.dev/articles/ai-indic-languages-digital-divide</loc><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://sangam.yazhi.dev/articles/computational-linguistics-tamil</loc><lastmod>2026-07-22</lastmod></url>

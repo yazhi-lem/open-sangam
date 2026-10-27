@@ -1,0 +1,86 @@
+{
+  "id": "thirukkural_1113",
+  "poem": "thirukkural",
+  "number": 1113,
+  "title": "நலம்புனைந்துரைத்தல்",
+  "heading": "3.1.4",
+  "poet": "திருவள்ளுவர்",
+  "tinai": "unknown",
+  "sangamTamil": "முறிமேனி முத்தம் முறுவல் வெறிநாற்றம்\nவேலுண்கண் வேய்த்தோ ளவட்கு.",
+  "urai": null,
+  "english": "As tender shoot her frame; teeth, pearls; around her odours blend; Darts are the eyes of her whose shoulders like the bambu bend.",
+  "englishMeta": {
+    "provider": "projectmadurai",
+    "model": "pope-drew-lazarus-ellis-1886",
+    "promptVersion": "public-domain-edition",
+    "generatedAt": "2026-10-27T18:28:31.369281+00:00",
+    "runId": "pathinen-ingest"
+  },
+  "lines": [
+    {
+      "lineNumber": 1,
+      "text": "முறிமேனி முத்தம் முறுவல் வெறிநாற்றம்",
+      "words": [
+        {
+          "form": "முறிமேனி",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முத்தம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "முறுவல்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வெறிநாற்றம்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    },
+    {
+      "lineNumber": 2,
+      "text": "வேலுண்கண் வேய்த்தோ ளவட்கு.",
+      "words": [
+        {
+          "form": "வேலுண்கண்",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "வேய்த்தோ",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        },
+        {
+          "form": "ளவட்கு.",
+          "root": null,
+          "urichol": null,
+          "etymology": null,
+          "gloss": null
+        }
+      ]
+    }
+  ],
+  "culturalNotes": [],
+  "audioUrl": null,
+  "source": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html; https://www.projectmadurai.org/pm_etexts/utf8/pmuni0153.html",
+  "verified": false
+}

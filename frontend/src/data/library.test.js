@@ -1,0 +1,138 @@
+import test from 'node:test'
+import assert from 'node:assert/strict'
+import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+import { dirname, resolve } from 'node:path'
+
+const here = dirname(fileURLToPath(import.meta.url))
+const catalog = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/catalog.json'), 'utf8')
+)
+const artifacts = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/artifacts.json'), 'utf8')
+)
+const corpusArtifacts = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/corpus-artifacts.json'), 'utf8')
+)
+const research = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/research-campaigns.json'), 'utf8')
+)
+const stories = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/stories.json'), 'utf8')
+)
+const anthology = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/story-anthology.json'), 'utf8')
+)
+const entities = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/corpus-entities.json'), 'utf8')
+)
+const briefs = JSON.parse(
+  readFileSync(resolve(here, '../../../data/library/avai-research/index.json'), 'utf8')
+)
+
+test('library catalog has unique ids', () => {
+  const ids = catalog.works.map((work) => work.id)
+  assert.equal(new Set(ids).size, ids.length)
+})
+
+test('Pathinenkilkkanakku has all eighteen works', () => {
+  const works = catalog.works.filter((work) => work.collection === 'pathinenkilkkanakku')
+  assert.equal(works.length, 18)
+})
+
+test('every work belongs to a declared collection and declares languages', () => {
+  const collections = new Set(catalog.collections.map((collection) => collection.id))
+  for (const work of catalog.works) {
+    assert.ok(collections.has(work.collection), `${work.id}: unknown collection`)
+    assert.ok(Array.isArray(work.languages) && work.languages.length > 0, `${work.id}: no languages`)
+    assert.ok(['reader', 'metadata', 'planned'].includes(work.availability), `${work.id}: bad availability`)
+  }
+})
+
+
+test('artifact register is internally consistent', () => {
+  const classIds = new Set(artifacts.classes.map((item) => item.id))
+  const sourceIds = new Set(artifacts.sources.map((item) => item.id))
+  const artifactIds = artifacts.artifacts.map((item) => item.id)
+  assert.equal(new Set(artifactIds).size, artifactIds.length)
+  for (const artifact of artifacts.artifacts) {
+    assert.ok(classIds.has(artifact.class), `${artifact.id}: unknown class`)
+    assert.ok(sourceIds.has(artifact.sourceId), `${artifact.id}: unknown source`)
+    assert.ok(artifact.layers, `${artifact.id}: no layers`)
+  }
+})
+
+test('every artifact has the seven scholar-reader layer slots', () => {
+  const layerIds = ['text', 'transliteration', 'translation', 'glossary', 'notes', 'provenance']
+  for (const artifact of artifacts.artifacts) {
+    for (const layerId of layerIds) {
+      assert.ok(artifact.layers[layerId], `${artifact.id}: missing ${layerId} layer`)
+      assert.ok(
+        ['available', 'draft', 'pending', 'reference'].includes(artifact.layers[layerId].status),
+        `${artifact.id}: bad ${layerId} status`
+      )
+    }
+  }
+})
+
+
+test('corpus artifact index is classified and has citations', () => {
+  const classIds = new Set(corpusArtifacts.classes.map((item) => item.id))
+  for (const artifact of corpusArtifacts.artifacts) {
+    assert.ok(classIds.has(artifact.class), `${artifact.id}: unknown class`)
+    assert.ok(artifact.count > 0, `${artifact.id}: zero count`)
+    assert.ok(Array.isArray(artifact.samples), `${artifact.id}: no samples`)
+  }
+})
+
+test('research campaigns name an agent, workflow and prompt', () => {
+  for (const campaign of research.campaigns) {
+    assert.ok(campaign.id && campaign.ta && campaign.en, 'campaign identity')
+    assert.ok(campaign.agent && campaign.workflow, `${campaign.id}: missing agent/workflow`)
+    assert.ok(campaign.promptTa && campaign.promptEn, `${campaign.id}: missing prompts`)
+  }
+})
+
+
+test('story seeds cover akam and puram with evidence', () => {
+  assert.equal(stories.counts.total, stories.stories.length)
+  assert.ok(stories.counts.akam > 0)
+  assert.ok(stories.counts.puram > 0)
+  for (const story of stories.stories.slice(0, 200)) {
+    assert.ok(['akam', 'puram'].includes(story.kind), `${story.id}: bad kind`)
+    assert.ok(story.recordId, `${story.id}: no record id`)
+    assert.ok(story.evidence?.text || story.evidence?.urai, `${story.id}: no evidence`)
+  }
+})
+
+
+test('curated story anthology has akam and puram and source links', () => {
+  assert.ok(anthology.stories.length >= 8)
+  assert.ok(anthology.stories.some((story) => story.kind === 'akam'))
+  assert.ok(anthology.stories.some((story) => story.kind === 'puram'))
+  for (const story of anthology.stories) {
+    assert.ok(story.recordId, `${story.id}: no record id`)
+    assert.ok(story.sourceUrl, `${story.id}: no source URL`)
+    assert.ok(story.narrativeTa && story.narrativeEn, `${story.id}: no narrative`)
+  }
+})
+
+
+test('corpus entity index is classified and cited', () => {
+  const categories = new Set(entities.categories.map((item) => item.id))
+  assert.ok(entities.entities.length > 50)
+  for (const entity of entities.entities) {
+    assert.ok(categories.has(entity.category), `${entity.id}: unknown category`)
+    assert.ok(entity.count > 0, `${entity.id}: zero count`)
+    assert.ok(entity.samples?.length, `${entity.id}: no samples`)
+  }
+})
+
+test('Avai research briefs keep provenance and citation counts', () => {
+  assert.ok(briefs.briefs.length >= 6)
+  for (const brief of briefs.briefs) {
+    assert.ok(brief.id && brief.titleTa && brief.titleEn, 'brief identity')
+    assert.ok(brief.agent && brief.evidenceStatus, `${brief.id}: missing provenance`)
+    assert.ok(typeof brief.citationCount === 'number', `${brief.id}: missing citations`)
+  }
+})
