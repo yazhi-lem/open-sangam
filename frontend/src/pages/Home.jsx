@@ -22,7 +22,7 @@ export default function Home() {
     const message = question.trim()
     if (!message || loading) return
     if (!AVAI_ENABLED) {
-      setError(L('அவை பொதுப் பீட்டா தொடங்கியதும் இயங்கும்.', 'Avai will open with the public beta.'))
+      setError(L('அவை பொதுப் பீட்டா தொடங்கிய பின் இயங்கும்.', 'Avai will open with the public beta.'))
       return
     }
     setLoading(true)

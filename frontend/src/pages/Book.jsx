@@ -1,13 +1,12 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
+import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy, Square, Volume2 } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
 import VoiceLayer from '../components/reader/VoiceLayer'
-import { LAYER_OPTIONS, normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle, hasGloss } from '../data/readerLayers.js'
+import { normalizeLayer, visibleLayers, draftBadgeLabel, draftBadgeTitle, hasGloss } from '../data/readerLayers.js'
 import Reveal, { RevealGroup } from '../components/motion/Reveal'
-import ScrollTilt from '../components/motion/ScrollTilt'
 import AnimatedCard from '../components/motion/AnimatedCard'
 import Badge from '../components/ui/Badge'
 import Button from '../components/ui/Button'
@@ -16,7 +15,7 @@ import Card from '../components/ui/Card'
 import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
 import Chip from '../components/ui/Chip'
-import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
+import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip, splitLabel } from '../data/chipLabels.js'
 import { TINAI_WORLD } from '../data/tinaiWorld.js'
 import useAppStore from '../store/useAppStore'
 import {
@@ -70,7 +69,7 @@ function PoemCard({ poem }) {
       </div>
 
       <h3
-        className={`tamil text-lg sm:text-xl font-bold leading-snug mb-1 shrink-0 line-clamp-2 break-words [overflow-wrap:anywhere] min-h-[2.6em]
+        className={`tamil text-base sm:text-lg font-bold leading-snug mb-1 shrink-0 line-clamp-2 break-words [overflow-wrap:anywhere] min-h-[2.6em]
           ${available ? 'text-primary group-hover:text-accent' : 'text-muted'}`}
       >
         {poem.ta}
@@ -113,7 +112,7 @@ function CatalogWorkCard({ work }) {
   const status = AVAILABILITY_LABELS[work.availability] || AVAILABILITY_LABELS.metadata
   const readable = work.availability === 'reader'
   return (
-    <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface p-5 transition-all duration-200">
+    <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface p-4 transition-all duration-200">
       <div className="mb-3 flex items-center justify-between gap-2">
         <Badge variant={readable ? 'accent' : 'outline'} size="sm">
           {status.ta} · {status.en}
@@ -155,7 +154,7 @@ function ArtifactCard({ artifact }) {
     <button
       type="button"
       onClick={() => nav(`/artifacts/${artifact.id}`)}
-      className="group flex h-full min-w-0 flex-col rounded-2xl border border-line bg-surface p-4 text-left transition-all duration-200 hover:border-accent/60 hover:shadow-md focus-ring"
+      className="group flex h-full min-w-0 flex-col rounded-2xl border border-line bg-surface p-3.5 text-left transition-all duration-200 hover:border-accent/60 hover:shadow-md focus-ring"
     >
       <div className="mb-3 flex items-center justify-between gap-2">
         <Badge variant="accent" size="sm">{cls.ta} · {cls.en}</Badge>
@@ -180,7 +179,7 @@ function ArtifactCollection({ collection, artifacts }) {
   const language = useAppStore((s) => s.language)
   const L = (ta, en) => (language === 'ta' ? ta : en)
   return (
-    <ScrollTilt intensity={6}>
+    <div>
       <div className="space-y-8">
         <div className="border-b border-line-strong pb-3">
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -199,14 +198,14 @@ function ArtifactCollection({ collection, artifacts }) {
                 <span className="ml-auto text-xs font-mono text-faint">{items.length}</span>
               </div>
               <p className="text-xs text-faint">{cls.description}</p>
-              <RevealGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4" amount={0.05}>
+              <RevealGroup className="grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4" amount={0.05}>
                 {items.map((artifact) => <ArtifactCard key={artifact.id} artifact={artifact} />)}
               </RevealGroup>
             </section>
           )
         })}
       </div>
-    </ScrollTilt>
+    </div>
   )
 }
 
@@ -214,7 +213,7 @@ function CatalogCollection({ collection, works }) {
   const language = useAppStore((s) => s.language)
   const L = (ta, en) => (language === 'ta' ? ta : en)
   return (
-    <ScrollTilt intensity={6}>
+    <div>
       <div className="space-y-6">
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-line-strong pb-3">
           <h2 className={`min-w-0 break-words text-2xl font-bold text-primary sm:text-3xl ${language === 'ta' ? 'tamil' : ''}`}>{L(collection.ta, collection.en)}</h2>
@@ -226,14 +225,14 @@ function CatalogCollection({ collection, works }) {
             No works matching this search.
           </div>
         ) : (
-          <RevealGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4" amount={0.08}>
+          <RevealGroup className="grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4" amount={0.08}>
             {works.map((work) => (
               <CatalogWorkCard key={work.id} work={work} />
             ))}
           </RevealGroup>
         )}
       </div>
-    </ScrollTilt>
+    </div>
   )
 }
 
@@ -262,12 +261,12 @@ function Library() {
   return (
     <div className="min-h-screen bg-page">
       {/* Header: one line of orientation, then search and the akam / puram / tiṇai chips */}
-      <Reveal as="div" className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-6" duration={0.6}>
+      <Reveal as="div" className="w-full px-4 sm:px-6 pt-6 pb-5" duration={0.6}>
         <div className="space-y-2">
-          <h1 className={`text-3xl sm:text-5xl font-extrabold text-primary leading-tight ${language === 'ta' ? 'tamil' : ''}`}>
+          <h1 className={`text-2xl sm:text-4xl font-extrabold text-primary leading-tight ${language === 'ta' ? 'tamil' : ''}`}>
             {L('தமிழ் நூலகம்', 'Tamil Library')}
           </h1>
-          <p className="text-lg sm:text-xl text-muted font-light">
+          <p className="text-base sm:text-lg text-muted font-light">
             {L('சங்கம் · பதினெண்கீழ்க்கணக்கு · கலைப்பொருட்கள்', 'Sangam · Pathinenkilkkanakku · Artifacts')}
           </p>
           {/* † draft Tamil, needs native review */}
@@ -312,12 +311,12 @@ function Library() {
       </Reveal>
 
       {/* Collections Grid */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24 space-y-16">
+      <div className="w-full px-4 sm:px-6 pb-16 space-y-10">
         {byCollection.map(({ key, meta, poems }) => (
-          <ScrollTilt key={key} intensity={6}>
+          <div key={key}>
             <div className="space-y-6">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-3 border-b border-line-strong">
-                <h2 className={`text-2xl sm:text-3xl font-bold text-primary break-words min-w-0 ${language === 'ta' ? 'tamil' : ''}`}>{L(meta.ta, meta.en)}</h2>
+                <h2 className={`text-xl sm:text-2xl font-bold text-primary break-words min-w-0 ${language === 'ta' ? 'tamil' : ''}`}>{L(meta.ta, meta.en)}</h2>
                 <span className="ml-auto text-xs font-mono text-faint">{poems.length} works</span>
               </div>
               <p className="text-sm text-muted max-w-2xl leading-relaxed">{meta.desc}</p>
@@ -328,7 +327,7 @@ function Library() {
                 </div>
               ) : (
                 <RevealGroup
-                  className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${
+                  className={`grid auto-rows-fr grid-cols-1 sm:grid-cols-2 gap-3 ${
                     key === '10paddu' ? 'lg:grid-cols-3' : 'lg:grid-cols-4'
                   }`}
                   amount={0.08}
@@ -339,7 +338,7 @@ function Library() {
                 </RevealGroup>
               )}
             </div>
-          </ScrollTilt>
+          </div>
         ))}
 
         {!chipFilter &&
@@ -418,24 +417,71 @@ function DraftBadge({ verse, field }) {
 
 // Layer chips: pick which of the three layers to read. Scrolls sideways on phones.
 function LayerToggle({ layer, onChange }) {
+  const language = useAppStore((s) => s.language)
   return (
     <div
       role="group"
       aria-label="Reader layers"
-      className="-mx-3 flex w-[calc(100%+1.5rem)] gap-2 overflow-x-auto px-3 pb-1 sm:mx-0 sm:w-auto sm:px-0 sm:pb-0"
+      className="flex w-full gap-1 overflow-x-auto pb-1"
     >
-      {LAYER_CHIPS.map((l) => (
-        <Chip
-          key={l.id}
-          label={l.label}
-          title={LAYER_OPTIONS.find((o) => o.id === l.id)?.hint}
-          selected={layer === l.id}
-          onClick={() => onChange(l.id)}
-        />
-      ))}
+      {LAYER_CHIPS.map((l) => {
+        const parts = splitLabel(l.label)
+        const label = language === 'ta' ? parts.ta : parts.en
+        const selected = layer === l.id
+        return (
+          <button
+            key={l.id}
+            type="button"
+            onClick={() => onChange(l.id)}
+            title={l.label}
+            aria-pressed={selected}
+            className={`min-h-[32px] shrink-0 rounded-full border px-2.5 py-1 text-[11px] font-medium transition-colors focus-ring ${
+              selected
+                ? 'border-primary bg-primary text-page'
+                : 'border-line-strong text-muted hover:border-primary hover:text-primary'
+            }`}
+          >
+            {label}
+          </button>
+        )
+      })}
     </div>
   )
 }
+
+function InlineVoiceButton({ text }) {
+  const [speaking, setSpeaking] = useState(false)
+
+  function toggle() {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window) || !text) return
+    if (speaking) {
+      window.speechSynthesis.cancel()
+      setSpeaking(false)
+      return
+    }
+    window.speechSynthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.lang = 'ta-IN'
+    utterance.rate = 0.9
+    utterance.onend = () => setSpeaking(false)
+    utterance.onerror = () => setSpeaking(false)
+    window.speechSynthesis.speak(utterance)
+    setSpeaking(true)
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={toggle}
+      className="inline-flex min-h-[32px] items-center gap-1.5 rounded-full border border-line px-2.5 py-1 text-[11px] font-medium text-muted hover:text-accent hover:border-accent transition-colors focus-ring"
+      aria-label={speaking ? 'Stop voice' : 'Listen to verse'}
+    >
+      {speaking ? <Square size={12} /> : <Volume2 size={13} />}
+      {speaking ? 'Stop' : 'Voice'}
+    </button>
+  )
+}
+
 
 // ── Reader ────────────────────────────────────────────────────────────────
 
@@ -710,7 +756,7 @@ function Reader({ poem, sectionId }) {
       <main ref={contentRef} className="flex-1 overflow-y-auto bg-page flex flex-col">
         {/* Reader Top Controls Toolbar */}
         <div className="sticky top-0 z-10 border-b border-line bg-page/90 backdrop-blur-md px-3 sm:px-6 py-2 sm:py-3 shrink-0">
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+          <div className="w-full flex flex-wrap items-center justify-between gap-3">
             {/* Left controls */}
             <div className="flex items-center gap-1 sm:gap-2">
               <Button
@@ -818,7 +864,7 @@ function Reader({ poem, sectionId }) {
 
         {/* ── Main Presentation Canvas ─────────────────────────── */}
         <div className="flex-1 px-4 sm:px-6 md:px-8 py-6">
-          <div className="max-w-7xl mx-auto space-y-4">
+          <div className="w-full space-y-4">
             {/* Verse identity / copy strip */}
             <Card variant="flat" className="flex flex-wrap items-center justify-between gap-3 border-accent/30 p-4 shadow-xs">
               <div className="min-w-0">
@@ -830,9 +876,12 @@ function Reader({ poem, sectionId }) {
                 </h1>
                 {sec.poet && <p className="tamil text-xs text-muted">புலவர்: {sec.poet}</p>}
               </div>
-              <Button size="sm" variant="ghost" onClick={() => handleCopyVerse(sec.sangamTamil)} icon={<Copy size={13} />}>
-                Copy
-              </Button>
+              <div className="flex items-center gap-2">
+                <InlineVoiceButton text={sec.sangamTamil} />
+                <Button size="sm" variant="ghost" onClick={() => handleCopyVerse(sec.sangamTamil)} icon={<Copy size={13} />}>
+                  Copy
+                </Button>
+              </div>
             </Card>
 
             <div className={layoutMode === 'h' ? 'grid gap-4 lg:grid-cols-2' : 'space-y-4'}>
@@ -840,7 +889,7 @@ function Reader({ poem, sectionId }) {
                 <Card variant="flat" className="space-y-3 border-accent/20 p-4 sm:p-6">
                   <div className="flex items-center justify-between border-b border-line pb-2">
                     <span className="text-xs font-semibold text-accent">Original · மூலம்</span>
-                    <span className="text-[11px] text-faint">Tap a word</span>
+                    <InlineVoiceButton text={sec.sangamTamil} />
                   </div>
                   <ClickableVerse text={sec.sangamTamil} onWordClick={handleWordClick} fontSize={fontSize} />
                 </Card>
@@ -961,7 +1010,7 @@ function Reader({ poem, sectionId }) {
           </div>
 
           {/* Previous / Next Navigation Footer */}
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 pt-8 pb-4 border-t border-line mt-8">
+          <div className="w-full flex flex-wrap items-center justify-between gap-2 pt-8 pb-4 border-t border-line mt-8">
             <Button
               variant="outline"
               size="sm"

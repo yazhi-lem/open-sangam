@@ -13,11 +13,11 @@ export const LAYER_CHIPS = [
   { id: 'transliteration', label: 'ஒலிபெயர்ப்பு · Transliteration' },
   { id: 'urai', label: 'இன்றைய தமிழில் உரை · Modern Tamil' },
   { id: 'english', label: 'ஆங்கில மொழிபெயர்ப்பு · English' },
-  { id: 'glossary', label: 'சொற்கள் · Glossary' },
+  { id: 'glossary', label: 'சொல்லகராதி · Glossary' },
   { id: 'notes', label: 'குறிப்புகள் · Notes' },
-  { id: 'poetics', label: 'யாப்பு · Poetics' },
+  { id: 'poetics', label: 'யாப்பியல் · Poetics' },
   { id: 'context', label: 'சூழல் · Context' },
-  { id: 'voice', label: 'குரல் · Voice' },
+  { id: 'voice', label: 'ஒலிவாசிப்பு · Voice' },
 ]
 
 /** Library quick-pick chips. `match` runs against a poem's `tinai` array in data/poems.js. */

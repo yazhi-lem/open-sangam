@@ -9,11 +9,11 @@ export const LAYER_OPTIONS = [
   { id: 'transliteration', label: 'ஒலிபெயர்ப்பு', hint: 'Roman transliteration' },
   { id: 'urai', label: 'உரை', hint: 'Modern Tamil prose commentary' },
   { id: 'english', label: 'English', hint: 'English translation' },
-  { id: 'glossary', label: 'சொற்கள்', hint: 'Word glossary and etymology' },
+  { id: 'glossary', label: 'சொல்லகராதி', hint: 'Word glossary and etymology' },
   { id: 'notes', label: 'குறிப்புகள்', hint: 'Editorial and cultural notes' },
-  { id: 'poetics', label: 'யாப்பு', hint: 'Metre, tiṇai and poetics' },
+  { id: 'poetics', label: 'யாப்பியல்', hint: 'Metre, tiṇai and poetics' },
   { id: 'context', label: 'சூழல்', hint: 'Landscape, people and daily life' },
-  { id: 'voice', label: 'குரல்', hint: 'Spoken recitation' },
+  { id: 'voice', label: 'ஒலிவாசிப்பு', hint: 'Spoken recitation' },
   { id: 'all', label: 'அனைத்தும்', hint: 'All nine layers' },
 ]
 

@@ -42,13 +42,13 @@ function TinaiCard({ tinai, language }) {
       </div>
 
       <div className="p-4">
-        <CondensedRow label={L('நேரம்', 'Time')}>
+        <CondensedRow label={L('பொழுது', 'Time')}>
           {L(tinai.atmosphere.timeOfDay.ta, tinai.atmosphere.timeOfDay.en)} — {tinai.atmosphere.timeOfDay.desc}
         </CondensedRow>
         <CondensedRow label={L('கடவுள்', 'Deity')}>
           {L(tinai.deity.ta, tinai.deity.en)}
         </CondensedRow>
-        <CondensedRow label={L('உணர்வு', 'Mood')}>
+        <CondensedRow label={L('உரிப்பொருள்', 'Mood')}>
           {L(tinai.emotion.akam.ta, tinai.emotion.akam.en)}
         </CondensedRow>
         <CondensedRow label={L('மக்கள்', 'People')}>
@@ -60,10 +60,10 @@ function TinaiCard({ tinai, language }) {
         <CondensedRow label={L('இசை', 'Music')}>
           {tinai.music.slice(0, 2).map((item) => L(item.ta, item.en)).join(' · ')}
         </CondensedRow>
-        <CondensedRow label={L('தாவரம்', 'Flora')}>
+        <CondensedRow label={L('தாவரங்கள்', 'Flora')}>
           {tinai.flora.slice(0, 4).map((item) => L(item.ta, item.en)).join(' · ')}
         </CondensedRow>
-        <CondensedRow label={L('விலங்கு', 'Fauna')}>
+        <CondensedRow label={L('விலங்குகள்', 'Fauna')}>
           {tinai.fauna.slice(0, 4).map((item) => L(item.ta, item.en)).join(' · ')}
         </CondensedRow>
 
