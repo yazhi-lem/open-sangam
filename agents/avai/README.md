@@ -52,6 +52,25 @@ cd agents
 adk web
 ```
 
+For Tamil-first local models, enable deterministic verse grounding:
+
+```bash
+cd agents
+SANGAM_AGENT_BACKEND=ollama \
+SANGAM_AGENT_MODEL=qwen2.5:3b \
+SANGAM_MODEL_API_BASE=http://127.0.0.1:11434 \
+adk web --extra_plugins avai.grounding.TamilGroundingPlugin
+```
+
+For the validated hosted demo path:
+
+```bash
+cd agents
+SANGAM_AGENT_BACKEND=openrouter \
+SANGAM_AGENT_MODEL=deepseek/deepseek-v4.1-flash-1017 \
+adk web --extra_plugins avai.grounding.TamilGroundingPlugin
+```
+
 ## Environment variables
 
 Read by `config.py`; set them in `agents/avai/.env`.

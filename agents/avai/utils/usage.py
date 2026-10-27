@@ -15,6 +15,10 @@ _DEFAULT_PRICING_PER_MTOK = {
     "gemini-2.5-flash": (0.30, 2.50),
     "google/gemini-2.5-flash-lite": (0.10, 0.40),
     "gemini-2.5-flash-lite": (0.10, 0.40),
+    "deepseek/deepseek-v4.1-flash-1017": (0.15, 0.60),
+    "deepseek/deepseek-v4.1-flash": (0.14, 0.42),
+    "deepseek/deepseek-v3.2": (0.28, 0.42),
+    "deepseek/deepseek-chat": (0.26, 1.03),
 }
 
 

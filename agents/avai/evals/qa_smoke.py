@@ -21,7 +21,8 @@ from ..poets.avvaiyar import avvaiyar_agent
 CASES = [
     {
         "query": "What tiṇai is the verse kurunthokai_100 in?",
-        "expect_substrings": ["kurinji", "kurunthokai_100"],
+        "expect_substrings": ["kurunthokai_100"],
+        "expect_any_substrings": ["kurinji", "குறிஞ்சி"],
     },
     {
         "query": "Who composed kurunthokai_100, and what verse id is that?",
@@ -30,8 +31,12 @@ CASES = [
     {
         "query": "How many poems are in the corpus, and name one with more than 100 verses?",
         # Any poem the tools actually return with >100 verses is a valid answer —
-        # don't hardcode a single expected name.
-        "expect_any_substrings": ["kurunthokai", "akananooru", "natrinai", "purananooru", "ainkurunooru"],
+        # don't hardcode a single expected name. Accept Tamil and English names
+        # because Tamil-first models often answer without transliteration.
+        "expect_any_substrings": [
+            "kurunthokai", "akananooru", "natrinai", "purananooru", "ainkurunooru",
+            "குறுந்தொகை", "அகநானூறு", "நற்றிணை", "புறநானூறு", "ஐங்குறுநூறு",
+        ],
     },
 ]
 
@@ -48,10 +53,11 @@ async def run_case(runner: Runner, session_id: str, case: dict) -> bool:
                     final_text += part.text
 
     text_lower = final_text.lower()
+    ok = True
     if "expect_substrings" in case:
-        ok = all(sub.lower() in text_lower for sub in case["expect_substrings"])
-    else:
-        ok = any(sub.lower() in text_lower for sub in case["expect_any_substrings"])
+        ok = ok and all(sub.lower() in text_lower for sub in case["expect_substrings"])
+    if "expect_any_substrings" in case:
+        ok = ok and any(sub.lower() in text_lower for sub in case["expect_any_substrings"])
     status = "PASS" if ok else "FAIL"
     print(f"[{status}] {case['query']}")
     print(f"    → {final_text.strip()[:300]}")
