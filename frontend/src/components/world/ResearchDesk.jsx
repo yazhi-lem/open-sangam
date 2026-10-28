@@ -201,7 +201,7 @@ export default function ResearchDesk() {
                 </p>
                 <span className="text-[10px] font-mono text-accent">{artifact.count}</span>
               </div>
-              <p className="text-[10px] text-faint">{artifact.roman} · {artifact.en}</p>
+              <p className="text-[10px] text-faint">{language === 'ta' ? artifact.roman : artifact.en}</p>
               {artifact.samples?.[0] && (
                 <p className="mt-1 line-clamp-2 text-[11px] leading-relaxed text-muted">
                   {artifact.samples[0].text}
@@ -252,7 +252,7 @@ export default function ResearchDesk() {
                   </p>
                   <span className="text-[10px] font-mono text-accent">{entity.count}</span>
                 </div>
-                <p className="text-[10px] text-faint">{entity.roman} · {entity.en}</p>
+                <p className="text-[10px] text-faint">{language === 'ta' ? entity.roman : entity.en}</p>
                 {entity.samples?.[0] && (
                   <p className="mt-1 line-clamp-2 text-[11px] leading-relaxed text-muted">
                     {entity.samples[0].text}

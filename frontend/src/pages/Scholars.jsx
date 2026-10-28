@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Input from '../components/ui/Input'
+import useAppStore from '../store/useAppStore'
 
 // "உங்கள் உதவி" — scholars who want to help review. UI only: the form is deliberately NOT
 // wired to any store or backend (data-in-India gate), and submit stays disabled until it is.
@@ -20,6 +21,8 @@ const CONSENT = {
 }
 
 export default function Scholars() {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const [name, setName] = useState('')
   const [contact, setContact] = useState('')
   const [help, setHelp] = useState('verse')
@@ -27,11 +30,9 @@ export default function Scholars() {
   return (
     <div className="mx-auto w-full max-w-xl space-y-6 px-4 py-8 sm:px-6 sm:py-12">
       <header className="space-y-1">
-        <h1 lang="ta" className="tamil text-3xl font-extrabold text-primary">உங்கள் உதவி</h1>
-        <p className="text-lg text-muted">Help us review</p>
+        <h1 className={`text-3xl font-extrabold text-primary ${language === 'ta' ? 'tamil' : ''}`}>{L('உங்கள் உதவி', 'Help us review')}</h1>
         <p className="pt-2 text-sm text-muted">
-          <span lang="ta" className="tamil">வரைவு உரைகளையும் மொழிபெயர்ப்புகளையும் அறிஞர்கள் சரிபார்க்க வேண்டும்.</span>
-          <span> · Scholars need to check the draft commentary and translations.</span>
+          {L('வரைவு உரைகளையும் மொழிபெயர்ப்புகளையும் அறிஞர்கள் சரிபார்க்க வேண்டும்.', 'Scholars need to check the draft commentary and translations.')}
         </p>
       </header>
 
@@ -39,21 +40,21 @@ export default function Scholars() {
       <form className="space-y-5" onSubmit={(e) => e.preventDefault()} noValidate>
         <label className="block space-y-1.5">
           <span className="block text-sm font-semibold text-primary">
-            <span lang="ta" className="tamil">பெயர்</span> · Name
+            {L('பெயர்', 'Name')}
           </span>
           <Input value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" />
         </label>
 
         <label className="block space-y-1.5">
           <span className="block text-sm font-semibold text-primary">
-            <span lang="ta" className="tamil">தொடர்பு</span> · Contact (email or phone)
+            {L('தொடர்பு', 'Contact')}
           </span>
           <Input value={contact} onChange={(e) => setContact(e.target.value)} autoComplete="email" />
         </label>
 
         <fieldset className="space-y-2">
           <legend className="text-sm font-semibold text-primary">
-            <span lang="ta" className="tamil">எப்படி உதவலாம்?</span> · How can you help?
+            {L('எப்படி உதவலாம்?', 'How can you help?')}
           </legend>
           {HELP_OPTIONS.map((o) => (
             <label
@@ -71,16 +72,14 @@ export default function Scholars() {
                 className="h-5 w-5 accent-[var(--kumkumam)]"
               />
               <span className="min-w-0">
-                <span lang="ta" className="tamil block text-sm font-semibold">{o.ta}</span>
-                <span lang="en" className="block text-xs text-muted">{o.en}</span>
+                <span lang={language} className={`block text-sm font-semibold ${language === 'ta' ? 'tamil' : ''}`}>{L(o.ta, o.en)}</span>
               </span>
             </label>
           ))}
         </fieldset>
 
         <p className="rounded-xl border border-line bg-surface-alt/50 p-4 text-sm text-muted">
-          <span lang="ta" className="tamil block">{CONSENT.ta}</span>
-          <span lang="en" className="mt-1 block text-xs">{CONSENT.en}</span>
+          <span lang={language} className={`block ${language === 'ta' ? 'tamil' : ''}`}>{L(CONSENT.ta, CONSENT.en)}</span>
         </p>
 
         <button
@@ -89,13 +88,13 @@ export default function Scholars() {
           aria-disabled="true"
           className="flex min-h-[56px] w-full flex-col items-center justify-center rounded-2xl bg-surface-alt px-6 py-2 text-muted opacity-80"
         >
-          <span lang="ta" className="tamil text-base font-semibold">விரைவில்</span>
-          <span lang="en" className="text-xs">Coming soon · this form does not send anything yet</span>
+          <span className={`text-base font-semibold ${language === 'ta' ? 'tamil' : ''}`}>{L('விரைவில்', 'Coming soon')}</span>
+          <span lang={language} className={`text-xs ${language === 'ta' ? 'tamil' : ''}`}>{L('இந்தப் படிவம் இன்னும் எதையும் அனுப்பாது', 'This form does not send anything yet')}</span>
         </button>
       </form>
 
       <Link to="/" className="inline-flex min-h-[44px] items-center text-sm font-semibold text-accent">
-        ← <span lang="ta" className="tamil ml-1">முகப்பு</span><span> · Home</span>
+        ← <span className={language === 'ta' ? 'tamil ml-1' : 'ml-1'}>{L('முகப்பு', 'Home')}</span>
       </Link>
     </div>
   )

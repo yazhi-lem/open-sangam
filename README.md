@@ -2,7 +2,7 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
-See [NEXT_ACTION.md](./NEXT_ACTION.md) for the roadmap, **October 2026 Pilot**, and **December 2026 Launch** deliverables. The wider library plan — Pathinenkilkkanakku, classics, artifacts, and multilingual reader requirements — lives in [docs/LIBRARY_ROADMAP.md](./docs/LIBRARY_ROADMAP.md). An Obsidian-ready Markdown vault is generated at `obsidian-vault/` (see `backend/python/knowledge/export_obsidian.py`).
+See [NEXT_ACTION.md](./NEXT_ACTION.md) for the roadmap, **October 2026 Pilot**, and **December 2026 Launch** deliverables. The wider library plan — Pathinenkilkkanakku, classics, artifacts, and multilingual reader requirements — lives in [docs/LIBRARY_ROADMAP.md](./docs/LIBRARY_ROADMAP.md). An Obsidian-ready Markdown vault is generated at `obsidian-vault/` (see `backend/python/knowledge/export_obsidian.py`). The interface follows a strict single-language policy; see [docs/LANGUAGE_POLICY.md](./docs/LANGUAGE_POLICY.md).
 
 Open Sangam transforms static, archaic web archives of Sangam-era poetry into a multi-layered learning experience — providing linguistic, cultural, and historical context. Think "Duolingo for Ancient Literature."
 

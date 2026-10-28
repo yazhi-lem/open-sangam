@@ -13,6 +13,7 @@
  */
 
 import { splitLabel } from '../../data/chipLabels.js'
+import useAppStore from '../../store/useAppStore'
 
 // Brand tokens (brand kit v0.3): Kal #6B6258 for badges. Declared in index.css as --kal.
 const BASE = 'inline-flex shrink-0 items-center justify-center rounded-full font-medium'
@@ -28,7 +29,9 @@ export default function Chip({
   className = '',
   ...props
 }) {
+  const language = useAppStore((s) => s.language)
   const parts = label != null ? splitLabel(label) : { ta, en }
+  const display = language === 'ta' ? parts.ta : parts.en
 
   if (variant === 'badge') {
     return (
@@ -37,9 +40,7 @@ export default function Chip({
         className={`${BASE} gap-1.5 bg-[var(--kal)] px-2.5 py-1 text-xs text-white ${className}`}
         {...props}
       >
-        <span lang="ta" className="tamil">{parts.ta}</span>
-        {parts.en && <span aria-hidden="true">·</span>}
-        {parts.en && <span lang="en">{parts.en}</span>}
+        <span lang={language} className={language === 'ta' ? 'tamil' : ''}>{display}</span>
       </span>
     )
   }
@@ -57,10 +58,7 @@ export default function Chip({
       } ${className}`}
       {...props}
     >
-      <span lang="ta" className="tamil whitespace-nowrap text-sm font-semibold">{parts.ta}</span>
-      {parts.en && (
-        <span lang="en" className="whitespace-nowrap text-xs font-normal opacity-80">{parts.en}</span>
-      )}
+      <span lang={language} className={`whitespace-nowrap text-sm font-semibold ${language === 'ta' ? 'tamil' : ''}`}>{display}</span>
     </button>
   )
 }

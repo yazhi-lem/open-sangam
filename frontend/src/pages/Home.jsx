@@ -77,7 +77,7 @@ export default function Home() {
     <div className="mx-auto w-full max-w-3xl space-y-8 px-4 py-8 sm:px-6 sm:py-14">
       <section className="space-y-4 text-center">
         <p className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>
-          {L('சங்க இலக்கியம் · தமிழ் நூலகம்', 'Sangam literature · Tamil Library')}
+          {L('சங்க இலக்கியம்', 'Sangam literature')}
         </p>
         <h1 className={`text-3xl font-extrabold leading-tight text-primary sm:text-5xl ${language === 'ta' ? 'tamil' : ''}`}>
           {L('சங்க காலத்தை ஒரே இடத்தில் படியுங்கள்', 'Read the Sangam world in one place')}
@@ -100,7 +100,7 @@ export default function Home() {
               {L('நக்கீரரைக் கேளுங்கள்', 'Ask Nakkirar')}
             </h2>
             <p className="text-xs text-faint">
-              {L('சங்க அவைத் தலைமைப் புலவர் · Chief Critic & Convener', 'Chief Critic & Convener · Sangam Avai')}
+              {L('சங்க அவைத் தலைமைப் புலவர்', 'Chief Critic & Convener')}
             </p>
           </div>
           <Sparkles size={18} className="ml-auto text-accent" aria-hidden="true" />
@@ -153,8 +153,8 @@ export default function Home() {
                 </p>
                 <p className="text-[10px] text-faint">
                   {isLocal
-                    ? L('உள்ளூர் நூலகச் சான்று · Local corpus evidence', 'Local corpus evidence')
-                    : L('சங்க அவைத் தலைவர் · Convener, Sangam Avai', 'Convener, Sangam Avai')}
+                    ? L('உள்ளூர் நூலகச் சான்று', 'Local corpus evidence')
+                    : L('சங்க அவைத் தலைவர்', 'Convener, Sangam Avai')}
                 </p>
               </div>
             </div>
