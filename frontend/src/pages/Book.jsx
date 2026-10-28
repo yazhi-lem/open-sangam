@@ -16,7 +16,7 @@ import Card from '../components/ui/Card'
 import Toast from '../components/ui/Toast'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
 import Chip from '../components/ui/Chip'
-import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../data/chipLabels.js'
+import { LAYER_CHIPS, FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip, splitLabel } from '../data/chipLabels.js'
 
 // ── Library (Gallery) ─────────────────────────────────────────────────────
 
@@ -152,11 +152,9 @@ function Library() {
           <h1 className="tamil text-3xl sm:text-5xl font-extrabold text-primary leading-tight">
             சங்க நூலகம்
           </h1>
-          <p className="text-lg sm:text-xl text-muted font-light">Library of Sangam works</p>
           {/* † draft Tamil, needs native review */}
           <p className="text-sm text-muted pt-1">
             <span lang="ta" className="tamil">பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி</span>
-            <span className="text-faint"> · Choose a poem → Read → Understand</span>
           </p>
         </div>
 
@@ -179,7 +177,7 @@ function Library() {
             {FILTER_CHIPS.map((c) => (
               <Chip
                 key={c.id}
-                label={c.label}
+                label={splitLabel(c.label).ta}
                 selected={chipFilter === c.id}
                 onClick={() => setChipFilter(chipFilter === c.id ? null : c.id)}
               />
@@ -188,8 +186,6 @@ function Library() {
           {chipFilter && (
             <p className="text-xs text-faint">
               <span lang="ta" className="tamil">{IDYLL_NOTE.ta}</span>
-              <span> · </span>
-              <span lang="en">{IDYLL_NOTE.en}</span>
             </p>
           )}
         </div>
