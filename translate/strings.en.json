@@ -1,0 +1,2250 @@
+{
+  "generatedBy": "translate/extract_strings.py",
+  "count": 372,
+  "strings": [
+    {
+      "en": "About this Tiṇai",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Acacia / Thorn Scrub",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Ainkurunooru",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Akam",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "Akam & Puṟam — The Two Halves",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Akam (Inner)",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Akam — the Interior",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Akananooru",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Akapporul",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "All",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "All seasons (esp. dry season)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "All Tiṇai",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Another way",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ]
+    },
+    {
+      "en": "Armour Crafting",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Articles",
+      "files": [
+        "frontend/src/pages/Articles.jsx",
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Artifact term",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "attests",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Auvaiyār",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Available",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Avvaiyar",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Ayachchiyar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Ayar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Ayarpadi (Cowherd Settlement)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Bamboo",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Bamboo Grove",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Banana",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Battle valor & kingly generosity",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Beach",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Bear",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Bow-making",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Browse Library",
+      "files": [
+        "frontend/src/pages/NotFound.jsx"
+      ]
+    },
+    {
+      "en": "Bull",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Butter Churning",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Caper Bush",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Catalogued",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Celebration of victories",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Check the original verse",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ]
+    },
+    {
+      "en": "Chera",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Chief Critic & Convener",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Chola",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Choose from Kurinji (Mountains), Mullai (Forests), Marutam (Cropland), Neytal (Seashore), or Palai (Wasteland)",
+      "files": [
+        "frontend/src/components/world/SangamWorld.jsx"
+      ]
+    },
+    {
+      "en": "Cliff Honey Harvest",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Coastal Port Town",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Coastal Scrub",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Common Kingfisher",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Compare and synthesize the collaborative poetics of Kapilar and Paranar.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "composed",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Conch Shell (Sangu)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Connections Graph",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Connections Graph →",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Connections map",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Context",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "Convene the assembly to discuss the patronage and generosity of Sangam kings.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Coral Shoal",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Cotton Weaving",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Cow",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Cowherd Settlement",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Crab",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Cropland & River Delta",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Crow",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Daily Life & Material Culture",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Dam & Sluice",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Depict Kurinji nature scene",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ]
+    },
+    {
+      "en": "Desolate Road / Wild Path",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Digitization in progress",
+      "files": [
+        "frontend/src/components/world/SangamWorld.jsx"
+      ]
+    },
+    {
+      "en": "Draft",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Dusk / Evening",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Each Tiṇai had its own pann (raga) — the ancient precursors of modern Carnatic ragas.",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Early Winter & Post-Monsoon",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Egret / Sea Heron",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Eight Anthologies",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Eighteen Minor Works",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Elephant",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "English",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "English Translation",
+      "files": [
+        "frontend/src/data/tamilTracking.test.js"
+      ]
+    },
+    {
+      "en": "Enter Sangam World",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ]
+    },
+    {
+      "en": "Entity",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Epithets",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Error loading articles",
+      "files": [
+        "frontend/src/pages/ArticlesList.jsx"
+      ]
+    },
+    {
+      "en": "Erukku (Calotropis)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Estuary / Backwater",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Evening and Twilight",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Explain Kurunthokai 40",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ]
+    },
+    {
+      "en": "Explain the aesthetic evaluation and poetic critique of Sangam verse.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Explain the deep meaning of Kurunthokai 40 (Red earth and pouring rain).",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Explain the Iraiyanar Akapporul commentary and debate traditions.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Explain Uri-porul and covert metaphors across the five tiṇai landscapes.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Explore →",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ]
+    },
+    {
+      "en": "Extract the Muthal, Karu, and Uri-porul structure of Natrinai 1.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Eyinar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Farming & Food",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Find verses about Mullai landscape",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ]
+    },
+    {
+      "en": "Find verses celebrating Kurinji flowers, waterfalls, and mountain peaks.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Fishing Harbour",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Five tiṇai",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Flower Garland Weaving",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Forced separation & the agony of parting",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Forest & Pastoral",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Forest Stream",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Frog",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Full Council Multi-Agent Mesh",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Glossary",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Graph",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Grazing Meadow",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Grey Heron",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Hare",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Harvest Song",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Hero Stone",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Hero Stones",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Hill Myna",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Hill Stream",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Hill Women",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Hilltop Murugan Shrine",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Home",
+      "files": [
+        "frontend/src/components/navigation/Navbar.jsx"
+      ]
+    },
+    {
+      "en": "Homecoming & victory",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Honeycomb Cliff",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Hunt Horn",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Idaiyar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Indian Wolf",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Indiran (Indra) — Lord of Rain & Prosperity",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Indra Festival Pavilion",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Infidelity & lovers\\",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "is set in",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Jackal / Fox",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Jasmine Bower",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Jungle Fowl",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Jungle Track",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kadamba",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kadamba Forest",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kaikkiḷai & Peruntiṇai",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Kajal-Tree Grove (Marutam grove)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kalithokai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Kandal (Mangrove)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kanigaiyar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kantal (Gloriosa Lily)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kapilar",
+      "files": [
+        "frontend/src/data/knowledge.js",
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Karu — Native Things",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Karu-poruḷ",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Kattumaram (Catamaran)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kaṇiyan Pūṅkuṉṟaṉār",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Keezhadi & Archaeology",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Kings & Patrons",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Koel (Asian Cuckoo)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Konrai (Indian Laburnum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Korravai Shrine",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Korravai — Goddess of Victory & the Wild",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kuravar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kuravar Hut",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kurinji",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Kurinji (Mountain)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Kurinji (Strobilanthes)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kurinji Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kurinjipattu",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Kurunthokai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Kuzhal (Flute)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Kuḻal (Flute)",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Kāñci",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Late Monsoon & Early Winter",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Library",
+      "files": [
+        "frontend/src/components/navigation/Navbar.jsx"
+      ]
+    },
+    {
+      "en": "Loading article...",
+      "files": [
+        "frontend/src/pages/ArticleReader.jsx"
+      ]
+    },
+    {
+      "en": "Loading articles...",
+      "files": [
+        "frontend/src/pages/ArticlesList.jsx"
+      ]
+    },
+    {
+      "en": "Loading landscape…",
+      "files": [
+        "frontend/src/components/world/FullscreenLandscape.jsx"
+      ]
+    },
+    {
+      "en": "Longing, lament & anxious waiting",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Maduraikanchi",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Mahua Tree",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Malaipadukadam",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Manjadi (Coral Bead)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Maravar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Market Town",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Marutam",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Marutam (Arjuna Tree)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Marutham (Pastoral)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Marutham Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Master Grammarian & Structural Analyst",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Master of Kurinji & Nature Retrieval",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Mayon Shrine",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Mayon — The Dark One (Vishnu)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Meenavr",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "mentions",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Midday Blaze",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Midnight",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Midsummer & Late Summer",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Modern Tamil",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "Monkey",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Mountain Cave",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Mountain Pass",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Mountains & Hills",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Mullai",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Mullai (Forest)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Mullai (Jasmine)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Mullai Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Mullaippattu",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Murugan — Lord of the Hills",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Music & Performers",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Muthal — First Things",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Māmūlaṉār",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Nadukal (Hero Stone)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Nagari (Pastoral Horn)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Nakkirar",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Nakkīrar",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Naladiyar",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Narrate the history of Athiyaman giving the rare gooseberry to Avvaiyar.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Natrinai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Naval valor & seafaring heroism",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Nedunalvadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Net Weaving",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Neytal",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Neytal (Blue Water Lily)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Neytal Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Neytal Yazh (Coastal Harp)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Neythal (Seashore)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "No corpus attestations extracted for this landscape yet.",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Not yet digitised",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Notes",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Object",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "One World, One Kin",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Open Sangam Command Center",
+      "files": [
+        "frontend/src/components/search/CommandPalette.jsx"
+      ]
+    },
+    {
+      "en": "Open the Library →",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ]
+    },
+    {
+      "en": "Original",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "Ornament & Dress",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Overview",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Padagam (War Drum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Paddy Field",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Paint a vivid scene of the shimmering heat and mirages in Palai.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Painted Stork",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Palai",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Palai (Desert)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Palai Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Palai Tree (Wrightia)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Pandya",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Pann · Classical Melody Mode",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Paranar",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Paravar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Paraṇar",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Paripadal",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Pathitrupathu",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Patient waiting & fidelity",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Pattinappalai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Paṇ (Melodic Modes)",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Paṟai & Muracu",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Peacock",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Pearl Diving",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "People",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Perumpanatrupadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Pidavam (Forest Creeper)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Planned",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Poem",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Poet",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Poetics",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "Poets of this landscape",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Porunaraatrupadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Pre-dawn to Morning",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Presiding Deity",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Provenance",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Punnai (Alexandrian Laurel)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Puram",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "Puram (Outer)",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Purananuru",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Puṟam — the Exterior",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Pāṇar & Viṟaliyar",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Rainy Season (Southwest Monsoon)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Readable",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Ready to read the verses themselves?",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ]
+    },
+    {
+      "en": "Red Lotus",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Reference only",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "References",
+      "files": [
+        "frontend/src/components/world/CulturalContextCard.jsx"
+      ]
+    },
+    {
+      "en": "Research",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Research desk",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Retrieve metaphor-rich verses featuring Vengai blossoms and elephants.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Return Home",
+      "files": [
+        "frontend/src/pages/NotFound.jsx"
+      ]
+    },
+    {
+      "en": "Review the English translation",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ]
+    },
+    {
+      "en": "Review the modern Tamil commentary",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ]
+    },
+    {
+      "en": "Rice Craft",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "River",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "River Pottery",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Rocky Upland",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Sage & Ethical Philosopher",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Salt Making",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Salt Merchants",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Salt Pan",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Sample Verse",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Sangam Avai",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ]
+    },
+    {
+      "en": "Sangam Avai Swarm",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Sangam World",
+      "files": [
+        "frontend/src/components/navigation/Navbar.jsx"
+      ]
+    },
+    {
+      "en": "Sangam World Explorer",
+      "files": [
+        "frontend/src/components/world/SangamWorld.jsx"
+      ]
+    },
+    {
+      "en": "Screw Pine (Kaithai)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Sea Creature / Dolphin",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Sea Trade",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Seagull",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Seashore & Backwaters",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Season",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Secret union & first love",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "See Connections Graph",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ]
+    },
+    {
+      "en": "Select a Landscape above to explore",
+      "files": [
+        "frontend/src/components/world/SangamWorld.jsx"
+      ]
+    },
+    {
+      "en": "Serpent",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Shark",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Sirupanatrupadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Spotted Deer",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Status of women in Sangam era",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ]
+    },
+    {
+      "en": "Stories",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Symbol",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Synthesize Mullai poetics: grammatical rules, verse examples, and visual scene.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Tank / Pond",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Tap for details",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Teak",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Ten Idylls",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Terrace Farming",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Text",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Thadari (Frame Drum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Thadavalam / Thaazhai (Screw Pine)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Thannumai (Forest Drum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "The classical work you requested is being digitized into the corpus.",
+      "files": [
+        "frontend/src/pages/Book.jsx"
+      ]
+    },
+    {
+      "en": "The Eighteen Greater Texts",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "The Five Landscapes",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "The Poets",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "The Sangam Age",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "The Seven Great Patrons",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "The Seven Puṟam Tiṇais",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "The ten idylls carry no tiṇai tag, so a filter hides them",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "The Three Sangams",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "The Tiṇai Framework — Muthal · Karu · Uri",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Tholkappiyar",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Tiger",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Time of Day",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Tirukkural",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Tirumurugaatrupadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ]
+    },
+    {
+      "en": "Tiṇai",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx",
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ]
+    },
+    {
+      "en": "Tolkāppiyam",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Tondaka Murasu (Hill Drum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Translation",
+      "files": [
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Transliteration",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/data/library.js"
+      ]
+    },
+    {
+      "en": "Travellers",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Try searching for \"Kurunthokai\", \"Kurinji\", or \"Akam\"",
+      "files": [
+        "frontend/src/components/search/CommandPalette.jsx"
+      ]
+    },
+    {
+      "en": "Tumbai",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Unclassified",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Uri — The Fitting Mood",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Uzhavar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Uḻiñai",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Valor in battle",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Vanigar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Vanji",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Varunan — Lord of the Sea",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Vedavar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Velan",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Velan Women",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Venkai (Indian Kino)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Venkai Bark Dye",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Vetchi",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Vira Pattu (Hero Song)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Visualize an ancient Tamil harbor alive with merchant vessels.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Visualize the evening seashore scene of Neythal with crashing waves.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Visualizer & Historical Imagery",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Voice",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ]
+    },
+    {
+      "en": "Voice recitation is not supported in this browser.",
+      "files": [
+        "frontend/src/components/reader/VoiceLayer.jsx"
+      ]
+    },
+    {
+      "en": "Vulture",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Vākai",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    },
+    {
+      "en": "Wasteland",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Wasteland & Desert Track",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Water Buffalo",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Waterfall",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Waystation",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "What are the grammatical rules for speeches by Hero, Heroine, and Friend?",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "What are the structure and features of Ettuthokai and Pattuppattu?",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "What is the universal philosophy behind Purananooru 192?",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "Where these verses live",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ]
+    },
+    {
+      "en": "Which Mullai verses depict the monsoon rains, waiting, and clouds?",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ]
+    },
+    {
+      "en": "White Water Lily",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Wild Mango",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "wrote in",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ]
+    },
+    {
+      "en": "Yazh (Harp)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ]
+    },
+    {
+      "en": "Your name and contact details will be used only for Open Sangam review work, stored in India, and you can withdraw at any time.",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ]
+    },
+    {
+      "en": "Yāḻ (Harp-Lute)",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ]
+    }
+  ]
+}

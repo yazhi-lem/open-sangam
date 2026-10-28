@@ -1,0 +1,2994 @@
+{
+  "generatedBy": "translate/convert_to_tamil.py",
+  "count": 372,
+  "strings": [
+    {
+      "en": "About this Tiṇai",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "இந்தத் திணை பற்றி",
+      "status": "glossary"
+    },
+    {
+      "en": "Acacia / Thorn Scrub",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முள்ளம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Ainkurunooru",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "ஐங்குறுநூறு",
+      "status": "glossary"
+    },
+    {
+      "en": "Akam",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "அகம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Akam & Puṟam — The Two Halves",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "அகமும் புறமும்",
+      "status": "glossary"
+    },
+    {
+      "en": "Akam (Inner)",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "அகம் (உள்ளகம்)",
+      "status": "glossary"
+    },
+    {
+      "en": "Akam — the Interior",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "அகம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Akananooru",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "அகநானூறு",
+      "status": "glossary"
+    },
+    {
+      "en": "Akapporul",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "அகப்பொருள்",
+      "status": "glossary"
+    },
+    {
+      "en": "All",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "அனைத்தும்",
+      "status": "glossary"
+    },
+    {
+      "en": "All seasons (esp. dry season)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "அனைத்து காலமும் / இலையுதிர்",
+      "status": "glossary"
+    },
+    {
+      "en": "All Tiṇai",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "அனைத்துத் திணைகள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Another way",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ],
+      "ta": "வேறு வழி",
+      "status": "glossary"
+    },
+    {
+      "en": "Armour Crafting",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கவசம் செய்தல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Articles",
+      "files": [
+        "frontend/src/pages/Articles.jsx",
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "கட்டுரைகள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Artifact term",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "கலைப்பொருட் சொல்",
+      "status": "glossary"
+    },
+    {
+      "en": "attests",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "சான்றளிக்கிறது",
+      "status": "glossary"
+    },
+    {
+      "en": "Auvaiyār",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "ஔவையார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Available",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "உள்ளது",
+      "status": "glossary"
+    },
+    {
+      "en": "Avvaiyar",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "ஔவையார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Ayachchiyar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "ஆய்ச்சியர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Ayar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "ஆயர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Ayarpadi (Cowherd Settlement)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "ஆயர்பாடி",
+      "status": "glossary"
+    },
+    {
+      "en": "Bamboo",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மூங்கில்",
+      "status": "glossary"
+    },
+    {
+      "en": "Bamboo Grove",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மூங்கில் காடு",
+      "status": "glossary"
+    },
+    {
+      "en": "Banana",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வாழை",
+      "status": "glossary"
+    },
+    {
+      "en": "Battle valor & kingly generosity",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "போர் வீரம் / கொடை",
+      "status": "glossary"
+    },
+    {
+      "en": "Beach",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கடற்கரை",
+      "status": "glossary"
+    },
+    {
+      "en": "Bear",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கரடி",
+      "status": "glossary"
+    },
+    {
+      "en": "Bow-making",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வில் வினை",
+      "status": "glossary"
+    },
+    {
+      "en": "Browse Library",
+      "files": [
+        "frontend/src/pages/NotFound.jsx"
+      ],
+      "ta": "நூலகத்தை உலாவு",
+      "status": "glossary"
+    },
+    {
+      "en": "Bull",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "எருது",
+      "status": "glossary"
+    },
+    {
+      "en": "Butter Churning",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வெண்ணெய் உருட்டல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Caper Bush",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "காய்க்குருவி",
+      "status": "glossary"
+    },
+    {
+      "en": "Catalogued",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "பட்டியலிடப்பட்டது",
+      "status": "glossary"
+    },
+    {
+      "en": "Celebration of victories",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வெற்றி கொண்டாட்டம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Check the original verse",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ],
+      "ta": "மூலப் பாடலைச் சரிபார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Chera",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "சேரர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Chief Critic & Convener",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "தலைமைப் புலவர் & நடுவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Chola",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "சோழர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Choose from Kurinji (Mountains), Mullai (Forests), Marutam (Cropland), Neytal (Seashore), or Palai (Wasteland)",
+      "files": [
+        "frontend/src/components/world/SangamWorld.jsx"
+      ],
+      "ta": "குறிஞ்சி (மலை), முல்லை (காடு), மருதம் (வயல்), நெய்தல் (கடற்கரை) அல்லது பாலை (வறண்ட நிலம்) ஆகியவற்றில் தேர்ந்தெடுங்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Cliff Honey Harvest",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "தேன் சேகரிப்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Coastal Port Town",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கடற்கரை நகரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Coastal Scrub",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "சுரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Common Kingfisher",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மீன்கொத்தி",
+      "status": "glossary"
+    },
+    {
+      "en": "Compare and synthesize the collaborative poetics of Kapilar and Paranar.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "கபிலரும் பரணரும் இணைந்து பாடிய பாணியின் சிறப்புகளை ஒப்பிட்டு விளக்குக.",
+      "status": "glossary"
+    },
+    {
+      "en": "composed",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "இயற்றியது",
+      "status": "glossary"
+    },
+    {
+      "en": "Conch Shell (Sangu)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "சங்கு",
+      "status": "glossary"
+    },
+    {
+      "en": "Connections Graph",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "பிணைப்பு வரைபடம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Connections Graph →",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "பிணைப்பு வரைபடம் →",
+      "status": "glossary"
+    },
+    {
+      "en": "Connections map",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "பிணைப்பு வரைபடம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Context",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "சூழல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Convene the assembly to discuss the patronage and generosity of Sangam kings.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "சங்க காலத்தில் மன்னர்களும் புலவர்களும் ஆற்றிய கொடை மரபை அவையில் விவாதிக்கவும்.",
+      "status": "glossary"
+    },
+    {
+      "en": "Coral Shoal",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பவளப் படுகை",
+      "status": "glossary"
+    },
+    {
+      "en": "Cotton Weaving",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நெசவு",
+      "status": "glossary"
+    },
+    {
+      "en": "Cow",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பசு",
+      "status": "glossary"
+    },
+    {
+      "en": "Cowherd Settlement",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "ஆய்ச்சி குடில்",
+      "status": "glossary"
+    },
+    {
+      "en": "Crab",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நண்டு",
+      "status": "glossary"
+    },
+    {
+      "en": "Cropland & River Delta",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மருதம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Crow",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "காக்கை",
+      "status": "glossary"
+    },
+    {
+      "en": "Daily Life & Material Culture",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "வாழ்வும் பண்பாடும்",
+      "status": "glossary"
+    },
+    {
+      "en": "Dam & Sluice",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "அணை",
+      "status": "glossary"
+    },
+    {
+      "en": "Depict Kurinji nature scene",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ],
+      "ta": "குறிஞ்சி இயற்கைக் காட்சியை வரை",
+      "status": "glossary"
+    },
+    {
+      "en": "Desolate Road / Wild Path",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "சுரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Digitization in progress",
+      "files": [
+        "frontend/src/components/world/SangamWorld.jsx"
+      ],
+      "ta": "மின்னணுவாக்கம் நடைபெறுகிறது",
+      "status": "glossary"
+    },
+    {
+      "en": "Draft",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "வரைவு",
+      "status": "glossary"
+    },
+    {
+      "en": "Dusk / Evening",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மாலை",
+      "status": "glossary"
+    },
+    {
+      "en": "Each Tiṇai had its own pann (raga) — the ancient precursors of modern Carnatic ragas.",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "ஒவ்வொரு திணைக்கும் தனிப் பண் இருந்தது; அவையே இன்றைய கர்நாடக ராகங்களின் முன்னோடிகள்.",
+      "status": "glossary"
+    },
+    {
+      "en": "Early Winter & Post-Monsoon",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முன்பனி / இலையுதிர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Egret / Sea Heron",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நாரை",
+      "status": "glossary"
+    },
+    {
+      "en": "Eight Anthologies",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "எட்டுத்தொகை",
+      "status": "glossary"
+    },
+    {
+      "en": "Eighteen Minor Works",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "பதினெண்கீழ்க்கணக்கு",
+      "status": "glossary"
+    },
+    {
+      "en": "Elephant",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "யானை",
+      "status": "glossary"
+    },
+    {
+      "en": "English",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/data/library.js"
+      ],
+      "ta": "ஆங்கிலம்",
+      "status": "glossary"
+    },
+    {
+      "en": "English Translation",
+      "files": [
+        "frontend/src/data/tamilTracking.test.js"
+      ],
+      "ta": "ஆங்கில மொழிபெயர்ப்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Enter Sangam World",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ],
+      "ta": "சங்க உலகிற்குள் செல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Entity",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "களச்சொல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Epithets",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "பெயர்ப்பெயர்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Error loading articles",
+      "files": [
+        "frontend/src/pages/ArticlesList.jsx"
+      ],
+      "ta": "கட்டுரைகளை ஏற்றுவதில் பிழை",
+      "status": "glossary"
+    },
+    {
+      "en": "Erukku (Calotropis)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "எருக்கு",
+      "status": "glossary"
+    },
+    {
+      "en": "Estuary / Backwater",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கழிமுகம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Evening and Twilight",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "அந்தி மாலை",
+      "status": "glossary"
+    },
+    {
+      "en": "Explain Kurunthokai 40",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ],
+      "ta": "குறுந்தொகை 40 விளக்குக",
+      "status": "glossary"
+    },
+    {
+      "en": "Explain the aesthetic evaluation and poetic critique of Sangam verse.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "புலவர்களின் பாடல்களில் அமைந்த நயங்களையும் திறனாய்வு முறைகளையும் விளக்குக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Explain the deep meaning of Kurunthokai 40 (Red earth and pouring rain).",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "குறுந்தொகை 40 (செம்புலப் பெயல் நீர் போல) பாடலின் மெய்ப்பொருளை விளக்குக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Explain the Iraiyanar Akapporul commentary and debate traditions.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "இறையனார் அகப்பொருள் உரையும் சங்க அவையின் விவாத மரபுகளும் பற்றி கூறுக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Explain Uri-porul and covert metaphors across the five tiṇai landscapes.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "ஐந்திணைகளுக்கும் உரிய உரிப்பொருள்களையும் அவற்றின் உள்ளுறை இறைச்சியையும் விளக்குக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Explore →",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ],
+      "ta": "ஆராய →",
+      "status": "glossary"
+    },
+    {
+      "en": "Extract the Muthal, Karu, and Uri-porul structure of Natrinai 1.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "நற்றிணை 1 ஆம் பாடலின் முதல், கரு, உரிப் பொருள் கட்டமைப்பை பிரித்தாய்க.",
+      "status": "glossary"
+    },
+    {
+      "en": "Eyinar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "எயினர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Farming & Food",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "வேளாண்மை",
+      "status": "glossary"
+    },
+    {
+      "en": "Find verses about Mullai landscape",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ],
+      "ta": "முல்லை நிலம் பற்றிய பாடல்களைத் தேடு",
+      "status": "glossary"
+    },
+    {
+      "en": "Find verses celebrating Kurinji flowers, waterfalls, and mountain peaks.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "குறிஞ்சி நில மலர்கள் மற்றும் அருவிகளை விவரிக்கும் பாடல்களைத் தேடித் தருக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Fishing Harbour",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மீன்படகு துறை",
+      "status": "glossary"
+    },
+    {
+      "en": "Five tiṇai",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "ஐந்திணை",
+      "status": "glossary"
+    },
+    {
+      "en": "Flower Garland Weaving",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பின்னல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Forced separation & the agony of parting",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பிரிவு — வன்புறை",
+      "status": "glossary"
+    },
+    {
+      "en": "Forest & Pastoral",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முல்லை",
+      "status": "glossary"
+    },
+    {
+      "en": "Forest Stream",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கால்வாய்",
+      "status": "glossary"
+    },
+    {
+      "en": "Frog",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "தவளை",
+      "status": "glossary"
+    },
+    {
+      "en": "Full Council Multi-Agent Mesh",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "முழு அவை பல்முகவர் வலை",
+      "status": "glossary"
+    },
+    {
+      "en": "Glossary",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/data/library.js"
+      ],
+      "ta": "சொல்லகராதி",
+      "status": "glossary"
+    },
+    {
+      "en": "Graph",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "வரைபடம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Grazing Meadow",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மேய்ச்சல் வெளி",
+      "status": "glossary"
+    },
+    {
+      "en": "Grey Heron",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கொக்கு",
+      "status": "glossary"
+    },
+    {
+      "en": "Hare",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முயல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Harvest Song",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "ஓதைப் பாட்டு",
+      "status": "glossary"
+    },
+    {
+      "en": "Hero Stone",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கல்வெட்டு நினைவு",
+      "status": "glossary"
+    },
+    {
+      "en": "Hero Stones",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "நடுகல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Hill Myna",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மரகத பறவை",
+      "status": "glossary"
+    },
+    {
+      "en": "Hill Stream",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "சிலம்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Hill Women",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மலையப் பெண்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Hilltop Murugan Shrine",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குன்றக்கோட்டம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Home",
+      "files": [
+        "frontend/src/components/navigation/Navbar.jsx"
+      ],
+      "ta": "முகப்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Homecoming & victory",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வீட்டிற்கு திரும்புதல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Honeycomb Cliff",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "தேன்கூடு",
+      "status": "glossary"
+    },
+    {
+      "en": "Hunt Horn",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வேட்டை ஊது கொம்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Idaiyar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "இடையர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Indian Wolf",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "ஓநாய்",
+      "status": "glossary"
+    },
+    {
+      "en": "Indiran (Indra) — Lord of Rain & Prosperity",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "இந்திரன்",
+      "status": "glossary"
+    },
+    {
+      "en": "Indra Festival Pavilion",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "இந்திர விழா மேடை",
+      "status": "glossary"
+    },
+    {
+      "en": "Infidelity & lovers\\",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "துரோகமும் காதலரும்",
+      "status": "glossary"
+    },
+    {
+      "en": "is set in",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "இதில் அமைந்தது",
+      "status": "glossary"
+    },
+    {
+      "en": "Jackal / Fox",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நரி",
+      "status": "glossary"
+    },
+    {
+      "en": "Jasmine Bower",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முல்லை பந்தல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Jungle Fowl",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "காட்டுக்கோழி",
+      "status": "glossary"
+    },
+    {
+      "en": "Jungle Track",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "காட்டு வழி",
+      "status": "glossary"
+    },
+    {
+      "en": "Kadamba",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கடம்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Kadamba Forest",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கடம்பு காடு",
+      "status": "glossary"
+    },
+    {
+      "en": "Kaikkiḷai & Peruntiṇai",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "கைக்கிளை & பெருந்திணை",
+      "status": "glossary"
+    },
+    {
+      "en": "Kajal-Tree Grove (Marutam grove)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "அஞ்சனவனம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kalithokai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "கலித்தொகை",
+      "status": "glossary"
+    },
+    {
+      "en": "Kandal (Mangrove)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கண்டல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kanigaiyar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கணிகையர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kantal (Gloriosa Lily)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "காந்தள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kapilar",
+      "files": [
+        "frontend/src/data/knowledge.js",
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "கபிலர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Karu — Native Things",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "கருப்பொருள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Karu-poruḷ",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "கருப்பொருள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kattumaram (Catamaran)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கட்டுமரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kaṇiyan Pūṅkuṉṟaṉār",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "கணியன் பூங்குன்றனார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Keezhadi & Archaeology",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "கீழடி",
+      "status": "glossary"
+    },
+    {
+      "en": "Kings & Patrons",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "மன்னரும் வள்ளல்களும்",
+      "status": "glossary"
+    },
+    {
+      "en": "Koel (Asian Cuckoo)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குயில்",
+      "status": "glossary"
+    },
+    {
+      "en": "Konrai (Indian Laburnum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கொன்றை",
+      "status": "glossary"
+    },
+    {
+      "en": "Korravai Shrine",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கொற்றவை கோட்டம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Korravai — Goddess of Victory & the Wild",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கொற்றவை / துர்க்கை",
+      "status": "glossary"
+    },
+    {
+      "en": "Kuravar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குறவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kuravar Hut",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குறவர் குடில்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kurinji",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "குறிஞ்சி",
+      "status": "glossary"
+    },
+    {
+      "en": "Kurinji (Mountain)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "குறிஞ்சி",
+      "status": "glossary"
+    },
+    {
+      "en": "Kurinji (Strobilanthes)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குறிஞ்சி",
+      "status": "glossary"
+    },
+    {
+      "en": "Kurinji Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குறிஞ்சிப் பண்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kurinjipattu",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "குறிஞ்சிப்பாட்டு",
+      "status": "glossary"
+    },
+    {
+      "en": "Kurunthokai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "குறுந்தொகை",
+      "status": "glossary"
+    },
+    {
+      "en": "Kuzhal (Flute)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குழல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kuḻal (Flute)",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "குழல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Kāñci",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "காஞ்சி",
+      "status": "glossary"
+    },
+    {
+      "en": "Late Monsoon & Early Winter",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கூதிர் / முன்பனி",
+      "status": "glossary"
+    },
+    {
+      "en": "Library",
+      "files": [
+        "frontend/src/components/navigation/Navbar.jsx"
+      ],
+      "ta": "நூலகம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Loading article...",
+      "files": [
+        "frontend/src/pages/ArticleReader.jsx"
+      ],
+      "ta": "கட்டுரை ஏற்றப்படுகிறது...",
+      "status": "glossary"
+    },
+    {
+      "en": "Loading articles...",
+      "files": [
+        "frontend/src/pages/ArticlesList.jsx"
+      ],
+      "ta": "கட்டுரைகள் ஏற்றப்படுகின்றன...",
+      "status": "glossary"
+    },
+    {
+      "en": "Loading landscape…",
+      "files": [
+        "frontend/src/components/world/FullscreenLandscape.jsx"
+      ],
+      "ta": "நிலம் ஏற்றப்படுகிறது…",
+      "status": "glossary"
+    },
+    {
+      "en": "Longing, lament & anxious waiting",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "இரங்கல் — ஆற்றாமை",
+      "status": "glossary"
+    },
+    {
+      "en": "Maduraikanchi",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "மதுரைக்காஞ்சி",
+      "status": "glossary"
+    },
+    {
+      "en": "Mahua Tree",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "இலுப்பை",
+      "status": "glossary"
+    },
+    {
+      "en": "Malaipadukadam",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "மலைபடுகடாம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Manjadi (Coral Bead)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மஞ்சாடி",
+      "status": "glossary"
+    },
+    {
+      "en": "Maravar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மறவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Market Town",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நகரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Marutam",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "மருதம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Marutam (Arjuna Tree)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மருதம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Marutham (Pastoral)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "மருதம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Marutham Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மருதப் பண்",
+      "status": "glossary"
+    },
+    {
+      "en": "Master Grammarian & Structural Analyst",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "பேரிலக்கண ஆசிரியர் & கட்டமைப்பு ஆய்வாளர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Master of Kurinji & Nature Retrieval",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "குறிஞ்சி & இயற்கை மீட்டெடுப்பு வல்லுநர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Mayon Shrine",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மாயோன் கோட்டம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Mayon — The Dark One (Vishnu)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மாயோன் / திருமால்",
+      "status": "glossary"
+    },
+    {
+      "en": "Meenavr",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மீனவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "mentions",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "குறிப்பிடுகிறது",
+      "status": "glossary"
+    },
+    {
+      "en": "Midday Blaze",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நண்பகல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Midnight",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "யாமம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Midsummer & Late Summer",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வேனில் / முதுவேனில்",
+      "status": "glossary"
+    },
+    {
+      "en": "Modern Tamil",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "இன்றைய தமிழ்",
+      "status": "glossary"
+    },
+    {
+      "en": "Monkey",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குரங்கு",
+      "status": "glossary"
+    },
+    {
+      "en": "Mountain Cave",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மலைக்குகை",
+      "status": "glossary"
+    },
+    {
+      "en": "Mountain Pass",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கவாது",
+      "status": "glossary"
+    },
+    {
+      "en": "Mountains & Hills",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குறிஞ்சி",
+      "status": "glossary"
+    },
+    {
+      "en": "Mullai",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "முல்லை",
+      "status": "glossary"
+    },
+    {
+      "en": "Mullai (Forest)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "முல்லை",
+      "status": "glossary"
+    },
+    {
+      "en": "Mullai (Jasmine)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முல்லை",
+      "status": "glossary"
+    },
+    {
+      "en": "Mullai Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முல்லைப் பண்",
+      "status": "glossary"
+    },
+    {
+      "en": "Mullaippattu",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "முல்லைப்பாட்டு",
+      "status": "glossary"
+    },
+    {
+      "en": "Murugan — Lord of the Hills",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முருகன் / செவ்வேல் செய்யோன்",
+      "status": "glossary"
+    },
+    {
+      "en": "Music & Performers",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "இசையும் கலைஞரும்",
+      "status": "glossary"
+    },
+    {
+      "en": "Muthal — First Things",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "முதற்பொருள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Māmūlaṉār",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "மாமூலனார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Nadukal (Hero Stone)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நடுகல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Nagari (Pastoral Horn)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நாகரி",
+      "status": "glossary"
+    },
+    {
+      "en": "Nakkirar",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "நக்கீரர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Nakkīrar",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "நக்கீரர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Naladiyar",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "நாலடியார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Narrate the history of Athiyaman giving the rare gooseberry to Avvaiyar.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "அதியமானுக்கு நெல்லிக்கனி அளித்த வரலாற்றுப் பின்னணியையும் நட்பையும் கூறுக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Natrinai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "நற்றிணை",
+      "status": "glossary"
+    },
+    {
+      "en": "Naval valor & seafaring heroism",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கடல் கடந்த வீரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Nedunalvadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "நெடுநல்வாடை",
+      "status": "glossary"
+    },
+    {
+      "en": "Net Weaving",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வலை நெசவு",
+      "status": "glossary"
+    },
+    {
+      "en": "Neytal",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "நெய்தல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Neytal (Blue Water Lily)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நெய்தல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Neytal Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நெய்தல் பண்",
+      "status": "glossary"
+    },
+    {
+      "en": "Neytal Yazh (Coastal Harp)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நெய்தல் யாழ்",
+      "status": "glossary"
+    },
+    {
+      "en": "Neythal (Seashore)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "நெய்தல்",
+      "status": "glossary"
+    },
+    {
+      "en": "No corpus attestations extracted for this landscape yet.",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "இந்த நிலத்திற்கு இன்னும் சான்றுகள் எதுவும் எடுக்கப்படவில்லை.",
+      "status": "glossary"
+    },
+    {
+      "en": "Not yet digitised",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "இன்னும் மின்னணுவாக்கப்படவில்லை",
+      "status": "glossary"
+    },
+    {
+      "en": "Notes",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/data/library.js"
+      ],
+      "ta": "குறிப்புகள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Object",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "பொருள்",
+      "status": "glossary"
+    },
+    {
+      "en": "One World, One Kin",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "யாதும் ஊரே",
+      "status": "glossary"
+    },
+    {
+      "en": "Open Sangam Command Center",
+      "files": [
+        "frontend/src/components/search/CommandPalette.jsx"
+      ],
+      "ta": "ஓபன் சங்க கட்டளை மையம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Open the Library →",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ],
+      "ta": "நூலகத்தைத் திற →",
+      "status": "glossary"
+    },
+    {
+      "en": "Original",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "மூலம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Ornament & Dress",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "அணிகலன்",
+      "status": "glossary"
+    },
+    {
+      "en": "Overview",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "மேலோட்டம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Padagam (War Drum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "படகம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Paddy Field",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வயல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Paint a vivid scene of the shimmering heat and mirages in Palai.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "பாலை நிலத்தின் கடும் வெப்பமும் மான்களும் உலவும் காட்சியைச் சித்தரிக்கவும்.",
+      "status": "glossary"
+    },
+    {
+      "en": "Painted Stork",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நாரை",
+      "status": "glossary"
+    },
+    {
+      "en": "Palai",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "பாலை",
+      "status": "glossary"
+    },
+    {
+      "en": "Palai (Desert)",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "பாலை",
+      "status": "glossary"
+    },
+    {
+      "en": "Palai Pann (Melody mode)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பாலைப் பண்",
+      "status": "glossary"
+    },
+    {
+      "en": "Palai Tree (Wrightia)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பாலை மரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Pandya",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "பாண்டியர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Pann · Classical Melody Mode",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "பண் · செவ்வியல் இசை முறை",
+      "status": "glossary"
+    },
+    {
+      "en": "Paranar",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "பரணர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Paravar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பரதவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Paraṇar",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "பரணர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Paripadal",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "பரிபாடல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Pathitrupathu",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "பதிற்றுப்பத்து",
+      "status": "glossary"
+    },
+    {
+      "en": "Patient waiting & fidelity",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "இருத்தல் — காத்திருத்தல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Pattinappalai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "பட்டினப்பாலை",
+      "status": "glossary"
+    },
+    {
+      "en": "Paṇ (Melodic Modes)",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "பண்",
+      "status": "glossary"
+    },
+    {
+      "en": "Paṟai & Muracu",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "பறை & முரசு",
+      "status": "glossary"
+    },
+    {
+      "en": "Peacock",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மயில்",
+      "status": "glossary"
+    },
+    {
+      "en": "Pearl Diving",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "முத்தெடுப்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "People",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "மக்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Perumpanatrupadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "பெரும்பாணாற்றுப்படை",
+      "status": "glossary"
+    },
+    {
+      "en": "Pidavam (Forest Creeper)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பிடவம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Planned",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "திட்டத்தில்",
+      "status": "glossary"
+    },
+    {
+      "en": "Poem",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "பாடல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Poet",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "புலவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Poetics",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "யாப்பியல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Poets of this landscape",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "இந்த நிலத்தின் புலவர்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Porunaraatrupadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "பொருநராற்றுப்படை",
+      "status": "glossary"
+    },
+    {
+      "en": "Pre-dawn to Morning",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வைகறை",
+      "status": "glossary"
+    },
+    {
+      "en": "Presiding Deity",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "அதிதேவதை",
+      "status": "glossary"
+    },
+    {
+      "en": "Provenance",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "மூலாதாரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Punnai (Alexandrian Laurel)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "புன்னை",
+      "status": "glossary"
+    },
+    {
+      "en": "Puram",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "புறம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Puram (Outer)",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "புறம் (வெளிப்புறம்)",
+      "status": "glossary"
+    },
+    {
+      "en": "Purananuru",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "புறநானூறு",
+      "status": "glossary"
+    },
+    {
+      "en": "Puṟam — the Exterior",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "புறம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Pāṇar & Viṟaliyar",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "பாணர் & விறலியர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Rainy Season (Southwest Monsoon)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கார்காலம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Readable",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "படிக்கலாம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Ready to read the verses themselves?",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ],
+      "ta": "பாடல்களை நேரடியாகப் படிக்கத் தயாரா?",
+      "status": "glossary"
+    },
+    {
+      "en": "Red Lotus",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "செங்கழுநீர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Reference only",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "மேற்கோள் மட்டும்",
+      "status": "glossary"
+    },
+    {
+      "en": "References",
+      "files": [
+        "frontend/src/components/world/CulturalContextCard.jsx"
+      ],
+      "ta": "மேற்கோள்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Research",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "ஆய்வு",
+      "status": "glossary"
+    },
+    {
+      "en": "Research desk",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "ஆய்வுப் பலகை",
+      "status": "glossary"
+    },
+    {
+      "en": "Retrieve metaphor-rich verses featuring Vengai blossoms and elephants.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "வேங்கை மலரும் யானையும் இடம்பெறும் உள்ளுறைப் பாடல்களைத் தொகுத்துக் கூறுக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Return Home",
+      "files": [
+        "frontend/src/pages/NotFound.jsx"
+      ],
+      "ta": "முகப்பிற்குத் திரும்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Review the English translation",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ],
+      "ta": "ஆங்கில மொழிபெயர்ப்பைச் சரிபார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Review the modern Tamil commentary",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ],
+      "ta": "இன்றைய தமிழ் உரையைச் சரிபார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Rice Craft",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நெல் உமி கைவினை",
+      "status": "glossary"
+    },
+    {
+      "en": "River",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "ஆறு",
+      "status": "glossary"
+    },
+    {
+      "en": "River Pottery",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மண்கலம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Rocky Upland",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கல்லூர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Sage & Ethical Philosopher",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "முதுமொழி & அறநெறி முனிவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Salt Making",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "உப்பு தயாரிப்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Salt Merchants",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "உப்பு வணிகர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Salt Pan",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "உப்புப் படுகை",
+      "status": "glossary"
+    },
+    {
+      "en": "Sample Verse",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "மாதிரிப் பாடல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Sangam Avai",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ],
+      "ta": "சங்க அவை",
+      "status": "glossary"
+    },
+    {
+      "en": "Sangam Avai Swarm",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "சங்க அவை",
+      "status": "glossary"
+    },
+    {
+      "en": "Sangam World",
+      "files": [
+        "frontend/src/components/navigation/Navbar.jsx"
+      ],
+      "ta": "சங்க உலகம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Sangam World Explorer",
+      "files": [
+        "frontend/src/components/world/SangamWorld.jsx"
+      ],
+      "ta": "சங்க உலக ஆய்வு",
+      "status": "glossary"
+    },
+    {
+      "en": "Screw Pine (Kaithai)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கைதை",
+      "status": "glossary"
+    },
+    {
+      "en": "Sea Creature / Dolphin",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "திமிங்கிலம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Sea Trade",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "கடல் வாணிபம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Seagull",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கடல்காகம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Seashore & Backwaters",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நெய்தல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Season",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "பருவம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Secret union & first love",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "களவு — கலவி",
+      "status": "glossary"
+    },
+    {
+      "en": "See Connections Graph",
+      "files": [
+        "frontend/src/pages/Knowledge.jsx"
+      ],
+      "ta": "பிணைப்பு வரைபடத்தைப் பார்",
+      "status": "glossary"
+    },
+    {
+      "en": "Select a Landscape above to explore",
+      "files": [
+        "frontend/src/components/world/SangamWorld.jsx"
+      ],
+      "ta": "மேலே ஒரு நிலத்தைத் தேர்ந்தெடுத்து ஆராயுங்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Serpent",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பாம்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Shark",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "சுறா",
+      "status": "glossary"
+    },
+    {
+      "en": "Sirupanatrupadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "சிறுபாணாற்றுப்படை",
+      "status": "glossary"
+    },
+    {
+      "en": "Spotted Deer",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மான்",
+      "status": "glossary"
+    },
+    {
+      "en": "Status of women in Sangam era",
+      "files": [
+        "frontend/src/pages/Avai.jsx"
+      ],
+      "ta": "சங்க காலப் பெண்களின் நிலை",
+      "status": "glossary"
+    },
+    {
+      "en": "Stories",
+      "files": [
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "கதைகள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Symbol",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "அடையாளம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Synthesize Mullai poetics: grammatical rules, verse examples, and visual scene.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "முல்லைத் திணையின் காதலும் காத்திருத்தலும் — இலக்கணம், பாடல், காட்சி மூன்றையும் விளக்குங்கள்.",
+      "status": "glossary"
+    },
+    {
+      "en": "Tank / Pond",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "குளம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Tap for details",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "விவரங்களுக்குத் தொடு",
+      "status": "glossary"
+    },
+    {
+      "en": "Teak",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "தேக்கு",
+      "status": "glossary"
+    },
+    {
+      "en": "Ten Idylls",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "பத்துப்பாட்டு",
+      "status": "glossary"
+    },
+    {
+      "en": "Terrace Farming",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "மலை வேளாண்மை",
+      "status": "glossary"
+    },
+    {
+      "en": "Text",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "மூல உரை",
+      "status": "glossary"
+    },
+    {
+      "en": "Thadari (Frame Drum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "தடாரி",
+      "status": "glossary"
+    },
+    {
+      "en": "Thadavalam / Thaazhai (Screw Pine)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "தாழை",
+      "status": "glossary"
+    },
+    {
+      "en": "Thannumai (Forest Drum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "தண்ணுமை",
+      "status": "glossary"
+    },
+    {
+      "en": "The classical work you requested is being digitized into the corpus.",
+      "files": [
+        "frontend/src/pages/Book.jsx"
+      ],
+      "ta": "நீங்கள் கோரிய செவ்வியல் நூல் தொகுப்பில் மின்னணுவாக்கப்படுகிறது.",
+      "status": "glossary"
+    },
+    {
+      "en": "The Eighteen Greater Texts",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "பதினெண்மேற்கணக்கு",
+      "status": "glossary"
+    },
+    {
+      "en": "The Five Landscapes",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "ஐந்திணை",
+      "status": "glossary"
+    },
+    {
+      "en": "The Poets",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "சங்கப் புலவர்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "The Sangam Age",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "சங்க காலம்",
+      "status": "glossary"
+    },
+    {
+      "en": "The Seven Great Patrons",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "கடையேழு வள்ளல்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "The Seven Puṟam Tiṇais",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "புறத்திணை",
+      "status": "glossary"
+    },
+    {
+      "en": "The ten idylls carry no tiṇai tag, so a filter hides them",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "பத்துப்பாட்டு நூல்களுக்குத் திணைக் குறிப்பு இல்லை; எனவே வடிகட்டி அவற்றை மறைக்கும்",
+      "status": "glossary"
+    },
+    {
+      "en": "The Three Sangams",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "மூன்று சங்கம்",
+      "status": "glossary"
+    },
+    {
+      "en": "The Tiṇai Framework — Muthal · Karu · Uri",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "திணைப் பொருள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Tholkappiyar",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "தொல்காப்பியர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Tiger",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "புலி",
+      "status": "glossary"
+    },
+    {
+      "en": "Time of Day",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "பொழுது",
+      "status": "glossary"
+    },
+    {
+      "en": "Tirukkural",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "திருக்குறள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Tirumurugaatrupadai",
+      "files": [
+        "frontend/src/data/poems.js"
+      ],
+      "ta": "திருமுருகாற்றுப்படை",
+      "status": "glossary"
+    },
+    {
+      "en": "Tiṇai",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx",
+        "frontend/src/pages/SangamWorldPage.jsx"
+      ],
+      "ta": "திணை",
+      "status": "glossary"
+    },
+    {
+      "en": "Tolkāppiyam",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "தொல்காப்பியம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Tondaka Murasu (Hill Drum)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "தொண்டக முரசு",
+      "status": "glossary"
+    },
+    {
+      "en": "Translation",
+      "files": [
+        "frontend/src/data/library.js"
+      ],
+      "ta": "மொழிபெயர்ப்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Transliteration",
+      "files": [
+        "frontend/src/data/chipLabels.js",
+        "frontend/src/data/library.js"
+      ],
+      "ta": "ஒலிபெயர்ப்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Travellers",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வழிப்போக்கர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Try searching for \"Kurunthokai\", \"Kurinji\", or \"Akam\"",
+      "files": [
+        "frontend/src/components/search/CommandPalette.jsx"
+      ],
+      "ta": "\"குறுந்தொகை\", \"குறிஞ்சி\" அல்லது \"அகம்\" எனத் தேடுங்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Tumbai",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "தும்பை",
+      "status": "glossary"
+    },
+    {
+      "en": "Unclassified",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "வகைப்படுத்தப்படாதது",
+      "status": "glossary"
+    },
+    {
+      "en": "Uri — The Fitting Mood",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "உரிப்பொருள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Uzhavar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "உழவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Uḻiñai",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "உழிஞை",
+      "status": "glossary"
+    },
+    {
+      "en": "Valor in battle",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வீரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Vanigar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வணிகர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Vanji",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "வஞ்சி",
+      "status": "glossary"
+    },
+    {
+      "en": "Varunan — Lord of the Sea",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வருணன் / கடலோன்",
+      "status": "glossary"
+    },
+    {
+      "en": "Vedavar",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வேடுவர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Velan",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வேலன்",
+      "status": "glossary"
+    },
+    {
+      "en": "Velan Women",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வேளான் மகளிர்",
+      "status": "glossary"
+    },
+    {
+      "en": "Venkai (Indian Kino)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வேங்கை",
+      "status": "glossary"
+    },
+    {
+      "en": "Venkai Bark Dye",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வேங்கை சாயம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Vetchi",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "வெட்சி",
+      "status": "glossary"
+    },
+    {
+      "en": "Vira Pattu (Hero Song)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வீரப் பாட்டு",
+      "status": "glossary"
+    },
+    {
+      "en": "Visualize an ancient Tamil harbor alive with merchant vessels.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "சங்க காலத் துறைமுகத்தில் மரக்கலங்கள் வரும் காட்சியை விவரித்து உருவாக்குக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Visualize the evening seashore scene of Neythal with crashing waves.",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "நெய்தல் நிலத்துக் கடற்கரையும் அந்திமாலையும் கொண்ட ஒரு காட்சியமைப்பை வரைக.",
+      "status": "glossary"
+    },
+    {
+      "en": "Visualizer & Historical Imagery",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "காட்சி வடிவாக்குநர் & வரலாற்றுப் படிமங்கள்",
+      "status": "glossary"
+    },
+    {
+      "en": "Voice",
+      "files": [
+        "frontend/src/data/chipLabels.js"
+      ],
+      "ta": "ஒலிவாசிப்பு",
+      "status": "glossary"
+    },
+    {
+      "en": "Voice recitation is not supported in this browser.",
+      "files": [
+        "frontend/src/components/reader/VoiceLayer.jsx"
+      ],
+      "ta": "இந்த உலாவியில் ஒலிவாசிப்பு ஆதரவில்லை.",
+      "status": "glossary"
+    },
+    {
+      "en": "Vulture",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "கழுகு",
+      "status": "glossary"
+    },
+    {
+      "en": "Vākai",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "வாகை",
+      "status": "glossary"
+    },
+    {
+      "en": "Wasteland",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பாலைவனம்",
+      "status": "glossary"
+    },
+    {
+      "en": "Wasteland & Desert Track",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "பாலை",
+      "status": "glossary"
+    },
+    {
+      "en": "Water Buffalo",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "எருமை",
+      "status": "glossary"
+    },
+    {
+      "en": "Waterfall",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "அருவி",
+      "status": "glossary"
+    },
+    {
+      "en": "Waystation",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "வழிச் சத்திரம்",
+      "status": "glossary"
+    },
+    {
+      "en": "What are the grammatical rules for speeches by Hero, Heroine, and Friend?",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "தலைவி, தலைவன் மற்றும் தோழியின் கூற்றுகளுக்கான இலக்கண விதிகள் யாவை?",
+      "status": "glossary"
+    },
+    {
+      "en": "What are the structure and features of Ettuthokai and Pattuppattu?",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "சங்க இலக்கியத்தின் கட்டமைப்பு மற்றும் எட்டுத்தொகை, பத்துப்பாட்டு சிறப்புகள் யாவை?",
+      "status": "glossary"
+    },
+    {
+      "en": "What is the universal philosophy behind Purananooru 192?",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "புறநானூறு 192 (யாதும் ஊரே யாவரும் கேளிர்) பாடலின் தத்துவ நோக்கு என்ன?",
+      "status": "glossary"
+    },
+    {
+      "en": "Where these verses live",
+      "files": [
+        "frontend/src/components/world/TinaiWorldDetail.jsx"
+      ],
+      "ta": "இந்தப் பாடல்கள் எங்கே உள்ளன",
+      "status": "glossary"
+    },
+    {
+      "en": "Which Mullai verses depict the monsoon rains, waiting, and clouds?",
+      "files": [
+        "frontend/src/data/pulavars.js"
+      ],
+      "ta": "மழையையும் மேகங்களையும் கார் காலத்தையும் வருணிக்கும் முல்லைப் பாடல்கள் எவை?",
+      "status": "glossary"
+    },
+    {
+      "en": "White Water Lily",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "ஆம்பல்",
+      "status": "glossary"
+    },
+    {
+      "en": "Wild Mango",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "நெடல்",
+      "status": "glossary"
+    },
+    {
+      "en": "wrote in",
+      "files": [
+        "frontend/src/pages/GraphExplorer.jsx"
+      ],
+      "ta": "இதில் பாடியது",
+      "status": "glossary"
+    },
+    {
+      "en": "Yazh (Harp)",
+      "files": [
+        "frontend/src/data/tinaiWorld.js"
+      ],
+      "ta": "யாழ்",
+      "status": "glossary"
+    },
+    {
+      "en": "Your name and contact details will be used only for Open Sangam review work, stored in India, and you can withdraw at any time.",
+      "files": [
+        "frontend/src/pages/Scholars.jsx"
+      ],
+      "ta": "உங்கள் பெயரும் தொடர்புத் தகவலும் ஓபன் சங்க மதிப்பாய்வுப் பணிக்கு மட்டுமே பயன்படுத்தப்படும்; இந்தியாவில் சேமிக்கப்படும்; எப்போது வேண்டுமானாலும் விலகலாம்.",
+      "status": "glossary"
+    },
+    {
+      "en": "Yāḻ (Harp-Lute)",
+      "files": [
+        "frontend/src/data/knowledge.js"
+      ],
+      "ta": "யாழ்",
+      "status": "glossary"
+    }
+  ]
+}

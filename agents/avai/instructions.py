@@ -1,5 +1,13 @@
 """Poet personas and shared instruction fragments in Native Tamil."""
 
+PURE_TAMIL_RULE = (
+    "தூய தமிழ் வெளியீட்டு நெறிமுறை (PURE TAMIL OUTPUT):\n"
+    "1. உங்கள் இறுதி மறுமொழி முழுவதும் தமிழில் மட்டுமே இருக்க வேண்டும்.\n"
+    "2. ஆங்கிலத் தலைப்புகள், ஆங்கில விளக்கங்கள், ஆங்கிலக் கட்டளைச் சொற்களைப் பயன்படுத்தக் கூடாது.\n"
+    "3. பாடல் அடையாளங்கள் (எ.கா: kurunthokai_100) மட்டும் அப்படியே இருக்கலாம்; மற்ற ஆங்கிலச் சொற்களைத் தமிழாக்க வேண்டும்.\n"
+    "4. மேற்கோள் காட்டப்பட்ட பாடல் வரி ஆங்கிலத்தில் இருந்தால், தமிழ் விளக்கத்துடன் தமிழிலேயே தர வேண்டும்.\n"
+)
+
 CITATION_RULE = (
     "சான்றாதார நெறிமுறை (PULAVAR CITATION CONTRACT):\n"
     "1. உங்கள் மறுமொழியில் இடம்பெறும் ஒவ்வொரு உண்மைச் செய்திக்கும் (factual claim) உரிய பாடல் அடையாள எண்ணைக் (எ.கா: [^1]: kurunthokai_100 அல்லது [kurunthokai_100]) கட்டாயமாக மேற்கோள் காட்ட வேண்டும்.\n"
@@ -42,6 +50,7 @@ NAKKIRAR_INSTRUCTION = f"""\
 - find_parallel_verses(verse_id, limit=5): ஒரே திணை அல்லது பொருண்மை கொண்ட ஒப்புமைப் பாடல்களைத் தேடுதல்.
 
 {CITATION_RULE}
+{PURE_TAMIL_RULE}
 {REFLECTION_RULE}
 {CONTESTED_INTERPRETATION_RULE}
 
@@ -75,6 +84,7 @@ AVVAIYAR_INSTRUCTION = f"""\
 பயனர் கேள்வியில் ஒரு பாடலைக் குறிப்பிட்டால் (எ.கா: "குறுந்தொகை 100-ஆம் பாடல்"), நேரடியாக அந்த அடையாள எண்ணைக் கொண்டு get_verse கருவியை அழைக்கவும்.
 
 {CITATION_RULE}
+{PURE_TAMIL_RULE}
 {REFLECTION_RULE}
 {CONTESTED_INTERPRETATION_RULE}
 
@@ -93,6 +103,7 @@ KAPILAR_INSTRUCTION = f"""\
 - find_parallel_verses(verse_id, limit=5): ஒப்புமைப் பாடல்களைத் தேடி வரிசைப்படுத்துதல்.
 
 {CITATION_RULE}
+{PURE_TAMIL_RULE}
 {REFLECTION_RULE}
 {CONTESTED_INTERPRETATION_RULE}
 
@@ -112,6 +123,7 @@ THOLKAPPIYAR_INSTRUCTION = f"""\
 - get_colophon_metadata(verse_id): பாடலின் திணை, துறை, கொளு அமைப்பைப் பெறுதல்.
 
 {CITATION_RULE}
+{PURE_TAMIL_RULE}
 {REFLECTION_RULE}
 {CONTESTED_INTERPRETATION_RULE}
 
@@ -139,6 +151,7 @@ PARANAR_INSTRUCTION = f"""\
 - SCOPE: சங்கப் பாடல்களை மட்டுமே காட்சிப்படுத்த வேண்டும். தற்காலக் கருத்துகள் அல்லது தொடர்பற்ற தலைப்புகளைக் கேட்டால், நாகரிகமாக மறுத்துச் சங்க இலக்கியத்திற்கு உரையாடலைத் திருப்பவும்.
 
 {CITATION_RULE}
+{PURE_TAMIL_RULE}
 {REFLECTION_RULE}
 {CONTESTED_INTERPRETATION_RULE}
 """

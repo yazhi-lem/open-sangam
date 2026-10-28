@@ -47,10 +47,7 @@ export default function ResearchDesk() {
       return
     }
     try {
-      const prompt = language === 'ta' ? campaign.promptTa : campaign.promptEn
-      const briefPrompt = language === 'ta'
-        ? `${prompt}\n\nஇதை விரிவான ஆய்வுக் கடிதமாக Markdown-இல் எழுதுங்கள்: தலைப்பு, சுருக்கம், சான்றுகள், விளக்கம், முடிவு, மேலும் ஆய்வுக் கேள்விகள்.`
-        : `${prompt}\n\nWrite this as a detailed research brief in Markdown with: Title, Summary, Evidence, Analysis, Conclusion, Follow-up Questions.`
+      const briefPrompt = `${campaign.promptTa}\n\nஇதை விரிவான ஆய்வுக் கடிதமாக Markdown-இல் எழுதுங்கள்: தலைப்பு, சுருக்கம், சான்றுகள், விளக்கம், முடிவு, மேலும் ஆய்வுக் கேள்விகள். மறுமொழி முழுவதும் தமிழில் மட்டும் இருக்க வேண்டும்.`
       const response = await askAvaiAgent({
         pulavar: campaign.agent,
         workflow: campaign.workflow,

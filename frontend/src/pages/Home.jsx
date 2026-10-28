@@ -36,7 +36,7 @@ export default function Home() {
 
     // No backend in production: Nakkirar answers locally from bundled evidence.
     if (!AVAI_ENABLED) {
-      const local = await askLocalNakkirar({ message, language })
+      const local = await askLocalNakkirar({ message, language: 'ta' })
       setAnswer(local.response_text)
       setCitations(local.citations || [])
       setIsLocal(true)
@@ -45,13 +45,11 @@ export default function Home() {
     }
 
     try {
-      const briefPrompt = language === 'ta'
-        ? `${message}\n\nஇதை ஒரு விரிவான ஆய்வுக் கடிதமாக எழுதுங்கள். Markdown-இல் தலைப்பு, சுருக்கம், சான்றுகள், விளக்கம், முடிவு, மேலும் ஆய்வுக் கேள்விகள் என்ற பிரிவுகளுடன் தருக.`
-        : `${message}\n\nWrite this as a detailed research brief in Markdown with sections: Title, Summary, Evidence, Analysis, Conclusion, Follow-up Questions.`
+      const briefPrompt = `${message}\n\nஇதை விரிவான ஆய்வுக் கடிதமாக எழுதுங்கள். Markdown-இல் தலைப்பு, சுருக்கம், சான்றுகள், விளக்கம், முடிவு, மேலும் ஆய்வுக் கேள்விகள் என்ற பிரிவுகளுடன் தருக. மறுமொழி முழுவதும் தமிழில் மட்டும் இருக்க வேண்டும்.`
       const response = await askAvaiAgent({ message: briefPrompt, pulavar: 'nakkirar', workflow: 'general' })
       const text = response?.response_text || response?.answer || ''
       if (!text || response?.isFallback) {
-        const local = await askLocalNakkirar({ message, language })
+        const local = await askLocalNakkirar({ message, language: 'ta' })
         setAnswer(local.response_text)
         setCitations(local.citations || [])
         setIsLocal(true)
@@ -61,7 +59,7 @@ export default function Home() {
       }
     } catch (err) {
       try {
-        const local = await askLocalNakkirar({ message, language })
+        const local = await askLocalNakkirar({ message, language: 'ta' })
         setAnswer(local.response_text)
         setCitations(local.citations || [])
         setIsLocal(true)
