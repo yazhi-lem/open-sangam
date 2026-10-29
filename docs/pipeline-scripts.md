@@ -203,6 +203,18 @@ tools, writing) and writes `data/library/corpus-artifacts.json` with counts,
 forms, poem distribution and cited sample lines. It is a research index, not an
 archaeological identification.
 
+### `knowledge/extract_kumari_references.py` — Kumari/Lemuria scan
+
+```bash
+python -m knowledge.extract_kumari_references
+```
+
+Scans the normalized corpus for Kumari Kandam / Lemuria terms and classifies
+each hit as a direct reference, homonym, simile, or later tradition. Writes
+`data/library/kumari-references.json`. The current scan finds **no direct
+Sangam reference** to Kumari Kandam or Lemuria; see
+`docs/research/kumari-kandam-corpus-scan.md`.
+
 ### `knowledge/export_obsidian.py` — Obsidian second brain
 
 ```bash
