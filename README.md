@@ -2,7 +2,7 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
-Plan and status live in [`factory/`](./factory): [`CURRENT`](./factory/CURRENT.md) · [`NEXT`](./factory/NEXT.md) · [`RUNWAY`](./factory/RUNWAY.md). The wider library plan (Pathinenkilkkanakku, classics, artifacts, multilingual reader) is in [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md). An Obsidian-ready Markdown vault is generated at `obsidian-vault/` (`backend/python/knowledge/export_obsidian.py`). Retired docs are summarised in [`archives/`](./archives).
+Plan and status live in [`factory/`](./factory): [`CURRENT`](./factory/CURRENT.md) · [`NEXT`](./factory/NEXT.md) · [`RUNWAY`](./factory/RUNWAY.md). The wider library plan (Pathinenkilkkanakku, classics, artifacts, multilingual reader) is in [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md). An Obsidian-ready Markdown vault is generated at `obsidian-vault/` (`backend/python/knowledge/export_obsidian.py`). The interface follows a strict single-language policy ([`docs/LANGUAGE_POLICY.md`](./docs/LANGUAGE_POLICY.md)). Retired docs are summarised in [`archives/`](./archives).
 
 Open Sangam turns static web archives of Sangam-era poetry into a layered learning experience with linguistic,
 cultural and historical context. Think "Duolingo for ancient literature".
@@ -99,10 +99,11 @@ Every AI-generated field stays `verified: false` until a scholar reviews it
 
 | Area | Doc |
 |---|---|
-| Architecture & contracts | [`docs/architecture.md`](./docs/architecture.md) · [`docs/api/api-contracts.md`](./docs/api/api-contracts.md) · [`docs/api/avai-ask-prd.md`](./docs/api/avai-ask-prd.md) |
+| Architecture & contracts | [`docs/architecture.md`](./docs/architecture.md) · [`docs/LANGUAGE_POLICY.md`](./docs/LANGUAGE_POLICY.md) · [`docs/api/api-contracts.md`](./docs/api/api-contracts.md) · [`docs/api/avai-ask-prd.md`](./docs/api/avai-ask-prd.md) |
 | Avai | [`docs/avai/pulavar-verifiable-citations.md`](./docs/avai/pulavar-verifiable-citations.md) · [`docs/avai/avai-launch-runbook.md`](./docs/avai/avai-launch-runbook.md) · [`agents/avai/evals/TAXONOMY.md`](./agents/avai/evals/TAXONOMY.md) |
 | Data | [`docs/data/pipeline-scripts.md`](./docs/data/pipeline-scripts.md) · [`docs/data/data-collection-plan.md`](./docs/data/data-collection-plan.md) · [`docs/data/data-governance.md`](./docs/data/data-governance.md) · [`docs/data/editorial-style-guide.md`](./docs/data/editorial-style-guide.md) |
 | Library | [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md) · [`docs/library/ARTIFACT_LIBRARY.md`](./docs/library/ARTIFACT_LIBRARY.md) |
+| Research | [`docs/research/`](./docs/research) |
 | Outreach | [`docs/brochures/`](./docs/brochures) · [`content/articles/`](./content/articles) |
 
 ## License

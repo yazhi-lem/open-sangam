@@ -3,8 +3,8 @@ from avai.tools.graph import query_knowledge_graph
 
 def test_query_with_no_args_returns_meta():
     meta = query_knowledge_graph()
-    assert meta["nodes"] == 109
-    assert meta["edges"] == 292
+    assert meta["nodes"] == 256
+    assert meta["edges"] == 1303
 
 
 def test_query_by_node_id():

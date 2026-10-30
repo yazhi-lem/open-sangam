@@ -7,14 +7,15 @@ import Badge from '../components/ui/Badge'
 import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
 import Reveal from '../components/motion/Reveal'
+import useAppStore from '../store/useAppStore'
 
 const TYPE_META = {
-  tinai: { color: '#b45309', ring: '#f59e0b', label: 'Tiṇai' },
-  poem: { color: '#4f46e5', ring: '#818cf8', label: 'Poem' },
-  poet: { color: '#059669', ring: '#34d399', label: 'Poet' },
-  karu: { color: '#e11d48', ring: '#fb7185', label: 'Karu-poruḷ' },
-  artifact: { color: '#0d9488', ring: '#5eead4', label: 'Artifact term' },
-  entity: { color: '#7c3aed', ring: '#c4b5fd', label: 'Entity' },
+  tinai: { color: '#b45309', ring: '#f59e0b', ta: 'திணை', en: 'Tiṇai' },
+  poem: { color: '#4f46e5', ring: '#818cf8', ta: 'பாடல்', en: 'Poem' },
+  poet: { color: '#059669', ring: '#34d399', ta: 'புலவர்', en: 'Poet' },
+  karu: { color: '#e11d48', ring: '#fb7185', ta: 'கருப்பொருள்', en: 'Karu-poruḷ' },
+  artifact: { color: '#0d9488', ring: '#5eead4', ta: 'கலைப்பொருள்', en: 'Artifact term' },
+  entity: { color: '#7c3aed', ring: '#c4b5fd', ta: 'களச்சொல்', en: 'Entity' },
 }
 
 const GRAPH_W = 900
@@ -23,32 +24,55 @@ const GRAPH_CX = GRAPH_W / 2
 const GRAPH_CY = GRAPH_H / 2
 
 const REL_LABEL = {
-  HAS_TINAI: 'is set in',
-  WROTE_IN: 'wrote in',
-  COMPOSED: 'composed',
-  ATTESTS: 'attests',
-  MENTIONS: 'mentions',
+  HAS_TINAI: { ta: 'இதில் அமைந்தது', en: 'is set in' },
+  WROTE_IN: { ta: 'இதில் பாடியது', en: 'wrote in' },
+  COMPOSED: { ta: 'இயற்றியது', en: 'composed' },
+  ATTESTS: { ta: 'சான்றளிக்கிறது', en: 'attests' },
+  MENTIONS: { ta: 'குறிப்பிடுகிறது', en: 'mentions' },
 }
 
-function nodeLabel(node) {
-  if (!node) return ''
-  if (node.type === 'poem') {
-    const p = POEM_BY_ID[node.id.replace('poem:', '')]
-    return p ? `${p.ta} · ${p.en}` : node.label
-  }
-  return node.label
+const TINAI_LABELS = {
+  kurinji: { ta: 'குறிஞ்சி', en: 'Kurinji' },
+  mullai: { ta: 'முல்லை', en: 'Mullai' },
+  marutam: { ta: 'மருதம்', en: 'Marutam' },
+  neytal: { ta: 'நெய்தல்', en: 'Neytal' },
+  palai: { ta: 'பாலை', en: 'Palai' },
+  unknown: { ta: 'வகைப்படுத்தாத', en: 'Unclassified' },
 }
 
-function shortLabel(node) {
+function relLabel(rel, language) {
+  return REL_LABEL[rel]?.[language] || rel
+}
+
+function nodeLabel(node, language = 'en') {
   if (!node) return ''
+  if (node.type === 'tinai' && node.tinai) {
+    return TINAI_LABELS[node.tinai]?.[language] || node.label
+  }
   if (node.type === 'poem') {
     const p = POEM_BY_ID[node.id.replace('poem:', '')]
-    return p ? p.en : node.label
+    return p ? (language === 'ta' ? p.ta : p.en) : node.label
   }
-  return node.label
+  const parts = node.label.split(' · ')
+  return language === 'ta' ? parts[0] : (parts.slice(1).join(' · ') || parts[0])
+}
+
+function shortLabel(node, language = 'en') {
+  if (!node) return ''
+  if (node.type === 'tinai' && node.tinai) {
+    return TINAI_LABELS[node.tinai]?.[language] || node.label
+  }
+  if (node.type === 'poem') {
+    const p = POEM_BY_ID[node.id.replace('poem:', '')]
+    return p ? (language === 'ta' ? p.ta : p.en) : node.label
+  }
+  const parts = node.label.split(' · ')
+  return language === 'ta' ? parts[0] : (parts.slice(1).join(' · ') || parts[0])
 }
 
 export default function GraphExplorer({ embedded = false }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const { nodeById, adjacency } = useMemo(() => {
     const nodeById = Object.fromEntries(GRAPH.nodes.map((n) => [n.id, n]))
     const adjacency = Object.fromEntries(GRAPH.nodes.map((n) => [n.id, []]))
@@ -162,7 +186,7 @@ export default function GraphExplorer({ embedded = false }) {
     const q = search.trim().toLowerCase()
     if (!q) return
     const found = GRAPH.nodes.find((node) =>
-      nodeLabel(node).toLowerCase().includes(q) || shortLabel(node).toLowerCase().includes(q)
+      nodeLabel(node, language).toLowerCase().includes(q) || shortLabel(node, language).toLowerCase().includes(q)
     )
     if (found) setFocusId(found.id)
   }
@@ -215,7 +239,7 @@ export default function GraphExplorer({ embedded = false }) {
               }`}
               title={node.label}
             >
-              {node.label.split(' · ')[0]}
+              {TINAI_LABELS[node.tinai]?.[language] || node.label}
               <span className="ml-1 font-mono text-[9px] opacity-70">{node.weight}</span>
             </button>
           )
@@ -229,7 +253,7 @@ export default function GraphExplorer({ embedded = false }) {
             !typeFilter ? 'border-accent bg-accent text-on-accent' : 'border-line text-muted hover:border-accent'
           }`}
         >
-          All
+          {L('அனைத்தும்', 'All')}
         </button>
         {types.map((type) => {
           const meta = TYPE_META[type] || TYPE_META.karu
@@ -244,7 +268,7 @@ export default function GraphExplorer({ embedded = false }) {
               }`}
             >
               <span className="h-2 w-2 rounded-full" style={{ background: meta.color }} />
-              {meta.label}
+              {language === 'ta' ? meta.ta : meta.en}
             </button>
           )
         })}
@@ -258,7 +282,7 @@ export default function GraphExplorer({ embedded = false }) {
                 depth === value ? 'bg-primary text-page' : 'text-muted hover:text-primary'
               }`}
             >
-              {value}-hop
+              {value}{L(' அடுக்கு', '-hop')}
             </button>
           ))}
         </div>
@@ -272,7 +296,7 @@ export default function GraphExplorer({ embedded = false }) {
               <input
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
-                placeholder="Search a node…"
+                placeholder={L("முனையைத் தேடு…", "Search a node…")}
                 className="min-h-[36px] w-full rounded-full border border-line bg-surface-alt/60 pl-8 pr-3 text-xs text-primary placeholder:text-faint focus:border-accent focus:outline-none"
               />
             </form>
@@ -335,15 +359,15 @@ export default function GraphExplorer({ embedded = false }) {
                     onMouseEnter={() => setHover(item.node.id)}
                     onMouseLeave={() => setHover(null)}
                   >
-                    <title>{nodeLabel(item.node)}</title>
+                    <title>{nodeLabel(item.node, language)}</title>
                     <circle r={r} fill={meta.color} stroke={meta.ring} strokeWidth="2" />
                     {item.level === 1 && (
                       <>
                         <text y={r + 12} textAnchor="middle" fontSize="10" fill="currentColor" className="tamil pointer-events-none">
-                          {shortLabel(item.node).slice(0, 18)}
+                          {shortLabel(item.node, language).slice(0, 18)}
                         </text>
                         <text y={r + 22} textAnchor="middle" fontSize="8" fill="currentColor" fillOpacity="0.6" className="pointer-events-none font-mono">
-                          {REL_LABEL[item.rel]} · {item.weight}
+                          {relLabel(item.rel, language)} · {item.weight}
                         </text>
                       </>
                     )}
@@ -354,13 +378,13 @@ export default function GraphExplorer({ embedded = false }) {
               <g transform={`translate(${GRAPH_CX},${GRAPH_CY})`}>
                 <circle r={rad(focus?.weight || maxW, 22)} fill={focusMeta.color} stroke={focusMeta.ring} strokeWidth="3" />
                 <text textAnchor="middle" y="4" fontSize="12" fontWeight="700" fill="#fff" className="tamil pointer-events-none">
-                  {shortLabel(focus).slice(0, 16)}
+                  {shortLabel(focus, language).slice(0, 16)}
                 </text>
               </g>
             </g>
           </svg>
           <p className="px-1 text-[10px] text-faint">
-            Drag to pan · scroll to zoom · click a node to focus · {neighbours.length} visible connections
+            {L('இழுத்து நகர்த்து · சுருக்க/விரிவாக்கு · முனையைத் தொடு', 'Drag to pan · scroll to zoom · click a node to focus')} · {neighbours.length} {L('இணைப்புகள்', 'connections')}
           </p>
         </Card>
 
@@ -370,14 +394,14 @@ export default function GraphExplorer({ embedded = false }) {
               <span className="h-2 w-2 rounded-full" style={{ background: focusMeta.color }} />
               {focusMeta.label}
             </span>
-            <h2 className="tamil text-lg font-bold leading-snug text-primary">{nodeLabel(focus)}</h2>
+            <h2 className="tamil text-lg font-bold leading-snug text-primary">{nodeLabel(focus, language)}</h2>
             <p className="text-[10px] font-mono text-muted">
-              {(adjacency[focusId] || []).length} direct links · weight {focus?.weight || 0}
+              {(adjacency[focusId] || []).length} {L('நேரடி இணைப்புகள்', 'direct links')} · {focus?.weight || 0}
             </p>
             {deepLink(focus) && (
               <Link to={deepLink(focus)}>
                 <Button size="sm" variant="outline" className="mt-1 w-full">
-                  Open {focus?.type === 'poem' ? 'in Library' : focus?.type === 'artifact' ? 'in Artifact Reader' : 'in Sangam World'} →
+                  {L('திற', 'Open')} {focus?.type === 'poem' ? L('நூலகத்தில்', 'in Library') : focus?.type === 'artifact' ? L('கலைப்பொருள் படிப்பில்', 'in Artifact Reader') : L('சங்க உலகில்', 'in Sangam World')} →
                 </Button>
               </Link>
             )}
@@ -387,7 +411,7 @@ export default function GraphExplorer({ embedded = false }) {
             <div key={type} className="space-y-1">
               <h3 className="flex items-center gap-1.5 px-1 text-[10px] font-semibold uppercase tracking-wide text-faint">
                 <span className="h-2 w-2 rounded-full" style={{ background: TYPE_META[type]?.color || '#999' }} />
-                {TYPE_META[type]?.label || type} ({list.length})
+                {TYPE_META[type] ? (language === 'ta' ? TYPE_META[type].ta : TYPE_META[type].en) : type} ({list.length})
               </h3>
               <Card variant="default" className="max-h-60 space-y-0.5 overflow-y-auto p-1">
                 {list.map((item) => (
@@ -399,8 +423,8 @@ export default function GraphExplorer({ embedded = false }) {
                     onMouseLeave={() => setHover(null)}
                     className="flex w-full items-center justify-between gap-2 rounded-lg px-2.5 py-1.5 text-left text-[11px] text-muted transition-colors hover:bg-surface-alt hover:text-primary"
                   >
-                    <span className="tamil truncate font-medium">{shortLabel(item.node)}</span>
-                    <span className="shrink-0 font-mono text-[9px] text-faint">{REL_LABEL[item.rel]} {item.weight}</span>
+                    <span className="tamil truncate font-medium">{shortLabel(item.node, language)}</span>
+                    <span className="shrink-0 font-mono text-[9px] text-faint">{relLabel(item.rel, language)} {item.weight}</span>
                   </button>
                 ))}
               </Card>
@@ -410,7 +434,7 @@ export default function GraphExplorer({ embedded = false }) {
       </div>
 
       <p className="text-center text-[10px] text-faint">
-        {GRAPH.meta.nodes} nodes · {GRAPH.meta.edges} edges · {GRAPH.meta.records.toLocaleString()} records ·
+        {GRAPH.meta.nodes} {L('முனைகள்', 'nodes')} · {GRAPH.meta.edges} {L('இணைப்புகள்', 'edges')} · {GRAPH.meta.records.toLocaleString()} {L('பதிவுகள்', 'records')} ·
         regenerated by <code>backend/python/knowledge/build_graph.py</code>
       </p>
     </div>

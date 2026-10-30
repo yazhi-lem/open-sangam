@@ -9,6 +9,11 @@ import Card from '../ui/Card'
 
 const STORIES = storyData.stories
 const STORY_ARCHETYPES = storyData.archetypes
+
+function characterLabel(value, language) {
+  const parts = String(value).split(' · ')
+  return language === 'ta' ? parts[0] : (parts[1] || parts[0])
+}
 const ANTHOLOGY = anthologyData.stories
 
 function storyMatchesQuery(story, query) {
@@ -155,7 +160,7 @@ export default function StoriesSection() {
                 {L(story.turn, story.turn)}
               </p>
               <div className="mt-auto flex items-center justify-between gap-2 border-t border-line/60 pt-2">
-                <span className="truncate text-[10px] text-faint">{story.characters.slice(0, 2).join(' · ')}</span>
+                <span className="truncate text-[10px] text-faint">{story.characters.slice(0, 2).map((c) => characterLabel(c, language)).join(' · ')}</span>
                 <Link
                   to={`/book/${story.poem}/${story.ordinal}`}
                   className="inline-flex shrink-0 items-center gap-1 text-[10px] font-semibold text-accent hover:underline"

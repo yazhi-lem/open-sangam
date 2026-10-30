@@ -36,7 +36,7 @@ export default function Home() {
 
     // No backend in production: Nakkirar answers locally from bundled evidence.
     if (!AVAI_ENABLED) {
-      const local = await askLocalNakkirar({ message, language })
+      const local = await askLocalNakkirar({ message, language: 'ta' })
       setAnswer(local.response_text)
       setCitations(local.citations || [])
       setIsLocal(true)
@@ -45,13 +45,11 @@ export default function Home() {
     }
 
     try {
-      const briefPrompt = language === 'ta'
-        ? `${message}\n\nஇதை ஒரு விரிவான ஆய்வுக் கடிதமாக எழுதுங்கள். Markdown-இல் தலைப்பு, சுருக்கம், சான்றுகள், விளக்கம், முடிவு, மேலும் ஆய்வுக் கேள்விகள் என்ற பிரிவுகளுடன் தருக.`
-        : `${message}\n\nWrite this as a detailed research brief in Markdown with sections: Title, Summary, Evidence, Analysis, Conclusion, Follow-up Questions.`
+      const briefPrompt = `${message}\n\nஇதை விரிவான ஆய்வுக் கடிதமாக எழுதுங்கள். Markdown-இல் தலைப்பு, சுருக்கம், சான்றுகள், விளக்கம், முடிவு, மேலும் ஆய்வுக் கேள்விகள் என்ற பிரிவுகளுடன் தருக. மறுமொழி முழுவதும் தமிழில் மட்டும் இருக்க வேண்டும்.`
       const response = await askAvaiAgent({ message: briefPrompt, pulavar: 'nakkirar', workflow: 'general' })
       const text = response?.response_text || response?.answer || ''
       if (!text || response?.isFallback) {
-        const local = await askLocalNakkirar({ message, language })
+        const local = await askLocalNakkirar({ message, language: 'ta' })
         setAnswer(local.response_text)
         setCitations(local.citations || [])
         setIsLocal(true)
@@ -61,7 +59,7 @@ export default function Home() {
       }
     } catch (err) {
       try {
-        const local = await askLocalNakkirar({ message, language })
+        const local = await askLocalNakkirar({ message, language: 'ta' })
         setAnswer(local.response_text)
         setCitations(local.citations || [])
         setIsLocal(true)
@@ -77,7 +75,7 @@ export default function Home() {
     <div className="mx-auto w-full max-w-3xl space-y-8 px-4 py-8 sm:px-6 sm:py-14">
       <section className="space-y-4 text-center">
         <p className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>
-          {L('சங்க இலக்கியம் · தமிழ் நூலகம்', 'Sangam literature · Tamil Library')}
+          {L('சங்க இலக்கியம்', 'Sangam literature')}
         </p>
         <h1 className={`text-3xl font-extrabold leading-tight text-primary sm:text-5xl ${language === 'ta' ? 'tamil' : ''}`}>
           {L('சங்க காலத்தை ஒரே இடத்தில் படியுங்கள்', 'Read the Sangam world in one place')}
@@ -100,7 +98,7 @@ export default function Home() {
               {L('நக்கீரரைக் கேளுங்கள்', 'Ask Nakkirar')}
             </h2>
             <p className="text-xs text-faint">
-              {L('சங்க அவைத் தலைமைப் புலவர் · Chief Critic & Convener', 'Chief Critic & Convener · Sangam Avai')}
+              {L('சங்க அவைத் தலைமைப் புலவர்', 'Chief Critic & Convener')}
             </p>
           </div>
           <Sparkles size={18} className="ml-auto text-accent" aria-hidden="true" />
@@ -153,8 +151,8 @@ export default function Home() {
                 </p>
                 <p className="text-[10px] text-faint">
                   {isLocal
-                    ? L('உள்ளூர் நூலகச் சான்று · Local corpus evidence', 'Local corpus evidence')
-                    : L('சங்க அவைத் தலைவர் · Convener, Sangam Avai', 'Convener, Sangam Avai')}
+                    ? L('உள்ளூர் நூலகச் சான்று', 'Local corpus evidence')
+                    : L('சங்க அவைத் தலைவர்', 'Convener, Sangam Avai')}
                 </p>
               </div>
             </div>

@@ -386,3 +386,8 @@ p, h1, h2, h3, h4, span, blockquote, li {
   --kal: #6b6258;
   --kumkumam: #b4321f;
 }
+
+
+/* Strict interface language: never show the other language's tagged text. */
+html[data-ui-language="ta"] [lang="en"] { display: none !important; }
+html[data-ui-language="en"] [lang="ta"] { display: none !important; }

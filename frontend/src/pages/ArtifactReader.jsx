@@ -6,6 +6,7 @@ import Button from '../components/ui/Button'
 import Chip from '../components/ui/Chip'
 import Toast from '../components/ui/Toast'
 import NotFound from './NotFound'
+import useAppStore from '../store/useAppStore'
 import {
   ARTIFACTS,
   ARTIFACT_BY_ID,
@@ -24,26 +25,29 @@ function layerLabel(id) {
 }
 
 function StatusBadge({ status }) {
+  const language = useAppStore((s) => s.language)
   const meta = LAYER_STATUS_LABELS[status] || LAYER_STATUS_LABELS.pending
   const variant =
     status === 'available' ? 'accent' : status === 'draft' ? 'outline' : 'default'
   return (
     <Badge variant={variant} size="sm">
-      {meta.ta} · {meta.en}
+      {language === 'ta' ? meta.ta : meta.en}
     </Badge>
   )
 }
 
 function ObjectLayer({ artifact }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const rows = [
-    ['வகை · Class', `${artifactClassLabel(artifact.class).ta} · ${artifactClassLabel(artifact.class).en}`],
-    ['துணைவகை · Subclass', artifact.subclass],
-    ['காலம் · Period', artifact.period],
-    ['இடம் · Place', artifact.place],
-    ['எழுத்து · Script', artifact.script || '—'],
-    ['மொழி · Language', artifact.language || '—'],
-    ['பொருள் · Material', artifact.material || '—'],
-    ['காப்பகம் · Holder', artifact.holder],
+    [L('வகை', 'Class'), L(artifactClassLabel(artifact.class).ta, artifactClassLabel(artifact.class).en)],
+    [L('துணைவகை', 'Subclass'), artifact.subclass],
+    [L('காலம்', 'Period'), artifact.period],
+    [L('இடம்', 'Place'), artifact.place],
+    [L('எழுத்து', 'Script'), artifact.script || '—'],
+    [L('மொழி', 'Language'), artifact.language || '—'],
+    [L('பொருள்', 'Material'), artifact.material || '—'],
+    [L('காப்பகம்', 'Holder'), artifact.holder],
   ]
   return (
     <dl className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2">
@@ -58,6 +62,8 @@ function ObjectLayer({ artifact }) {
 }
 
 function ValueLayer({ layer }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   if (!layer?.value?.length) return null
   const values = Array.isArray(layer.value) ? layer.value : [layer.value]
   return (
@@ -74,7 +80,7 @@ function ValueLayer({ layer }) {
           {line}
         </p>
       ))}
-      {layer.source && <p className="pt-1 text-xs text-faint">Source: {layer.source}</p>}
+      {layer.source && <p className="pt-1 text-xs text-faint">{L('மூலம்', 'Source')}: {layer.source}</p>}
     </div>
   )
 }
@@ -105,6 +111,8 @@ function NotesLayer({ entries }) {
 }
 
 function LayerBody({ artifact, layerId }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const layer = artifact.layers?.[layerId]
   const status = artifactLayerStatus(artifact, layerId)
 
@@ -135,7 +143,7 @@ function LayerBody({ artifact, layerId }) {
         <div className="space-y-2 text-sm text-primary">
           <p>{layer.value}</p>
           <p className="text-xs text-muted">
-            Source: {artifactSourceLabel(artifact.sourceId).name} · Rights: {artifact.rights}
+            {L('மூலம்', 'Source')}: {artifactSourceLabel(artifact.sourceId).name} · {L('உரிமை', 'Rights')}: {artifact.rights}
           </p>
           <a
             href={artifact.sourceUrl}
@@ -174,6 +182,8 @@ function LayerCard({ artifact, layerId, condensed }) {
 }
 
 export default function ArtifactReader() {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const { artifactId } = useParams()
   const artifact = ARTIFACT_BY_ID[artifactId] || ARTIFACTS[0]
   const [activeLayers, setActiveLayers] = useState(
@@ -225,13 +235,13 @@ export default function ArtifactReader() {
           to="/book"
           className="mb-6 inline-flex min-h-[44px] items-center gap-2 text-sm font-medium text-muted hover:text-accent"
         >
-          <ArrowLeft size={16} aria-hidden="true" /> தமிழ் நூலகம் · Tamil Library
+          <ArrowLeft size={16} aria-hidden="true" /> {L('தமிழ் நூலகம்', 'Tamil Library')}
         </Link>
 
         <header className="mb-8 border-b border-line-strong pb-6">
           <div className="mb-3 flex flex-wrap items-center gap-2">
             <Badge variant="accent" size="sm">
-              {artifactClassLabel(artifact.class).ta} · {artifactClassLabel(artifact.class).en}
+              {L(artifactClassLabel(artifact.class).ta, artifactClassLabel(artifact.class).en)}
             </Badge>
             <Badge variant="outline" size="sm">{artifact.period}</Badge>
             <Badge variant="outline" size="sm">{artifact.rights}</Badge>
@@ -252,7 +262,7 @@ export default function ArtifactReader() {
 
         <div className="mb-8 space-y-4 rounded-2xl border border-line bg-surface p-4 sm:p-5">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="mr-1 text-xs font-semibold uppercase tracking-wide text-faint">Layers</span>
+            <span className={`mr-1 text-xs font-semibold text-faint ${language === 'ta' ? 'tamil' : ''}`}>{L('அடுக்குகள்', 'Layers')}</span>
             {ARTIFACT_LAYERS.map((layer) => (
               <Chip
                 key={layer.id}
@@ -296,8 +306,7 @@ export default function ArtifactReader() {
 
         {artifact.rights === 'permission-required' && (
           <div className="mb-6 rounded-xl border border-amber-500/30 bg-amber-500/10 p-3 text-sm text-amber-900 dark:text-amber-200">
-            <strong>Rights note:</strong> this record is metadata only. Images, estampages or full
-            editions require permission from {artifactSourceLabel(artifact.sourceId).name}.
+            <strong>{L('உரிமைக் குறிப்பு', 'Rights note')}:</strong> {L('இந்தப் பதிவு விவரக்குறிப்பு மட்டுமே. படங்கள், எஸ்டாம்பேஜ்கள் அல்லது முழுப் பதிப்புகளுக்கு அனுமதி தேவை', 'this record is metadata only. Images, estampages or full editions require permission')} — {artifactSourceLabel(artifact.sourceId).name}.
           </div>
         )}
 
@@ -328,8 +337,7 @@ export default function ArtifactReader() {
 
         <footer className="mt-10 border-t border-line pt-5 text-xs leading-relaxed text-faint">
           <p>
-            Scholar note: layers marked <strong>Not yet digitised</strong> are deliberately visible.
-            This reader does not translate or reconstruct an artifact without a named source.
+            {L('அறிஞர் குறிப்பு:', 'Scholar note:')} <strong>{L('இன்னும் மின்னணுவாக்கப்படாத', 'Not yet digitised')}</strong> {L('அடுக்குகள் வேண்டுமென்றே காட்டப்படுகின்றன. பெயரிடப்பட்ட மூலம் இல்லாமல் இந்தப் படிப்பு எதையும் மொழிபெயர்க்கவோ மீட்டுருவாக்கவோ செய்யாது.', 'layers are deliberately visible. This reader does not translate or reconstruct an artifact without a named source.')}
           </p>
           <p className="mt-2">
             Source registry: {artifactSourceLabel(artifact.sourceId).name} ({artifactSourceLabel(artifact.sourceId).rights}).

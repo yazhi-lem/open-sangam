@@ -215,7 +215,7 @@ const AUTO_AVAI_PROFILE = {
   id: 'auto',
   nameTa: 'சங்க அவை',
   nameEn: 'Sangam Avai',
-  tag: 'தானியங்கி • Auto Intent',
+  tag: 'தானியங்கிப் புலவர்',
   roleTa: 'அவை நடுவர்',
   bioTa: 'உங்கள் வினாவிற்கு ஏற்ப பொருத்தமான சங்கப் புலவரைத் தேர்ந்தெடுத்து விடையளிக்கும் தானியங்கி அவை.',
   avatarEmoji: '🏛️',
@@ -573,7 +573,7 @@ export default function Avai() {
             className="w-full py-2 px-3 rounded-xl border border-accent bg-accent/10 hover:bg-accent hover:text-on-accent text-accent transition-all duration-200 flex items-center justify-center gap-2 font-bold text-xs sm:text-sm focus-ring shadow-xs group shrink-0"
           >
             <Plus size={16} className="group-hover:scale-110 transition-transform" />
-            <span className="tamil">புதிய உரையாடல் • New Chat</span>
+            <span className="tamil">புதிய உரையாடல்</span>
           </button>
 
           {/* Active Conversations List */}
@@ -581,7 +581,7 @@ export default function Avai() {
             <div className="flex items-center justify-between px-1">
               <span className="text-[11px] font-bold uppercase text-muted flex items-center gap-1">
                 <MessageSquare size={12} className="text-accent" />
-                <span lang="ta" className="tamil">உரையாடல்கள்</span> • Recent Chats
+                <span lang="ta" className="tamil">உரையாடல்கள்</span>
               </span>
             </div>
             <div className="space-y-1">
@@ -642,7 +642,7 @@ export default function Avai() {
           <div className="space-y-1.5 pt-2 border-t border-line/60">
             <div className="flex items-center justify-between px-1">
               <span className="text-[11px] font-bold uppercase text-muted">
-                <span lang="ta" className="tamil">புலவர்கள்</span> • Pulavars
+                <span lang="ta" className="tamil">புலவர்கள்</span>
               </span>
               <button
                 type="button"
@@ -731,10 +731,10 @@ export default function Avai() {
               <div className="min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
                   <h2 className="tamil text-sm sm:text-base font-bold text-primary truncate">
-                    {chatTitle || (isExplicitSelection ? activeAgent.nameTa : 'சங்க அவை • Sangam Avai')}
+                    {chatTitle || (isExplicitSelection ? activeAgent.nameTa : 'சங்க அவை')}
                   </h2>
                   <Badge variant="accent" size="sm">
-                    {isExplicitSelection ? `${activeAgent.nameTa} • ${activeAgent.tag}` : 'தானியங்கி • Auto Intent'}
+                    {isExplicitSelection ? activeAgent.nameTa : 'தானியங்கிப் புலவர்'}
                   </Badge>
                 </div>
               </div>
@@ -886,7 +886,7 @@ export default function Avai() {
 
                     {msg.isAbstained && (
                       <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-400 text-xs font-medium">
-                        <span>⚠️ புலவர் அவை விலகல் • Abstention ({msg.abstentionReason || 'போதிய சான்றுகளின்மை'})</span>
+                        <span>⚠️ புலவர் அவை விலகல் ({msg.abstentionReason || 'போதிய சான்றுகளின்மை'})</span>
                       </div>
                     )}
 
@@ -900,11 +900,11 @@ export default function Avai() {
                           </span>
                           {msg.evidenceStatus === 'verified' ? (
                             <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
-                              <span lang="ta" className="tamil">மேற்கோள் தானாகச் சரிபார்க்கப்பட்டது</span> · Citation auto-checked
+                              <span lang="ta" className="tamil">மேற்கோள் தானாகச் சரிபார்க்கப்பட்டது</span>
                             </span>
                           ) : (
                             <span className="text-[10px] px-1.5 py-0.5 rounded font-mono bg-surface-alt text-muted border border-line">
-                              <span lang="ta" className="tamil">வரைவு, அறிஞர் சரிபார்க்கவில்லை</span> · Draft, not scholar-verified
+                              <span lang="ta" className="tamil">வரைவு, அறிஞர் சரிபார்க்கவில்லை</span>
                             </span>
                           )}
                         </div>

@@ -1,5 +1,6 @@
 import { useEffect, useId } from 'react'
 import { glossaryBadgeLabel, glossaryStatus } from '../../data/readerLayers.js'
+import useAppStore from '../../store/useAppStore'
 
 /**
  * WordGlossary — "Click-to-Define" sheet for a single word.
@@ -12,6 +13,8 @@ import { glossaryBadgeLabel, glossaryStatus } from '../../data/readerLayers.js'
  * Tamil labels below are drafts pending native-reviewer sign-off.
  */
 export default function WordGlossary({ word, verse, onClose }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const titleId = useId()
 
   useEffect(() => {
@@ -28,6 +31,7 @@ export default function WordGlossary({ word, verse, onClose }) {
   const { status, model } = glossaryStatus(verse, word)
   const badge = glossaryBadgeLabel(verse, word)
   const [badgeTa, badgeEn] = badge ? badge.split(' · ') : []
+  const badgeText = language === 'ta' ? badgeTa : badgeEn
 
   return (
     <div
@@ -56,9 +60,7 @@ export default function WordGlossary({ word, verse, onClose }) {
                 }
                 className="inline-flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-2 py-0.5 text-xs font-medium text-amber-800 dark:text-amber-300"
               >
-                <span lang="ta" className="tamil">{badgeTa}</span>
-                <span aria-hidden="true">·</span>
-                <span>{badgeEn}</span>
+                <span lang={language} className={language === 'ta' ? 'tamil' : ''}>{badgeText}</span>
               </span>
             )}
           </div>
@@ -74,7 +76,7 @@ export default function WordGlossary({ word, verse, onClose }) {
 
         {status === 'missing' && (
           <p className="text-sm text-muted leading-relaxed">
-            No glossary entry for this word yet. Entries are added from the corpus and reviewed by Tamil scholars.
+            {L('இந்தச் சொல்லுக்கு இன்னும் சொற்பொருள் பதிவு இல்லை. பதிவுகள் அறிஞர் சரிபார்ப்புக்குப் பின் சேர்க்கப்படும்.', 'No glossary entry for this word yet. Entries are added from the corpus and reviewed by Tamil scholars.')}
           </p>
         )}
 
@@ -82,7 +84,7 @@ export default function WordGlossary({ word, verse, onClose }) {
         {word.root && (
           <div>
             <p className="text-xs text-faint mb-1">
-              Root (<span lang="ta" className="tamil">வேர்ச்சொல்</span>)
+              {L('வேர்ச்சொல்', 'Root')}
             </p>
             <p lang="ta" className="tamil text-lg text-primary break-words">{word.root}</p>
           </div>
@@ -92,7 +94,7 @@ export default function WordGlossary({ word, verse, onClose }) {
         {word.urichol && (
           <div>
             <p className="text-xs text-faint mb-1">
-              Class (<span lang="ta" className="tamil">உரிச்சொல்</span>)
+              {L('உரிச்சொல்', 'Class')}
             </p>
             <p lang="ta" className="text-muted tamil break-words">{word.urichol}</p>
           </div>
@@ -101,13 +103,13 @@ export default function WordGlossary({ word, verse, onClose }) {
         {/* Etymology */}
         {word.etymology && (
           <div>
-            <p className="text-xs text-faint mb-1">Etymology</p>
+            <p className="text-xs text-faint mb-1">{L('சொற்பிறப்பு', 'Etymology')}</p>
             <p lang="ta" className="text-muted text-sm leading-relaxed tamil break-words">{word.etymology}</p>
           </div>
         )}
 
-        {/* English gloss */}
-        {word.gloss && (
+        {/* English gloss — only in English mode */}
+        {language === 'en' && word.gloss && (
           <div className="pt-2 border-t border-line">
             <p className="text-muted italic break-words">"{word.gloss}"</p>
           </div>

@@ -36,6 +36,8 @@ import {
 function PoemCard({ poem }) {
   const available = poem.available
   const nav = useNavigate()
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
 
   const cardClassName = `group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border p-5 transition-all duration-200
     ${
@@ -84,7 +86,7 @@ function PoemCard({ poem }) {
 
       <div className="mt-auto pt-3 border-t border-line/60 flex items-center justify-between text-xs font-mono">
         <span className={available ? 'text-muted' : 'text-faint'}>
-          {poem.count.toLocaleString()} {poem.unit}
+          {poem.count.toLocaleString()} {L(poem.unit === 'lines' ? 'வரிகள்' : poem.unit === 'couplets' ? 'குறட்பாக்கள்' : poem.unit === 'quatrains' ? 'நான்கடிகள்' : 'பாடல்கள்', poem.unit)}
         </span>
         {available && (
           <span className="text-accent font-semibold group-hover:translate-x-1 transition-transform">
@@ -109,13 +111,14 @@ function PoemCard({ poem }) {
 // ── Wider Tamil Library (catalogued, not yet all readable) ─────────────────
 
 function CatalogWorkCard({ work }) {
+  const language = useAppStore((s) => s.language)
   const status = AVAILABILITY_LABELS[work.availability] || AVAILABILITY_LABELS.metadata
   const readable = work.availability === 'reader'
   return (
     <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface p-4 transition-all duration-200">
       <div className="mb-3 flex items-center justify-between gap-2">
         <Badge variant={readable ? 'accent' : 'outline'} size="sm">
-          {status.ta} · {status.en}
+          {language === 'ta' ? status.ta : status.en}
         </Badge>
         <span className="text-[10px] font-mono text-faint">{work.period}</span>
       </div>
@@ -149,6 +152,7 @@ function CatalogWorkCard({ work }) {
 
 function ArtifactCard({ artifact }) {
   const nav = useNavigate()
+  const language = useAppStore((s) => s.language)
   const cls = artifactClassLabel(artifact.class)
   return (
     <button
@@ -157,7 +161,7 @@ function ArtifactCard({ artifact }) {
       className="group flex h-full min-w-0 flex-col rounded-2xl border border-line bg-surface p-3.5 text-left transition-all duration-200 hover:border-accent/60 hover:shadow-md focus-ring"
     >
       <div className="mb-3 flex items-center justify-between gap-2">
-        <Badge variant="accent" size="sm">{cls.ta} · {cls.en}</Badge>
+        <Badge variant="accent" size="sm">{language === 'ta' ? cls.ta : cls.en}</Badge>
         <span className="text-[10px] font-mono text-faint">{artifact.period}</span>
       </div>
       <h3 className="tamil mb-1 line-clamp-2 min-h-[2.6em] text-lg font-bold leading-snug text-primary group-hover:text-accent">
@@ -301,10 +305,8 @@ function Library() {
             ))}
           </div>
           {chipFilter && (
-            <p className="text-xs text-faint">
-              <span lang="ta" className="tamil">{IDYLL_NOTE.ta}</span>
-              <span> · </span>
-              <span lang="en">{IDYLL_NOTE.en}</span>
+            <p className={`text-xs text-faint ${language === 'ta' ? 'tamil' : ''}`}>
+              {language === 'ta' ? IDYLL_NOTE.ta : IDYLL_NOTE.en}
             </p>
           )}
         </div>
@@ -450,6 +452,8 @@ function LayerToggle({ layer, onChange }) {
 }
 
 function InlineVoiceButton({ text }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const [speaking, setSpeaking] = useState(false)
 
   function toggle() {
@@ -477,7 +481,7 @@ function InlineVoiceButton({ text }) {
       aria-label={speaking ? 'Stop voice' : 'Listen to verse'}
     >
       {speaking ? <Square size={12} /> : <Volume2 size={13} />}
-      {speaking ? 'Stop' : 'Voice'}
+      {speaking ? L('நிறுத்து', 'Stop') : L('ஒலிவாசிப்பு', 'Voice')}
     </button>
   )
 }
@@ -486,6 +490,8 @@ function InlineVoiceButton({ text }) {
 // ── Reader ────────────────────────────────────────────────────────────────
 
 function Reader({ poem, sectionId }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
   const [sections, setSections] = useState([])
   const [active, setActive] = useState(0)
   const [layer, setLayerState] = useState(() => {
@@ -649,7 +655,7 @@ function Reader({ poem, sectionId }) {
     return (
       <div className="flex flex-col items-center justify-center h-[70vh] gap-3">
         <LoadingSpinner size="lg" />
-        <p className="text-muted text-sm animate-pulse">Loading classical verses...</p>
+        <p className={`text-muted text-sm animate-pulse ${language === 'ta' ? 'tamil' : ''}`}>{L('செவ்வியல் பாடல்கள் ஏற்றப்படுகின்றன...', 'Loading classical verses...')}</p>
       </div>
     )
   }
@@ -697,11 +703,11 @@ function Reader({ poem, sectionId }) {
             to="/book"
             className="inline-flex items-center gap-1 text-xs text-muted hover:text-accent transition-colors font-medium"
           >
-            ← Back to Library
+            ← {L('நூலகத்திற்குத் திரும்பு', 'Back to Library')}
           </Link>
           <div className="flex items-center gap-2 pt-1">
             <Badge variant={poem.collection === '8thokai' ? 'anthology' : 'idyll'} size="sm">
-              {poem.collection === '8thokai' ? 'Anthology' : 'Idyll'}
+              {poem.collection === '8thokai' ? L('தொகை', 'Anthology') : L('பாட்டு', 'Idyll')}
             </Badge>
             <span className="text-xs text-faint font-mono">{sections.length} verses</span>
           </div>
@@ -716,7 +722,7 @@ function Reader({ poem, sectionId }) {
               value={sectionFilter}
               onChange={(e) => setSectionFilter(e.target.value)}
               onClear={() => setSectionFilter('')}
-              placeholder="Filter section or poet..."
+              placeholder={L("பகுதி அல்லது புலவரைத் தேடு...", "Filter section or poet...")}
             />
           </div>
         </div>
@@ -766,7 +772,7 @@ function Reader({ poem, sectionId }) {
                 title="Toggle sidebar"
                 aria-label="Toggle section sidebar"
               >
-                {sidebarOpen ? '← Hide' : '☰ Sections'}
+                {sidebarOpen ? L('← மறை', '← Hide') : L('☰ பகுதிகள்', '☰ Sections')}
               </Button>
 
               {/* Quick Verse Stepper */}
@@ -807,7 +813,7 @@ function Reader({ poem, sectionId }) {
             <div className="flex w-full sm:w-auto items-center gap-2 sm:gap-3 flex-wrap">
               {/* Layout Switcher (H vs V) */}
               <div className="hidden lg:flex items-center gap-1 border-r border-line pr-3">
-                <span className="text-[11px] text-faint mr-1 font-semibold hidden md:inline">Layout:</span>
+                <span className="text-[11px] text-faint mr-1 font-semibold hidden md:inline">{L('அமைப்பு', 'Layout')}:</span>
                 <button
                   type="button"
                   onClick={() => handleSetLayout('h')}
@@ -838,7 +844,7 @@ function Reader({ poem, sectionId }) {
 
               {/* Font Size Adjuster */}
               <div className="hidden sm:flex items-center gap-1 border-r border-line pr-3">
-                <span className="text-[11px] text-faint mr-1 font-medium hidden sm:inline">Text:</span>
+                <span className="text-[11px] text-faint mr-1 font-medium hidden sm:inline">{L('எழுத்து', 'Text')}:</span>
                 {[
                   { id: 'sm', label: 'A-' },
                   { id: 'md', label: 'A' },
@@ -879,7 +885,7 @@ function Reader({ poem, sectionId }) {
               <div className="flex items-center gap-2">
                 <InlineVoiceButton text={sec.sangamTamil} />
                 <Button size="sm" variant="ghost" onClick={() => handleCopyVerse(sec.sangamTamil)} icon={<Copy size={13} />}>
-                  Copy
+                  {L('நகல்', 'Copy')}
                 </Button>
               </div>
             </Card>
@@ -888,7 +894,7 @@ function Reader({ poem, sectionId }) {
               {show.original && (
                 <Card variant="flat" className="space-y-3 border-accent/20 p-4 sm:p-6">
                   <div className="flex items-center justify-between border-b border-line pb-2">
-                    <span className="text-xs font-semibold text-accent">Original · மூலம்</span>
+                    <span className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('மூலம்', 'Original')}</span>
                     <InlineVoiceButton text={sec.sangamTamil} />
                   </div>
                   <ClickableVerse text={sec.sangamTamil} onWordClick={handleWordClick} fontSize={fontSize} />
@@ -897,18 +903,18 @@ function Reader({ poem, sectionId }) {
 
               {show.transliteration && (
                 <Card variant="default" className="space-y-2 p-4 sm:p-6">
-                  <p className="text-xs font-semibold text-accent">Transliteration · ஒலிபெயர்ப்பு</p>
+                  <p className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('ஒலிபெயர்ப்பு', 'Transliteration')}</p>
                   {sec.transliteration ? (
                     <p className="whitespace-pre-wrap text-base leading-relaxed text-primary">{sec.transliteration}</p>
                   ) : (
-                    <p className="text-sm text-faint italic">Transliteration is not yet available for this verse.</p>
+                    <p className="text-sm text-faint italic">{L('இந்தப் பாடலுக்கு ஒலிபெயர்ப்பு இன்னும் இல்லை.', 'Transliteration is not yet available for this verse.')}</p>
                   )}
                 </Card>
               )}
 
               {show.voice && (
                 <Card variant="default" className="space-y-2 p-4 sm:p-6">
-                  <p className="text-xs font-semibold text-accent">Voice · குரல்</p>
+                  <p className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('ஒலிவாசிப்பு', 'Voice')}</p>
                   <VoiceLayer text={sec.sangamTamil} />
                   {sec.audioUrl && <AudioPlayer audioUrl={sec.audioUrl} label="Scholar recording" />}
                 </Card>
@@ -917,7 +923,7 @@ function Reader({ poem, sectionId }) {
               {show.urai && (
                 <Card variant="default" className="space-y-3 p-4 sm:p-6">
                   <div className="flex items-center justify-between border-b border-line pb-2">
-                    <span className="text-xs font-bold text-accent">உரை · Modern Tamil</span>
+                    <span className={`text-xs font-bold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('உரை', 'Modern Tamil')}</span>
                     <DraftBadge verse={sec} field="urai" />
                   </div>
                   {sec.urai ? (
@@ -931,20 +937,20 @@ function Reader({ poem, sectionId }) {
               {show.english && (
                 <Card variant="default" className="space-y-3 p-4 sm:p-6">
                   <div className="flex items-center justify-between border-b border-line pb-2">
-                    <span className="text-xs font-bold text-accent">English</span>
+                    <span className={`text-xs font-bold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('ஆங்கிலம்', 'English')}</span>
                     <DraftBadge verse={sec} field="english" />
                   </div>
                   {sec.english ? (
                     <p className="text-base leading-relaxed text-primary">{sec.english}</p>
                   ) : (
-                    <p className="text-sm text-faint italic">English translation is being prepared.</p>
+                    <p className="text-sm text-faint italic">{L('ஆங்கில மொழிபெயர்ப்பு தயாராகிறது.', 'English translation is being prepared.')}</p>
                   )}
                 </Card>
               )}
 
               {show.glossary && (
                 <Card variant="default" className="space-y-2 p-4 sm:p-6">
-                  <p className="text-xs font-semibold text-accent">Glossary · சொற்கள்</p>
+                  <p className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('சொல்லகராதி', 'Glossary')}</p>
                   {glossaryEntries.length ? (
                     <dl className="divide-y divide-line/60">
                       {glossaryEntries.map((word) => (
@@ -955,14 +961,14 @@ function Reader({ poem, sectionId }) {
                       ))}
                     </dl>
                   ) : (
-                    <p className="text-sm text-faint italic">No word glossary has been attached to this verse yet.</p>
+                    <p className="text-sm text-faint italic">{L('இந்தப் பாடலுக்கு சொல்லகராதி இன்னும் இணைக்கப்படவில்லை.', 'No word glossary has been attached to this verse yet.')}</p>
                   )}
                 </Card>
               )}
 
               {show.notes && (
                 <Card variant="default" className="space-y-2 p-4 sm:p-6">
-                  <p className="text-xs font-semibold text-accent">Notes · குறிப்புகள்</p>
+                  <p className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('குறிப்புகள்', 'Notes')}</p>
                   {sec.culturalNotes?.length ? (
                     <ul className="list-disc space-y-1.5 pl-5 text-sm text-primary">
                       {sec.culturalNotes.map((note, index) => (
@@ -970,14 +976,14 @@ function Reader({ poem, sectionId }) {
                       ))}
                     </ul>
                   ) : (
-                    <p className="text-sm text-faint italic">No editorial notes for this verse yet.</p>
+                    <p className="text-sm text-faint italic">{L('இந்தப் பாடலுக்கு குறிப்புகள் இன்னும் இல்லை.', 'No editorial notes for this verse yet.')}</p>
                   )}
                 </Card>
               )}
 
               {show.poetics && (
                 <Card variant="default" className="space-y-2 p-4 sm:p-6">
-                  <p className="text-xs font-semibold text-accent">Poetics · யாப்பு</p>
+                  <p className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('யாப்பியல்', 'Poetics')}</p>
                   {sec.poetics ? (
                     <p className="text-sm leading-relaxed text-primary">{sec.poetics}</p>
                   ) : contextTinai?.poetry ? (
@@ -986,23 +992,23 @@ function Reader({ poem, sectionId }) {
                       <p className="text-xs text-muted">{contextTinai.poetry.poem}</p>
                     </div>
                   ) : (
-                    <p className="text-sm text-faint italic">Metre and poetics metadata is not yet attached.</p>
+                    <p className="text-sm text-faint italic">{L('யாப்பியல் விவரங்கள் இன்னும் இணைக்கப்படவில்லை.', 'Metre and poetics metadata is not yet attached.')}</p>
                   )}
                 </Card>
               )}
 
               {show.context && (
                 <Card variant="default" className="space-y-2 p-4 sm:p-6">
-                  <p className="text-xs font-semibold text-accent">Context · சூழல்</p>
+                  <p className={`text-xs font-semibold text-accent ${language === 'ta' ? 'tamil' : ''}`}>{L('சூழல்', 'Context')}</p>
                   {contextTinai ? (
                     <div className="space-y-1.5 text-sm text-primary">
                       <p><strong>{contextTinai.ta}</strong> — {contextTinai.atmosphere.season.desc}</p>
-                      <p className="text-muted">Deity: {contextTinai.deity.ta}</p>
-                      <p className="text-muted">People: {contextTinai.people.map((p) => p.ta).join(' · ')}</p>
-                      <p className="text-muted">Life: {contextTinai.crafts.map((c) => c.ta).join(' · ')}</p>
+                      <p className="text-muted">{L('கடவுள்', 'Deity')}: {L(contextTinai.deity.ta, contextTinai.deity.en)}</p>
+                      <p className="text-muted">{L('மக்கள்', 'People')}: {contextTinai.people.map((p) => L(p.ta, p.en)).join(' · ')}</p>
+                      <p className="text-muted">{L('வாழ்க்கை', 'Life')}: {contextTinai.crafts.map((c) => L(c.ta, c.en)).join(' · ')}</p>
                     </div>
                   ) : (
-                    <p className="text-sm text-faint italic">This verse has no tiṇai context tag.</p>
+                    <p className="text-sm text-faint italic">{L('இந்தப் பாடலுக்கு திணைச் சூழல் குறிச்சொல் இல்லை.', 'This verse has no tiṇai context tag.')}</p>
                   )}
                 </Card>
               )}
@@ -1017,7 +1023,7 @@ function Reader({ poem, sectionId }) {
               onClick={() => setActive((a) => Math.max(0, a - 1))}
               disabled={active === 0}
             >
-              ← Previous Verse
+              ← {L('முந்தைய பாடல்', 'Previous Verse')}
             </Button>
 
             <span className="text-xs font-mono text-muted">
@@ -1030,7 +1036,7 @@ function Reader({ poem, sectionId }) {
               onClick={() => setActive((a) => Math.min(sections.length - 1, a + 1))}
               disabled={active === sections.length - 1}
             >
-              Next Verse →
+              {L('அடுத்த பாடல்', 'Next Verse')} →
             </Button>
           </div>
         </div>

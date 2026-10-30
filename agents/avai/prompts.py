@@ -9,6 +9,7 @@ from typing import Optional
 from .instructions import (
     ABSTENTION_RULE,
     CITATION_RULE,
+    PURE_TAMIL_RULE,
     CONTESTED_INTERPRETATION_RULE,
     REFLECTION_RULE,
     NAKKIRAR_INSTRUCTION,
