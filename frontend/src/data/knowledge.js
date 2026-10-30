@@ -7,7 +7,7 @@
  *
  * Structure: SECTIONS[] → each section has cards (items) rendered as an
  * illustrated grid. Emoji stand in for illustrations until licensed imagery is
- * sourced (see docs/data-collection-plan.md §Knowledge Entities).
+ * sourced (see docs/data/data-collection-plan.md §Knowledge Entities).
  *
  * Sources: Tolkāppiyam (Poruḷatikāram) · Puṟanāṉūṟu · Naṟṟiṇai · Akanāṉūṟu ·
  * Kuṟuntokai · Patiṟṟuppattu · U.V. Swaminatha Iyer editions · standard

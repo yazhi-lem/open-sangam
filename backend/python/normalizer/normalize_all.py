@@ -11,7 +11,7 @@ scraped source, never AI output. A re-run therefore merges each new record
 against whatever normalized file already exists for that id (see
 merge_generated_fields()), so earlier machine-drafted english/urai fields
 and word glossaries survive a re-normalize instead
-of silently reverting to null. See docs/pipeline-scripts.md.
+of silently reverting to null. See docs/data/pipeline-scripts.md.
 
 Usage:
     python -m normalizer.normalize_all [--poem natrinai|all]

@@ -480,5 +480,5 @@ methods referenced, the following are genuine, checkable works:
 - U. V. Swaminatha Iyer's critical editions of the Sangam texts (the source of the colophon apparatus).
 - Ashish Vaswani et al., "Attention Is All You Need," *NeurIPS* 2017 — the transformer architecture.
 - Jacob Devlin et al., "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding," *NAACL* 2019.
-- Open Sangam docs: `docs/architecture.md`, `docs/data-collection-plan.md`, `docs/editorial-style-guide.md`.
+- Open Sangam docs: `docs/architecture.md`, `docs/data/data-collection-plan.md`, `docs/data/editorial-style-guide.md`.
 

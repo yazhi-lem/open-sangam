@@ -3,7 +3,7 @@
 M1 scaffold: a single root agent (நக்கீரர் / Nakkirar) wired to the corpus,
 knowledge-graph, and tiṇai-context tools, running against **OpenRouter** by
 default via LiteLLM. The full five-poet peer mesh and A2A exposure land in
-later milestones — see `docs/agent-implementation-plan.md` at the repo root.
+later milestones — the plan is summarised in `archives/2026-10-27-docs-digest.md` §4.
 
 This file is the canonical runbook for the agents; the root `README.md` links
 here rather than duplicating it.
@@ -118,7 +118,7 @@ The embedding step (`backend/python/ai/vectorize.py`) uses the same
 - Set `AVAI_API_TOKEN` to require `Authorization: Bearer <token>` on
   `POST /avai/ask`. Health, readiness, capabilities, and metrics stay public.
 
-## ஔவையார் Avvaiyar Q&A agent (M1 issue #4)
+## ஔவையார் Avvaiyar Q&A agent
 
 `poets/avvaiyar.py` is a dedicated Q&A agent (separate from the Nakkirar
 root/hello-world agent) wired to all four corpus/graph/tiṇai tools, with
@@ -180,7 +180,7 @@ way — the agent Runner is monkeypatched, so it also needs no API key.
 
 A FastAPI wrapper around the ஔவையார் (Avvaiyar) Q&A agent, built for the
 chat.yazhi.dev integration. Full contract: `docs/api/avai-ask-prd.md` and
-`docs/api-contracts.md`; integration guide: `docs/integration/chat-yazhi-integration.md`.
+`docs/api/api-contracts.md`; integration notes: `archives/2026-10-27-docs-digest.md` §4.
 
 Run from `agents/` (same cwd convention as `adk run avai`):
 
@@ -242,10 +242,6 @@ to disable, and `AVAI_USD_INR_RATE` to keep INR attribution aligned with FX.
 
 The `/avai` frontend calls `/avai/capabilities` on load and shows a live
 “நேரலை • 5 புலவர்கள்” badge when the deployed swarm is reachable.
-
-M1 scope: only `"workflow": "qa"` (the default) is wired to a real agent;
-`search`, `reimagine`, `scenario`, and `imagery` validate but return `501`
-until their poets land in M2.
 
 ### Deploying the API (Cloud Run)
 

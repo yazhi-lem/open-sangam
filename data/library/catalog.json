@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-27",
-  "description": "Catalog of Tamil works and artifact collections beyond the Ettuthokai / Pattuppattu reader corpus. `availability` is `reader` when normalized verse JSON exists, `metadata` when only the catalog record is present, and `planned` when there is no data yet. `languages` lists text languages; `translations` lists available translation languages. Adding a work here does not claim it is readable: ingestion is tracked in docs/LIBRARY_ROADMAP.md.",
+  "description": "Catalog of Tamil works and artifact collections beyond the Ettuthokai / Pattuppattu reader corpus. `availability` is `reader` when normalized verse JSON exists, `metadata` when only the catalog record is present, and `planned` when there is no data yet. `languages` lists text languages; `translations` lists available translation languages. Adding a work here does not claim it is readable: ingestion is tracked in docs/library/LIBRARY_ROADMAP.md.",
   "collections": [
     {
       "id": "pathinenkilkkanakku",
@@ -22,7 +22,7 @@
       "ta": "தமிழ்க் கலைப்பொருட்கள்",
       "en": "Tamil Artifacts",
       "kind": "material-culture",
-      "description": "Inscriptions, coins, manuscripts, sculpture, architecture, music and material culture. The full register, legal sources and scholar-reader layers live in data/library/artifacts.json (see docs/ARTIFACT_LIBRARY.md)."
+      "description": "Inscriptions, coins, manuscripts, sculpture, architecture, music and material culture. The full register, legal sources and scholar-reader layers live in data/library/artifacts.json (see docs/library/ARTIFACT_LIBRARY.md)."
     }
   ],
   "works": [
