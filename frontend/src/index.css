@@ -73,11 +73,14 @@
   box-sizing: border-box;
 }
 
+/* Keep the window as the page's only scroller. `overflow-x: hidden` on both
+   html and body (plus `height: 100%`) turned <body> into its own scroll box, so
+   window.scrollTo() in ScrollToTop was a no-op and a new route inherited the
+   previous page's offset — clamped to the bottom on shorter pages. Clipping on
+   body alone propagates to the viewport and never creates a scroll container. */
 html {
   font-size: 1.25rem;
-  overflow-x: hidden;
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 /* Page roots are flex items of the column <main>; with `mx-auto` they shrink
@@ -97,8 +100,7 @@ body {
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  height: 100%;
+  overflow-x: clip;
 }
 
 .tamil {
