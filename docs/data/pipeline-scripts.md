@@ -260,6 +260,6 @@ place. Keep the two environments physically separate.
 ## 4. Governance
 
 Every AI-drafted field lands `verified: false` until a scholar reviews it —
-see [docs/data-governance.md](./data-governance.md) §2 and §5. The
+see [docs/data/data-governance.md](./data-governance.md) §2 and §5. The
 preservation rule above and that verification flag are independent: a script
 re-run must never destroy a draft, verified or not.

@@ -37,7 +37,7 @@
 Run-level provenance for the removed batch runs stays in
 `data/pipeline/translation-state.json` as a historical audit record.
 
-See [docs/pipeline-scripts.md](./pipeline-scripts.md) for every generation
+See [docs/data/pipeline-scripts.md](./pipeline-scripts.md) for every generation
 pipeline script (scrape, normalization, graph, vectorize) and the rule that a re-run of
 any one of them must never destroy what an earlier run already produced.
 

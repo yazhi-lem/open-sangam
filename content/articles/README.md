@@ -20,7 +20,7 @@ These are **perspective / explanatory essays**, not peer-reviewed papers. Any
 accuracy/BLEU-style numbers in them are *illustrative* unless a specific source
 is cited. Each essay ends with a *Further reading* list of genuine works. This
 is called out in an editorial note at the top of every piece, in keeping with
-`docs/editorial-style-guide.md` (cite real sources; don't assert contested
+`docs/data/editorial-style-guide.md` (cite real sources; don't assert contested
 points as fact).
 
 ## The essays

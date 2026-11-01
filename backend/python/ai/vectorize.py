@@ -18,7 +18,7 @@ Uses the OpenRouter account's /embeddings endpoint (not /chat/completions) and a
 restricted model: this account's allowed-providers setting only clears
 google-ai-studio/google-vertex/anthropic/etc., and only
 `google/gemini-embedding-001` (3072-dim) is reachable through it — see
-docs/pipeline-scripts.md.
+docs/data/pipeline-scripts.md.
 
 Usage:
     python -m ai.vectorize --status

@@ -16,7 +16,7 @@ Two 9-page, A4 brochures that explain Open Sangam to learners, teachers, scholar
 
 ## Source and rebuild
 
-The PDFs are printed from HTML with headless Chrome. The source is in [`src/`](src/):
+The PDFs are printed from HTML with headless Chrome. The source is in [`src/`](src):
 
 - `open-sangam-brochure-ta.html`, `open-sangam-brochure-en.html`: the two brochures
 - `brochure.css`: shared print styles (A4, no letter-spacing on Tamil)

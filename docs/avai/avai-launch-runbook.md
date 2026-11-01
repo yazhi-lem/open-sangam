@@ -2,7 +2,7 @@
 
 This is the operational checklist for shipping the Sangam Avai agent swarm to
 production and running the public demo. It complements
-`docs/agent-implementation-plan.md` (capabilities/roadmap) and
+`archives/2026-10-27-docs-digest.md` §4 (agent plan, archived) and
 `agents/avai/README.md` (local development).
 
 ## 1. What “launched” means
@@ -36,7 +36,7 @@ before the backend secret exists without exposing a broken page.
 ## 3. Preflight (T-7 days)
 
 ```bash
-cd /home/valav/Yazhi/repos/open-sangam/agents
+cd agents        # from the repository root
 pytest avai/tests -q                 # must be all green
 cd ../frontend && npm ci && npm run build
 ```

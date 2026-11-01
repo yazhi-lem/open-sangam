@@ -3,7 +3,7 @@ normalize_to_json.py
 --------------------
 DEPRECATED — maduraikanchi is now in the generic registry (scraper/registry.py)
 and covered by `normalize_all.py`, which also merges AI-generated fields
-forward on a re-run (see docs/pipeline-scripts.md). Do not run this script
+forward on a re-run (see docs/data/pipeline-scripts.md). Do not run this script
 again: an earlier run of it, alongside a later normalize_all run, produced two
 differently-padded copies of every maduraikanchi record (maduraikanchi_01 vs
 maduraikanchi_001) with a lost tiṇai classification — a data-quality bug fixed

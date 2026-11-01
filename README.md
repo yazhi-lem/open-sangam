@@ -2,328 +2,110 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
-See [NEXT_ACTION.md](./NEXT_ACTION.md) for the roadmap, **October 2026 Pilot**, and **December 2026 Launch** deliverables. The wider library plan — Pathinenkilkkanakku, classics, artifacts, and multilingual reader requirements — lives in [docs/LIBRARY_ROADMAP.md](./docs/LIBRARY_ROADMAP.md). An Obsidian-ready Markdown vault is generated at `obsidian-vault/` (see `backend/python/knowledge/export_obsidian.py`). The interface follows a strict single-language policy; see [docs/LANGUAGE_POLICY.md](./docs/LANGUAGE_POLICY.md).
+Plan and status live in [`factory/`](./factory): [`CURRENT`](./factory/CURRENT.md) · [`NEXT`](./factory/NEXT.md) · [`RUNWAY`](./factory/RUNWAY.md). The wider library plan (Pathinenkilkkanakku, classics, artifacts, multilingual reader) is in [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md). An Obsidian-ready Markdown vault is generated at `obsidian-vault/` (`backend/python/knowledge/export_obsidian.py`). The interface follows a strict single-language policy ([`docs/LANGUAGE_POLICY.md`](./docs/LANGUAGE_POLICY.md)). Retired docs are summarised in [`archives/`](./archives).
 
-Open Sangam transforms static, archaic web archives of Sangam-era poetry into a multi-layered learning experience — providing linguistic, cultural, and historical context. Think "Duolingo for Ancient Literature."
+Open Sangam turns static web archives of Sangam-era poetry into a layered learning experience with linguistic,
+cultural and historical context. Think "Duolingo for ancient literature".
 
 ## Features
 
-- **Layered View** — Toggle between Sangam Tamil, Modern Tamil prose (*Urai*), and English for every verse
-- **Tamil Library** — One catalog for Sangam works, Pathinenkilkkanakku, classics, and artifacts, with language and availability metadata
-- **Artifact Scholar Reader** — Compact multi-layer reader for inscriptions, coins, manuscripts, sculpture, architecture and material culture, with explicit rights and layer-status tracking
-- **Click-to-Define Glossary** — Click any word for root meaning, grammatical class (*Urichol*), and etymology
-- **Sangam World** — Immersive Tiṇai landscape navigator (Kuṟiñci · Mullai · Marutam · Neytal · Pālai)
-- **Knowledge Encyclopedia** — Illustrated guide to the Sangam age: anthologies, akam/puṟam, the tiṇai framework, poets, patron-kings, music, and daily life
-- **Connections Graph** — The whole corpus interlinked as one navigable knowledge graph (tiṇai · poem · poet · karu-poruḷ), mined directly from the verses
-- **Cultural Context Cards** — Pop-up explanations for historical references
-- **Audio Recitation** — Recorded / synthesized verses for pronunciation and meter
-- **AI Translation** — Gemini 2.5 Flash contemporary prose and English equivalents, drafted by a nightly batch pipeline
-- **சங்க அவை Sangam Avai** — An agent assembly that answers questions about the corpus with cited verses
-- **Community Contributions** — Scholar-reviewed translation edits (Phase 4)
+- **Layered view.** Sangam Tamil · modern Tamil prose (*urai*) · English, one layer at a time. Unreviewed text is
+  labelled as a draft.
+- **Tamil Library.** One catalog for Sangam works, Pathinenkilkkanakku, classics and artifacts, with language and
+  availability metadata.
+- **Artifact scholar reader.** Inscriptions, coins, manuscripts, sculpture, architecture and material culture, with
+  explicit rights and per-layer status.
+- **Click-to-define glossary.** Root, grammatical class (*urichol*) and etymology, read from the corpus only.
+- **Sangam World.** A tiṇai landscape navigator (Kuṟiñci · Mullai · Marutam · Neytal · Pālai).
+- **Knowledge.** An encyclopedia of the Sangam age, plus a connections graph mined from the verses.
+- **சங்க அவை Sangam Avai.** An agent assembly that answers with cited verses and abstains when it has no source.
+  Hidden behind a build flag until the public beta.
+- **Articles.** Long-form essays in `content/articles/`, published as HTML and RSS.
 
-## Tech Stack
+## Stack
 
 | Layer | Technology |
-|-------|-----------|
-| Frontend | React.js (Vite) + Tailwind CSS |
-| Backend / Storage | Firebase / Firestore |
-| Cloud Functions | Node.js (Firebase Functions) |
-| Data Pipeline | Python + BeautifulSoup |
-| AI Translation | Google Gemini 2.5 Flash via OpenRouter |
-| Agents | Google ADK + LiteLLM (OpenRouter) |
+|---|---|
+| Frontend | React 19 + Vite + Tailwind v4, deployed as static files to **Cloudflare Pages** (`sangam.yazhi.dev`) |
+| Corpus | Static JSON in `data/texts/`, validated against verse schema v2 in CI |
+| Data pipeline | Python: scrape → normalize → validate → knowledge graph → vectors |
+| Agents | Google ADK + LiteLLM (OpenRouter, Gemini, Ollama or vLLM), served by FastAPI on Cloud Run |
+| Functions | Firebase Cloud Functions (`/translate`, `/analyze-word`), locked down |
 
-## Project Structure
+## Structure
 
 ```
 open-sangam/
-├── frontend/        # React + Tailwind web app
+├── frontend/        React app
+├── agents/avai/     சங்க அவை: ADK agents, REST API, evals
 ├── backend/
-│   ├── functions/   # Firebase Cloud Functions
-│   └── python/      # Scraping, normalization & AI scripts
-├── agents/
-│   └── avai/        # சங்க அவை — Google ADK agent assembly
-├── data/
-│   ├── schema/      # JSON schema (Verse → Line → Word)
-│   ├── library/     # Wider Tamil Library catalog (Pathinenkilkkanakku, classics, artifacts)
-│   ├── texts/       # Processed poem data
-│   └── pipeline/    # Translation run state & progress metadata
-└── docs/            # Architecture, governance, style guide
+│   ├── python/      scraper, normalizer, validator, vectorizer
+│   └── functions/   Firebase Cloud Functions
+├── data/            schema, poem texts, library catalog, knowledge graph
+├── content/         articles
+├── obsidian-vault/  generated Obsidian vault (export_obsidian.py)
+├── docs/            architecture, contracts, governance, library, runbooks
+├── factory/         CURRENT · NEXT · RUNWAY
+└── archives/        dated doc snapshots
 ```
 
-## Getting Started
-
-### Frontend
+## Getting started
 
 ```bash
-cd frontend
-npm install
-npm run dev
-```
+# Frontend
+cd frontend && npm install && npm run dev
 
-### Python Pipeline
-
-```bash
+# Data pipeline (no API key needed)
 cd backend/python
 python -m venv .venv && .venv/bin/pip install -r requirements.txt
-cp .env.example .env   # then set OPENROUTER_API_KEY
-
-# Scrape all 18 Sangam poems (resumes from where it left off)
-.venv/bin/python -m scraper.scrape_poem --poem all
-
-# Normalize to OKF datapackage (JSON schema + datapackage.json)
-.venv/bin/python -m normalizer.normalize_all --poem all
-
-# Ingest Thirukkural + Naladiyar with public-domain English translations
-.venv/bin/python -m scraper.scrape_pathinen --work all
-
-# Repair any idyll line gaps / heading ranges from Project Madurai
-.venv/bin/python -m scraper.scrape_projectmadurai --poem all
-
-# Run the pipeline's own tests (no API key needed)
+.venv/bin/python -m scraper.scrape_poem --poem all          # resumable
+.venv/bin/python -m scraper.scrape_projectmadurai --poem all  # fill idyll line gaps, repair heading ranges
+.venv/bin/python -m scraper.scrape_pathinen --work all        # Tirukkural + Naladiyar, public-domain English
+.venv/bin/python -m normalizer.normalize_all --poem all     # OKF datapackage
+.venv/bin/python -m normalizer.validate_corpus              # schema v2 + known line gaps
 .venv/bin/python -m pytest tests
-```
 
-#### English translation (Phase 2)
-
-`ai/translate_with_gemini.py` drafts the `english` field of every verse with
-**Gemini 2.5 Flash via OpenRouter** — the same model and gateway the agents
-use. It is **phased**, **resumable**, and **tracked**: each run picks a bounded
-batch from the current phase, writes `verified: false` drafts with an
-`englishMeta` provenance block, and records the run in
-`data/pipeline/translation-state.json`.
-
-```bash
-cd backend/python
-
-# Coverage per poem + current phase. No API calls, no key needed.
-.venv/bin/python -m ai.translate_with_gemini --status
-
-# See exactly which verses the next run would take. Still no API calls.
-.venv/bin/python -m ai.translate_with_gemini --lang english --limit 5 --dry-run
-
-# Translate a batch (default 200 verses from the current phase)
-.venv/bin/python -m ai.translate_with_gemini --lang english --limit 200
-
-# Or target one poem, ignoring phase order
-.venv/bin/python -m ai.translate_with_gemini --lang english --poem mullaippattu
-```
-
-| Flag | Meaning |
-|---|---|
-| `--status` | print per-poem coverage and the current phase, then exit |
-| `--dry-run` | resolve the batch and list it; no API calls, no writes |
-| `--limit N` | verses per run (default 200) |
-| `--phase N` | force a phase instead of auto-advancing |
-| `--poem <id>` | restrict to one poem, ignoring phases |
-| `--force` | re-translate verses that already have English |
-| `--concurrency N` | parallel requests (default 4) |
-| `--write-state` | rebuild the state metadata from disk without translating |
-
-`--lang` also accepts `urai` to draft the Modern Tamil prose field the same
-way (currently 99% covered — a handful of stragglers). To run both languages
-in one command, use the wrapper instead of remembering both invocations:
-
-```bash
-# Both languages, same flags forwarded to each pass (urai first, then english)
-.venv/bin/python -m ai.translate_all --status
-.venv/bin/python -m ai.translate_all --limit 200
-.venv/bin/python -m ai.translate_all --only urai --limit 50   # just one language
-```
-
-**Phases** run smallest-first, so quality problems surface early. A run only
-draws from the current phase, and the phase advances by itself once every poem
-in it is fully drafted:
-
-| Phase | Poems | Verses |
-|---|---|---:|
-| 1 | Ten Idylls (பத்துப்பாட்டு) | ~380 |
-| 2 | Shorter anthologies — Paripāṭal, Patiṟṟuppattu, Kalittokai, Akanāṉūṟu | ~472 |
-| 3 | Large anthologies — Puṟanāṉūṟu, Naṟṟiṇai, Kuṟuntokai, Aiṅkuṟunūṟu | ~1,700 |
-
-**Scheduling.** `.github/workflows/translate-english.yml` runs the same command
-nightly at 02:00 UTC and commits the results, so the corpus fills in
-unattended. It needs the repository secret **`OPENROUTER_API_KEY`** — without
-it the job logs a skip and exits cleanly. `workflow_dispatch` takes `limit`,
-`poem`, `phase`, and `dry_run` inputs for a one-off run.
-
-Every draft lands `verified: false` per
-[docs/data-governance.md](./docs/data-governance.md) — AI output is not
-authoritative until a scholar reviews it.
-
-#### Word etymology (Click-to-Define Glossary)
-
-`ai/extract_etymology.py` batch-fills the data behind the reader's
-click-to-define glossary (`WordGlossary.jsx`): for every word in a verse it drafts a
-`root` (வேர்ச்சொல்), `urichol` (உரிச்சொல்), a detailed Tamil `etymology`
-(2-4 sentences — derivation, cognates, sandhi/morphology, semantic shift),
-and a short English `gloss`. The reader shows only what is stored in the
-corpus (there is no live AI lookup); words without an entry show a
-"no glossary entry yet" state, and entries on unverified records are labelled as drafts.
-
-```bash
-cd backend/python
-
-# Coverage per poem. No API calls, no key needed.
-.venv/bin/python -m ai.extract_etymology --status
-
-# See exactly which verses the next run would take. Still no API calls.
-.venv/bin/python -m ai.extract_etymology --limit 5 --dry-run
-
-# Annotate a batch (default 50 verses — each one returns a full JSON
-# array of per-word annotations, so it's heavier than a translation call)
-.venv/bin/python -m ai.extract_etymology --limit 50
-
-# Or target one poem
-.venv/bin/python -m ai.extract_etymology --poem mullaippattu
-```
-
-Unlike English/urai translation, a word's four fields can legitimately all
-come back null (a bare grammatical particle has no root) — so completeness is
-tracked per *verse*, via an `etymologyMeta` provenance block (mirrors
-`englishMeta`), not by checking whether the word fields are non-null. State
-lives in `data/pipeline/etymology-state.json`, independent of the translation
-pipeline's own state file. There's no phase ladder here: unlike English
-translation, one verse's word annotation doesn't depend on another poem's
-quality, so poems are simply processed in the corpus's natural order.
-
-Every draft also lands `verified: false`, same governance as translations.
-
-#### Verse embeddings + semantic search
-
-`ai/vectorize.py` embeds each verse (Tamil + urai + English combined) via
-OpenRouter (`google/gemini-embedding-001`) into a local Chroma vector store,
-and exports a downloadable `.jsonl` per poem. Needs its own venv — see
-[docs/pipeline-scripts.md](./docs/pipeline-scripts.md) §3, since `chromadb`
-must never land in `agents/.venv`.
-
-```bash
-cd backend/python
-python -m venv .venv && .venv/bin/pip install -r requirements.txt   # separate from agents/.venv
-
+# Verse embeddings + semantic search (own venv; chromadb never goes into agents/.venv)
 .venv/bin/python -m ai.vectorize --status
-.venv/bin/python -m ai.vectorize --poem thirumurugatrupadai
-.venv/bin/python -m ai.vectorize --search "the young god of the mountains riding a peacock" --k 5
+
+# Agents: run adk from agents/, not agents/avai/
+cd agents/avai && python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+cp .env.example .env && cd .. && adk run avai     # or: adk web; pytest avai/tests
+
+# Functions
+cd backend/functions && npm install && firebase emulators:start
 ```
 
-- **Vector DB:** `data/generated/vectors/` (gitignored — a rebuildable local
-  index, not source data).
-- **Downloadable export:** `data/knowledge/vectors/{poem_id}.jsonl`,
-  committed like `graph.json` — one JSON line per verse (id, metadata,
-  embedded text, 3072-dim vector), always rewritten fresh from the vector DB
-  so it can't drift.
+Full agent runbook: [`agents/avai/README.md`](./agents/avai/README.md). Pipeline rules: re-running a script never
+destroys a field another script produced ([`docs/data/pipeline-scripts.md`](./docs/data/pipeline-scripts.md)).
 
-### Sangam Avai agents (சங்க அவை)
+## Corpus status
 
-An agent assembly on Google ADK that answers questions about the corpus with
-cited verses, backed by corpus / knowledge-graph / tiṇai tools.
+| | Count | Notes |
+|---|---:|---|
+| Works in the reader | 20 | 18 Sangam (Eight Anthologies + Ten Idylls) + Tirukkural + Naladiyar |
+| Records | 4,399 | Verse → Line → Word; 2,489 Sangam |
+| Modern Tamil prose (urai) | 2,653 records | Sangam source prose; reuse terms being confirmed |
+| English | 1,762 records | 1,330 Kural + 400 Naladiyar (public-domain Pope/Ellis) · 32 Sangam machine drafts, `verified: false` |
+| Scholar-verified | 0 | the Q4 launch scope is Maduraikanchi lines 1–100 |
+| Lines missing in the source | 0 | gaps filled from Project Madurai; `data/schema/known_line_gaps.json` is empty and CI fails if it changes unannounced |
 
-```bash
-cd agents/avai
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env   # then set OPENROUTER_API_KEY
+Other Pathinenkilkkanakku works are catalogued (not yet readable) in `data/library/catalog.json`.
 
-cd ..                  # → agents/ — ADK resolves agents from the PARENT dir
-adk run avai           # terminal REPL
-adk web                # browser dev UI; pick "avai" from the dropdown
-pytest avai/tests      # 12 tests, no API key needed
-```
+Every AI-generated field stays `verified: false` until a scholar reviews it
+([`docs/data/data-governance.md`](./docs/data/data-governance.md)).
 
-> The single most common failure is running `adk` from `agents/avai/` instead
-> of `agents/`. Full runbook, env-var table, and troubleshooting:
-> **[agents/avai/README.md](./agents/avai/README.md)**.
+## Docs
 
-### Firebase Functions
-
-```bash
-cd backend/functions
-npm install
-firebase emulators:start
-```
-
-## Phases
-
-📊 **[Project Tracker](./docs/PROJECT_TRACKER.md)** — live status across every
-workstream · 🗺️ **[Roadmap](./docs/ROADMAP.md)** — where the project is going.
-
-See [docs/data-collection-plan.md](./docs/data-collection-plan.md) for the full
-corpus + knowledge-entity roadmap, and
-[docs/pipeline-scripts.md](./docs/pipeline-scripts.md) for how every
-scrape/normalize/translate/etymology/graph script fits together and why
-re-running one never destroys another's output.
-
-| # | Phase | Status |
-|---|-------|--------|
-| 1 | Data scraping & normalization | ✅ Complete — 18 poems, 2,489 verses |
-| 2 | AI English translation + human verification | 🔄 In progress — pipeline live, drafting nightly |
-| 3 | Library of Sangam — MVP reader live | 🔄 In progress |
-| 4 | Community contribution layer | ⬜ Pending |
-
----
-
-## Corpus Status
-
-> Pipeline: **Scrape** → **Normalize** → **Library** → **English** → **Verified**
->
-> `█` done · `▒` partial · `░` pending
-
-### எட்டுத்தொகை — Eight Anthologies
-
-```
-Poem                          Verses  Scrape    Normalize  Library   English   Verified
-─────────────────────────────────────────────────────────────────────────────────────────
-நற்றிணை      Natrinai           400   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-குறுந்தொகை   Kurunthokai        400   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-ஐங்குறுநூறு  Ainkurunooru       500   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-கலித்தொகை   Kalithokai         149   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-அகநானூறு    Akananooru         220   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-பதிற்றுப்பத்து Pathitrupathu     80   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-புறநானூறு    Purananuru         400   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-பரிபாடல்     Paripadal           23   ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-```
-
-### பத்துப்பாட்டு — Ten Idylls
-
-```
-Poem                              Sections  Scrape    Normalize  Library   English   Verified
-──────────────────────────────────────────────────────────────────────────────────────────────
-திருமுருகாற்றுப்படை Tirumurugam      32    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-பொருநராற்றுப்படை   Porunaram         21    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-சிறுபாணாற்றுப்படை  Sirupanam         25    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-பெரும்பாணாற்றுப்படை Perumapanam      41    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-மலைபடுகடாம்        Malaipadukadam    45    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-மதுரைக்காஞ்சி      Maduraikanchi     63    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-குறிஞ்சிப்பாட்டு   Kurinjipattu      25    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-பட்டினப்பாலை       Pattinappalai     30    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-முல்லைப்பாட்டு     Mullaippattu      18    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-நெடுநல்வாடை        Nedunalvadai      17    ████████  ████████   ████████  ░░░░░░░░  ░░░░░░░░
-```
-
-### பதினெண்கீழ்க்கணக்கு — Pathinenkilkkanakku
-
-```
-Work                    Verses  Tamil   English   Library
-──────────────────────────────────────────────────────────
-திருக்குறள் Tirukkural   1,330  ██████  ██████    ██████  public-domain Pope translation
-நாலடியார்  Naladiyar       400  ██████  ██████    ██████  public-domain Pope/Ellis translation
-```
-
-### Overall Progress
-
-```
-Total works          20  ████████████████  all scraped, normalized & in the Library
-Total records     4,399  ████████████████  fully normalized (Verse → Line → Word)
-Tamil prose (Urai) 2,653 ███████████████░  Sangam source prose
-English translation 1,762 ██████████░░░░░░  1,330 Kural + 400 Naladiyar + 32 Sangam
-Scholar-verified        0 ░░░░░░░░░░░░░░░░  Phase 4 — not started
-```
-
-> **Readable in [தமிழ் நூலகம் — Tamil Library](/frontend):** all 18 Sangam works
-> plus திருக்குறள் and நாலடியார், with public-domain English translations.
-> The remaining Pathinenkilkkanakku works are catalogued in `data/library/catalog.json`.
-
----
+| Area | Doc |
+|---|---|
+| Architecture & contracts | [`docs/architecture.md`](./docs/architecture.md) · [`docs/LANGUAGE_POLICY.md`](./docs/LANGUAGE_POLICY.md) · [`docs/api/api-contracts.md`](./docs/api/api-contracts.md) · [`docs/api/avai-ask-prd.md`](./docs/api/avai-ask-prd.md) |
+| Avai | [`docs/avai/pulavar-verifiable-citations.md`](./docs/avai/pulavar-verifiable-citations.md) · [`docs/avai/avai-launch-runbook.md`](./docs/avai/avai-launch-runbook.md) · [`agents/avai/evals/TAXONOMY.md`](./agents/avai/evals/TAXONOMY.md) |
+| Data | [`docs/data/pipeline-scripts.md`](./docs/data/pipeline-scripts.md) · [`docs/data/data-collection-plan.md`](./docs/data/data-collection-plan.md) · [`docs/data/data-governance.md`](./docs/data/data-governance.md) · [`docs/data/editorial-style-guide.md`](./docs/data/editorial-style-guide.md) |
+| Library | [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md) · [`docs/library/ARTIFACT_LIBRARY.md`](./docs/library/ARTIFACT_LIBRARY.md) |
+| Research | [`docs/research/`](./docs/research) |
+| Outreach | [`docs/brochures/`](./docs/brochures) · [`content/articles/`](./content/articles) |
 
 ## License
 
-[LICENSE](./LICENSE) — Content licensed under CC BY-SA where applicable.
+[LICENSE](./LICENSE). Content is licensed under CC BY-SA where applicable.

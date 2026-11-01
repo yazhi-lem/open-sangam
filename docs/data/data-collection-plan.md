@@ -112,7 +112,7 @@ is populated it becomes the generated source of truth.
 
 ## 5. Governance & licensing
 
-All collection follows `docs/data-governance.md`:
+All collection follows `docs/data/data-governance.md`:
 
 - Public-domain verse text; **source attribution preserved** on every record.
 - AI-drafted urai/English carry `verified: false` until scholar-reviewed.

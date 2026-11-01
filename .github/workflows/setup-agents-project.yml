@@ -2,7 +2,7 @@ name: Setup Agents Project — Poet-Swarm Milestones & Issues
 
 # Creates the `agents` label, three "Agents M1–M3" milestones, and the issue
 # breakdown for the சங்க அவை poet-swarm agent system described in
-# docs/agent-implementation-plan.md. Idempotent — safe to re-run.
+# the agent plan (now summarised in archives/2026-10-27-docs-digest.md). Idempotent — safe to re-run.
 
 on:
   workflow_dispatch:
@@ -104,7 +104,7 @@ jobs:
               due_on: '2026-10-31T23:59:59Z',
             });
 
-            const plan = 'docs/agent-implementation-plan.md';
+            const plan = 'archives/2026-10-27-docs-digest.md';
             const nums = {};
 
             // ──────────────────────────────────────────────────────────────
@@ -164,7 +164,7 @@ jobs:
 
             ## Acceptance criteria
             - [ ] \`sangam_avai/poets/avvaiyar.py\` LlmAgent wired to the corpus + graph/tiṇai tools (≤3 tools — Gemma routes small toolsets more reliably).
-            - [ ] Instruction requires verse-id citations and hedging labeled "contested interpretation" where scholarship disagrees (per \`docs/data-governance.md\`).
+            - [ ] Instruction requires verse-id citations and hedging labeled "contested interpretation" where scholarship disagrees (per \`docs/data/data-governance.md\`).
             - [ ] \`evals/qa.evalset.json\` with ~10 cases runs green via \`adk eval\` — e.g. "What flora characterize kurinji?" answered with graph/verse citations.
             - [ ] Tamil display name ஔவையார் in the agent description.
 
@@ -241,12 +241,12 @@ jobs:
             nums.persist = await createIssue({
               title: 'Agents: scenario persistence to data/scenarios/ (verified:false)',
               body: `## Context
-            Stretch goal (may slip to M3): Tholkappiyar's extractions can seed a reviewable dataset, entering the existing human-in-the-loop protocol (see \`${plan}\` and \`docs/data-governance.md\`).
+            Stretch goal (may slip to M3): Tholkappiyar's extractions can seed a reviewable dataset, entering the existing human-in-the-loop protocol (see \`${plan}\` and \`docs/data/data-governance.md\`).
 
             ## Acceptance criteria
             - [ ] \`data/schema/scenario_schema.json\` (JSON Schema mirroring the Pydantic model).
             - [ ] Opt-in batch script \`backend/agents/scripts/extract_scenarios.py\` writing \`data/scenarios/<verse_id>.json\` with \`"verified": false\`.
-            - [ ] \`docs/data-governance.md\` updated to cover scenario review.
+            - [ ] \`docs/data/data-governance.md\` updated to cover scenario review.
 
             Dependencies: #${nums.tholkappiyar}`,
               labels: ['agents', 'data-pipeline', 'community'],
@@ -329,8 +329,8 @@ jobs:
 
             ## Acceptance criteria
             - [ ] \`docs/architecture.md\`: poet-swarm section incl. the RemoteA2aAgent split-out path.
-            - [ ] \`docs/api-contracts.md\`: A2A endpoints + AgentCard URLs.
-            - [ ] \`docs/data-governance.md\`: new § Agent-generated content (poems/images/scenarios labeling, never writing to \`data/texts/\`, citation requirement).
+            - [ ] \`docs/api/api-contracts.md\`: A2A endpoints + AgentCard URLs.
+            - [ ] \`docs/data/data-governance.md\`: new § Agent-generated content (poems/images/scenarios labeling, never writing to \`data/texts/\`, citation requirement).
             - [ ] Rate limiting on the Cloud Run endpoint; optional Firebase App Check token header evaluated.
 
             Dependencies: #${nums.a2ui}, #${nums.deploy}`,
