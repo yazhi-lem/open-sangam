@@ -72,8 +72,8 @@ Project Madurai:
 | Muthumozhikkanchi | pmuni0025 §4 | 100/100 | ✅ published (reader) — group headings dropped, first line kept |
 | Nanmanikkadikai | pmuni0047 | 106/100 | ⚠️ edition has extra verses; needs collation |
 | Acharakkovai | pmuni0024 | 97/100 | ✅ published (partial, 97/100) — edition omits 47, 64, 97 |
-| Ainthinai Aimpathu | pmuni0027 §1 | 49/50 | ⚠️ one numbering anomaly |
-| Ainthinai Ezhupathu | pmuni0027 §2 | 65/70 | ⚠️ attested lost verses (25, 26, 62) |
+| Ainthinai Aimpathu | pmuni0027 §1 | 49/50 | ✅ published (partial 49/50) — landscape-prose headers skipped |
+| Ainthinai Ezhupathu | pmuni0027 §2 | 65/70 | ✅ published (partial 65/70) — includes attested lost verses |
 | Sirupanchamulam | pmuni0029 §3 | 98/100 | ✅ published (partial, 98/100) — edition omits 99, 100 |
 | Pazhamozhi Nanuru | pmuni0036 | 395/400 | ✅ published (partial, 395/400) — edition omits 156, 177, 191, 381 |
 | Thinaimalai Nurraimbathu | pmuni0056 | 152/150 | ⚠️ parenthetical numbering, 2 spurious extras |

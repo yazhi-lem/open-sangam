@@ -74,6 +74,8 @@ const PARTIAL = [
   { id: 'acharakkovai', file: 'acharakkovai', canonical: 100 },
   { id: 'pazhamozhi-nanuru', file: 'pazhamozhi-nanuru', canonical: 400 },
   { id: 'sirupanjamulam', file: 'sirupanjamulam', canonical: 100 },
+  { id: 'ainthinai-aimpathu', file: 'ainthinai-aimpathu', canonical: 50 },
+  { id: 'ainthinai-ezhupathu', file: 'ainthinai-ezhupathu', canonical: 70 },
 ]
 
 test('partial editions are ordered subsets within the canonical count', () => {

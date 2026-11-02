@@ -1,0 +1,40 @@
+{
+  "name": "open-sangam-ainthinai-ezhupathu",
+  "title": "ஐந்திணை எழுபது — Ainthinai Ezhupathu",
+  "description": "Ainthinai Ezhupathu (ஐந்திணை எழுபது), Pathinenkilkkanakku — 65 verses.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Madurai",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0027.html"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Open Tamil NLP contributors",
+      "role": "scraper"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Pathinenkilkkanakku",
+    "Ainthinai Ezhupathu"
+  ],
+  "coverage": {
+    "available": 65,
+    "expected": 70,
+    "missing": [
+      25,
+      26,
+      62,
+      69,
+      70
+    ]
+  }
+}

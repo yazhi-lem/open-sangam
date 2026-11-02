@@ -1,0 +1,36 @@
+{
+  "name": "open-sangam-ainthinai-aimpathu",
+  "title": "ஐந்திணை ஐம்பது — Ainthinai Aimpathu",
+  "description": "Ainthinai Aimpathu (ஐந்திணை ஐம்பது), Pathinenkilkkanakku — 49 verses.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Madurai",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0027.html"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Open Tamil NLP contributors",
+      "role": "scraper"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Pathinenkilkkanakku",
+    "Ainthinai Aimpathu"
+  ],
+  "coverage": {
+    "available": 49,
+    "expected": 50,
+    "missing": [
+      50
+    ]
+  }
+}
