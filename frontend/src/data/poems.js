@@ -212,6 +212,15 @@ export const POEMS = [
     loader: () => import('@data/texts/kaar-narpathu/kaar-narpathu.json'),
   },
   {
+    id: 'muthumozhikkanchi',
+    ta: 'முதுமொழிக்காஞ்சி', en: 'Muthumozhikkanchi',
+    collection: 'pathinenkilkkanakku',
+    count: 100, unit: 'verses',
+    tinai: [],
+    available: true,
+    loader: () => import('@data/texts/muthumozhikkanchi/muthumozhikkanchi.json'),
+  },
+  {
     id: 'thirikadugam',
     ta: 'திரிகடுகம்', en: 'Thirikadukam',
     collection: 'pathinenkilkkanakku',

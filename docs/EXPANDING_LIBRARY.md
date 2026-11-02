@@ -69,7 +69,7 @@ Project Madurai:
 | Iniyavai Narpathu | pmuni0025 §2 | 40/40 | ✅ published (reader) — switched to the plain edition |
 | Kaar Narpathu | pmuni0029 §1 | 40/40 | ✅ published (reader) — per-work `skip` drops colophons and situation headings |
 | Thirikadugam | pmuni0048 | 100/100 | ✅ published (reader) — heading-numbered edition |
-| Muthumozhikkanchi | pmuni0025 §4 | 100/100 | ⚠️ parses to count but leading numeral leaks into verse text — needs a text-trim |
+| Muthumozhikkanchi | pmuni0025 §4 | 100/100 | ✅ published (reader) — group headings dropped, first line kept |
 | Nanmanikkadikai | pmuni0047 | 106/100 | ⚠️ edition has extra verses; needs collation |
 | Acharakkovai | pmuni0024 | 97/100 | ⚠️ edition omits verses 47, 64, 97 |
 | Ainthinai Aimpathu | pmuni0027 §1 | 49/50 | ⚠️ one numbering anomaly |

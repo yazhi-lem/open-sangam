@@ -84,7 +84,7 @@ WORKS: list[Work] = [
     Work("iniyavai-narpathu", "இனியவை நாற்பது", "Iniyavai Narpathu", "பூதஞ்சேந்தனார்", "verses", 40, "pmuni0025",
          start=r"^2\.\s*இனியவை\s*நாற்பது", end=r"^இனியவை\s*நாற்பது\s*முற்றிற்று", publish=True),
     Work("muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "Muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "verses", 100, "pmuni0025",
-         start=r"^4\.\s*முதுமொழிக்\s*காஞ்சி", end=r"^முதுமொழிக்காஞ்சி\s*முற்றிற்று"),
+         start=r"^4\.\s*முதுமொழிக்\s*காஞ்சி", end=r"^முதுமொழிக்காஞ்சி\s*முற்றிற்று", publish=True),
     # ── bundled volumes ──
     Work("inna-narpathu", "இன்னா நாற்பது", "Inna Narpathu", "கபிலர்", "verses", 40, "pmuni0025",
          start=r"^1\.\s*இன்னா\s*நாற்பது", end=r"^இன்னா\s*நாற்பது\s*முற்றிற்று", publish=True),
@@ -287,16 +287,25 @@ def _parse_heading_numbered(lines, skip=None):
         m = re.match(r"^(\d{1,4})\.\s*(.*)$", ln)
         if m:
             num = int(m.group(1))
+            rest = m.group(2).strip()
             if cur is None or num > cur["number"]:
                 if cur:
                     verses.append(cur)
-                rest = m.group(2).strip()
                 # A short `N. title` is a heading; a long one is the first verse line.
                 if len(rest) >= 18:
                     cur = {"number": num, "title": "", "parts": [rest], "chapter": chapter, "tinai": tinai}
                 else:
                     cur = {"number": num, "title": rest, "parts": [], "chapter": chapter, "tinai": tinai}
                 continue
+            # num <= current: either a group heading (short) or a repeated first line.
+            if len(rest) < 18:
+                continue  # group/chapter heading, not verse content
+            if not cur["parts"] and cur["title"]:
+                cur["parts"].append(rest)
+                cur["title"] = ""
+            else:
+                cur["parts"].append(rest)
+            continue
         if _skip(ln, skip) or ln.startswith("("):
             continue
         if cur:
