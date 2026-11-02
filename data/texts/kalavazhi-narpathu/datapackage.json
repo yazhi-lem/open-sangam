@@ -1,0 +1,29 @@
+{
+  "name": "open-sangam-kalavazhi-narpathu",
+  "title": "களவழி நாற்பது — Kalavazhi Narpathu",
+  "description": "Kalavazhi Narpathu (களவழி நாற்பது), Pathinenkilkkanakku — 40 verses.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Madurai",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0025.html"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Open Tamil NLP contributors",
+      "role": "scraper"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Pathinenkilkkanakku",
+    "Kalavazhi Narpathu"
+  ]
+}

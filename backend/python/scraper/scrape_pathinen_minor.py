@@ -1,0 +1,374 @@
+"""
+scrape_pathinen_minor.py
+------------------------
+Ingest the minor Pathinenkilkkanakku works (beyond Thirukkural and Naladiyar)
+from Project Madurai.
+
+Project Madurai numbers are shared across some volumes: `pmuni0025` bundles
+Inna / Iniyavai / Kalavazhi / Muthumozhikkanchi, `pmuni0027` bundles the two
+Ainthinai works, `pmuni0029` bundles Kaar / Elathi / Sirupanchamulam, and
+`pmuni0051` bundles Innnilai / Kainnilai. Each work therefore declares an
+explicit `start`/`end` marker (regex over stripped lines) so we extract only its
+own span.
+
+Verse extraction is **strictly sequential**: a line ending in an integer is only
+accepted when that integer equals the next expected verse number. This rejects
+years, page numbers and stray numerals in the header/prose.
+
+Usage:
+    cd backend/python
+    python -m scraper.scrape_pathinen_minor --report          # parse, print counts, write nothing
+    python -m scraper.scrape_pathinen_minor --work all        # write every work that validates
+    python -m scraper.scrape_pathinen_minor --work nanmanikkadikai
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from dataclasses import dataclass, field
+from pathlib import Path
+
+import requests
+from bs4 import BeautifulSoup
+
+REPO = Path(__file__).parents[3]
+DATA_TEXT = REPO / "data" / "texts"
+RAW_CACHE = REPO / "data" / "raw" / "projectmadurai"
+PM_BASE = "https://www.projectmadurai.org/pm_etexts/utf8"
+HEADERS = {
+    "User-Agent": (
+        "OpenSangam/1.0 (educational research; "
+        "https://github.com/yazhi-lem/open-sangam)"
+    )
+}
+
+TINAI_MAP = {
+    "குறிஞ்சி": "kurinji",
+    "முல்லை": "mullai",
+    "மருதம்": "marutam",
+    "நெய்தல்": "neytal",
+    "பாலை": "palai",
+}
+
+
+@dataclass
+class Work:
+    id: str
+    ta: str
+    en: str
+    poet: str
+    unit: str
+    expected: int
+    pm_id: str
+    start: str | None = None   # regex; content begins AFTER the matched line
+    end: str | None = None     # regex; content stops AT the matched line
+    tinai: str | None = None
+    notes: str = ""
+    extra: dict = field(default_factory=dict)
+    publish: bool = False  # only True once the edition parses cleanly
+
+
+# ── Manifest ──────────────────────────────────────────────────────────────
+# `expected` is the historically attested verse count. A run that does not hit
+# it exactly is reported, not written.
+WORKS: list[Work] = [
+    Work("nanmanikkadikai", "நான்மணிக்கடிகை", "Nanmanikkadikai", "விளம்பி நாகனார்", "verses", 100, "pmuni0047"),
+    Work("acharakkovai", "ஆசாரக்கோவை", "Acharakkovai", "பெருவாயின் முள்ளியார்", "verses", 100, "pmuni0024"),
+    Work("pazhamozhi-nanuru", "பழமொழி நானூறு", "Pazhamozhi Nanuru", "முன்றுறை அரையனார்", "verses", 400, "pmuni0036"),
+    Work("thirikadugam", "திரிகடுகம்", "Thirikadukam", "நல்லாதனார்", "verses", 100, "pmuni0048"),
+    Work("thinaimalai-nurraimpathu", "திணைமாலை நூற்றைம்பது", "Thinaimalai Nurraimbathu", "கணிமேதையார்", "verses", 150, "pmuni0056"),
+    Work("iniyavai-narpathu", "இனியவை நாற்பது", "Iniyavai Narpathu", "பூதஞ்சேந்தனார்", "verses", 40, "pmuni0775"),
+    Work("muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "Muthumozhikkanchi", "மதுரை கூடலூர் கிழார்", "verses", 100, "pmuni0587"),
+    # ── bundled volumes ──
+    Work("inna-narpathu", "இன்னா நாற்பது", "Inna Narpathu", "கபிலர்", "verses", 40, "pmuni0025",
+         start=r"^1\.\s*இன்னா\s*நாற்பது", end=r"^இன்னா\s*நாற்பது\s*முற்றிற்று", publish=True),
+    Work("kalavazhi-narpathu", "களவழி நாற்பது", "Kalavazhi Narpathu", "பொய்கையார்", "verses", 40, "pmuni0025",
+         start=r"^3\.\s*களவழி\s*நாற்பது", end=r"^களவழி\s*நாற்பது\s*முற்றிற்று", publish=True),
+    Work("ainthinai-aimpathu", "ஐந்திணை ஐம்பது", "Ainthinai Aimpathu", "மாறன் பொறையனார்", "verses", 50, "pmuni0027",
+         start=r"^1\.\s.*ஐந்திணை\s*ஐம்பது", end=r"^ஐந்திணை\s*ஐம்பது\s*முற்றிற்று"),
+    Work("ainthinai-ezhupathu", "ஐந்திணை எழுபது", "Ainthinai Ezhupathu", "மூவாதியார்", "verses", 70, "pmuni0027",
+         start=r"^2\.\s.*ஐந்திணை\s*எழுபது", end=r"^ஐந்திணை\s*எழுபது\s*முற்றிற்று"),
+    Work("kainnilai", "கைந்நிலை", "Kainnilai", "புல்லங்காடனார்", "verses", 40, "pmuni0051",
+         start=r"^2\.\s*புல்லங்காடனாரின்\s*கைந்நிலை", end=r"^கைந்நிலை\s*முற்றிற்று"),
+    Work("kaar-narpathu", "கார் நாற்பது", "Kaar Narpathu", "மதுரைக் கண்ணங்கூத்தனார்", "verses", 40, "pmuni0029",
+         start=r"^1\.\s.*கார்\s*நாற்பது", end=r"^2\.\s*கணிமேதையார்"),
+    Work("elathi", "ஏலாதி", "Elathi", "கணிமேதையார்", "verses", 80, "pmuni0029",
+         start=r"^2\.\s*கணிமேதையார்.*ஏலாதி", end=r"^ஏலாதி\s*முற்றிற்று", publish=True),
+    Work("sirupanjamulam", "சிறுபஞ்சமூலம்", "Sirupanchamulam", "காரியாசான்", "verses", 100, "pmuni0029",
+         start=r"^3\.\s*காரியாசான்", end=r"^சிறுபஞ்சமூலம்\s*முற்றிற்று"),
+]
+
+NUM_TAIL = re.compile(r"[ \t]+(\d{1,4})\s*$")
+HEADING = re.compile(r"^\d+\.\s")
+TINAI_HEADING = re.compile(r"^\d+\.\s*(குறிஞ்சி|முல்லை|மருதம்|நெய்தல்|பாலை)\s*$")
+PAL_HEADING = re.compile(r"^\d+\.\s*(அறப்பால்|பொருட்பால்|இன்பப்பால்|வீட்டுப்பால்|காமத்துப்பால்)\s*$")
+
+
+# ── Fetch ─────────────────────────────────────────────────────────────────
+def fetch(pm_id: str) -> list[str]:
+    RAW_CACHE.mkdir(parents=True, exist_ok=True)
+    cache = RAW_CACHE / f"{pm_id}.html"
+    if cache.exists():
+        html = cache.read_text(encoding="utf-8", errors="ignore")
+    else:
+        url = f"{PM_BASE}/{pm_id}.html"
+        resp = requests.get(url, headers=HEADERS, timeout=60)
+        resp.raise_for_status()
+        # Project Madurai serves UTF-8 but does not always declare it; trusting
+        # `resp.text` yields latin-1 mojibake. Decode the bytes explicitly.
+        html = resp.content.decode("utf-8", errors="replace")
+        cache.write_text(html, encoding="utf-8")
+
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n").replace("\xa0", " ")
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    # Content starts after the Project Madurai distribution notice.
+    for i, ln in enumerate(lines):
+        if "kept intact" in ln.lower():
+            return lines[i + 1:]
+    return lines
+
+
+# ── Parse ─────────────────────────────────────────────────────────────────
+def slice_span(lines: list[str], work: Work) -> list[str]:
+    start = 0
+    if work.start:
+        for i, ln in enumerate(lines):
+            if re.search(work.start, ln):
+                start = i + 1
+                break
+        else:
+            raise ValueError(f"{work.id}: start marker not found: {work.start}")
+    end = len(lines)
+    if work.end:
+        for i in range(start, len(lines)):
+            if re.search(work.end, lines[i]):
+                end = i
+                break
+    return lines[start:end]
+
+
+def _is_heading(ln: str) -> bool:
+    """Short `N. <few words>` lines are chapter headings, not verses."""
+    m = re.match(r"^(\d+)\.\s+(.*)$", ln)
+    if not m:
+        return False
+    rest = m.group(2).strip()
+    return len(rest) < 18
+
+
+SKIP_LINE = re.compile(
+    r"^[(@]|^%|^-{3,}|^கடவுள்|^நூல்\s*$|^சிறப்புப்\s*பாயிரம்|^இயல்\s*$|முற்றிற்று|முற்றும்"
+)
+
+def _both_formats(lines):
+    """Parse a span as trailing-numbered and leading-numbered; return both lists."""
+    return _parse_trailing(lines), _parse_leading(lines)
+
+
+def parse_verses(lines: list[str]) -> tuple[list[dict], list[str]]:
+    trailing, leading = _both_formats(lines)
+    verses = trailing if len(trailing) >= len(leading) else leading
+    warnings: list[str] = []
+    verses = _clean_numbers(verses, warnings)
+    return verses, warnings
+
+
+def _clean_numbers(verses, warnings):
+    seen, clean = set(), []
+    for v in verses:
+        if not v.get("text") or v["number"] in seen:
+            continue
+        seen.add(v["number"])
+        clean.append(v)
+    clean.sort(key=lambda v: v["number"])
+    if clean:
+        nums = [v["number"] for v in clean]
+        missing = [n for n in range(nums[0], nums[-1] + 1) if n not in seen]
+        if missing:
+            warnings.append(f"missing numbers in edition: {missing[:12]}{'…' if len(missing) > 12 else ''}")
+        if nums[0] != 1:
+            warnings.append(f"starts at verse {nums[0]}, not 1")
+    return clean
+
+
+def _parse_trailing(lines):
+    verses, buf, last = [], [], 0
+    chapter = tinai = None
+    for ln in lines:
+        if _update_chapter_check(ln):
+            buf = []
+            chapter, tinai = _update_chapter(ln, chapter, tinai)
+            continue
+        if SKIP_LINE.search(ln) or _is_heading(ln):
+            buf = []
+            continue
+        buf.append(ln)
+        m = NUM_TAIL.search(ln)
+        if not m:
+            continue
+        num = int(m.group(1))
+        if num <= last:
+            continue
+        parts = [re.sub(r"\s+\d{1,4}\s*$", "", x).strip() for x in buf]
+        text = " ".join(x for x in parts if x).strip()
+        buf = []
+        if not text:
+            continue
+        verses.append({"number": num, "text": text, "chapter": chapter, "tinai": tinai})
+        last = num
+    return verses
+
+
+def _parse_leading(lines):
+    verses, cur = [], None
+    chapter = tinai = None
+    for ln in lines:
+        m = re.match(r"^(\d{1,4})\.\s+(.*)$", ln)
+        if m:
+            if _is_heading(ln) or SKIP_LINE.search(ln):
+                if cur:
+                    verses.append(cur); cur = None
+                chapter, tinai = _update_chapter(ln, chapter, tinai)
+                continue
+            if cur:
+                verses.append(cur)
+            cur = {"number": int(m.group(1)), "parts": [m.group(2)], "chapter": chapter, "tinai": tinai}
+            continue
+        if _update_chapter_check(ln) or SKIP_LINE.search(ln):
+            if cur:
+                verses.append(cur); cur = None
+            chapter, tinai = _update_chapter(ln, chapter, tinai)
+            continue
+        if cur:
+            cur["parts"].append(ln)
+    if cur:
+        verses.append(cur)
+    return [
+        {"number": v["number"], "text": " ".join(v["parts"]).strip(), "chapter": v["chapter"], "tinai": v["tinai"]}
+        for v in verses
+    ]
+
+
+def _update_chapter(ln: str, chapter, tinai):
+    mt = TINAI_HEADING.match(ln)
+    mp = PAL_HEADING.match(ln)
+    if mt:
+        return mt.group(1), TINAI_MAP.get(mt.group(1))
+    if mp:
+        return mp.group(1), tinai
+    for name in TINAI_MAP:
+        if ln.strip().endswith(name):
+            return name, TINAI_MAP[name]
+    return chapter, tinai
+
+
+def _update_chapter_check(ln: str) -> bool:
+    return bool(TINAI_HEADING.match(ln) or PAL_HEADING.match(ln)) or any(
+        ln.strip().endswith(name) and len(ln.strip()) < 16 for name in TINAI_MAP
+    )
+
+
+# ── Emit ──────────────────────────────────────────────────────────────────
+def to_records(work: Work, verses: list[dict]) -> list[dict]:
+    width = 4 if work.expected >= 1000 else 3
+    # Schema requires `^[a-z]+_\d{2,4}$`; the poem id may keep hyphens but the
+    # record-id prefix must be letters only.
+    prefix = re.sub(r"[^a-z]", "", work.id)
+    source_url = f"{PM_BASE}/{work.pm_id}.html"
+    return [
+        {
+            "id": f"{prefix}_{v['number']:0{width}d}",
+            "poem": work.id,
+            "number": v["number"],
+            "title": "",
+            "heading": v["chapter"] or "",
+            "tinai": v["tinai"] or "unknown",
+            "sangamTamil": v["text"],
+            "urai": None,
+            "english": None,
+            "lines": [{"lineNumber": 1, "text": v["text"], "words": []}],
+            "culturalNotes": [],
+            "audioUrl": None,
+            "source": source_url,
+            "verified": False,
+        }
+        for v in verses
+    ]
+
+
+def write_package(work: Work, records: list[dict]) -> None:
+    """Write the frontend bundle, per-record normalized files and OKF datapackage."""
+    out_dir = DATA_TEXT / work.id
+    norm = out_dir / "normalized"
+    norm.mkdir(parents=True, exist_ok=True)
+
+    (out_dir / f"{work.id}.json").write_text(
+        json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    for rec in records:
+        (norm / f"{rec['id']}.json").write_text(
+            json.dumps(rec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+
+    package = {
+        "name": f"open-sangam-{work.id}",
+        "title": f"{work.ta} — {work.en}",
+        "description": f"{work.en} ({work.ta}), Pathinenkilkkanakku — {len(records)} verses.",
+        "version": "0.1.0",
+        "licenses": [{"name": "odc-pddl", "title": "Open Data Commons Public Domain Dedication and License"}],
+        "sources": [{"title": "Project Madurai", "path": f"https://www.projectmadurai.org/pm_etexts/utf8/{work.pm_id}.html"}],
+        "contributors": [{"name": "Open Tamil NLP contributors", "role": "scraper"}],
+        "keywords": ["Tamil", "Pathinenkilkkanakku", work.en],
+    }
+    (out_dir / "datapackage.json").write_text(
+        json.dumps(package, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--work", default="all", help="work id or 'all'")
+    ap.add_argument("--report", action="store_true", help="parse only; print counts, write nothing")
+    args = ap.parse_args(argv)
+
+    selected = WORKS if args.work == "all" else [w for w in WORKS if w.id == args.work]
+    if not selected:
+        print(f"unknown work: {args.work}", file=sys.stderr)
+        return 2
+
+    ok, bad = [], []
+    for work in selected:
+        try:
+            lines = fetch(work.pm_id)
+            span = slice_span(lines, work)
+            verses, warnings = parse_verses(span)
+        except Exception as exc:  # network / marker problems
+            bad.append((work.id, f"error: {exc}"))
+            print(f"  {work.id:26s} ERROR {exc}", file=sys.stderr)
+            continue
+
+        status = "OK " if len(verses) == work.expected else "MISMATCH"
+        print(f"  {work.id:26s} {status} {len(verses):>3}/{work.expected} verses")
+        for w in warnings:
+            print(f"      ! {w}")
+        if len(verses) == work.expected:
+            ok.append(work)
+            if work.publish and not args.report:
+                records = to_records(work, verses)
+                write_package(work, records)
+                print(f"      wrote data/texts/{work.id}/ ({len(records)} records)")
+        else:
+            bad.append((work.id, f"{len(verses)}/{work.expected}"))
+
+    print(f"\n{len(ok)} works validated, {len(bad)} need review")
+    for wid, why in bad:
+        print(f"  - {wid}: {why}")
+    return 0 if not bad else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

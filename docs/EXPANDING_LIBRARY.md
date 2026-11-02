@@ -54,6 +54,31 @@ schema so the UI reuses `PoemCard` and the reader unchanged.
 
 ---
 
+### Tier 0 — ingestion status (measured, not promised)
+
+`backend/python/scraper/scrape_pathinen_minor.py` is the manifest-driven ingester.
+It validates strictly (sequential numbering, schema v2) and only **publishes**
+works whose edition parses cleanly (`publish=True`). Current run against live
+Project Madurai:
+
+| Work | Edition | Parsed | Status |
+|---|---|---|---|
+| Inna Narpathu | pmuni0025 §1 | 40/40 | ✅ published (reader) |
+| Kalavazhi Narpathu | pmuni0025 §3 | 40/40 | ✅ published (reader) |
+| Elathi | pmuni0029 §2 | 80/80 | ✅ published (reader) |
+| Iniyavai Narpathu | pmuni0775 | 40/40 | ⚠️ parses by count, but the commentary edition leaks headings — needs a per-work skip profile |
+| Kaar Narpathu | pmuni0029 §1 | 40/40 | ⚠️ interleaves `இதுவுமது` colophons — needs a skip profile |
+| Nanmanikkadikai | pmuni0047 | 106/100 | ⚠️ edition has extra verses; needs collation |
+| Acharakkovai | pmuni0047? (wrong id) | 78/100 | ⚠️ wrong page; find the right editon |
+| Ainthinai Aimpathu | pmuni0027 §1 | 49/50 | ⚠️ one numbering anomaly |
+| Ainthinai Ezhupathu | pmuni0027 §2 | 65/70 | ⚠️ attested lost verses (25, 26, 62) |
+| Sirupanchamulam | pmuni0029 §3 | 98/100 | ⚠️ two missing |
+| Pazhamozhi / Thirikadugam / Thinaimalai / Kainnilai | — | low | ⚠️ verse numbers at line start / page-number artefacts |
+
+**Rule:** a work flips to `publish=True` only when it parses contiguous 1..n,
+passes `normalizer.validate_corpus` with **0 errors**, and carries no header or
+colophon contamination (enforced by `frontend/src/data/pathinen.test.js`).
+
 ## Tier 1 — Depth per verse (the scholar's real request)
 
 We have **2,552 readable Sangam verses**, but most carry only the original. The

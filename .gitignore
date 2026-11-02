@@ -66,3 +66,6 @@ coverage/
 .pytest_cache/
 
 venv2/
+
+# Raw Project Madurai fetches (re-fetchable via scrape_pathinen_minor)
+data/raw/
