@@ -71,13 +71,15 @@ Project Madurai:
 | Thirikadugam | pmuni0048 | 100/100 | ✅ published (reader) — heading-numbered edition |
 | Muthumozhikkanchi | pmuni0025 §4 | 100/100 | ✅ published (reader) — group headings dropped, first line kept |
 | Nanmanikkadikai | pmuni0047 | 106/100 | ⚠️ edition has extra verses; needs collation |
-| Acharakkovai | pmuni0024 | 97/100 | ⚠️ edition omits verses 47, 64, 97 |
+| Acharakkovai | pmuni0024 | 97/100 | ✅ published (partial, 97/100) — edition omits 47, 64, 97 |
 | Ainthinai Aimpathu | pmuni0027 §1 | 49/50 | ⚠️ one numbering anomaly |
 | Ainthinai Ezhupathu | pmuni0027 §2 | 65/70 | ⚠️ attested lost verses (25, 26, 62) |
-| Sirupanchamulam | pmuni0029 §3 | 98/100 | ⚠️ two missing |
-| Pazhamozhi Nanuru | pmuni0036 | 395/400 | ⚠️ edition omits 156, 177, 191, 381 |
+| Sirupanchamulam | pmuni0029 §3 | 98/100 | ✅ published (partial, 98/100) — edition omits 99, 100 |
+| Pazhamozhi Nanuru | pmuni0036 | 395/400 | ✅ published (partial, 395/400) — edition omits 156, 177, 191, 381 |
 | Thinaimalai Nurraimbathu | pmuni0056 | 152/150 | ⚠️ parenthetical numbering, 2 spurious extras |
 | Kainnilai | pmuni0051 §2 | 60/40 | ⚠️ per-tinai numbering restarts — needs global renumbering |
+
+**Partial editions:** when the source genuinely omits a few verses (≤6), the work is published as a labelled subset — the reader shows `available / total` and the datapackage records the missing numbers. Nothing is invented.
 
 **Rule:** a work flips to `publish=True` only when it parses contiguous 1..n,
 passes `normalizer.validate_corpus` with **0 errors**, and carries no header or

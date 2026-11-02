@@ -25,5 +25,10 @@
     "Tamil",
     "Pathinenkilkkanakku",
     "Iniyavai Narpathu"
-  ]
+  ],
+  "coverage": {
+    "available": 40,
+    "expected": 40,
+    "missing": []
+  }
 }

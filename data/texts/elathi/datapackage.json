@@ -25,5 +25,10 @@
     "Tamil",
     "Pathinenkilkkanakku",
     "Elathi"
-  ]
+  ],
+  "coverage": {
+    "available": 80,
+    "expected": 80,
+    "missing": []
+  }
 }

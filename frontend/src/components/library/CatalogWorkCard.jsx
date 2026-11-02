@@ -59,7 +59,9 @@ export default function CatalogWorkCard({ work }) {
           ))}
         </span>
         <span className="shrink-0 font-mono text-faint">
-          {formatWorkCount(work, language)}
+          {work.availableCount != null && work.availableCount !== work.count
+            ? `${work.availableCount.toLocaleString()} / ${work.count.toLocaleString()}`
+            : formatWorkCount(work, language)}
         </span>
       </div>
     </div>

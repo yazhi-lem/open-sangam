@@ -68,3 +68,37 @@ test('published works are marked readable in the catalog', () => {
     assert.equal(entry.availability, 'reader', `${work.id}: should be reader`)
   }
 })
+
+// Works whose source edition preserves most but not all verses (partial, labelled).
+const PARTIAL = [
+  { id: 'acharakkovai', file: 'acharakkovai', canonical: 100 },
+  { id: 'pazhamozhi-nanuru', file: 'pazhamozhi-nanuru', canonical: 400 },
+  { id: 'sirupanjamulam', file: 'sirupanjamulam', canonical: 100 },
+]
+
+test('partial editions are ordered subsets within the canonical count', () => {
+  for (const work of PARTIAL) {
+    const data = JSON.parse(
+      readFileSync(resolve(root, `data/texts/${work.file}/${work.file}.json`), 'utf8')
+    )
+    assert.ok(data.length > 0 && data.length < work.canonical, `${work.id}: must be partial`)
+    const nums = data.map((v) => v.number)
+    assert.deepEqual(nums, [...nums].sort((a, b) => a - b), `${work.id}: must be ordered`)
+    assert.equal(new Set(nums).size, nums.length, `${work.id}: no duplicate numbers`)
+    assert.ok(Math.max(...nums) <= work.canonical, `${work.id}: number exceeds canonical count`)
+    for (const rec of data) {
+      assert.ok(!BAD.test(rec.sangamTamil), `${rec.id}: contaminated text`)
+      assert.ok(rec.sangamTamil && rec.source, `${rec.id}: required fields`)
+    }
+  }
+})
+
+test('partial works expose availableCount in the catalog', () => {
+  const catalog = JSON.parse(readFileSync(resolve(root, 'data/library/catalog.json'), 'utf8'))
+  for (const work of PARTIAL) {
+    const entry = catalog.works.find((w) => w.id === work.id)
+    assert.ok(entry, `${work.id}: not in catalog`)
+    assert.equal(entry.availability, 'reader')
+    assert.ok(entry.availableCount > 0 && entry.availableCount < entry.count, `${work.id}: availableCount`)
+  }
+})

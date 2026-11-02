@@ -25,5 +25,10 @@
     "Tamil",
     "Pathinenkilkkanakku",
     "Muthumozhikkanchi"
-  ]
+  ],
+  "coverage": {
+    "available": 100,
+    "expected": 100,
+    "missing": []
+  }
 }

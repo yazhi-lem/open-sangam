@@ -1,0 +1,40 @@
+{
+  "name": "open-sangam-pazhamozhi-nanuru",
+  "title": "பழமொழி நானூறு — Pazhamozhi Nanuru",
+  "description": "Pazhamozhi Nanuru (பழமொழி நானூறு), Pathinenkilkkanakku — 395 verses.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Madurai",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0036.html"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Open Tamil NLP contributors",
+      "role": "scraper"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Pathinenkilkkanakku",
+    "Pazhamozhi Nanuru"
+  ],
+  "coverage": {
+    "available": 395,
+    "expected": 400,
+    "missing": [
+      156,
+      177,
+      191,
+      381,
+      400
+    ]
+  }
+}

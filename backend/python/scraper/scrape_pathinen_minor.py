@@ -70,6 +70,8 @@ class Work:
     extra: dict = field(default_factory=dict)
     publish: bool = False  # only True once the edition parses cleanly
     skip: str | None = None  # extra per-work regex of lines to drop
+    allow_gaps: bool = False  # edition may omit a few verses; publish partial, labelled
+    heading_title: bool = False  # `N. <rest>` is always a title, never verse text
 
 
 # ── Manifest ──────────────────────────────────────────────────────────────
@@ -77,9 +79,9 @@ class Work:
 # it exactly is reported, not written.
 WORKS: list[Work] = [
     Work("nanmanikkadikai", "நான்மணிக்கடிகை", "Nanmanikkadikai", "விளம்பி நாகனார்", "verses", 100, "pmuni0047"),
-    Work("acharakkovai", "ஆசாரக்கோவை", "Acharakkovai", "பெருவாயின் முள்ளியார்", "verses", 100, "pmuni0024"),
-    Work("pazhamozhi-nanuru", "பழமொழி நானூறு", "Pazhamozhi Nanuru", "முன்றுறை அரையனார்", "verses", 400, "pmuni0036"),
-    Work("thirikadugam", "திரிகடுகம்", "Thirikadukam", "நல்லாதனார்", "verses", 100, "pmuni0048", publish=True),
+    Work("acharakkovai", "ஆசாரக்கோவை", "Acharakkovai", "பெருவாயின் முள்ளியார்", "verses", 100, "pmuni0024", allow_gaps=True, publish=True, heading_title=True),
+    Work("pazhamozhi-nanuru", "பழமொழி நானூறு", "Pazhamozhi Nanuru", "முன்றுறை அரையனார்", "verses", 400, "pmuni0036", allow_gaps=True, publish=True),
+       Work("thirikadugam", "திரிகடுகம்", "Thirikadukam", "நல்லாதனார்", "verses", 100, "pmuni0048", publish=True, heading_title=True),
     Work("thinaimalai-nurraimpathu", "திணைமாலை நூற்றைம்பது", "Thinaimalai Nurraimbathu", "கணிமேதையார்", "verses", 150, "pmuni0056"),
     Work("iniyavai-narpathu", "இனியவை நாற்பது", "Iniyavai Narpathu", "பூதஞ்சேந்தனார்", "verses", 40, "pmuni0025",
          start=r"^2\.\s*இனியவை\s*நாற்பது", end=r"^இனியவை\s*நாற்பது\s*முற்றிற்று", publish=True),
@@ -91,9 +93,9 @@ WORKS: list[Work] = [
     Work("kalavazhi-narpathu", "களவழி நாற்பது", "Kalavazhi Narpathu", "பொய்கையார்", "verses", 40, "pmuni0025",
          start=r"^3\.\s*களவழி\s*நாற்பது", end=r"^களவழி\s*நாற்பது\s*முற்றிற்று", publish=True),
     Work("ainthinai-aimpathu", "ஐந்திணை ஐம்பது", "Ainthinai Aimpathu", "மாறன் பொறையனார்", "verses", 50, "pmuni0027",
-         start=r"^1\.\s.*ஐந்திணை\s*ஐம்பது", end=r"^ஐந்திணை\s*ஐம்பது\s*முற்றிற்று"),
+         start=r"^1\.\s.*ஐந்திணை\s*ஐம்பது", end=r"^ஐந்திணை\s*ஐம்பது\s*முற்றிற்று", allow_gaps=True),
     Work("ainthinai-ezhupathu", "ஐந்திணை எழுபது", "Ainthinai Ezhupathu", "மூவாதியார்", "verses", 70, "pmuni0027",
-         start=r"^2\.\s.*ஐந்திணை\s*எழுபது", end=r"^ஐந்திணை\s*எழுபது\s*முற்றிற்று"),
+         start=r"^2\.\s.*ஐந்திணை\s*எழுபது", end=r"^ஐந்திணை\s*எழுபது\s*முற்றிற்று", allow_gaps=True),
     Work("kainnilai", "கைந்நிலை", "Kainnilai", "புல்லங்காடனார்", "verses", 40, "pmuni0051",
          start=r"^2\.\s*புல்லங்காடனாரின்\s*கைந்நிலை", end=r"^கைந்நிலை\s*முற்றிற்று"),
     Work("kaar-narpathu", "கார் நாற்பது", "Kaar Narpathu", "மதுரைக் கண்ணங்கூத்தனார்", "verses", 40, "pmuni0029",
@@ -102,7 +104,7 @@ WORKS: list[Work] = [
     Work("elathi", "ஏலாதி", "Elathi", "கணிமேதையார்", "verses", 80, "pmuni0029",
          start=r"^2\.\s*கணிமேதையார்.*ஏலாதி", end=r"^ஏலாதி\s*முற்றிற்று", publish=True),
     Work("sirupanjamulam", "சிறுபஞ்சமூலம்", "Sirupanchamulam", "காரியாசான்", "verses", 100, "pmuni0029",
-         start=r"^3\.\s*காரியாசான்", end=r"^சிறுபஞ்சமூலம்\s*முற்றிற்று"),
+         start=r"^3\.\s*காரியாசான்", end=r"^சிறுபஞ்சமூலம்\s*முற்றிற்று", allow_gaps=True, publish=True),
 ]
 
 NUM_TAIL = re.compile(r"[ \t]+(\d{1,4})\s*$")
@@ -185,10 +187,10 @@ def _best(candidates):
     return max(candidates, key=lambda vs: (1 if _is_contiguous(vs) else 0, len(vs)))
 
 
-def parse_verses(lines: list[str], skip: str | None = None) -> tuple[list[dict], list[str]]:
+def parse_verses(lines: list[str], skip: str | None = None, heading_title: bool = False) -> tuple[list[dict], list[str]]:
     candidates = [
         _parse_trailing(lines, skip),
-        _parse_heading_numbered(lines, skip),
+        _parse_heading_numbered(lines, skip, heading_title),
         _parse_paren_trailing(lines, skip),
         _parse_leading(lines, skip),
     ]
@@ -273,7 +275,7 @@ def _parse_leading(lines, skip=None):
     ]
 
 
-def _parse_heading_numbered(lines, skip=None):
+def _parse_heading_numbered(lines, skip=None, heading_title=False):
     """Verses introduced by a leading `N.` (with an optional title) and no trailing number."""
     verses, cur = [], None
     chapter = tinai = None
@@ -291,8 +293,9 @@ def _parse_heading_numbered(lines, skip=None):
             if cur is None or num > cur["number"]:
                 if cur:
                     verses.append(cur)
-                # A short `N. title` is a heading; a long one is the first verse line.
-                if len(rest) >= 18:
+                # A short `N. title` is a heading; a long one is the first verse line
+                # unless this edition always numbers verses with a title.
+                if not heading_title and len(rest) >= 18:
                     cur = {"number": num, "title": "", "parts": [rest], "chapter": chapter, "tinai": tinai}
                 else:
                     cur = {"number": num, "title": rest, "parts": [], "chapter": chapter, "tinai": tinai}
@@ -403,6 +406,9 @@ def to_records(work: Work, verses: list[dict]) -> list[dict]:
 
 def write_package(work: Work, records: list[dict]) -> None:
     """Write the frontend bundle, per-record normalized files and OKF datapackage."""
+    nums = {r["number"] for r in records}
+    missing = [x for x in range(1, work.expected + 1) if x not in nums]
+    coverage = {"available": len(records), "expected": work.expected, "missing": missing}
     out_dir = DATA_TEXT / work.id
     norm = out_dir / "normalized"
     norm.mkdir(parents=True, exist_ok=True)
@@ -424,6 +430,7 @@ def write_package(work: Work, records: list[dict]) -> None:
         "sources": [{"title": "Project Madurai", "path": f"https://www.projectmadurai.org/pm_etexts/utf8/{work.pm_id}.html"}],
         "contributors": [{"name": "Open Tamil NLP contributors", "role": "scraper"}],
         "keywords": ["Tamil", "Pathinenkilkkanakku", work.en],
+        "coverage": coverage,
     }
     (out_dir / "datapackage.json").write_text(
         json.dumps(package, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -446,17 +453,27 @@ def main(argv: list[str] | None = None) -> int:
         try:
             lines = fetch(work.pm_id)
             span = slice_span(lines, work)
-            verses, warnings = parse_verses(span, work.skip)
+            verses, warnings = parse_verses(span, work.skip, work.heading_title)
         except Exception as exc:  # network / marker problems
             bad.append((work.id, f"error: {exc}"))
             print(f"  {work.id:26s} ERROR {exc}", file=sys.stderr)
             continue
 
-        status = "OK " if len(verses) == work.expected else "MISMATCH"
-        print(f"  {work.id:26s} {status} {len(verses):>3}/{work.expected} verses")
+        n = len(verses)
+        nums = {v["number"] for v in verses}
+        missing = [x for x in range(1, work.expected + 1) if x not in nums]
+        exact = n == work.expected and _is_contiguous(verses)
+        partial = (
+            work.allow_gaps
+            and 0 < n < work.expected
+            and len(missing) <= 6
+            and max(nums) <= work.expected
+        )
+        status = "OK " if exact else ("PART" if partial else "MISMATCH")
+        print(f"  {work.id:26s} {status} {n:>3}/{work.expected} verses")
         for w in warnings:
             print(f"      ! {w}")
-        if len(verses) == work.expected:
+        if exact or partial:
             ok.append(work)
             if work.publish and not args.report:
                 records = to_records(work, verses)

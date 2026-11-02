@@ -25,5 +25,10 @@
     "Tamil",
     "Pathinenkilkkanakku",
     "Kaar Narpathu"
-  ]
+  ],
+  "coverage": {
+    "available": 40,
+    "expected": 40,
+    "missing": []
+  }
 }
