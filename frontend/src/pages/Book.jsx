@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy, Square, Volume2 } from 'lucide-react'
+import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy, Square, Volume2, BookOpen, X, Users } from 'lucide-react'
 import { POEMS, COLLECTIONS, POEM_BY_ID } from '../data/poems.js'
 import WordGlossary from '../components/reader/WordGlossary'
 import AudioPlayer from '../components/reader/AudioPlayer'
@@ -50,11 +50,19 @@ function PoemCard({ poem }) {
     '8thokai': 'Anthology',
     '10paddu': 'Idyll',
     pathinenkilkkanakku: 'Minor Work',
+    aimperumkappiyam: 'Great Epic',
+    'bhakti-corpus': 'Bhakti',
+    'grammar-treatise': 'Grammar',
+    artifacts: 'Artifact',
   }[poem.collection] || 'Work'
   const collectionVariant = {
     '8thokai': 'anthology',
     '10paddu': 'idyll',
     pathinenkilkkanakku: 'accent',
+    aimperumkappiyam: 'accent',
+    'bhakti-corpus': 'kurinji',
+    'grammar-treatise': 'marutam',
+    artifacts: 'outline',
   }[poem.collection] || 'default'
 
   const content = (
@@ -114,8 +122,22 @@ function CatalogWorkCard({ work }) {
   const language = useAppStore((s) => s.language)
   const status = AVAILABILITY_LABELS[work.availability] || AVAILABILITY_LABELS.metadata
   const readable = work.availability === 'reader'
+  const nav = useNavigate()
   return (
-    <div className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-surface p-4 transition-all duration-200">
+    <div
+      className={`group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border p-4 transition-all duration-200 ${
+        readable
+          ? 'border-line-strong bg-surface hover:border-accent/60 hover:shadow-md cursor-pointer'
+          : 'border-line bg-surface cursor-default'
+      }`}
+      onClick={() => {
+        if (readable && POEM_BY_ID[work.id]) {
+          nav(`/book/${work.id}`)
+        }
+      }}
+      role="button"
+      tabIndex={readable ? 0 : -1}
+    >
       <div className="mb-3 flex items-center justify-between gap-2">
         <Badge variant={readable ? 'accent' : 'outline'} size="sm">
           {language === 'ta' ? status.ta : status.en}
@@ -240,11 +262,91 @@ function CatalogCollection({ collection, works }) {
   )
 }
 
+function ContributeModal({ open, onClose }) {
+  const language = useAppStore((s) => s.language)
+  const L = (ta, en) => (language === 'ta' ? ta : en)
+  if (!open) return null
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm" onClick={onClose}>
+      <div
+        className="relative w-full max-w-lg rounded-2xl border border-line-strong bg-surface p-6 shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute right-4 top-4 rounded-full p-1 text-muted hover:bg-surface-alt hover:text-primary transition-colors"
+          aria-label="Close"
+        >
+          <X size={18} />
+        </button>
+        <div className="mb-4 flex items-center gap-2">
+          <Users size={20} className="text-accent" />
+          <h2 className={`text-xl font-bold text-primary ${language === 'ta' ? 'tamil' : ''}`}>
+            {L('நூலகத்தை வளர்க்க உதவு', 'Contribute to the Library')}
+          </h2>
+        </div>
+        <div className="space-y-4 text-sm text-muted">
+          <p className={language === 'ta' ? 'tamil' : ''}>
+            {L(
+              'ஓப்பன் சங்கம் ஒரு திறந்த மூலத் திட்டம். ஒவ்வொரு நூலையும் Sangam Tamil · Modern Tamil · English என்ற மூன்று அடுக்குகளில் உருவாக்குகிறோம்.',
+              'Open Sangam is an open-source project. Every work is built in three layers: Sangam Tamil · Modern Tamil · English.'
+            )}
+          </p>
+          <div className="space-y-3 rounded-xl border border-line bg-surface-alt/50 p-4">
+            <h3 className="font-semibold text-primary">{L('மூன்று வழிகளில் பங்களிக்கலாம்', 'Three ways to contribute')}</h3>
+            <ol className="list-decimal space-y-2 pl-4">
+              <li>
+                <strong>{L('அட்டவணையில் புதிய நூலைச் சேர்', 'Add a new work to the catalog')}</strong>
+                <p className="mt-0.5 text-xs text-faint">
+                  {L(
+                    'data/library/catalog.json இல் catagory, author, period, count ஆகியவற்றை சேர்க்கவும்.',
+                    'Add category, author, period, and count to data/library/catalog.json.'
+                  )}
+                </p>
+              </li>
+              <li>
+                <strong>{L('பாடல் JSON தரவை உருவாக்கு', 'Produce verse JSON data')}</strong>
+                <p className="mt-0.5 text-xs text-faint">
+                  {L(
+                    'scripts/scraper/ இல் Project Madurai அல்லது Tamil Virtual Academy இலிருந்து பாடலை இறக்கி, backend/python/normalizer/ இல் சுத்திகரிக்கவும்.',
+                    'Scrape from Project Madurai or Tamil Virtual Academy under scripts/scraper/, then normalize via backend/python/normalizer/.'
+                  )}
+                </p>
+              </li>
+              <li>
+                <strong>{L('மொழிபெயர்ப்பு அல்லது உரை எழுது', 'Write a translation or urai')}</strong>
+                <p className="mt-0.5 text-xs text-faint">
+                  {L(
+                    'ஒவ்வொரு வரிக்கும் நவீனத் தமிழ் உரை ஆங்கில மொழிபெயர்ப்பு தேவை.',
+                    'Every line needs modern Tamil urai and English translation.'
+                  )}
+                </p>
+              </li>
+            </ol>
+          </div>
+          <p className="text-xs text-faint">
+            {L(
+              'வழிகாட்டிக்கு docs/CONTRIBUTING_LIBRARY.md ஐப் படியுங்கள். தமிழ் அறிஞர் ஆய்வு மிகவும் வரவேற்கப்படுகிறது.',
+              'Read docs/CONTRIBUTING_LIBRARY.md for the full guide. Scholar review is especially welcome.'
+            )}
+          </p>
+        </div>
+        <div className="mt-5 flex justify-end">
+          <Button variant="outline" size="sm" onClick={onClose}>
+            {L('மூடு', 'Close')}
+          </Button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function Library() {
   const language = useAppStore((s) => s.language)
   const L = (ta, en) => (language === 'ta' ? ta : en)
   const [searchQuery, setSearchQuery] = useState('')
   const [chipFilter, setChipFilter] = useState(null) // null | id from FILTER_CHIPS
+  const [showContribute, setShowContribute] = useState(false)
 
   const filteredPoems = POEMS.filter((p) => {
     const matchesCollection = poemMatchesChip(p, chipFilter)
@@ -267,15 +369,21 @@ function Library() {
       {/* Header: one line of orientation, then search and the akam / puram / tiṇai chips */}
       <Reveal as="div" className="w-full px-4 sm:px-6 pt-6 pb-5" duration={0.6}>
         <div className="space-y-2">
-          <h1 className={`text-2xl sm:text-4xl font-extrabold text-primary leading-tight ${language === 'ta' ? 'tamil' : ''}`}>
-            {L('தமிழ் நூலகம்', 'Tamil Library')}
-          </h1>
+          <div className="flex flex-wrap items-baseline justify-between gap-4">
+            <h1 className={`text-2xl sm:text-4xl font-extrabold text-primary leading-tight ${language === 'ta' ? 'tamil' : ''}`}>
+              {L('தமிழ் நூலகம்', 'Tamil Library')}
+            </h1>
+            <Button variant="outline" size="sm" onClick={() => setShowContribute(true)}>
+              <BookOpen size={14} className="mr-1.5" />
+              {L('பங்களிக்க', 'Contribute')}
+            </Button>
+          </div>
           <p className="text-base sm:text-lg text-muted font-light">
-            {L('சங்கம் · பதினெண்கீழ்க்கணக்கு · கலைப்பொருட்கள்', 'Sangam · Pathinenkilkkanakku · Artifacts')}
+            {L('சங்கம் · பதினெண்கீழ்க்கணக்கு · ஐம்பெருங்காப்பியங்கள் · பக்தி · இலக்கணம்', 'Sangam · Pathinenkilkkanakku · Great Epics · Bhakti · Grammar')}
           </p>
           {/* † draft Tamil, needs native review */}
           <p className={`text-sm text-muted pt-1 ${language === 'ta' ? 'tamil' : ''}`}>
-            {L('பாடலைத் தேர்ந்தெடு → படி → பொருள் அறி', 'Choose a poem → Read → Understand')}
+            {L('நூலைத் தேர்ந்தெடு → படி → பொருள் அறி', 'Choose a work → Read → Understand')}
           </p>
         </div>
 
@@ -343,7 +451,8 @@ function Library() {
           </div>
         ))}
 
-        {!chipFilter &&
+        <ContributeModal open={showContribute} onClose={() => setShowContribute(false)} />
+      {!chipFilter &&
           LIBRARY_COLLECTIONS.map((collection) => {
             if (collection.id === 'artifacts') {
               const artifacts = ARTIFACTS.filter((artifact) =>

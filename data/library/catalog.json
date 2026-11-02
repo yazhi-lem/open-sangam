@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-30",
   "description": "Catalog of Tamil works and artifact collections beyond the Ettuthokai / Pattuppattu reader corpus. `availability` is `reader` when normalized verse JSON exists, `metadata` when only the catalog record is present, and `planned` when there is no data yet. `languages` lists text languages; `translations` lists available translation languages. Adding a work here does not claim it is readable: ingestion is tracked in docs/library/LIBRARY_ROADMAP.md.",
   "collections": [
     {
@@ -23,6 +23,27 @@
       "en": "Tamil Artifacts",
       "kind": "material-culture",
       "description": "Inscriptions, coins, manuscripts, sculpture, architecture, music and material culture. The full register, legal sources and scholar-reader layers live in data/library/artifacts.json (see docs/library/ARTIFACT_LIBRARY.md)."
+    },
+    {
+      "id": "aimperumkappiyam",
+      "ta": "ஐம்பெருங்காப்பியங்கள்",
+      "en": "Five Great Epics",
+      "kind": "epic",
+      "description": "The five grand epics of Tamil literature (Aimperumkappiyam). Silappatikaram and Manimekalai are catalogued under Tamil Classics; Civaka Cintamani survives complete, while Valayapathi and Kundalakesi are considered lost."
+    },
+    {
+      "id": "bhakti-corpus",
+      "ta": "பக்தி இலக்கியம்",
+      "en": "Bhakti Literature",
+      "kind": "devotional",
+      "description": "Tamil devotional poetry and hagiography from the Pallava and Chola periods, encompassing Saivite hymns, Vaishnava pasurams, and the lives of the Nayanar saints."
+    },
+    {
+      "id": "grammar-treatise",
+      "ta": "இலக்கண நூல்கள்",
+      "en": "Grammar and Poetics",
+      "kind": "didactic",
+      "description": "Classical Tamil grammatical treatises, poetics manuals, and works on akapporul (interior/love poetics)."
     }
   ],
   "works": [
@@ -461,6 +482,156 @@
       "source": "Project Madurai (Kausalya Hart English translation)",
       "rights": "public-domain text; translation rights vary",
       "notes": "Vaishnava devotional corpus in twelve parts."
+    },
+    {
+      "id": "civaka-cintamani",
+      "ta": "சீவக சிந்தாமணி",
+      "en": "Civaka Cintamani",
+      "collection": "aimperumkappiyam",
+      "author": "திருத்தக்க தேவர் · Thiruttakka Thevar",
+      "period": "c. 10th century CE",
+      "count": 3140,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": "Jain epic; one of the Five Great Epics (Aimperumkappiyam). Survives complete in 13 cantos."
+    },
+    {
+      "id": "valayapathi",
+      "ta": "வளையாபதி",
+      "en": "Valayapathi",
+      "collection": "aimperumkappiyam",
+      "author": "unknown (Jain tradition)",
+      "period": "c. 9th–10th century CE",
+      "count": 0,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "planned",
+      "source": "Lost text; fragments only",
+      "rights": "public-domain text",
+      "notes": "One of the Five Great Epics; considered lost except for fragments and urai references."
+    },
+    {
+      "id": "kundalakesi",
+      "ta": "குண்டலகேசி",
+      "en": "Kundalakesi",
+      "collection": "aimperumkappiyam",
+      "author": "நாதத்தனார் · Nathathanaar",
+      "period": "c. 9th–10th century CE",
+      "count": 0,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "planned",
+      "source": "Lost text; fragments only",
+      "rights": "public-domain text",
+      "notes": "Jain epic; one of the Five Great Epics. Extant only as quotations in medieval commentaries."
+    },
+    {
+      "id": "thiruvasagam",
+      "ta": "திருவாசகம்",
+      "en": "Thiruvasagam",
+      "collection": "bhakti-corpus",
+      "author": "மாணிக்கவாசகர் · Manikkavasagar",
+      "period": "c. 9th century CE",
+      "count": 400,
+      "unit": "hymns",
+      "languages": [
+        "ta"
+      ],
+      "translations": [
+        "en"
+      ],
+      "availability": "metadata",
+      "source": "Project Madurai / Digital Tamil Lexicon",
+      "rights": "public-domain text",
+      "notes": "The 8th Thirumurai; intensely devotional Saivite poetry."
+    },
+    {
+      "id": "periyapuranam",
+      "ta": "பெரியபுராணம்",
+      "en": "Periya Puranam",
+      "collection": "bhakti-corpus",
+      "author": "சேக்கிழார் · Sekkizhar",
+      "period": "c. 1149 CE",
+      "count": 4253,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [
+        "en"
+      ],
+      "availability": "metadata",
+      "source": "Project Madurai",
+      "rights": "public-domain text",
+      "notes": "The great Saivite hagiography; lives of the 63 Nayanar saints."
+    },
+    {
+      "id": "ramavataram",
+      "ta": "கம்பராமாயணம்",
+      "en": "Kamba Ramayanam",
+      "collection": "tamil-classics",
+      "author": "கம்பர் · Kamban",
+      "period": "c. 12th century CE",
+      "count": 10553,
+      "unit": "verses",
+      "languages": [
+        "ta"
+      ],
+      "translations": [
+        "en"
+      ],
+      "availability": "metadata",
+      "source": "Project Madurai / Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": "Tamil adaptation of the Ramayana in six kandas; cornerstone of Tamil epic tradition."
+    },
+    {
+      "id": "iraiyanar-akapporul",
+      "ta": "இறையனார் அகப்பொருள்",
+      "en": "Iraiyanar Akapporul",
+      "collection": "grammar-treatise",
+      "author": "இறையனார் · Iraiyanar",
+      "period": "c. 8th–10th century CE",
+      "count": 450,
+      "unit": "sutras",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": "Classical treatise on akam (interior/love) poetics; accompanied by the extensive commentary of Nakkiranar."
+    },
+    {
+      "id": "virasoliyam",
+      "ta": "வீரசோழியம்",
+      "en": "Virasoliyam",
+      "collection": "grammar-treatise",
+      "author": "புத்தமித்திரனார் · Buddhamitra (Puttamittiranar)",
+      "period": "c. 11th century CE",
+      "count": 450,
+      "unit": "sutras",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "metadata",
+      "source": "Tamil Virtual Academy",
+      "rights": "public-domain text",
+      "notes": "Tamil grammar from the Chola period; synthesises Tamil and Sanskrit grammatical traditions."
     }
   ]
 }
