@@ -18,6 +18,8 @@ import ClickableVerse from './ClickableVerse'
 import DraftBadge from './DraftBadge'
 import LayerToggle from './LayerToggle'
 import InlineVoiceButton from './InlineVoiceButton'
+import StructureNav from './StructureNav'
+import { isStructural, sectionKindLabel } from '../../data/structure.js'
 
 export default function Reader({ poem, sectionId }) {
   const language = useAppStore((s) => s.language)
@@ -171,6 +173,8 @@ export default function Reader({ poem, sectionId }) {
   const contextTinai = sec.tinai ? TINAI_WORLD[sec.tinai] : null
   const glossaryEntries = extractGlossaryEntries(sec, 60)
   const isSection = 'sectionNumber' in sec
+  const sectionKind = poem.sectionKind || 'verse'
+  const structured = isStructural(sectionKind)
   const num = isSection ? sec.sectionNumber : sec.number
   const label = sec.title || sec.heading || sec.poemTitle || null
 
@@ -210,22 +214,38 @@ export default function Reader({ poem, sectionId }) {
             <Badge variant={poem.collection === '8thokai' ? 'anthology' : 'idyll'} size="sm">
               {poem.collection === '8thokai' ? L('தொகை', 'Anthology') : L('பாட்டு', 'Idyll')}
             </Badge>
-            <span className="text-xs text-faint font-mono">{sections.length} verses</span>
+            <span className="text-xs text-faint font-mono">
+              {sections.length} {sectionKindLabel(sectionKind, language)}
+            </span>
           </div>
           <h2 className="tamil text-xl font-bold text-primary leading-tight pt-1">{poem.ta}</h2>
           <p className="text-xs text-muted">{poem.en}</p>
-          <div className="pt-2">
-            <Input
-              size="sm"
-              type="text"
-              value={sectionFilter}
-              onChange={(e) => setSectionFilter(e.target.value)}
-              onClear={() => setSectionFilter('')}
-              placeholder={L("பகுதி அல்லது புலவரைத் தேடு...", "Filter section or poet...")}
-            />
-          </div>
+          {!structured && (
+            <div className="pt-2">
+              <Input
+                size="sm"
+                type="text"
+                value={sectionFilter}
+                onChange={(e) => setSectionFilter(e.target.value)}
+                onClear={() => setSectionFilter('')}
+                placeholder={L("பகுதி அல்லது புலவரைத் தேடு...", "Filter section or poet...")}
+              />
+            </div>
+          )}
         </div>
 
+        {structured ? (
+          <StructureNav
+            sections={filteredSections}
+            activeId={sec.id}
+            kind={sectionKind}
+            onSelect={(id) => {
+              const idx = sections.findIndex((item) => item.id === id)
+              if (idx >= 0) setActive(idx)
+              if (window.innerWidth < 768) setSidebar(false)
+            }}
+          />
+        ) : (
         <nav className="flex-1 overflow-y-auto py-1">
           {filteredSections.map((s) => {
             const indexInFull = sections.findIndex((item) => item.id === s.id)
@@ -254,6 +274,7 @@ export default function Reader({ poem, sectionId }) {
             )
           })}
         </nav>
+        )}
       </aside>
 
       <main ref={contentRef} className="flex-1 overflow-y-auto bg-page flex flex-col">

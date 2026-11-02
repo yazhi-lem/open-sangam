@@ -3,6 +3,7 @@ import Badge from '../ui/Badge'
 import useAppStore from '../../store/useAppStore'
 import { AVAILABILITY_LABELS, languageLabel, formatWorkCount } from '../../data/library.js'
 import { POEM_BY_ID } from '../../data/poems.js'
+import { isStructural, sectionKindLabel } from '../../data/structure.js'
 
 export default function CatalogWorkCard({ work }) {
   const language = useAppStore((s) => s.language)
@@ -28,7 +29,14 @@ export default function CatalogWorkCard({ work }) {
         <Badge variant={readable ? 'accent' : 'outline'} size="sm">
           {language === 'ta' ? status.ta : status.en}
         </Badge>
-        <span className="text-[10px] font-mono text-faint">{work.period}</span>
+        <span className="flex items-center gap-1.5">
+          {isStructural(work.sectionKind) && (
+            <span className="rounded-full border border-line px-1.5 py-0.5 font-mono text-[10px] text-faint">
+              {sectionKindLabel(work.sectionKind, language)}
+            </span>
+          )}
+          <span className="text-[10px] font-mono text-faint">{work.period}</span>
+        </span>
       </div>
       <h3 className="tamil mb-1 line-clamp-2 min-h-[2.6em] shrink-0 text-lg font-bold leading-snug text-primary sm:text-xl">
         {work.ta}

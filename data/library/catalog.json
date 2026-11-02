@@ -391,7 +391,8 @@
       "availability": "metadata",
       "source": "Tamil Virtual Academy / Project Madurai",
       "rights": "public-domain text; commentary rights vary",
-      "notes": "Three adhikarams — Ezhuthathikaram, Sollathikaram, Porulathikaram — the foundational Tamil grammar, 1,610 sutras in all."
+      "notes": "Three adhikarams — Ezhuthathikaram, Sollathikaram, Porulathikaram — the foundational Tamil grammar, 1,610 sutras in all.",
+      "sectionKind": "sutra"
     },
     {
       "id": "silappatikaram",
@@ -409,7 +410,8 @@
       "availability": "metadata",
       "source": "Project Madurai",
       "rights": "public-domain text",
-      "notes": "The Tamil epic of Kannagi and Kovalan: three kandams and thirty cantos."
+      "notes": "The Tamil epic of Kannagi and Kovalan: three kandams and thirty cantos.",
+      "sectionKind": "canto"
     },
     {
       "id": "manimekalai",
@@ -427,7 +429,8 @@
       "availability": "metadata",
       "source": "Project Madurai (Kausalya Hart English translation also on PM)",
       "rights": "public-domain text",
-      "notes": "Buddhist epic and sequel to Silappathikaram; thirty cantos."
+      "notes": "Buddhist epic and sequel to Silappathikaram; thirty cantos.",
+      "sectionKind": "canto"
     },
     {
       "id": "nannul",
@@ -445,7 +448,8 @@
       "availability": "metadata",
       "source": "Tamil Virtual Academy",
       "rights": "public-domain text",
-      "notes": "Medieval Tamil grammar in three books."
+      "notes": "Medieval Tamil grammar in three books.",
+      "sectionKind": "sutra"
     },
     {
       "id": "tevaram",
@@ -463,7 +467,8 @@
       "availability": "metadata",
       "source": "Tamil Virtual Academy / Project Madurai",
       "rights": "public-domain text",
-      "notes": "Tirumurai 1–3 of the twelve: the hymns of Thirugnanasambandar, Thirunavukkarasar and Sundarar."
+      "notes": "Tirumurai 1–3 of the twelve: the hymns of Thirugnanasambandar, Thirunavukkarasar and Sundarar.",
+      "sectionKind": "pathigam"
     },
     {
       "id": "nalayira-divya-prabandham",
@@ -481,7 +486,8 @@
       "availability": "metadata",
       "source": "Project Madurai (Kausalya Hart English translation)",
       "rights": "public-domain text; translation rights vary",
-      "notes": "Vaishnava devotional corpus in twelve parts."
+      "notes": "Vaishnava devotional corpus in twelve parts.",
+      "sectionKind": "pasuram"
     },
     {
       "id": "civaka-cintamani",
@@ -499,7 +505,8 @@
       "availability": "metadata",
       "source": "Project Madurai / Tamil Virtual Academy",
       "rights": "public-domain text",
-      "notes": "Jain epic; one of the Five Great Epics (Aimperumkappiyam). Survives complete in 13 cantos."
+      "notes": "Jain epic; one of the Five Great Epics (Aimperumkappiyam). Survives complete in 13 cantos.",
+      "sectionKind": "canto"
     },
     {
       "id": "valayapathi",
@@ -555,7 +562,8 @@
       "availability": "metadata",
       "source": "Project Madurai / Digital Tamil Lexicon",
       "rights": "public-domain text",
-      "notes": "The 8th Thirumurai: 51 pathigams of intensely devotional Saivite poetry by Manikkavasagar."
+      "notes": "The 8th Thirumurai: 51 pathigams of intensely devotional Saivite poetry by Manikkavasagar.",
+      "sectionKind": "pathigam"
     },
     {
       "id": "periyapuranam",
@@ -575,7 +583,8 @@
       "availability": "metadata",
       "source": "Project Madurai",
       "rights": "public-domain text",
-      "notes": "The great Saivite hagiography; lives of the 63 Nayanar saints."
+      "notes": "The great Saivite hagiography; lives of the 63 Nayanar saints.",
+      "sectionKind": "verse"
     },
     {
       "id": "ramavataram",
@@ -595,7 +604,8 @@
       "availability": "metadata",
       "source": "Project Madurai / Tamil Virtual Academy",
       "rights": "public-domain text",
-      "notes": "Tamil adaptation of the Ramayana in six kandas; cornerstone of Tamil epic tradition."
+      "notes": "Tamil adaptation of the Ramayana in six kandas; cornerstone of Tamil epic tradition.",
+      "sectionKind": "canto"
     },
     {
       "id": "iraiyanar-akapporul",
@@ -613,7 +623,8 @@
       "availability": "metadata",
       "source": "Tamil Virtual Academy",
       "rights": "public-domain text",
-      "notes": "Sixty sutras on akam (interior/love) poetics, accompanied by the extensive commentary of Nakkiranar."
+      "notes": "Sixty sutras on akam (interior/love) poetics, accompanied by the extensive commentary of Nakkiranar.",
+      "sectionKind": "sutra"
     },
     {
       "id": "virasoliyam",
@@ -631,7 +642,8 @@
       "availability": "metadata",
       "source": "Tamil Virtual Academy",
       "rights": "public-domain text",
-      "notes": "Tamil grammar from the Chola period; synthesises Tamil and Sanskrit grammatical traditions."
+      "notes": "Tamil grammar from the Chola period; synthesises Tamil and Sanskrit grammatical traditions.",
+      "sectionKind": "sutra"
     }
   ]
 }
