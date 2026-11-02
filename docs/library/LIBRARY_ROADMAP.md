@@ -112,7 +112,7 @@ Status:
 2. ✅ Naladiyar (400) — Tamil + public-domain Pope/Ellis translation
 3. ⬜ Pazhamozhi Nanuru (400)
 4. Thinaimalai Nurraimpathu (150)
-5. Nanmanikkadigai, Thirikadugam, Acharakkovai (100 each)
+5. Nanmanikkadikai, Thirikadukam, Acharakkovai (100 each)
 6. Remaining forty-verse works
 
 Each work gets a `data/texts/<id>/normalized/` corpus using the existing
@@ -121,7 +121,7 @@ validation passes.
 
 ### Phase B — Classics and grammar
 
-Tholkappiyam, Silappatikaram, Manimekalai, Nannul, Tevaram, Nalayira Divya
+Tholkappiyam, Silappathikaram, Manimekalai, Nannul, Thevaram, Nalayira Divya
 Prabandham. These need chapter/canto navigation, not just verse pagination.
 
 ### Phase C — Artifacts and documents

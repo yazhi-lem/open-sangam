@@ -2,12 +2,12 @@ import { useNavigate } from 'react-router-dom'
 import Badge from '../ui/Badge'
 import AnimatedCard from '../motion/AnimatedCard'
 import useAppStore from '../../store/useAppStore'
+import { formatWorkCount } from '../../data/library.js'
 
 export default function PoemCard({ poem }) {
   const available = poem.available
   const nav = useNavigate()
   const language = useAppStore((s) => s.language)
-  const L = (ta, en) => (language === 'ta' ? ta : en)
 
   const cardClassName = `group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border p-5 transition-all duration-200
     ${
@@ -64,7 +64,7 @@ export default function PoemCard({ poem }) {
 
       <div className="mt-auto pt-3 border-t border-line/60 flex items-center justify-between text-xs font-mono">
         <span className={available ? 'text-muted' : 'text-faint'}>
-          {poem.count.toLocaleString()} {L(poem.unit === 'lines' ? 'வரிகள்' : poem.unit === 'couplets' ? 'குறட்பாக்கள்' : poem.unit === 'quatrains' ? 'நான்கடிகள்' : 'பாடல்கள்', poem.unit)}
+          {formatWorkCount(poem, language)}
         </span>
         {available && (
           <span className="text-accent font-semibold group-hover:translate-x-1 transition-transform">

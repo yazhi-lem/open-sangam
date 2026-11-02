@@ -1,4 +1,4 @@
-import Reveal, { RevealGroup } from '../motion/Reveal'
+import { RevealGroup } from '../motion/Reveal'
 import useAppStore from '../../store/useAppStore'
 import CatalogWorkCard from './CatalogWorkCard'
 
@@ -15,7 +15,7 @@ export default function CatalogCollection({ collection, works }) {
         <p className="max-w-2xl text-sm leading-relaxed text-muted">{collection.description}</p>
         {works.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-line p-8 text-center text-sm text-muted">
-            No works matching this search.
+            {L('இந்தத் தேடலுக்குப் பொருந்தும் நூல்கள் இல்லை.', 'No works matching this search.')}
           </div>
         ) : (
           <RevealGroup className="grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4" amount={0.08}>

@@ -5,11 +5,15 @@ import Button from '../ui/Button'
 import Input from '../ui/Input'
 import Chip from '../ui/Chip'
 import useAppStore from '../../store/useAppStore'
-import { POEMS, COLLECTIONS } from '../../data/poems.js'
-import { LIBRARY_COLLECTIONS, LIBRARY_WORKS, ARTIFACTS } from '../../data/library.js'
+import { POEMS, COLLECTIONS, POEM_BY_ID } from '../../data/poems.js'
+import {
+  LIBRARY_COLLECTIONS,
+  LIBRARY_WORKS,
+  ARTIFACTS,
+  artifactMatchesQuery,
+  workMatchesQuery,
+} from '../../data/library.js'
 import { FILTER_CHIPS, IDYLL_NOTE, poemMatchesChip } from '../../data/chipLabels.js'
-import { artifactMatchesQuery, workMatchesQuery } from '../../data/library.js'
-import { POEM_BY_ID } from '../../data/poems.js'
 import PoemCard from './PoemCard'
 import ArtifactCollection from './ArtifactCollection'
 import CatalogCollection from './CatalogCollection'
@@ -48,7 +52,7 @@ export default function Library() {
             </h1>
             <Button variant="outline" size="sm" onClick={() => setShowContribute(true)}>
               <BookOpen size={14} className="mr-1.5" />
-              {L('பங்களிக்க', 'Contribute')}
+              {L('பங்களி!', 'Contribute')}
             </Button>
           </div>
           <p className="text-base sm:text-lg text-muted font-light">
@@ -102,7 +106,10 @@ export default function Library() {
 
               {poems.length === 0 ? (
                 <div className="p-8 text-center border border-dashed border-line rounded-2xl text-muted text-sm">
-                  No poems matching &quot;{searchQuery}&quot; in this collection.
+                  {L(
+                    `இந்தத் தொகுப்பில் "${searchQuery}" என்பதற்குப் பொருந்தும் நூல்கள் இல்லை.`,
+                    `No poems matching "${searchQuery}" in this collection.`
+                  )}
                 </div>
               ) : (
                 <RevealGroup

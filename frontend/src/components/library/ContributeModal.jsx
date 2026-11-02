@@ -39,8 +39,8 @@ export default function ContributeModal({ open, onClose }) {
                 <strong>{L('அட்டவணையில் புதிய நூலைச் சேர்', 'Add a new work to the catalog')}</strong>
                 <p className="mt-0.5 text-xs text-faint">
                   {L(
-                    'data/library/catalog.json இல் catagory, author, period, count ஆகியவற்றை சேர்க்கவும்.',
-                    'Add category, author, period, and count to data/library/catalog.json.'
+                    'data/library/catalog.json இல் collection, author, period, count ஆகியவற்றைச் சேர்க்கவும்.',
+                    'Add collection, author, period, and count to data/library/catalog.json.'
                   )}
                 </p>
               </li>
@@ -48,8 +48,8 @@ export default function ContributeModal({ open, onClose }) {
                 <strong>{L('பாடல் JSON தரவை உருவாக்கு', 'Produce verse JSON data')}</strong>
                 <p className="mt-0.5 text-xs text-faint">
                   {L(
-                    'scripts/scraper/ இல் Project Madurai அல்லது Tamil Virtual Academy இலிருந்து பாடலை இறக்கி, backend/python/normalizer/ இல் சுத்திகரிக்கவும்.',
-                    'Scrape from Project Madurai or Tamil Virtual Academy under scripts/scraper/, then normalize via backend/python/normalizer/.'
+                    'scripts/scraper/ இல் Project Madurai அல்லது Tamil Virtual Academy இலிருந்து பாடலை இறக்கி, python -m normalizer.normalize_all இல் சுத்திகரிக்கவும்.',
+                    'Scrape from Project Madurai or Tamil Virtual Academy under scripts/scraper/, then normalise with python -m normalizer.normalize_all.'
                   )}
                 </p>
               </li>

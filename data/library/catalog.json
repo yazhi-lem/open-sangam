@@ -15,7 +15,7 @@
       "ta": "தமிழ்ச் செவ்வியல்",
       "en": "Tamil Classics",
       "kind": "classical",
-      "description": "Grammar, epics, and major classical works that sit outside the Sangam anthologies but are essential to the Tamil literary canon."
+      "description": "Grammar, classical epics and major works that sit outside the Sangam anthologies but are essential to the Tamil literary canon."
     },
     {
       "id": "artifacts",
@@ -29,14 +29,14 @@
       "ta": "ஐம்பெருங்காப்பியங்கள்",
       "en": "Five Great Epics",
       "kind": "epic",
-      "description": "The five grand epics of Tamil literature (Aimperumkappiyam). Silappatikaram and Manimekalai are catalogued under Tamil Classics; Civaka Cintamani survives complete, while Valayapathi and Kundalakesi are considered lost."
+      "description": "The five grand epics of Tamil literature (Aimperumkappiyam): Silappathikaram, Manimekalai, Civaka Cintamani, Valayapathi and Kundalakesi. The last two survive only as fragments and quotations in medieval commentaries."
     },
     {
       "id": "bhakti-corpus",
       "ta": "பக்தி இலக்கியம்",
       "en": "Bhakti Literature",
       "kind": "devotional",
-      "description": "Tamil devotional poetry and hagiography from the Pallava and Chola periods, encompassing Saivite hymns, Vaishnava pasurams, and the lives of the Nayanar saints."
+      "description": "Tamil devotional poetry and hagiography from the Pallava and Chola periods: Saivite Thirumurai, Vaishnava pasurams and the lives of the Nayanar saints."
     },
     {
       "id": "grammar-treatise",
@@ -90,7 +90,7 @@
     {
       "id": "nanmanikkadikai",
       "ta": "நான்மணிக்கடிகை",
-      "en": "Nanmanikkadigai",
+      "en": "Nanmanikkadikai",
       "collection": "pathinenkilkkanakku",
       "author": "விளம்பி நாகனார் · Vilambi Naganar",
       "period": "post-Sangam",
@@ -252,7 +252,7 @@
     {
       "id": "thirikadugam",
       "ta": "திரிகடுகம்",
-      "en": "Thirikadugam",
+      "en": "Thirikadukam",
       "collection": "pathinenkilkkanakku",
       "author": "நல்லாதனார் · Nallathanar",
       "period": "post-Sangam",
@@ -306,7 +306,7 @@
     {
       "id": "sirupanjamulam",
       "ta": "சிறுபஞ்சமூலம்",
-      "en": "Sirupanjamulam",
+      "en": "Sirupanchamulam",
       "collection": "pathinenkilkkanakku",
       "author": "காரியாசான் · Kariyasan",
       "period": "post-Sangam",
@@ -382,8 +382,8 @@
       "collection": "tamil-classics",
       "author": "தொல்காப்பியர் · Tholkappiyar",
       "period": "c. 5th century BCE–2nd century CE",
-      "count": 3,
-      "unit": "books",
+      "count": 1610,
+      "unit": "sutras",
       "languages": [
         "ta"
       ],
@@ -391,17 +391,17 @@
       "availability": "metadata",
       "source": "Tamil Virtual Academy / Project Madurai",
       "rights": "public-domain text; commentary rights vary",
-      "notes": "Ezhuthathikaram, Sollathikaram, Porulathikaram — the foundational Tamil grammar."
+      "notes": "Three adhikarams — Ezhuthathikaram, Sollathikaram, Porulathikaram — the foundational Tamil grammar, 1,610 sutras in all."
     },
     {
       "id": "silappatikaram",
       "ta": "சிலப்பதிகாரம்",
-      "en": "Silappatikaram",
-      "collection": "tamil-classics",
+      "en": "Silappathikaram",
+      "collection": "aimperumkappiyam",
       "author": "இளங்கோவடிகள் · Ilango Adigal",
       "period": "c. 5th–6th century CE",
-      "count": 3,
-      "unit": "books",
+      "count": 30,
+      "unit": "cantos",
       "languages": [
         "ta"
       ],
@@ -409,13 +409,13 @@
       "availability": "metadata",
       "source": "Project Madurai",
       "rights": "public-domain text",
-      "notes": "The Tamil epic of Kannagi and Kovalan; 30 cantos."
+      "notes": "The Tamil epic of Kannagi and Kovalan: three kandams and thirty cantos."
     },
     {
       "id": "manimekalai",
       "ta": "மணிமேகலை",
       "en": "Manimekalai",
-      "collection": "tamil-classics",
+      "collection": "aimperumkappiyam",
       "author": "சீத்தலைச் சாத்தனார் · Sittalai Sattanar",
       "period": "c. 6th century CE",
       "count": 30,
@@ -427,7 +427,7 @@
       "availability": "metadata",
       "source": "Project Madurai (Kausalya Hart English translation also on PM)",
       "rights": "public-domain text",
-      "notes": "Buddhist epic and sequel to Silappatikaram."
+      "notes": "Buddhist epic and sequel to Silappathikaram; thirty cantos."
     },
     {
       "id": "nannul",
@@ -450,12 +450,12 @@
     {
       "id": "tevaram",
       "ta": "தேவாரம்",
-      "en": "Tevaram",
-      "collection": "tamil-classics",
+      "en": "Thevaram",
+      "collection": "bhakti-corpus",
       "author": "திருஞானசம்பந்தர், திருநாவுக்கரசர், சுந்தரர்",
       "period": "c. 7th–8th century CE",
-      "count": 7,
-      "unit": "tirumurai (within 12)",
+      "count": 3,
+      "unit": "thirumurai",
       "languages": [
         "ta"
       ],
@@ -463,13 +463,13 @@
       "availability": "metadata",
       "source": "Tamil Virtual Academy / Project Madurai",
       "rights": "public-domain text",
-      "notes": "Saiva devotional hymns; Project Madurai hosts English translations of parts."
+      "notes": "Tirumurai 1–3 of the twelve: the hymns of Thirugnanasambandar, Thirunavukkarasar and Sundarar."
     },
     {
       "id": "nalayira-divya-prabandham",
       "ta": "நாலாயிர திவ்ய பிரபந்தம்",
       "en": "Nalayira Divya Prabandham",
-      "collection": "tamil-classics",
+      "collection": "bhakti-corpus",
       "author": "ஆழ்வார்கள் · Alvars",
       "period": "c. 7th–9th century CE",
       "count": 4000,
@@ -508,8 +508,8 @@
       "collection": "aimperumkappiyam",
       "author": "unknown (Jain tradition)",
       "period": "c. 9th–10th century CE",
-      "count": 0,
-      "unit": "verses",
+      "count": null,
+      "unit": "fragments",
       "languages": [
         "ta"
       ],
@@ -517,7 +517,7 @@
       "availability": "planned",
       "source": "Lost text; fragments only",
       "rights": "public-domain text",
-      "notes": "One of the Five Great Epics; considered lost except for fragments and urai references."
+      "notes": "One of the Five Great Epics; lost, surviving only in fragments and quotations."
     },
     {
       "id": "kundalakesi",
@@ -526,8 +526,8 @@
       "collection": "aimperumkappiyam",
       "author": "நாதத்தனார் · Nathathanaar",
       "period": "c. 9th–10th century CE",
-      "count": 0,
-      "unit": "verses",
+      "count": null,
+      "unit": "fragments",
       "languages": [
         "ta"
       ],
@@ -544,8 +544,8 @@
       "collection": "bhakti-corpus",
       "author": "மாணிக்கவாசகர் · Manikkavasagar",
       "period": "c. 9th century CE",
-      "count": 400,
-      "unit": "hymns",
+      "count": 51,
+      "unit": "pathigams",
       "languages": [
         "ta"
       ],
@@ -555,7 +555,7 @@
       "availability": "metadata",
       "source": "Project Madurai / Digital Tamil Lexicon",
       "rights": "public-domain text",
-      "notes": "The 8th Thirumurai; intensely devotional Saivite poetry."
+      "notes": "The 8th Thirumurai: 51 pathigams of intensely devotional Saivite poetry by Manikkavasagar."
     },
     {
       "id": "periyapuranam",
@@ -604,7 +604,7 @@
       "collection": "grammar-treatise",
       "author": "இறையனார் · Iraiyanar",
       "period": "c. 8th–10th century CE",
-      "count": 450,
+      "count": 60,
       "unit": "sutras",
       "languages": [
         "ta"
@@ -613,7 +613,7 @@
       "availability": "metadata",
       "source": "Tamil Virtual Academy",
       "rights": "public-domain text",
-      "notes": "Classical treatise on akam (interior/love) poetics; accompanied by the extensive commentary of Nakkiranar."
+      "notes": "Sixty sutras on akam (interior/love) poetics, accompanied by the extensive commentary of Nakkiranar."
     },
     {
       "id": "virasoliyam",

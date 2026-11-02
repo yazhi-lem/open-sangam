@@ -82,37 +82,54 @@ This makes a catalog work move from `metadata` → `reader`.
 Place raw text under `data/raw/<work>/`. Sources:
 - [Project Madurai](https://projectmadurai.org) (public-domain Tamil texts)
 - [Tamil Virtual Academy](https://www.tamilvu.org) (classical and medieval)
-- [Digital Tamil Lexicon](https://the collation may vary)
+- [Tamil Lexicon](https://dsal.uchicago.edu/dictionaries/tamil-lex/) (University of Chicago, for glosses) [needs-decision]
+
+> Replace the bracketed marker above with the exact edition/URL you are using. If you only
+> need the royal word-lists, Project Madurai already carries them.
 
 #### Step B — Normalize
 
-Use or extend the normalizer in `backend/python/normalizer/`:
+Use the corpus normalizers in `backend/python/normalizer/`. The individual files are
+`normalize_all.py` (normalise all poems), `normalize_to_json.py` (a **deprecated** single-poem
+helper) and `validate_corpus.py` (schema report). There is **no** `normalizer.normalize` module.
 
 ```bash
 cd backend/python
-python -m normalizer.normalize --input ../../data/raw/<work>/ --output ../../data/texts/<work>/ --schema data/schema/verse_schema.json
+# Normalise every scraped poem into OKF data packages
+python -m normalizer.normalize_all
+# …or a single poem
+python -m normalizer.normalize_all --poem natrinai
+# Validate against data/schema/verse_schema.json (summary report)
+python -m normalizer.validate_corpus
+# …and list every line gap
+python -m normalizer.validate_corpus --gaps
 ```
 
 Each JSON file must match `verse_schema.json`. The minimal shape is:
+
+The canonical schema is **flat** (`verse_schema.json` v2). Required keys are
+`id`, `poem`, `sangamTamil`, `lines`, `source`, `verified`. The minimal record:
 
 ```json
 {
   "id": "maduraikanchi-001",
   "poem": "maduraikanchi",
   "number": 1,
-  "original": "...",
-  "transliteration": "...",
   "tinai": "marutam",
-  "layers": {
-    "original":    { "text": "...", "verified": true },
-    "transliteration": { "text": "...", "verified": true },
-    "urai":         { "text": "...", "verified": false },
-    "english":      { "text": "...", "verified": false },
-    "glossary":     { "entries": [], "verified": false },
-    "notes":        { "text": "", "verified": false }
-  }
+  "sangamTamil": "...",
+  "urai": "",
+  "english": "",
+  "lines": [
+    { "number": 1, "text": "...", "words": [{ "form": "...", "gloss": "..." }] }
+  ],
+  "source": "Project Madurai",
+  "verified": false
 }
 ```
+
+Do **not** invent a `layers` object — it is not in the schema. The
+`verified` flag covers the whole record; per-layer trust is derived by
+`frontend/src/content/processedContent.js`.
 
 #### Step C — Register in `poems.js`
 
@@ -155,10 +172,44 @@ Before a work graduates from `metadata` → `reader`, it must pass:
 
 | Gate | How |
 |---|---|
-| JSON schema validation | `python -m normalizer.validate --schema data/schema/verse_schema.json` |
+| JSON schema validation | `cd backend/python && python -m normalizer.validate_corpus` |
+| Library catalog test | `cd frontend && node --test src/data/library.test.js src/data/libraryCatalog.test.js` |
 | Unit test | `cd frontend && node --test src/data/library.test.js` |
 | Build | `cd frontend && npm run build` (zero TypeScript errors) |
 | Scholar review | At least one Tamil scholar reviews the first 100 lines for factual accuracy |
+
+---
+
+## 4a. Romanisation and units — one scheme, no exceptions
+
+Tamil is transliterated by many hands. Pick **one** scheme per file so a reader
+is never guessing. The catalog currently uses the Tamil Lexicon style with ASCII
+fallbacks:
+
+| Tamil | Use | Never |
+|---|---|---|
+| க | `k` | `g` |
+| த | `th` | `t` |
+| ட | `t` | `d` |
+| ஞ | `nj` / `nch` in ஞ்ச | mixed `j` and `nch` in one file |
+| ற / ன | `r` / `n` | `R` / `N` |
+
+Concretely: **Silappathikaram** (not "Silappatikaram"), **Thevaram** (not
+"Tevaram"), **Nanmanikkadikai** (not "…digai"), **Sirupanchamulam** (not
+"…panjamulam").
+
+And the counted `unit` must be explained, not just named:
+
+| `unit` | Means | Tamil label |
+|---|---|---|
+| `sutras` | grammar aphorisms (Tholkappiyam, Iṟaiyanār) | சூத்திரங்கள் |
+| `cantos` | epic chapters (Silappathikaram, Manimekalai) | காண்டங்கள் |
+| `pathigams` / `hymns` | Saivite hymn-decads | பதிகங்கள் |
+| `thirumurai` | the twelve Saivite books | திருமுறைகள் |
+| `pasurams` | Vaishnava verses | பாசுரங்கள் |
+| `fragments` | a lost work (count must be `null`) | சிதைவுகள் |
+
+If the count is unknown or the work is lost, set `"count": null` — **never** `0`.
 
 ---
 

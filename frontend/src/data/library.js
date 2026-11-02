@@ -154,4 +154,40 @@ export const CORPUS_ENTITY_DATA = corpusEntityData
 export const CORPUS_ENTITY_CATEGORIES = corpusEntityData.categories
 export const CORPUS_ENTITIES = corpusEntityData.entities
 
+export function workLabel(work, language = 'en') {
+  return language === 'ta' ? work.ta : work.en
+}
+
+// Tamil labels for the counted units used across the library (cantos, sutras, …).
+// Narration units are never left in English on a Tamil-first interface.
+const UNIT_LABELS = {
+  verses: { ta: 'பாடல்கள்', en: 'verses' },
+  couplets: { ta: 'குறட்பாக்கள்', en: 'couplets' },
+  quatrains: { ta: 'நான்கடிகள்', en: 'quatrains' },
+  lines: { ta: 'வரிகள்', en: 'lines' },
+  poems: { ta: 'பாடல்கள்', en: 'poems' },
+  cantos: { ta: 'காண்டங்கள்', en: 'cantos' },
+  sutras: { ta: 'சூத்திரங்கள்', en: 'sutras' },
+  hymns: { ta: 'பதிகங்கள்', en: 'hymns' },
+  pathigams: { ta: 'பதிகங்கள்', en: 'pathigams' },
+  thirumurai: { ta: 'திருமுறைகள்', en: 'thirumurai' },
+  pasurams: { ta: 'பாசுரங்கள்', en: 'pasurams' },
+  books: { ta: 'நூல்கள்', en: 'books' },
+  fragments: { ta: 'சிதைவுகள்', en: 'fragments' },
+}
+
+/** Localised label for a work's unit, e.g. `unitLabel('cantos', 'ta')` → 'காண்டங்கள்'. */
+export function unitLabel(unit, language = 'en') {
+  const entry = UNIT_LABELS[unit]
+  if (!entry) return unit
+  return language === 'ta' ? entry.ta : entry.en
+}
+
+/** Format a work's count + unit, or just the unit when the count is unknown. */
+export function formatWorkCount(work, language = 'en') {
+  if (work.count == null) return unitLabel(work.unit, language)
+  const n = Number(work.count).toLocaleString(language === 'ta' ? 'ta-IN' : 'en-US')
+  return `${n} ${unitLabel(work.unit, language)}`
+}
+
 export const AVAI_RESEARCH_BRIEFS = avaiResearchData.briefs

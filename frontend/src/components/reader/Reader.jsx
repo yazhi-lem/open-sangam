@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
-import { normalizeLayer, visibleLayers, hasGloss } from '../../data/readerLayers.js'
+import { normalizeLayer, visibleLayers } from '../../data/readerLayers.js'
+import { buildGlossaryMap, extractGlossaryEntries } from '../../content/processedContent.js'
 import { TINAI_WORLD } from '../../data/tinaiWorld.js'
 import useAppStore from '../../store/useAppStore'
 import Badge from '../ui/Badge'
@@ -138,19 +139,9 @@ export default function Reader({ poem, sectionId }) {
 
   const sec = sections[active]
 
-  const wordGlossaryMap = useMemo(() => {
-    const map = new Map()
-    if (!sec?.lines) return map
-    for (const line of sec.lines) {
-      if (!line?.words) continue
-      for (const w of line.words) {
-        if (!w?.form) continue
-        const clean = w.form.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
-        if (clean && !map.has(clean)) map.set(clean, w)
-      }
-    }
-    return map
-  }, [sec])
+  // The glossary index is built once per verse by the processed-content module,
+  // which owns the akshara-safe normalisation (no ad-hoc regex in the view).
+  const wordGlossaryMap = useMemo(() => buildGlossaryMap(sec), [sec])
 
   function handleWordClick(wordText) {
     const clean = wordText.replace(/[^\u0B80-\u0BFFa-zA-Z]/g, '').trim()
@@ -178,7 +169,7 @@ export default function Reader({ poem, sectionId }) {
 
   const show = visibleLayers(layer)
   const contextTinai = sec.tinai ? TINAI_WORLD[sec.tinai] : null
-  const glossaryEntries = [...wordGlossaryMap.values()].filter(hasGloss).slice(0, 60)
+  const glossaryEntries = extractGlossaryEntries(sec, 60)
   const isSection = 'sectionNumber' in sec
   const num = isSection ? sec.sectionNumber : sec.number
   const label = sec.title || sec.heading || sec.poemTitle || null

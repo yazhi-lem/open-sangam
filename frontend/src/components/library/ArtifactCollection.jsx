@@ -1,4 +1,4 @@
-import Reveal, { RevealGroup } from '../motion/Reveal'
+import { RevealGroup } from '../motion/Reveal'
 import useAppStore from '../../store/useAppStore'
 import { ARTIFACT_CLASSES } from '../../data/library.js'
 import ArtifactCard from './ArtifactCard'

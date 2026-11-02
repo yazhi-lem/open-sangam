@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import Badge from '../ui/Badge'
 import useAppStore from '../../store/useAppStore'
-import { AVAILABILITY_LABELS, languageLabel } from '../../data/library.js'
+import { AVAILABILITY_LABELS, languageLabel, formatWorkCount } from '../../data/library.js'
 import { POEM_BY_ID } from '../../data/poems.js'
 
 export default function CatalogWorkCard({ work }) {
@@ -51,7 +51,7 @@ export default function CatalogWorkCard({ work }) {
           ))}
         </span>
         <span className="shrink-0 font-mono text-faint">
-          {work.count ? `${work.count.toLocaleString()} ${work.unit}` : work.unit}
+          {formatWorkCount(work, language)}
         </span>
       </div>
     </div>
