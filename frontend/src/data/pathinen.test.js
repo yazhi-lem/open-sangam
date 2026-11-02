@@ -13,6 +13,7 @@ const PUBLISHED = [
   { id: 'iniyavai-narpathu', file: 'iniyavai-narpathu', count: 40 },
   { id: 'kalavazhi-narpathu', file: 'kalavazhi-narpathu', count: 40 },
   { id: 'kaar-narpathu', file: 'kaar-narpathu', count: 40 },
+  { id: 'thirikadugam', file: 'thirikadugam', count: 100 },
   { id: 'elathi', file: 'elathi', count: 80 },
 ]
 

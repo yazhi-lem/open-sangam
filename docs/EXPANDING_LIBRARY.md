@@ -68,12 +68,16 @@ Project Madurai:
 | Elathi | pmuni0029 §2 | 80/80 | ✅ published (reader) |
 | Iniyavai Narpathu | pmuni0025 §2 | 40/40 | ✅ published (reader) — switched to the plain edition |
 | Kaar Narpathu | pmuni0029 §1 | 40/40 | ✅ published (reader) — per-work `skip` drops colophons and situation headings |
+| Thirikadugam | pmuni0048 | 100/100 | ✅ published (reader) — heading-numbered edition |
+| Muthumozhikkanchi | pmuni0025 §4 | 100/100 | ⚠️ parses to count but leading numeral leaks into verse text — needs a text-trim |
 | Nanmanikkadikai | pmuni0047 | 106/100 | ⚠️ edition has extra verses; needs collation |
-| Acharakkovai | pmuni0047? (wrong id) | 78/100 | ⚠️ wrong page; find the right editon |
+| Acharakkovai | pmuni0024 | 97/100 | ⚠️ edition omits verses 47, 64, 97 |
 | Ainthinai Aimpathu | pmuni0027 §1 | 49/50 | ⚠️ one numbering anomaly |
 | Ainthinai Ezhupathu | pmuni0027 §2 | 65/70 | ⚠️ attested lost verses (25, 26, 62) |
 | Sirupanchamulam | pmuni0029 §3 | 98/100 | ⚠️ two missing |
-| Pazhamozhi / Thirikadugam / Thinaimalai / Kainnilai | — | low | ⚠️ verse numbers at line start / page-number artefacts |
+| Pazhamozhi Nanuru | pmuni0036 | 395/400 | ⚠️ edition omits 156, 177, 191, 381 |
+| Thinaimalai Nurraimbathu | pmuni0056 | 152/150 | ⚠️ parenthetical numbering, 2 spurious extras |
+| Kainnilai | pmuni0051 §2 | 60/40 | ⚠️ per-tinai numbering restarts — needs global renumbering |
 
 **Rule:** a work flips to `publish=True` only when it parses contiguous 1..n,
 passes `normalizer.validate_corpus` with **0 errors**, and carries no header or

@@ -79,11 +79,12 @@ WORKS: list[Work] = [
     Work("nanmanikkadikai", "நான்மணிக்கடிகை", "Nanmanikkadikai", "விளம்பி நாகனார்", "verses", 100, "pmuni0047"),
     Work("acharakkovai", "ஆசாரக்கோவை", "Acharakkovai", "பெருவாயின் முள்ளியார்", "verses", 100, "pmuni0024"),
     Work("pazhamozhi-nanuru", "பழமொழி நானூறு", "Pazhamozhi Nanuru", "முன்றுறை அரையனார்", "verses", 400, "pmuni0036"),
-    Work("thirikadugam", "திரிகடுகம்", "Thirikadukam", "நல்லாதனார்", "verses", 100, "pmuni0048"),
+    Work("thirikadugam", "திரிகடுகம்", "Thirikadukam", "நல்லாதனார்", "verses", 100, "pmuni0048", publish=True),
     Work("thinaimalai-nurraimpathu", "திணைமாலை நூற்றைம்பது", "Thinaimalai Nurraimbathu", "கணிமேதையார்", "verses", 150, "pmuni0056"),
     Work("iniyavai-narpathu", "இனியவை நாற்பது", "Iniyavai Narpathu", "பூதஞ்சேந்தனார்", "verses", 40, "pmuni0025",
          start=r"^2\.\s*இனியவை\s*நாற்பது", end=r"^இனியவை\s*நாற்பது\s*முற்றிற்று", publish=True),
-    Work("muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "Muthumozhikkanchi", "மதுரை கூடலூர் கிழார்", "verses", 100, "pmuni0587"),
+    Work("muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "Muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "verses", 100, "pmuni0025",
+         start=r"^4\.\s*முதுமொழிக்\s*காஞ்சி", end=r"^முதுமொழிக்காஞ்சி\s*முற்றிற்று"),
     # ── bundled volumes ──
     Work("inna-narpathu", "இன்னா நாற்பது", "Inna Narpathu", "கபிலர்", "verses", 40, "pmuni0025",
          start=r"^1\.\s*இன்னா\s*நாற்பது", end=r"^இன்னா\s*நாற்பது\s*முற்றிற்று", publish=True),
@@ -105,6 +106,7 @@ WORKS: list[Work] = [
 ]
 
 NUM_TAIL = re.compile(r"[ \t]+(\d{1,4})\s*$")
+NUM_PAREN = re.compile(r"\((\d{1,4})\)\s*$")
 HEADING = re.compile(r"^\d+\.\s")
 TINAI_HEADING = re.compile(r"^\d+\.\s*(குறிஞ்சி|முல்லை|மருதம்|நெய்தல்|பாலை)\s*$")
 PAL_HEADING = re.compile(r"^\d+\.\s*(அறப்பால்|பொருட்பால்|இன்பப்பால்|வீட்டுப்பால்|காமத்துப்பால்)\s*$")
@@ -173,16 +175,25 @@ def _skip(ln: str, skip: str | None) -> bool:
     return bool(skip and re.search(skip, ln))
 
 
-def _both_formats(lines, skip=None):
-    """Parse a span as trailing-numbered and leading-numbered; return both lists."""
-    return _parse_trailing(lines, skip), _parse_leading(lines, skip)
+def _is_contiguous(verses) -> bool:
+    nums = sorted({v["number"] for v in verses})
+    return bool(nums) and nums == list(range(1, len(nums) + 1))
+
+
+def _best(candidates):
+    """Prefer a parser whose numbering is contiguous 1..n, then the largest yield."""
+    return max(candidates, key=lambda vs: (1 if _is_contiguous(vs) else 0, len(vs)))
 
 
 def parse_verses(lines: list[str], skip: str | None = None) -> tuple[list[dict], list[str]]:
-    trailing, leading = _both_formats(lines, skip)
-    verses = trailing if len(trailing) >= len(leading) else leading
+    candidates = [
+        _parse_trailing(lines, skip),
+        _parse_heading_numbered(lines, skip),
+        _parse_paren_trailing(lines, skip),
+        _parse_leading(lines, skip),
+    ]
     warnings: list[str] = []
-    verses = _clean_numbers(verses, warnings)
+    verses = _clean_numbers(_best(candidates), warnings)
     return verses, warnings
 
 
@@ -260,6 +271,78 @@ def _parse_leading(lines, skip=None):
         {"number": v["number"], "text": " ".join(v["parts"]).strip(), "chapter": v["chapter"], "tinai": v["tinai"]}
         for v in verses
     ]
+
+
+def _parse_heading_numbered(lines, skip=None):
+    """Verses introduced by a leading `N.` (with an optional title) and no trailing number."""
+    verses, cur = [], None
+    chapter = tinai = None
+    for ln in lines:
+        if _update_chapter_check(ln):
+            chapter, tinai = _update_chapter(ln, chapter, tinai)
+            if cur:
+                verses.append(cur)
+                cur = None
+            continue
+        m = re.match(r"^(\d{1,4})\.\s*(.*)$", ln)
+        if m:
+            num = int(m.group(1))
+            if cur is None or num > cur["number"]:
+                if cur:
+                    verses.append(cur)
+                rest = m.group(2).strip()
+                # A short `N. title` is a heading; a long one is the first verse line.
+                if len(rest) >= 18:
+                    cur = {"number": num, "title": "", "parts": [rest], "chapter": chapter, "tinai": tinai}
+                else:
+                    cur = {"number": num, "title": rest, "parts": [], "chapter": chapter, "tinai": tinai}
+                continue
+        if _skip(ln, skip) or ln.startswith("("):
+            continue
+        if cur:
+            cur["parts"].append(ln)
+    if cur:
+        verses.append(cur)
+    return [
+        {
+            "number": v["number"],
+            "text": " ".join(v["parts"]).strip(),
+            "title": v["title"],
+            "chapter": v["chapter"],
+            "tinai": v["tinai"],
+        }
+        for v in verses
+    ]
+
+
+def _parse_paren_trailing(lines, skip=None):
+    """Verses ending in a parenthetical number, e.g. `... ஈண்டு.  (1)`."""
+    verses, buf = [], []
+    chapter = tinai = None
+    last = 0
+    for ln in lines:
+        if _update_chapter_check(ln):
+            buf = []
+            chapter, tinai = _update_chapter(ln, chapter, tinai)
+            continue
+        if _skip(ln, skip):
+            buf = []
+            continue
+        buf.append(ln)
+        m = NUM_PAREN.search(ln)
+        if not m:
+            continue
+        num = int(m.group(1))
+        if num <= last:
+            continue
+        parts = [NUM_PAREN.sub("", x).strip() for x in buf]
+        text = " ".join(x for x in parts if x).strip()
+        buf = []
+        if not text:
+            continue
+        verses.append({"number": num, "text": text, "chapter": chapter, "tinai": tinai})
+        last = num
+    return verses
 
 
 def _update_chapter(ln: str, chapter, tinai):

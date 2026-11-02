@@ -212,6 +212,15 @@ export const POEMS = [
     loader: () => import('@data/texts/kaar-narpathu/kaar-narpathu.json'),
   },
   {
+    id: 'thirikadugam',
+    ta: 'திரிகடுகம்', en: 'Thirikadukam',
+    collection: 'pathinenkilkkanakku',
+    count: 100, unit: 'verses',
+    tinai: [],
+    available: true,
+    loader: () => import('@data/texts/thirikadugam/thirikadugam.json'),
+  },
+  {
     id: 'elathi',
     ta: 'ஏலாதி', en: 'Elathi',
     collection: 'pathinenkilkkanakku',
