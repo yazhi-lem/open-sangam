@@ -10,7 +10,9 @@ const root = resolve(here, '../../../')
 // The three Pathinen works that were ingested and cleared the parser audit.
 const PUBLISHED = [
   { id: 'inna-narpathu', file: 'inna-narpathu', count: 40 },
+  { id: 'iniyavai-narpathu', file: 'iniyavai-narpathu', count: 40 },
   { id: 'kalavazhi-narpathu', file: 'kalavazhi-narpathu', count: 40 },
+  { id: 'kaar-narpathu', file: 'kaar-narpathu', count: 40 },
   { id: 'elathi', file: 'elathi', count: 80 },
 ]
 

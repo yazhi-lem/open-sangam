@@ -66,8 +66,8 @@ Project Madurai:
 | Inna Narpathu | pmuni0025 §1 | 40/40 | ✅ published (reader) |
 | Kalavazhi Narpathu | pmuni0025 §3 | 40/40 | ✅ published (reader) |
 | Elathi | pmuni0029 §2 | 80/80 | ✅ published (reader) |
-| Iniyavai Narpathu | pmuni0775 | 40/40 | ⚠️ parses by count, but the commentary edition leaks headings — needs a per-work skip profile |
-| Kaar Narpathu | pmuni0029 §1 | 40/40 | ⚠️ interleaves `இதுவுமது` colophons — needs a skip profile |
+| Iniyavai Narpathu | pmuni0025 §2 | 40/40 | ✅ published (reader) — switched to the plain edition |
+| Kaar Narpathu | pmuni0029 §1 | 40/40 | ✅ published (reader) — per-work `skip` drops colophons and situation headings |
 | Nanmanikkadikai | pmuni0047 | 106/100 | ⚠️ edition has extra verses; needs collation |
 | Acharakkovai | pmuni0047? (wrong id) | 78/100 | ⚠️ wrong page; find the right editon |
 | Ainthinai Aimpathu | pmuni0027 §1 | 49/50 | ⚠️ one numbering anomaly |

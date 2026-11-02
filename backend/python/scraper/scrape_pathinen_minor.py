@@ -69,6 +69,7 @@ class Work:
     notes: str = ""
     extra: dict = field(default_factory=dict)
     publish: bool = False  # only True once the edition parses cleanly
+    skip: str | None = None  # extra per-work regex of lines to drop
 
 
 # ── Manifest ──────────────────────────────────────────────────────────────
@@ -80,7 +81,8 @@ WORKS: list[Work] = [
     Work("pazhamozhi-nanuru", "பழமொழி நானூறு", "Pazhamozhi Nanuru", "முன்றுறை அரையனார்", "verses", 400, "pmuni0036"),
     Work("thirikadugam", "திரிகடுகம்", "Thirikadukam", "நல்லாதனார்", "verses", 100, "pmuni0048"),
     Work("thinaimalai-nurraimpathu", "திணைமாலை நூற்றைம்பது", "Thinaimalai Nurraimbathu", "கணிமேதையார்", "verses", 150, "pmuni0056"),
-    Work("iniyavai-narpathu", "இனியவை நாற்பது", "Iniyavai Narpathu", "பூதஞ்சேந்தனார்", "verses", 40, "pmuni0775"),
+    Work("iniyavai-narpathu", "இனியவை நாற்பது", "Iniyavai Narpathu", "பூதஞ்சேந்தனார்", "verses", 40, "pmuni0025",
+         start=r"^2\.\s*இனியவை\s*நாற்பது", end=r"^இனியவை\s*நாற்பது\s*முற்றிற்று", publish=True),
     Work("muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "Muthumozhikkanchi", "மதுரை கூடலூர் கிழார்", "verses", 100, "pmuni0587"),
     # ── bundled volumes ──
     Work("inna-narpathu", "இன்னா நாற்பது", "Inna Narpathu", "கபிலர்", "verses", 40, "pmuni0025",
@@ -94,7 +96,8 @@ WORKS: list[Work] = [
     Work("kainnilai", "கைந்நிலை", "Kainnilai", "புல்லங்காடனார்", "verses", 40, "pmuni0051",
          start=r"^2\.\s*புல்லங்காடனாரின்\s*கைந்நிலை", end=r"^கைந்நிலை\s*முற்றிற்று"),
     Work("kaar-narpathu", "கார் நாற்பது", "Kaar Narpathu", "மதுரைக் கண்ணங்கூத்தனார்", "verses", 40, "pmuni0029",
-         start=r"^1\.\s.*கார்\s*நாற்பது", end=r"^2\.\s*கணிமேதையார்"),
+         start=r"^1\.\s.*கார்\s*நாற்பது", end=r"^2\.\s*கணிமேதையார்",
+         skip=r"^(இதுவுமது|@|\()|வற்புறுத்த|ஆற்றாமை|உரைத்தது", publish=True),
     Work("elathi", "ஏலாதி", "Elathi", "கணிமேதையார்", "verses", 80, "pmuni0029",
          start=r"^2\.\s*கணிமேதையார்.*ஏலாதி", end=r"^ஏலாதி\s*முற்றிற்று", publish=True),
     Work("sirupanjamulam", "சிறுபஞ்சமூலம்", "Sirupanchamulam", "காரியாசான்", "verses", 100, "pmuni0029",
@@ -164,13 +167,19 @@ SKIP_LINE = re.compile(
     r"^[(@]|^%|^-{3,}|^கடவுள்|^நூல்\s*$|^சிறப்புப்\s*பாயிரம்|^இயல்\s*$|முற்றிற்று|முற்றும்"
 )
 
-def _both_formats(lines):
+def _skip(ln: str, skip: str | None) -> bool:
+    if SKIP_LINE.search(ln):
+        return True
+    return bool(skip and re.search(skip, ln))
+
+
+def _both_formats(lines, skip=None):
     """Parse a span as trailing-numbered and leading-numbered; return both lists."""
-    return _parse_trailing(lines), _parse_leading(lines)
+    return _parse_trailing(lines, skip), _parse_leading(lines, skip)
 
 
-def parse_verses(lines: list[str]) -> tuple[list[dict], list[str]]:
-    trailing, leading = _both_formats(lines)
+def parse_verses(lines: list[str], skip: str | None = None) -> tuple[list[dict], list[str]]:
+    trailing, leading = _both_formats(lines, skip)
     verses = trailing if len(trailing) >= len(leading) else leading
     warnings: list[str] = []
     verses = _clean_numbers(verses, warnings)
@@ -195,7 +204,7 @@ def _clean_numbers(verses, warnings):
     return clean
 
 
-def _parse_trailing(lines):
+def _parse_trailing(lines, skip=None):
     verses, buf, last = [], [], 0
     chapter = tinai = None
     for ln in lines:
@@ -203,7 +212,7 @@ def _parse_trailing(lines):
             buf = []
             chapter, tinai = _update_chapter(ln, chapter, tinai)
             continue
-        if SKIP_LINE.search(ln) or _is_heading(ln):
+        if _skip(ln, skip) or _is_heading(ln):
             buf = []
             continue
         buf.append(ln)
@@ -223,13 +232,13 @@ def _parse_trailing(lines):
     return verses
 
 
-def _parse_leading(lines):
+def _parse_leading(lines, skip=None):
     verses, cur = [], None
     chapter = tinai = None
     for ln in lines:
         m = re.match(r"^(\d{1,4})\.\s+(.*)$", ln)
         if m:
-            if _is_heading(ln) or SKIP_LINE.search(ln):
+            if _is_heading(ln) or _skip(ln, skip):
                 if cur:
                     verses.append(cur); cur = None
                 chapter, tinai = _update_chapter(ln, chapter, tinai)
@@ -238,7 +247,7 @@ def _parse_leading(lines):
                 verses.append(cur)
             cur = {"number": int(m.group(1)), "parts": [m.group(2)], "chapter": chapter, "tinai": tinai}
             continue
-        if _update_chapter_check(ln) or SKIP_LINE.search(ln):
+        if _update_chapter_check(ln) or _skip(ln, skip):
             if cur:
                 verses.append(cur); cur = None
             chapter, tinai = _update_chapter(ln, chapter, tinai)
@@ -345,7 +354,7 @@ def main(argv: list[str] | None = None) -> int:
         try:
             lines = fetch(work.pm_id)
             span = slice_span(lines, work)
-            verses, warnings = parse_verses(span)
+            verses, warnings = parse_verses(span, work.skip)
         except Exception as exc:  # network / marker problems
             bad.append((work.id, f"error: {exc}"))
             print(f"  {work.id:26s} ERROR {exc}", file=sys.stderr)
