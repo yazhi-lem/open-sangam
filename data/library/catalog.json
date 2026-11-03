@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-11-03",
   "description": "Catalog of Tamil works and artifact collections beyond the Ettuthokai / Pattuppattu reader corpus. `availability` is `reader` when normalized verse JSON exists, `metadata` when only the catalog record is present, and `planned` when there is no data yet. `languages` lists text languages; `translations` lists available translation languages. Adding a work here does not claim it is readable: ingestion is tracked in docs/library/LIBRARY_ROADMAP.md.",
   "collections": [
     {
@@ -94,16 +94,17 @@
       "collection": "pathinenkilkkanakku",
       "author": "விளம்பி நாகனார் · Vilambi Naganar",
       "period": "post-Sangam",
-      "count": 100,
+      "count": 106,
       "unit": "verses",
       "languages": [
         "ta"
       ],
       "translations": [],
-      "availability": "metadata",
-      "source": "Project Madurai / Tamil Virtual Academy",
+      "availability": "reader",
+      "source": "Project Madurai (Tamil, public domain)",
       "rights": "public-domain text",
-      "notes": ""
+      "notes": "Project Madurai's edition carries 106 numbered verses; the traditional count is 100, with six verses appended in this recension. Machine-parsed, pending scholar sign-off.",
+      "availableCount": 106
     },
     {
       "id": "inna-narpathu",
@@ -369,16 +370,17 @@
       "collection": "pathinenkilkkanakku",
       "author": "புலவர் குழந்தை · Pulavar Kulanthai (attributed)",
       "period": "post-Sangam",
-      "count": 40,
+      "count": 60,
       "unit": "verses",
       "languages": [
         "ta"
       ],
       "translations": [],
-      "availability": "metadata",
-      "source": "Project Madurai / Tamil Virtual Academy",
+      "availability": "reader",
+      "source": "Project Madurai (Tamil, public domain)",
       "rights": "public-domain text",
-      "notes": ""
+      "notes": "Kainnilai has 60 verses in the Project Madurai edition (the catalog's earlier count of 40 was wrong). Machine-parsed, verse-contiguous, pending scholar sign-off.",
+      "availableCount": 60
     },
     {
       "id": "tholkappiyam",

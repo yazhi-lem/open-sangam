@@ -1,0 +1,34 @@
+{
+  "name": "open-sangam-kainnilai",
+  "title": "கைந்நிலை — Kainnilai",
+  "description": "Kainnilai (கைந்நிலை), Pathinenkilkkanakku — 60 verses.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Madurai",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0051.html"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Open Tamil NLP contributors",
+      "role": "scraper"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Pathinenkilkkanakku",
+    "Kainnilai"
+  ],
+  "coverage": {
+    "available": 60,
+    "expected": 60,
+    "missing": []
+  }
+}

@@ -17,7 +17,7 @@ up.
 |---|---|---|
 | Sangam poetry registry | `frontend/src/data/poems.js` | 18 works readable |
 | Wider library catalog | `data/library/catalog.json` | Pathinenkilkkanakku (18), Tamil classics, artifact collections |
-| Catalog UI | `frontend/src/pages/Book.jsx` (`/book`) | Sangam + Thirukkural + Naladiyar readable; rest catalogued |
+| Catalog UI | `frontend/src/pages/Book.jsx` (`/book`) | Sangam + 16 of 18 Pathinenkilkkanakku works readable; rest catalogued |
 | Artifact register | `data/library/artifacts.json` | 20 classified artifacts with seven reader layers |
 | Artifact scholar reader | `frontend/src/pages/ArtifactReader.jsx` (`/artifacts/:id`) | Compact, multi-layer, condensed reading |
 | Pathinenkilkkanakku texts | `data/texts/thirukkural/`, `data/texts/naladiyar/` | 1,730 verses with public-domain English |
@@ -110,10 +110,11 @@ Status:
 
 1. ✅ Tirukkural (1,330 couplets) — Tamil + public-domain Pope translation
 2. ✅ Naladiyar (400) — Tamil + public-domain Pope/Ellis translation
-3. ⬜ Pazhamozhi Nanuru (400)
-4. Thinaimalai Nurraimpathu (150)
-5. Nanmanikkadikai, Thirikadukam, Acharakkovai (100 each)
-6. Remaining forty-verse works
+3. ✅ Pazhamozhi Nanuru (395/400), Nanmanikkadikai (106/100), Thirikadukam (100), Acharakkovai (97/100)
+4. ✅ Inna / Iniyavai / Kaar / Kalavazhi Narpathu (40 each), Ainthinai Aimpathu (49/50), Ainthinai Ezhupathu (65/70)
+5. ✅ Kainnilai (60), Elathi (80), Sirupanchamulam (98/100), Muthumozhikkanchi (100)
+6. ⬜ Thinaimalai Nurraimpathu (150) — edition parsing still under review
+7. ⬜ Thinaimozhi Aimpathu (50) — source not yet acquired
 
 Each work gets a `data/texts/<id>/normalized/` corpus using the existing
 normalizer pattern, plus a catalog `availability: "reader"` flip only after

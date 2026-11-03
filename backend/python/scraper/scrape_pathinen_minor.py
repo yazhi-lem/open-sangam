@@ -78,7 +78,9 @@ class Work:
 # `expected` is the historically attested verse count. A run that does not hit
 # it exactly is reported, not written.
 WORKS: list[Work] = [
-    Work("nanmanikkadikai", "நான்மணிக்கடிகை", "Nanmanikkadikai", "விளம்பி நாகனார்", "verses", 100, "pmuni0047"),
+    # Project Madurai's edition carries 106 numbered verses (the traditional
+    # count is 100, with six verses appended in this recension).
+    Work("nanmanikkadikai", "நான்மணிக்கடிகை", "Nanmanikkadikai", "விளம்பி நாகனார்", "verses", 106, "pmuni0047", publish=True, heading_title=True),
     Work("acharakkovai", "ஆசாரக்கோவை", "Acharakkovai", "பெருவாயின் முள்ளியார்", "verses", 100, "pmuni0024", allow_gaps=True, publish=True, heading_title=True),
     Work("pazhamozhi-nanuru", "பழமொழி நானூறு", "Pazhamozhi Nanuru", "முன்றுறை அரையனார்", "verses", 400, "pmuni0036", allow_gaps=True, publish=True),
        Work("thirikadugam", "திரிகடுகம்", "Thirikadukam", "நல்லாதனார்", "verses", 100, "pmuni0048", publish=True, heading_title=True),
@@ -96,8 +98,9 @@ WORKS: list[Work] = [
          start=r"^1\.\s.*ஐந்திணை\s*ஐம்பது", end=r"^ஐந்திணை\s*ஐம்பது\s*முற்றிற்று", allow_gaps=True, publish=True, skip=r"^(இடம்|ஒழுக்கம்|பொருள்)\s*[-:]"),
     Work("ainthinai-ezhupathu", "ஐந்திணை எழுபது", "Ainthinai Ezhupathu", "மூவாதியார்", "verses", 70, "pmuni0027",
          start=r"^2\.\s.*ஐந்திணை\s*எழுபது", end=r"^ஐந்திணை\s*எழுபது\s*முற்றிற்று", allow_gaps=True, publish=True, skip=r"^(இடம்|ஒழுக்கம்|பொருள்)\s*[-:]"),
-    Work("kainnilai", "கைந்நிலை", "Kainnilai", "புல்லங்காடனார்", "verses", 40, "pmuni0051",
-         start=r"^2\.\s*புல்லங்காடனாரின்\s*கைந்நிலை", end=r"^கைந்நிலை\s*முற்றிற்று"),
+    # Kainnilai has 60 verses; the catalog's earlier count of 40 was wrong.
+    Work("kainnilai", "கைந்நிலை", "Kainnilai", "புல்லங்காடனார்", "verses", 60, "pmuni0051",
+         start=r"^2\.\s*புல்லங்காடனாரின்\s*கைந்நிலை", end=r"^கைந்நிலை\s*முற்றிற்று", publish=True, heading_title=True),
     Work("kaar-narpathu", "கார் நாற்பது", "Kaar Narpathu", "மதுரைக் கண்ணங்கூத்தனார்", "verses", 40, "pmuni0029",
          start=r"^1\.\s.*கார்\s*நாற்பது", end=r"^2\.\s*கணிமேதையார்",
          skip=r"^(இதுவுமது|@|\()|வற்புறுத்த|ஆற்றாமை|உரைத்தது", publish=True),
