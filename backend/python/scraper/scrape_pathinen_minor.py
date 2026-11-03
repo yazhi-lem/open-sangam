@@ -72,6 +72,8 @@ class Work:
     skip: str | None = None  # extra per-work regex of lines to drop
     allow_gaps: bool = False  # edition may omit a few verses; publish partial, labelled
     heading_title: bool = False  # `N. <rest>` is always a title, never verse text
+    # (pattern, replacement) applied to every source line before parsing.
+    fixes: list[tuple[str, str]] = field(default_factory=list)
 
 
 # ── Manifest ──────────────────────────────────────────────────────────────
@@ -84,7 +86,13 @@ WORKS: list[Work] = [
     Work("acharakkovai", "ஆசாரக்கோவை", "Acharakkovai", "பெருவாயின் முள்ளியார்", "verses", 100, "pmuni0024", allow_gaps=True, publish=True, heading_title=True),
     Work("pazhamozhi-nanuru", "பழமொழி நானூறு", "Pazhamozhi Nanuru", "முன்றுறை அரையனார்", "verses", 400, "pmuni0036", allow_gaps=True, publish=True),
        Work("thirikadugam", "திரிகடுகம்", "Thirikadukam", "நல்லாதனார்", "verses", 100, "pmuni0048", publish=True, heading_title=True),
-    Work("thinaimalai-nurraimpathu", "திணைமாலை நூற்றைம்பது", "Thinaimalai Nurraimbathu", "கணிமேதையார்", "verses", 150, "pmuni0056"),
+    # PM's edition numbers 153 verses (three appended beyond the traditional
+    # 150); verse 135 is mis-numbered as "(35)" in the source.
+    Work("thinaimalai-nurraimpathu", "திணைமாலை நூற்றைம்பது", "Thinaimalai Nurraimbathu", "கணிமேதையார்", "verses", 153, "pmuni0056", publish=True,
+         fixes=[(r"பணிந்து\.\s*\(35\)\s*$", "பணிந்து. (135)")]),
+    # Bundled with the two Ainthinai works in pmuni0027.
+    Work("thinaimozhi-aimpathu", "திணைமொழி ஐம்பது", "Thinaimozhi Aimpathu", "கண்ணன் சேந்தனார்", "verses", 50, "pmuni0027",
+         start=r"^கண்ணன்\s*சேந்தனார்.*திணை\s*மொழி\s*ஐம்பது", end=r"^திணை\s*மொழி\s*ஐம்பது\s*முற்றிற்று", publish=True),
     Work("iniyavai-narpathu", "இனியவை நாற்பது", "Iniyavai Narpathu", "பூதஞ்சேந்தனார்", "verses", 40, "pmuni0025",
          start=r"^2\.\s*இனியவை\s*நாற்பது", end=r"^இனியவை\s*நாற்பது\s*முற்றிற்று", publish=True),
     Work("muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "Muthumozhikkanchi", "முதுமொழிக்காஞ்சி", "verses", 100, "pmuni0025",
@@ -456,6 +464,8 @@ def main(argv: list[str] | None = None) -> int:
         try:
             lines = fetch(work.pm_id)
             span = slice_span(lines, work)
+            for pattern, repl in work.fixes:
+                span = [re.sub(pattern, repl, ln) for ln in span]
             verses, warnings = parse_verses(span, work.skip, work.heading_title)
         except Exception as exc:  # network / marker problems
             bad.append((work.id, f"error: {exc}"))

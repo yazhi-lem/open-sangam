@@ -159,7 +159,7 @@ console.log('[Articles Build] RSS feed generated at feed.xml');
 
 // Sitemap + robots.txt — every public SPA route search engines should index.
 const poemsSource = fs.readFileSync(path.resolve(__dirname, '../src/data/poems.js'), 'utf-8');
-const poemIds = [...new Set([...poemsSource.matchAll(/^\s*id: '([a-z]+)'/gm)].map(m => m[1]))];
+const poemIds = [...new Set([...poemsSource.matchAll(/^\s*id: '([a-z0-9-]+)'/gm)].map(m => m[1]))];
 const staticRoutes = ['/', '/book', '/world', '/articles'];
 const artifactsPath = path.resolve(__dirname, '../../data/library/artifacts.json');
 const artifactIds = fs.existsSync(artifactsPath)

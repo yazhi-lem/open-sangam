@@ -1,0 +1,34 @@
+{
+  "name": "open-sangam-thinaimalai-nurraimpathu",
+  "title": "திணைமாலை நூற்றைம்பது — Thinaimalai Nurraimbathu",
+  "description": "Thinaimalai Nurraimbathu (திணைமாலை நூற்றைம்பது), Pathinenkilkkanakku — 153 verses.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Madurai",
+      "path": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0056.html"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Open Tamil NLP contributors",
+      "role": "scraper"
+    }
+  ],
+  "keywords": [
+    "Tamil",
+    "Pathinenkilkkanakku",
+    "Thinaimalai Nurraimbathu"
+  ],
+  "coverage": {
+    "available": 153,
+    "expected": 153,
+    "missing": []
+  }
+}

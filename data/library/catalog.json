@@ -210,10 +210,11 @@
         "ta"
       ],
       "translations": [],
-      "availability": "metadata",
-      "source": "Project Madurai / Tamil Virtual Academy",
+      "availability": "reader",
+      "source": "Project Madurai (Tamil, public domain)",
       "rights": "public-domain text",
-      "notes": ""
+      "notes": "Bundled with the two Ainthinai works in Project Madurai pmuni0027. Machine-parsed, verse-contiguous, pending scholar sign-off.",
+      "availableCount": 50
     },
     {
       "id": "thinaimalai-nurraimpathu",
@@ -228,10 +229,11 @@
         "ta"
       ],
       "translations": [],
-      "availability": "metadata",
-      "source": "Project Madurai / Tamil Virtual Academy",
+      "availability": "reader",
+      "source": "Project Madurai (Tamil, public domain)",
       "rights": "public-domain text",
-      "notes": ""
+      "notes": "Project Madurai's edition numbers 153 verses: the traditional 150 plus three appended verses, and the source mis-numbers verse 135 as (35). Machine-parsed with the typo corrected, pending scholar sign-off.",
+      "availableCount": 153
     },
     {
       "id": "ainthinai-ezhupathu",
