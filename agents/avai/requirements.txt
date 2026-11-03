@@ -15,3 +15,7 @@ redis>=5.2,<7
 
 # Evaluation framework (DeepEval LLM judges & metrics)
 deepeval==4.2.7
+
+# Sarvam AI SDK — direct chat smoke test (avai/evals/sarvam_smoke.py).
+# The agent itself reaches Sarvam through LiteLLM, so this is not a runtime dep.
+sarvamai==0.1.43

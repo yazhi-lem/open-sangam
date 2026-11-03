@@ -8,9 +8,12 @@ name: Deploy Avai API to Cloud Run
 #                            run.admin, artifactregistry.writer,
 #                            iam.serviceAccountUser, secretmanager.secretAccessor
 #   secrets.GCP_PROJECT_ID   the Google Cloud project id
-#   Secret Manager secret    "openrouter-api-key" holding the OpenRouter key
+#   Secret Manager secret    backend key: "openrouter-api-key", "sarvam-api-key",
+#                            or "gemini-api-key"
 #   Artifact Registry repo   "avai" (Docker) in the region below
 # Optional repository variables:
+#   vars.AVAI_BACKEND                 openrouter (default), sarvam, or gemini
+#   vars.AVAI_MODEL                   model id; backend default when unset
 #   vars.AVAI_REGION                  default asia-south1 (Mumbai)
 #   vars.AVAI_ALLOWED_ORIGINS         default https://sangam.yazhi.dev,https://yazhi.dev,https://chat.yazhi.dev
 #   vars.AVAI_RATE_LIMIT_PER_MINUTE   default 12 questions per visitor per minute
@@ -109,8 +112,22 @@ jobs:
           PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
           ALLOWED_ORIGINS: ${{ vars.AVAI_ALLOWED_ORIGINS || 'https://sangam.yazhi.dev,https://yazhi.dev,https://chat.yazhi.dev' }}
           RATE_LIMIT: ${{ vars.AVAI_RATE_LIMIT_PER_MINUTE || '12' }}
+          BACKEND: ${{ vars.AVAI_BACKEND || 'openrouter' }}
+          MODEL_OVERRIDE: ${{ vars.AVAI_MODEL }}
         run: |
           set -eu
+          # Pick the provider secret and model default for the selected backend.
+          case "$BACKEND" in
+            sarvam)
+              secret_flag="SARVAM_API_KEY=sarvam-api-key:latest"
+              model="${MODEL_OVERRIDE:-sarvam-105b}" ;;
+            gemini)
+              secret_flag="GEMINI_API_KEY=gemini-api-key:latest"
+              model="${MODEL_OVERRIDE:-gemini-2.5-flash}" ;;
+            *)
+              secret_flag="OPENROUTER_API_KEY=openrouter-api-key:latest"
+              model="${MODEL_OVERRIDE:-google/gemini-2.5-flash}" ;;
+          esac
           # Sessions live in process memory (agents/avai/api/sessions.py), so
           # session affinity keeps a conversation on one instance where possible.
           # ^|^ switches gcloud's list delimiter so the comma-separated origin
@@ -131,8 +148,8 @@ jobs:
             --session-affinity \
             --startup-probe "httpGet.path=/avai/health/live,httpGet.port=8080,initialDelaySeconds=5,timeoutSeconds=3,periodSeconds=10,failureThreshold=6" \
             --liveness-probe "httpGet.path=/avai/health/live,httpGet.port=8080,initialDelaySeconds=10,timeoutSeconds=3,periodSeconds=30,failureThreshold=3" \
-            --set-secrets "OPENROUTER_API_KEY=openrouter-api-key:latest" \
-            --set-env-vars "^|^AVAI_ALLOWED_ORIGINS=${ALLOWED_ORIGINS}|AVAI_RATE_LIMIT_PER_MINUTE=${RATE_LIMIT}|AVAI_STRICT_READINESS=1|AVAI_VERSION=${GITHUB_SHA}"
+            --set-secrets "$secret_flag" \
+            --set-env-vars "^|^AVAI_ALLOWED_ORIGINS=${ALLOWED_ORIGINS}|AVAI_RATE_LIMIT_PER_MINUTE=${RATE_LIMIT}|AVAI_STRICT_READINESS=1|AVAI_VERSION=${GITHUB_SHA}|SANGAM_AGENT_BACKEND=${BACKEND}|SANGAM_AGENT_MODEL=${model}"
           url="$(gcloud run services describe "$SERVICE" --project "$PROJECT_ID" --region "$REGION" --format 'value(status.url)')"
           echo "url=$url" >> "$GITHUB_OUTPUT"
           echo "Avai API deployed: $url — set it as the VITE_AVAI_API_URL secret for the Pages build." >> "$GITHUB_STEP_SUMMARY"

@@ -3,7 +3,8 @@
 Default backend is OpenRouter (via LiteLLM), so the swarm runs against any
 OpenRouter-hosted model with an OPENROUTER_API_KEY and no Google-specific
 credentials. A direct Gemini backend remains available as an alternative for
-users already holding a GEMINI_API_KEY.
+users already holding a GEMINI_API_KEY, and a Sarvam AI backend is available
+for Tamil-first chat via SARVAM_API_KEY.
 """
 
 import os
@@ -30,6 +31,8 @@ DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
 DEFAULT_SELF_HOSTED_MODEL = "qwen2.5-7b-instruct"
 DEFAULT_SELF_HOSTED_API_BASE = "http://127.0.0.1:8000/v1"
 DEFAULT_OLLAMA_API_BASE = "http://127.0.0.1:11434"
+DEFAULT_SARVAM_MODEL = "sarvam-105b"
+DEFAULT_SARVAM_API_BASE = "https://api.sarvam.ai/v1"
 SELF_HOSTED_BACKENDS = {"vllm", "openai_compatible", "self_hosted"}
 
 
@@ -48,6 +51,10 @@ def get_model_config() -> dict:
         model_name = os.getenv("SANGAM_AGENT_MODEL", "qwen2.5:3b")
         api_base = os.getenv("SANGAM_MODEL_API_BASE", DEFAULT_OLLAMA_API_BASE)
         configured = bool(api_base)
+    elif backend == "sarvam":
+        model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_SARVAM_MODEL)
+        api_base = os.getenv("SARVAM_API_BASE", DEFAULT_SARVAM_API_BASE)
+        configured = bool(os.getenv("SARVAM_API_KEY"))
     elif backend in SELF_HOSTED_BACKENDS:
         model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_SELF_HOSTED_MODEL)
         api_base = os.getenv("SANGAM_MODEL_API_BASE", DEFAULT_SELF_HOSTED_API_BASE)
@@ -70,6 +77,7 @@ def get_model(**kwargs):
 
     SANGAM_AGENT_BACKEND=openrouter (default) → LiteLlm against OpenRouter.
     SANGAM_AGENT_BACKEND=gemini              → direct Gemini API model.
+    SANGAM_AGENT_BACKEND=sarvam              → Sarvam AI chat (OpenAI-compatible).
     SANGAM_AGENT_BACKEND=vllm                → self-hosted OpenAI-compatible
                                               endpoint (vLLM/TGI/llama.cpp).
     SANGAM_AGENT_BACKEND=ollama              → local Ollama via LiteLLM's
@@ -91,6 +99,22 @@ def get_model(**kwargs):
             api_base=api_base,
             api_key="not-needed",
             **kwargs
+        )
+
+    if backend == "sarvam":
+        # Sarvam's chat endpoint is OpenAI-compatible at /v1/chat/completions,
+        # so LiteLLM's openai/ provider works. Sarvam authenticates with the
+        # `api-subscription-key` header rather than a Bearer token; send both
+        # so either gateway convention is accepted.
+        api_key = os.getenv("SARVAM_API_KEY")
+        model_name = os.getenv("SANGAM_AGENT_MODEL", DEFAULT_SARVAM_MODEL)
+        api_base = os.getenv("SARVAM_API_BASE", DEFAULT_SARVAM_API_BASE)
+        return LiteLlm(
+            model=f"openai/{model_name}",
+            api_base=api_base,
+            api_key=api_key,
+            extra_headers={"api-subscription-key": api_key or ""},
+            **kwargs,
         )
 
     if backend in SELF_HOSTED_BACKENDS:
@@ -125,5 +149,6 @@ def get_model(**kwargs):
 
     raise ValueError(
         f"Unknown SANGAM_AGENT_BACKEND={backend!r}; expected one of "
-        "'openrouter', 'gemini', 'vllm', 'openai_compatible', 'self_hosted', or 'ollama'"
+        "'openrouter', 'gemini', 'sarvam', 'vllm', 'openai_compatible', "
+        "'self_hosted', or 'ollama'"
     )

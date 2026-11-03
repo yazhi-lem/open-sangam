@@ -77,11 +77,13 @@ Read by `config.py`; set them in `agents/avai/.env`.
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `SANGAM_AGENT_BACKEND` | `openrouter` | `openrouter` or `gemini` |
+| `SANGAM_AGENT_BACKEND` | `openrouter` | `openrouter`, `gemini`, or `sarvam` |
 | `OPENROUTER_API_KEY` | — | required for the openrouter backend |
 | `SANGAM_AGENT_MODEL` | `google/gemini-2.5-flash` | any model id from openrouter.ai/models |
 | `OPENROUTER_API_BASE` | `https://openrouter.ai/api/v1` | override for a proxy/gateway |
 | `GEMINI_API_KEY` | — | required when `SANGAM_AGENT_BACKEND=gemini` |
+| `SARVAM_API_KEY` | — | required when `SANGAM_AGENT_BACKEND=sarvam` (Sarvam subscription key) |
+| `SARVAM_API_BASE` | `https://api.sarvam.ai/v1` | Sarvam OpenAI-compatible chat base URL |
 | `AVAI_ALLOWED_ORIGINS` | `*` | REST API only: comma-separated CORS origins, e.g. `https://sangam.yazhi.dev` |
 | `AVAI_RATE_LIMIT_PER_MINUTE` | `0` (off) | REST API only: `/avai/ask` calls per client per minute; over it returns `429` |
 | `AVAI_DEBUG_ERRORS` | unset | REST API only: `1` puts the provider's error text in `502` responses (dev only) |
@@ -100,6 +102,19 @@ The embedding step (`backend/python/ai/vectorize.py`) uses the same
   here as a known-broken option rather than removed outright, in case a
   future OpenRouter/Gemma update fixes it.
 - **Gemini direct:** set `SANGAM_AGENT_BACKEND=gemini` and `GEMINI_API_KEY`.
+- **Sarvam AI (Tamil-first):** set `SANGAM_AGENT_BACKEND=sarvam` and
+  `SARVAM_API_KEY`; `SANGAM_AGENT_MODEL` defaults to `sarvam-105b`. Sarvam's
+  chat API is OpenAI-compatible, so it runs through LiteLLM with an
+  `api-subscription-key` header. Verify the key and model with a single call
+  before running the whole agent:
+
+  ```bash
+  cd agents
+  python -m avai.evals.sarvam_smoke
+  # then the full Avvaiyar agent through Sarvam:
+  SANGAM_AGENT_BACKEND=sarvam SANGAM_AGENT_MODEL=sarvam-105b \
+    python -m avai.evals.qa_smoke
+  ```
 - **Self-hosted vLLM/TGI/llama.cpp:** set `SANGAM_AGENT_BACKEND=vllm`,
   `SANGAM_AGENT_MODEL`, and `SANGAM_MODEL_API_BASE` (any OpenAI-compatible
   endpoint). Use a model that reliably supports tool calling, and evaluate it
@@ -133,6 +148,10 @@ python -m avai.evals.qa_smoke
 
 This is not yet a formal `adk eval` evalset (that needs ADK's structured
 trajectory JSON format) — see `evals/qa_smoke.py`'s docstring.
+
+For a Sarvam-only connectivity check (one chat call, no agent/tools), run
+`python -m avai.evals.sarvam_smoke`; it reads `SARVAM_API_KEY` from the
+environment and never prints it.
 
 ## Tests
 
