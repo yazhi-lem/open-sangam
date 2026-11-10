@@ -228,22 +228,28 @@ def normalize_poem(poem: dict) -> None:
     print(f"  ✓ {poem_id}: {len(records)} records → {combined.name} + datapackage.json{suffix}")
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Normalize all scraped poems to OKF data packages")
-    parser.add_argument("--poem", default="all", help="Poem ID or 'all'")
-    args = parser.parse_args()
-
+def main_from_cli(args) -> int:
+    """Run from an already-parsed argparse Namespace (see cli.py)."""
     if args.poem == "all":
         targets = POEMS
     elif args.poem in POEM_BY_ID:
         targets = [POEM_BY_ID[args.poem]]
     else:
-        parser.error(f"Unknown poem '{args.poem}'")
+        print(f"Error: Unknown poem '{args.poem}'")
+        return 2
 
     print(f"Normalizing {len(targets)} poem(s)…")
     for poem in targets:
         normalize_poem(poem)
     print("Done.")
+    return 0
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Normalize all scraped poems to OKF data packages")
+    parser.add_argument("--poem", default="all", help="Poem ID or 'all'")
+    args = parser.parse_args()
+    raise SystemExit(main_from_cli(args))
 
 
 if __name__ == "__main__":

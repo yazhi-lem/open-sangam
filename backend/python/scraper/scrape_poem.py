@@ -300,6 +300,23 @@ def scrape_poem(poem: dict, resume: bool = True) -> None:
 
 # ── CLI ──────────────────────────────────────────────────────────────────────
 
+def main_from_cli(args) -> int:
+    """Run from an already-parsed argparse Namespace (see cli.py)."""
+    if args.poem == "all":
+        targets = POEMS
+    elif args.poem in POEM_BY_ID:
+        targets = [POEM_BY_ID[args.poem]]
+    else:
+        print(f"Error: Unknown poem '{args.poem}'. Available: {', '.join(POEM_BY_ID)}")
+        return 2
+
+    for poem in targets:
+        scrape_poem(poem, resume=not args.no_resume)
+
+    print("\nAll done.")
+    return 0
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Scrape Sangam poems from sangathamizh.com")
     parser.add_argument(
@@ -311,18 +328,7 @@ def main() -> None:
         help="Re-scrape even if raw files already exist"
     )
     args = parser.parse_args()
-
-    if args.poem == "all":
-        targets = POEMS
-    elif args.poem in POEM_BY_ID:
-        targets = [POEM_BY_ID[args.poem]]
-    else:
-        parser.error(f"Unknown poem '{args.poem}'. Available: {', '.join(POEM_BY_ID)}")
-
-    for poem in targets:
-        scrape_poem(poem, resume=not args.no_resume)
-
-    print("\nAll done.")
+    raise SystemExit(main_from_cli(args))
 
 
 if __name__ == "__main__":
