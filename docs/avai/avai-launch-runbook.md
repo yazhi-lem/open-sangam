@@ -1,4 +1,6 @@
-# Avai Demo Launch Runbook — target 14 November
+# Avai Demo Launch Runbook — target TBD (replanning)
+
+> **Plan reset, 20 Nov 2026:** we are replanning from scratch, so every launch and due date in this doc is TBD (replanning).
 
 This is the operational checklist for shipping the Sangam Avai agent swarm to
 production and running the public demo. It complements
