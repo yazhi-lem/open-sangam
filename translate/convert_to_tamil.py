@@ -2,8 +2,8 @@
 """Convert extracted English UI strings to Tamil using translate/glossary.json.
 
 Unmapped strings are marked `needs-review`; nothing is silently invented.
-Optional `--avai` sends unmapped strings to a running Avai endpoint for a
-Tamil-only draft, still marked for review.
+`--avai` is reserved for sending unmapped strings to a local Avai endpoint
+for a Tamil-only draft; it is not wired up yet and currently has no effect.
 """
 from __future__ import annotations
 import argparse, json, re
@@ -31,7 +31,7 @@ def phrase_translate(text: str, glossary: dict[str, str]) -> tuple[str, str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--avai", default=None, help="optional local Avai base URL, e.g. http://127.0.0.1:8080")
+    parser.add_argument("--avai", default=None, help="reserved, not implemented yet (no effect): local Avai base URL, e.g. http://127.0.0.1:8080")
     args = parser.parse_args()
     glossary = json.loads(GLOSSARY.read_text(encoding="utf-8"))
     source = json.loads(SOURCE.read_text(encoding="utf-8"))
