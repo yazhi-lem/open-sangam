@@ -84,6 +84,12 @@ def load_corpus() -> list[dict]:
     return records
 
 
+def main_from_cli(_args=None) -> int:
+    """Run from an already-parsed argparse Namespace (see cli.py)."""
+    main()
+    return 0
+
+
 def main() -> None:
     lexicon = json.loads(LEXICON.read_text(encoding="utf-8"))
     corpus = load_corpus()

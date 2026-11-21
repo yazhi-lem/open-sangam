@@ -20,6 +20,9 @@ Everything below is run from `backend/python/` with the virtualenv active
 scrape_poem  →  normalize_all  →  build_graph
    (raw/)        (normalized/)     (knowledge graph)
                         ↓
+          translate_with_gemini / extract_etymology
+             (AI drafts, always `verified: false`)
+                        ↓
                     vectorize
                 (embeddings + search)
 ```
@@ -109,15 +112,69 @@ predecessor to `normalize_all.py` — running it caused the exact class of bug
 this section describes (two differently-padded, non-merged copies of every
 maduraikanchi record). Do not run it; it's kept only for history.
 
-### Machine-drafted fields — generation scripts removed
+### Machine-drafted fields — generation pipeline
 
 `english`, `urai` and the per-word `root`/`urichol`/`etymology`/`gloss` fields
-from earlier batch runs stay in the corpus and are preserved by `normalize_all.py`
-(table above). The scripts that generated them (`ai/translate_with_gemini.py`,
-`ai/translate_all.py`, `ai/extract_etymology.py`) and the nightly
-`translate-english.yml` workflow were removed; nothing in this repo generates
-translations any more. Shared helpers (poem order, verse file discovery, `.env`
-loading) now live in `ai/corpus_io.py`.
+are drafted by the scripts below and preserved across re-normalizes by
+`normalize_all.py` (table above). The pipeline was removed in #136 and restored
+here, with the `cli.py` entry point and tests that were missing before; the
+nightly `translate-english.yml` workflow is still gone — runs are manual.
+
+#### `ai/translate_with_gemini.py` — Translate verses
+
+```bash
+python -m ai.translate_with_gemini --status
+python -m ai.translate_with_gemini --lang english --limit 5 --dry-run
+python -m ai.translate_with_gemini --lang english --limit 200
+```
+
+Phased, resumable, concurrent batch translation of `english`, `urai` and
+`yazhi_urai`. Every run rebuilds progress from disk (never trusting the state
+file's counters), picks a bounded batch from the current phase, writes each
+verse back with `verified: false` and an `englishMeta` provenance block, and
+appends a run record to `data/pipeline/translation-state.json`. Uses OpenRouter
+by default (`OPENROUTER_API_KEY`); set `SANGAM_TRANSLATE_BACKEND=gemini` to use
+the Gemini SDK (`GEMINI_API_KEY`).
+
+#### `ai/translate_all.py` — All three language passes
+
+```bash
+python -m ai.translate_all --status
+python -m ai.translate_all --limit 200
+python -m ai.translate_all --only urai --limit 50
+```
+
+Convenience wrapper that sequences `urai` → `yazhi_urai` → `english` as three
+subprocess runs of `translate_with_gemini.py`, forwarding the shared flags.
+
+#### `ai/extract_etymology.py` — Word glossary
+
+```bash
+python -m ai.extract_etymology --status
+python -m ai.extract_etymology --limit 200
+```
+
+Fills the word-level `root` / `urichol` / `etymology` / `gloss` fields. Per-word
+null-ness can't signal "not yet processed" (a bare particle has no root), so
+completeness is tracked per verse with an `etymologyMeta` block. Same
+`verified: false` rule as translation.
+
+#### `cli.py` — One entry point
+
+```bash
+python cli.py scrape --poem all
+python cli.py normalize --poem all
+python cli.py translate --lang english --limit 200
+python cli.py build-graph
+```
+
+Thin dispatcher over `scraper.scrape_poem`, `normalizer.normalize_all`,
+`ai.translate_with_gemini` and `knowledge.build_graph`. Each underlying module
+keeps its own `main()`; `cli.py` calls the shared `main_from_cli(args)` wrapper
+so no logic is duplicated.
+
+Shared helpers (poem order, verse file discovery, `.env` loading) live in
+`ai/corpus_io.py`.
 
 ### `ai/vectorize.py` — Verse embeddings + semantic search
 
