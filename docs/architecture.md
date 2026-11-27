@@ -45,7 +45,7 @@ plus deploy steps, are in [`avai-launch-runbook.md`](avai/avai-launch-runbook.md
 
 ## Decisions still open
 
-- Model host for the public beta, under the Yazhi sovereign-by-default policy (`factory/CURRENT.md` D4).
-- Whether to retire the Firebase Functions (`factory/CURRENT.md` D5) and the dead Firestore reader path.
+- Model host for the public beta, under the Yazhi sovereign-by-default policy (see `README.md`).
+- Whether to retire the Firebase Functions and the dead Firestore reader path (see `README.md`).
 - Post-launch hardening: Postgres for sessions and artifacts, a model gateway, pgvector retrieval
   (`archives/2026-10-27-docs-digest.md` §4).

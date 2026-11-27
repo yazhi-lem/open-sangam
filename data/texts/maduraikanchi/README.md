@@ -11,7 +11,7 @@ Pandyan king Nedunj Cheliyan and the city of Madurai.
 | Scraping | ✅ Complete — 63 sections cover lines 1–782, all 782 lines present (missing source lines filled from Project Madurai `pmuni0496`) |
 | Normalization (OKF) | ✅ Done — `maduraikanchi.json` + `datapackage.json` |
 | Tamil Prose Urai | ✅ Done — 60/63 sections have prose translation (scraped) |
-| English | ⬜ Pending — lines 1–100 are the Q4 launch scope (see `factory/NEXT.md`); the rest needs a licence-cleared translation source (see `docs/library/LIBRARY_ROADMAP.md`) |
+| English | ⬜ Pending — lines 1–100 were the Q4 launch scope (see `docs/README.md` for current status); the rest needs a licence-cleared translation source |
 | Scholar Verification | ⬜ Pending |
 
 ## Running the pipeline

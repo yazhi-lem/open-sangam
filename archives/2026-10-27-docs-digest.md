@@ -2,7 +2,7 @@
 
 A snapshot of this repo's documentation on 27 Oct 2026: what Open Sangam is, a map of the docs that remain, where they
 disagree, and compressed copies of the 6 docs retired that day. It is never edited after that date. Live state is in
-[`../factory/`](../factory).
+the repo README and `docs/README.md` (the old `factory/` status files were retired on 2026-11-21).
 
 ## 1. Open Sangam in brief
 
