@@ -5,6 +5,8 @@ export const COLLECTIONS = {
   '8thokai': { ta: 'எட்டுத்தொகை', en: 'Eight Anthologies', desc: 'Eight classical Tamil poetic anthologies spanning the Akam (interior) and Puram (exterior) traditions.' },
   '10paddu': { ta: 'பத்துப்பாட்டு', en: 'Ten Idylls', desc: 'Ten long poems celebrating kings, cities, and the Tamil landscape in elaborate verse.' },
   'pathinenkilkkanakku': { ta: 'பதினெண்கீழ்க்கணக்கு', en: 'Eighteen Minor Works', desc: 'Post-Sangam didactic and gnomic anthologies. The first two, Tirukkural and Naladiyar, are now readable with public-domain English translations.' },
+  aimperumkappiyam: { ta: 'ஐம்பெருங்காப்பியங்கள்', en: 'Five Great Epics', desc: 'The five grand epics of Tamil literature, navigated by kāṇṭam → kādai.' },
+  'tamil-classics': { ta: 'தமிழ்ச் செவ்வியல்', en: 'Tamil Classics', desc: 'Classical epics and major works outside the Sangam anthologies, navigated by kāṇṭam → paṭalam or chapter.' },
 }
 
 export const POEMS = [
@@ -326,6 +328,39 @@ export const POEMS = [
     count: 188, unit: 'lines',
     available: true,
     loader: () => import('@data/texts/nedunalvadai/nedunalvadai.json'),
+  },
+
+  // ── Epics harvested from Tamil Wikisource (CC BY-SA 4.0) ───────────────
+  // Structural works: the reader groups records by structure.book → structure.chapter.
+  {
+    id: 'manimekalai',
+    ta: 'மணிமேகலை', en: 'Manimekalai',
+    collection: 'aimperumkappiyam',
+    sectionKind: 'kadai',
+    count: 30, unit: 'cantos',
+    tinai: [],
+    available: true,
+    loader: () => import('@data/texts/manimekalai/manimekalai.json'),
+  },
+  {
+    id: 'ramavataram',
+    ta: 'கம்பராமாயணம்', en: 'Kamba Ramayanam',
+    collection: 'tamil-classics',
+    sectionKind: 'padalam',
+    count: 10553, unit: 'verses',
+    tinai: [],
+    available: true,
+    loader: () => import('@data/texts/ramavataram/ramavataram.json'),
+  },
+  {
+    id: 'perunkathai',
+    ta: 'பெருங்கதை', en: 'Perunkathai',
+    collection: 'tamil-classics',
+    sectionKind: 'chapter',
+    count: 99, unit: 'chapters',
+    tinai: [],
+    available: true,
+    loader: () => import('@data/texts/perunkathai/perunkathai.json'),
   },
 ]
 

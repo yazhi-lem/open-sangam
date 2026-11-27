@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-27",
   "description": "Catalog of Tamil works and artifact collections beyond the Ettuthokai / Pattuppattu reader corpus. `availability` is `reader` when normalized verse JSON exists, `metadata` when only the catalog record is present, and `planned` when there is no data yet. `languages` lists text languages; `translations` lists available translation languages. Adding a work here does not claim it is readable: ingestion is tracked in docs/library/LIBRARY_ROADMAP.md.",
   "collections": [
     {
@@ -435,11 +435,11 @@
         "ta"
       ],
       "translations": [],
-      "availability": "metadata",
-      "source": "Project Madurai (Kausalya Hart English translation also on PM)",
-      "rights": "public-domain text",
-      "notes": "Buddhist epic and sequel to Silappathikaram; thirty cantos.",
-      "sectionKind": "canto"
+      "availability": "reader",
+      "source": "Tamil Wikisource (ta.wikisource.org), CC BY-SA 4.0",
+      "rights": "public-domain text; Wikisource transcription CC BY-SA 4.0",
+      "notes": "30 kādai + patikam harvested from Tamil Wikisource. Tamil only; urai and English pending review.",
+      "sectionKind": "kadai"
     },
     {
       "id": "nannul",
@@ -610,11 +610,30 @@
       "translations": [
         "en"
       ],
-      "availability": "metadata",
-      "source": "Project Madurai / Tamil Virtual Academy",
-      "rights": "public-domain text",
-      "notes": "Tamil adaptation of the Ramayana in six kandas; cornerstone of Tamil epic tradition.",
-      "sectionKind": "canto"
+      "availability": "reader",
+      "source": "Tamil Wikisource (ta.wikisource.org), CC BY-SA 4.0",
+      "rights": "public-domain text; Wikisource transcription CC BY-SA 4.0",
+      "notes": "125 paṭalam (10,392 numbered verses) harvested from Tamil Wikisource across six kāṇṭam; the paṭalam not yet transcribed on the wiki are absent.",
+      "sectionKind": "padalam"
+    },
+    {
+      "id": "perunkathai",
+      "ta": "பெருங்கதை",
+      "en": "Perunkathai",
+      "collection": "tamil-classics",
+      "author": "கொங்குவேளிர் · Koṅkuvēḷir",
+      "period": "c. 7th century CE",
+      "count": 99,
+      "unit": "chapters",
+      "languages": [
+        "ta"
+      ],
+      "translations": [],
+      "availability": "reader",
+      "sectionKind": "chapter",
+      "source": "Tamil Wikisource (ta.wikisource.org), CC BY-SA 4.0 — U. V. Swaminatha Iyer edition",
+      "rights": "public-domain text; Wikisource transcription CC BY-SA 4.0",
+      "notes": "Jain epic in five kāṇṭam; only part of the text survives. 99 chapters harvested from Wikisource. Lacunae are preserved, not invented."
     },
     {
       "id": "iraiyanar-akapporul",
