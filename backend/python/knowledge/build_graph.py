@@ -24,6 +24,7 @@ import json
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
+from normalizer.poet_alias import canonical_poet
 
 # ── Paths ────────────────────────────────────────────────────────────────────
 HERE = Path(__file__).resolve()
@@ -55,14 +56,8 @@ TOP_POETS_GRAPH = 40      # poets promoted to graph nodes (by verse count)
 
 
 def clean_poet(name: str | None) -> str | None:
-    if not name:
-        return None
-    name = name.strip().rstrip(".。 ").strip()
-    if not name:
-        return None
-    if any(m in name for m in ANON_MARKERS):
-        return None
-    return name
+    """Canonical spelling, shared with the normalizer (normalizer/poet_alias.py)."""
+    return canonical_poet(name)
 
 
 def strip_tamil(text: str) -> str:

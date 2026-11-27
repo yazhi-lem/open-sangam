@@ -581,7 +581,7 @@
     "source": "http://www.sangathamizh.com/8thokai/paripadal/paripadal-பரிபாடல்01.html",
     "verified": false,
     "number": 1,
-    "poet": "ஆசிரியர் அறியப்படவில்லை.",
+    "poet": null,
     "etymologyMeta": {
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",
@@ -3673,7 +3673,7 @@
     "source": "http://www.sangathamizh.com/8thokai/paripadal/paripadal-பரிபாடல்07.html",
     "verified": false,
     "number": 7,
-    "poet": "ஆசிரியர் அறியப்படவில்லை.",
+    "poet": null,
     "etymologyMeta": {
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",
@@ -7289,7 +7289,7 @@
     "source": "http://www.sangathamizh.com/8thokai/paripadal/paripadal-பரிபாடல்13.html",
     "verified": false,
     "number": 13,
-    "poet": "நல்லெழுநியார்.",
+    "poet": "நல்லெழுநியார்",
     "etymologyMeta": {
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",
@@ -10511,7 +10511,7 @@
     "source": "http://www.sangathamizh.com/8thokai/paripadal/paripadal-பரிபாடல்18.html",
     "verified": false,
     "number": 18,
-    "poet": "குன்றம்பூதனார்.",
+    "poet": "குன்றம்பூதனார்",
     "etymologyMeta": {
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",
@@ -13206,7 +13206,7 @@
     "source": "http://www.sangathamizh.com/8thokai/paripadal/paripadal-பரிபாடல்22.html",
     "verified": false,
     "number": 22,
-    "poet": "ஆசிரியர் அறியப்படவில்லை.",
+    "poet": null,
     "etymologyMeta": {
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",
@@ -13491,7 +13491,7 @@
     "source": "http://www.sangathamizh.com/8thokai/paripadal/paripadal-பரிபாடல்23.html",
     "verified": false,
     "number": 23,
-    "poet": "ஆசிரியர் அறியப்படவில்லை.",
+    "poet": null,
     "etymologyMeta": {
       "provider": "openrouter",
       "model": "google/gemini-2.5-flash",

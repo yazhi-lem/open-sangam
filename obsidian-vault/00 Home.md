@@ -23,10 +23,10 @@ A linked Obsidian vault generated from the Open Sangam corpus, artifact register
 
 ## Corpus
 
-- Works: **20**
-- Records: **4,399**
+- Works: **39**
+- Records: **6,167**
 - Tiṇai notes: **5**
-- Poets: **561**
+- Poets: **508**
 - Artifact records: **20**
 - Corpus artifact terms: **46**
 - Entity terms: **98**

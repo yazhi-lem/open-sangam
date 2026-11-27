@@ -4,14 +4,14 @@ type: poet
 tags:
   - sangam
   - poet
-verse_count: 4
+verse_count: 5
 ---
 
 # சீத்தலைச் சாத்தனார்
 
-- Verses: **4**
+- Verses: **5**
 - Works: [[Work - akananooru|அகநானூறு]], [[Work - natrinai|நற்றிணை]]
-- Tiṇai: [[Tiṇai - Palai|பாலை]], [[Tiṇai - Mullai|முல்லை]], [[Tiṇai - Neytal|நெய்தல்]], [[Tiṇai - Kurinji|குறிஞ்சி]]
+- Tiṇai: [[Tiṇai - Kurinji|குறிஞ்சி]], [[Tiṇai - Palai|பாலை]], [[Tiṇai - Mullai|முல்லை]], [[Tiṇai - Neytal|நெய்தல்]]
 
 ## Verse index
 

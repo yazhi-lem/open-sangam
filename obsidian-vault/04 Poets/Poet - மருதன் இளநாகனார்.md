@@ -4,12 +4,12 @@ type: poet
 tags:
   - sangam
   - poet
-verse_count: 38
+verse_count: 39
 ---
 
 # மருதன் இளநாகனார்
 
-- Verses: **38**
+- Verses: **39**
 - Works: [[Work - akananooru|அகநானூறு]], [[Work - kalithokai|கலித்தொகை]], [[Work - natrinai|நற்றிணை]]
 - Tiṇai: [[Tiṇai - Marutam|மருதம்]], [[Tiṇai - Palai|பாலை]], [[Tiṇai - Mullai|முல்லை]], [[Tiṇai - Kurinji|குறிஞ்சி]]
 

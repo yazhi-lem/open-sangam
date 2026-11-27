@@ -4,15 +4,18 @@ type: poet
 tags:
   - sangam
   - poet
-verse_count: 3
+verse_count: 64
 ---
 
 # பாலைபாடிய பெருங்கடுங்கோ
 
-- Verses: **3**
-- Works: [[Work - kurunthokai|குறுந்தொகை]]
+- Verses: **64**
+- Works: [[Work - akananooru|அகநானூறு]], [[Work - kalithokai|கலித்தொகை]], [[Work - kurunthokai|குறுந்தொகை]], [[Work - natrinai|நற்றிணை]]
 - Tiṇai: [[Tiṇai - Palai|பாலை]], [[Tiṇai - Marutam|மருதம்]]
 
 ## Verse index
 
+- [[Verse Index - akananooru|அகநானூறு]]
+- [[Verse Index - kalithokai|கலித்தொகை]]
 - [[Verse Index - kurunthokai|குறுந்தொகை]]
+- [[Verse Index - natrinai|நற்றிணை]]

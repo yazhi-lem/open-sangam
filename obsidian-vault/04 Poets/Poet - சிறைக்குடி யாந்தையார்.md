@@ -4,14 +4,14 @@ type: poet
 tags:
   - sangam
   - poet
-verse_count: 3
+verse_count: 4
 ---
 
 # சிறைக்குடி யாந்தையார்
 
-- Verses: **3**
+- Verses: **4**
 - Works: [[Work - kurunthokai|குறுந்தொகை]]
-- Tiṇai: [[Tiṇai - Palai|பாலை]], [[Tiṇai - Kurinji|குறிஞ்சி]]
+- Tiṇai: [[Tiṇai - Kurinji|குறிஞ்சி]], [[Tiṇai - Palai|பாலை]]
 
 ## Verse index
 
