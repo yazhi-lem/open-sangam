@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react'
+import { useState, useEffect, useLayoutEffect, useRef, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { Columns2, Rows2, ChevronLeft, ChevronRight, Copy } from 'lucide-react'
 import { normalizeLayer, visibleLayers } from '../../data/readerLayers.js'
@@ -117,9 +117,25 @@ export default function Reader({ poem, sectionId }) {
     }
   }, [poem, sectionId])
 
-  useEffect(() => {
-    contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [active])
+  // Scroll reset for the reader's own scroll container.
+  //
+  // `main` below is the scroll container (the window never scrolls on a reader
+  // page), so the route-level ScrollToTop cannot reach it. The old code only
+  // reacted to `active`, which missed the common case: switching to another work
+  // while both works sat on the same verse index left the container at the old
+  // offset, so the new work opened mid-page.
+  //
+  // - work or verse changed by navigation → jump instantly (`auto`)
+  // - verse changed by the prev/next buttons or arrow keys → keep the smooth glide
+  const lastNavKey = useRef(null)
+  useLayoutEffect(() => {
+    const node = contentRef.current
+    if (!node) return
+    const navKey = `${poem.id}|${sectionId ?? ''}`
+    const fromNavigation = lastNavKey.current !== navKey
+    lastNavKey.current = navKey
+    node.scrollTo({ top: 0, left: 0, behavior: fromNavigation ? 'auto' : 'smooth' })
+  }, [active, poem.id, sectionId])
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -246,7 +262,7 @@ export default function Reader({ poem, sectionId }) {
             }}
           />
         ) : (
-        <nav className="flex-1 overflow-y-auto py-1">
+        <nav key={poem.id} className="flex-1 overflow-y-auto py-1">
           {filteredSections.map((s) => {
             const indexInFull = sections.findIndex((item) => item.id === s.id)
             const n = isSection ? s.sectionNumber : s.number
@@ -277,7 +293,7 @@ export default function Reader({ poem, sectionId }) {
         )}
       </aside>
 
-      <main ref={contentRef} className="flex-1 overflow-y-auto bg-page flex flex-col">
+      <main key={poem.id} ref={contentRef} className="flex-1 overflow-y-auto bg-page flex flex-col">
         <div className="sticky top-0 z-10 border-b border-line bg-page/90 backdrop-blur-md px-3 sm:px-6 py-2 sm:py-3 shrink-0">
           <div className="w-full flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-1 sm:gap-2">
