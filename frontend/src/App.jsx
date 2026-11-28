@@ -17,6 +17,9 @@ import { AVAI_ENABLED } from './config/features'
 
 // Avai is behind a flag (see config/features.js): its code is only fetched when enabled.
 const Avai = AVAI_ENABLED ? lazy(() => import('./pages/Avai')) : null
+// The floating launcher reuses the same Avai client, so it ships (and loads)
+// only when the backend is actually configured.
+const FloatingAvai = AVAI_ENABLED ? lazy(() => import('./components/avai/FloatingAvai')) : null
 
 function AppContent() {
   const location = useLocation()
@@ -61,6 +64,11 @@ function AppContent() {
           </Routes>
         </main>
         {!isAvaiPage && <Footer />}
+        {!isAvaiPage && FloatingAvai && (
+          <Suspense fallback={null}>
+            <FloatingAvai />
+          </Suspense>
+        )}
       </div>
     </div>
   )
