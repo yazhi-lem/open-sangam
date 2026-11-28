@@ -89,7 +89,7 @@ const COPY = {
   ta: {
     label: 'சங்க அவையுடன் உரையாடு',
     close: 'உரையாடலை மூடு',
-    title: 'அவ்வை – சங்க இலக்கிய AI',
+    title: 'அவை – சங்க இலக்கிய AI',
     subtitle: 'ஐந்து புலவர்கள் • ஒரே அவை',
     fullPage: 'முழுப் பக்கத்தைத் திற',
     council: 'புலவரைத் தேர்ந்தெடுங்கள்',
@@ -109,7 +109,7 @@ const COPY = {
   en: {
     label: 'Chat with the Sangam Avai',
     close: 'Close the chat',
-    title: 'Avvai – Sangam Literary AI',
+    title: 'Avai – Sangam Literary AI',
     subtitle: 'Five Pulavars • One Assembly',
     fullPage: 'Open the full page',
     council: 'Choose a Pulavar',
