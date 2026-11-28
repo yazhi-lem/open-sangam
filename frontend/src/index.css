@@ -274,6 +274,77 @@ body {
   }
 }
 
+/* ── Avai floating assistant (components/avai/FloatingAvai.jsx) ──────────
+   The disc uses the logo artwork's own background colour (#0d0b09) so the
+   supplied PNG sits inside the circle with no pixel of it cropped, recoloured
+   or redrawn. The lavender glow is a deliberate accent for this widget only;
+   it lives in box-shadows outside the artwork, never on top of it. */
+.avai-fab-disc,
+.avai-mark-disc {
+  background-color: #0d0b09;
+}
+
+.avai-fab {
+  animation: avai-float 7s ease-in-out infinite;
+  box-shadow:
+    0 0 0 1px rgba(196, 181, 253, 0.3),
+    0 0 18px 0 rgba(167, 139, 250, 0.28),
+    0 12px 32px -10px rgba(139, 92, 246, 0.6);
+}
+
+.avai-fab:hover {
+  box-shadow:
+    0 0 0 1px rgba(216, 200, 255, 0.55),
+    0 0 26px 3px rgba(167, 139, 250, 0.45),
+    0 14px 36px -8px rgba(139, 92, 246, 0.7);
+}
+
+.avai-fab:active {
+  transform: scale(0.96);
+}
+
+.avai-fab img,
+.avai-mark-disc img {
+  pointer-events: none;
+  image-rendering: auto;
+}
+
+.avai-mark-disc {
+  box-shadow: inset 0 0 0 1px rgba(196, 181, 253, 0.22);
+}
+
+@keyframes avai-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -6px; }
+}
+
+@keyframes avai-typing {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
+}
+
+.avai-typing-dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 9999px;
+  background-color: var(--text-muted);
+  animation: avai-typing 1.2s ease-in-out infinite;
+}
+.avai-typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.avai-typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+/* The panel is a scrollable region inside a fixed shell: keep its own scroll
+   from chaining to the page underneath. */
+.avai-panel {
+  max-height: min(34rem, calc(100dvh - 9rem));
+  overscroll-behavior: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avai-fab { animation: none; }
+  .avai-typing-dot { animation: none; opacity: 0.6; }
+}
+
 .dark .skeleton-shimmer::after {
   background-image: linear-gradient(
     90deg,

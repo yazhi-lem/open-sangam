@@ -37,3 +37,19 @@ VITE_GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
 ```
 
 Ensure your `avai/agents` backend is running and accessible at the configured `VITE_AVAI_API_URL`.
+
+## Avai floating assistant
+
+`src/components/avai/FloatingAvai.jsx` is the launcher bubble that follows the
+reader across every page except `/avai`, where the full chat already lives. It
+posts to the same `/avai/ask` endpoint through `src/services/avaiService.js` —
+there is no second transport or prompt contract. Like the full page it is
+gated behind `AVAI_ENABLED`, and lazy-loaded so its code is never shipped when
+the backend is not configured.
+
+The bubble shows `public/brand/avai-logo.png` **exactly as supplied**: do not
+recolour it, redraw it, re-typeset it, or crop it. The disc behind it is
+painted with the artwork's own background colour (`#0d0b09`, set in
+`index.css`), so the logo's square edges are invisible inside the circle and
+every original pixel of the cream mark is kept. The lavender glow is a
+box-shadow outside the artwork, so it can never tint the logo itself.
