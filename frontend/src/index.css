@@ -333,16 +333,127 @@ body {
 .avai-typing-dot:nth-child(2) { animation-delay: 0.15s; }
 .avai-typing-dot:nth-child(3) { animation-delay: 0.3s; }
 
-/* The panel is a scrollable region inside a fixed shell: keep its own scroll
-   from chaining to the page underneath. */
+/* The council chamber reads dark in both app themes, like an olai leaf held
+   against lamplight. Re-declaring the theme tokens on the panel scope means
+   every shared piece inside it — Markdown (.prose-sangam), LanguageText,
+   focus-ring, borders — inherits the dark literary palette without per-element
+   overrides, and the light theme is untouched everywhere outside the panel. */
 .avai-panel {
-  max-height: min(34rem, calc(100dvh - 9rem));
+  --bg: #12100d;
+  --surface: #1b1713;
+  --surface-alt: #241f19;
+  --border: rgba(196, 149, 90, 0.22);
+  --border-strong: rgba(196, 149, 90, 0.42);
+  --text: #f5f2eb;              /* warm cream typography */
+  --text-muted: #c0b3a0;
+  --text-faint: #9a8d78;
+  --accent: #d2a86a;            /* muted gold */
+  --accent-strong: #e7c68f;
+  --on-accent: #14110d;
+  --danger: #f87171;
+  --glass-bg: rgba(18, 16, 13, 0.97);
+  --glass-border: rgba(196, 149, 90, 0.26);
+  --avai-glow: rgba(167, 139, 250, 0.38);
+  /* Tailwind's @theme aliases are substituted at :root, so they have to be
+     re-declared here too — otherwise text-primary and friends keep computing
+     from the page theme and ink would land on top of the dark chamber. */
+  --color-page: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-primary: var(--text);
+  --color-muted: var(--text-muted);
+  --color-faint: var(--text-faint);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-on-accent: var(--on-accent);
+  --color-danger: var(--danger);
+  --color-glass-bg: var(--glass-bg);
+  --color-glass-border: var(--glass-border);
+  max-height: min(38rem, calc(100dvh - 7rem));
   overscroll-behavior: contain;
+  color: var(--text);
+  box-shadow:
+    0 0 0 1px rgba(196, 149, 90, 0.14),
+    0 0 26px -8px var(--avai-glow),
+    0 24px 60px -22px rgba(0, 0, 0, 0.8);
+  animation: avai-panel-in 180ms ease-out;
+}
+
+.avai-agent-card {
+  border-color: var(--border);
+  background-color: var(--surface);
+}
+
+.avai-agent-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  background-color: var(--surface-alt);
+}
+
+/* Active-agent indicator: gold rim plus the lavender council glow. */
+.avai-agent-card[aria-checked='true'] {
+  border-color: var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 14%, var(--surface));
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent),
+    0 0 16px -6px var(--avai-glow);
+}
+
+.avai-thread {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--accent) 45%, transparent) transparent;
+}
+
+/* Answers come from the shared Markdown renderer, whose .prose-sangam sizes are
+   tuned for full pages. Inside a 26rem panel that reads as oversized, so scale
+   the prose down here rather than forking the renderer. */
+.avai-panel .prose-sangam {
+  font-size: 0.75rem;
+  line-height: 1.65;
+}
+.avai-panel .prose-sangam h1,
+.avai-panel .prose-sangam h2,
+.avai-panel .prose-sangam h3,
+.avai-panel .prose-sangam h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0.5rem 0 0.35rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.avai-panel .prose-sangam p { margin: 0 0 0.5rem; }
+.avai-panel .prose-sangam ul,
+.avai-panel .prose-sangam ol {
+  margin: 0 0 0.5rem;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+.avai-panel .prose-sangam ol { list-style: decimal; }
+.avai-panel .prose-sangam li { margin: 0.15rem 0; }
+.avai-panel .prose-sangam blockquote {
+  margin: 0.5rem 0;
+  padding-left: 0.6rem;
+  border-left-width: 2px;
+}
+.avai-panel .prose-sangam pre {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  overflow-x: auto;
+}
+.avai-panel .prose-sangam > :last-child { margin-bottom: 0; }
+
+@keyframes avai-panel-in {
+  from { opacity: 0; transform: translateY(10px) scale(0.985); }
+  to { opacity: 1; transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .avai-fab { animation: none; }
   .avai-typing-dot { animation: none; opacity: 0.6; }
+  .avai-panel { animation: none; }
 }
 
 .dark .skeleton-shimmer::after {

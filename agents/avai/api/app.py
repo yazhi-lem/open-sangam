@@ -138,11 +138,15 @@ def classify_message(message: str) -> tuple[str, str]:
             return "search", "verse_search_intent"
 
     # 3. Visual & Imagery -> imagery (paranar)
+    # Plain "image" is deliberately absent: "the image of a king" is an ordinary
+    # question, not a request for a scene (see test_intent_routing_ordinary_word_image).
     imagery_patterns = [
         r"\b(draw|paint|illustrate)\b",
         r"\b(generate|create|make)\s+(an?\s+)?(image|picture)\b",
         r"\bpicture\s+of\b",
-        r"(?:ஓவியம்|படம்|காட்சி|சித்திரம்)\s*(?:வரை|வரைக|வரையவும்|வரைந்து)|காட்சிப்படுத்து",
+        r"\b(imagery|metaphors?|similes?|symbolis[mt]\w*)\b",
+        r"(?:ஓவியம்|படம்|காட்சி|காட்சியை|காட்சியின்|சித்திரம்)\s*(?:வரை|வரைக|வரையவும்|வரைந்து)|காட்சிப்படுத்து",
+        r"(?:உருவகம்|உருவக|உருவகிக்க|உருவகிப்பு|மெய்யுணர்வு)",
     ]
     for pat in imagery_patterns:
         if re.search(pat, msg_lower):
