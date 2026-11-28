@@ -27,6 +27,14 @@
         "lineStart",
         "lineEnd"
       ]
+    },
+    {
+      "title": "Structural section (epic canto, padalam, kadai, ilambakam, game)",
+      "description": "A chapter of a structural work. Line numbering is local to the chapter, so lineStart/lineEnd are optional; `structure` carries the book/chapter position instead.",
+      "required": [
+        "sectionNumber",
+        "structure"
+      ]
     }
   ],
   "properties": {
@@ -316,6 +324,93 @@
       "type": "boolean",
       "description": "True only after scholar sign-off. While false, every AI-drafted field (urai/yazhi_urai/english/word glosses) is a draft and the reader must label it as such.",
       "default": false
+    },
+    "structure": {
+      "type": "object",
+      "description": "Position of this record inside a structural work (epic, grammar treatise, hymnal). Rendered by frontend/src/data/structure.js as book → chapter → section. `number` is the verse number *within the chapter*; the top-level `sectionNumber` is the global ordinal in the work.",
+      "required": [
+        "level"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "string",
+          "description": "Navigation granularity: canto (காண்டம்), chapter (generic), kadai (காதை), padalam (படலம்), ilambakam (இலம்பகம்), game (திருவிளையாடல்), sutra, pathigam, pasuram.",
+          "enum": [
+            "canto",
+            "chapter",
+            "kadai",
+            "padalam",
+            "ilambakam",
+            "game",
+            "sutra",
+            "pathigam",
+            "pasuram"
+          ]
+        },
+        "book": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Outer division title, e.g. 'புகர்க்காண்டம்' for Silappathikaram or 'பால காண்டம்' for Kamba Ramayanam."
+        },
+        "chapter": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Chapter title inside the book, e.g. 'மனையறம் படுத்த காதை' or 'குகப் படலம்'."
+        },
+        "chapterNumber": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "description": "Chapter number as printed in the edition (may restart per book)."
+        },
+        "number": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "description": "Section or verse number inside the chapter."
+        },
+        "verseCount": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "Number of verses the source prints inside this chapter, when it numbers them."
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "description": "Scene beats printed inside a structural chapter (Kamba Ramayanam prints a bold Tamil sentence before each scene). Each entry points at the verse line where the scene starts, so the reader can show story beats without inventing them.",
+      "items": {
+        "type": "object",
+        "required": [
+          "lineNumber",
+          "text"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "lineNumber": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1-based index into lines[] where this scene begins."
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Scene heading exactly as printed in the edition."
+          }
+        }
+      }
     }
   },
   "additionalProperties": false

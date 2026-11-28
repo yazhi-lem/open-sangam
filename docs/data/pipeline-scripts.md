@@ -80,6 +80,46 @@ mislabelled in the HTML editions are filled from the other Project Madurai
 editions and the Internet Archive scan of the same translation. No machine
 translation is used.
 
+### `scraper/scrape_wikisource.py` — Structural epics from Tamil Wikisource
+
+```bash
+python -m scraper.scrape_wikisource --work all
+python -m scraper.scrape_wikisource --work manimekalai --offline
+```
+
+Harvests the epics Wikipedia cannot give us: Wikipedia holds the explanation,
+[Wikisource](https://ta.wikisource.org) holds the text. Both are CC BY-SA 4.0,
+so every record carries its page URL in `source` and the work carries a
+`contributors.md` attribution block.
+
+| Work | Adapter | Records | Markup handled |
+|---|---|---:|---|
+| `manimekalai` | `manimekalai` | 31 (patikam + 30 kādai) | `== NN.காதை ==` + `<poem>`, edition line markers `----12-090` stripped |
+| `perunkathai` | `perunkathai` | 99 chapters / 5 kāṇṭam | verse zone after `*பாடல் மூலம்`, `<poem>` blocks, wrapped headings rejoined, declared lacunae skipped |
+| `ramavataram` (Kamba Ramayanam) | `kamba` | 125 paṭalam, 10,392 numbered verses | `<center><big>'''9. அகலிகைப் படலம்'''` title, bold scene lines → `scenes[]`, stanza numbers stripped |
+
+Three rules the adapters enforce:
+
+1. **Only the verse zone.** Editorial prefaces, prose summaries and translation
+   cribs sit outside the verse marker or `<poem>`, so they are dropped instead
+   of being ingested as poetry.
+2. **Lacunae are preserved, never invented.** Perunkathai's surviving text is
+   discontinuous (book 1 starts at chapter 32); a page that declares itself lost
+   is recorded in `datapackage.json → openSangam.problems`, not fabricated.
+3. **Source defects stay visible.** OCR slips and numbering collisions are left
+   in place and every record stays `verified: false`.
+
+Raw wikitext is cached under `data/texts/<work>/raw/` (gitignored), so
+`--offline` re-runs the parsers with no network. Output is per-record
+`normalized/*.json`, the combined `<work>.json`, a Frictionless
+`datapackage.json` and `contributors.md`.
+
+Structural works do not fit the idyll model (line numbering restarts per
+chapter), so these records use the schema's third `anyOf` branch:
+`sectionNumber` + `structure`, with `lineStart`/`lineEnd` omitted. See
+[`docs/research/tamil-wiki-scout.md`](../research/tamil-wiki-scout.md) for the
+licence analysis and per-work page counts.
+
 ### `normalizer/normalize_all.py` — Normalize
 
 ```bash
@@ -108,6 +148,42 @@ from the normalized file already on disk before overwriting it:
 predecessor to `normalize_all.py` — running it caused the exact class of bug
 this section describes (two differently-padded, non-merged copies of every
 maduraikanchi record). Do not run it; it's kept only for history.
+
+### `normalizer/canonicalize_poets.py` — one spelling per poet
+
+```bash
+python -m normalizer.canonicalize_poets                 # dry run: report only
+python -m normalizer.canonicalize_poets --write         # rewrite `poet` in the corpus
+python -m normalizer.canonicalize_poets --write --refresh-authority
+```
+
+The corpus was scraped from several sources, so the same poet appeared under
+different spacing and with trailing punctuation: **565 distinct `poet` strings
+that collapse to 508 poets**, 47 groups of duplicates (four spellings of
+பாலைபாடிய பெருங்கடுங்கோ; `வெள்ளிவீதியார்` vs `வெள்ளி வீதியார்`). Those duplicates
+produced duplicate `Poet -` notes in the Obsidian vault and split the
+knowledge-graph poet nodes.
+
+| File | Role |
+|---|---|
+| `data/library/tamilwiki-poets.json` | 1,660 poet names from tamil.wiki categories — the spelling authority. Names, roles and page sizes only; **no article text is copied** |
+| `data/library/poet-aliases.json` | `raw spelling → canonical spelling` (55 entries), merged on every run so a later re-scrape of an old spelling is still fixed |
+| `normalizer/poet_alias.py` | `canonical_poet()` — imported by `normalize_all`, `build_graph` and `export_obsidian` so all three agree |
+
+Policy, in order:
+
+1. A name the authority knows wins, matched on Tamil letters only, so whitespace
+   variants resolve to the reviewed spelling.
+2. A name the authority does not know keeps the corpus's most frequent spelling —
+   the script never invents a join or a split.
+3. A **single-spelling name is left alone**: re-spacing it would churn the corpus
+   and rename existing `Poet -` notes for no benefit. Only real duplicates move.
+4. Colophon placeholders (`ஆசிரியர் அறியப்படவில்லை.`) become `poet: null`, which is
+   what the schema means by unattributed — 78 records across 5 spellings.
+
+Idempotent: a second run reports 0 changes. After a run, rebuild the derived
+data with `python -m knowledge.build_graph` and
+`python -m knowledge.export_obsidian`.
 
 ### Machine-drafted fields — generation scripts removed
 

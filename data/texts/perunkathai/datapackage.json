@@ -1,0 +1,39 @@
+{
+  "name": "perunkathai",
+  "title": "Perunkathai",
+  "profile": "data-package",
+  "licenses": [
+    {
+      "name": "CC-BY-SA-4.0",
+      "path": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tamil Wikisource — பெருங்கதை",
+      "path": "https://ta.wikisource.org/wiki/perunkathai"
+    }
+  ],
+  "resources": [
+    {
+      "name": "perunkathai",
+      "path": "perunkathai.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "schema": "../../schema/verse_schema.json",
+      "count": 99
+    }
+  ],
+  "openSangam": {
+    "adapter": "perunkathai",
+    "structureLevel": "chapter",
+    "records": 99,
+    "lines": 16188,
+    "numberedVerses": 0,
+    "problems": [
+      "front matter (editorial preface, not verse): பெருங்கதை/1 0 முன்கதை",
+      "lacuna (source declares the section lost): பெருங்கதை/3 11 …"
+    ],
+    "offline": true
+  }
+}

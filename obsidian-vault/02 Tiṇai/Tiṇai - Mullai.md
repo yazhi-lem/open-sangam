@@ -15,7 +15,7 @@ aliases:
 
 **Landscape:** Forest
 
-- Verses: **251**
+- Verses: **326**
 - Top poets: [[Poet - பேயனார்|பேயனார்]], [[Poet - நப்பூதனார்|நப்பூதனார்]], [[Poet - சோழன் நல்லுருத்திரனார்|சோழன் நல்லுருத்திரனார்]], [[Poet - இடைக்காடனார்|இடைக்காடனார்]], [[Poet - ஒக்கூர் மாசாத்தியார்|ஒக்கூர் மாசாத்தியார்]], [[Poet - அவ்வையார்|அவ்வையார்]], [[Poet - மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்|மதுரை அளக்கர் ஞாழார் மகனார் மள்ளனார்]], [[Poet - மதுரை மருதன் இளநாகனார்|மதுரை மருதன் இளநாகனார்]]
 
 ## Works
@@ -23,17 +23,22 @@ aliases:
 - [[Work - ainkurunooru|ஐங்குறுநூறு]] — 100 verses
 - [[Work - kurunthokai|குறுந்தொகை]] — 45 verses
 - [[Work - akananooru|அகநானூறு]] — 40 verses
+- [[Work - thinaimalai-nurraimpathu|திணைமாலை நூற்றைம்பது]] — 31 verses
 - [[Work - natrinai|நற்றிணை]] — 30 verses
 - [[Work - mullaippattu|முல்லைப்பாட்டு]] — 18 verses
 - [[Work - kalithokai|கலித்தொகை]] — 17 verses
+- [[Work - ainthinai-ezhupathu|ஐந்திணை எழுபது]] — 12 verses
+- [[Work - kainnilai|கைந்நிலை]] — 12 verses
+- [[Work - ainthinai-aimpathu|ஐந்திணை ஐம்பது]] — 10 verses
+- [[Work - thinaimozhi-aimpathu|திணைமொழி ஐம்பது]] — 10 verses
 - [[Work - purananooru|புறநானூறு]] — 1 verses
 
 ## Attested karu-poruḷ
 
 ### Flora
 
-- முல்லை — 66 attestations
-- கொன்றை — 27 attestations
+- முல்லை — 81 attestations
+- கொன்றை — 31 attestations
 - பிடவம் — 3 attestations
 - கடம்பு — 1 attestations
 
@@ -47,7 +52,8 @@ aliases:
 
 ### People
 
-- ஆயர் — 13 attestations
+- ஆயர் — 14 attestations
+- இடையர் — 2 attestations
 - ஆய்ச்சியர் — 1 attestations
 
 ### Deity

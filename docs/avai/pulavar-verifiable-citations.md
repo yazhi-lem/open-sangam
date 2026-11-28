@@ -96,7 +96,7 @@ no API key, so it tests the validator and the abstention policy, not a live mode
 | Citation accuracy · claim coverage · abstention correctness · source integrity | 100% each | deterministic |
 
 > The beta launch gate is different and still open: **≥ 90% citation accuracy on a 200-question gold set with a live
-> model**, plus a native review of 100 answers (`factory/NEXT.md` A2–A4).
+> model**, plus a native review of 100 answers (see `docs/README.md` for current status).
 
 ## 7. DeepEval Multi-Dimensional Evaluation
 

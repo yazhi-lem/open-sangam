@@ -1,0 +1,38 @@
+{
+  "name": "ramavataram",
+  "title": "Kamba Ramayanam",
+  "profile": "data-package",
+  "licenses": [
+    {
+      "name": "CC-BY-SA-4.0",
+      "path": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tamil Wikisource — கம்பராமாயணம்",
+      "path": "https://ta.wikisource.org/wiki/ramavataram"
+    }
+  ],
+  "resources": [
+    {
+      "name": "ramavataram",
+      "path": "ramavataram.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "schema": "../../schema/verse_schema.json",
+      "count": 125
+    }
+  ],
+  "openSangam": {
+    "adapter": "kamba",
+    "structureLevel": "padalam",
+    "records": 125,
+    "lines": 48875,
+    "numberedVerses": 10392,
+    "problems": [
+      "skipped (not kandam/padalam): கம்பராமாயணம்/பாயிரம்"
+    ],
+    "offline": true
+  }
+}

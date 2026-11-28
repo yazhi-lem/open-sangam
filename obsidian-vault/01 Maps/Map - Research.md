@@ -17,4 +17,8 @@ tags:
 - [[Brief - trade-ports|துறைமுகங்களும் உரோமானிய வாணிபமும்]] — paranar
 - [[Brief - women-poets|பெண் புலவர்களும் அவர்களின் திணைகளும்]] — avvaiyar
 
+## Essays
+
+Long-form essays live in `content/articles/` and are not copied into this generated vault.
+
 See also [[Map - Artifacts|Artifacts]] · [[Map - Entities|Entities]] · [[Map - Works|Works]]

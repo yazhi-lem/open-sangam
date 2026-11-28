@@ -16,6 +16,11 @@ export const SECTION_KINDS = {
   verse: { ta: 'பாடல்', en: 'Verse', short: 'verse' },
   sutra: { ta: 'சூத்திரம்', en: 'Sutra', short: 'sutra' },
   canto: { ta: 'காண்டம்', en: 'Canto', short: 'canto' },
+  chapter: { ta: 'இயல்', en: 'Chapter', short: 'chapter' },
+  kadai: { ta: 'காதை', en: 'Kaathai', short: 'kadai' },
+  padalam: { ta: 'படலம்', en: 'Padalam', short: 'padalam' },
+  ilambakam: { ta: 'இலம்பகம்', en: 'Ilambakam', short: 'ilambakam' },
+  game: { ta: 'திருவிளையாடல்', en: 'Divine game', short: 'game' },
   pathigam: { ta: 'பதிகம்', en: 'Pathigam', short: 'pathigam' },
   pasuram: { ta: 'பாசுரம்', en: 'Pasuram', short: 'pasuram' },
 }

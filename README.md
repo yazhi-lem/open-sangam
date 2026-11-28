@@ -2,7 +2,7 @@
 
 > An interactive educational platform bridging ancient Classical Tamil literature and modern readers.
 
-Plan and status live in [`factory/`](./factory): [`CURRENT`](./factory/CURRENT.md) · [`NEXT`](./factory/NEXT.md) · [`RUNWAY`](./factory/RUNWAY.md). The wider library plan (Pathinenkilkkanakku, classics, artifacts, multilingual reader) is in [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md). An Obsidian-ready Markdown vault is generated at `obsidian-vault/` (`backend/python/knowledge/export_obsidian.py`). The interface follows a strict single-language policy ([`docs/LANGUAGE_POLICY.md`](./docs/LANGUAGE_POLICY.md)). Retired docs are summarised in [`archives/`](./archives).
+Current state and the docs map live in [`docs/README.md`](./docs/README.md). The library register is [`docs/library/ARTIFACT_LIBRARY.md`](./docs/library/ARTIFACT_LIBRARY.md). An Obsidian-ready **generated** vault is at `obsidian-vault/` (`backend/python/knowledge/export_obsidian.py`); essays remain canonical in [`content/articles/`](./content/articles). The interface follows a strict single-language policy ([`docs/LANGUAGE_POLICY.md`](./docs/LANGUAGE_POLICY.md)). Retired plans are summarised in [`archives/`](./archives).
 
 Open Sangam turns static web archives of Sangam-era poetry into a layered learning experience with linguistic,
 cultural and historical context. Think "Duolingo for ancient literature".
@@ -45,7 +45,6 @@ open-sangam/
 ├── content/         articles
 ├── obsidian-vault/  generated Obsidian vault (export_obsidian.py)
 ├── docs/            architecture, contracts, governance, library, runbooks
-├── factory/         CURRENT · NEXT · RUNWAY
 └── archives/        dated doc snapshots
 ```
 
@@ -83,14 +82,17 @@ destroys a field another script produced ([`docs/data/pipeline-scripts.md`](./do
 
 | | Count | Notes |
 |---|---:|---|
-| Works in the reader | 20 | 18 Sangam (Eight Anthologies + Ten Idylls) + Tirukkural + Naladiyar |
-| Records | 4,399 | Verse → Line → Word; 2,489 Sangam |
-| Modern Tamil prose (urai) | 2,653 records | Sangam source prose; reuse terms being confirmed |
+| Works in the reader | 39 | 18 Sangam (Eight Anthologies + Ten Idylls) + 18 Pathinenkilkkanakku + 3 epics |
+| Records | 6,167 | 2,669 Sangam + 3,243 Pathinenkilkkanakku + 255 epic chapters |
+| Epic verses | 10,392 | Kamba Ramayanam paṭalam verses; Manimekalai and Perunkathai are line-numbered editions |
+| Modern Tamil prose (urai) | 2,652 records | Sangam source prose; reuse terms being confirmed |
 | English | 1,762 records | 1,330 Kural + 400 Naladiyar (public-domain Pope/Ellis) · 32 Sangam machine drafts, `verified: false` |
 | Scholar-verified | 0 | the Q4 launch scope is Maduraikanchi lines 1–100 |
 | Lines missing in the source | 0 | gaps filled from Project Madurai; `data/schema/known_line_gaps.json` is empty and CI fails if it changes unannounced |
 
-Other Pathinenkilkkanakku works are catalogued (not yet readable) in `data/library/catalog.json`.
+All 18 Pathinenkilkkanakku works are readable, plus Manimekalai, Kamba Ramayanam and Perunkathai
+harvested from [Tamil Wikisource](https://ta.wikisource.org) (CC BY-SA 4.0). The remaining catalogued and
+planned titles are tracked in `data/library/catalog.json`.
 
 Every AI-generated field stays `verified: false` until a scholar reviews it
 ([`docs/data/data-governance.md`](./docs/data/data-governance.md)).
@@ -102,7 +104,7 @@ Every AI-generated field stays `verified: false` until a scholar reviews it
 | Architecture & contracts | [`docs/architecture.md`](./docs/architecture.md) · [`docs/LANGUAGE_POLICY.md`](./docs/LANGUAGE_POLICY.md) · [`docs/api/api-contracts.md`](./docs/api/api-contracts.md) · [`docs/api/avai-ask-prd.md`](./docs/api/avai-ask-prd.md) |
 | Avai | [`docs/avai/pulavar-verifiable-citations.md`](./docs/avai/pulavar-verifiable-citations.md) · [`docs/avai/avai-launch-runbook.md`](./docs/avai/avai-launch-runbook.md) · [`agents/avai/evals/TAXONOMY.md`](./agents/avai/evals/TAXONOMY.md) |
 | Data | [`docs/data/pipeline-scripts.md`](./docs/data/pipeline-scripts.md) · [`docs/data/data-collection-plan.md`](./docs/data/data-collection-plan.md) · [`docs/data/data-governance.md`](./docs/data/data-governance.md) · [`docs/data/editorial-style-guide.md`](./docs/data/editorial-style-guide.md) |
-| Library | [`docs/library/LIBRARY_ROADMAP.md`](./docs/library/LIBRARY_ROADMAP.md) · [`docs/library/ARTIFACT_LIBRARY.md`](./docs/library/ARTIFACT_LIBRARY.md) |
+| Library | [`docs/library/ARTIFACT_LIBRARY.md`](./docs/library/ARTIFACT_LIBRARY.md) |
 | Research | [`docs/research/`](./docs/research) |
 | Outreach | [`docs/brochures/`](./docs/brochures) · [`content/articles/`](./content/articles) |
 

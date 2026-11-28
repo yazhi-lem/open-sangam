@@ -120,15 +120,38 @@ Build **one** structural reader, then the rest are data.
 | **Silappathikaram** | 3 kandams, 30 cantos | the epic every Tamil child meets first |
 | **Manimekalai** | 30 cantos | philosophical sequel |
 
-Recommended data field (deterministic, testable):
+Recommended data field (deterministic, testable) — now shipped in
+`data/schema/verse_schema.json` v2 as an optional `structure` object, rendered by
+`frontend/src/data/structure.js`:
 
 ```json
-{ "structure": { "level": "canto", "book": "Puhar Kandam", "number": 1 } }
+{ "structure": { "level": "canto", "book": "Puhar Kandam", "chapter": "...", "number": 1 } }
 ```
 
-Do **Tholkappiyam first** after Kurunthokai: it is the key that explains the
-corpus we already have, and its 1,610 sutras are individually short — ideal for
-line-level layers.
+### Tier 2 — ingestion status (measured 2026-11-27)
+
+`backend/python/scraper/scrape_wikisource.py` harvests structural works from
+[Tamil Wikisource](https://ta.wikisource.org) (CC BY-SA 4.0):
+
+| Work | Level | Records | Lines | Status |
+|---|---|---:|---:|---|
+| **Manimekalai** | `kadai` | 31 (patikam + 30 kādai) | 4,856 | ✅ reader |
+| **Perunkathai** | `chapter` | 99 (5 kāṇṭam) | 16,188 | ✅ reader — surviving text only, lacunae preserved |
+| **Kamba Ramayanam** | `padalam` | 125 (6 kāṇṭam) | 48,875 | ✅ reader — 10,392 numbered verses, 147 scene beats |
+| Silappathikaram | `kadai` | — | — | ⛔ Wikisource text has legacy `<FONT>` markup and duplicated modernised lines; needs its own cleanup pass |
+| Tholkappiyam / Nannul / Iraiyanar | `sutra` | — | — | not yet harvested |
+
+The adapter catches the pattern that repeats across these editions: take only the
+verse zone (after `*பாடல் மூலம்` or inside `<poem>`), drop editorial prose, keep
+lacunae visible, and never invent a missing verse.
+
+**Known limitation:** these records carry tokenised words, and Kamba Ramayanam is
+22 MB as a single reader chunk (3.6 MB gzip) — the largest on the site, ahead of
+Kalithokai at 17.9 MB. Per-chapter lazy loading for structural works is the fix;
+until then the reader downloads a whole epic to show one paṭalam.
+
+Do **Tholkappiyam next**: it is the key that explains the corpus we already have,
+and its 1,610 sutras are individually short — ideal for line-level layers.
 
 ---
 

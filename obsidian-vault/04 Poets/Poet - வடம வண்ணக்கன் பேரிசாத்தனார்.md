@@ -4,14 +4,14 @@ type: poet
 tags:
   - sangam
   - poet
-verse_count: 4
+verse_count: 7
 ---
 
 # வடம வண்ணக்கன் பேரிசாத்தனார்
 
-- Verses: **4**
+- Verses: **7**
 - Works: [[Work - akananooru|அகநானூறு]], [[Work - natrinai|நற்றிணை]]
-- Tiṇai: [[Tiṇai - Neytal|நெய்தல்]], [[Tiṇai - Kurinji|குறிஞ்சி]], [[Tiṇai - Palai|பாலை]]
+- Tiṇai: [[Tiṇai - Neytal|நெய்தல்]], [[Tiṇai - Kurinji|குறிஞ்சி]], [[Tiṇai - Mullai|முல்லை]], [[Tiṇai - Palai|பாலை]]
 
 ## Verse index
 

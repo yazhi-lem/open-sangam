@@ -4,17 +4,18 @@ type: poet
 tags:
   - sangam
   - poet
-verse_count: 12
+verse_count: 15
 ---
 
 # பெருங்குன்றூர் கிழார்
 
-- Verses: **12**
-- Works: [[Work - akananooru|அகநானூறு]], [[Work - natrinai|நற்றிணை]], [[Work - pathitrupathu|பதிற்றுப்பத்து]]
-- Tiṇai: [[Tiṇai - Unclassified|வகைப்படுத்தாத]], [[Tiṇai - Kurinji|குறிஞ்சி]]
+- Verses: **15**
+- Works: [[Work - akananooru|அகநானூறு]], [[Work - kurunthokai|குறுந்தொகை]], [[Work - natrinai|நற்றிணை]], [[Work - pathitrupathu|பதிற்றுப்பத்து]]
+- Tiṇai: [[Tiṇai - Unclassified|வகைப்படுத்தாத]], [[Tiṇai - Kurinji|குறிஞ்சி]], [[Tiṇai - Palai|பாலை]]
 
 ## Verse index
 
 - [[Verse Index - akananooru|அகநானூறு]]
+- [[Verse Index - kurunthokai|குறுந்தொகை]]
 - [[Verse Index - natrinai|நற்றிணை]]
 - [[Verse Index - pathitrupathu|பதிற்றுப்பத்து]]

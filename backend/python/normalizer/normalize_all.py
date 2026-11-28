@@ -23,6 +23,8 @@ from pathlib import Path
 
 from scraper.registry import POEM_BY_ID, POEMS
 
+from normalizer.poet_alias import canonical_poet
+
 DATA_BASE = Path(__file__).parents[3] / "data" / "texts"
 
 
@@ -62,7 +64,7 @@ def normalize_record(raw: dict, poem: dict) -> dict:
 
     if poem["collection"] == "8thokai":
         base["number"] = raw.get("number", 0)
-        base["poet"] = raw.get("poet")
+        base["poet"] = canonical_poet(raw.get("poet"))
     else:
         base["sectionNumber"] = raw.get("sectionNumber", 0)
         base["title"] = raw.get("title", "")

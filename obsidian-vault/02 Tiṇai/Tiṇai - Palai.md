@@ -15,8 +15,8 @@ aliases:
 
 **Landscape:** Wasteland
 
-- Verses: **595**
-- Top poets: [[Poet - ஓதலாந்தையார்|ஓதலாந்தையார்]], [[Poet - மாங்குடி மருதனார்|மாங்குடி மருதனார்]], [[Poet - பாலை பாடிய பெருங்கடுங்கோ|பாலை பாடிய பெருங்கடுங்கோ]], [[Poet - மாமூலனார்|மாமூலனார்]], [[Poet - கயமனார்|கயமனார்]], [[Poet - மதுரை மருதன் இளநாகனார்|மதுரை மருதன் இளநாகனார்]], [[Poet - குடவாயிற் கீரத்தனார்|குடவாயிற் கீரத்தனார்]], [[Poet - கல்லாடனார்|கல்லாடனார்]]
+- Verses: **683**
+- Top poets: [[Poet - ஓதலாந்தையார்|ஓதலாந்தையார்]], [[Poet - பாலைபாடிய பெருங்கடுங்கோ|பாலைபாடிய பெருங்கடுங்கோ]], [[Poet - மாங்குடி மருதனார்|மாங்குடி மருதனார்]], [[Poet - மாமூலனார்|மாமூலனார்]], [[Poet - கயமனார்|கயமனார்]], [[Poet - மதுரை மருதன் இளநாகனார்|மதுரை மருதன் இளநாகனார்]], [[Poet - குடவாயிற் கீரத்தனார்|குடவாயிற் கீரத்தனார்]], [[Poet - கல்லாடனார்|கல்லாடனார்]]
 
 ## Works
 
@@ -26,6 +26,11 @@ aliases:
 - [[Work - kurunthokai|குறுந்தொகை]] — 92 verses
 - [[Work - maduraikanchi|மதுரைக்காஞ்சி]] — 63 verses
 - [[Work - kalithokai|கலித்தொகை]] — 35 verses
+- [[Work - thinaimalai-nurraimpathu|திணைமாலை நூற்றைம்பது]] — 30 verses
+- [[Work - kainnilai|கைந்நிலை]] — 24 verses
+- [[Work - ainthinai-ezhupathu|ஐந்திணை எழுபது]] — 14 verses
+- [[Work - ainthinai-aimpathu|ஐந்திணை ஐம்பது]] — 10 verses
+- [[Work - thinaimozhi-aimpathu|திணைமொழி ஐம்பது]] — 10 verses
 
 ## Attested karu-poruḷ
 
@@ -34,7 +39,7 @@ aliases:
 
 ### Fauna
 
-- புலி — 46 attestations
+- புலி — 47 attestations
 - காக்கை — 7 attestations
 - நரி — 6 attestations
 - பாம்பு — 4 attestations
@@ -42,11 +47,11 @@ aliases:
 
 ### Landscape
 
-- சுரம் — 106 attestations
+- சுரம் — 116 attestations
 
 ### People
 
-- மறவர் — 28 attestations
-- எயினர் — 5 attestations
+- மறவர் — 29 attestations
+- எயினர் — 8 attestations
 
 ### Deity

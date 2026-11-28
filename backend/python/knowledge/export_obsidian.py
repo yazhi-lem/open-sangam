@@ -5,7 +5,8 @@ Export Open Sangam data as an Obsidian vault.
 
 The vault is a linked Markdown "second brain":
   - Maps (MOCs) for Home, Tiṇai, Works, Poets, Artifacts, Entities, Stories, Research
-  - one note per work, tiṇai, poet, artifact, entity, curated story, brief and article
+  - one note per work, tiṇai, poet, artifact, entity, curated story and brief
+  - essays in `content/articles/` are canonical and are not copied into the vault
   - one verse index per work (atomic verse notes are optional)
 
 Usage:
@@ -24,16 +25,18 @@ import shutil
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from normalizer.poet_alias import canonical_poet
+
 REPO = Path(__file__).parents[3]
 TEXTS = REPO / "data" / "texts"
 GRAPH_PATH = REPO / "data" / "knowledge" / "graph.json"
 TINAI_CONTEXT_PATH = REPO / "data" / "knowledge" / "tinai_context.json"
+CATALOG_PATH = REPO / "data" / "library" / "catalog.json"
 ARTIFACTS_PATH = REPO / "data" / "library" / "artifacts.json"
 CORPUS_ARTIFACTS_PATH = REPO / "data" / "library" / "corpus-artifacts.json"
 ENTITIES_PATH = REPO / "data" / "library" / "corpus-entities.json"
 STORY_ANTHOLOGY_PATH = REPO / "data" / "library" / "story-anthology.json"
 BRIEFS_PATH = REPO / "data" / "library" / "avai-research" / "index.json"
-ARTICLES_DIR = REPO / "content" / "articles"
 DEFAULT_OUT = REPO / "obsidian-vault"
 
 TINAI = {
@@ -69,10 +72,8 @@ POEM_TITLES = {
 
 
 def clean_poet(name: str | None) -> str:
-    name = (name or '').strip().rstrip('.。 ').strip()
-    if any(marker in name for marker in ('அறியப்படவில்லை', 'பெயர்', 'unknown')):
-        return ''
-    return name
+    """Canonical spelling, shared with the normalizer (normalizer/poet_alias.py)."""
+    return canonical_poet(name) or ''
 
 
 def safe(text: str) -> str:
@@ -116,15 +117,55 @@ def frontmatter(meta: dict) -> str:
     return "\n".join(lines)
 
 
+WRITTEN: dict[Path, set[str]] = {}
+
+
 def write_note(path: Path, meta: dict, body: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(frontmatter(meta) + "\n\n" + body.strip() + "\n", encoding="utf-8")
+    WRITTEN.setdefault(path.parent, set()).add(path.name)
+
+
+def prune_stale(root: Path, limit: int = 20) -> list[str]:
+    """Delete notes this script owns but no longer generates.
+
+    Without this a rename (e.g. collapsing two spellings of a poet) leaves the
+    old note behind forever, and the vault keeps both. Only directories the
+    exporter writes into are pruned, so hand-written files such as
+    `obsidian-vault/README.md` are never touched.
+    """
+    removed: list[str] = []
+    for directory, keep in WRITTEN.items():
+        if directory == root:
+            continue  # the vault root also holds hand-written files (README.md)
+        for path in sorted(directory.glob("*.md")):
+            if path.name in keep:
+                continue
+            path.unlink()
+            removed.append(str(path.relative_to(REPO)))
+    if removed:
+        print(f"  pruned {len(removed)} stale note(s): " + ", ".join(removed[:limit])
+              + (" …" if len(removed) > limit else ""))
+    return removed
 
 
 def load_json(path: Path, default):
     if not path.exists():
         return default
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_catalog_titles() -> None:
+    """Use catalog names for works ingested after POEM_TITLES was written.
+
+    The Sangam anthologies stay in the literal map; Pathinenkilkkanakku
+    works are authoritative in catalog.json. Without this, new work notes
+    are labelled with their URL slug instead of their Tamil title.
+    """
+    catalog = load_json(CATALOG_PATH, {"works": []})
+    for work in catalog.get("works", []):
+        if work.get("availability") == "reader" and work.get("ta") and work.get("en"):
+            POEM_TITLES[work["id"]] = (work["ta"], work["en"])
 
 
 def load_corpus() -> dict[str, list[dict]]:
@@ -173,6 +214,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--verses", choices=["none", "index", "all"], default="index")
     parser.add_argument("--clean", action="store_true")
     args = parser.parse_args(argv)
+    load_catalog_titles()
 
     out = args.out.resolve()
     if args.clean and out.exists():
@@ -467,22 +509,9 @@ def main(argv: list[str] | None = None) -> int:
             "aliases": [brief["titleEn"]],
         }, "\n".join(body))
 
-    # Articles
-    articles_dir = out / "08 Research" / "Articles"
-    for path in sorted(ARTICLES_DIR.glob("*.md")) if ARTICLES_DIR.exists() else []:
-        text = path.read_text(encoding="utf-8")
-        match = re.search(r"^---\n(.*?)\n---\n", text, re.S)
-        slug = re.search(r"^slug:\s*(.+)$", text, re.M)
-        title = re.search(r"^title:\s*(.+)$", text, re.M)
-        slug = slug.group(1).strip().strip('"') if slug else path.stem
-        title = title.group(1).strip().strip('"') if title else path.stem
-        body = text[match.end():] if match else text
-        write_note(articles_dir / f"{safe('Article - ' + slug)}.md", {
-            "title": title,
-            "type": "article",
-            "tags": ["sangam", "article", "research"],
-            "source": f"content/articles/{path.name}",
-        }, body)
+    # Articles are NOT exported: content/articles/*.md is the single source of truth.
+    # Copying them into the vault created 25 byte-identical bodies with only
+    # frontmatter added. See docs/README.md.
 
     # MOCs
     write_note(maps_dir / "Map - Tiṇai.md", {
@@ -561,6 +590,10 @@ def main(argv: list[str] | None = None) -> int:
         "## Avai briefs",
         *[f"- {note_link('Brief', b['id'], b['titleTa'])} — {b.get('agent')}" for b in briefs],
         "",
+        "## Essays",
+        "",
+        "Long-form essays live in `content/articles/` and are not copied into this generated vault.",
+        "",
         f"See also {link('Map - Artifacts', 'Artifacts')} · {link('Map - Entities', 'Entities')} · {link('Map - Works', 'Works')}",
     ]))
 
@@ -624,6 +657,7 @@ def main(argv: list[str] | None = None) -> int:
         ],
     }, indent=2), encoding="utf-8")
 
+    prune_stale(out)
     print(f"Obsidian vault exported → {out}")
     print(f"  works: {len(works)} · poets: {len(all_poets)} · artifacts: {len(artifacts_data.get('artifacts', []))}")
     print(f"  entities: {len(entities)} · stories: {len(anthology)} · briefs: {len(briefs)}")

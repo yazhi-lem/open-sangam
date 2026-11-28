@@ -180,7 +180,32 @@ Before a work graduates from `metadata` → `reader`, it must pass:
 
 ---
 
-## 4a. Romanisation and units — one scheme, no exceptions
+## 4a. Poet names — one spelling per poet
+
+The corpus was scraped from several sources, so the same poet once appeared under
+different spacing and with trailing punctuation: 565 distinct `poet` strings that
+collapse to **508 poets**, with 47 groups of duplicates (four spellings of
+பாலைபாடிய பெருங்கடுங்கோ). Duplicates split the knowledge graph and produced two
+`Poet - …` notes for one person in the generated vault.
+
+Rules:
+
+- **Never hand-edit a `poet` field.** Change the spelling through the alias table:
+  run `python -m normalizer.canonicalize_poets --write` (dry run without `--write`).
+- The spelling authority is `data/library/tamilwiki-poets.json` — 1,660 poet names
+  from tamil.wiki (names only, CC BY-SA 4.0). A poet it does not list keeps the
+  spelling the corpus already uses most.
+- Do not invent a join or a split. `இளங் கீரந்தையார்` and `இளங்கீரந்தையார்` are the
+  same person, but only the authority decides which spelling wins.
+- A colophon that names no poet (`ஆசிரியர் அறியப்படவில்லை.`) is `"poet": null`,
+  never a name-shaped string.
+- New poet in a PR? Add them to the corpus with one spelling and let the script
+  record the alias if a second spelling ever appears.
+
+`backend/python/tests/test_poet_alias.py` fails if two spellings of one poet come
+back, if an alias chain exists, or if a scrape artefact (trailing `.`, tab) survives.
+
+## 4b. Romanisation and units — one scheme, no exceptions
 
 Tamil is transliterated by many hands. Pick **one** scheme per file so a reader
 is never guessing. The catalog currently uses the Tamil Lexicon style with ASCII
