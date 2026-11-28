@@ -16,7 +16,7 @@ Browser ──HTTPS──► Cloudflare Pages (sangam.yazhi.dev)
                               ▼
                      model backend (LiteLLM: OpenRouter · Gemini · Ollama · vLLM)
 
-Firebase Cloud Functions: /translate, /analyze-word (locked down; the reader does not call them)
+No Cloud Functions are deployed. `/translate` and `/analyze-word` were removed; the reader resolves glosses from the corpus only.
 Firestore: rules exist, but no data (the reader ships static JSON)
 ```
 
@@ -46,6 +46,6 @@ plus deploy steps, are in [`avai-launch-runbook.md`](avai/avai-launch-runbook.md
 ## Decisions still open
 
 - Model host for the public beta, under the Yazhi sovereign-by-default policy (see `README.md`).
-- Whether to retire the Firebase Functions and the dead Firestore reader path (see `README.md`).
+- Whether to retire the remaining Firestore reader path (the Functions are gone; see `README.md`).
 - Post-launch hardening: Postgres for sessions and artifacts, a model gateway, pgvector retrieval
   (`archives/2026-10-27-docs-digest.md` §4).

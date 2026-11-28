@@ -1,6 +1,7 @@
 # API Contracts
 
-All Cloud Functions are served under the Firebase Functions base URL.
+No public Cloud Functions are served: the `/translate` and `/analyze-word`
+endpoints were removed. The Avai agent answers from its own service.
 In development use the emulator: `http://127.0.0.1:5001`.
 
 The `/avai/ask` endpoint (below) is served separately, by the Python agent
@@ -8,80 +9,6 @@ service in `agents/avai/api/`, not by Firebase Functions — see
 `docs/api/avai-ask-prd.md` for why and `agents/avai/README.md` for how to
 run it. It reuses this file's error-shape convention (`{"message": "..."}`)
 so callers can share error-handling code across both APIs.
-
----
-
-## POST `/translate`
-
-Translate a Sangam Tamil verse using Gemini 2.5 Flash.
-
-### Request
-
-```json
-{
-  "verse": "string — original Sangam Tamil verse text",
-  "targetLang": "english | urai"
-}
-```
-
-### Response `200`
-
-```json
-{
-  "text": "string — translated text",
-  "model": "gemini-2.5-flash",
-  "targetLang": "english | urai"
-}
-```
-
-### Error `400`
-
-```json
-{ "message": "`verse` is required" }
-```
-
-### Error `500`
-
-```json
-{ "message": "Translation failed", "error": "string" }
-```
-
----
-
-## POST `/analyze-word`
-
-Fetch etymological analysis for a single Tamil word.
-
-### Request
-
-```json
-{
-  "word": "string — Tamil word in original script"
-}
-```
-
-### Response `200`
-
-```json
-{
-  "root": "string — root word in Tamil script",
-  "urichol": "string — grammatical / semantic class",
-  "etymology": "string — brief etymology in English",
-  "gloss": "string — English gloss"
-}
-```
-
-### Error `400`
-
-```json
-{ "message": "`word` is required" }
-```
-
-### Error `500`
-
-```json
-{ "message": "Word analysis failed", "error": "string" }
-```
 
 ---
 
